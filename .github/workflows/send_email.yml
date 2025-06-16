@@ -1,0 +1,26 @@
+
+name: Daily US Stock News Email
+
+on:
+  schedule:
+    - cron: '30 22 * * *'  # 한국 시간 오전 7:30 (UTC 기준 오후 10:30)
+  workflow_dispatch:
+
+jobs:
+  send-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      - name: Run script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+        run: python main.py
