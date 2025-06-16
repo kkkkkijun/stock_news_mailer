@@ -5,6 +5,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import feedparser
 import openai
+from openai import OpenAI
 
 # 종목 리스트
 tickers = ["CHGG", "SLDP", "TSLA", "TSLL", "PL", "HIMS", "OSCR"]
@@ -26,9 +27,9 @@ def fetch_and_summarize_news(ticker):
 
 # ChatGPT 요약 호출
 def chatgpt_summarize(text):
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-4",
             messages=[{"role": "user", "content": f"다음 뉴스 내용을 한국어로 간결히 요약해줘:\n{text}"}],
             max_tokens=200
