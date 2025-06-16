@@ -4,7 +4,6 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import feedparser
-import openai
 from openai import OpenAI
 
 # 종목 리스트
@@ -30,7 +29,7 @@ def chatgpt_summarize(text):
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
     try:
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": f"다음 뉴스 내용을 한국어로 간결히 요약해줘:\n{text}"}],
             max_tokens=200
         )
