@@ -6,6 +6,7 @@ import feedparser
 from openai import OpenAI
 from datetime import datetime
 import requests
+import pytz
 
 # 종목 리스트
 stock_tickers = ["CHGG", "SLDP", "TSLA", "PL", "HIMS", "OSCR"]
@@ -51,14 +52,14 @@ def get_fear_greed_index():
 
 # 이메일 발송 함수
 def send_email(body):
-    now = datetime.now()
+    kst = pytz.timezone("Asia/Seoul")
+    now = datetime.now(kst)
     hour = now.hour
-    if hour < 12:
-        time_tag = "1차 (오전)"
-    else:
-        time_tag = "2차 (오후)"
 
-    subject = f"[오늘의 미국 주식 뉴스 요약 - {time_tag}]"
+    time_tag = "1차 (오전)" if hour < 12 else "2차 (오후)"
+    today_str = now.strftime("%-m/%-d")  # 예: 6/26
+
+    subject = f"[{today_str} 뉴스 요약 - {time_tag}]"
 
     msg = MIMEMultipart()
     msg["Subject"] = subject
