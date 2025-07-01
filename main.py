@@ -9,7 +9,7 @@ import requests
 import pytz
 
 # 종목 리스트
-stock_tickers = ["CHGG", "SLDP", "TSLA", "PL", "HIMS", "OSCR"]
+stock_tickers = ["SLDP", "TSLA", "PL", "HIMS", "OSCR"]
 crypto_tickers = ["BTC-USD", "ETH-USD"]
 
 # 수신자 이메일
@@ -33,7 +33,7 @@ def fetch_and_summarize_news(ticker):
     rss_url = f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
     feed = feedparser.parse(rss_url)
     summaries = []
-    for entry in feed.entries[:2]:  # 상위 2개 뉴스만
+    for entry in feed.entries[:3]:  # 상위 3개 뉴스만
         title = entry.title
         summary = chatgpt_summarize(title + "\n" + entry.get("summary", ""))
         summaries.append(f"📰 [{ticker}] {title}\n→ {summary}\n")
