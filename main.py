@@ -9,7 +9,7 @@ import requests
 import pytz
 
 # 종목 리스트
-stock_tickers = ["NVDA", "SLDP", "TSLA", "PL", "HIMS", "OSCR"]
+stock_tickers = ["NVDA", "TSLA", "HIMS", "OSCR"]
 crypto_tickers = ["BTC-USD", "ETH-USD", "SOL-USD", "SUI-USD"]
 
 # 수신자 이메일
