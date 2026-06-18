@@ -1,92 +1,387 @@
+# -*- coding: utf-8 -*-
 import os
+import time
 import smtplib
+import html
+import re
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import feedparser
-from openai import OpenAI
 from datetime import datetime
+from urllib.parse import quote
+
+import feedparser
 import requests
 import pytz
+from openai import OpenAI
 
-# 종목 리스트
-stock_tickers = ["NVDA", "TSLA", "HIMS", "OSCR"]
-crypto_tickers = ["BTC-USD", "ETH-USD", "SOL-USD"]
+# .env 로컬 테스트 지원 (GitHub Actions에서는 secrets로 주입되므로 없어도 됨)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except Exception:
+    pass
 
-# 수신자 이메일
-recipients = ["seo930714@gmail.com", "mjikshouse@naver.com"]
+# =========================================================
+# 설정 (가능한 값은 환경변수로 override, 없으면 기본값 사용)
+# =========================================================
+KST = pytz.timezone("Asia/Seoul")
 
-# ChatGPT 요약 호출 함수
-def chatgpt_summarize(text):
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-    try:
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": f"다음 뉴스 내용을 한국어로 간결히 요약해줘:\n{text}"}],
-            max_tokens=500
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        return f"(요약 실패: {e})"
+# 요약 모델: 코드에 하드코딩하지 않고 env로 변경 가능.
+# 기본값 gpt-4o-mini = 저비용/충분한 한국어 요약 품질.
+# 품질 우선이면 gpt-4.1-mini 등으로 교체 가능.
+SUMMARY_MODEL = os.getenv("OPENAI_SUMMARY_MODEL", "gpt-4o-mini")
+SUMMARY_MAX_TOKENS = int(os.getenv("OPENAI_SUMMARY_MAX_TOKENS", "500"))
 
-# 뉴스 가져오고 요약하는 함수
-def fetch_and_summarize_news(ticker):
-    rss_url = f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
-    feed = feedparser.parse(rss_url)
+# 종목 리스트 (env로 override 가능, 콤마 구분)
+stock_tickers = os.getenv("STOCK_TICKERS", "NVDA,TSLA,HIMS,OSCR").split(",")
+crypto_tickers = os.getenv("CRYPTO_TICKERS", "BTC-USD,ETH-USD,SOL-USD").split(",")
+stock_tickers = [t.strip() for t in stock_tickers if t.strip()]
+crypto_tickers = [t.strip() for t in crypto_tickers if t.strip()]
+
+# 수신자 (env로 override 가능)
+recipients = os.getenv(
+    "EMAIL_RECIPIENTS", "seo930714@gmail.com,mjikshouse@naver.com"
+).split(",")
+recipients = [r.strip() for r in recipients if r.strip()]
+
+# 티커별 최대 뉴스 개수
+NEWS_PER_TICKER = int(os.getenv("NEWS_PER_TICKER", "3"))
+
+# 기업명 매핑 (제목/요약에 기업명 포함 뉴스 우선 정렬용)
+TICKER_NAMES = {
+    "NVDA": "Nvidia",
+    "TSLA": "Tesla",
+    "HIMS": "Hims",
+    "OSCR": "Oscar Health",
+    "BTC-USD": "Bitcoin",
+    "ETH-USD": "Ethereum",
+    "SOL-USD": "Solana",
+}
+
+
+# =========================================================
+# 1) ChatGPT 요약 (모델 env화 + fallback + rate limit 처리)
+# =========================================================
+def get_openai_client():
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        return None
+    return OpenAI(api_key=api_key)
+
+
+def chatgpt_summarize(text, client=None, max_retries=2):
+    """뉴스 텍스트를 한국어로 요약.
+    - 모델명은 SUMMARY_MODEL(env)에서 가져옴 (하드코딩 금지)
+    - 빈 입력 / API 에러 / rate limit 처리
+    - 실패 시 원문 일부를 fallback 으로 반환
+    """
+    text = (text or "").strip()
+    if not text:
+        return "(요약할 뉴스 본문이 없습니다)"
+
+    if client is None:
+        client = get_openai_client()
+    if client is None:
+        # API 키가 없으면 요약 없이 원문 앞부분만 fallback
+        return text[:200] + ("..." if len(text) > 200 else "")
+
+    last_err = None
+    for attempt in range(max_retries + 1):
+        try:
+            response = client.chat.completions.create(
+                model=SUMMARY_MODEL,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": f"다음 뉴스 내용을 한국어로 2~3문장으로 간결히 요약해줘:\n{text}",
+                    }
+                ],
+                max_tokens=SUMMARY_MAX_TOKENS,
+            )
+            content = response.choices[0].message.content
+            return content.strip() if content else "(요약 결과가 비어 있습니다)"
+        except Exception as e:
+            last_err = e
+            msg = str(e).lower()
+            # rate limit / 일시적 오류는 지수 백오프 재시도
+            if "rate" in msg or "429" in msg or "timeout" in msg or "503" in msg:
+                if attempt < max_retries:
+                    time.sleep(2 ** attempt)
+                    continue
+            break
+
+    # 최종 실패 시: 원문 앞부분 fallback (메일이 깨지지 않도록)
+    fallback = text[:200] + ("..." if len(text) > 200 else "")
+    return f"(요약 실패, 원문 일부) {fallback}"
+
+
+# =========================================================
+# 2) 뉴스 수집
+#
+# [중요 - 수집 기준 명확화]
+# Yahoo Finance RSS(및 yfinance)는 "조회수/인기순/트렌딩" 정렬을 제공하지 않는다.
+#   - RSS 피드는 발행시간 역순(최신순)으로만 내려온다.
+#   - 조회수(view count) 데이터 자체가 공개 API로 노출되지 않으므로
+#     "조회수 많은 뉴스" 정렬은 기술적으로 불가능하다.
+# 따라서 현실적인 대체 정렬 기준을 적용한다:
+#   1) 발행시간 최신순
+#   2) 제목/요약에 티커명 또는 기업명이 포함된 뉴스 우선 (관련성)
+#   3) 동일 뉴스 중복 제거 (제목/링크 기준)
+#   4) Google News RSS로 티커별 최신 뉴스를 보완
+# 각 기사: publisher, published_at, link, title, related_ticker 저장.
+# =========================================================
+def _entry_published_ts(entry):
+    """RSS entry의 발행시각을 epoch(float)로. 없으면 0."""
+    for key in ("published_parsed", "updated_parsed"):
+        val = entry.get(key)
+        if val:
+            try:
+                return time.mktime(val)
+            except Exception:
+                pass
+    return 0.0
+
+
+def _clean(text):
+    if not text:
+        return ""
+    text = re.sub(r"<[^>]+>", "", text)  # HTML 태그 제거
+    return html.unescape(text).strip()
+
+
+def fetch_news_articles(ticker):
+    """티커별 뉴스 기사 목록(dict)을 구조화해서 반환."""
+    articles = []
+    name = TICKER_NAMES.get(ticker, "")
+
+    # --- 소스 1: Yahoo Finance RSS (기본, 최신순) ---
+    yahoo_url = (
+        f"https://feeds.finance.yahoo.com/rss/2.0/headline"
+        f"?s={ticker}&region=US&lang=en-US"
+    )
+    # --- 소스 2: Google News RSS (보완) ---
+    query = f'{ticker} OR "{name}"' if name else ticker
+    google_url = (
+        f"https://news.google.com/rss/search?q={quote(query)}"
+        f"&hl=en-US&gl=US&ceid=US:en"
+    )
+
+    for src_url, src_name in ((yahoo_url, "Yahoo Finance"), (google_url, "Google News")):
+        try:
+            feed = feedparser.parse(src_url)
+        except Exception:
+            continue
+        for entry in feed.entries:
+            title = _clean(entry.get("title", ""))
+            if not title:
+                continue
+            publisher = src_name
+            # Google News는 source 태그에 실제 매체명을 담는 경우가 있음
+            if entry.get("source") and entry["source"].get("title"):
+                publisher = entry["source"]["title"]
+            articles.append(
+                {
+                    "title": title,
+                    "summary": _clean(entry.get("summary", "")),
+                    "link": entry.get("link", ""),
+                    "publisher": publisher,
+                    "published_at": _entry_published_ts(entry),
+                    "related_ticker": ticker,
+                }
+            )
+
+    # --- 중복 제거 (정규화한 제목 기준) ---
+    seen = set()
+    unique = []
+    for a in articles:
+        key = re.sub(r"\W+", "", a["title"].lower())[:80]
+        if key and key not in seen:
+            seen.add(key)
+            unique.append(a)
+
+    # --- 정렬: (관련성 우선) → (최신순) ---
+    def relevance(a):
+        blob = (a["title"] + " " + a["summary"]).lower()
+        hit = ticker.split("-")[0].lower() in blob
+        if name and name.lower() in blob:
+            hit = True
+        return 1 if hit else 0
+
+    unique.sort(key=lambda a: (relevance(a), a["published_at"]), reverse=True)
+    return unique[:NEWS_PER_TICKER]
+
+
+def fetch_and_summarize_news(ticker, client=None):
+    """티커별 뉴스를 수집·요약해 메일용 문자열 리스트로 반환."""
+    articles = fetch_news_articles(ticker)
+    if not articles:
+        return [f"📰 [{ticker}] 수집된 뉴스가 없습니다.\n"]
+
     summaries = []
-    for entry in feed.entries[:3]:  # 상위 3개 뉴스만
-        title = entry.title
-        summary = chatgpt_summarize(title + "\n" + entry.get("summary", ""))
-        summaries.append(f"📰 [{ticker}] {title}\n→ {summary}\n")
+    for a in articles:
+        summary = chatgpt_summarize(a["title"] + "\n" + a["summary"], client=client)
+        when = (
+            datetime.fromtimestamp(a["published_at"], KST).strftime("%m/%d %H:%M")
+            if a["published_at"]
+            else "시간미상"
+        )
+        summaries.append(
+            f"📰 [{ticker}] {a['title']}\n"
+            f"   ({a['publisher']} · {when})\n"
+            f"→ {summary}\n"
+        )
     return summaries
 
-# 공포탐욕지수 가져오기
-def get_fear_greed_index():
-    try:
-        response = requests.get("https://api.alternative.me/fng/?limit=1")
-        data = response.json()["data"][0]
-        value = data["value"]
-        value_class = data["value_classification"]
-        return f"\n📊 공포탐욕지수: {value} ({value_class})\n"
-    except Exception as e:
-        return f"\n📊 공포탐욕지수 가져오기 실패: {e}\n"
 
-# 이메일 발송 함수
+# =========================================================
+# 3) 공포탐욕지수
+#
+# [중요 - 값이 다른 원인 분석]
+# 기존 코드는 api.alternative.me/fng 를 사용했는데, 이것은
+# "Crypto Fear & Greed Index"(암호화폐 전용)다.
+# 반면 INDEXerGO / CNN 등이 보여주는 값은
+# "CNN Fear & Greed Index"(미국 주식시장 기준)로 산출 방식과 대상이 전혀 다르다.
+# 즉 두 지표는 애초에 다른 지수이므로 값이 일치하지 않는 것이 정상이다.
+# → 주식시장 지표는 CNN, 암호화폐 지표는 Alternative.me 로 분리하고
+#   각각 출처를 명확히 표기한다.
+# =========================================================
+def get_cnn_fear_greed():
+    """CNN Fear & Greed Index (미국 주식시장 기준).
+    CNN 비공식 JSON 엔드포인트. 브라우저 User-Agent 필요(없으면 418).
+    """
+    url = "https://production.dataviz.cnn.com/index/fearandgreed/graphdata"
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+        ),
+        "Accept": "application/json",
+    }
+    try:
+        r = requests.get(url, headers=headers, timeout=15)
+        r.raise_for_status()
+        fg = r.json()["fear_and_greed"]
+        return {
+            "source": "CNN Fear & Greed Index (미국 주식시장)",
+            "value": round(float(fg["score"])),
+            "classification": str(fg.get("rating", "")).title(),
+            "updated_at": fg.get("timestamp", ""),
+        }
+    except Exception as e:
+        return {
+            "source": "CNN Fear & Greed Index (미국 주식시장)",
+            "value": None,
+            "classification": f"가져오기 실패: {e}",
+            "updated_at": "",
+        }
+
+
+def get_crypto_fear_greed():
+    """Crypto Fear & Greed Index (암호화폐 기준, Alternative.me)."""
+    try:
+        r = requests.get("https://api.alternative.me/fng/?limit=1", timeout=15)
+        r.raise_for_status()
+        data = r.json()["data"][0]
+        ts = data.get("timestamp", "")
+        updated = ""
+        if ts:
+            try:
+                updated = datetime.fromtimestamp(int(ts), KST).strftime(
+                    "%Y-%m-%d %H:%M KST"
+                )
+            except Exception:
+                updated = ts
+        return {
+            "source": "Crypto Fear & Greed Index (Alternative.me)",
+            "value": int(data["value"]),
+            "classification": data.get("value_classification", ""),
+            "updated_at": updated,
+        }
+    except Exception as e:
+        return {
+            "source": "Crypto Fear & Greed Index (Alternative.me)",
+            "value": None,
+            "classification": f"가져오기 실패: {e}",
+            "updated_at": "",
+        }
+
+
+def format_fear_greed_section():
+    """공포탐욕지수 섹션 문자열 생성 (출처 명확히 표기)."""
+    stock = get_cnn_fear_greed()
+    crypto = get_crypto_fear_greed()
+
+    def line(d):
+        val = d["value"] if d["value"] is not None else "-"
+        updated = f" · 기준시각 {d['updated_at']}" if d["updated_at"] else ""
+        return f"  - {d['source']}: {val} ({d['classification']}){updated}"
+
+    return (
+        "\n📊 공포탐욕지수 (Fear & Greed Index)\n"
+        f"{line(stock)}\n"
+        f"{line(crypto)}\n"
+        "  ※ 주식(CNN)과 암호화폐(Alternative.me)는 서로 다른 지표이므로 값이 다릅니다.\n"
+    )
+
+
+# =========================================================
+# 4) 이메일 발송
+# =========================================================
 def send_email(body):
-    kst = pytz.timezone("Asia/Seoul")
-    now = datetime.now(kst)
+    # 발송 시각 표기는 항상 KST(timezone-aware)로 고정
+    now = datetime.now(KST)
     hour = now.hour
 
+    # 실제 스케줄(07:30 / 17:00) 기준으로 오전/오후 판정
     time_tag = "1차 (오전)" if hour < 12 else "2차 (오후)"
-    today_str = now.strftime("%-m/%-d")  # 예: 6/26
+    today_str = now.strftime("%-m/%-d")
 
     subject = f"[{today_str} 뉴스 요약 - {time_tag}]"
 
+    email_user = os.getenv("EMAIL_USER")
+    email_pass = os.getenv("EMAIL_PASS")
+    if not email_user or not email_pass:
+        raise RuntimeError("EMAIL_USER / EMAIL_PASS 환경변수가 설정되지 않았습니다.")
+
     msg = MIMEMultipart()
     msg["Subject"] = subject
-    msg["From"] = os.getenv("EMAIL_USER")
+    msg["From"] = email_user
     msg["To"] = ", ".join(recipients)
-    msg.attach(MIMEText(body, "plain"))
+    msg.attach(MIMEText(body, "plain", "utf-8"))
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-        server.login(os.getenv("EMAIL_USER"), os.getenv("EMAIL_PASS"))
-        server.sendmail(msg["From"], recipients, msg.as_string())
+        server.login(email_user, email_pass)
+        server.sendmail(email_user, recipients, msg.as_string())
 
+
+# =========================================================
 # 메인 실행
-if __name__ == "__main__":
+# =========================================================
+def build_body(client=None):
     stock_summaries = []
     crypto_summaries = []
 
     for ticker in stock_tickers:
-        stock_summaries.extend(fetch_and_summarize_news(ticker))
-
+        stock_summaries.extend(fetch_and_summarize_news(ticker, client=client))
     for ticker in crypto_tickers:
-        crypto_summaries.extend(fetch_and_summarize_news(ticker))
+        crypto_summaries.extend(fetch_and_summarize_news(ticker, client=client))
 
-    final_body = "[오늘의 뉴스 요약]\n\n"
-    final_body += "📈 해외주식 PART\n"
-    final_body += "\n".join(stock_summaries) + "\n\n"
-    final_body += "🪙 코인 PART\n"
-    final_body += "\n".join(crypto_summaries)
-    final_body += get_fear_greed_index()
+    now = datetime.now(KST)
+    body = f"[오늘의 뉴스 요약] {now.strftime('%Y-%m-%d %H:%M KST')}\n\n"
+    body += "📈 해외주식 PART\n"
+    body += "\n".join(stock_summaries) + "\n\n"
+    body += "🪙 코인 PART\n"
+    body += "\n".join(crypto_summaries)
+    body += format_fear_greed_section()
+    return body
 
-    send_email(final_body)
+
+if __name__ == "__main__":
+    client = get_openai_client()
+    final_body = build_body(client=client)
+
+    # DRY_RUN=1 이면 메일 발송 없이 본문만 출력 (테스트용)
+    if os.getenv("DRY_RUN") == "1":
+        print(final_body)
+    else:
+        send_email(final_body)
