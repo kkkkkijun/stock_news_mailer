@@ -2,3 +2,6 @@ openai>=1.0.0
 feedparser
 requests
 pytz
+python-dotenv
+# 선택: always-on 서버에서 정시 발송이 필요할 때만 (scheduler.py)
+APScheduler
