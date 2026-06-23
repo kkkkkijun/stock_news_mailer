@@ -2,10 +2,10 @@ name: Daily US Stock News Email
 
 on:
   schedule:
-    # 오전 7:30 (한국 시간 기준) → UTC 22:30
-    - cron: '30 22 * * *'
-    # 오후 5:00 (한국 시간 기준) → UTC 08:00
-    - cron: '0 8 * * *'
+    # 오전 7:37 (한국 시간 기준) → UTC 22:30
+    - cron: '37 22 * * *'
+    # 오후 5:13 (한국 시간 기준) → UTC 08:00
+    - cron: '13 8 * * *'
   workflow_dispatch:
 
 jobs:
