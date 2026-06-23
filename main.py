@@ -248,8 +248,11 @@ def fetch_and_summarize_news(ticker, client=None):
 def get_cnn_fear_greed():
     """CNN Fear & Greed Index (미국 주식시장 기준).
     CNN 비공식 JSON 엔드포인트. 브라우저 User-Agent 필요(없으면 418).
+    ※ 도메인 주의: CNN이 .com → .io 로 이전함.
+      구(舊) production.dataviz.cnn.com 은 DNS 해석이 안 돼 NameResolutionError 발생.
+      현재 유효 엔드포인트는 production.dataviz.cnn.io 이다.
     """
-    url = "https://production.dataviz.cnn.com/index/fearandgreed/graphdata"
+    url = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
