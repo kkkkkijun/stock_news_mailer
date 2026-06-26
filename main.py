@@ -265,14 +265,14 @@ def get_cnn_fear_greed():
         r.raise_for_status()
         fg = r.json()["fear_and_greed"]
         return {
-            "source": "CNN Fear & Greed Index (미국 주식시장)",
+            "source": "CNN 기준",
             "value": round(float(fg["score"])),
             "classification": str(fg.get("rating", "")).title(),
             "updated_at": fg.get("timestamp", ""),
         }
     except Exception as e:
         return {
-            "source": "CNN Fear & Greed Index (미국 주식시장)",
+            "source": "CNN 기준",
             "value": None,
             "classification": f"가져오기 실패: {e}",
             "updated_at": "",
@@ -295,14 +295,14 @@ def get_crypto_fear_greed():
             except Exception:
                 updated = ts
         return {
-            "source": "Crypto Fear & Greed Index (Alternative.me)",
+            "source": "크립토 기준",
             "value": int(data["value"]),
             "classification": data.get("value_classification", ""),
             "updated_at": updated,
         }
     except Exception as e:
         return {
-            "source": "Crypto Fear & Greed Index (Alternative.me)",
+            "source": "크립토 기준",
             "value": None,
             "classification": f"가져오기 실패: {e}",
             "updated_at": "",
@@ -320,7 +320,7 @@ def format_fear_greed_section():
         return f"  - {d['source']}: {val} ({d['classification']}){updated}"
 
     return (
-        "\n📊 공포탐욕지수 (Fear & Greed Index)\n"
+        "\n📊 공포탐욕지수\n"
         f"{line(stock)}\n"
         f"{line(crypto)}\n"
         "  ※ 주식(CNN)과 암호화폐(Alternative.me)는 서로 다른 지표이므로 값이 다릅니다.\n"
