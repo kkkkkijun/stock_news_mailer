@@ -52,7 +52,7 @@ TICKER_NAMES = {
     "NVDA": "Nvidia",
     "TSLA": "Tesla",
     "HIMS": "Hims",
-    "OSCR": "Oscar Health",
+    "RDW": "Redwire Corp",
     "BTC-USD": "Bitcoin",
     "ETH-USD": "Ethereum",
     "SOL-USD": "Solana",
@@ -316,9 +316,8 @@ def format_fear_greed_section():
 
     def line(d):
         val = d["value"] if d["value"] is not None else "-"
-        updated = f" · 기준시각 {d['updated_at']}" if d["updated_at"] else ""
-        return f"  - {d['source']}: {val} ({d['classification']}){updated}"
-
+        return f"  - {d['source']}: {val} ({d['classification']})"
+        
     return (
         "\n📊 공포탐욕지수\n"
         f"{line(stock)}\n"
@@ -335,7 +334,7 @@ def send_email(body):
     now = datetime.now(KST)
     hour = now.hour
 
-    # 실제 스케줄(07:30 / 17:00) 기준으로 오전/오후 판정
+    # 실제 스케줄(07:37 / 17:13) 기준으로 오전/오후 판정
     time_tag = "1차 (오전)" if hour < 12 else "2차 (오후)"
     today_str = now.strftime("%-m/%-d")
 
