@@ -33,7 +33,7 @@ SUMMARY_MODEL = os.getenv("OPENAI_SUMMARY_MODEL", "gpt-4o-mini")
 SUMMARY_MAX_TOKENS = int(os.getenv("OPENAI_SUMMARY_MAX_TOKENS", "500"))
 
 # 종목 리스트 (env로 override 가능, 콤마 구분)
-stock_tickers = os.getenv("STOCK_TICKERS", "NVDA,TSLA,HIMS,OSCR").split(",")
+stock_tickers = os.getenv("STOCK_TICKERS", "NVDA,TSLA,HIMS,RDW").split(",")
 crypto_tickers = os.getenv("CRYPTO_TICKERS", "BTC-USD,ETH-USD,SOL-USD").split(",")
 stock_tickers = [t.strip() for t in stock_tickers if t.strip()]
 crypto_tickers = [t.strip() for t in crypto_tickers if t.strip()]
