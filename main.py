@@ -322,7 +322,6 @@ def format_fear_greed_section():
         "\n📊 공포탐욕지수\n"
         f"{line(stock)}\n"
         f"{line(crypto)}\n"
-        "  ※ 주식(CNN)과 암호화폐(Alternative.me)는 서로 다른 지표이므로 값이 다릅니다.\n"
     )
 
 
@@ -334,7 +333,7 @@ def send_email(body):
     now = datetime.now(KST)
     hour = now.hour
 
-    # 실제 스케줄(07:37 / 17:13) 기준으로 오전/오후 판정
+    # 실제 스케줄(06:37 / 16:13) 기준으로 오전/오후 판정
     time_tag = "1차 (오전)" if hour < 12 else "2차 (오후)"
     today_str = now.strftime("%-m/%-d")
 
