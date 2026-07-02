@@ -374,14 +374,6 @@ def build_body(client=None):
     body += "🪙 코인 PART\n"
     body += "\n".join(crypto_summaries)
     body += format_fear_greed_section()
-
-    # 국토교통부 고시 요약 (부동산 강조) 섹션 추가.
-    # 고시 수집/요약 실패가 뉴스 메일 전체를 깨지 않도록 방어.
-    try:
-        from molit_notices import build_molit_section
-        body += "\n\n" + "=" * 50 + "\n" + build_molit_section(client=client)
-    except Exception as e:
-        body += f"\n\n(국토부 고시 요약 생성 실패: {e})"
     return body
 
 
