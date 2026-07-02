@@ -3,5 +3,7 @@ feedparser
 requests
 pytz
 python-dotenv
+# 국토부 고시 첨부 PDF 본문 추출용 (molit_notices.py)
+pypdf
 # 선택: always-on 서버에서 정시 발송이 필요할 때만 (scheduler.py)
 APScheduler
