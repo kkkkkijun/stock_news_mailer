@@ -312,6 +312,17 @@ def build_molit_body(client=None):
     return "\n".join(lines)
 
 
+def build_molit_section(client=None):
+    """다른 메일 본문에 덧붙이기 위한 국토부 고시 섹션 문자열.
+    신규가 없으면 짧은 한 줄 안내만 반환(빈 값 반환하지 않음)."""
+    body = build_molit_body(client=client)
+    if not body:
+        today = datetime.date.today().strftime("%Y-%m-%d")
+        body = (f"[국토교통부 고시 요약] {today}\n"
+                f"최근 {LOOKBACK_DAYS}일 이내 신규 등록된 고시가 없습니다.")
+    return body
+
+
 def _time_tag():
     import pytz
     now = datetime.datetime.now(pytz.timezone("Asia/Seoul"))
