@@ -25,6 +25,7 @@ import os
 import re
 import sys
 import html
+import time
 import subprocess
 import datetime
 import io
@@ -50,6 +51,9 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 
 LOOKBACK_DAYS = int(os.getenv("MOLIT_LOOKBACK_DAYS", "1"))
 MAX_ITEMS = int(os.getenv("MOLIT_MAX_ITEMS", "15"))
+# 해외(GitHub Actions) 러너에서 국토부 서버 응답이 느릴 수 있어 타임아웃/재시도를 넉넉히.
+TIMEOUT = int(os.getenv("MOLIT_TIMEOUT", "60"))
+RETRIES = int(os.getenv("MOLIT_RETRIES", "3"))
 SEND_IF_EMPTY = os.getenv("MOLIT_SEND_IF_EMPTY", "1") != "0"
 SUMMARY_MODEL = os.getenv("OPENAI_SUMMARY_MODEL", "gpt-4o-mini")
 
@@ -76,13 +80,28 @@ def strip_tags(s):
 def build_opener():
     cj = http.cookiejar.CookieJar()
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
-    op.addheaders = [("User-Agent", UA), ("Referer", BASE + "/USR/I0204/m_45/lst.jsp")]
+    op.addheaders = [
+        ("User-Agent", UA),
+        ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"),
+        ("Accept-Language", "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"),
+        ("Referer", BASE + "/USR/I0204/m_45/lst.jsp"),
+    ]
     return op
 
 
-def fetch(op, url, timeout=40):
-    with op.open(url, timeout=timeout) as r:
-        return r.read()
+def fetch(op, url, timeout=None):
+    """지수 백오프 재시도 포함 GET. 해외 러너의 일시적 지연/타임아웃 완화."""
+    timeout = timeout or TIMEOUT
+    last = None
+    for attempt in range(RETRIES):
+        try:
+            with op.open(url, timeout=timeout) as r:
+                return r.read()
+        except Exception as e:  # noqa
+            last = e
+            if attempt < RETRIES - 1:
+                time.sleep(2 ** attempt)
+    raise last
 
 
 def fetch_text(op, url, timeout=40):
