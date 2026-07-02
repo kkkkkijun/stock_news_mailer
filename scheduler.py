@@ -42,7 +42,7 @@ def main():
     scheduler.add_job(job, CronTrigger(hour=7, minute=30, timezone=KST), **common)
     scheduler.add_job(job, CronTrigger(hour=17, minute=0, timezone=KST), **common)
 
-    logging.info("스케줄러 시작: 매일 07:37, 17:13 (Asia/Seoul)")
+    logging.info("스케줄러 시작: 매일 06:37, 16:13 (Asia/Seoul)")
     scheduler.start()
 
 
