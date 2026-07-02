@@ -2,7 +2,7 @@
 [선택] always-on 서버에서 정시 발송이 필요할 때 사용하는 스케줄러.
 
 GitHub Actions의 cron은 best-effort라 수 분~수십 분 지연될 수 있다.
-분 단위로 정확히 07:30 / 17:00 KST에 발송해야 한다면,
+분 단위로 정확히 06:37 / 16:13 KST에 발송해야 한다면,
 24시간 켜져 있는 서버(또는 컨테이너)에서 이 파일을 실행한다.
 
 CronTrigger(timezone="Asia/Seoul") 로 타임존을 명시 고정하므로
