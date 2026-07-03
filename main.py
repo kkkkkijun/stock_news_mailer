@@ -374,6 +374,14 @@ def build_body(client=None):
     body += "🪙 코인 PART\n"
     body += "\n".join(crypto_summaries)
     body += format_fear_greed_section()
+
+    # 🏘️ 부동산 PART (구글 뉴스 종합 + LLM 요약/전망).
+    # 부동산 수집/요약 실패가 뉴스 메일 전체를 깨지 않도록 방어.
+    try:
+        from realestate_briefing import build_realestate_section
+        body += "\n\n" + build_realestate_section(client=client)
+    except Exception as e:
+        body += f"\n\n🏘️ 부동산 PART\n(생성 실패: {e})"
     return body
 
 
