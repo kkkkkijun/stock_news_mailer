@@ -209,7 +209,6 @@ def build_realestate_section(client=None):
         for o in outlook:
             lines.append(f"• {o}")
         lines.append("")
-    lines.append("※ 정보 제공용이며 투자판단의 책임은 본인에게 있습니다. · 출처: 구글 뉴스")
     return "\n".join(lines)
 
 
