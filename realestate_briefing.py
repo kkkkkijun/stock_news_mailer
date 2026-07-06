@@ -163,8 +163,6 @@ def _fallback_headlines(pool, header, note=""):
     lines = [header, "", "[핵심 뉴스]"]
     for a in pool[:TOP_N]:
         lines.append(f"• {a['title']} ({a['publisher']} · {_when(a['ts'])})")
-        if a["link"]:
-            lines.append(f"  {a['link']}")
     if note:
         lines.append(note)
     return "\n".join(lines)
@@ -201,14 +199,13 @@ def build_realestate_section(client=None):
             meta = " · ".join(x for x in (p["publisher"], p["when"]) if x)
             if meta:
                 lines.append(f"   ({meta})")
-            if p["link"]:
-                lines.append(f"   {p['link']}")
         lines.append("")
     if outlook:
         lines.append("[흐름·전망]")
         for o in outlook:
             lines.append(f"• {o}")
         lines.append("")
+    lines.append("※ 정보 제공용이며 투자판단의 책임은 본인에게 있습니다. · 출처: 구글 뉴스")
     return "\n".join(lines)
 
 
