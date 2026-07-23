@@ -34,7 +34,7 @@ except Exception:
 
 KST = pytz.timezone("Asia/Seoul")
 SUMMARY_MODEL = os.getenv("OPENAI_SUMMARY_MODEL", "gpt-4o-mini")
-POOL_PER_QUERY = int(os.getenv("REALESTATE_POOL_PER_QUERY", "25"))
+POOL_PER_QUERY = int(os.getenv("REALESTATE_POOL_PER_QUERY", "30"))
 TOP_N = int(os.getenv("REALESTATE_TOP_N", "6"))
 
 # 종합·전국/수도권 부동산 뉴스 쿼리 (구글 뉴스 RSS, 최근 1일)
@@ -100,10 +100,36 @@ def _when(ts):
         return "시간미상"
 
 
+# 포털 재게시·수집형 출처 제외 (원 매체가 아니라 재게시 링크로 잡히는 경우)
+BLOCKED_PUBLISHERS = {
+    "v.daum.net", "n.news.naver.com", "news.naver.com", "media.naver.com",
+    "daum.net", "naver.com",
+}
+
+
+def _is_blocked_publisher(pub):
+    """포털 재게시/도메인형 출처면 True. (매체명이 비어 있으면 통과)"""
+    p = (pub or "").strip().lower()
+    if not p:
+        return False
+    if p in BLOCKED_PUBLISHERS:
+        return True
+    # 'v.daum.net', 'ppss.kr' 처럼 공백 없는 순수 도메인 형태 = 재게시/블로그성
+    return bool(re.fullmatch(r"[a-z0-9][a-z0-9.\-]*\.[a-z]{2,}", p))
+
+
+def _news_window():
+    """구글 뉴스 검색 기간. 오전 회차(07:37)는 when:1d 로는 전일 오전이 잘리므로
+    2일 창으로 넓혀 '전일 전체'를 포괄한다. 오후 회차는 당일 위주로 1일."""
+    return "2d" if datetime.now(KST).hour < 12 else "1d"
+
+
 def fetch_pool():
-    """구글 뉴스 RSS 다중 쿼리 → 중복 제거 → 최신순 정렬된 기사 풀."""
+    """구글 뉴스 RSS 다중 쿼리 → 기사 풀(리드 없음). 포털 재게시 출처는 제외."""
     arts = []
+    window = _news_window()
     for q in QUERIES:
+        q = q.replace("when:1d", f"when:{window}")
         url = (f"https://news.google.com/rss/search?q={quote(q)}"
                f"&hl=ko&gl=KR&ceid=KR:ko")
         try:
@@ -117,6 +143,8 @@ def fetch_pool():
             pub = ""
             if e.get("source") and e["source"].get("title"):
                 pub = e["source"]["title"]
+            if _is_blocked_publisher(pub):
+                continue
             # 구글 뉴스 RSS 는 리드 문단을 주지 않는다(제목·매체명뿐) → lead 비움
             arts.append({"title": title, "link": e.get("link", ""),
                          "publisher": pub, "ts": _ts(e), "lead": ""})
