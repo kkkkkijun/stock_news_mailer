@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<title>26년 7월 24일 오전 뉴스 브리핑</title>
+<style>
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Pretendard',system-ui,sans-serif;
+ -webkit-font-smoothing:antialiased;background:#e8ecf1;}
+a{color:#3a6fd8;text-decoration:none;}
+a:hover{opacity:.72;}
+.wrap{display:flex;justify-content:center;padding:48px 24px;}
+.page{width:100%;max-width:820px;background:#f6f8fb;color:#0f1b2d;
+ border:1px solid #e6ebf2;border-radius:18px;
+ box-shadow:0 12px 44px rgba(15,27,45,.1);overflow:hidden;}
+.hd{padding:30px 40px;background:#0f1b2d;color:#fff;}
+.hd-top{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.hd-kicker{font-size:12px;font-weight:600;letter-spacing:.04em;color:#94a3b8;}
+.hd-links{display:flex;gap:7px;flex-shrink:0;}
+.hd-archive{font-size:12px;font-weight:600;color:#dbe4f0;
+ background:rgba(255,255,255,.12);padding:6px 13px;border-radius:999px;}
+.hd-archive:hover{opacity:1;background:rgba(255,255,255,.2);}
+.hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
+.hd-sub{font-size:13px;color:#94a3b8;}
+.dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
+ background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
+ margin-right:8px;}
+.dowb.sat{color:#a8c8ff;background:rgba(120,165,255,.2);}
+.dowb.sun{color:#ffb0a8;background:rgba(255,130,120,.2);}
+.gauges{display:flex;gap:16px;padding:16px 40px 4px;flex-wrap:wrap;}
+.gauge{flex:1;min-width:220px;background:#fff;border:1px solid #e6ebf2;
+ border-radius:14px;padding:10px 20px 11px;}
+.gauge-label{font-size:11px;color:#64748b;margin-bottom:4px;}
+.gauge-row{display:flex;align-items:baseline;gap:9px;margin-bottom:7px;}
+.gauge-num{font-size:23px;font-weight:700;line-height:1;color:#0f1b2d;}
+.gauge-mood{font-size:11px;font-weight:600;color:#fff;padding:2px 9px;
+ border-radius:999px;}
+.gauge-track{position:relative;height:5px;border-radius:3px;
+ background:linear-gradient(90deg,#c0392b,#d98324,#c9a227,#4a9d5b,#2e7d32);}
+.gauge-marker{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;
+ background:#fff;border:2.5px solid #0f1b2d;transform:translate(-50%,-50%);}
+.gauge-scale{display:flex;justify-content:space-between;font-size:10px;
+ color:#94a3b8;margin-top:4px;}
+.navwrap{padding:14px 40px 6px;position:sticky;top:0;background:#f6f8fb;z-index:3;}
+.nav{display:flex;gap:5px;background:#eef2f7;border:1px solid #e6ebf2;
+ border-radius:12px;padding:5px;}
+.nav a,.nav button{flex:1;text-align:center;font-size:13px;font-weight:600;
+ color:#475569;padding:9px 6px;border-radius:8px;border:0;background:transparent;
+ font-family:inherit;cursor:pointer;}
+.nav a:hover,.nav button:hover{background:#fff;opacity:1;}
+.nav button.on{background:#0f1b2d;color:#fff;}
+.nav button.on:hover{background:#0f1b2d;}
+.panel{display:none;}
+.panel.on{display:block;}
+.part{padding:22px 40px;scroll-margin-top:70px;}
+.part-head{display:flex;align-items:center;gap:11px;margin-bottom:14px;}
+.part-icon{width:32px;height:32px;border-radius:9px;background:#eaf0fb;
+ display:flex;align-items:center;justify-content:center;font-size:15px;}
+.part-head h2{font-size:18px;font-weight:700;color:#0f1b2d;margin:0;}
+.summary{background:#eaf0fb;border-radius:12px;padding:14px 16px;margin-bottom:14px;}
+.summary-label{font-size:11px;font-weight:700;color:#3a6fd8;letter-spacing:.05em;
+ margin-bottom:5px;}
+.summary p{font-size:14px;line-height:1.65;color:#1e293b;margin:0;}
+.news-list{display:flex;flex-direction:column;gap:10px;}
+.news{display:block;background:#fff;border:1px solid #e6ebf2;border-radius:12px;
+ padding:15px 16px;color:inherit;}
+.news-meta{display:flex;gap:8px;align-items:center;margin-bottom:9px;}
+.tag{font-size:11px;font-weight:700;color:#3a6fd8;background:#eaf0fb;
+ padding:3px 9px;border-radius:6px;}
+.ticker{font-family:ui-monospace,monospace;font-size:11px;font-weight:700;
+ color:#fff;background:#0f1b2d;padding:3px 8px;border-radius:6px;}
+.src{margin-left:auto;font-size:11px;color:#94a3b8;}
+.news h3{font-size:15.5px;font-weight:600;color:#0f1b2d;line-height:1.45;
+ margin:0 0 6px;}
+.news p{font-size:13.5px;line-height:1.6;color:#475569;margin:0;}
+.outlook{margin-top:14px;}
+.outlook-label{font-size:12px;font-weight:700;color:#64748b;margin-bottom:8px;}
+.outlook-list{display:flex;flex-direction:column;gap:8px;}
+.outlook-item{display:flex;gap:10px;align-items:flex-start;background:#fff;
+ border:1px solid #e6ebf2;border-radius:10px;padding:11px 14px;}
+.outlook-item .arrow{color:#3a6fd8;font-weight:700;line-height:1.4;}
+.outlook-item span:last-child{font-size:13.5px;line-height:1.55;color:#334155;}
+.ft{padding:20px 40px 34px;font-size:11px;line-height:1.7;color:#94a3b8;}
+
+/* 지난 브리핑 캘린더 */
+.calwrap{padding:22px 40px 6px;}
+.cal{background:#fff;border:1px solid #e6ebf2;border-radius:14px;
+ padding:16px 14px;margin-bottom:14px;}
+.cal h3{margin:0 0 12px;font-size:15px;font-weight:700;color:#0f1b2d;}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;}
+.dow{text-align:center;font-size:11px;color:#94a3b8;padding:4px 0;}
+.dow.sun{color:#c0392b;}
+.day{aspect-ratio:1;border:0;background:transparent;border-radius:9px;font:inherit;
+ font-size:13px;color:#cbd5e1;display:flex;align-items:center;
+ justify-content:center;padding:0;}
+.day.has{background:#eaf0fb;color:#3a6fd8;font-weight:700;cursor:pointer;}
+.day.has:hover{background:#dbe6f8;}
+.day.on{background:#0f1b2d;color:#fff;}
+.det{background:#fff;border:1px solid #e6ebf2;border-radius:14px;padding:16px 18px;}
+.det .t{font-weight:700;margin-bottom:10px;font-size:15px;color:#0f1b2d;}
+.det a{display:inline-block;padding:10px 16px;margin:0 8px 8px 0;border-radius:9px;
+ background:#eaf0fb;color:#3a6fd8;font-weight:600;font-size:13px;}
+.det a:hover{opacity:1;background:#dbe6f8;}
+.det .none{color:#94a3b8;font-size:13px;}
+@media (max-width:600px){
+  .wrap{padding:0;}
+  .page{border-radius:0;border-left:0;border-right:0;}
+  .hd,.gauges,.navwrap,.part,.ft,.calwrap{padding-left:18px;padding-right:18px;}
+  .hd h1{font-size:22px;}
+  .nav a{font-size:12px;padding:8px 3px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="page">
+<header class="hd"><div class="hd-top"><span class="hd-kicker">2026.07.24 · 오전 브리핑</span><div class="hd-links"><a class="hd-archive" href="../index.html">🏠 홈</a><a class="hd-archive" href="index.html">지난 브리핑</a></div></div><h1>오전 뉴스 브리핑</h1><div class="hd-sub"><span class="dowb">금요일</span>최종 업데이트 08:34 KST</div></header><div class="gauges"><div class="gauge"><div class="gauge-label">CNN 기준</div><div class="gauge-row"><span class="gauge-num">40</span><span class="gauge-mood" style="background:#d98324;">Fear</span></div><div class="gauge-track"><div class="gauge-marker" style="left:40%;"></div></div><div class="gauge-scale"><span>공포</span><span>탐욕</span></div></div><div class="gauge"><div class="gauge-label">크립토 기준</div><div class="gauge-row"><span class="gauge-num">31</span><span class="gauge-mood" style="background:#d98324;">Fear</span></div><div class="gauge-track"><div class="gauge-marker" style="left:31%;"></div></div><div class="gauge-scale"><span>공포</span><span>탐욕</span></div></div></div><div class="navwrap"><nav class="nav"><button class="nav-t on" data-p="tp0">뉴스</button><button class="nav-t" data-p="tp1">주식</button><button class="nav-t" data-p="tp2">부동산</button></nav></div><div class="panel on" id="tp0"><section class="part" id="eco"><div class="part-head"><span class="part-icon">💹</span><h2>경제</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>오늘 한국은 환율 관찰대상국으로 지정되며 통화정책과 외환시장에 대한 우려가 커지고 있다. 동시에 미국에서는 주택담보대출 금리가 11개월 만에 최고치를 기록하고 있으며, 한국의 2분기 경제 성장률도 긍정적인 흐름을 보이고 있다.</p></div><div class="news-list"><div class="news"><div class="news-meta"><span class="tag">환율</span><span class="src">연합뉴스 · 07/24 08:06</span></div><h3>한국, 환율 관찰대상국으로 다시 지정</h3><p>미국 재무부는 한국을 환율 관찰대상국으로 지정하며, 한국의 경상수지 흑자가 2025년 GDP 대비 6.6%로 확대될 것으로 예측했다. 그러나 원화는 해외 투자가 늘어나면서 지속적인 절하 압력을 받을 것으로 보인다.</p></div><div class="news"><div class="news-meta"><span class="tag">금리</span><span class="src">연합뉴스 · 07/24 05:57</span></div><h3>미 주택담보대출 금리 11개월 만에 최고치</h3><p>미국의 30년 고정 주택담보대출 금리가 6.58%로 상승해 11개월 만에 최고치에 도달했다. 이란과의 긴장 증가로 국제 유가가 급등하며 인플레이션 우려가 커지고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">금리</span><span class="src">매일경제 · 07/23 17:50</span></div><h3>예금금리, 3%대 상품 확산</h3><p>하나은행과 농협은행이 각각 1년 만기 정기예금 금리를 3.2%와 3.25%로 인상해, 주요 은행의 예금금리가 연 3%대를 돌파하고 있다. 이는 한국은행 기준금리 인상 영향으로 분석된다.</p></div><div class="news"><div class="news-meta"><span class="tag">성장</span><span class="src">매일경제 · 07/23 17:55</span></div><h3>한국, 2분기 경제 성장률 0.6% 증가</h3><p>한국의 2분기 경제 성장률이 0.6%로 증가했으며, 실질 국내총소득(GDI)은 15.6% 급증했다. 반도체 수출 호조가 주효하고 있지만, 중동발 유가 상승이 여전히 변수로 남아 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">고용</span><span class="src">연합뉴스 · 07/23 15:49</span></div><h3>여수시, 고용위기지역 지정 신청</h3><p>여수시가 석유화학 산업의 불황에 따른 고용위기 지역 지정을 신청했다. 이는 지역 경제의 침체와 고용 불안정 문제를 해결하기 위한 조치로 인식되고 있다.</p></div></div><div class="outlook"><div class="outlook-label">흐름 · 전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>환율 관찰대상국 지정으로 인해 한국의 환율 정책과 외환시장의 변동성이 더욱 주목받을 것으로 예상된다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>미국의 주택담보대출 금리 상승이 주택시장에 미치는 영향을 주시해야 하며, 거래량 감소가 지속될 가능성이 있다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>예금금리의 상승은 한국은행의 금리 정책에 따라 더 많은 변화를 겪을 수 있으며, 금융 시장의 안정성에 대한 논의가 필요할 것이다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>2분기 경제 성장 호조에도 불구하고 중동 발 유가 급등이 향후 한국 경제에 어떤 영향을 미칠지 면밀히 관찰해야 한다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>여수시의 고용위기지역 지정을 통해 고용 안정성 확보를 위한 정부의 적극적인 대응이 필요해 보인다.</span></div></div></div></section><section class="part" id="cm"><div class="part-head"><span class="part-icon">🌐</span><h2>코인시장</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>오늘 비트코인 관련 민간 연합과 여러 해킹 사건들이 보도되어 시장의 주목을 받고 있다. 비트코인 보안 강화를 위한 &#x27;비트코인 시큐리티 컨소시엄&#x27; 출범이 장기 신뢰성 쪽으로 긍정적인 신호로 해석되는 반면, 잇따른 해킹 사건들은 보안 리스크를 다시 한번 부각시키고 있다.</p></div><div class="news-list"><div class="news"><div class="news-meta"><span class="tag">기타</span><span class="src">토큰포스트 · 07/24 08:30</span></div><h3>비트코인 양자 보안 연합 출범</h3><p>마이클 세일러의 스트레티지가 총 1500만달러를 지원하며 비트코인 네트워크의 양자 보안을 강화하기 위한 &#x27;비트코인 시큐리티 컨소시엄&#x27;을 출범했다. 이 연합체의 참여 기업으로는 블랙록, 코인베이스, 피델리티 등이 있으며, 장기적인 보안 체계 강화를 목표로 하고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">규제</span><span class="src">토큰포스트 · 07/24 08:15</span></div><h3>EU, 러시아를 겨냥한 제재 패키지 승인</h3><p>최근 24시간 동안 세 건의 해킹으로 3500만달러 이상이 유출되었으며, 베루스 브리지에서 약 750만달러가 도난당하는 등 크로스체인 인프라의 취약성이 드러났다. 조사에 따르면, 이번 해킹은 &#x27;크로스체인 입력 검증&#x27; 결함이 원인으로 지적되었다.</p></div><div class="news"><div class="news-meta"><span class="tag">거래소</span><span class="src">토큰포스트 · 07/24 06:44</span></div><h3>코인베이스, 싱가포르 인력 확대</h3><p>코인베이스는 2026년까지 싱가포르에서 인력을 150명에서 200명으로 늘리며 아시아에서의 사업 확장을 본격화할 방침이다. 최근 싱가포르 통화청으로부터 주요 결제기관 라이선스를 취득하여, 개인 및 기관 대상 서비스를 확대할 수 있는 기반을 마련했다.</p></div><div class="news"><div class="news-meta"><span class="tag">정책</span><span class="src">토큰포스트 · 07/24 05:22</span></div><h3>CLARITY Act 진행 지연 예상</h3><p>미국 &#x27;클래리티 법안&#x27;의 입법 일정이 지연될 가능성으로 인해 통과 전망에 불확실성이 커지고 있다. 존 튠 상원 원내대표는 법안 처리가 어려울 것이라고 언급하며, 법안의 주요 쟁점인 정부 고위 인사의 암호화폐 사업 참여 제한에 대한 이견이 증가하고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">기타</span><span class="src">토큰포스트 · 07/24 06:00</span></div><h3>비트멕스 거래소 종료 발표</h3><p>비트멕스는 오는 9월 23일 암호화폐 거래소 운영을 영구 종료한다고 발표했다. 초기 암호화폐 파생상품 시장을 주도한 플랫폼이 폐쇄되는 것은 업계 주도권의 변화와 규제 강화의 대표적 사례로 분석되고 있다.</p></div></div><div class="outlook"><div class="outlook-label">흐름 · 전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>비트코인 시큐리티 컨소시엄의 출범이 보안 및 신뢰성 강화의 긍정적인 방향으로 시장에 작용할 가능성이 크다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>브리지 해킹 사건은 보안 구조 점검의 필요성을 더욱 부각시키고 있으며, 크로스체인 인프라의 신뢰성 회복이 중요한 이슈로 다뤄질 것이다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>코인베이스의 싱가포르 사업 확장은 기관 투자 수요를 반영하며, 아시아 시장에서의 경쟁이 더욱 치열해질 전망이다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>클래리티 법안의 일정 지연은 암호화폐 규제 방향성에 영향을 미칠 수 있으며, 입법 과정에서의 이견으로 인해 향후 협상 동력이 약해질 우려가 있다.</span></div></div></div></section></div><div class="panel" id="tp1"><section class="part" id="os"><div class="part-head"><span class="part-icon">📈</span><h2>해외주식</h2></div><div class="news-list"><div class="news"><div class="news-meta"><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><span class="src">Quiver Quantitative · 07/24 08:10</span></div><h3>NVIDIA and KAIST Launch Joint AI Research Lab in Seoul to Advance Agentic AI for Korea - Quiver Quantitative</h3><p>NVIDIA와 KAIST가 서울에 공동 AI 연구소를 설립하여 한국의 에이전틱 AI 발전을 목표로 하고 있습니다. 이번 협력을 통해 두 기관은 인공지능 기술의 혁신을 추구할 계획입니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><span class="src">The Motley Fool · 07/24 08:04</span></div><h3>Better Buy: SpaceX or Nvidia? - The Motley Fool</h3><p>모티 리 풀의 기사에서는 스페이스X와 엔비디아 중 어떤 기업이 더 투자할 가치가 있는지 비교하고 있습니다. 두 회사의 성장 가능성과 시장에서의 위치를 분석하며, 각각의 장단점을 고려해 투자 결정을 내릴 때 도움이 되는 정보를 제공합니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><span class="src">Yahoo Finance · 07/24 08:00</span></div><h3>NVIDIA and KAIST Launch Joint AI Research Lab to Accelerate AI Innovation in Korea</h3><p>NVIDIA와 KAIST가 서울의 KAIST 김재철 AI 대학원에 공동 AI 연구실을 설립하여 한국의 에이전틱 AI 발전을 촉진하기로 했습니다. 이번 협력은 세계적 수준의 AI 인프라, 연구 자금, 인턴십 및 공동 임용을 포함합니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><span class="src">Yahoo Finance · 07/24 08:18</span></div><h3>Dow Jones Futures: Market Sells Off On Oil Prices, Google, Tesla; Intel Rises Late, SpaceX Starship Launch Delayed</h3><p>다우존스 선물이오일 가격 상승으로 인해 시장이 하락세를 보였으며, 구글과 테슬라의 주가가 떨어졌다. 인텔은 늦게 상승했지만, 스페이스엑스의 스타십 발사는 연기되었다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><span class="src">Yahoo Finance · 07/24 08:04</span></div><h3>Wall St falls as tech earnings spark AI spending worries</h3><p>월스트리트의 주식 시장이 큰 폭으로 하락하며, 다우지수가 약 1%, S&amp;P 500이 1.2%, 나스닥이 2% 이상 떨어졌다. 알파벳과 테슬라의 실적 발표는 인공지능(AI) 관련 지출에 대한 우려를 부각시켰고, 알파벳 주가는 7% 하락했으며, 테슬라 주가는 14.5% 급락했다. 반면 인텔의 주가는 AI 데이터 센터 수요 증가에 힘입어 10% 상승했다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><span class="src">The Guardian · 07/24 07:39</span></div><h3>Tesla stock suffers double-digit drop on carmaker’s worst day in years - The Guardian</h3><p>테슬라 주식이 최근 몇 년 간의 최악의 날을 맞아 두 자릿수 하락폭을 기록했습니다. 이로 인해 투자자들은 우려를 표명하고 있으며, 자동차 제조업체의 성장 전망에 불안감이 커지고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><span class="src">GuruFocus · 07/24 06:38</span></div><h3>HIMS Maintained by Citigroup -- Price Target Raised to $35.00 - GuruFocus</h3><p>HIMS의 주가는 Citigroup에 의해 유지되며, 목표 주가가 35.00달러로 인상되었습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><span class="src">Investing.com Canada · 07/24 06:17</span></div><h3>Hims and Hers stock gains on peptide compounding vote outlook By Investing.com - Investing.com Canada</h3><p>Hims and Hers의 주가는 펩타이드 복합화 투표 전망에 따라 상승했습니다. 이 회사의 주가는 긍정적인 전망 덕분에 투자자들 사이에서 주목받고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><span class="src">Yahoo Finance · 07/24 05:31</span></div><h3>What the FDA’s Peptide Decision Means for Hims &amp; Hers’ Long-Term Telehealth Strategy</h3><p>FDA의 펩타이드 결정이 Hims &amp; Hers의 장기 원격 의료 전략에 미치는 영향은 크며, 해당 회사는 주로 브랜드 GLP-1 및 기타 제품에서 수익을 얻고 있습니다. 대부분의 애널리스트들은 이 주식이 이미 완전히 평가되었다고 보고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><span class="src">MarketBeat · 07/24 06:43</span></div><h3>Redwire (NYSE:RDW) Shares Up 3.2% - What&#x27;s Next? - MarketBeat</h3><p>Redwire의 주가가 3.2% 상승했습니다. 이 주가 상승의 배경과 향후 전망에 대한 분석이 필요합니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><span class="src">Stock Traders Daily · 07/23 20:54</span></div><h3>(RDW) and the Role of Price-Sensitive Allocations - Stock Traders Daily</h3><p>(RDW)와 가격 민감 분배의 역할에 대한 내용으로, 주식 거래에서 가격 변화에 따라 자산 배분이 어떻게 달라지는지를 분석하고 있습니다. 특히 투자자들은 가격의 변동성이 크면 민감하게 반응하여 포트폴리오 조정을 고려하게 된다는 점을 강조하고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><span class="src">Stocktwits · 07/23 17:44</span></div><h3>ASTS, RKLB, LUNR, RDW Stocks Slide Overnight: Analyst Questions Whether Rivals Can Compete If SpaceX Controls Access To Orbit - Stocktwits</h3><p>ASTS, RKLB, LUNR, RDW 주가가 하락하면서, 분석가들은 SpaceX가 궤도 접근을 장악할 경우 경쟁사들이 경쟁할 수 있을지에 대해 의문을 제기하고 있습니다.</p></div></div></section><section class="part" id="coin"><div class="part-head"><span class="part-icon">🪙</span><h2>코인</h2></div><div class="news-list"><div class="news"><div class="news-meta"><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC-USD</span><span class="src">WCVB · 07/24 07:55</span></div><h3>Massachusetts Senate passes amendment to ban Bitcoin ATMs - WCVB</h3><p>매사추세츠 상원은 비트코인 ATM을 금지하는 개정을 통과시켰다. 이 새로운 법안은 디지털 통화 거래의 규제를 강화하기 위한 조치로, 주 내 비트코인 자동 입출금기를 없애는 내용이다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC-USD</span><span class="src">The Motley Fool · 07/24 07:28</span></div><h3>Crypto Market Today, July 23: Bitcoin Slides as Odds of Passing Clarity Act Fall - The Motley Fool</h3><p>7월 23일 암호화폐 시장에서 비트코인이 하락하고 있으며, 이는 &#x27;클리어리티 법안&#x27; 통과 가능성이 낮아지고 있는 데 기인하고 있습니다. 시장의 불확실성이 투자자 심리에 부정적인 영향을 미치고 있는 상황입니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC-USD</span><span class="src">Crypto News · 07/24 07:09</span></div><h3>Bitcoin slips below $65K as Trump unveils new global tariffs - Crypto News</h3><p>비트코인이 65,000달러 아래로 하락했습니다. 이는 도널드 트럼프가 새로운 글로벌 관세를 발표하면서 시장에 부정적인 영향을 미쳤기 때문입니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#627EEA;color:#fff;">ETH-USD</span><span class="src">FXStreet · 07/24 06:55</span></div><h3>Ethereum Price Forecast: Derivatives interest in ETH improves, but signs of caution remain - FXStreet</h3><p>이더리움의 가격 전망에 따르면, 이더리움(ETH)에 대한 파생상품의 관심이 증가하고 있지만 여전히 주의해야 할 신호가 감지되고 있습니다. 시장의 긍정적인 흐름에도 불구하고 투자자들은 신중해야 할 필요가 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#627EEA;color:#fff;">ETH-USD</span><span class="src">Pluang · 07/24 05:41</span></div><h3>Ethereum holds above $1,900 as whales buy 30,00... - Pluang</h3><p>이더리움 가격이 1,900달러 이상을 유지하고 있으며, 대규모 투자자(고래)가 3만 개의 이더를 구매하고 있다는 소식이 전해졌습니다. 이러한 움직임은 이더리움 시장에 긍정적인 영향을 미치고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#627EEA;color:#fff;">ETH-USD</span><span class="src">AMBCrypto · 07/24 05:00</span></div><h3>Ethereum whales add $58M in ETH: Can the altcoin cross $2K? - AMBCrypto</h3><p>이더리움 고래들이 최근 5천8백만 달러 상당의 ETH를 추가 매입했습니다. 이로 인해 이 알트코인이 2,000달러를 넘길 수 있을지에 대한 관심이 높아지고 있습니다. 전문가들은 시장 흐름을 주의 깊게 지켜보고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#9945FF;color:#fff;">SOL-USD</span><span class="src">Cryptonews.net · 07/24 05:50</span></div><h3>Solana Memecoin Tied to Raccoon Jimothy Surges 60% After White House Social Media Mention - Cryptonews.net</h3><p>솔라나 기반의 밈코인인 &#x27;지모시&#x27;가 백악관의 소셜 미디어 언급 이후 60% 상승했다. 이 코인은 라쿤 캐릭터인 지모시와 관련되어 있다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#9945FF;color:#fff;">SOL-USD</span><span class="src">Pluang · 07/24 04:27</span></div><h3>Clarity Act aims to classify Bitcoin and Ether as commodities, impacting Ethereum and Solana regulation. - Pluang</h3><p>클라리티 법안은 비트코인과 이더리움을 상품으로 분류하는 것을 목표로 하고 있으며, 이는 이더리움과 솔라나 규제에 영향을 미칠 것으로 보입니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#9945FF;color:#fff;">SOL-USD</span><span class="src">Crypto Briefing · 07/24 04:19</span></div><h3>Mubadala Capital launches $75M tokenized fund on Solana via Kaio - Crypto Briefing</h3><p>무바다라 캐피탈이 카이오를 통해 솔라나 기반의 7500만 달러 규모의 토큰화된 펀드를 출시했습니다. 이번 펀드는 블록체인 기술을 활용하여 디지털 자산에 대한 투자를 지원할 예정입니다.</p></div></div></section></div><div class="panel" id="tp2"><section class="part" id="re"><div class="part-head"><span class="part-icon">🏘️</span><h2>부동산</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>오늘 부동산 시장에서는 서울 강남구의 재건축 인허가 기간 단축과 함께 76주 연속 아파트 가격 상승세가 이어지고 있다. 중저가 아파트의 거래 비중이 증가하면서 서울 외곽 지역의 상승세가 뚜렷해지고 있다.</p></div><div class="news-list"><div class="news"><div class="news-meta"><span class="tag">재건축</span><span class="src">연합뉴스 · 07/24 07:14</span></div><h3>강남구, 일원한솔 재건축추진위 10일만에 승인</h3><p>서울 강남구가 재건축 인허가 기간을 열흘 만에 승인하며 정비사업 속도를 높이고 있다. 일원한솔아파트와 대치선경아파트가 빠르게 후속 절차를 밟고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">매매</span><span class="src">매일경제 · 07/23 17:37</span></div><h3>&#x27;주담대 3억&#x27; 이후 서울 아파트 거래 62%가 9억 이하</h3><p>서울 아파트 매매가격지수가 76주 연속 상승세를 보인 가운데, 9억원 이하 거래 비중이 62%에 달하는 등 중저가 아파트 거래가 증가하고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">가격</span><span class="src">매일경제 · 07/23 17:31</span></div><h3>서울 집값 76주 연속 상승…전국 땅값도 꿈틀</h3><p>서울 아파트 가격이 76주 연속 상승하며, 성북구는 9.9%의 높은 누적 상승률을 기록했다. 강남3구는 서울 평균 상승률에 미치지 못하고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">정책</span><span class="src">연합뉴스 · 07/23 14:46</span></div><h3>이대통령, 전세대출 규제 강화해야</h3><p>이재명 대통령은 전세대출 규제를 강화하고 청년과 서민만을 핀셋 지원하겠다고 밝혔다. 이는 집값 폭등 방지를 위한 조치로 해석된다.</p></div><div class="news"><div class="news-meta"><span class="tag">정책</span><span class="src">매일경제 · 07/23 17:31</span></div><h3>이대통령, 3기 신도시 사업 기간 단축 검토</h3><p>이재명 대통령은 3기 신도시 사업 기간을 절반 이하로 단축하겠다는 방안을 검토 중이며, 행정 절차 단축을 통해 공급 속도를 높일 계획을 밝혔지만 전문가들은 우려를 나타내고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">공급</span><span class="src">매일경제 · 07/23 17:37</span></div><h3>전국 아파트 평균 분양가 3.3㎡ 2100만원 돌파</h3><p>전국 아파트 평균 분양가가 3.3㎡당 2100만원을 돌파하며, 인천은 평균 22.1% 오르는 등 상승세를 보이고 있으나, 일부 지방은 분양가가 하락했다.</p></div></div><div class="outlook"><div class="outlook-label">흐름 · 전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>서울 강남구의 재건축 사업 속도 개선은 향후 주택 공급 증가에 긍정적인 영향을 미칠 것으로 예상된다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>중저가 아파트 거래 증가와 외곽 지역의 상승세는 당분간 지속될 가능성이 있으며, 이에 따라 시장의 양극화가 심화될 수 있다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>전세대출 규제 강화와 3기 신도시 기간 단축이 시행될 경우, 주택 시장에 미칠 영향은 주의 깊게 지켜봐야 할 관전 포인트이다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>앞으로의 분양가와 관련하여, 국제 정세에 따른 추가 상승 요인이 남아있어 주택 수요자들의 신중한 접근이 필요할 것으로 보인다.</span></div></div></div></section></div>
+<footer class="ft">기사 요약은 각 언론사 보도를 바탕으로 자동 생성되었으며, 저작권은 해당 언론사에 있습니다. 정보 제공 목적이며 투자 판단의 책임은 본인에게 있습니다.</footer>
+</div></div><script>
+document.querySelectorAll('.nav-t').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.querySelectorAll('.nav-t').forEach(function(x){x.classList.remove('on');});
+    document.querySelectorAll('.panel').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    document.getElementById(b.getAttribute('data-p')).classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
