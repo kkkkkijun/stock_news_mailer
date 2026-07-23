@@ -20,6 +20,7 @@ import pytz
 KST = pytz.timezone("Asia/Seoul")
 HERE = os.path.dirname(os.path.abspath(__file__))
 DOCS_DIR = os.path.join(HERE, "docs")
+ARCHIVE_DIR = os.path.join(DOCS_DIR, "archive")
 
 _SECTION_RE = re.compile(r"^(📈|🪙|📊|💹|🌐|🏘️)\s*(.+)$")
 _LABEL_RE = re.compile(r"^\[(.+)\]$")
@@ -45,8 +46,8 @@ header{padding:26px 2px 14px}
 h1{margin:0;font-size:1.32rem;font-weight:700;letter-spacing:-.02em}
 .upd{color:#8b9099;font-size:.8rem;margin-top:5px}
 
-.bar{position:sticky;top:0;z-index:10;background:#f5f6f8;
- padding:8px 0 0;margin:0 -14px;border-bottom:1px solid #e3e5e9}
+.bar{background:#f5f6f8;padding:8px 0 0;margin:0 -14px;
+ border-bottom:1px solid #e3e5e9}
 .bar .inner{max-width:780px;margin:0 auto;padding:0 14px}
 .fg{display:flex;gap:8px;margin-bottom:8px}
 .chip{flex:1;background:#fff;border:1px solid #e3e5e9;border-radius:10px;
@@ -55,7 +56,12 @@ h1{margin:0;font-size:1.32rem;font-weight:700;letter-spacing:-.02em}
 .chip .v{font-size:1.06rem;font-weight:700}
 .chip .s{font-size:.74rem;color:#8b9099;overflow:hidden;text-overflow:ellipsis;
  white-space:nowrap}
-.fear .v{color:#d2453c}.greed .v{color:#1a9b52}.neu .v{color:#6b7280}
+/* 공포탐욕지수 5단계 색상 */
+.ef  .v{color:#c0392b}  /* 극단적 공포 */
+.fe  .v{color:#e07b39}  /* 공포 */
+.neu .v{color:#7a8089}  /* 중립 */
+.gr  .v{color:#3f9c56}  /* 탐욕 */
+.eg  .v{color:#1e7a3c}  /* 극단적 탐욕 */
 
 .tabs{display:flex;gap:4px}
 .tab{flex:1;appearance:none;border:0;background:transparent;cursor:pointer;
@@ -82,6 +88,18 @@ li{margin:4px 0}
 p{margin:6px 0 12px}
 footer{color:#9aa0a8;font-size:.76rem;margin-top:24px;text-align:center;
  line-height:1.7}
+.nav{margin-top:9px}
+.nav a{color:#1668dc;text-decoration:none;font-size:.82rem;font-weight:600}
+.nav a:hover{text-decoration:underline}
+.arc{background:#fff;border:1px solid #e3e5e9;border-radius:12px;margin:14px 0;
+ overflow:hidden}
+.arc a{display:flex;justify-content:space-between;align-items:center;gap:10px;
+ padding:13px 16px;border-top:1px solid #f0f1f3;color:#1c1e21;text-decoration:none}
+.arc a:first-child{border-top:0}
+.arc a:hover{background:#f7f8fa}
+.arc .d{font-weight:600}
+.arc .w{font-size:.78rem;color:#8b9099}
+.empty{color:#8b9099;padding:18px 16px}
 """
 
 
@@ -115,13 +133,23 @@ def _fear_greed(sections):
     return []
 
 
-def _fg_class(grade):
-    g = (grade or "").lower()
-    if "greed" in g or "탐욕" in g:
-        return "greed"
-    if "fear" in g or "공포" in g:
-        return "fear"
-    return "neu"
+def _fg_class(value):
+    """공포탐욕지수 5단계 (CNN 기준 구간)로 색상 클래스를 정한다.
+    0-25 극단적 공포 / 26-45 공포 / 46-55 중립 / 56-75 탐욕 / 76-100 극단적 탐욕
+    """
+    try:
+        v = int(value)
+    except (TypeError, ValueError):
+        return "neu"
+    if v <= 25:
+        return "ef"
+    if v <= 45:
+        return "fe"
+    if v <= 55:
+        return "neu"
+    if v <= 75:
+        return "gr"
+    return "eg"
 
 
 def _render_lines(lines):
@@ -192,7 +220,64 @@ def _title(now):
     return f"{now.year % 100}년 {now.month}월 {now.day}일 {ampm} 뉴스 브리핑"
 
 
-def render_html(body, now=None):
+def _slug(now):
+    """아카이브 파일명 (예: 2026-07-23-am)."""
+    return now.strftime("%Y-%m-%d") + ("-am" if now.hour < 12 else "-pm")
+
+
+def _label_from_slug(slug):
+    """2026-07-23-am → ('26년 7월 23일', '오전') / 형식이 아니면 None."""
+    m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})-(am|pm)", slug)
+    if not m:
+        return None
+    y, mo, d, ap = m.groups()
+    return (f"{int(y) % 100}년 {int(mo)}월 {int(d)}일",
+            "오전" if ap == "am" else "오후")
+
+
+def render_archive_index():
+    """docs/archive 를 스캔해 날짜별 목록 페이지를 만든다(매 실행 재생성)."""
+    rows = []
+    try:
+        names = sorted(os.listdir(ARCHIVE_DIR), reverse=True)
+    except OSError:
+        names = []
+    for fn in names:
+        if not fn.endswith(".html") or fn == "index.html":
+            continue
+        lab = _label_from_slug(fn[:-5])
+        if not lab:
+            continue
+        rows.append(f'<a href="{_html.escape(fn)}">'
+                    f'<span class="d">{_html.escape(lab[0])}</span>'
+                    f'<span class="w">{_html.escape(lab[1])}</span></a>')
+    inner = ("".join(rows) if rows
+             else '<div class="empty">저장된 브리핑이 없습니다.</div>')
+    return f"""<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>지난 브리핑</title>
+<style>{CSS}</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>지난 브리핑</h1>
+  <div class="upd">총 {len(rows)}회분</div>
+  <div class="nav"><a href="../index.html">← 최신 브리핑</a></div>
+</header>
+<div class="arc">{inner}</div>
+</div>
+</body>
+</html>
+"""
+
+
+def render_html(body, now=None, nav=""):
     now = now or datetime.now(KST)
     sections = _split_sections(body)
     fg = _fear_greed(sections)
@@ -200,7 +285,7 @@ def render_html(body, now=None):
     chips = []
     for name, val, grade in fg[:2]:
         chips.append(
-            f'<div class="chip {_fg_class(grade)}">'
+            f'<div class="chip {_fg_class(val)}">'
             f'<span class="k">{_html.escape(name)}</span>'
             f'<span class="v">{_html.escape(val)}</span>'
             f'<span class="s">{_html.escape(grade)}</span></div>')
@@ -238,6 +323,7 @@ def render_html(body, now=None):
 <header>
   <h1>{_html.escape(_title(now))}</h1>
   <div class="upd">최종 업데이트 · {_html.escape(stamp)}</div>
+  {nav}
 </header>
 <div class="bar"><div class="inner">
 {fg_html}
@@ -264,10 +350,33 @@ document.querySelectorAll('.tab').forEach(function(b){{
 """
 
 
-def publish(body, now=None):
-    """docs/index.html 생성. 생성된 경로를 반환."""
-    os.makedirs(DOCS_DIR, exist_ok=True)
-    path = os.path.join(DOCS_DIR, "index.html")
+def _write(path, text):
     with open(path, "w", encoding="utf-8") as f:
-        f.write(render_html(body, now=now))
+        f.write(text)
+
+
+def publish(body, now=None):
+    """최신 페이지 + 회차 스냅샷 + 지난 브리핑 목록을 생성. 최신 경로 반환.
+
+    docs/index.html                  최신 브리핑
+    docs/archive/YYYY-MM-DD-am.html  회차별 스냅샷
+    docs/archive/index.html          날짜 목록(매 실행 재생성)
+    """
+    now = now or datetime.now(KST)
+    os.makedirs(ARCHIVE_DIR, exist_ok=True)
+
+    # 1) 회차 스냅샷 (목록/최신으로 돌아가는 링크 포함)
+    _write(os.path.join(ARCHIVE_DIR, _slug(now) + ".html"),
+           render_html(body, now=now,
+                       nav='<div class="nav"><a href="../index.html">← 최신 브리핑</a>'
+                           ' &nbsp;·&nbsp; <a href="index.html">지난 브리핑</a></div>'))
+
+    # 2) 최신 페이지
+    path = os.path.join(DOCS_DIR, "index.html")
+    _write(path, render_html(body, now=now,
+                             nav='<div class="nav">'
+                                 '<a href="archive/index.html">지난 브리핑 보기 →</a></div>'))
+
+    # 3) 날짜 목록 (폴더를 스캔하므로 항상 최신 상태)
+    _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
     return path
