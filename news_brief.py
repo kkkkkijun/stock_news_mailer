@@ -43,6 +43,13 @@ BLOCKED_PUBLISHERS = {
     "daum.net", "naver.com",
 }
 
+# [2단계] 선정 기사 원문 본문 수집 설정
+ARTICLE_BODY_CHARS = int(os.getenv("ARTICLE_BODY_CHARS", "1500"))
+ARTICLE_FETCH_TIMEOUT = int(os.getenv("ARTICLE_FETCH_TIMEOUT", "12"))
+USE_ARTICLE_BODIES = os.getenv("USE_ARTICLE_BODIES", "1") != "0"
+_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+       "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
+
 
 # =========================================================
 # 공통 유틸
@@ -135,8 +142,9 @@ def fetch_google_pool(queries, pool_per_query=30):
             if is_blocked_publisher(pub):
                 continue
             # 구글 뉴스 RSS 는 리드 문단을 주지 않는다(제목·매체명뿐) → lead 비움
+            # 링크도 JS 리다이렉트라 본문 수집 불가 → link 비움
             arts.append({"title": title, "publisher": pub,
-                         "ts": entry_ts(e), "lead": ""})
+                         "ts": entry_ts(e), "lead": "", "link": ""})
     return arts
 
 
@@ -159,7 +167,9 @@ def fetch_publisher_pool(feeds, keywords, max_age_days=2, lead_chars=220):
             if ts and (now - ts) > max_age_days * 86400:
                 continue
             out.append({"title": title, "publisher": name, "ts": ts,
-                        "lead": lead[:lead_chars]})
+                        "lead": lead[:lead_chars],
+                        # 2단계에서 원문 본문을 가져오기 위해 링크 보관
+                        "link": e.get("link", "")})
     return out
 
 
@@ -271,10 +281,98 @@ def analyze(pool, client, *, role, theme_options, top_n,
             "summary": (p.get("summary") or "").strip(),
             "publisher": src.get("publisher", ""),
             "when": when_str(src.get("ts", 0)),
+            "link": src.get("link", ""),   # 2단계 본문 수집용
         })
     picks = dedupe_picks(picks)[:top_n]
     outlook = [o.strip() for o in data.get("outlook", []) if o and o.strip()]
     return (data.get("today") or "").strip(), picks, outlook
+
+
+def fetch_article_body(url, max_chars=None):
+    """기사 원문에서 본문만 추출(실패 시 빈 문자열).
+
+    구글 뉴스 링크는 JS 리다이렉트라 본문을 얻을 수 없어 건너뛴다.
+    언론사 RSS 로 들어온 기사만 원문 URL 을 가지고 있다.
+    """
+    max_chars = max_chars or ARTICLE_BODY_CHARS
+    if not url or "news.google.com" in url:
+        return ""
+    try:
+        import requests
+        import trafilatura
+    except Exception:
+        return ""          # 의존성 없으면 2단계 자체를 건너뜀
+    try:
+        r = requests.get(url, headers={"User-Agent": _UA},
+                         timeout=ARTICLE_FETCH_TIMEOUT)
+        if r.status_code != 200:
+            return ""
+        txt = trafilatura.extract(r.text) or ""
+        return re.sub(r"\n{2,}", "\n", txt).strip()[:max_chars]
+    except Exception:
+        return ""
+
+
+def refine_with_bodies(picks, client, *, role, scope="",
+                       today_hint="오늘 상황 요약 2~3문장(무슨 일/전반 분위기)"):
+    """[2단계] 선정된 기사의 '원문 본문'을 근거로 today/요약/전망을 다시 작성.
+
+    본문을 하나도 확보하지 못하면 None 을 돌려 1단계 결과를 그대로 쓰게 한다.
+    """
+    bodies = 0
+    for p in picks:
+        p["_body"] = fetch_article_body(p.get("link", ""))
+        if p["_body"]:
+            bodies += 1
+    if not bodies:
+        return None
+
+    # 본문을 확보한 항목만 재작성 대상으로 넘긴다.
+    # (본문 없는 항목까지 넘기면 모델이 "정보 제공 불가" 같은 문구로 덮어써 버린다)
+    rows = []
+    for i, p in enumerate(picks):
+        if not p["_body"]:
+            continue
+        rows.append(f"[{i}] {p['headline']} ({p['publisher']})")
+        rows.append(p["_body"])
+    listing = "\n\n".join(rows)
+
+    prompt = (
+        f"너는 {role}다. 아래는 오늘 선정된 주요 기사와 그 '본문'이다. "
+        "본문에 실제로 있는 사실만 사용해 요약과 전망을 다시 작성하라. "
+        f"{scope}관점으로 작성하고, 반드시 아래 JSON 형식으로만 출력:\n"
+        f'{{"today":"{today_hint}",'
+        '"items":[{"i":정수,"summary":"1~2문장 요약"}],'
+        '"outlook":["단기 흐름·관전 포인트 문장","..."]}\n'
+        "- summary 는 본문의 구체적 수치·주체·시점을 살려 1~2문장으로 작성.\n"
+        "- i 는 위 대괄호 번호를 그대로 사용하고, 제시된 기사마다 하나씩 작성.\n"
+        "- outlook 은 3~4개, 단정적 예측·투자권유가 아니라 '관전 포인트/시사점'으로 서술.\n"
+        "- 영어 기사가 섞여 있어도 모든 출력은 한국어로 작성.\n\n"
+        f"[기사]\n{listing}"
+    )
+    resp = client.chat.completions.create(
+        model=SUMMARY_MODEL,
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=1400,
+        response_format={"type": "json_object"},
+    )
+    data = json.loads(resp.choices[0].message.content)
+
+    for it in data.get("items", []):
+        try:
+            i = int(it["i"])
+            s = (it.get("summary") or "").strip()
+        except Exception:
+            continue
+        # 본문을 확보한 항목만 덮어쓴다(나머지는 1단계 요약 유지)
+        if 0 <= i < len(picks) and s and picks[i].get("_body"):
+            picks[i]["summary"] = s
+    for p in picks:
+        p.pop("_body", None)
+
+    today = (data.get("today") or "").strip()
+    outlook = [o.strip() for o in data.get("outlook", []) if o and o.strip()]
+    return today, picks, outlook
 
 
 def _fallback_headlines(pool, header, top_n, note=""):
@@ -342,4 +440,16 @@ def build_briefing(*, header, queries, role, theme_options,
     except Exception as e:  # noqa
         return _fallback_headlines(pool, header, top_n,
                                    note=f"(요약 생성 실패: {e})")
+
+    # [2단계] 선정 기사의 원문 본문을 근거로 요약·전망 보강.
+    # 본문 수집/재작성이 실패해도 1단계 결과를 그대로 사용한다.
+    if USE_ARTICLE_BODIES:
+        try:
+            refined = refine_with_bodies(picks, client, role=role, scope=scope,
+                                         today_hint=today_hint)
+            if refined:
+                today, picks, outlook = refined
+        except Exception:  # noqa
+            pass
+
     return render_section(header, today, picks, outlook, today_label)
