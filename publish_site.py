@@ -23,6 +23,8 @@ _SECTION_RE = re.compile(r"^(📈|🪙|📊|💹|🌐|🏘️)\s*(.+)$")
 _LABEL_RE = re.compile(r"^\[(.+)\]$")
 # "1. (테마) 제목" 형태의 뉴스 항목
 _ITEM_RE = re.compile(r"^(\d+)\.\s*(?:\((.+?)\)\s*)?(.+)$")
+# "📰 [NVDA] 제목" 형태의 티커 뉴스 항목
+_TICKER_RE = re.compile(r"^📰\s*\[(.+?)\]\s*(.+)$")
 
 CSS = """
 :root{--bg:#f6f7f9;--card:#fff;--tx:#1f2328;--sub:#6b7280;--line:#e5e7eb;--ac:#2563eb}
@@ -117,6 +119,15 @@ def _render_body(body):
             out.append(f"<li>{_html.escape(s[1:].strip())}</li>")
             continue
         close_list()
+
+        m = _TICKER_RE.match(s)     # 📰 [NVDA] 제목  (해외주식·코인 PART)
+        if m:
+            close_item()
+            out.append('<div class="item"><div class="t">'
+                       f'<span class="tag">{_html.escape(m.group(1))}</span>'
+                       f'{_html.escape(m.group(2))}</div>')
+            open_item = True
+            continue
 
         m = _ITEM_RE.match(s)
         if m:
