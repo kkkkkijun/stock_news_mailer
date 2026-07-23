@@ -58,17 +58,33 @@ li{margin:4px 0}
 p{margin:6px 0 12px}
 footer{color:#9aa0a8;font-size:.76rem;margin-top:24px;text-align:center;
  line-height:1.7}
-.nav{margin-top:9px}
-.nav a{color:#1668dc;text-decoration:none;font-size:.82rem;font-weight:600}
-.nav a:hover{text-decoration:underline}
-.arc{background:#fff;border:1px solid #e3e5e9;border-radius:12px;margin:14px 0;
- overflow:hidden}
-.arc a{display:flex;justify-content:space-between;align-items:center;gap:10px;
- padding:13px 16px;border-top:1px solid #f0f1f3;color:#1c1e21;text-decoration:none}
-.arc a:first-child{border-top:0}
-.arc a:hover{background:#f7f8fa}
-.arc .d{font-weight:600}
-.arc .w{font-size:.78rem;color:#8b9099}
+.nav{margin-top:10px}
+.nav a{display:inline-block;padding:7px 13px;margin-right:6px;background:#fff;
+ border:1px solid #e3e5e9;border-radius:8px;color:#1c1e21;text-decoration:none;
+ font-size:.82rem;font-weight:600}
+.nav a:hover{background:#f0f1f3}
+
+/* 지난 브리핑 캘린더 */
+.cal{background:#fff;border:1px solid #e3e5e9;border-radius:12px;
+ padding:14px 12px;margin:14px 0}
+.cal h3{margin:0 0 10px;font-size:.96rem;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.dow{text-align:center;font-size:.72rem;color:#9aa0a8;padding:3px 0}
+.dow.sun{color:#d2453c}
+.day{aspect-ratio:1;border:0;background:transparent;border-radius:8px;font:inherit;
+ font-size:.86rem;color:#c8ccd2;display:flex;align-items:center;
+ justify-content:center;padding:0}
+.day.has{background:#eef4ff;color:#1668dc;font-weight:700;cursor:pointer}
+.day.has:hover{background:#dbe8ff}
+.day.on{background:#1668dc;color:#fff}
+.det{background:#fff;border:1px solid #e3e5e9;border-radius:12px;
+ padding:14px 16px;margin:14px 0}
+.det .t{font-weight:700;margin-bottom:9px;font-size:.94rem}
+.det a{display:inline-block;padding:9px 15px;margin:0 7px 7px 0;border-radius:8px;
+ background:#f0f4fb;color:#1668dc;text-decoration:none;font-weight:600;
+ font-size:.86rem}
+.det a:hover{background:#dbe8ff}
+.det .none{color:#9aa0a8;font-size:.85rem}
 .empty{color:#8b9099;padding:18px 16px}
 </style>
 </head>
@@ -77,7 +93,7 @@ footer{color:#9aa0a8;font-size:.76rem;margin-top:24px;text-align:center;
 <header>
   <h1>26년 7월 23일 오후 뉴스 브리핑</h1>
   <div class="upd">최종 업데이트 · 2026-07-23 14:50 KST</div>
-  <div class="nav"><a href="archive/index.html">지난 브리핑 보기 →</a></div>
+  <div class="nav"><a href="archive/index.html">📅 지난 브리핑</a></div>
 </header>
 <div class="bar"><div class="inner">
 <div class="fg"><div class="chip fe"><span class="k">CNN 기준</span><span class="v">43</span><span class="s">Fear</span></div><div class="chip fe"><span class="k">크립토 기준</span><span class="v">31</span><span class="s">Fear</span></div></div>
