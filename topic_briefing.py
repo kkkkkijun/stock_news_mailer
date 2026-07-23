@@ -235,8 +235,10 @@ def _analyze(pool, client, topic_desc, theme_hint, top_n):
         '"picks":[{"index":정수,"theme":"분류","headline":"간결한 한국어 제목",'
         '"summary":"1~2문장 요약"}],'
         '"outlook":["단기 흐름·관전 포인트 문장","..."]}\n'
-        f"- theme 은 다음 중 하나: {theme_hint}\n"
-        f"- picks 는 중요한 순으로 최대 {top_n}건, 단순 사건·사고·광고성·연예성 기사는 제외.\n"
+        f"- theme 은 다음 중 정확히 하나만 고르라(여러 개 나열·구분자 표기 금지): "
+        f"{theme_hint.replace('|', ', ')}\n"
+        f"- picks 는 중요한 순으로 {top_n + 3}건까지 제시하라(중복 제거 후 상위 "
+        f"{top_n}건만 사용하므로 여유분 포함). 단순 사건·사고·광고성·연예성 기사는 제외.\n"
         "- **같은 사건을 다룬 기사는 반드시 1건만 선택**하라. 원본/종합/타사 재보도 등 "
         "내용이 사실상 동일하면 근거가 가장 충실한 1건만 남기고, 남는 자리는 "
         "서로 다른 사건·주제의 뉴스로 채워라. picks 끼리 주제가 겹치지 않게 하라.\n"
@@ -253,13 +255,14 @@ def _analyze(pool, client, topic_desc, theme_hint, top_n):
     )
     data = json.loads(resp.choices[0].message.content)
     picks = []
-    for p in data.get("picks", [])[:top_n]:
+    for p in data.get("picks", [])[:top_n + 3]:
         try:
             src = candidates[int(p["index"])]
         except Exception:
             src = {"publisher": "", "ts": 0}
         picks.append({
-            "theme": p.get("theme", ""),
+            # 모델이 "금리|정책" 처럼 여러 개를 넣는 경우가 있어 첫 항목만 사용
+            "theme": re.split(r"[|,/·]", (p.get("theme") or ""))[0].strip(),
             "headline": (p.get("headline") or "").strip(),
             "summary": (p.get("summary") or "").strip(),
             "publisher": src.get("publisher", ""),

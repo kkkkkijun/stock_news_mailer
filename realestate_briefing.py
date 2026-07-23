@@ -219,10 +219,13 @@ def _analyze(pool, client):
         "이 목록의 정보만 근거로(후보에 없는 수치·사실을 지어내지 말 것) 전국·수도권 종합 "
         "관점의 브리핑을 작성해라. 반드시 아래 JSON 형식으로만 출력:\n"
         '{"today":"오늘 부동산 시장 요약 2~3문장(무슨 일/전반 분위기)",'
-        '"picks":[{"index":정수,"theme":"정책|매매|전세|분양청약|재건축|금리|기타",'
+        '"picks":[{"index":정수,"theme":"분류",'
         '"headline":"간결한 한국어 제목","summary":"1~2문장 요약"}],'
         '"outlook":["단기 흐름·관전 포인트 문장","..."]}\n'
-        f"- picks 는 시장·정책·가격 관점에서 중요한 순으로 최대 {TOP_N}건, "
+        "- theme 은 다음 중 정확히 하나만 고르라(여러 개 나열·구분자 표기 금지): "
+        "정책, 매매, 전세, 분양청약, 재건축, 금리, 공급, 기타\n"
+        f"- picks 는 시장·정책·가격 관점에서 중요한 순으로 {TOP_N + 3}건까지 제시하라"
+        f"(중복 제거 후 상위 {TOP_N}건만 사용하므로 여유분 포함). "
         "단순 사건·사고·광고성·연예성 기사는 제외.\n"
         "- **같은 사건을 다룬 기사는 반드시 1건만 선택**하라. 원본/종합/타사 재보도 등 "
         "내용이 사실상 동일하면 근거가 가장 충실한 1건만 남기고, 남는 자리는 "
@@ -239,13 +242,14 @@ def _analyze(pool, client):
     )
     data = json.loads(resp.choices[0].message.content)
     picks = []
-    for p in data.get("picks", [])[:TOP_N]:
+    for p in data.get("picks", [])[:TOP_N + 3]:
         try:
             src = candidates[int(p["index"])]
         except Exception:
             src = {"publisher": "", "link": "", "ts": 0}
         picks.append({
-            "theme": p.get("theme", ""),
+            # 모델이 "청약|정책" 처럼 여러 개를 넣는 경우가 있어 첫 항목만 사용
+            "theme": re.split(r"[|,/·]", (p.get("theme") or ""))[0].strip(),
             "headline": (p.get("headline") or "").strip(),
             "summary": (p.get("summary") or "").strip(),
             "publisher": src.get("publisher", ""),
