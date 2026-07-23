@@ -53,6 +53,29 @@ CRYPTO_MARKET_QUERIES = [
     ('("bitcoin ETF" OR "crypto regulation" OR stablecoin) when:1d', "en-US", "US", "US:en"),
 ]
 
+# 언론사 RSS — 구글 뉴스와 달리 '기사 리드 문단'을 제공하므로 요약 근거로 쓴다.
+# (구글 뉴스 RSS의 description 에는 제목·매체명만 들어 있어 근거가 되지 못한다)
+ECONOMY_FEEDS = [
+    ("연합뉴스", "https://www.yna.co.kr/rss/economy.xml"),
+    ("연합뉴스", "https://www.yna.co.kr/rss/industry.xml"),
+    ("매일경제", "https://www.mk.co.kr/rss/30100041/"),
+]
+ECONOMY_KEYWORDS = [
+    "금리", "환율", "물가", "성장", "고용", "연준", "인플레", "수출", "경기",
+    "한국은행", "GDP", "국고채", "채권", "무역", "재정",
+]
+
+CRYPTO_FEEDS = [
+    ("토큰포스트", "https://www.tokenpost.kr/rss"),
+]
+CRYPTO_KEYWORDS = [
+    "비트코인", "가상자산", "암호화폐", "이더리움", "스테이블", "블록체인",
+    "업비트", "빗썸", "알트코인", "코인",
+]
+
+FEED_MAX_AGE_DAYS = int(os.getenv("TOPIC_FEED_MAX_AGE_DAYS", "2"))
+LEAD_CHARS = int(os.getenv("TOPIC_LEAD_CHARS", "220"))
+
 
 def get_openai_client():
     key = os.getenv("OPENAI_API_KEY")
@@ -108,24 +131,73 @@ def fetch_pool(queries):
             pub = ""
             if e.get("source") and e["source"].get("title"):
                 pub = e["source"]["title"]
-            arts.append({"title": title, "publisher": pub, "ts": _ts(e)})
-    seen, uniq = set(), []
-    for a in arts:
+            # 구글 뉴스 RSS 는 리드 문단을 주지 않는다(제목·매체명뿐) → lead 비움
+            arts.append({"title": title, "publisher": pub, "ts": _ts(e),
+                         "lead": ""})
+    return arts
+
+
+def fetch_publisher_pool(feeds, keywords, max_age_days=FEED_MAX_AGE_DAYS):
+    """언론사 RSS에서 주제 키워드에 맞는 최근 기사 + '리드 문단'을 수집."""
+    out, now = [], time.time()
+    for name, url in feeds:
+        try:
+            f = feedparser.parse(url)
+        except Exception:
+            continue
+        for e in f.entries:
+            title = _clean(e.get("title", ""))
+            if not title:
+                continue
+            lead = _clean(e.get("summary", ""))
+            if keywords and not any(k in (title + " " + lead) for k in keywords):
+                continue
+            ts = _ts(e)
+            if ts and (now - ts) > max_age_days * 86400:
+                continue
+            out.append({"title": title, "publisher": name, "ts": ts,
+                        "lead": lead[:LEAD_CHARS]})
+    return out
+
+
+def merge_pool(items):
+    """제목 기준 중복 제거(리드가 있는 쪽 우선) 후 최신순 정렬."""
+    best = {}
+    for a in items:
         key = "".join(c for c in a["title"].lower() if c.isalnum())[:80]
-        if key and key not in seen:
-            seen.add(key)
-            uniq.append(a)
+        if not key:
+            continue
+        cur = best.get(key)
+        if cur is None or (not cur.get("lead") and a.get("lead")):
+            best[key] = a
+    uniq = list(best.values())
     uniq.sort(key=lambda a: a["ts"], reverse=True)
     return uniq
 
 
+def select_candidates(pool, limit=40, lead_quota=25):
+    """리드(사실 근거)가 있는 기사를 우선 배치하고, 나머지는 구글 뉴스로 채운다.
+    구글 뉴스 항목이 더 최신이라 그대로 두면 리드 있는 기사가 밀려나기 때문."""
+    withlead = [a for a in pool if a.get("lead")]
+    nolead = [a for a in pool if not a.get("lead")]
+    picked = withlead[:lead_quota]
+    return (picked + nolead[:limit - len(picked)])[:limit]
+
+
 def _analyze(pool, client, topic_desc, theme_hint, top_n):
     """후보 뉴스를 OpenAI로 분석 → (today, picks, outlook)."""
-    candidates = pool[:40]
-    listing = "\n".join(f"{i}. {a['title']} ({a['publisher']})"
-                        for i, a in enumerate(candidates))
+    candidates = select_candidates(pool)
+    rows = []
+    for i, a in enumerate(candidates):
+        rows.append(f"{i}. {a['title']} ({a['publisher']})")
+        if a.get("lead"):
+            rows.append(f"   리드: {a['lead']}")
+    listing = "\n".join(rows)
     prompt = (
         f"너는 {topic_desc} 담당 애널리스트다. 아래는 오늘 수집된 관련 뉴스 후보다. "
+        "'리드'는 기사 도입부(사실 근거)다. 요약은 반드시 리드에 근거해 작성하고, "
+        "리드가 없는 항목은 제목이 말하는 범위를 넘어 추측하지 마라. "
+        "가능하면 리드가 있는(근거가 확인되는) 기사를 우선 선택해라. "
         "이 목록의 정보만 근거로(후보에 없는 수치·사실을 지어내지 말 것) 브리핑을 작성해라. "
         "반드시 아래 JSON 형식으로만 출력:\n"
         '{"today":"오늘 상황 요약 2~3문장(무슨 일/전반 분위기)",'
@@ -173,12 +245,16 @@ def _fallback_headlines(pool, header, top_n, note=""):
 
 
 def build_section(header, queries, topic_desc, theme_hint,
-                  client=None, top_n=TOP_N):
-    """주제별 브리핑 섹션 문자열 반환. 실패해도 빈 값은 반환하지 않음."""
+                  feeds=(), keywords=(), client=None, top_n=TOP_N):
+    """주제별 브리핑 섹션 문자열 반환. 실패해도 빈 값은 반환하지 않음.
+
+    풀 = 언론사 RSS(리드 문단 있음) + 구글 뉴스(폭넓은 발견, 리드 없음) 병합.
+    """
     if client is None:
         client = get_openai_client()
     try:
-        pool = fetch_pool(queries)
+        pool = merge_pool(fetch_publisher_pool(feeds, keywords)
+                          + fetch_pool(queries))
     except Exception as e:  # noqa
         return f"{header}\n(뉴스 수집 실패: {e})"
     if not pool:
@@ -221,6 +297,7 @@ def build_economy_section(client=None):
         "💹 경제 PART", ECONOMY_QUERIES,
         "한국·글로벌 거시경제(금리·환율·물가·성장·고용·정책)",
         "금리|환율|물가|성장|고용|정책|기타",
+        feeds=ECONOMY_FEEDS, keywords=ECONOMY_KEYWORDS,
         client=client,
     )
 
@@ -230,6 +307,7 @@ def build_crypto_market_section(client=None):
         "🌐 코인시장 PART", CRYPTO_MARKET_QUERIES,
         "가상자산(코인) 시장 전반",
         "시세|규제|ETF|온체인|거래소|정책|기타",
+        feeds=CRYPTO_FEEDS, keywords=CRYPTO_KEYWORDS,
         client=client,
     )
 
