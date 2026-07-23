@@ -328,16 +328,16 @@ def format_fear_greed_section():
 # =========================================================
 # 4) 이메일 발송
 # =========================================================
-def send_email(body):
+def send_email(body, subject=None):
     # 발송 시각 표기는 항상 KST(timezone-aware)로 고정
     now = datetime.now(KST)
     hour = now.hour
 
-    # 실제 스케줄(06:37 / 16:13) 기준으로 오전/오후 판정
-    time_tag = "1차 (오전)" if hour < 12 else "2차 (오후)"
-    today_str = now.strftime("%-m/%-d")
-
-    subject = f"[{today_str} 뉴스 요약 - {time_tag}]"
+    if subject is None:
+        # 실제 스케줄(07:37 / 17:13) 기준으로 오전/오후 판정
+        time_tag = "1차 (오전)" if hour < 12 else "2차 (오후)"
+        # %-m/%-d 는 리눅스 전용이라 OS 무관하게 직접 조합
+        subject = f"[{now.month}/{now.day} 뉴스 요약 - {time_tag}]"
 
     email_user = os.getenv("EMAIL_USER")
     email_pass = os.getenv("EMAIL_PASS")
@@ -417,7 +417,19 @@ if __name__ == "__main__":
             except Exception as e:
                 print(f"[site] 발행 실패: {e}")
 
-        # 이메일 발송. 사이트가 정상 동작하는 걸 확인한 뒤
-        # 워크플로에서 SEND_EMAIL: '0' 으로 바꾸면 메일을 끌 수 있다.
+        # 알림 메일: 본문 전체가 아니라 '준비됐다 + 사이트 링크' 만 짧게 보낸다.
+        # 메일이 오지 않으면 파이프라인에 문제가 있다는 신호도 된다.
+        # 끄려면 워크플로에서 SEND_EMAIL: '0'.
         if os.getenv("SEND_EMAIL", "1") != "0":
-            send_email(final_body)
+            site = os.getenv(
+                "SITE_URL", "https://kkkkkijun.github.io/stock_news_mailer/")
+            now = datetime.now(KST)
+            tag = "오전" if now.hour < 12 else "오후"
+            notice = (
+                f"{now.month}월 {now.day}일 {tag} 뉴스 브리핑이 준비됐습니다.\n\n"
+                f"{site}\n\n"
+                "경제 · 해외주식 · 코인 · 부동산 브리핑을 사이트에서 확인하세요.\n"
+                "지난 브리핑은 사이트의 '지난 브리핑'에서 날짜별로 볼 수 있습니다.\n")
+            send_email(notice,
+                       subject=f"[{now.month}/{now.day} {tag}] "
+                               "뉴스 브리핑이 준비됐습니다")
