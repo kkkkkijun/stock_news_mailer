@@ -247,7 +247,7 @@ def _title(now):
 
 def _dow_badge(now):
     """제목 옆에 붙는 요일 뱃지 (토=파랑, 일=빨강)."""
-    names = ["월", "화", "수", "목", "금", "토", "일"]
+    names = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
     i = now.weekday()
     cls = {5: " sat", 6: " sun"}.get(i, "")
     return f'<span class="dowb{cls}">{names[i]}</span>'
