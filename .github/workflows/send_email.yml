@@ -32,7 +32,7 @@ jobs:
           # 사이트 발행 on/off
           PUBLISH_SITE: '1'
           # 사이트가 잘 뜨는 걸 확인한 뒤 '0' 으로 바꾸면 메일 발송이 꺼진다
-          SEND_EMAIL: '1'
+          SEND_EMAIL: '0'
         run: python main.py
       - name: Publish site (commit docs/index.html)
         run: |
