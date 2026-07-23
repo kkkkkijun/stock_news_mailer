@@ -12,6 +12,8 @@ GitHub Pages(공개 저장소 = 무료)가 docs/ 를 그대로 서빙한다.
 """
 import os
 import re
+import json
+import calendar
 import html as _html
 from datetime import datetime
 
@@ -90,17 +92,33 @@ li{margin:4px 0}
 p{margin:6px 0 12px}
 footer{color:#9aa0a8;font-size:.76rem;margin-top:24px;text-align:center;
  line-height:1.7}
-.nav{margin-top:9px}
-.nav a{color:#1668dc;text-decoration:none;font-size:.82rem;font-weight:600}
-.nav a:hover{text-decoration:underline}
-.arc{background:#fff;border:1px solid #e3e5e9;border-radius:12px;margin:14px 0;
- overflow:hidden}
-.arc a{display:flex;justify-content:space-between;align-items:center;gap:10px;
- padding:13px 16px;border-top:1px solid #f0f1f3;color:#1c1e21;text-decoration:none}
-.arc a:first-child{border-top:0}
-.arc a:hover{background:#f7f8fa}
-.arc .d{font-weight:600}
-.arc .w{font-size:.78rem;color:#8b9099}
+.nav{margin-top:10px}
+.nav a{display:inline-block;padding:7px 13px;margin-right:6px;background:#fff;
+ border:1px solid #e3e5e9;border-radius:8px;color:#1c1e21;text-decoration:none;
+ font-size:.82rem;font-weight:600}
+.nav a:hover{background:#f0f1f3}
+
+/* 지난 브리핑 캘린더 */
+.cal{background:#fff;border:1px solid #e3e5e9;border-radius:12px;
+ padding:14px 12px;margin:14px 0}
+.cal h3{margin:0 0 10px;font-size:.96rem;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.dow{text-align:center;font-size:.72rem;color:#9aa0a8;padding:3px 0}
+.dow.sun{color:#d2453c}
+.day{aspect-ratio:1;border:0;background:transparent;border-radius:8px;font:inherit;
+ font-size:.86rem;color:#c8ccd2;display:flex;align-items:center;
+ justify-content:center;padding:0}
+.day.has{background:#eef4ff;color:#1668dc;font-weight:700;cursor:pointer}
+.day.has:hover{background:#dbe8ff}
+.day.on{background:#1668dc;color:#fff}
+.det{background:#fff;border:1px solid #e3e5e9;border-radius:12px;
+ padding:14px 16px;margin:14px 0}
+.det .t{font-weight:700;margin-bottom:9px;font-size:.94rem}
+.det a{display:inline-block;padding:9px 15px;margin:0 7px 7px 0;border-radius:8px;
+ background:#f0f4fb;color:#1668dc;text-decoration:none;font-weight:600;
+ font-size:.86rem}
+.det a:hover{background:#dbe8ff}
+.det .none{color:#9aa0a8;font-size:.85rem}
 .empty{color:#8b9099;padding:18px 16px}
 """
 
@@ -237,24 +255,68 @@ def _label_from_slug(slug):
             "오전" if ap == "am" else "오후")
 
 
+_CAL_JS = """
+var DATA = __DATA__;
+function pick(btn){
+  document.querySelectorAll('.day.on').forEach(function(x){x.classList.remove('on');});
+  btn.classList.add('on');
+  var d = btn.getAttribute('data-d'), v = DATA[d] || {}, p = d.split('-');
+  var h = '<div class="t">' + p[0].slice(2) + '년 ' + (+p[1]) + '월 ' + (+p[2]) + '일</div>';
+  if (v.am) { h += '<a href="' + v.am + '">오전 브리핑</a>'; }
+  if (v.pm) { h += '<a href="' + v.pm + '">오후 브리핑</a>'; }
+  if (!v.am && !v.pm) { h += '<span class="none">브리핑이 없습니다.</span>'; }
+  document.getElementById('det').innerHTML = h;
+}
+document.querySelectorAll('.day.has').forEach(function(b){
+  b.addEventListener('click', function(){ pick(b); });
+});
+var last = document.querySelector('.day.has');
+if (last) { pick(last); }
+"""
+
+_DOW = ["일", "월", "화", "수", "목", "금", "토"]
+
+
 def render_archive_index():
-    """docs/archive 를 스캔해 날짜별 목록 페이지를 만든다(매 실행 재생성)."""
-    rows = []
+    """docs/archive 를 스캔해 캘린더 형식의 지난 브리핑 페이지를 만든다."""
+    days = {}
     try:
-        names = sorted(os.listdir(ARCHIVE_DIR), reverse=True)
+        names = os.listdir(ARCHIVE_DIR)
     except OSError:
         names = []
     for fn in names:
         if not fn.endswith(".html") or fn == "index.html":
             continue
-        lab = _label_from_slug(fn[:-5])
-        if not lab:
+        m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})-(am|pm)", fn[:-5])
+        if not m:
             continue
-        rows.append(f'<a href="{_html.escape(fn)}">'
-                    f'<span class="d">{_html.escape(lab[0])}</span>'
-                    f'<span class="w">{_html.escape(lab[1])}</span></a>')
-    inner = ("".join(rows) if rows
-             else '<div class="empty">저장된 브리핑이 없습니다.</div>')
+        y, mo, d, ap = m.groups()
+        days.setdefault(f"{y}-{mo}-{d}", {})[ap] = fn
+
+    months = sorted({k[:7] for k in days}, reverse=True)
+    cals = []
+    cal = calendar.Calendar(firstweekday=6)          # 일요일 시작
+    for ym in months:
+        y, mo = int(ym[:4]), int(ym[5:7])
+        cells = "".join(
+            f'<div class="dow{" sun" if i == 0 else ""}">{w}</div>'
+            for i, w in enumerate(_DOW))
+        for dt in cal.itermonthdates(y, mo):
+            if dt.month != mo:
+                cells += '<div class="day"></div>'
+                continue
+            key = dt.strftime("%Y-%m-%d")
+            if key in days:
+                cells += (f'<button class="day has" data-d="{key}">'
+                          f'{dt.day}</button>')
+            else:
+                cells += f'<div class="day">{dt.day}</div>'
+        cals.append(f'<div class="cal"><h3>{y}년 {mo}월</h3>'
+                    f'<div class="grid">{cells}</div></div>')
+
+    body = ("".join(cals) if cals
+            else '<div class="cal"><div class="empty">저장된 브리핑이 없습니다.</div></div>')
+    js = _CAL_JS.replace("__DATA__", json.dumps(days, ensure_ascii=False))
     return f"""<!doctype html>
 <html lang="ko">
 <head>
@@ -269,11 +331,13 @@ def render_archive_index():
 <div class="wrap">
 <header>
   <h1>지난 브리핑</h1>
-  <div class="upd">총 {len(rows)}회분</div>
-  <div class="nav"><a href="../index.html">← 최신 브리핑</a></div>
+  <div class="upd">총 {len(days)}일 · {sum(len(v) for v in days.values())}회분</div>
+  <div class="nav"><a href="../index.html">🏠 홈</a></div>
 </header>
-<div class="arc">{inner}</div>
+{body}
+<div class="det" id="det"></div>
 </div>
+<script>{js}</script>
 </body>
 </html>
 """
@@ -379,8 +443,8 @@ def _render_pair(body, now):
     """한 회차의 스냅샷 HTML 을 만든다."""
     return render_html(
         body, now=now,
-        nav='<div class="nav"><a href="../index.html">← 최신 브리핑</a>'
-            ' &nbsp;·&nbsp; <a href="index.html">지난 브리핑</a></div>')
+        nav='<div class="nav"><a href="../index.html">🏠 홈</a>'
+            '<a href="index.html">📅 지난 브리핑</a></div>')
 
 
 def rebuild_all():
@@ -404,7 +468,7 @@ def rebuild_all():
         _write(os.path.join(DOCS_DIR, "index.html"),
                render_html(latest[0], now=latest[1],
                            nav='<div class="nav">'
-                               '<a href="archive/index.html">지난 브리핑 보기 →</a></div>'))
+                               '<a href="archive/index.html">📅 지난 브리핑</a></div>'))
     _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
     return len(files)
 
@@ -430,7 +494,7 @@ def publish(body, now=None):
     path = os.path.join(DOCS_DIR, "index.html")
     _write(path, render_html(body, now=now,
                              nav='<div class="nav">'
-                                 '<a href="archive/index.html">지난 브리핑 보기 →</a></div>'))
+                                 '<a href="archive/index.html">📅 지난 브리핑</a></div>'))
 
     # 3) 날짜 목록 (폴더를 스캔하므로 항상 최신 상태)
     _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
