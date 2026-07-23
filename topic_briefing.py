@@ -175,6 +175,37 @@ def merge_pool(items):
     return uniq
 
 
+def _toks(s):
+    return {w for w in re.sub(r"[^0-9A-Za-z가-힣 ]", " ", s or "").split()
+            if len(w) > 1}
+
+
+def _dedupe_picks(picks, head_overlap=0.6, full_jaccard=0.5):
+    """선택된 뉴스 중 '사실상 같은 사건'을 제거(프롬프트만으론 불안정해 코드로 보강).
+
+    - 제목 단어 overlap 계수(교집합/짧은쪽) ≥ 0.6  → 같은 사건으로 간주
+      (같은 사건 기사는 제목이 대부분 겹치므로 Jaccard 보다 민감하게 잡힘)
+    - 또는 제목+요약 Jaccard ≥ 0.5
+    """
+    kept = []
+    for p in picks:
+        hp = _toks(p.get("headline", ""))
+        fp = _toks(f"{p.get('headline','')} {p.get('summary','')}")
+        dup = False
+        for q in kept:
+            hq = _toks(q.get("headline", ""))
+            fq = _toks(f"{q.get('headline','')} {q.get('summary','')}")
+            if hp and hq and len(hp & hq) / min(len(hp), len(hq)) >= head_overlap:
+                dup = True
+                break
+            if fp and fq and len(fp & fq) / len(fp | fq) >= full_jaccard:
+                dup = True
+                break
+        if not dup:
+            kept.append(p)
+    return kept
+
+
 def select_candidates(pool, limit=40, lead_quota=25):
     """리드(사실 근거)가 있는 기사를 우선 배치하고, 나머지는 구글 뉴스로 채운다.
     구글 뉴스 항목이 더 최신이라 그대로 두면 리드 있는 기사가 밀려나기 때문."""
@@ -206,6 +237,9 @@ def _analyze(pool, client, topic_desc, theme_hint, top_n):
         '"outlook":["단기 흐름·관전 포인트 문장","..."]}\n'
         f"- theme 은 다음 중 하나: {theme_hint}\n"
         f"- picks 는 중요한 순으로 최대 {top_n}건, 단순 사건·사고·광고성·연예성 기사는 제외.\n"
+        "- **같은 사건을 다룬 기사는 반드시 1건만 선택**하라. 원본/종합/타사 재보도 등 "
+        "내용이 사실상 동일하면 근거가 가장 충실한 1건만 남기고, 남는 자리는 "
+        "서로 다른 사건·주제의 뉴스로 채워라. picks 끼리 주제가 겹치지 않게 하라.\n"
         "- outlook 은 3~4개, 단정적 예측·투자권유가 아니라 '관전 포인트/시사점'으로 서술.\n"
         "- 영어 기사가 섞여 있어도 모든 출력은 한국어로 작성.\n"
         "- 뉴스가 빈약한 날은 억지로 부풀리지 말고 사실대로 짧게.\n\n"
@@ -231,6 +265,7 @@ def _analyze(pool, client, topic_desc, theme_hint, top_n):
             "publisher": src.get("publisher", ""),
             "when": _when(src.get("ts", 0)),
         })
+    picks = _dedupe_picks(picks)[:top_n]
     outlook = [o.strip() for o in data.get("outlook", []) if o and o.strip()]
     return (data.get("today") or "").strip(), picks, outlook
 
