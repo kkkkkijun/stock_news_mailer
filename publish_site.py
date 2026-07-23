@@ -21,6 +21,9 @@ KST = pytz.timezone("Asia/Seoul")
 HERE = os.path.dirname(os.path.abspath(__file__))
 DOCS_DIR = os.path.join(HERE, "docs")
 ARCHIVE_DIR = os.path.join(DOCS_DIR, "archive")
+# 브리핑 원문 텍스트 보관소. 디자인만 바꿀 때 뉴스 재수집·재요약 없이
+# 여기서 읽어 페이지만 다시 만든다(rebuild_all).
+DATA_DIR = os.path.join(HERE, "data")
 
 _SECTION_RE = re.compile(r"^(📈|🪙|📊|💹|🌐|🏘️)\s*(.+)$")
 _LABEL_RE = re.compile(r"^\[(.+)\]$")
@@ -354,6 +357,58 @@ def _write(path, text):
         f.write(text)
 
 
+def _save_body(body, now):
+    """원문 텍스트를 data/<slug>.txt 로 보관. 첫 줄에 실행 시각을 적어둔다."""
+    os.makedirs(DATA_DIR, exist_ok=True)
+    _write(os.path.join(DATA_DIR, _slug(now) + ".txt"),
+           now.isoformat() + "\n\n" + body)
+
+
+def _load_body(path):
+    """저장본을 (실행시각, 본문) 으로 되돌린다."""
+    raw = open(path, encoding="utf-8").read()
+    head, _, body = raw.partition("\n\n")
+    try:
+        now = datetime.fromisoformat(head.strip())
+    except ValueError:
+        now = None
+    return now, body
+
+
+def _render_pair(body, now):
+    """한 회차의 스냅샷 HTML 을 만든다."""
+    return render_html(
+        body, now=now,
+        nav='<div class="nav"><a href="../index.html">← 최신 브리핑</a>'
+            ' &nbsp;·&nbsp; <a href="index.html">지난 브리핑</a></div>')
+
+
+def rebuild_all():
+    """저장된 원문으로 모든 페이지를 다시 렌더링(뉴스 수집·LLM 호출 없음).
+
+    디자인을 바꾼 뒤 실행하면 과거 회차 페이지까지 새 디자인으로 갱신된다.
+    """
+    if not os.path.isdir(DATA_DIR):
+        return 0
+    os.makedirs(ARCHIVE_DIR, exist_ok=True)
+    files = sorted(f for f in os.listdir(DATA_DIR) if f.endswith(".txt"))
+    latest = None
+    for fn in files:
+        now, body = _load_body(os.path.join(DATA_DIR, fn))
+        if now is None or not body.strip():
+            continue
+        _write(os.path.join(ARCHIVE_DIR, fn[:-4] + ".html"),
+               _render_pair(body, now))
+        latest = (body, now)
+    if latest:
+        _write(os.path.join(DOCS_DIR, "index.html"),
+               render_html(latest[0], now=latest[1],
+                           nav='<div class="nav">'
+                               '<a href="archive/index.html">지난 브리핑 보기 →</a></div>'))
+    _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
+    return len(files)
+
+
 def publish(body, now=None):
     """최신 페이지 + 회차 스냅샷 + 지난 브리핑 목록을 생성. 최신 경로 반환.
 
@@ -364,11 +419,12 @@ def publish(body, now=None):
     now = now or datetime.now(KST)
     os.makedirs(ARCHIVE_DIR, exist_ok=True)
 
+    # 0) 원문 텍스트 보관 (이후 디자인 변경 시 재수집 없이 재렌더링용)
+    _save_body(body, now)
+
     # 1) 회차 스냅샷 (목록/최신으로 돌아가는 링크 포함)
     _write(os.path.join(ARCHIVE_DIR, _slug(now) + ".html"),
-           render_html(body, now=now,
-                       nav='<div class="nav"><a href="../index.html">← 최신 브리핑</a>'
-                           ' &nbsp;·&nbsp; <a href="index.html">지난 브리핑</a></div>'))
+           _render_pair(body, now))
 
     # 2) 최신 페이지
     path = os.path.join(DOCS_DIR, "index.html")
@@ -379,3 +435,17 @@ def publish(body, now=None):
     # 3) 날짜 목록 (폴더를 스캔하므로 항상 최신 상태)
     _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
     return path
+
+
+if __name__ == "__main__":
+    import sys
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+    if len(sys.argv) > 1 and sys.argv[1] == "rebuild":
+        n = rebuild_all()
+        print(f"저장된 {n}회분으로 전체 페이지를 다시 생성했습니다. "
+              "(뉴스 재수집·LLM 호출 없음)")
+    else:
+        print("사용법: python publish_site.py rebuild")
