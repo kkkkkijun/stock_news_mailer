@@ -1,12 +1,16 @@
-name: Daily US Stock News Email
+name: Daily News Briefing (Email + Site)
 
 on:
   schedule:
-    # 오전 7:37 (한국 시간 기준) → UTC 22:30
+    # 오전 7:37 (한국 시간 기준) → UTC 22:37
     - cron: '37 22 * * *'
-    # 오후 5:13 (한국 시간 기준) → UTC 08:00
+    # 오후 5:13 (한국 시간 기준) → UTC 08:13
     - cron: '13 8 * * *'
   workflow_dispatch:
+
+# docs/index.html 을 저장소에 커밋해야 하므로 쓰기 권한 필요
+permissions:
+  contents: write
 
 jobs:
   send-news:
@@ -25,4 +29,15 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          # 사이트 발행 on/off
+          PUBLISH_SITE: '1'
+          # 사이트가 잘 뜨는 걸 확인한 뒤 '0' 으로 바꾸면 메일 발송이 꺼진다
+          SEND_EMAIL: '1'
         run: python main.py
+      - name: Publish site (commit docs/index.html)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html
+          git diff --staged --quiet || git commit -m "site: 브리핑 갱신 [skip ci]"
+          git push
