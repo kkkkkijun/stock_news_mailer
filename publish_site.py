@@ -49,12 +49,11 @@ h1{margin:0;font-size:1.32rem;font-weight:700;letter-spacing:-.02em}
 .bar{background:#f5f6f8;padding:8px 0 0;margin:0 -14px;
  border-bottom:1px solid #e3e5e9}
 .bar .inner{max-width:780px;margin:0 auto;padding:0 14px}
-.fg{display:flex;gap:8px;margin-bottom:8px}
-.chip{flex:1;background:#fff;border:1px solid #e3e5e9;border-radius:10px;
- padding:8px 10px;display:flex;align-items:baseline;gap:7px;min-width:0}
-.chip .k{font-size:.74rem;color:#8b9099;white-space:nowrap}
+.fg{margin-bottom:10px}
+.chip{display:flex;align-items:baseline;gap:8px;padding:2px 2px}
+.chip .k{font-size:.78rem;color:#8b9099;white-space:nowrap;min-width:66px}
 .chip .v{font-size:1.06rem;font-weight:700}
-.chip .s{font-size:.74rem;color:#8b9099;overflow:hidden;text-overflow:ellipsis;
+.chip .s{font-size:.76rem;color:#8b9099;overflow:hidden;text-overflow:ellipsis;
  white-space:nowrap}
 /* 공포탐욕지수 5단계 색상 */
 .ef  .v{color:#c0392b}  /* 극단적 공포 */
