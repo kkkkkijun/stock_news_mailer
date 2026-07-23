@@ -51,6 +51,26 @@ TABS = [
     ("부동산", ["re"]),
 ]
 
+# 티커 뱃지 색상 = 각 기업/코인의 브랜드 컬러
+# 여기에 없는 티커는 이름 해시로 색을 자동 배정하므로 종목을 바꿔도 동작한다.
+TICKER_COLORS = {
+    "NVDA": "#76B900",   # NVIDIA 시그니처 그린
+    "TSLA": "#E82127",   # Tesla 레드
+    "HIMS": "#0F6B5C",   # Hims & Hers 딥그린
+    "RDW": "#D0202E",    # Redwire 레드
+    "BTC": "#F7931A",    # Bitcoin 오렌지
+    "ETH": "#627EEA",    # Ethereum 블루퍼플
+    "SOL": "#9945FF",    # Solana 퍼플
+    "XRP": "#23292F",
+    "DOGE": "#C2A633",
+    "AAPL": "#555555",
+    "MSFT": "#0078D4",
+    "GOOGL": "#4285F4",
+    "AMZN": "#FF9900",
+    "META": "#0866FF",
+    "AMD": "#ED1C24",
+}
+
 _DOW = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
 
 HEAD = """<meta charset="utf-8">
@@ -266,6 +286,34 @@ def _e(s):
     return _html.escape(s or "")
 
 
+def _ticker_color(label):
+    """티커 → 브랜드 컬러. 미등록 티커는 이름 해시로 고정 색을 배정."""
+    key = (label or "").upper().split("-")[0].strip()
+    if key in TICKER_COLORS:
+        return TICKER_COLORS[key]
+    h = sum(ord(c) * (i + 3) for i, c in enumerate(key)) % 360
+    return f"hsl({h},58%,38%)"
+
+
+def _text_on(bg):
+    """배경 밝기에 따라 글자색을 고른다(WCAG 상대휘도 기준).
+
+    단순 대비 비교를 쓰면 Tesla 레드·Ethereum 블루처럼 중간 톤에서 검정이
+    간발의 차로 선택되는데, 실제 브랜드는 흰 글자를 쓴다. 밝은 배경
+    (NVIDIA 그린·Bitcoin 오렌지 등)에서만 어두운 글자를 쓰도록 임계값을 둔다.
+    """
+    if not bg.startswith("#"):
+        return "#fff"
+
+    def ch(v):
+        v /= 255
+        return v / 12.92 if v <= 0.03928 else ((v + 0.055) / 1.055) ** 2.4
+
+    r, g, b = (int(bg[1:3], 16), int(bg[3:5], 16), int(bg[5:7], 16))
+    lum = 0.2126 * ch(r) + 0.7152 * ch(g) + 0.0722 * ch(b)
+    return "#0f1b2d" if lum > 0.35 else "#fff"
+
+
 def _render_part(pid, icon, name, lines):
     summary, items, outlook = _parse_part(lines)
     h = [f'<section class="part" id="{pid}">',
@@ -277,9 +325,14 @@ def _render_part(pid, icon, name, lines):
     if items:
         h.append('<div class="news-list">')
         for it in items:
-            cls = "ticker" if it["kind"] == "ticker" else "tag"
-            badge = (f'<span class="{cls}">{_e(it["label"])}</span>'
-                     if it["label"] else "")
+            if not it["label"]:
+                badge = ""
+            elif it["kind"] == "ticker":
+                bg = _ticker_color(it["label"])
+                badge = (f'<span class="ticker" style="background:{bg};'
+                         f'color:{_text_on(bg)};">{_e(it["label"])}</span>')
+            else:
+                badge = f'<span class="tag">{_e(it["label"])}</span>'
             src = f'<span class="src">{_e(it["src"])}</span>' if it["src"] else ""
             desc = f'<p>{_e(it["desc"])}</p>' if it["desc"] else ""
             h.append(f'<div class="news"><div class="news-meta">{badge}{src}</div>'
