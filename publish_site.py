@@ -44,6 +44,13 @@ PARTS = [
     ("re", "🏘️", "부동산", "부동산 PART"),
 ]
 
+# 탭 구성: (탭 이름, 포함할 파트 id)
+TABS = [
+    ("뉴스", ["eco", "cm"]),
+    ("주식", ["os", "coin"]),
+    ("부동산", ["re"]),
+]
+
 _DOW = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
 
 HEAD = """<meta charset="utf-8">
@@ -73,6 +80,11 @@ a:hover{opacity:.72;}
 .hd-archive:hover{opacity:1;background:rgba(255,255,255,.2);}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{font-size:13px;color:#94a3b8;}
+.dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
+ background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
+ margin-right:8px;}
+.dowb.sat{color:#a8c8ff;background:rgba(120,165,255,.2);}
+.dowb.sun{color:#ffb0a8;background:rgba(255,130,120,.2);}
 .gauges{display:flex;gap:16px;padding:22px 40px 6px;flex-wrap:wrap;}
 .gauge{flex:1;min-width:220px;background:#fff;border:1px solid #e6ebf2;
  border-radius:14px;padding:18px 20px;}
@@ -90,9 +102,14 @@ a:hover{opacity:.72;}
 .navwrap{padding:14px 40px 6px;position:sticky;top:0;background:#f6f8fb;z-index:3;}
 .nav{display:flex;gap:5px;background:#eef2f7;border:1px solid #e6ebf2;
  border-radius:12px;padding:5px;}
-.nav a{flex:1;text-align:center;font-size:13px;font-weight:600;color:#475569;
- padding:9px 6px;border-radius:8px;}
-.nav a:hover{background:#fff;opacity:1;}
+.nav a,.nav button{flex:1;text-align:center;font-size:13px;font-weight:600;
+ color:#475569;padding:9px 6px;border-radius:8px;border:0;background:transparent;
+ font-family:inherit;cursor:pointer;}
+.nav a:hover,.nav button:hover{background:#fff;opacity:1;}
+.nav button.on{background:#0f1b2d;color:#fff;}
+.nav button.on:hover{background:#0f1b2d;}
+.panel{display:none;}
+.panel.on{display:block;}
 .part{padding:22px 40px;scroll-margin-top:70px;}
 .part-head{display:flex;align-items:center;gap:11px;margin-bottom:14px;}
 .part-icon{width:32px;height:32px;border-radius:9px;background:#eaf0fb;
@@ -297,6 +314,18 @@ def _shell(title, inner, extra_head="", script=""):
 """
 
 
+_TAB_JS = """<script>
+document.querySelectorAll('.nav-t').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.querySelectorAll('.nav-t').forEach(function(x){x.classList.remove('on');});
+    document.querySelectorAll('.panel').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    document.getElementById(b.getAttribute('data-p')).classList.add('on');
+  });
+});
+</script>"""
+
+
 def _title(now):
     ampm = "오전" if now.hour < 12 else "오후"
     return f"{now.year % 100}년 {now.month}월 {now.day}일 {ampm} 뉴스 브리핑"
@@ -307,14 +336,16 @@ def render_html(body, now=None, links=""):
     sections = _split_sections(body)
     ampm = "오전" if now.hour < 12 else "오후"
 
-    # 헤더
+    # 헤더 (요일은 뱃지, 토/일은 색 구분)
     kicker = now.strftime("%Y.%m.%d") + f" · {ampm} 브리핑"
-    sub = f"{_DOW[now.weekday()]} · 최종 업데이트 {now.strftime('%H:%M')} KST"
+    dcls = {5: " sat", 6: " sun"}.get(now.weekday(), "")
+    dowb = f'<span class="dowb{dcls}">{_DOW[now.weekday()]}</span>'
+    sub = f"최종 업데이트 {now.strftime('%H:%M')} KST"
     hd = (f'<header class="hd"><div class="hd-top">'
           f'<span class="hd-kicker">{_e(kicker)}</span>'
           f'<div class="hd-links">{links}</div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
-          f'<div class="hd-sub">{_e(sub)}</div></header>')
+          f'<div class="hd-sub">{dowb}{_e(sub)}</div></header>')
 
     # 공포탐욕 게이지
     gauges = []
@@ -328,18 +359,28 @@ def render_html(body, now=None, links=""):
             '<div class="gauge-scale"><span>공포</span><span>탐욕</span></div></div>')
     gauges_html = f'<div class="gauges">{"".join(gauges)}</div>' if gauges else ""
 
-    # 섹션 + 내비게이션
-    navs, parts = [], []
+    # 파트 렌더 (본문에 있는 것만)
+    rendered = {}
     for pid, icon, name, key in PARTS:
         lines = next((ls for t, ls in sections if key in t), None)
-        if lines is None:
+        if lines is not None:
+            rendered[pid] = _render_part(pid, icon, name, lines)
+
+    # 탭 + 패널
+    navs, panels, first = [], [], True
+    for i, (tab, pids) in enumerate(TABS):
+        inner = "".join(rendered[p] for p in pids if p in rendered)
+        if not inner:
             continue
-        navs.append(f'<a href="#{pid}">{_e(name)}</a>')
-        parts.append(_render_part(pid, icon, name, lines))
+        on = " on" if first else ""
+        navs.append(f'<button class="nav-t{on}" data-p="tp{i}">{_e(tab)}</button>')
+        panels.append(f'<div class="panel{on}" id="tp{i}">{inner}</div>')
+        first = False
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
 
-    return _shell(_title(now), hd + gauges_html + nav_html + "".join(parts))
+    return _shell(_title(now), hd + gauges_html + nav_html + "".join(panels),
+                  script=_TAB_JS)
 
 
 # =========================================================

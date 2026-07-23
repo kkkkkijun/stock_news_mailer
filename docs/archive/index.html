@@ -28,6 +28,11 @@ a:hover{opacity:.72;}
 .hd-archive:hover{opacity:1;background:rgba(255,255,255,.2);}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{font-size:13px;color:#94a3b8;}
+.dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
+ background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
+ margin-right:8px;}
+.dowb.sat{color:#a8c8ff;background:rgba(120,165,255,.2);}
+.dowb.sun{color:#ffb0a8;background:rgba(255,130,120,.2);}
 .gauges{display:flex;gap:16px;padding:22px 40px 6px;flex-wrap:wrap;}
 .gauge{flex:1;min-width:220px;background:#fff;border:1px solid #e6ebf2;
  border-radius:14px;padding:18px 20px;}
@@ -45,9 +50,14 @@ a:hover{opacity:.72;}
 .navwrap{padding:14px 40px 6px;position:sticky;top:0;background:#f6f8fb;z-index:3;}
 .nav{display:flex;gap:5px;background:#eef2f7;border:1px solid #e6ebf2;
  border-radius:12px;padding:5px;}
-.nav a{flex:1;text-align:center;font-size:13px;font-weight:600;color:#475569;
- padding:9px 6px;border-radius:8px;}
-.nav a:hover{background:#fff;opacity:1;}
+.nav a,.nav button{flex:1;text-align:center;font-size:13px;font-weight:600;
+ color:#475569;padding:9px 6px;border-radius:8px;border:0;background:transparent;
+ font-family:inherit;cursor:pointer;}
+.nav a:hover,.nav button:hover{background:#fff;opacity:1;}
+.nav button.on{background:#0f1b2d;color:#fff;}
+.nav button.on:hover{background:#0f1b2d;}
+.panel{display:none;}
+.panel.on{display:block;}
 .part{padding:22px 40px;scroll-margin-top:70px;}
 .part-head{display:flex;align-items:center;gap:11px;margin-bottom:14px;}
 .part-icon{width:32px;height:32px;border-radius:9px;background:#eaf0fb;
