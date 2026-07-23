@@ -404,8 +404,20 @@ if __name__ == "__main__":
     client = get_openai_client()
     final_body = build_body(client=client)
 
-    # DRY_RUN=1 이면 메일 발송 없이 본문만 출력 (테스트용)
+    # DRY_RUN=1 이면 발송/발행 없이 본문만 출력 (테스트용)
     if os.getenv("DRY_RUN") == "1":
         print(final_body)
     else:
-        send_email(final_body)
+        # 웹 페이지 발행 (docs/index.html → GitHub Pages)
+        # 실패해도 메일 발송은 계속되도록 방어
+        if os.getenv("PUBLISH_SITE", "1") != "0":
+            try:
+                from publish_site import publish
+                print("[site] 발행:", publish(final_body))
+            except Exception as e:
+                print(f"[site] 발행 실패: {e}")
+
+        # 이메일 발송. 사이트가 정상 동작하는 걸 확인한 뒤
+        # 워크플로에서 SEND_EMAIL: '0' 으로 바꾸면 메일을 끌 수 있다.
+        if os.getenv("SEND_EMAIL", "1") != "0":
+            send_email(final_body)
