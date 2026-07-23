@@ -49,6 +49,11 @@ body{margin:0;background:#f5f6f8;color:#1c1e21;
 .wrap{max-width:780px;margin:0 auto;padding:0 14px 56px}
 header{padding:26px 2px 14px}
 h1{margin:0;font-size:1.32rem;font-weight:700;letter-spacing:-.02em}
+.dowb{display:inline-block;font-size:.72rem;font-weight:700;color:#6b7280;
+ background:#eef0f3;border-radius:6px;padding:2px 8px;vertical-align:4px;
+ margin-left:3px}
+.dowb.sat{color:#2563eb;background:#e8f0ff}
+.dowb.sun{color:#d2453c;background:#fdeceb}
 .upd{color:#8b9099;font-size:.8rem;margin-top:5px}
 
 .bar{background:#f5f6f8;padding:8px 0 0;margin:0 -14px;
@@ -240,6 +245,14 @@ def _title(now):
     return f"{now.year % 100}년 {now.month}월 {now.day}일 {ampm} 뉴스 브리핑"
 
 
+def _dow_badge(now):
+    """제목 옆에 붙는 요일 뱃지 (토=파랑, 일=빨강)."""
+    names = ["월", "화", "수", "목", "금", "토", "일"]
+    i = now.weekday()
+    cls = {5: " sat", 6: " sun"}.get(i, "")
+    return f'<span class="dowb{cls}">{names[i]}</span>'
+
+
 def _slug(now):
     """아카이브 파일명 (예: 2026-07-23-am)."""
     return now.strftime("%Y-%m-%d") + ("-am" if now.hour < 12 else "-pm")
@@ -387,7 +400,7 @@ def render_html(body, now=None, nav=""):
 <body>
 <div class="wrap">
 <header>
-  <h1>{_html.escape(_title(now))}</h1>
+  <h1>{_html.escape(_title(now))} {_dow_badge(now)}</h1>
   <div class="upd">최종 업데이트 · {_html.escape(stamp)}</div>
   {nav}
 </header>
