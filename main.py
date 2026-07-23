@@ -369,11 +369,26 @@ def build_body(client=None):
 
     now = datetime.now(KST)
     body = f"[오늘의 뉴스 요약] {now.strftime('%Y-%m-%d %H:%M KST')}\n\n"
+    # 💹 경제 PART (국내+글로벌 거시 맥락을 먼저)
+    try:
+        from topic_briefing import build_economy_section
+        body += build_economy_section(client=client) + "\n\n"
+    except Exception as e:
+        body += f"💹 경제 PART\n(생성 실패: {e})\n\n"
+
     body += "📈 해외주식 PART\n"
     body += "\n".join(stock_summaries) + "\n\n"
     body += "🪙 코인 PART\n"
     body += "\n".join(crypto_summaries)
-    body += format_fear_greed_section()
+
+    # 🌐 코인시장 PART (코인 시장 전반 뉴스·흐름·전망)
+    try:
+        from topic_briefing import build_crypto_market_section
+        body += "\n\n" + build_crypto_market_section(client=client)
+    except Exception as e:
+        body += f"\n\n🌐 코인시장 PART\n(생성 실패: {e})"
+
+    body += "\n" + format_fear_greed_section()
 
     # 🏘️ 부동산 PART (구글 뉴스 종합 + LLM 요약/전망).
     # 부동산 수집/요약 실패가 뉴스 메일 전체를 깨지 않도록 방어.
