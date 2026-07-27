@@ -349,6 +349,10 @@ def _render_part(pid, icon, name, lines):
     return "".join(h)
 
 
+# 브라우저 탭에 표시되는 사이트 제목(고정)
+SITE_TITLE = "브리핑노트 | 경제·주식·코인·부동산 핵심 뉴스"
+
+
 def _shell(title, inner, extra_head="", script=""):
     return f"""<!DOCTYPE html>
 <html lang="ko">
@@ -432,7 +436,7 @@ def render_html(body, now=None, links=""):
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
 
-    return _shell(_title(now), hd + gauges_html + nav_html + "".join(panels),
+    return _shell(SITE_TITLE, hd + gauges_html + nav_html + "".join(panels),
                   script=_TAB_JS)
 
 
@@ -502,7 +506,7 @@ def render_archive_index():
     inner = (hd + '<div class="calwrap">' + "".join(blocks)
              + '<div class="det" id="det"></div></div>')
     js = _CAL_JS.replace("__DATA__", json.dumps(days, ensure_ascii=False))
-    return _shell("지난 브리핑", inner, script=js)
+    return _shell(SITE_TITLE, inner, script=js)
 
 
 # =========================================================
