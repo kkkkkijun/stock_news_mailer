@@ -160,6 +160,17 @@ a:hover{opacity:.72;}
 .outlook-item span:last-child{font-size:13.5px;line-height:1.55;color:#334155;}
 .ft{padding:20px 40px 34px;font-size:11px;line-height:1.7;color:#94a3b8;}
 
+/* 맨 위로 가기 버튼 */
+#top{position:fixed;right:24px;bottom:24px;z-index:20;width:46px;height:46px;
+ border:0;border-radius:50%;background:#0f1b2d;color:#fff;font-size:20px;
+ line-height:46px;text-align:center;cursor:pointer;box-shadow:0 6px 18px
+ rgba(15,27,45,.28);opacity:0;visibility:hidden;transition:opacity .2s,
+ visibility .2s,transform .15s;padding:0;}
+#top.show{opacity:.94;visibility:visible;}
+#top:hover{opacity:1;transform:translateY(-2px);}
+@media (max-width:600px){#top{right:16px;bottom:16px;width:42px;height:42px;
+ line-height:42px;font-size:18px;}}
+
 /* 지난 브리핑 캘린더 */
 .calwrap{padding:22px 40px 6px;}
 .cal{background:#fff;border:1px solid #e6ebf2;border-radius:14px;
@@ -352,6 +363,17 @@ def _render_part(pid, icon, name, lines):
 # 브라우저 탭에 표시되는 사이트 제목(고정)
 SITE_TITLE = "브리핑노트 | 경제·주식·코인·부동산 핵심 뉴스"
 
+# 맨 위로 가기 버튼 동작 (스크롤 200px 이상이면 노출)
+_TOP_JS = """<script>
+(function(){
+  var t=document.getElementById('top');
+  if(!t)return;
+  function s(){ t.classList.toggle('show', window.pageYOffset>200); }
+  window.addEventListener('scroll',s,{passive:true}); s();
+  t.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+})();
+</script>"""
+
 
 def _shell(title, inner, extra_head="", script=""):
     return f"""<!DOCTYPE html>
@@ -365,7 +387,9 @@ def _shell(title, inner, extra_head="", script=""):
 <div class="wrap"><div class="page">
 {inner}
 <footer class="ft">기사 요약은 각 언론사 보도를 바탕으로 자동 생성되었으며, 저작권은 해당 언론사에 있습니다. 정보 제공 목적이며 투자 판단의 책임은 본인에게 있습니다.</footer>
-</div></div>{script}
+</div></div>
+<button id="top" aria-label="맨 위로">↑</button>
+{script}{_TOP_JS}
 </body>
 </html>
 """
