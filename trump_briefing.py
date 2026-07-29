@@ -83,10 +83,14 @@ def _analyze(posts, client):
         "반드시 아래 JSON 형식으로만 출력:\n"
         '{"today":"오늘 트럼프 발언의 전반 분위기·핵심 주제 2~3문장",'
         '"posts":[{"i":정수,"topic":"분류","summary":"발언 요지 1~2문장 한국어"}],'
-        '"market":"시장·경제·관세·연준 관련 언급이 있으면 그 요지 1~2문장, 없으면 빈 문자열"}\n'
+        '"market":"시장·경제·관세·연준 관련 언급이 있으면 그 요지 1~2문장, 없으면 빈 문자열",'
+        '"outlook":["발언이 정책·시장·외교에 주는 시사점 또는 관전 포인트 문장","..."]}\n'
         "- topic 은 다음 중 하나: 경제·통상, 외교·안보, 국내정치, 인사·지지, 사법·논란, 기타\n"
         f"- posts 는 중요·화제성 순으로 최대 {TOP_N}건. 같은 내용 반복·단순 지지선언 "
         "남발은 하나로 합치고, 서로 다른 주제로 채워라.\n"
+        "- outlook 은 2~4개. 오늘 발언을 바탕으로 앞으로 지켜볼 지점·파급 가능성을 "
+        "'관전 포인트/시사점'으로 서술하되, 단정적 예측이나 투자권유는 금지. "
+        "발언에 없는 사실을 지어내지 말고 '~할 가능성', '~에 주목' 같은 신중한 표현을 써라.\n"
         "- 원문에 있는 내용만 사용하고 없는 사실을 지어내지 마라. "
         "정치적 주장은 '트럼프가 ~라고 주장/언급'처럼 화자를 명확히 하라.\n"
         "- 과격한 표현은 순화하되 핵심 의미는 살려라.\n\n"
@@ -110,7 +114,9 @@ def _analyze(posts, client):
             "summary": (p.get("summary") or "").strip(),
             "when": src.get("when", ""),
         })
-    return (data.get("today") or "").strip(), picks, (data.get("market") or "").strip()
+    outlook = [o.strip() for o in data.get("outlook", []) if o and o.strip()]
+    return ((data.get("today") or "").strip(), picks,
+            (data.get("market") or "").strip(), outlook)
 
 
 def build_trump_section(client=None):
@@ -130,7 +136,7 @@ def build_trump_section(client=None):
             lines.append(f"• ({p['when']}) {p['text'][:120]}")
         return "\n".join(lines)
     try:
-        today, picks, market = _analyze(posts, client)
+        today, picks, market, outlook = _analyze(posts, client)
     except Exception as e:  # noqa
         lines = [header, "", "[최근 발언]"]
         for p in posts[:TOP_N]:
@@ -151,6 +157,11 @@ def build_trump_section(client=None):
         lines.append("")
     if market:
         lines += ["[시장·경제 관련]", f"• {market}", ""]
+    if outlook:
+        lines.append("[흐름·전망]")
+        for o in outlook:
+            lines.append(f"• {o}")
+        lines.append("")
     lines.append("※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.")
     return "\n".join(lines)
 
