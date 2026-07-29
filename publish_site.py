@@ -18,7 +18,7 @@ import re
 import json
 import calendar
 import html as _html
-from datetime import datetime
+from datetime import datetime, date
 
 import pytz
 
@@ -365,8 +365,18 @@ def _render_part(pid, icon, name, lines):
 
 # 브라우저 탭에 표시되는 사이트 제목(고정)
 SITE_TITLE = "브리핑노트 | 경제·주식·코인·부동산 핵심 뉴스"
-# 헤더 우측 하단(최종 업데이트와 같은 줄)에 표시되는 슬로건
+# 헤더 우측 하단(최종 업데이트와 같은 줄)에 표시되는 슬로건 + 디데이
 SLOGAN = "🎯 40살 140억"
+DDAY_TARGET = date(2032, 12, 31)   # 93년생 만 40세 진입 직전
+
+
+def _slogan_text(now):
+    d = (DDAY_TARGET - now.date()).days
+    if d > 0:
+        return f"{SLOGAN} · D-{d:,}"
+    if d == 0:
+        return f"{SLOGAN} · D-DAY"
+    return SLOGAN
 
 # 맨 위로 가기 버튼 동작 (스크롤 200px 이상이면 노출)
 _TOP_JS = """<script>
@@ -432,7 +442,7 @@ def render_html(body, now=None, links=""):
           f'<div class="hd-links">{links}</div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
           f'<div class="hd-sub"><span>{dowb}{_e(sub)}</span>'
-          f'<span class="hd-slogan">{_e(SLOGAN)}</span></div></header>')
+          f'<span class="hd-slogan">{_e(_slogan_text(now))}</span></div></header>')
 
     # 공포탐욕 게이지
     gauges = []
