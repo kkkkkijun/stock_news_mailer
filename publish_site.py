@@ -107,6 +107,10 @@ a:hover{opacity:.72;}
  font-size:13px;font-weight:700;color:#f5c451;white-space:nowrap;
  flex-shrink:0;letter-spacing:.01em;text-align:right;}
 .hd-dday{font-size:12px;font-weight:600;color:#57d1a3;}
+.hd-bar{width:150px;max-width:42vw;height:6px;border-radius:3px;
+ background:rgba(255,255,255,.14);overflow:hidden;margin-top:2px;}
+.hd-bar>i{display:block;height:100%;border-radius:3px;background:#57d1a3;}
+.hd-pct{font-size:11px;font-weight:600;color:#8bd8bd;}
 .dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
  background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
  margin-right:8px;}
@@ -386,6 +390,7 @@ SITE_TITLE = "브리핑노트 | 경제·주식·코인·부동산 핵심 뉴스"
 # 헤더 우측 하단(최종 업데이트와 같은 줄)에 표시되는 슬로건 + 디데이
 SLOGAN = "🎯 40살 140억"
 DDAY_TARGET = date(2032, 12, 31)   # 93년생 만 40세 진입 직전
+DDAY_START = date(1993, 1, 1)      # 진행 바 0% 기준(출생) → 목표일에 100%
 
 
 def _dday_text(now):
@@ -395,6 +400,15 @@ def _dday_text(now):
     if d == 0:
         return "🗓️디데이 : D-DAY"
     return "🗓️디데이 : 달성"
+
+
+def _dday_progress(now):
+    """DDAY_START → DDAY_TARGET 경과율(%). 하루 지날수록 바가 찬다."""
+    total = (DDAY_TARGET - DDAY_START).days
+    if total <= 0:
+        return 100.0
+    done = (now.date() - DDAY_START).days
+    return max(0.0, min(100.0, done / total * 100))
 
 # 맨 위로 가기 버튼 동작 (스크롤 200px 이상이면 노출)
 _TOP_JS = """<script>
@@ -455,14 +469,16 @@ def render_html(body, now=None, links=""):
     dcls = {5: " sat", 6: " sun"}.get(now.weekday(), "")
     dowb = f'<span class="dowb{dcls}">{_DOW[now.weekday()]}</span>'
     sub = f"최종 업데이트 {now.strftime('%H:%M')} KST"
+    pct = _dday_progress(now)
     hd = (f'<header class="hd"><div class="hd-top">'
           f'<span class="hd-kicker">{_e(kicker)}</span>'
           f'<div class="hd-links">{links}</div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
           f'<div class="hd-sub"><span>{dowb}{_e(sub)}</span>'
           f'<span class="hd-slogan">{_e(SLOGAN)}'
-          f'<span class="hd-dday">{_e(_dday_text(now))}</span></span>'
-          f'</div></header>')
+          f'<span class="hd-pct">{_e(_dday_text(now))} · {pct:.1f}%</span>'
+          f'<span class="hd-bar"><i style="width:{pct:.1f}%"></i></span>'
+          f'</span></div></header>')
 
     # 공포탐욕 게이지
     gauges = []
