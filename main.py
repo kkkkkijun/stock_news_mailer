@@ -397,6 +397,13 @@ def build_body(client=None):
         body += "\n\n" + build_realestate_section(client=client)
     except Exception as e:
         body += f"\n\n🏘️ 부동산 PART\n(생성 실패: {e})"
+
+    # 💬 트럼프 PART (Truth Social 발언 번역·요약).
+    try:
+        from trump_briefing import build_trump_section
+        body += "\n\n" + build_trump_section(client=client)
+    except Exception as e:
+        body += f"\n\n💬 트럼프 PART\n(생성 실패: {e})"
     return body
 
 

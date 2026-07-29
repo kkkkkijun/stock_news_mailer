@@ -29,7 +29,7 @@ ARCHIVE_DIR = os.path.join(DOCS_DIR, "archive")
 # 원문 텍스트 보관소. 디자인만 바꿀 때 뉴스 재수집 없이 재렌더링(rebuild_all).
 DATA_DIR = os.path.join(HERE, "data")
 
-_SECTION_RE = re.compile(r"^(📈|🪙|📊|💹|🌐|🏘️)\s*(.+)$")
+_SECTION_RE = re.compile(r"^(📈|🪙|📊|💹|🌐|🏘️|💬)\s*(.+)$")
 _LABEL_RE = re.compile(r"^\[(.+)\]$")
 _ITEM_RE = re.compile(r"^(\d+)\.\s*(?:\((.+?)\)\s*)?(.+)$")
 _TICKER_RE = re.compile(r"^📰\s*\[(.+?)\]\s*(.+)$")
@@ -42,6 +42,7 @@ PARTS = [
     ("os", "📈", "해외주식", "해외주식 PART"),
     ("coin", "🪙", "코인", "코인 PART"),
     ("re", "🏘️", "부동산", "부동산 PART"),
+    ("trump", "💬", "트럼프", "트럼프 PART"),
 ]
 
 # 탭 구성: (탭 이름, 포함할 파트 id)
@@ -49,6 +50,7 @@ TABS = [
     ("뉴스", ["eco", "cm"]),
     ("주식", ["os", "coin"]),
     ("부동산", ["re"]),
+    ("트럼프", ["trump"]),
 ]
 
 # 티커 뱃지 색상 = 각 기업/코인의 브랜드 컬러
@@ -163,6 +165,7 @@ a:hover{opacity:.72;}
  border:1px solid #e6ebf2;border-radius:10px;padding:11px 14px;}
 .outlook-item .arrow{color:#3a6fd8;font-weight:700;line-height:1.4;}
 .outlook-item span:last-child{font-size:13.5px;line-height:1.55;color:#334155;}
+.note{margin-top:12px;font-size:12px;line-height:1.6;color:#94a3b8;}
 .ft{padding:20px 40px 34px;font-size:11px;line-height:1.7;color:#94a3b8;}
 
 /* 맨 위로 가기 버튼 */
@@ -227,23 +230,34 @@ def _split_sections(body):
 
 
 def _parse_part(lines):
-    """섹션 내용을 (요약문, [뉴스항목], [전망]) 으로 구조화."""
+    """섹션 내용을 (요약, [항목], [전망], 전망라벨, 노트) 로 구조화.
+
+    - [오늘 한눈에] → 요약 문단
+    - 숫자 항목(1. …) / 티커(📰 …) → 뉴스/발언 카드
+    - '• …' 불릿 → 전망 리스트(라벨은 직전 [ ] 이름 유지)
+    - '※ …' → 하단 노트
+    """
     summary, items, outlook = "", [], []
-    mode, cur = "news", None
+    outlook_label, note = "흐름·전망", ""
+    cur, cur_label = None, ""
+    mode = "items"
     for s in lines:
         m = _LABEL_RE.match(s)
         if m:
-            lab = m.group(1)
-            mode = ("sum" if "한눈에" in lab else
-                    "out" if "흐름" in lab else "news")
+            cur_label = m.group(1)
+            mode = "sum" if "한눈에" in cur_label else "items"
             cur = None
+            continue
+        if s.startswith("※"):
+            note = (note + " " + s.lstrip("※").strip()).strip()
             continue
         if mode == "sum":
             summary = (summary + " " + s).strip()
             continue
-        if mode == "out":
-            if s[0] in "•-":
-                outlook.append(s[1:].strip())
+        if s and s[0] in "•-":
+            outlook.append(s[1:].strip())
+            outlook_label = cur_label or outlook_label
+            cur = None
             continue
 
         mt = _TICKER_RE.match(s)
@@ -263,7 +277,7 @@ def _parse_part(lines):
                 cur["desc"] = s.lstrip("→").strip()
             elif s.startswith("(") and s.endswith(")"):
                 cur["src"] = s[1:-1].strip()
-    return summary, items, outlook
+    return summary, items, outlook, outlook_label, note
 
 
 def _fear_greed(sections):
@@ -331,7 +345,7 @@ def _text_on(bg):
 
 
 def _render_part(pid, icon, name, lines):
-    summary, items, outlook = _parse_part(lines)
+    summary, items, outlook, outlook_label, note = _parse_part(lines)
     h = [f'<section class="part" id="{pid}">',
          f'<div class="part-head"><span class="part-icon">{icon}</span>'
          f'<h2>{_e(name)}</h2></div>']
@@ -355,12 +369,14 @@ def _render_part(pid, icon, name, lines):
                      f'<h3>{_e(it["title"])}</h3>{desc}</div>')
         h.append("</div>")
     if outlook:
-        h.append('<div class="outlook"><div class="outlook-label">흐름 · 전망</div>'
+        h.append(f'<div class="outlook"><div class="outlook-label">{_e(outlook_label)}</div>'
                  '<div class="outlook-list">')
         for o in outlook:
             h.append('<div class="outlook-item"><span class="arrow">›</span>'
                      f'<span>{_e(o)}</span></div>')
         h.append("</div></div>")
+    if note:
+        h.append(f'<div class="note">{_e(note)}</div>')
     h.append("</section>")
     return "".join(h)
 
