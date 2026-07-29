@@ -257,10 +257,12 @@ def _parse_part(lines):
             summary = (summary + " " + s).strip()
             continue
         if s and s[0] in "•-":
-            if curblock is None:
-                curblock = (cur_label or "흐름·전망", [])
-                blocks.append(curblock)
-            curblock[1].append(s[1:].strip())
+            txt = s[1:].strip()
+            if txt:                      # 빈 불릿은 무시
+                if curblock is None:
+                    curblock = (cur_label or "흐름·전망", [])
+                    blocks.append(curblock)
+                curblock[1].append(txt)
             cur = None
             continue
 

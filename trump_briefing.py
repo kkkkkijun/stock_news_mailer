@@ -83,7 +83,8 @@ def _analyze(posts, client):
         "반드시 아래 JSON 형식으로만 출력:\n"
         '{"today":"오늘 트럼프 발언의 전반 분위기·핵심 주제 2~3문장",'
         '"posts":[{"i":정수,"topic":"분류","summary":"발언 요지 1~2문장 한국어"}],'
-        '"market":"시장·경제·관세·연준 관련 언급이 있으면 그 요지 1~2문장, 없으면 빈 문자열",'
+        '"market":"시장·경제·관세·연준 관련 언급이 있으면 그 요지 1~2문장. '
+        '관련 언급이 없으면 이 값은 반드시 빈 문자열 \\"\\" 로 둘 것(설명 문구를 넣지 말 것)",'
         '"outlook":["발언이 정책·시장·외교에 주는 시사점 또는 관전 포인트 문장","..."]}\n'
         "- topic 은 다음 중 하나: 경제·통상, 외교·안보, 국내정치, 인사·지지, 사법·논란, 기타\n"
         f"- posts 는 중요·화제성 순으로 최대 {TOP_N}건. 같은 내용 반복·단순 지지선언 "
@@ -115,8 +116,11 @@ def _analyze(posts, client):
             "when": src.get("when", ""),
         })
     outlook = [o.strip() for o in data.get("outlook", []) if o and o.strip()]
-    return ((data.get("today") or "").strip(), picks,
-            (data.get("market") or "").strip(), outlook)
+    market = (data.get("market") or "").strip()
+    # 모델이 빈 문자열 대신 '빈 문자열'/'없음' 같은 무의미 값을 넣는 경우 제거
+    if market in ("", "빈 문자열", "없음", "해당 없음", "N/A", "null", "None"):
+        market = ""
+    return (data.get("today") or "").strip(), picks, market, outlook
 
 
 def build_trump_section(client=None):
