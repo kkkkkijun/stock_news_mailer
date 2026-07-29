@@ -240,16 +240,15 @@ def _parse_part(lines):
     - '• …' 불릿 → 전망 리스트(라벨은 직전 [ ] 이름 유지)
     - '※ …' → 하단 노트
     """
-    summary, items, outlook = "", [], []
-    outlook_label, note = "흐름·전망", ""
-    cur, cur_label = None, ""
+    summary, items, blocks, note = "", [], [], ""
+    curblock, cur, cur_label = None, None, ""
     mode = "items"
     for s in lines:
         m = _LABEL_RE.match(s)
         if m:
             cur_label = m.group(1)
             mode = "sum" if "한눈에" in cur_label else "items"
-            cur = None
+            cur = curblock = None
             continue
         if s.startswith("※"):
             note = (note + " " + s.lstrip("※").strip()).strip()
@@ -258,8 +257,10 @@ def _parse_part(lines):
             summary = (summary + " " + s).strip()
             continue
         if s and s[0] in "•-":
-            outlook.append(s[1:].strip())
-            outlook_label = cur_label or outlook_label
+            if curblock is None:
+                curblock = (cur_label or "흐름·전망", [])
+                blocks.append(curblock)
+            curblock[1].append(s[1:].strip())
             cur = None
             continue
 
@@ -280,7 +281,7 @@ def _parse_part(lines):
                 cur["desc"] = s.lstrip("→").strip()
             elif s.startswith("(") and s.endswith(")"):
                 cur["src"] = s[1:-1].strip()
-    return summary, items, outlook, outlook_label, note
+    return summary, items, blocks, note
 
 
 def _fear_greed(sections):
@@ -348,7 +349,7 @@ def _text_on(bg):
 
 
 def _render_part(pid, icon, name, lines):
-    summary, items, outlook, outlook_label, note = _parse_part(lines)
+    summary, items, blocks, note = _parse_part(lines)
     h = [f'<section class="part" id="{pid}">',
          f'<div class="part-head"><span class="part-icon">{icon}</span>'
          f'<h2>{_e(name)}</h2></div>']
@@ -371,10 +372,12 @@ def _render_part(pid, icon, name, lines):
             h.append(f'<div class="news"><div class="news-meta">{badge}{src}</div>'
                      f'<h3>{_e(it["title"])}</h3>{desc}</div>')
         h.append("</div>")
-    if outlook:
-        h.append(f'<div class="outlook"><div class="outlook-label">{_e(outlook_label)}</div>'
+    for label, bullets in blocks:
+        if not bullets:
+            continue
+        h.append(f'<div class="outlook"><div class="outlook-label">{_e(label)}</div>'
                  '<div class="outlook-list">')
-        for o in outlook:
+        for o in bullets:
             h.append('<div class="outlook-item"><span class="arrow">›</span>'
                      f'<span>{_e(o)}</span></div>')
         h.append("</div></div>")
