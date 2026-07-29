@@ -104,7 +104,7 @@ a:hover{opacity:.72;}
 .hd-slogan{display:flex;flex-direction:column;align-items:flex-end;gap:2px;
  font-size:13px;font-weight:700;color:#f5c451;white-space:nowrap;
  flex-shrink:0;letter-spacing:.01em;text-align:right;}
-.hd-dday{font-size:12px;font-weight:600;color:#e6b64a;}
+.hd-dday{font-size:12px;font-weight:600;color:#57d1a3;}
 .dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
  background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
  margin-right:8px;}
