@@ -103,14 +103,13 @@ a:hover{opacity:.72;}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
  font-size:13px;color:#94a3b8;}
-.hd-slogan{display:flex;flex-direction:column;align-items:flex-end;gap:2px;
- font-size:13px;font-weight:700;color:#f5c451;white-space:nowrap;
+.hd-slogan{display:flex;flex-direction:column;align-items:flex-end;gap:3px;
+ font-size:15.5px;font-weight:700;color:#f5c451;white-space:nowrap;
  flex-shrink:0;letter-spacing:.01em;text-align:right;}
-.hd-dday{font-size:12px;font-weight:600;color:#57d1a3;}
-.hd-bar{width:150px;max-width:42vw;height:6px;border-radius:3px;
- background:rgba(255,255,255,.14);overflow:hidden;margin-top:2px;}
-.hd-bar>i{display:block;height:100%;border-radius:3px;background:#57d1a3;}
-.hd-pct{font-size:11px;font-weight:600;color:#8bd8bd;}
+.hd-bar{width:168px;max-width:44vw;height:7px;border-radius:4px;
+ background:rgba(255,255,255,.14);overflow:hidden;margin-top:3px;}
+.hd-bar>i{display:block;height:100%;border-radius:4px;background:#5c9dff;}
+.hd-pct{font-size:13px;font-weight:600;color:#86b7ff;}
 .dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
  background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
  margin-right:8px;}
@@ -396,10 +395,10 @@ DDAY_START = date(2026, 7, 30)     # 진행 바 0% 기준(추적 시작일) → 
 def _dday_text(now):
     d = (DDAY_TARGET - now.date()).days
     if d > 0:
-        return f"🗓️디데이 : {d:,}"
+        return f"🗓️ D-{d:,}"
     if d == 0:
-        return "🗓️디데이 : D-DAY"
-    return "🗓️디데이 : 달성"
+        return "🗓️ D-DAY"
+    return "🗓️ 달성"
 
 
 def _dday_progress(now):
