@@ -99,7 +99,10 @@ a:hover{opacity:.72;}
  background:rgba(255,255,255,.12);padding:6px 13px;border-radius:999px;}
 .hd-archive:hover{opacity:1;background:rgba(255,255,255,.2);}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
-.hd-sub{font-size:13px;color:#94a3b8;}
+.hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
+ font-size:13px;color:#94a3b8;}
+.hd-slogan{font-size:13px;font-weight:700;color:#f5c451;white-space:nowrap;
+ flex-shrink:0;letter-spacing:.01em;}
 .dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
  background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
  margin-right:8px;}
@@ -362,6 +365,8 @@ def _render_part(pid, icon, name, lines):
 
 # 브라우저 탭에 표시되는 사이트 제목(고정)
 SITE_TITLE = "브리핑노트 | 경제·주식·코인·부동산 핵심 뉴스"
+# 헤더 우측 하단(최종 업데이트와 같은 줄)에 표시되는 슬로건
+SLOGAN = "🎯 40살 140억"
 
 # 맨 위로 가기 버튼 동작 (스크롤 200px 이상이면 노출)
 _TOP_JS = """<script>
@@ -426,7 +431,8 @@ def render_html(body, now=None, links=""):
           f'<span class="hd-kicker">{_e(kicker)}</span>'
           f'<div class="hd-links">{links}</div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
-          f'<div class="hd-sub">{dowb}{_e(sub)}</div></header>')
+          f'<div class="hd-sub"><span>{dowb}{_e(sub)}</span>'
+          f'<span class="hd-slogan">{_e(SLOGAN)}</span></div></header>')
 
     # 공포탐욕 게이지
     gauges = []
