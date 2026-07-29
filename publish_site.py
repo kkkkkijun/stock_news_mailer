@@ -101,8 +101,10 @@ a:hover{opacity:.72;}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
  font-size:13px;color:#94a3b8;}
-.hd-slogan{font-size:13px;font-weight:700;color:#f5c451;white-space:nowrap;
- flex-shrink:0;letter-spacing:.01em;}
+.hd-slogan{display:flex;flex-direction:column;align-items:flex-end;gap:2px;
+ font-size:13px;font-weight:700;color:#f5c451;white-space:nowrap;
+ flex-shrink:0;letter-spacing:.01em;text-align:right;}
+.hd-dday{font-size:12px;font-weight:600;color:#e6b64a;}
 .dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
  background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
  margin-right:8px;}
@@ -370,13 +372,13 @@ SLOGAN = "🎯 40살 140억"
 DDAY_TARGET = date(2032, 12, 31)   # 93년생 만 40세 진입 직전
 
 
-def _slogan_text(now):
+def _dday_text(now):
     d = (DDAY_TARGET - now.date()).days
     if d > 0:
-        return f"{SLOGAN} · D-{d:,}"
+        return f"🗓️디데이 : {d:,}"
     if d == 0:
-        return f"{SLOGAN} · D-DAY"
-    return SLOGAN
+        return "🗓️디데이 : D-DAY"
+    return "🗓️디데이 : 달성"
 
 # 맨 위로 가기 버튼 동작 (스크롤 200px 이상이면 노출)
 _TOP_JS = """<script>
@@ -442,7 +444,9 @@ def render_html(body, now=None, links=""):
           f'<div class="hd-links">{links}</div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
           f'<div class="hd-sub"><span>{dowb}{_e(sub)}</span>'
-          f'<span class="hd-slogan">{_e(_slogan_text(now))}</span></div></header>')
+          f'<span class="hd-slogan">{_e(SLOGAN)}'
+          f'<span class="hd-dday">{_e(_dday_text(now))}</span></span>'
+          f'</div></header>')
 
     # 공포탐욕 게이지
     gauges = []
