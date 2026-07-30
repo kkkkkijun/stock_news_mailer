@@ -2,8 +2,9 @@ name: Daily News Briefing (Email + Site)
 
 on:
   schedule:
-    # 오전 7:37 (한국 시간 기준) → UTC 22:37
-    - cron: '37 22 * * *'
+    # 오전 6:05 (한국 시간 기준) → UTC 21:05
+    # (GitHub Actions 예약 지연 + 실행시간 ≈ 1시간 고려해, 7:00~7:30 도착 목표로 앞당김)
+    - cron: '5 21 * * *'
     # 오후 5:13 (한국 시간 기준) → UTC 08:13
     - cron: '13 8 * * *'
   workflow_dispatch:
