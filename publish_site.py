@@ -110,6 +110,7 @@ a:hover{opacity:.72;}
  background:rgba(255,255,255,.14);overflow:hidden;margin-top:3px;}
 .hd-bar>i{display:block;height:100%;border-radius:4px;background:#5c9dff;}
 .hd-pct{font-size:13px;font-weight:600;color:#86b7ff;}
+.hd-target{font-size:11px;font-weight:500;color:#7c8aa0;margin-top:3px;}
 .dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
  background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
  margin-right:8px;}
@@ -482,6 +483,7 @@ def render_html(body, now=None, links=""):
           f'<span class="hd-slogan">{_e(SLOGAN)}'
           f'<span class="hd-pct">{_e(_dday_text(now))} · {pct:.2f}%</span>'
           f'<span class="hd-bar"><i style="width:{pct:.3f}%"></i></span>'
+          f'<span class="hd-target">목표일 {DDAY_TARGET:%Y.%m.%d}</span>'
           f'</span></div></header>')
 
     # 공포탐욕 게이지
