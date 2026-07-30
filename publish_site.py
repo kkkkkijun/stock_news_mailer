@@ -480,8 +480,8 @@ def render_html(body, now=None, links=""):
           f'<h1>{ampm} 뉴스 브리핑</h1>'
           f'<div class="hd-sub"><span>{dowb}{_e(sub)}</span>'
           f'<span class="hd-slogan">{_e(SLOGAN)}'
-          f'<span class="hd-pct">{_e(_dday_text(now))} · {pct:.1f}%</span>'
-          f'<span class="hd-bar"><i style="width:{pct:.1f}%"></i></span>'
+          f'<span class="hd-pct">{_e(_dday_text(now))} · {pct:.2f}%</span>'
+          f'<span class="hd-bar"><i style="width:{pct:.3f}%"></i></span>'
           f'</span></div></header>')
 
     # 공포탐욕 게이지
