@@ -45,6 +45,10 @@ PARTS = [
     ("trump", "💬", "트럼프", "트럼프 PART"),
 ]
 
+# 핵심(히어로) 강조를 적용할 섹션 = LLM 중요도 랭킹이 있는 섹션만.
+# 주식(os)·코인(coin)은 '관련성+최신' 정렬이라 1번=최중요가 아니므로 제외.
+HERO_PARTS = {"eco", "cm", "re", "trump"}
+
 # 탭 구성: (탭 이름, 포함할 파트 id)
 TABS = [
     ("뉴스", ["eco", "cm"]),
@@ -174,6 +178,10 @@ a:hover{opacity:.72;}
 .news h3{font-size:15.5px;font-weight:600;color:var(--ink);line-height:1.45;
  margin:0 0 6px;}
 .news p{font-size:13.5px;line-height:1.6;color:var(--muted);margin:0;}
+.news.hero{border-left:4px solid var(--accent);box-shadow:0 4px 14px var(--shadow);}
+.news.hero h3{font-size:16.5px;font-weight:700;}
+.badge-key{font-size:10px;font-weight:800;color:#fff;background:var(--accent);
+ padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
 .outlook{margin-top:14px;}
 .outlook-label{font-size:12px;font-weight:700;color:var(--muted-2);margin-bottom:8px;}
 .outlook-list{display:flex;flex-direction:column;gap:8px;}
@@ -378,7 +386,7 @@ def _text_on(bg):
     return "#0f1b2d" if lum > 0.35 else "#fff"
 
 
-def _render_part(pid, icon, name, lines):
+def _render_part(pid, icon, name, lines, hero=False):
     summary, items, blocks, note = _parse_part(lines)
     h = [f'<section class="part" id="{pid}">',
          f'<div class="part-head"><span class="part-icon">{icon}</span>'
@@ -388,7 +396,8 @@ def _render_part(pid, icon, name, lines):
                  f'<p>{_e(summary)}</p></div>')
     if items:
         h.append('<div class="news-list">')
-        for it in items:
+        for i, it in enumerate(items):
+            is_hero = hero and i == 0          # 섹션의 1번 뉴스만 핵심 강조
             if not it["label"]:
                 badge = ""
             elif it["kind"] == "ticker":
@@ -397,9 +406,11 @@ def _render_part(pid, icon, name, lines):
                          f'color:{_text_on(bg)};">{_e(it["label"])}</span>')
             else:
                 badge = f'<span class="tag">{_e(it["label"])}</span>'
+            key = '<span class="badge-key">핵심</span>' if is_hero else ""
             src = f'<span class="src">{_e(it["src"])}</span>' if it["src"] else ""
             desc = f'<p>{_e(it["desc"])}</p>' if it["desc"] else ""
-            h.append(f'<div class="news"><div class="news-meta">{badge}{src}</div>'
+            cls = "news hero" if is_hero else "news"
+            h.append(f'<div class="{cls}"><div class="news-meta">{key}{badge}{src}</div>'
                      f'<h3>{_e(it["title"])}</h3>{desc}</div>')
         h.append("</div>")
     for label, bullets in blocks:
@@ -547,7 +558,8 @@ def render_html(body, now=None, links=""):
     for pid, icon, name, key in PARTS:
         lines = next((ls for t, ls in sections if key in t), None)
         if lines is not None:
-            rendered[pid] = _render_part(pid, icon, name, lines)
+            rendered[pid] = _render_part(pid, icon, name, lines,
+                                         hero=(pid in HERO_PARTS))
 
     # 탭 + 패널
     navs, panels, first = [], [], True

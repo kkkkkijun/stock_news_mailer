@@ -100,6 +100,10 @@ a:hover{opacity:.72;}
 .news h3{font-size:15.5px;font-weight:600;color:var(--ink);line-height:1.45;
  margin:0 0 6px;}
 .news p{font-size:13.5px;line-height:1.6;color:var(--muted);margin:0;}
+.news.hero{border-left:4px solid var(--accent);box-shadow:0 4px 14px var(--shadow);}
+.news.hero h3{font-size:16.5px;font-weight:700;}
+.badge-key{font-size:10px;font-weight:800;color:#fff;background:var(--accent);
+ padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
 .outlook{margin-top:14px;}
 .outlook-label{font-size:12px;font-weight:700;color:var(--muted-2);margin-bottom:8px;}
 .outlook-list{display:flex;flex-direction:column;gap:8px;}
@@ -173,7 +177,7 @@ a:hover{opacity:.72;}
 <button id="theme" aria-label="다크/라이트 테마 전환" title="테마 전환">🌙</button>
 <button id="top" aria-label="맨 위로">↑</button>
 <script>
-var DATA = {"2026-07-24": {"am": "2026-07-24-am.html", "pm": "2026-07-24-pm.html"}, "2026-07-25": {"am": "2026-07-25-am.html", "pm": "2026-07-25-pm.html"}, "2026-07-28": {"am": "2026-07-28-am.html", "pm": "2026-07-28-pm.html"}, "2026-07-23": {"pm": "2026-07-23-pm.html"}, "2026-07-31": {"am": "2026-07-31-am.html"}, "2026-07-30": {"am": "2026-07-30-am.html", "pm": "2026-07-30-pm.html"}, "2026-07-26": {"pm": "2026-07-26-pm.html", "am": "2026-07-26-am.html"}, "2026-07-27": {"pm": "2026-07-27-pm.html", "am": "2026-07-27-am.html"}, "2026-07-29": {"am": "2026-07-29-am.html", "pm": "2026-07-29-pm.html"}};
+var DATA = {"2026-07-23": {"pm": "2026-07-23-pm.html"}, "2026-07-24": {"am": "2026-07-24-am.html", "pm": "2026-07-24-pm.html"}, "2026-07-25": {"am": "2026-07-25-am.html", "pm": "2026-07-25-pm.html"}, "2026-07-26": {"am": "2026-07-26-am.html", "pm": "2026-07-26-pm.html"}, "2026-07-27": {"am": "2026-07-27-am.html", "pm": "2026-07-27-pm.html"}, "2026-07-28": {"am": "2026-07-28-am.html", "pm": "2026-07-28-pm.html"}, "2026-07-29": {"am": "2026-07-29-am.html", "pm": "2026-07-29-pm.html"}, "2026-07-30": {"am": "2026-07-30-am.html", "pm": "2026-07-30-pm.html"}, "2026-07-31": {"am": "2026-07-31-am.html"}};
 function pick(btn){
   document.querySelectorAll('.day.on').forEach(function(x){x.classList.remove('on');});
   btn.classList.add('on');
