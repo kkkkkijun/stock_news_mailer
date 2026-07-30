@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>브리핑노트 | 경제·주식·코인·부동산 핵심 뉴스</title>
+<style>
+:root{
+ --bg:#e8ecf1;--page:#f6f8fb;--border:#e6ebf2;
+ --ink:#0f1b2d;--ink-2:#1e293b;--muted:#475569;--muted-2:#64748b;--faint:#94a3b8;
+ --card:#fff;--chip:#eaf0fb;--accent:#3a6fd8;--header:#0f1b2d;--nav-track:#eef2f7;
+ --hover:#dbe6f8;--chip-ink:#3a6fd8;--shadow:rgba(15,27,45,.10);}
+:root[data-theme="dark"]{
+ --bg:#0b0e13;--page:#12161d;--border:#262c36;
+ --ink:#e7ecf3;--ink-2:#d6dde8;--muted:#aab6c6;--muted-2:#9aa7b8;--faint:#8b96a6;
+ --card:#1a1f28;--chip:#1c2735;--accent:#6f9bef;--header:#0c1017;--nav-track:#161c25;
+ --hover:#243244;--chip-ink:#8fb4f5;--shadow:rgba(0,0,0,.5);}
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Pretendard',system-ui,sans-serif;
+ -webkit-font-smoothing:antialiased;background:var(--bg);color:var(--ink);
+ transition:background .2s,color .2s;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{opacity:.72;}
+.wrap{display:flex;justify-content:center;padding:48px 24px;}
+.page{width:100%;max-width:820px;background:var(--page);color:var(--ink);
+ border:1px solid var(--border);border-radius:18px;
+ box-shadow:0 12px 44px var(--shadow);overflow:hidden;}
+.hd{padding:30px 40px;background:var(--header);color:#fff;}
+.hd-top{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.hd-kicker{font-size:12px;font-weight:600;letter-spacing:.04em;color:#94a3b8;}
+.hd-links{display:flex;gap:7px;flex-shrink:0;}
+.hd-archive{font-size:12px;font-weight:600;color:#dbe4f0;
+ background:rgba(255,255,255,.12);padding:6px 13px;border-radius:999px;}
+.hd-archive:hover{opacity:1;background:rgba(255,255,255,.2);}
+.hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
+.hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
+ font-size:13px;color:#94a3b8;}
+.hd-slogan{display:flex;flex-direction:column;align-items:flex-end;gap:3px;
+ font-size:15.5px;font-weight:700;color:#f5c451;white-space:nowrap;
+ flex-shrink:0;letter-spacing:.01em;text-align:right;}
+.hd-bar{width:168px;max-width:44vw;height:7px;border-radius:4px;
+ background:rgba(255,255,255,.14);overflow:hidden;margin-top:3px;}
+.hd-bar>i{display:block;height:100%;border-radius:4px;background:#5c9dff;}
+.hd-pct{font-size:13px;font-weight:600;color:#86b7ff;}
+.hd-target{font-size:11px;font-weight:500;color:#7c8aa0;margin-top:3px;}
+.dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
+ background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
+ margin-right:8px;}
+.dowb.sat{color:#a8c8ff;background:rgba(120,165,255,.2);}
+.dowb.sun{color:#ffb0a8;background:rgba(255,130,120,.2);}
+.gauges{display:flex;gap:16px;padding:16px 40px 4px;flex-wrap:wrap;}
+.gauge{flex:1;min-width:220px;background:var(--card);border:1px solid var(--border);
+ border-radius:14px;padding:10px 20px 11px;}
+.gauge-label{font-size:11px;color:var(--muted-2);margin-bottom:4px;}
+.gauge-row{display:flex;align-items:baseline;gap:9px;margin-bottom:7px;}
+.gauge-num{font-size:23px;font-weight:700;line-height:1;color:var(--ink);}
+.gauge-mood{font-size:11px;font-weight:600;color:#fff;padding:2px 9px;
+ border-radius:999px;}
+.gauge-track{position:relative;height:5px;border-radius:3px;
+ background:linear-gradient(90deg,#c0392b,#d98324,#c9a227,#4a9d5b,#2e7d32);}
+.gauge-marker{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;
+ background:#fff;border:2.5px solid var(--ink);transform:translate(-50%,-50%);}
+.gauge-scale{display:flex;justify-content:space-between;font-size:10px;
+ color:var(--faint);margin-top:4px;}
+.navwrap{padding:14px 40px 6px;position:sticky;top:0;background:var(--page);z-index:3;}
+.nav{display:flex;gap:5px;background:var(--nav-track);border:1px solid var(--border);
+ border-radius:12px;padding:5px;}
+.nav a,.nav button{flex:1;text-align:center;font-size:13px;font-weight:600;
+ color:var(--muted);padding:9px 6px;border-radius:8px;border:0;background:transparent;
+ font-family:inherit;cursor:pointer;}
+.nav a:hover,.nav button:hover{background:var(--card);opacity:1;}
+.nav button.on{background:var(--ink);color:var(--page);}
+.nav button.on:hover{background:var(--ink);}
+.panel{display:none;}
+.panel.on{display:block;}
+.part{padding:22px 40px;scroll-margin-top:70px;}
+.part-head{display:flex;align-items:center;gap:11px;margin-bottom:14px;}
+.part-icon{width:32px;height:32px;border-radius:9px;background:var(--chip);
+ display:flex;align-items:center;justify-content:center;font-size:15px;}
+.part-head h2{font-size:18px;font-weight:700;color:var(--ink);margin:0;}
+.summary{background:var(--chip);border-radius:12px;padding:14px 16px;margin-bottom:14px;}
+.summary-label{font-size:11px;font-weight:700;color:var(--chip-ink);letter-spacing:.05em;
+ margin-bottom:5px;}
+.summary p{font-size:14px;line-height:1.65;color:var(--ink-2);margin:0;}
+.news-list{display:flex;flex-direction:column;gap:10px;}
+.news{display:block;background:var(--card);border:1px solid var(--border);border-radius:12px;
+ padding:15px 16px;color:inherit;}
+.news-meta{display:flex;gap:8px;align-items:center;margin-bottom:9px;}
+.tag{font-size:11px;font-weight:700;color:var(--chip-ink);background:var(--chip);
+ padding:3px 9px;border-radius:6px;}
+.ticker{font-family:ui-monospace,monospace;font-size:11px;font-weight:700;
+ color:#fff;background:var(--ink);padding:3px 8px;border-radius:6px;}
+.src{margin-left:auto;font-size:11px;color:var(--faint);}
+.news h3{font-size:15.5px;font-weight:600;color:var(--ink);line-height:1.45;
+ margin:0 0 6px;}
+.news p{font-size:13.5px;line-height:1.6;color:var(--muted);margin:0;}
+.outlook{margin-top:14px;}
+.outlook-label{font-size:12px;font-weight:700;color:var(--muted-2);margin-bottom:8px;}
+.outlook-list{display:flex;flex-direction:column;gap:8px;}
+.outlook-item{display:flex;gap:10px;align-items:flex-start;background:var(--card);
+ border:1px solid var(--border);border-radius:10px;padding:11px 14px;}
+.outlook-item .arrow{color:var(--accent);font-weight:700;line-height:1.4;}
+.outlook-item span:last-child{font-size:13.5px;line-height:1.55;color:var(--ink-2);}
+.note{margin-top:12px;font-size:12px;line-height:1.6;color:var(--faint);}
+.ft{padding:20px 40px 34px;font-size:11px;line-height:1.7;color:var(--faint);}
+
+/* 플로팅 버튼: 맨 위로 / 테마 전환 */
+#top,#theme{position:fixed;bottom:24px;z-index:20;width:46px;height:46px;
+ border:1px solid var(--border);border-radius:50%;cursor:pointer;padding:0;
+ font-size:20px;line-height:44px;text-align:center;
+ box-shadow:0 6px 18px var(--shadow);
+ transition:opacity .2s,visibility .2s,transform .15s;}
+#top{right:24px;background:var(--ink);color:var(--page);border-color:transparent;
+ opacity:0;visibility:hidden;}
+#top.show{opacity:.94;visibility:visible;}
+#top:hover{opacity:1;transform:translateY(-2px);}
+#theme{left:24px;background:var(--card);color:var(--ink);}
+#theme:hover{transform:translateY(-2px);}
+@media (max-width:600px){#top,#theme{bottom:16px;width:42px;height:42px;
+ line-height:40px;font-size:18px;}#top{right:16px;}#theme{left:16px;}}
+
+/* 지난 브리핑 검색 + 캘린더 */
+.search{margin-bottom:14px;}
+.search input{width:100%;font:inherit;font-size:14px;padding:12px 15px;
+ border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--ink);}
+.search input::placeholder{color:var(--faint);}
+.results{margin-bottom:14px;}
+.ritem{display:block;background:var(--card);border:1px solid var(--border);
+ border-radius:10px;padding:11px 14px;margin-bottom:8px;color:inherit;}
+.ritem:hover{opacity:1;border-color:var(--accent);}
+.ritem .rt{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.45;}
+.ritem .rm{font-size:11px;color:var(--faint);margin-top:3px;}
+.rnone{color:var(--faint);font-size:13px;padding:10px 2px;}
+.calwrap{padding:22px 40px 6px;}
+.cal{background:var(--card);border:1px solid var(--border);border-radius:14px;
+ padding:16px 14px;margin-bottom:14px;}
+.cal h3{margin:0 0 12px;font-size:15px;font-weight:700;color:var(--ink);}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;}
+.dow{text-align:center;font-size:11px;color:var(--faint);padding:4px 0;}
+.dow.sun{color:#e0685c;}
+.day{aspect-ratio:1;border:0;background:transparent;border-radius:9px;font:inherit;
+ font-size:13px;color:var(--faint);display:flex;align-items:center;
+ justify-content:center;padding:0;}
+.day.has{background:var(--chip);color:var(--chip-ink);font-weight:700;cursor:pointer;}
+.day.has:hover{background:var(--hover);}
+.day.on{background:var(--ink);color:var(--page);}
+.det{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;}
+.det .t{font-weight:700;margin-bottom:10px;font-size:15px;color:var(--ink);}
+.det a{display:inline-block;padding:10px 16px;margin:0 8px 8px 0;border-radius:9px;
+ background:var(--chip);color:var(--chip-ink);font-weight:600;font-size:13px;}
+.det a:hover{opacity:1;background:var(--hover);}
+.det .none{color:var(--faint);font-size:13px;}
+@media (max-width:600px){
+  .wrap{padding:0;}
+  .page{border-radius:0;border-left:0;border-right:0;}
+  .hd,.gauges,.navwrap,.part,.ft,.calwrap{padding-left:18px;padding-right:18px;}
+  .hd h1{font-size:22px;}
+  .nav a{font-size:12px;padding:8px 3px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="page">
+<header class="hd"><div class="hd-top"><span class="hd-kicker">2026.07.30 · 오후 브리핑</span><div class="hd-links"><a class="hd-archive" href="../index.html">🏠 홈</a><a class="hd-archive" href="index.html">지난 브리핑</a></div></div><h1>오후 뉴스 브리핑</h1><div class="hd-sub"><span><span class="dowb">목요일</span>최종 업데이트 18:41 KST</span><span class="hd-slogan">🎯 40살 140억<span class="hd-pct">🗓️ D-2,346 · 0.00%</span><span class="hd-bar"><i style="width:0.000%"></i></span><span class="hd-target">목표일 2032.12.31</span></span></div></header><div class="gauges"><div class="gauge"><div class="gauge-label">CNN 기준</div><div class="gauge-row"><span class="gauge-num">34</span><span class="gauge-mood" style="background:#d98324;">Fear</span></div><div class="gauge-track"><div class="gauge-marker" style="left:34%;"></div></div><div class="gauge-scale"><span>공포</span><span>탐욕</span></div></div><div class="gauge"><div class="gauge-label">크립토 기준</div><div class="gauge-row"><span class="gauge-num">28</span><span class="gauge-mood" style="background:#d98324;">Fear</span></div><div class="gauge-track"><div class="gauge-marker" style="left:28%;"></div></div><div class="gauge-scale"><span>공포</span><span>탐욕</span></div></div></div><div class="navwrap"><nav class="nav"><button class="nav-t on" data-p="tp0">뉴스</button><button class="nav-t" data-p="tp1">주식</button><button class="nav-t" data-p="tp2">부동산</button><button class="nav-t" data-p="tp3">트럼프</button></nav></div><div class="panel on" id="tp0"><section class="part" id="eco"><div class="part-head"><span class="part-icon">💹</span><h2>경제</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>오늘은 미국 Federal Reserve의 추가 금리 인상 우려로 한국은행의 금리 인상 가능성이 주목받고 있으며, 국내 채권 금리가 상승하는 등 긴축 우려가 반영되고 있습니다.</p></div><div class="news-list"><div class="news"><div class="news-meta"><span class="tag">금리</span><span class="src">매일경제 · 07/30 17:51</span></div><h3>美금리인상 불씨…한은 추가인상 나서나</h3><p>미국 연준 위원들의 금리 인상 지지 발언으로 한국은행의 연내 금리 인상 압박이 커졌고, 7월 30일의 금통위에서 &#x27;백투백&#x27; 인상 여부에 시장의 관심이 집중되고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">금리</span><span class="src">연합뉴스 · 07/30 16:49</span></div><h3>국고채 금리, 美금리 여파에 동반 상승</h3><p>30일 서울 채권시장에서 3년 만기 국고채 금리는 전 거래일 대비 3.1bp 상승하여 연 3.831%에 마감했고, 10년물 금리는 연 4.311%로 5.4bp 상승했다.</p></div><div class="news"><div class="news-meta"><span class="tag">환율</span><span class="src">매일경제 · 07/30 16:00</span></div><h3>증시 급락에도 110원 넘게 오른 원화값</h3><p>30일 원화값은 전 거래일 대비 9.3원 오른 1437.4원으로 마감하며, 달러당 원화 환율의 월간 상승폭이 역대 다섯 번째로 큰 규모에 도달했다.</p></div><div class="news"><div class="news-meta"><span class="tag">환율</span><span class="src">연합뉴스 · 07/30 15:53</span></div><h3>美 금리동결·외국인 주식 순매수…원/달러 환율 1,430원대로</h3><p>30일 원/달러 환율이 9.3원 내린 1,437.4원으로 하락하며, 미국 연준의 금리 동결 결정이 영향을 미친 것으로 분석된다.</p></div><div class="news"><div class="news-meta"><span class="tag">기타</span><span class="src">매일경제 · 07/30 18:00</span></div><h3>PF부실·대출규제…먹거리 사라진 상호금융</h3><p>상호금융 가계대출은 10년간 28.4% 증가하는 데 그친 반면, 은행 가계대출은 94.3% 증가하며 대출 시장에서의 격차가 확대되고 있다.</p></div></div><div class="outlook"><div class="outlook-label">흐름·전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>한국은행의 추가 금리 인상이 결정될 경우 금융시장 및 가계에 미치는 영향에 대한 분석이 필요할 것으로 보인다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>국고채 금리 상승이 계속될 경우, 채권 시장의 수급 불균형이 심화될 수 있으므로 투자자들의 주의가 필요하다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>환율은 외환시장 유입 요인과 외교적 긴장에 따라 지속적으로 변동할 가능성이 높으며, 원화 강세가 일시적일 수 있다는 점에 유의해야 한다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>상호금융의 대출 규제 완화가 이루어진다면, 지역 금융 시장에 긍정적인 변화가 있을 수 있으므로 관련 정책 동향을 살펴봐야 한다.</span></div></div></div></section><section class="part" id="cm"><div class="part-head"><span class="part-icon">🌐</span><h2>코인시장</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>오늘 비트코인과 이더리움의 가격이 소폭 하락하였으며, 라자루스그룹의 자금 이동과 암호화폐 시장에서의 청산 이슈가 주목받고 있다.</p></div><div class="news-list"><div class="news"><div class="news-meta"><span class="tag">온체인</span><span class="src">토큰포스트 · 07/30 18:31</span></div><h3>라자루스 연계 지갑 121.5 BTC 이동</h3><p>라자루스 그룹의 연계 지갑에서 비트코인 121.5 BTC가 미확인 지갑으로 이동했다. 이 자금의 재배치 가능성이 제기되며 자금세탁 경로에 대한 우려가 커지고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">기타</span><span class="src">토큰포스트 · 07/30 17:11</span></div><h3>1억4579만 달러 청산, 비트코인·이더리움 중심 레버리지 해소</h3><p>지난 24시간 동안 약 1억4579만 달러 규모의 레버리지 포지션이 강제 청산됐다. 이 중 이더리움이 5592만 달러, 비트코인이 5024만 달러로 시장의 위험 선호가 약화되었음을 나타낸다.</p></div><div class="news"><div class="news-meta"><span class="tag">시세</span><span class="src">토큰포스트 · 07/30 17:44</span></div><h3>비트코인 보합, 마이크로소프트 호실적에 AI 기대 커졌다</h3><p>비트코인이 FOMC 금리 동결 이후 6만4000달러대에서 흔들림 없이 횡보 중이다. 변동성이 적은 가운데, 알트코인 시장에서는 일부 종목들이 혼조세를 보이고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">시세</span><span class="src">토큰포스트 · 07/30 17:09</span></div><h3>비트코인, FOMC 금리 동결에도 6만4000달러대 횡보</h3><p>XRP는 홍콩 소매 시장 개방과 유럽 MiCA 승인의 긍정적인 소식에도 불구하고 1.07달러대에서 횡보 중이다. 단기 지지선과 저항선 사이에서 거래되고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">규제</span><span class="src">토큰포스트 · 07/30 17:44</span></div><h3>XRP 1.07달러 횡보 지속, SEC와 Fed 변수 속 규제 호재 주목</h3><p>리플(XRP)은 1.07달러대에서 횡보 중이며, 규제 호재가 잇따르는 가운데 여전히 SEC의 항소 절차가 불확실성으로 작용하고 있다.</p></div></div><div class="outlook"><div class="outlook-label">흐름·전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>라자루스 그룹의 자산 이동은 자금세탁과 관련된 패턴 재조명 가능성을 내포하고 있어, 추가적인 감시가 필요하다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>강제 청산이 암호화폐 시장의 리스크 관리 방안을 강화하는 시점으로 작용할 수 있으며, 레버리지 비율을 다시 평가해야 할 상황이다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>비트코인이 일정 범위 내에서 횡보할 경우, 알트코인들이 이뤄낼 새로운 흐름에도 주목할 필요가 있다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>XRP의 경우, 새로운 규제 소식이 긍정적인 수요 창출에 기여할 수 있지만, 시장의 불확실성을 해소하는 데에는 시간이 필요할 것으로 보인다.</span></div></div></div></section></div><div class="panel" id="tp1"><section class="part" id="os"><div class="part-head"><span class="part-icon">📈</span><h2>해외주식</h2></div><div class="news-list"><div class="news"><div class="news-meta"><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><span class="src">MarketBeat · 07/30 17:47</span></div><h3>NVIDIA Corporation $NVDA Stake Cut by Jennison Associates LLC - MarketBeat</h3><p>Jennison Associates LLC가 NVIDIA Corporation($NVDA)의 지분을 축소했습니다. 이 결정은 시장에서의 NVIDIA의 주식 변동성과 관련이 있을 것으로 보입니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><span class="src">MarketBeat · 07/30 17:47</span></div><h3>GatePass Capital LLC Purchases 2,862 Shares of NVIDIA Corporation $NVDA - MarketBeat</h3><p>GatePass Capital LLC가 NVIDIA Corporation의 주식 2,862주를 구매했습니다. 이번 거래는 회사의 주식 투자 전략의 일환으로 보입니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><span class="src">Nikkei Asia · 07/30 17:30</span></div><h3>Why Nvidia and others in Silicon Valley oppose a US ban on Chinese AI - Nikkei Asia</h3><p>실리콘밸리의 Nvidia 등 기업들이 중국 인공지능(AI)에 대한 미국의 금지 조치에 반대하는 이유는, 이러한 조치가 혁신과 기술 발전에 부정적인 영향을 미치고 글로벌 경쟁력을 저하시킬 수 있기 때문입니다. 이들은 기술의 개방성과 협력을 강조하며, 금지가 경제 및 산업에 미칠 부작용을 우려하고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><span class="src">The Motley Fool · 07/30 18:35</span></div><h3>As Elon Musk&#x27;s SpaceX and Tesla Stocks Continue to Fall, Is It Time to Buy the Stocks on the Dip? - The Motley Fool</h3><p>일론 머스크의 SpaceX와 Tesla 주가가 지속적으로 하락하고 있어, 이 시점에서 저가에 주식을 사는 것이 좋을지에 대한 논의가 이루어지고 있다. 투자자들은 하락세를 기회로 삼을 수 있을지 검토하고 있다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><span class="src">Yahoo Finance · 07/30 18:26</span></div><h3>There&#x27;s a 74% Chance SpaceX and Tesla Will Merge by May 2027, According to Kalshi -- but 2 Negatives Don&#x27;t Make a Positive on Wall Street</h3><p>Kalshi에 따르면, 2027년 5월까지 SpaceX와 Tesla의 합병 가능성이 74%인 것으로 나타났지만, 월스트리트에서는 긍정적으로 받아들여지지 않고 있습니다. 과거의 향수를 불러일으킬 수는 있지만, 실제로 합병이 큰 의미를 갖지 않는다는 평가입니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><span class="src">Yahoo Finance · 07/30 18:20</span></div><h3>As Elon Musk&#x27;s SpaceX and Tesla Stocks Continue to Fall, Is It Time to Buy the Stocks on the Dip?</h3><p>일론 머스크의 스페이스X와 테슬라 주식이 계속 하락하고 있으며, 일부 전문가들은 하락세 속에서 매수할 시점이 아닐까 하는 의견을 제시하고 있다. 그러나 두 주식 모두 앞으로 더 많은 하락 가능성이 있다는 분석도 제기되고 있다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><span class="src">simplywall.st · 07/30 18:27</span></div><h3>Hims &amp; Hers Health (HIMS) Faces FTC Lawsuit Over Health Data And Billing - simplywall.st</h3><p>Hims &amp; Hers Health가 건강 데이터와 청구 문제로 인해 연방거래위원회(FTC)로부터 소송을 당했습니다. 이 소송은 고객의 건강 정보 보호 및 정확한 청구 관행과 관련된 문제를 다루고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><span class="src">Medical Economics · 07/30 18:11</span></div><h3>FTC sues Hims &amp; Hers over health data sharing; Oklahoma chiropractor convicted in $30M Medicare fraud scheme; FDA licenses first freeze-dried plasma — Morning Medical Update - Medical Economics</h3><p>FTC가 헬스케어 기업 Hims &amp; Hers를 건강 데이터 공유 문제로 고소했으며, 오클라호마의 카이로프랙틱 의사가 3천만 달러 규모의 메디케어 사기 혐의로 유죄 판결을 받았다. 또한 FDA는 첫 번째 동결 건조 혈장을 승인했다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><span class="src">Cache Valley Daily · 07/30 18:00</span></div><h3>Utah joins FTC lawsuit accusing Hims &amp; Hers of deceptive subscriptions, privacy violations - Cache Valley Daily</h3><p>유타주가 Hims &amp; Hers를 상대로 한 연방거래위원회(FTC)의 소송에 참여하여 이 회사가 고객에게 deceptive subscription(기만적인 구독)과 개인정보 침해를 저질렀다고 주장하고 있습니다. 이 사건은 사용자들의 권리를 보호하기 위한 조치로 이어지고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><span class="src">TradingKey · 07/30 12:59</span></div><h3>Redwire Corp (RDW) Financial Health: Profitability &amp; Balance Sheet Analysis - TradingKey</h3><p>Redwire Corp (RDW)의 재무 건강 상태에 대한 분석에서는 수익성 및 대차대조표 상황이 평가되었습니다. 이 분석은 회사의 재무 구조와 수익성 지표를 중심으로 진행되었습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><span class="src">simplywall.st · 07/30 11:26</span></div><h3>Redwire (RDW) Is Down 13.5% After Landing US$1.8 Billion Space Contract With U.S. Military - simplywall.st</h3><p>Redwire가 미국 군과 18억 달러 규모의 우주 계약을 체결했음에도 불구하고 주가가 13.5% 하락했습니다. 이러한 주가 하락은 시장의 예상과 다른 결과로 해석되고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><span class="src">MarketBeat · 07/30 06:30</span></div><h3>Redwire (NYSE:RDW) Trading Down 9% - Time to Sell? - MarketBeat</h3><p>Redwire (NYSE:RDW) 주가가 9% 하락했습니다. 시장 전문가들은 이 시점에서 주식을 매도하는 것이 좋은지에 대한 논의를 하고 있습니다.</p></div></div></section><section class="part" id="coin"><div class="part-head"><span class="part-icon">🪙</span><h2>코인</h2></div><div class="news-list"><div class="news"><div class="news-meta"><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC-USD</span><span class="src">Coinpedia Fintech News · 07/30 18:36</span></div><h3>Lawrence Lepard: Strategy Stock Could Gain 4x to 6x on Bitcoin Rally - Coinpedia Fintech News</h3><p>로렌스 레파드는 비트코인 랠리 시 전략 주식이 4배에서 6배까지 상승할 가능성이 있다고 заяв했습니다. 그는 비트코인의 상승세가 이러한 주식의 가치를 크게 높일 것이라고 분석했습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC-USD</span><span class="src">Bitcoin Foundation · 07/30 18:26</span></div><h3>Apple Sued Over Nearly $2M Lost to Fake Bitcoin Wallet App - Bitcoin Foundation</h3><p>비트코인 재단이 애플을 상대로 가짜 비트코인 지갑 앱으로 인해 약 200만 달러를 잃었다며 소송을 제기했습니다. 이 사건은 앱 스토어에서의 안전 문제와 관련된 논란을 다시 일으키고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC-USD</span><span class="src">CoinDesk · 07/30 18:00</span></div><h3>Bitcoin and ether markets are ruled by perps. SpaceX showed how far their influence can go - CoinDesk</h3><p>비트코인과 이더리움 시장은 주로 선물 계약(퍼프)에 의해 지배되고 있으며, SpaceX가 그 영향력을 얼마나 크게 행사할 수 있는지를 보여줬다는 내용이다. 이는 암호화폐 시장의 변동성과 투자자 행동에 중요한 영향을 미친다는 것을 시사한다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#627EEA;color:#fff;">ETH-USD</span><span class="src">Coinpedia Fintech News · 07/30 18:34</span></div><h3>Ethereum Price Prediction: ETH Holds Above $1,850 Support as Rising Channel Signals Potential Breakout - Coinpedia Fintech News</h3><p>이더리움(ETH)은 1,850달러의 지지를 유지하며 상승 채널에서 잠재적인 돌파 신호를 보이고 있습니다. 시장 전문가들은 이러한 패턴이 긍정적인 가격 상승을 암시한다고 분석하고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#627EEA;color:#fff;">ETH-USD</span><span class="src">AMBCrypto · 07/30 18:00</span></div><h3>$1.1B stolen from crypto in 6 months: Ethereum and Solana lost $658M combined - AMBCrypto</h3><p>지난 6개월 동안 암호화폐에서 총 11억 달러가 도난당했으며, 이 중 이더리움과 솔라나가 합쳐서 6억 5800만 달러를 잃었습니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#627EEA;color:#fff;">ETH-USD</span><span class="src">Cryptonews · 07/30 17:02</span></div><h3>FOMC Holds Rates, Bitcoin ETFs Flip Green, Ethereum Falls - Cryptonews</h3><p>FOMC가 금리를 동결함에 따라 비트코인 ETF는 상승세를 보였으나, 이더리움은 하락세를 겪고 있다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#9945FF;color:#fff;">SOL-USD</span><span class="src">markets.businessinsider.com · 07/30 18:10</span></div><h3>Aurora Intents Powers a New Way to Fund Solflare Wallet From Any Major Chain - markets.businessinsider.com</h3><p>Aurora Intents는 Solflare Wallet에 자금을 추가할 수 있는 새로운 방법을 제공하며, 이를 통해 주요 블록체인 네트워크에서 직접 자금을 전송할 수 있게 되었다. 이 기능은 사용자가 다양한 체인에서 쉽게 자금을 관리할 수 있도록 지원한다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#9945FF;color:#fff;">SOL-USD</span><span class="src">The Town Talk · 07/30 18:05</span></div><h3>Celebrate Solana&#x27;s 1st birthday with her Saturday at Alexandria Zoo - The Town Talk</h3><p>알렉산드리아 동물원에서 토요일에 솔라나의 첫 번째 생일을 기념하는 행사가 열립니다. 이 특별한 날에 많은 사람들이 참석할 것으로 기대됩니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#9945FF;color:#fff;">SOL-USD</span><span class="src">AMBCrypto · 07/30 18:00</span></div><h3>$1.1B stolen from crypto in 6 months: Ethereum and Solana lost $658M combined - AMBCrypto</h3><p>지난 6개월 동안 암호화폐 분야에서 11억 달러가 도난당했으며, 이 중 이더리움과 솔라나가 총 6억 5천800만 달러의 피해를 입었습니다. 이러한 범죄는 암호화폐 시장의 안전성에 대한 우려를 커지게 하고 있습니다.</p></div></div></section></div><div class="panel" id="tp2"><section class="part" id="re"><div class="part-head"><span class="part-icon">🏘️</span><h2>부동산</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>오늘 부동산 시장은 초소형 아파트 거래가 급증하고 있으며, 서울 아파트 매매·전세 가격은 77주 연속 상승세를 이어가고 있다.</p></div><div class="news-list"><div class="news"><div class="news-meta"><span class="tag">매매</span><span class="src">매일경제 · 07/30 17:54</span></div><h3>작아도 무조건 사자…초소형 거래 최대</h3><p>올해 1~5월 서울의 아파트 전용 40㎡ 이하 거래량은 3985건으로 작년 동기 대비 48% 증가하여 역대 최대치를 기록했다. 청년층이 초소형 아파트에 몰리고 있으며, 경기 지역에서도 유사한 거래 증가가 나타나고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">매매</span><span class="src">매일경제 · 07/30 14:00</span></div><h3>서울 매매·전세값 77주 연속 상승...소외됐던 외곽도 ‘키맞추기’ 이어져</h3><p>서울 아파트 매매·전세 가격은 77주 연속 상승 중이며, 특히 서울 강북 지역의 가격 상승률이 두드러지고 있다. 강남은 상승폭이 둔화되고 있으며, 가격 상승이 외곽으로도 퍼지고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">정책</span><span class="src">매일경제 · 07/30 14:14</span></div><h3>세제개편 임박 숨죽인 강남…서울 아파트값 2주 연속 상승 둔화</h3><p>서울 아파트 가격 상승률이 2주 연속 둔화되었으며, 관망세가 이어지는 주요 지역은 강남권이다. 하지만 강북구 중심으로 일부 지역은 여전히 강한 상승세를 보이고 있다.</p></div><div class="news"><div class="news-meta"><span class="tag">공급</span><span class="src">매일경제 · 07/30 18:00</span></div><h3>고양창릉 &#x27;5억 대출&#x27; 복원에…주택기금서 2.4조 끌어올판</h3><p>정부는 고양창릉 S3블록을 포함한 여러 지역에 동일한 대출 지원 조건을 적용하며 최대 5억원의 대출을 지원할 예정이다. 사항이 확대되어 대출 대상이 4800가구로 증가한다.</p></div><div class="news"><div class="news-meta"><span class="tag">기타</span><span class="src">매일경제 · 07/30 17:35</span></div><h3>‘주택기금 재원’ 청약통장 가입자 2600만명 붕괴…올들어 30만명 해지</h3><p>서울·수도권 청약통장 가입자 수가 10개월 연속 감소하며, 올해 들어 약 30만명이 해지했다. 이는 청약 경쟁의 심화와 대출 규제에 따른 결과로 보인다.</p></div><div class="news"><div class="news-meta"><span class="tag">기타</span><span class="src">매일경제 · 07/30 15:23</span></div><h3>광주 신산업선 개발 기대…첨단3지구 교통 호재 이어져</h3><p>광주 첨단3지구가 제5차 국가철도망 구축계획에 포함될 가능성이 커지며 개발 기대감이 높아지고 있다. 이 지역은 첨단산업과 교통 인프라의 중심으로 부상할 전망이다.</p></div></div><div class="outlook"><div class="outlook-label">흐름·전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>전국적으로 초소형 아파트 거래가 활기를 띠며, 청년층의 주거 패턴 변화가 나타나고 있어 이에 따른 추가적인 시세 상승 여부가 주목된다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>77주 연속 상승 중인 서울 아파트 가격의 지속성에 따라 실수요가 어떻게 반영될지가 관전 포인트다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>관망세가 지속되고 있는 강남권 부동산 시장에서 세제개편안 발표 후 반응을 주의 깊게 살펴봐야 한다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>청약통장 가입자 수 감소가 지속되면 향후 부동산 시장에 어떤 영향을 미칠지 지켜봐야 할 필요가 있다.</span></div></div></div></section></div><div class="panel" id="tp3"><section class="part" id="trump"><div class="part-head"><span class="part-icon">💬</span><h2>트럼프</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>트럼프는 대법원의 결정이 미국에 미친 재정적 손실을 강조하며 현재 행정부의 코로나19 대응에 대해 비판적인 입장을 취했다. 그는 자신의 코로나19 백신 개발 정책을 성공적으로 평가하며 과거에 대한 논란을 다시 끄집어내고 있다.</p></div><div class="news-list"><div class="news"><div class="news-meta"><span class="tag">사법</span><span class="src">Truth Social · 07/30 07:13</span></div><h3>트럼프는 미국 대법원의 부정적인 판결이 국가에 수조 달러의 손실을 초래했다고 주장하며, 시민권 및 관세에 대한 결정들을 비판했다.</h3></div><div class="news"><div class="news-meta"><span class="tag">국내정치</span><span class="src">Truth Social · 07/29 20:46</span></div><h3>트럼프는 바이든 행정부 하에서 코로나19 사망자가 더 많이 발생했으며, 자신의 &#x27;작전 속도 전쟁(Operation Warp Speed)&#x27;이 성공적이었다고 주장했다.</h3></div><div class="news"><div class="news-meta"><span class="tag">기타</span></div><h3>그는 파우치 박사와의 갈등을 언급하면서, 자신이 코로나19 대응에 대해 점점 더 독립적인 입장을 취하게 되었다고 덧붙였다.</h3></div></div><div class="outlook"><div class="outlook-label">흐름·전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>트럼프의 재정적 손실 언급은 향후 대법원 판결이나 정책 변화에 대한 관심을 불러일으킬 가능성이 있다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>코로나19 대응에 대한 비판은 추후 정치적 논쟁의 중심이 될 수 있으며, 이를 통해 민심 변화에 영향을 줄 수 있다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>그의 발언이 향후 통상 정책이나 관세에 대한 논의에 기여할지 주목할 필요가 있다.</span></div></div></div><div class="note">트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.</div></section></div>
+<footer class="ft">기사 요약은 각 언론사 보도를 바탕으로 자동 생성되었으며, 저작권은 해당 언론사에 있습니다. 정보 제공 목적이며 투자 판단의 책임은 본인에게 있습니다.</footer>
+</div></div>
+<button id="theme" aria-label="다크/라이트 테마 전환" title="테마 전환">🌙</button>
+<button id="top" aria-label="맨 위로">↑</button>
+<script>
+document.querySelectorAll('.nav-t').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.querySelectorAll('.nav-t').forEach(function(x){x.classList.remove('on');});
+    document.querySelectorAll('.panel').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    document.getElementById(b.getAttribute('data-p')).classList.add('on');
+  });
+});
+</script><script>
+(function(){
+  var t=document.getElementById('top');
+  if(!t)return;
+  function s(){ t.classList.toggle('show', window.pageYOffset>200); }
+  window.addEventListener('scroll',s,{passive:true}); s();
+  t.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+})();
+</script><script>
+(function(){
+  var b=document.getElementById('theme'); if(!b)return;
+  function ic(){ b.textContent =
+    document.documentElement.getAttribute('data-theme')==='dark' ? '☀️' : '🌙'; }
+  ic();
+  b.addEventListener('click', function(){
+    var n = document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', n);
+    try{ localStorage.setItem('theme', n); }catch(e){}
+    ic();
+  });
+})();
+</script>
+</body>
+</html>
