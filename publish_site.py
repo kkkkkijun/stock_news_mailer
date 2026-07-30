@@ -182,6 +182,14 @@ a:hover{opacity:.72;}
 .news.hero h3{font-size:16.5px;font-weight:700;}
 .badge-key{font-size:10px;font-weight:800;color:#fff;background:var(--accent);
  padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
+.quotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+ gap:8px;margin-bottom:14px;}
+.qcard{background:var(--card);border:1px solid var(--border);border-radius:12px;
+ padding:11px 13px;}
+.qtop{display:flex;align-items:center;gap:6px;margin-bottom:8px;}
+.qtop .spark{margin-left:auto;display:block;}
+.qprice{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:-.01em;}
+.qchg{font-size:12.5px;font-weight:700;margin-top:2px;}
 .outlook{margin-top:14px;}
 .outlook-label{font-size:12px;font-weight:700;color:var(--muted-2);margin-bottom:8px;}
 .outlook-list{display:flex;flex-direction:column;gap:8px;}
@@ -386,11 +394,65 @@ def _text_on(bg):
     return "#0f1b2d" if lum > 0.35 else "#fff"
 
 
-def _render_part(pid, icon, name, lines, hero=False):
+def _spark_svg(vals, color, w=58, h=20, pad=2):
+    """종가 시계열 → 미니 스파크라인 SVG(폴리라인)."""
+    vals = [v for v in (vals or []) if isinstance(v, (int, float))]
+    if len(vals) < 2:
+        return ""
+    lo, hi = min(vals), max(vals)
+    rng = (hi - lo) or 1.0
+    n = len(vals)
+    pts = []
+    for i, v in enumerate(vals):
+        x = pad + (w - 2 * pad) * i / (n - 1)
+        y = pad + (h - 2 * pad) * (1 - (v - lo) / rng)
+        pts.append(f"{x:.1f},{y:.1f}")
+    return (f'<svg class="spark" width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
+            f'aria-hidden="true"><polyline points="{" ".join(pts)}" fill="none" '
+            f'stroke="{color}" stroke-width="2" stroke-linecap="round" '
+            f'stroke-linejoin="round"/></svg>')
+
+
+def _quote_card(q):
+    """시세 dict → 카드 HTML. 한국식 색관례(상승 빨강 ▲ / 하락 파랑 ▼)."""
+    sym = (q.get("ticker") or "").strip()
+    disp = sym.split("-")[0] or sym
+    chg = q.get("chg")
+    if chg is None:
+        color, chg_txt, sp_color = "var(--faint)", "—", "#9aa7b8"
+    elif chg >= 0:
+        color = sp_color = "#e5484d"
+        chg_txt = f"▲ {chg:.2f}%"
+    else:
+        color = sp_color = "#3b82f6"
+        chg_txt = f"▼ {abs(chg):.2f}%"
+    bg = _ticker_color(sym)
+    spark = _spark_svg(q.get("spark"), sp_color)
+    price = q.get("price")
+    price_txt = f"${price:,.2f}" if isinstance(price, (int, float)) else "—"
+    return (f'<div class="qcard"><div class="qtop">'
+            f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
+            f'{_e(disp)}</span>{spark}</div>'
+            f'<div class="qprice">{price_txt}</div>'
+            f'<div class="qchg" style="color:{color};">{chg_txt}</div></div>')
+
+
+def _render_quotes(cards):
+    cards = [c for c in (cards or []) if c]
+    if not cards:
+        return ""
+    return ('<div class="quotes">'
+            + "".join(_quote_card(c) for c in cards) + "</div>")
+
+
+def _render_part(pid, icon, name, lines, hero=False, quotes=None):
     summary, items, blocks, note = _parse_part(lines)
     h = [f'<section class="part" id="{pid}">',
          f'<div class="part-head"><span class="part-icon">{icon}</span>'
          f'<h2>{_e(name)}</h2></div>']
+    quotes_html = _render_quotes(quotes)
+    if quotes_html:
+        h.append(quotes_html)
     if summary:
         h.append('<div class="summary"><div class="summary-label">오늘 한눈에</div>'
                  f'<p>{_e(summary)}</p></div>')
@@ -519,8 +581,9 @@ def _title(now):
     return f"{now.year % 100}년 {now.month}월 {now.day}일 {ampm} 뉴스 브리핑"
 
 
-def render_html(body, now=None, links=""):
+def render_html(body, now=None, links="", quotes=None):
     now = now or datetime.now(KST)
+    qmap = quotes or {}
     sections = _split_sections(body)
     ampm = "오전" if now.hour < 12 else "오후"
 
@@ -559,7 +622,8 @@ def render_html(body, now=None, links=""):
         lines = next((ls for t, ls in sections if key in t), None)
         if lines is not None:
             rendered[pid] = _render_part(pid, icon, name, lines,
-                                         hero=(pid in HERO_PARTS))
+                                         hero=(pid in HERO_PARTS),
+                                         quotes=qmap.get(pid))
 
     # 탭 + 패널
     navs, panels, first = [], [], True
@@ -736,6 +800,27 @@ def _save_body(body, now):
            now.isoformat() + "\n\n" + body)
 
 
+def _save_quotes(quotes, now):
+    """시세 데이터를 회차별 동반 JSON으로 저장(있을 때만). rebuild 시 재사용."""
+    if not quotes:
+        return
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(os.path.join(DATA_DIR, _slug(now) + ".quotes.json"),
+              "w", encoding="utf-8") as f:
+        json.dump(quotes, f, ensure_ascii=False)
+
+
+def _load_quotes(slug):
+    path = os.path.join(DATA_DIR, slug + ".quotes.json")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return None
+
+
 def _load_body(path):
     raw = open(path, encoding="utf-8").read()
     head, _, body = raw.partition("\n\n")
@@ -762,25 +847,28 @@ def rebuild_all():
         now, body = _load_body(os.path.join(DATA_DIR, fn))
         if now is None or not body.strip():
             continue
+        quotes = _load_quotes(fn[:-4])
         _write(os.path.join(ARCHIVE_DIR, fn[:-4] + ".html"),
-               render_html(body, now=now, links=_LINKS_SNAP))
-        latest = (body, now)
+               render_html(body, now=now, links=_LINKS_SNAP, quotes=quotes))
+        latest = (body, now, quotes)
     if latest:
         _write(os.path.join(DOCS_DIR, "index.html"),
-               render_html(latest[0], now=latest[1], links=_LINKS_HOME))
+               render_html(latest[0], now=latest[1], links=_LINKS_HOME,
+                           quotes=latest[2]))
     _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
     return len(files)
 
 
-def publish(body, now=None):
+def publish(body, now=None, quotes=None):
     """최신 페이지 + 회차 스냅샷 + 캘린더 생성. 최신 경로 반환."""
     now = now or datetime.now(KST)
     os.makedirs(ARCHIVE_DIR, exist_ok=True)
     _save_body(body, now)
+    _save_quotes(quotes, now)
     _write(os.path.join(ARCHIVE_DIR, _slug(now) + ".html"),
-           render_html(body, now=now, links=_LINKS_SNAP))
+           render_html(body, now=now, links=_LINKS_SNAP, quotes=quotes))
     path = os.path.join(DOCS_DIR, "index.html")
-    _write(path, render_html(body, now=now, links=_LINKS_HOME))
+    _write(path, render_html(body, now=now, links=_LINKS_HOME, quotes=quotes))
     _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
     return path
 
