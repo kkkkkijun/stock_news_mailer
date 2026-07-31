@@ -117,6 +117,8 @@ def _analyze(posts, client):
             "summary": (p.get("summary") or "").strip(),
             "when": src.get("when", ""),
         })
+    # 요지가 빈 발언 픽 제거 → 빈 카드 방지
+    picks = [p for p in picks if p["summary"]]
     outlook = [o.strip() for o in data.get("outlook", []) if o and o.strip()]
     market = (data.get("market") or "").strip()
     # 모델이 빈 문자열 대신 '빈 문자열'/'없음' 같은 무의미 값을 넣는 경우 제거
