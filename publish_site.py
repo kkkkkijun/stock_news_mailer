@@ -509,6 +509,11 @@ def _render_part(pid, icon, name, lines, hero=False, quotes=None, prev_sets=None
     if summary:
         h.append('<div class="summary"><div class="summary-label">오늘 한눈에</div>'
                  f'<p>{_e(summary)}</p></div>')
+    # 제목 없는 깨진 항목 제거(모델이 제목을 비우고 테마만 준 경우 등)
+    # 예: '5. (성장)' → 파싱 시 제목이 '(성장)' 뿐이고 본문도 없음.
+    items = [it for it in items if (it.get("title") or "").strip()
+             and not (re.fullmatch(r"\(.*?\)", it["title"].strip())
+                      and not (it.get("desc") or "").strip())]
     if items:
         h.append('<div class="news-list">')
         for i, it in enumerate(items):

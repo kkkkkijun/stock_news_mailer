@@ -287,6 +287,8 @@ def analyze(pool, client, *, role, theme_options, top_n,
             "when": when_str(src.get("ts", 0)),
             "link": src.get("link", ""),   # 2단계 본문 수집용
         })
+    # 모델이 제목을 비운 픽(테마만 있는 경우 등)은 제거 → 빈 카드 방지
+    picks = [p for p in picks if p["headline"]]
     picks = dedupe_picks(picks)[:top_n]
     outlook = [o.strip() for o in data.get("outlook", []) if o and o.strip()]
     return (data.get("today") or "").strip(), picks, outlook
