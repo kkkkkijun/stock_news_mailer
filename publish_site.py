@@ -182,6 +182,8 @@ a:hover{opacity:.72;}
 .news.hero h3{font-size:16.5px;font-weight:700;}
 .badge-key{font-size:10px;font-weight:800;color:#fff;background:var(--accent);
  padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
+.badge-new{font-size:10px;font-weight:800;color:#fff;background:#16a34a;
+ padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
 .quotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
  gap:8px;margin-bottom:14px;}
 .qcard{background:var(--card);border:1px solid var(--border);border-radius:12px;
@@ -451,7 +453,52 @@ def _render_quotes(cards):
     return grid
 
 
-def _render_part(pid, icon, name, lines, hero=False, quotes=None):
+def _news_toks(s):
+    """헤드라인 → 2글자 이상 토큰 집합(유사도 비교용)."""
+    return {w for w in re.sub(r"[^0-9A-Za-z가-힣 ]", " ", s or "").split()
+            if len(w) > 1}
+
+
+def _prev_item_tokensets(slug, back=2):
+    """slug 직전 `back`개 회차의 뉴스 헤드라인 토큰셋 목록.
+
+    직전 브리핑(들)에 이미 나온 사건인지 비교하는 근거. 저장된 data/*.txt 만
+    읽으므로 DB 없이 GitHub Actions 에서도 동작(과거 회차는 커밋되어 있음).
+    slug 자신은 제외. 이전 회차가 없으면 빈 목록(→ 아무것도 NEW 로 표시 안 함).
+    """
+    try:
+        slugs = sorted(f[:-4] for f in os.listdir(DATA_DIR) if f.endswith(".txt"))
+    except OSError:
+        return []
+    prev = slugs[:slugs.index(slug)] if slug in slugs else slugs
+    out = []
+    for s in prev[-back:]:
+        _now, body = _load_body(os.path.join(DATA_DIR, s + ".txt"))
+        for title, sec_lines in _split_sections(body):
+            if not any(key in title for _p, _i, _n, key in PARTS):
+                continue
+            _s, items, _b, _n = _parse_part(sec_lines)
+            for it in items:
+                t = _news_toks(it.get("title", ""))
+                if t:
+                    out.append(t)
+    return out
+
+
+def _is_new(headline, prev_sets, thresh=0.6):
+    """직전 회차들의 헤드라인과 60% 미만으로 겹치면 '새 뉴스'로 본다."""
+    if not prev_sets:
+        return False
+    h = _news_toks(headline)
+    if not h:
+        return False
+    for p in prev_sets:
+        if len(h & p) / min(len(h), len(p)) >= thresh:
+            return False
+    return True
+
+
+def _render_part(pid, icon, name, lines, hero=False, quotes=None, prev_sets=None):
     summary, items, blocks, note = _parse_part(lines)
     h = [f'<section class="part" id="{pid}">',
          f'<div class="part-head"><span class="part-icon">{icon}</span>'
@@ -475,11 +522,14 @@ def _render_part(pid, icon, name, lines, hero=False, quotes=None):
             else:
                 badge = f'<span class="tag">{_e(it["label"])}</span>'
             key = '<span class="badge-key">핵심</span>' if is_hero else ""
+            new = ('<span class="badge-new">NEW</span>'
+                   if (prev_sets is not None and _is_new(it["title"], prev_sets))
+                   else "")
             src = f'<span class="src">{_e(it["src"])}</span>' if it["src"] else ""
             desc = f'<p>{_e(it["desc"])}</p>' if it["desc"] else ""
             cls = "news hero" if is_hero else "news"
-            h.append(f'<div class="{cls}"><div class="news-meta">{key}{badge}{src}</div>'
-                     f'<h3>{_e(it["title"])}</h3>{desc}</div>')
+            h.append(f'<div class="{cls}"><div class="news-meta">{key}{new}{badge}{src}'
+                     f'</div><h3>{_e(it["title"])}</h3>{desc}</div>')
         h.append("</div>")
     for label, bullets in blocks:
         if not bullets:
@@ -587,9 +637,11 @@ def _title(now):
     return f"{now.year % 100}년 {now.month}월 {now.day}일 {ampm} 뉴스 브리핑"
 
 
-def render_html(body, now=None, links="", quotes=None):
+def render_html(body, now=None, links="", quotes=None, mark_new=False):
     now = now or datetime.now(KST)
     qmap = quotes or {}
+    # 직전 회차 대비 '새 뉴스' 표시용 토큰셋(요청 시에만).
+    prev_sets = _prev_item_tokensets(_slug(now)) if mark_new else None
     sections = _split_sections(body)
     ampm = "오전" if now.hour < 12 else "오후"
 
@@ -629,7 +681,8 @@ def render_html(body, now=None, links="", quotes=None):
         if lines is not None:
             rendered[pid] = _render_part(pid, icon, name, lines,
                                          hero=(pid in HERO_PARTS),
-                                         quotes=qmap.get(pid))
+                                         quotes=qmap.get(pid),
+                                         prev_sets=prev_sets)
 
     # 탭 + 패널
     navs, panels, first = [], [], True
@@ -855,12 +908,13 @@ def rebuild_all():
             continue
         quotes = _load_quotes(fn[:-4])
         _write(os.path.join(ARCHIVE_DIR, fn[:-4] + ".html"),
-               render_html(body, now=now, links=_LINKS_SNAP, quotes=quotes))
+               render_html(body, now=now, links=_LINKS_SNAP, quotes=quotes,
+                           mark_new=True))
         latest = (body, now, quotes)
     if latest:
         _write(os.path.join(DOCS_DIR, "index.html"),
                render_html(latest[0], now=latest[1], links=_LINKS_HOME,
-                           quotes=latest[2]))
+                           quotes=latest[2], mark_new=True))
     _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
     return len(files)
 
@@ -872,9 +926,11 @@ def publish(body, now=None, quotes=None):
     _save_body(body, now)
     _save_quotes(quotes, now)
     _write(os.path.join(ARCHIVE_DIR, _slug(now) + ".html"),
-           render_html(body, now=now, links=_LINKS_SNAP, quotes=quotes))
+           render_html(body, now=now, links=_LINKS_SNAP, quotes=quotes,
+                       mark_new=True))
     path = os.path.join(DOCS_DIR, "index.html")
-    _write(path, render_html(body, now=now, links=_LINKS_HOME, quotes=quotes))
+    _write(path, render_html(body, now=now, links=_LINKS_HOME, quotes=quotes,
+                             mark_new=True))
     _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
     return path
 
