@@ -591,7 +591,7 @@ def render_html(body, now=None, links="", quotes=None):
     kicker = now.strftime("%Y.%m.%d") + f" · {ampm} 브리핑"
     dcls = {5: " sat", 6: " sun"}.get(now.weekday(), "")
     dowb = f'<span class="dowb{dcls}">{_DOW[now.weekday()]}</span>'
-    sub = f"최종 업데이트 {now.strftime('%H:%M')} KST"
+    sub = f"최종 업데이트 {now.strftime('%H:%M')}"
     pct = _dday_progress(now)
     hd = (f'<header class="hd"><div class="hd-top">'
           f'<span class="hd-kicker">{_e(kicker)}</span>'
