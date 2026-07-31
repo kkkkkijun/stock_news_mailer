@@ -22,6 +22,7 @@ import re
 import json
 import html
 import time
+import calendar
 from datetime import datetime
 from urllib.parse import quote
 
@@ -76,7 +77,10 @@ def entry_ts(entry):
         v = entry.get(k)
         if v:
             try:
-                return time.mktime(v)
+                # feedparser 의 *_parsed 는 UTC struct_time.
+                # time.mktime 은 '로컬시간'으로 해석해 비-UTC 실행 시 오차가 나므로
+                # UTC 로 해석하는 calendar.timegm 을 쓴다(에폭 = 절대시각).
+                return calendar.timegm(v)
             except Exception:
                 pass
     return 0.0

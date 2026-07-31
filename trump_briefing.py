@@ -17,6 +17,7 @@ import re
 import json
 import html
 import time
+import calendar
 from datetime import datetime
 
 import feedparser
@@ -41,7 +42,8 @@ def _ts(e):
     for k in ("published_parsed", "updated_parsed"):
         if e.get(k):
             try:
-                return time.mktime(e[k])
+                # feedparser 의 *_parsed 는 UTC → timegm(로컬 타임존 무관)
+                return calendar.timegm(e[k])
             except Exception:
                 pass
     return 0.0

@@ -449,7 +449,10 @@ def fetch_quote(symbol):
 
 
 def fetch_all_quotes():
-    """설정된 모든 티커(주식+코인) 시세 수집. 파트 id(os/coin)로 묶는다."""
+    """설정된 모든 티커(주식+코인) 시세 수집. 파트 id(os/coin)로 묶는다.
+
+    각 카드에 수집 기준시각(asof, KST)을 붙여 화면에 '언제 가격인지' 표기한다.
+    """
     out = {"os": [], "coin": []}
     for t in stock_tickers:
         q = fetch_quote(t)
@@ -459,6 +462,10 @@ def fetch_all_quotes():
         q = fetch_quote(t)
         if q:
             out["coin"].append(q)
+    asof = datetime.now(KST).strftime("%m/%d %H:%M")
+    for group in out.values():
+        for card in group:
+            card["asof"] = asof
     return out
 
 

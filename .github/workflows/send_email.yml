@@ -9,6 +9,12 @@ on:
     - cron: '13 7 * * *'
   workflow_dispatch:
 
+# 예약 실행과 수동 실행(또는 앞 회차 지연)이 겹쳐 동시에 돌지 않도록 직렬화한다.
+# cancel-in-progress: false → 진행 중 작업은 끝까지 두고, 다음 실행은 대기.
+concurrency:
+  group: daily-briefing
+  cancel-in-progress: false
+
 # docs/index.html 을 저장소에 커밋해야 하므로 쓰기 권한 필요
 permissions:
   contents: write
@@ -42,4 +48,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs data
           git diff --staged --quiet || git commit -m "site: 브리핑 갱신 [skip ci]"
+          # 원격에 다른 커밋이 있으면 rebase 후 푸시(충돌로 발행이 유실되지 않도록)
+          git pull --rebase --autostash origin main || true
           git push
