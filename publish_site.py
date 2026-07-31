@@ -190,6 +190,7 @@ a:hover{opacity:.72;}
 .qtop .spark{margin-left:auto;display:block;}
 .qprice{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:-.01em;}
 .qchg{font-size:12.5px;font-weight:700;margin-top:2px;}
+.quotes-asof{font-size:11px;color:var(--faint);margin:-8px 0 14px 2px;}
 .outlook{margin-top:14px;}
 .outlook-label{font-size:12px;font-weight:700;color:var(--muted-2);margin-bottom:8px;}
 .outlook-list{display:flex;flex-direction:column;gap:8px;}
@@ -441,8 +442,13 @@ def _render_quotes(cards):
     cards = [c for c in (cards or []) if c]
     if not cards:
         return ""
-    return ('<div class="quotes">'
+    grid = ('<div class="quotes">'
             + "".join(_quote_card(c) for c in cards) + "</div>")
+    asof = next((c.get("asof") for c in cards if c.get("asof")), "")
+    if asof:
+        grid += (f'<div class="quotes-asof">시세 기준 {_e(asof)} · '
+                 'Yahoo Finance</div>')
+    return grid
 
 
 def _render_part(pid, icon, name, lines, hero=False, quotes=None):
