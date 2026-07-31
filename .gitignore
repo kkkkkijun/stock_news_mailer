@@ -22,6 +22,9 @@ venv/
 cards/
 reports/
 
+# ===== 파생 인덱스 DB (data/*.txt 에서 언제든 재생성 가능) =====
+data/*.db
+
 # ===== OS · 에디터 =====
 .DS_Store
 Thumbs.db
