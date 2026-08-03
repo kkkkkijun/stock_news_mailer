@@ -498,19 +498,115 @@ def _yahoo_earn_session():
     return s, crumb
 
 
-def _next_earning(session, crumb, sym):
+def _g(node, *keys):
+    for k in keys:
+        node = node.get(k) if isinstance(node, dict) else None
+    return node
+
+
+def _num(node):
+    return node.get("raw") if isinstance(node, dict) else None
+
+
+def _pctval(fmt):
+    try:
+        return float(str(fmt).replace("%", "").replace("+", "").strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def _signfmt(fmt):
+    """'5.54%' → ('+5.54%', True) / '-3%' → ('-3%', False)."""
+    if fmt is None:
+        return None, None
+    f = str(fmt).strip()
+    neg = f.startswith("-")
+    if not neg and not f.startswith("+"):
+        f = "+" + f
+    return f, (not neg)
+
+
+def _ym_ts(ts):
+    if not ts:
+        return ""
     from datetime import datetime as _dt
-    url = (f"https://query1.finance.yahoo.com/v10/finance/quoteSummary/{sym}"
-           f"?modules=calendarEvents&crumb={crumb}")
-    r = session.get(url, timeout=10)
+    x = _dt.utcfromtimestamp(ts)
+    return f"{x.year % 100:02d}.{x.month:02d}"
+
+
+def _ym_str(s):
+    return f"{s[2:4]}.{s[5:7]}" if s and len(s) >= 7 else ""
+
+
+def _fetch_earning(session, crumb, sym):
+    """종목 다음 실적일 + 상세(직전실적·컨센서스·목표주가·의견·리비전·서프라이즈)."""
+    from datetime import datetime as _dt
+    mods = ("calendarEvents,earnings,earningsTrend,earningsHistory,"
+            "financialData,recommendationTrend")
+    r = session.get(f"https://query1.finance.yahoo.com/v10/finance/quoteSummary/"
+                    f"{sym}?modules={mods}&crumb={crumb}", timeout=12)
     if r.status_code != 200:
         return None
-    ce = r.json()["quoteSummary"]["result"][0]["calendarEvents"]["earnings"]
+    res = r.json()["quoteSummary"]["result"][0]
+
+    ce = res.get("calendarEvents", {}).get("earnings", {})
     raws = [x["raw"] for x in ce.get("earningsDate", []) if "raw" in x]
-    if not raws:
-        return None
-    return {"date": _dt.utcfromtimestamp(min(raws)).strftime("%Y-%m-%d"),
-            "est": bool(ce.get("isEarningsDateEstimate"))}
+    date = _dt.utcfromtimestamp(min(raws)).strftime("%Y-%m-%d") if raws else None
+    est = bool(ce.get("isEarningsDateEstimate"))
+
+    d = {}
+    hist = res.get("earningsHistory", {}).get("history", []) or []
+    if hist:
+        last = hist[-1]
+        ea, ee = _num(last.get("epsActual")), _num(last.get("epsEstimate"))
+        sfmt, spos = _signfmt(_g(last, "surprisePercent", "fmt"))
+        d["prev"] = {"period": _ym_ts(_num(last.get("quarter"))),
+                     "eps_act": f"${ea:.2f}" if ea is not None else "-",
+                     "eps_est": f"${ee:.2f}" if ee is not None else "-",
+                     "surprise": sfmt, "surprise_pos": spos}
+        sp = []
+        for q in hist:
+            v = _pctval(_g(q, "surprisePercent", "fmt"))
+            if v is not None:
+                sf, sposq = _signfmt(_g(q, "surprisePercent", "fmt"))
+                sp.append({"fmt": sf, "v": v, "pos": sposq})
+        d["surprises"] = sp
+    for t in res.get("earningsTrend", {}).get("trend", []) or []:
+        if t.get("period") == "+1q":
+            avg = _num(_g(t, "earningsEstimate", "avg"))
+            lo = _num(_g(t, "earningsEstimate", "low"))
+            hi = _num(_g(t, "earningsEstimate", "high"))
+            gfmt, gpos = _signfmt(_g(t, "growth", "fmt"))
+            rev = _g(t, "revenueEstimate", "avg", "fmt")
+            d["next"] = {"period": _ym_str(t.get("endDate")),
+                         "eps": f"${avg:.2f}" if avg is not None else "-",
+                         "eps_range": (f"${lo:.2f}~${hi:.2f}"
+                                       if lo is not None and hi is not None else ""),
+                         "rev": f"${rev}" if rev else "-",
+                         "growth": gfmt, "growth_pos": gpos}
+            d["rev"] = {"up": _num(_g(t, "epsRevisions", "upLast30days")),
+                        "down": _num(_g(t, "epsRevisions", "downLast30days"))}
+    fd = res.get("financialData", {}) or {}
+    pr, mn = _num(fd.get("currentPrice")), _num(fd.get("targetMeanPrice"))
+    lo2, hi2 = _num(fd.get("targetLowPrice")), _num(fd.get("targetHighPrice"))
+    up = round((mn - pr) / pr * 100) if pr and mn else None
+    d["target"] = {"price": f"${pr:,.2f}" if pr else "-",
+                   "mean": f"${mn:,.2f}" if mn else "-",
+                   "range": (f"${lo2:,.0f}~${hi2:,.0f}" if lo2 and hi2 else ""),
+                   "upside": (f"{'+' if up >= 0 else ''}{up}%" if up is not None else None),
+                   "upside_pos": (up is not None and up >= 0)}
+    _rk = {"strong_buy": "적극 매수", "buy": "매수", "hold": "보유",
+           "underperform": "비중 축소", "sell": "매도"}
+    key = fd.get("recommendationKey")
+    d["rec"] = {"label": _rk.get(key, key or "-"),
+                "count": _num(fd.get("numberOfAnalystOpinions"))}
+    rt = res.get("recommendationTrend", {}).get("trend", []) or []
+    if rt:
+        t0 = rt[0]
+        d["rec"].update({"buy": (t0.get("strongBuy", 0) or 0) + (t0.get("buy", 0) or 0),
+                         "hold": t0.get("hold", 0) or 0,
+                         "sell": (t0.get("sell", 0) or 0) + (t0.get("strongSell", 0) or 0)})
+    return {"date": date, "est": est, "detail": d}
 
 
 def build_earnings(path=None):
@@ -528,14 +624,15 @@ def build_earnings(path=None):
     out, ok = [], False
     for t in EARNINGS_TICKERS:
         try:
-            info = _next_earning(session, crumb, t)
+            info = _fetch_earning(session, crumb, t)
         except Exception:
             info = None
         if info is not None:
             ok = True
         out.append({"ticker": t, "name": _EARN_KO.get(t, t),
                     "date": info["date"] if info else None,
-                    "est": bool(info["est"]) if info else False})
+                    "est": bool(info["est"]) if info else False,
+                    "detail": info.get("detail") if info else None})
     if not ok:
         print("[earnings] 전부 실패 → 기존 파일 유지")
         return

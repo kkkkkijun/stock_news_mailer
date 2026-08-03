@@ -153,9 +153,38 @@ a:hover{opacity:.72;}
 /* 선택한 서브탭 컬럼만 표시 */
 .sched-2col[data-sub="econ"] .sched-col.earn{display:none;}
 .sched-2col[data-sub="earn"] .sched-col.econ{display:none;}
-.ern{display:flex;align-items:center;gap:9px;padding:9px 3px;
- border-bottom:1px solid var(--border);}
-.ern:last-of-type{border-bottom:0;}
+.ern-item{border-bottom:1px solid var(--border);border-radius:10px;}
+.ern-item:last-child{border-bottom:0;}
+.ern-item.open{background:var(--chip);border-bottom-color:transparent;}
+.ern{display:flex;align-items:center;gap:9px;padding:9px 6px;}
+.ern-item:has(.ern-detail) .ern{cursor:pointer;}
+.ern-arrow{color:var(--faint);font-size:10px;flex-shrink:0;transition:transform .15s;}
+.ern-item.open .ern-arrow{transform:rotate(180deg);color:var(--accent);}
+.ern-tag.rep{font-size:9.5px;font-weight:800;color:#fff;background:#16a34a;
+ padding:2px 7px;border-radius:5px;flex-shrink:0;}
+.ern-detail{display:none;padding:0 8px 10px;flex-direction:column;gap:7px;}
+.ern-item.open .ern-detail{display:flex;}
+.ed-b{background:var(--card);border:1px solid var(--border);border-radius:9px;
+ padding:9px 12px;}
+.ed-t{font-size:10px;font-weight:800;color:var(--muted-2);margin-bottom:5px;}
+.ed-t.acc{color:var(--accent);}
+.ed-p{color:var(--faint);font-weight:600;}
+.ed-why{font-size:10px;color:var(--faint);font-weight:500;margin:-2px 0 6px;
+ line-height:1.4;}
+.ed-r{display:flex;justify-content:space-between;gap:8px;font-size:12px;margin-top:2px;}
+.ed-r>span{color:var(--muted-2);}
+.ed-r b{color:var(--ink);font-weight:700;text-align:right;}
+.ed-sub{color:var(--faint);font-weight:500;font-size:10.5px;}
+.ed-rec{display:flex;align-items:center;gap:8px;margin-top:1px;}
+.ed-rec b{font-size:13px;}
+.ed-bar{flex:1;display:flex;height:8px;border-radius:4px;overflow:hidden;
+ background:var(--border);}
+.ed-bar i{display:block;}
+.ed-sbars{display:flex;align-items:flex-end;gap:11px;height:40px;padding-top:4px;}
+.ed-sbar{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+ gap:3px;}
+.ed-sbar i{width:20px;border-radius:2px;display:block;}
+.ed-sbar>span{font-size:9px;color:var(--muted-2);font-weight:600;}
 .ern-date{display:flex;flex-direction:column;min-width:60px;flex-shrink:0;}
 .ern-md{font-size:12px;font-weight:700;color:var(--ink);}
 .ern-dd{font-size:9.5px;font-weight:700;color:var(--faint);}
@@ -1000,6 +1029,11 @@ document.querySelectorAll('.sub-tab').forEach(function(b){
     b.classList.add('on');
   });
 });
+document.querySelectorAll('.ern-item').forEach(function(item){
+  var row=item.querySelector('.ern');
+  if(!row || !item.querySelector('.ern-detail')) return;   // 상세 없으면 클릭 비활성
+  row.addEventListener('click', function(){ item.classList.toggle('open'); });
+});
 </script>"""
 
 
@@ -1022,11 +1056,11 @@ def _load_earnings(now):
                 d = date.fromisoformat(r["date"])
             except ValueError:
                 d = None
-        if d and d < today:
-            d = None   # 지난 실적일 → '미정' 처리(종목은 계속 노출)
         out.append({"ticker": (r.get("ticker") or "").upper(),
                     "name": r.get("name") or "", "date": d,
-                    "est": bool(r.get("est"))})
+                    "est": bool(r.get("est")),
+                    "reported": bool(d and d <= today),   # 발표일 도래/경과
+                    "detail": r.get("detail") or {}})
     out.sort(key=lambda e: (e["date"] is None, e["date"] or date.max))
     return out
 
@@ -1044,25 +1078,113 @@ def _render_earnings(evs, now):
                  f'{_e(e["ticker"].split("-")[0])}</span>')
         key = e["date"].isoformat() if e["date"] else "TBD"
         if key == prev:
-            # 같은 날짜가 연속되면 첫 항목에만 날짜 표시, 이후는 빈 칸(정렬 유지)
-            date_html = '<span class="ern-date"></span>'
+            date_html = '<span class="ern-date"></span>'   # 같은 날짜 연속 → 빈 칸
         else:
             if e["date"]:
                 dd = (e["date"] - now.date()).days
                 md = (f'{e["date"].month}/{e["date"].day} '
                       f'({_WD_KO[e["date"].weekday()]})')
-                dday = "D-DAY" if dd == 0 else f"D-{dd}"
+                dday = "D-DAY" if dd == 0 else ("" if dd < 0 else f"D-{dd}")
             else:
                 md, dday = "미정", ""
             date_html = (f'<span class="ern-date"><span class="ern-md">{md}</span>'
                          f'<span class="ern-dd">{dday}</span></span>')
             prev = key
-        whtml = '<span class="ern-when">예상</span>' if e.get("est") else ""
+        if e.get("reported"):
+            chip = '<span class="ern-tag rep">실적 발표</span>'
+        elif e.get("est"):
+            chip = '<span class="ern-when">예상</span>'
+        else:
+            chip = ""
+        det = _earn_detail_html(e.get("detail") or {}, e.get("reported"))
+        arrow = '<span class="ern-arrow">▾</span>' if det else ""
+        detbox = f'<div class="ern-detail">{det}</div>' if det else ""
         rows.append(
-            f'<div class="ern">{date_html}{badge}'
-            f'<span class="ern-n">{_e(e["name"])}</span>{whtml}</div>')
+            f'<div class="ern-item"><div class="ern">{date_html}{badge}'
+            f'<span class="ern-n">{_e(e["name"])}</span>{chip}{arrow}</div>'
+            f'{detbox}</div>')
     return head + "".join(rows) + ('<div class="sched-src">데이터: Yahoo Finance'
                                    '</div></div>')
+
+
+def _earn_detail_html(det, reported):
+    """실적 카드 상세(6블록). 데이터 있는 블록만 렌더."""
+    if not det:
+        return ""
+    up, dn = "#e5484d", "#3b82f6"   # 상회/상승=빨강, 하회/하락=파랑
+    b = []
+    p = det.get("prev")
+    if p:
+        c = up if p.get("surprise_pos") else dn
+        ar = "▲" if p.get("surprise_pos") else "▼"
+        sur = (f' · <span style="color:{c};font-weight:800">{ar}{_e(p["surprise"])}</span>'
+               if p.get("surprise") else "")
+        title = "이번 실적 결과" if reported else "직전 실적"
+        b.append(
+            f'<div class="ed-b"><div class="ed-t">🔄 {title} '
+            f'<span class="ed-p">· {_e(p.get("period",""))}</span></div>'
+            '<div class="ed-why">지난 분기 실제 실적과 시장 예상치를 비교</div>'
+            f'<div class="ed-r"><span>EPS 실제/예상</span>'
+            f'<b>{_e(p.get("eps_act","-"))} / {_e(p.get("eps_est","-"))}{sur}</b></div></div>')
+    n = det.get("next")
+    if n:
+        gc = up if n.get("growth_pos") else dn
+        grow = (f'<div class="ed-r"><span>예상 성장(YoY)</span>'
+                f'<b style="color:{gc}">{_e(n["growth"])}</b></div>'
+                if n.get("growth") else "")
+        b.append(
+            f'<div class="ed-b"><div class="ed-t acc">📊 다음 분기 컨센서스 '
+            f'<span class="ed-p">· {_e(n.get("period",""))}</span></div>'
+            '<div class="ed-why">다음 분기에 대한 애널리스트 평균 예상치</div>'
+            f'<div class="ed-r"><span>EPS / 매출</span><b>{_e(n.get("eps","-"))} '
+            f'<span class="ed-sub">{_e(n.get("eps_range",""))}</span> / '
+            f'{_e(n.get("rev","-"))}</b></div>{grow}</div>')
+    t = det.get("target")
+    if t and t.get("mean") not in (None, "-"):
+        uc = up if t.get("upside_pos") else dn
+        ups = (f'<div class="ed-r"><span>상승여력 <span class="ed-sub">'
+               f'({_e(t.get("range",""))})</span></span>'
+               f'<b style="color:{uc}">{_e(t.get("upside",""))}</b></div>'
+               if t.get("upside") else "")
+        b.append(
+            f'<div class="ed-b"><div class="ed-t">🎯 애널리스트 목표주가</div>'
+            '<div class="ed-why">애널리스트가 보는 적정 주가(평균) · 상승여력=현재가 대비</div>'
+            f'<div class="ed-r"><span>현재 → 목표평균</span>'
+            f'<b>{_e(t.get("price"))} → {_e(t.get("mean"))}</b></div>{ups}</div>')
+    r = det.get("rec")
+    if r and r.get("label") not in (None, "-"):
+        bu, ho, se = r.get("buy") or 0, r.get("hold") or 0, r.get("sell") or 0
+        tot = (bu + ho + se) or 1
+        bar = (f'<span class="ed-bar"><i style="width:{bu/tot*100:.0f}%;background:#16a34a"></i>'
+               f'<i style="width:{ho/tot*100:.0f}%;background:#f59e0b"></i>'
+               f'<i style="width:{se/tot*100:.0f}%;background:{dn}"></i></span>')
+        b.append(
+            f'<div class="ed-b"><div class="ed-t">👍 투자의견 '
+            f'<span class="ed-p">· 애널리스트 {r.get("count","-")}명</span></div>'
+            '<div class="ed-why">애널리스트 매수·보유·매도 의견 종합</div>'
+            f'<div class="ed-rec"><b style="color:#16a34a">{_e(r.get("label"))}</b>{bar}</div>'
+            f'<div class="ed-sub">매수 {bu} · 보유 {ho} · 매도 {se}</div></div>')
+    rv = det.get("rev")
+    if rv and (rv.get("up") is not None or rv.get("down") is not None):
+        b.append(
+            f'<div class="ed-b"><div class="ed-t">📈 추정치 리비전 '
+            f'<span class="ed-p">· 최근 30일</span></div>'
+            '<div class="ed-why">최근 30일간 예상 EPS를 올린/내린 애널리스트 수(상향 우세면 긍정 신호)</div>'
+            f'<div class="ed-r"><span>상향 / 하향</span><b>'
+            f'<span style="color:{up}">↑{rv.get("up",0)}</span> / '
+            f'<span style="color:{dn}">↓{rv.get("down",0)}</span></b></div></div>')
+    sp = det.get("surprises")
+    if sp:
+        mx = max((abs(x["v"]) for x in sp), default=1) or 1
+        bars = "".join(
+            f'<span class="ed-sbar"><i style="height:{max(4, abs(x["v"])/mx*26):.0f}px;'
+            f'background:{up if x["pos"] else dn}"></i>'
+            f'<span>{_e(x["fmt"])}</span></span>' for x in sp)
+        b.append(
+            f'<div class="ed-b"><div class="ed-t">📉 최근 {len(sp)}분기 서프라이즈</div>'
+            '<div class="ed-why">실제 실적이 예상을 웃돌면 +상회(빨강), 밑돌면 −하회(파랑)</div>'
+            f'<div class="ed-sbars">{bars}</div></div>')
+    return "".join(b)
 
 
 def render_html(body, now=None, links="", quotes=None, mark_new=False,

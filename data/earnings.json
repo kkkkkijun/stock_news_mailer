@@ -3,72 +3,751 @@
   "ticker": "NVDA",
   "name": "엔비디아",
   "date": "2026-08-26",
-  "est": false
+  "est": false,
+  "detail": {
+   "prev": {
+    "period": "26.04",
+    "eps_act": "$1.87",
+    "eps_est": "$1.77",
+    "surprise": "+5.54%",
+    "surprise_pos": true
+   },
+   "surprises": [
+    {
+     "fmt": "+4.10%",
+     "v": 4.1,
+     "pos": true
+    },
+    {
+     "fmt": "+3.46%",
+     "v": 3.46,
+     "pos": true
+    },
+    {
+     "fmt": "+5.32%",
+     "v": 5.32,
+     "pos": true
+    },
+    {
+     "fmt": "+5.54%",
+     "v": 5.54,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.10",
+    "eps": "$2.35",
+    "eps_range": "$2.13~$2.63",
+    "rev": "$103.13B",
+    "growth": "+80.95%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 35,
+    "down": 2
+   },
+   "target": {
+    "price": "$200.75",
+    "mean": "$302.83",
+    "range": "$180~$500",
+    "upside": "+51%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "적극 매수",
+    "count": 58,
+    "buy": 58,
+    "hold": 2,
+    "sell": 1
+   }
+  }
  },
  {
   "ticker": "MSFT",
   "name": "마이크로소프트",
   "date": "2026-10-28",
-  "est": true
+  "est": true,
+  "detail": {
+   "prev": {
+    "period": "26.06",
+    "eps_act": "$4.74",
+    "eps_est": "$4.24",
+    "surprise": "+11.81%",
+    "surprise_pos": true
+   },
+   "surprises": [
+    {
+     "fmt": "+12.73%",
+     "v": 12.73,
+     "pos": true
+    },
+    {
+     "fmt": "+5.69%",
+     "v": 5.69,
+     "pos": true
+    },
+    {
+     "fmt": "+4.90%",
+     "v": 4.9,
+     "pos": true
+    },
+    {
+     "fmt": "+11.81%",
+     "v": 11.81,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.12",
+    "eps": "$4.82",
+    "eps_range": "$4.66~$5.02",
+    "rev": "$95.45B",
+    "growth": "+16.42%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 11,
+    "down": 6
+   },
+   "target": {
+    "price": "$464.72",
+    "mean": "$563.05",
+    "range": "$400~$870",
+    "upside": "+21%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "적극 매수",
+    "count": 54,
+    "buy": 54,
+    "hold": 3,
+    "sell": 0
+   }
+  }
  },
  {
   "ticker": "AAPL",
   "name": "애플",
   "date": "2026-10-29",
-  "est": true
+  "est": true,
+  "detail": {
+   "prev": {
+    "period": "26.06",
+    "eps_act": "$2.02",
+    "eps_est": "$1.89",
+    "surprise": "+6.74%",
+    "surprise_pos": true
+   },
+   "surprises": [
+    {
+     "fmt": "+4.52%",
+     "v": 4.52,
+     "pos": true
+    },
+    {
+     "fmt": "+6.34%",
+     "v": 6.34,
+     "pos": true
+    },
+    {
+     "fmt": "+3.46%",
+     "v": 3.46,
+     "pos": true
+    },
+    {
+     "fmt": "+6.74%",
+     "v": 6.74,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.12",
+    "eps": "$2.91",
+    "eps_range": "$2.51~$3.42",
+    "rev": "$153.92B",
+    "growth": "+1.61%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 1,
+    "down": 0
+   },
+   "target": {
+    "price": "$308.91",
+    "mean": "$323.28",
+    "range": "$215~$400",
+    "upside": "+5%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "매수",
+    "count": 41,
+    "buy": 28,
+    "hold": 14,
+    "sell": 4
+   }
+  }
  },
  {
   "ticker": "GOOGL",
   "name": "알파벳",
   "date": "2026-10-28",
-  "est": false
+  "est": false,
+  "detail": {
+   "prev": {
+    "period": "26.06",
+    "eps_act": "$9.11",
+    "eps_est": "$2.90",
+    "surprise": "+214.23%",
+    "surprise_pos": true
+   },
+   "surprises": [
+    {
+     "fmt": "+26.88%",
+     "v": 26.88,
+     "pos": true
+    },
+    {
+     "fmt": "+7.01%",
+     "v": 7.01,
+     "pos": true
+    },
+    {
+     "fmt": "+91.59%",
+     "v": 91.59,
+     "pos": true
+    },
+    {
+     "fmt": "+214.23%",
+     "v": 214.23,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.12",
+    "eps": "$3.33",
+    "eps_range": "$2.99~$4.09",
+    "rev": "$140.97B",
+    "growth": "+18.08%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 2,
+    "down": 3
+   },
+   "target": {
+    "price": "$356.13",
+    "mean": "$426.95",
+    "range": "$340~$515",
+    "upside": "+20%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "적극 매수",
+    "count": 55,
+    "buy": 58,
+    "hold": 6,
+    "sell": 0
+   }
+  }
  },
  {
   "ticker": "AMZN",
   "name": "아마존",
   "date": "2026-10-29",
-  "est": true
+  "est": true,
+  "detail": {
+   "prev": {
+    "period": "26.06",
+    "eps_act": "$5.75",
+    "eps_est": "$1.83",
+    "surprise": "+215.02%",
+    "surprise_pos": true
+   },
+   "surprises": [
+    {
+     "fmt": "+25.20%",
+     "v": 25.2,
+     "pos": true
+    },
+    {
+     "fmt": "-0.49%",
+     "v": -0.49,
+     "pos": false
+    },
+    {
+     "fmt": "+68.18%",
+     "v": 68.18,
+     "pos": true
+    },
+    {
+     "fmt": "+215.02%",
+     "v": 215.02,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.12",
+    "eps": "$2.44",
+    "eps_range": "$2.00~$2.75",
+    "rev": "$243.61B",
+    "growth": "+23.68%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 1,
+    "down": 1
+   },
+   "target": {
+    "price": "$271.58",
+    "mean": "$321.95",
+    "range": "$207~$400",
+    "upside": "+19%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "적극 매수",
+    "count": 61,
+    "buy": 59,
+    "hold": 3,
+    "sell": 0
+   }
+  }
  },
  {
   "ticker": "META",
   "name": "메타",
   "date": "2026-10-28",
-  "est": true
+  "est": true,
+  "detail": {
+   "prev": {
+    "period": "26.06",
+    "eps_act": "$6.18",
+    "eps_est": "$7.22",
+    "surprise": "-14.42%",
+    "surprise_pos": false
+   },
+   "surprises": [
+    {
+     "fmt": "-84.34%",
+     "v": -84.34,
+     "pos": false
+    },
+    {
+     "fmt": "+8.00%",
+     "v": 8.0,
+     "pos": true
+    },
+    {
+     "fmt": "+56.79%",
+     "v": 56.79,
+     "pos": true
+    },
+    {
+     "fmt": "-14.42%",
+     "v": -14.42,
+     "pos": false
+    }
+   ],
+   "next": {
+    "period": "26.12",
+    "eps": "$8.28",
+    "eps_range": "$7.06~$9.12",
+    "rev": "$73.56B",
+    "growth": "-5.42%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 14,
+    "down": 19
+   },
+   "target": {
+    "price": "$556.71",
+    "mean": "$768.58",
+    "range": "$580~$1,000",
+    "upside": "+38%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "적극 매수",
+    "count": 57,
+    "buy": 55,
+    "hold": 7,
+    "sell": 0
+   }
+  }
  },
  {
   "ticker": "TSLA",
   "name": "테슬라",
   "date": "2026-10-21",
-  "est": false
+  "est": false,
+  "detail": {
+   "prev": {
+    "period": "26.06",
+    "eps_act": "$0.33",
+    "eps_est": "$0.54",
+    "surprise": "-38.35%",
+    "surprise_pos": false
+   },
+   "surprises": [
+    {
+     "fmt": "-10.53%",
+     "v": -10.53,
+     "pos": false
+    },
+    {
+     "fmt": "+10.96%",
+     "v": 10.96,
+     "pos": true
+    },
+    {
+     "fmt": "+17.15%",
+     "v": 17.15,
+     "pos": true
+    },
+    {
+     "fmt": "-38.35%",
+     "v": -38.35,
+     "pos": false
+    }
+   ],
+   "next": {
+    "period": "26.12",
+    "eps": "$0.50",
+    "eps_range": "$0.24~$0.82",
+    "rev": "$28.43B",
+    "growth": "-0.27%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 4,
+    "down": 1
+   },
+   "target": {
+    "price": "$311.21",
+    "mean": "$398.30",
+    "range": "$125~$600",
+    "upside": "+28%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "매수",
+    "count": 40,
+    "buy": 23,
+    "hold": 18,
+    "sell": 6
+   }
+  }
  },
  {
   "ticker": "HIMS",
   "name": "힘스앤허스",
   "date": "2026-08-10",
-  "est": false
+  "est": false,
+  "detail": {
+   "prev": {
+    "period": "26.03",
+    "eps_act": "$-0.40",
+    "eps_est": "$0.03",
+    "surprise": "-1,664.33%",
+    "surprise_pos": false
+   },
+   "surprises": [
+    {
+     "fmt": "+3.21%",
+     "v": 3.21,
+     "pos": true
+    },
+    {
+     "fmt": "-41.00%",
+     "v": -41.0,
+     "pos": false
+    },
+    {
+     "fmt": "+92.54%",
+     "v": 92.54,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.09",
+    "eps": "$0.07",
+    "eps_range": "$0.06~$0.07",
+    "rev": "$862.72M",
+    "growth": "-2.19%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 1,
+    "down": 8
+   },
+   "target": {
+    "price": "$27.77",
+    "mean": "$29.23",
+    "range": "$21~$40",
+    "upside": "+5%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "보유",
+    "count": 13,
+    "buy": 3,
+    "hold": 12,
+    "sell": 0
+   }
+  }
  },
  {
   "ticker": "RDW",
   "name": "레드와이어",
   "date": "2026-08-05",
-  "est": false
+  "est": false,
+  "detail": {
+   "prev": {
+    "period": "26.03",
+    "eps_act": "$-0.12",
+    "eps_est": "$-0.17",
+    "surprise": "+28.47%",
+    "surprise_pos": true
+   },
+   "surprises": [
+    {
+     "fmt": "-840.00%",
+     "v": -840.0,
+     "pos": false
+    },
+    {
+     "fmt": "-46.92%",
+     "v": -46.92,
+     "pos": false
+    },
+    {
+     "fmt": "-37.56%",
+     "v": -37.56,
+     "pos": false
+    },
+    {
+     "fmt": "+28.47%",
+     "v": 28.47,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.09",
+    "eps": "$-0.12",
+    "eps_range": "$-0.12~$-0.12",
+    "rev": "$123.71M",
+    "growth": "+37.17%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 1,
+    "down": 0
+   },
+   "target": {
+    "price": "$8.62",
+    "mean": "$14.88",
+    "range": "$7~$24",
+    "upside": "+73%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "none",
+    "count": 8,
+    "buy": 6,
+    "hold": 2,
+    "sell": 1
+   }
+  }
  },
  {
   "ticker": "IREN",
   "name": "아이렌",
   "date": "2026-08-27",
-  "est": true
+  "est": true,
+  "detail": {
+   "prev": {
+    "period": "26.03",
+    "eps_act": "$-0.16",
+    "eps_est": "$-0.34",
+    "surprise": "+52.91%",
+    "surprise_pos": true
+   },
+   "surprises": [
+    {
+     "fmt": "-2.54%",
+     "v": -2.54,
+     "pos": false
+    },
+    {
+     "fmt": "-94.38%",
+     "v": -94.38,
+     "pos": false
+    },
+    {
+     "fmt": "+88.44%",
+     "v": 88.44,
+     "pos": true
+    },
+    {
+     "fmt": "+52.91%",
+     "v": 52.91,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.09",
+    "eps": "$-0.26",
+    "eps_range": "$-0.36~$-0.16",
+    "rev": "$271.98M",
+    "growth": "-3,325.81%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 2,
+    "down": 2
+   },
+   "target": {
+    "price": "$36.80",
+    "mean": "$81.73",
+    "range": "$41~$131",
+    "upside": "+122%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "매수",
+    "count": 15,
+    "buy": 12,
+    "hold": 3,
+    "sell": 1
+   }
+  }
  },
  {
   "ticker": "PLTR",
   "name": "팔란티어",
   "date": "2026-08-03",
-  "est": false
+  "est": false,
+  "detail": {
+   "prev": {
+    "period": "26.03",
+    "eps_act": "$0.33",
+    "eps_est": "$0.28",
+    "surprise": "+18.08%",
+    "surprise_pos": true
+   },
+   "surprises": [
+    {
+     "fmt": "+15.57%",
+     "v": 15.57,
+     "pos": true
+    },
+    {
+     "fmt": "+25.46%",
+     "v": 25.46,
+     "pos": true
+    },
+    {
+     "fmt": "+8.60%",
+     "v": 8.6,
+     "pos": true
+    },
+    {
+     "fmt": "+18.08%",
+     "v": 18.08,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.09",
+    "eps": "$0.37",
+    "eps_range": "$0.34~$0.44",
+    "rev": "$2B",
+    "growth": "+77.14%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 2,
+    "down": 0
+   },
+   "target": {
+    "price": "$123.06",
+    "mean": "$182.20",
+    "range": "$70~$255",
+    "upside": "+48%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "매수",
+    "count": 27,
+    "buy": 20,
+    "hold": 10,
+    "sell": 2
+   }
+  }
  },
  {
   "ticker": "RKLB",
   "name": "로켓랩",
   "date": "2026-08-10",
-  "est": false
+  "est": false,
+  "detail": {
+   "prev": {
+    "period": "26.03",
+    "eps_act": "$-0.07",
+    "eps_est": "$-0.08",
+    "surprise": "+11.03%",
+    "surprise_pos": true
+   },
+   "surprises": [
+    {
+     "fmt": "-17.91%",
+     "v": -17.91,
+     "pos": false
+    },
+    {
+     "fmt": "+71.30%",
+     "v": 71.3,
+     "pos": true
+    },
+    {
+     "fmt": "+8.19%",
+     "v": 8.19,
+     "pos": true
+    },
+    {
+     "fmt": "+11.03%",
+     "v": 11.03,
+     "pos": true
+    }
+   ],
+   "next": {
+    "period": "26.09",
+    "eps": "$-0.06",
+    "eps_range": "$-0.08~$-0.05",
+    "rev": "$235.9M",
+    "growth": "-15.38%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 1,
+    "down": 4
+   },
+   "target": {
+    "price": "$64.95",
+    "mean": "$114.47",
+    "range": "$77~$150",
+    "upside": "+76%",
+    "upside_pos": true
+   },
+   "rec": {
+    "label": "매수",
+    "count": 15,
+    "buy": 14,
+    "hold": 3,
+    "sell": 0
+   }
+  }
  }
 ]
