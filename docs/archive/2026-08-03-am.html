@@ -72,9 +72,38 @@ a:hover{opacity:.72;}
 /* 선택한 서브탭 컬럼만 표시 */
 .sched-2col[data-sub="econ"] .sched-col.earn{display:none;}
 .sched-2col[data-sub="earn"] .sched-col.econ{display:none;}
-.ern{display:flex;align-items:center;gap:9px;padding:9px 3px;
- border-bottom:1px solid var(--border);}
-.ern:last-of-type{border-bottom:0;}
+.ern-item{border-bottom:1px solid var(--border);border-radius:10px;}
+.ern-item:last-child{border-bottom:0;}
+.ern-item.open{background:var(--chip);border-bottom-color:transparent;}
+.ern{display:flex;align-items:center;gap:9px;padding:9px 6px;}
+.ern-item:has(.ern-detail) .ern{cursor:pointer;}
+.ern-arrow{color:var(--faint);font-size:10px;flex-shrink:0;transition:transform .15s;}
+.ern-item.open .ern-arrow{transform:rotate(180deg);color:var(--accent);}
+.ern-tag.rep{font-size:9.5px;font-weight:800;color:#fff;background:#16a34a;
+ padding:2px 7px;border-radius:5px;flex-shrink:0;}
+.ern-detail{display:none;padding:0 8px 10px;flex-direction:column;gap:7px;}
+.ern-item.open .ern-detail{display:flex;}
+.ed-b{background:var(--card);border:1px solid var(--border);border-radius:9px;
+ padding:9px 12px;}
+.ed-t{font-size:10px;font-weight:800;color:var(--muted-2);margin-bottom:5px;}
+.ed-t.acc{color:var(--accent);}
+.ed-p{color:var(--faint);font-weight:600;}
+.ed-why{font-size:10px;color:var(--faint);font-weight:500;margin:-2px 0 6px;
+ line-height:1.4;}
+.ed-r{display:flex;justify-content:space-between;gap:8px;font-size:12px;margin-top:2px;}
+.ed-r>span{color:var(--muted-2);}
+.ed-r b{color:var(--ink);font-weight:700;text-align:right;}
+.ed-sub{color:var(--faint);font-weight:500;font-size:10.5px;}
+.ed-rec{display:flex;align-items:center;gap:8px;margin-top:1px;}
+.ed-rec b{font-size:13px;}
+.ed-bar{flex:1;display:flex;height:8px;border-radius:4px;overflow:hidden;
+ background:var(--border);}
+.ed-bar i{display:block;}
+.ed-sbars{display:flex;align-items:flex-end;gap:11px;height:40px;padding-top:4px;}
+.ed-sbar{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+ gap:3px;}
+.ed-sbar i{width:20px;border-radius:2px;display:block;}
+.ed-sbar>span{font-size:9px;color:var(--muted-2);font-weight:600;}
 .ern-date{display:flex;flex-direction:column;min-width:60px;flex-shrink:0;}
 .ern-md{font-size:12px;font-weight:700;color:var(--ink);}
 .ern-dd{font-size:9.5px;font-weight:700;color:var(--faint);}
