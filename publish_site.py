@@ -214,7 +214,8 @@ a:hover{opacity:.72;}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
  font-size:13px;color:#94a3b8;}
-.hd-updated{display:flex;flex-direction:column;align-items:flex-start;gap:2px;}
+.hd-updated{display:flex;align-items:flex-start;gap:6px;}
+.hd-uptxt{display:flex;flex-direction:column;gap:2px;}
 .fresh{display:block;font-size:10px;color:#86efac;font-weight:600;}  /* 신선함=연녹색 */
 .fresh.warn{color:#fbbf24;}                            /* 다소 지연=주황 */
 .fresh.stale{color:#f87171;font-weight:700;}          /* 업데이트 지연=빨강 */
@@ -1308,8 +1309,9 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
           f'<span class="hd-kicker">{_e(kicker)}</span>'
           f'<div class="hd-links">{links}</div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
-          f'<div class="hd-sub"><span class="hd-updated"><span>{dowb}{_e(sub)}</span>'
-          f'<span class="fresh" data-built="{built_ep}"></span></span>'
+          f'<div class="hd-sub"><span class="hd-updated">{dowb}'
+          f'<span class="hd-uptxt"><span>{_e(sub)}</span>'
+          f'<span class="fresh" data-built="{built_ep}"></span></span></span>'
           f'<span class="hd-slogan">{_e(SLOGAN)}'
           f'<span class="hd-pct">{_e(_dday_text(now))} · {pct:.2f}%</span>'
           f'<span class="hd-bar"><i style="width:{pct:.3f}%"></i></span>'
