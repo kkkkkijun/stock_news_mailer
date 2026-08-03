@@ -170,6 +170,8 @@ a:hover{opacity:.72;}
 .ern-item.open .ern-arrow{transform:rotate(180deg);color:var(--accent);}
 .ern-tag.rep{font-size:9.5px;font-weight:800;color:#fff;background:#16a34a;
  padding:2px 7px;border-radius:5px;flex-shrink:0;}
+.ern-tag.wait{font-size:9.5px;font-weight:800;color:#fff;background:#f59e0b;
+ padding:2px 7px;border-radius:5px;flex-shrink:0;margin-left:4px;}  /* 발표됐으나 집계 전 */
 .ern-detail{display:none;padding:0 8px 10px;flex-direction:column;gap:7px;}
 .ern-item.open .ern-detail{display:flex;}
 .ed-b{background:var(--card);border:1px solid var(--border);border-radius:9px;
@@ -1182,7 +1184,9 @@ def _render_earnings(evs, now):
                          f'<span class="ern-dd">{dday}</span></span>')
             prev = key
         if e.get("reported"):
-            chip = '<span class="ern-tag rep">실적 발표</span>'
+            # 예정시각 경과 = 발표됨. 단 Yahoo 실제치 집계 전이므로 '집계 대기' 병기.
+            chip = ('<span class="ern-tag rep">실적 발표</span>'
+                    '<span class="ern-tag wait">집계 대기</span>')
         elif e.get("est"):
             chip = '<span class="ern-when">예상</span>'
         else:
@@ -1210,20 +1214,28 @@ def _earn_detail_html(det, reported):
         ar = "▲" if p.get("surprise_pos") else "▼"
         sur = (f' · <span style="color:{c};font-weight:800">{ar}{_e(p["surprise"])}</span>'
                if p.get("surprise") else "")
-        title = "이번 실적 결과" if reported else "직전 실적"
+        # 발표 직후엔 Yahoo 실제치 집계 전이라 prev는 여전히 '직전(지난) 분기'가 맞음.
         b.append(
-            f'<div class="ed-b"><div class="ed-t">🔄 {title} '
+            f'<div class="ed-b"><div class="ed-t">🔄 직전 실적 '
             f'<span class="ed-p">· {_e(p.get("period",""))}</span></div>'
             '<div class="ed-why">지난 분기 실제 실적과 시장 예상치를 비교</div>'
             f'<div class="ed-r"><span>EPS 실제/예상</span>'
             f'<b>{_e(p.get("eps_act","-"))} / {_e(p.get("eps_est","-"))}{sur}</b></div></div>')
     c = det.get("cur")
     if c:
+        if reported:
+            c_ico, c_ttl, c_note = "🕐", "이번 실적 · 집계 대기", "(발표 완료 · 실제치 집계 중)"
+            c_why = "실적은 발표됐고 Yahoo 실제 수치 집계를 기다리는 중 (집계되면 자동 반영)"
+            r_lbl = "예상 EPS / 매출 (실제 대기)"
+        else:
+            c_ico, c_ttl, c_note = "🔜", "이번 발표 예상", "(곧 발표)"
+            c_why = "곧 발표할 분기의 애널리스트 예상치(발표 시 실제와 비교)"
+            r_lbl = "예상 EPS / 매출"
         b.append(
-            f'<div class="ed-b cur"><div class="ed-t acc">🔜 이번 발표 예상 '
-            f'<span class="ed-p">· {_e(c.get("period",""))} (곧 발표)</span></div>'
-            '<div class="ed-why">곧 발표할 분기의 애널리스트 예상치(발표 시 실제와 비교)</div>'
-            f'<div class="ed-r"><span>예상 EPS / 매출</span><b>{_e(c.get("eps","-"))} '
+            f'<div class="ed-b cur"><div class="ed-t acc">{c_ico} {c_ttl} '
+            f'<span class="ed-p">· {_e(c.get("period",""))} {c_note}</span></div>'
+            f'<div class="ed-why">{c_why}</div>'
+            f'<div class="ed-r"><span>{r_lbl}</span><b>{_e(c.get("eps","-"))} '
             f'<span class="ed-sub">{_e(c.get("eps_range",""))}</span> / '
             f'{_e(c.get("rev","-"))}</b></div></div>')
     n = det.get("next")
