@@ -89,6 +89,8 @@ a:hover{opacity:.72;}
 .ern-item.open .ern-arrow{transform:rotate(180deg);color:var(--accent);}
 .ern-tag.rep{font-size:9.5px;font-weight:800;color:#fff;background:#16a34a;
  padding:2px 7px;border-radius:5px;flex-shrink:0;}
+.ern-tag.wait{font-size:9.5px;font-weight:800;color:#fff;background:#f59e0b;
+ padding:2px 7px;border-radius:5px;flex-shrink:0;margin-left:4px;}  /* 발표됐으나 집계 전 */
 .ern-detail{display:none;padding:0 8px 10px;flex-direction:column;gap:7px;}
 .ern-item.open .ern-detail{display:flex;}
 .ed-b{background:var(--card);border:1px solid var(--border);border-radius:9px;
@@ -290,7 +292,7 @@ a:hover{opacity:.72;}
 <button id="top" aria-label="맨 위로">↑</button>
 <script>
 (function(){
-  var DATA = {"2026-07-24": {"am": "2026-07-24-am.html", "pm": "2026-07-24-pm.html"}, "2026-08-03": {"am": "2026-08-03-am.html", "pm": "2026-08-03-pm.html"}, "2026-08-02": {"am": "2026-08-02-am.html", "pm": "2026-08-02-pm.html"}, "2026-07-31": {"pm": "2026-07-31-pm.html", "am": "2026-07-31-am.html"}, "2026-07-25": {"am": "2026-07-25-am.html", "pm": "2026-07-25-pm.html"}, "2026-07-28": {"am": "2026-07-28-am.html", "pm": "2026-07-28-pm.html"}, "2026-07-23": {"pm": "2026-07-23-pm.html"}, "2026-07-30": {"am": "2026-07-30-am.html", "pm": "2026-07-30-pm.html"}, "2026-07-26": {"pm": "2026-07-26-pm.html", "am": "2026-07-26-am.html"}, "2026-08-04": {"am": "2026-08-04-am.html"}, "2026-07-27": {"pm": "2026-07-27-pm.html", "am": "2026-07-27-am.html"}, "2026-08-01": {"am": "2026-08-01-am.html", "pm": "2026-08-01-pm.html"}, "2026-07-29": {"am": "2026-07-29-am.html", "pm": "2026-07-29-pm.html"}};
+  var DATA = {"2026-07-23": {"pm": "2026-07-23-pm.html"}, "2026-07-24": {"am": "2026-07-24-am.html", "pm": "2026-07-24-pm.html"}, "2026-07-25": {"am": "2026-07-25-am.html", "pm": "2026-07-25-pm.html"}, "2026-07-26": {"am": "2026-07-26-am.html", "pm": "2026-07-26-pm.html"}, "2026-07-27": {"am": "2026-07-27-am.html", "pm": "2026-07-27-pm.html"}, "2026-07-28": {"am": "2026-07-28-am.html", "pm": "2026-07-28-pm.html"}, "2026-07-29": {"am": "2026-07-29-am.html", "pm": "2026-07-29-pm.html"}, "2026-07-30": {"am": "2026-07-30-am.html", "pm": "2026-07-30-pm.html"}, "2026-07-31": {"am": "2026-07-31-am.html", "pm": "2026-07-31-pm.html"}, "2026-08-01": {"am": "2026-08-01-am.html", "pm": "2026-08-01-pm.html"}, "2026-08-02": {"am": "2026-08-02-am.html", "pm": "2026-08-02-pm.html"}, "2026-08-03": {"am": "2026-08-03-am.html", "pm": "2026-08-03-pm.html"}, "2026-08-04": {"am": "2026-08-04-am.html"}};
   var selY=document.getElementById('selY'), selM=document.getElementById('selM'),
       box=document.getElementById('calbox'), det=document.getElementById('det');
   if(!selY) return;
