@@ -63,6 +63,11 @@ a:hover{opacity:.72;}
   .sched-col.earn{order:-1;}   /* 모바일에선 기업실적을 위로 */
   .sched-col{width:100%;}
 }
+@media (min-width:761px){
+  /* 좌(칩 있음)·우(칩 없음) 헤더 높이를 맞춰 첫 행부터 줄 정렬 */
+  .sched-col .sched-head{min-height:50px;}
+  .sched-col.econ .sched-group:first-of-type .sched-day{margin-top:0;}
+}
 .ern{display:flex;align-items:center;gap:9px;padding:9px 3px;
  border-bottom:1px solid var(--border);}
 .ern:last-of-type{border-bottom:0;}
