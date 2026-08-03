@@ -1056,10 +1056,13 @@ def _load_earnings(now):
                 d = date.fromisoformat(r["date"])
             except ValueError:
                 d = None
+        # 발표 완료 = 실제 발표 시각(ts)이 지났을 때만 (발표일 당일이어도 시각 전이면 예정)
+        ts = r.get("ts")
+        reported = bool(ts and now.timestamp() >= ts)
         out.append({"ticker": (r.get("ticker") or "").upper(),
                     "name": r.get("name") or "", "date": d,
                     "est": bool(r.get("est")),
-                    "reported": bool(d and d <= today),   # 발표일 도래/경과
+                    "reported": reported,
                     "detail": r.get("detail") or {}})
     out.sort(key=lambda e: (e["date"] is None, e["date"] or date.max))
     return out
