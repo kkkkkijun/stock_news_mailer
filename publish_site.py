@@ -147,7 +147,8 @@ a:hover{opacity:.72;}
 @media (min-width:761px){
   /* 좌(칩 있음)·우(칩 없음) 헤더 높이를 맞춰 첫 행부터 줄 정렬 */
   .sched-col .sched-head{min-height:50px;}
-  .sched-col.econ .sched-group:first-of-type .sched-day{margin-top:0;}
+  /* 첫 날짜그룹의 위 여백 제거 → 우측 첫 실적 행과 같은 높이에서 시작 */
+  .sched-col.econ .sched-head + .sched-group .sched-day{margin-top:0;}
 }
 .ern{display:flex;align-items:center;gap:9px;padding:9px 3px;
  border-bottom:1px solid var(--border);}
