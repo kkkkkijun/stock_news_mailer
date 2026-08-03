@@ -1158,14 +1158,16 @@ def _earn_detail_html(det, reported):
     if r and r.get("label") not in (None, "-"):
         bu, ho, se = r.get("buy") or 0, r.get("hold") or 0, r.get("sell") or 0
         tot = (bu + ho + se) or 1
-        bar = (f'<span class="ed-bar"><i style="width:{bu/tot*100:.0f}%;background:#16a34a"></i>'
+        bar = (f'<span class="ed-bar"><i style="width:{bu/tot*100:.0f}%;background:{up}"></i>'
                f'<i style="width:{ho/tot*100:.0f}%;background:#f59e0b"></i>'
                f'<i style="width:{se/tot*100:.0f}%;background:{dn}"></i></span>')
+        lab = r.get("label") or ""
+        lc = up if "매수" in lab else (dn if "매도" in lab else "#f59e0b")
         b.append(
             f'<div class="ed-b"><div class="ed-t">👍 투자의견 '
             f'<span class="ed-p">· 애널리스트 {r.get("count","-")}명</span></div>'
             '<div class="ed-why">애널리스트 매수·보유·매도 의견 종합</div>'
-            f'<div class="ed-rec"><b style="color:#16a34a">{_e(r.get("label"))}</b>{bar}</div>'
+            f'<div class="ed-rec"><b style="color:{lc}">{_e(r.get("label"))}</b>{bar}</div>'
             f'<div class="ed-sub">매수 {bu} · 보유 {ho} · 매도 {se}</div></div>')
     rv = det.get("rev")
     if rv and (rv.get("up") is not None or rv.get("down") is not None):
