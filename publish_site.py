@@ -76,6 +76,8 @@ TICKER_COLORS = {
     "AMZN": "#FF9900",
     "META": "#0866FF",
     "AMD": "#ED1C24",
+    "PLTR": "#101820",   # Palantir 블랙
+    "IREN": "#12B886",   # IREN 그린
 }
 
 _DOW = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
@@ -1006,7 +1008,7 @@ def _load_earnings(now):
             continue
         out.append({"ticker": (r.get("ticker") or "").upper(),
                     "name": r.get("name") or "", "date": d,
-                    "when": (r.get("when") or "").lower()})
+                    "est": bool(r.get("est"))})
     out.sort(key=lambda e: (e["date"] is None, e["date"] or date.max))
     return out
 
@@ -1027,13 +1029,13 @@ def _render_earnings(evs, now):
             dday = "D-DAY" if dd == 0 else f"D-{dd}"
         else:
             md, dday = "미정", ""
-        when = _WHEN_KO.get(e["when"], "")
-        whtml = f'<span class="ern-when">{when}</span>' if when else ""
+        whtml = '<span class="ern-when">예상</span>' if e.get("est") else ""
         rows.append(
             f'<div class="ern"><span class="ern-date"><span class="ern-md">{md}</span>'
             f'<span class="ern-dd">{dday}</span></span>{badge}'
             f'<span class="ern-n">{_e(e["name"])}</span>{whtml}</div>')
-    return head + "".join(rows) + '<div class="sched-src">데이터: Nasdaq</div></div>'
+    return head + "".join(rows) + ('<div class="sched-src">데이터: Yahoo Finance'
+                                   '</div></div>')
 
 
 def render_html(body, now=None, links="", quotes=None, mark_new=False,
