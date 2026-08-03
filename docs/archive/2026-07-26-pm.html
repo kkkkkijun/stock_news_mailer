@@ -27,17 +27,7 @@ body{margin:0;font-family:'Pretendard',system-ui,sans-serif;
  transition:background .2s,color .2s;}
 a{color:var(--accent);text-decoration:none;}
 a:hover{opacity:.72;}
-.wrap{display:flex;justify-content:center;align-items:flex-start;gap:20px;
- padding:48px 24px;}
-/* 경제지표 일정 — PC 우측 고정 레일(넓은 화면에서만) */
-.rail{display:none;}
-.rail-inner{background:var(--page);border:1px solid var(--border);border-radius:16px;
- padding:12px 13px;box-shadow:0 12px 44px var(--shadow);
- max-height:calc(100vh - 48px);overflow:auto;}
-@media (min-width:1120px){
-  .rail{display:block;width:266px;flex-shrink:0;position:sticky;top:24px;}
-  .nav-t.sched-tab{display:none;}   /* PC 에선 레일 사용 → '일정' 탭 버튼 숨김 */
-}
+.wrap{display:flex;justify-content:center;padding:48px 24px;}
 .sched-head{display:flex;flex-direction:column;gap:8px;margin-bottom:6px;}
 .sched-head>span{font-size:14px;font-weight:800;color:var(--ink);}
 .sched-tz{font-size:10px;color:var(--faint);font-weight:600;}
