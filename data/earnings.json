@@ -64,5 +64,11 @@
   "name": "팔란티어",
   "date": "2026-08-03",
   "est": false
+ },
+ {
+  "ticker": "RKLB",
+  "name": "로켓랩",
+  "date": "2026-08-10",
+  "est": false
  }
 ]
