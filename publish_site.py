@@ -166,6 +166,7 @@ a:hover{opacity:.72;}
 .ern-item.open .ern-detail{display:flex;}
 .ed-b{background:var(--card);border:1px solid var(--border);border-radius:9px;
  padding:9px 12px;}
+.ed-b.cur{border-color:var(--accent);border-left-width:3px;}   /* 이번 발표 예상 강조 */
 .ed-t{font-size:10px;font-weight:800;color:var(--muted-2);margin-bottom:5px;}
 .ed-t.acc{color:var(--accent);}
 .ed-p{color:var(--faint);font-weight:600;}
@@ -1129,6 +1130,15 @@ def _earn_detail_html(det, reported):
             '<div class="ed-why">지난 분기 실제 실적과 시장 예상치를 비교</div>'
             f'<div class="ed-r"><span>EPS 실제/예상</span>'
             f'<b>{_e(p.get("eps_act","-"))} / {_e(p.get("eps_est","-"))}{sur}</b></div></div>')
+    c = det.get("cur")
+    if c:
+        b.append(
+            f'<div class="ed-b cur"><div class="ed-t acc">🔜 이번 발표 예상 '
+            f'<span class="ed-p">· {_e(c.get("period",""))} (곧 발표)</span></div>'
+            '<div class="ed-why">곧 발표할 분기의 애널리스트 예상치(발표 시 실제와 비교)</div>'
+            f'<div class="ed-r"><span>예상 EPS / 매출</span><b>{_e(c.get("eps","-"))} '
+            f'<span class="ed-sub">{_e(c.get("eps_range",""))}</span> / '
+            f'{_e(c.get("rev","-"))}</b></div></div>')
     n = det.get("next")
     if n:
         gc = up if n.get("growth_pos") else dn
@@ -1136,9 +1146,9 @@ def _earn_detail_html(det, reported):
                 f'<b style="color:{gc}">{_e(n["growth"])}</b></div>'
                 if n.get("growth") else "")
         b.append(
-            f'<div class="ed-b"><div class="ed-t acc">📊 다음 분기 컨센서스 '
+            f'<div class="ed-b"><div class="ed-t">📊 다음 분기 '
             f'<span class="ed-p">· {_e(n.get("period",""))}</span></div>'
-            '<div class="ed-why">다음 분기에 대한 애널리스트 평균 예상치</div>'
+            '<div class="ed-why">그 다음 분기에 대한 애널리스트 평균 예상치</div>'
             f'<div class="ed-r"><span>EPS / 매출</span><b>{_e(n.get("eps","-"))} '
             f'<span class="ed-sub">{_e(n.get("eps_range",""))}</span> / '
             f'{_e(n.get("rev","-"))}</b></div>{grow}</div>')

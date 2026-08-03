@@ -572,20 +572,25 @@ def _fetch_earning(session, crumb, sym):
                 sp.append({"fmt": sf, "v": v, "pos": sposq})
         d["surprises"] = sp
     for t in res.get("earningsTrend", {}).get("trend", []) or []:
-        if t.get("period") == "+1q":
+        per = t.get("period")
+        if per in ("0q", "+1q"):
             avg = _num(_g(t, "earningsEstimate", "avg"))
             lo = _num(_g(t, "earningsEstimate", "low"))
             hi = _num(_g(t, "earningsEstimate", "high"))
             gfmt, gpos = _signfmt(_g(t, "growth", "fmt"))
             rev = _g(t, "revenueEstimate", "avg", "fmt")
-            d["next"] = {"period": _ym_str(t.get("endDate")),
-                         "eps": f"${avg:.2f}" if avg is not None else "-",
-                         "eps_range": (f"${lo:.2f}~${hi:.2f}"
-                                       if lo is not None and hi is not None else ""),
-                         "rev": f"${rev}" if rev else "-",
-                         "growth": gfmt, "growth_pos": gpos}
-            d["rev"] = {"up": _num(_g(t, "epsRevisions", "upLast30days")),
-                        "down": _num(_g(t, "epsRevisions", "downLast30days"))}
+            blk = {"period": _ym_str(t.get("endDate")),
+                   "eps": f"${avg:.2f}" if avg is not None else "-",
+                   "eps_range": (f"${lo:.2f}~${hi:.2f}"
+                                 if lo is not None and hi is not None else ""),
+                   "rev": f"${rev}" if rev else "-",
+                   "growth": gfmt, "growth_pos": gpos}
+            if per == "0q":          # 곧 발표할 그 분기 = '이번 발표 예상'
+                d["cur"] = blk
+                d["rev"] = {"up": _num(_g(t, "epsRevisions", "upLast30days")),
+                            "down": _num(_g(t, "epsRevisions", "downLast30days"))}
+            else:                    # +1q = 그 다음 분기
+                d["next"] = blk
     fd = res.get("financialData", {}) or {}
     pr, mn = _num(fd.get("currentPrice")), _num(fd.get("targetMeanPrice"))
     lo2, hi2 = _num(fd.get("targetLowPrice")), _num(fd.get("targetHighPrice"))

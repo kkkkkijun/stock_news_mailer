@@ -35,6 +35,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.07",
+    "eps": "$2.08",
+    "eps_range": "$2.03~$2.20",
+    "rev": "$91.85B",
+    "growth": "+98.38%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 34,
+    "down": 3
+   },
    "next": {
     "period": "26.10",
     "eps": "$2.35",
@@ -42,10 +54,6 @@
     "rev": "$103.13B",
     "growth": "+80.95%",
     "growth_pos": true
-   },
-   "rev": {
-    "up": 35,
-    "down": 2
    },
    "target": {
     "price": "$200.75",
@@ -99,6 +107,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.09",
+    "eps": "$4.70",
+    "eps_range": "$4.43~$4.83",
+    "rev": "$90.61B",
+    "growth": "+13.87%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 11,
+    "down": 7
+   },
    "next": {
     "period": "26.12",
     "eps": "$4.82",
@@ -106,10 +126,6 @@
     "rev": "$95.45B",
     "growth": "+16.42%",
     "growth_pos": true
-   },
-   "rev": {
-    "up": 11,
-    "down": 6
    },
    "target": {
     "price": "$464.72",
@@ -163,6 +179,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.09",
+    "eps": "$1.98",
+    "eps_range": "$1.95~$2.04",
+    "rev": "$113.26B",
+    "growth": "+7.03%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 2,
+    "down": 0
+   },
    "next": {
     "period": "26.12",
     "eps": "$2.91",
@@ -170,10 +198,6 @@
     "rev": "$153.92B",
     "growth": "+1.61%",
     "growth_pos": true
-   },
-   "rev": {
-    "up": 1,
-    "down": 0
    },
    "target": {
     "price": "$308.91",
@@ -227,6 +251,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.09",
+    "eps": "$3.00",
+    "eps_range": "$2.64~$3.68",
+    "rev": "$127B",
+    "growth": "+4.33%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 2,
+    "down": 3
+   },
    "next": {
     "period": "26.12",
     "eps": "$3.33",
@@ -234,10 +270,6 @@
     "rev": "$140.97B",
     "growth": "+18.08%",
     "growth_pos": true
-   },
-   "rev": {
-    "up": 2,
-    "down": 3
    },
    "target": {
     "price": "$356.13",
@@ -291,6 +323,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.09",
+    "eps": "$1.96",
+    "eps_range": "$1.72~$2.23",
+    "rev": "$202.23B",
+    "growth": "-0.79%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 2,
+    "down": 1
+   },
    "next": {
     "period": "26.12",
     "eps": "$2.44",
@@ -298,10 +342,6 @@
     "rev": "$243.61B",
     "growth": "+23.68%",
     "growth_pos": true
-   },
-   "rev": {
-    "up": 1,
-    "down": 1
    },
    "target": {
     "price": "$271.58",
@@ -355,6 +395,18 @@
      "pos": false
     }
    ],
+   "cur": {
+    "period": "26.09",
+    "eps": "$6.81",
+    "eps_range": "$6.00~$7.64",
+    "rev": "$63.27B",
+    "growth": "-3.59%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 10,
+    "down": 22
+   },
    "next": {
     "period": "26.12",
     "eps": "$8.28",
@@ -362,10 +414,6 @@
     "rev": "$73.56B",
     "growth": "-5.42%",
     "growth_pos": false
-   },
-   "rev": {
-    "up": 14,
-    "down": 19
    },
    "target": {
     "price": "$556.71",
@@ -419,6 +467,18 @@
      "pos": false
     }
    ],
+   "cur": {
+    "period": "26.09",
+    "eps": "$0.46",
+    "eps_range": "$0.27~$0.60",
+    "rev": "$27.49B",
+    "growth": "-8.74%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 6,
+    "down": 1
+   },
    "next": {
     "period": "26.12",
     "eps": "$0.50",
@@ -426,10 +486,6 @@
     "rev": "$28.43B",
     "growth": "-0.27%",
     "growth_pos": false
-   },
-   "rev": {
-    "up": 4,
-    "down": 1
    },
    "target": {
     "price": "$311.21",
@@ -478,6 +534,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.06",
+    "eps": "$-0.05",
+    "eps_range": "$-0.06~$-0.04",
+    "rev": "$730.12M",
+    "growth": "-60.32%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 0,
+    "down": 10
+   },
    "next": {
     "period": "26.09",
     "eps": "$0.07",
@@ -485,10 +553,6 @@
     "rev": "$862.72M",
     "growth": "-2.19%",
     "growth_pos": false
-   },
-   "rev": {
-    "up": 1,
-    "down": 8
    },
    "target": {
     "price": "$27.77",
@@ -542,6 +606,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.06",
+    "eps": "$-0.15",
+    "eps_range": "$-0.15~$-0.15",
+    "rev": "$107.66M",
+    "growth": null,
+    "growth_pos": null
+   },
+   "rev": {
+    "up": 1,
+    "down": 0
+   },
    "next": {
     "period": "26.09",
     "eps": "$-0.12",
@@ -549,10 +625,6 @@
     "rev": "$123.71M",
     "growth": "+37.17%",
     "growth_pos": true
-   },
-   "rev": {
-    "up": 1,
-    "down": 0
    },
    "target": {
     "price": "$8.62",
@@ -606,6 +678,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.06",
+    "eps": "$-0.58",
+    "eps_range": "$-1.92~$-0.21",
+    "rev": "$139.65M",
+    "growth": "-316.46%",
+    "growth_pos": false
+   },
+   "rev": {
+    "up": 2,
+    "down": 3
+   },
    "next": {
     "period": "26.09",
     "eps": "$-0.26",
@@ -613,10 +697,6 @@
     "rev": "$271.98M",
     "growth": "-3,325.81%",
     "growth_pos": false
-   },
-   "rev": {
-    "up": 2,
-    "down": 2
    },
    "target": {
     "price": "$36.80",
@@ -670,6 +750,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.06",
+    "eps": "$0.35",
+    "eps_range": "$0.33~$0.40",
+    "rev": "$1.81B",
+    "growth": "+116.22%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 2,
+    "down": 0
+   },
    "next": {
     "period": "26.09",
     "eps": "$0.37",
@@ -677,10 +769,6 @@
     "rev": "$2B",
     "growth": "+77.14%",
     "growth_pos": true
-   },
-   "rev": {
-    "up": 2,
-    "down": 0
    },
    "target": {
     "price": "$123.06",
@@ -734,6 +822,18 @@
      "pos": true
     }
    ],
+   "cur": {
+    "period": "26.06",
+    "eps": "$-0.08",
+    "eps_range": "$-0.09~$-0.06",
+    "rev": "$230.94M",
+    "growth": "+40.40%",
+    "growth_pos": true
+   },
+   "rev": {
+    "up": 1,
+    "down": 5
+   },
    "next": {
     "period": "26.09",
     "eps": "$-0.06",
@@ -741,10 +841,6 @@
     "rev": "$235.9M",
     "growth": "-15.38%",
     "growth_pos": false
-   },
-   "rev": {
-    "up": 1,
-    "down": 4
    },
    "target": {
     "price": "$64.95",
