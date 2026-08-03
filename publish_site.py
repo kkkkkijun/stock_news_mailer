@@ -143,10 +143,21 @@ a:hover{opacity:.72;}
 .sched-col{min-width:0;}
 .sched-col.econ{flex:1.7;}
 .sched-col.earn{flex:1;}
+/* 서브탭: PC 숨김 / 모바일에서만 노출(경제지표↔기업실적 전환) */
+.sub-tabs{display:none;gap:5px;background:var(--nav-track);border-radius:10px;
+ padding:4px;margin-bottom:12px;}
+.sub-tab{flex:1;text-align:center;font:inherit;font-size:12.5px;font-weight:700;
+ color:var(--muted-2);background:transparent;border:0;border-radius:7px;
+ padding:8px 4px;cursor:pointer;}
+.sub-tab.on{background:var(--ink);color:var(--page);}
 @media (max-width:760px){
-  .sched-2col{flex-direction:column;gap:20px;}
-  .sched-col.earn{order:-1;}   /* 모바일에선 기업실적을 위로 */
+  .sched-2col{flex-direction:column;}
   .sched-col{width:100%;}
+  .sub-tabs{display:flex;}                          /* 모바일: 서브탭 노출 */
+  .sched-col.econ .sched-head>span{display:none;}   /* 서브탭이 제목 역할 → 중복 제거 */
+  .sched-col.earn .sched-head{display:none;}
+  .sched-2col[data-sub="econ"] .sched-col.earn{display:none;}  /* 선택한 것만 */
+  .sched-2col[data-sub="earn"] .sched-col.econ{display:none;}
 }
 @media (min-width:761px){
   /* 좌(칩 있음)·우(칩 없음) 헤더 높이를 맞춰 첫 행부터 줄 정렬 */
@@ -993,6 +1004,14 @@ document.querySelectorAll('.sched').forEach(function(sc){
   });
   groups();
 });
+document.querySelectorAll('.sub-tab').forEach(function(b){
+  b.addEventListener('click', function(){
+    var wrap = b.parentNode.parentNode.querySelector('.sched-2col');
+    if(wrap) wrap.setAttribute('data-sub', b.getAttribute('data-sub'));
+    b.parentNode.querySelectorAll('.sub-tab').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+  });
+});
 </script>"""
 
 
@@ -1115,7 +1134,12 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
         earn_html = _render_earnings(_load_earnings(now), now)
         navs.append('<button class="nav-t" data-p="tpS">일정</button>')
         panels.append(
-            '<div class="panel" id="tpS"><div class="part"><div class="sched-2col">'
+            '<div class="panel" id="tpS"><div class="part">'
+            '<div class="sub-tabs">'
+            '<button class="sub-tab on" data-sub="econ">📅 경제지표</button>'
+            '<button class="sub-tab" data-sub="earn">🏢 기업실적</button>'
+            '</div>'
+            '<div class="sched-2col" data-sub="econ">'
             f'<div class="sched-col econ">{sched_html}</div>'
             f'<div class="sched-col earn">{earn_html}</div>'
             '</div></div></div>')
