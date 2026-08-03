@@ -146,7 +146,7 @@ a:hover{opacity:.72;}
 .sub-tab{flex:1;text-align:center;font:inherit;font-size:12.5px;font-weight:700;
  color:var(--muted-2);background:transparent;border:0;border-radius:7px;
  padding:8px 4px;cursor:pointer;}
-.sub-tab.on{background:var(--ink);color:var(--page);}
+.sub-tab.on{background:#3a6fd8;color:#fff;}   /* 서브탭 활성=블루(상위 다크와 구분) */
 /* 서브탭이 제목 역할 → 컬럼 헤더 중복 제거(경제=제목 숨김·칩 유지 / 기업=헤더 숨김) */
 .sched-col.econ .sched-head>span{display:none;}
 .sched-col.earn .sched-head{display:none;}
