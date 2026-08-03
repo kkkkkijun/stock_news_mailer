@@ -58,32 +58,20 @@ a:hover{opacity:.72;}
 .igauge i{width:8px;height:6px;border-radius:2px;display:block;}
 .sched-src{font-size:9.5px;color:var(--faint);text-align:right;margin-top:9px;}
 /* 일정 2단: 좌 경제지표 / 우 기업실적 */
-.sched-2col{display:flex;gap:22px;align-items:flex-start;}
-.sched-col{min-width:0;}
-.sched-col.econ{flex:1.7;}
-.sched-col.earn{flex:1;}
-/* 서브탭: PC 숨김 / 모바일에서만 노출(경제지표↔기업실적 전환) */
-.sub-tabs{display:none;gap:5px;background:var(--nav-track);border-radius:10px;
+/* 일정: 전 기기 공통 서브탭 → 한 번에 한 컬럼(단일) */
+.sched-col{min-width:0;width:100%;}
+.sub-tabs{display:flex;gap:5px;background:var(--nav-track);border-radius:10px;
  padding:4px;margin-bottom:12px;}
 .sub-tab{flex:1;text-align:center;font:inherit;font-size:12.5px;font-weight:700;
  color:var(--muted-2);background:transparent;border:0;border-radius:7px;
  padding:8px 4px;cursor:pointer;}
 .sub-tab.on{background:var(--ink);color:var(--page);}
-@media (max-width:760px){
-  .sched-2col{flex-direction:column;}
-  .sched-col{width:100%;}
-  .sub-tabs{display:flex;}                          /* 모바일: 서브탭 노출 */
-  .sched-col.econ .sched-head>span{display:none;}   /* 서브탭이 제목 역할 → 중복 제거 */
-  .sched-col.earn .sched-head{display:none;}
-  .sched-2col[data-sub="econ"] .sched-col.earn{display:none;}  /* 선택한 것만 */
-  .sched-2col[data-sub="earn"] .sched-col.econ{display:none;}
-}
-@media (min-width:761px){
-  /* 좌(칩 있음)·우(칩 없음) 헤더 높이를 맞춰 첫 행부터 줄 정렬 */
-  .sched-col .sched-head{min-height:50px;}
-  /* 첫 날짜그룹의 위 여백 제거 → 우측 첫 실적 행과 같은 높이에서 시작 */
-  .sched-col.econ .sched-head + .sched-group .sched-day{margin-top:0;}
-}
+/* 서브탭이 제목 역할 → 컬럼 헤더 중복 제거(경제=제목 숨김·칩 유지 / 기업=헤더 숨김) */
+.sched-col.econ .sched-head>span{display:none;}
+.sched-col.earn .sched-head{display:none;}
+/* 선택한 서브탭 컬럼만 표시 */
+.sched-2col[data-sub="econ"] .sched-col.earn{display:none;}
+.sched-2col[data-sub="earn"] .sched-col.econ{display:none;}
 .ern{display:flex;align-items:center;gap:9px;padding:9px 3px;
  border-bottom:1px solid var(--border);}
 .ern:last-of-type{border-bottom:0;}
