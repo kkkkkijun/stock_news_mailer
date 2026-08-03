@@ -38,9 +38,20 @@ a:hover{opacity:.72;}
   .rail{display:block;width:266px;flex-shrink:0;position:sticky;top:24px;}
   .nav-t.sched-tab{display:none;}   /* PC 에선 레일 사용 → '일정' 탭 버튼 숨김 */
 }
-.sched-head{display:flex;flex-direction:column;gap:3px;font-size:14px;
- font-weight:800;color:var(--ink);margin-bottom:6px;}
+.sched-head{display:flex;flex-direction:column;gap:8px;margin-bottom:6px;}
+.sched-head>span{font-size:14px;font-weight:800;color:var(--ink);}
 .sched-tz{font-size:10px;color:var(--faint);font-weight:600;}
+.imp-filter{display:flex;gap:5px;}
+.imp-chip{display:flex;align-items:center;gap:5px;font:inherit;font-size:11px;
+ font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--border);
+ background:var(--card);color:var(--muted-2);cursor:pointer;opacity:.5;}
+.imp-chip.on{opacity:1;color:var(--ink);}
+.imp-chip i{width:8px;height:8px;border-radius:50%;display:block;flex-shrink:0;}
+/* 중요도 토글: 컨테이너 클래스(s-high/s-med/s-low)로 행 표시 제어 */
+.sched .ev{display:none;}
+.sched.s-high .ev[data-imp="HIGH"]{display:flex;}
+.sched.s-med .ev[data-imp="MEDIUM"]{display:flex;}
+.sched.s-low .ev[data-imp="LOW"]{display:flex;}
 .sched-day{font-size:11px;font-weight:800;color:var(--accent);margin:11px 2px 5px;}
 .ev{display:flex;align-items:center;gap:7px;padding:7px 3px;
  border-bottom:1px solid var(--border);}

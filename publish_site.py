@@ -117,9 +117,20 @@ a:hover{opacity:.72;}
   .rail{display:block;width:266px;flex-shrink:0;position:sticky;top:24px;}
   .nav-t.sched-tab{display:none;}   /* PC 에선 레일 사용 → '일정' 탭 버튼 숨김 */
 }
-.sched-head{display:flex;flex-direction:column;gap:3px;font-size:14px;
- font-weight:800;color:var(--ink);margin-bottom:6px;}
+.sched-head{display:flex;flex-direction:column;gap:8px;margin-bottom:6px;}
+.sched-head>span{font-size:14px;font-weight:800;color:var(--ink);}
 .sched-tz{font-size:10px;color:var(--faint);font-weight:600;}
+.imp-filter{display:flex;gap:5px;}
+.imp-chip{display:flex;align-items:center;gap:5px;font:inherit;font-size:11px;
+ font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--border);
+ background:var(--card);color:var(--muted-2);cursor:pointer;opacity:.5;}
+.imp-chip.on{opacity:1;color:var(--ink);}
+.imp-chip i{width:8px;height:8px;border-radius:50%;display:block;flex-shrink:0;}
+/* 중요도 토글: 컨테이너 클래스(s-high/s-med/s-low)로 행 표시 제어 */
+.sched .ev{display:none;}
+.sched.s-high .ev[data-imp="HIGH"]{display:flex;}
+.sched.s-med .ev[data-imp="MEDIUM"]{display:flex;}
+.sched.s-low .ev[data-imp="LOW"]{display:flex;}
 .sched-day{font-size:11px;font-weight:800;color:var(--accent);margin:11px 2px 5px;}
 .ev{display:flex;align-items:center;gap:7px;padding:7px 3px;
  border-bottom:1px solid var(--border);}
@@ -799,6 +810,19 @@ _ECON_KO = {
     "BoK Interest Rate Decision": "한국은행 기준금리 결정",
     "PBoC Interest Rate Decision": "중국인민은행 기준금리 결정",
     "Fed's Musalem speech": "연준 무살렘 연설",
+    "Construction Spending (MoM)": "건설지출 (전월比)",
+    "Consumer Price Index Growth (MoM)": "소비자물가 상승률 (전월比)",
+    "Consumer Price Index Growth (YoY)": "소비자물가 상승률 (전년比)",
+    "Goods and Services Trade Balance": "상품·서비스 무역수지",
+    "Goods Trade Balance": "상품 무역수지",
+    "Total Vehicle Sales": "총 차량판매",
+    "Redbook Index (YoY)": "레드북 소매판매지수 (전년比)",
+    "RealClearMarkets/TIPP Economic Optimism (MoM)": "TIPP 경제낙관지수 (전월比)",
+    "API Weekly Crude Oil Stock": "API 주간 원유재고",
+    "FX Reserves": "외환보유액",
+    "3-Month Bill Auction": "3개월물 국채 입찰",
+    "6-Month Bill Auction": "6개월물 국채 입찰",
+    "52-Week Bill Auction": "52주물 국채 입찰",
 }
 
 
@@ -814,7 +838,7 @@ def _load_econ_events(now):
             with open(os.path.join(ECON_DIR, fn), encoding="utf-8-sig") as f:
                 for row in csv.DictReader(f):
                     imp = (row.get("Impact") or "").strip().upper()
-                    if imp not in ("MEDIUM", "HIGH"):
+                    if imp not in ("LOW", "MEDIUM", "HIGH"):
                         continue
                     try:
                         dt = pytz.utc.localize(
@@ -834,8 +858,10 @@ def _load_econ_events(now):
 
 
 def _impact_gauge(imp):
-    seg = (["#e5484d"] * 3 if imp == "HIGH"
-           else ["#f59e0b", "#f59e0b", "var(--border)"])
+    b = "var(--border)"
+    seg = ({"HIGH": ["#e5484d", "#e5484d", "#e5484d"],
+            "MEDIUM": ["#f59e0b", "#f59e0b", b]}
+           .get(imp, ["#94a3b8", b, b]))   # LOW = 회색 1칸
     return ('<span class="igauge">'
             + "".join(f'<i style="background:{c}"></i>' for c in seg) + "</span>")
 
@@ -849,27 +875,59 @@ def _econ_row(e):
             f'alt="{_e(e["cur"])}" title="{_e(e["cur"])}" '
             f'width="22" height="16" decoding="async">'
             if cc else '<span class="ev-flag"></span>')
-    return (f'<div class="ev"><span class="ev-t">{t}</span>{flag}'
-            f'<span class="ev-n">{_e(name)}</span>{_impact_gauge(e["impact"])}</div>')
+    return (f'<div class="ev" data-imp="{e["impact"]}"><span class="ev-t">{t}</span>'
+            f'{flag}<span class="ev-n">{_e(name)}</span>'
+            f'{_impact_gauge(e["impact"])}</div>')
 
 
 def _render_schedule(evs):
     if not evs:
         return ""
-    out = ['<div class="sched"><div class="sched-head">📅 경제지표 일정'
-           '<span class="sched-tz">KST · 중요도 '
-           '<b style="color:#f59e0b">■</b>중간 <b style="color:#e5484d">■</b>높음</span>'
-           '</div>']
+    # 기본: 높음·중간 ON, 낮음 OFF (컨테이너 클래스로 서버에서 초기상태 지정→FOUC 없음)
+    out = ['<div class="sched s-high s-med"><div class="sched-head">'
+           '<span>📅 경제지표 일정 <span class="sched-tz">KST</span></span>'
+           '<div class="imp-filter">'
+           '<button class="imp-chip on" data-k="high"><i style="background:#e5484d"></i>높음</button>'
+           '<button class="imp-chip on" data-k="med"><i style="background:#f59e0b"></i>중간</button>'
+           '<button class="imp-chip" data-k="low"><i style="background:#94a3b8"></i>낮음</button>'
+           '</div></div>']
     cur_day = None
     for e in evs:
         d = e["dt"].strftime("%Y-%m-%d")
         if d != cur_day:
+            if cur_day is not None:
+                out.append("</div>")
             cur_day = d
-            out.append(f'<div class="sched-day">{e["dt"].month}월 {e["dt"].day}일 '
+            out.append(f'<div class="sched-group"><div class="sched-day">'
+                       f'{e["dt"].month}월 {e["dt"].day}일 '
                        f'({_WD_KO[e["dt"].weekday()]})</div>')
         out.append(_econ_row(e))
+    if cur_day is not None:
+        out.append("</div>")
     out.append('<div class="sched-src">데이터: FXStreet</div></div>')
     return "".join(out)
+
+
+_SCHED_JS = """<script>
+document.querySelectorAll('.sched').forEach(function(sc){
+  function groups(){
+    sc.querySelectorAll('.sched-group').forEach(function(g){
+      var vis=[].some.call(g.querySelectorAll('.ev'),
+        function(e){return getComputedStyle(e).display!=='none';});
+      g.style.display = vis ? '' : 'none';
+    });
+  }
+  sc.querySelectorAll('.imp-chip').forEach(function(ch){
+    ch.addEventListener('click', function(){
+      ch.classList.toggle('on');
+      sc.classList.toggle('s-'+ch.getAttribute('data-k'),
+        ch.classList.contains('on'));
+      groups();
+    });
+  });
+  groups();
+});
+</script>"""
 
 
 def render_html(body, now=None, links="", quotes=None, mark_new=False,
@@ -944,8 +1002,9 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
 
+    scripts = _TAB_JS + (_SCHED_JS if sched_html else "")
     return _shell(SITE_TITLE, hd + gauges_html + nav_html + "".join(panels),
-                  script=_TAB_JS, rail=rail)
+                  script=scripts, rail=rail)
 
 
 # =========================================================

@@ -1,138 +1,26 @@
 Id,Start,Name,Impact,Currency
+6acd483b-b0f4-4bb3-bd4c-77e3a45351b5,08/03/2026 00:30:00,S&P Global Manufacturing PMI,LOW,KRW
 94e0ffff-bff5-425b-9c44-a779deeccda9,08/03/2026 01:45:00,RatingDog Manufacturing PMI,HIGH,CNY
+596e0cb1-da8e-4084-8b3e-39e2fb0dd59d,08/03/2026 08:00:00,HCOB Manufacturing PMI,LOW,EUR
+4523d351-b1d2-46d4-adab-f966bab64d18,08/03/2026 13:45:00,S&P Global Manufacturing PMI,LOW,USD
+5e829d01-04e6-4f87-8432-64335b716935,08/03/2026 14:00:00,Construction Spending (MoM),LOW,USD
 05ae36f0-1f02-4729-a7cb-d8de2581db77,08/03/2026 14:00:00,ISM Manufacturing Employment Index,MEDIUM,USD
 1964e5c5-524a-4323-a09c-1c62097eec6b,08/03/2026 14:00:00,ISM Manufacturing New Orders Index,MEDIUM,USD
 a8542e1a-f84e-4904-a65a-c0296a5d9497,08/03/2026 14:00:00,ISM Manufacturing PMI,HIGH,USD
 5c329814-e526-4909-be99-788ef5e124b0,08/03/2026 14:00:00,ISM Manufacturing Prices Paid,MEDIUM,USD
+1ff94361-bda5-4c3f-a5c7-ca23793d32a5,08/03/2026 15:30:00,3-Month Bill Auction,LOW,USD
+c0fef9cd-09ea-454e-ae55-f80ddc06b717,08/03/2026 15:30:00,6-Month Bill Auction,LOW,USD
 f3ebed36-c12c-49f0-8847-027c94a0693e,08/03/2026 18:00:00,Loan Officer Survey,MEDIUM,USD
+f143d133-2f1c-4294-bdd2-2f814b405dc8,08/03/2026 19:30:00,Total Vehicle Sales,LOW,USD
+65a794e7-d9cc-4e9a-a976-5ce03f85e69b,08/03/2026 23:00:00,Consumer Price Index Growth (MoM),LOW,KRW
+4ec22a26-af05-46cd-9089-3ab6f3240041,08/03/2026 23:00:00,Consumer Price Index Growth (YoY),LOW,KRW
+cec300cc-9c50-4068-94cc-890064e0ef41,08/04/2026 12:30:00,Goods and Services Trade Balance,LOW,USD
+ccf375ea-f05c-4049-8dec-655242b56b57,08/04/2026 12:30:00,Goods Trade Balance,LOW,USD
+819c6557-14bd-4c4d-929a-4c5b1331a221,08/04/2026 12:55:00,Redbook Index (YoY),LOW,USD
 359974f8-ffdc-41e5-9819-46bfc6135d59,08/04/2026 14:00:00,Factory Orders (MoM),MEDIUM,USD
 e03a8ac8-b0ee-40f9-9561-a10943efefd5,08/04/2026 14:00:00,JOLTS Job Openings,MEDIUM,USD
-55385f65-0bd1-4a24-a44a-7470532b0687,08/04/2026 23:30:00,Labor Cash Earnings (YoY),MEDIUM,JPY
-b8b359ef-f771-42af-b1e3-936d6559c981,08/04/2026 23:50:00,BoJ Monetary Policy Meeting Minutes,MEDIUM,JPY
+7c083885-6d6d-4137-803e-ce0d0dae93f2,08/04/2026 14:00:00,RealClearMarkets/TIPP Economic Optimism (MoM),LOW,USD
+43a20e8c-b66a-4058-aedd-56f53ceb6144,08/04/2026 15:30:00,52-Week Bill Auction,LOW,USD
+a8d424ef-3a4c-4913-9fef-93ee8974faab,08/04/2026 20:30:00,API Weekly Crude Oil Stock,LOW,USD
+e97b1cba-42bd-475f-8849-04d7e3810149,08/04/2026 21:00:00,FX Reserves,LOW,KRW
 4ba8171e-7af4-4f6a-84d7-9648b88dd52a,08/05/2026 01:45:00,RatingDog Services PMI,HIGH,CNY
-c81dd8fd-b878-4fdf-86a6-3845097f0884,08/05/2026 08:00:00,HCOB Composite PMI,MEDIUM,EUR
-c30d4b30-6ef8-4531-8c6c-4c101881dfa6,08/05/2026 09:00:00,Producer Price Index (MoM),MEDIUM,EUR
-00fbb8ed-a723-423a-a4cd-2de9cb525c1b,08/05/2026 09:00:00,Producer Price Index (YoY),MEDIUM,EUR
-9f3a4281-094a-4c89-aa19-0c88d18d03fc,08/05/2026 12:15:00,ADP Employment Change,HIGH,USD
-f119f9dc-d28e-4629-9109-56471d67d16b,08/05/2026 13:45:00,S&P Global Composite PMI,MEDIUM,USD
-f26e1521-eb90-45d8-9cbd-545a89cf4ed8,08/05/2026 14:00:00,ISM Services Employment Index,MEDIUM,USD
-d3a8abea-c61b-4c29-8ccb-8b1987e7b03c,08/05/2026 14:00:00,ISM Services New Orders Index,MEDIUM,USD
-d5dc5aaa-94ed-487f-82a4-1ae690b3f0c7,08/05/2026 14:00:00,ISM Services PMI,HIGH,USD
-a6b3f4d0-8860-4fdc-8a7f-b49f58ed0916,08/05/2026 14:00:00,ISM Services Prices Paid,MEDIUM,USD
-fb7da0d9-669f-4b08-afdb-0b492c8111bf,08/06/2026 08:00:00,Economic Bulletin,MEDIUM,EUR
-e792241d-efb9-4f7e-9050-4add0ae10253,08/06/2026 09:00:00,Retail Sales (MoM),MEDIUM,EUR
-b11e8799-2329-4773-b014-9facacdb8996,08/06/2026 09:00:00,Retail Sales (YoY),HIGH,EUR
-5854b34c-b312-412c-9081-261f7cb16790,08/06/2026 11:30:00,Challenger Job Cuts,MEDIUM,USD
-21d054e7-c1af-4eb9-85f0-f3cc29088500,08/06/2026 12:30:00,Initial Jobless Claims,MEDIUM,USD
-12ad0dd0-838b-43cb-ba5a-22c0bff3464f,08/06/2026 12:30:00,Nonfarm Productivity,MEDIUM,USD
-07a226ef-d179-4a97-a9b0-edef2a674604,08/06/2026 12:30:00,Unit Labor Costs,MEDIUM,USD
-8f640292-2806-490c-9149-60133254c50f,08/06/2026 21:30:00,Fed's Musalem speech,MEDIUM,USD
-258c5b92-dba8-484c-8ea9-ed36cd813135,08/07/2026 03:00:00,Exports (YoY),MEDIUM,CNY
-fc4df724-a318-4ba4-acf9-5fcd5c913137,08/07/2026 03:00:00,Exports (YoY) CNY,MEDIUM,CNY
-f9575594-1314-48a4-b5e5-2b17961074c7,08/07/2026 03:00:00,Imports (YoY),MEDIUM,CNY
-e4b7f3d4-7be0-47c7-b71d-9974ff09c1bc,08/07/2026 03:00:00,Imports (YoY) CNY,MEDIUM,CNY
-b0a02a93-d261-4641-972d-c687f033aeb5,08/07/2026 03:00:00,Trade Balance CNY,MEDIUM,CNY
-59a3bc49-9716-4207-875f-5a9de1d6a7cd,08/07/2026 03:00:00,Trade Balance USD,MEDIUM,CNY
-6bb8c905-31aa-4b28-9e05-cf1fa33bac14,08/07/2026 12:30:00,Average Hourly Earnings (MoM),HIGH,USD
-25d49c1d-8e5d-4191-b99c-e26753bea05a,08/07/2026 12:30:00,Average Hourly Earnings (YoY),HIGH,USD
-bdc9f367-438a-4878-ab3c-d68f97461708,08/07/2026 12:30:00,Labor Force Participation Rate,MEDIUM,USD
-53e18b61-4ce6-4a91-b1df-107abd153420,08/07/2026 12:30:00,Nonfarm Payrolls,HIGH,USD
-dae302fe-5d40-4835-bd31-40bd7c335b8d,08/07/2026 12:30:00,U6 Underemployment Rate,MEDIUM,USD
-f52a7121-21db-4590-b677-f77e6308ff6a,08/07/2026 12:30:00,Unemployment Rate,MEDIUM,USD
-2c7397ee-0d6a-43a5-8ab7-4d46ac34de70,08/09/2026 01:30:00,Consumer Price Index (MoM),MEDIUM,CNY
-190134c9-3132-4d3e-9c51-bdc3357ae387,08/09/2026 01:30:00,Consumer Price Index (YoY),HIGH,CNY
-4da2014a-94a2-43f0-8c04-2f4cae94a390,08/09/2026 01:30:00,Producer Price Index (YoY),MEDIUM,CNY
-05b76fd9-6b86-4e78-b10d-60822080da13,08/09/2026 23:50:00,Current Account n.s.a.,MEDIUM,JPY
-5fc4587f-022b-4790-8c49-7a20351be054,08/10/2026 08:30:00,Sentix Investor Confidence,MEDIUM,EUR
-100021c5-ea14-4f2a-abad-dbc0013d5adc,08/10/2026 15:00:00,Mountain Day,NONE,JPY
-f881d2d2-ebb0-4cab-8379-a09ec6dbc42c,08/11/2026 12:15:00,ADP Employment Change 4-week average,MEDIUM,USD
-d7833685-174d-4471-b0e3-c07e893ad2c1,08/11/2026 14:00:00,Existing Home Sales Change (MoM),MEDIUM,USD
-4ec19768-2535-4f3b-baa4-4a651486c9f9,08/12/2026 12:30:00,Consumer Price Index (MoM),HIGH,USD
-826af32a-5b1f-41d5-bc2f-6d98adb330c8,08/12/2026 12:30:00,Consumer Price Index (YoY),HIGH,USD
-0315b8d3-3dd9-4226-9452-aa3ebb98ed45,08/12/2026 12:30:00,Consumer Price Index ex Food & Energy (MoM),HIGH,USD
-95d6a4dc-9e1c-4bcd-9ab5-f3dd95167443,08/12/2026 12:30:00,Consumer Price Index ex Food & Energy (YoY),HIGH,USD
-7d1dc407-a46c-4e8d-ab60-5bd3424c2733,08/12/2026 18:00:00,Monthly Budget Statement,MEDIUM,USD
-d6a7b1a3-83ff-4055-8491-5e876968d53a,08/13/2026 09:00:00,Industrial Production s.a. (MoM),MEDIUM,EUR
-c162cf79-7718-4e7e-b092-e3473c10f65c,08/13/2026 12:30:00,Initial Jobless Claims,MEDIUM,USD
-09067c47-1791-4198-a2e9-7211e0392373,08/13/2026 12:30:00,Producer Price Index (MoM),MEDIUM,USD
-70d0d153-0654-45a1-975b-af6ddc5b387f,08/13/2026 12:30:00,Producer Price Index (YoY),MEDIUM,USD
-03ffe49a-f478-43d9-ab3c-23098a03237a,08/13/2026 12:30:00,Producer Price Index ex Food & Energy (MoM),MEDIUM,USD
-2d7c8039-e79c-4075-a42a-c9ea8281358e,08/13/2026 12:30:00,Producer Price Index ex Food & Energy (YoY),HIGH,USD
-93cdbd69-1818-4cc2-b9aa-7c96cbcf8112,08/14/2026 10:00:00,Employment Change (QoQ),MEDIUM,EUR
-ce75e0d9-0e63-4140-bac1-57a7d1c851cd,08/14/2026 10:00:00,Gross Domestic Product s.a. (QoQ),MEDIUM,EUR
-0c265b56-a607-44ed-8474-b496ddf58be2,08/14/2026 10:00:00,Gross Domestic Product s.a. (YoY),MEDIUM,EUR
-04765ed0-6b80-4d2d-8606-cf1e217f9b17,08/14/2026 12:30:00,Retail Sales (MoM),HIGH,USD
-715101f2-884e-455c-93d2-a2b9dc7b9f1d,08/14/2026 12:30:00,Retail Sales Control Group,HIGH,USD
-dc1682d7-f3d6-44a0-ade6-ad0a3323b69f,08/14/2026 12:30:00,Retail Sales ex Autos (MoM),MEDIUM,USD
-f1ad6790-e158-4fa1-9ff2-fd159d46f435,08/14/2026 14:00:00,Michigan Consumer Expectations Index,MEDIUM,USD
-fe03ba18-3293-4db8-9136-3741ce8c098b,08/14/2026 14:00:00,Michigan Consumer Sentiment Index,HIGH,USD
-3916bf56-8463-47e3-8723-4a5bf1b4e483,08/14/2026 14:00:00,UoM 1-year Consumer Inflation Expectations,MEDIUM,USD
-945ee912-093c-4e33-aeba-e0bb643a2408,08/14/2026 14:00:00,UoM 5-year Consumer Inflation Expectation,MEDIUM,USD
-fdd16576-9a39-4144-b28b-46dca55e263a,08/14/2026 15:00:00,Liberation Day,NONE,KRW
-c892ef29-85c7-4f93-9491-11090fc42fe0,08/14/2026 23:00:00,The Assumption Holiday,NONE,EUR
-192b02bf-8f4a-488e-b54c-332f3b37393b,08/16/2026 23:50:00,Gross Domestic Product (QoQ),HIGH,JPY
-fd0dfa98-53e0-485f-908a-41a32d2ec400,08/16/2026 23:50:00,Gross Domestic Product Annualized,MEDIUM,JPY
-25fa4d26-23a8-45f0-829b-3028ed59e6d4,08/16/2026 23:50:00,Gross Domestic Product Deflator (YoY),MEDIUM,JPY
-f278d9eb-2cb5-44bc-bfd7-fe1f5fd94ff6,08/17/2026 12:30:00,NY Empire State Manufacturing Index,MEDIUM,USD
-9522b7a8-8fed-41fb-8571-76a685d01180,08/18/2026 02:00:00,Industrial Production (YoY),HIGH,CNY
-652add54-7123-4d0d-95ba-3516f5953e2b,08/18/2026 02:00:00,Retail Sales (YoY),HIGH,CNY
-3b1f8ea3-2fa8-40cd-9635-030cff9f40a9,08/18/2026 09:00:00,Harmonized Index of Consumer Prices (MoM),MEDIUM,EUR
-31dd7c4e-6508-400b-8a00-9bffc53de88f,08/18/2026 09:00:00,ZEW Survey – Economic Sentiment,MEDIUM,EUR
-8c8717d7-8cf4-4af9-81ac-0dca06738ba1,08/18/2026 12:15:00,ADP Employment Change 4-week average,MEDIUM,USD
-9ef853ce-13ad-4d4f-b862-e158529d129f,08/18/2026 12:30:00,Building Permits (MoM),MEDIUM,USD
-4d7a0143-e7ac-4a05-b63a-21bff2cab4d7,08/18/2026 12:30:00,Housing Starts (MoM),MEDIUM,USD
-1d2d13c6-4bf2-430f-985d-bf0d9f3a9e33,08/18/2026 13:15:00,Industrial Production (MoM),MEDIUM,USD
-457cf791-6eff-47b9-9ee7-750bcac6a2c6,08/19/2026 09:00:00,Core Harmonized Index of Consumer Prices (MoM),MEDIUM,EUR
-3c80c2ff-e4d4-48b1-9118-dc2d7b1f61d8,08/19/2026 09:00:00,Core Harmonized Index of Consumer Prices (YoY),MEDIUM,EUR
-4c1d0e50-8162-4398-adbe-38e8bd0c9b61,08/19/2026 18:00:00,FOMC Minutes,HIGH,USD
-2522be0c-c715-4b88-890e-365a2da2c758,08/19/2026 23:50:00,Adjusted Merchandise Trade Balance,MEDIUM,JPY
-66e2f41f-e943-4110-abbc-c2e9199630fc,08/19/2026 23:50:00,Exports (YoY),MEDIUM,JPY
-3a0fe828-0112-41c8-9607-3411661a3b0f,08/19/2026 23:50:00,Imports (YoY),MEDIUM,JPY
-b9b84d1b-5b1e-4c64-9d17-8a4e1a9d2049,08/19/2026 23:50:00,Merchandise Trade Balance Total,MEDIUM,JPY
-1ae24410-5e3b-43b7-ae0d-0ba5edac2683,08/20/2026 01:15:00,PBoC Interest Rate Decision,MEDIUM,CNY
-616fee79-d6e1-4c79-88e8-b203b66423a5,08/20/2026 12:30:00,Initial Jobless Claims,MEDIUM,USD
-c63e37a0-4d0b-4f57-acdb-72c2c613c271,08/20/2026 12:30:00,Philadelphia Fed Manufacturing Survey,MEDIUM,USD
-3ab29bf6-26f5-4015-a818-954b13870e9d,08/20/2026 14:00:00,Consumer Confidence,MEDIUM,EUR
-ff704f44-9f78-4a02-8acf-b82dae2b70d7,08/20/2026 23:30:00,National Consumer Price Index (YoY),MEDIUM,JPY
-b692037e-48bd-42ea-ab8f-d489a9246ae8,08/20/2026 23:30:00,"National CPI ex Food, Energy (YoY)",MEDIUM,JPY
-4153036b-2319-48d4-be27-f08523fb39db,08/20/2026 23:30:00,National CPI ex Fresh Food (YoY),MEDIUM,JPY
-3ba2198e-0f13-452e-b873-c762a906ff34,08/21/2026 08:00:00,HCOB Composite PMI,HIGH,EUR
-0f84063c-0e90-430a-b5e9-f1b2111c5f9f,08/21/2026 08:00:00,HCOB Manufacturing PMI,HIGH,EUR
-c0d82d28-873c-4280-b223-ccea688ff36b,08/21/2026 08:00:00,HCOB Services PMI,HIGH,EUR
-57916d35-c649-4dc4-98a4-03e8964fee81,08/21/2026 13:45:00,S&P Global Composite PMI,MEDIUM,USD
-41bbcccb-31f3-4372-b33e-fbdc51593153,08/21/2026 13:45:00,S&P Global Manufacturing PMI,HIGH,USD
-30bf2a48-048c-4468-ba85-77446b3a87cf,08/21/2026 13:45:00,S&P Global Services PMI,HIGH,USD
-7f63d9b5-1002-487c-8061-a92cd877cbf0,08/25/2026 12:15:00,ADP Employment Change 4-week average,MEDIUM,USD
-c310c633-d818-448f-982c-d865da1eb950,08/25/2026 12:30:00,Durable Goods Orders,MEDIUM,USD
-f62de9f0-771f-49c0-aee3-8793d758a197,08/25/2026 12:30:00,Durable Goods Orders ex Defense,MEDIUM,USD
-ae80a45e-17f8-4737-bf4a-04bfc3a20be3,08/25/2026 12:30:00,Durable Goods Orders ex Transportation,MEDIUM,USD
-c4b5f77a-5711-4654-8f37-fa9a7b09536c,08/25/2026 12:30:00,Nondefense Capital Goods Orders ex Aircraft,MEDIUM,USD
-35d238e3-9499-409a-806f-8c97f30c8ce6,08/25/2026 13:00:00,Housing Price Index (MoM),MEDIUM,USD
-d872db81-0da1-4ab7-aa59-b9ff507fd890,08/25/2026 14:00:00,Consumer Confidence,MEDIUM,USD
-75002e73-b682-4de0-b012-4dc84515e707,08/25/2026 14:00:00,New Home Sales Change (MoM),MEDIUM,USD
-d967cd5f-692c-4870-8b59-232517b6bedd,08/26/2026 01:00:00,BoK Interest Rate Decision,MEDIUM,KRW
-9fa8561b-1d7b-47c6-b72e-a62e234666c1,08/26/2026 12:30:00,Core Personal Consumption Expenditures (QoQ),MEDIUM,USD
-ef89ba75-a9f5-4e42-856e-0dc1216eb2b2,08/26/2026 12:30:00,Gross Domestic Product Annualized,MEDIUM,USD
-a54e7f24-ffd4-4ce5-91ce-ce9e0c01ffa7,08/26/2026 12:30:00,Gross Domestic Product Price Index,MEDIUM,USD
-fa77eaba-9d87-441d-a05d-fb72525d9d76,08/26/2026 12:30:00,Personal Consumption Expenditures Prices (QoQ),MEDIUM,USD
-4dd6cd04-4841-429d-8783-3cbc77cbd3c6,08/27/2026 08:00:00,Business Climate,MEDIUM,EUR
-9b617949-68ee-4e00-b447-666f224d7218,08/27/2026 08:00:00,Consumer Confidence,MEDIUM,EUR
-49acaa12-97ff-40c1-9adc-f16f66067212,08/27/2026 08:00:00,Economic Sentiment Indicator,MEDIUM,EUR
-d157f654-b52c-4980-ab08-7555a8610fa7,08/27/2026 12:30:00,Initial Jobless Claims,MEDIUM,USD
-d262f39b-0083-4a86-b993-dea7c5101afb,08/27/2026 14:00:00,Pending Home Sales (MoM),MEDIUM,USD
-dea52e2b-7690-408a-9388-9918f5769972,08/27/2026 23:30:00,Tokyo Consumer Price Index (YoY),HIGH,JPY
-97e52105-4cb2-4d45-a355-15bec2fb6ea1,08/27/2026 23:30:00,"Tokyo CPI ex Food, Energy (YoY)",HIGH,JPY
-0ece72bd-004e-4cac-a584-52f8fb200c55,08/27/2026 23:30:00,Tokyo CPI ex Fresh Food (YoY),MEDIUM,JPY
-82803e88-0e44-47f8-915f-b8caeeb11b1d,08/28/2026 12:30:00,Core Personal Consumption Expenditures - Price Index (MoM),HIGH,USD
-4141f68c-7e2c-48ba-97ab-dded377cf59c,08/28/2026 12:30:00,Core Personal Consumption Expenditures - Price Index (YoY),HIGH,USD
-01a3c5ac-f46c-4463-8735-e59115c05a43,08/28/2026 12:30:00,Personal Consumption Expenditures - Price Index (MoM),MEDIUM,USD
-364a748f-9e7c-4ae6-a9c4-390310e7f341,08/28/2026 12:30:00,Personal Consumption Expenditures - Price Index (YoY),MEDIUM,USD
-c87f5ce3-48ba-44c9-affa-35c29d1ed307,08/28/2026 12:30:00,Personal Income (MoM),MEDIUM,USD
-465d3586-10d4-450e-9b0b-1c8e59f70a42,08/28/2026 12:30:00,Personal Spending,MEDIUM,USD
-51fecc0e-6f81-4105-a69f-2040855ef9aa,08/28/2026 13:45:00,Chicago PMI,MEDIUM,USD
-174696fa-bffa-426c-97f5-86542efa7c41,08/28/2026 14:00:00,Michigan Consumer Expectations Index,MEDIUM,USD
-001ece90-2262-4b98-9a5a-67ffd5070222,08/28/2026 14:00:00,Michigan Consumer Sentiment Index,MEDIUM,USD
-d7cfbdcf-4cb9-4095-b300-fbeccbd61137,08/28/2026 14:00:00,UoM 1-year Consumer Inflation Expectations,MEDIUM,USD
-34ba9ffe-a391-481c-85eb-3e160f36c4b5,08/28/2026 14:00:00,UoM 5-year Consumer Inflation Expectation,MEDIUM,USD
-ec90b380-9a4f-4193-b852-5f078f3cbcc7,08/31/2026 01:30:00,NBS Manufacturing PMI,HIGH,CNY
-cf4ac429-40d4-431d-a78c-329437fcb1cb,08/31/2026 01:30:00,NBS Non-Manufacturing PMI,HIGH,CNY
