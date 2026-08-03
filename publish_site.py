@@ -132,6 +132,26 @@ a:hover{opacity:.72;}
 .igauge{display:flex;gap:2px;flex-shrink:0;}
 .igauge i{width:8px;height:6px;border-radius:2px;display:block;}
 .sched-src{font-size:9.5px;color:var(--faint);text-align:right;margin-top:9px;}
+/* 일정 2단: 좌 경제지표 / 우 기업실적 */
+.sched-2col{display:flex;gap:22px;align-items:flex-start;}
+.sched-col{min-width:0;}
+.sched-col.econ{flex:1.7;}
+.sched-col.earn{flex:1;}
+@media (max-width:760px){
+  .sched-2col{flex-direction:column;gap:20px;}
+  .sched-col.earn{order:-1;}   /* 모바일에선 기업실적을 위로 */
+  .sched-col{width:100%;}
+}
+.ern{display:flex;align-items:center;gap:9px;padding:9px 3px;
+ border-bottom:1px solid var(--border);}
+.ern:last-of-type{border-bottom:0;}
+.ern-date{display:flex;flex-direction:column;min-width:60px;flex-shrink:0;}
+.ern-md{font-size:12px;font-weight:700;color:var(--ink);}
+.ern-dd{font-size:9.5px;font-weight:700;color:var(--faint);}
+.ern-n{flex:1;font-size:12.5px;font-weight:600;color:var(--ink);}
+.ern-when{font-size:10px;color:var(--muted-2);background:var(--chip);
+ padding:2px 7px;border-radius:5px;flex-shrink:0;}
+.ern-none{font-size:12px;color:var(--faint);padding:10px 2px;}
 .page{width:100%;max-width:820px;background:var(--page);color:var(--ink);
  border:1px solid var(--border);border-radius:18px;
  box-shadow:0 12px 44px var(--shadow);overflow:hidden;}
@@ -963,6 +983,59 @@ document.querySelectorAll('.sched').forEach(function(sc){
 </script>"""
 
 
+EARN_FILE = os.path.join(DATA_DIR, "earnings.json")
+_WHEN_KO = {"amc": "장 마감 후", "bmo": "장 전", "": ""}
+
+
+def _load_earnings(now):
+    """data/earnings.json(큐레이션) → 지난 일정 제외, 날짜순(미정은 뒤)."""
+    try:
+        with open(EARN_FILE, encoding="utf-8") as f:
+            rows = json.load(f)
+    except (OSError, ValueError):
+        return []
+    today, out = now.date(), []
+    for r in rows:
+        d = None
+        if r.get("date"):
+            try:
+                d = date.fromisoformat(r["date"])
+            except ValueError:
+                d = None
+        if d and d < today:
+            continue
+        out.append({"ticker": (r.get("ticker") or "").upper(),
+                    "name": r.get("name") or "", "date": d,
+                    "when": (r.get("when") or "").lower()})
+    out.sort(key=lambda e: (e["date"] is None, e["date"] or date.max))
+    return out
+
+
+def _render_earnings(evs, now):
+    head = ('<div class="sched sched-earn"><div class="sched-head">'
+            '<span>🏢 기업실적 <span class="sched-tz">관심종목</span></span></div>')
+    if not evs:
+        return head + '<div class="ern-none">등록된 실적 일정이 없습니다.</div></div>'
+    rows = []
+    for e in evs:
+        bg = _ticker_color(e["ticker"])
+        badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
+                 f'{_e(e["ticker"].split("-")[0])}</span>')
+        if e["date"]:
+            dd = (e["date"] - now.date()).days
+            md = f'{e["date"].month}/{e["date"].day} ({_WD_KO[e["date"].weekday()]})'
+            dday = "D-DAY" if dd == 0 else f"D-{dd}"
+        else:
+            md, dday = "미정", ""
+        when = _WHEN_KO.get(e["when"], "")
+        whtml = f'<span class="ern-when">{when}</span>' if when else ""
+        rows.append(
+            f'<div class="ern"><span class="ern-date"><span class="ern-md">{md}</span>'
+            f'<span class="ern-dd">{dday}</span></span>{badge}'
+            f'<span class="ern-n">{_e(e["name"])}</span>{whtml}</div>')
+    return head + "".join(rows) + '<div class="sched-src">데이터: Nasdaq</div></div>'
+
+
 def render_html(body, now=None, links="", quotes=None, mark_new=False,
                 schedule=False):
     now = now or datetime.now(KST)
@@ -1022,12 +1095,16 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
         panels.append(f'<div class="panel{on}" id="tp{i}">{inner}</div>')
         first = False
 
-    # 경제지표 일정: 전 기기 공통 '일정' 탭
+    # 일정 탭: 좌=경제지표 / 우=기업실적 2단(모바일은 세로로 쌓임, 실적 위)
     sched_html = _render_schedule(_load_econ_events(now)) if schedule else ""
     if sched_html:
+        earn_html = _render_earnings(_load_earnings(now), now)
         navs.append('<button class="nav-t" data-p="tpS">일정</button>')
-        panels.append('<div class="panel" id="tpS">'
-                      f'<div class="part">{sched_html}</div></div>')
+        panels.append(
+            '<div class="panel" id="tpS"><div class="part"><div class="sched-2col">'
+            f'<div class="sched-col econ">{sched_html}</div>'
+            f'<div class="sched-col earn">{earn_html}</div>'
+            '</div></div></div>')
 
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
