@@ -1037,21 +1037,29 @@ def _render_earnings(evs, now):
             ' <span class="sched-tz">관심종목</span></span></div>')
     if not evs:
         return head + '<div class="ern-none">등록된 실적 일정이 없습니다.</div></div>'
-    rows = []
+    rows, prev = [], None
     for e in evs:
         bg = _ticker_color(e["ticker"])
         badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
                  f'{_e(e["ticker"].split("-")[0])}</span>')
-        if e["date"]:
-            dd = (e["date"] - now.date()).days
-            md = f'{e["date"].month}/{e["date"].day} ({_WD_KO[e["date"].weekday()]})'
-            dday = "D-DAY" if dd == 0 else f"D-{dd}"
+        key = e["date"].isoformat() if e["date"] else "TBD"
+        if key == prev:
+            # 같은 날짜가 연속되면 첫 항목에만 날짜 표시, 이후는 빈 칸(정렬 유지)
+            date_html = '<span class="ern-date"></span>'
         else:
-            md, dday = "미정", ""
+            if e["date"]:
+                dd = (e["date"] - now.date()).days
+                md = (f'{e["date"].month}/{e["date"].day} '
+                      f'({_WD_KO[e["date"].weekday()]})')
+                dday = "D-DAY" if dd == 0 else f"D-{dd}"
+            else:
+                md, dday = "미정", ""
+            date_html = (f'<span class="ern-date"><span class="ern-md">{md}</span>'
+                         f'<span class="ern-dd">{dday}</span></span>')
+            prev = key
         whtml = '<span class="ern-when">예상</span>' if e.get("est") else ""
         rows.append(
-            f'<div class="ern"><span class="ern-date"><span class="ern-md">{md}</span>'
-            f'<span class="ern-dd">{dday}</span></span>{badge}'
+            f'<div class="ern">{date_html}{badge}'
             f'<span class="ern-n">{_e(e["name"])}</span>{whtml}</div>')
     return head + "".join(rows) + ('<div class="sched-src">데이터: Yahoo Finance'
                                    '</div></div>')
