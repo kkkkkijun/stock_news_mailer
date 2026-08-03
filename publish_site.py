@@ -106,17 +106,7 @@ body{margin:0;font-family:'Pretendard',system-ui,sans-serif;
  transition:background .2s,color .2s;}
 a{color:var(--accent);text-decoration:none;}
 a:hover{opacity:.72;}
-.wrap{display:flex;justify-content:center;align-items:flex-start;gap:20px;
- padding:48px 24px;}
-/* 경제지표 일정 — PC 우측 고정 레일(넓은 화면에서만) */
-.rail{display:none;}
-.rail-inner{background:var(--page);border:1px solid var(--border);border-radius:16px;
- padding:12px 13px;box-shadow:0 12px 44px var(--shadow);
- max-height:calc(100vh - 48px);overflow:auto;}
-@media (min-width:1120px){
-  .rail{display:block;width:266px;flex-shrink:0;position:sticky;top:24px;}
-  .nav-t.sched-tab{display:none;}   /* PC 에선 레일 사용 → '일정' 탭 버튼 숨김 */
-}
+.wrap{display:flex;justify-content:center;padding:48px 24px;}
 .sched-head{display:flex;flex-direction:column;gap:8px;margin-bottom:6px;}
 .sched-head>span{font-size:14px;font-weight:800;color:var(--ink);}
 .sched-tz{font-size:10px;color:var(--faint);font-weight:600;}
@@ -823,6 +813,49 @@ _ECON_KO = {
     "3-Month Bill Auction": "3개월물 국채 입찰",
     "6-Month Bill Auction": "6개월물 국채 입찰",
     "52-Week Bill Auction": "52주물 국채 입찰",
+    "4-Week Bill Auction": "4주물 국채 입찰",
+    "2-Year Note Auction": "2년물 국채 입찰",
+    "3-Year Note Auction": "3년물 국채 입찰",
+    "5-Year Note Auction": "5년물 국채 입찰",
+    "7-Year Note Auction": "7년물 국채 입찰",
+    "10-Year Note Auction": "10년물 국채 입찰",
+    "20-Year Bond Auction": "20년물 국채 입찰",
+    "30-Year Bond Auction": "30년물 국채 입찰",
+    "30-year TIPS Auction": "30년물 물가연동국채 입찰",
+    "Continuing Jobless Claims": "연속 실업수당 청구",
+    "Initial Jobless Claims 4-week average": "신규 실업수당 청구 4주평균",
+    "MBA Mortgage Applications": "MBA 주택담보대출 신청",
+    "EIA Crude Oil Stocks Change": "EIA 원유재고 변화",
+    "EIA Natural Gas Storage Change": "EIA 천연가스 재고 변화",
+    "Baker Hughes US Oil Rig Count": "베이커휴즈 원유 시추기 수",
+    "Wholesale Inventories": "도매재고",
+    "Business Inventories": "기업재고",
+    "Building Permits Change": "건축허가 변화",
+    "Housing Starts Change": "주택착공 변화",
+    "Import Price Index (MoM)": "수입물가지수 (전월比)",
+    "Import Price Index (YoY)": "수입물가지수 (전년比)",
+    "Export Price Index (MoM)": "수출물가지수 (전월比)",
+    "Export Price Index (YoY)": "수출물가지수 (전년比)",
+    "New Home Sales (MoM)": "신규주택판매 건수 (전월比)",
+    "Existing Home Sales (MoM)": "기존주택판매 건수 (전월比)",
+    "Capacity Utilization": "설비가동률",
+    "NAHB Housing Market Index": "NAHB 주택시장지수",
+    "NFIB Business Optimism Index": "NFIB 중소기업 낙관지수",
+    "Richmond Fed Manufacturing Index": "리치먼드 연준 제조업지수",
+    "Kansas Fed Manufacturing Activity": "캔자스 연준 제조업활동",
+    "Dallas Fed Manufacturing Business Index": "댈러스 연준 제조업지수",
+    "Consumer Credit Change": "소비자신용 변화",
+    "USDA WASDE Report": "USDA 세계 농산물 수급전망",
+    "Money Supply Growth": "통화량 증가율",
+    "Export Price Growth (YoY)": "수출물가 상승률 (전년比)",
+    "Import Price Growth (YoY)": "수입물가 상승률 (전년比)",
+    "Producer Price Index Growth (MoM)": "생산자물가 상승률 (전월比)",
+    "Producer Price Index Growth (YoY)": "생산자물가 상승률 (전년比)",
+    "Industrial Output (YoY)": "산업생산 (전년比)",
+    "Service Sector Output": "서비스업 생산",
+    "BOK Manufacturing BSI": "한국은행 제조업 BSI",
+    "Current Account Balance": "경상수지",
+    "Consumer Sentiment Index": "소비자심리지수",
 }
 
 
@@ -989,22 +1022,19 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
         panels.append(f'<div class="panel{on}" id="tp{i}">{inner}</div>')
         first = False
 
-    # 경제지표 일정: PC=우측 고정 레일 / 모바일='일정' 탭 (반응형, 같은 내용)
-    rail = ""
+    # 경제지표 일정: 전 기기 공통 '일정' 탭
     sched_html = _render_schedule(_load_econ_events(now)) if schedule else ""
     if sched_html:
-        navs.append('<button class="nav-t sched-tab" data-p="tpS">일정</button>')
+        navs.append('<button class="nav-t" data-p="tpS">일정</button>')
         panels.append('<div class="panel" id="tpS">'
                       f'<div class="part">{sched_html}</div></div>')
-        rail = ('<aside class="rail"><div class="rail-inner">'
-                f'{sched_html}</div></aside>')
 
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
 
     scripts = _TAB_JS + (_SCHED_JS if sched_html else "")
     return _shell(SITE_TITLE, hd + gauges_html + nav_html + "".join(panels),
-                  script=scripts, rail=rail)
+                  script=scripts)
 
 
 # =========================================================
