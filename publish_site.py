@@ -110,7 +110,11 @@ a{color:var(--accent);text-decoration:none;}
 a:hover{opacity:.72;}
 .wrap{display:flex;justify-content:center;padding:48px 24px;}
 .sched-head{display:flex;flex-direction:column;gap:8px;margin-bottom:6px;}
-.sched-head>span{font-size:14px;font-weight:800;color:var(--ink);}
+.sched-head>span{font-size:14px;font-weight:800;color:var(--ink);
+ display:flex;align-items:center;gap:5px;line-height:1.3;}
+/* 이모지를 고정 크기 박스로 분리 → OS별 이모지 높이차가 텍스트 위치를 안 밀게 */
+.sched-ico{flex-shrink:0;width:19px;height:19px;line-height:19px;text-align:center;
+ font-size:15px;overflow:hidden;}
 .sched-tz{font-size:10px;color:var(--faint);font-weight:600;}
 .imp-filter{display:flex;gap:5px;}
 .imp-chip{display:flex;align-items:center;gap:5px;font:inherit;font-size:11px;
@@ -946,7 +950,8 @@ def _render_schedule(evs):
         return ""
     # 기본: 높음·중간 ON, 낮음 OFF (컨테이너 클래스로 서버에서 초기상태 지정→FOUC 없음)
     out = ['<div class="sched s-high s-med"><div class="sched-head">'
-           '<span>📅 경제지표 일정 <span class="sched-tz">KST</span></span>'
+           '<span><span class="sched-ico">📅</span>경제지표 일정'
+           ' <span class="sched-tz">KST</span></span>'
            '<div class="imp-filter">'
            '<button class="imp-chip on" data-k="high"><i style="background:#e5484d"></i>높음</button>'
            '<button class="imp-chip on" data-k="med"><i style="background:#f59e0b"></i>중간</button>'
@@ -1021,7 +1026,8 @@ def _load_earnings(now):
 
 def _render_earnings(evs, now):
     head = ('<div class="sched sched-earn"><div class="sched-head">'
-            '<span>🏢 기업실적 <span class="sched-tz">관심종목</span></span></div>')
+            '<span><span class="sched-ico">🏢</span>기업실적'
+            ' <span class="sched-tz">관심종목</span></span></div>')
     if not evs:
         return head + '<div class="ern-none">등록된 실적 일정이 없습니다.</div></div>'
     rows = []

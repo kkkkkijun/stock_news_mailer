@@ -479,10 +479,11 @@ _EARN_KO = {
     "NVDA": "엔비디아", "MSFT": "마이크로소프트", "AAPL": "애플",
     "GOOGL": "알파벳", "AMZN": "아마존", "META": "메타", "TSLA": "테슬라",
     "HIMS": "힘스앤허스", "RDW": "레드와이어", "IREN": "아이렌", "PLTR": "팔란티어",
+    "RKLB": "로켓랩",
 }
-# M7 필수 + 관심종목(HIMS·RDW·IREN) + PLTR(일정 전용)
+# M7 필수 + 관심종목(HIMS·RDW·IREN) + PLTR·RKLB(일정 전용)
 EARNINGS_TICKERS = ["NVDA", "MSFT", "AAPL", "GOOGL", "AMZN", "META", "TSLA",
-                    "HIMS", "RDW", "IREN", "PLTR"]
+                    "HIMS", "RDW", "IREN", "PLTR", "RKLB"]
 
 
 def _yahoo_earn_session():
