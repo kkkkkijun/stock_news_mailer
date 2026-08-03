@@ -214,7 +214,8 @@ a:hover{opacity:.72;}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
  font-size:13px;color:#94a3b8;}
-.fresh{color:#86efac;font-weight:600;}                 /* 신선함=연녹색 */
+.hd-updated{display:flex;flex-direction:column;align-items:flex-start;gap:2px;}
+.fresh{display:block;font-size:10px;color:#86efac;font-weight:600;}  /* 신선함=연녹색 */
 .fresh.warn{color:#fbbf24;}                            /* 다소 지연=주황 */
 .fresh.stale{color:#f87171;font-weight:700;}          /* 업데이트 지연=빨강 */
 .hd-slogan{display:flex;flex-direction:column;align-items:flex-end;gap:3px;
@@ -747,9 +748,9 @@ document.querySelectorAll('.nav-t').forEach(function(b){
     var h=Math.floor(diff/3600000), m=Math.floor((diff%3600000)/60000);
     var ago = h>0 ? (h+'시간 '+(m?m+'분 ':'')+'전') : (m+'분 전');
     el.className='fresh';
-    if(h>=24){ el.classList.add('stale'); el.textContent=' · ⚠ '+ago+' · 업데이트 지연'; }
-    else if(h>=18){ el.classList.add('warn'); el.textContent=' · △ '+ago+' · 갱신 지연 가능'; }
-    else { el.textContent=' · '+ago+' 업데이트'; }
+    if(h>=24){ el.classList.add('stale'); el.textContent='⚠ '+ago+' · 업데이트 지연'; }
+    else if(h>=18){ el.classList.add('warn'); el.textContent='△ '+ago+' · 갱신 지연 가능'; }
+    else { el.textContent=ago+' 업데이트'; }
   }
   fmt(); setInterval(fmt, 60000);
 })();
@@ -1307,7 +1308,7 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
           f'<span class="hd-kicker">{_e(kicker)}</span>'
           f'<div class="hd-links">{links}</div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
-          f'<div class="hd-sub"><span>{dowb}{_e(sub)}'
+          f'<div class="hd-sub"><span class="hd-updated"><span>{dowb}{_e(sub)}</span>'
           f'<span class="fresh" data-built="{built_ep}"></span></span>'
           f'<span class="hd-slogan">{_e(SLOGAN)}'
           f'<span class="hd-pct">{_e(_dday_text(now))} · {pct:.2f}%</span>'
