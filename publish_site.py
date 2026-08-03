@@ -125,9 +125,8 @@ a:hover{opacity:.72;}
  border-bottom:1px solid var(--border);}
 .ev:last-child{border-bottom:0;}
 .ev-t{font-size:11.5px;font-weight:700;color:var(--ink);min-width:62px;flex-shrink:0;}
-.ev-f{font-size:14px;flex-shrink:0;}
-.ev-c{font-size:10px;font-weight:700;color:var(--muted-2);
- font-family:ui-monospace,monospace;min-width:30px;flex-shrink:0;}
+.ev-flag{width:22px;height:16px;border-radius:2px;object-fit:cover;flex-shrink:0;
+ box-shadow:0 0 0 1px rgba(0,0,0,.10);background:var(--border);}
 .ev-n{flex:1;font-size:12px;font-weight:600;color:var(--ink);line-height:1.35;}
 .igauge{display:flex;gap:2px;flex-shrink:0;}
 .igauge i{width:8px;height:6px;border-radius:2px;display:block;}
@@ -678,10 +677,12 @@ def _title(now):
 # =========================================================
 ECON_DIR = os.path.join(DATA_DIR, "econ")
 _WD_KO = ["월", "화", "수", "목", "금", "토", "일"]
-_CUR_FLAG = {
-    "USD": "🇺🇸", "EUR": "🇪🇺", "JPY": "🇯🇵", "CNY": "🇨🇳", "KRW": "🇰🇷",
-    "GBP": "🇬🇧", "AUD": "🇦🇺", "CAD": "🇨🇦", "NZD": "🇳🇿", "CHF": "🇨🇭",
-    "HKD": "🇭🇰", "INR": "🇮🇳", "BRL": "🇧🇷", "MXN": "🇲🇽", "ZAR": "🇿🇦",
+# 통화 → ISO 국가코드(flagcdn 국기 이미지용). Windows는 이모지 국기를 못 그려
+# 'CN' 같은 글자로 나오므로 실제 국기 이미지를 쓴다.
+_CUR_CC = {
+    "USD": "us", "EUR": "eu", "JPY": "jp", "CNY": "cn", "KRW": "kr",
+    "GBP": "gb", "AUD": "au", "CAD": "ca", "NZD": "nz", "CHF": "ch",
+    "HKD": "hk", "INR": "in", "BRL": "br", "MXN": "mx", "ZAR": "za",
 }
 # 이벤트명 한글 사전(반복되는 유한 집합). 미등록은 영문 유지 후 점차 보강.
 _ECON_KO = {
@@ -842,9 +843,13 @@ def _impact_gauge(imp):
 def _econ_row(e):
     t = e["dt"].strftime("%I:%M %p").lstrip("0")
     name = _ECON_KO.get(e["name"], e["name"])
-    return (f'<div class="ev"><span class="ev-t">{t}</span>'
-            f'<span class="ev-f">{_CUR_FLAG.get(e["cur"], "")}</span>'
-            f'<span class="ev-c">{_e(e["cur"])}</span>'
+    cc = _CUR_CC.get(e["cur"])
+    # 국기는 사이트 자체(docs/flags/)에서 같은 출처로 로드(외부 의존 0).
+    flag = (f'<img class="ev-flag" src="flags/{cc}.svg" '
+            f'alt="{_e(e["cur"])}" title="{_e(e["cur"])}" '
+            f'width="22" height="16" decoding="async">'
+            if cc else '<span class="ev-flag"></span>')
+    return (f'<div class="ev"><span class="ev-t">{t}</span>{flag}'
             f'<span class="ev-n">{_e(name)}</span>{_impact_gauge(e["impact"])}</div>')
 
 
