@@ -3,6 +3,7 @@
   "ticker": "NVDA",
   "name": "엔비디아",
   "date": "2026-08-26",
+  "ts": 1787774400,
   "est": false,
   "detail": {
    "prev": {
@@ -66,6 +67,7 @@
   "ticker": "MSFT",
   "name": "마이크로소프트",
   "date": "2026-10-28",
+  "ts": 1793217600,
   "est": true,
   "detail": {
    "prev": {
@@ -129,6 +131,7 @@
   "ticker": "AAPL",
   "name": "애플",
   "date": "2026-10-29",
+  "ts": 1793304000,
   "est": true,
   "detail": {
    "prev": {
@@ -192,6 +195,7 @@
   "ticker": "GOOGL",
   "name": "알파벳",
   "date": "2026-10-28",
+  "ts": 1793217600,
   "est": false,
   "detail": {
    "prev": {
@@ -255,6 +259,7 @@
   "ticker": "AMZN",
   "name": "아마존",
   "date": "2026-10-29",
+  "ts": 1793304000,
   "est": true,
   "detail": {
    "prev": {
@@ -318,6 +323,7 @@
   "ticker": "META",
   "name": "메타",
   "date": "2026-10-28",
+  "ts": 1793217600,
   "est": true,
   "detail": {
    "prev": {
@@ -381,6 +387,7 @@
   "ticker": "TSLA",
   "name": "테슬라",
   "date": "2026-10-21",
+  "ts": 1792612800,
   "est": false,
   "detail": {
    "prev": {
@@ -444,6 +451,7 @@
   "ticker": "HIMS",
   "name": "힘스앤허스",
   "date": "2026-08-10",
+  "ts": 1786392000,
   "est": false,
   "detail": {
    "prev": {
@@ -502,6 +510,7 @@
   "ticker": "RDW",
   "name": "레드와이어",
   "date": "2026-08-05",
+  "ts": 1785960000,
   "est": false,
   "detail": {
    "prev": {
@@ -565,6 +574,7 @@
   "ticker": "IREN",
   "name": "아이렌",
   "date": "2026-08-27",
+  "ts": 1787860800,
   "est": true,
   "detail": {
    "prev": {
@@ -628,6 +638,7 @@
   "ticker": "PLTR",
   "name": "팔란티어",
   "date": "2026-08-03",
+  "ts": 1785787200,
   "est": false,
   "detail": {
    "prev": {
@@ -691,6 +702,7 @@
   "ticker": "RKLB",
   "name": "로켓랩",
   "date": "2026-08-10",
+  "ts": 1786392000,
   "est": false,
   "detail": {
    "prev": {

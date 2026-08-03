@@ -606,7 +606,8 @@ def _fetch_earning(session, crumb, sym):
         d["rec"].update({"buy": (t0.get("strongBuy", 0) or 0) + (t0.get("buy", 0) or 0),
                          "hold": t0.get("hold", 0) or 0,
                          "sell": (t0.get("sell", 0) or 0) + (t0.get("strongSell", 0) or 0)})
-    return {"date": date, "est": est, "detail": d}
+    return {"date": date, "ts": (min(raws) if raws else None),
+            "est": est, "detail": d}
 
 
 def build_earnings(path=None):
@@ -631,6 +632,7 @@ def build_earnings(path=None):
             ok = True
         out.append({"ticker": t, "name": _EARN_KO.get(t, t),
                     "date": info["date"] if info else None,
+                    "ts": info.get("ts") if info else None,
                     "est": bool(info["est"]) if info else False,
                     "detail": info.get("detail") if info else None})
     if not ok:
