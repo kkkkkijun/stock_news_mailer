@@ -56,10 +56,10 @@
     "growth_pos": true
    },
    "target": {
-    "price": "$200.75",
+    "price": "$206.64",
     "mean": "$302.83",
     "range": "$180~$500",
-    "upside": "+51%",
+    "upside": "+47%",
     "upside_pos": true
    },
    "rec": {
@@ -128,10 +128,10 @@
     "growth_pos": true
    },
    "target": {
-    "price": "$464.72",
+    "price": "$487.65",
     "mean": "$563.05",
     "range": "$400~$870",
-    "upside": "+21%",
+    "upside": "+15%",
     "upside_pos": true
    },
    "rec": {
@@ -200,10 +200,10 @@
     "growth_pos": true
    },
    "target": {
-    "price": "$308.91",
+    "price": "$303.42",
     "mean": "$323.28",
     "range": "$215~$400",
-    "upside": "+5%",
+    "upside": "+7%",
     "upside_pos": true
    },
    "rec": {
@@ -272,10 +272,10 @@
     "growth_pos": true
    },
    "target": {
-    "price": "$356.13",
+    "price": "$373.51",
     "mean": "$426.95",
     "range": "$340~$515",
-    "upside": "+20%",
+    "upside": "+14%",
     "upside_pos": true
    },
    "rec": {
@@ -344,10 +344,10 @@
     "growth_pos": true
    },
    "target": {
-    "price": "$271.58",
+    "price": "$284.02",
     "mean": "$321.95",
     "range": "$207~$400",
-    "upside": "+19%",
+    "upside": "+13%",
     "upside_pos": true
    },
    "rec": {
@@ -416,10 +416,10 @@
     "growth_pos": false
    },
    "target": {
-    "price": "$556.71",
+    "price": "$590.24",
     "mean": "$768.58",
     "range": "$580~$1,000",
-    "upside": "+38%",
+    "upside": "+30%",
     "upside_pos": true
    },
    "rec": {
@@ -488,10 +488,10 @@
     "growth_pos": false
    },
    "target": {
-    "price": "$311.21",
+    "price": "$322.08",
     "mean": "$398.30",
     "range": "$125~$600",
-    "upside": "+28%",
+    "upside": "+24%",
     "upside_pos": true
    },
    "rec": {
@@ -555,11 +555,11 @@
     "growth_pos": false
    },
    "target": {
-    "price": "$27.77",
+    "price": "$30.82",
     "mean": "$29.23",
     "range": "$21~$40",
-    "upside": "+5%",
-    "upside_pos": true
+    "upside": "-5%",
+    "upside_pos": false
    },
    "rec": {
     "label": "보유",
@@ -627,10 +627,10 @@
     "growth_pos": true
    },
    "target": {
-    "price": "$8.62",
+    "price": "$9.64",
     "mean": "$14.88",
     "range": "$7~$24",
-    "upside": "+73%",
+    "upside": "+54%",
     "upside_pos": true
    },
    "rec": {
@@ -699,10 +699,10 @@
     "growth_pos": false
    },
    "target": {
-    "price": "$36.80",
+    "price": "$39.75",
     "mean": "$81.73",
     "range": "$41~$131",
-    "upside": "+122%",
+    "upside": "+106%",
     "upside_pos": true
    },
    "rec": {
@@ -771,10 +771,10 @@
     "growth_pos": true
    },
    "target": {
-    "price": "$123.06",
+    "price": "$125.65",
     "mean": "$182.20",
     "range": "$70~$255",
-    "upside": "+48%",
+    "upside": "+45%",
     "upside_pos": true
    },
    "rec": {
@@ -843,10 +843,10 @@
     "growth_pos": false
    },
    "target": {
-    "price": "$64.95",
+    "price": "$70.43",
     "mean": "$114.47",
     "range": "$77~$150",
-    "upside": "+76%",
+    "upside": "+63%",
     "upside_pos": true
    },
    "rec": {
