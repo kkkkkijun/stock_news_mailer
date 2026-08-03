@@ -33,7 +33,7 @@ SUMMARY_MODEL = os.getenv("OPENAI_SUMMARY_MODEL", "gpt-4o-mini")
 SUMMARY_MAX_TOKENS = int(os.getenv("OPENAI_SUMMARY_MAX_TOKENS", "500"))
 
 # 종목 리스트 (env로 override 가능, 콤마 구분)
-stock_tickers = os.getenv("STOCK_TICKERS", "NVDA,TSLA,HIMS,RDW").split(",")
+stock_tickers = os.getenv("STOCK_TICKERS", "NVDA,TSLA,HIMS,RDW,IREN").split(",")
 crypto_tickers = os.getenv("CRYPTO_TICKERS", "BTC-USD,ETH-USD,SOL-USD").split(",")
 stock_tickers = [t.strip() for t in stock_tickers if t.strip()]
 crypto_tickers = [t.strip() for t in crypto_tickers if t.strip()]
@@ -53,6 +53,7 @@ TICKER_NAMES = {
     "TSLA": "Tesla",
     "HIMS": "Hims",
     "RDW": "Redwire Corp",
+    "IREN": "IREN Limited",
     "BTC-USD": "Bitcoin",
     "ETH-USD": "Ethereum",
     "SOL-USD": "Solana",
@@ -469,6 +470,80 @@ def fetch_all_quotes():
     return out
 
 
+# =========================================================
+# 기업 실적 일정 (M7 + 관심종목) → data/earnings.json (일정 탭 우측)
+#   Yahoo quoteSummary calendarEvents(crumb 방식, 무키)로 종목별 '다음 실적일'.
+#   전부 실패 시 기존 파일 유지(덮어쓰지 않음).
+# =========================================================
+_EARN_KO = {
+    "NVDA": "엔비디아", "MSFT": "마이크로소프트", "AAPL": "애플",
+    "GOOGL": "알파벳", "AMZN": "아마존", "META": "메타", "TSLA": "테슬라",
+    "HIMS": "힘스앤허스", "RDW": "레드와이어", "IREN": "아이렌", "PLTR": "팔란티어",
+}
+# M7 필수 + 관심종목(HIMS·RDW·IREN) + PLTR(일정 전용)
+EARNINGS_TICKERS = ["NVDA", "MSFT", "AAPL", "GOOGL", "AMZN", "META", "TSLA",
+                    "HIMS", "RDW", "IREN", "PLTR"]
+
+
+def _yahoo_earn_session():
+    s = requests.Session()
+    s.headers.update({"User-Agent": _QUOTE_UA["User-Agent"]})
+    try:
+        s.get("https://fc.yahoo.com", timeout=8)
+    except Exception:
+        pass
+    crumb = s.get("https://query1.finance.yahoo.com/v1/test/getcrumb",
+                  timeout=8).text.strip()
+    return s, crumb
+
+
+def _next_earning(session, crumb, sym):
+    from datetime import datetime as _dt
+    url = (f"https://query1.finance.yahoo.com/v10/finance/quoteSummary/{sym}"
+           f"?modules=calendarEvents&crumb={crumb}")
+    r = session.get(url, timeout=10)
+    if r.status_code != 200:
+        return None
+    ce = r.json()["quoteSummary"]["result"][0]["calendarEvents"]["earnings"]
+    raws = [x["raw"] for x in ce.get("earningsDate", []) if "raw" in x]
+    if not raws:
+        return None
+    return {"date": _dt.utcfromtimestamp(min(raws)).strftime("%Y-%m-%d"),
+            "est": bool(ce.get("isEarningsDateEstimate"))}
+
+
+def build_earnings(path=None):
+    import json
+    path = path or os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                "data", "earnings.json")
+    try:
+        session, crumb = _yahoo_earn_session()
+    except Exception as e:  # noqa
+        print(f"[earnings] 세션 실패: {e}")
+        return
+    if not crumb:
+        print("[earnings] crumb 없음 → 기존 파일 유지")
+        return
+    out, ok = [], False
+    for t in EARNINGS_TICKERS:
+        try:
+            info = _next_earning(session, crumb, t)
+        except Exception:
+            info = None
+        if info is not None:
+            ok = True
+        out.append({"ticker": t, "name": _EARN_KO.get(t, t),
+                    "date": info["date"] if info else None,
+                    "est": bool(info["est"]) if info else False})
+    if not ok:
+        print("[earnings] 전부 실패 → 기존 파일 유지")
+        return
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+    print(f"[earnings] 저장: {sum(1 for r in out if r['date'])}/{len(out)}개 실적일")
+
+
 if __name__ == "__main__":
     client = get_openai_client()
     final_body = build_body(client=client)
@@ -482,6 +557,7 @@ if __name__ == "__main__":
         if os.getenv("PUBLISH_SITE", "1") != "0":
             try:
                 from publish_site import publish
+                build_earnings()          # data/earnings.json 갱신(실패해도 기존 유지)
                 quotes = fetch_all_quotes()
                 print("[site] 발행:", publish(final_body, quotes=quotes))
             except Exception as e:

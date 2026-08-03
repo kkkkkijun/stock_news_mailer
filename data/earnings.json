@@ -1,6 +1,68 @@
 [
-  {"ticker":"RDW","name":"레드와이어","date":"2026-08-05","when":""},
-  {"ticker":"HIMS","name":"힘스앤허스","date":"2026-08-10","when":"amc"},
-  {"ticker":"NVDA","name":"엔비디아","date":"2026-08-26","when":"amc"},
-  {"ticker":"TSLA","name":"테슬라","date":null,"when":""}
+ {
+  "ticker": "NVDA",
+  "name": "엔비디아",
+  "date": "2026-08-26",
+  "est": false
+ },
+ {
+  "ticker": "MSFT",
+  "name": "마이크로소프트",
+  "date": "2026-10-28",
+  "est": true
+ },
+ {
+  "ticker": "AAPL",
+  "name": "애플",
+  "date": "2026-10-29",
+  "est": true
+ },
+ {
+  "ticker": "GOOGL",
+  "name": "알파벳",
+  "date": "2026-10-28",
+  "est": false
+ },
+ {
+  "ticker": "AMZN",
+  "name": "아마존",
+  "date": "2026-10-29",
+  "est": true
+ },
+ {
+  "ticker": "META",
+  "name": "메타",
+  "date": "2026-10-28",
+  "est": true
+ },
+ {
+  "ticker": "TSLA",
+  "name": "테슬라",
+  "date": "2026-10-21",
+  "est": false
+ },
+ {
+  "ticker": "HIMS",
+  "name": "힘스앤허스",
+  "date": "2026-08-10",
+  "est": false
+ },
+ {
+  "ticker": "RDW",
+  "name": "레드와이어",
+  "date": "2026-08-05",
+  "est": false
+ },
+ {
+  "ticker": "IREN",
+  "name": "아이렌",
+  "date": "2026-08-27",
+  "est": true
+ },
+ {
+  "ticker": "PLTR",
+  "name": "팔란티어",
+  "date": "2026-08-03",
+  "est": false
+ }
 ]
