@@ -117,6 +117,14 @@ a:hover{opacity:.72;}
  font-size:15px;overflow:hidden;}
 .sched-tz{font-size:10px;color:var(--faint);font-weight:600;}
 .imp-filter{display:flex;gap:5px;}
+/* 연/월 드롭다운 바 */
+.econ-bar{display:flex;align-items:center;justify-content:space-between;
+ gap:8px;flex-wrap:wrap;}
+.econ-sel{display:flex;gap:6px;}
+.econ-sel select{font:inherit;font-size:12.5px;font-weight:700;color:var(--ink);
+ background:var(--chip);border:1px solid var(--border);border-radius:8px;
+ padding:5px 9px;cursor:pointer;}
+.sched-tz2{font-size:10px;color:var(--faint);font-weight:600;text-align:right;}
 .imp-chip{display:flex;align-items:center;gap:5px;font:inherit;font-size:11px;
  font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--border);
  background:var(--card);color:var(--muted-2);cursor:pointer;opacity:.5;}
@@ -966,9 +974,26 @@ def _load_econ_events(now):
                                  "cur": (row.get("Currency") or "").strip().upper()}
         except OSError:
             continue
-    evs = [e for e in rows.values() if e["dt"] >= now]
-    evs.sort(key=lambda e: e["dt"])
-    return evs
+    # B 로직: 이번 달=오늘 이후만 · 미래 달=전체 · 지난 달=제외
+    cur_ym = now.strftime("%Y-%m")
+    today = now.date()
+    kept = []
+    for e in rows.values():
+        ym = e["dt"].strftime("%Y-%m")
+        if ym < cur_ym:
+            continue
+        if ym == cur_ym and e["dt"].date() < today:
+            continue
+        kept.append(e)
+    kept.sort(key=lambda e: e["dt"])
+    # 월별로 묶기: [[ym, label, [events...]], ...] (오름차순)
+    months = []
+    for e in kept:
+        ym = e["dt"].strftime("%Y-%m")
+        if not months or months[-1][0] != ym:
+            months.append([ym, f"{e['dt'].year}년 {e['dt'].month}월", []])
+        months[-1][2].append(e)
+    return months
 
 
 def _impact_gauge(imp):
@@ -994,32 +1019,45 @@ def _econ_row(e):
             f'{_impact_gauge(e["impact"])}</div>')
 
 
-def _render_schedule(evs):
-    if not evs:
+def _render_schedule(months, now):
+    """months: [[ym,label,[events]], ...] (오름차순). 연/월 드롭다운으로 전환."""
+    if not months:
         return ""
+    cur_ym = now.strftime("%Y-%m")
+    default_ym = next((m[0] for m in months if m[0] == cur_ym), months[0][0])
     # 기본: 높음·중간 ON, 낮음 OFF (컨테이너 클래스로 서버에서 초기상태 지정→FOUC 없음)
     out = ['<div class="sched s-high s-med"><div class="sched-head">'
-           '<span><span class="sched-ico">📅</span>경제지표 일정'
-           ' <span class="sched-tz">KST</span></span>'
+           '<div class="econ-bar">'
+           '<div class="econ-sel">'
+           '<select class="econ-y" aria-label="연도"></select>'
+           '<select class="econ-m" aria-label="월"></select>'
+           '</div>'
            '<div class="imp-filter">'
            '<button class="imp-chip on" data-k="high"><i style="background:#e5484d"></i>높음</button>'
            '<button class="imp-chip on" data-k="med"><i style="background:#f59e0b"></i>중간</button>'
            '<button class="imp-chip" data-k="low"><i style="background:#94a3b8"></i>낮음</button>'
-           '</div></div>']
-    cur_day = None
-    for e in evs:
-        d = e["dt"].strftime("%Y-%m-%d")
-        if d != cur_day:
-            if cur_day is not None:
-                out.append("</div>")
-            cur_day = d
-            out.append(f'<div class="sched-group"><div class="sched-day">'
-                       f'{e["dt"].month}월 {e["dt"].day}일 '
-                       f'({_WD_KO[e["dt"].weekday()]})</div>')
-        out.append(_econ_row(e))
-    if cur_day is not None:
-        out.append("</div>")
-    out.append('<div class="sched-src">데이터: FXStreet</div></div>')
+           '</div></div>'
+           '<div class="sched-tz2">시간 기준 KST · 데이터 FXStreet</div>'
+           '</div><div class="econ-months" data-default="%s">' % default_ym]
+    for ym, label, evs in months:
+        hide = "" if ym == default_ym else ' style="display:none"'
+        out.append(f'<div class="sched-month" data-ym="{ym}" '
+                   f'data-label="{_e(label)}"{hide}>')
+        cur_day = None
+        for e in evs:
+            d = e["dt"].strftime("%Y-%m-%d")
+            if d != cur_day:
+                if cur_day is not None:
+                    out.append("</div>")
+                cur_day = d
+                out.append(f'<div class="sched-group"><div class="sched-day">'
+                           f'{e["dt"].month}월 {e["dt"].day}일 '
+                           f'({_WD_KO[e["dt"].weekday()]})</div>')
+            out.append(_econ_row(e))
+        if cur_day is not None:
+            out.append("</div>")
+        out.append('</div>')   # .sched-month
+    out.append('</div></div>')  # .econ-months / .sched
     return "".join(out)
 
 
@@ -1040,6 +1078,33 @@ document.querySelectorAll('.sched').forEach(function(sc){
       groups();
     });
   });
+  // 연/월 드롭다운: 미리 심어둔 월 섹션 중 선택한 달만 표시
+  var wrap=sc.querySelector('.econ-months'),
+      selY=sc.querySelector('.econ-y'), selM=sc.querySelector('.econ-m');
+  if(wrap && selY && selM){
+    var secs=[].slice.call(wrap.querySelectorAll('.sched-month'));
+    var data=secs.map(function(s){var ym=s.getAttribute('data-ym');
+      return {ym:ym, y:ym.slice(0,4), m:parseInt(ym.slice(5,7),10)};});
+    function opt(v,t){var o=document.createElement('option');
+      o.value=v;o.textContent=t;return o;}
+    var years=[]; data.forEach(function(d){if(years.indexOf(d.y)<0)years.push(d.y);});
+    years.forEach(function(y){selY.appendChild(opt(y,y+'년'));});
+    function fillM(y,pick){
+      selM.innerHTML='';
+      var ms=data.filter(function(d){return d.y===y;});
+      ms.forEach(function(d){selM.appendChild(opt(d.ym,d.m+'월'));});
+      selM.value=(pick && ms.some(function(d){return d.ym===pick;}))?pick:ms[0].ym;
+    }
+    function show(ym){
+      secs.forEach(function(s){
+        s.style.display=(s.getAttribute('data-ym')===ym)?'':'none';});
+      groups();
+    }
+    var def=wrap.getAttribute('data-default')||data[0].ym;
+    selY.value=def.slice(0,4); fillM(def.slice(0,4),def); show(selM.value);
+    selY.addEventListener('change',function(){fillM(selY.value); show(selM.value);});
+    selM.addEventListener('change',function(){show(selM.value);});
+  }
   groups();
 });
 document.querySelectorAll('.sub-tab').forEach(function(b){
@@ -1284,7 +1349,7 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
         first = False
 
     # 일정 탭: 좌=경제지표 / 우=기업실적 2단(모바일은 세로로 쌓임, 실적 위)
-    sched_html = _render_schedule(_load_econ_events(now)) if schedule else ""
+    sched_html = _render_schedule(_load_econ_events(now), now) if schedule else ""
     if sched_html:
         earn_html = _render_earnings(_load_earnings(now), now)
         navs.append('<button class="nav-t" data-p="tpS">일정</button>')
