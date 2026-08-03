@@ -230,6 +230,10 @@ a:hover{opacity:.72;}
 .ritem .rt{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.45;}
 .ritem .rm{font-size:11px;color:var(--faint);margin-top:3px;}
 .rnone{color:var(--faint);font-size:13px;padding:10px 2px;}
+.msel{display:flex;gap:8px;justify-content:center;margin-bottom:12px;}
+.msel-sel{font:inherit;font-size:14px;font-weight:600;padding:9px 16px;
+ border-radius:10px;border:1px solid var(--border);background:var(--card);
+ color:var(--ink);cursor:pointer;}
 .calwrap{padding:22px 40px 6px;}
 .cal{background:var(--card);border:1px solid var(--border);border-radius:14px;
  padding:16px 14px;margin-bottom:14px;}
@@ -710,22 +714,69 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False):
 # 지난 브리핑(캘린더)
 # =========================================================
 _CAL_JS = """<script>
-var DATA = __DATA__;
-function pick(btn){
-  document.querySelectorAll('.day.on').forEach(function(x){x.classList.remove('on');});
-  btn.classList.add('on');
-  var d = btn.getAttribute('data-d'), v = DATA[d] || {}, p = d.split('-');
-  var h = '<div class="t">' + p[0].slice(2) + '년 ' + (+p[1]) + '월 ' + (+p[2]) + '일</div>';
-  if (v.am) { h += '<a href="' + v.am + '">오전 브리핑</a>'; }
-  if (v.pm) { h += '<a href="' + v.pm + '">오후 브리핑</a>'; }
-  if (!v.am && !v.pm) { h += '<span class="none">브리핑이 없습니다.</span>'; }
-  document.getElementById('det').innerHTML = h;
-}
-document.querySelectorAll('.day.has').forEach(function(b){
-  b.addEventListener('click', function(){ pick(b); });
-});
-var f = document.querySelector('.day.has');
-if (f) { pick(f); }
+(function(){
+  var DATA = __DATA__;
+  var selY=document.getElementById('selY'), selM=document.getElementById('selM'),
+      box=document.getElementById('calbox'), det=document.getElementById('det');
+  if(!selY) return;
+  var DOW=['일','월','화','수','목','금','토'];
+
+  var years={}, ymSet={};
+  Object.keys(DATA).forEach(function(d){
+    years[d.slice(0,4)]=1; ymSet[d.slice(0,7)]=1;
+  });
+  var yList=Object.keys(years).sort().reverse();
+
+  function monthsOf(y){
+    var ms=[];
+    for(var m=1;m<=12;m++){ var mm=('0'+m).slice(-2); if(ymSet[y+'-'+mm]) ms.push(mm); }
+    return ms.reverse();
+  }
+  function fill(sel, vals, fmt){
+    sel.innerHTML='';
+    vals.forEach(function(v){
+      var o=document.createElement('option'); o.value=v; o.textContent=fmt(v); sel.appendChild(o);
+    });
+  }
+  function pick(ds){
+    box.querySelectorAll('.day.on').forEach(function(x){x.classList.remove('on');});
+    var c=box.querySelector('.day.has[data-d="'+ds+'"]'); if(c) c.classList.add('on');
+    var v=DATA[ds]||{}, p=ds.split('-');
+    var h='<div class="t">'+p[0].slice(2)+'년 '+(+p[1])+'월 '+(+p[2])+'일</div>';
+    if(v.am) h+='<a href="'+v.am+'">오전 브리핑</a>';
+    if(v.pm) h+='<a href="'+v.pm+'">오후 브리핑</a>';
+    if(!v.am&&!v.pm) h+='<span class="none">브리핑이 없습니다.</span>';
+    det.innerHTML=h;
+  }
+  function render(y,m){
+    y=+y; m=+m;
+    var first=new Date(y,m-1,1).getDay(), dim=new Date(y,m,0).getDate();
+    var html='<div class="grid">';
+    for(var i=0;i<7;i++) html+='<div class="dow'+(i===0?' sun':'')+'">'+DOW[i]+'</div>';
+    for(var b=0;b<first;b++) html+='<div class="day"></div>';
+    var firstHas=null, pad=function(n){return ('0'+n).slice(-2);};
+    for(var d=1;d<=dim;d++){
+      var ds=y+'-'+pad(m)+'-'+pad(d);
+      if(DATA[ds]){ html+='<button class="day has" data-d="'+ds+'">'+d+'</button>'; if(!firstHas) firstHas=ds; }
+      else html+='<div class="day">'+d+'</div>';
+    }
+    box.innerHTML=html+'</div>';
+    box.querySelectorAll('.day.has').forEach(function(bt){
+      bt.addEventListener('click', function(){ pick(bt.getAttribute('data-d')); });
+    });
+    if(firstHas) pick(firstHas); else det.innerHTML='';
+  }
+  function onYear(){
+    fill(selM, monthsOf(selY.value), function(m){ return (+m)+'월'; });
+    render(selY.value, selM.value);
+  }
+  selY.addEventListener('change', onYear);
+  selM.addEventListener('change', function(){ render(selY.value, selM.value); });
+
+  if(!yList.length){ box.innerHTML=''; return; }
+  fill(selY, yList, function(y){ return y+'년'; });
+  onYear();
+})();
 </script>"""
 
 _DOW_SHORT = ["일", "월", "화", "수", "목", "금", "토"]
@@ -811,23 +862,6 @@ def render_archive_index():
         y, mo, d, ap = m.groups()
         days.setdefault(f"{y}-{mo}-{d}", {})[ap] = fn
 
-    cal = calendar.Calendar(firstweekday=6)
-    blocks = []
-    for ym in sorted({k[:7] for k in days}, reverse=True):
-        y, mo = int(ym[:4]), int(ym[5:7])
-        cells = "".join(f'<div class="dow{" sun" if i == 0 else ""}">{w}</div>'
-                        for i, w in enumerate(_DOW_SHORT))
-        for dt in cal.itermonthdates(y, mo):
-            if dt.month != mo:
-                cells += '<div class="day"></div>'
-            elif dt.strftime("%Y-%m-%d") in days:
-                cells += (f'<button class="day has" '
-                          f'data-d="{dt.strftime("%Y-%m-%d")}">{dt.day}</button>')
-            else:
-                cells += f'<div class="day">{dt.day}</div>'
-        blocks.append(f'<div class="cal"><h3>{y}년 {mo}월</h3>'
-                      f'<div class="grid">{cells}</div></div>')
-
     hd = ('<header class="hd"><div class="hd-top">'
           '<span class="hd-kicker">ARCHIVE</span>'
           '<div class="hd-links"><a class="hd-archive" href="../index.html">🏠 홈</a></div>'
@@ -837,8 +871,12 @@ def render_archive_index():
     search = ('<div class="search"><input id="q" type="search" autocomplete="off"'
               ' placeholder="지난 브리핑에서 검색 (종목·키워드)"></div>'
               '<div class="results" id="results" style="display:none"></div>')
+    # 연·월 드롭다운 + 단일 월 캘린더(그 달만; JS가 DATA 로 그림, 누적 안 함)
+    msel = ('<div class="msel"><select id="selY" class="msel-sel"></select>'
+            '<select id="selM" class="msel-sel"></select></div>')
     inner = (hd + '<div class="calwrap">' + search
-             + '<div id="calview">' + "".join(blocks)
+             + '<div id="calview">' + msel
+             + '<div class="cal" id="calbox"></div>'
              + '<div class="det" id="det"></div></div></div>')
     js = _CAL_JS.replace("__DATA__", json.dumps(days, ensure_ascii=False))
     js += _SEARCH_JS.replace(
