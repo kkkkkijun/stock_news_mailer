@@ -15,6 +15,7 @@
 """
 import os
 import re
+import csv
 import json
 import calendar
 import html as _html
@@ -105,7 +106,32 @@ body{margin:0;font-family:'Pretendard',system-ui,sans-serif;
  transition:background .2s,color .2s;}
 a{color:var(--accent);text-decoration:none;}
 a:hover{opacity:.72;}
-.wrap{display:flex;justify-content:center;padding:48px 24px;}
+.wrap{display:flex;justify-content:center;align-items:flex-start;gap:20px;
+ padding:48px 24px;}
+/* 경제지표 일정 — PC 우측 고정 레일(넓은 화면에서만) */
+.rail{display:none;}
+.rail-inner{background:var(--page);border:1px solid var(--border);border-radius:16px;
+ padding:12px 13px;box-shadow:0 12px 44px var(--shadow);
+ max-height:calc(100vh - 48px);overflow:auto;}
+@media (min-width:1120px){
+  .rail{display:block;width:266px;flex-shrink:0;position:sticky;top:24px;}
+  .nav-t.sched-tab{display:none;}   /* PC 에선 레일 사용 → '일정' 탭 버튼 숨김 */
+}
+.sched-head{display:flex;flex-direction:column;gap:3px;font-size:14px;
+ font-weight:800;color:var(--ink);margin-bottom:6px;}
+.sched-tz{font-size:10px;color:var(--faint);font-weight:600;}
+.sched-day{font-size:11px;font-weight:800;color:var(--accent);margin:11px 2px 5px;}
+.ev{display:flex;align-items:center;gap:7px;padding:7px 3px;
+ border-bottom:1px solid var(--border);}
+.ev:last-child{border-bottom:0;}
+.ev-t{font-size:11.5px;font-weight:700;color:var(--ink);min-width:62px;flex-shrink:0;}
+.ev-f{font-size:14px;flex-shrink:0;}
+.ev-c{font-size:10px;font-weight:700;color:var(--muted-2);
+ font-family:ui-monospace,monospace;min-width:30px;flex-shrink:0;}
+.ev-n{flex:1;font-size:12px;font-weight:600;color:var(--ink);line-height:1.35;}
+.igauge{display:flex;gap:2px;flex-shrink:0;}
+.igauge i{width:8px;height:6px;border-radius:2px;display:block;}
+.sched-src{font-size:9.5px;color:var(--faint);text-align:right;margin-top:9px;}
 .page{width:100%;max-width:820px;background:var(--page);color:var(--ink);
  border:1px solid var(--border);border-radius:18px;
  box-shadow:0 12px 44px var(--shadow);overflow:hidden;}
@@ -608,7 +634,7 @@ _THEME_JS = """<script>
 </script>"""
 
 
-def _shell(title, inner, extra_head="", script=""):
+def _shell(title, inner, extra_head="", script="", rail=""):
     return f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -620,7 +646,7 @@ def _shell(title, inner, extra_head="", script=""):
 <div class="wrap"><div class="page">
 {inner}
 <footer class="ft">기사 요약은 각 언론사 보도를 바탕으로 자동 생성되었으며, 저작권은 해당 언론사에 있습니다. 정보 제공 목적이며 투자 판단의 책임은 본인에게 있습니다.</footer>
-</div></div>
+</div>{rail}</div>
 <button id="theme" aria-label="다크/라이트 테마 전환" title="테마 전환">🌙</button>
 <button id="top" aria-label="맨 위로">↑</button>
 {script}{_TOP_JS}{_THEME_JS}
@@ -646,7 +672,203 @@ def _title(now):
     return f"{now.year % 100}년 {now.month}월 {now.day}일 {ampm} 뉴스 브리핑"
 
 
-def render_html(body, now=None, links="", quotes=None, mark_new=False):
+# =========================================================
+# 경제지표 일정 (FXStreet CSV → PC 우측 레일 / 모바일 '일정' 탭)
+#   data/econ/*.csv (컬럼: Id,Start[UTC],Name,Impact,Currency)
+# =========================================================
+ECON_DIR = os.path.join(DATA_DIR, "econ")
+_WD_KO = ["월", "화", "수", "목", "금", "토", "일"]
+_CUR_FLAG = {
+    "USD": "🇺🇸", "EUR": "🇪🇺", "JPY": "🇯🇵", "CNY": "🇨🇳", "KRW": "🇰🇷",
+    "GBP": "🇬🇧", "AUD": "🇦🇺", "CAD": "🇨🇦", "NZD": "🇳🇿", "CHF": "🇨🇭",
+    "HKD": "🇭🇰", "INR": "🇮🇳", "BRL": "🇧🇷", "MXN": "🇲🇽", "ZAR": "🇿🇦",
+}
+# 이벤트명 한글 사전(반복되는 유한 집합). 미등록은 영문 유지 후 점차 보강.
+_ECON_KO = {
+    "Nonfarm Payrolls": "비농업 고용",
+    "Unemployment Rate": "실업률",
+    "Average Hourly Earnings (MoM)": "시간당 평균임금 (전월比)",
+    "Average Hourly Earnings (YoY)": "시간당 평균임금 (전년比)",
+    "Labor Force Participation Rate": "경제활동참가율",
+    "U6 Underemployment Rate": "U6 불완전고용률",
+    "ADP Employment Change": "ADP 민간고용",
+    "ADP Employment Change 4-week average": "ADP 민간고용 4주평균",
+    "JOLTS Job Openings": "JOLTS 구인건수",
+    "Initial Jobless Claims": "신규 실업수당 청구",
+    "Challenger Job Cuts": "챌린저 감원",
+    "Nonfarm Productivity": "비농업 생산성",
+    "Unit Labor Costs": "단위노동비용",
+    "Consumer Price Index (MoM)": "소비자물가지수 CPI (전월比)",
+    "Consumer Price Index (YoY)": "소비자물가지수 CPI (전년比)",
+    "Consumer Price Index ex Food & Energy (MoM)": "근원 CPI (식품·에너지 제외, 전월比)",
+    "Consumer Price Index ex Food & Energy (YoY)": "근원 CPI (식품·에너지 제외, 전년比)",
+    "Producer Price Index (MoM)": "생산자물가지수 PPI (전월比)",
+    "Producer Price Index (YoY)": "생산자물가지수 PPI (전년比)",
+    "Producer Price Index ex Food & Energy (MoM)": "근원 PPI (전월比)",
+    "Producer Price Index ex Food & Energy (YoY)": "근원 PPI (전년比)",
+    "Personal Consumption Expenditures - Price Index (MoM)": "PCE 물가지수 (전월比)",
+    "Personal Consumption Expenditures - Price Index (YoY)": "PCE 물가지수 (전년比)",
+    "Core Personal Consumption Expenditures - Price Index (MoM)": "근원 PCE 물가지수 (전월比)",
+    "Core Personal Consumption Expenditures - Price Index (YoY)": "근원 PCE 물가지수 (전년比)",
+    "Core Personal Consumption Expenditures (QoQ)": "근원 PCE (전분기比)",
+    "Personal Consumption Expenditures Prices (QoQ)": "PCE 물가 (전분기比)",
+    "Personal Income (MoM)": "개인소득 (전월比)",
+    "Personal Spending": "개인소비",
+    "Retail Sales (MoM)": "소매판매 (전월比)",
+    "Retail Sales (YoY)": "소매판매 (전년比)",
+    "Retail Sales Control Group": "소매판매 코어(컨트롤그룹)",
+    "Retail Sales ex Autos (MoM)": "소매판매 (자동차 제외, 전월比)",
+    "ISM Manufacturing PMI": "ISM 제조업 PMI",
+    "ISM Manufacturing Employment Index": "ISM 제조업 고용지수",
+    "ISM Manufacturing New Orders Index": "ISM 제조업 신규주문지수",
+    "ISM Manufacturing Prices Paid": "ISM 제조업 지불물가",
+    "ISM Services PMI": "ISM 서비스업 PMI",
+    "ISM Services Employment Index": "ISM 서비스업 고용지수",
+    "ISM Services New Orders Index": "ISM 서비스업 신규주문지수",
+    "ISM Services Prices Paid": "ISM 서비스업 지불물가",
+    "S&P Global Composite PMI": "S&P글로벌 종합 PMI",
+    "S&P Global Manufacturing PMI": "S&P글로벌 제조업 PMI",
+    "S&P Global Services PMI": "S&P글로벌 서비스업 PMI",
+    "HCOB Composite PMI": "HCOB 종합 PMI",
+    "HCOB Manufacturing PMI": "HCOB 제조업 PMI",
+    "HCOB Services PMI": "HCOB 서비스업 PMI",
+    "RatingDog Manufacturing PMI": "제조업 PMI (RatingDog)",
+    "RatingDog Services PMI": "서비스업 PMI (RatingDog)",
+    "NBS Manufacturing PMI": "중국 국가통계국 제조업 PMI",
+    "NBS Non-Manufacturing PMI": "중국 국가통계국 비제조업 PMI",
+    "Chicago PMI": "시카고 PMI",
+    "NY Empire State Manufacturing Index": "뉴욕 엠파이어스테이트 제조업지수",
+    "Philadelphia Fed Manufacturing Survey": "필라델피아 연준 제조업지수",
+    "Factory Orders (MoM)": "공장주문 (전월比)",
+    "Durable Goods Orders": "내구재주문",
+    "Durable Goods Orders ex Defense": "내구재주문 (국방 제외)",
+    "Durable Goods Orders ex Transportation": "내구재주문 (운송 제외)",
+    "Nondefense Capital Goods Orders ex Aircraft": "근원 자본재주문 (항공 제외)",
+    "Industrial Production (MoM)": "산업생산 (전월比)",
+    "Industrial Production (YoY)": "산업생산 (전년比)",
+    "Industrial Production s.a. (MoM)": "산업생산 (계절조정, 전월比)",
+    "Gross Domestic Product Annualized": "GDP 연율화",
+    "Gross Domestic Product Price Index": "GDP 물가지수",
+    "Gross Domestic Product (QoQ)": "GDP (전분기比)",
+    "Gross Domestic Product s.a. (QoQ)": "GDP (계절조정, 전분기比)",
+    "Gross Domestic Product s.a. (YoY)": "GDP (계절조정, 전년比)",
+    "Gross Domestic Product Deflator (YoY)": "GDP 디플레이터 (전년比)",
+    "Employment Change (QoQ)": "고용 변화 (전분기比)",
+    "Michigan Consumer Sentiment Index": "미시간대 소비자심리지수",
+    "Michigan Consumer Expectations Index": "미시간대 소비자기대지수",
+    "UoM 1-year Consumer Inflation Expectations": "미시간대 1년 기대인플레이션",
+    "UoM 5-year Consumer Inflation Expectation": "미시간대 5년 기대인플레이션",
+    "Consumer Confidence": "소비자신뢰지수",
+    "Consumer Sentiment Index": "소비자심리지수",
+    "Business Climate": "기업환경지수",
+    "Economic Sentiment Indicator": "경제심리지수",
+    "ZEW Survey – Economic Sentiment": "ZEW 경기전망지수",
+    "Sentix Investor Confidence": "Sentix 투자자신뢰지수",
+    "Building Permits (MoM)": "건축허가 (전월比)",
+    "Housing Starts (MoM)": "주택착공 (전월比)",
+    "Existing Home Sales Change (MoM)": "기존주택판매 (전월比)",
+    "New Home Sales Change (MoM)": "신규주택판매 (전월比)",
+    "Pending Home Sales (MoM)": "잠정주택판매 (전월比)",
+    "Housing Price Index (MoM)": "주택가격지수 (전월比)",
+    "Monthly Budget Statement": "월간 재정수지",
+    "Loan Officer Survey": "대출담당자 서베이",
+    "Trade Balance": "무역수지",
+    "Trade Balance USD": "무역수지 (달러)",
+    "Trade Balance CNY": "무역수지 (위안)",
+    "Exports (YoY)": "수출 (전년比)",
+    "Exports (YoY) CNY": "수출 (전년比, 위안)",
+    "Imports (YoY)": "수입 (전년比)",
+    "Imports (YoY) CNY": "수입 (전년比, 위안)",
+    "Current Account n.s.a.": "경상수지",
+    "Adjusted Merchandise Trade Balance": "조정 상품무역수지",
+    "Merchandise Trade Balance Total": "상품무역수지 총액",
+    "Harmonized Index of Consumer Prices (MoM)": "조화소비자물가 HICP (전월比)",
+    "Core Harmonized Index of Consumer Prices (MoM)": "근원 HICP (전월比)",
+    "Core Harmonized Index of Consumer Prices (YoY)": "근원 HICP (전년比)",
+    "Economic Bulletin": "ECB 경제전망 보고서",
+    "National Consumer Price Index (YoY)": "전국 소비자물가 (전년比)",
+    "National CPI ex Food, Energy (YoY)": "전국 근원 CPI (식품·에너지 제외, 전년比)",
+    "National CPI ex Fresh Food (YoY)": "전국 근원 CPI (신선식품 제외, 전년比)",
+    "Tokyo Consumer Price Index (YoY)": "도쿄 소비자물가 (전년比)",
+    "Tokyo CPI ex Food, Energy (YoY)": "도쿄 근원 CPI (식품·에너지 제외, 전년比)",
+    "Tokyo CPI ex Fresh Food (YoY)": "도쿄 근원 CPI (신선식품 제외, 전년比)",
+    "Labor Cash Earnings (YoY)": "근로자 현금소득 (전년比)",
+    "FOMC Minutes": "FOMC 의사록",
+    "BoJ Monetary Policy Meeting Minutes": "일본은행 통화정책회의 의사록",
+    "BoK Interest Rate Decision": "한국은행 기준금리 결정",
+    "PBoC Interest Rate Decision": "중국인민은행 기준금리 결정",
+    "Fed's Musalem speech": "연준 무살렘 연설",
+}
+
+
+def _load_econ_events(now):
+    """data/econ/*.csv 병합 → MEDIUM/HIGH만, UTC→KST, 'now 이후' 임박순."""
+    if not os.path.isdir(ECON_DIR):
+        return []
+    rows = {}
+    for fn in os.listdir(ECON_DIR):
+        if not fn.endswith(".csv"):
+            continue
+        try:
+            with open(os.path.join(ECON_DIR, fn), encoding="utf-8-sig") as f:
+                for row in csv.DictReader(f):
+                    imp = (row.get("Impact") or "").strip().upper()
+                    if imp not in ("MEDIUM", "HIGH"):
+                        continue
+                    try:
+                        dt = pytz.utc.localize(
+                            datetime.strptime((row.get("Start") or "").strip(),
+                                              "%m/%d/%Y %H:%M:%S")).astimezone(KST)
+                    except ValueError:
+                        continue
+                    key = row.get("Id") or (row.get("Start", "") + row.get("Name", ""))
+                    rows[key] = {"dt": dt, "name": (row.get("Name") or "").strip(),
+                                 "impact": imp,
+                                 "cur": (row.get("Currency") or "").strip().upper()}
+        except OSError:
+            continue
+    evs = [e for e in rows.values() if e["dt"] >= now]
+    evs.sort(key=lambda e: e["dt"])
+    return evs
+
+
+def _impact_gauge(imp):
+    seg = (["#e5484d"] * 3 if imp == "HIGH"
+           else ["#f59e0b", "#f59e0b", "var(--border)"])
+    return ('<span class="igauge">'
+            + "".join(f'<i style="background:{c}"></i>' for c in seg) + "</span>")
+
+
+def _econ_row(e):
+    t = e["dt"].strftime("%I:%M %p").lstrip("0")
+    name = _ECON_KO.get(e["name"], e["name"])
+    return (f'<div class="ev"><span class="ev-t">{t}</span>'
+            f'<span class="ev-f">{_CUR_FLAG.get(e["cur"], "")}</span>'
+            f'<span class="ev-c">{_e(e["cur"])}</span>'
+            f'<span class="ev-n">{_e(name)}</span>{_impact_gauge(e["impact"])}</div>')
+
+
+def _render_schedule(evs):
+    if not evs:
+        return ""
+    out = ['<div class="sched"><div class="sched-head">📅 경제지표 일정'
+           '<span class="sched-tz">KST · 중요도 '
+           '<b style="color:#f59e0b">■</b>중간 <b style="color:#e5484d">■</b>높음</span>'
+           '</div>']
+    cur_day = None
+    for e in evs:
+        d = e["dt"].strftime("%Y-%m-%d")
+        if d != cur_day:
+            cur_day = d
+            out.append(f'<div class="sched-day">{e["dt"].month}월 {e["dt"].day}일 '
+                       f'({_WD_KO[e["dt"].weekday()]})</div>')
+        out.append(_econ_row(e))
+    out.append('<div class="sched-src">데이터: FXStreet</div></div>')
+    return "".join(out)
+
+
+def render_html(body, now=None, links="", quotes=None, mark_new=False,
+                schedule=False):
     now = now or datetime.now(KST)
     qmap = quotes or {}
     # 직전 회차 대비 '새 뉴스' 표시용 토큰셋(요청 시에만).
@@ -703,11 +925,22 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False):
         navs.append(f'<button class="nav-t{on}" data-p="tp{i}">{_e(tab)}</button>')
         panels.append(f'<div class="panel{on}" id="tp{i}">{inner}</div>')
         first = False
+
+    # 경제지표 일정: PC=우측 고정 레일 / 모바일='일정' 탭 (반응형, 같은 내용)
+    rail = ""
+    sched_html = _render_schedule(_load_econ_events(now)) if schedule else ""
+    if sched_html:
+        navs.append('<button class="nav-t sched-tab" data-p="tpS">일정</button>')
+        panels.append('<div class="panel" id="tpS">'
+                      f'<div class="part">{sched_html}</div></div>')
+        rail = ('<aside class="rail"><div class="rail-inner">'
+                f'{sched_html}</div></aside>')
+
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
 
     return _shell(SITE_TITLE, hd + gauges_html + nav_html + "".join(panels),
-                  script=_TAB_JS)
+                  script=_TAB_JS, rail=rail)
 
 
 # =========================================================
@@ -957,7 +1190,7 @@ def rebuild_all():
     if latest:
         _write(os.path.join(DOCS_DIR, "index.html"),
                render_html(latest[0], now=latest[1], links=_LINKS_HOME,
-                           quotes=latest[2], mark_new=True))
+                           quotes=latest[2], mark_new=True, schedule=True))
     _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
     return len(files)
 
@@ -973,7 +1206,7 @@ def publish(body, now=None, quotes=None):
                        mark_new=True))
     path = os.path.join(DOCS_DIR, "index.html")
     _write(path, render_html(body, now=now, links=_LINKS_HOME, quotes=quotes,
-                             mark_new=True))
+                             mark_new=True, schedule=True))
     _write(os.path.join(ARCHIVE_DIR, "index.html"), render_archive_index())
     return path
 
