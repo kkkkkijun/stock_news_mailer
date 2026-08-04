@@ -649,6 +649,35 @@ def build_earnings(path=None):
     print(f"[earnings] 저장: {sum(1 for r in out if r['date'])}/{len(out)}개 실적일")
 
 
+def build_prices(path=None, quotes=None):
+    """보유종목 현재가용 docs/prices.json 생성(same-origin → '내 목표' 앱이 읽음).
+       추적 종목(주식+실적 티커)만. 전부 실패 시 기존 파일 유지."""
+    import json
+    path = path or os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                "docs", "prices.json")
+    prices = {}
+    if quotes:  # 이미 받은 시세 재사용(중복 호출 방지)
+        for group in quotes.values():
+            for c in group:
+                if c.get("price") is not None:
+                    prices[c["ticker"]] = c["price"]
+    want = set(EARNINGS_TICKERS) | set(stock_tickers)
+    for t in sorted(want):
+        if t in prices:
+            continue
+        q = fetch_quote(t)
+        if q and q.get("price") is not None:
+            prices[t] = q["price"]
+    if not prices:
+        print("[prices] 전부 실패 → 기존 파일 유지")
+        return
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"asof": datetime.now(KST).strftime("%m/%d %H:%M"),
+                   "prices": prices}, f, ensure_ascii=False, indent=1)
+    print(f"[prices] 저장: {len(prices)}개 종목")
+
+
 if __name__ == "__main__":
     client = get_openai_client()
     final_body = build_body(client=client)
@@ -664,6 +693,7 @@ if __name__ == "__main__":
                 from publish_site import publish
                 build_earnings()          # data/earnings.json 갱신(실패해도 기존 유지)
                 quotes = fetch_all_quotes()
+                build_prices(quotes=quotes)   # docs/prices.json (내 목표 현재가)
                 print("[site] 발행:", publish(final_body, quotes=quotes))
             except Exception as e:
                 print(f"[site] 발행 실패: {e}")
