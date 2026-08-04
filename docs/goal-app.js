@@ -117,6 +117,7 @@ function init(){
     $("ge_cancel").onclick = () => { $("g_goalEdit").style.display="none"; };
     $("g_fx").onchange = () => { S.goal.fx = num($("g_fx").value); renderData(); save(); };
     $("g_fxAuto").onclick = fetchFx;
+    $("g_priceAuto").onclick = fetchPrices;
     ROOT.querySelectorAll(".g-cal").forEach(b=>{
       b.onclick = () => { const el=$(b.getAttribute("data-for"));
         if(el){ try{ el.showPicker(); }catch(e){ el.focus(); } } };
@@ -324,6 +325,19 @@ function init(){
     }catch(e){ alert("환율 자동조회 실패: "+(e.message||e)+"\n직접 입력해 주세요."); }
     finally{ btn.textContent=old; }
   }
+  async function fetchPrices(){
+    const btn=$("g_priceAuto"), old=btn.textContent; btn.textContent="…";
+    try{
+      const r=await fetch("prices.json?t="+Date.now());
+      if(!r.ok) throw new Error("prices.json 없음("+r.status+")");
+      const j=await r.json(); const pr=j.prices||{}; let n=0; const miss=[];
+      compute().open.forEach(o=>{ if(pr[o.ticker]!=null){ S.prices[o.ticker]=pr[o.ticker]; n++; } else miss.push(o.ticker); });
+      if($("g_priceNote")) $("g_priceNote").textContent =
+        "시세 기준 "+(j.asof||"?")+" · "+n+"개 반영"+(miss.length? " · 미포함(수동): "+miss.join(", "):"")+" · 하루 2회 갱신";
+      renderData(); save();
+    }catch(e){ alert("현재가 불러오기 실패: "+(e.message||e)); }
+    finally{ btn.textContent=old; }
+  }
 }
 
 /* ---------- shell HTML ---------- */
@@ -390,8 +404,11 @@ function SHELL_HTML(){ return ''+
       '<div class="g-kpi"><div class="g-l">평균 보유</div><div class="g-v" id="g_jHold">0일</div></div></div>'+
     '<div class="g-card"><div class="g-sect">종목별 성과 (실현손익)</div><div id="g_tkRows"></div></div>'+
     '<div class="g-card"><div class="g-sect">청산 매매 (자동 매칭)</div><div id="g_closedRows"></div></div>'+
-    '<div class="g-card"><div class="g-sect">보유중 (미청산) · 현재가 입력 시 손익 반영</div><div id="g_openRows"></div>'+
-      '<div class="g-note">현재가를 비워두면 평단가로 계산(손익 0)됩니다.</div></div>'+
+    '<div class="g-card"><div class="g-sect" style="display:flex;justify-content:space-between;align-items:center;gap:8px">'+
+      '<span>보유중 (미청산)</span>'+
+      '<button type="button" class="g-btn sm" id="g_priceAuto">↻ 현재가 불러오기</button></div>'+
+      '<div id="g_openRows"></div>'+
+      '<div class="g-note" id="g_priceNote">현재가 비우면 평단가로 계산. ↻로 추적 종목 현재가 자동 반영(하루 2회 갱신).</div></div>'+
   '</div>';
 }
 
