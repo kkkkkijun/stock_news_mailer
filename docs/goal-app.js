@@ -25,12 +25,13 @@ function init(){
   injectStyle();
   let uid = null, unsub = null, built = false;
   let editCash = null, editTrade = null;
-  const defState = () => ({ goal:{name:"",target:0,start:"",end:"",cur:"$"}, cash:[], trades:[], prices:{} });
+  const defState = () => ({ goal:{name:"",target:0,start:"",end:"",cur:"$",fx:0}, cash:[], trades:[], prices:{} });
   let S = defState();
 
   const $ = id => document.getElementById(id);
   const num = v => { const n = parseFloat(v); return isFinite(n) ? n : 0; };
-  const curSym = () => S.goal.cur || "$";
+  const curSym = () => "$";   // 입력·기준 통화는 달러 고정 (원화는 환율 환산 표시)
+  const wonN = n => "₩" + Math.round(n).toLocaleString();
   const decs = () => (curSym()==="₩" ? 0 : 2);
   const money = n => curSym() + Number(n).toLocaleString(undefined,{minimumFractionDigits:decs(),maximumFractionDigits:decs()});
   const money2 = n => curSym() + Number(n).toLocaleString(undefined,{maximumFractionDigits:2});
@@ -112,7 +113,8 @@ function init(){
     $("g_cAdd").onclick = addCash;
     $("g_tAdd").onclick = addTrade;
     $("g_editGoal").onclick = editGoal;
-    $("g_cur").onchange = () => { S.goal.cur = $("g_cur").value; renderData(); save(); };
+    $("g_fx").onchange = () => { S.goal.fx = num($("g_fx").value); renderData(); save(); };
+    $("g_fxAuto").onclick = fetchFx;
     ROOT.querySelectorAll(".g-cal").forEach(b=>{
       b.onclick = () => { const el=$(b.getAttribute("data-for"));
         if(el){ try{ el.showPicker(); }catch(e){ el.focus(); } } };
@@ -171,7 +173,7 @@ function init(){
   function renderData(){
     if(!built) return;
     const m = compute(), g = S.goal;
-    $("g_cur").value = curSym();
+    $("g_fx").value = g.fx ? g.fx : "";
     $("g_gName").textContent = g.name || "목표를 설정하세요";
     $("g_gDates").textContent = (g.start||"—")+" → "+(g.end||"—");
     $("g_gDday").textContent = g.end ? (dayDiff(todayStr(),g.end)>=0? "D-"+dayDiff(todayStr(),g.end) : "D+"+Math.abs(dayDiff(todayStr(),g.end))) : "D-—";
@@ -189,6 +191,12 @@ function init(){
       "<b class='"+(m.unreal>=0?"up":"dn")+"'>미실현 "+signMoney(m.unreal)+"</b>"+
       (m.fees>0? " − <b>수수료 "+money(m.fees)+"</b>":"")+"<br>"+
       "현금 <b>"+money(m.cash)+"</b> + 보유 포지션 <b>"+money(m.posVal)+"</b> = 평가액 <b>"+money(m.equity)+"</b>";
+    const fx = num(g.fx);
+    $("g_won").innerHTML = fx>0
+      ? "원화환산 · 평가액 <b>"+wonN(m.equity*fx)+"</b> · 평가손익 <b class='"+(m.pnl>=0?"up":"dn")+"'>"+
+        (m.pnl>=0?"+":"−")+wonN(Math.abs(m.pnl)*fx)+"</b>"+
+        (num(g.target)>0? " · 목표 <b>"+wonN(num(g.target)*fx)+"</b>":"")
+      : "<span class='g-fxhint'>환율을 입력하거나 ↻ 자동을 누르면 원화 환산이 표시됩니다.</span>";
 
     const cr=$("g_cashRows"); cr.innerHTML="";
     if(!S.cash.length) cr.innerHTML="<div class='g-empty'>입출금 내역이 없습니다.</div>";
@@ -285,7 +293,20 @@ function init(){
     const target=prompt("목표 금액(숫자만)", S.goal.target||""); if(target===null) return;
     const start=prompt("시작일 (YYYY-MM-DD)", S.goal.start||todayStr()); if(start===null) return;
     const end=prompt("목표일 (YYYY-MM-DD)", S.goal.end||""); if(end===null) return;
-    S.goal={ name:name.trim(), cur:S.goal.cur||"$", target:num(target), start:start.trim(), end:end.trim() }; save();
+    S.goal={ name:name.trim(), cur:"$", fx:S.goal.fx||0, target:num(target), start:start.trim(), end:end.trim() }; save();
+  }
+  async function fetchFx(){
+    const btn=$("g_fxAuto"), old=btn.textContent; btn.textContent="…";
+    try{
+      const r=await fetch("https://open.er-api.com/v6/latest/USD");
+      const j=await r.json();
+      const rate=j && j.rates && j.rates.KRW;
+      if(!rate) throw new Error("환율 데이터 없음");
+      S.goal.fx=Math.round(rate*100)/100;
+      if($("g_fxAt")) $("g_fxAt").textContent="("+((j.time_last_update_utc||"").slice(0,16))+" 기준)";
+      renderData(); save();
+    }catch(e){ alert("환율 자동조회 실패: "+(e.message||e)+"\n직접 입력해 주세요."); }
+    finally{ btn.textContent=old; }
   }
 }
 
@@ -299,9 +320,11 @@ function SHELL_HTML(){ return ''+
     '<div class="g-card"><div class="g-ghead"><div>'+
       '<div class="g-gname" id="g_gName">목표를 설정하세요</div>'+
       '<div class="g-gdates" id="g_gDates">—</div></div>'+
-      '<div class="g-ghr"><span class="g-dday" id="g_gDday">D-—</span>'+
-      '<select id="g_cur" class="g-cursel"><option value="$">$ 달러</option>'+
-      '<option value="₩">₩ 원</option></select></div></div>'+
+      '<span class="g-dday" id="g_gDday">D-—</span></div>'+
+    '<div class="g-fx"><span>$1 =</span>'+
+      '<input id="g_fx" class="g-fxin" inputmode="decimal" placeholder="환율">'+
+      '<span>원</span><button type="button" class="g-btn sm" id="g_fxAuto">↻ 자동</button>'+
+      '<span class="g-fxat" id="g_fxAt"></span></div>'+
     '<div class="g-prog"><span class="g-pct" id="g_gPct">0%</span><span class="g-psub" id="g_gProgSub">0 / 0</span></div>'+
     '<div class="g-bar"><i id="g_gBar" style="width:0%"></i></div>'+
     '<div class="g-note" id="g_gRemain"></div>'+
@@ -310,6 +333,7 @@ function SHELL_HTML(){ return ''+
       '<div class="g-kpi"><div class="g-l">평가액</div><div class="g-v" id="g_kEquity">0</div></div>'+
       '<div class="g-kpi"><div class="g-l">평가손익</div><div class="g-v" id="g_kPnl">0</div></div></div>'+
     '<div class="g-break" id="g_gBreak"></div>'+
+    '<div class="g-won" id="g_won"></div>'+
     '<div style="margin-top:12px;text-align:right"><button class="g-btn sm" id="g_editGoal">✎ 목표 수정</button></div></div>'+
     '<div class="g-card"><div class="g-sect">입출금</div>'+
       '<div class="g-frm"><input type="date" class="g-date" id="g_cDate">'+
@@ -388,6 +412,14 @@ function injectStyle(){
   #goalRoot .g-v{font-size:16px;font-weight:800;margin-top:3px;letter-spacing:-.01em}
   #goalRoot .g-break{margin-top:12px;background:var(--nav-track);border:1px dashed var(--border);border-radius:12px;
     padding:11px 13px;font-size:11px;color:var(--muted);line-height:1.75}
+  #goalRoot .g-fx{display:flex;align-items:center;gap:7px;margin-top:12px;font-size:12px;
+    color:var(--muted);font-weight:600;flex-wrap:wrap}
+  #goalRoot .g-fxin{width:92px;font:inherit;font-size:12.5px;border:1px solid var(--border);
+    border-radius:8px;padding:6px 9px;background:var(--card);color:var(--ink)}
+  #goalRoot .g-fxat{font-size:10px;color:var(--faint);font-weight:500}
+  #goalRoot .g-won{margin-top:11px;padding-top:10px;border-top:1px solid var(--border);
+    font-size:11.5px;color:var(--muted);line-height:1.65}
+  #goalRoot .g-fxhint{color:var(--faint);font-size:11px}
   #goalRoot .g-frm{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
   #goalRoot .g-frm input,#goalRoot .g-frm select{font:inherit;font-size:12.5px;border:1px solid var(--border);
     border-radius:8px;padding:8px 9px;background:var(--card);color:var(--ink);min-width:0}
