@@ -110,6 +110,7 @@ function init(){
     $("g_cAdd").onclick = addCash;
     $("g_tAdd").onclick = addTrade;
     $("g_editGoal").onclick = editGoal;
+    $("g_cur").onchange = () => { S.goal.cur = $("g_cur").value; renderData(); save(); };
     $("g_genBtn").onclick = () => { renderJournal(compute());
       $("g_genBtn").textContent="✓ 갱신됨"; setTimeout(()=>$("g_genBtn").textContent="⚙ 매매일지 생성 / 새로고침",1200); };
   }
@@ -161,6 +162,7 @@ function init(){
   function renderData(){
     if(!built) return;
     const m = compute(), g = S.goal;
+    $("g_cur").value = curSym();
     $("g_gName").textContent = g.name || "목표를 설정하세요";
     $("g_gDates").textContent = (g.start||"—")+" → "+(g.end||"—");
     $("g_gDday").textContent = g.end ? (dayDiff(todayStr(),g.end)>=0? "D-"+dayDiff(todayStr(),g.end) : "D+"+Math.abs(dayDiff(todayStr(),g.end))) : "D-—";
@@ -270,11 +272,10 @@ function init(){
     ROOT.querySelector('[data-t="journal"]').click(); }
   function editGoal(){
     const name=prompt("목표 이름", S.goal.name||"3개월 목표"); if(name===null) return;
-    const cs=prompt("통화 기호 ($ 또는 ₩ 등)", S.goal.cur||"$"); if(cs===null) return;
     const target=prompt("목표 금액(숫자만)", S.goal.target||""); if(target===null) return;
     const start=prompt("시작일 (YYYY-MM-DD)", S.goal.start||todayStr()); if(start===null) return;
     const end=prompt("목표일 (YYYY-MM-DD)", S.goal.end||""); if(end===null) return;
-    S.goal={ name:name.trim(), cur:cs.trim()||"$", target:num(target), start:start.trim(), end:end.trim() }; save();
+    S.goal={ name:name.trim(), cur:S.goal.cur||"$", target:num(target), start:start.trim(), end:end.trim() }; save();
   }
 }
 
@@ -288,7 +289,9 @@ function SHELL_HTML(){ return ''+
     '<div class="g-card"><div class="g-ghead"><div>'+
       '<div class="g-gname" id="g_gName">목표를 설정하세요</div>'+
       '<div class="g-gdates" id="g_gDates">—</div></div>'+
-      '<span class="g-dday" id="g_gDday">D-—</span></div>'+
+      '<div class="g-ghr"><span class="g-dday" id="g_gDday">D-—</span>'+
+      '<select id="g_cur" class="g-cursel"><option value="$">$ 달러</option>'+
+      '<option value="₩">₩ 원</option></select></div></div>'+
     '<div class="g-prog"><span class="g-pct" id="g_gPct">0%</span><span class="g-psub" id="g_gProgSub">0 / 0</span></div>'+
     '<div class="g-bar"><i id="g_gBar" style="width:0%"></i></div>'+
     '<div class="g-note" id="g_gRemain"></div>'+
@@ -350,6 +353,9 @@ function injectStyle(){
   #goalRoot .g-gname{font-size:15px;font-weight:800}#goalRoot .g-gdates{font-size:11px;color:var(--muted);margin-top:2px}
   #goalRoot .g-dday{font-size:11px;font-weight:700;color:var(--accent);background:var(--chip);
     border:1px solid var(--border);border-radius:999px;padding:3px 9px;white-space:nowrap}
+  #goalRoot .g-ghr{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+  #goalRoot .g-cursel{font:inherit;font-size:11px;font-weight:700;border:1px solid var(--border);
+    border-radius:8px;padding:4px 7px;background:var(--card);color:var(--ink);cursor:pointer}
   #goalRoot .g-prog{margin:13px 0 4px;display:flex;align-items:baseline;justify-content:space-between}
   #goalRoot .g-pct{font-size:22px;font-weight:800;color:#16a34a}#goalRoot .g-psub{font-size:12px;color:var(--muted)}
   #goalRoot .g-bar{height:12px;border-radius:7px;background:var(--nav-track);overflow:hidden}
