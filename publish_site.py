@@ -209,7 +209,12 @@ a:hover{opacity:.72;}
 .hd{padding:30px 40px;background:var(--header);color:#fff;}
 .hd-top{display:flex;justify-content:space-between;align-items:center;gap:10px;}
 .hd-kicker{font-size:12px;font-weight:600;letter-spacing:.04em;color:#94a3b8;}
-.hd-links{display:flex;gap:7px;flex-shrink:0;}
+.hd-links{display:flex;gap:7px;flex-shrink:0;align-items:center;}
+.auth-slot{font:inherit;font-size:11.5px;font-weight:700;color:#dbe4f0;
+ background:rgba(255,255,255,.14);border:0;border-radius:8px;padding:5px 11px;
+ cursor:pointer;white-space:nowrap;}
+.goal-root{min-height:120px;}
+.goal-msg{font-size:12.5px;color:var(--muted-2);text-align:center;padding:30px 0;}
 .hd-archive{font-size:12px;font-weight:600;color:#dbe4f0;
  background:rgba(255,255,255,.12);padding:6px 13px;border-radius:999px;}
 .hd-archive:hover{opacity:1;background:rgba(255,255,255,.2);}
@@ -1319,7 +1324,8 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
     pct = _dday_progress(now)
     hd = (f'<header class="hd"><div class="hd-top">'
           f'<span class="hd-kicker">{_e(kicker)}</span>'
-          f'<div class="hd-links">{links}</div></div>'
+          f'<div class="hd-links">{links}'
+          f'<button id="authSlot" class="auth-slot">로그인</button></div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
           f'<div class="hd-sub"><span class="hd-updated">{dowb}'
           f'<span class="hd-uptxt"><span>{_e(sub)}</span>'
@@ -1379,10 +1385,17 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
             f'<div class="sched-col earn">{earn_html}</div>'
             '</div></div></div>')
 
+    # 내 목표 탭(로그인 후 자산·매매일지). 로직·UI는 goal-app.js가 #goalRoot에 렌더.
+    navs.append('<button class="nav-t" data-p="tpGoal">내 목표</button>')
+    panels.append('<div class="panel" id="tpGoal">'
+                  '<div id="goalRoot" class="goal-root">'
+                  '<div class="goal-msg">불러오는 중…</div></div></div>')
+
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
 
-    scripts = _TAB_JS + (_SCHED_JS if sched_html else "")
+    scripts = (_TAB_JS + (_SCHED_JS if sched_html else "")
+               + '<script type="module" src="goal-app.js"></script>')
     return _shell(SITE_TITLE, hd + gauges_html + nav_html + "".join(panels),
                   script=scripts)
 
