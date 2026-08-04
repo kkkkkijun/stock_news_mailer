@@ -172,6 +172,27 @@ a:hover{opacity:.72;}
  padding:2px 7px;border-radius:5px;flex-shrink:0;}
 .ern-tag.wait{font-size:9.5px;font-weight:800;color:#fff;background:#f59e0b;
  padding:2px 7px;border-radius:5px;flex-shrink:0;margin-left:4px;}  /* 발표됐으나 집계 전 */
+/* 기업실적 뷰 토글(예정 순 / 분기별) */
+.earn-views{display:flex;gap:5px;margin-bottom:11px;}
+.ev-view{flex:1;text-align:center;font:inherit;font-size:12px;font-weight:700;
+ color:var(--muted-2);background:var(--chip);border:1px solid var(--border);
+ border-radius:8px;padding:7px;cursor:pointer;}
+.ev-view.on{background:var(--ink);color:var(--page);border-color:var(--ink);}
+.q-chips{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:11px;}
+.q-chip{font:inherit;font-size:11.5px;font-weight:700;color:var(--muted-2);
+ background:var(--card);border:1px solid var(--border);border-radius:8px;
+ padding:5px 10px;cursor:pointer;}
+.q-chip.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.q-row{display:flex;align-items:center;gap:9px;padding:9px 2px;
+ border-bottom:1px solid var(--border);}
+.q-row:last-child{border-bottom:0;}
+.q-rmain{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px;}
+.q-rmain b{font-size:12.5px;font-weight:700;color:var(--ink);}
+.q-sub{font-size:10.5px;color:var(--muted);}
+.q-surp{font-size:12px;font-weight:800;flex-shrink:0;}
+.q-surp.up{color:#e5484d;}.q-surp.dn{color:#3b82f6;}
+.q-date{font-size:10.5px;font-weight:700;color:var(--accent);background:var(--chip);
+ border-radius:999px;padding:3px 9px;flex-shrink:0;white-space:nowrap;}
 .ern-detail{display:none;padding:0 8px 10px;flex-direction:column;gap:7px;}
 .ern-item.open .ern-detail{display:flex;}
 .ed-b{background:var(--card);border:1px solid var(--border);border-radius:9px;
@@ -1129,6 +1150,28 @@ document.querySelectorAll('.ern-item').forEach(function(item){
   if(!row || !item.querySelector('.ern-detail')) return;   // 상세 없으면 클릭 비활성
   row.addEventListener('click', function(){ item.classList.toggle('open'); });
 });
+document.querySelectorAll('.ev-view').forEach(function(b){
+  b.addEventListener('click', function(){
+    var box=b.closest('.sched-earn'); if(!box) return;
+    box.querySelectorAll('.ev-view').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    var v=b.getAttribute('data-v');
+    var up=box.querySelector('.earn-up'), q=box.querySelector('.earn-q');
+    if(up) up.style.display=v==='up'?'':'none';
+    if(q) q.style.display=v==='q'?'':'none';
+  });
+});
+document.querySelectorAll('.q-chip').forEach(function(c){
+  c.addEventListener('click', function(){
+    var box=c.closest('.earn-q'); if(!box) return;
+    box.querySelectorAll('.q-chip').forEach(function(x){x.classList.remove('on');});
+    c.classList.add('on');
+    var q=c.getAttribute('data-q');
+    box.querySelectorAll('.q-panel').forEach(function(p){
+      p.style.display=p.getAttribute('data-q')===q?'':'none';
+    });
+  });
+});
 </script>"""
 
 
@@ -1203,8 +1246,88 @@ def _render_earnings(evs, now):
             f'<div class="ern-item"><div class="ern">{date_html}{badge}'
             f'<span class="ern-n">{_e(e["name"])}</span>{chip}{arrow}</div>'
             f'{detbox}</div>')
-    return head + "".join(rows) + ('<div class="sched-src">데이터: Yahoo Finance'
-                                   '</div></div>')
+    toggle = ('<div class="earn-views">'
+              '<button class="ev-view on" data-v="up">📅 예정 순</button>'
+              '<button class="ev-view" data-v="q">📊 분기별</button></div>')
+    up_html = '<div class="earn-up">' + "".join(rows) + '</div>'
+    return (head + toggle + up_html + _render_earn_quarters(evs, now)
+            + '<div class="sched-src">데이터: Yahoo Finance</div></div>')
+
+
+def _pct_num(s):
+    try:
+        return float(str(s).replace("%", "").replace("+", "").strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def _fmt_md(s):
+    try:
+        d = date.fromisoformat(s)
+        return f"{d.month}/{d.day}"
+    except (TypeError, ValueError):
+        return s or ""
+
+
+def _render_earn_quarters(evs, now):
+    """분기별 토글: 캘린더 분기(cq)로 종목 묶어 실제결과/예상 표시."""
+    buckets, labels = {}, {}
+    for e in evs:
+        for q in (e["detail"].get("quarters") or []):
+            cq = q.get("cq")
+            if not cq:
+                continue
+            labels[cq] = q.get("label") or cq
+            buckets.setdefault(cq, []).append(
+                {"ticker": e["ticker"], "name": e["name"], "q": q})
+    if not buckets:
+        return ('<div class="earn-q" style="display:none">'
+                '<div class="ern-none">분기 데이터가 없습니다.</div></div>')
+    cqs = sorted(buckets, reverse=True)   # 최근 분기 먼저
+    default = next((cq for cq in cqs
+                    if any(x["q"].get("reported") for x in buckets[cq])), cqs[0])
+    chips = ['<div class="q-chips">']
+    for cq in cqs:
+        on = " on" if cq == default else ""
+        up = not any(x["q"].get("reported") for x in buckets[cq])
+        chips.append(f'<button class="q-chip{on}" data-q="{cq}">'
+                     f'{_e(labels[cq])}{" · 예정" if up else ""}</button>')
+    chips.append('</div>')
+    panels = []
+    for cq in cqs:
+        def _skey(x):
+            q = x["q"]
+            if q.get("reported"):
+                v = _pct_num(q.get("surprise"))
+                return (0, -(v if v is not None else -999))
+            return (1, 0)
+        rws = []
+        for it in sorted(buckets[cq], key=_skey):
+            q = it["q"]
+            bg = _ticker_color(it["ticker"])
+            badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
+                     f'{_e(it["ticker"].split("-")[0])}</span>')
+            if q.get("reported"):
+                sc = "up" if q.get("surprise_pos") else "dn"
+                ar = "▲" if q.get("surprise_pos") else "▼"
+                right = (f'<span class="q-surp {sc}">{ar} {_e(q.get("surprise") or "")}</span>'
+                         if q.get("surprise") else '')
+                sub = (f'EPS 실제 {_e(q.get("eps_act", "-"))} / '
+                       f'예상 {_e(q.get("eps_est", "-"))}')
+            else:
+                dt = q.get("date")
+                right = (f'<span class="q-date">{_fmt_md(dt)} 예정</span>'
+                         if dt else '<span class="q-date">예정</span>')
+                sub = (f'예상 EPS {_e(q.get("eps_est", "-"))}'
+                       + (f' · 매출 {_e(q.get("rev"))}' if q.get("rev") else ''))
+            rws.append(f'<div class="q-row">{badge}'
+                       f'<div class="q-rmain"><b>{_e(it["name"])}</b>'
+                       f'<span class="q-sub">{sub}</span></div>{right}</div>')
+        hide = "" if cq == default else ' style="display:none"'
+        panels.append(f'<div class="q-panel" data-q="{cq}"{hide}>'
+                      + "".join(rws) + '</div>')
+    return ('<div class="earn-q" style="display:none">'
+            + "".join(chips) + "".join(panels) + '</div>')
 
 
 def _earn_detail_html(det, reported):
