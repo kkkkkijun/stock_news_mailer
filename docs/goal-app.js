@@ -31,10 +31,12 @@ function init(){
   const $ = id => document.getElementById(id);
   const num = v => { const n = parseFloat(v); return isFinite(n) ? n : 0; };
   const curSym = () => S.goal.cur || "$";
-  const money = n => curSym() + Math.round(n).toLocaleString();
-  const money2 = n => curSym() + (Math.round(n*100)/100).toLocaleString(undefined,{maximumFractionDigits:2});
+  const decs = () => (curSym()==="₩" ? 0 : 2);
+  const money = n => curSym() + Number(n).toLocaleString(undefined,{minimumFractionDigits:decs(),maximumFractionDigits:decs()});
+  const money2 = n => curSym() + Number(n).toLocaleString(undefined,{maximumFractionDigits:2});
+  const px = n => curSym() + Number(n).toLocaleString(undefined,{maximumFractionDigits:4});
   const pctf = n => (n>=0?"+":"") + (Math.round(n*10)/10) + "%";
-  const signMoney = n => (n>=0?"+":"−") + curSym() + Math.abs(Math.round(n)).toLocaleString();
+  const signMoney = n => (n>=0?"+":"−") + curSym() + Math.abs(Number(n)).toLocaleString(undefined,{minimumFractionDigits:decs(),maximumFractionDigits:decs()});
   const dayDiff = (a,b) => a&&b ? Math.round((new Date(b)-new Date(a))/86400000) : 0;
   const todayStr = () => { const d=new Date();
     return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); };
@@ -125,14 +127,17 @@ function init(){
     for(const c of S.cash){ if(c.type==="in") dep+=num(c.amount); else wd+=num(c.amount); }
     const principal = dep - wd;
     const trades = [...S.trades].sort((a,b)=> (a.date<b.date?-1:a.date>b.date?1:0));
-    const lots = {}; const realized = []; let buySpent=0, sellGot=0;
+    // 평균단가·실현손익은 '체결가' 기준(수수료 제외) — 증권사(미래에셋) 표기와 일치.
+    // 수수료는 현금/원금에서만 차감하고 별도 합계로 관리.
+    const lots = {}; const realized = []; let buySpent=0, sellGot=0, fees=0;
     for(const t of trades){
       const q=num(t.qty), p=num(t.price), fee=num(t.fee), tk=(t.ticker||"").toUpperCase();
       if(q<=0) continue;
+      fees += fee;
       if(!lots[tk]) lots[tk]=[];
-      if(t.side==="buy"){ buySpent += q*p+fee; lots[tk].push({qty:q, cost:p+fee/q, date:t.date}); }
+      if(t.side==="buy"){ buySpent += q*p+fee; lots[tk].push({qty:q, cost:p, date:t.date}); }
       else {
-        sellGot += q*p-fee; const sps=p-fee/q; let rem=q;
+        sellGot += q*p-fee; const sps=p; let rem=q;
         while(rem>1e-9 && lots[tk] && lots[tk].length){
           const L=lots[tk][0], m=Math.min(rem,L.qty);
           realized.push({ticker:tk, qty:m, buyDate:L.date, sellDate:t.date, buyPrice:L.cost, sellPrice:sps,
@@ -155,7 +160,7 @@ function init(){
     const equity = cash + posVal, pnl = equity - principal;
     const realizedPnl = realized.reduce((s,r)=>s+r.pnl,0);
     const wins = realized.filter(r=>r.pnl>0).length;
-    return { principal, cash, equity, pnl, realizedPnl, unreal, posVal, realized, open,
+    return { principal, cash, equity, pnl, realizedPnl, unreal, posVal, fees, realized, open,
       wins, winRate: realized.length? wins/realized.length*100:0,
       avgRet: realized.length? realized.reduce((s,r)=>s+r.pnlPct,0)/realized.length:0,
       avgHold: realized.length? realized.reduce((s,r)=>s+r.holdDays,0)/realized.length:0,
@@ -181,7 +186,8 @@ function init(){
     $("g_gBreak").innerHTML =
       "평가손익 <b class='"+(m.pnl>=0?"up":"dn")+"'>"+signMoney(m.pnl)+"</b> = "+
       "<b class='dn'>실현 "+signMoney(m.realizedPnl)+"</b> + "+
-      "<b class='"+(m.unreal>=0?"up":"dn")+"'>미실현 "+signMoney(m.unreal)+"</b><br>"+
+      "<b class='"+(m.unreal>=0?"up":"dn")+"'>미실현 "+signMoney(m.unreal)+"</b>"+
+      (m.fees>0? " − <b>수수료 "+money(m.fees)+"</b>":"")+"<br>"+
       "현금 <b>"+money(m.cash)+"</b> + 보유 포지션 <b>"+money(m.posVal)+"</b> = 평가액 <b>"+money(m.equity)+"</b>";
 
     const cr=$("g_cashRows"); cr.innerHTML="";
@@ -238,7 +244,7 @@ function init(){
     if(!m.open.length) op.innerHTML="<div class='g-empty'>보유중 종목이 없습니다.</div>";
     m.open.forEach(o=>{
       const d=document.createElement("div"); d.className="g-row";
-      d.innerHTML="<div class='g-grow'><b>"+esc(o.ticker)+"</b> <span class='g-sub'>"+(Math.round(o.qty*100)/100)+"주 · 평단 "+money2(o.avg)+
+      d.innerHTML="<div class='g-grow'><b>"+esc(o.ticker)+"</b> <span class='g-sub'>"+(Math.round(o.qty*100)/100)+"주 · 평단 "+px(o.avg)+
         (o.hasP? " · 손익 <b class='"+(o.unreal>=0?"up":"dn")+"'>"+signMoney(o.unreal)+"</b>":"")+"</span></div>";
       const inp=document.createElement("input"); inp.className="g-price"; inp.type="number";
       inp.placeholder="현재가"; inp.inputMode="decimal";
