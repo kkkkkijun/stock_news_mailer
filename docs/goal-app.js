@@ -25,6 +25,7 @@ function init(){
   injectStyle();
   let uid = null, unsub = null, built = false;
   let editCash = null, editTrade = null;
+  let journalMonth = "all", lastReal = [];
   const defState = () => ({ goal:{name:"",target:0,start:"",end:"",cur:"$",fx:0}, cash:[], trades:[], prices:{} });
   let S = defState();
 
@@ -118,6 +119,8 @@ function init(){
     $("g_fx").onchange = () => { S.goal.fx = num($("g_fx").value); renderData(); save(); };
     $("g_fxAuto").onclick = fetchFx;
     $("g_priceAuto").onclick = fetchPrices;
+    $("g_csv").onclick = exportCSV;
+    $("g_jMonth").onchange = () => { journalMonth=$("g_jMonth").value; renderJournal(compute()); };
     ROOT.querySelectorAll(".g-cal").forEach(b=>{
       b.onclick = () => { const el=$(b.getAttribute("data-for"));
         if(el){ try{ el.showPicker(); }catch(e){ el.focus(); } } };
@@ -228,16 +231,40 @@ function init(){
   }
 
   function renderJournal(m){
-    $("g_jReal").textContent = signMoney(m.realizedPnl);
-    $("g_jReal").className = "g-sv "+(m.realizedPnl>=0?"up":"dn");
-    $("g_jWin").innerHTML = Math.round(m.winRate)+"% <span class='g-faint'>("+m.wins+"/"+m.nClosed+")</span>";
-    $("g_jAvg").textContent = m.nClosed? pctf(m.avgRet):"—";
-    $("g_jAvg").className = "g-sv "+(m.avgRet>=0?"up":"dn");
-    $("g_jHold").textContent = m.nClosed? (Math.round(m.avgHold)+"일"):"—";
+    // 월별 필터 옵션(청산 시점 기준)
+    const months=[...new Set(m.realized.map(r=>r.sellDate.slice(0,7)))].sort().reverse();
+    const sel=$("g_jMonth");
+    if(sel){
+      sel.innerHTML="<option value='all'>전체</option>"+months.map(mo=>
+        "<option value='"+mo+"'>"+mo.slice(0,4)+"년 "+(+mo.slice(5,7))+"월</option>").join("");
+      sel.value=(journalMonth==="all"||months.includes(journalMonth))?journalMonth:"all";
+      journalMonth=sel.value;
+    }
+    let real=m.realized;
+    if(journalMonth!=="all") real=real.filter(r=>r.sellDate.slice(0,7)===journalMonth);
+    lastReal=real;
+
+    // 통계(필터 반영) + 손익비
+    const n=real.length;
+    const realizedPnl=real.reduce((s,r)=>s+r.pnl,0);
+    const wins=real.filter(r=>r.pnl>0).length;
+    const winRate=n?wins/n*100:0;
+    const avgRet=n?real.reduce((s,r)=>s+r.pnlPct,0)/n:0;
+    const avgHold=n?real.reduce((s,r)=>s+r.holdDays,0)/n:0;
+    const wA=real.filter(r=>r.pnl>0).map(r=>r.pnl), lA=real.filter(r=>r.pnl<0).map(r=>-r.pnl);
+    const avgWin=wA.length?wA.reduce((a,b)=>a+b,0)/wA.length:0;
+    const avgLoss=lA.length?lA.reduce((a,b)=>a+b,0)/lA.length:0;
+    const payoff=avgLoss>0?avgWin/avgLoss:(avgWin>0?Infinity:0);
+
+    $("g_jReal").textContent=signMoney(realizedPnl); $("g_jReal").className="g-sv "+(realizedPnl>=0?"up":"dn");
+    $("g_jWin").innerHTML=Math.round(winRate)+"% <span class='g-faint'>("+wins+"/"+n+")</span>";
+    $("g_jPayoff").textContent=n?(payoff===Infinity?"∞":payoff.toFixed(2)):"—";
+    $("g_jAvg").textContent=n?pctf(avgRet):"—"; $("g_jAvg").className="g-sv "+(avgRet>=0?"up":"dn");
+    $("g_jHold").textContent=n?(Math.round(avgHold)+"일"):"—";
 
     const cl=$("g_closedRows"); cl.innerHTML="";
-    if(!m.realized.length) cl.innerHTML="<div class='g-empty'>청산된 매매가 없습니다.</div>";
-    [...m.realized].sort((a,b)=>a.sellDate<b.sellDate?1:-1).forEach(r=>{
+    if(!real.length) cl.innerHTML="<div class='g-empty'>청산된 매매가 없습니다.</div>";
+    [...real].sort((a,b)=>a.sellDate<b.sellDate?1:-1).forEach(r=>{
       const pos=r.pnl>=0, d=document.createElement("div");
       d.className="g-closed "+(pos?"pos":"neg");
       d.innerHTML="<div class='g-closed-top'><b>"+esc(r.ticker)+"</b>"+
@@ -259,8 +286,8 @@ function init(){
       inp.onchange = ()=>{ if(inp.value==="") delete S.prices[o.ticker]; else S.prices[o.ticker]=num(inp.value); save(); };
       d.appendChild(inp); op.appendChild(d);
     });
-    // 종목별 성과 (실현손익 막대그래프)
-    const tk={}; m.realized.forEach(r=>{ const o=tk[r.ticker]=tk[r.ticker]||{pnl:0,w:0,n:0};
+    // 종목별 성과 (실현손익 막대그래프, 필터 반영)
+    const tk={}; real.forEach(r=>{ const o=tk[r.ticker]=tk[r.ticker]||{pnl:0,w:0,n:0};
       o.pnl+=r.pnl; o.n++; if(r.pnl>0)o.w++; });
     const tkr=$("g_tkRows"); tkr.innerHTML="";
     const tks=Object.keys(tk).sort((a,b)=>tk[b].pnl-tk[a].pnl);
@@ -338,6 +365,19 @@ function init(){
     }catch(e){ alert("현재가 불러오기 실패: "+(e.message||e)); }
     finally{ btn.textContent=old; }
   }
+  function exportCSV(){
+    if(!lastReal.length){ alert("내보낼 청산 매매가 없습니다."); return; }
+    const rows=[["종목","매수일","매수단가","매도일","매도단가","수량","실현손익","수익률(%)","보유일"]];
+    [...lastReal].sort((a,b)=>a.sellDate<b.sellDate?1:-1).forEach(r=>rows.push([
+      r.ticker, r.buyDate, r.buyPrice.toFixed(4), r.sellDate, r.sellPrice.toFixed(4),
+      r.qty, r.pnl.toFixed(2), r.pnlPct.toFixed(2), r.holdDays]));
+    const csv=rows.map(row=>row.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(",")).join("\n");
+    const blob=new Blob(["﻿"+csv],{type:"text/csv;charset=utf-8"});
+    const a=document.createElement("a"); a.href=URL.createObjectURL(blob);
+    a.download="매매일지_"+(journalMonth==="all"?"전체":journalMonth)+".csv";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+  }
 }
 
 /* ---------- shell HTML ---------- */
@@ -406,9 +446,13 @@ function SHELL_HTML(){ return ''+
       '<input type="number" class="g-num" id="g_tFee" placeholder="수수료" inputmode="decimal">'+
       '<button class="g-btn pri" id="g_tAdd">추가</button></div>'+
       '<div id="g_tradeRows"></div></div>'+
+    '<div class="g-jbar"><div class="g-jfilter"><span>월별</span>'+
+      '<select id="g_jMonth"><option value="all">전체</option></select></div>'+
+      '<button type="button" class="g-btn sm" id="g_csv">⤓ CSV 내보내기</button></div>'+
     '<div class="g-stats">'+
       '<div class="g-stat"><div class="g-sl">실현손익</div><div class="g-sv" id="g_jReal">0</div></div>'+
       '<div class="g-stat"><div class="g-sl">승률</div><div class="g-sv" id="g_jWin">0%</div></div>'+
+      '<div class="g-stat"><div class="g-sl">손익비</div><div class="g-sv" id="g_jPayoff">—</div></div>'+
       '<div class="g-stat"><div class="g-sl">평균수익</div><div class="g-sv" id="g_jAvg">0%</div></div>'+
       '<div class="g-stat"><div class="g-sl">평균보유</div><div class="g-sv" id="g_jHold">0일</div></div></div>'+
     '<div class="g-card"><div class="g-sect">종목별 성과 (실현손익)</div><div id="g_tkRows"></div></div>'+
@@ -489,8 +533,13 @@ function injectStyle(){
   #goalRoot .g-pnlbadge{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:800;border-radius:8px;padding:3px 9px;margin-top:6px}
   #goalRoot .g-pnlbadge.pos{color:#e5484d;background:rgba(229,72,77,.12)}
   #goalRoot .g-pnlbadge.neg{color:#3b82f6;background:rgba(59,130,246,.12)}
-  #goalRoot .g-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:11px}
-  #goalRoot .g-stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 6px;text-align:center}
+  #goalRoot .g-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-bottom:11px}
+  @media(max-width:430px){#goalRoot .g-stats{grid-template-columns:repeat(3,1fr)}}
+  #goalRoot .g-stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 5px;text-align:center}
+  #goalRoot .g-jbar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+  #goalRoot .g-jfilter{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);font-weight:600}
+  #goalRoot .g-jfilter select{font:inherit;font-size:12px;border:1px solid var(--border);border-radius:8px;
+    padding:5px 8px;background:var(--card);color:var(--ink);cursor:pointer}
   #goalRoot .g-sl{font-size:9px;color:var(--muted)}
   #goalRoot .g-sv{font-size:15px;font-weight:800;margin-top:2px}
   #goalRoot .g-barrow{display:flex;align-items:center;gap:9px;margin-bottom:9px}
