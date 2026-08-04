@@ -336,52 +336,62 @@ function injectStyle(){
   if (document.getElementById("g_style")) return;
   const s = document.createElement("style"); s.id="g_style";
   s.textContent = `
-  #goalRoot .up{color:#e5484d}#goalRoot .dn{color:#3b82f6}#goalRoot .g-faint{color:var(--faint);font-size:11px}
-  #goalRoot .g-login{max-width:380px;margin:6vh auto;text-align:center;padding:0 12px}
-  #goalRoot .g-login-ic{font-size:26px}#goalRoot .g-login-t{font-size:18px;font-weight:800;margin:6px 0}
-  #goalRoot .g-login-p{color:var(--muted);font-size:12.5px;line-height:1.6;margin-bottom:18px}
-  #goalRoot .g-btn{font:inherit;font-size:12.5px;font-weight:700;border-radius:8px;padding:7px 12px;
+  #goalRoot .up{color:#e5484d}#goalRoot .dn{color:#3b82f6}#goalRoot .g-faint{color:var(--faint);font-size:11px;font-weight:600}
+  #goalRoot .g-login{max-width:390px;margin:7vh auto;text-align:center;padding:24px 20px;
+    background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:0 2px 12px rgba(15,27,45,.06)}
+  #goalRoot .g-login-ic{font-size:30px}#goalRoot .g-login-t{font-size:18px;font-weight:800;margin:8px 0 4px}
+  #goalRoot .g-login-p{color:var(--muted);font-size:12.5px;line-height:1.65;margin-bottom:20px}
+  #goalRoot .g-btn{font:inherit;font-size:12.5px;font-weight:700;border-radius:9px;padding:8px 13px;
     border:1px solid var(--border);background:var(--chip);color:var(--ink);cursor:pointer}
-  #goalRoot .g-btn.pri{background:var(--accent);color:#fff;border-color:var(--accent);font-size:14px;padding:10px 18px}
+  #goalRoot .g-btn:active{transform:translateY(1px)}
+  #goalRoot .g-btn.pri{background:var(--accent);color:#fff;border-color:var(--accent);font-size:13.5px;padding:9px 17px}
   #goalRoot .g-btn.dark{background:var(--ink);color:var(--page);border-color:var(--ink)}
-  #goalRoot .g-btn.sm{font-size:11px;padding:4px 9px}
+  #goalRoot .g-btn.sm{font-size:11px;padding:5px 11px}
+  #goalRoot .g-subtabs{display:flex;gap:5px;background:var(--nav-track);border:1px solid var(--border);
+    border-radius:12px;padding:5px;margin-bottom:13px}
+  #goalRoot .g-subtab{flex:1;text-align:center;font:inherit;font-size:12.5px;font-weight:700;color:var(--muted-2);
+    background:transparent;border:0;border-radius:8px;padding:9px;cursor:pointer;transition:color .12s}
+  #goalRoot .g-subtab.on{background:var(--accent);color:#fff;box-shadow:0 1px 4px rgba(58,111,216,.4)}
   #goalRoot .g-lock{display:flex;align-items:center;gap:6px;background:var(--chip);border:1px solid var(--border);
-    border-radius:8px;padding:7px 10px;margin-bottom:11px;font-size:11px;color:var(--muted)}
-  #goalRoot .g-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 15px;margin-bottom:11px}
-  #goalRoot .g-sect{font-size:11px;font-weight:800;color:var(--faint);margin-bottom:9px}
+    border-radius:10px;padding:8px 11px;margin-bottom:12px;font-size:11px;color:var(--muted);font-weight:600}
+  #goalRoot .g-card{background:var(--card);border:1px solid var(--border);border-radius:16px;
+    padding:15px 16px;margin-bottom:11px;box-shadow:0 1px 5px rgba(15,27,45,.05)}
+  #goalRoot .g-sect{font-size:11px;font-weight:800;color:var(--muted-2);margin-bottom:11px;letter-spacing:.02em}
   #goalRoot .g-ghead{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-  #goalRoot .g-gname{font-size:15px;font-weight:800}#goalRoot .g-gdates{font-size:11px;color:var(--muted);margin-top:2px}
-  #goalRoot .g-dday{font-size:11px;font-weight:700;color:var(--accent);background:var(--chip);
-    border:1px solid var(--border);border-radius:999px;padding:3px 9px;white-space:nowrap}
+  #goalRoot .g-gname{font-size:16px;font-weight:800}#goalRoot .g-gdates{font-size:11px;color:var(--muted);margin-top:3px}
+  #goalRoot .g-dday{font-size:11px;font-weight:800;color:var(--accent);background:var(--chip);
+    border:1px solid var(--border);border-radius:999px;padding:4px 11px;white-space:nowrap}
   #goalRoot .g-ghr{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
   #goalRoot .g-cursel{font:inherit;font-size:11px;font-weight:700;border:1px solid var(--border);
-    border-radius:8px;padding:4px 7px;background:var(--card);color:var(--ink);cursor:pointer}
-  #goalRoot .g-prog{margin:13px 0 4px;display:flex;align-items:baseline;justify-content:space-between}
-  #goalRoot .g-pct{font-size:22px;font-weight:800;color:#16a34a}#goalRoot .g-psub{font-size:12px;color:var(--muted)}
-  #goalRoot .g-bar{height:12px;border-radius:7px;background:var(--nav-track);overflow:hidden}
-  #goalRoot .g-bar>i{display:block;height:100%;border-radius:7px;background:#16a34a}
-  #goalRoot .g-note{font-size:10px;color:var(--faint);margin-top:5px}
-  #goalRoot .g-kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-top:12px}
-  #goalRoot .g-kpi{background:var(--nav-track);border-radius:9px;padding:9px 10px}
-  #goalRoot .g-l{font-size:9.5px;color:var(--muted)}#goalRoot .g-v{font-size:14px;font-weight:800;margin-top:1px}
-  #goalRoot .g-break{margin-top:10px;background:var(--nav-track);border:1px dashed var(--border);border-radius:9px;
-    padding:9px 11px;font-size:10.5px;color:var(--muted);line-height:1.7}
-  #goalRoot .g-frm{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:9px}
-  #goalRoot .g-frm input,#goalRoot .g-frm select{font:inherit;font-size:12px;border:1px solid var(--border);
-    border-radius:7px;padding:6px 8px;background:var(--card);color:var(--ink);min-width:0}
-  #goalRoot .g-date{width:130px}#goalRoot .g-tk{width:78px;text-transform:uppercase}
-  #goalRoot .g-num{width:72px}#goalRoot .g-amt{width:108px}#goalRoot .g-memo{flex:1;min-width:80px}
-  #goalRoot .g-row{display:flex;align-items:center;gap:8px;padding:7px 0;border-top:1px solid var(--border);font-size:12px}
+    border-radius:8px;padding:5px 8px;background:var(--card);color:var(--ink);cursor:pointer}
+  #goalRoot .g-prog{margin:15px 0 6px;display:flex;align-items:baseline;justify-content:space-between}
+  #goalRoot .g-pct{font-size:27px;font-weight:800;color:#16a34a;letter-spacing:-.01em}
+  #goalRoot .g-psub{font-size:12px;color:var(--muted);font-weight:600}
+  #goalRoot .g-bar{height:14px;border-radius:9px;background:var(--nav-track);overflow:hidden;border:1px solid var(--border)}
+  #goalRoot .g-bar>i{display:block;height:100%;border-radius:9px;background:#16a34a;transition:width .4s ease}
+  #goalRoot .g-note{font-size:10.5px;color:var(--faint);margin-top:6px}
+  #goalRoot .g-kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:14px}
+  #goalRoot .g-kpi{background:var(--nav-track);border-radius:12px;padding:11px 12px}
+  #goalRoot .g-l{font-size:10px;color:var(--muted);font-weight:600}
+  #goalRoot .g-v{font-size:16px;font-weight:800;margin-top:3px;letter-spacing:-.01em}
+  #goalRoot .g-break{margin-top:12px;background:var(--nav-track);border:1px dashed var(--border);border-radius:12px;
+    padding:11px 13px;font-size:11px;color:var(--muted);line-height:1.75}
+  #goalRoot .g-frm{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+  #goalRoot .g-frm input,#goalRoot .g-frm select{font:inherit;font-size:12.5px;border:1px solid var(--border);
+    border-radius:8px;padding:8px 9px;background:var(--card);color:var(--ink);min-width:0}
+  #goalRoot .g-date{width:135px}#goalRoot .g-tk{width:82px;text-transform:uppercase}
+  #goalRoot .g-num{width:74px}#goalRoot .g-amt{width:122px}#goalRoot .g-memo{flex:1;min-width:90px}
+  #goalRoot .g-row{display:flex;align-items:center;gap:9px;padding:9px 2px;border-top:1px solid var(--border);font-size:12.5px}
   #goalRoot .g-row:first-child{border-top:0}#goalRoot .g-grow{flex:1;min-width:0}
-  #goalRoot .g-sub{font-size:10.5px;color:var(--muted)}#goalRoot .g-amtc{font-weight:800;white-space:nowrap}
-  #goalRoot .g-acts{display:flex;gap:4px;flex-shrink:0}
-  #goalRoot .g-ico{font:inherit;font-size:11px;border:1px solid var(--border);background:var(--card);
-    border-radius:6px;padding:3px 7px;cursor:pointer;color:var(--muted)}
-  #goalRoot .g-empty{font-size:11.5px;color:var(--faint);padding:8px 0}
-  #goalRoot .g-price{width:88px;font:inherit;font-size:12px;border:1px solid var(--border);border-radius:7px;
-    padding:5px 7px;background:var(--card);color:var(--ink)}
-  #goalRoot .g-err{background:#fdeeee;border:1px solid #f5cccc;color:#b91c1c;border-radius:8px;
-    padding:9px 11px;font-size:11.5px;margin-bottom:11px;line-height:1.5}
+  #goalRoot .g-sub{font-size:11px;color:var(--muted)}#goalRoot .g-amtc{font-weight:800;white-space:nowrap}
+  #goalRoot .g-acts{display:flex;gap:5px;flex-shrink:0}
+  #goalRoot .g-ico{font:inherit;font-size:12px;border:1px solid var(--border);background:var(--card);
+    border-radius:7px;padding:4px 8px;cursor:pointer;color:var(--muted)}
+  #goalRoot .g-empty{font-size:11.5px;color:var(--faint);padding:10px 0;text-align:center}
+  #goalRoot .g-price{width:92px;font:inherit;font-size:12.5px;border:1px solid var(--border);border-radius:8px;
+    padding:6px 8px;background:var(--card);color:var(--ink)}
+  #goalRoot .g-err{background:#fdeeee;border:1px solid #f5cccc;color:#b91c1c;border-radius:10px;
+    padding:10px 12px;font-size:11.5px;margin-bottom:11px;line-height:1.5}
   @media (max-width:440px){#goalRoot .g-kpis{grid-template-columns:1fr 1fr}}
   `;
   document.head.appendChild(s);
