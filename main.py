@@ -591,6 +591,41 @@ def _fetch_earning(session, crumb, sym):
                             "down": _num(_g(t, "epsRevisions", "downLast30days"))}
             else:                    # +1q = 그 다음 분기
                 d["next"] = blk
+    # 분기별(과거 실제 + 다가올 예상) → 기업실적 '분기별' 토글용.
+    #   회계분기 종료월의 '캘린더 분기(1Q~4Q)'로 그룹핑(NVDA 등 오프셋 흡수).
+    def _cq(per):
+        try:
+            y = 2000 + int(per[:2]); mo = int(per[3:5]); q = (mo - 1) // 3 + 1
+            return f"{y}-{q}", f"{y} {q}Q"
+        except (ValueError, TypeError):
+            return None, None
+    qmap = {}
+    for q in hist:
+        per = _ym_ts(_num(q.get("quarter")))
+        cq, cql = _cq(per)
+        if not cq:
+            continue
+        ea, ee = _num(q.get("epsActual")), _num(q.get("epsEstimate"))
+        sfmt, spos = _signfmt(_g(q, "surprisePercent", "fmt"))
+        qmap[cq] = {"cq": cq, "label": cql, "reported": True,
+                    "eps_act": f"${ea:.2f}" if ea is not None else "-",
+                    "eps_est": f"${ee:.2f}" if ee is not None else "-",
+                    "surprise": sfmt, "surprise_pos": spos}
+    for t in res.get("earningsTrend", {}).get("trend", []) or []:
+        if t.get("period") in ("0q", "+1q"):
+            cq, cql = _cq(_ym_str(t.get("endDate")))
+            if not cq or cq in qmap:
+                continue
+            avg = _num(_g(t, "earningsEstimate", "avg"))
+            rev = _g(t, "revenueEstimate", "avg", "fmt")
+            e = {"cq": cq, "label": cql, "reported": False,
+                 "eps_est": f"${avg:.2f}" if avg is not None else "-",
+                 "rev": f"${rev}" if rev else None}
+            if t.get("period") == "0q":
+                e["date"] = date
+            qmap[cq] = e
+    d["quarters"] = [qmap[k] for k in sorted(qmap)]
+
     fd = res.get("financialData", {}) or {}
     pr, mn = _num(fd.get("currentPrice")), _num(fd.get("targetMeanPrice"))
     lo2, hi2 = _num(fd.get("targetLowPrice")), _num(fd.get("targetHighPrice"))
