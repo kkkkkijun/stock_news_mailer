@@ -179,27 +179,22 @@ function init(){
     $("g_gDates").textContent = (g.start||"—")+" → "+(g.end||"—");
     $("g_gDday").textContent = g.end ? (dayDiff(todayStr(),g.end)>=0? "D-"+dayDiff(todayStr(),g.end) : "D+"+Math.abs(dayDiff(todayStr(),g.end))) : "D-—";
     const target=num(g.target), prog = target>0? Math.max(0,m.equity/target*100):0;
-    $("g_gPct").textContent = (Math.round(prog*10)/10)+"%";
-    $("g_gBar").style.width = Math.min(100,prog)+"%";
-    $("g_gProgSub").textContent = money(m.equity)+" / "+money(target);
-    $("g_gRemain").textContent = target>0 ? "남은 "+money(Math.max(0,target-m.equity))+(g.end?" · "+Math.max(0,dayDiff(todayStr(),g.end))+"일 남음":"") : "";
-    $("g_kPrin").textContent = money(m.principal);
-    $("g_kEquity").textContent = money(m.equity);
+    $("g_ringArc").setAttribute("stroke-dashoffset", (251.3*(1-Math.min(prog,100)/100)).toFixed(1));
+    $("g_ringPct").textContent = Math.round(prog)+"%";
+    $("g_equity").textContent = money(m.equity);
+    $("g_target").textContent = money(target);
     const retPct = m.principal>0 ? m.pnl/m.principal*100 : 0;
-    const pe=$("g_kPnl"); pe.className="g-v "+(m.pnl>=0?"up":"dn");
-    pe.innerHTML=signMoney(m.pnl)+" <span style='font-size:11px;font-weight:700'>("+pctf(retPct)+")</span>";
-    $("g_gBreak").innerHTML =
-      "평가손익 <b class='"+(m.pnl>=0?"up":"dn")+"'>"+signMoney(m.pnl)+"</b> = "+
-      "<b class='dn'>실현 "+signMoney(m.realizedPnl)+"</b> + "+
-      "<b class='"+(m.unreal>=0?"up":"dn")+"'>미실현 "+signMoney(m.unreal)+"</b>"+
-      (m.fees>0? " − <b>수수료 "+money(m.fees)+"</b>":"")+"<br>"+
-      "현금 <b>"+money(m.cash)+"</b> + 보유 포지션 <b>"+money(m.posVal)+"</b> = 평가액 <b>"+money(m.equity)+"</b>";
+    const badge=$("g_pnlBadge");
+    badge.className="g-pnlbadge "+(m.pnl>=0?"pos":"neg");
+    badge.textContent=(m.pnl>=0?"▲ ":"▼ ")+signMoney(m.pnl)+" · "+pctf(retPct);
+    $("g_gRemain").textContent = target>0 ? "남은 "+money(Math.max(0,target-m.equity))+(g.end?" · "+Math.max(0,dayDiff(todayStr(),g.end))+"일":"") : "";
+    $("g_kPrin").textContent = money(m.principal);
+    const kr=$("g_kReal"); kr.textContent=signMoney(m.realizedPnl); kr.className="g-v "+(m.realizedPnl>=0?"up":"dn");
+    const ku=$("g_kUnreal"); ku.textContent=signMoney(m.unreal); ku.className="g-v "+(m.unreal>=0?"up":"dn");
     const fx = num(g.fx);
     $("g_won").innerHTML = fx>0
-      ? "원화환산 · 평가액 <b>"+wonN(m.equity*fx)+"</b> · 평가손익 <b class='"+(m.pnl>=0?"up":"dn")+"'>"+
-        (m.pnl>=0?"+":"−")+wonN(Math.abs(m.pnl)*fx)+"</b>"+
-        (num(g.target)>0? " · 목표 <b>"+wonN(num(g.target)*fx)+"</b>":"")
-      : "<span class='g-fxhint'>환율을 입력하거나 ↻ 자동을 누르면 원화 환산이 표시됩니다.</span>";
+      ? "≈ <b>"+wonN(m.equity*fx)+"</b> <span class='g-fxhint'>원화환산 · 평가손익 "+(m.pnl>=0?"+":"−")+wonN(Math.abs(m.pnl)*fx)+"</span>"
+      : "<span class='g-fxhint'>환율 입력/↻ 자동 시 원화 환산 표시</span>";
 
     const cr=$("g_cashRows"); cr.innerHTML="";
     if(!S.cash.length) cr.innerHTML="<div class='g-empty'>입출금 내역이 없습니다.</div>";
@@ -234,20 +229,21 @@ function init(){
 
   function renderJournal(m){
     $("g_jReal").textContent = signMoney(m.realizedPnl);
-    $("g_jReal").className = "g-v "+(m.realizedPnl>=0?"up":"dn");
+    $("g_jReal").className = "g-sv "+(m.realizedPnl>=0?"up":"dn");
     $("g_jWin").innerHTML = Math.round(m.winRate)+"% <span class='g-faint'>("+m.wins+"/"+m.nClosed+")</span>";
     $("g_jAvg").textContent = m.nClosed? pctf(m.avgRet):"—";
-    $("g_jAvg").className = "g-v "+(m.avgRet>=0?"up":"dn");
+    $("g_jAvg").className = "g-sv "+(m.avgRet>=0?"up":"dn");
     $("g_jHold").textContent = m.nClosed? (Math.round(m.avgHold)+"일"):"—";
 
     const cl=$("g_closedRows"); cl.innerHTML="";
     if(!m.realized.length) cl.innerHTML="<div class='g-empty'>청산된 매매가 없습니다.</div>";
     [...m.realized].sort((a,b)=>a.sellDate<b.sellDate?1:-1).forEach(r=>{
-      const d=document.createElement("div"); d.className="g-row"; const cls=r.pnl>=0?"up":"dn";
-      d.innerHTML="<div class='g-grow'><b>"+esc(r.ticker)+"</b>"+
-        "<span class='g-amtc "+cls+"' style='float:right'>"+signMoney(r.pnl)+" · "+pctf(r.pnlPct)+"</span>"+
+      const pos=r.pnl>=0, d=document.createElement("div");
+      d.className="g-closed "+(pos?"pos":"neg");
+      d.innerHTML="<div class='g-closed-top'><b>"+esc(r.ticker)+"</b>"+
+        "<span class='"+(pos?"up":"dn")+"' style='font-weight:800'>"+signMoney(r.pnl)+" · "+pctf(r.pnlPct)+"</span></div>"+
         "<div class='g-sub'>"+mmdd(r.buyDate)+" 매수 "+money2(r.buyPrice)+" → "+mmdd(r.sellDate)+" 매도 "+money2(r.sellPrice)+
-        " · "+(Math.round(r.qty*100)/100)+"주 · 보유 "+r.holdDays+"일</div></div>";
+        " · "+(Math.round(r.qty*100)/100)+"주 · 보유 "+r.holdDays+"일</div>";
       cl.appendChild(d);
     });
 
@@ -263,15 +259,19 @@ function init(){
       inp.onchange = ()=>{ if(inp.value==="") delete S.prices[o.ticker]; else S.prices[o.ticker]=num(inp.value); save(); };
       d.appendChild(inp); op.appendChild(d);
     });
-    // 종목별 성과 (실현손익 기준, 내림차순)
+    // 종목별 성과 (실현손익 막대그래프)
     const tk={}; m.realized.forEach(r=>{ const o=tk[r.ticker]=tk[r.ticker]||{pnl:0,w:0,n:0};
       o.pnl+=r.pnl; o.n++; if(r.pnl>0)o.w++; });
     const tkr=$("g_tkRows"); tkr.innerHTML="";
     const tks=Object.keys(tk).sort((a,b)=>tk[b].pnl-tk[a].pnl);
-    if(!tks.length) tkr.innerHTML="<div class='g-empty'>청산된 매매가 없습니다.</div>";
-    tks.forEach(k=>{ const t=tk[k], d=document.createElement("div"); d.className="g-row";
-      d.innerHTML="<div class='g-grow'><b>"+esc(k)+"</b> <span class='g-sub'>"+t.n+"건 · "+t.w+"승 "+(t.n-t.w)+"패</span></div>"+
-        "<span class='g-amtc "+(t.pnl>=0?"up":"dn")+"'>"+signMoney(t.pnl)+"</span>";
+    if(!tks.length){ tkr.innerHTML="<div class='g-empty'>청산된 매매가 없습니다.</div>"; }
+    const maxAbs=Math.max(1,...tks.map(k=>Math.abs(tk[k].pnl)));
+    tks.forEach(k=>{ const t=tk[k], pos=t.pnl>=0, w=Math.round(Math.abs(t.pnl)/maxAbs*100);
+      const d=document.createElement("div"); d.className="g-barrow";
+      d.title=t.n+"건 · "+t.w+"승 "+(t.n-t.w)+"패";
+      d.innerHTML="<span class='g-bartk'>"+esc(k)+"</span>"+
+        "<div class='g-bartrack'><div class='g-barfill' style='width:"+w+"%;background:"+(pos?"#16a34a":"#3b82f6")+"'></div></div>"+
+        "<span class='g-baramt "+(pos?"up":"dn")+"'>"+signMoney(t.pnl)+"</span>";
       tkr.appendChild(d); });
   }
 
@@ -350,21 +350,30 @@ function SHELL_HTML(){ return ''+
     '<div class="g-card"><div class="g-ghead"><div>'+
       '<div class="g-gname" id="g_gName">목표를 설정하세요</div>'+
       '<div class="g-gdates" id="g_gDates">—</div></div>'+
-      '<span class="g-dday" id="g_gDday">D-—</span></div>'+
+      '<div class="g-hactions"><span class="g-dday" id="g_gDday">D-—</span>'+
+      '<button type="button" class="g-gear" id="g_editGoal" title="목표 수정">⚙</button></div></div>'+
+    '<div class="g-ringrow">'+
+      '<svg class="g-ring" width="98" height="98" viewBox="0 0 98 98">'+
+        '<circle cx="49" cy="49" r="40" fill="none" stroke="var(--nav-track)" stroke-width="11"/>'+
+        '<circle id="g_ringArc" cx="49" cy="49" r="40" fill="none" stroke="#16a34a" stroke-width="11" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3" transform="rotate(-90 49 49)"/>'+
+        '<text id="g_ringPct" x="49" y="45" text-anchor="middle" font-size="21" font-weight="800" fill="#16a34a">0%</text>'+
+        '<text x="49" y="62" text-anchor="middle" font-size="9" fill="var(--faint)">달성률</text>'+
+      '</svg>'+
+      '<div class="g-ringside">'+
+        '<div class="g-rlabel">평가액 / 목표</div>'+
+        '<div class="g-rmain"><span id="g_equity">$0</span> <span class="g-rtarget">/ <span id="g_target">$0</span></span></div>'+
+        '<div id="g_pnlBadge" class="g-pnlbadge pos">▲ +$0 · +0%</div>'+
+        '<div class="g-note" id="g_gRemain"></div>'+
+      '</div></div>'+
+    '<div class="g-kpis">'+
+      '<div class="g-kpi"><div class="g-l">원금(순입금)</div><div class="g-v" id="g_kPrin">0</div></div>'+
+      '<div class="g-kpi"><div class="g-l">실현손익</div><div class="g-v" id="g_kReal">0</div></div>'+
+      '<div class="g-kpi"><div class="g-l">미실현손익</div><div class="g-v" id="g_kUnreal">0</div></div></div>'+
+    '<div class="g-won" id="g_won"></div>'+
     '<div class="g-fx"><span>$1 =</span>'+
       '<input id="g_fx" class="g-fxin" inputmode="decimal" placeholder="환율">'+
       '<span>원</span><button type="button" class="g-btn sm" id="g_fxAuto">↻ 자동</button>'+
       '<span class="g-fxat" id="g_fxAt"></span></div>'+
-    '<div class="g-prog"><span class="g-pct" id="g_gPct">0%</span><span class="g-psub" id="g_gProgSub">0 / 0</span></div>'+
-    '<div class="g-bar"><i id="g_gBar" style="width:0%"></i></div>'+
-    '<div class="g-note" id="g_gRemain"></div>'+
-    '<div class="g-kpis">'+
-      '<div class="g-kpi"><div class="g-l">원금(순입금)</div><div class="g-v" id="g_kPrin">0</div></div>'+
-      '<div class="g-kpi"><div class="g-l">평가액</div><div class="g-v" id="g_kEquity">0</div></div>'+
-      '<div class="g-kpi"><div class="g-l">평가손익</div><div class="g-v" id="g_kPnl">0</div></div></div>'+
-    '<div class="g-break" id="g_gBreak"></div>'+
-    '<div class="g-won" id="g_won"></div>'+
-    '<div style="margin-top:12px;text-align:right"><button class="g-btn sm" id="g_editGoal">✎ 목표 수정</button></div>'+
     '<div id="g_goalEdit" class="g-gedit" style="display:none">'+
       '<div class="g-frm"><input id="ge_name" class="g-memo" placeholder="목표 이름"></div>'+
       '<div class="g-frm"><span class="g-gelabel">목표금액 $</span>'+
@@ -397,11 +406,11 @@ function SHELL_HTML(){ return ''+
       '<input type="number" class="g-num" id="g_tFee" placeholder="수수료" inputmode="decimal">'+
       '<button class="g-btn pri" id="g_tAdd">추가</button></div>'+
       '<div id="g_tradeRows"></div></div>'+
-    '<div class="g-kpis" style="margin-bottom:11px">'+
-      '<div class="g-kpi"><div class="g-l">총 실현손익</div><div class="g-v" id="g_jReal">0</div></div>'+
-      '<div class="g-kpi"><div class="g-l">승률</div><div class="g-v" id="g_jWin">0%</div></div>'+
-      '<div class="g-kpi"><div class="g-l">평균 수익률</div><div class="g-v" id="g_jAvg">0%</div></div>'+
-      '<div class="g-kpi"><div class="g-l">평균 보유</div><div class="g-v" id="g_jHold">0일</div></div></div>'+
+    '<div class="g-stats">'+
+      '<div class="g-stat"><div class="g-sl">실현손익</div><div class="g-sv" id="g_jReal">0</div></div>'+
+      '<div class="g-stat"><div class="g-sl">승률</div><div class="g-sv" id="g_jWin">0%</div></div>'+
+      '<div class="g-stat"><div class="g-sl">평균수익</div><div class="g-sv" id="g_jAvg">0%</div></div>'+
+      '<div class="g-stat"><div class="g-sl">평균보유</div><div class="g-sv" id="g_jHold">0일</div></div></div>'+
     '<div class="g-card"><div class="g-sect">종목별 성과 (실현손익)</div><div id="g_tkRows"></div></div>'+
     '<div class="g-card"><div class="g-sect">청산 매매 (자동 매칭)</div><div id="g_closedRows"></div></div>'+
     '<div class="g-card"><div class="g-sect" style="display:flex;justify-content:space-between;align-items:center;gap:8px">'+
@@ -468,6 +477,33 @@ function injectStyle(){
   #goalRoot .g-gedit{margin-top:12px;padding:12px;background:var(--nav-track);
     border:1px solid var(--border);border-radius:12px}
   #goalRoot .g-gelabel{font-size:11px;color:var(--muted);font-weight:700;align-self:center;white-space:nowrap}
+  #goalRoot .g-hactions{display:flex;align-items:center;gap:8px}
+  #goalRoot .g-gear{font:inherit;font-size:16px;line-height:1;border:0;background:none;color:var(--faint);cursor:pointer;padding:2px}
+  #goalRoot .g-gear:hover{color:var(--accent)}
+  #goalRoot .g-ringrow{display:flex;align-items:center;gap:16px;margin:14px 0 4px}
+  #goalRoot .g-ring{flex-shrink:0}
+  #goalRoot .g-ringside{flex:1;min-width:0}
+  #goalRoot .g-rlabel{font-size:11px;color:var(--muted)}
+  #goalRoot .g-rmain{font-size:20px;font-weight:800;letter-spacing:-.02em;margin-top:1px}
+  #goalRoot .g-rtarget{font-size:13px;color:var(--faint);font-weight:600}
+  #goalRoot .g-pnlbadge{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:800;border-radius:8px;padding:3px 9px;margin-top:6px}
+  #goalRoot .g-pnlbadge.pos{color:#e5484d;background:rgba(229,72,77,.12)}
+  #goalRoot .g-pnlbadge.neg{color:#3b82f6;background:rgba(59,130,246,.12)}
+  #goalRoot .g-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:11px}
+  #goalRoot .g-stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 6px;text-align:center}
+  #goalRoot .g-sl{font-size:9px;color:var(--muted)}
+  #goalRoot .g-sv{font-size:15px;font-weight:800;margin-top:2px}
+  #goalRoot .g-barrow{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+  #goalRoot .g-barrow:last-child{margin-bottom:0}
+  #goalRoot .g-bartk{width:46px;font-size:12px;font-weight:800;flex-shrink:0}
+  #goalRoot .g-bartrack{flex:1;height:16px;background:var(--nav-track);border-radius:5px;overflow:hidden}
+  #goalRoot .g-barfill{height:100%;border-radius:5px;transition:width .4s ease}
+  #goalRoot .g-baramt{width:56px;text-align:right;font-size:12px;font-weight:800;flex-shrink:0}
+  #goalRoot .g-closed{border-left:3px solid var(--border);padding:3px 0 3px 10px;margin-bottom:10px}
+  #goalRoot .g-closed:last-child{margin-bottom:0}
+  #goalRoot .g-closed.pos{border-left-color:#16a34a}
+  #goalRoot .g-closed.neg{border-left-color:#3b82f6}
+  #goalRoot .g-closed-top{display:flex;justify-content:space-between;align-items:baseline;font-size:13px}
   #goalRoot .g-frm{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
   #goalRoot .g-frm input,#goalRoot .g-frm select{font:inherit;font-size:12.5px;border:1px solid var(--border);
     border-radius:8px;padding:8px 9px;background:var(--card);color:var(--ink);min-width:0}
