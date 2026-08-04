@@ -172,17 +172,24 @@ a:hover{opacity:.72;}
  padding:2px 7px;border-radius:5px;flex-shrink:0;}
 .ern-tag.wait{font-size:9.5px;font-weight:800;color:#fff;background:#f59e0b;
  padding:2px 7px;border-radius:5px;flex-shrink:0;margin-left:4px;}  /* 발표됐으나 집계 전 */
-/* 기업실적 뷰 토글(예정 순 / 분기별) */
-.earn-views{display:flex;gap:5px;margin-bottom:11px;}
-.ev-view{flex:1;text-align:center;font:inherit;font-size:12px;font-weight:700;
- color:var(--muted-2);background:var(--chip);border:1px solid var(--border);
- border-radius:8px;padding:7px;cursor:pointer;}
-.ev-view.on{background:var(--ink);color:var(--page);border-color:var(--ink);}
-.q-chips{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:11px;}
-.q-chip{font:inherit;font-size:11.5px;font-weight:700;color:var(--muted-2);
- background:var(--card);border:1px solid var(--border);border-radius:8px;
- padding:5px 10px;cursor:pointer;}
-.q-chip.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+/* 기업실적 뷰 토글(예정 순 / 분기별) — 서브탭 pill과 구분되게 '밑줄 탭' */
+.earn-views{display:flex;gap:20px;margin-bottom:12px;
+ border-bottom:1px solid var(--border);}
+.ev-view{font:inherit;font-size:12.5px;font-weight:700;color:var(--muted-2);
+ background:none;border:0;border-bottom:2px solid transparent;
+ padding:5px 2px 9px;margin-bottom:-1px;cursor:pointer;}
+.ev-view.on{color:var(--ink);border-bottom-color:var(--ink);}
+/* 분기별: 연도(다크 pill) → 분기(파란 pill) 2단 */
+.q-years{display:flex;gap:6px;margin-bottom:9px;}
+.q-year{font:inherit;font-size:12px;font-weight:800;color:var(--muted-2);
+ background:var(--chip);border:1px solid var(--border);border-radius:8px;
+ padding:6px 14px;cursor:pointer;}
+.q-year.on{background:var(--ink);color:var(--page);border-color:var(--ink);}
+.q-quarters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.q-q{font:inherit;font-size:12px;font-weight:700;color:var(--muted-2);
+ background:var(--card);border:1px solid var(--border);border-radius:999px;
+ padding:5px 13px;cursor:pointer;}
+.q-q.on{background:var(--accent);color:#fff;border-color:var(--accent);}
 .q-row{display:flex;align-items:center;gap:9px;padding:9px 2px;
  border-bottom:1px solid var(--border);}
 .q-row:last-child{border-bottom:0;}
@@ -1161,15 +1168,28 @@ document.querySelectorAll('.ev-view').forEach(function(b){
     if(q) q.style.display=v==='q'?'':'none';
   });
 });
-document.querySelectorAll('.q-chip').forEach(function(c){
-  c.addEventListener('click', function(){
-    var box=c.closest('.earn-q'); if(!box) return;
-    box.querySelectorAll('.q-chip').forEach(function(x){x.classList.remove('on');});
-    c.classList.add('on');
-    var q=c.getAttribute('data-q');
+document.querySelectorAll('.earn-q').forEach(function(box){
+  function showQ(cq){
+    box.querySelectorAll('.q-q').forEach(function(x){
+      x.classList.toggle('on', x.getAttribute('data-q')===cq);});
     box.querySelectorAll('.q-panel').forEach(function(p){
-      p.style.display=p.getAttribute('data-q')===q?'':'none';
+      p.style.display=p.getAttribute('data-q')===cq?'':'none';});
+  }
+  box.querySelectorAll('.q-year').forEach(function(y){
+    y.addEventListener('click', function(){
+      box.querySelectorAll('.q-year').forEach(function(x){x.classList.remove('on');});
+      y.classList.add('on');
+      var yr=y.getAttribute('data-y'), first=null;
+      box.querySelectorAll('.q-q').forEach(function(q){
+        var vis=q.getAttribute('data-y')===yr;
+        q.style.display=vis?'':'none';
+        if(vis && !first) first=q;
+      });
+      if(first) showQ(first.getAttribute('data-q'));
     });
+  });
+  box.querySelectorAll('.q-q').forEach(function(q){
+    q.addEventListener('click', function(){ showQ(q.getAttribute('data-q')); });
   });
 });
 </script>"""
@@ -1286,12 +1306,20 @@ def _render_earn_quarters(evs, now):
     cqs = sorted(buckets, reverse=True)   # 최근 분기 먼저
     default = next((cq for cq in cqs
                     if any(x["q"].get("reported") for x in buckets[cq])), cqs[0])
-    chips = ['<div class="q-chips">']
+    default_year = default.split("-")[0]
+    years = sorted({cq.split("-")[0] for cq in cqs}, reverse=True)
+    chips = ['<div class="q-years">']
+    for y in years:
+        chips.append(f'<button class="q-year{" on" if y==default_year else ""}" '
+                     f'data-y="{y}">{y}년</button>')
+    chips.append('</div><div class="q-quarters">')
     for cq in cqs:
-        on = " on" if cq == default else ""
+        y, qn = cq.split("-")
         up = not any(x["q"].get("reported") for x in buckets[cq])
-        chips.append(f'<button class="q-chip{on}" data-q="{cq}">'
-                     f'{_e(labels[cq])}{" · 예정" if up else ""}</button>')
+        hide = "" if y == default_year else ' style="display:none"'
+        on = " on" if cq == default else ""
+        chips.append(f'<button class="q-q{on}" data-y="{y}" data-q="{cq}"{hide}>'
+                     f'{qn}Q{" · 예정" if up else ""}</button>')
     chips.append('</div>')
     panels = []
     for cq in cqs:
