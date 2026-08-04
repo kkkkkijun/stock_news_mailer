@@ -111,6 +111,10 @@ function init(){
     $("g_tAdd").onclick = addTrade;
     $("g_editGoal").onclick = editGoal;
     $("g_cur").onchange = () => { S.goal.cur = $("g_cur").value; renderData(); save(); };
+    ROOT.querySelectorAll(".g-cal").forEach(b=>{
+      b.onclick = () => { const el=$(b.getAttribute("data-for"));
+        if(el){ try{ el.showPicker(); }catch(e){ el.focus(); } } };
+    });
     $("g_genBtn").onclick = () => { renderJournal(compute());
       $("g_genBtn").textContent="✓ 갱신됨"; setTimeout(()=>$("g_genBtn").textContent="⚙ 매매일지 생성 / 새로고침",1200); };
   }
@@ -303,6 +307,7 @@ function SHELL_HTML(){ return ''+
     '<div style="margin-top:12px;text-align:right"><button class="g-btn sm" id="g_editGoal">✎ 목표 수정</button></div></div>'+
     '<div class="g-card"><div class="g-sect">입출금</div>'+
       '<div class="g-frm"><input type="date" class="g-date" id="g_cDate">'+
+      '<button type="button" class="g-cal" data-for="g_cDate" aria-label="달력 열기">📅</button>'+
       '<select id="g_cType"><option value="in">입금</option><option value="out">출금</option></select>'+
       '<input type="number" class="g-amt" id="g_cAmt" placeholder="금액" inputmode="decimal">'+
       '<input type="text" class="g-memo" id="g_cMemo" placeholder="메모(선택)">'+
@@ -312,6 +317,7 @@ function SHELL_HTML(){ return ''+
   '<div id="g_journal" style="display:none">'+
     '<div class="g-card"><div class="g-sect">거래 입력 (티커: AAPL, NVDA …)</div>'+
       '<div class="g-frm"><input type="date" class="g-date" id="g_tDate">'+
+      '<button type="button" class="g-cal" data-for="g_tDate" aria-label="달력 열기">📅</button>'+
       '<select id="g_tSide"><option value="buy">매수</option><option value="sell">매도</option></select>'+
       '<input type="text" class="g-tk" id="g_tTk" placeholder="티커">'+
       '<input type="number" class="g-num" id="g_tQty" placeholder="수량" inputmode="decimal">'+
@@ -379,7 +385,12 @@ function injectStyle(){
   #goalRoot .g-frm{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
   #goalRoot .g-frm input,#goalRoot .g-frm select{font:inherit;font-size:12.5px;border:1px solid var(--border);
     border-radius:8px;padding:8px 9px;background:var(--card);color:var(--ink);min-width:0}
-  #goalRoot .g-date{width:135px}#goalRoot .g-tk{width:82px;text-transform:uppercase}
+  #goalRoot .g-date{width:118px}#goalRoot .g-tk{width:82px;text-transform:uppercase}
+  #goalRoot .g-date::-webkit-calendar-picker-indicator{display:none}
+  #goalRoot .g-date::-webkit-inner-spin-button{display:none}
+  #goalRoot .g-cal{font-size:15px;line-height:1;border:1px solid var(--border);background:var(--chip);
+    border-radius:8px;padding:6px 9px;cursor:pointer;flex-shrink:0}
+  #goalRoot .g-cal:active{transform:translateY(1px)}
   #goalRoot .g-num{width:74px}#goalRoot .g-amt{width:122px}#goalRoot .g-memo{flex:1;min-width:90px}
   #goalRoot .g-row{display:flex;align-items:center;gap:9px;padding:9px 2px;border-top:1px solid var(--border);font-size:12.5px}
   #goalRoot .g-row:first-child{border-top:0}#goalRoot .g-grow{flex:1;min-width:0}
