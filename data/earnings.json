@@ -109,35 +109,35 @@
    ],
    "cur": {
     "period": "26.09",
-    "eps": "$4.70",
+    "eps": "$4.71",
     "eps_range": "$4.43~$4.83",
-    "rev": "$90.61B",
-    "growth": "+13.87%",
+    "rev": "$90.62B",
+    "growth": "+14.12%",
     "growth_pos": true
    },
    "rev": {
-    "up": 11,
-    "down": 7
+    "up": 2,
+    "down": 2
    },
    "next": {
     "period": "26.12",
     "eps": "$4.82",
     "eps_range": "$4.66~$5.02",
-    "rev": "$95.45B",
-    "growth": "+16.42%",
+    "rev": "$95.49B",
+    "growth": "+16.36%",
     "growth_pos": true
    },
    "target": {
     "price": "$487.65",
-    "mean": "$563.05",
+    "mean": "$562.73",
     "range": "$400~$870",
     "upside": "+15%",
     "upside_pos": true
    },
    "rec": {
     "label": "적극 매수",
-    "count": 54,
-    "buy": 54,
+    "count": 53,
+    "buy": 53,
     "hold": 3,
     "sell": 0
    }
@@ -471,25 +471,25 @@
     "period": "26.09",
     "eps": "$0.46",
     "eps_range": "$0.27~$0.60",
-    "rev": "$27.49B",
+    "rev": "$27.54B",
     "growth": "-8.74%",
     "growth_pos": false
    },
    "rev": {
-    "up": 6,
-    "down": 1
+    "up": 11,
+    "down": 2
    },
    "next": {
     "period": "26.12",
     "eps": "$0.50",
     "eps_range": "$0.24~$0.82",
-    "rev": "$28.43B",
+    "rev": "$28.47B",
     "growth": "-0.27%",
     "growth_pos": false
    },
    "target": {
     "price": "$322.08",
-    "mean": "$398.30",
+    "mean": "$397.87",
     "range": "$125~$600",
     "upside": "+24%",
     "upside_pos": true
