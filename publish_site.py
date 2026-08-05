@@ -202,11 +202,17 @@ a:hover{opacity:.72;}
  border-radius:999px;padding:3px 9px;flex-shrink:0;white-space:nowrap;}
 /* 실적 보고서 카드 */
 .rep-note{font-size:10.5px;color:var(--faint);margin-bottom:9px;}
-.rep-card{background:var(--card);border:1px solid var(--border);border-radius:14px;
- padding:13px 14px;margin-bottom:11px;box-shadow:0 1px 5px rgba(15,27,45,.05);}
-.rep-hd{font-size:12.5px;font-weight:800;color:var(--ink);word-break:keep-all;margin-bottom:8px;}
-.rep-sub{display:flex;align-items:center;gap:8px;margin-bottom:11px;flex-wrap:wrap;}
-.rep-name{font-size:11.5px;color:var(--muted);font-weight:600;flex:1;min-width:0;}
+.rep-item{background:var(--card);border:1px solid var(--border);border-radius:14px;
+ margin-bottom:9px;box-shadow:0 1px 5px rgba(15,27,45,.05);overflow:hidden;}
+.rep-head{display:flex;align-items:center;gap:8px;padding:11px 13px;cursor:pointer;}
+.rep-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+ font-size:12.5px;color:var(--ink);font-weight:700;}
+.rep-arrow{flex-shrink:0;color:var(--faint);font-size:11px;transition:transform .15s;}
+.rep-item.open .rep-arrow{transform:rotate(180deg);color:var(--accent);}
+.rep-body{display:none;padding:2px 13px 13px;}
+.rep-item.open .rep-body{display:block;}
+.rep-hd{font-size:12px;font-weight:800;color:var(--muted);word-break:keep-all;margin-bottom:9px;}
+.up-note{font-size:10.5px;color:var(--faint);margin-bottom:8px;}
 .rep-verdict{font-size:11px;font-weight:800;border-radius:7px;padding:3px 9px;
  background:var(--chip);color:var(--muted);}
 .rep-verdict.beat{color:#e5484d;background:rgba(229,72,77,.12);}
@@ -1200,6 +1206,9 @@ document.querySelectorAll('.ern-item').forEach(function(item){
   if(!row || !item.querySelector('.ern-detail')) return;   // 상세 없으면 클릭 비활성
   row.addEventListener('click', function(){ item.classList.toggle('open'); });
 });
+document.querySelectorAll('.rep-head').forEach(function(h){
+  h.addEventListener('click', function(){ h.parentNode.classList.toggle('open'); });
+});
 document.querySelectorAll('.ev-view').forEach(function(b){
   b.addEventListener('click', function(){
     var box=b.closest('.sched-earn'); if(!box) return;
@@ -1272,15 +1281,16 @@ def _report_card_html(r):
              if r.get("guidance") else "")
     bullets = "".join(f'<div class="rep-b"><span>•</span><span>{_e(b)}</span></div>'
                       for b in (r.get("bullets") or []))
-    head = f'<div class="rep-hd">{_e(r.get("title",""))}</div>'
-    sub = (f'<div class="rep-sub">{badge}'
-           f'<span class="rep-name">{_e(r.get("name",""))} · {_e(r.get("quarter",""))}</span>'
-           f'{verdict}</div>')
+    title = f'<div class="rep-hd">{_e(r.get("title",""))}</div>'
     foot = ('<div class="rep-foot">'
             f'<a href="{_e(r.get("url",""))}" target="_blank" rel="noopener">🔗 SEC 8-K 원문</a>'
             '<span>AI 요약 · 참고용</span></div>')
-    return (f'<div class="rep-card">{head}{sub}{ms}{guide}'
+    header = (f'<div class="rep-head">{badge}'
+              f'<span class="rep-name">{_e(r.get("name",""))} · {_e(r.get("quarter",""))}</span>'
+              f'{verdict}<span class="rep-arrow">▾</span></div>')
+    body = (f'<div class="rep-body">{title}{ms}{guide}'
             f'<div class="rep-bs">{bullets}</div>{foot}</div>')
+    return f'<div class="rep-item">{header}{body}</div>'
 
 
 def _rep_cq(r):
@@ -1310,6 +1320,7 @@ def _load_earnings(now):
         reported = bool(ts and now.timestamp() >= ts)
         out.append({"ticker": (r.get("ticker") or "").upper(),
                     "name": r.get("name") or "", "date": d,
+                    "ts": r.get("ts"),
                     "est": bool(r.get("est")),
                     "reported": reported,
                     "detail": r.get("detail") or {}})
@@ -1341,10 +1352,15 @@ def _render_upcoming(evs, now):
         bg = _ticker_color(e["ticker"])
         badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
                  f'{_e(e["ticker"].split("-")[0])}</span>')
+        ts = e.get("ts")
         if d:
             dd = (d - now.date()).days
             dtxt = "D-DAY" if dd == 0 else (f"D+{-dd}" if dd < 0 else f"D-{dd}")
             md = f'{d.month}/{d.day}({_WD_KO[d.weekday()]})'
+            if ts:
+                md += " " + datetime.fromtimestamp(ts, KST).strftime("%H:%M")
+                if e.get("est"):
+                    md += " 예상"
         else:
             dtxt, md = "미정", "미정"
         parts = []
@@ -1371,7 +1387,9 @@ def _render_upcoming(evs, now):
             f'<div class="up-main"><div class="up-t"><b>{_e(e["name"])}</b>'
             f'<span class="up-date">{md}</span></div>'
             f'<div class="up-sub">{subline}</div></div></div>')
-    return '<div class="earn-up">' + "".join(rows) + '</div>'
+    return ('<div class="earn-up">'
+            '<div class="up-note">발표 예정일·시간 · 한국시간(KST) 기준</div>'
+            + "".join(rows) + '</div>')
 
 
 def _render_results(evs, now):
