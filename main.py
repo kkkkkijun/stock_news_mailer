@@ -952,6 +952,21 @@ def build_reports(path=None, client=None):
 
 
 if __name__ == "__main__":
+    import sys as _sys
+    # 'refresh' 모드: 뉴스·메일 없이 실적/시세/보고서만 갱신 후 저장된 본문으로 재렌더.
+    #   → 실적 발표(SEC 8-K) 직후 자주 돌려 '즉각 반영'. (Yahoo 지연 무관)
+    if len(_sys.argv) > 1 and _sys.argv[1] == "refresh":
+        try:
+            from publish_site import rebuild_all
+            build_earnings()
+            quotes = fetch_all_quotes()
+            build_prices(quotes=quotes)
+            build_reports(client=get_openai_client())
+            print("[refresh] 재빌드:", rebuild_all())
+        except Exception as e:  # noqa
+            print(f"[refresh] 실패: {e}")
+        _sys.exit(0)
+
     client = get_openai_client()
     final_body = build_body(client=client)
 
