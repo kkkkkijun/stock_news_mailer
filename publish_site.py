@@ -1394,9 +1394,10 @@ def _render_upcoming(evs, now):
 
 def _render_results(evs, now):
     """실적 결과 뷰: 연/분기 필터 + 발표분(8-K 보고서 있으면 풀카드, 없으면 숫자줄)."""
+    rep_list = _load_reports()
     reports = {}
-    for r in _load_reports():
-        cq = _rep_cq(r)
+    for r in rep_list:
+        cq = r.get("cq") or _rep_cq(r)
         if cq:
             reports[(r.get("ticker"), cq)] = r
     buckets, labels = {}, {}
@@ -1411,6 +1412,21 @@ def _render_results(evs, now):
             buckets.setdefault(cq, []).append(
                 {"ticker": e["ticker"], "name": e["name"], "q": q,
                  "report": reports.get((e["ticker"], cq))})
+    # Yahoo가 아직 '예정'이어도 8-K 보고서가 있으면 결과에 노출(반영 지연 대응)
+    ev_name = {e["ticker"]: e["name"] for e in evs}
+    for r in rep_list:
+        cq = r.get("cq") or _rep_cq(r)
+        if not cq:
+            continue
+        labels.setdefault(cq, r.get("quarter") or cq)
+        lst = buckets.setdefault(cq, [])
+        ex = next((x for x in lst if x["ticker"] == r.get("ticker")), None)
+        if ex:
+            ex["report"] = r
+        else:
+            lst.append({"ticker": r.get("ticker"),
+                        "name": r.get("name") or ev_name.get(r.get("ticker"), ""),
+                        "q": None, "report": r})
     if not buckets:
         return ('<div class="earn-r" style="display:none">'
                 '<div class="ern-none">발표된 실적이 없습니다.</div></div>')
