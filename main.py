@@ -551,7 +551,8 @@ def _fetch_earning(session, crumb, sym):
 
     ce = res.get("calendarEvents", {}).get("earnings", {})
     raws = [x["raw"] for x in ce.get("earningsDate", []) if "raw" in x]
-    date = _dt.utcfromtimestamp(min(raws)).strftime("%Y-%m-%d") if raws else None
+    date = (_dt.fromtimestamp(min(raws), KST).strftime("%Y-%m-%d")
+            if raws else None)   # 실적 발표일: 한국시간(KST) 기준
     est = bool(ce.get("isEarningsDateEstimate"))
 
     d = {}

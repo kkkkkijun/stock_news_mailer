@@ -121,11 +121,17 @@ a:hover{opacity:.72;}
  border-radius:999px;padding:3px 9px;flex-shrink:0;white-space:nowrap;}
 /* 실적 보고서 카드 */
 .rep-note{font-size:10.5px;color:var(--faint);margin-bottom:9px;}
-.rep-card{background:var(--card);border:1px solid var(--border);border-radius:14px;
- padding:13px 14px;margin-bottom:11px;box-shadow:0 1px 5px rgba(15,27,45,.05);}
-.rep-hd{font-size:12.5px;font-weight:800;color:var(--ink);word-break:keep-all;margin-bottom:8px;}
-.rep-sub{display:flex;align-items:center;gap:8px;margin-bottom:11px;flex-wrap:wrap;}
-.rep-name{font-size:11.5px;color:var(--muted);font-weight:600;flex:1;min-width:0;}
+.rep-item{background:var(--card);border:1px solid var(--border);border-radius:14px;
+ margin-bottom:9px;box-shadow:0 1px 5px rgba(15,27,45,.05);overflow:hidden;}
+.rep-head{display:flex;align-items:center;gap:8px;padding:11px 13px;cursor:pointer;}
+.rep-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+ font-size:12.5px;color:var(--ink);font-weight:700;}
+.rep-arrow{flex-shrink:0;color:var(--faint);font-size:11px;transition:transform .15s;}
+.rep-item.open .rep-arrow{transform:rotate(180deg);color:var(--accent);}
+.rep-body{display:none;padding:2px 13px 13px;}
+.rep-item.open .rep-body{display:block;}
+.rep-hd{font-size:12px;font-weight:800;color:var(--muted);word-break:keep-all;margin-bottom:9px;}
+.up-note{font-size:10.5px;color:var(--faint);margin-bottom:8px;}
 .rep-verdict{font-size:11px;font-weight:800;border-radius:7px;padding:3px 9px;
  background:var(--chip);color:var(--muted);}
 .rep-verdict.beat{color:#e5484d;background:rgba(229,72,77,.12);}
@@ -368,7 +374,7 @@ a:hover{opacity:.72;}
 <button id="top" aria-label="맨 위로">↑</button>
 <script>
 (function(){
-  var DATA = {"2026-07-24": {"am": "2026-07-24-am.html", "pm": "2026-07-24-pm.html"}, "2026-08-03": {"am": "2026-08-03-am.html", "pm": "2026-08-03-pm.html"}, "2026-08-04": {"pm": "2026-08-04-pm.html", "am": "2026-08-04-am.html"}, "2026-08-06": {"am": "2026-08-06-am.html"}, "2026-08-02": {"am": "2026-08-02-am.html", "pm": "2026-08-02-pm.html"}, "2026-07-31": {"pm": "2026-07-31-pm.html", "am": "2026-07-31-am.html"}, "2026-08-05": {"am": "2026-08-05-am.html", "pm": "2026-08-05-pm.html"}, "2026-07-25": {"am": "2026-07-25-am.html", "pm": "2026-07-25-pm.html"}, "2026-07-28": {"am": "2026-07-28-am.html", "pm": "2026-07-28-pm.html"}, "2026-07-23": {"pm": "2026-07-23-pm.html"}, "2026-07-30": {"am": "2026-07-30-am.html", "pm": "2026-07-30-pm.html"}, "2026-07-26": {"pm": "2026-07-26-pm.html", "am": "2026-07-26-am.html"}, "2026-07-27": {"pm": "2026-07-27-pm.html", "am": "2026-07-27-am.html"}, "2026-08-01": {"am": "2026-08-01-am.html", "pm": "2026-08-01-pm.html"}, "2026-07-29": {"am": "2026-07-29-am.html", "pm": "2026-07-29-pm.html"}};
+  var DATA = {"2026-07-23": {"pm": "2026-07-23-pm.html"}, "2026-07-24": {"am": "2026-07-24-am.html", "pm": "2026-07-24-pm.html"}, "2026-07-25": {"am": "2026-07-25-am.html", "pm": "2026-07-25-pm.html"}, "2026-07-26": {"am": "2026-07-26-am.html", "pm": "2026-07-26-pm.html"}, "2026-07-27": {"am": "2026-07-27-am.html", "pm": "2026-07-27-pm.html"}, "2026-07-28": {"am": "2026-07-28-am.html", "pm": "2026-07-28-pm.html"}, "2026-07-29": {"am": "2026-07-29-am.html", "pm": "2026-07-29-pm.html"}, "2026-07-30": {"am": "2026-07-30-am.html", "pm": "2026-07-30-pm.html"}, "2026-07-31": {"am": "2026-07-31-am.html", "pm": "2026-07-31-pm.html"}, "2026-08-01": {"am": "2026-08-01-am.html", "pm": "2026-08-01-pm.html"}, "2026-08-02": {"am": "2026-08-02-am.html", "pm": "2026-08-02-pm.html"}, "2026-08-03": {"am": "2026-08-03-am.html", "pm": "2026-08-03-pm.html"}, "2026-08-04": {"am": "2026-08-04-am.html", "pm": "2026-08-04-pm.html"}, "2026-08-05": {"am": "2026-08-05-am.html", "pm": "2026-08-05-pm.html"}, "2026-08-06": {"am": "2026-08-06-am.html"}};
   var selY=document.getElementById('selY'), selM=document.getElementById('selM'),
       box=document.getElementById('calbox'), det=document.getElementById('det');
   if(!selY) return;
