@@ -803,6 +803,28 @@ def _report_kdate(accept):
     return "", ""
 
 
+def _period_cq(per):
+    """'26.06' → ('2026-2', '2026 2Q')."""
+    try:
+        y = 2000 + int(per[:2])
+        q = (int(per[3:5]) - 1) // 3 + 1
+        return f"{y}-{q}", f"{y} {q}Q"
+    except (ValueError, TypeError, IndexError):
+        return None, None
+
+
+def _period_qend(per):
+    """'26.06' → '2026-06-30' (해당 분기말 날짜, 문자열 비교용)."""
+    try:
+        y = 2000 + int(per[:2])
+        mo = int(per[3:5])
+        last = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30,
+                7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}[mo]
+        return f"{y}-{mo:02d}-{last:02d}"
+    except (ValueError, TypeError, KeyError, IndexError):
+        return "9999-99-99"
+
+
 def _gen_report(client, name, sym, qlabel, numbers, press_text):
     import json as _json
     if client is None:
@@ -859,8 +881,9 @@ def build_reports(path=None, client=None):
         if not er:
             continue
         det = er.get("detail") or {}
+        cur, prev = det.get("cur") or {}, det.get("prev") or {}
         rq = [q for q in (det.get("quarters") or []) if q.get("reported")]
-        if not rq:
+        if not rq and not cur.get("period"):
             continue
         time.sleep(0.3)                     # SEC 레이트리밋 여유
         press = _sec_8k_press(t)
@@ -880,24 +903,42 @@ def build_reports(path=None, client=None):
         if existing.get(t, {}).get("acc") == press["acc"]:   # 캐시
             out.append(existing[t])
             continue
-        lastq = rq[-1]
+        # 발표 분기 판정(8-K 접수일 기준): 접수일이 cur(0q) 분기말 이후면
+        #   Yahoo 실제치 미반영 상태 → cur(0q)가 방금 발표분. 아니면 최신 실제분기(prev).
+        cur_cq, cur_label = (_period_cq(cur["period"]) if cur.get("period") else (None, None))
+        yahoo_lag = bool(cur_cq and kiso and kiso > _period_qend(cur["period"]))
+        if yahoo_lag:
+            cq, qlabel = cur_cq, cur_label
+        elif rq:
+            cq, qlabel = rq[-1].get("cq"), rq[-1].get("label", "")
+        else:
+            if t in existing:
+                out.append(existing[t])
+            continue
+        if not cq:
+            if t in existing:
+                out.append(existing[t])
+            continue
         try:
-            qnum = int(lastq["cq"].split("-")[1])
-        except (ValueError, KeyError, IndexError):
+            qnum = int(cq.split("-")[1])
+        except (ValueError, IndexError):
             qnum = 0
         name = _EARN_KO.get(t, t)
-        prev, cur = det.get("prev") or {}, det.get("cur") or {}
-        numbers = (f"EPS 실제 {prev.get('eps_act', '-')} / 예상 {prev.get('eps_est', '-')} "
-                   f"(서프라이즈 {prev.get('surprise', '-')}); 다음 분기 가이던스 "
-                   f"EPS {cur.get('eps', '-')} 매출 {cur.get('rev', '-')} 성장 {cur.get('growth', '-')}")
-        print(f"[reports] {t} 8-K 요약 생성…")
+        if yahoo_lag:        # Yahoo 실제치 미반영 → 발표문 원문에서 실제 추출 유도
+            numbers = (f"이번 분기 시장 예상 EPS {cur.get('eps', '-')} 매출 {cur.get('rev', '-')}; "
+                       "실제 수치·서프라이즈는 발표문 원문 기준으로 추출할 것")
+        else:
+            numbers = (f"EPS 실제 {prev.get('eps_act', '-')} / 예상 {prev.get('eps_est', '-')} "
+                       f"(서프라이즈 {prev.get('surprise', '-')})")
+        print(f"[reports] {t} 8-K 요약 생성… ({qlabel})")
         summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"])
         rec = {"ticker": t, "name": name,
                "title": f"{kshort}_{name}_{qnum}분기_실적보고서",
-               "date": kiso, "qnum": qnum, "quarter": lastq.get("label", ""),
-               "acc": press["acc"], "url": press["url"],
-               "eps_act": prev.get("eps_act"), "eps_est": prev.get("eps_est"),
-               "surprise": prev.get("surprise"), "surprise_pos": prev.get("surprise_pos")}
+               "date": kiso, "qnum": qnum, "quarter": qlabel, "cq": cq,
+               "acc": press["acc"], "url": press["url"]}
+        if not yahoo_lag:    # Yahoo 실제치 있을 때만 EPS/서프라이즈 첨부
+            rec.update({"eps_act": prev.get("eps_act"), "eps_est": prev.get("eps_est"),
+                        "surprise": prev.get("surprise"), "surprise_pos": prev.get("surprise_pos")})
         rec.update(summ)
         out.append(rec)
     if not out:
