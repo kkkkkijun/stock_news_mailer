@@ -200,6 +200,31 @@ a:hover{opacity:.72;}
 .q-surp.up{color:#e5484d;}.q-surp.dn{color:#3b82f6;}
 .q-date{font-size:10.5px;font-weight:700;color:var(--accent);background:var(--chip);
  border-radius:999px;padding:3px 9px;flex-shrink:0;white-space:nowrap;}
+/* 실적 보고서 카드 */
+.rep-note{font-size:10.5px;color:var(--faint);margin-bottom:9px;}
+.rep-card{background:var(--card);border:1px solid var(--border);border-radius:14px;
+ padding:13px 14px;margin-bottom:11px;box-shadow:0 1px 5px rgba(15,27,45,.05);}
+.rep-hd{font-size:12.5px;font-weight:800;color:var(--ink);word-break:keep-all;margin-bottom:8px;}
+.rep-sub{display:flex;align-items:center;gap:8px;margin-bottom:11px;flex-wrap:wrap;}
+.rep-name{font-size:11.5px;color:var(--muted);font-weight:600;flex:1;min-width:0;}
+.rep-verdict{font-size:11px;font-weight:800;border-radius:7px;padding:3px 9px;
+ background:var(--chip);color:var(--muted);}
+.rep-verdict.beat{color:#e5484d;background:rgba(229,72,77,.12);}
+.rep-verdict.miss{color:#3b82f6;background:rgba(59,130,246,.12);}
+.rep-ms{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:11px;}
+.rep-m{background:var(--nav-track);border-radius:9px;padding:8px 10px;}
+.rep-mk{font-size:9.5px;color:var(--muted);}
+.rep-mv{font-size:14px;font-weight:800;margin-top:1px;}
+.rep-guide{display:flex;gap:7px;align-items:center;background:var(--nav-track);
+ border:1px dashed var(--border);border-radius:9px;padding:8px 11px;
+ font-size:11.5px;color:var(--muted);margin-bottom:11px;line-height:1.5;}
+.rep-bs{background:var(--nav-track);border-radius:10px;padding:11px 13px;
+ display:flex;flex-direction:column;gap:6px;}
+.rep-b{display:flex;gap:7px;font-size:12px;color:var(--ink);line-height:1.6;}
+.rep-b>span:first-child{color:var(--accent);flex-shrink:0;}
+.rep-foot{display:flex;justify-content:space-between;align-items:center;margin-top:10px;}
+.rep-foot a{font-size:10.5px;color:var(--accent);text-decoration:none;}
+.rep-foot>span{font-size:10px;color:var(--faint);}
 .ern-detail{display:none;padding:0 8px 10px;flex-direction:column;gap:7px;}
 .ern-item.open .ern-detail{display:flex;}
 .ed-b{background:var(--card);border:1px solid var(--border);border-radius:9px;
@@ -1163,9 +1188,11 @@ document.querySelectorAll('.ev-view').forEach(function(b){
     box.querySelectorAll('.ev-view').forEach(function(x){x.classList.remove('on');});
     b.classList.add('on');
     var v=b.getAttribute('data-v');
-    var up=box.querySelector('.earn-up'), q=box.querySelector('.earn-q');
-    if(up) up.style.display=v==='up'?'':'none';
-    if(q) q.style.display=v==='q'?'':'none';
+    var map={up:'.earn-up',q:'.earn-q',r:'.earn-r'};
+    Object.keys(map).forEach(function(k){
+      var el=box.querySelector(map[k]);
+      if(el) el.style.display=(k===v)?'':'none';
+    });
   });
 });
 document.querySelectorAll('.earn-q').forEach(function(box){
@@ -1196,6 +1223,55 @@ document.querySelectorAll('.earn-q').forEach(function(box){
 
 
 EARN_FILE = os.path.join(DATA_DIR, "earnings.json")
+REPORTS_FILE = os.path.join(DATA_DIR, "reports.json")
+
+
+def _load_reports():
+    try:
+        with open(REPORTS_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return []
+
+
+def _render_reports():
+    reps = _load_reports()
+    if not reps:
+        return ('<div class="earn-r" style="display:none">'
+                '<div class="ern-none">아직 발표된 실적 보고서가 없습니다.</div></div>')
+    cards = ['<div class="earn-r" style="display:none">'
+             '<div class="rep-note">최근 발표 순 · SEC 8-K 원문 기반 · 참고용</div>']
+    for r in reps:
+        bg = _ticker_color(r.get("ticker", ""))
+        badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
+                 f'{_e((r.get("ticker") or "").split("-")[0])}</span>')
+        v = r.get("verdict")
+        sp = r.get("surprise_pos")
+        vcls = "beat" if (v == "beat" or sp) else ("miss" if (v == "miss" or sp is False) else "")
+        vtxt = {"beat": "어닝 서프라이즈", "miss": "어닝 쇼크", "inline": "예상 부합"}.get(v, "")
+        if r.get("surprise"):
+            vtxt = (vtxt + " " + ("▲" if sp else "▼") + _e(r["surprise"])).strip()
+        verdict = f'<span class="rep-verdict {vcls}">{vtxt}</span>' if vtxt else ""
+        mets = "".join(
+            f'<div class="rep-m"><div class="rep-mk">{_e(m.get("k",""))}</div>'
+            f'<div class="rep-mv">{_e(m.get("v",""))}</div></div>'
+            for m in (r.get("metrics") or [])[:4])
+        ms = f'<div class="rep-ms">{mets}</div>' if mets else ""
+        guide = (f'<div class="rep-guide">📈 {_e(r["guidance"])}</div>'
+                 if r.get("guidance") else "")
+        bullets = "".join(f'<div class="rep-b"><span>•</span><span>{_e(b)}</span></div>'
+                          for b in (r.get("bullets") or []))
+        head = f'<div class="rep-hd">{_e(r.get("title",""))}</div>'
+        sub = (f'<div class="rep-sub">{badge}'
+               f'<span class="rep-name">{_e(r.get("name",""))} · {_e(r.get("quarter",""))}</span>'
+               f'{verdict}</div>')
+        foot = ('<div class="rep-foot">'
+                f'<a href="{_e(r.get("url",""))}" target="_blank" rel="noopener">🔗 SEC 8-K 원문</a>'
+                '<span>AI 요약 · 참고용</span></div>')
+        cards.append(f'<div class="rep-card">{head}{sub}{ms}{guide}'
+                     f'<div class="rep-bs">{bullets}</div>{foot}</div>')
+    cards.append('</div>')
+    return "".join(cards)
 _WHEN_KO = {"amc": "장 마감 후", "bmo": "장 전", "": ""}
 
 
@@ -1268,10 +1344,12 @@ def _render_earnings(evs, now):
             f'{detbox}</div>')
     toggle = ('<div class="earn-views">'
               '<button class="ev-view on" data-v="up">📅 예정 순</button>'
-              '<button class="ev-view" data-v="q">📊 분기별</button></div>')
+              '<button class="ev-view" data-v="q">📊 분기별</button>'
+              '<button class="ev-view" data-v="r">📄 보고서</button></div>')
     up_html = '<div class="earn-up">' + "".join(rows) + '</div>'
     return (head + toggle + up_html + _render_earn_quarters(evs, now)
-            + '<div class="sched-src">데이터: Yahoo Finance</div></div>')
+            + _render_reports()
+            + '<div class="sched-src">데이터: Yahoo Finance · SEC EDGAR</div></div>')
 
 
 def _pct_num(s):

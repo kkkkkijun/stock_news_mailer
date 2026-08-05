@@ -713,6 +713,202 @@ def build_prices(path=None, quotes=None):
     print(f"[prices] 저장: {len(prices)}개 종목")
 
 
+# =========================================================
+# 실적 보고서 (SEC 8-K 원문 → AI 한글 요약) → data/reports.json
+#   기업실적 '보고서' 탭. 최근(50일 내) 발표만, accession 캐시로 재생성 최소화.
+# =========================================================
+_SEC_UA = {"User-Agent": "stock-news-mailer research (contact: tjrlwns93@ermore.co.kr)"}
+_CIK_CACHE = None
+
+
+def _sec_cik(sym):
+    global _CIK_CACHE
+    if _CIK_CACHE is None:
+        try:
+            ct = requests.get("https://www.sec.gov/files/company_tickers.json",
+                              headers=_SEC_UA, timeout=15).json()
+            _CIK_CACHE = {v["ticker"]: str(v["cik_str"]).zfill(10) for v in ct.values()}
+        except Exception:
+            _CIK_CACHE = {}
+    return _CIK_CACHE.get(sym)
+
+
+def _sec_8k_press(sym):
+    """최근 실적 8-K(Item 2.02)의 보도자료 원문 텍스트 + 메타. 실패 시 None."""
+    import re
+    import html as _html
+    cik = _sec_cik(sym)
+    if not cik:
+        return None
+    try:
+        rec = requests.get(f"https://data.sec.gov/submissions/CIK{cik}.json",
+                           headers=_SEC_UA, timeout=15).json()["filings"]["recent"]
+        acc = accept = None
+        for form, a, items, adt in zip(rec["form"], rec["accessionNumber"],
+                                       rec["items"], rec["acceptanceDateTime"]):
+            if form == "8-K" and "2.02" in (items or ""):
+                acc, accept = a, adt
+                break
+        if not acc:
+            return None
+        accn = acc.replace("-", "")
+        base = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{accn}"
+        # 문서 목록: index.json(타입·크기) 우선, 실패 시 디렉터리 HTML 스크랩.
+        htms = []
+        try:
+            for it in requests.get(base + "/index.json", headers=_SEC_UA,
+                                   timeout=15).json()["directory"]["item"]:
+                n = it.get("name", "")
+                if n.lower().endswith((".htm", ".html")):
+                    htms.append((n, (it.get("type") or ""), int(it.get("size") or 0)))
+        except Exception:
+            for n in re.findall(r'href="([^"]+\.html?)"',
+                                requests.get(base + "/", headers=_SEC_UA, timeout=15).text):
+                htms.append((n.split("/")[-1], "", 0))
+        pr = None
+        for n, ty, _sz in htms:                       # 1) EX-99* 타입
+            if ty.upper().startswith("EX-99"):
+                pr = n
+                break
+        if not pr:                                    # 2) 이름 패턴
+            for n, ty, _sz in htms:
+                if re.search(r"ex.?-?99|press|earn|release", n, re.I):
+                    pr = n
+                    break
+        if not pr:                                    # 3) 래퍼/인덱스 제외 후 가장 큰 htm
+            cand = sorted([(sz, n) for n, ty, sz in htms
+                           if not re.search(r"index|form|8-?k|primary", n, re.I)],
+                          reverse=True)
+            pr = cand[0][1] if cand else (htms[0][0] if htms else None)
+        if not pr:
+            return None
+        url = base + "/" + pr
+        raw = requests.get(url, headers=_SEC_UA, timeout=15).text
+        text = _html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw))).strip()
+        return {"text": text[:7000], "url": url, "acc": acc, "accept": accept}
+    except Exception:
+        return None
+
+
+def _report_kdate(accept):
+    """8-K 접수시각(ET ISO) → KST (yymmdd, YYYY-MM-DD)."""
+    from datetime import datetime as _dt
+    for s in (accept, re.sub(r"\.\d+", "", accept or "")):
+        try:
+            return (_dt.fromisoformat(s).astimezone(KST).strftime("%y%m%d"),
+                    _dt.fromisoformat(s).astimezone(KST).strftime("%Y-%m-%d"))
+        except (ValueError, TypeError, AttributeError):
+            continue
+    return "", ""
+
+
+def _gen_report(client, name, sym, qlabel, numbers, press_text):
+    import json as _json
+    if client is None:
+        return {"headline": f"{name} {qlabel} 실적", "verdict": "",
+                "metrics": [], "guidance": "", "bullets": ["(요약 생성 불가: API 키 없음)"]}
+    prompt = (
+        f"{name}({sym})의 {qlabel} 실적 발표 자료다.\n"
+        f"[확정 숫자]\n{numbers}\n\n"
+        f"[발표문 원문 발췌]\n{press_text}\n\n"
+        "위 정보로 '실적 보고서 요약'을 한국어로 작성해 JSON만 출력하라.\n"
+        "확정 숫자·발표문에 있는 값만 쓰고, 없는 수치·주장은 지어내지 말 것. 투자 조언 금지.\n"
+        '형식: {"headline":"한 줄 핵심(<=40자)","verdict":"beat|miss|inline",'
+        '"metrics":[{"k":"지표","v":"값"}],'
+        '"guidance":"가이던스 요지(없으면 빈문자열)",'
+        '"bullets":["요약 3~4개; 실적/가이던스/주목; 마지막은 리스크·유의점"]}'
+    )
+    try:
+        resp = client.chat.completions.create(
+            model=SUMMARY_MODEL,
+            messages=[{"role": "user", "content": prompt}],
+            response_format={"type": "json_object"}, max_tokens=700)
+        data = _json.loads(resp.choices[0].message.content or "{}")
+        return {"headline": data.get("headline", ""), "verdict": data.get("verdict", ""),
+                "metrics": (data.get("metrics") or [])[:5],
+                "guidance": data.get("guidance", ""),
+                "bullets": (data.get("bullets") or [])[:4]}
+    except Exception as e:
+        print(f"[reports] {sym} 요약 실패: {e}")
+        return {"headline": f"{name} {qlabel} 실적", "verdict": "",
+                "metrics": [], "guidance": "", "bullets": []}
+
+
+def build_reports(path=None, client=None):
+    import json as _json
+    from datetime import datetime as _dt
+    edir = os.path.dirname(os.path.abspath(__file__))
+    path = path or os.path.join(edir, "data", "reports.json")
+    try:
+        earns = {r["ticker"]: r for r in
+                 _json.load(open(os.path.join(edir, "data", "earnings.json"), encoding="utf-8"))}
+    except (OSError, ValueError):
+        print("[reports] earnings.json 없음 → 중단")
+        return
+    try:
+        existing = {r["ticker"]: r for r in _json.load(open(path, encoding="utf-8"))}
+    except (OSError, ValueError):
+        existing = {}
+    if client is None:
+        client = get_openai_client()
+    now = datetime.now(KST)
+    out = []
+    for t in EARNINGS_TICKERS:
+        er = earns.get(t)
+        if not er:
+            continue
+        det = er.get("detail") or {}
+        rq = [q for q in (det.get("quarters") or []) if q.get("reported")]
+        if not rq:
+            continue
+        time.sleep(0.3)                     # SEC 레이트리밋 여유
+        press = _sec_8k_press(t)
+        if not press:
+            if t in existing:
+                out.append(existing[t])
+            continue
+        kshort, kiso = _report_kdate(press.get("accept"))
+        try:
+            days = (now.date() - _dt.strptime(kiso, "%Y-%m-%d").date()).days
+        except (ValueError, TypeError):
+            days = 999
+        if days > 50:                       # 오래된 발표는 제외
+            if t in existing:
+                out.append(existing[t])
+            continue
+        if existing.get(t, {}).get("acc") == press["acc"]:   # 캐시
+            out.append(existing[t])
+            continue
+        lastq = rq[-1]
+        try:
+            qnum = int(lastq["cq"].split("-")[1])
+        except (ValueError, KeyError, IndexError):
+            qnum = 0
+        name = _EARN_KO.get(t, t)
+        prev, cur = det.get("prev") or {}, det.get("cur") or {}
+        numbers = (f"EPS 실제 {prev.get('eps_act', '-')} / 예상 {prev.get('eps_est', '-')} "
+                   f"(서프라이즈 {prev.get('surprise', '-')}); 다음 분기 가이던스 "
+                   f"EPS {cur.get('eps', '-')} 매출 {cur.get('rev', '-')} 성장 {cur.get('growth', '-')}")
+        print(f"[reports] {t} 8-K 요약 생성…")
+        summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"])
+        rec = {"ticker": t, "name": name,
+               "title": f"{kshort}_{name}_{qnum}분기_실적보고서",
+               "date": kiso, "qnum": qnum, "quarter": lastq.get("label", ""),
+               "acc": press["acc"], "url": press["url"],
+               "eps_act": prev.get("eps_act"), "eps_est": prev.get("eps_est"),
+               "surprise": prev.get("surprise"), "surprise_pos": prev.get("surprise_pos")}
+        rec.update(summ)
+        out.append(rec)
+    if not out:
+        print("[reports] 생성된 보고서 없음")
+        return
+    out.sort(key=lambda r: r.get("date", ""), reverse=True)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        _json.dump(out, f, ensure_ascii=False, indent=1)
+    print(f"[reports] 저장: {len(out)}개")
+
+
 if __name__ == "__main__":
     client = get_openai_client()
     final_body = build_body(client=client)
@@ -729,6 +925,7 @@ if __name__ == "__main__":
                 build_earnings()          # data/earnings.json 갱신(실패해도 기존 유지)
                 quotes = fetch_all_quotes()
                 build_prices(quotes=quotes)   # docs/prices.json (내 목표 현재가)
+                build_reports(client=client)  # data/reports.json (실적 보고서)
                 print("[site] 발행:", publish(final_body, quotes=quotes))
             except Exception as e:
                 print(f"[site] 발행 실패: {e}")
