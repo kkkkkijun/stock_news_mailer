@@ -225,6 +225,24 @@ a:hover{opacity:.72;}
 .rep-foot{display:flex;justify-content:space-between;align-items:center;margin-top:10px;}
 .rep-foot a{font-size:10.5px;color:var(--accent);text-decoration:none;}
 .rep-foot>span{font-size:10px;color:var(--faint);}
+/* 예정 뷰(경량 리스트) */
+.up-row{display:flex;align-items:center;gap:9px;padding:9px 2px;
+ border-bottom:1px solid var(--border);}
+.up-row:last-child{border-bottom:0;}
+.up-dday{font-size:10px;font-weight:800;color:var(--accent);background:var(--chip);
+ border:1px solid var(--border);border-radius:6px;padding:3px 6px;
+ min-width:42px;text-align:center;flex-shrink:0;}
+.up-main{flex:1;min-width:0;}
+.up-t{display:flex;align-items:baseline;gap:7px;}
+.up-t b{font-size:12.5px;font-weight:700;}
+.up-date{font-size:10.5px;color:var(--muted);}
+.up-sub{font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.45;}
+/* 실적 결과: 보고서 없는 종목 숫자줄 */
+.res-row{display:flex;align-items:center;gap:9px;padding:9px 2px;
+ border-bottom:1px solid var(--border);}
+.res-row:last-child{border-bottom:0;}
+.res-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px;}
+.res-main b{font-size:12.5px;font-weight:700;}
 .ern-detail{display:none;padding:0 8px 10px;flex-direction:column;gap:7px;}
 .ern-item.open .ern-detail{display:flex;}
 .ed-b{background:var(--card);border:1px solid var(--border);border-radius:9px;
@@ -1188,14 +1206,14 @@ document.querySelectorAll('.ev-view').forEach(function(b){
     box.querySelectorAll('.ev-view').forEach(function(x){x.classList.remove('on');});
     b.classList.add('on');
     var v=b.getAttribute('data-v');
-    var map={up:'.earn-up',q:'.earn-q',r:'.earn-r'};
+    var map={up:'.earn-up',r:'.earn-r'};
     Object.keys(map).forEach(function(k){
       var el=box.querySelector(map[k]);
       if(el) el.style.display=(k===v)?'':'none';
     });
   });
 });
-document.querySelectorAll('.earn-q').forEach(function(box){
+document.querySelectorAll('.earn-r').forEach(function(box){
   function showQ(cq){
     box.querySelectorAll('.q-q').forEach(function(x){
       x.classList.toggle('on', x.getAttribute('data-q')===cq);});
@@ -1234,44 +1252,41 @@ def _load_reports():
         return []
 
 
-def _render_reports():
-    reps = _load_reports()
-    if not reps:
-        return ('<div class="earn-r" style="display:none">'
-                '<div class="ern-none">아직 발표된 실적 보고서가 없습니다.</div></div>')
-    cards = ['<div class="earn-r" style="display:none">'
-             '<div class="rep-note">최근 발표 순 · SEC 8-K 원문 기반 · 참고용</div>']
-    for r in reps:
-        bg = _ticker_color(r.get("ticker", ""))
-        badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
-                 f'{_e((r.get("ticker") or "").split("-")[0])}</span>')
-        v = r.get("verdict")
-        sp = r.get("surprise_pos")
-        vcls = "beat" if (v == "beat" or sp) else ("miss" if (v == "miss" or sp is False) else "")
-        vtxt = {"beat": "어닝 서프라이즈", "miss": "어닝 쇼크", "inline": "예상 부합"}.get(v, "")
-        if r.get("surprise"):
-            vtxt = (vtxt + " " + ("▲" if sp else "▼") + _e(r["surprise"])).strip()
-        verdict = f'<span class="rep-verdict {vcls}">{vtxt}</span>' if vtxt else ""
-        mets = "".join(
-            f'<div class="rep-m"><div class="rep-mk">{_e(m.get("k",""))}</div>'
-            f'<div class="rep-mv">{_e(m.get("v",""))}</div></div>'
-            for m in (r.get("metrics") or [])[:4])
-        ms = f'<div class="rep-ms">{mets}</div>' if mets else ""
-        guide = (f'<div class="rep-guide">📈 {_e(r["guidance"])}</div>'
-                 if r.get("guidance") else "")
-        bullets = "".join(f'<div class="rep-b"><span>•</span><span>{_e(b)}</span></div>'
-                          for b in (r.get("bullets") or []))
-        head = f'<div class="rep-hd">{_e(r.get("title",""))}</div>'
-        sub = (f'<div class="rep-sub">{badge}'
-               f'<span class="rep-name">{_e(r.get("name",""))} · {_e(r.get("quarter",""))}</span>'
-               f'{verdict}</div>')
-        foot = ('<div class="rep-foot">'
-                f'<a href="{_e(r.get("url",""))}" target="_blank" rel="noopener">🔗 SEC 8-K 원문</a>'
-                '<span>AI 요약 · 참고용</span></div>')
-        cards.append(f'<div class="rep-card">{head}{sub}{ms}{guide}'
-                     f'<div class="rep-bs">{bullets}</div>{foot}</div>')
-    cards.append('</div>')
-    return "".join(cards)
+def _report_card_html(r):
+    """8-K 기반 실적 보고서 카드 1개."""
+    bg = _ticker_color(r.get("ticker", ""))
+    badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
+             f'{_e((r.get("ticker") or "").split("-")[0])}</span>')
+    v, sp = r.get("verdict"), r.get("surprise_pos")
+    vcls = "beat" if (v == "beat" or sp) else ("miss" if (v == "miss" or sp is False) else "")
+    vtxt = {"beat": "어닝 서프라이즈", "miss": "어닝 쇼크", "inline": "예상 부합"}.get(v, "")
+    if r.get("surprise"):
+        vtxt = (vtxt + " " + ("▲" if sp else "▼") + _e(r["surprise"])).strip()
+    verdict = f'<span class="rep-verdict {vcls}">{vtxt}</span>' if vtxt else ""
+    mets = "".join(
+        f'<div class="rep-m"><div class="rep-mk">{_e(m.get("k",""))}</div>'
+        f'<div class="rep-mv">{_e(m.get("v",""))}</div></div>'
+        for m in (r.get("metrics") or [])[:4])
+    ms = f'<div class="rep-ms">{mets}</div>' if mets else ""
+    guide = (f'<div class="rep-guide">📈 {_e(r["guidance"])}</div>'
+             if r.get("guidance") else "")
+    bullets = "".join(f'<div class="rep-b"><span>•</span><span>{_e(b)}</span></div>'
+                      for b in (r.get("bullets") or []))
+    head = f'<div class="rep-hd">{_e(r.get("title",""))}</div>'
+    sub = (f'<div class="rep-sub">{badge}'
+           f'<span class="rep-name">{_e(r.get("name",""))} · {_e(r.get("quarter",""))}</span>'
+           f'{verdict}</div>')
+    foot = ('<div class="rep-foot">'
+            f'<a href="{_e(r.get("url",""))}" target="_blank" rel="noopener">🔗 SEC 8-K 원문</a>'
+            '<span>AI 요약 · 참고용</span></div>')
+    return (f'<div class="rep-card">{head}{sub}{ms}{guide}'
+            f'<div class="rep-bs">{bullets}</div>{foot}</div>')
+
+
+def _rep_cq(r):
+    """보고서 분기 라벨('2026 2Q') → cq('2026-2')."""
+    p = (r.get("quarter") or "").split()
+    return f"{p[0]}-{p[1][:-1]}" if len(p) == 2 and p[1].endswith("Q") else ""
 _WHEN_KO = {"amc": "장 마감 후", "bmo": "장 전", "": ""}
 
 
@@ -1308,48 +1323,127 @@ def _render_earnings(evs, now):
             ' <span class="sched-tz">관심종목</span></span></div>')
     if not evs:
         return head + '<div class="ern-none">등록된 실적 일정이 없습니다.</div></div>'
-    rows, prev = [], None
-    for e in evs:
+    toggle = ('<div class="earn-views">'
+              '<button class="ev-view on" data-v="up">📅 예정</button>'
+              '<button class="ev-view" data-v="r">📄 실적 결과</button></div>')
+    return (head + toggle + _render_upcoming(evs, now) + _render_results(evs, now)
+            + '<div class="sched-src">데이터: Yahoo Finance · SEC EDGAR</div></div>')
+
+
+def _render_upcoming(evs, now):
+    """예정 뷰: 다가올 발표 + 컨센서스(예상 EPS/매출·목표주가·투자의견) 경량 리스트."""
+    up, dn = "#e5484d", "#3b82f6"
+    rows = []
+    for e in sorted(evs, key=lambda x: (x["date"] is None, x["date"] or date.max)):
+        d = e["date"]
+        det = e.get("detail") or {}
+        cur, tgt, rec = det.get("cur") or {}, det.get("target") or {}, det.get("rec") or {}
         bg = _ticker_color(e["ticker"])
         badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
                  f'{_e(e["ticker"].split("-")[0])}</span>')
-        key = e["date"].isoformat() if e["date"] else "TBD"
-        if key == prev:
-            date_html = '<span class="ern-date"></span>'   # 같은 날짜 연속 → 빈 칸
+        if d:
+            dd = (d - now.date()).days
+            dtxt = "D-DAY" if dd == 0 else (f"D+{-dd}" if dd < 0 else f"D-{dd}")
+            md = f'{d.month}/{d.day}({_WD_KO[d.weekday()]})'
         else:
-            if e["date"]:
-                dd = (e["date"] - now.date()).days
-                md = (f'{e["date"].month}/{e["date"].day} '
-                      f'({_WD_KO[e["date"].weekday()]})')
-                dday = "D-DAY" if dd == 0 else ("" if dd < 0 else f"D-{dd}")
-            else:
-                md, dday = "미정", ""
-            date_html = (f'<span class="ern-date"><span class="ern-md">{md}</span>'
-                         f'<span class="ern-dd">{dday}</span></span>')
-            prev = key
-        if e.get("reported"):
-            # 예정시각 경과 = 발표됨. 단 Yahoo 실제치 집계 전이므로 '집계 대기' 병기.
-            chip = ('<span class="ern-tag rep">실적 발표</span>'
-                    '<span class="ern-tag wait">집계 대기</span>')
-        elif e.get("est"):
-            chip = '<span class="ern-when">예상</span>'
-        else:
-            chip = ""
-        det = _earn_detail_html(e.get("detail") or {}, e.get("reported"))
-        arrow = '<span class="ern-arrow">▾</span>' if det else ""
-        detbox = f'<div class="ern-detail">{det}</div>' if det else ""
+            dtxt, md = "미정", "미정"
+        parts = []
+        if cur.get("eps") not in (None, "-"):
+            parts.append(f'예상 EPS {_e(cur["eps"])}')
+        if cur.get("rev") not in (None, "-"):
+            g = ""
+            if cur.get("growth"):
+                g = f' <span style="color:{up if cur.get("growth_pos") else dn}">{_e(cur["growth"])}</span>'
+            parts.append(f'매출 {_e(cur["rev"])}{g}')
+        if tgt.get("mean") not in (None, "-"):
+            u = ""
+            if tgt.get("upside"):
+                u = f' <span style="color:{up if tgt.get("upside_pos") else dn}">{_e(tgt["upside"])}</span>'
+            parts.append(f'목표 {_e(tgt["mean"])}{u}')
+        if rec.get("label") not in (None, "-"):
+            lab = rec.get("label") or ""
+            lc = up if "매수" in lab else (dn if "매도" in lab else "#f59e0b")
+            cnt = f'({rec.get("count")}명)' if rec.get("count") else ""
+            parts.append(f'<span style="color:{lc};font-weight:700">{_e(lab)}</span>{cnt}')
+        subline = " · ".join(parts) if parts else "컨센서스 없음"
         rows.append(
-            f'<div class="ern-item"><div class="ern">{date_html}{badge}'
-            f'<span class="ern-n">{_e(e["name"])}</span>{chip}{arrow}</div>'
-            f'{detbox}</div>')
-    toggle = ('<div class="earn-views">'
-              '<button class="ev-view on" data-v="up">📅 예정 순</button>'
-              '<button class="ev-view" data-v="q">📊 분기별</button>'
-              '<button class="ev-view" data-v="r">📄 보고서</button></div>')
-    up_html = '<div class="earn-up">' + "".join(rows) + '</div>'
-    return (head + toggle + up_html + _render_earn_quarters(evs, now)
-            + _render_reports()
-            + '<div class="sched-src">데이터: Yahoo Finance · SEC EDGAR</div></div>')
+            f'<div class="up-row"><span class="up-dday">{dtxt}</span>{badge}'
+            f'<div class="up-main"><div class="up-t"><b>{_e(e["name"])}</b>'
+            f'<span class="up-date">{md}</span></div>'
+            f'<div class="up-sub">{subline}</div></div></div>')
+    return '<div class="earn-up">' + "".join(rows) + '</div>'
+
+
+def _render_results(evs, now):
+    """실적 결과 뷰: 연/분기 필터 + 발표분(8-K 보고서 있으면 풀카드, 없으면 숫자줄)."""
+    reports = {}
+    for r in _load_reports():
+        cq = _rep_cq(r)
+        if cq:
+            reports[(r.get("ticker"), cq)] = r
+    buckets, labels = {}, {}
+    for e in evs:
+        for q in (e["detail"].get("quarters") or []):
+            if not q.get("reported"):
+                continue
+            cq = q.get("cq")
+            if not cq:
+                continue
+            labels[cq] = q.get("label") or cq
+            buckets.setdefault(cq, []).append(
+                {"ticker": e["ticker"], "name": e["name"], "q": q,
+                 "report": reports.get((e["ticker"], cq))})
+    if not buckets:
+        return ('<div class="earn-r" style="display:none">'
+                '<div class="ern-none">발표된 실적이 없습니다.</div></div>')
+    cqs = sorted(buckets, reverse=True)
+    default = cqs[0]
+    default_year = default.split("-")[0]
+    years = sorted({cq.split("-")[0] for cq in cqs}, reverse=True)
+    chips = ['<div class="q-years">']
+    for y in years:
+        chips.append(f'<button class="q-year{" on" if y==default_year else ""}" '
+                     f'data-y="{y}">{y}년</button>')
+    chips.append('</div><div class="q-quarters">')
+    for cq in cqs:
+        y, qn = cq.split("-")
+        hide = "" if y == default_year else ' style="display:none"'
+        on = " on" if cq == default else ""
+        chips.append(f'<button class="q-q{on}" data-y="{y}" data-q="{cq}"{hide}>{qn}Q</button>')
+    chips.append('</div>')
+
+    def _skey(x):
+        if x["report"]:
+            return (0, 0)
+        v = _pct_num(x["q"].get("surprise"))
+        return (1, -(v if v is not None else -999))
+    panels = []
+    for cq in cqs:
+        nrep = sum(1 for x in buckets[cq] if x["report"])
+        note = (f'<div class="rep-note">{_e(labels[cq])} · 발표 {len(buckets[cq])}종목'
+                f'{f" · 보고서 {nrep}" if nrep else ""} · 출처 SEC 8-K/Yahoo · 참고용</div>')
+        items = []
+        for it in sorted(buckets[cq], key=_skey):
+            if it["report"]:
+                items.append(_report_card_html(it["report"]))
+                continue
+            q = it["q"]
+            bg = _ticker_color(it["ticker"])
+            badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
+                     f'{_e(it["ticker"].split("-")[0])}</span>')
+            surp = (f'<span class="q-surp {"up" if q.get("surprise_pos") else "dn"}">'
+                    f'{"▲" if q.get("surprise_pos") else "▼"} {_e(q.get("surprise") or "")}</span>'
+                    if q.get("surprise") else '')
+            items.append(
+                f'<div class="res-row">{badge}'
+                f'<div class="res-main"><b>{_e(it["name"])}</b>'
+                f'<span class="q-sub">EPS 실제 {_e(q.get("eps_act","-"))} / '
+                f'예상 {_e(q.get("eps_est","-"))}</span></div>{surp}</div>')
+        hide = "" if cq == default else ' style="display:none"'
+        panels.append(f'<div class="q-panel" data-q="{cq}"{hide}>'
+                      + note + "".join(items) + '</div>')
+    return ('<div class="earn-r" style="display:none">'
+            + "".join(chips) + "".join(panels) + '</div>')
 
 
 def _pct_num(s):
