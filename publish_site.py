@@ -243,7 +243,10 @@ a:hover{opacity:.72;}
 .up-t b{font-size:12.5px;font-weight:700;}
 .up-date{font-size:10.5px;color:var(--muted);}
 .up-sub{font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.45;}
-.up-qh{font-size:11px;font-weight:800;color:var(--accent);margin:13px 2px 5px;}
+.up-qh{font-size:12px;font-weight:800;color:var(--ink);margin:14px 0 7px;
+ padding-bottom:5px;border-bottom:2px solid var(--border);}
+.ev-new{font-size:8.5px;font-weight:800;color:#fff;background:#16a34a;
+ border-radius:5px;padding:1px 5px;margin-left:5px;vertical-align:middle;}
 .up-rec{font-size:10.5px;color:var(--muted);margin-top:3px;display:flex;
  align-items:center;gap:6px;flex-wrap:wrap;}
 .up-cnt{color:var(--faint);}
@@ -1308,7 +1311,7 @@ def _mv_color(v):
     return _e(v)
 
 
-def _report_card_html(r):
+def _report_card_html(r, open_=False):
     """8-K 기반 실적 보고서 카드 1개."""
     bg = _ticker_color(r.get("ticker", ""))
     badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
@@ -1332,12 +1335,13 @@ def _report_card_html(r):
     foot = ('<div class="rep-foot">'
             f'<a href="{_e(r.get("url",""))}" target="_blank" rel="noopener">🔗 SEC 8-K 원문</a>'
             '<span>AI 요약 · 참고용</span></div>')
+    newb = '<span class="ev-new">NEW</span>' if open_ else ''
     header = (f'<div class="rep-head">{badge}'
-              f'<span class="rep-name">{_e(r.get("name",""))} · {_e(r.get("quarter",""))}</span>'
+              f'<span class="rep-name">{_e(r.get("name",""))} · {_e(r.get("quarter",""))}{newb}</span>'
               f'{verdict}<span class="rep-arrow">▾</span></div>')
     body = (f'<div class="rep-body">{title}{ms}{guide}'
             f'<div class="rep-bs">{bullets}</div>{foot}</div>')
-    return f'<div class="rep-item">{header}{body}</div>'
+    return f'<div class="rep-item{" open" if open_ else ""}">{header}{body}</div>'
 
 
 def _rep_cq(r):
@@ -1375,29 +1379,49 @@ def _load_earnings(now):
     return out
 
 
+def _is_fresh(r, now, days=2):
+    """최근 발표(N일 내) 보고서 → 실적 결과 자동 진입 대상."""
+    try:
+        return 0 <= (now.date() - date.fromisoformat(r.get("date", ""))).days <= days
+    except (ValueError, TypeError):
+        return False
+
+
 def _render_earnings(evs, now):
     head = ('<div class="sched sched-earn"><div class="sched-head">'
             '<span><span class="sched-ico">🏢</span>기업실적'
             ' <span class="sched-tz">관심종목</span></span></div>')
     if not evs:
         return head + '<div class="ern-none">등록된 실적 일정이 없습니다.</div></div>'
+    fresh = sorted((r for r in _load_reports() if _is_fresh(r, now)),
+                   key=lambda r: r.get("date", ""), reverse=True)
+    fresh_cq = (fresh[0].get("cq") or _rep_cq(fresh[0])) if fresh else None
+    fresh_tk = {r.get("ticker") for r in fresh}
+    auto = bool(fresh_cq)   # 최근 발표 있으면 '실적 결과'로 자동 진입
+    nb = '<span class="ev-new">NEW</span>' if fresh else ''
     toggle = ('<div class="earn-views">'
-              '<button class="ev-view on" data-v="up">📅 예정</button>'
-              '<button class="ev-view" data-v="r">📄 실적 결과</button></div>')
-    return (head + toggle + _render_upcoming(evs, now) + _render_results(evs, now)
+              f'<button class="ev-view{"" if auto else " on"}" data-v="up">📅 예정</button>'
+              f'<button class="ev-view{" on" if auto else ""}" data-v="r">📄 실적 결과{nb}</button></div>')
+    return (head + toggle
+            + _render_upcoming(evs, now, show=not auto, skip=fresh_tk)
+            + _render_results(evs, now, show=auto, default_cq=fresh_cq, fresh_tk=fresh_tk)
             + '<div class="sched-src">데이터: Yahoo Finance · SEC EDGAR</div></div>')
 
 
-def _render_upcoming(evs, now):
+def _render_upcoming(evs, now, show=True, skip=None):
     """예정 뷰: 분기별 그룹 + 컨센서스(예상 EPS/매출·목표주가·투자의견 색/비율)."""
     up, dn = "#e5484d", "#3b82f6"
+    skip = skip or set()
     groups = {}
     for e in sorted(evs, key=lambda x: (x["date"] is None, x["date"] or date.max)):
+        if e["ticker"] in skip:      # 최근 발표한 종목은 '실적 결과'로
+            continue
         d = e["date"]
         gk = (d.year, (d.month - 1)//3 + 1) if d else (9999, 9)
         gl = f"{d.year} {(d.month-1)//3+1}Q" if d else "미정"
         groups.setdefault(gk, {"label": gl, "rows": []})["rows"].append(e)
-    out = ['<div class="earn-up">'
+    disp = "" if show else ' style="display:none"'
+    out = [f'<div class="earn-up"{disp}>'
            '<div class="up-note">발표 예정일·시간 · 한국시간(KST) 기준</div>']
     for gk in sorted(groups):
         out.append(f'<div class="up-qh">{_e(groups[gk]["label"])}</div>')
@@ -1461,8 +1485,9 @@ def _render_upcoming(evs, now):
     return "".join(out)
 
 
-def _render_results(evs, now):
+def _render_results(evs, now, show=False, default_cq=None, fresh_tk=None):
     """실적 결과 뷰: 연/분기 필터 + 발표분(8-K 보고서 있으면 풀카드, 없으면 숫자줄)."""
+    fresh_tk = fresh_tk or set()
     rep_list = _load_reports()
     reports = {}
     for r in rep_list:
@@ -1500,7 +1525,7 @@ def _render_results(evs, now):
         return ('<div class="earn-r" style="display:none">'
                 '<div class="ern-none">발표된 실적이 없습니다.</div></div>')
     cqs = sorted(buckets, reverse=True)
-    default = cqs[0]
+    default = default_cq if default_cq in buckets else cqs[0]
     default_year = default.split("-")[0]
     years = sorted({cq.split("-")[0] for cq in cqs}, reverse=True)
     chips = ['<div class="q-years">']
@@ -1528,7 +1553,8 @@ def _render_results(evs, now):
         items = []
         for it in sorted(buckets[cq], key=_skey):
             if it["report"]:
-                items.append(_report_card_html(it["report"]))
+                items.append(_report_card_html(it["report"],
+                                               open_=it["ticker"] in fresh_tk))
                 continue
             q = it["q"]
             bg = _ticker_color(it["ticker"])
@@ -1545,7 +1571,8 @@ def _render_results(evs, now):
         hide = "" if cq == default else ' style="display:none"'
         panels.append(f'<div class="q-panel" data-q="{cq}"{hide}>'
                       + note + "".join(items) + '</div>')
-    return ('<div class="earn-r" style="display:none">'
+    disp = "" if show else ' style="display:none"'
+    return (f'<div class="earn-r"{disp}>'
             + "".join(chips) + "".join(panels) + '</div>')
 
 

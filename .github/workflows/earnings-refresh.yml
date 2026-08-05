@@ -1,0 +1,39 @@
+name: Earnings Refresh (Reports + Schedule)
+
+# 실적 발표(SEC 8-K) 직후 빠르게 반영. 뉴스·메일 없이 실적/시세/보고서만 갱신 후 재빌드.
+on:
+  schedule:
+    - cron: '30 22 * * *'   # 07:30 KST (미 장마감 실적 반영)
+    - cron: '30 23 * * *'   # 08:30 KST
+    - cron: '0 0 * * *'     # 09:00 KST
+    - cron: '30 12 * * *'   # 21:30 KST (미 장전 실적)
+  workflow_dispatch:
+
+concurrency:
+  group: daily-briefing      # 브리핑과 직렬화(동시 커밋 충돌 방지)
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install -r requirements.txt
+      - name: Refresh earnings/reports
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python main.py refresh
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs data
+          git diff --staged --quiet || git commit -m "refresh: 실적/보고서 갱신 [skip ci]"
+          git pull --rebase --autostash origin main || true
+          git push
