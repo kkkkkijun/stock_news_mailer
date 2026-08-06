@@ -109,7 +109,7 @@
     }
    ],
    "target": {
-    "price": "$219.22",
+    "price": "$219.41",
     "mean": "$302.83",
     "range": "$180~$500",
     "upside": "+38%",
@@ -234,10 +234,10 @@
     }
    ],
    "target": {
-    "price": "$487.46",
+    "price": "$497.73",
     "mean": "$562.73",
     "range": "$400~$870",
-    "upside": "+15%",
+    "upside": "+13%",
     "upside_pos": true
    },
    "rec": {
@@ -359,7 +359,7 @@
     }
    ],
    "target": {
-    "price": "$311.00",
+    "price": "$312.41",
     "mean": "$324.01",
     "range": "$215~$400",
     "upside": "+4%",
@@ -484,10 +484,10 @@
     }
    ],
    "target": {
-    "price": "$362.43",
+    "price": "$359.74",
     "mean": "$428.04",
     "range": "$340~$515",
-    "upside": "+18%",
+    "upside": "+19%",
     "upside_pos": true
    },
    "rec": {
@@ -609,10 +609,10 @@
     }
    ],
    "target": {
-    "price": "$272.65",
+    "price": "$273.05",
     "mean": "$323.29",
     "range": "$207~$400",
-    "upside": "+19%",
+    "upside": "+18%",
     "upside_pos": true
    },
    "rec": {
@@ -734,10 +734,10 @@
     }
    ],
    "target": {
-    "price": "$588.77",
+    "price": "$591.04",
     "mean": "$759.41",
     "range": "$580~$1,000",
-    "upside": "+29%",
+    "upside": "+28%",
     "upside_pos": true
    },
    "rec": {
@@ -859,7 +859,7 @@
     }
    ],
    "target": {
-    "price": "$321.55",
+    "price": "$320.69",
     "mean": "$397.87",
     "range": "$125~$600",
     "upside": "+24%",
@@ -979,10 +979,10 @@
     }
    ],
    "target": {
-    "price": "$31.65",
+    "price": "$30.65",
     "mean": "$29.23",
     "range": "$21~$40",
-    "upside": "-8%",
+    "upside": "-5%",
     "upside_pos": false
    },
    "rec": {
@@ -997,9 +997,9 @@
  {
   "ticker": "RDW",
   "name": "레드와이어",
-  "date": "2026-08-06",
-  "ts": 1785960000,
-  "est": false,
+  "date": "2026-11-05",
+  "ts": 1793822400,
+  "est": true,
   "detail": {
    "prev": {
     "period": "26.06",
@@ -1093,7 +1093,7 @@
      "reported": false,
      "eps_est": "$-0.10",
      "rev": "$123.71M",
-     "date": "2026-08-06"
+     "date": "2026-11-05"
     },
     {
      "cq": "2026-4",
@@ -1104,10 +1104,10 @@
     }
    ],
    "target": {
-    "price": "$10.72",
+    "price": "$12.15",
     "mean": "$14.88",
     "range": "$7~$24",
-    "upside": "+39%",
+    "upside": "+22%",
     "upside_pos": true
    },
    "rec": {
@@ -1229,10 +1229,10 @@
     }
    ],
    "target": {
-    "price": "$38.89",
+    "price": "$39.53",
     "mean": "$81.73",
     "range": "$41~$131",
-    "upside": "+110%",
+    "upside": "+107%",
     "upside_pos": true
    },
    "rec": {
@@ -1354,10 +1354,10 @@
     }
    ],
    "target": {
-    "price": "$158.43",
+    "price": "$157.37",
     "mean": "$185.68",
     "range": "$70~$255",
-    "upside": "+17%",
+    "upside": "+18%",
     "upside_pos": true
    },
    "rec": {
@@ -1479,10 +1479,10 @@
     }
    ],
    "target": {
-    "price": "$74.82",
+    "price": "$79.02",
     "mean": "$111.31",
     "range": "$64~$150",
-    "upside": "+49%",
+    "upside": "+41%",
     "upside_pos": true
    },
    "rec": {
