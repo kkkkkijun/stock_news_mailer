@@ -1,0 +1,220 @@
+2026-08-06T18:51:40.810028+09:00
+
+[오늘의 뉴스 요약] 2026-08-06 18:50 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 경상수지가 역대 최대치를 기록하며 호황 상태를 보이고 있고, 반면 금리는 전반적으로 상승세를 보이고 있다. 원화는 강세를 보이며 환율이 10개월 만에 최저 수준에 도달했다.
+
+[핵심 뉴스]
+1. (성장) 6월 경상흑자 497억弗 '사상 최대'
+   → 6월 경상수지는 497억3000만달러 흑자로, 지난해 같은 기간의 478억7000만달러에 비해 4배 증가하며 사상 최대치를 기록했다. 상품수출은 전년 대비 84.5% 증가하여 처음으로 1000억달러를 넘었다.
+   (매일경제 · 08/06 18:06)
+2. (금리) 국고채 금리 일제히 상승
+   → 국고채 금리는 6일 일제히 상승하여 3년 만기 국고채 금리가 연 3.742%로 마감하였다. 외국인의 국채선물 순매수에 따른 일시적 강세 후, 국제 유가 안정과 금리 하락폭의 과도함이 원인으로 작용했다.
+   (연합뉴스 · 08/06 16:49)
+3. (환율) 환율 1,410원대로 하락
+   → 6일 원/달러 환율은 1,410원대로 하락하여 10개월 만에 최저치를 경신했다. 국제 유가 하락, 외환시장 수급 개선 등이 복합적으로 작용했다.
+   (연합뉴스 · 08/06 16:39)
+4. (기타) 신용사면 반년만에… 5명 중 1명 또 연체
+   → 작년 신용사면 수혜자 중 올해 상반기 22.2%인 65만명이 다시 연체에 빠졌다. 금리 상승세가 지속되면서 취약계층의 재연체 가능성이 우려되고 있다.
+   (매일경제 · 08/06 18:11)
+5. (정책) 한은, 8월 기준금리 동결 전망
+   → 한국은행은 8월 기준금리를 연 2.75%로 동결할 것으로 전망되며, 환율 안정세와 금융시장 변동성을 고려하고 있다.
+   (연합뉴스 · 08/06 14:20)
+
+[흐름·전망]
+• 경상수지 흑자의 증가가 한국 경제의 안정성을 더욱 강화시키고 있으며, 반도체 산업의 지속적인 호조가 기대된다.
+• 국고채 금리 상승세가 지속되면 투자자들은 금리 인상에 대한 반응에 주목해야 할 것이다.
+• 원화 강세가 이어지면서 수출업체의 경쟁력이 어떻게 변화할지를 면밀히 관찰해야 한다.
+• 재연체 증가 우려 속에서 정부의 정책 효과와 신용평가 체계를 재검토하는 논의가 필요할 것으로 보인다.
+
+📈 해외주식 PART
+📰 [NVDA] Nautilus cooling unit earns NVIDIA AI factory validation - Engineering.com
+   (Engineering.com · 08/06 18:29)
+→ Nautilus 냉각 장치가 NVIDIA의 AI 공장 인증을 받았다. 이 인증은 Nautilus 제품이 NVIDIA의 기술 기준을 충족한다는 것을 의미하며, AI 관련 작업에 적합하다는 것을 입증한다.
+
+📰 [NVDA] NVIDIA Stock: 5 Straight Green Days, Up 15% - trefis.com
+   (trefis.com · 08/06 18:22)
+→ NVIDIA의 주가는 최근 5일 연속 상승하며 15% 상승했습니다. 이와 같은 긍정적인 추세는 투자자들의 관심을 끌고 있습니다.
+
+📰 [NVDA] Nvidia, Micron, and Sandisk Are Up Over 1,000% Since the AI Boom Started. These 2 AI Stocks Could Be the Next Big Winners.
+   (Yahoo Finance · 08/06 18:08)
+→ AI 붐이 시작된 이후 Nvidia, Micron, Sandisk의 주가는 1,000% 이상 상승했다. 앞으로 Astera와 Arista 같은 네트워킹 주식들이 다음 큰 수혜주로 주목받을 가능성이 있다.
+
+📰 [TSLA] Thinking of Buying Tesla Stock on the Dip? Here's One Green Flag and One Red Flag. - The Motley Fool
+   (The Motley Fool · 08/06 18:23)
+→ 테슬라 주식을 저가에 구매할까 고민하고 있다면, 긍정적인 신호로는 강력한 수요가 계속되고 있다는 점이 있으며, 부정적인 신호로는 경쟁이 심화되고 있다는 점이 있다는 분석이 나왔다. 이러한 요소들을 고려해야 투자 결정을 신중하게 할 수 있다.
+
+📰 [TSLA] Thinking of Buying Tesla Stock on the Dip? Here's One Green Flag and One Red Flag.
+   (Yahoo Finance · 08/06 18:20)
+→ 테슬라 주식을 매수하는 것을 고려하고 있다면, 긍정적인 신호와 부정적인 신호를 살펴보아야 한다. '딥 바이' 전략은 매력적일 수 있지만, 투자자들은 주의해야 할 여러 요소를 고려해야 한다.
+
+📰 [TSLA] Will Tesla Stock Price Today Go Up or Down? | TSLA Stock Price News, Pre-Market & Live Updates for August 6, 2026 - Action Network
+   (Action Network · 08/06 18:06)
+→ 2026년 8월 6일 테슬라 주식(TSLA)의 가격 변동에 대한 뉴스가 보도되었습니다. 시장의 반응과 사전 거래 상황에 대한 최신 업데이트가 제공되며, 주가가 상승할 것인지 하락할 것인지에 대한 전망이 논의되고 있습니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (HIMS) Declines More Than Market: Some Information for Investors
+   (Yahoo Finance · 08/06 06:45)
+→ Hims & Hers Health, Inc. (HIMS)의 주가는 최근 거래에서 $31.65로 마감하며 전날 대비 1.59% 하락했습니다. 이는 시장보다 더 큰 감소폭을 보였습니다.
+
+📰 [HIMS] The FTC Is Suing Hims & Hers Health—Here's Why Investors Shouldn't Panic - marketbeat.com
+   (marketbeat.com · 08/06 06:07)
+→ FTC가 Hims & Hers Health를 상대로 소송을 제기한 이유는 광고와 관련된 문제들 때문입니다. 그러나 전문가들은 이 사건이 투자자들에게 큰 영향을 미치지 않을 것이라고 분석하고 있습니다. 따라서 투자자들은 지나치게 걱정할 필요가 없다는 의견이 지배적입니다.
+
+📰 [HIMS] 2026-08-05 | Bronstein, Gewirtz & Grossman, LLC Announces an Investigation Against Hims & Hers Health, Inc. (HIMS) and Encourages Investors to Learn More About the Investigation | NYSE:HIMS | Press Release - Stockhouse
+   (Stockhouse · 08/06 02:00)
+→ 브론스타인, 게위르츠 & 그로스만 LLC가 Hims & Hers Health, Inc.에 대한 조사를 발표하고 투자자들에게 추가 정보 확인을 권장하고 있습니다. 이 조사는 HIMS 주식에 관련된 사항을 다루고 있습니다.
+
+📰 [RDW] Space Stocks Are Roaring Back In August — Here’s Why ASTS, RKLB, RDW And Their Peers Are Leaving SpaceX Behind
+   (Yahoo Finance · 08/06 12:25)
+→ 8월에 우주 관련 주식들이 급등하고 있으며, ASTS, RKLB, RDW 등과 같은 기업들이 SpaceX를 제치고 있습니다. 이는 SpaceX의 주식 잠금 해제 만료로 인해 공공 유통 주식 수가 두 배 이상 증가할 가능성이 있기 때문입니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Releases Quarterly Earnings Results, Beats Expectations By $0.07 EPS - marketbeat.com
+   (marketbeat.com · 08/06 12:21)
+→ 레드와이어(Redwire, NYSE: RDW)는 분기 실적을 발표하였으며, 예상보다 주당 순이익(EPS)이 0.07달러 초과한 성과를 기록했습니다. 이번 결과는 시장의 긍정적인 반응을 이끌어낼 것으로 보입니다.
+
+📰 [RDW] RDW Stock Surges Overnight On Blockbuster Earnings: Retail Wants ‘Valuation Rebalance’ Now - Stocktwits
+   (Stocktwits · 08/06 10:49)
+→ RDW 주식이 놀라운 실적 발표 이후 급등했습니다. 소매 투자자들은 현재 '밸류에이션 재조정'을 원하고 있습니다.
+
+📰 [IREN] Iren vs. AeroVironment: A Comparison of Recent Revenue Trajectories - The Motley Fool
+   (The Motley Fool · 08/06 07:49)
+→ 아이렌(Iren)과 에어로바이너먼트(AeroVironment)의 최근 수익 추세를 비교한 기사이다. 두 회사의 수익 성장률 및 시장 성과를 분석하며, 투자자들에게 각 회사의 재무 상황에 대한 통찰을 제공한다.
+
+📰 [IREN] IREN Ltd (IREN) Shares Fall 4.8% -- What GF Score of 67 Tells In - GuruFocus
+   (GuruFocus · 08/06 07:35)
+→ IREN Ltd의 주가가 4.8% 하락했으며, GF 스코어는 67로 평가되었습니다. 이 점수는 회사의 재무 건강 및 성장 잠재력을 나타냅니다.
+
+📰 [IREN] Iren vs. AeroVironment: A Comparison of Recent Revenue Trajectories
+   (Yahoo Finance · 08/06 07:09)
+→ Iren은 2025년 3분기에 수익이 최고점을 찍은 후 하락세를 보인 반면, AeroVironment의 수익은 같은 기간 동안 세 배 이상 증가했다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin to $100K? Jim Cramer Plans to Sell All His BTC as Hunter Horsley Says 'Price Lags Fundamentals' - CCN.com
+   (CCN.com · 08/06 18:25)
+→ 짐 크래머는 비트코인을 10만 달러로 예상하며 자신이 보유한 모든 비트코인을 판매할 계획이라고 밝혔다. 한편 헌터 호슬리는 비트코인 가격이 기본적인 요소에 뒤처져 있다고 언급했다.
+
+📰 [BTC-USD] Strategy's Michael Saylor Is Making a Strong Case Against a Proposed New Bitcoin Upgrade. Here's What That Means for Bitcoin. - The Motley Fool
+   (The Motley Fool · 08/06 18:23)
+→ 마이클 세일러가 새로운 비트코인 업그레이드에 대해 강력한 반대 입장을 표명하고 있습니다. 그는 이 제안이 비트코인에 미칠 부정적인 영향에 대해 주장하고 있으며, 이러한 논의가 비트코인 생태계에 중요한 영향을 미칠 수 있다고 경고하고 있습니다.
+
+📰 [BTC-USD] Coldcard hack: how a build flag drained 116M in bitcoin - Crypto News
+   (Crypto News · 08/06 18:06)
+→ Coldcard 지갑의 해킹 사건에서 특정 빌드 플래그가 1억 1천 6백만 달러 상당의 비트코인을 유출하는 데 기여한 것으로 밝혀졌다. 해커는 이 취약점을 활용하여 사용자 자산에 접근할 수 있었고, 이 사건은 암호화폐 보안의 중요성을 다시 한 번 일깨워 주고 있다.
+
+📰 [ETH-USD] Ethereum and Solana Just Got Demoted Inside Grayscale’s Fund - BeInCrypto
+   (BeInCrypto · 08/06 17:56)
+→ 그레이스케일의 펀드에서 이더리움과 솔라나가 하향 조정되었습니다. 이는 두 암호화폐의 시장 평가와 수익률에 영향을 미칠 수 있습니다.
+
+📰 [ETH-USD] Italy's Largest Bank Triples Ethereum ETF Holdings - AltcoinBuzz
+   (AltcoinBuzz · 08/06 16:45)
+→ 이탈리아 최대 은행이 이더리움 ETF 보유량을 세 배로 늘렸다고 보도됐다. 이는 암호화폐 투자에 대한 은행의 신뢰와 관심이 증가하고 있음을 나타낸다.
+
+📰 [ETH-USD] Assessing Ethereum’s scarcity narrative: What could drive a breakout above $2,000? - AMBCrypto
+   (AMBCrypto · 08/06 12:30)
+→ 이더리움의 희소성에 대한 이론이 재조명되며, 2,000달러 이상의 가격 상승을 이끌 수 있는 요인들이 분석되고 있다. 특히, 수요 증가와 공급 감소가 이더리움의 가치 상승에 기여할 수 있다는 점이 주목받고 있다.
+
+📰 [SOL-USD] Solana processes 1B transactions in a week – Leads tokenized gold with 689% growth - AMBCrypto
+   (AMBCrypto · 08/06 18:00)
+→ 솔라나는 한 주 동안 10억 건의 거래를 처리했으며, 이는 토큰화된 금 분야에서 689%의 성장을 이룬 결과입니다.
+
+📰 [SOL-USD] Ethereum and Solana Just Got Demoted Inside Grayscale’s Fund - BeInCrypto
+   (BeInCrypto · 08/06 17:56)
+→ 그레이스케일의 펀드에서 이더리움과 솔라나의 순위가 하락했습니다. 이는 암호화폐 시장의 변화와 투자자들의 선호도가 반영된 결과로 보입니다.
+
+📰 [SOL-USD] BREAKING: Grayscale Raises XRP, Bitcoin & Solana Weightage in GDLC ETF, Trims ETH - CoinGape
+   (CoinGape · 08/06 17:49)
+→ 그레이스케일이 GDLC ETF에서 XRP, 비트코인, 솔라나의 비중을 증가시키고 이더리움의 비중을 줄였습니다. 이러한 변화는 시장의 변동성과 투자 전략에 따른 것으로 보입니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장은 혼조세 속에 대부분의 주요 자산이 다소 반등하는 모습이다. 비트코인과 이더리움은 기관 자금의 유입에 힘입어 소폭 상승했지만, 알트코인들은 상대적으로 약세를 보이며 차별화된 흐름을 나타냈다.
+
+[핵심 뉴스]
+1. (ETF) 미국 ETF에 3억520만 달러 순유입
+   → 8월 6일 현재 XRP는 1.0483달러에 거래되며, 주간 낙폭은 2.88%에 이른다. XRP 현물 ETF는 하루 358만 4,700달러가 순유출됐지만, 누적 순유입액은 5억 700만 달러에 달한다.
+   (토큰포스트 · 08/06 18:20)
+2. (규제) 홍콩 첫 번째 스테이블코인 발행 지연
+   → 홍콩의 스테이블코인 2차 발행업체의 허가 시점이 불확실하고, 첫 번째 허가업체인 앵커포인트와 HSBC도 아직 상용 스테이블코인을 발행하지 못하고 있다. 2차 허가 여부는 이들 두 업체의 성과에 달려 있다.
+   (토큰포스트 · 08/06 18:43)
+3. (시세) 비트코인 6만4000달러대 지지 형성 중
+   → 비트코인은 현재 6만4837달러에서 거래되며 주간 변동 범위는 6만2250~6만5450달러이다. 가격은 상단 저항선 및 매물벽을 돌파할 수 있을지가 중점 관전 포인트다.
+   (토큰포스트 · 08/06 17:06)
+4. (온체인) 솔라나, 일일 거래량 신기록 경신
+   → 미국 ETF에 하루 3억520만 달러의 자금이 유입되었고, 비트코인과 이더리움은 각각 2억4440만 달러, 6080만 달러가 유입됐다. 전체 암호화폐 시가총액은 2조2074억 달러로 안정적인 거래량을 유지하고 있다.
+   (토큰포스트 · 08/06 17:20)
+5. (기타) 프랭클린템플턴, 칸톤 네트워크 합류
+   → 프랭클린템플턴이 칸톤 네트워크의 슈퍼 밸리데이터로 합류하며, 기관 채택 확대의 신호로 해석된다. 보고서에 따르면 기관용 블록체인 인프라의 운용 단계로의 이동이 관찰되고 있다.
+   (토큰포스트 · 08/06 16:07)
+
+[흐름·전망]
+• 향후 XRP의 ETF 자금 흐름이 시장 sentiment에 미치는 영향이 주목된다.
+• 홍콩의 스테이블코인 발행 지연이 시장의 신뢰에 미치는 리스크를 어떻게 관리할지가 중요한 관전 포인트이다.
+• 비트코인이 매물벽 돌파에 실패할 경우의 하방 압력을 대비한 전략이 필요하다.
+• 기관 자금 유입이 계속 유지된다면, 주말까지의 거래 흐름에서 긍정적인 신호로 이어질 가능성이 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 60 (Greed)
+  - 크립토 기준: 25 (Extreme Fear)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 정부의 세제개편안 발표와 재건축 사업의 활성화 소식이 겹쳐 양극화가 심화되고 있는 모습을 보였다. 특히 강남권의 초고가 아파트는 가격 상승이 둔화되는 반면, 소형 아파트는 거래량이 급증하고 있다.
+
+[핵심 뉴스]
+1. (정책) 재건축 끝난 임대주택도… 1년 안에 팔면 세금 혜택
+   → 정부는 내년 1월 1일부터 의무임대 주택의 양도세 혜택을 1년 연장하기로 결정하여 서울의 재건축·재개발 임대사업자들이 혜택을 받게 되었다.
+   (매일경제 · 08/06 18:17)
+2. (재건축) 이런게 '닥공'… 개포·구로·번동서 9천가구
+   → 서울시는 5개 정비사업에서 총 9237가구의 주택 공급을 계획하고 있으며, 이는 사업성 보강으로 가능해졌다.
+   (매일경제 · 08/06 18:17)
+3. (매매) 세제개편 ‘태풍’에 대출규제 ‘폭탄’…전세는 실종
+   → 서울 아파트값이 최근 78주 연속 상승 중이며, 특히 마포구의 상승률이 두드러지는데, 이는 공시가격 20억원 이하 아파트에 대한 수요가 증가했기 때문이다.
+   (매일경제 · 08/06 18:07)
+4. (전세) “이러니 전세고 월세고 살 집이 없지”…서울 37만가구 늘 때 주택은 27만채 증가
+   → 강남권 초고가 주택 시장의 거래가 감소하고, 소형 아파트의 거래량이 전년 대비 51% 증가하며 양극화 현상이 뚜렷해지고 있다.
+   (매일경제 · 08/06 16:40)
+5. (공급) LH, 알짜부지 2천평 강남사옥 청년주택 위해 푼다
+   → LH는 부채가 늘어나더라도 강남 지역 주택 공급을 지속적으로 확대하겠다고 밝혔다.
+   (매일경제 · 08/06 18:17)
+6. (정책) 오세훈 서울시장 “세제 개편안, 집값 안정이 아니라 혼란만 키운다”
+   → 오세훈 서울시장은 세제 개편안이 부동산 시장을 안정시키기보다는 혼란을 초래할 것이라고 비판하며, 현 정책의 이해충돌 문제를 지적하였다.
+   (매일경제 · 08/06 15:05)
+
+[흐름·전망]
+• 단기적으로 강남권 초고가 주택의 거래 부진이 이어지며, 소형 주택으로의 수요 이동이 지속될 가능성이 높다.
+• 재건축과 재개발 사업이 활성화되면서 중소형 아파트의 공급이 늘어날 것이며, 이에 따른 가격 안정화 여부가 관전 포인트가 될 것이다.
+• 전세 시장의 매물 부족 현상이 심화되고 있으며, 이는 실수요자들에게 추가적인 가격 상승 압력으로 작용할 전망이다.
+• 정부 정책의 효과와 부작용이 상충하는 상황에서 앞으로의 정책 변화가 시장에 미칠 영향에 대해 계속 주목할 필요가 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 현재 정치 상황에 대해 비판적인 시각을 드러내며, 공화당의 자금력이 중요하다고 강조했다. 그는 또한 방산 산업의 성장과 관련해 미국의 군사력을 자랑했다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 공화당이 중간 선거를 위해 자금 지원을 받고 있으며, 민주당의 자금 상황은 좋지 않다고 주장했다.
+   (Truth Social · 08/06 13:34)
+2. (외교) 트럼프는 미국의 군수 산업이 역사상 최대 규모로 발전하고 있으며, 방산 물자 생산이 활발하다고 강조했다.
+   (Truth Social · 08/06 13:03)
+3. (사법) 트럼프는 미국 내 정보 유출자들을 추적하고 있으며, 그들에게 긴 형량이 선고될 것이라고 경고했다.
+   (Truth Social · 08/06 09:28)
+4. (기타) 트럼프는 자신의 지지율 상승을 자신하며, 언론의 보도를 비난했다.
+   (Truth Social · 08/06 05:16)
+5. (국내정치) 트럼프는 미시간의 부정 선거 문제를 언급하며, 다음 선거에서 공화당 후보에 대한 지지를 촉구했다.
+   (Truth Social · 08/05 23:10)
+
+[흐름·전망]
+• 트럼프의 발언이 향후 중간 선거에서 공화당 자금 조달 방식에 영향을 미칠 가능성에 주목해야 한다.
+• 미국의 방산 산업 성장 속도가 외교 정책에 미치는 영향을 지켜볼 필요가 있다.
+• 트럼프의 사법 관련 발언은 정보 유출 문제에 대한 여론을 불러일으킬 수 있다.
+• 선거 관련 언급은 미시간 주에서의 투표 문제를 둘러싼 논란을 재점화할 수 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
