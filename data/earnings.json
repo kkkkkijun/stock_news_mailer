@@ -1002,18 +1002,13 @@
   "est": false,
   "detail": {
    "prev": {
-    "period": "26.03",
-    "eps_act": "$-0.12",
-    "eps_est": "$-0.17",
-    "surprise": "+28.47%",
+    "period": "26.06",
+    "eps_act": "$-0.09",
+    "eps_est": "$-0.13",
+    "surprise": "+30.77%",
     "surprise_pos": true
    },
    "surprises": [
-    {
-     "fmt": "-840.00%",
-     "v": -840.0,
-     "pos": false
-    },
     {
      "fmt": "-46.92%",
      "v": -46.92,
@@ -1028,21 +1023,14 @@
      "fmt": "+28.47%",
      "v": 28.47,
      "pos": true
+    },
+    {
+     "fmt": "+30.77%",
+     "v": 30.77,
+     "pos": true
     }
    ],
    "cur": {
-    "period": "26.06",
-    "eps": "$-0.13",
-    "eps_range": "$-0.13~$-0.13",
-    "rev": "$107.66M",
-    "growth": null,
-    "growth_pos": null
-   },
-   "rev": {
-    "up": 1,
-    "down": 0
-   },
-   "next": {
     "period": "26.09",
     "eps": "$-0.10",
     "eps_range": "$-0.10~$-0.10",
@@ -1050,16 +1038,19 @@
     "growth": "+47.64%",
     "growth_pos": true
    },
+   "rev": {
+    "up": 1,
+    "down": 0
+   },
+   "next": {
+    "period": "26.12",
+    "eps": "$-0.08",
+    "eps_range": "$-0.08~$-0.08",
+    "rev": "$139.75M",
+    "growth": "+63.65%",
+    "growth_pos": true
+   },
    "quarters": [
-    {
-     "cq": "2025-2",
-     "label": "2025 2Q",
-     "reported": true,
-     "eps_act": "$-1.41",
-     "eps_est": "$-0.15",
-     "surprise": "-840.00%",
-     "surprise_pos": false
-    },
     {
      "cq": "2025-3",
      "label": "2025 3Q",
@@ -1090,17 +1081,26 @@
     {
      "cq": "2026-2",
      "label": "2026 2Q",
-     "reported": false,
+     "reported": true,
+     "eps_act": "$-0.09",
      "eps_est": "$-0.13",
-     "rev": "$107.66M",
-     "date": "2026-08-06"
+     "surprise": "+30.77%",
+     "surprise_pos": true
     },
     {
      "cq": "2026-3",
      "label": "2026 3Q",
      "reported": false,
      "eps_est": "$-0.10",
-     "rev": "$123.71M"
+     "rev": "$123.71M",
+     "date": "2026-08-06"
+    },
+    {
+     "cq": "2026-4",
+     "label": "2026 4Q",
+     "reported": false,
+     "eps_est": "$-0.08",
+     "rev": "$139.75M"
     }
    ],
    "target": {
