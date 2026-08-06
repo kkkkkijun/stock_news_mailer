@@ -25,7 +25,7 @@ function init(){
   injectStyle();
   let uid = null, unsub = null, built = false;
   let editCash = null, editTrade = null;
-  let journalMonth = "all", lastReal = [];
+  let journalMonth = "all", lastReal = [], tradeTicker = "all";
   const defState = () => ({ goal:{name:"",target:0,start:"",end:"",cur:"$",fx:0}, cash:[], trades:[], prices:{} });
   let S = defState();
 
@@ -113,6 +113,7 @@ function init(){
     });
     $("g_cAdd").onclick = addCash;
     $("g_tAdd").onclick = addTrade;
+    $("g_tFilter").onchange = () => { tradeTicker=$("g_tFilter").value; renderData(); };
     $("g_editGoal").onclick = openGoalEdit;
     $("ge_save").onclick = saveGoalEdit;
     $("ge_cancel").onclick = () => { $("g_goalEdit").style.display="none"; };
@@ -213,9 +214,21 @@ function init(){
       cr.appendChild(d);
     });
 
+    // 티커 필터 옵션(거래에 있는 종목만)
+    const tks=[...new Set(S.trades.map(t=>(t.ticker||"").toUpperCase()).filter(Boolean))].sort();
+    const tf=$("g_tFilter");
+    if(tf){
+      tf.innerHTML="<option value='all'>전체</option>"+
+        tks.map(k=>"<option value='"+esc(k)+"'>"+esc(k)+"</option>").join("");
+      tf.value=(tradeTicker==="all"||tks.includes(tradeTicker))?tradeTicker:"all";
+      tradeTicker=tf.value;
+    }
     const tr=$("g_tradeRows"); tr.innerHTML="";
-    if(!S.trades.length) tr.innerHTML="<div class='g-empty'>거래 내역이 없습니다.</div>";
-    [...S.trades].sort((a,b)=>a.date<b.date?1:-1).forEach(t=>{
+    const tlist=[...S.trades]
+      .filter(t=>tradeTicker==="all"||(t.ticker||"").toUpperCase()===tradeTicker)
+      .sort((a,b)=>a.date<b.date?1:-1);
+    if(!tlist.length) tr.innerHTML="<div class='g-empty'>거래 내역이 없습니다.</div>";
+    tlist.forEach(t=>{
       const d=document.createElement("div"); d.className="g-row";
       d.innerHTML="<div class='g-grow'><b>"+mmdd(t.date)+"</b> · "+
         "<b style='color:"+(t.side==="buy"?"#16a34a":"#3b82f6")+"'>"+(t.side==="buy"?"매수":"매도")+"</b> "+
@@ -445,6 +458,8 @@ function SHELL_HTML(){ return ''+
       '<input type="number" class="g-num" id="g_tPrice" placeholder="단가" inputmode="decimal">'+
       '<input type="number" class="g-num" id="g_tFee" placeholder="수수료" inputmode="decimal">'+
       '<button class="g-btn pri" id="g_tAdd">추가</button></div>'+
+      '<div class="g-tfilter">종목별 보기 '+
+        '<select id="g_tFilter"><option value="all">전체</option></select></div>'+
       '<div id="g_tradeRows"></div></div>'+
     '<div class="g-jbar"><div class="g-jfilter"><span>월별</span>'+
       '<select id="g_jMonth"><option value="all">전체</option></select></div>'+
@@ -556,6 +571,10 @@ function injectStyle(){
   #goalRoot .g-frm{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
   #goalRoot .g-frm input,#goalRoot .g-frm select{font:inherit;font-size:12.5px;border:1px solid var(--border);
     border-radius:8px;padding:8px 9px;background:var(--card);color:var(--ink);min-width:0}
+  #goalRoot .g-tfilter{display:flex;align-items:center;gap:6px;font-size:11.5px;
+    color:var(--muted);font-weight:600;margin-bottom:8px}
+  #goalRoot .g-tfilter select{font:inherit;font-size:12px;border:1px solid var(--border);
+    border-radius:8px;padding:5px 9px;background:var(--card);color:var(--ink);cursor:pointer}
   #goalRoot .g-date{width:118px}#goalRoot .g-tk{width:82px;text-transform:uppercase}
   #goalRoot .g-date::-webkit-calendar-picker-indicator{display:none}
   #goalRoot .g-date::-webkit-inner-spin-button{display:none}
