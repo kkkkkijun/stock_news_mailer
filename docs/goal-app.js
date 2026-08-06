@@ -81,6 +81,7 @@ function init(){
   }
   async function save(){
     if(!uid) return;
+    if(built) renderData();   // 변경 즉시 대시보드·목록 재계산(로컬 반영, Firestore 왕복 대기 X)
     try { await setDoc(doc(db,"users",uid), Object.assign({}, S, {updatedAt: Date.now()})); }
     catch(e){ alert("저장 실패: "+(e.code||e.message)); }
   }
