@@ -1,0 +1,219 @@
+2026-08-09T06:36:57.541814+09:00
+
+[오늘의 뉴스 요약] 2026-08-09 06:35 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 금융시장에서 환율과 금리 변동성이 두드러진 가운데, 미국의 금리인상 기대가 후퇴하면서 글로벌 주식시장이 상승세를 보였다.
+
+[핵심 뉴스]
+1. (환율) 환율 1,600원 향하다 1,300원대 눈앞…변동성 금융위기 후 최고
+   → 환율 변동성이 올해 들어 가장 큰 수준에 도달하며 1,600원선을 위협하던 환율이 최근 1,400원대 초반으로 떨어졌다. 외환당국의 공조 개입과 수출기업의 달러 매도세가 환율 하락의 주요 요인으로 작용하고 있다.
+   (연합뉴스 · 08/09 05:51)
+2. (금리) 美증시, 금리인상 기대론 후퇴에 상승…S&P500 사상최고치 마감
+   → 7일 미국의 고용지표 악화로 금리인상 기대가 감소하면서 뉴욕증시가 상승, S&P 500 지수가 사상 최고치를 경신했다. 이는 투자자들의 위험 자산 선호 심리를 되살리는 계기가 되었다.
+   (연합뉴스 · 08/08 06:12)
+3. (금리) 美지표 주시하며 국고채 금리 상승…3년물 연 3.746%
+   → 국고채 금리는 미국의 고용지표 발표를 앞두고 상승세를 보였으며, 특히 3년 만기 국고채는 연 3.746%로 끝났다. 다음주 발표될 미국의 물가지표에 대한 관심이 높아지고 있다.
+   (연합뉴스 · 08/07 16:53)
+4. (정책) 구윤철 '대출 완화' 주장에 '핀셋 지원 고민 중…조만간 대책'
+   → 구윤철 부총리가 대출 규제 완화에 대한 필요성을 언급하며, 서민과 실수요자 지원을 위한 조치를 추진할 것이라고 밝혔다. 주택 공급을 증가시키기 위한 다양한 대책을 마련 중이다.
+   (연합뉴스 · 08/07 19:01)
+5. (고용) 늙어가는 제조업…10년간 청년 21만명 줄 때 고령층 46만명 '쑥'
+   → 제조업 내 청년 취업자 수가 10년간 20만명 감소하는 반면, 고령층 취업자는 46만명 늘어났다. 이는 제조업의 고령화가 심화되고 있음을 나타내며, 장기적으로 성장 잠재력에 부정적인 영향을 미칠 수 있다.
+   (매일경제 · 08/07 18:05)
+
+[흐름·전망]
+• 환율 변동성 확대가 수출기업에 미치는 영향에 주목할 필요가 있다.
+• 미국 고용지표와 물가지표 등을 통한 통화정책 변화에 대한 시장 반응을 관찰해야 한다.
+• 국고채 금리의 향후 움직임은 미국의 경제지표 발표와 긴밀하게 연결될 것으로 예상된다.
+• 청년층과 고령층 취업 트렌드 변화가 경제 전반에 미치는 영향이 심각해질 가능성이 있어 주의가 필요하다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia’s $3 Billion Bet on Lancium Signals the Compute Landlord Thesis Has Reached the Power Layer
+   (Yahoo Finance · 08/09 06:12)
+→ Nvidia가 Lancium에 30억 달러를 투자하면서 AI의 병목 현상이 컴퓨팅 용량에서 전력 공급으로 전환되었음을 나타냅니다. Nvidia는 지난 2년 동안 주요 고객의 재정 지원을 해왔으며, 이제는 자사 하드웨어를 지원하는 전력 인프라에 대한 지분 소유로 나아가고 있습니다.
+
+📰 [NVDA] AMD (AMD) Buys Taalas: Is AI Inference the Next Battleground With Nvidia?
+   (Yahoo Finance · 08/09 04:46)
+→ AMD가 AI 추론 칩 분야에서 NVIDIA에 대항하기 위해 칩 스타트업 Taalas를 인수한다고 발표했다. 이 인수는 반도체 제조업체들이 전문화된 추론 칩에 집중하는 가운데 이루어졌다. 거래의 재정적 조건은 공개되지 않았다.
+
+📰 [NVDA] AMD (AMD) Buys Taalas: Is AI Inference the Next Battleground With Nvidia? - Yahoo Finance UK
+   (Yahoo Finance UK · 08/09 04:46)
+→ AMD가 Taalas를 인수하면서 AI 추론 분야에서 NVIDIA와의 경쟁이 심화될 것으로 예상됩니다. 이 인수는 AMD가 AI 기술을 강화하고 시장 점유율을 확대하려는 전략의 일환으로 보입니다.
+
+📰 [TSLA] Kyle Shanahan says his Tesla was on autopilot before accident - NBC Sports
+   (NBC Sports · 08/09 06:13)
+→ 카일 샤나한은 사고가 발생하기 전에 그의 테슬라 자동차가 자율주행 모드였다고 밝혔습니다. 사고의 경위에 대해 추가적인 정보는 아직 공개되지 않았습니다.
+
+📰 [TSLA] 49ers coach Kyle Shanahan says his Tesla was on autopilot during crash - San Francisco Chronicle
+   (San Francisco Chronicle · 08/09 06:10)
+→ 샌프란시스코 49ers의 코치 카일 샤나한은 자신의 테슬라 자동차가 사고 당시 자동 조정 모드(오토파일럿)로 주행하고 있었다고 밝혔습니다. 이는 사고의 원인에 대한 논란을 일으킬 수 있는 정황입니다.
+
+📰 [TSLA] The monthly gap between charging a Tesla Cybertruck and filling a Ford F-150 is wider than owners expect, and it flips in one case - OkDiario
+   (OkDiario · 08/09 05:45)
+→ 테슬라 사이버트럭을 충전하는 비용과 포드 F-150을 주유하는 비용 사이의 월간 차이가 예상보다 크며, 특정 경우에는 그 차이가 반전되는 것으로 나타났다.
+
+📰 [HIMS] Hims & Hers Health (HIMS) Responds To FTC Lawsuit Over Patient Data Use
+   (Yahoo Finance · 08/08 17:12)
+→ Hims & Hers Health가 연방거래위원회(FTC)의 환자 데이터 사용 관련 소송에 대해 공식 대응을 발표했습니다. 회사는 원거리 의료 상담 및 소비자 정보 처리 방식에 대한 입장을 설명하며 사용자와 투자자들을 안심시키려 했습니다. 이 소송은 원거리 의료 제공자들의 규제 위험과 환자 데이터의 수집, 저장, 사용 방식에 대한 의문을 제기하고 있습니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (NYSE:HIMS) Given Average Recommendation of "Hold" by Brokerages - marketbeat.com
+   (marketbeat.com · 08/08 15:43)
+→ Hims & Hers Health, Inc. (NYSE:HIMS)가 브로커들로부터 "보유" 추천을 평균적으로 받았다는 소식입니다. 이 회사에 대한 투자자들의 의견이 중립적임을 나타냅니다.
+
+📰 [HIMS] Bronstein, Gewirtz & Grossman, LLC Is Investigating Hims & Hers Health, Inc. (HIMS) And Encourages Investors to Connect - ACCESS Newswire
+   (ACCESS Newswire · 08/08 09:44)
+→ 법률 회사인 Bronstein, Gewirtz & Grossman, LLC가 Hims & Hers Health, Inc. (HIMS)에 대한 조사를 진행하고 있으며, 투자자들에게 이에 대해 연락할 것을 권장하고 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Upgraded by Wall Street Zen to Hold Rating - marketbeat.com
+   (marketbeat.com · 08/08 14:38)
+→ 레드와이어(Redwire, NYSE:RDW)가 월스트리트 젠(Wall Street Zen)에서 "보유(Hold)" 등급으로 상향 조정되었습니다. 이 변화는 시장에서의 투자 의견에 영향을 미칠 것으로 예상됩니다.
+
+📰 [RDW] RDW Aug 2026 14.500 put (RDW260807P00014500) Stock Historical Prices & Data - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 08/08 13:25)
+→ Yahoo! Finance Canada에서는 RDW의 2026년 8월 만기 14.500 풋 옵션(RDW260807P00014500)의 역사적인 가격 및 데이터 정보를 제공하고 있습니다. 이 데이터는 투자자들이 옵션의 과거 성과를 분석하는 데 도움을 줍니다.
+
+📰 [RDW] RDW Sep 2026 2.000 put (RDW260918P00002000) interactive stock chart - Yahoo Finance Australia
+   (Yahoo Finance Australia · 08/08 07:50)
+→ RDW 2026년 9월 만기 2.000 풋 옵션(RDW260918P00002000)의 주식 차트가 Yahoo Finance Australia에서 제공되고 있습니다. 이 옵션에 대한 정보는 투자자들에게 유용한 데이터를 제공할 수 있습니다.
+
+📰 [IREN] IREN Is Up 9% From Its Lows as It Closes Its Mirantis Deal. Here’s Where the Stock Could Go in 2026 - TIKR.com
+   (TIKR.com · 08/09 03:34)
+→ IREN 주식이 Mirantis 인수 계약 체결에 따라 저점 대비 9% 상승했습니다. 전문가들은 2026년까지 주가의 향후 전망에 대해 논의하고 있습니다.
+
+📰 [IREN] IREN Limited (bStocks Tokenized Stock) (IRENB) Price, MarketCap, Charts and Fundamentals Info - BeInCrypto
+   (BeInCrypto · 08/09 01:12)
+→ IREN Limited의 bStocks 토큰화 주식(IRENB)에 대한 가격, 시장 가치, 차트 및 기본 정보가 BeInCrypto에서 제공되었습니다. 이 정보는 IREN의 전반적인 시장 동향과 투자 가능성을 이해하는 데 도움을 줍니다.
+
+📰 [IREN] A Look at IREN Ltd (IREN) After 8.7% Gain -- GF Value $14.16 vs Price $41.23 - GuruFocus
+   (GuruFocus · 08/08 08:33)
+→ IREN Ltd(IREN)의 주가가 8.7% 상승하며 현재 가격이 41.23달러에 도달했습니다. 그러나 정당한 가치(GF Value)는 14.16달러로 평가되어, 현재 주가가 과대 평가된 상태임을 알 수 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] 5 Best Crypto Casinos 2026 – Which Bitcoin Casinos Are Worth Playing? - Muddy River Sports
+   (Muddy River Sports · 08/09 06:03)
+→ 2026년 최고의 크립토 카지노 5곳에 대한 기사에서는 비트코인 카지노 중 플레이할 가치가 있는 곳을 소개합니다. 이 카지노들은 사용자 경험, 게임 다양성 및 보안 측면에서 우수하다고 평가받고 있습니다.
+
+📰 [BTC-USD] Block raises Bitcoin holdings to 9,117 BTC desp... - Pluang
+   (Pluang · 08/09 05:47)
+→ Block이 비트코인 보유량을 9,117 BTC로 증가시켰습니다. 이는 회사의 암호화폐 투자 전략의 일환으로, 비트코인에 대한 신뢰를 더욱 강화하고 있음을 나타냅니다.
+
+📰 [BTC-USD] Bitcoin hits block 961,632 as the controversial BIP-110 soft fork attempt begins - CoinDesk
+   (CoinDesk · 08/09 05:06)
+→ 비트코인이 블록 961,632에 도달하며 논란이 되는 BIP-110 소프트 포크 시도가 시작되었다. 이 변경은 비트코인 네트워크의 업그레이드를 위한 것으로, 관련 논의가 진행되고 있다.
+
+📰 [ETH-USD] Ethereum Price Prediction Eyes $2,000 but the Wallets Chasing Real Returns Already Moved to Pepeto - StreetInsider
+   (StreetInsider · 08/09 05:42)
+→ 이더리움 가격이 2,000달러를 목표로 하고 있지만, 실제 수익을 추구하는 투자자들은 이미 Pepeto로 이동하고 있다는 소식입니다. 이러한 움직임은 이더리움의 성장 가능성에 대한 의구심을 나타냅니다.
+
+📰 [ETH-USD] SharpLink CEO Warns Against New Ethereum Network Proposal EIP-8363 - CryptoRank
+   (CryptoRank · 08/09 05:25)
+→ SharpLink의 CEO가 새로운 이더리움 네트워크 제안인 EIP-8363에 대해 우려를 표명했다. 그는 이 제안이 네트워크에 부정적인 영향을 미칠 수 있다고 경고했다.
+
+📰 [ETH-USD] SharpLink CEO warns EIP-8363 could harm Ethereu... - Pluang
+   (Pluang · 08/09 04:35)
+→ SharpLink의 CEO는 EIP-8363이 이더리움을 해칠 수 있다고 경고했습니다. 이 제안이 이더리움의 생태계에 부정적인 영향을 미칠 수 있다는 우려를 표명하며, 신중한 접근이 필요하다고 강조했습니다.
+
+📰 [SOL-USD] Solana Beach approves contract for federal lobbying - San Diego Union-Tribune
+   (San Diego Union-Tribune · 08/09 06:05)
+→ 솔라나 비치가 연방 로비를 위한 계약을 승인했습니다. 이 결정은 지역의 정책과 이익을 대변하기 위한 것으로, 정부와의 소통을 강화하려는 취지입니다.
+
+📰 [SOL-USD] Solana Price Prediction: GSOL Starts Cash Staking Payouts as AlphaPepe’s Stage 20 Demand Builds the Scarcity Trade - StreetInsider
+   (StreetInsider · 08/09 04:36)
+→ 솔라나(GSOL)가 현금 스테이킹 지급을 시작했으며, AlphaPepe의 20단계 수요가 증가하면서 희소성 거래가 활성화되고 있습니다. 이는 솔라나 가격 예측에 긍정적인 영향을 미칠 것으로 보입니다.
+
+📰 [SOL-USD] ZAN Node Is the World's Fastest Web3 Node Provider, Covering Ethereum, Solana, Base, Polygon, and 47+ Networks - EIN Presswire
+   (EIN Presswire · 08/09 04:20)
+→ ZAN Node는 이더리움, 솔라나, 베이스, 폴리곤 등 47개 이상의 네트워크를 지원하는 세계에서 가장 빠른 Web3 노드 제공업체로 자리잡았습니다. 이 회사는 특히 향상된 성능으로 주목받고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장에서는 비트코인 네트워크의 BIP-110 강제 신호 기간이 시작되며, 미국 상원에서 CLARITY Act 논의가 본회의 표결 단계로 올라가는 등 중요한 규제 이슈들이 부각되고 있다.
+
+[핵심 뉴스]
+1. (온체인) 채굴자 지지 2.5% 못 넘어…BIP-110 강제신호 구간 시작됐다
+   → 비트코인 네트워크가 BIP-110의 강제 신호 기간에 진입했으며, 채굴자 신호 지지율은 2.5%에 불과해 활성화 기준에 미치지 못하고 있다.
+   (토큰포스트 · 08/09 05:25)
+2. (규제) 미 상원, CLARITY Act 9월 표결 수순…비트코인·가상자산 규제 분수령
+   → 미국 상원이 CLARITY Act를 놓고 논의가 진행되고 있으며, 이는 가상자산 규제의 중요한 전환점으로 작용할 것으로 보인다.
+   (토큰포스트 · 08/09 02:40)
+3. (ETF) 비트코인 현물 ETF로 자금 재유입…셀프커스터디 불안도 자극
+   → 미국 비트코인 현물 ETF로 약 10억 달러의 자금이 유입되며 투자 심리가 회복되고 있으며, 최근의 해킹 사건이 '셀프커스터디'의 불안을 부각시키고 있다.
+   (토큰포스트 · 08/09 01:56)
+4. (ETF) 비트코인 ETF에 1조 2000억원 유입…4개월 만에 주간 최대
+   → 비트코인 현물 ETF가 8월 첫 주에 8억 5,354만 달러의 자금 유입을 기록하며 4개월 만에 최대 성과를 달성했고, 이는 비트코인 가격 상승과 연관이 있다.
+   (토큰포스트 · 08/09 01:51)
+5. (규제) 브라질, 1400만원 넘는 암호화폐 이체 24시간 지연 도입
+   → 브라질 중앙은행이 2027년부터 1만 달러 이상의 암호화폐 이체에 최대 24시간 지연 규정을 도입한다고 발표했다.
+   (토큰포스트 · 08/08 20:41)
+
+[흐름·전망]
+• BIP-110 지지율이 낮은 채로 강제 신호 기간이 이어짐에 따라 향후 비트코인 네트워크의 분기 상황이 주목된다.
+• CLARITY Act 통과 여부에 따라 미국 내 비트코인 및 가상자산 시장의 규제 환경이 크게 변화할 가능성이 존재한다.
+• 현물 ETF에 대한 자금 유입이 지속된다면 비트코인 가격에 긍정적인 영향을 미칠 수 있으며, 반대로 매도 물량 증가로 인해 상승 제한도 우려된다.
+• 브라질의 새로운 규제가 암호화폐 이체 속도에 영향을 미칠 것으로 보이며, 이는 국경 간 투자 및 송금 전략에 반영될 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 64 (Greed)
+  - 크립토 기준: 30 (Fear)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 정부의 주택 공급 확대와 금융 지원 방안 모색으로 기대감을 나타내고 있다. 다만, 부동산 민심 악화와 함께 세제 개편안에 대한 반응이 상반되어 시장의 불안정성이 지속될 것으로 보인다.
+
+[핵심 뉴스]
+1. (공급) PF확대·규제완화로 '과감한 공급'
+   → 금융당국은 이재명 대통령의 주택 공급 촉진 요청에 따라 PF 공적보증 확대와 규제 완화를 검토하고 있으며, 비거주 1주택자의 투기성과 관련해 새로운 기준 마련에 어려움을 겪고 있다.
+   (연합뉴스 · 08/09 05:47)
+2. (공급) 수도권 공급 늘리고 금융·세제 지원도
+   → 정부는 수도권 주택 공급을 늘리고 신속한 공급을 지원하기 위한 제도적 방안을 강구하고 있으며, 올해 상반기 서울 아파트 준공 물량이 작년 대비 52.1% 감소하며 공급난이 심화되고 있다.
+   (연합뉴스 · 08/09 05:31)
+3. (공급) 서울 준공업지역 2만7천가구 공급
+   → 서울 준공업지역에서 추진 중인 2만7천가구 규모의 주택 공급이 우선 순위에 두어져 있으며, 이를 위해 제도 개선과 금융 지원 방안을 추진하고 있다.
+   (연합뉴스 · 08/09 05:31)
+4. (정책) 종부세 격차 확대
+   → 1주택자와 3주택자 간 종합부동산세의 격차가 내후년부터 확대될 것으로 예상되며, 이는 세제 개편안에 따른 조정이 큰 영향을 미칠 것으로 보인다.
+   (연합뉴스 · 08/09 05:45)
+5. (정책) 부동산세제 입법의견 쇄도
+   → 정부의 부동산 세제 개편안에 대한 국민 의견이 쇄도하고 있으며, 실거주 예외 조건에 대한 요구가 많아 정부는 이를 수용할 방안을 검토 중이다.
+   (연합뉴스 · 08/09 05:45)
+6. (공급) 李정부 부동산 공급대책 이르면 13일 발표
+   → 이재명 정부의 부동산 공급 대책이 신속하게 발표될 예정이며, 신규 공급과 속도에 중점을 두고 있다.
+   (뉴스1 · 08/09 05:05)
+
+[흐름·전망]
+• 정부의 주택 공급 대책 이행 여부와 신속한 실행이 시장에 미치는 영향에 주목해야 한다.
+• 부동산 세제 개편안이 향후 시장 안정성에 미칠 영향을 면밀히 분석할 필요가 있다.
+• 투기성 비거주 1주택자에 대한 규제 마련과 시장 반응이 중요한 관전 포인트이다.
+• 수도권 공급 확대와 다양한 지원 방안이 실제로 주택 시장에 긍정적인 변화를 가져올 수 있을지 지켜봐야 할 때이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 미국의 정치적 상황과 선거에 대한 우려를 드러내며, 민주당의 재정적 어려움과 2020년 선거 불만족을 강조하고 있다. 또한 그는 백악관의 안전과 관련된 논란에 대해서도 언급하였다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 민주당이 재정적으로 어려운 상황에 처해 있다고 주장하며, 공화당이 중간 선거를 위한 자금을 확보하고 있다고 말했다.
+   (Truth Social · 08/09 04:52)
+2. (사법) 트럼프는 2020년 아리조나 주에서 해커가 60만 개 이상의 유권자 파일을 훔쳤음에도 불구하고 법무부가 기소하지 않았다고 언급하며, 선거의 안전성에 대한 이의를 제기했다.
+   (Truth Social · 08/09 04:51)
+3. (사법) 그는 2020년 선거가 '역사상 가장 안전하다'는 주장에 대한 새로운 증거가 그 주장을 약화시킨다고 주장하였다.
+   (Truth Social · 08/09 04:51)
+4. (기타) 트럼프는 백악관의 주요 군사 자산에 대해 언급하며, 이는 향후 대통령과 워싱턴 D.C.의 국가 안보를 보호하는 데 기여할 것이라고 강조했다.
+   (Truth Social · 08/09 04:50)
+5. (기타) 트럼프는 백악관의 관리와 관련된 논란에 대해, 각 대통령이 임대인이라는 법원 판결에 반박하며 자신의 권리를 주장하였다.
+   (Truth Social · 08/08 22:06)
+
+[흐름·전망]
+• 트럼프의 발언은 민주당의 재정적 어려움이 중간 선거에 미치는 영향을 시사할 가능성이 있다.
+• 2020년 선거 관련 주장들이 계속해서 논란을 일으킬 가능성이 있으며, 향후 선거 시스템의 신뢰성 문제에 주목해야 한다.
+• 백악관의 안전 문제에 대한 논란은 향후 새로운 행정부에서 정책적 논쟁을 불러일으킬 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
