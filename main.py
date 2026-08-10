@@ -847,6 +847,7 @@ def _gen_report(client, name, sym, qlabel, numbers, press_text,
         "상승했는데 '부진·약세', 하락했는데 '호조'처럼 방향과 어긋나게 쓰지 말 것.\n"
         "- bullets 3~4개: 호재+악재 함께. 주가 하락 시 최소 1~2개는 하락·유의 요인.\n"
         "- metrics.dir: 긍정 방향(증가·개선·상회·흑자·기록)=\"up\", 부정 방향(감소·손실·하회·부진·지연)=\"down\", 중립=\"\".\n"
+        "- metrics 금액은 '$234M','$2.36B'처럼 축약. 백로그는 metrics에 넣지 말 것(필요하면 bullets에).\n"
         '형식: {"headline":"한 줄 핵심(<=42자, 호재·악재 균형)","verdict":"beat|miss|inline",'
         '"metrics":[{"k":"지표","v":"값","dir":"up|down|"}],'
         '"guidance":"가이던스 요지(없으면 빈문자열)",'

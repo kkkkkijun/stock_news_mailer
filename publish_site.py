@@ -1301,6 +1301,22 @@ def _rec_color(lab):
     return "#64748b"
 
 
+def _fmt_money(v, k=""):
+    """'234 million'→'$234M', '2.36 billion'→'$2.36B'. 통화 지표면 $ 보강."""
+    s = str(v or "")
+    if "%" in s:
+        return s
+    s = re.sub(r'(\d[\d,.]*)\s*billion\b', r'\1B', s, flags=re.I)
+    s = re.sub(r'(\d[\d,.]*)\s*million\b', r'\1M', s, flags=re.I)
+    s = re.sub(r'(\d[\d,.]*)\s*thousand\b', r'\1K', s, flags=re.I)
+    kl = (k or "").lower()
+    money_kw = ("매출", "revenue", "이익", "손익", "손실", "income", "ebitda",
+                "현금", "유동성", "backlog", "백로그", "계약", "가치", "자산", "부채")
+    if ("$" not in s) and (any(w in kl for w in money_kw)):
+        s = re.sub(r'^(-?)(\d)', r'\1$\2', s)   # 음수부호 뒤에 $
+    return s
+
+
 def _mv_color(v, dir_=None):
     """지표 값 색: 음수(적자·감소)는 항상 파랑, 그 외 dir(up=빨강/down=파랑), 없으면 부호."""
     vt = (v or "").strip()
@@ -1326,10 +1342,13 @@ def _report_card_html(r, open_=False):
     if r.get("surprise"):
         vtxt = (vtxt + " " + ("▲" if sp else "▼") + _e(r["surprise"])).strip()
     verdict = f'<span class="rep-verdict {vcls}">{vtxt}</span>' if vtxt else ""
+    metrics = [m for m in (r.get("metrics") or [])
+               if not re.search(r'백로그|backlog', m.get("k", ""), re.I)][:4]
     mets = "".join(
         f'<div class="rep-m"><div class="rep-mk">{_e(m.get("k",""))}</div>'
-        f'<div class="rep-mv">{_mv_color(m.get("v",""), m.get("dir"))}</div></div>'
-        for m in (r.get("metrics") or [])[:4])
+        f'<div class="rep-mv">'
+        f'{_mv_color(_fmt_money(m.get("v",""), m.get("k","")), m.get("dir"))}</div></div>'
+        for m in metrics)
     ms = f'<div class="rep-ms">{mets}</div>' if mets else ""
     guide = (f'<div class="rep-guide">📈 {_hl(r["guidance"])}</div>'
              if r.get("guidance") else "")
