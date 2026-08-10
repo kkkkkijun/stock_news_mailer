@@ -1275,13 +1275,16 @@ def _load_reports():
 def _hl(s):
     """실적 요약 가독성: 수치 볼드 + 방향/부호 색(상승·+=빨강 / 하락·−=파랑)."""
     s = _e(s)
+    # 금액 단위 축약 먼저: '$265 million' → '$265M' (아래 통화 볼드가 'm'을 깨는 것 방지)
+    s = re.sub(r'(\d[\d,.]*)\s*billion\b', r'\1B', s, flags=re.I)
+    s = re.sub(r'(\d[\d,.]*)\s*million\b', r'\1M', s, flags=re.I)
     s = re.sub(r'(\d[\d,.]*\s?%?)(\s*)(증가|성장|상승|개선|급증|확대|호조|흑자)',
                r'<b style="color:#e5484d">\1</b>\2\3', s)
     s = re.sub(r'(\d[\d,.]*\s?%?)(\s*)(감소|하락|부진|축소|악화|손실|둔화|적자)',
                r'<b style="color:#3b82f6">\1</b>\2\3', s)
     s = re.sub(r'(?<![\w>])\+(\d[\d,.]*\s?%?)', r'<b style="color:#e5484d">+\1</b>', s)
     s = re.sub(r'(?<![\w>])-(\d[\d,.]*\s?%?)', r'<b style="color:#3b82f6">-\1</b>', s)
-    s = re.sub(r'(\$-?\d[\d,.]*\s?[BMKbmk]?)', r'<b>\1</b>', s)
+    s = re.sub(r'(\$-?\d[\d,.]*[BMK]?)', r'<b>\1</b>', s)   # 접미사는 대문자만
     return s
 
 
