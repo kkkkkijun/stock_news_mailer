@@ -825,27 +825,36 @@ def _period_qend(per):
         return "9999-99-99"
 
 
-def _gen_report(client, name, sym, qlabel, numbers, press_text):
+def _gen_report(client, name, sym, qlabel, numbers, press_text,
+                price_move="", news_text=""):
     import json as _json
     if client is None:
         return {"headline": f"{name} {qlabel} 실적", "verdict": "",
                 "metrics": [], "guidance": "", "bullets": ["(요약 생성 불가: API 키 없음)"]}
+    pm = f"\n[발표 후 주가]\n{price_move}\n" if price_move else ""
+    nx = f"\n[관련 뉴스(시장 반응)]\n{news_text}\n" if news_text else ""
     prompt = (
         f"{name}({sym})의 {qlabel} 실적 발표 자료다.\n"
-        f"[확정 숫자]\n{numbers}\n\n"
-        f"[발표문 원문 발췌]\n{press_text}\n\n"
+        f"[확정 숫자]\n{numbers}\n{pm}{nx}"
+        f"\n[발표문 원문 발췌]\n{press_text}\n\n"
         "위 정보로 '실적 보고서 요약'을 한국어로 작성해 JSON만 출력하라.\n"
-        "확정 숫자·발표문에 있는 값만 쓰고, 없는 수치·주장은 지어내지 말 것. 투자 조언 금지.\n"
-        '형식: {"headline":"한 줄 핵심(<=40자)","verdict":"beat|miss|inline",'
-        '"metrics":[{"k":"지표","v":"값"}],'
+        "규칙:\n"
+        "- 확정 숫자·발표문에 있는 값만 사용. 없는 수치·주장 지어내지 말 것. 투자 조언 금지.\n"
+        "- 회사 발표문은 호재(매출·백로그 등) 위주로 쓰였을 수 있다. 주가가 하락/약세면 "
+        "그 배경이 되는 악재(순손실 규모·EPS 하회·마진·가이던스/일정 지연 등)를 반드시 찾아 "
+        "호재와 균형 있게 담고, 왜 주가가 그렇게 움직였는지 드러나게 하라.\n"
+        "- bullets 3~4개: 호재+악재 함께. 주가 하락 시 최소 1~2개는 하락·유의 요인.\n"
+        "- metrics.dir: 긍정 방향(증가·개선·상회·흑자·기록)=\"up\", 부정 방향(감소·손실·하회·부진·지연)=\"down\", 중립=\"\".\n"
+        '형식: {"headline":"한 줄 핵심(<=42자, 호재·악재 균형)","verdict":"beat|miss|inline",'
+        '"metrics":[{"k":"지표","v":"값","dir":"up|down|"}],'
         '"guidance":"가이던스 요지(없으면 빈문자열)",'
-        '"bullets":["요약 3~4개; 실적/가이던스/주목; 마지막은 리스크·유의점"]}'
+        '"bullets":["3~4개"]}'
     )
     try:
         resp = client.chat.completions.create(
             model=SUMMARY_MODEL,
             messages=[{"role": "user", "content": prompt}],
-            response_format={"type": "json_object"}, max_tokens=700)
+            response_format={"type": "json_object"}, max_tokens=850)
         data = _json.loads(resp.choices[0].message.content or "{}")
         return {"headline": data.get("headline", ""), "verdict": data.get("verdict", ""),
                 "metrics": (data.get("metrics") or [])[:5],
@@ -930,8 +939,21 @@ def build_reports(path=None, client=None):
         else:
             numbers = (f"EPS 실제 {prev.get('eps_act', '-')} / 예상 {prev.get('eps_est', '-')} "
                        f"(서프라이즈 {prev.get('surprise', '-')})")
-        print(f"[reports] {t} 8-K 요약 생성… ({qlabel})")
-        summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"])
+        # 주가 반응 + 시장 뉴스 → 왜 올랐/내렸는지 근거 확보
+        q = fetch_quote(t)
+        pm = ""
+        if q and q.get("chg") is not None:
+            c = q["chg"]
+            pm = f"전일대비 {c:+.2f}% ({'상승' if c >= 0 else '하락'})"
+        news_text = ""
+        try:
+            arts = fetch_news_articles(t)[:4]
+            news_text = " / ".join(a.get("title") or "" for a in arts if a.get("title"))
+        except Exception:
+            pass
+        print(f"[reports] {t} 8-K 요약 생성… ({qlabel}, 주가 {pm or '-'})")
+        summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"],
+                           price_move=pm, news_text=news_text)
         rec = {"ticker": t, "name": name,
                "title": f"{kshort}_{name}_{qnum}분기_실적보고서",
                "date": kiso, "qnum": qnum, "quarter": qlabel, "cq": cq,

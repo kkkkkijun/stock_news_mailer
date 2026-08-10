@@ -1301,8 +1301,12 @@ def _rec_color(lab):
     return "#64748b"
 
 
-def _mv_color(v):
-    """지표 값 부호 색: -면 파랑, +면 빨강, 그 외 중립(볼드는 CSS)."""
+def _mv_color(v, dir_=None):
+    """지표 값 색: dir(up=빨강/down=파랑) 우선, 없으면 부호 기준."""
+    if dir_ == "up":
+        return f'<span style="color:#e5484d">{_e(v)}</span>'
+    if dir_ == "down":
+        return f'<span style="color:#3b82f6">{_e(v)}</span>'
     vt = (v or "").strip()
     if vt[:1] == "-" or vt[:2] in ("$-", "-$"):
         return f'<span style="color:#3b82f6">{_e(v)}</span>'
@@ -1324,7 +1328,7 @@ def _report_card_html(r, open_=False):
     verdict = f'<span class="rep-verdict {vcls}">{vtxt}</span>' if vtxt else ""
     mets = "".join(
         f'<div class="rep-m"><div class="rep-mk">{_e(m.get("k",""))}</div>'
-        f'<div class="rep-mv">{_mv_color(m.get("v",""))}</div></div>'
+        f'<div class="rep-mv">{_mv_color(m.get("v",""), m.get("dir"))}</div></div>'
         for m in (r.get("metrics") or [])[:4])
     ms = f'<div class="rep-ms">{mets}</div>' if mets else ""
     guide = (f'<div class="rep-guide">📈 {_hl(r["guidance"])}</div>'
