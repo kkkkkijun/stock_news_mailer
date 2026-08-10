@@ -1302,13 +1302,13 @@ def _rec_color(lab):
 
 
 def _mv_color(v, dir_=None):
-    """지표 값 색: dir(up=빨강/down=파랑) 우선, 없으면 부호 기준."""
+    """지표 값 색: 음수(적자·감소)는 항상 파랑, 그 외 dir(up=빨강/down=파랑), 없으면 부호."""
+    vt = (v or "").strip()
+    if vt[:1] == "-" or vt[:2] in ("$-", "-$"):   # 음수 값은 무조건 파랑
+        return f'<span style="color:#3b82f6">{_e(v)}</span>'
     if dir_ == "up":
         return f'<span style="color:#e5484d">{_e(v)}</span>'
     if dir_ == "down":
-        return f'<span style="color:#3b82f6">{_e(v)}</span>'
-    vt = (v or "").strip()
-    if vt[:1] == "-" or vt[:2] in ("$-", "-$"):
         return f'<span style="color:#3b82f6">{_e(v)}</span>'
     if vt[:1] == "+":
         return f'<span style="color:#e5484d">{_e(v)}</span>'
