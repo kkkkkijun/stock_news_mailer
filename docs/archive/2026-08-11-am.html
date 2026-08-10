@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>브리핑노트 | 경제·주식·코인·부동산 핵심 뉴스</title>
+<style>
+:root{
+ --bg:#e8ecf1;--page:#f6f8fb;--border:#e6ebf2;
+ --ink:#0f1b2d;--ink-2:#1e293b;--muted:#475569;--muted-2:#64748b;--faint:#94a3b8;
+ --card:#fff;--chip:#eaf0fb;--accent:#3a6fd8;--header:#0f1b2d;--nav-track:#eef2f7;
+ --hover:#dbe6f8;--chip-ink:#3a6fd8;--shadow:rgba(15,27,45,.10);}
+:root[data-theme="dark"]{
+ --bg:#0b0e13;--page:#12161d;--border:#262c36;
+ --ink:#e7ecf3;--ink-2:#d6dde8;--muted:#aab6c6;--muted-2:#9aa7b8;--faint:#8b96a6;
+ --card:#1a1f28;--chip:#1c2735;--accent:#6f9bef;--header:#0c1017;--nav-track:#161c25;
+ --hover:#243244;--chip-ink:#8fb4f5;--shadow:rgba(0,0,0,.5);}
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Pretendard',system-ui,sans-serif;
+ -webkit-font-smoothing:antialiased;background:var(--bg);color:var(--ink);
+ transition:background .2s,color .2s;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{opacity:.72;}
+.wrap{display:flex;justify-content:center;padding:48px 24px;}
+.sched-head{display:flex;flex-direction:column;gap:8px;margin-bottom:6px;}
+.sched-head>span{font-size:14px;font-weight:800;color:var(--ink);
+ display:flex;align-items:center;gap:5px;line-height:1.3;}
+/* 이모지를 고정 크기 박스로 분리 → OS별 이모지 높이차가 텍스트 위치를 안 밀게 */
+.sched-ico{flex-shrink:0;width:19px;height:19px;line-height:19px;text-align:center;
+ font-size:15px;overflow:hidden;}
+.sched-tz{font-size:10px;color:var(--faint);font-weight:600;}
+.imp-filter{display:flex;gap:5px;}
+/* 연/월 드롭다운 바 */
+.econ-bar{display:flex;align-items:center;justify-content:space-between;
+ gap:8px;flex-wrap:wrap;}
+.econ-sel{display:flex;gap:6px;}
+.econ-sel select{font:inherit;font-size:12.5px;font-weight:700;color:var(--ink);
+ background:var(--chip);border:1px solid var(--border);border-radius:8px;
+ padding:5px 9px;cursor:pointer;}
+.sched-tz2{font-size:10px;color:var(--faint);font-weight:600;text-align:right;}
+.imp-chip{display:flex;align-items:center;gap:5px;font:inherit;font-size:11px;
+ font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--border);
+ background:var(--card);color:var(--muted-2);cursor:pointer;opacity:.5;}
+.imp-chip.on{opacity:1;color:var(--ink);}
+.imp-chip i{width:8px;height:8px;border-radius:50%;display:block;flex-shrink:0;}
+/* 중요도 토글: 컨테이너 클래스(s-high/s-med/s-low)로 행 표시 제어 */
+.sched .ev{display:none;}
+.sched.s-high .ev[data-imp="HIGH"]{display:flex;}
+.sched.s-med .ev[data-imp="MEDIUM"]{display:flex;}
+.sched.s-low .ev[data-imp="LOW"]{display:flex;}
+.sched-day{font-size:11px;font-weight:800;color:var(--accent);margin:11px 2px 5px;}
+.ev{display:flex;align-items:center;gap:7px;padding:7px 3px;
+ border-bottom:1px solid var(--border);}
+.ev:last-child{border-bottom:0;}
+.ev-t{font-size:11.5px;font-weight:700;color:var(--ink);min-width:62px;flex-shrink:0;}
+.ev-flag{width:22px;height:16px;border-radius:2px;object-fit:cover;flex-shrink:0;
+ box-shadow:0 0 0 1px rgba(0,0,0,.10);background:var(--border);}
+.ev-n{flex:1;font-size:12px;font-weight:600;color:var(--ink);line-height:1.35;}
+.igauge{display:flex;gap:2px;flex-shrink:0;}
+.igauge i{width:8px;height:6px;border-radius:2px;display:block;}
+.sched-src{font-size:9.5px;color:var(--faint);text-align:right;margin-top:9px;}
+/* 일정 2단: 좌 경제지표 / 우 기업실적 */
+/* 일정: 전 기기 공통 서브탭 → 한 번에 한 컬럼(단일) */
+.sched-col{min-width:0;width:100%;}
+.sub-tabs{display:flex;gap:5px;background:var(--nav-track);border-radius:10px;
+ padding:4px;margin-bottom:12px;}
+.sub-tab{flex:1;text-align:center;font:inherit;font-size:12.5px;font-weight:700;
+ color:var(--muted-2);background:transparent;border:0;border-radius:7px;
+ padding:8px 4px;cursor:pointer;}
+.sub-tab.on{background:#3a6fd8;color:#fff;}   /* 서브탭 활성=블루(상위 다크와 구분) */
+/* 서브탭이 제목 역할 → 컬럼 헤더 중복 제거(경제=제목 숨김·칩 유지 / 기업=헤더 숨김) */
+.sched-col.econ .sched-head>span{display:none;}
+.sched-col.earn .sched-head{display:none;}
+/* 선택한 서브탭 컬럼만 표시 */
+.sched-2col[data-sub="econ"] .sched-col.earn{display:none;}
+.sched-2col[data-sub="earn"] .sched-col.econ{display:none;}
+.ern-item{border-bottom:1px solid var(--border);border-radius:10px;}
+.ern-item:last-child{border-bottom:0;}
+.ern-item.open{background:var(--chip);border-bottom-color:transparent;}
+.ern{display:flex;align-items:center;gap:9px;padding:9px 6px;}
+.ern-item:has(.ern-detail) .ern{cursor:pointer;}
+.ern-arrow{color:var(--faint);font-size:10px;flex-shrink:0;transition:transform .15s;}
+.ern-item.open .ern-arrow{transform:rotate(180deg);color:var(--accent);}
+.ern-tag.rep{font-size:9.5px;font-weight:800;color:#fff;background:#16a34a;
+ padding:2px 7px;border-radius:5px;flex-shrink:0;}
+.ern-tag.wait{font-size:9.5px;font-weight:800;color:#fff;background:#f59e0b;
+ padding:2px 7px;border-radius:5px;flex-shrink:0;margin-left:4px;}  /* 발표됐으나 집계 전 */
+/* 기업실적 뷰 토글(예정 순 / 분기별) — 서브탭 pill과 구분되게 '밑줄 탭' */
+.earn-views{display:flex;gap:20px;margin-bottom:12px;
+ border-bottom:1px solid var(--border);}
+.ev-view{font:inherit;font-size:12.5px;font-weight:700;color:var(--muted-2);
+ background:none;border:0;border-bottom:2px solid transparent;
+ padding:5px 2px 9px;margin-bottom:-1px;cursor:pointer;}
+.ev-view.on{color:var(--ink);border-bottom-color:var(--ink);}
+/* 분기별: 연도(다크 pill) → 분기(파란 pill) 2단 */
+.q-years{display:flex;gap:6px;margin-bottom:9px;}
+.q-year{font:inherit;font-size:12px;font-weight:800;color:var(--muted-2);
+ background:var(--chip);border:1px solid var(--border);border-radius:8px;
+ padding:6px 14px;cursor:pointer;}
+.q-year.on{background:var(--ink);color:var(--page);border-color:var(--ink);}
+.q-quarters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.q-q{font:inherit;font-size:12px;font-weight:700;color:var(--muted-2);
+ background:var(--card);border:1px solid var(--border);border-radius:999px;
+ padding:5px 13px;cursor:pointer;}
+.q-q.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.q-row{display:flex;align-items:center;gap:9px;padding:9px 2px;
+ border-bottom:1px solid var(--border);}
+.q-row:last-child{border-bottom:0;}
+.q-rmain{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px;}
+.q-rmain b{font-size:12.5px;font-weight:700;color:var(--ink);}
+.q-sub{font-size:10.5px;color:var(--muted);}
+.q-surp{font-size:12px;font-weight:800;flex-shrink:0;}
+.q-surp.up{color:#e5484d;}.q-surp.dn{color:#3b82f6;}
+.q-date{font-size:10.5px;font-weight:700;color:var(--accent);background:var(--chip);
+ border-radius:999px;padding:3px 9px;flex-shrink:0;white-space:nowrap;}
+/* 실적 보고서 카드 */
+.rep-note{font-size:10.5px;color:var(--faint);margin-bottom:9px;}
+.rep-item{background:var(--card);border:1px solid var(--border);border-radius:14px;
+ margin-bottom:9px;box-shadow:0 1px 5px rgba(15,27,45,.05);overflow:hidden;}
+.rep-head{display:flex;align-items:center;gap:8px;padding:11px 13px;cursor:pointer;}
+.rep-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+ font-size:12.5px;color:var(--ink);font-weight:700;}
+.rep-arrow{flex-shrink:0;color:var(--faint);font-size:11px;transition:transform .15s;}
+.rep-item.open .rep-arrow{transform:rotate(180deg);color:var(--accent);}
+.rep-body{display:none;padding:2px 13px 13px;}
+.rep-item.open .rep-body{display:block;}
+.rep-hd{font-size:12px;font-weight:800;color:var(--muted);word-break:keep-all;margin-bottom:9px;}
+.up-note{font-size:10.5px;color:var(--faint);margin-bottom:8px;}
+.rep-verdict{font-size:11px;font-weight:800;border-radius:7px;padding:3px 9px;
+ background:var(--chip);color:var(--muted);}
+.rep-verdict.beat{color:#e5484d;background:rgba(229,72,77,.12);}
+.rep-verdict.miss{color:#3b82f6;background:rgba(59,130,246,.12);}
+.rep-ms{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:11px;}
+.rep-m{background:var(--nav-track);border-radius:9px;padding:8px 10px;}
+.rep-mk{font-size:9.5px;color:var(--muted);}
+.rep-mv{font-size:14px;font-weight:800;margin-top:1px;}
+.rep-guide{display:flex;gap:7px;align-items:center;background:var(--nav-track);
+ border:1px dashed var(--border);border-radius:9px;padding:8px 11px;
+ font-size:11.5px;color:var(--muted);margin-bottom:11px;line-height:1.5;}
+.rep-bs{background:var(--nav-track);border-radius:10px;padding:11px 13px;
+ display:flex;flex-direction:column;gap:6px;}
+.rep-b{display:flex;gap:7px;font-size:12px;color:var(--ink);line-height:1.6;}
+.rep-b>span:first-child{color:var(--accent);flex-shrink:0;}
+.rep-foot{display:flex;justify-content:space-between;align-items:center;margin-top:10px;}
+.rep-foot a{font-size:10.5px;color:var(--accent);text-decoration:none;}
+.rep-foot>span{font-size:10px;color:var(--faint);}
+/* 예정 뷰(경량 리스트) */
+.up-row{display:flex;align-items:center;gap:9px;padding:9px 2px;
+ border-bottom:1px solid var(--border);}
+.up-row:last-child{border-bottom:0;}
+.up-dday{font-size:10px;font-weight:800;color:var(--accent);background:var(--chip);
+ border:1px solid var(--border);border-radius:6px;padding:3px 6px;
+ min-width:42px;text-align:center;flex-shrink:0;}
+.up-main{flex:1;min-width:0;}
+.up-t{display:flex;align-items:baseline;gap:7px;}
+.up-t b{font-size:12.5px;font-weight:700;}
+.up-date{font-size:10.5px;color:var(--muted);}
+.up-sub{font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.45;}
+.up-qh{font-size:12px;font-weight:800;color:var(--ink);margin:14px 0 7px;
+ padding-bottom:5px;border-bottom:2px solid var(--border);}
+.ev-new{font-size:8.5px;font-weight:800;color:#fff;background:#16a34a;
+ border-radius:5px;padding:1px 5px;margin-left:5px;vertical-align:middle;}
+.up-rec{font-size:10.5px;color:var(--muted);margin-top:3px;display:flex;
+ align-items:center;gap:6px;flex-wrap:wrap;}
+.up-cnt{color:var(--faint);}
+.rec-bar{display:inline-flex;width:56px;height:6px;border-radius:3px;overflow:hidden;
+ flex-shrink:0;border:1px solid var(--border);}
+.rec-bar i{display:block;height:100%;}
+.rec-ratio{font-size:10px;}
+/* 실적 결과: 보고서 없는 종목 숫자줄 */
+.res-row{display:flex;align-items:center;gap:9px;padding:9px 2px;
+ border-bottom:1px solid var(--border);}
+.res-row:last-child{border-bottom:0;}
+.res-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px;}
+.res-main b{font-size:12.5px;font-weight:700;}
+.ern-detail{display:none;padding:0 8px 10px;flex-direction:column;gap:7px;}
+.ern-item.open .ern-detail{display:flex;}
+.ed-b{background:var(--card);border:1px solid var(--border);border-radius:9px;
+ padding:9px 12px;}
+.ed-b.cur{border-color:var(--accent);border-left-width:3px;}   /* 이번 발표 예상 강조 */
+.ed-t{font-size:10px;font-weight:800;color:var(--muted-2);margin-bottom:5px;}
+.ed-t.acc{color:var(--accent);}
+.ed-p{color:var(--faint);font-weight:600;}
+.ed-why{font-size:10px;color:var(--faint);font-weight:500;margin:-2px 0 6px;
+ line-height:1.4;}
+.ed-r{display:flex;justify-content:space-between;gap:8px;font-size:12px;margin-top:2px;}
+.ed-r>span{color:var(--muted-2);}
+.ed-r b{color:var(--ink);font-weight:700;text-align:right;}
+.ed-sub{color:var(--faint);font-weight:500;font-size:10.5px;}
+.ed-rec{display:flex;align-items:center;gap:8px;margin-top:1px;}
+.ed-rec b{font-size:13px;}
+.ed-bar{flex:1;display:flex;height:8px;border-radius:4px;overflow:hidden;
+ background:var(--border);}
+.ed-bar i{display:block;}
+.ed-sbars{display:flex;align-items:flex-end;gap:11px;height:40px;padding-top:4px;}
+.ed-sbar{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+ gap:3px;}
+.ed-sbar i{width:20px;border-radius:2px;display:block;}
+.ed-sbar>span{font-size:9px;color:var(--muted-2);font-weight:600;}
+.ern-date{display:flex;flex-direction:column;min-width:60px;flex-shrink:0;}
+.ern-md{font-size:12px;font-weight:700;color:var(--ink);}
+.ern-dd{font-size:9.5px;font-weight:700;color:var(--faint);}
+.ern-n{flex:1;font-size:12.5px;font-weight:600;color:var(--ink);}
+.ern-when{font-size:10px;color:var(--muted-2);background:var(--chip);
+ padding:2px 7px;border-radius:5px;flex-shrink:0;}
+.ern-none{font-size:12px;color:var(--faint);padding:10px 2px;}
+.page{width:100%;max-width:820px;background:var(--page);color:var(--ink);
+ border:1px solid var(--border);border-radius:18px;
+ box-shadow:0 12px 44px var(--shadow);overflow:hidden;}
+.hd{padding:30px 40px;background:var(--header);color:#fff;}
+.hd-top{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.hd-kicker{font-size:12px;font-weight:600;letter-spacing:.04em;color:#94a3b8;}
+.hd-links{display:flex;gap:7px;flex-shrink:0;align-items:center;}
+.auth-slot{font:inherit;font-size:11.5px;font-weight:700;color:#dbe4f0;
+ background:rgba(255,255,255,.14);border:0;border-radius:8px;padding:5px 11px;
+ cursor:pointer;white-space:nowrap;}
+.goal-root{min-height:120px;}
+.goal-msg{font-size:12.5px;color:var(--muted-2);text-align:center;padding:30px 0;}
+.hd-archive{font-size:12px;font-weight:600;color:#dbe4f0;
+ background:rgba(255,255,255,.12);padding:6px 13px;border-radius:999px;}
+.hd-archive:hover{opacity:1;background:rgba(255,255,255,.2);}
+.hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
+.hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
+ font-size:13px;color:#94a3b8;}
+.hd-updated{display:flex;align-items:flex-start;gap:6px;}
+.hd-uptxt{display:flex;flex-direction:column;gap:2px;}
+.fresh{display:block;font-size:10px;color:#86efac;font-weight:600;}  /* 신선함=연녹색 */
+.fresh.warn{color:#fbbf24;}                            /* 다소 지연=주황 */
+.fresh.stale{color:#f87171;font-weight:700;}          /* 업데이트 지연=빨강 */
+.hd-slogan{display:flex;flex-direction:column;align-items:flex-end;gap:3px;
+ font-size:15.5px;font-weight:700;color:#f5c451;white-space:nowrap;
+ flex-shrink:0;letter-spacing:.01em;text-align:right;}
+.hd-bar{width:168px;max-width:44vw;height:7px;border-radius:4px;
+ background:rgba(255,255,255,.14);overflow:hidden;margin-top:3px;}
+.hd-bar>i{display:block;height:100%;border-radius:4px;background:#5c9dff;}
+.hd-pct{font-size:13px;font-weight:600;color:#86b7ff;}
+.hd-target{font-size:11px;font-weight:500;color:#7c8aa0;margin-top:3px;}
+.dowb{display:inline-block;font-size:11px;font-weight:700;color:#dbe4f0;
+ background:rgba(255,255,255,.14);padding:3px 10px;border-radius:999px;
+ margin-right:8px;}
+.dowb.sat{color:#a8c8ff;background:rgba(120,165,255,.2);}
+.dowb.sun{color:#ffb0a8;background:rgba(255,130,120,.2);}
+.gauges{display:flex;gap:16px;padding:16px 40px 4px;flex-wrap:wrap;}
+.gauge{flex:1;min-width:220px;background:var(--card);border:1px solid var(--border);
+ border-radius:14px;padding:10px 20px 11px;}
+.gauge-label{font-size:11px;color:var(--muted-2);margin-bottom:4px;}
+.gauge-row{display:flex;align-items:baseline;gap:9px;margin-bottom:7px;}
+.gauge-num{font-size:23px;font-weight:700;line-height:1;color:var(--ink);}
+.gauge-mood{font-size:11px;font-weight:600;color:#fff;padding:2px 9px;
+ border-radius:999px;}
+.gauge-track{position:relative;height:5px;border-radius:3px;
+ background:linear-gradient(90deg,#c0392b,#d98324,#c9a227,#4a9d5b,#2e7d32);}
+.gauge-marker{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;
+ background:#fff;border:2.5px solid var(--ink);transform:translate(-50%,-50%);}
+.gauge-scale{display:flex;justify-content:space-between;font-size:10px;
+ color:var(--faint);margin-top:4px;}
+.navwrap{padding:14px 40px 6px;position:sticky;top:0;background:var(--page);z-index:3;}
+.nav{display:flex;gap:5px;background:var(--nav-track);border:1px solid var(--border);
+ border-radius:12px;padding:5px;}
+.nav a,.nav button{flex:1;text-align:center;font-size:13px;font-weight:600;
+ color:var(--muted);padding:9px 6px;border-radius:8px;border:0;background:transparent;
+ font-family:inherit;cursor:pointer;}
+.nav a:hover,.nav button:hover{background:var(--card);opacity:1;}
+.nav button.on{background:var(--ink);color:var(--page);}
+.nav button.on:hover{background:var(--ink);}
+.panel{display:none;}
+.panel.on{display:block;}
+.part{padding:22px 40px;scroll-margin-top:70px;}
+.part-head{display:flex;align-items:center;gap:11px;margin-bottom:14px;}
+.part-icon{width:32px;height:32px;border-radius:9px;background:var(--chip);
+ display:flex;align-items:center;justify-content:center;font-size:15px;}
+.part-head h2{font-size:18px;font-weight:700;color:var(--ink);margin:0;}
+.summary{background:var(--chip);border-radius:12px;padding:14px 16px;margin-bottom:14px;}
+.summary-label{font-size:11px;font-weight:700;color:var(--chip-ink);letter-spacing:.05em;
+ margin-bottom:5px;}
+.summary p{font-size:14px;line-height:1.65;color:var(--ink-2);margin:0;}
+.news-list{display:flex;flex-direction:column;gap:10px;}
+.news{display:block;background:var(--card);border:1px solid var(--border);border-radius:12px;
+ padding:15px 16px;color:inherit;}
+.news-meta{display:flex;gap:8px;align-items:center;margin-bottom:9px;}
+.tag{font-size:11px;font-weight:700;color:var(--chip-ink);background:var(--chip);
+ padding:3px 9px;border-radius:6px;}
+.ticker{font-family:ui-monospace,monospace;font-size:11px;font-weight:700;
+ color:#fff;background:var(--ink);padding:3px 8px;border-radius:6px;}
+.src{margin-left:auto;font-size:11px;color:var(--faint);}
+.news h3{font-size:15.5px;font-weight:600;color:var(--ink);line-height:1.45;
+ margin:0 0 6px;}
+.news p{font-size:13.5px;line-height:1.6;color:var(--muted);margin:0;}
+.news.hero{border-left:4px solid var(--accent);box-shadow:0 4px 14px var(--shadow);}
+.news.hero h3{font-size:16.5px;font-weight:700;}
+.badge-key{font-size:10px;font-weight:800;color:#fff;background:var(--accent);
+ padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
+.badge-new{font-size:10px;font-weight:800;color:#fff;background:#16a34a;
+ padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
+.quotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+ gap:8px;margin-bottom:14px;}
+.qcard{background:var(--card);border:1px solid var(--border);border-radius:12px;
+ padding:11px 13px;}
+.qtop{display:flex;align-items:center;gap:6px;margin-bottom:8px;}
+.qtop .spark{margin-left:auto;display:block;}
+.qprice{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:-.01em;}
+.qchg{font-size:12.5px;font-weight:700;margin-top:2px;}
+.quotes-asof{font-size:11px;color:var(--faint);margin:-8px 0 14px 2px;}
+.outlook{margin-top:14px;}
+.outlook-label{font-size:12px;font-weight:700;color:var(--muted-2);margin-bottom:8px;}
+.outlook-list{display:flex;flex-direction:column;gap:8px;}
+.outlook-item{display:flex;gap:10px;align-items:flex-start;background:var(--card);
+ border:1px solid var(--border);border-radius:10px;padding:11px 14px;}
+.outlook-item .arrow{color:var(--accent);font-weight:700;line-height:1.4;}
+.outlook-item span:last-child{font-size:13.5px;line-height:1.55;color:var(--ink-2);}
+.note{margin-top:12px;font-size:12px;line-height:1.6;color:var(--faint);}
+.ft{padding:20px 40px 34px;font-size:11px;line-height:1.7;color:var(--faint);}
+
+/* 플로팅 버튼: 맨 위로 / 테마 전환 */
+#top,#theme{position:fixed;bottom:24px;z-index:20;width:46px;height:46px;
+ border:1px solid var(--border);border-radius:50%;cursor:pointer;padding:0;
+ font-size:20px;line-height:44px;text-align:center;
+ box-shadow:0 6px 18px var(--shadow);
+ transition:opacity .2s,visibility .2s,transform .15s;}
+#top{right:24px;background:var(--ink);color:var(--page);border-color:transparent;
+ opacity:0;visibility:hidden;}
+#top.show{opacity:.94;visibility:visible;}
+#top:hover{opacity:1;transform:translateY(-2px);}
+#theme{left:24px;background:var(--card);color:var(--ink);}
+#theme:hover{transform:translateY(-2px);}
+@media (max-width:600px){#top,#theme{bottom:16px;width:42px;height:42px;
+ line-height:40px;font-size:18px;}#top{right:16px;}#theme{left:16px;}}
+
+/* 지난 브리핑 검색 + 캘린더 */
+.search{margin-bottom:14px;}
+.search input{width:100%;font:inherit;font-size:14px;padding:12px 15px;
+ border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--ink);}
+.search input::placeholder{color:var(--faint);}
+.results{margin-bottom:14px;}
+.ritem{display:block;background:var(--card);border:1px solid var(--border);
+ border-radius:10px;padding:11px 14px;margin-bottom:8px;color:inherit;}
+.ritem:hover{opacity:1;border-color:var(--accent);}
+.ritem .rt{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.45;}
+.ritem .rm{font-size:11px;color:var(--faint);margin-top:3px;}
+.rnone{color:var(--faint);font-size:13px;padding:10px 2px;}
+.msel{display:flex;gap:8px;justify-content:center;margin-bottom:12px;}
+.msel-sel{font:inherit;font-size:14px;font-weight:600;padding:9px 16px;
+ border-radius:10px;border:1px solid var(--border);background:var(--card);
+ color:var(--ink);cursor:pointer;}
+.calwrap{padding:22px 40px 6px;}
+.cal{background:var(--card);border:1px solid var(--border);border-radius:14px;
+ padding:16px 14px;margin-bottom:14px;}
+.cal h3{margin:0 0 12px;font-size:15px;font-weight:700;color:var(--ink);}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;}
+.dow{text-align:center;font-size:11px;color:var(--faint);padding:4px 0;}
+.dow.sun{color:#e0685c;}
+.day{aspect-ratio:1;border:0;background:transparent;border-radius:9px;font:inherit;
+ font-size:13px;color:var(--faint);display:flex;align-items:center;
+ justify-content:center;padding:0;}
+.day.has{background:var(--chip);color:var(--chip-ink);font-weight:700;cursor:pointer;}
+.day.has:hover{background:var(--hover);}
+.day.on{background:var(--ink);color:var(--page);}
+.det{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;}
+.det .t{font-weight:700;margin-bottom:10px;font-size:15px;color:var(--ink);}
+.det a{display:inline-block;padding:10px 16px;margin:0 8px 8px 0;border-radius:9px;
+ background:var(--chip);color:var(--chip-ink);font-weight:600;font-size:13px;}
+.det a:hover{opacity:1;background:var(--hover);}
+.det .none{color:var(--faint);font-size:13px;}
+@media (max-width:600px){
+  .wrap{padding:0;}
+  .page{border-radius:0;border-left:0;border-right:0;}
+  .hd,.gauges,.navwrap,.part,.ft,.calwrap{padding-left:18px;padding-right:18px;}
+  .hd h1{font-size:22px;}
+  .nav a{font-size:12px;padding:8px 3px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="page">
+<header class="hd"><div class="hd-top"><span class="hd-kicker">2026.08.11 · 오전 브리핑</span><div class="hd-links"><a class="hd-archive" href="../index.html">🏠 홈</a><a class="hd-archive" href="index.html">지난 브리핑</a><button id="authSlot" class="auth-slot">로그인</button></div></div><h1>오전 뉴스 브리핑</h1><div class="hd-sub"><span class="hd-updated"><span class="dowb">화요일</span><span class="hd-uptxt"><span>최종 업데이트 06:49</span><span class="fresh" data-built="1786398570"></span></span></span><span class="hd-slogan">🎯 40살 140억<span class="hd-pct">🗓️ D-2,334 · 0.51%</span><span class="hd-bar"><i style="width:0.512%"></i></span><span class="hd-target">목표일 2032.12.31</span></span></div></header><div class="gauges"><div class="gauge"><div class="gauge-label">CNN 기준</div><div class="gauge-row"><span class="gauge-num">64</span><span class="gauge-mood" style="background:#4a9d5b;">Greed</span></div><div class="gauge-track"><div class="gauge-marker" style="left:64%;"></div></div><div class="gauge-scale"><span>공포</span><span>탐욕</span></div></div><div class="gauge"><div class="gauge-label">크립토 기준</div><div class="gauge-row"><span class="gauge-num">30</span><span class="gauge-mood" style="background:#d98324;">Fear</span></div><div class="gauge-track"><div class="gauge-marker" style="left:30%;"></div></div><div class="gauge-scale"><span>공포</span><span>탐욕</span></div></div></div><div class="navwrap"><nav class="nav"><button class="nav-t on" data-p="tp0">뉴스</button><button class="nav-t" data-p="tp1">주식</button><button class="nav-t" data-p="tp2">부동산</button><button class="nav-t" data-p="tp3">트럼프</button><button class="nav-t" data-p="tpGoal">내 목표</button></nav></div><div class="panel on" id="tp0"><section class="part" id="eco"><div class="part-head"><span class="part-icon">💹</span><h2>경제</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>오늘 한국 경제는 원화 강세와 대출금리 격차 확대 속에서 다양한 변화가 일어나고 있다. 특히 1인당 GDP가 처음으로 4만 달러를 넘어설 가능성이 제기되는 가운데, 대출금리 양극화가 심화되고 있다.</p></div><div class="news-list"><div class="news hero"><div class="news-meta"><span class="badge-key">핵심</span><span class="badge-new">NEW</span><span class="tag">환율</span><span class="src">매일경제 · 08/10 17:54</span></div><h3>현 환율 유지땐 1인당 GDP 첫 &#x27;4만달러&#x27;</h3><p>올해 한국의 1인당 GDP가 환율 유지 시 사상 처음으로 4만 달러를 초과할 것으로 보이며, 이는 현재 환율이 1410원 대를 유지할 경우 가능하다는 분석이 있다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">금리</span><span class="src">매일경제 · 08/10 17:56</span></div><h3>대출금리 양극화…대기업·중기 격차 최대</h3><p>2026년 6월 기준으로 대기업과 중소기업 간 신규 대출 가중평균 금리 차이가 0.21%로 확대되었고, 이는 최근 중소기업의 대출 금리가 3배 이상 상승하면서 발생한 현상이다.</p></div><div class="news"><div class="news-meta"><span class="tag">금리</span><span class="src">연합뉴스 · 08/10 17:08</span></div><h3>하락세 끝났나…국고채 금리 다시 3일째 상승</h3><p>국고채 금리가 3거래일 연속 상승하며 10년물 금리는 4.239%로 상승했다. 이는 한국은행의 기준금리 결정과 관련된 시장의 긴장감을 반영하는 것으로 보인다.</p></div><div class="news"><div class="news-meta"><span class="tag">환율</span><span class="src">연합뉴스 · 08/10 16:26</span></div><h3>환율, 이틀째 1,410원대…외국인 순매도·저가 매수에 반등</h3><p>원/달러 환율은 외국인 순매도와 저가 매수의 영향으로 10일 소폭 상승하여 1,418.4원에 거래되었다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">기타</span><span class="src">매일경제 · 08/11 04:00</span></div><h3>20억대 아파트가 기대주로 … ‘보유에서 거주로’ 세제개편안이 가리키는 방향</h3><p>2026 세제개편안에서는 장기보유 공제를 줄이고 실거주 혜택을 강화하는 방향으로 법안이 마련되었으며, 이는 향후 강남권 매물 출회 가능성을 시사하고 있다.</p></div></div><div class="outlook"><div class="outlook-label">흐름·전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>환율이 현재 수준을 유지할 경우, 한국 경제 성장에 긍정적인 영향을 미치겠지만, 환율 변동성이 계속 관찰되어야 할 것이다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>대출금리 양극화가 심화되면서 중소기업의 금융 부담이 증가하고 있으며, 이는 향후 경제 전반에 부정적 영향을 미칠 수 있다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>국고채 금리 상승세가 지속될 경우 한국은행의 정책 경향에 변화가 있을 수 있으므로 주의 깊은 모니터링이 필요하다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>세제개편안의 시행에 따른 부동산 시장의 반응을 면밀히 지켜봐야 하며, 이는 향후 경제 회복 과정에 중대한 영향을 미칠 것이다.</span></div></div></div></section><section class="part" id="cm"><div class="part-head"><span class="part-icon">🌐</span><h2>코인시장</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>오늘 가상자산 시장은 전반적으로 하락세를 이어가고 있으며, 비트코인은 64,000달러 아래에서 거래되고 있다. 주요 기업의 비트코인 및 기타 디지털 자산에 대한 손실이 재무 성과에 영향을 미치고 있다.</p></div><div class="news-list"><div class="news hero"><div class="news-meta"><span class="badge-key">핵심</span><span class="badge-new">NEW</span><span class="tag">시세</span><span class="src">토큰포스트 · 08/11 06:15</span></div><h3>비트코인 64,000달러 하회</h3><p>트럼프미디어앤드테크놀로지그룹은 2분기에 비트코인 보유량이 65개 감소했으며, 디지털자산에서 3억6060만 달러의 손실을 기록했다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">시세</span><span class="src">토큰포스트 · 08/11 06:08</span></div><h3>비트코인 123일간 역김프 기록</h3><p>올해 비트코인은 221일 중 123일 동안 국내에서 해외 가격보다 낮게 거래되었으며, 이 기간의 평균 김치프리미엄은 -0.48로 집계되었다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">기타</span><span class="src">토큰포스트 · 08/11 05:46</span></div><h3>켈프다오에서 rsETH 탈취 사건 발생</h3><p>켈프다오의 rsETH가 11만6500개, 약 2억9200만 달러에 탈취당하였고, 이로 인해 탈중앙화금융 대출시장도 충격을 받았다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">시세</span><span class="src">토큰포스트 · 08/11 05:02</span></div><h3>암호화폐 시장 하락세 지속</h3><p>암호화폐 시장은 하락세가 지속되며, 비트코인은 1.78%, 이더리움은 2.30% 하락하여 각각 63,979.86달러와 1,876.46달러에 거래되고 있다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">기타</span><span class="src">토큰포스트 · 08/11 03:42</span></div><h3>마라톤디지털, 비트코인 담보로 대출</h3><p>마라톤디지털은 비트코인 1만8750개를 담보로 6억 달러를 차입하며 사업 자금을 확보하고 있으며, 이 비트코인의 시장가는 약 12억 달러이다.</p></div></div><div class="outlook"><div class="outlook-label">흐름·전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>정치적 및 경제적 요인으로 인해 비트코인과 다른 암호화폐의 가치 변동이 클 것으로 예상된다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>김치프리미엄의 역전 현상이 지속되고 있어 국내 시장의 거래 활성화 여부에 주목해야 한다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>탈중앙화금융에서의 보안 문제는 앞으로도 지속적으로 논의될 전망이며, 유사 사건의 재발을 방지하기 위한 조치가 필요하다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>대출을 위한 비트코인 담보 활용이 증가하고 있으나, 가격 하락 시 담보 물량 관리 필요성이 대두된다.</span></div></div></div></section></div><div class="panel" id="tp1"><section class="part" id="os"><div class="part-head"><span class="part-icon">📈</span><h2>해외주식</h2></div><div class="quotes"><div class="qcard"><div class="qtop"><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><svg class="spark" width="58" height="20" viewBox="0 0 58 20" aria-hidden="true"><polyline points="2.0,7.6 6.2,9.2 10.3,10.1 14.5,14.9 18.6,14.7 22.8,18.0 26.9,15.6 31.1,12.9 35.2,10.2 39.4,7.7 43.5,4.2 47.7,4.3 51.8,2.0 56.0,5.0" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="qprice">$217.55</div><div class="qchg" style="color:#3b82f6;">▼ 2.86%</div></div><div class="qcard"><div class="qtop"><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><svg class="spark" width="58" height="20" viewBox="0 0 58 20" aria-hidden="true"><polyline points="2.0,2.0 6.2,13.5 10.3,14.9 14.5,15.7 18.6,16.1 22.8,18.0 26.9,15.8 31.1,15.3 35.2,13.0 39.4,11.9 43.5,13.1 47.7,13.5 51.8,11.6 56.0,11.1" fill="none" stroke="#e5484d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="qprice">$330.88</div><div class="qchg" style="color:#e5484d;">▲ 0.70%</div></div><div class="qcard"><div class="qtop"><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><svg class="spark" width="58" height="20" viewBox="0 0 58 20" aria-hidden="true"><polyline points="2.0,4.2 6.2,2.0 10.3,11.6 14.5,7.2 18.6,9.1 22.8,18.0 26.9,13.8 31.1,12.3 35.2,6.0 39.4,3.2 43.5,4.3 47.7,8.4 51.8,4.4 56.0,4.0" fill="none" stroke="#e5484d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="qprice">$31.77</div><div class="qchg" style="color:#e5484d;">▲ 0.57%</div></div><div class="qcard"><div class="qtop"><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><svg class="spark" width="58" height="20" viewBox="0 0 58 20" aria-hidden="true"><polyline points="2.0,14.7 6.2,13.9 10.3,15.5 14.5,15.1 18.6,15.8 22.8,18.0 26.9,16.1 31.1,15.7 35.2,12.9 39.4,10.2 43.5,9.9 47.7,6.8 51.8,2.0 56.0,3.3" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="qprice">$13.12</div><div class="qchg" style="color:#3b82f6;">▼ 3.46%</div></div><div class="qcard"><div class="qtop"><span class="ticker" style="background:#12B886;color:#0f1b2d;">IREN</span><svg class="spark" width="58" height="20" viewBox="0 0 58 20" aria-hidden="true"><polyline points="2.0,2.0 6.2,2.9 10.3,7.6 14.5,8.7 18.6,11.8 22.8,18.0 26.9,6.0 31.1,8.0 35.2,4.0 39.4,2.6 43.5,5.2 47.7,6.5 51.8,2.1 56.0,5.4" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="qprice">$38.74</div><div class="qchg" style="color:#3b82f6;">▼ 6.04%</div></div></div><div class="quotes-asof">시세 기준 08/11 06:49 · Yahoo Finance</div><div class="news-list"><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><span class="src">PYMNTS.com · 08/11 06:38</span></div><h3>Nvidia Forms Financial Partnerships to Fuel AI Factory Boom - PYMNTS.com</h3><p>Nvidia는 AI 공장 확대를 위해 금융 파트너십을 체결했습니다. 이번 협력을 통해 AI 기술의 발전과 산업 내 혁신을 촉진할 계획입니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><span class="src">Yahoo Finance · 08/11 06:35</span></div><h3>Intel (INTC) Tripled This Year, But Can a $15B Share Sale Stop the Momentum?</h3><p>인텔(INTC) 주가가 올해 거의 3배 상승하며 AMD, 엔비디아, 필라델피아 반도체 지수를 초과한 성과를 보였다. 그러나 인텔은 8월 10일에 계약 반도체 제조 확장을 위한 자금 마련으로 150억 달러 규모의 신규 주식을 발행할 계획을 발표하면서 주가가 4% 이상 하락했다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#76B900;color:#0f1b2d;">NVDA</span><span class="src">Yahoo Finance · 08/11 06:27</span></div><h3>Nvidia Makes Massive Move to Fund AI Buildout</h3><p>Nvidia가 AI 개발을 지원하기 위해 대규모 자금을 지원하는 방안을 발표했습니다. 이로 인해 성장 속도가 빨라질 수 있지만, 동시에 새로운 재정적 위험이 발생할 수 있습니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><span class="src">WFAA · 08/11 06:43</span></div><h3>Report: Tesla planning another major expansion in Texas- find out what could be coming. - WFAA</h3><p>테슬라가 텍사스에서 또 다른 대규모 확장을 계획하고 있다는 보도가 나왔습니다. 이에 따라 새로운 시설이나 생산 라인이 추가될 가능성이 제기되고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><span class="src">Yahoo Finance · 08/11 06:36</span></div><h3>The Robot ETF Actually Exists Now: Tesla, Hyundai, and the Companies Building the Joints</h3><p>로봇 ETF가 실제로 존재하게 되었으며, 테슬라와 현대 등 로봇 관련 기업들이 포함되어 있다. 현재 두 개의 로봇 ETF가 경쟁하고 있지만, 각 포트폴리오는 생산이 시작될 때 인적 자본이 어디로 흘러가는지를 다르게 보여주고 있다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#E82127;color:#fff;">TSLA</span><span class="src">24/7 Wall St. · 08/11 06:36</span></div><h3>The Robot ETF Actually Exists Now: Tesla, Hyundai, and the Companies Building the Joints - 24/7 Wall St.</h3><p>로봇 ETF가 실제로 출시되었으며, 이에는 테슬라와 현대차를 포함한 여러 기업들이 참여하고 있습니다. 이 ETF는 로봇 기술과 관련된 기업들의 주식에 투자할 수 있는 새로운 기회를 제공합니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><span class="src">SRN News · 08/11 06:46</span></div><h3>Hims &amp; Hers raises annual revenue forecast on strong subscriber growth - SRN News</h3><p>Hims &amp; Hers는 구독자 수 증가에 힘입어 연간 수익 전망을 상향 조정했습니다. 회사는 강력한 성장세에 따라 매출이 예상보다 높을 것이라고 밝혔습니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><span class="src">Bloomberg.com · 08/11 06:29</span></div><h3>Watch Hims &amp; Hers Lowers Profit Forecast, Shares Drop - Bloomberg.com</h3><p>Hims &amp; Hers가 수익 전망을 하향 조정하면서 주가가 하락했습니다. 이 회사는 예상보다 낮은 성과를 반영하여 투자자들의 신뢰를 잃은 것으로 보입니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#0F6B5C;color:#fff;">HIMS</span><span class="src">Tech Times · 08/11 06:21</span></div><h3>Hims &amp; Hers Q2 2026 Earnings: $86M GAAP Loss Despite $753M Revenue Beat - Tech Times</h3><p>Hims &amp; Hers는 2026년 2분기 동안 86백만 달러의 GAAP 손실을 기록했지만, 753백만 달러의 매출로 예상치를 상회하는 성과를 올렸습니다. 이러한 결과는 회사의 성장 가능성을 보여주지만, 여전히 손실을 겪고 있는 상황입니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><span class="src">MarketBeat · 08/11 06:37</span></div><h3>Redwire (NYSE:RDW) Stock Price Down 3.2% - Time to Sell? - MarketBeat</h3><p>Redwire의 주가가 3.2% 하락하면서 매도 시점에 대한 논의가 일고 있습니다. 투자자들은 이 상황을 고려해 매도 결정을 내릴지 고민하고 있는 상황입니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><span class="src">Yahoo Finance · 08/10 23:57</span></div><h3>Redwire Takes Off on Solid Q2 Results. How to Play RDW Stock Here.</h3><p>레드와이어(Redwire)가 2분기 실적 발표에서 기록적인 수익을 올리며 시장 기대를 뛰어넘는 성과를 달성했습니다. 이 회사의 향후 성장 잠재력은 매우 크다고 평가되고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#D0202E;color:#fff;">RDW</span><span class="src">Barchart.com · 08/10 23:57</span></div><h3>Redwire Takes Off on Solid Q2 Results. How to Play RDW Stock Here. - Barchart.com</h3><p>Redwire의 2분기 실적이 긍정적으로 발표되며 주가가 상승세를 보이고 있다. 투자자들에게 RDW 주식을 어떻게 활용할지에 대한 전략을 제시하고 있다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#12B886;color:#0f1b2d;">IREN</span><span class="src">MarketBeat · 08/11 06:37</span></div><h3>IREN (NASDAQ:IREN) Stock Price Down 6% - Should You Sell? - MarketBeat</h3><p>IREN의 주가가 6% 하락했으며, 이에 따라 매도 결정을 고려해야 하는지에 대한 논의가 이루어지고 있습니다. 투자자들은 현재 상황을 분석하고 향후 전망을 평가해야 할 필요성이 있습니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#12B886;color:#0f1b2d;">IREN</span><span class="src">The Motley Fool · 08/11 01:16</span></div><h3>IREN&#x27;s $4 Billion AI Target Just Became Far More Credible - The Motley Fool</h3><p>IREN의 40억 달러 규모 AI 목표가 더욱 신뢰성을 얻었다는 소식이 전해졌다. 이와 관련하여 새로운 기술 발전과 시장 수요 증가가 지원하고 있다. 이러한 변화는 IREN의 성장 가능성을 높이는 데 기여하고 있다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#12B886;color:#0f1b2d;">IREN</span><span class="src">The Globe and Mail · 08/11 01:03</span></div><h3>IREN&#x27;s $4 Billion AI Target Just Became Far More Credible - The Globe and Mail</h3><p>IREN의 40억 달러 규모의 인공지능 목표가 더욱 실현 가능해졌다는 소식입니다. 이는 최근 진행된 투자 및 기술 개발의 진전을 반영합니다. IREN은 AI 분야에서의 입지를 강화하며 지속적인 성장을 추구하고 있습니다.</p></div></div></section><section class="part" id="coin"><div class="part-head"><span class="part-icon">🪙</span><h2>코인</h2></div><div class="quotes"><div class="qcard"><div class="qtop"><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC</span><svg class="spark" width="58" height="20" viewBox="0 0 58 20" aria-hidden="true"><polyline points="2.0,9.7 6.2,9.4 10.3,3.3 14.5,17.6 18.6,18.0 22.8,12.6 26.9,12.8 31.1,8.3 35.2,4.3 39.4,6.8 43.5,2.2 47.7,2.0 51.8,2.4 56.0,9.2" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="qprice">$63,935.78</div><div class="qchg" style="color:#3b82f6;">▼ 1.40%</div></div><div class="qcard"><div class="qtop"><span class="ticker" style="background:#627EEA;color:#fff;">ETH</span><svg class="spark" width="58" height="20" viewBox="0 0 58 20" aria-hidden="true"><polyline points="2.0,2.0 6.2,4.4 10.3,2.5 14.5,14.5 18.6,18.0 22.8,9.8 26.9,14.9 31.1,12.8 35.2,4.8 39.4,5.7 43.5,3.4 47.7,2.9 51.8,4.4 56.0,11.9" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="qprice">$1,872.60</div><div class="qchg" style="color:#3b82f6;">▼ 1.89%</div></div><div class="qcard"><div class="qtop"><span class="ticker" style="background:#9945FF;color:#fff;">SOL</span><svg class="spark" width="58" height="20" viewBox="0 0 58 20" aria-hidden="true"><polyline points="2.0,11.3 6.2,11.7 10.3,8.5 14.5,14.7 18.6,18.0 22.8,12.3 26.9,12.2 31.1,11.3 35.2,10.4 39.4,15.4 43.5,11.6 47.7,3.1 51.8,2.2 56.0,2.0" fill="none" stroke="#e5484d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="qprice">$76.27</div><div class="qchg" style="color:#e5484d;">▲ 0.08%</div></div></div><div class="quotes-asof">시세 기준 08/11 06:49 · Yahoo Finance</div><div class="news-list"><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC-USD</span><span class="src">Benzinga · 08/11 06:31</span></div><h3>Bitcoin&#x27;s Rarest Bottom Signal in 15 Years Settles August 31: Here&#x27;s What to Watch - Benzinga</h3><p>비트코인의 15년 만에 가장 희귀한 바닥 신호가 8월 31일에 확정되었으며, 투자자들은 이를 주의 깊게 살펴봐야 한다는 내용이다. 이 신호는 비트코인 가격의 향후 움직임에 중요한 영향을 미칠 것으로 예상된다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC-USD</span><span class="src">Investing.com · 08/11 06:21</span></div><h3>Bitcoin falls below $65k as rising oil prices dents sentiment for risky assets - Investing.com</h3><p>비트코인이 6만5천 달러 이하로 떨어졌습니다. 이는 유가 상승이 위험 자산에 대한 투자 심리를 악화시킨 결과로 보입니다. 이로 인해 시장에서 비트코인에 대한 관심이 줄어드는 추세입니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#F7931A;color:#0f1b2d;">BTC-USD</span><span class="src">Briefs Finance · 08/11 06:19</span></div><h3>Strategy Sells Bitcoin to Build a Bigger Cash Reserve - Briefs Finance</h3><p>전략적으로 비트코인을 매각하여 더 큰 현금 준비금을 구축하고 있다는 소식입니다. 이는 금융 유동성을 증가시키기 위한 결정으로 보입니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#627EEA;color:#fff;">ETH-USD</span><span class="src">Crypto News · 08/11 06:26</span></div><h3>Ethereum roadmap puts privacy and quantum safety first - Crypto News</h3><p>이더리움 로드맵은 프라이버시와 양자 안전성을 최우선으로 두고 있는 방향성을 제시했습니다. 이러한 변화는 사용자 보호와 미래의 보안 위협에 대한 대응을 강화하기 위한 것입니다. 이더리움 팀은 이러한 목표를 달성하기 위한 기술 개발에 집중할 계획입니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#627EEA;color:#fff;">ETH-USD</span><span class="src">Moomoo · 08/11 06:15</span></div><h3>Ethereum Lost 2.15% to $1878.07 -- Data Talk - Moomoo</h3><p>이더리움의 가격이 2.15% 하락하여 1,878.07달러에 거래되고 있다고 전해졌다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#627EEA;color:#fff;">ETH-USD</span><span class="src">KuCoin · 08/11 06:12</span></div><h3>Ethereum Price Eyes $2,045 Rebound as Joseph Lubin Predicts ETH Could Overtake BTC - KuCoin</h3><p>조셉 루빈이 이더리움(ETH)이 비트코인(BTC)을 추월할 수 있다고 예측하면서 이더리움 가격이 2,045달러로 반등할 가능성을 주목받고 있습니다. 이에 따라 시장에서 ETH의 상승세에 대한 기대감이 커지고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#9945FF;color:#fff;">SOL-USD</span><span class="src">thestreet.com · 08/11 05:54</span></div><h3>Solana&#x27;s stablecoin supply has grown 11x in three years - thestreet.com</h3><p>솔라나의 스테이블코인 공급량이 지난 3년 동안 11배 증가했습니다. 이는 해당 플랫폼의 시장 성장과 사용자 수의 증가를 반영하는 결과입니다.</p></div><div class="news"><div class="news-meta"><span class="ticker" style="background:#9945FF;color:#fff;">SOL-USD</span><span class="src">Brave New Coin · 08/11 04:55</span></div><h3>Solana Price Prediction: SOL Breakout Builds Momentum as $79.50 Liquidity and $80 Target Come Into Focus - Brave New Coin</h3><p>솔라나(SOL)의 가격이 상승세를 보이며 79.50 달러의 유동성과 80 달러 목표에 점점 가까워지고 있습니다. 전문가들은 SOL의 가격 상승이 지속될 것으로 예상하고 있습니다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="ticker" style="background:#9945FF;color:#fff;">SOL-USD</span><span class="src">WBOC TV · 08/11 04:08</span></div><h3>Crypto News Today: Pepeto Staking Pays 169% APY And Solana Price Prediction Eyes $500 - WBOC TV</h3><p>오늘의 암호화폐 뉴스에서는 Pepeto 스테이킹이 169%의 연간수익률(APY)을 제공한다는 소식과 함께, 솔라나의 가격 예측이 500달러를 목표로 하고 있다는 내용이 전해졌습니다.</p></div></div></section></div><div class="panel" id="tp2"><section class="part" id="re"><div class="part-head"><span class="part-icon">🏘️</span><h2>부동산</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>서울 아파트 월세 비중이 처음으로 55%를 넘어서며 전세 가뭄 현상이 심화되고 있으며, 정부의 세제 개편으로 강남 3구에서 매물이 급증하고 있다.</p></div><div class="news-list"><div class="news hero"><div class="news-meta"><span class="badge-key">핵심</span><span class="tag">전세</span><span class="src">매일경제 · 08/10 17:50</span></div><h3>바짝 마른 &#x27;전세 가뭄&#x27;… 서울 아파트 월세 비중 처음으로 55% 넘어</h3><p>6월 서울 아파트의 월세 계약이 9954건으로 전세 계약(8114건)보다 많아졌고, 전세 계약은 1년 전보다 37.8% 급감했다.</p></div><div class="news"><div class="news-meta"><span class="tag">매매</span><span class="src">매일경제 · 08/10 17:09</span></div><h3>증세 집중 타깃된 강남3구 … 일주일 새 매물 1천건 &#x27;쑥&#x27;</h3><p>고가 주택을 겨냥한 세제 개편 후 서울 아파트 매물이 2100건 이상 증가했으며, 그 중 1065건이 강남 3구에서 발생했다.</p></div><div class="news"><div class="news-meta"><span class="tag">매매</span><span class="src">매일경제 · 08/10 17:09</span></div><h3>수도권 15~20억 아파트 신고가 행진</h3><p>7월 수도권 아파트 거래의 53.8%가 신고가로 이루어졌으며, 특히 12억원 초과~15억원 이하의 신고가 비중이 47%로 상승했다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">정책</span><span class="src">매일경제 · 08/11 06:02</span></div><h3>청년은 입주 못하는 ‘반값아파트’… 바뀐 대출규제에 계약포기 속출</h3><p>공공 토지임대부 주택의 대출 규제로 청년 당첨자 70명이 입주를 포기한 사례가 발생했다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">정책</span><span class="src">연합뉴스 · 08/11 05:57</span></div><h3>그린벨트 해제 후보 다시 거론된 하남 감북… 높아진 땅값 변수</h3><p>하남 감북지구가 다시 그린벨트 해제 후보지로 거론되며, 현재 토지가격이 2010년 대비 크게 상승한 상황이다.</p></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">재건축</span><span class="src">서울경제 · 08/11 06:30</span></div><h3>‘보유세 늘고 장특공제 축소’… 강남 고가 재건축 휘청</h3><p>보유세 강화 및 장기보유특별공제 축소로 인해 강남 지역 고가 재건축 시장이 어려움을 겪고 있다.</p></div></div><div class="outlook"><div class="outlook-label">흐름·전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>서울의 전세 시장은 월세 비중이 늘어나는 가운데, 앞으로도 임대료 상승이 지속될 가능성이 높다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>강남 3구의 매물 증가가 고가 주택 시장에 미치는 영향을 주목해야 하며, 이는 전세 시장에도 영향을 미칠 수 있다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>신고가 비중의 상승은 실수요 몰림 현상을 반영하며, 가격 상승세가 계속 이어질지에 대한 분석이 필요하다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>청년층의 주거 지원 정책이 대출 규제와 맞물리면서 실질적인 함정에 빠진 사례가 늘고 있으므로, 정책 개선 방안이 필요하다.</span></div></div></div></section></div><div class="panel" id="tp3"><section class="part" id="trump"><div class="part-head"><span class="part-icon">💬</span><h2>트럼프</h2></div><div class="summary"><div class="summary-label">오늘 한눈에</div><p>트럼프는 이란과의 협상과 관련해 이란이 다른 국가에 미친 피해에 대해 책임을 져야 한다고 주장했습니다. 그는 위장된 폭력 행위를 정당화하며 이란에 대한 보상을 요구하는 상황에 대해 대응했습니다.</p></div><div class="news-list"><div class="news hero"><div class="news-meta"><span class="badge-key">핵심</span><span class="badge-new">NEW</span><span class="tag">외교</span><span class="src">Truth Social · 08/11 01:31</span></div><h3>트럼프는 이란이 최근의 군사 충돌로 인한 피해에 대한 보상을 요구하고 있는 것에 대해, 이란이 다른 국가에 미친 피해와 사상자들에 대해 보상을 요구한다고 언급했습니다.</h3></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">외교</span><span class="src">Truth Social · 08/10 21:09</span></div><h3>트럼프는 이란과의 협상에서 자신이 이란에게 폭력적으로 영향을 미친 사건들로 인해 보상을 요구하고 있다고 주장했습니다.</h3></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">기타</span><span class="src">Truth Social · 08/10 08:17</span></div><h3>트럼프는 아이오와에서 민주당 상원의원 후보의 absentee 문제를 지적하며, 게으른 상원의원이 잘 지내지 못할 것이라고 언급했습니다.</h3></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">기타</span><span class="src">Truth Social · 08/10 07:10</span></div><h3>트럼프는 그리스의 이주 관리 운영 센터에 대해 보도하며, 자신의 승리가 전 세계의 국경 단속에 영향을 미쳤다고 강조했습니다.</h3></div><div class="news"><div class="news-meta"><span class="badge-new">NEW</span><span class="tag">사법</span></div><h3>트럼프는 국립공원 직원이 한 남성이 물체를 파손하는 모습을 목격했다고 주장하며, 해당 증언이 미국 법무부에 제출되었다고 언급했습니다.</h3></div></div><div class="outlook"><div class="outlook-label">흐름·전망</div><div class="outlook-list"><div class="outlook-item"><span class="arrow">›</span><span>이란에 대한 보상 요구와 관련하여 외교적 긴장이 확대될 가능성에 주목할 필요가 있습니다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>아이오와에서의 민주당 상원의원 후보에 대한 비판이 향후 선거에 미치는 영향을 지켜봐야 합니다.</span></div><div class="outlook-item"><span class="arrow">›</span><span>트럼프의 주장에 따라 이란과의 관계가 더욱 복잡해질 가능성이 있습니다.</span></div></div></div><div class="note">트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.</div></section></div><div class="panel" id="tpGoal"><div id="goalRoot" class="goal-root"><div class="goal-msg">불러오는 중…</div></div></div>
+<footer class="ft">기사 요약은 각 언론사 보도를 바탕으로 자동 생성되었으며, 저작권은 해당 언론사에 있습니다. 정보 제공 목적이며 투자 판단의 책임은 본인에게 있습니다.</footer>
+</div></div>
+<button id="theme" aria-label="다크/라이트 테마 전환" title="테마 전환">🌙</button>
+<button id="top" aria-label="맨 위로">↑</button>
+<script>
+document.querySelectorAll('.nav-t').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.querySelectorAll('.nav-t').forEach(function(x){x.classList.remove('on');});
+    document.querySelectorAll('.panel').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    document.getElementById(b.getAttribute('data-p')).classList.add('on');
+  });
+});
+/* 신선도: 빌드 시각 대비 '지금'까지의 경과시간을 뷰 시점에 계산.
+   → 빌드가 실패해 페이지가 갱신 안 돼도 지연이 눈에 보임. */
+(function(){
+  var el=document.querySelector('.fresh[data-built]'); if(!el) return;
+  var built=parseInt(el.getAttribute('data-built'),10)*1000;
+  if(!built) return;
+  function fmt(){
+    var diff=Date.now()-built; if(diff<0) diff=0;
+    var h=Math.floor(diff/3600000), m=Math.floor((diff%3600000)/60000);
+    var ago = h>0 ? (h+'시간 '+(m?m+'분 ':'')+'전') : (m+'분 전');
+    el.className='fresh';
+    if(h>=24){ el.classList.add('stale'); el.textContent='⚠ '+ago+' · 업데이트 지연'; }
+    else if(h>=18){ el.classList.add('warn'); el.textContent='△ '+ago+' · 갱신 지연 가능'; }
+    else { el.textContent=ago+' 업데이트'; }
+  }
+  fmt(); setInterval(fmt, 60000);
+})();
+</script><script type="module" src="goal-app.js"></script><script>
+(function(){
+  var t=document.getElementById('top');
+  if(!t)return;
+  function s(){ t.classList.toggle('show', window.pageYOffset>200); }
+  window.addEventListener('scroll',s,{passive:true}); s();
+  t.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+})();
+</script><script>
+(function(){
+  var b=document.getElementById('theme'); if(!b)return;
+  function ic(){ b.textContent =
+    document.documentElement.getAttribute('data-theme')==='dark' ? '☀️' : '🌙'; }
+  ic();
+  b.addEventListener('click', function(){
+    var n = document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', n);
+    try{ localStorage.setItem('theme', n); }catch(e){}
+    ic();
+  });
+})();
+</script>
+</body>
+</html>
