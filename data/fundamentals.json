@@ -21,6 +21,7 @@
    "d_debt": 6.0,
    "capex": 455.0
   },
+  "moat_score": 88,
   "series": {
    "rev": [
     {
@@ -107,7 +108,7 @@
     }
    ]
   },
-  "score": 96,
+  "score": 98,
   "axes": {
    "growth": {
     "sig": "g",
@@ -159,6 +160,7 @@
   "dilution": -0.2,
   "rnd_pct": 11.1,
   "bridge": null,
+  "moat_score": 82,
   "series": {
    "rev": [
     {
@@ -245,11 +247,11 @@
     }
    ]
   },
-  "score": 67,
+  "score": 57,
   "axes": {
    "growth": {
     "sig": "y",
-    "sc": 28,
+    "sc": 15,
     "lab": "매출 YoY +18%"
    },
    "path": {
@@ -297,6 +299,7 @@
   "dilution": -1.6,
   "rnd_pct": 10.7,
   "bridge": null,
+  "moat_score": 81,
   "series": {
    "rev": [
     {
@@ -383,11 +386,11 @@
     }
    ]
   },
-  "score": 64,
+  "score": 54,
   "axes": {
    "growth": {
     "sig": "y",
-    "sc": 26,
+    "sc": 13,
     "lab": "매출 YoY +16%"
    },
    "path": {
@@ -438,6 +441,7 @@
    "d_debt": 75557.0,
    "capex": 71172.0
   },
+  "moat_score": 75,
   "series": {
    "rev": [
     {
@@ -524,11 +528,11 @@
     }
    ]
   },
-  "score": 68,
+  "score": 61,
   "axes": {
    "growth": {
     "sig": "y",
-    "sc": 39,
+    "sc": 28,
     "lab": "매출 YoY +24% · 가속"
    },
    "path": {
@@ -579,6 +583,7 @@
    "d_debt": 76501.0,
    "capex": 7419.0
   },
+  "moat_score": 51,
   "series": {
    "rev": [
     {
@@ -665,11 +670,11 @@
     }
    ]
   },
-  "score": 64,
+  "score": 55,
   "axes": {
    "growth": {
     "sig": "y",
-    "sc": 31,
+    "sc": 19,
     "lab": "매출 YoY +20% · 가속"
    },
    "path": {
@@ -720,6 +725,7 @@
    "d_debt": 29919.0,
    "capex": 45161.0
   },
+  "moat_score": 61,
   "series": {
    "rev": [
     {
@@ -806,11 +812,11 @@
     }
    ]
   },
-  "score": 73,
+  "score": 69,
   "axes": {
    "growth": {
     "sig": "g",
-    "sc": 53,
+    "sc": 46,
     "lab": "매출 YoY +33% · 가속"
    },
    "path": {
@@ -861,6 +867,7 @@
    "d_debt": 2105.0,
    "capex": 8834.0
   },
+  "moat_score": 39,
   "series": {
    "rev": [
     {
@@ -947,11 +954,11 @@
     }
    ]
   },
-  "score": 72,
+  "score": 64,
   "axes": {
    "growth": {
     "sig": "g",
-    "sc": 41,
+    "sc": 31,
     "lab": "매출 YoY +26% · 가속"
    },
    "path": {
@@ -999,6 +1006,7 @@
   "dilution": -9.7,
   "rnd_pct": null,
   "bridge": null,
+  "moat_score": 57,
   "series": {
    "rev": [
     {
@@ -1085,11 +1093,11 @@
     }
    ]
   },
-  "score": 63,
+  "score": 62,
   "axes": {
    "growth": {
     "sig": "g",
-    "sc": 61,
+    "sc": 56,
     "lab": "매출 YoY +38% · 가속"
    },
    "path": {
@@ -1137,6 +1145,7 @@
   "dilution": 146.2,
   "rnd_pct": 10.7,
   "bridge": null,
+  "moat_score": 40,
   "series": {
    "rev": [
     {
@@ -1275,6 +1284,7 @@
   "dilution": 52.6,
   "rnd_pct": null,
   "bridge": null,
+  "moat_score": 2,
   "series": {
    "rev": [
     {
@@ -1351,7 +1361,7 @@
     }
    ]
   },
-  "score": 21,
+  "score": 14,
   "axes": {
    "growth": {
     "sig": "r",
@@ -1403,6 +1413,7 @@
   "dilution": 0.2,
   "rnd_pct": 9.9,
   "bridge": null,
+  "moat_score": 92,
   "series": {
    "rev": [
     {
@@ -1489,7 +1500,7 @@
     }
    ]
   },
-  "score": 96,
+  "score": 97,
   "axes": {
    "growth": {
     "sig": "g",
@@ -1541,6 +1552,7 @@
   "dilution": 22.2,
   "rnd_pct": 35.2,
   "bridge": null,
+  "moat_score": 62,
   "series": {
    "rev": [
     {
@@ -1631,7 +1643,7 @@
   "axes": {
    "growth": {
     "sig": "g",
-    "sc": 99,
+    "sc": 100,
     "lab": "매출 YoY +62%"
    },
    "path": {

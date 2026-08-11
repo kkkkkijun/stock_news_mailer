@@ -2,6 +2,7 @@
 main.py의 _sec_cik / _SEC_UA 재사용. build_fundamentals()가 data/fundamentals.json 생성.
 """
 import json
+import statistics
 import time
 from datetime import date
 
@@ -187,6 +188,10 @@ def _build_one(sym):
     opm_delta = round(opm - opm_prev, 1) if (opm is not None and opm_prev is not None) else None
 
     gm = round(gp[latest] / rev_l * 100, 1) if latest in gp and rev_l else None
+    gm_list = [round(gp[en] / rev[en] * 100, 1) if (en in gp and rev.get(en)) else None
+               for en in ends[-8:]]
+    opm_list = [round(opi[en] / rev[en] * 100, 1) if (en in opi and rev.get(en)) else None
+                for en in ends[-8:]]
 
     def instlast(d):
         return d[max(d)] if d else None
@@ -240,6 +245,7 @@ def _build_one(sym):
         "opm": opm, "opm_delta": opm_delta, "gm": gm,
         "netcash": netcash, "cash": _m(cash_l), "debt": _m(debt_l),
         "fcf": fcf, "dilution": dil, "rnd_pct": rnd_pct, "bridge": bridge,
+        "moat_score": _moat_quant(gm, gm_list, opm, opm_list, rnd_pct),
         "series": {"rev": series8(rev), "opi": series8(opi)},
     }
     d.update(_axes(d))
@@ -248,6 +254,26 @@ def _build_one(sym):
 
 def _clamp(x, lo=0, hi=100):
     return max(lo, min(hi, x))
+
+
+def _moat_quant(gm_now, gm_list, opm_now, opm_list, rnd_pct):
+    """해자 = 정량 프록시. 매출총이익률(가격결정력) 수준+안정성+추세가 1순위.
+    GM 태그 없으면(예: AMZN/GOOGL) 영업이익률로 폴백(상한 낮춤). 둘 다 없으면 None."""
+    use_gm = gm_now is not None and len([v for v in gm_list if v is not None]) >= 2
+    if use_gm:
+        now, series, lvl_cap, base = gm_now, gm_list, 62, 80.0
+    elif opm_now is not None and len([v for v in opm_list if v is not None]) >= 2:
+        now, series, lvl_cap, base = opm_now, opm_list, 48, 50.0   # 폴백은 상한↓
+    else:
+        return None
+    vals = [v for v in series if v is not None]
+    lvl = _clamp(now / base * lvl_cap, 0, lvl_cap)
+    std = statistics.pstdev(vals) if len(vals) >= 3 else abs(vals[-1] - vals[0])
+    stab = 26 if std <= 2 else 18 if std <= 5 else 8 if std <= 10 else 2
+    avg = sum(vals) / len(vals)
+    trend = 12 if now > avg + 1 else (6 if now >= avg - 1 else 0)
+    rd = 4 if (rnd_pct or 0) >= 10 else 0               # 지속적 기술 투자 소량 가점
+    return round(_clamp(lvl + stab + trend + rd))
 
 
 def _axes(d):
@@ -259,13 +285,13 @@ def _axes(d):
     fcf = d.get("fcf")
     dil = d.get("dilution")
 
-    # ① 성장
+    # ① 성장 — 성장주 발굴의 핵심축. 저성장은 급감, 고성장은 급증.
     if yoy is None:
-        g_sig, g_sc, g_lab = "y", 40, "성장률 산출 불가"
+        g_sig, g_sc, g_lab = "y", 35, "성장률 산출 불가"
     else:
-        g_sc = _clamp(yoy * 1.6)
+        g_sc = _clamp((yoy - 10) * 2.0)     # 15%→10 · 25%→30 · 40%→60 · 60%+→100
         accel = (d.get("rev_yoy_prev") is not None and yoy > d["rev_yoy_prev"] + 2)
-        g_sig = "g" if yoy >= 25 else "y" if yoy >= 10 else "r"
+        g_sig = "g" if yoy >= 25 else "y" if yoy >= 12 else "r"
         g_lab = f"매출 YoY {yoy:+.0f}%" + (" · 가속" if accel else "")
 
     # ② 수익성 경로
@@ -300,7 +326,14 @@ def _axes(d):
         s_sig = "g" if (dil <= 3 and (fcf or 0) >= 0) else "y" if dil <= 10 else "r"
         s_lab = f"주식수 {dil:+.0f}%" + (" · FCF흑자" if (fcf or 0) > 0 else " · FCF적자")
 
-    score = round(0.30 * g_sc + 0.25 * p_sc + 0.25 * b_sc + 0.20 * s_sc)
+    # 성장 가중(0.42). 우량주(수익성·재무 만점이지만 저성장)가 상위권 못 오게.
+    score = round(0.42 * g_sc + 0.20 * p_sc + 0.16 * b_sc + 0.22 * s_sc)
+    # 저성장 게이트: 성장주 발굴이므로 저성장 대형주는 상한을 둔다.
+    if yoy is not None:
+        if yoy < 12:
+            score = min(score, 50)
+        elif yoy < 22:
+            score = min(score, 72)
 
     # 한 줄 태그(가장 두드러진 특징)
     if opm and opm > 0 and yoy and yoy >= 30:

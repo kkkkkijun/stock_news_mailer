@@ -2299,7 +2299,7 @@ def _gr_qual(d):
     if not q:
         return ('<div style="font-size:11.5px;color:var(--faint);margin-top:14px">'
                 '해자·산업 필연성 등 정성 분석은 10-K 수집 후 표시됩니다.</div>')
-    ms = q.get("moat_score")
+    ms = d.get("moat_score")
     cards = (("경쟁 우위 (해자)", q.get("moat", "")),
              ("산업 필연성", q.get("necessity", "")),
              ("확장 시나리오", q.get("expansion", "")))
