@@ -882,18 +882,13 @@
   "est": false,
   "detail": {
    "prev": {
-    "period": "26.03",
-    "eps_act": "$-0.40",
-    "eps_est": "$0.03",
-    "surprise": "-1,664.33%",
+    "period": "26.06",
+    "eps_act": "$-0.37",
+    "eps_est": "$-0.05",
+    "surprise": "-640.00%",
     "surprise_pos": false
    },
    "surprises": [
-    {
-     "fmt": "+3.21%",
-     "v": 3.21,
-     "pos": true
-    },
     {
      "fmt": "-41.00%",
      "v": -41.0,
@@ -903,21 +898,14 @@
      "fmt": "+92.54%",
      "v": 92.54,
      "pos": true
+    },
+    {
+     "fmt": "-640.00%",
+     "v": -640.0,
+     "pos": false
     }
    ],
    "cur": {
-    "period": "26.06",
-    "eps": "$-0.05",
-    "eps_range": "$-0.06~$-0.04",
-    "rev": "$730.12M",
-    "growth": "-60.32%",
-    "growth_pos": false
-   },
-   "rev": {
-    "up": 0,
-    "down": 0
-   },
-   "next": {
     "period": "26.09",
     "eps": "$0.07",
     "eps_range": "$0.06~$0.07",
@@ -925,16 +913,19 @@
     "growth": "-2.19%",
     "growth_pos": false
    },
+   "rev": {
+    "up": 1,
+    "down": 8
+   },
+   "next": {
+    "period": "26.12",
+    "eps": "$0.17",
+    "eps_range": "$0.13~$0.20",
+    "rev": "$899.78M",
+    "growth": "+62.93%",
+    "growth_pos": true
+   },
    "quarters": [
-    {
-     "cq": "2025-2",
-     "label": "2025 2Q",
-     "reported": true,
-     "eps_act": "$0.17",
-     "eps_est": "$0.16",
-     "surprise": "+3.21%",
-     "surprise_pos": true
-    },
     {
      "cq": "2025-3",
      "label": "2025 3Q",
@@ -965,17 +956,26 @@
     {
      "cq": "2026-2",
      "label": "2026 2Q",
-     "reported": false,
+     "reported": true,
+     "eps_act": "$-0.37",
      "eps_est": "$-0.05",
-     "rev": "$730.12M",
-     "date": "2026-08-11"
+     "surprise": "-640.00%",
+     "surprise_pos": false
     },
     {
      "cq": "2026-3",
      "label": "2026 3Q",
      "reported": false,
      "eps_est": "$0.07",
-     "rev": "$862.72M"
+     "rev": "$862.72M",
+     "date": "2026-08-11"
+    },
+    {
+     "cq": "2026-4",
+     "label": "2026 4Q",
+     "reported": false,
+     "eps_est": "$0.17",
+     "rev": "$899.78M"
     }
    ],
    "target": {
