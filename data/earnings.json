@@ -109,10 +109,10 @@
     }
    ],
    "target": {
-    "price": "$217.55",
+    "price": "$219.65",
     "mean": "$302.83",
     "range": "$180~$500",
-    "upside": "+39%",
+    "upside": "+38%",
     "upside_pos": true
    },
    "rec": {
@@ -234,10 +234,10 @@
     }
    ],
    "target": {
-    "price": "$506.06",
-    "mean": "$563.84",
+    "price": "$500.42",
+    "mean": "$567.20",
     "range": "$400~$870",
-    "upside": "+11%",
+    "upside": "+13%",
     "upside_pos": true
    },
    "rec": {
@@ -359,10 +359,10 @@
     }
    ],
    "target": {
-    "price": "$308.26",
+    "price": "$305.91",
     "mean": "$322.82",
     "range": "$215~$400",
-    "upside": "+5%",
+    "upside": "+6%",
     "upside_pos": true
    },
    "rec": {
@@ -415,7 +415,7 @@
     "eps": "$3.00",
     "eps_range": "$2.64~$3.68",
     "rev": "$126.98B",
-    "growth": "+4.33%",
+    "growth": "+4.46%",
     "growth_pos": true
    },
    "rev": {
@@ -484,10 +484,10 @@
     }
    ],
    "target": {
-    "price": "$357.52",
+    "price": "$349.57",
     "mean": "$428.04",
     "range": "$340~$515",
-    "upside": "+20%",
+    "upside": "+22%",
     "upside_pos": true
    },
    "rec": {
@@ -609,10 +609,10 @@
     }
    ],
    "target": {
-    "price": "$278.09",
+    "price": "$273.90",
     "mean": "$324.94",
     "range": "$230~$400",
-    "upside": "+17%",
+    "upside": "+19%",
     "upside_pos": true
    },
    "rec": {
@@ -734,7 +734,7 @@
     }
    ],
    "target": {
-    "price": "$594.92",
+    "price": "$595.30",
     "mean": "$756.95",
     "range": "$580~$1,000",
     "upside": "+27%",
@@ -859,10 +859,10 @@
     }
    ],
    "target": {
-    "price": "$330.88",
+    "price": "$332.62",
     "mean": "$396.62",
     "range": "$125~$600",
-    "upside": "+20%",
+    "upside": "+19%",
     "upside_pos": true
    },
    "rec": {
@@ -877,9 +877,9 @@
  {
   "ticker": "HIMS",
   "name": "힘스앤허스",
-  "date": "2026-08-11",
-  "ts": 1786392000,
-  "est": false,
+  "date": "2026-11-10",
+  "ts": 1794254400,
+  "est": true,
   "detail": {
    "prev": {
     "period": "26.06",
@@ -968,7 +968,7 @@
      "reported": false,
      "eps_est": "$0.07",
      "rev": "$862.72M",
-     "date": "2026-08-11"
+     "date": "2026-11-10"
     },
     {
      "cq": "2026-4",
@@ -979,10 +979,10 @@
     }
    ],
    "target": {
-    "price": "$31.77",
+    "price": "$30.07",
     "mean": "$29.38",
     "range": "$21~$40",
-    "upside": "-8%",
+    "upside": "-2%",
     "upside_pos": false
    },
    "rec": {
@@ -1104,10 +1104,10 @@
     }
    ],
    "target": {
-    "price": "$13.12",
+    "price": "$12.86",
     "mean": "$15.79",
     "range": "$7~$24",
-    "upside": "+20%",
+    "upside": "+23%",
     "upside_pos": true
    },
    "rec": {
@@ -1229,10 +1229,10 @@
     }
    ],
    "target": {
-    "price": "$38.74",
+    "price": "$40.12",
     "mean": "$81.73",
     "range": "$41~$131",
-    "upside": "+111%",
+    "upside": "+104%",
     "upside_pos": true
    },
    "rec": {
@@ -1285,7 +1285,7 @@
     "eps": "$0.41",
     "eps_range": "$0.38~$0.48",
     "rev": "$2.18B",
-    "growth": "+96.98%",
+    "growth": "+97.39%",
     "growth_pos": true
    },
    "rev": {
@@ -1295,9 +1295,9 @@
    "next": {
     "period": "26.12",
     "eps": "$0.46",
-    "eps_range": "$0.42~$0.55",
+    "eps_range": "$0.43~$0.55",
     "rev": "$2.46B",
-    "growth": "+85.28%",
+    "growth": "+85.80%",
     "growth_pos": true
    },
    "quarters": [
@@ -1354,10 +1354,10 @@
     }
    ],
    "target": {
-    "price": "$175.23",
-    "mean": "$189.90",
+    "price": "$175.66",
+    "mean": "$191.68",
     "range": "$80~$255",
-    "upside": "+8%",
+    "upside": "+9%",
     "upside_pos": true
    },
    "rec": {
@@ -1372,9 +1372,9 @@
  {
   "ticker": "RKLB",
   "name": "로켓랩",
-  "date": "2026-08-11",
-  "ts": 1786392000,
-  "est": false,
+  "date": "2026-11-10",
+  "ts": 1794254400,
+  "est": true,
   "detail": {
    "prev": {
     "period": "26.06",
@@ -1468,7 +1468,7 @@
      "reported": false,
      "eps_est": "$-0.06",
      "rev": "$235.9M",
-     "date": "2026-08-11"
+     "date": "2026-11-10"
     },
     {
      "cq": "2026-4",
@@ -1479,10 +1479,10 @@
     }
    ],
    "target": {
-    "price": "$80.04",
+    "price": "$77.10",
     "mean": "$111.31",
     "range": "$64~$150",
-    "upside": "+39%",
+    "upside": "+44%",
     "upside_pos": true
    },
    "rec": {
