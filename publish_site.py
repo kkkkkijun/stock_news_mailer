@@ -1566,18 +1566,23 @@ def _render_results(evs, now, show=False, default_cq=None, fresh_tk=None):
         chips.append(f'<button class="q-q{on}" data-y="{y}" data-q="{cq}"{hide}>{qn}Q</button>')
     chips.append('</div>')
 
-    def _skey(x):
-        if x["report"]:
-            return (0, 0)
-        v = _pct_num(x["q"].get("surprise"))
-        return (1, -(v if v is not None else -999))
+    def _prio(x):
+        # 1) NEW(최근 발표) → 2) 발표 예정(미발표) → 3) 발표됨
+        if x.get("report") and x["ticker"] in fresh_tk:
+            return 0
+        q = x.get("q") or {}
+        return 2 if (x.get("report") or q.get("reported")) else 1
     panels = []
     for cq in cqs:
         nrep = sum(1 for x in buckets[cq] if x["report"])
         note = (f'<div class="rep-note">{_e(labels[cq])} · 발표 {len(buckets[cq])}종목'
                 f'{f" · 보고서 {nrep}" if nrep else ""} · 출처 SEC 8-K/Yahoo · 참고용</div>')
         items = []
-        for it in sorted(buckets[cq], key=_skey):
+        ordered = sorted(buckets[cq],
+                         key=lambda x: ((x.get("report") or {}).get("date") or ""),
+                         reverse=True)          # 발표일 최근순
+        ordered.sort(key=_prio)                 # NEW → 예정 → 발표됨 (안정 정렬)
+        for it in ordered:
             if it["report"]:
                 items.append(_report_card_html(it["report"],
                                                open_=it["ticker"] in fresh_tk))
