@@ -2285,12 +2285,42 @@ def _gr_deep(d):
         f'{_gr_kpi("FCF(TTM)", _gr_money(d.get("fcf")))}'
         '</div>')
 
-    note = ('<div style="font-size:11.5px;color:var(--faint);margin-top:10px">'
-            '해자·산업 필연성 등 정성 분석은 다음 단계에서 추가됩니다. '
-            '수치는 SEC 공시(XBRL) 원본 기반이며 투자 판단 책임은 본인에게 있습니다.</div>')
+    note = ('<div style="font-size:11.5px;color:var(--faint);margin-top:12px">'
+            '수치는 SEC 공시(XBRL·10-K) 원본 기반이며 정성 요약은 AI가 작성했습니다. '
+            '투자 판단의 책임은 본인에게 있습니다.</div>')
 
     return (f'<div class="gr-card" data-tk="{tk}" style="display:none">'
-            + head + verdict + cards + story + bridge + metrics + note + '</div>')
+            + head + verdict + cards + story + bridge + metrics
+            + _gr_qual(d) + note + '</div>')
+
+
+def _gr_qual(d):
+    q = d.get("qual")
+    if not q:
+        return ('<div style="font-size:11.5px;color:var(--faint);margin-top:14px">'
+                '해자·산업 필연성 등 정성 분석은 10-K 수집 후 표시됩니다.</div>')
+    ms = q.get("moat_score")
+    cards = (("경쟁 우위 (해자)", q.get("moat", "")),
+             ("산업 필연성", q.get("necessity", "")),
+             ("확장 시나리오", q.get("expansion", "")))
+    inner = "".join(
+        '<div style="flex:1;min-width:180px;background:var(--card);border:1px solid var(--border);'
+        'border-radius:12px;padding:13px">'
+        f'<div style="font-size:12px;color:var(--accent);margin-bottom:5px;font-weight:700">{_e(t)}</div>'
+        f'<div style="font-size:12.5px;color:var(--ink);line-height:1.6">{_e(v)}</div></div>'
+        for t, v in cards if v)
+    risk = ""
+    if q.get("risk_note"):
+        risk = ('<div style="background:var(--chip);border-radius:10px;padding:10px 12px;'
+                'margin-top:10px;font-size:12px;color:var(--ink);line-height:1.55">'
+                f'<b style="color:#e5484d">핵심 리스크</b> · {_e(q["risk_note"])}</div>')
+    head = ('<div style="display:flex;align-items:center;gap:8px;margin:18px 0 9px;flex-wrap:wrap">'
+            '<span style="font-size:12px;font-weight:700;color:var(--muted)">정성 분석</span>'
+            + (f'<span style="font-size:11px;color:var(--muted-2)">해자 {ms}점</span>'
+               if ms is not None else "")
+            + f'<span style="margin-left:auto;font-size:10.5px;color:var(--faint)">'
+            + f'10-K {_e(q.get("src",""))} · AI 요약</span></div>')
+    return head + '<div style="display:flex;gap:10px;flex-wrap:wrap">' + inner + '</div>' + risk
 
 
 def _gr_kpi(label, val):

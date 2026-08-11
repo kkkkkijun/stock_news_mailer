@@ -346,6 +346,124 @@ def build_fundamentals(path="data/fundamentals.json", tickers=None):
     return out
 
 
+# =========================================================
+# 정성 분석 (10-K 사업·리스크 → AI 해자·산업필연성·확장)
+# =========================================================
+import html as _htmlmod  # noqa: E402
+import re as _re  # noqa: E402
+
+
+def _last_section(t, start_pat, maxlen):
+    """start 패턴의 '마지막' occurrence(=목차 아닌 실제 본문)에서 maxlen만큼."""
+    pos = [m.start() for m in _re.finditer(start_pat, t, _re.I)]
+    if not pos:
+        return ""
+    s = pos[-1]
+    return t[s:s + maxlen]
+
+
+def _sec_10k_sections(sym):
+    """최신 10-K의 사업(Item1)·리스크(Item1A) 발췌 + accession. 실패 시 None."""
+    cik = main._sec_cik(sym)
+    if not cik:
+        return None
+    try:
+        rec = requests.get(f"https://data.sec.gov/submissions/CIK{cik}.json",
+                           headers=main._SEC_UA, timeout=20).json()["filings"]["recent"]
+        acc = doc = when = None
+        for form, a, pd, adt in zip(rec["form"], rec["accessionNumber"],
+                                    rec["primaryDocument"], rec["acceptanceDateTime"]):
+            if form == "10-K":
+                acc, doc, when = a, pd, adt
+                break
+        if not acc:
+            return None
+        accn = acc.replace("-", "")
+        url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{accn}/{doc}"
+        raw = requests.get(url, headers=main._SEC_UA, timeout=30).text
+        text = _htmlmod.unescape(_re.sub(r"\s+", " ",
+                                         _re.sub(r"<[^>]+>", " ", raw))).strip()
+        biz = _last_section(text, r"item\s*1\.?\s+business", 7000)
+        risk = _last_section(text, r"item\s*1a\.?\s+risk\s+factors", 8000)
+        if len(biz) < 500 and len(risk) < 500:
+            return None
+        return {"acc": acc, "when": when, "biz": biz, "risk": risk}
+    except Exception:
+        return None
+
+
+def _gen_qual(client, d, sec):
+    name, sym = d["name"], d["ticker"]
+    prof = (f"매출 {d.get('rev')}M·YoY {d.get('rev_yoy')}%, 영업이익률 {d.get('opm')}%"
+            f"(전년비 Δ{d.get('opm_delta')}%p), 매출총이익률 {d.get('gm')}%, "
+            f"순현금 {d.get('netcash')}M, 주식수 YoY {d.get('dilution')}%, "
+            f"R&D/매출 {d.get('rnd_pct')}%")
+    prompt = (
+        f"{name}({sym}, {d.get('sector','')})의 성장주 정성 분석이다. "
+        "아래 10-K 발췌와 재무 프로파일에 근거해 한국어 JSON만 출력하라.\n"
+        f"[재무 프로파일]\n{prof}\n"
+        f"[10-K 사업 섹션 발췌]\n{sec['biz'][:6000]}\n"
+        f"[10-K 리스크 섹션 발췌]\n{sec['risk'][:6000]}\n\n"
+        "규칙:\n"
+        "- 발췌·널리 알려진 사실만. 수치·주장 지어내지 말 것. 투자 조언 금지.\n"
+        "- 각 항목은 한국어로 간결하게(2문장 이내). 애널리스트 톤, 냉철하게.\n"
+        "- moat(경쟁우위/해자): 진입장벽·전환비용·규모·기술·네트워크·가격결정력(높은 GM) 등 근거로.\n"
+        "- moat_score: 해자 강도 주관 점수 0~100 정수.\n"
+        "- necessity(산업 필연성): 이 산업/제품이 미래에 구조적으로 필요한 이유·수요 지속성.\n"
+        "- expansion(확장 시나리오): TAM 확장·인접시장·신제품으로 가치가 커지는 경로.\n"
+        "- risk_note(핵심 리스크): 리스크 섹션에서 가장 중요한 것 1개, 한 문장.\n"
+        '형식: {"moat":"","moat_score":0,"necessity":"","expansion":"","risk_note":""}'
+    )
+    resp = client.chat.completions.create(
+        model=main.SUMMARY_MODEL,
+        messages=[{"role": "user", "content": prompt}],
+        response_format={"type": "json_object"}, max_tokens=700)
+    return json.loads(resp.choices[0].message.content)
+
+
+def build_qualitative(fund_path="data/fundamentals.json",
+                      cache_path="data/qual_cache.json", client=None):
+    """fundamentals.json 각 종목에 10-K 기반 정성 분석(qual)을 추가.
+    qual_cache.json에 (ticker→acc,qual) 캐시 → 10-K 바뀔 때만 재생성(비용 절감)."""
+    if client is None:
+        client = main.get_openai_client()
+    try:
+        funds = json.load(open(fund_path, encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    try:
+        cache = json.load(open(cache_path, encoding="utf-8"))
+    except (OSError, ValueError):
+        cache = {}
+    for d in funds:
+        t = d["ticker"]
+        sec = _sec_10k_sections(t)
+        if not sec:
+            if cache.get(t, {}).get("qual"):
+                d["qual"] = cache[t]["qual"]
+            print(f"[qual] {t}: 10-K 없음")
+            continue
+        if cache.get(t, {}).get("acc") == sec["acc"] and cache[t].get("qual"):
+            d["qual"] = cache[t]["qual"]
+            print(f"[qual] {t}: 캐시 재사용")
+            continue
+        try:
+            q = _gen_qual(client, d, sec)
+            q["src"] = sec["when"][:10] if sec.get("when") else ""
+            d["qual"] = q
+            cache[t] = {"acc": sec["acc"], "qual": q}
+            print(f"[qual] {t}: 생성 (해자 {q.get('moat_score')}점)")
+        except Exception as e:
+            print(f"[qual] {t}: 실패 {e}")
+        time.sleep(0.3)
+    json.dump(funds, open(fund_path, "w", encoding="utf-8"),
+              ensure_ascii=False, indent=1)
+    json.dump(cache, open(cache_path, "w", encoding="utf-8"),
+              ensure_ascii=False, indent=1)
+    print(f"[qual] 완료 → {fund_path}")
+    return funds
+
+
 if __name__ == "__main__":
     build_fundamentals("fundamentals_test.json",
                        ["RKLB", "PLTR", "HIMS", "IREN", "NVDA", "RDW"])

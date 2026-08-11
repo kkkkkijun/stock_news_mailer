@@ -988,8 +988,9 @@ if __name__ == "__main__":
             build_prices(quotes=quotes)
             build_reports(client=get_openai_client())
             try:
-                from fundamentals import build_fundamentals
+                from fundamentals import build_fundamentals, build_qualitative
                 build_fundamentals()          # data/fundamentals.json (성장주 탭)
+                build_qualitative(client=get_openai_client())  # 10-K 정성(캐시)
             except Exception as fe:  # noqa
                 print(f"[refresh] fundamentals 실패: {fe}")
             print("[refresh] 재빌드:", rebuild_all())
@@ -1014,8 +1015,9 @@ if __name__ == "__main__":
                 build_prices(quotes=quotes)   # docs/prices.json (내 목표 현재가)
                 build_reports(client=client)  # data/reports.json (실적 보고서)
                 try:
-                    from fundamentals import build_fundamentals
+                    from fundamentals import build_fundamentals, build_qualitative
                     build_fundamentals()      # data/fundamentals.json (성장주 탭)
+                    build_qualitative(client=client)  # 10-K 정성(캐시)
                 except Exception as fe:
                     print(f"[site] fundamentals 실패: {fe}")
                 print("[site] 발행:", publish(final_body, quotes=quotes))
