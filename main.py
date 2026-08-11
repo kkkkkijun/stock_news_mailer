@@ -908,7 +908,7 @@ def build_reports(path=None, client=None):
             days = (now.date() - _dt.strptime(kiso, "%Y-%m-%d").date()).days
         except (ValueError, TypeError):
             days = 999
-        if days > 50:                       # 오래된 발표는 제외
+        if days > 130:                      # 최근 한 분기(약 130일) 내 발표만 카드화
             if t in existing:
                 out.append(existing[t])
             continue
