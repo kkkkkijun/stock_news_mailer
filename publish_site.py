@@ -83,9 +83,16 @@ TICKER_COLORS = {
 _DOW = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
 
 HEAD = """<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0f1b2d">
+<link rel="manifest" href="/stock_news_mailer/manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="브리핑노트">
+<link rel="apple-touch-icon" href="/stock_news_mailer/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
@@ -802,6 +809,14 @@ _THEME_JS = """<script>
 })();
 </script>"""
 
+_PWA_JS = """<script>
+if('serviceWorker' in navigator){
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('/stock_news_mailer/sw.js').catch(function(){});
+  });
+}
+</script>"""
+
 
 def _shell(title, inner, extra_head="", script="", rail=""):
     return f"""<!DOCTYPE html>
@@ -818,7 +833,7 @@ def _shell(title, inner, extra_head="", script="", rail=""):
 </div>{rail}</div>
 <button id="theme" aria-label="다크/라이트 테마 전환" title="테마 전환">🌙</button>
 <button id="top" aria-label="맨 위로">↑</button>
-{script}{_TOP_JS}{_THEME_JS}
+{script}{_TOP_JS}{_THEME_JS}{_PWA_JS}
 </body>
 </html>
 """
