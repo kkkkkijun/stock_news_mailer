@@ -1024,14 +1024,24 @@ if __name__ == "__main__":
             except Exception as e:
                 print(f"[site] 발행 실패: {e}")
 
-        # 알림 메일: 본문 전체가 아니라 '준비됐다 + 사이트 링크' 만 짧게 보낸다.
-        # 메일이 오지 않으면 파이프라인에 문제가 있다는 신호도 된다.
-        # 끄려면 워크플로에서 SEND_EMAIL: '0'.
-        if os.getenv("SEND_EMAIL", "1") != "0":
-            site = os.getenv(
-                "SITE_URL", "https://kkkkkijun.github.io/stock_news_mailer/")
-            now = datetime.now(KST)
-            tag = "오전" if now.hour < 12 else "오후"
+        # 새 브리핑 알림. 기본은 '앱 푸시'(배지+팝업)로 보낸다.
+        site = os.getenv(
+            "SITE_URL", "https://kkkkkijun.github.io/stock_news_mailer/")
+        now = datetime.now(KST)
+        tag = "오전" if now.hour < 12 else "오후"
+
+        # 앱 푸시 — 이메일 대체. 구독자·VAPID 키 없으면 조용히 건너뜀.
+        try:
+            from push_send import send_push
+            send_push(f"{now.month}/{now.day} {tag} 브리핑",
+                      "새 뉴스 브리핑이 준비됐어요. 눌러서 확인하세요.",
+                      url=site)
+        except Exception as pe:
+            print(f"[push] 발송 실패: {pe}")
+
+        # 이메일 알림은 기본 꺼짐(앱 푸시로 대체). 다시 켜려면 SEND_EMAIL=1.
+        # 메일이 오지 않으면 파이프라인 문제 신호로 쓰고 싶을 때 사용.
+        if os.getenv("SEND_EMAIL", "0") == "1":
             notice = (
                 f"{now.month}월 {now.day}일 {tag} 뉴스 브리핑이 준비됐습니다.\n\n"
                 f"{site}\n\n"
@@ -1040,11 +1050,3 @@ if __name__ == "__main__":
             send_email(notice,
                        subject=f"[{now.month}/{now.day} {tag}] "
                                "뉴스 브리핑이 준비됐습니다")
-            # 앱 푸시(배지+팝업). 구독자·VAPID 키 없으면 조용히 건너뜀.
-            try:
-                from push_send import send_push
-                send_push(f"{now.month}/{now.day} {tag} 브리핑",
-                          "새 뉴스 브리핑이 준비됐어요. 눌러서 확인하세요.",
-                          url=site)
-            except Exception as pe:
-                print(f"[push] 발송 실패: {pe}")

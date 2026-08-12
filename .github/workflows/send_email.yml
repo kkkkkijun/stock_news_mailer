@@ -1,23 +1,12 @@
-name: Daily News Briefing (Email + Site)
+name: Daily US Stock News (Email)
 
 on:
   schedule:
-    # 오전 6:05 (한국 시간 기준) → UTC 21:05
-    # (GitHub Actions 예약 지연 + 실행시간 ≈ 1시간 고려해, 7:00~7:30 도착 목표로 앞당김)
-    - cron: '5 21 * * *'
-    # 오후 4:13 (한국 시간 기준) → UTC 07:13  (1시간 앞당김)
-    - cron: '13 7 * * *'
+    # 오전 7:37 (한국 시간 기준) → UTC 22:37
+    - cron: '37 22 * * *'
+    # 오후 5:13 (한국 시간 기준) → UTC 08:13
+    - cron: '13 8 * * *'
   workflow_dispatch:
-
-# 예약 실행과 수동 실행(또는 앞 회차 지연)이 겹쳐 동시에 돌지 않도록 직렬화한다.
-# cancel-in-progress: false → 진행 중 작업은 끝까지 두고, 다음 실행은 대기.
-concurrency:
-  group: daily-briefing
-  cancel-in-progress: false
-
-# docs/index.html 을 저장소에 커밋해야 하므로 쓰기 권한 필요
-permissions:
-  contents: write
 
 jobs:
   send-news:
@@ -29,28 +18,14 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
       - name: Run script
         env:
+          SEND_CHANNEL: email
+          SEND_EMAIL: '0'          # 알림은 앱 푸시로 대체(이메일 끔). 되살리려면 '1'
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-          # 앱 푸시 알림(배지+팝업). 비어 있으면 조용히 건너뜀.
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
-          VAPID_SUBJECT: 'mailto:tjrlwns93@ermore.co.kr'
-          # 사이트 발행 on/off
-          PUBLISH_SITE: '1'
-          # 사이트가 잘 뜨는 걸 확인한 뒤 '0' 으로 바꾸면 메일 발송이 꺼진다
-          SEND_EMAIL: '1'
-          SITE_URL: 'https://kkkkkijun.github.io/stock_news_mailer/'
+          VAPID_SUBJECT: mailto:tjrlwns93@ermore.co.kr
         run: python main.py
-      - name: Publish site (commit docs/index.html)
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs data
-          git diff --staged --quiet || git commit -m "site: 브리핑 갱신 [skip ci]"
-          # 원격에 다른 커밋이 있으면 rebase 후 푸시(충돌로 발행이 유실되지 않도록)
-          git pull --rebase --autostash origin main || true
-          git push
