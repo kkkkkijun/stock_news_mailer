@@ -1040,3 +1040,11 @@ if __name__ == "__main__":
             send_email(notice,
                        subject=f"[{now.month}/{now.day} {tag}] "
                                "뉴스 브리핑이 준비됐습니다")
+            # 앱 푸시(배지+팝업). 구독자·VAPID 키 없으면 조용히 건너뜀.
+            try:
+                from push_send import send_push
+                send_push(f"{now.month}/{now.day} {tag} 브리핑",
+                          "새 뉴스 브리핑이 준비됐어요. 눌러서 확인하세요.",
+                          url=site)
+            except Exception as pe:
+                print(f"[push] 발송 실패: {pe}")

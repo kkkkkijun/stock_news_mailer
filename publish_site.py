@@ -314,6 +314,8 @@ a:hover{opacity:.72;}
 .hd-archive{font-size:12px;font-weight:600;color:#dbe4f0;
  background:rgba(255,255,255,.12);padding:6px 13px;border-radius:999px;}
 .hd-archive:hover{opacity:1;background:rgba(255,255,255,.2);}
+#pushBtn{cursor:pointer;font-family:inherit;border:0;}
+#pushBtn[data-on]{background:rgba(92,157,255,.28);color:#cfe0ff;opacity:1;}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
  font-size:13px;color:#94a3b8;}
@@ -818,7 +820,8 @@ if('serviceWorker' in navigator){
     navigator.serviceWorker.register('/stock_news_mailer/sw.js').catch(function(){});
   });
 }
-</script>"""
+</script>
+<script src="/stock_news_mailer/push.js" defer></script>"""
 
 
 def _shell(title, inner, extra_head="", script="", rail=""):
@@ -1827,6 +1830,7 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
     hd = (f'<header class="hd"><div class="hd-top">'
           f'<span class="hd-kicker">{_e(kicker)}</span>'
           f'<div class="hd-links">{links}'
+          f'<button id="pushBtn" class="hd-archive" onclick="enablePush()">🔔 알림</button>'
           f'<button id="authSlot" class="auth-slot">로그인</button></div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
           f'<div class="hd-sub"><span class="hd-updated">{dowb}'

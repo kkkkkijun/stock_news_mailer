@@ -233,6 +233,8 @@ a:hover{opacity:.72;}
 .hd-archive{font-size:12px;font-weight:600;color:#dbe4f0;
  background:rgba(255,255,255,.12);padding:6px 13px;border-radius:999px;}
 .hd-archive:hover{opacity:1;background:rgba(255,255,255,.2);}
+#pushBtn{cursor:pointer;font-family:inherit;border:0;}
+#pushBtn[data-on]{background:rgba(92,157,255,.28);color:#cfe0ff;opacity:1;}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
  font-size:13px;color:#94a3b8;}
@@ -517,5 +519,6 @@ if('serviceWorker' in navigator){
   });
 }
 </script>
+<script src="/stock_news_mailer/push.js" defer></script>
 </body>
 </html>

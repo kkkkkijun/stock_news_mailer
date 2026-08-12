@@ -36,6 +36,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          # 앱 푸시 알림(배지+팝업). 비어 있으면 조용히 건너뜀.
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: 'mailto:tjrlwns93@ermore.co.kr'
           # 사이트 발행 on/off
           PUBLISH_SITE: '1'
           # 사이트가 잘 뜨는 걸 확인한 뒤 '0' 으로 바꾸면 메일 발송이 꺼진다

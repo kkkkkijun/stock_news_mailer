@@ -3,7 +3,12 @@ feedparser
 requests
 pytz
 python-dotenv
-# 기사 원문 본문 추출 (news_brief.py 2단계 요약)
-trafilatura
+Pillow
+# 국토부 고시 첨부 PDF 본문 추출용 (molit_notices.py)
+pypdf
 # 선택: always-on 서버에서 정시 발송이 필요할 때만 (scheduler.py)
 APScheduler
+# 기사 원문 본문 추출 (news_brief.py 2단계 요약)
+trafilatura
+# 앱 푸시 알림 발송 (push_send.py)
+pywebpush
