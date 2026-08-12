@@ -1830,7 +1830,7 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
     hd = (f'<header class="hd"><div class="hd-top">'
           f'<span class="hd-kicker">{_e(kicker)}</span>'
           f'<div class="hd-links">{links}'
-          f'<button id="pushBtn" class="hd-archive" onclick="enablePush()">🔔 알림</button>'
+          f'<button id="pushBtn" class="hd-archive" onclick="togglePush()">🔔 알림</button>'
           f'<button id="authSlot" class="auth-slot">로그인</button></div></div>'
           f'<h1>{ampm} 뉴스 브리핑</h1>'
           f'<div class="hd-sub"><span class="hd-updated">{dowb}'
