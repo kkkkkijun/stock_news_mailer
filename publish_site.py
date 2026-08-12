@@ -301,7 +301,8 @@ a:hover{opacity:.72;}
 .page{width:100%;max-width:820px;background:var(--page);color:var(--ink);
  border:1px solid var(--border);border-radius:18px;
  box-shadow:0 12px 44px var(--shadow);overflow:hidden;}
-.hd{padding:30px 40px;background:var(--header);color:#fff;}
+.hd{padding:30px 40px;background:var(--header);color:#fff;
+ padding-top:calc(30px + env(safe-area-inset-top,0px));}
 .hd-top{display:flex;justify-content:space-between;align-items:center;gap:10px;}
 .hd-kicker{font-size:12px;font-weight:600;letter-spacing:.04em;color:#94a3b8;}
 .hd-links{display:flex;gap:7px;flex-shrink:0;align-items:center;}
@@ -417,8 +418,8 @@ a:hover{opacity:.72;}
 #top:hover{opacity:1;transform:translateY(-2px);}
 #theme{left:24px;background:var(--card);color:var(--ink);}
 #theme:hover{transform:translateY(-2px);}
-@media (max-width:600px){#top,#theme{bottom:16px;width:42px;height:42px;
- line-height:40px;font-size:18px;}#top{right:16px;}#theme{left:16px;}}
+@media (max-width:600px){#top,#theme{bottom:calc(16px + env(safe-area-inset-bottom,0px));
+ width:42px;height:42px;line-height:40px;font-size:18px;}#top{right:16px;}#theme{left:16px;}}
 
 /* 지난 브리핑 검색 + 캘린더 */
 .search{margin-bottom:14px;}
@@ -458,7 +459,9 @@ a:hover{opacity:.72;}
 @media (max-width:600px){
   .wrap{padding:0;}
   .page{border-radius:0;border-left:0;border-right:0;}
-  .hd,.gauges,.navwrap,.part,.ft,.calwrap{padding-left:18px;padding-right:18px;}
+  .hd,.gauges,.navwrap,.part,.ft,.calwrap{
+    padding-left:calc(18px + env(safe-area-inset-left,0px));
+    padding-right:calc(18px + env(safe-area-inset-right,0px));}
   .hd h1{font-size:22px;}
   .nav a{font-size:12px;padding:8px 3px;}
 }

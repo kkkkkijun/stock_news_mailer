@@ -220,7 +220,8 @@ a:hover{opacity:.72;}
 .page{width:100%;max-width:820px;background:var(--page);color:var(--ink);
  border:1px solid var(--border);border-radius:18px;
  box-shadow:0 12px 44px var(--shadow);overflow:hidden;}
-.hd{padding:30px 40px;background:var(--header);color:#fff;}
+.hd{padding:30px 40px;background:var(--header);color:#fff;
+ padding-top:calc(30px + env(safe-area-inset-top,0px));}
 .hd-top{display:flex;justify-content:space-between;align-items:center;gap:10px;}
 .hd-kicker{font-size:12px;font-weight:600;letter-spacing:.04em;color:#94a3b8;}
 .hd-links{display:flex;gap:7px;flex-shrink:0;align-items:center;}
@@ -336,8 +337,8 @@ a:hover{opacity:.72;}
 #top:hover{opacity:1;transform:translateY(-2px);}
 #theme{left:24px;background:var(--card);color:var(--ink);}
 #theme:hover{transform:translateY(-2px);}
-@media (max-width:600px){#top,#theme{bottom:16px;width:42px;height:42px;
- line-height:40px;font-size:18px;}#top{right:16px;}#theme{left:16px;}}
+@media (max-width:600px){#top,#theme{bottom:calc(16px + env(safe-area-inset-bottom,0px));
+ width:42px;height:42px;line-height:40px;font-size:18px;}#top{right:16px;}#theme{left:16px;}}
 
 /* 지난 브리핑 검색 + 캘린더 */
 .search{margin-bottom:14px;}
@@ -377,7 +378,9 @@ a:hover{opacity:.72;}
 @media (max-width:600px){
   .wrap{padding:0;}
   .page{border-radius:0;border-left:0;border-right:0;}
-  .hd,.gauges,.navwrap,.part,.ft,.calwrap{padding-left:18px;padding-right:18px;}
+  .hd,.gauges,.navwrap,.part,.ft,.calwrap{
+    padding-left:calc(18px + env(safe-area-inset-left,0px));
+    padding-right:calc(18px + env(safe-area-inset-right,0px));}
   .hd h1{font-size:22px;}
   .nav a{font-size:12px;padding:8px 3px;}
 }
@@ -392,7 +395,7 @@ a:hover{opacity:.72;}
 <button id="top" aria-label="맨 위로">↑</button>
 <script>
 (function(){
-  var DATA = {"2026-07-24": {"am": "2026-07-24-am.html", "pm": "2026-07-24-pm.html"}, "2026-08-06": {"pm": "2026-08-06-pm.html", "am": "2026-08-06-am.html"}, "2026-08-03": {"am": "2026-08-03-am.html", "pm": "2026-08-03-pm.html"}, "2026-08-04": {"pm": "2026-08-04-pm.html", "am": "2026-08-04-am.html"}, "2026-08-07": {"am": "2026-08-07-am.html", "pm": "2026-08-07-pm.html"}, "2026-08-02": {"am": "2026-08-02-am.html", "pm": "2026-08-02-pm.html"}, "2026-08-08": {"pm": "2026-08-08-pm.html", "am": "2026-08-08-am.html"}, "2026-07-31": {"pm": "2026-07-31-pm.html", "am": "2026-07-31-am.html"}, "2026-08-05": {"am": "2026-08-05-am.html", "pm": "2026-08-05-pm.html"}, "2026-07-25": {"am": "2026-07-25-am.html", "pm": "2026-07-25-pm.html"}, "2026-07-28": {"am": "2026-07-28-am.html", "pm": "2026-07-28-pm.html"}, "2026-08-11": {"pm": "2026-08-11-pm.html", "am": "2026-08-11-am.html"}, "2026-07-23": {"pm": "2026-07-23-pm.html"}, "2026-08-10": {"pm": "2026-08-10-pm.html", "am": "2026-08-10-am.html"}, "2026-08-09": {"pm": "2026-08-09-pm.html", "am": "2026-08-09-am.html"}, "2026-08-12": {"am": "2026-08-12-am.html"}, "2026-07-30": {"am": "2026-07-30-am.html", "pm": "2026-07-30-pm.html"}, "2026-07-26": {"pm": "2026-07-26-pm.html", "am": "2026-07-26-am.html"}, "2026-07-27": {"pm": "2026-07-27-pm.html", "am": "2026-07-27-am.html"}, "2026-08-01": {"am": "2026-08-01-am.html", "pm": "2026-08-01-pm.html"}, "2026-07-29": {"am": "2026-07-29-am.html", "pm": "2026-07-29-pm.html"}};
+  var DATA = {"2026-07-23": {"pm": "2026-07-23-pm.html"}, "2026-07-24": {"am": "2026-07-24-am.html", "pm": "2026-07-24-pm.html"}, "2026-07-25": {"am": "2026-07-25-am.html", "pm": "2026-07-25-pm.html"}, "2026-07-26": {"am": "2026-07-26-am.html", "pm": "2026-07-26-pm.html"}, "2026-07-27": {"am": "2026-07-27-am.html", "pm": "2026-07-27-pm.html"}, "2026-07-28": {"am": "2026-07-28-am.html", "pm": "2026-07-28-pm.html"}, "2026-07-29": {"am": "2026-07-29-am.html", "pm": "2026-07-29-pm.html"}, "2026-07-30": {"am": "2026-07-30-am.html", "pm": "2026-07-30-pm.html"}, "2026-07-31": {"am": "2026-07-31-am.html", "pm": "2026-07-31-pm.html"}, "2026-08-01": {"am": "2026-08-01-am.html", "pm": "2026-08-01-pm.html"}, "2026-08-02": {"am": "2026-08-02-am.html", "pm": "2026-08-02-pm.html"}, "2026-08-03": {"am": "2026-08-03-am.html", "pm": "2026-08-03-pm.html"}, "2026-08-04": {"am": "2026-08-04-am.html", "pm": "2026-08-04-pm.html"}, "2026-08-05": {"am": "2026-08-05-am.html", "pm": "2026-08-05-pm.html"}, "2026-08-06": {"am": "2026-08-06-am.html", "pm": "2026-08-06-pm.html"}, "2026-08-07": {"am": "2026-08-07-am.html", "pm": "2026-08-07-pm.html"}, "2026-08-08": {"am": "2026-08-08-am.html", "pm": "2026-08-08-pm.html"}, "2026-08-09": {"am": "2026-08-09-am.html", "pm": "2026-08-09-pm.html"}, "2026-08-10": {"am": "2026-08-10-am.html", "pm": "2026-08-10-pm.html"}, "2026-08-11": {"am": "2026-08-11-am.html", "pm": "2026-08-11-pm.html"}, "2026-08-12": {"am": "2026-08-12-am.html"}};
   var selY=document.getElementById('selY'), selM=document.getElementById('selM'),
       box=document.getElementById('calbox'), det=document.getElementById('det');
   if(!selY) return;
