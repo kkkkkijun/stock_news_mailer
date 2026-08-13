@@ -374,7 +374,7 @@ function init(){
       const j=await r.json(); const pr=j.prices||{}; let n=0; const miss=[];
       compute().open.forEach(o=>{ if(pr[o.ticker]!=null){ S.prices[o.ticker]=pr[o.ticker]; n++; } else miss.push(o.ticker); });
       if($("g_priceNote")) $("g_priceNote").textContent =
-        "시세 기준 "+(j.asof||"?")+" · "+n+"개 반영"+(miss.length? " · 미포함(수동): "+miss.join(", "):"")+" · 하루 2회 갱신";
+        "시세 기준 "+(j.asof||"?")+" · "+n+"개 반영"+(miss.length? " · 미포함(수동): "+miss.join(", "):"");
       renderData(); save();
     }catch(e){ alert("현재가 불러오기 실패: "+(e.message||e)); }
     finally{ btn.textContent=old; }
@@ -477,7 +477,7 @@ function SHELL_HTML(){ return ''+
       '<span>보유중 (미청산)</span>'+
       '<button type="button" class="g-btn sm" id="g_priceAuto">↻ 현재가 불러오기</button></div>'+
       '<div id="g_openRows"></div>'+
-      '<div class="g-note" id="g_priceNote">현재가 비우면 평단가로 계산. ↻로 추적 종목 현재가 자동 반영(하루 2회 갱신).</div></div>'+
+      '<div class="g-note" id="g_priceNote">현재가 비우면 평단가로 계산. ↻로 추적 종목 현재가 자동 반영(언제든 갱신 · 시세는 수시 자동 갱신).</div></div>'+
   '</div>';
 }
 
