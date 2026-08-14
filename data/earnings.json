@@ -1121,7 +1121,7 @@
   "name": "아이렌",
   "date": "2026-08-28",
   "ts": 1787860800,
-  "est": true,
+  "est": false,
   "detail": {
    "prev": {
     "period": "26.03",
