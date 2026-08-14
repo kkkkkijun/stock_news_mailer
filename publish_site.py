@@ -892,6 +892,8 @@ _CUR_CC = {
     "GBP": "gb", "AUD": "au", "CAD": "ca", "NZD": "nz", "CHF": "ch",
     "HKD": "hk", "INR": "in", "BRL": "br", "MXN": "mx", "ZAR": "za",
 }
+# 일정에 표시할 통화(국가) 화이트리스트 — 미국·한국·일본만. 유럽/중국 등 제외.
+_ECON_CCY = {"USD", "KRW", "JPY"}
 # 이벤트명 한글 사전(반복되는 유한 집합). 미등록은 영문 유지 후 점차 보강.
 _ECON_KO = {
     "Nonfarm Payrolls": "비농업 고용",
@@ -1080,6 +1082,9 @@ def _load_econ_events(now):
                     imp = (row.get("Impact") or "").strip().upper()
                     if imp not in ("LOW", "MEDIUM", "HIGH"):
                         continue
+                    ccy = (row.get("Currency") or "").strip().upper()
+                    if ccy not in _ECON_CCY:          # 미국·한국·일본만
+                        continue
                     try:
                         dt = pytz.utc.localize(
                             datetime.strptime((row.get("Start") or "").strip(),
@@ -1088,8 +1093,7 @@ def _load_econ_events(now):
                         continue
                     key = row.get("Id") or (row.get("Start", "") + row.get("Name", ""))
                     rows[key] = {"dt": dt, "name": (row.get("Name") or "").strip(),
-                                 "impact": imp,
-                                 "cur": (row.get("Currency") or "").strip().upper()}
+                                 "impact": imp, "cur": ccy}
         except OSError:
             continue
     # B 로직: 이번 달=오늘 이후만 · 미래 달=전체 · 지난 달=제외
