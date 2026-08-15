@@ -1,0 +1,221 @@
+2026-08-16T06:29:27.064435+09:00
+
+[오늘의 뉴스 요약] 2026-08-16 06:27 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국내 기업들이 해외 시장에서의 성장에도 불구하고 주요 제품의 가격을 인상하는 모습을 보이며, 가계부채가 2천조원에 달하는 등 경제 전반에 부정적인 신호가 감지되고 있다.
+
+[핵심 뉴스]
+1. (물가) 해외에서 벌고 국내 가격 인상
+   → 농심은 해외사업 성과에도 불구하고 국내 제품 가격을 평균 5.8% 인상했으며, 오뚜기와 풀무원도 비슷한 경향을 보였다.
+   (연합뉴스 · 08/16 06:01)
+2. (금리) 가계부채 2천조원 시대 진입
+   → 한국의 가계신용 규모가 처음으로 2천조원을 초과했으며, 2분기 동안 가계대출 증가세가 가팔라지고 있다.
+   (연합뉴스 · 08/16 05:47)
+3. (고용) 청년 취업자 절반이 AI 고노출 업종
+   → 7월 청년층 취업자 수가 작년 대비 19만명 이상 줄었으며, 특히 정보통신업과 전문기술서비스업에서 큰 감소가 나타났다.
+   (연합뉴스 · 08/16 05:51)
+4. (고용) 4개월째 줄어드는 '월급' 일자리
+   → 임금근로자가 4개월 연속 감소세를 보인 가운데, 자영업자는 증가해 전체 취업자 증가세를 유지하고 있다.
+   (연합뉴스 · 08/16 05:49)
+5. (환율) 미국 인플레 우려 완화에 달러 약세
+   → 미국의 금리 인상 속도 조절 전망에 따라 원/달러 환율이 하락세를 보였으며, 이는 외환시장에 긍정적인 영향을 미쳤다.
+   (연합뉴스 · 08/14 15:46)
+
+[흐름·전망]
+• 장기적인 고물가와 고환율이 지속되는 상황에서 기업들이 가격 인상으로 소비자에게 부담을 전가하는 경향을 보인다.
+• 가계부채 증가에 따른 가계 경제의 부담이 가중돼 소비 심리가 위축될 가능성이 높아 보인다.
+• AI의 확산으로 청년층의 고용 시장에서 구조적 변화가 우려되며, 향후 고용의 질적 변화가 주목받을 것으로 예상된다.
+• 미국 내 금리 결정과 국내 경제 지표에 따라 환율과 증시의 다음 움직임을 주의 깊게 관찰할 필요가 있다.
+
+📈 해외주식 PART
+📰 [NVDA] Tokenized NVIDIA shares on Arbitrum One gain $1... - Pluang
+   (Pluang · 08/16 05:46)
+→ Arbitrum One에서 토큰화된 NVIDIA 주식의 가격이 1달러 상승했습니다. 이로 인해 디지털 자산 거래에 대한 관심이 증가하고 있습니다.
+
+📰 [NVDA] Nvidia eyes investing $3 billion in SB Energy under OpenAI data center deal, Information says - Reuters
+   (Reuters · 08/16 05:16)
+→ Nvidia가 OpenAI 데이터 센터 계약의 일환으로 SB Energy에 30억 달러를 투자할 계획이라는 보도가 나왔다. 이 투자는 인공지능과 데이터 센터의 발전을 지원하기 위한 것으로 보인다.
+
+📰 [NVDA] Nvidia weighs $3 bln in SB Energy for Ohio AI data center - The Information - Investing.com Nigeria
+   (Investing.com Nigeria · 08/16 05:15)
+→ Nvidia는 오하이오의 AI 데이터 센터 건설을 위해 SB Energy에 30억 달러 투자를 검토하고 있습니다. 이 투자 결정은 AI 기술의 발전과 데이터 처리 능력을 강화하기 위한 전략의 일환으로 보입니다.
+
+📰 [TSLA] Forget SpaceX and Tesla. Elon Is Quietly Building Something Bigger Than Both. COMBINED?
+   (Yahoo Finance · 08/16 06:00)
+→ 엘론 머스크가 스페이스X와 테슬라보다 더 큰 인공지능 강국을 조용히 구축하고 있다는 주장이 제기됐다. 전 헤지펀드 매니저인 제임스 알투처는 머스크가 현재의 기업들을 넘어서 전에 없던 규모의 혁신적인 프로젝트를 진행하고 있다고 설명했다.
+
+📰 [TSLA] Tesla wanted to put 5,000 robotaxis in Las Vegas. Only 10 were approved - The Independent
+   (The Independent · 08/16 05:33)
+→ 테슬라는 라스베이거스에 5,000대의 로봇택시를 도입하고자 했으나, 규제 당국으로부터 단 10대만 승인을 받았습니다. 이는 테슬라의 자율주행 기술에 대한 규제 장벽을 잘 보여줍니다.
+
+📰 [TSLA] Tesla's $595 Dual Zone Fridge for Model Y: 6 Details That Matter - BASENOR - Tesla Accessories
+   (BASENOR - Tesla Accessories · 08/16 05:04)
+→ 테슬라가 모델 Y를 위한 595달러짜리 듀얼 존 냉장고를 출시했다. 이 제품은 두 가지 온도로 조절할 수 있는 구역을 갖추고 있으며, 다양한 기능과 디자인 세부사항이 눈에 띈다. 팬들이 특히 선호할 만한 여러 특징들이 포함되어 있다.
+
+📰 [HIMS] Hims & Hers Health (NYSE:HIMS) Upgraded to Hold at Wall Street Zen - MarketBeat
+   (MarketBeat · 08/15 14:32)
+→ Hims & Hers Health가 Wall Street Zen에서 보유(Hold) 등급으로 상향 조정되었습니다. 이 결정은 시장의 관심을 반영하며, 해당 주식의 전망에 긍정적인 신호를 나타냅니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. • Robinhood Token Price, HIMS Price, Live Charts, and Marketcap - Coinbase
+   (Coinbase · 08/15 12:23)
+→ Hims & Hers Health, Inc.의 주식 및 Robinhood 토큰 가격, 실시간 차트와 시가총액 정보가 Coinbase에서 제공되고 있습니다.
+
+📰 [HIMS] Hims & Hers (HIMS) Raised Guidance. Can Growth Survive Its GLP-1 Margin Reset?
+   (Yahoo Finance · 08/15 00:14)
+→ Hims & Hers가 2분기 실적을 발표하며 매출이 지난해 대비 38% 증가한 7억 5천만 달러로 성장했지만, 수익성은 크게 악화되어 주가가 6% 이상 하락했다. 구독자 수는 19% 증가해 289만 명에 이르고, 평균 월수익도 21% 증가한 92달러를 기록했다.
+
+📰 [RDW] Redwire Corporation (NYSE:RDW) Receives Consensus Rating of "Hold" from Analysts - MarketBeat
+   (MarketBeat · 08/15 18:04)
+→ Redwire Corporation(NYSE: RDW)는 애널리스트들로부터 "보유"의 합의된 평가를 받았습니다. 이는 주식 투자에 대한 신중한 접근을 나타내는 것입니다.
+
+📰 [RDW] Assenagon Asset Management S.A. Invests $1.73 Million in Redwire Corporation $RDW - MarketBeat
+   (MarketBeat · 08/15 16:31)
+→ Assenagon Asset Management S.A.가 Redwire Corporation에 173만 달러를 투자했습니다. 이번 투자는 회사의 성장potential을 반영한 것으로 보입니다.
+
+📰 [RDW] Trading Systems Reacting to (RDW) Volatility - Stock Traders Daily
+   (Stock Traders Daily · 08/15 11:16)
+→ 주식 거래 시스템이 RDW의 변동성에 반응하고 있다는 내용입니다. 이와 관련된 거래 전략 및 분석이 다루어지고 있으며, 투자자들에게 유용한 정보를 제공하고 있습니다.
+
+📰 [IREN] Iren Won't Have to Raise Capital for Much Longer After the Horizon 1 Delivery - AOL.com
+   (AOL.com · 08/16 03:26)
+→ Iren은 Horizon 1의 인도 이후로 자본을 조달할 필요가 없을 것이라는 전망이 나왔습니다. 이로 인해 회사의 재정 상황이 안정될 것으로 보입니다.
+
+📰 [IREN] Iren Won't Have to Raise Capital for Much Longer After the Horizon 1 Delivery
+   (Yahoo Finance · 08/16 03:15)
+→ Iren은 Microsoft와의 계약을 통해 수익을 올리기 시작해 자본 조달 필요성이 줄어들 것입니다. 이는 향후 자본을 조달하기 위한 회사채 발행 의존도를 낮추는 데 기여할 것입니다.
+
+📰 [IREN] Iren Won't Have to Raise Capital for Much Longer After the Horizon 1 Delivery - Yahoo Finance
+   (Yahoo Finance · 08/16 03:15)
+→ Iren은 Horizon 1 배송 이후 자본을 더 이상 모집하지 않아도 될 것으로 보입니다. 이로 인해 회사의 재정적 부담이 줄어들 것으로 예상됩니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Harvard Holds Steady on BlackRock Bitcoin ETF Stake After Prior Quarter’s Cut - Cryptonews.net
+   (Cryptonews.net · 08/16 06:14)
+→ 하버드대학교가 이전 분기에서 블랙록 비트코인 ETF 지분을 축소한 이후, 현재 지분을 유지하기로 결정했습니다. 이는 하버드의 투자 전략의 일환으로, 비트코인 관련 자산에 대한 관심을 나타냅니다.
+
+📰 [BTC-USD] 5 Best Crypto Casinos Reviewed – Top Bitcoin Sites With Instant Withdrawals (August 2026) - Muddy River Sports
+   (Muddy River Sports · 08/16 06:02)
+→ 2026년 8월, Muddy River Sports는 즉각적인 출금을 제공하는 최고의 비트코인 카지노 5곳을 리뷰했습니다. 이 카지노들은 사용자 경험과 안전성을 고려하여 추천되었습니다. 각 카지노의 특징과 장점이 소개되었습니다.
+
+📰 [BTC-USD] Edelman Financial's $34M Bitcoin ETF stake surp... - Pluang
+   (Pluang · 08/16 05:47)
+→ Edelman Financial이 3천4백만 달러 규모의 비트코인 ETF에 투자했다는 소식이 전해졌다. 이 투자로 인해 Edelman Financial은 디지털 자산 분야에서의 입지를 강화하고 있다.
+
+📰 [ETH-USD] Grayscale’s Pandl compares Ethereum to a minimal nation state - CryptoRank
+   (CryptoRank · 08/16 06:18)
+→ 그레이스케일의 팬들도는 이더리움을 미니멀 국가에 비유하며 이더리움의 특성과 기능을 강조했습니다. 이더리움은 탈중앙화된 플랫폼으로, 독립적인 경제 시스템을 형성하고 있다는 점에서 국가와 유사하다는 분석입니다.
+
+📰 [ETH-USD] Ethereum’s Quantum-era Shift To SHA And BLAKE Boosts Crypto Security - Quantum Zeitgeist
+   (Quantum Zeitgeist · 08/16 05:48)
+→ 이더리움이 양자 시대에 대비하여 SHA와 BLAKE 알고리즘으로 전환함으로써 암호 통화의 보안을 강화하고 있습니다. 이러한 변화는 양자 컴퓨터의 위협에 대응하기 위한 전략으로, 이는 블록체인 기술의 안전성을 높이는 데 기여하고 있습니다.
+
+📰 [ETH-USD] A staked Ethereum ETF processed $48M in redemptions while keeping 86% of ETH locked, 21Shares filing shows - Cryptonews.net
+   (Cryptonews.net · 08/16 05:19)
+→ 21Shares의 보고서에 따르면, 스테이크드 이더리움 ETF는 4800만 달러의 환매를 처리했지만, 여전히 86%의 ETH를 잠금 상태로 유지하고 있습니다.
+
+📰 [SOL-USD] Solana nears breakout from 19-month downtrend, signaling potential 170% price surge. - Pluang
+   (Pluang · 08/16 05:15)
+→ 솔라나가 19개월간의 하락 추세에서 벗어날 가능성이 커지며, 이로 인해 최대 170%의 가격 상승이 예상된다는 분석이 나왔다.
+
+📰 [SOL-USD] Solana (NASDAQ:HSDT) Issues Earnings Results, Misses Estimates By $0.03 EPS - MarketBeat
+   (MarketBeat · 08/16 04:49)
+→ 솔라나(Solana, NASDAQ:HSDT)가 최근 실적 발표를 하였으나, 예상보다 주당순이익(EPS)이 0.03달러 부족했습니다. 이로 인해 시장의 예상에 미치지 못한 성과를 보였습니다.
+
+📰 [SOL-USD] Crypto crash liquidations face massive data gap as public records contradict $18B Solana claim - CryptoSlate
+   (CryptoSlate · 08/16 04:30)
+→ 암호화폐 시장의 급락에 따른 청산 데이터에 큰 격차가 발생하고 있으며, 공공 기록이 180억 달러 규모의 솔라나 주장과 상충하고 있다는 내용입니다. 이러한 데이터 불일치는 시장 상황을 이해하는 데 어려움을 초래하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+암호화폐 시장은 비트코인과 리플의 약세 흐름 속에서 투자자들의 긴장감이 높아진 상황이다. 비트코인은 약 63,044달러에 거래되며, 리플은 1.00달러 부근에서 심리적 지지를 시험하고 있다.
+
+[핵심 뉴스]
+1. (ETF) 비트코인 ETF, 아마존 지분 초과
+   → 에델만 파이낸셜 엔진스가 보유한 비트코인 ETF 총액이 3400만 달러로, 아마존 주식 보유액 2500만 달러를 초과했다. 이는 미국 대형 자문사의 포트폴리오에서 비트코인의 관심을 높이고 있다.
+   (토큰포스트 · 08/16 05:12)
+2. (기타) 솔라나 기반 토큰화 자산 거래량 증가
+   → 솔라나 기반 DEX의 2026년 2분기 토큰화 자산 거래량이 58억 달러에 달하며, 이 중 84%는 토큰화 주식 거래가 차지했다. 두 분기 연속 증가세를 보였다.
+   (토큰포스트 · 08/16 06:17)
+3. (기타) 코인 투자 심리, 운세로 진단
+   → 오늘 암호화폐 시장의 공포 지수는 34로, 비트코인은 63,044달러에 거래 중이다. 시장의 변동성이 큰 가운데 투자자들은 포지션 관리에 더 집중할 필요가 있다.
+   (토큰포스트 · 08/16 06:12)
+4. (기타) 솔라나, 비트코인 대비 추세선 돌파 시도 중
+   → 솔라나가 비트코인 대비 하락 추세선을 돌파하려 하고 있으며, 현재 가격은 75.66달러로 제시됐다. 73.5~74달러에서의 지지 여부가 중요한 관전 포인트로 부각되고 있다.
+   (토큰포스트 · 08/16 04:58)
+5. (시세) 리플(XRP), 저점 부근에서 거래
+   → 리플은 1.00달러 부근에서 심리적 지지를 시험하고 있으며, 미국 규제 불확실성이 심리적 부담으로 작용하고 있다. 가격 이탈 여부가 향후 흐름에 큰 영향을 미칠 수 있다.
+   (토큰포스트 · 08/16 03:46)
+
+[흐름·전망]
+• 투자자들은 비트코인과 리플의 가격 움직임이 전체 시장에 어떤 영향을 미치는지를 주의 깊게 지켜볼 필요가 있다.
+• 솔라나의 DEX 거래량 증가가 향후 가격에 긍정적인 영향을 미칠지에 대한 모니터링이 필요하다.
+• 비트코인 ETF와 같은 전통 금융 기관들의 참여가 자산 관리 쪽에서의 비트코인 지지로 이어질지 주목해야 한다.
+• 리플의 경우, 규제 관련 법안이 시장 심리에 미치는 영향과 함께 가격 지지선 유지 여부가 주요한 전략적 포인트가 될 것으로 전망된다.
+
+📊 공포탐욕지수
+  - CNN 기준: 65 (Greed)
+  - 크립토 기준: 34 (Fear)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장에서는 정부의 주택 공급 확대 방안 발표와 관련된 긍정적인 분위기와 함께, 외국인 투자의 감소가 이어지고 있다.
+
+[핵심 뉴스]
+1. (공급) 증권가, 8·13 부동산 공급대책에 "중견건설사 모멘텀 주목"
+   → 정부가 지난 13일 수도권에 23만 가구 이상의 주택 공급을 목표로 하는 공급 대책을 발표했고, 이에 따라 중견 건설사와 관련 주식의 긍정적인 반응이 예상된다.
+   (연합뉴스 · 08/16 06:20)
+2. (분양청약) 1억대 자금으로 수도권 새 아파트?…25%만 먼저 사는 집 나온다
+   → 정부는 4분기부터 수도권에 지분적립형 공공분양 주택을 일부 공급할 계획을 밝히며, 초기 자금 부담을 줄여 청년층과 실수요자에게 유리한 조건을 제공할 예정이다.
+   (연합뉴스 · 08/16 06:01)
+3. (금리) 5대 은행 주담대 여력 7.5조 확대 전망…실수요 숨통 트이나
+   → 금융당국의 가계부채 총량 목표치를 두 배로 확대하면서 5대 은행의 주택담보대출 공급 여력이 약 7.5조 원 증가할 것으로 보인다.
+   (연합뉴스 · 08/16 05:45)
+4. (정책) “닥치고 공급” 정부 방침에…서울시 이어 용산구도 “아니올시다”
+   → 서울시와 용산구가 용산공원 주택 공급 방안에 반대 의사를 표명하며, 정부의 공급 확대 방침에 대한 지역적 저항이 나타나고 있다.
+   (매일경제 · 08/15 19:36)
+5. (정책) '한국 부동산 쇼핑' 즐기던 왕서방 다 어디갔나…이 제도 탓에 발길 끊겼다는데
+   → 외국인 토지거래허가구역 시행 1년 동안 수도권 외국인 매수인이 2000명 이상 줄어들며, 규제가 외국인 투자에 미치는 영향이 뚜렷하게 나타나고 있다.
+   (매일경제 · 08/15 09:16)
+6. (금리) 신규 대출여력 30조 금융권 배분 본격 착수…19일 첫 실무회의
+   → 금융권의 신규 대출 여력 배분이 본격적으로 시작되며 관련 논의가 이어질 예정이다.
+   (연합뉴스 · 08/16 05:45)
+
+[흐름·전망]
+• 정부의 주택 공급 확대 방안에 따른 중견 건설사의 수혜 여부와 주식 시장의 반응이 주목된다.
+• 지분적립형 공공분양 주택의 공급이 시장에 미치는 장단기 영향을 분석할 필요가 있다.
+• 은행의 대출 공급 여력 확대가 실수요자에 긍정적인 영향을 미칠 것으로 보인다.
+• 용산공원의 한정된 지역에서의 주택 공급 계획이 지역 사회와의 갈등을 유발할 가능성이 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 게시물에서 자신과 김정은 간의 관계가 매우 좋다고 주장하며, 주요 정치 인물들에 대한 지지를 표명했다. 또한 정치적 논란과 관련된 다양한 주제를 다루며, 공약과 자신의 지지자들에 대한 언급을 포함했다.
+
+[주요 발언]
+1. (외교) 트럼프는 자신과 김정은의 관계가 매우 좋다고 언급하며, 긍정적인 모습의 사진을 공유했다.
+   (Truth Social · 08/16 00:08)
+2. (인사) 트럼프는 뉴욕에서 연설 중 총기 사고로 희생된 12세 소년의 부모를 위로하는 모습이 언급되었다.
+   (Truth Social · 08/15 21:30)
+3. (경제) 트럼프는 백악관 보고서를 통해 '대규모 전송 사기'가 수십억 달러의 관세 회피를 초래했다고 주장했다.
+   (Truth Social · 08/15 21:31)
+4. (사법) 트럼프는 FBI의 행동이 조 바이든을 보호하는 비밀 작전이라고 비난하며 이번 사건에 대한 의혹을 제기했다.
+   (Truth Social · 08/15 21:31)
+5. (국내정치) 트럼프는 브루스 블레이크맨 뉴욕 주지사 후보를 지지하며 뉴욕 주에서 긍정적인 변화를 느끼고 있다고 주장했다.
+   (Truth Social · 08/15 06:37)
+6. (인사) 트럼프는 뉴욕의 차기 검찰총장 후보인 사리타 코마티레디를 지지하며, 현재의 정치 상황이 좋지 않다고 언급했다.
+   (Truth Social · 08/15 06:35)
+
+[흐름·전망]
+• 트럼프의 발언은 외교 관계에서 김정은과의 긍정적인 상호작용 가능성을 시사하고 있으며, 앞으로의 외교 전략에 주목할 필요가 있다.
+• 관세 회피 문제에 대한 트럼프의 주장으로 인해 향후 무역 정책에 영향이 있을 것으로 예상된다.
+• 트럼프의 국내 정치 인물들에 대한 지지는 향후 선거에서 그의 지지 기반 강화에 기여할 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
