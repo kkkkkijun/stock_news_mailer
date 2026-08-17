@@ -1,0 +1,220 @@
+2026-08-17T17:04:03.643105+09:00
+
+[오늘의 뉴스 요약] 2026-08-17 17:02 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 원/달러 환율이 5.3원 하락하여 1,413.0원으로 거래되며 전반적으로 안정세를 보이고 있다. 한편, 금융권의 프로젝트파이낸싱(PF) 연체율은 10년 만에 최고치를 기록하며 부동산 시장의 부진이 심각해지고 있다.
+
+[핵심 뉴스]
+1. (환율) 원/달러 환율 5.3원 내린 1,413.0원
+   → 원/달러 환율이 5.3원 하락하여 1,413.0원으로 거래되고 있다.
+   (연합뉴스 · 08/17 15:34)
+2. (고용) 금융권 PF 연체율 10년 만에 최고
+   → 금융권의 프로젝트파이낸싱(PF) 대출 연체율은 4.65%로, 작년 말보다 0.77%포인트 상승하며 10년 만에 최고 기록을 세웠다.
+   (연합뉴스 · 08/17 05:51)
+3. (고용) 가계부채 증가분 78% 주담대가 차지
+   → 2026년 2분기 가계 신용 규모가 2000조원을 넘어설 것으로 예상되며, 가계 대출의 78%는 주택담보대출에 의해 증가하고 있다.
+   (매일경제 · 08/16 17:55)
+4. (고용) 하반기 취업자 18.5만명 증가 전망
+   → 하반기에 취업자 수가 18.5만명 증가할 것으로 전망되고 있다.
+   (브릿지경제 · 08/17 16:14)
+5. (성장) 높은 정제마진에 정유사 실적성장 전망
+   → 높은 정제마진으로 인해 국내 정유사들의 실적 성장세가 지속될 것으로 예상되고 있다.
+   (연합뉴스 · 08/17 06:30)
+
+[흐름·전망]
+• 원/달러 환율의 하락세가 글로벌 금융시장에 미칠 영향과 함께 향후 경제 지표에 주목할 필요가 있다.
+• 금융권 PF 연체율 상승은 부동산 경기의 위축을 의미하며, 이에 따른 대출 정책 변화가 예상된다.
+• 가계 부채 리스크가 커지고 있는 상황에서 금리 인상이 지속될 경우 금융 시장의 불안정성에 대한 경계가 필요하다.
+• 정유사 실적 개선 전망은 국제 유가와 원유 수급에 영향을 미칠 수 있으며, 이에 따른 투자 전략도 재조정이 필요하다.
+
+📈 해외주식 PART
+📰 [NVDA] Czech National Bank Grows Stock Holdings in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 08/17 16:38)
+→ 체코 중앙은행이 NVIDIA 주식을 추가로 매입했습니다. 이번 결정은 NVIDIA의 성장 가능성을 반영한 것으로 보이며, 주식 보유량이 증가했습니다.
+
+📰 [NVDA] Byrne Asset Management LLC Has $6.62 Million Stock Holdings in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 08/17 16:38)
+→ Byrne Asset Management LLC는 NVIDIA Corporation의 주식에 662만 달러를 보유하고 있다고 보고했습니다.
+
+📰 [NVDA] Evanson Financial LLC Purchases New Position in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 08/17 16:38)
+→ Evanson Financial LLC가 NVIDIA Corporation에 새로운 투자를 시작했습니다. 이번 투자는 회사의 포트폴리오 다변화를 위한 전략의 일환으로 보입니다.
+
+📰 [TSLA] Dodge Challenger SRT Drags Tesla Cybertruck, Someone Clearly Won't Be Happy After This Race - autoevolution.com
+   (autoevolution.com · 08/17 16:57)
+→ Dodge Challenger SRT가 Tesla Cybertruck과의 레이스에서 경합을 벌였습니다. 이 경주에서 한 쪽이 분명히 예상치 못한 결과로 실망할 것으로 보입니다.
+
+📰 [TSLA] TSLA Looks 2.8% Overvalued on GF Value™ as Labor Dispute Ends in Sweden - GuruFocus
+   (GuruFocus · 08/17 16:37)
+→ 스웨덴의 노동 분쟁이 끝난 가운데, TSLA(테슬라)는 GF Value™ 평가에 따르면 2.8% 과대평가된 것으로 분석되었다. 이 소식은 투자자들에게 주목받고 있다.
+
+📰 [TSLA] Tesla Stock Price Prediction: SpaceX Thruster-Equipped Roadster May Debut This Month, Could It Boost TSLA Stock? - TradingKey
+   (TradingKey · 08/17 16:36)
+→ 테슬라의 스페이스X 추진기를 장착한 로드스터가 이달 중으로 공개될 가능성이 있으며, 이는 테슬라 주가(TSLA)에 긍정적인 영향을 미칠 수 있다고 전망되고 있다.
+
+📰 [HIMS] 5 Revealing Analyst Questions From Hims & Hers Health’s Q2 Earnings Call
+   (Yahoo Finance · 08/17 15:38)
+→ Hims & Hers Health의 2분기 실적은 강력한 구독자 성장과 브랜드 체중 감량 제품의 증가로 개선되었으나, 시장의 부정적인 반응으로 주가가 5% 이상 하락했다. 경영진은 AI 기반 서비스와 확대된 제품 카테고리에서 고객 유치가 가속화되고 있음을 강조했으며, CEO 앤드류 두듐은 AI 및 기술에 대한 투자가 회사만의 독창적인 건강 경험을 제공하고 있다고 언급했다.
+
+📰 [HIMS] 5 Revealing Analyst Questions From Hims & Hers Health’s Q2 Earnings Call - StockStory
+   (StockStory · 08/17 14:52)
+→ Hims & Hers Health의 2분기 실적 발표에서 분석가들이 주목한 다섯 가지 질문이 소개되었다. 이 질문들은 회사의 성장 전략과 향후 전망에 대한 통찰을 제공하며, 투자자들에게 중요한 정보를 전달하고 있다. 전체적인 실적과 시장 반응에 대한 분석도 포함되어 있다.
+
+📰 [HIMS] HIMS Stock Climbs Overnight: Oscar Health CEO Courts Hims For New Drug Marketplace - stocktwits.com
+   (stocktwits.com · 08/17 11:58)
+→ HIMS 주가가 오름세를 보이는 가운데, Oscar Health CEO가 HIMS와 새로운 약품 마켓플레이스 구축을 위한 협력을 논의하고 있습니다. 이로 인해 투자자들의 관심이 집중되고 있습니다.
+
+📰 [RDW] RKLB, LUNR, RDW Jump Premarket As Musk Pitches AI Satellites, Orbital Data Centers — Analyst Says The Odds Are Just 7% - stocktwits.com
+   (stocktwits.com · 08/16 08:34)
+→ RKLB, LUNR, RDW 주식이 프리마켓에서 상승했으며, 이는 엘론 머스크가 AI 위성과 궤도 데이터 센터를 제안했기 때문입니다. 그러나 한 애널리스트는 이러한 사업의 성공 확률이 단 7%에 불과하다고 평가했습니다.
+
+📰 [RDW] RKLB, RDW, SIDU, PL: Why Are These Space Stocks Gaining Overnight? - stocktwits.com
+   (stocktwits.com · 08/16 07:46)
+→ RKLB, RDW, SIDU, PL과 같은 우주 관련 주식들이 최근 밤사이 상승세를 보인 이유에 대한 논의가 활발히 이루어지고 있다. 전문가들은 이들 주식의 상승이 우주 산업의 성장 가능성과 관련된 긍정적인 뉴스에 기인한다고 분석하고 있다.
+
+📰 [RDW] Redwire Corp (Derivatives) Price Today | Live RDW Price, Chart & Market Data - Binance
+   (Binance · 08/16 07:34)
+→ Redwire Corp(파생상품)의 오늘 가격과 실시간 RDW 가격, 차트 및 시장 데이터가 제공됩니다. 이 정보는 Binance에서 확인할 수 있습니다.
+
+📰 [IREN] Iren delivers first 50 MW AI cloud deployment to Microsoft - Telecompaper
+   (Telecompaper · 08/17 14:39)
+→ Iren이 Microsoft에 첫 번째로 50MW 규모의 AI 클라우드 배포를 완료했습니다. 이 배포는 AI 기술을 활용한 클라우드 서비스의 첫 단계로, 두 회사 간의 협력을 강화하는 중요한 이정표로 평가됩니다.
+
+📰 [IREN] 2 Major Catalysts Are Lifting IREN Stock. How to Play It Here.
+   (Yahoo Finance · 08/17 04:30)
+→ IREN 주식이 상승하는 주요 요인은 마이크로소프트의 수용과 엔비디아의 Exemplar Cloud 지위 부여다. 이러한 요소들이 주가에 긍정적인 영향을 미치고 있다.
+
+📰 [IREN] 2 Major Catalysts Are Lifting IREN Stock. How to Play It Here. - Barchart.com
+   (Barchart.com · 08/17 04:30)
+→ IREN 주식이 두 가지 주요 요인으로 상승세를 보이고 있으며, 투자자들은 이 기회를 활용할 방법을 모색하고 있습니다. 시장의 반응과 전문가의 조언을 바탕으로 주식 거래 전략을 세우는 것이 중요합니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Holds Above $63K as LINK and HYPE Surge Ahead of Key Fed Week - Bitcoin Foundation
+   (Bitcoin Foundation · 08/17 17:00)
+→ 비트코인이 63,000달러 이상에서 유지되고 있으며, LINK와 HYPE 토큰이 급등하고 있습니다. 이러한 가격 움직임은 중요한 연준 회의가 가까워짐에 따라 발생하고 있습니다.
+
+📰 [BTC-USD] Bitcoin Miners Chase AI, Ethereum Plans for Quantum Risk, and Tether Gets Its Audit - YouHodler
+   (YouHodler · 08/17 16:51)
+→ 비트코인 채굴업체들이 AI 기술을 활용하고 있으며, 이더리움은 양자 컴퓨터로 인한 위험에 대비한 계획을 세우고 있습니다. 또한, 테더는 감사 절차를 진행 중입니다.
+
+📰 [BTC-USD] Crypto Weekly Digest | Bitcoin Holds $63.5K; ETF Outflows Hit $117M; FTX Begins $200M SOL Distribution - Moomoo
+   (Moomoo · 08/17 16:50)
+→ 이번 주 암호화폐 소식에서는 비트코인이 63,500달러를 유지하고 있으며, ETF에서의 유출이 1억 1,700만 달러에 이른다고 보도되었다. 또한, FTX는 2억 달러 규모의 SOL 분배를 시작했다.
+
+📰 [ETH-USD] Bitcoin Miners Chase AI, Ethereum Plans for Quantum Risk, and Tether Gets Its Audit - YouHodler
+   (YouHodler · 08/17 16:51)
+→ 비트코인 채굴자들이 인공지능(AI) 기술을 활용하려는 움직임을 보이고 있으며, 이더리움은 양자 컴퓨팅 위험에 대한 계획을 세우고 있습니다. 한편, 테더는 최근 감사 절차를 완료했습니다.
+
+📰 [ETH-USD] Ethereum Price Surges, Tops $1.9k On Hegotá Upgrade Optimism - MarketForces Africa
+   (MarketForces Africa · 08/17 16:48)
+→ 이더리움 가격이 헤고타 업그레이드에 대한 기대감으로 1,900달러를 넘어서 급등했습니다. 투자자들의 긍정적인 전망이 가격 상승을 이끌고 있습니다.
+
+📰 [ETH-USD] Bitcoin Holds Support as Ethereum Stalls, XRP Weakens - TradingPedia
+   (TradingPedia · 08/17 16:32)
+→ 비트코인이 지지를 유지하고 있는 반면, 이더리움은 정체 상태에 있으며 XRP는 약세를 보이고 있습니다. 시장의 변동성이 커지고 있지만 비트코인은 안정적인 모습입니다.
+
+📰 [SOL-USD] Tracking Cathie Wood: Loading Up on Cerus and Solana, Trimming 10x Genomics - Moomoo
+   (Moomoo · 08/17 16:36)
+→ 캐시 우드가 Cerus와 Solana에 대한 투자 비중을 늘린 반면, 10x Genomics에 대한 보유량을 줄였다는 내용의 뉴스가 보도되었습니다. 이는 그녀의 투자 전략 변화와 관심 종목에 대한 선호도를 반영하고 있습니다.
+
+📰 [SOL-USD] Bitwise's Solana ETF May Become the First Tokenized US Fund Shares - blockhead.co
+   (blockhead.co · 08/17 16:04)
+→ Bitwise의 솔라나 ETF가 미국에서 최초로 토큰화된 펀드 주식이 될 가능성이 있습니다. 이는 암호화폐 시장의 새로운 발전을 나타내며, 투자자들에게 혁신적인 투자 방법을 제공할 수 있습니다.
+
+📰 [SOL-USD] Solana (SOLUSD) Volatility Intensified on Aug 17: What You Should Know - TradingKey
+   (TradingKey · 08/17 15:50)
+→ 8월 17일, 솔라나(SOLUSD)의 변동성이 강해졌다는 소식이 전해졌다. 이는 투자자들에게 중요한 경고 신호가 될 수 있으며, 시장의 변화에 대한 주의가 필요하다는 메시지를 담고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 비트코인은 소폭 상승하여 63,535달러에 거래되고 있으며, 거래소 바이낸스에서 대규모 스테이블 코인 테더(USDT) 순유입이 관측되었다. 전반적으로 시장은 유동성 변화에 주목하며 조금씩 안정세를 찾고 있는 모습이다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 소폭 상승, 63,535달러
+   → 비트코인이 63,535달러로 소폭 상승했으며, 이날 바이낸스에서는 약 698억원 규모의 테더 4934.63만개가 순유입됐다.
+   (토큰포스트 · 08/17 16:42)
+2. (기타) 8435만달러 청산 발생
+   → 암호화폐 시장에서 8435만달러가 청산되었고, 이 중 숏 포지션의 청산이 5502만달러로 전체의 65.23%를 차지했다.
+   (토큰포스트 · 08/17 16:04)
+3. (ETF) 비트코인 ETF 5451억원 순유출
+   → 미국 현물 비트코인 ETF에서 8월 둘째 주 3억8520만 달러(약 5451억원)가 순유출되었고, 이는 이전 주 8억6530만 달러(약 1조2244억원)의 순유입과 대비되는 현상이다.
+   (토큰포스트 · 08/17 15:13)
+4. (기타) 비트코인 숏 포지션 고래 네 번째 손절
+   → 대형 비트코인 숏 포지션 보유자가 네 번째 손절을 실시하며 누적 실현손실이 98만8000달러(약 14억원)에 달했다.
+   (토큰포스트 · 08/17 16:30)
+5. (규제) 리플, 리플달러 1000만개 추가 발행
+   → 리플이 17일 XRP레저에서 1000만개의 리플달러(RLUSD)를 추가 발행하였으며, 현재 RLUSD의 총 시가총액은 약 17억 달러에 이른다.
+   (토큰포스트 · 08/17 15:40)
+
+[흐름·전망]
+• 바이낸스에서의 스테이블코인 유입은 시장의 대기성 유동성을 높일 수 있으며, 향후 거래 활동 증가에 영향이 있을 것으로 예상된다.
+• 비트코인 ETF 자금 흐름의 변동성은 기관 투자의 심리를 반영하는 보조 지표로 활용될 수 있으며, 향후 수급에 변화가 나타날 가능성도 엿보인다.
+• 대형 숏 포지션의 손실 규모는 시장의 매도 압력과 유동성에 영향을 미칠 수 있는 요소로 볼 수 있다.
+• 리플의 RLUSD 발행 확대는 스테이블코인 시장에서의 입지를 강화하려는 의도로 해석되며, 기관 수요의 증가 여부가 관전 포인트다.
+
+📊 공포탐욕지수
+  - CNN 기준: 65 (Greed)
+  - 크립토 기준: 31 (Fear)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 서울 부동산 시장은 전세의 감소와 월세의 증가가 두드러지며, 대출 완화 및 공급 확대 정책에 대한 우려가 제기되고 있다.
+
+[핵심 뉴스]
+1. (전세) 서울 전세 3만가구 증발 … 월세는 5만가구 껑충
+   → 2024년 기준 서울 아파트 전세 가구는 37만1972가구로 전세 비중이 61.9%에 불과하며, 월세 가구는 22만9029가구로 38.1%에 달해, 전세 비중은 7년 사이 7.8%포인트 하락했다.
+   (매일경제 · 08/17 16:31)
+2. (금리) “공급까지는 한참 남았는데”…먼저 풀리는 대출, 집값 자극할라 우려
+   → 정부의 수도권 주택 공급 확대 계획에 따라 2030년까지 8만9000호 신속 착공 목표가 세워졌으나, 금융 완화로 인해 즉각적인 수요 자극과 집값 상승 우려가 나오고 있다.
+   (매일경제 · 08/17 08:07)
+3. (전세) 서울 아파트 '전세의 월세화'…7년새 월세 비중 7.8%p↑
+   → 전세 가구는 3만 가구 감소한 반면, 월세 가구는 5만 가구 이상 증가하며 전세의 월세화 현상이 뚜렷해졌고, 앞으로 추가적인 월세 증가가 예상된다.
+   (연합뉴스 · 08/17 05:53)
+4. (정책) 세제개편안 직격탄에…강남구 ‘세금설명회’ 서초구 ‘구민 의견취합’
+   → 서울 강남구와 서초구는 정부의 부동산 세제 개편안에 대해 주민 설명회와 의견 수렴을 통해 고가 주택 보유자들의 불안감을 해소하고자 적극적인 대응을 하고 있다.
+   (매일경제 · 08/17 14:25)
+5. (재건축) ‘종묘 앞 재개발’ 세운4구역 분수령…국가유산위, 유적 보존방안 심의
+   → 서울 종묘 인근 세운4구역 재개발 사업을 둘러싼 유적 보존 논의가 진행 중이며, 국가유산청과 서울시 간의 갈등이 여전히 깊어져 있다.
+   (매일경제 · 08/17 14:22)
+6. (공급) 2026 수도권 정비사업 대전환…재건축 규제 풀고 공공 공급 확대
+   → 2026년부터 수도권의 재건축 규제를 완화하고 공공 공급을 확대하는 방향으로 정책이 전환될 예정이다.
+   (뉴스N연합 · 08/17 16:14)
+
+[흐름·전망]
+• 서울 부동산 시장에서 전세의 감소와 월세의 증가는 지속될 전망이며, 이는 임대차 시장의 구조적 변화로 이어질 수 있다.
+• 정부의 공급 확대 정책이 실제 효과를 발휘하기 전에 금융 완화로 인해 집값이 자극받을 가능성이 있으므로 주의가 필요하다.
+• 고가 주택 세 부담이 커지면서 강남과 서초의 주택 거래 활성화가 저조할 수 있으며, 관련 세제 변화가 향후 시장에 미치는 영향에 대해 살펴볼 필요가 있다.
+• 세운4구역 재개발 사업에서 유적 보존 방안과 지역 주민의 의견 수렴이 중요한 판단 기준이 될 것이며, 이에 따른 추가적인 갈등 가능성에도 유의해야 한다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 한국과의 군사 훈련 참여에 대해 불만을 표현했으며, 이는 미국의 방어 신호로 적절하지 않다고 주장했다. 또한, 중동 국가 간의 방어 협정을 긍정적으로 평가하며, 미국에서 해방된 인질의 귀환 소식을 전했다.
+
+[주요 발언]
+1. (외교) 트럼프는 한미 군사 훈련이 불필요하며 북한에 적대적인 신호를 보낸다고 주장했다.
+   (Truth Social · 08/17 10:02)
+2. (기타) 트럼프는 미국으로 돌아온 전 인질 케빈 라이아웃의 소식에 기쁘다고 전하며, 110번째 인질의 해방을 언급했다.
+   (Truth Social · 08/17 09:56)
+3. (외교) 트럼프는 사우디아라비아, 터키, 파키스탄이 체결한 메카 공동 방어 협정을 긍정적으로 평가하며 중동의 통합을 강조했다.
+   (Truth Social · 08/17 06:04)
+4. (사법) 트럼프는 폭스 뉴스에서 자기 입장을 보도하지 않는 것에 대해 비판하며, 자신의 성과를 강조했다.
+   (Truth Social · 08/17 05:10)
+5. (기타) 트럼프는 최근 방송에서 자신의 성과와 관련된 이야기가 충분히 다뤄지지 않는다고 주장했다.
+   (Truth Social · 08/17 10:02)
+
+[흐름·전망]
+• 트럼프의 군사 훈련에 대한 비판은 미국의 방어 정책을 재검토하는 계기가 될 수 있다.
+• 중동 국가 간 방어 협정 체결 이후, 미국의 외교 전략 변화 가능성에 주목해야 한다.
+• 해방된 인질의 귀환 소식은 향후 대북 외교에 긍정적인 영향을 미칠 가능성이 있다.
+• 트럼프의 성과 강조는 정치적 지지 기반을 더욱 강화할 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
