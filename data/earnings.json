@@ -879,7 +879,7 @@
   "name": "힘스앤허스",
   "date": "2026-11-10",
   "ts": 1794254400,
-  "est": true,
+  "est": false,
   "detail": {
    "prev": {
     "period": "26.06",
