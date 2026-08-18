@@ -360,16 +360,16 @@
    ],
    "target": {
     "price": "$305.59",
-    "mean": "$322.28",
+    "mean": "$325.70",
     "range": "$215~$400",
-    "upside": "+5%",
+    "upside": "+7%",
     "upside_pos": true
    },
    "rec": {
     "label": "매수",
     "count": 41,
-    "buy": 27,
-    "hold": 14,
+    "buy": 28,
+    "hold": 13,
     "sell": 5
    }
   }
