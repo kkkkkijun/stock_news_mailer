@@ -1,0 +1,217 @@
+2026-08-20T16:58:53.024465+09:00
+
+[오늘의 뉴스 요약] 2026-08-20 16:57 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 금리가 대체로 하락하고 원/달러 환율이 1,390원대 초반으로 떨어지며 전반적으로 안정적인 흐름을 보이고 있다. 속초에서는 민생 회복 지원금 지급에 대한 지역 주민들의 복합적인 반응이 나타났다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 대체로 하락
+   → 20일 10년물 국고채 금리는 연 4.323%로 1.4bp 하락했으며, 5년물과 2년물은 각각 연 4.066%, 3.672%에 마감했다.
+   (연합뉴스 · 08/20 16:42)
+2. (환율) 환율 1,390원대 초반으로 하락
+   → 20일 원/달러 환율은 1,392.6원으로 5.1원 하락하며 11개월 만에 최저 수준인 1,380원대 중반에 도달했다.
+   (연합뉴스 · 08/20 15:52)
+3. (성장) 속초 지역경제 회복 기대와 우려
+   → 속초에서는 민생 회복 지원금이 지급되었고, 지급률은 93.2%에 달하며 사용액은 70억원을 초과했다.
+   (연합뉴스 · 08/20 16:37)
+4. (고용) 고용센터, 30년만에 전면 개편
+   → 고용복지센터는 전면 개편을 통해 30년 만에 실업급여 처리 중심에서 상담 중심으로 변화하여 구직자 맞춤형 서비스를 제공할 예정이다.
+   (연합뉴스 · 08/20 15:30)
+5. (고용) 대도시 고용률 2년 연속 하락
+   → 대도시 고용률은 2년 연속 하락하여 58.6%로 떨어졌지만, 군 지역은 69.4%로 역대 가장 높은 고용률을 기록했다.
+   (연합뉴스 · 08/20 12:00)
+
+[흐름·전망]
+• 금리와 환율의 하락세가 지속될 경우 기업 자금 조달이 원활해지고 수출입에도 긍정적으로 작용할 수 있다.
+• 속초와 같은 지역의 지원금 지급 효과가 지속 가능성이 있는지, 그리고 실제 경제 회복으로 이어질지에 대한 지켜봐야 한다.
+• 고용복지센터의 개편이 실제 구직자들에게 실질적인 도움을 줄 수 있을지 주목할 필요가 있다.
+• 대도시와 군 지역의 고용률 차이가 확대되고 있어 지역별 맞춤형 정책이 더욱 중요해질 전망이다.
+
+📈 해외주식 PART
+📰 [NVDA] Allied Private Wealth LLC Invests $4.59 Million in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 08/20 16:14)
+→ Allied Private Wealth LLC가 NVIDIA Corporation에 459만 달러를 투자했습니다. 이번 투자는 NVIDIA의 성장 가능성에 대한 긍정적인 전망을 반영합니다.
+
+📰 [NVDA] Not Nvidia, not Micron. This S&P 500 stock is up almost 500% year to date! - The Twelfth Magpie
+   (The Twelfth Magpie · 08/20 15:57)
+→ S&P 500 기업 중 Nvidia와 Micron이 아닌 한 주식이 올해 들어 거의 500% 상승했습니다. 이 remarkable한 성장은 시장에서 큰 주목을 받고 있습니다.
+
+📰 [NVDA] Nvidia Tries to Spur the AI Boom Into the Future - Bloomberg.com
+   (Bloomberg.com · 08/20 15:34)
+→ Nvidia는 AI 혁명을 지속하고 미래로 확장하기 위해 다양한 전략과 기술을 개발하고 있다. 이 회사는 인공지능과 관련된 혁신적인 제품을 출시하여 시장을 선도하고 있으며, AI 기술의 보급을 가속화하려는 노력을 기울이고 있다.
+
+📰 [TSLA] Diversified Trust Co. Sells 9,843 Shares of Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 08/20 16:42)
+→ Diversified Trust Co.가 테슬라(Tesla, Inc.)의 주식 9,843주를 매도했습니다. 이번 매도는 시장에서 주목을 받고 있는 소식입니다.
+
+📰 [TSLA] Tesla, Inc. $TSLA Holdings Raised by Cary Street Partners Financial LLC - MarketBeat
+   (MarketBeat · 08/20 16:30)
+→ Cary Street Partners Financial LLC가 테슬라 주식($TSLA) 보유량을 증가시켰다고 보도되었습니다. 이는 시장에서 테슬라에 대한 긍정적인 평가를 반영하는 것으로 해석됩니다.
+
+📰 [TSLA] Key facts: Tesla, Inc. 1M Robots; Trades 4% Above GF; 380K Miles - TradingView
+   (TradingView · 08/20 16:14)
+→ 테슬라가 100만 대의 로봇을 운영하며, 현재 주가는 자산가치(GF)보다 4% 높게 거래되고 있습니다. 이 회사의 차량들은 평균 380,000마일의 주행 거리를 기록하고 있습니다.
+
+📰 [HIMS] Hims & Hers Health (NYSE: HIMS) CEO Disposes Of 78,859 Shares In Routine Tax Withholding Event - foreignpolicyjournal.com
+   (foreignpolicyjournal.com · 08/20 06:33)
+→ Hims & Hers Health의 CEO가 세금 원천징수에 따른 일상적인 행사로 78,859주를 처분했습니다. 이번 주식 매각은 회사의 정기적인 재무 관리의 일환으로 이해됩니다.
+
+📰 [HIMS] FTC, California and Utah Sue Telehealth Company Hims & Hers for Deceptive and Unlawful Privacy Practices - Hunton Andrews Kurth LLP
+   (Hunton Andrews Kurth LLP · 08/20 06:04)
+→ 미국 연방거래위원회(FTC)와 캘리포니아, 유타주가 원격진료 회사 Hims & Hers를 상대로 기만적이고 불법적인 개인정보 보호 관행에 대한 소송을 제기했습니다. 이들은 해당 회사가 소비자에게 잘못된 정보를 제공하고 개인정보를 부적절하게 처리했다고 주장하고 있습니다.
+
+📰 [HIMS] Hims & Hers CEO Defends Data Practices, Projects Sharp Drop in Weight-Loss Drug Prices - finance.biggo.com
+   (finance.biggo.com · 08/20 03:56)
+→ Hims & Hers의 CEO는 회사의 데이터 관리 방침을 옹호하며, 체중 감량 약물 가격이 크게 하락할 것이라고 전망했습니다. 이로 인해 소비자들에게 더 나은 접근성을 제공할 수 있을 것으로 기대하고 있습니다.
+
+📰 [RDW] RDW Stock Rises On $21.5M Air Force Drone Contract - Stocktwits
+   (Stocktwits · 08/20 14:38)
+→ RDW 주가가 미 공군의 2150만 달러 드론 계약 소식에 상승했습니다. 이번 계약은 회사의 성장 가능성에 긍정적인 영향을 미칠 것으로 예상됩니다.
+
+📰 [RDW] ASTS, RKLB, RDW, SATS Jump As SpaceX Prices Historic IPO — Cloudflare CEO Weighs In On 'Perfect' 20% Pop Prediction - Stocktwits
+   (Stocktwits · 08/20 10:51)
+→ ASTS, RKLB, RDW, SATS 주가가 SpaceX의 역사적인 IPO 가격 책정 소식으로 급등했습니다. Cloudflare CEO는 주가가 20% 상승할 것이라는 예측에 대해 긍정적인 의견을 밝혔습니다.
+
+📰 [RDW] Is Redwire’s (RDW) Japan Partnership a Pivotal Step in Its Global Space Strategy? - simplywall.st
+   (simplywall.st · 08/20 06:33)
+→ Redwire(RDW)는 일본과의 파트너십을 통해 글로벌 우주 전략의 중대한 단계를 밟고 있습니다. 이 협력은 우주 산업에서의 입지를 강화하고, 기술 개발 및 상업적 기회를 확대하는 데 기여할 것으로 예상됩니다.
+
+📰 [IREN] IREN's Growth Engine Is Running — But the Dilution Meter Is Spinning Faster - Ad-hoc-news.de
+   (Ad-hoc-news.de · 08/20 15:21)
+→ IREN의 성장 엔진이 가동 중이지만, 주식 희석 비율이 빠르게 증가하고 있다는 내용입니다. 회사의 성장에도 불구하고 자본 희석이 우려되고 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Trading Up 2% - What's Next? - MarketBeat
+   (MarketBeat · 08/20 06:30)
+→ IREN(나스닥: IREN)의 주가가 2% 상승했다. 이번 상승세가 지속될지에 대한 시장의 관심이 집중되고 있다. 투자자들은 향후 전망을 주의 깊게 살펴보고 있다.
+
+📰 [IREN] What's Going On With IREN Stock Wednesday? - Benzinga
+   (Benzinga · 08/20 01:44)
+→ IREN 주식에 대한 최신 뉴스에 따르면, 수요일 주식 가격의 변동성이 있었습니다. 투자자들은 특정 요인들에 주목하고 있으며, 이러한 변화가 앞으로의 시장 상황에 미칠 영향을 주의 깊게 살펴보고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] 🚨𝗝𝗨𝗦𝗧 𝗜𝗡: Bitcoin’s Fear & Greed Index has jumped to 62, moving back into greed as sentiment turns bullish again. - Moomoo
+   (Moomoo · 08/20 16:52)
+→ 비트코인의 공포&탐욕 지수가 62로 상승하면서 탐욕 영역으로 돌아섰고, 시장 정서가 다시 긍정적으로 변하고 있습니다.
+
+📰 [BTC-USD] Bitcoin Tops $70,000 Amid a Short Squeeze, but 3 Metrics Hold the Real Signal - BeInCrypto
+   (BeInCrypto · 08/20 16:33)
+→ 비트코인이 공매도 압박 속에 70,000달러를 초과했지만, 실제 시장 신호를 나타내는 세 가지 지표가 중요하다는 분석이 나왔다. 전문가들은 이 지표들이 비트코인의 지속적인 가격 상승 가능성을 판단하는 데 핵심적이라고 강조하고 있다.
+
+📰 [BTC-USD] Morning Wrap: Asian Stocks in the Green, Bitcoin Rallies 8% – Has Risk Appetite Returned? (20.08.2026) - XTB.com
+   (XTB.com · 08/20 16:32)
+→ 아시아 주식이 상승세를 보이며, 비트코인이 8% 급등했습니다. 이로 인해 시장에서 위험 자산에 대한 투자 의욕이 돌아왔다는 분석이 나오고 있습니다.
+
+📰 [ETH-USD] Why is Crypto Up Today? Ethereum Leads Market Recovery With a +18% Pump
+   (Yahoo Finance · 08/20 16:37)
+→ 오늘 암호화폐 시장은 이더리움이 18% 상승하며 회복세를 보이면서 전반적으로 상승하고 있다. 어제 이더리움(ETH)은 $1,930에서 거래되었으나 오늘 $2,260으로 상승했다는 데이터가 확인되었다. 많은 거래자들이 암호화폐 상승의 이유를 궁금해하고 있다.
+
+📰 [ETH-USD] Crypto News: Pepeto (PEPETO) Nears 50,000 Holders as Ethereum Price Eyes $10,000 and Shiba Inu's Story Repeats - The Daily Tribune News
+   (The Daily Tribune News · 08/20 16:21)
+→ Pepeto(PEPETO)의 보유자가 50,000명에 가까워지고 있으며, 이더리움 가격은 10,000달러를 목표로 하고 있습니다. 또한, 시바 이누의 투자 스토리가 다시 한 번 주목받고 있습니다.
+
+📰 [ETH-USD] Ethereum surges 18% as volume jumps 402% – But THESE 2 risks could halt ETH - AMBCrypto
+   (AMBCrypto · 08/20 16:15)
+→ 이더리움의 가격이 18% 상승하고 거래량이 402% 급증했다. 그러나 두 가지 리스크가 이더리움의 상승세를 저지할 수 있다고 AMBCrypto가 경고했다.
+
+📰 [SOL-USD] Solana, XRP prices jump 10% – Which altcoin has more upside left? - AMBCrypto
+   (AMBCrypto · 08/20 16:30)
+→ 솔라나와 XRP의 가격이 각각 10% 상승했다. 전문가들은 이들 알트코인 중 어느 것이 더 상승 가능성이 있는지에 대해 분석하고 있다.
+
+📰 [SOL-USD] Ether jumps 18% as crypto rally lifts Bitcoin, Solana, and XRP amid US Treasury bond buybacks. - Pluang
+   (Pluang · 08/20 15:13)
+→ 이더리움(Ether)이 18% 급등하며 비트코인(Bitcoin), 솔라나(Solana), XRP와 함께 암호화폐 시장이 상승세를 보이고 있다. 이는 미국 재무부 채권 매입과 관련이 있다.
+
+📰 [SOL-USD] Grayscale Says SEC Crypto Could Boost these 3 altcoins Ethereum, Solana and BNB - Altcoin Buzz
+   (Altcoin Buzz · 08/20 15:02)
+→ 그레이스케일은 미국 증권거래위원회(SEC)의 암호화폐 규제가 이더리움, 솔라나, BNB 같은 세 가지 알트코인을 상승시킬 수 있다고 발표했습니다. 이러한 암호화폐에 대한 긍정적인 전망이 시장에 긍정적인 영향을 미칠 것으로 기대됩니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘은 암호화폐 시장에서 비트코인이 증가세를 보이며 7만 달러에 근접하고, 이더리움이 18% 이상 급등하는 등 위험 자산 선호가 강해진 분위기다. 전체 시장에서 외국인의 자금 유입이 늘며 투자 심리가 회복되고 있다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 7만 달러 근접
+   → 비트코인이 24시간 기준 8.59% 상승해 6만9808달러에 거래되었고, 이더리움은 18.03% 오른 2261달러에 거래되고 있다. 암호화폐 시장 청산 규모는 28억9769만 달러로, 이 가운데 93.07%가 비트코인 숏 포지션에서 발생했다.
+   (토큰포스트 · 08/20 16:35)
+2. (시세) 28억 달러 이상 레버리지 포지션 청산
+   → 최신 보고서에 따르면 28억9769만 달러의 레버리지 포지션이 청산되었으며, 이중 숏 포지션이 26억9687만 달러로 전체의 93.07%를 차지한다. 비트코인은 7.1% 상승하여 이달 최대 일간 상승률을 기록했다.
+   (토큰포스트 · 08/20 16:02)
+3. (기타) 2억2200만 달러 보유 숏 포지션
+   → 대형 트레이더가 비트코인과 이더리움 숏 포지션을 각각 2억2200만 달러를 보유하고 있으며, 이 포지션은 가격 하락 쪽으로 설정되어 있다. 변동성이 큰 시장 상황에서 이러한 결정이 어떻게 작용할지가 주목된다.
+   (토큰포스트 · 08/20 16:30)
+4. (ETF) 비트코인 현물 ETF 큰 유입
+   → 21일 오후 5시 한국시간 기준으로 비트코인과 이더리움 옵션의 만기가 도래하며 총 약 18억2000만 달러가 결제될 예정이다. 비트코인의 최대 고통 가격은 6만6000달러로 설정되어 있다.
+   (토큰포스트 · 08/20 16:30)
+5. (ETF) 이더리움 현물 ETF 순유입 지속
+   → 미국 이더리움 현물 ETF 시장에서는 3거래일 연속으로 순유입이 발생하고 있으며, 최근 하루에만 1억8915만 달러가 유입되었다. 이더리움 현물 ETF 총 거래대금은 21억4099만 달러에를 기록했다.
+   (토큰포스트 · 08/20 16:07)
+
+[흐름·전망]
+• 현재 비트코인의 상승세가 숏 커버링에 의해 지지받고 있으며, 이 흐름이 지속될지 관찰해야 한다.
+• 이더리움과 같은 대체 자산의 성장이 시장에서 더욱 주목받고 있으며, 투자자들의 선호 변화도 지속적으로 살펴봐야 한다.
+• 옵션 만기일과 주요 가격대에서의 시장 반응이 향후 가격 방향성에 주는 영향을 주의 깊게 살펴봐야 한다.
+• 현물 ETF의 순유입이 계속되는 점은 장기적인 수요 증가의 신호일 수 있으며, 관련 동향을 모니터링해야 할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 57 (Greed)
+  - 크립토 기준: 62 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 새로운 전월세 안정화 기구 추진과 청년 기숙사 공급 계획, 매매가격의 지역별 혼조세를 보이며 다양한 변화가 예고되고 있다.
+
+[핵심 뉴스]
+1. (전세) 전세금 정부에 맡기고 월세 받는다
+   → 임차인이 보증금을 전월세 안정화 기구에 예치하는 방식으로 새로운 전월세 안심신탁이 출시됐다. 임대인은 이를 통해 월세 수입을 안정적으로 확보하는 동시에 임차인은 보증금 반환 위험을 줄일 수 있다.
+   (매일경제 · 08/20 16:20)
+2. (공급) 청년 기숙사 2000호 공급 계획 발표
+   → 정부가 국유지를 활용해 청년 기숙사 2천호 공급 계획을 밝히며, 지방 노후 공공청사 약 200개소 개발을 추진한다고 전했다.
+   (연합뉴스 · 08/20 16:11)
+3. (매매) 강남·서초 아파트 매매가격 2주째 약세
+   → 강남권 아파트 가격이 세제개편 발표 이후 약세를 지속하고 있는 가운데, 서울 전체 아파트 매매가격은 0.22% 상승하며 지역별 차별적인 가격 변동이 나타나고 있다.
+   (연합뉴스 · 08/20 14:00)
+4. (공급) 미리내집 496세대 입주자 모집
+   → 서울시는 미리내집 496세대 입주자 모집을 공고하고 저출생 주거 대책의 일환으로 시세보다 저렴한 보증금 정책을 시행한다.
+   (연합뉴스 · 08/20 11:15)
+5. (공급) 부천시, 신규 토지거래허가구역 지정
+   → 정부가 2027년도 국유재산종합계획을 통해 약 200개의 노후 공공청사를 개발할 예정이며, 다양한 국유지 활용 방안을 모색하고 있다는 계획이 발표되었다.
+   (연합뉴스 · 08/20 15:00)
+
+[흐름·전망]
+• 전월세 안정화 기구와 미리내집 정책은 부동산 시장에서 임차인과 임대인 간의 신뢰 회복에 기여할 것으로 기대된다.
+• 강남권 아파트의 약세는 중위권 이하 지역과의 가격 격차를 심화시킬 수 있으며, 향후 시장 반응이 주목된다.
+• 청년 기숙사와 시니어 레지던스 공급이 이루어질 경우 고소득 및 저소득층 간 주거 불균형 해소에 기여할 수 있을지에 대한 관심이 필요하다.
+• 국유재산 개발의 다각화는 향후 부동산 시장의 공급 측면에 있어서 변화의 변수가 될 수 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+오늘 트럼프는 이란에 대한 경제적 전쟁을 강조하고, 중간 선거를 위한 대규모 집회를 홍보하며, FDA 위원장 후보를 지명하는 등 다양한 주제를 다뤘다.
+
+[주요 발언]
+1. (경제) 트럼프는 이란과의 경제 전쟁을 선언하며, 이란의 군사력과 경제가 심각하게 파괴되었다고 주장했다.
+   (Truth Social · 08/20 13:19)
+2. (국내정치) 트럼프는 다가오는 중간 선거를 위한 대규모 집회를 홍보하며 공화당의 결속과 성과를 강조했다.
+   (Truth Social · 08/20 12:30)
+3. (인사) 트럼프는 Dr. Heidi Overton을 차기 FDA 위원장으로 지명하며 그녀의 경험과 리더십을 높이 평가했다.
+   (Truth Social · 08/20 12:08)
+4. (사법) 트럼프는 Alexander Vindman의 정치적 패배를 언급하며, 자신의 절대 무죄를 주장했다.
+   (Truth Social · 08/20 10:54)
+5. (기타) 트럼프는 플로리다 주지사 후보인 Ryan Elijah을 지지하며 그의 공화당 플랫폼을 강조했다.
+   (Truth Social · 08/20 10:49)
+
+[흐름·전망]
+• 트럼프의 이란에 대한 경제적 압박 조치는 중동 지역의 안보 및 외교 관계에 영향을 미칠 가능성이 있다.
+• 중간 선거를 앞둔 공화당의 단결 및 전략에 주목해야 할 것이다.
+• FDA 위원장 후보 지명은 향후 미국의 건강 정책 방향에 중대한 영향을 미칠 수 있다.
+• 트럼프의 공개적인 정치적 반대자에 대한 비판은 내부 정치에서의 갈등을 심화시킬 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
