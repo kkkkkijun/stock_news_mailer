@@ -1,0 +1,36 @@
+name: Whale Refresh (Hyperliquid)
+
+on:
+  schedule:
+    # 30분마다 고래 포지션 스냅샷 (KST 무관, UTC 기준 매 30분)
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: whale-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install deps
+        run: pip install requests
+      - name: Snapshot whales
+        run: python whales.py refresh
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/whales.json data/whale_list.json
+          git diff --staged --quiet || git commit -m "whales: 고래 스냅샷 [skip ci]"
+          git pull --rebase --autostash origin main || true
+          git push

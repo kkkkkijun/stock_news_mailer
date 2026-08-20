@@ -1901,6 +1901,10 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
         navs.append('<button class="nav-t" data-p="tpGrow">🔎 성장주</button>')
         panels.append(f'<div class="panel" id="tpGrow">{_render_growth(funds, now)}</div>')
 
+    # 🐋 고래 탭: Hyperliquid 상위 고래 포지션 심리(데이터는 JS가 whales.json에서 로드)
+    navs.append('<button class="nav-t" data-p="tpWhale">🐋 고래</button>')
+    panels.append(f'<div class="panel" id="tpWhale">{_render_whales()}</div>')
+
     # 내 목표 탭(로그인 후 자산·매매일지). 로직·UI는 goal-app.js가 #goalRoot에 렌더.
     navs.append('<button class="nav-t" data-p="tpGoal">내 목표</button>')
     panels.append('<div class="panel" id="tpGoal">'
@@ -1911,7 +1915,7 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
                 if navs else "")
 
     scripts = (_TAB_JS + (_SCHED_JS if sched_html else "")
-               + (_GROWTH_JS if funds else "")
+               + (_GROWTH_JS if funds else "") + _WHALES_JS
                + '<script type="module" src="goal-app.js"></script>')
     return _shell(SITE_TITLE, hd + gauges_html + nav_html + "".join(panels),
                   script=scripts)
@@ -2450,6 +2454,89 @@ def _render_growth(funds, now):
     deep = ('<div id="grDeep" style="display:none">'
             + "".join(_gr_deep(d) for d in funds) + '</div>')
     return f'<div class="part">{screener}{deep}</div>'
+
+
+def _render_whales():
+    head = ('<div class="sched-head" style="margin-bottom:8px"><span>'
+            '<span class="sched-ico">🐋</span>고래 '
+            '<span class="sched-tz">Hyperliquid · 심리 지도</span></span></div>')
+    legend = ('<div style="display:flex;gap:14px;flex-wrap:wrap;font-size:11px;'
+              'color:var(--faint);margin:8px 2px 14px">'
+              '<span style="display:inline-flex;align-items:center;gap:5px">'
+              '<span style="width:9px;height:9px;border-radius:50%;background:#e5484d"></span>롱</span>'
+              '<span style="display:inline-flex;align-items:center;gap:5px">'
+              '<span style="width:9px;height:9px;border-radius:50%;background:#3b82f6"></span>숏</span>'
+              '<span>가로=심리 · 세로=평균 레버리지 · 크기=명목가치</span></div>')
+    return ('<div class="part">' + head
+            + '<div id="whaleAsof" style="font-size:11.5px;color:var(--muted-2);margin-bottom:4px">불러오는 중…</div>'
+            + legend
+            + '<div id="whaleMap"></div>'
+            + '<div id="whaleTable" style="margin-top:18px"></div></div>')
+
+
+_WHALES_JS = """<script>
+(function(){
+ var RED="#e5484d",BLUE="#3b82f6";
+ function d3ready(cb){ if(window.d3)return cb();
+   var s=document.createElement('script');
+   s.src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js';
+   s.onload=cb; s.onerror=fail; document.head.appendChild(s); }
+ function fail(){ var a=document.getElementById('whaleAsof'); if(a)a.textContent='고래 데이터를 불러오지 못했습니다.'; }
+ function fmt(v){ return v>=1000?('$'+(v/1000).toFixed(1)+'B'):('$'+(Math.round(v*10)/10)+'M'); }
+ function init(){ d3ready(function(){
+   fetch('whales.json?t='+Date.now()).then(function(r){return r.json();}).then(render).catch(fail); }); }
+ document.querySelectorAll('.nav-t').forEach(function(b){
+   if(b.getAttribute('data-p')==='tpWhale') b.addEventListener('click',init); });
+ function render(data){
+   var coins=(data.coins||[]).filter(function(c){return (c.l+c.s)>0;});
+   document.getElementById('whaleAsof').textContent='기준 '+data.asof+' · 고래 '+data.whales+'명 · '+coins.length+'종목';
+   var top=coins.slice(0,18);
+   var W=680,H=420;
+   var x=d3.scaleLinear([-1,1],[54,W-54]);
+   var maxLev=Math.max(8,d3.max(top,function(c){return c.lev;})||8);
+   var y=d3.scaleLinear([1,maxLev],[H-44,42]);
+   var r=d3.scaleSqrt([0,d3.max(top,function(c){return c.l+c.s;})||1],[12,40]);
+   var nodes=top.map(function(c){return {c:c,x:x(c.net),y:y(c.lev||1),r:Math.max(12,r(c.l+c.s))};});
+   var sim=d3.forceSimulation(nodes)
+     .force('x',d3.forceX(function(o){return x(o.c.net);}).strength(0.55))
+     .force('y',d3.forceY(function(o){return y(o.c.lev||1);}).strength(0.55))
+     .force('c',d3.forceCollide(function(o){return o.r+2.2;}).iterations(4)).stop();
+   for(var i=0;i<300;i++)sim.tick();
+   nodes.forEach(function(o){ o.x=Math.max(o.r+4,Math.min(W-o.r-4,o.x)); o.y=Math.max(o.r+4,Math.min(H-o.r-4,o.y)); });
+   var cx=x(0), cyLev=y(maxLev/2);
+   var col=function(n){return n>=0?RED:BLUE;};
+   var s='<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block">';
+   s+='<rect x="'+cx+'" y="0" width="'+(W-cx)+'" height="'+cyLev+'" fill="'+RED+'" opacity="0.05"/>';
+   s+='<rect x="0" y="0" width="'+cx+'" height="'+cyLev+'" fill="'+BLUE+'" opacity="0.05"/>';
+   s+='<line x1="'+cx+'" y1="20" x2="'+cx+'" y2="'+(H-18)+'" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 5"/>';
+   s+='<line x1="18" y1="'+cyLev+'" x2="'+(W-18)+'" y2="'+cyLev+'" stroke="var(--border)" stroke-width="1" stroke-dasharray="3 5"/>';
+   s+='<text x="18" y="26" fill="'+BLUE+'" font-size="12" font-weight="700">◀ 고레버·숏</text>';
+   s+='<text x="'+(W-18)+'" y="26" text-anchor="end" fill="'+RED+'" font-size="12" font-weight="700">고레버·롱 ▶</text>';
+   s+='<text x="'+(W/2)+'" y="'+(H-6)+'" text-anchor="middle" fill="var(--faint)" font-size="10.5">▼ 저레버</text>';
+   nodes.forEach(function(o){
+     var fz=Math.max(9,Math.min(13,o.r*0.5));
+     s+='<circle cx="'+o.x.toFixed(1)+'" cy="'+o.y.toFixed(1)+'" r="'+o.r.toFixed(1)+'" fill="var(--card)" stroke="'+col(o.c.net)+'" stroke-width="'+(1.6+Math.abs(o.c.net)*5).toFixed(1)+'"/>';
+     s+='<text x="'+o.x.toFixed(1)+'" y="'+(o.y+fz*0.35).toFixed(1)+'" text-anchor="middle" font-size="'+fz.toFixed(1)+'" font-weight="700" fill="var(--ink)">'+o.c.t+'</text>';
+   });
+   s+='</svg>';
+   document.getElementById('whaleMap').innerHTML=s;
+   var rows=coins.slice(0,24).map(function(c){
+     var tot=c.l+c.s, lp=Math.round(c.l/tot*100), net=c.net>=0?'순롱':'순숏', nc=c.net>=0?RED:BLUE;
+     return '<div style="display:flex;align-items:center;gap:8px;padding:9px 4px;border-top:1px solid var(--border)">'+
+       '<div style="width:58px;font-size:13px;font-weight:700;color:var(--ink);overflow:hidden;text-overflow:ellipsis">'+c.t+'</div>'+
+       '<div style="flex:1;min-width:60px"><div style="display:flex;height:13px;border-radius:4px;overflow:hidden;gap:1px">'+
+         '<div style="width:'+lp+'%;background:'+RED+'"></div><div style="width:'+(100-lp)+'%;background:'+BLUE+'"></div></div></div>'+
+       '<div style="width:44px;text-align:right;font-size:12px;font-weight:700;color:'+nc+'">'+net+'</div>'+
+       '<div style="width:56px;text-align:right;font-size:12px;color:var(--ink)">'+fmt(tot)+'</div>'+
+       '<div style="width:34px;text-align:right;font-size:11.5px;color:var(--muted-2)">'+(c.lev||'-')+'x</div>'+
+       '<div style="width:34px;text-align:right;font-size:11px;color:var(--faint)">'+c.n+'명</div></div>';
+   }).join('');
+   document.getElementById('whaleTable').innerHTML=
+     '<div style="display:flex;font-size:10.5px;color:var(--faint);padding:0 4px 2px"><span style="width:58px">코인</span><span style="flex:1">롱/숏</span><span style="width:44px;text-align:right">심리</span><span style="width:56px;text-align:right">명목</span><span style="width:34px;text-align:right">레버</span><span style="width:34px;text-align:right">고래</span></div>'+rows+
+     '<div style="font-size:11px;color:var(--faint);margin-top:12px;line-height:1.6">Hyperliquid 무료 공개 API 기반 · 상위 고래 지갑의 퍼페추얼 포지션 집계. 지갑은 익명이며 투자 조언이 아닙니다.</div>';
+ }
+})();
+</script>"""
 
 
 _LINKS_HOME = '<a class="hd-archive" href="archive/index.html">지난 브리핑</a>'
