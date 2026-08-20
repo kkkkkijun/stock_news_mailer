@@ -1,6 +1,6 @@
 {
-  "name": "브리핑노트",
-  "short_name": "브리핑노트",
+  "name": "MARKET BRIEF",
+  "short_name": "MARKET BRIEF",
   "description": "경제·주식·코인·부동산 핵심 뉴스 브리핑",
   "start_url": "/stock_news_mailer/?src=pwa",
   "scope": "/stock_news_mailer/",

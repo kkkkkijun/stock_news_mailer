@@ -91,7 +91,7 @@ HEAD = """<meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="브리핑노트">
+<meta name="apple-mobile-web-app-title" content="MARKET BRIEF">
 <link rel="apple-touch-icon" href="/stock_news_mailer/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -763,7 +763,7 @@ def _render_part(pid, icon, name, lines, hero=False, quotes=None, prev_sets=None
 
 
 # 브라우저 탭에 표시되는 사이트 제목(고정)
-SITE_TITLE = "브리핑노트 | 경제·주식·코인·부동산 핵심 뉴스"
+SITE_TITLE = "MARKET BRIEF | 경제·주식·코인·부동산 핵심 뉴스"
 # 헤더 우측 하단(최종 업데이트와 같은 줄)에 표시되는 슬로건 + 디데이
 SLOGAN = "🎯 40살 140억"
 DDAY_TARGET = date(2032, 12, 31)   # 93년생 만 40세 진입 직전
