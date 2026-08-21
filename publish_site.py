@@ -1825,7 +1825,7 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
     ampm = "오전" if now.hour < 12 else "오후"
 
     # 헤더 (요일은 뱃지, 토/일은 색 구분)
-    kicker = now.strftime("%Y.%m.%d") + f" · {ampm} 브리핑"
+    kicker = now.strftime("%Y.%m.%d") + " · MARKET BRIEF"
     dcls = {5: " sat", 6: " sun"}.get(now.weekday(), "")
     dowb = f'<span class="dowb{dcls}">{_DOW[now.weekday()]}</span>'
     sub = f"최종 업데이트 {now.strftime('%H:%M')}"
