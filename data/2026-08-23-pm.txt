@@ -1,0 +1,213 @@
+2026-08-23T16:49:38.073074+09:00
+
+[오늘의 뉴스 요약] 2026-08-23 16:48 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘, 한국은행이 이제 곧 수정된 경제전망을 발표할 예정이며, 전문가들은 성장률 전망치를 기존 2.6%에서 3%대 이상으로 상향 조정할 것으로 기대하고 있다. 반도체 수출과 내수 회복이 주요 요인으로 작용할 것으로 보인다.
+
+[핵심 뉴스]
+1. (성장) 한은, 올해 성장률 전망치 높일 듯
+   → 한국은행은 오는 27일 수정 경제전망에서 올해 GDP 성장률을 기존 2.6%에서 3%대로 높일 것으로 예상되며, 전문가 6명 모두 3%대 성장을 예상하고 있다.
+   (연합뉴스 · 08/23 05:30)
+2. (성장) 전문가들, 9월 제조업 경기가 개선될 것
+   → 전문가들은 9월 제조업 업황 전망 PSI가 108로 기준치를 넘어서며 제조업 경기가 개선될 것이라고 예상하고 있으며, 세부 지표에서도 내수와 수출 모두 기준치를 웃돌고 있다.
+   (연합뉴스 · 08/23 11:00)
+3. (금리) 기준금리 전망 혼조
+   → 8월 한국은행 금통위의 기준금리 결정에 대해 전문가들의 전망이 혼조세를 보이고 있으며, 일부는 금리를 동결할 가능성도 제기하고 있지만 추가 인상이 있을 것이라는 의견도 많다.
+   (연합뉴스 · 08/23 05:30)
+4. (기타) 이번 주 엔비디아 실적 영향 관심
+   → 이번 주 엔비디아의 실적 발표와 금리에 대한 시장의 반응이 주목받고 있다.
+   (네이트 · 08/23 15:36)
+5. (환율) 은행 자금 흐름, 예금·달러·금 쌓고 신중
+   → 환율 하락이 이어지는 가운데, 5대 은행의 달러예금이 역대 최대 규모로 증가하고 있으며, 최근 금값 상승으로 인해 골드바 판매액도 급증하고 있다.
+   (연합뉴스 · 08/23 05:57)
+
+[흐름·전망]
+• 한국은행이 수정 경제전망을 통해 성장률을 어떻게 조정할지가 시장에 큰 영향을 미칠 것으로 보인다.
+• 제조업 경기가 개선세로 전환되고 있으나, 특정 업종의 부진도 확인되므로 세부 지표 분석이 중요할 것이다.
+• 기준금리 결정에서 동결과 인상 의견이 엇갈리고 있어, 향후 물가 및 경제 지표에 대한 면밀한 모니터링이 필요하다.
+• 달러예금 증가와 금값 상승은 투자 심리에 변화를 가져올 수 있으며, 앞으로의 자산 배분 전략을 재검토해야 할 시점이다.
+
+📈 해외주식 PART
+📰 [NVDA] Family Wealth Partners LLC Sells 3,110 Shares of NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 08/23 16:37)
+→ Family Wealth Partners LLC가 NVIDIA Corporation의 주식 3,110주를 매각했습니다. 이번 매각은 시장 동향에 따른 결정으로 보입니다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Stock Position Decreased by Canvas Wealth Advisors LLC - MarketBeat
+   (MarketBeat · 08/23 16:37)
+→ Canvas Wealth Advisors LLC가 NVIDIA Corporation의 주식 보유량을 감소시켰다는 내용의 뉴스가 보도되었습니다. 이로 인해 NVIDIA 주식에 대한 투자 접근 방식이 변화하고 있음을 나타냅니다.
+
+📰 [NVDA] Abound Wealth Management Sells 2,793 Shares of NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 08/23 16:17)
+→ Abound Wealth Management가 NVIDIA 주식 2,793주를 매도했습니다. 이번 매도는 회사의 포트폴리오 조정의 일환으로 보입니다.
+
+📰 [TSLA] Tesla to recall 3 million EVs in China over door-handle risk, defect in driver-attention monitoring for assisted-driving system - Global Times
+   (Global Times · 08/23 13:21)
+→ 테슬라는 중국에서 300만 대의 전기차를 리콜하기로 했습니다. 이는 차 문의 손잡이와 보조 운전 시스템의 운전 집중 모니터링 결함과 관련된 문제 때문입니다.
+
+📰 [TSLA] Tesla Recalls Nearly 3 Million EVs in China Over Door Releases That Could Trap Occupants
+   (Yahoo Finance · 08/23 11:31)
+→ 테슬라는 중국에서 298만 대의 전기차를 리콜하기로 했으며, 이는 중국에서의 최대 리콜 사례입니다. 사고로 전원이 꺼진 경우 탑승객이 비상 출입구를 찾고 사용할 수 없는 문제가 발견되었습니다.
+
+📰 [TSLA] Tesla Recalls Nearly 3 Million EVs in China Over Door Releases That Could Trap Occupants - Yahoo Finance
+   (Yahoo Finance · 08/23 11:31)
+→ 테슬라가 중국에서 거의 300만 대의 전기차를 리콜했습니다. 이는 차량의 도어가 열리지 않아 탑승자가 갇힐 수 있는 문제가 발견되었기 때문입니다. 이로 인해 안전 우려가 제기되고 있습니다.
+
+📰 [HIMS] Hims & Hers (HIMS) Stock Looks Like A Bargain After A 396% Run - simplywall.st
+   (simplywall.st · 08/23 10:35)
+→ Hims & Hers (HIMS)의 주가는 최근 396% 상승한 후 여전히 저평가된 것으로 보인다. 투자자들은 현재의 가격이 장기적인 성장 가능성을 반영하지 않는다고 판단하고 있다.
+
+📰 [HIMS] Visa Flagged Hims’ Weight-Loss Subscriptions Over Disputes - Finimize
+   (Finimize · 08/22 18:33)
+→ Visa는 Hims의 체중 감량 구독 서비스에 대해 여러 분쟁으로 인해 주의를 기울였다고 보도했습니다. 이는 Hims와 일부 소비자 간의 결제 문제와 관련이 있습니다.
+
+📰 [HIMS] Hims & Hers Health (HIMS) Faces Legal Pressure, Is The Stock Still Cheap?
+   (Yahoo Finance · 08/22 13:17)
+→ Hims & Hers Health (HIMS)는 연방 거래 위원회와 주 규제 당국이 회사의 원격 진료 개인정보 및 구독 관행을 겨냥한 법적 조치를 취하면서 다시 주목받고 있다. 최근 주가는 1일 기준 6.03% 상승, 7일 기준 20.00% 상승했지만, 1년 동안 주주 총 수익률은 24.21% 감소했다.
+
+📰 [RDW] ASTS, RKLB, RDW, SATS Jump As SpaceX Prices Historic IPO — Cloudflare CEO Weighs In On 'Perfect' 20% Pop Prediction - Stocktwits
+   (Stocktwits · 08/22 22:26)
+→ ASTS, RKLB, RDW, SATS 주가가 SpaceX의 역사적인 IPO 가격 책정에 따라 급등했다. Cloudflare CEO는 주가가 20% 상승할 것이라는 '완벽한' 예측에 대해 의견을 밝혔다.
+
+📰 [RDW] RDW Failed Breakout — Warning Sign Or Setup? Directive 8020 (si9VdPDnyS) - Mshale
+   (Mshale · 08/22 10:22)
+→ RDW의 탈환 시도가 실패하면서 시장에서 경고 신호로 해석되고 있는 상황입니다. 이는 투자자들에게 주의가 필요하다는 신호일 수 있으며, 앞으로의 움직임을 주목해야 할 시점으로 보입니다.
+
+📰 [RDW] Redwire (RDW) Could Be 6% Undervalued After Kanematsu Deal And Q2 Beat - simplywall.st
+   (simplywall.st · 08/22 07:34)
+→ 레드와이어(RDW)가 카네마쓰와의 거래 및 2분기 실적 호조로 인해 약 6% 저평가된 것으로 분석되고 있습니다. 전문가들은 이번 성과가 회사의 가치 상승에 긍정적인 영향을 미칠 것이라고 보고하고 있습니다.
+
+📰 [IREN] IREN (IREN) On Microsoft And NVIDIA Validation With Valuation Still In Focus - simplywall.st
+   (simplywall.st · 08/22 07:38)
+→ IREN은 Microsoft와 NVIDIA의 검증에 대한 관점을 제시하며, 여전히 평가가 중요한 이슈로 남아 있다고 보고했습니다. 이와 관련한 시장의 반응과 기업 가치 평가에 대한 논의가 이어지고 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Trading Down 1.7% - Should You Sell? - MarketBeat
+   (MarketBeat · 08/22 06:47)
+→ IREN(NASDAQ:IREN) 주가가 1.7% 하락했습니다. 투자자들은 이 시점에서 매도해야 할지 고민하고 있습니다.
+
+📰 [IREN] IREN Stock Forecast: Why IREN Could Rally Almost 90% over the Coming Months - TipRanks
+   (TipRanks · 08/22 04:08)
+→ IREN 주식이 향후 몇 개월 동안 거의 90% 상승할 수 있다는 전망이 제시되었습니다. 전문가들은 IREN의 성장 가능성과 시장의 긍정적인 환경이 주요 요인이라고 분석하고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Scott Bessent Might Have Started The Bitcoin Bull Cycle (Cryptocurrency:BTC-USD) - Seeking Alpha
+   (Seeking Alpha · 08/23 16:16)
+→ 스콧 베센트가 비트코인 상승세를 시작했을 가능성이 제기되었습니다. 그의 활동이 암호화폐 시장에 긍정적인 영향을 미쳤다는 분석이 나오고 있습니다.
+
+📰 [BTC-USD] Will Bitcoin crash or break out? The historical evidence is impossible to ignore. - Moomoo
+   (Moomoo · 08/23 15:15)
+→ 비트코인이 폭락할지 상승할지는 불확실하지만, 역사의 증거들은 이를 간과할 수 없다는 주장이 제기되고 있습니다. 환율의 변동성과 과거 사례들이 비트코인의 향후 동향에 큰 영향을 미칠 것으로 보입니다.
+
+📰 [BTC-USD] Bitcoin's Best Week In Years Slid To $75,500 With Wintermute Short - Yellow.com
+   (Yellow.com · 08/23 13:44)
+→ 비트코인이 몇 년 만에 가장 좋은 주간 성과를 기록했지만, Wintermute의 공매도로 인해 가격이 $75,500로 하락했다.
+
+📰 [ETH-USD] Ethereum Price Forecast: ETF Inflows Revive $4,000-$5,000 Price Targets - Exchange Rates UK
+   (Exchange Rates UK · 08/23 15:45)
+→ 이더리움 가격 예측에 따르면, ETF 자금 유입이 활성화되면서 이더리움의 가격 목표가 4,000~5,000달러로 상향 조정되었습니다. 전문가들은 이러한 흐름이 시장에 긍정적인 영향을 미칠 것으로 보고 있습니다.
+
+📰 [ETH-USD] Become a Project Manager, Academic Engagements at the Ethereum Foundation (EF): This is a Full-time, Fully Remote Position Open to Candidates Worldwide - Global South Opportunities
+   (Global South Opportunities · 08/23 15:43)
+→ 이더리움 재단(EF)에서 학술 참여 관련 프로젝트 매니저를 모집합니다. 이 직무는 전 세계 지원자를 위한 전일제 원격 근무이며, 특히 글로벌 사우스 지역의 기회를 제공합니다.
+
+📰 [ETH-USD] Last Chance to Join the Apeing Whitelist Before This Upcoming Crypto Coin Rivals Monero and Ethereum - StreetInsider
+   (StreetInsider · 08/23 14:01)
+→ 모네로와 이더리움을 경쟁할 신생 암호화폐가 출시되기 전에 Apeing 화이트리스트에 가입할 마지막 기회가 다가오고 있습니다. 관심 있는 투자자들은 이번 기회를 놓치지 않도록 서두를 필요가 있습니다.
+
+📰 [SOL-USD] Solana Price Prediction: Could SOL Reclaim Its $295 High as AlphaPepe Presale Nears Its Biggest Launch Catalysts? - StreetInsider
+   (StreetInsider · 08/23 15:47)
+→ Solana의 가격 예측에 따르면, AlphaPepe 프리세일이 가장 큰 출시 촉매제를 앞두고 SOL이 $295의 최고 가격을 재차 회복할 가능성이 제기되고 있습니다. 이와 관련된 시장 반응이 주목받고 있습니다.
+
+📰 [SOL-USD] Top 3 Cryptos to Buy Now: XRP and Solana Explode While Pepeto Steals the Spotlight - StreetInsider
+   (StreetInsider · 08/23 15:01)
+→ 현재 구매하기 좋은 3대 암호화폐로 XRP와 솔라나가 급등하고 있으며, Pepeto가 큰 주목을 받고 있다고 보도되었다. 투자자들은 이들 암호화폐의 성장을 주목하고 있다.
+
+📰 [SOL-USD] Solana Price Prediction: SOL Enters Bull Market Territory as Market Sentiment Shifts - FXEmpire
+   (FXEmpire · 08/23 15:00)
+→ 솔라나(SOL)의 가격이 시장의 긍정적인 심리 변화에 힘입어 상승세를 보이며 강세 시장에 진입했습니다. 이러한 변화는 투자자들과 트레이더들에게 더 나은 전망을 제공하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+비트코인 시장은 8만 달러 매도벽이 형성된 가운데, 일부 기술적 지표가 상승 신호를 보이고 있다. 이더리움의 자금 유입이 비트코인 대비 두드러지며 전반적으로 긍정적인 분위기가 감지된다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 8만달러 매도벽, 바이낸스 호가에 집중
+   → 비트코인 현물 주문장에서 8만 달러 부근에 약 1320만 달러의 매도 주문이 집결되어 있으며, 이는 단기 저항 구간으로 해석된다. 매도벽의 움직임에 따라 가격 방향성이 결정될 가능성이 있다.
+   (토큰포스트 · 08/23 16:46)
+2. (시세) 비트코인 200일선 회복, 골든크로스 접근
+   → 비트코인 가격이 200일 이동평균선을 다시 회복하며 골든크로스를 형성할 가능성이 제기되고 있다. 기술적 신호가 긍정적으로 해석되고 있으나, 가격이 이 범위에 머무는 것이 중요한 지점으로 보인다.
+   (토큰포스트 · 08/23 16:36)
+3. (규제) 나이지리아, 거래소에 20억나이라 자본금 요구
+   → 미국 현물 ETF 자금 유입에서 이더리움이 비트코인보다 상대적으로 높은 유입 비율을 기록 중이다. 이더리움의 최근 상승률이 비트코인보다 더 높았다는 분석이 나온다.
+   (토큰포스트 · 08/23 16:15)
+4. (온체인) 이더리움 7일 온체인 수익 346만달러 기록
+   → 나이지리아가 디지털자산 거래소에 최소 자본금 기준을 제시하며 거래소의 운영 방식이 변화할 가능성이 커졌다. 이 규정은 글로벌 플랫폼의 현지 법인 설립을 요구하는 등 엄격한 감독을 예고하고 있다.
+   (토큰포스트 · 08/23 16:12)
+5. (기타) 암호화폐 시장 하락세… 비트코인 76,034달러
+   → 이더리움 메인넷의 최근 7일 온체인 수익이 346만 달러로 증가하며 수익 구조가 긍정적으로 변화하고 있다. 이더리움의 네트워크 이용 수수료는 증가하고 있지만, 특정 가격 흐름과 연결짓기는 어렵다.
+   (토큰포스트 · 08/23 16:01)
+
+[흐름·전망]
+• 비트코인이 8만 달러에 도달할 때 해당 매도벽의 움직임이 관전 포인트가 될 것.
+• 골든크로스가 형성되는지 여부가 장기 가격 추세에 미치는 영향이 주목받을 전망.
+• 이더리움의 자금 유입 비율이 계속해서 상승세를 유지할지, 비트코인과의 경쟁 구도도 살펴봐야.
+• 나이지리아의 새로운 규제안이 시장에 미치는 압박이 어떻게 전개될지 면밀히 관찰할 필요가 있음.
+
+📊 공포탐욕지수
+  - CNN 기준: 55 (Greed)
+  - 크립토 기준: 66 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 한국 부동산 시장에서는 서울 아파트 매매가격 상승세가 지속되고 있으나, 전국적인 전망지수는 하락세를 보이고 있다.
+
+[핵심 뉴스]
+1. (매매) 8월 서울 아파트값 1.14%↑
+   → 서울 아파트 매매가격이 8월에 전월 대비 1.14% 상승했으며, 강북권을 중심으로 상승세가 두드러진다. 그러나 전국 매매가격 전망지수는 107.2로 전월 대비 0.6포인트 하락했다.
+   (연합뉴스 · 08/23 13:47)
+2. (공급) 서울시, 모아타운 착공 1년 6개월 앞당긴다
+   → 서울시는 모아주택·모아타운 사업 착공 기간을 기존 6년에서 4년 6개월로 단축하겠다고 발표했다. 2031년까지 총 4만 가구의 모아주택 착공을 목표로 하고 있다.
+   (매일경제 · 08/23 13:19)
+3. (공급) 서울시, 모아타운 '쾌속통합' 추진
+   → 서울시는 모아주택·모아타운 사업의 추진을 위해 주민과 전문가가 협력하는 '모아통합기획' 방식을 도입한다고 발표하며, 사업 기간 단축을 목표로 하고 있다.
+   (연합뉴스 · 08/23 11:15)
+4. (분양청약) 8월 4만가구 분양, 세금 따라 달라진 청약 셈법
+   → 8월에 전국적으로 약 4만 가구의 새 아파트가 분양될 예정이며, 이는 지난해 같은 달에 비해 2.6배 증가한 수치다. 수도권 물량이 70%로 대다수를 차지하고 있다.
+   (매일경제 · 08/23 09:00)
+5. (정책) 與, 주택용지 확보방안 제시하라
+   → 경기도 광명시는 철산·하안 재건축 현장에서 공공임대주택 비율 확보를 요구하여 조합원들과 갈등을 빚고 있다. 이는 사업성 하락 및 추가 분담금 증가 우려를 낳고 있다.
+   (연합뉴스 · 08/23 11:39)
+6. (재건축) 광명 철산·하안 재건축 ‘날벼락’
+   → 경기도 광명시는 각 정비사업 현장에서 공공임대주택 비율을 확보하라고 요구해 조합원들의 우려가 커지고 있다.
+   (매일경제 · 08/23 10:49)
+
+[흐름·전망]
+• 단기적으로 서울 아파트 시장의 상승세가 계속될 경우, 수도권 전체에 긍정적인 영향을 미칠 가능성 있음.
+• 모아타운 정책이 활성화되면 서울의 주택 공급이 더욱 증가할 것으로 예상되나, 사업 추진의 복잡성으로 인한 지연도 주의해야 함.
+• 정부의 부동산 세제 개편안은 청약자들의 선택에 큰 영향을 미칠 것이며, 실거주 여부에 따라 부담이 달라질 전망.
+• 광명시의 갈등 상황은 재건축 시장의 공공성과 사업성을 두고 지속적인 논의가 필요함을 보여주며, 향후 유사한 사례가 발생할 수 있음.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 캐나다가 주의 혜택을 원하면서 국가가 되기를 원하지 않고 있으며, 미국 농민들에게 높은 관세를 부과해왔다고 비판했다. 또한, 백악관에 건설 중인 군사 복합체와 댄스홀 프로젝트가 예산을 초과하지 않으며 순조롭게 진행되고 있다고 강조했다.
+
+[주요 발언]
+1. (경제) 트럼프는 캐나다가 미국 주의 이점을 취하고자 하면서도 실제로는 그런 주가 되길 원하지 않는다고 주장했다. 또한, 캐나다가 미국 농부들에게 다양한 관세를 부과해왔음을 지적했다.
+   (Truth Social · 08/23 14:06)
+2. (기타) 트럼프는 백악관에 군사 복합체와 댄스홀이 건설 중이며, 이 프로젝트가 예산 내에서 진행되고 있다고 강조했다. 이 시설은 세금을 사용하지 않고도 자금을 조달했다고 주장했다.
+   (Truth Social · 08/22 22:32)
+
+[흐름·전망]
+• 트럼프의 발언은 캐나다와의 무역 관계 재조정 가능성을 시사한다. 향후 통상 문제에서의 갈등 양상에 주목할 필요가 있다.
+• 백악관 군사 복합체 프로젝트가 성공적으로 완료된다면, 이는 미국의 국가 안전 보장에 긍정적인 영향을 미칠 것으로 예상된다.
+• 트럼프의 주장에 따라, 미국 농민들에게 부과되는 tariffs 문제에 대한 논의가 다시 일어날 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
