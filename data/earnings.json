@@ -1126,8 +1126,8 @@
    "prev": {
     "period": "26.03",
     "eps_act": "$-0.16",
-    "eps_est": "$-0.34",
-    "surprise": "+52.91%",
+    "eps_est": "$-0.26",
+    "surprise": "+38.42%",
     "surprise_pos": true
    },
    "surprises": [
@@ -1147,8 +1147,8 @@
      "pos": true
     },
     {
-     "fmt": "+52.91%",
-     "v": 52.91,
+     "fmt": "+38.42%",
+     "v": 38.42,
      "pos": true
     }
    ],
@@ -1205,8 +1205,8 @@
      "label": "2026 1Q",
      "reported": true,
      "eps_act": "$-0.16",
-     "eps_est": "$-0.34",
-     "surprise": "+52.91%",
+     "eps_est": "$-0.26",
+     "surprise": "+38.42%",
      "surprise_pos": true
     },
     {
