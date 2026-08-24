@@ -38,9 +38,9 @@
    "cur": {
     "period": "26.07",
     "eps": "$2.09",
-    "eps_range": "$2.05~$2.20",
-    "rev": "$92.07B",
-    "growth": "+98.92%",
+    "eps_range": "$2.05~$2.23",
+    "rev": "$92.18B",
+    "growth": "+99.20%",
     "growth_pos": true
    },
    "rev": {
@@ -49,10 +49,10 @@
    },
    "next": {
     "period": "26.10",
-    "eps": "$2.36",
+    "eps": "$2.37",
     "eps_range": "$2.13~$2.59",
-    "rev": "$103.75B",
-    "growth": "+81.79%",
+    "rev": "$103.9B",
+    "growth": "+82.07%",
     "growth_pos": true
    },
    "quarters": [
@@ -97,22 +97,22 @@
      "label": "2026 3Q",
      "reported": false,
      "eps_est": "$2.09",
-     "rev": "$92.07B",
+     "rev": "$92.18B",
      "date": "2026-08-27"
     },
     {
      "cq": "2026-4",
      "label": "2026 4Q",
      "reported": false,
-     "eps_est": "$2.36",
-     "rev": "$103.75B"
+     "eps_est": "$2.37",
+     "rev": "$103.9B"
     }
    ],
    "target": {
-    "price": "$214.72",
+    "price": "$208.48",
     "mean": "$304.73",
     "range": "$180~$500",
-    "upside": "+42%",
+    "upside": "+46%",
     "upside_pos": true
    },
    "rec": {
@@ -165,7 +165,7 @@
     "eps": "$4.72",
     "eps_range": "$4.43~$4.83",
     "rev": "$90.67B",
-    "growth": "+14.31%",
+    "growth": "+14.40%",
     "growth_pos": true
    },
    "rev": {
@@ -177,7 +177,7 @@
     "eps": "$4.83",
     "eps_range": "$4.72~$5.02",
     "rev": "$95.53B",
-    "growth": "+16.56%",
+    "growth": "+16.64%",
     "growth_pos": true
    },
    "quarters": [
@@ -234,10 +234,10 @@
     }
    ],
    "target": {
-    "price": "$483.24",
+    "price": "$487.31",
     "mean": "$569.45",
     "range": "$400~$870",
-    "upside": "+18%",
+    "upside": "+17%",
     "upside_pos": true
    },
    "rec": {
@@ -359,7 +359,7 @@
     }
    ],
    "target": {
-    "price": "$309.35",
+    "price": "$310.34",
     "mean": "$324.45",
     "range": "$215~$400",
     "upside": "+5%",
@@ -484,10 +484,10 @@
     }
    ],
    "target": {
-    "price": "$344.82",
+    "price": "$348.06",
     "mean": "$428.07",
     "range": "$340~$515",
-    "upside": "+24%",
+    "upside": "+23%",
     "upside_pos": true
    },
    "rec": {
@@ -609,10 +609,10 @@
     }
    ],
    "target": {
-    "price": "$258.63",
+    "price": "$262.07",
     "mean": "$327.00",
     "range": "$230~$405",
-    "upside": "+26%",
+    "upside": "+25%",
     "upside_pos": true
    },
    "rec": {
@@ -734,10 +734,10 @@
     }
    ],
    "target": {
-    "price": "$549.90",
+    "price": "$559.02",
     "mean": "$754.14",
     "range": "$580~$1,000",
-    "upside": "+37%",
+    "upside": "+35%",
     "upside_pos": true
    },
    "rec": {
@@ -859,10 +859,10 @@
     }
    ],
    "target": {
-    "price": "$362.86",
+    "price": "$348.95",
     "mean": "$390.09",
     "range": "$125~$600",
-    "upside": "+8%",
+    "upside": "+12%",
     "upside_pos": true
    },
    "rec": {
@@ -976,10 +976,10 @@
     }
    ],
    "target": {
-    "price": "$33.78",
+    "price": "$31.08",
     "mean": "$30.85",
     "range": "$23~$42",
-    "upside": "-9%",
+    "upside": "-1%",
     "upside_pos": false
    },
    "rec": {
@@ -1101,10 +1101,10 @@
     }
    ],
    "target": {
-    "price": "$12.02",
+    "price": "$11.38",
     "mean": "$14.56",
     "range": "$7~$20",
-    "upside": "+21%",
+    "upside": "+28%",
     "upside_pos": true
    },
    "rec": {
@@ -1226,10 +1226,10 @@
     }
    ],
    "target": {
-    "price": "$41.88",
+    "price": "$39.81",
     "mean": "$80.19",
     "range": "$41~$131",
-    "upside": "+91%",
+    "upside": "+101%",
     "upside_pos": true
    },
    "rec": {
@@ -1351,10 +1351,10 @@
     }
    ],
    "target": {
-    "price": "$179.94",
+    "price": "$175.89",
     "mean": "$191.68",
     "range": "$80~$255",
-    "upside": "+7%",
+    "upside": "+9%",
     "upside_pos": true
    },
    "rec": {
@@ -1454,10 +1454,10 @@
     }
    ],
    "target": {
-    "price": "$72.57",
+    "price": "$68.28",
     "mean": "$112.94",
     "range": "$64~$150",
-    "upside": "+56%",
+    "upside": "+65%",
     "upside_pos": true
    },
    "rec": {
