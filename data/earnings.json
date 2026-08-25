@@ -924,9 +924,9 @@
    },
    "next": {
     "period": "26.12",
-    "eps": "$0.15",
-    "eps_range": "$0.07~$0.31",
-    "rev": "$956.1M",
+    "eps": "$0.14",
+    "eps_range": "$0.05~$0.31",
+    "rev": "$952.22M",
     "growth": "+53.31%",
     "growth_pos": true
    },
@@ -971,16 +971,16 @@
      "cq": "2026-4",
      "label": "2026 4Q",
      "reported": false,
-     "eps_est": "$0.15",
-     "rev": "$956.1M"
+     "eps_est": "$0.14",
+     "rev": "$952.22M"
     }
    ],
    "target": {
     "price": "$31.08",
-    "mean": "$30.85",
+    "mean": "$31.23",
     "range": "$23~$42",
-    "upside": "-1%",
-    "upside_pos": false
+    "upside": "+0%",
+    "upside_pos": true
    },
    "rec": {
     "label": "보유",
