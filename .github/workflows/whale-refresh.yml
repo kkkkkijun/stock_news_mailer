@@ -3,7 +3,7 @@ name: Whale Refresh (Hyperliquid)
 on:
   schedule:
     # 30분마다 고래 포지션 스냅샷 (KST 무관, UTC 기준 매 30분)
-    - cron: '*/30 * * * *'
+    - cron: '45 * * * *'
   workflow_dispatch:
 
 concurrency:

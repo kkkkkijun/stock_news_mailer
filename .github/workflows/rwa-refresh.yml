@@ -3,7 +3,7 @@ name: RWA Map Refresh (Ostium)
 on:
   schedule:
     # 30분마다 온체인 RWA 포지션 스냅샷
-    - cron: '15,45 * * * *'
+    - cron: '15 * * * *'
   workflow_dispatch:
 
 concurrency:
