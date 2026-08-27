@@ -1,13 +1,12 @@
-name: RWA Map Refresh (Ostium)
+name: Map Refresh (Ostium + Hyperliquid)
 
 on:
   schedule:
-    # 30분마다 온체인 RWA 포지션 스냅샷
-    - cron: '15 * * * *'
+    - cron: '20 * * * *'
   workflow_dispatch:
 
 concurrency:
-  group: rwa-refresh
+  group: map-refresh
   cancel-in-progress: false
 
 permissions:
@@ -24,13 +23,15 @@ jobs:
           python-version: '3.x'
       - name: Install deps
         run: pip install requests
-      - name: Snapshot RWA map
-        run: python rwa.py refresh
+      - name: Snapshot RWA + whales
+        run: |
+          python rwa.py refresh
+          python whales.py refresh
       - name: Commit
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/rwamap.json
-          git diff --staged --quiet || git commit -m "rwa: 지도 스냅샷 [skip ci]"
+          git add docs/rwamap.json docs/whales.json data/whale_list.json
+          git diff --staged --quiet || git commit -m "map: 지도 스냅샷 [skip ci]"
           git pull --rebase --autostash origin main || true
           git push
