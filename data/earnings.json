@@ -2,8 +2,8 @@
  {
   "ticker": "NVDA",
   "name": "엔비디아",
-  "date": "2026-08-27",
-  "ts": 1787774400,
+  "date": "2026-11-18",
+  "ts": 1794945600,
   "est": false,
   "detail": {
    "prev": {
@@ -98,7 +98,7 @@
      "reported": false,
      "eps_est": "$2.34",
      "rev": "$104.43B",
-     "date": "2026-08-27"
+     "date": "2026-11-18"
     },
     {
      "cq": "2027-1",
@@ -109,10 +109,10 @@
     }
    ],
    "target": {
-    "price": "$209.66",
+    "price": "$224.03",
     "mean": "$305.79",
     "range": "$180~$500",
-    "upside": "+46%",
+    "upside": "+36%",
     "upside_pos": true
    },
    "rec": {
@@ -234,10 +234,10 @@
     }
    ],
    "target": {
-    "price": "$496.37",
+    "price": "$498.39",
     "mean": "$569.45",
     "range": "$400~$870",
-    "upside": "+15%",
+    "upside": "+14%",
     "upside_pos": true
    },
    "rec": {
@@ -359,7 +359,7 @@
     }
    ],
    "target": {
-    "price": "$313.45",
+    "price": "$311.77",
     "mean": "$324.45",
     "range": "$215~$400",
     "upside": "+4%",
@@ -484,10 +484,10 @@
     }
    ],
    "target": {
-    "price": "$342.00",
+    "price": "$340.80",
     "mean": "$428.07",
     "range": "$340~$515",
-    "upside": "+25%",
+    "upside": "+26%",
     "upside_pos": true
    },
    "rec": {
@@ -609,10 +609,10 @@
     }
    ],
    "target": {
-    "price": "$260.28",
+    "price": "$257.32",
     "mean": "$327.00",
     "range": "$230~$405",
-    "upside": "+26%",
+    "upside": "+27%",
     "upside_pos": true
    },
    "rec": {
@@ -734,10 +734,10 @@
     }
    ],
    "target": {
-    "price": "$576.14",
+    "price": "$579.53",
     "mean": "$754.72",
     "range": "$580~$1,000",
-    "upside": "+31%",
+    "upside": "+30%",
     "upside_pos": true
    },
    "rec": {
@@ -859,10 +859,10 @@
     }
    ],
    "target": {
-    "price": "$345.82",
+    "price": "$350.35",
     "mean": "$390.09",
     "range": "$125~$600",
-    "upside": "+13%",
+    "upside": "+11%",
     "upside_pos": true
    },
    "rec": {
@@ -976,10 +976,10 @@
     }
    ],
    "target": {
-    "price": "$29.83",
+    "price": "$30.49",
     "mean": "$31.23",
     "range": "$23~$42",
-    "upside": "+5%",
+    "upside": "+2%",
     "upside_pos": true
    },
    "rec": {
@@ -1101,10 +1101,10 @@
     }
    ],
    "target": {
-    "price": "$11.27",
+    "price": "$11.24",
     "mean": "$14.56",
     "range": "$7~$20",
-    "upside": "+29%",
+    "upside": "+30%",
     "upside_pos": true
    },
    "rec": {
@@ -1226,10 +1226,10 @@
     }
    ],
    "target": {
-    "price": "$39.58",
+    "price": "$41.15",
     "mean": "$80.19",
     "range": "$41~$131",
-    "upside": "+103%",
+    "upside": "+95%",
     "upside_pos": true
    },
    "rec": {
@@ -1351,10 +1351,10 @@
     }
    ],
    "target": {
-    "price": "$177.50",
+    "price": "$184.13",
     "mean": "$191.68",
     "range": "$80~$255",
-    "upside": "+8%",
+    "upside": "+4%",
     "upside_pos": true
    },
    "rec": {
@@ -1454,7 +1454,7 @@
     }
    ],
    "target": {
-    "price": "$66.18",
+    "price": "$66.23",
     "mean": "$112.94",
     "range": "$64~$150",
     "upside": "+71%",
