@@ -1,0 +1,224 @@
+2026-08-28T14:12:50.821236+09:00
+
+[오늘의 뉴스 요약] 2026-08-28 14:11 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국은행의 기준금리 인상에 따라 단기예금이 급증하고 있으며, 이에 따라 주택담보대출 금리도 추가 상승할 것으로 예상되는 상황입니다. 전반적으로 금리 상승에 대한 우려가 커지고 있습니다.
+
+[핵심 뉴스]
+1. (금리) 단기예금 증가, 3년7개월 만의 최대치
+   → 한국은행의 기준금리 인상이 이어지면서, 6월 말 기준 6개월 미만 단기 예금 잔액이 한 달 만에 20조 9천억 원 증가해 3년 7개월 만에 최대 증가폭을 기록했습니다. 반면 장기 정기예금은 4천 8백억 원이 감소했습니다.
+   (매일경제 · 08/28 13:24)
+2. (금리) 국고채 금리 상승세 지속
+   → 국고채 금리가 일제히 상승하여 10년물 금리는 4.298%로 6.0bp 상승한 상태이며, 5년물과 2년물도 각각 4.022%, 3.668%로 상승했습니다.
+   (연합뉴스 · 08/28 11:40)
+3. (금리) 주택담보대출 금리 추가 인상 예상
+   → 변동형 주택담보대출 금리가 오는 9월과 10월 두 차례 추가로 상승할 것으로 예상되며, 현재 금리는 연 4.20~6.55%입니다. 코픽스 상승과 한국은행의 기준금리 인상이 주요 원인입니다.
+   (매일경제 · 08/28 10:09)
+4. (환율) 환율 급락에 외화예금 사상 최대 기록
+   → 원/달러 환율이 급락하자 외화예금이 사상 첫 1200억 달러를 돌파하며 대규모 달러 매입이 이루어졌다.
+   (금융소비자뉴스 · 08/28 14:06)
+5. (환율) 환율 하락으로 인해 달러예금 급증
+   → 원/달러 환율이 125원가량 떨어지자 많은 투자자들이 달러를 사들이며 달러예금의 증가폭이 역대 최대치를 기록했다.
+   (키즈맘 · 08/28 12:11)
+
+[흐름·전망]
+• 단기 예금 쏠림 현상은 한국은행의 금리 인상 기조와 함께 지속될 것으로 보이며, 시장의 예측과 상관없이 인플레이션 압박이 금리 인상에 영향을 미칠 수 있습니다.
+• 국고채 금리 상승세가 지속된다면, 정부나 기업의 자금 조달 조건이 악화될 우려가 있으며, 이는 기업 투자 및 소비에 부정적인 영향을 미칠 수 있습니다.
+• 변동형 주택담보대출 금리의 추가 인상이 '영끌족'의 경제적 부담을 가중시킬 것으로 전망되며, 이로 인해 주택시장에 대한 우려가 커질 가능성이 높습니다.
+
+📈 해외주식 PART
+📰 [NVDA] Dow Jones Futures Rise With Fed Chief Warsh Due; Nvidia, These 7 Stocks Are In Buy Zones
+   (Yahoo Finance · 08/28 13:57)
+→ 다우 존스 선물은 상승세를 보였고, 연준 의장 케빈 워시의 중요 연설이 예정되어 있습니다. 엔비디아는 실적 발표 후 상승했지만, 다른 주식들은 동반 상승하지 않았습니다. 한편, 여러 소프트웨어 주식들은 실적 발표를 통해 매수 신호를 나타냈습니다.
+
+📰 [NVDA] Amkor, FormFactor, Vishay Intertechnology, Allegro MicroSystems, and Intel Shares Skyrocket, What You Need To Know
+   (Yahoo Finance · 08/28 13:09)
+→ 엔비디아의 예상치를 크게 웃도는 분기 실적과 긍정적인 매출 전망이 발표되자, 반도체 업계의 여러 주식이 급등했다. 암코르, 포름팩터, 비샤이 인터테크놀로지, 알레그로 마이크로시스템즈, 인텔 등 여러 기업의 주가가 상승하며 인공지능 인프라 지출 둔화에 대한 투자자들의 우려가 해소됐다.
+
+📰 [NVDA] Asian shares mostly gain after upbeat results for Nvidia and others lift US stocks
+   (Yahoo Finance · 08/28 13:04)
+→ 아시아 주식시장이 금요일에 대부분 상승세를 보였으며, 이는 엔비디아와 다른 기술주들이 월스트리트에서 긍정적인 성과를 이끌어낸 영향이다. 도쿄의 닛케이 225 지수는 0.8% 상승한 66,682.88을 기록했고, 홍콩의 항셍지수는 0.3% 상승하여 25,648.40에 도달했다.
+
+📰 [TSLA] Tesla FSD V14 Lite for AU/NZ HW3 Owners: 5 Details That Matter - BASENOR - Tesla Accessories
+   (BASENOR - Tesla Accessories · 08/28 14:04)
+→ 테슬라의 FSD V14 Lite가 호주와 뉴질랜드의 HW3 소유자를 위해 출시되었습니다. 이 업데이트에는 중요한 5가지 요소가 포함되어 있으며, 사용자의 주행 경험을 향상시키는 다양한 기능이 추가되었습니다.
+
+📰 [TSLA] Dutch company MyWheels adds Tesla full self-driving software to shared fleet - NL Times
+   (NL Times · 08/28 14:00)
+→ 네덜란드의 MyWheels가 자율주행 소프트웨어인 테슬라 풀 셀프 드라이빙(FSD)을 공유 차량 서비스에 추가했다. 이를 통해 사용자들은 보다 진보된 자율주행 기능을 경험할 수 있게 된다.
+
+📰 [TSLA] Tesla driver killed as hydroplane crash sends Kia occupants to Macon hospital - WGXA
+   (WGXA · 08/28 13:22)
+→ 테슬라 차량 운전자가 수륙 양용차와의 충돌 사고로 사망했으며, 사고 연루된 기아 차량 탑승자들은 메이컨 병원으로 이송되었습니다.
+
+📰 [HIMS] Kaplan Fox is Investigating Potential Securities Law Violations Against Hims & Hers Health, Inc. (NYSE: HIMS) - The National Law Review
+   (The National Law Review · 08/28 10:04)
+→ Kaplan Fox가 Hims & Hers Health, Inc. (NYSE: HIMS)에 대한 잠재적인 증권법 위반을 조사하고 있습니다. 이 조사는 회사의 법적 문제와 관련된 사안을 들여다보는 과정입니다.
+
+📰 [HIMS] INVESTOR ALERT: Pomerantz Law Firm Investigates Claims On Behalf of Investors of Hims & Hers Health, Inc. - HIMS - PR Newswire
+   (PR Newswire · 08/28 05:37)
+→ Pomerantz 로펌이 Hims & Hers Health, Inc.의 투자자들을 대신하여 소송 가능성을 조사하고 있다는 소식입니다. 이 조사는 해당 회사에 대한 투자자들의 주장에 기초하고 있습니다.
+
+📰 [HIMS] Hims & Hers nears 3M subscribers as U.S. growth picks up and international sales hit $131M. - Pluang
+   (Pluang · 08/28 03:47)
+→ Hims & Hers는 미국에서의 성장세가 가속화되면서 구독자 수가 300만 명에 가까워졌으며, 해외 매출은 1억 3,100만 달러에 달했습니다.
+
+📰 [RDW] ASTS, RKLB, RDW, LUNR Slip Overnight: SpaceX IPO Hype Loses Orbit After Valuation Target Reportedly Falls Below $2 Trillion - Stocktwits
+   (Stocktwits · 08/28 09:32)
+→ ASTS, RKLB, RDW, LUNR 주식이 야간 동안 하락했으며, SpaceX의 IPO 기대감이 감소했습니다. 이는 SpaceX의 기업 가치 목표가 2조 달러 아래로 떨어진 것으로 보도되면서 영향을 받은 것으로 분석됩니다.
+
+📰 [RDW] ASTS, LUNR, RDW Stocks Hit 52-Week Highs Today: What's Driving The Rally? - Stocktwits
+   (Stocktwits · 08/28 08:41)
+→ ASTS, LUNR, RDW 주식이 오늘 52주 최고치를 기록했다. 이 상승세의 배경에는 긍정적인 시장 반응과 투자자들의 관심이 크게 작용하고 있다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW Stocks Slide Overnight: Analyst Questions Whether Rivals Can Compete If SpaceX Controls Access To Orbit - Stocktwits
+   (Stocktwits · 08/28 06:43)
+→ ASTS, RKLB, LUNR, RDW 주식이 하락한 가운데, 한 애널리스트는 SpaceX가 궤도로 가는 접근을 통제할 경우 경쟁사들이 견딜 수 있을지에 대한 의문을 제기했습니다. 이러한 상황은 우주 산업의 경쟁 구도에 영향을 미치고 있습니다.
+
+📰 [IREN] Nasdaq Futures Sink While S&P 500, Dow Futures Gain Ahead Of Fed Chief Warsh’s Jackson Hole Speech: PYPL, MRVL, IREN, AFRM Stocks In Focus
+   (Yahoo Finance · 08/28 13:08)
+→ 나스닥 선물은 하락한 반면, S&P 500과 다우 선물은 상승하고 있습니다. 이는 Kevin Warsh가 금요일에 와이오밍 주 잭슨 홀에서 열리는 연방준비제도 연례 심포지엄에서 연설할 예정이라는 소식에 따른 것입니다.
+
+📰 [IREN] Data center firm IREN signs new deal with frontier AI lab; quarterly loss hits shares - The Economic Times
+   (The Economic Times · 08/28 12:39)
+→ 데이터 센터 회사 IREN이 최첨단 AI 연구소와 새로운 계약을 체결했지만, 분기 손실로 인해 주가에 타격을 입었습니다. 이 계약은 회사의 비즈니스 확장을 도모하려는 움직임으로 보입니다.
+
+📰 [IREN] Why Is IREN Stock Sliding 8% In Overnight Trading? - Stocktwits
+   (Stocktwits · 08/28 12:24)
+→ IREN 주식이 지난밤 거래에서 8% 하락한 이유는 명확하지 않지만, 일부 투자자들이 시장 반응에 영향을 미칠 수 있는 요소들에 대해 우려하고 있다는 분석이 나오고 있습니다. 이러한 하락은 투자자들 사이에서 불안감을 조성하고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin news: BTC's 'Coinbase premium' flips positive as prices hover near $80,000 - CoinDesk
+   (CoinDesk · 08/28 14:02)
+→ 비트코인의 가격이 80,000달러 근처에서 거래되면서 '코인베이스 프리미엄'이 긍정적으로 전환되었습니다. 이는 거래소 간 가격 차이가 본격적으로 확대되고 있음을 나타냅니다.
+
+📰 [BTC-USD] Bitcoin ETFs Extend Inflow Streak to 9 Days With $242M Added
+   (Yahoo Finance · 08/28 14:01)
+→ 비트코인 ETF가 8월 27일에 2억 4천2백만 달러의 자금을 추가하며 9일 연속 자금 유입을 기록했습니다. 이러한 흐름은 비트코인 투자에 대한 관심이 계속 높아지고 있음을 보여줍니다.
+
+📰 [BTC-USD] BTC, SOL price: Bitcoin holds $80,000, solana above $100 ahead of Jackson Hole - CoinDesk
+   (CoinDesk · 08/28 13:40)
+→ 비트코인(BTC)은 80,000달러를 유지하고 있으며, 솔라나(SOL)는 100달러 이상으로 거래되고 있습니다. 이는 잭슨 홀 회의에 앞둔 상황입니다.
+
+📰 [ETH-USD] Ethereum Price Outperforming Bitcoin as ETH/BTC Chart Prints Bullish Signal - CryptoRank
+   (CryptoRank · 08/28 13:35)
+→ 이더리움 가격이 비트코인보다 성과를 내고 있으며, ETH/BTC 차트에서 긍정적인 신호가 나타났습니다. 이러한 추세는 이더리움의 상승 가능성을 시사하고 있습니다.
+
+📰 [ETH-USD] Ethereum spot ETFs saw a total net inflow of $235 million yesterday, marking 9 consecutive days of net inflows - odaily.news
+   (odaily.news · 08/28 13:26)
+→ 어제 이더리움 현물 ETF는 총 2억 3천 5백만 달러의 순유입을 기록하며 9일 연속 순유입을 이어갔습니다.
+
+📰 [ETH-USD] Ethereum (ETHUSD) Volatility Intensified on Aug 28: What You Should Know - TradingKey
+   (TradingKey · 08/28 13:10)
+→ 2023년 8월 28일, 이더리움(ETHUSD)의 변동성이 크게 증가했습니다. 이는 투자자들에게 주목할 만한 요소로, 시장의 불확실성과 가격 변동성이 커진 것을 나타냅니다. 투자자들은 이에 따른 위험 관리에 주의해야 합니다.
+
+📰 [SOL-USD] BTC, SOL price: Bitcoin holds $80,000, solana above $100 ahead of Jackson Hole - CoinDesk
+   (CoinDesk · 08/28 13:40)
+→ 비트코인(BTC) 가격이 80,000달러를 유지하고 있으며, 솔라나(SOL) 가격은 100달러 이상을 기록하고 있습니다. 이는 잭슨 홀 회의를 앞둔 상황에서 나타난 변화입니다.
+
+📰 [SOL-USD] Solana's fee reform proposal splits opinion; Ch... - Pluang
+   (Pluang · 08/28 12:55)
+→ Solana의 수수료 개혁 제안이 찬반으로 분열된 의견을 사고하고 있습니다. 이 제안은 플랫폼 사용자와 개발자들 사이에서 논란이 되고 있으며, 그로 인해 Solana 생태계의 미래에 대한 다양한 전망이 제시되고 있습니다.
+
+📰 [SOL-USD] Ethereum and Solana are hosting trillions in dollar volume, yet their native tokens risk losing direct consumer demand - CryptoSlate
+   (CryptoSlate · 08/28 12:20)
+→ 이더리움과 솔라나는 수조 달러 규모의 거래량을 처리하고 있지만, 이들의 고유 토큰은 소비자 수요 감소에 직면할 위험이 있다는 내용의 기사입니다. 이는 암호화폐 시장의 변동성과 관련된 우려를 반영하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 미국 이더리움 현물 ETF는 9거래일 연속으로 순유입을 기록하며 긍정적인 흐름이 지속되고 있다. 비트코인은 기관 거래량이 증가하는 가운데도 현물 프리미엄이 감소하며 시장의 신중한 접근을 보여준다.
+
+[핵심 뉴스]
+1. (ETF) 비트코인 ETF 3340억원 순유입, 9일째 이어졌다
+   → 미국 이더리움 현물 ETF는 9거래일 동안 매일 평균 2억3451만 달러의 순유입을 기록하며 누적 순유입 규모가 128억7233만 달러에 달했다.
+   (토큰포스트 · 08/28 14:01)
+2. (ETF) 블랙록 ETHA 홀로 1억3022만 달러 유치
+   → 비트코인의 서사에 대해 제프리 지를린은 일본의 경제적 문제를 언급하며, 법정화폐와 부채 시스템의 불신이 비트코인 창출의 중요한 배경임을 강조했다.
+   (토큰포스트 · 08/28 13:48)
+3. (거래소) 글로벌 유동성 레이더, 거래소 3535 BTC 순유출
+   → Krypto 시장에서는 SPX가 최근 거래소에서 3535 BTC 순유출을 기록하였으며, 24시간 내 SPX 거래대금은 31억1800만원에 달한다.
+   (토큰포스트 · 08/28 13:42)
+4. (시세) 비트코인은 지금 8만 달러선 근접
+   → 28일 기준 비트코인에 대한 기관 전용 거래량은 9661.71 BTC로 전일 대비 48.2% 증가했으나, 프리미엄은 낮아져 시장의 매수 우위가 약화된 상태이다.
+   (토큰포스트 · 08/28 13:41)
+5. (온체인) 999 BTC, 코인베이스서 외부 지갑으로 이동
+   → 트레이더 앤셈은 현재 밈코인을 2017년 알트코인과 같은 본질로 보고, 투자자의 관심이 가격 형성에 중요한 역할을 한다고 주장했다.
+   (토큰포스트 · 08/28 13:38)
+
+[흐름·전망]
+• 미국 이더리움 현물 ETF의 지속적인 순유입은 투자자들의 신뢰를 나타내며, 향후 ETF 관련 뉴스에 주목할 필요가 있다.
+• 일본 금융시장의 상황은 비트코인과 법정화폐 간의 연관성을 부각시키고 있으며, 이를 기반으로 한 BTC의 장기적 흐름을 관찰해야 한다.
+• SPX와 같은 새로운 자산에 대한 활발한 거래는 시장의 투기적 성향을 드러내지만, 거래소별로 수치 차이가 있으므로 이를 유의해야 한다.
+• 기관 거래량 증가와 현물 프리미엄 감소는 서로 상충된 흐름으로, 향후 시장의 심리 변화와 거래 패턴에 주목할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 58 (Greed)
+  - 크립토 기준: 73 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 금융위원회와 국토교통부의 정책 추진 속도가 빨라지면서 공급 확대 기대감이 커지고 있으나, 입주 물량은 낮아져 전반적인 분위기는 혼조세를 보이고 있다.
+
+[핵심 뉴스]
+1. (정책) 금융위·국토부 주택공급대책 '속도'
+   → 금융위원회와 국토교통부는 23만가구 이상의 신규 주택 공급을 목표로 금융업계와 건설업계와의 협조를 요청했다. 다음 달부터 프로젝트파이낸싱과 건설사 금융애로 해소센터가 본격 운영된다.
+   (연합뉴스 · 08/28 10:00)
+2. (공급) 9월 전국 입주 예정 아파트 1만4천여가구…6년여 만에 최저
+   → 전국의 새 아파트 입주 예정 물량은 1만4천174가구로, 6년 5개월 만에 최저치를 기록할 전망이다. 수도권에서는 입주 물량이 작년 동월 대비 23% 증가했지만, 8월 대비 24% 감소해 전월세 시장에 압박이 예상된다.
+   (연합뉴스 · 08/28 09:56)
+3. (매매) 서울 상속등기 감소에도 강남·송파는 ‘역주행’
+   → 2026년 7월 서울의 상속등기 신청 건수는 감소세를 보였음에도 불구하고, 강남과 송파는 증가세를 보이며 지역별 차별화된 흐름을 나타내고 있다.
+   (매일경제 · 08/28 09:32)
+4. (기타) 더 뜨거워진 노도강·셔세권 집값 … 강남은 찬바람
+   → 서울 아파트값은 최근 0.29% 상승했으나, 고가주택이 많은 강남·서초는 3주째 하락세를 보이고 있다. 외곽 지역이 상승세를 이끌며 중저가 아파트에 대한 수요가 여전하다.
+   (매일경제 · 08/27 18:01)
+5. (전세) 기준금리 3% 시대…중저가 실수요 직격
+   → 기준금리가 3%로 유지되면서 중저가 주택에 대한 실수요에 부정적인 영향을 미치고 있으며, 전세의 월세화 현상도 가속화되고 있다.
+   (MTN 머니투데이방송 · 08/28 13:54)
+6. (매매) 8월 넷째 주 서울 집값 0.16% 올라…전셋값도 강제 지속
+   → 서울의 집값이 0.16% 상승했으며 전셋값도 계속해서 강세를 보이고 있다고 전해진다.
+   (뉴스1 · 08/28 13:39)
+
+[흐름·전망]
+• 정부의 23만가구 추가 공급 약속이 실제 이행되는지 여부가 향후 시장에 큰 영향을 미칠 전망이다.
+• 입주 물량 감소가 임대차 시장의 가격 변동성을 높일 것으로 보이며, 특히 수도권과 지방의 전월세 가격에 미치는 영향을 주목해야 할 것이다.
+• 강남·서초의 하락과 외곽 지역의 상승세 전환이 시장 전반에 어떤 여파를 미칠지 분석해야 한다.
+• 상속과 증여를 통한 자산 이전 방식의 변화가 부동산 거래에 미치는 영향에 대한 지속적인 모니터링이 필요하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 여러 주제를 다루며 현재 미국의 실적과 정책을 긍정적으로 평가하고, 특정 기업의 성장을 강조했다. 또한, 이란과 관련된 비판적인 언급도 있었다.
+
+[주요 발언]
+1. (경제) Nvidia가 962억 달러의 기록적인 매출을 발표하며 2028년에는 70%의 매출 증가를 예고했다. 트럼프는 이 성과를 미국에서만 가능하다고 언급했다.
+   (Truth Social · 08/28 07:34)
+2. (경제) Micron이 미국 내 새로운 연구실에 100억 달러를 투자한다고 발표했다. 이는 AI 및 첨단 컴퓨팅 분야에서 미국의 기술적 우위를 강화할 것이라고 트럼프가 강조했다.
+   (Truth Social · 08/28 07:31)
+3. (사법) 트럼프는 이란이 실패한 국가라고 주장하며, 그들과의 협상이 이란 쪽에서 필요하다는 점을 지적했다. 그는 이란을 비판하며 그들에게 협상을 요구하는 발언을 했다.
+   (Truth Social · 08/28 07:19)
+4. (인사) 트럼프는 벤 모스가 백악관 보좌관 및 비서관으로 임명될 것이라고 발표하며 그의 경력과 성과를 강조했다.
+   (Truth Social · 08/28 06:52)
+5. (기타) 트럼프는 사우스다코타 주지사 래리 리드렌의 업적을 칭찬하며 그의 경제 성장 및 농업 지원 노력을 지지했다.
+   (Truth Social · 08/28 06:51)
+6. (기타) 트럼프는 그레그 자렛이 한 방송에서 훌륭한 역할을 했다고 언급하며 긍정적인 보도를 한 프로그램을 지지했다.
+   (Truth Social · 08/28 06:30)
+
+[시장·경제 관련]
+• Nvidia와 Micron의 투자 발표는 미국 경제의 기술 산업 강화를 의미하며, 향후 고용 창출이 기대될 수 있다.
+
+[흐름·전망]
+• 트럼프의 발언은 미국 기술 기업의 투자 확대가 지속될 가능성을 시사한다.
+• 이란과의 외교적 접촉이 어떻게 진행될지 주목할 필요가 있다.
+• 트럼프의 인사 발표는 향후 백악관의 정책 방향에 영향을 미칠 수 있다.
+• 경제 성장과 관련된 기업들의 신규 투자 및 성과에 대한 관찰이 중요할 것으로 보인다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
