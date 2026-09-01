@@ -5,6 +5,8 @@ on:
     - cron: '5 21 * * *'
     - cron: '13 7 * * *'
   workflow_dispatch:
+  repository_dispatch:
+    types: [news-briefing]
 
 concurrency:
   group: daily-briefing
