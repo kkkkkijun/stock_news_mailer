@@ -1,0 +1,225 @@
+2026-09-03T17:02:41.381687+09:00
+
+[오늘의 뉴스 요약] 2026-09-03 17:01 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국고채 금리가 일제히 하락하며 채권시장에서 긍정적인 분위기가 형성되고 있다. 외국인 국채선물 순매수 전환과 원화 강세가 주요 요인으로 작용하였다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 하락…외국인 국채선물 순매수 전환 영향
+   → 3일 국고채 금리는 3년 만기 기준으로 4.2bp 하락해 연 3.888%로 마감하였고, 10년물은 연 4.367%로 5.1bp 감소했다.
+   (연합뉴스 · 09/03 16:53)
+2. (환율) 수출 달러 매도·엔화 강세…환율 1,350원대 '14개월만에 최저'
+   → 원/달러 환율은 3일 1,350원대로 하락하여 14개월 만에 최저 수준을 기록하였고, 수출업체의 달러 매도 물량이 지속적으로 공급되고 있다.
+   (연합뉴스 · 09/03 15:56)
+3. (물가) 소비자물가 다시 3%대…근원물가 3.4%에 기준금리 추가 인상론 '고개'
+   → 소비자물가가 다시 3%대를 기록하면서, 근원물가도 3.4%에 도달하여 중앙은행의 기준금리 추가 인상 가능성이 제기되고 있다.
+   (폴리뉴스 Polinews · 09/03 16:25)
+4. (고용) 경영계 '공장 신설 따른 배치전환, 노동쟁의 대상서 제외해야'
+   → 연천 구석기 축제가 2026 '올해의 브랜드' 대상에 선정되었으며, 젊은 층의 큰 호응을 얻었다.
+   (연합뉴스 · 09/03 15:54)
+5. (기타) 코스피, '급락후 급반등' 널뛰기에 6,500대 강보합 마감
+   → 코스피는 급락 후 반등하며 6,500대에서 강보합 마감하였고, 국고채 금리가 하락하면서 전체적인 채권 시장에 긍정적인 영향을 미쳤다.
+   (연합뉴스 · 09/03 16:50)
+
+[흐름·전망]
+• 단기적으로 외국인 국채선물의 순매수 여부가 국고채 금리에 미치는 영향을 주의 깊게 살펴볼 필요가 있다.
+• 환율 하락세가 지속되는 상황에서 수출 기업의 달러 매도가 어떻게 전개될지 관전 포인트가 될 것이다.
+• 연천 구석기 축제를 통한 지역 브랜드 가치 상승이 향후 관광 산업에 긍정적인 영향을 미칠 것으로 기대된다.
+• 코스피의 변동성이 계속 이어지는 가운데 주요 경제 지표 발표와 외부 요인의 영향에 대한 경계가 필요하다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA (NVDA) Dominates S&P 500 Market Cap Amid AI Boom - GuruFocus
+   (GuruFocus · 09/03 16:32)
+→ NVIDIA가 인공지능 AI 붐에 힘입어 S&P 500 지수에서 시장 가치를 선도하고 있습니다. 이 회사의 성장과 혁신이 주식 시장에서 큰 주목을 받고 있습니다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Shares Sold by Gallacher Capital Management LLC - MarketBeat
+   (MarketBeat · 09/03 16:32)
+→ Gallacher Capital Management LLC가 NVIDIA Corporation의 주식을 매도했다는 소식이 전해졌다. 이번 매도는 시장에서 NVIDIA 주식에 대한 관심을 불러일으킬 수 있는 소식으로 분석되고 있다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Position Raised by Boyd Wealth Management LLC - MarketBeat
+   (MarketBeat · 09/03 16:32)
+→ 보이드 웰스 매니지먼트 LLC가 NVIDIA의 주식 보유 비중을 증가시켰다는 소식이 전해졌다. 이로 인해 NVIDIA의 주가 상승에 긍정적인 영향을 미칠 것으로 예상된다.
+
+📰 [TSLA] Cannon Wealth Management Services LLC Makes New $1.51 Million Investment in Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/03 16:52)
+→ Cannon Wealth Management Services LLC가 테슬라(TSLA)에 151만 달러의 신규 투자를 진행했습니다.
+
+📰 [TSLA] Edmond DE Rothschild Holding S.A. Makes New $7.49 Million Investment in Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/03 16:52)
+→ Edmond DE Rothschild Holding S.A.가 테슬라(Tesla, Inc.)에 749만 달러를 새로 투자했습니다. 이 투자 소식은 최근 금융 시장에서 주목받고 있습니다.
+
+📰 [TSLA] Fischer Financial Services Inc. Purchases Shares of 2,722 Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/03 16:52)
+→ Fischer Financial Services Inc.는 테슬라(Tesla, Inc.)의 주식 2,722주를 구매했습니다.
+
+📰 [HIMS] Hims & Hers Investor Sues Over FTC Privacy, Billing Claims - Law360
+   (Law360 · 09/03 09:40)
+→ Hims & Hers의 투자자는 FTC의 개인정보 보호 및 청구 관련 주장에 대해 소송을 제기했습니다. 이 투자자는 회사가 고객의 개인정보를 적절히 보호하지 않았으며, 청구 과정에서 부당한 행위를 했다고 주장하고 있습니다.
+
+📰 [HIMS] Kaplan Fox Encourages Investors of Hims & Hers Health, Inc. (NYSE: HIMS) to Contact the Firm to Learn About Their Legal Rights - NewMediaWire
+   (NewMediaWire · 09/03 09:00)
+→ Kaplan Fox는 Hims & Hers Health, Inc. (NYSE: HIMS) 투자자들에게 법적 권리에 대해 알아보기를 권장하고 있습니다. 투자자들은 이와 관련된 정보를 얻기 위해 회사에 연락하라고 안내하고 있습니다.
+
+📰 [HIMS] HIMS INVESTOR ALERT: Hims & Hers Health, Inc. Investors with Substantial Losses Have Opportunity to Lead the Hims & Hers Class Action Lawsuit - PR Newswire
+   (PR Newswire · 09/03 08:40)
+→ Hims & Hers Health, Inc.의 투자자들은 상당한 손실이 있는 경우, 해당 기업에 대한 집단 소송을 이끌 기회를 갖게 되었다는 소식이다. 이 기회는 투자자들이 법적 조치를 통해 손실을 보상받기 위한 중요한 단계가 될 수 있다.
+
+📰 [RDW] Empowered Funds LLC Purchases New Stake in Redwire Corporation $RDW - MarketBeat
+   (MarketBeat · 09/02 17:03)
+→ Empowered Funds LLC가 레드와이어 코퍼레이션(Redwire Corporation, $RDW)의 새로운 지분을 매입했습니다. 이 거래는 시장에서 주목받고 있으며, 회사의 성장 잠재력에 대한 기대를 반영하고 있습니다.
+
+📰 [RDW] Redwire (RDW) Stock May Be 29% Undervalued Following Antenna Technology Investment
+   (Yahoo Finance · 09/02 02:07)
+→ Redwire 주식은 최근 3년 동안 약 222.3%의 강한 성과를 보였으나, 가치 평가에서는 상반된 신호를 나타내고 있다. 할인된 현금 흐름(DCF) 기준의 내재 가치는 주식이 29% 저평가되어 있을 수 있음을 시사하는 반면, 시장 배수는 이미 높은 평가를 받고 있음을 나타내고 있다. 최근의 우주 인프라 및 방위 통신 분야의 사업 움직임이 이러한 평가에 영향을 미치고 있다.
+
+📰 [RDW] Redwire (RDW) Backs Phased Array Antennas For Warfighter And Space Network Growth
+   (Yahoo Finance · 09/02 01:15)
+→ Redwire(RDW)는 전 세계 전투원의 통신 개선을 위한 차세대 위상 배열 안테나 기술에 대한 새로운 투자를 발표했다. 이 기술은 national security mission과 상업 우주 작업을 지원하기 위해 더 높은 용량의 위성 연결을 통해 사용될 예정이며, Redwire의 RF 시스템 전문성을 바탕으로 우주 기반 데이터 네트워크의 역할을 확대할 계획이다.
+
+📰 [IREN] IREN Shares Jump 7.6% With $3 Billion of Contracted AI ARR Yet to Go Live - ts2.tech
+   (ts2.tech · 09/03 13:14)
+→ IREN의 주가는 아직 실현되지 않은 30억 달러 규모의 인공지능(AI) 연간 반복 수익(ARR) 계약 소식에 힘입어 7.6% 상승했습니다. 이는 앞으로의 성장 가능성을 보여주는 긍정적인 신호로 해석됩니다.
+
+📰 [IREN] IREN's AI Cloud Revenue Just Jumped 687%
+   (Yahoo Finance · 09/03 06:01)
+→ IREN의 AI 클라우드 수익이 687% 급증했습니다. 시민들은 IREN의 AI 클라우드 사업이 빠르게 확장됨에 따라 비트코인 채굴의 중요성이 감소하고 있는 가운데, 목표 주가를 80달러로 유지하고 있습니다.
+
+📰 [IREN] Technical Analysis on One NASDAQ-Listed Application Software Stock - IREN - Kalkine
+   (Kalkine · 09/03 04:47)
+→ Kalkine의 기술 분석에 따르면, NASDAQ 상장된 애플리케이션 소프트웨어 주식인 IREN의 주가는 최근 변동성이 있으며, 투자자들에게 매수 또는 매도 신호를 주고 있습니다. 이 분석은 주가의 추세와 기술적 지표를 바탕으로 이루어졌습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] CFTC Moves to Kill CME Lawsuit Over Kalshi’s Bitcoin Perpetual Futures - Bitcoin Foundation
+   (Bitcoin Foundation · 09/03 16:59)
+→ CFTC(상품선물거래위원회)는 Kalshi의 비트코인 영구선물에 대한 CME(시카고상품거래소)의 소송을 기각하려고 하고 있습니다. 이 소송은 Kalshi의 비트코인 파생상품 거래에 대한 규제 문제와 관련이 있습니다.
+
+📰 [BTC-USD] Bitcoin's SOPR indicator breaks 11-month lull, hinting at a potential market cycle reversal. - Pluang
+   (Pluang · 09/03 16:57)
+→ 비트코인의 SOPR 지표가 11개월 간의 정체를 깨고 상승세를 보이며, 시장 주기의 전환 가능성을 암시하고 있습니다.
+
+📰 [BTC-USD] Bitcoin’s fabled golden cross is coming. And USDT may be the real signal this time - Cryptonews.net
+   (Cryptonews.net · 09/03 16:34)
+→ 비트코인의 전설적인 골든 크로스가 다가오고 있으며, 이번에는 USDT가 그 신호를 줄 수 있을 것이라는 분석이 제기되고 있습니다. 전문가들은 USDT의 움직임이 비트코인 가격에 중요한 지표가 될 것이라고 예상하고 있습니다.
+
+📰 [ETH-USD] Arthur Hayes Predicts Ethereum Price to Hit $10K, Massive ENA & ETHFI Rally - CoinGape
+   (CoinGape · 09/03 16:54)
+→ 아더 헤이즈는 이더리움 가격이 10,000달러에 이를 것이라고 예측하며, ENA와 ETHFI의 큰 상승세를 전망했습니다. 이는 암호화폐 시장의 긍정적인 신호로 해석됩니다.
+
+📰 [ETH-USD] Ethereum versus Solana: Which L1 captures more value? - Crypto News
+   (Crypto News · 09/03 16:23)
+→ 이더리움과 솔라나의 가치 비교에 관한 뉴스에서는 두 블록체인 플랫폼의 성능과 생태계의 가치 포착 능력을 분석하고 있습니다. 이더리움은 개발자와 프로젝트 수가 많아 지속적인 가치가 있지만, 솔라나는 빠른 거래 속도와 낮은 수수료로 매력을 갖추고 있습니다. 이러한 특성으로 두 플랫폼이 어떻게 서로 다른 가치를 창출하고 있는지를 논의합니다.
+
+📰 [ETH-USD] Ethereum Price Prediction: ETH Retests $2,400 as Remittix Offers an Earlier-Stage PayFi Growth Story - streetinsider.com
+   (streetinsider.com · 09/03 14:43)
+→ 이더리움(Ethereum) 가격이 다시 2,400달러를 시험하고 있으며, Remittix가 초기 단계의 PayFi 성장 이야기를 제공하고 있다는 내용이다. 이로 인해 이더리움의 시장 전망이 주목받고 있다.
+
+📰 [SOL-USD] Ethereum versus Solana: Which L1 captures more value? - Crypto News
+   (Crypto News · 09/03 16:23)
+→ 이더리움과 솔라나의 Layer 1 블록체인 간 가치 경쟁에 대한 논의가 이어지고 있다. 두 플랫폼은 각각의 강점과 약점을 지니며, 투자자들은 어느 쪽이 더 많은 가치를 창출할지에 대한 관심을 가지고 있다. 각 블록체인의 생태계와 지원하는 프로젝트들이 이를 결정짓는 중요한 요소로 작용하고 있다.
+
+📰 [SOL-USD] Top Altcoins Price Prediction: Ripple, Cardano, Solana – Bulls defend key support levels - Mitrade
+   (Mitrade · 09/03 14:53)
+→ 리플, 카르다노, 솔라나와 같은 주요 알트코인들이 중요한 지지 수준을 방어하고 있다는 예측이 제기됐다. 투자자들이 이들 코인의 가격을 지키기 위해 적극적으로 나서고 있는 상황이다.
+
+📰 [SOL-USD] BREAKING: Solana ranks #1 for app revenue in August with $143M. 38% of all onchain app revenue. - Moomoo
+   (Moomoo · 09/03 14:17)
+→ 솔라나가 8월 앱 수익에서 1위를 기록하며 1억 4천3백만 달러를 달성했습니다. 이는 전체 온체인 앱 수익의 38%에 해당합니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 G20의 디지털 자산 규제 공조 지지 소식에 따라 전체적인 관망 심리가 나타나며 혼조세를 보였다.
+
+[핵심 뉴스]
+1. (규제) G20 규제 공조 재확인
+   → G20이 디지털 자산 규제 경로 및 단속 강화를 지지하며 시장의 방향성이 가격보다 제도적 변화 쪽으로 이동했다. 비트코인은 0.30% 상승하여 77,815달러, 이더리움은 0.51% 하락하여 2,408달러를 기록하며 시장의 강한 추세가 아닌 선별 대응이 이루어졌다.
+   (토큰포스트 · 09/03 17:01)
+2. (기타) 라자루스 지갑, 3000만 달러 이체
+   → 라자루스 그룹이 하이퍼리퀴드와 하이퍼유닛을 거쳐 3000만 달러 이상을 이체한 정황이 포착됐다. 이 자금은 비트코인에서 이더리움과 솔라나로 교환된 후 여러 중앙화 거래소로 전송되었다.
+   (토큰포스트 · 09/03 17:01)
+3. (시세) 비트코인 77,978달러, 이더리움 2,412달러
+   → 비트코인은 77,978달러로 0.45% 상승했으며 이더리움은 0.38% 하락하여 2,412달러에 거래되고 있다. 전체 암호화폐 시가총액은 2조 6,280억 달러로, 비트코인 점유율은 59.58%로 전일 대비 감소했다.
+   (토큰포스트 · 09/03 16:58)
+4. (거래소) 바이낸스 10억달러 유입
+   → 전체 암호화폐 시장에서 24시간 동안 1억5986만 달러 규모의 레버리지 포지션이 청산되었으며, 롱 포지션 청산이 59.85%를 차지해 과열 신호가 일부 해소되었다.
+   (토큰포스트 · 09/03 16:12)
+5. (온체인) 레버리지 포지션 1억5986만 달러 청산
+   → 바이낸스는 8월 한 달 동안 10억 달러 이상의 스테이블코인을 순유입하며 시장의 유동성이 증가했지만 연초부터 누적 흐름은 약 51억 달러의 순유출로 나타났다.
+   (토큰포스트 · 09/03 16:11)
+
+[흐름·전망]
+• G20의 규제 발표 이후 디지털 자산 규제의 향방을 주의 깊게 관찰해야 할 시점이다.
+• 라자루스 그룹과 같은 해킹 시도가 초래할 보안 이슈에 대한 경각심이 필요하다.
+• 비트코인 점유율 감소는 알트코인에 대한 투자 관심이 증가하고 있음을 나타내므로, 알트코인 시장의 다변화를 주목할 필요가 있다.
+• 레버리지 포지션 청산이 증가한 것은 단기 투자자들 사이에서 조정세가 나타날 수 있음을 시사하므로, 신중한 접근이 요구된다.
+
+📊 공포탐욕지수
+  - CNN 기준: 33 (Fear)
+  - 크립토 기준: 65 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울의 재건축·재개발 규제 완화 검토와 아파트 매매가 상승폭 축소 등이 주요 이슈로 떠오르며 전반적으로 복잡한 결정을 요구하고 있다.
+
+[핵심 뉴스]
+1. (정책) 용적률 1.2배 완화 검토
+   → 정부는 서울 민간 재개발·재건축 사업의 용적률을 법정 상한의 1.2배까지 완화하는 방안을 검토하고 있으며, 이로 인해 2031년까지 추가로 4만3000가구의 주택 공급이 가능해질 것으로 전망되고 있다.
+   (매일경제 · 09/03 16:38)
+2. (매매) 서울 아파트 매매가 상승폭 축소
+   → 서울 아파트 매매가 상승폭이 3주 만에 다시 축소되었고, 강남과 서초 지역은 약세가 지속되는 반면 중하위권 지역은 상승세를 이어가고 있다.
+   (연합뉴스 · 09/03 14:16)
+3. (공급) 오룡지구 데이터센터 건립 반대
+   → 무안군의회가 공동주택 밀집지 인근 데이터센터 건립에 반대하며 주민 안전 우려를 제기했다.
+   (연합뉴스 · 09/03 15:47)
+4. (분양청약) 부천대장 아파트 분양 예정
+   → 부천대장지구에서 10월에 공공분양 아파트가 분양 예정이며, 서울 접근성 및 직주근접 여건이 주요 장점으로 부각되고 있다.
+   (매일경제 · 09/03 15:10)
+5. (정책) 재건축·재개발 규제 100개 개선
+   → 노원구가 재건축·재개발 규제를 혁신하는 프로젝트에 착수하며, 주민 목소리를 바탕으로 100개 과제를 발굴하는 개선 활동을 시작했다.
+   (연합뉴스 · 09/03 12:39)
+6. (기타) 부동산 개발 에쿼티 펀드 조성
+   → 한국디벨로퍼협회와 KB증권이 부동산 개발 에쿼티 펀드 조성을 위한 업무협약을 체결하여, 중소·중견 디벨로퍼에 자금 지원을 목표로 하고 있다.
+   (매일경제 · 09/03 14:31)
+
+[흐름·전망]
+• 용적률 완화가 주택 공급에 긍정적 영향을 줄 것으로 보이나, 집값 자극 우려로 인해 시장 반응을 주의 깊게 살펴봐야 한다.
+• 서울 아파트 매매가 상승폭 축소가 이어질 경우 강남 지역의 약세 지속으로 인한 전체 시장에 미치는 영향에 대해 논의가 필요하다.
+• 재건축·재개발 규제 혁신이 성공적으로 이루어진다면, 노후 주택 문제 개선과 함께 신규 주택 공급이 활성화될 가능성이 있다.
+• 부천대장 하우스토리 디센트 등의 분양이 서울 접근성을 통해 인근 지역 시장에 긍정적 영향을 미칠 가능성이 있으며, 에쿼티 펀드 조성은 중소개발업체들에게 중요한 자본 지원이 될 것이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 여러 주제에 대해 언급하며 긍정적인 변화를 강조했다. 그는 경제적인 측면에서 소비자 가격 인하와 국가 안보를 위한 제약 공급망 회복을 주장했다.
+
+[주요 발언]
+1. (경제) 트럼프는 약값, 소고기, 가스 가격 인하를 약속하며 노동절 전에 소비자 affordability를 높이려 노력하고 있다고 언급했다.
+   (Truth Social · 09/02 20:58)
+2. (경제) 트럼프는 약값 인하를 넘어 미국의 제약 공급망을 회복시켜 국가 안보를 강화할 것이라고 주장했다.
+   (Truth Social · 09/02 20:58)
+3. (경제) 트럼프는 워싱턴 D.C.에서 진행 중인 건설 프로젝트에 대해 자부심을 표하며, 이를 미국에 4억 달러 규모의 기부로 강조했다.
+   (Truth Social · 09/02 23:36)
+4. (국내정치) 트럼프는 기독교 지도자들이 반유대주의에 직면한 캐나다 유대인들을 위한 법적 경로를 마련해 줄 것을 촉구했다고 전했다.
+   (Truth Social · 09/02 20:59)
+5. (기타) 트럼프는 호르무즈 해협의 이름을 '트럼프 해협'으로 바꿀 것을 제안하며 미국의 존재감을 강조했다.
+   (Truth Social · 09/03 00:23)
+6. (기타) 트럼프는 애플 맵에서 온타리오 호수의 이름을 '아메리카 호수'로 변경했다고 주장하며 그 결과에 주목했다.
+   (Truth Social · 09/03 05:09)
+
+[시장·경제 관련]
+• 세부적인 경제 및 시장 변화에 대한 언급은 없었다.
+
+[흐름·전망]
+• 트럼프의 약값 인하 및 제약 공급망 회복 주장은 향후 의료 및 경제 정책에 중요한 영향을 미칠 수 있다.
+• 소비자 가격 인하에 대한 트럼프의 약속이 실제로 이행될 경우, 유권자들에게 긍정적인 반향을 일으킬 가능성이 있다.
+• 트럼프의 제안들이 외교 및 안보 정책에 어떻게 연결될지가 주목된다.
+• 통상 및 경제 정책과 관련된 그의 발언이 대선 캠페인에 미칠 영향을 지켜볼 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
