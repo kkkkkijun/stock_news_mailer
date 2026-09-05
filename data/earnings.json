@@ -890,11 +890,6 @@
    },
    "surprises": [
     {
-     "fmt": "+26.25%",
-     "v": 26.25,
-     "pos": true
-    },
-    {
      "fmt": "-41.00%",
      "v": -41.0,
      "pos": false
@@ -911,35 +906,26 @@
     }
    ],
    "cur": {
-    "period": "26.06",
-    "eps": "$-0.05",
-    "eps_range": "$-0.06~$-0.04",
-    "rev": "$730.12M",
-    "growth": "-68.51%",
+    "period": "26.09",
+    "eps": "$0.06",
+    "eps_range": "$-0.05~$0.20",
+    "rev": "$892.73M",
+    "growth": "-42.99%",
     "growth_pos": false
    },
    "rev": {
     "up": 0,
-    "down": 0
+    "down": 1
    },
    "next": {
     "period": "26.12",
-    "eps": "$0.14",
-    "eps_range": "$0.05~$0.31",
-    "rev": "$952.22M",
-    "growth": "+53.31%",
+    "eps": "$0.12",
+    "eps_range": "$-0.02~$0.31",
+    "rev": "$954.08M",
+    "growth": "+2.53%",
     "growth_pos": true
    },
    "quarters": [
-    {
-     "cq": "2025-2",
-     "label": "2025 2Q",
-     "reported": true,
-     "eps_act": "$0.29",
-     "eps_est": "$0.23",
-     "surprise": "+26.25%",
-     "surprise_pos": true
-    },
     {
      "cq": "2025-3",
      "label": "2025 3Q",
@@ -959,6 +945,15 @@
      "surprise_pos": true
     },
     {
+     "cq": "2026-1",
+     "label": "2026 1Q",
+     "reported": true,
+     "eps_act": "$-0.40",
+     "eps_est": "$0.03",
+     "surprise": "-1,664.33%",
+     "surprise_pos": false
+    },
+    {
      "cq": "2026-2",
      "label": "2026 2Q",
      "reported": true,
@@ -968,11 +963,19 @@
      "surprise_pos": false
     },
     {
+     "cq": "2026-3",
+     "label": "2026 3Q",
+     "reported": false,
+     "eps_est": "$0.06",
+     "rev": "$892.73M",
+     "date": "2026-11-10"
+    },
+    {
      "cq": "2026-4",
      "label": "2026 4Q",
      "reported": false,
-     "eps_est": "$0.14",
-     "rev": "$952.22M"
+     "eps_est": "$0.12",
+     "rev": "$954.08M"
     }
    ],
    "target": {
