@@ -1,0 +1,209 @@
+2026-09-06T17:02:22.517741+09:00
+
+[오늘의 뉴스 요약] 2026-09-06 17:01 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제에 대한 긍정적인 신호가 이어지고 있으나, 내수 경기는 여전히 어려운 상황을 겪고 있는 것으로 보인다.
+
+[핵심 뉴스]
+1. (정책) 무디스, 한국 재정흑자 가능성 진단
+   → 무디스는 한국의 내년도 예산안에서 12조 5000억 원이 국채 발행 축소에 사용될 것이라며, 이는 국가 신용도에 긍정적인 요소가 될 것이라고 평가했다.
+   (매일경제 · 09/06 15:58)
+2. (성장) 한국 경제, 반도체 호황에도 내수 부진
+   → 반도체 수출은 크게 증가했지만, 내수 부문은 소비와 고용에서 부진을 겪고 있으며, K자형 양극화가 심화될 가능성이 제기된다.
+   (연합뉴스 · 09/06 11:00)
+3. (환율) 원달러 환율 23개월 만에 최저
+   → 원/달러 환율이 1345원으로 떨어져 23개월 만에 최저치를 기록했으며, 이에 따라 기업의 달러예금이 역대 최대 규모로 증가하고 있다.
+   (매일경제 · 09/06 10:31)
+4. (환율) 기업의 달러예금 급증, 환율 하락 영향
+   → 실업급여 계정이 내년에는 흑자로 전환될 것으로 예상되지만, 정부는 여전히 재정 관리에 신경 써야 할 상황이다.
+   (연합뉴스 · 09/06 05:53)
+5. (고용) 내년 실업급여, 흑자 전환 전망
+   → 고용보험기금 실업급여 계정이 보험료율 인상 등으로 내년에는 흑자로 전환될 것으로 예상된다.
+   (연합뉴스 · 09/06 06:06)
+
+[흐름·전망]
+• 무디스의 평가가 반영된 한국의 재정 건전성 유지 노력이 향후 한국 경제의 긍정적인 방향으로 작용할지 주목해야 한다.
+• 내수 부진이 계속되는 한, 정책 결정자들이 통화정책과 재정 정책 조화를 이루며 균형 잡힌 성장 전략을 모색해야 할 것이다.
+• 환율 하락이 기업의 외환 리스크에 미치는 영향을 시사하며, 이에 따라 기업들의 글로벌 운영 전략이 변화할 가능성을 염두에 두어야 한다.
+• 고용보험 실업급여 계정의 흑자 전환 전망은 긍정적이나, 지속 가능한 재정 관리를 위한 추가적 노력이 필요하다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA Corporation $NVDA is Blackhawk Capital Partners LLC's 7th Largest Position - MarketBeat
+   (MarketBeat · 09/06 16:32)
+→ NVIDIA 주식은 Blackhawk Capital Partners LLC의 7번째로 큰 투자 포지션을 차지하고 있습니다. 이 정보는 MarketBeat에서 발표되었습니다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA is Clearwave Capital LLC's 7th Largest Position - MarketBeat
+   (MarketBeat · 09/06 16:32)
+→ NVIDIA Corporation(엔비디아)는 Clearwave Capital LLC의 7번째로 큰 투자 포지션을 차지하고 있다고 보도되었습니다.
+
+📰 [NVDA] Forbes J M & Co. LLP Has $82.50 Million Holdings in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 09/06 16:32)
+→ Forbes J M & Co. LLP가 NVIDIA Corporation에 8,250만 달러 규모의 지분을 보유하고 있다는 보고서가 나왔다. 이 뉴스는 MarketBeat에서 발표되었다.
+
+📰 [TSLA] Asset One Wealth Management LLC Buys Shares of 8,889 Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/06 16:18)
+→ Asset One Wealth Management LLC가 테슬라(Tesla, Inc.)의 주식 8,889주를 매입했다고 전해졌습니다. 이 거래는 시장에서 주목받고 있으며, 해당 기업의 투자 전략에 대한 관심을 높이고 있습니다.
+
+📰 [TSLA] How the Tesla Cybercab Knows Exactly When to Open Its Doors - BASENOR - Tesla Accessories
+   (BASENOR - Tesla Accessories · 09/06 16:03)
+→ 테슬라 사이버캡은 탑승자가 가까이 다가오면 문이 자동으로 열리도록 설계되어 있다. 이 기능은 센서를 통해 사용자의 위치를 감지하여 문을 적절한 시점에 열 수 있게 해준다. 이를 통해 승객은 더욱 편리한 탑승 경험을 할 수 있다.
+
+📰 [TSLA] day 6, hope tsla goes up more! - Moomoo
+   (Moomoo · 09/06 13:48)
+→ Moomoo는 6일째 테슬라의 주가가 더 오르기를 희망하고 있습니다.
+
+📰 [HIMS] INVESTOR DEADLINE ALERT: Hims & Hers Health, Inc. (HIMS) Investors with Substantial Losses Have Opportunity to Lead Class Action Lawsuit - Morningstar
+   (Morningstar · 09/05 23:40)
+→ Hims & Hers Health, Inc. (HIMS)의 투자자들이 substantial loss를 겪었다면 집단소송을 주도할 기회를 가질 수 있다는 경고가 발표됐다. 투자자들은 이 소송을 통해 손실을 회복할 가능성을 모색할 수 있다.
+
+📰 [HIMS] Hims & Hers Health (HIMS) Faces FTC And Class Action Lawsuits, Is The Stock Still Undervalued? - simplywall.st
+   (simplywall.st · 09/05 12:43)
+→ Hims & Hers Health가 연방 거래 위원회(FTC)와 집단 소송에 직면하면서, 회사의 주식 가치가 여전히 저평가되어 있는지에 대한 논의가 진행되고 있습니다. 이 상황은 투자자들 사이에서 불확실성을 초래하고 있습니다.
+
+📰 [HIMS] Hims & Hers Health Shareholder Alert: ClaimsFiler Reminds Investors With Losses In Excess Of $100,000 Of Lead Plaintiff Deadline In Class Action Lawsuit Against Hims & Hers Health, Inc. - HIMS - PR Newswire
+   (PR Newswire · 09/05 11:00)
+→ Hims & Hers Health에 대한 집단 소송이 진행 중이며, 100,000달러 이상의 손실을 입은 투자자들에게 원고 자격 마감일이 다가옴을 알리는 공지가 나왔다. ClaimsFiler는 해당 투자자들에게 소송 참여를 권장하고 있다.
+
+📰 [RDW] The Bull Case For Redwire (RDW) Could Change Following Its Phased Array Antenna Investment - Learn Why - simplywall.st
+   (simplywall.st · 09/06 05:20)
+→ Redwire(RDW)가 위상 배열 안테나에 투자함으로써 긍정적인 전망이 달라질 수 있다는 분석이 제기되었다. 이 투자는 회사의 성장 가능성과 시장 경쟁력에 중요한 영향을 미칠 것으로 보인다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW, RKTO Extend Slide Premarket After Blue Origin Blowup — Analyst Pushes AST Coverage Timeline To 2028 - Stocktwits
+   (Stocktwits · 09/06 04:26)
+→ Blue Origin의 폭발 사고 이후 ASTS, RKLB, LUNR, RDW, RKTO 주식이 프리마켓에서 추가 하락세를 이어가고 있으며, 한 애널리스트는 AST의 커버리지 일정이 2028년까지 연장될 것이라고 발표했다.
+
+📰 [RDW] ASTS, RKLB, RDW, LUNR Slip Overnight: SpaceX IPO Hype Loses Orbit After Valuation Target Reportedly Falls Below $2 Trillion - Stocktwits
+   (Stocktwits · 09/06 02:38)
+→ ASTS, RKLB, RDW, LUNR 주식이 overnight에서 하락했습니다. 이는 SpaceX의 기업공개(IPO) 기대감이 낮아지고, 최근 보고에 따르면 SpaceX의 기업 가치는 2조 달러 이하로 떨어졌기 때문입니다.
+
+📰 [IREN] Is Investis Holding (SWX:IREN) Still Below Fair Value As Bond Issuance And Earnings Land?
+   (Yahoo Finance · 09/06 16:07)
+→ Investis Holding은 2026년 반기 실적 발표 후 1억 스위스 프랑 규모의 0.95% 채권 발행을 완료하여 투자자들의 주목을 받고 있다. 최근 한 달간 주가는 약 4% 하락했지만, 1년과 3년 동안 주주 총 수익률은 각각 약 16%와 60% 이상으로 긍정적인 흐름을 보이고 있다.
+
+📰 [IREN] Is Investis Holding (SWX:IREN) Still Below Fair Value As Bond Issuance And Earnings Land? - Yahoo Finance UK
+   (Yahoo Finance UK · 09/06 16:07)
+→ Investis Holding (SWX:IREN)의 채권 발행과 수익 발표 이후, 이 회사의 주가가 여전히 공정 가치 이하인지에 대한 분석이 진행되고 있다. 전문가들은 현재 주가가 낮게 평가될 가능성을 제기하고 있으며, 앞으로의 성과에 대한 기대를 모으고 있다.
+
+📰 [IREN] IREN's $684M Loss Exposes the Cost of Mining-to-AI Pivot - Memeburn
+   (Memeburn · 09/06 13:39)
+→ IREN은 광산업에서 인공지능(AI)으로 전환하면서 6억 8400만 달러의 손실을 입었다. 이 사건은 투자 전환의 높은 비용과 위험성을 드러내고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin: A wave of profit-taking weakens the rebound - Cointribune
+   (Cointribune · 09/06 16:35)
+→ 비트코인 가격이 반등세를 보였으나, 많은 투자자들이 이익을 실현하기 위해 매도에 나서면서 상승세가 약해졌다. 이러한 매도 물량이 시장에 영향을 미치고 있다는 분석이 나온다.
+
+📰 [BTC-USD] 🚨𝗝𝗨𝗦𝗧 𝗜𝗡: 🇺🇸 Bitcoin spot ETFs recorded a net outflow of $986.7M last week. - Moomoo
+   (Moomoo · 09/06 16:33)
+→ 지난 주 비트코인 현물 ETF에서 총 9억 8670만 달러의 자금 유출이 발생했다고 보도되었습니다.
+
+📰 [BTC-USD] From power laws to AI networks, why complex Bitcoin price models memorize market noise - CryptoSlate
+   (CryptoSlate · 09/06 16:00)
+→ 비트코인 가격 모델이 복잡한 이유는 파워 법칙과 AI 네트워크를 통해 시장의 노이즈를 기억하기 때문입니다. 이러한 모델들은 시장의 변동성을 반영하기 어려우며, 실제 가격 예측보다 과거 데이터를 암기하는 경향이 있습니다.
+
+📰 [ETH-USD] Ethereum (ETHUSD) Is up 1.28% on Sep 6: Key Drivers to Watch - TradingKey
+   (TradingKey · 09/06 13:05)
+→ 이더리움(ETHUSD)은 9월 6일 1.28% 상승했다. 주요 상승 요인에 대한 분석이 필요하다는 내용이다.
+
+📰 [ETH-USD] Bitcoin, Ethereum End Choppy Week Higher As Fed Bets Drive Crypto Swings - BusinessToday Malaysia
+   (BusinessToday Malaysia · 09/06 11:15)
+→ 비트코인과 이더리움은 이번 주 변동성이 큰 거래를 끝내고 상승세를 보였다. 연준의 금리 정책에 대한 기대감이 암호화폐 시장의 변동성을 촉진했다.
+
+📰 [ETH-USD] Vitalik Buterin's EIP-8141 Would Give Every Ethereum Wallet Smart Contract Powers - Startup Fortune
+   (Startup Fortune · 09/06 09:27)
+→ 비탈릭 부테린의 EIP-8141 제안은 모든 이더리움 지갑에 스마트 계약 기능을 부여하는 내용을 담고 있습니다. 이를 통해 사용자들은 지갑을 통해 더욱 다양한 기능과 자동화를 활용할 수 있게 될 것으로 기대됩니다.
+
+📰 [SOL-USD] Solana Co-Founder Calls Robinhood Chain's Fee Model Brain Dead - Startup Fortune
+   (Startup Fortune · 09/06 14:45)
+→ 솔라나 공동 창립자가 로빈후드 체인의 수수료 모델을 "멍청하다"라고 비판했습니다. 그는 이 모델이 기존의 블록체인 수수료 구조와 비교할 때 비효율적이라고 언급했습니다.
+
+📰 [SOL-USD] Solana Price Rises 4.3% While U.S. ETFs Post $5.2 Million Outflow - ts2.tech
+   (ts2.tech · 09/06 13:23)
+→ 솔라나 가격이 4.3% 상승한 반면, 미국의 상장지수펀드(ETF)에서 520만 달러가 유출되었습니다. 이러한 가격 상승에도 불구하고 투자자들은 ETF에서 자금을 빼고 있는 상황입니다.
+
+📰 [SOL-USD] Solana (SOLUSD) Is up 2.66% on Sep 6: What Are the Risk Factors? - TradingKey
+   (TradingKey · 09/06 13:00)
+→ 2023년 9월 6일, 솔라나(SOLUSD)의 가격이 2.66% 상승했다. 그러나 전문가들은 투자자들에게 시장 변동성과 규제 변화 등 여러 위험 요소를 주의할 것을 권고하고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 혼조세를 보이며 일부 코인의 점유율 변화와 함께 청산 규모도 크게 발생했다.
+
+[핵심 뉴스]
+1. (시세) 이더리움, 2600달러 확률 74%로 상승
+   → 이더리움(ETH)의 9월 중 2600달러에 도달할 확률은 74%로, 24시간 전보다 10%포인트 상승했다.
+   (토큰포스트 · 09/06 16:38)
+2. (기타) 비트코인 채굴자 보유량 증가
+   → 비트코인(BTC) 채굴자 보유량은 약 119만1900 BTC로, 최근 일주일 사이에 261 BTC 증가했으며, 7일 평균 해시레이트는 9억3400만 TH/s로 증가했다.
+   (토큰포스트 · 09/06 16:16)
+3. (시세) 암호화폐 시장에서 큰 청산 발생
+   → 암호화폐 시장에서 24시간 동안 1억2505만 달러가 청산되었고, 이 중 숏 포지션 청산은 1억961만 달러로 전체의 87.66%를 차지했다.
+   (토큰포스트 · 09/06 16:05)
+4. (시세) 비트코인 가격 소폭 상승
+   → 비트코인은 0.15% 상승해 79,777.68달러에 거래되며 점유율이 59.12%로 감소한 반면, 이더리움은 2.12% 오른 2,505.99달러를 기록해 점유율이 11.29%로 증가했다.
+   (토큰포스트 · 09/06 16:03)
+5. (기타) 포켓몬 카드 NFT 담보 대출 실행
+   → 포켓몬 카드가 NFT로 토큰화되며 담보 대출이 실행되었고, 1999년 뮤츠 카드가 3만 달러의 담보로 활용된 사례가 있다.
+   (토큰포스트 · 09/06 16:26)
+
+[흐름·전망]
+• 이더리움의 가격 상승 확률이 증가하고 있어 다음 주 중 가격이 어떻게 움직일지 주목해야 한다.
+• 비트코인의 채굴자 보유량과 해시레이트가 상승세를 이어가고 있어, 이는 채굴자들의 시장에 대한 신뢰를 시사할 수 있다.
+• 청산 발생 규모가 크기 때문에, 시장 참여자들은 변동성이 확대되는 시기에 신중한 접근이 필요하다.
+• 알트코인 중심으로 자금이 분산되고 있으며, 이러한 변화가 향후 투자 전략에 어떤 영향을 미칠지 살펴보아야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 42 (Fear)
+  - 크립토 기준: 73 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 서울 부동산 시장은 전세 보증금 인상과 종부세 확대 가능성이 주된 이슈로 떠올랐다.
+
+[핵심 뉴스]
+1. (전세) 서울 아파트 전세 갱신 10건 중 9건 보증금 인상
+   → 서울 아파트 전세 계약 갱신자 10명 중 9명이 보증금을 올랐으며, 평균 인상액은 4600만원을 넘었다. 서울 전세 매물 감소와 재계약 수요로 전세 보증금 부담이 커지고 있다.
+   (매일경제 · 09/06 13:56)
+2. (매매) 서울 집값 이대로 가면 종부세 내야 한다
+   → 현재 서울 25개 자치구 중 19개구에서 종부세 부과 대상이 확인되며, 2030년까지 22개구로 확대될 것으로 예상되면서 세금 부담이 증가할 전망이다.
+   (매일경제 · 09/06 11:02)
+3. (전세) 강남은 전세가 매매보다 더 뛰고, 외곽도 동반 상승
+   → 서울 25개 자치구 중 절반 이상에서 전세가격이 매매가격 상승률을 초과하고 있으며, 강남권은 특히 전세가격이 매매보다 더 크게 상승하고 있다.
+   (매일경제 · 09/06 09:11)
+4. (정책) 종부세, 서울 22개구로 번질 가능성
+   → 2030년까지 서울 22개구에서 종부세 대상 아파트가 증가할 것으로 보이며, 이는 일반 시민에게도 세 부담이 증가하는 결과를 초래할 가능성이 있다.
+   (매일경제 · 09/06 09:11)
+5. (정책) 서울 집값, 계속 오르면 전역 종부세 과세
+   → 정부가 종부세 기본공제를 12억원으로 유지하기로 하여, 핵심 입지의 우량 주택에 대한 선호가 지속될 것으로 예상되며 매물 부족 가능성이 있다.
+   (연합뉴스 · 09/06 05:45)
+6. (기타) 종부세 12억 유지에 ‘똘똘한 한 채’ 선호↑
+   → 종부세 개편안에 따라 실수요자들의 '똘똘한 한 채' 선호가 더욱 확고해져, 강남권 등의 핵심 지역에서 가격 회복 가능성이 더욱 커질 것으로 보인다.
+   (매일경제 · 09/05 17:53)
+
+[흐름·전망]
+• 단기적으로 전세 보증금 상승과 감소하는 매물량이 서울의 주거비 부담을 심화시킬 것으로 보인다.
+• 종부세 대상 확대 및 세 부담 증가는 향후 서울 주택 시장에 중요한 변수가 될 것이며, 이에 대한 주시가 필요하다.
+• 강남권의 전세가격 상승세가 이어질 경우, 해당 지역의 매매 시장에도 영향을 미칠 가능성이 크다.
+• '똘똘한 한 채' 선호 현상이 지속되면서, 가격 회복과 급매물 소진의 결과로 시장 변동성이 커질 수 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 스페인의 국경 통제를 비판하며 안타까운 상황이라고 언급했습니다. 그는 스페인의 국경 관리가 전혀 이루어지지 않고 있다고 주장했습니다.
+
+[주요 발언]
+1. (기타) 트럼프는 스페인에서 발생하는 상황에 대해 매우 안타깝게 생각한다고 밝혔습니다. 그는 스페인이 국경 통제가 전혀 없다고 언급하며 놀라움을 표했습니다.
+
+[흐름·전망]
+• 트럼프의 발언은 유럽의 국경 통제와 이민 문제에 대한 국제적 관심을 환기시킬 수 있습니다.
+• 스페인을 포함한 유럽 국가들의 국경 관리 정책 변화 가능성에 주목해야 할 시점입니다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
