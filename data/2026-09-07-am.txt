@@ -1,0 +1,222 @@
+2026-09-07T06:32:19.664315+09:00
+
+[오늘의 뉴스 요약] 2026-09-07 06:31 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제에 대한 우려가 커지고 있습니다. 특히 중동사태로 인한 유가 상승 위험과 반도체 호황에도 불구하고 내수 부문은 위축되며 'K자형 양극화'가 지속될 가능성이 제기되고 있습니다.
+
+[핵심 뉴스]
+1. (물가) 중동사태 장기화로 유가 뛰면 물가 상승 전망
+   → 한국은행은 중동 사태 지속 시 2026년 한국 경제성장률이 0.3%포인트 하락하고 소비자물가 상승률이 0.4%포인트 오를 것으로 전망했습니다.
+   (매일경제 · 09/06 17:43)
+2. (성장) 반도체 호황에도 내수 부문 위축 우려
+   → 현대경제연구원은 반도체 수출 호황에도 불구하고 내수 소비와 고용이 둔화되고 있으며, 통화정책의 과잉대응이 우려된다고 발표했습니다.
+   (연합뉴스 · 09/06 11:00)
+3. (정책) 무디스, 재정흑자와 미래대응기금에 긍정적 평가
+   → 무디스는 한국 정부의 예산안에서 '미래대응기금'을 통한 국채 발행 축소가 국가 신용도에 긍정적 영향을 미칠 것이라고 평가했습니다.
+   (매일경제 · 09/06 15:58)
+4. (환율) 트럼프, 미-캐나다 달러 환율 문제 제기
+   → 도널드 트럼프 대통령은 미-캐나다 달러 환율 불균형 문제를 제기하며 관세 전쟁의 확전 가능성을 우려한다고 밝혔습니다.
+   (연합뉴스 · 09/07 01:38)
+5. (고용) 고용·산재기금 수익률 하락 우려
+   → 고용보험과 산재보험 등 고용노동부가 운용하는 4대 기금의 수익률이 하락하면서 재정 건전성에 대한 우려가 커지고 있으며, 기금 운용 구조 개선이 시급한 상황입니다.
+   (매일경제 · 09/06 17:45)
+
+[흐름·전망]
+• 중동사태의 영향으로 인해 에너지 가격과 물가 변동성을 지속적으로 주시해야 할 시점입니다.
+• 반도체 호황에도 불구하고 내수 부문에서의 둔화가 우려되는 만큼, 정부의 추가적인 경기 부양 조치가 필요할 것입니다.
+• 국제 신용평가사의 긍정적 평가에도 불구하고, 재정 정책의 효과성을 높이기 위한 구조적 개선이 필요합니다.
+• 환율 문제로 인한 무역 불확실성이 커질수록 한국 경제와의 연관성을 주의 깊게 살펴봐야 합니다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA (NVDA) Faces Key Legal Milestones In Copyright Lawsuit - simplywall.st
+   (simplywall.st · 09/07 06:28)
+→ NVIDIA가 저작권 소송에서 중요한 법적 이정표에 직면하고 있습니다. 이 소송은 회사의 기술 사용과 관련된 여러 가지 법적 쟁점들을 포함하고 있으며, 결과에 따라 회사의 운영에 큰 영향을 미칠 수 있습니다.
+
+📰 [NVDA] Dow Jones Futures Eye Iran With Apple, Inflation In Focus; Nvidia, Micron, Sandisk Flash Buy Signals
+   (Yahoo Finance · 09/07 06:10)
+→ 다우존스 선물 시장이 미국과 이란의 공격 교환을 주시하고 있으며, 애플과 인플레이션 데이터에 대한 관심이 집중되고 있습니다. NVidia, Micron, Sandisk는 매수 신호를 보이고 있지만, 그 지속성에 대한 의문이 제기되고 있습니다.
+
+📰 [NVDA] Musk Moves Up SpaceX (SPCX)’s Orbital Data Center Timeline, Again
+   (Yahoo Finance · 09/07 05:41)
+→ 일론 머스크는 스페이스X의 AI 위성이 2027년 4분기에 발사되고 2028년에 "상당한 규모"에 도달할 것이라고 밝혔다. 이 위성은 NVIDIA 칩으로만 구동되며, 스페이스X는 NVIDIA와 협력하여 우주 최적화 시스템을 설계했다고 전해졌다.
+
+📰 [TSLA] In London, Wayve Launched Its Own Robotaxi a Few Hours Before Tesla's Big Reveal - The Information
+   (The Information · 09/07 06:20)
+→ 런던에서 Wayve가 테슬라의 큰 발표 몇 시간 전에 자율주행 택시를 출시했습니다. 이로 인해 자율주행 기술 경쟁이 더욱 치열해질 것으로 예상됩니다.
+
+📰 [TSLA] Goldman sees Cybercab giving Tesla a cost advantage in robotaxis - Investing.com
+   (Investing.com · 09/07 06:18)
+→ 골드만삭스는 테슬라의 사이버택시(Cybercab)가 로보택시 시장에서 비용 우위를 제공할 것으로 전망했습니다. 이로 인해 테슬라가 경쟁업체들에 비해 더 유리한 위치를 차지할 수 있을 것이라고 분석하였습니다.
+
+📰 [TSLA] ChatGPT on Tesla vs. Apple Stock — and Which One It Picked - MoneyLion
+   (MoneyLion · 09/07 06:02)
+→ ChatGPT가 테슬라와 애플 주식을 비교한 결과, 두 종목에 대한 분석을 통해 어느 주식이 더 좋다고 평가했는지 소개하고 있습니다. 이 기사에서는 주식 선택에 대한 AI의 전망과 이유를 설명합니다.
+
+📰 [HIMS] Bronstein, Gewirtz & Grossman LLC Urges Hims & Hers Health, Inc. Investors to Act: Class Action Filed Alleging Investor Harm - PR Newswire
+   (PR Newswire · 09/07 01:00)
+→ Bronstein, Gewirtz & Grossman LLC는 Hims & Hers Health, Inc.의 투자자들에게 행동을 촉구하며, 투자자 피해 주장을 담은 집단소송이 접수되었다고 밝혔다. 이 사건은 투자자들의 이익이 손해를 입었다는 주장에 따라 진행되고 있다.
+
+📰 [HIMS] INVESTOR DEADLINE ALERT: Hims & Hers Health, Inc. (HIMS) Investors with Substantial Losses Have Opportunity to Lead Class Action Lawsuit - PR Newswire
+   (PR Newswire · 09/05 23:40)
+→ Hims & Hers Health, Inc.의 투자자들은 상당한 손실을 입은 경우 집단 소송을 이끌 기회를 갖게 되었다는 소식이 전해졌다. 관련된 투자자들은 기한 내에 소송에 참여할 수 있는 권리가 있다는 점이 강조되었다.
+
+📰 [HIMS] HIMS Stock Kicks Off September In The Red: FDA’s GLP-1 Alert Steals The Spotlight From Australia Expansion - Stocktwits
+   (Stocktwits · 09/05 20:31)
+→ HIMS 주가는 9월 초에 하락세를 보였으며, 이는 FDA의 GLP-1 경고가 호주 시장 확장 소식보다 더 큰 주목을 받았기 때문이다. 이로 인해 투자자들의 우려가 커지고 있다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW, RKTO Extend Slide Premarket After Blue Origin Blowup — Analyst Pushes AST Coverage Timeline To 2028 - Stocktwits
+   (Stocktwits · 09/06 08:15)
+→ ASTS, RKLB, LUNR, RDW, RKTO 주식이 프리마켓에서 하락세를 이어가고 있으며, Blue Origin의 사고 이후 부정적인 영향이 커지고 있다. 한 분석가는 AST의 커버리지 일정이 2028년으로 연기될 것이라고 밝혔다.
+
+📰 [RDW] The Bull Case For Redwire (RDW) Could Change Following Its Phased Array Antenna Investment - Learn Why - simplywall.st
+   (simplywall.st · 09/06 05:20)
+→ Redwire(RDW)의 주가 상승 잠재력이 위상 배열 안테나 투자에 따라 변화할 수 있다는 내용입니다. 이 투자는 회사의 성장 전망에 긍정적인 영향을 미칠 것으로 보이며, 시장 반응을 주목해야 한다는 분석이 담겨 있습니다.
+
+📰 [RDW] The Manufacturers Life Insurance Company Takes Position in Redwire Corporation $RDW - MarketBeat
+   (MarketBeat · 09/05 17:52)
+→ Manufacturers Life Insurance Company가 레드와이어 코퍼레이션($RDW)에 투자했다는 소식입니다. 이 결정은 시장의 주목을 받고 있으며, 회사의 성장 가능성에 대한 긍정적인 신호로 해석되고 있습니다.
+
+📰 [IREN] Analyzing Applied Digital vs. IREN: Accelerating Upward Trajectories vs. Sequential Contractions in Quarterly Revenue Generation
+   (Yahoo Finance · 09/07 06:06)
+→ Applied Digital의 매출은 2분기 만에 두 배로 증가한 반면, IREN의 매출은 정점에서 43% 감소하여 경쟁 구도가 변화하고 있다.
+
+📰 [IREN] Is Investis Holding (SWX:IREN) Still Below Fair Value As Bond Issuance And Earnings Land?
+   (Yahoo Finance · 09/06 16:07)
+→ Investis Holding이 2026년 상반기 실적 발표 직후 1억 스위스프랑 규모의 0.95% 채권 발행을 완료하며 투자자들의 관심을 끌고 있다. 현재 주가는 145.0 스위스프랑으로 한 달간 약 4% 하락했으나, 1년 동안 총 주주 수익률은 약 16%, 3년 동안 60% 넘게 상승하며 긍정적인 흐름을 이어가고 있다.
+
+📰 [IREN] Is Investis Holding (SWX:IREN) Still Below Fair Value As Bond Issuance And Earnings Land? - Yahoo Finance UK
+   (Yahoo Finance UK · 09/06 16:07)
+→ Investis Holding의 채권 발행과 수익 발표가 이루어지면서, 이 회사의 현재 주가가 여전히 공정 가치 이하인지에 대한 논의가 이루어지고 있다. 전문가들은 이러한 재무 성과가 기업 가치에 미치는 영향을 분석하고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Liquid Network pauses after purported 'white-hat' hackers withdraw $320 million in bitcoin - The Block
+   (The Block · 09/07 06:14)
+→ 리퀴드 네트워크가 자칭 '화이트 해커'들이 3억 2천만 달러의 비트코인을 인출한 이후 운영을 중단했습니다. 이 사건은 보안 문제로 인해 플랫폼의 활동이 일시 중단된 것으로 알려졌습니다.
+
+📰 [BTC-USD] Best Crypto Casinos 2026: Top 5 Bitcoin Sites for Fast, Safe & Reliable Play - Muddy River Sports
+   (Muddy River Sports · 09/07 06:02)
+→ 2026년을 맞아 안전하고 신뢰할 수 있는 빠른 비트코인 카지노 사이트 5곳이 소개됐다. 이들 사이트는 사용자에게 원활한 게임 경험을 제공하며, 암호화폐 덕분에 더욱 편리한 거래를 지원한다.
+
+📰 [BTC-USD] Bitcoin Is Backed by Nothing? Peter Schiff Revives Old War
+   (Yahoo Finance · 09/07 05:43)
+→ 피터 시프는 비트코인이 아무것에도 뒷받침되지 않는다는 논란을 다시 제기하며, 채굴에 소모된 에너지가 아무런 가치를 지니지 않는다고 주장했습니다. 그는 미국의 부채가 40 조 달러를 넘어선 상황에서도 비트코인에 대한 비판을 이어가고 있습니다.
+
+📰 [ETH-USD] Ethereum price eyes $2,750 but must break $2,54... - Pluang
+   (Pluang · 09/07 06:22)
+→ 이더리움의 가격이 2,750달러를 목표로 하고 있지만, 2,540달러를 먼저 돌파해야 한다는 분석이 나왔다. 현재의 저항선을 넘지 못하면 상승세를 지속하기 어려울 것으로 보인다.
+
+📰 [ETH-USD] Ethereum surges 66% in Q3 2026 as DeFi and meme coins on Robinhood Chain drive demand - Pluang
+   (Pluang · 09/07 05:56)
+→ 2026년 3분기 이더리움 가격이 66% 급등하였으며, 이는 로빈후드 체인에서의 디파이(DeFi)와 밈 코인에 대한 수요 증가에 따른 것입니다.
+
+📰 [ETH-USD] How Bitmine could surpass its 5% Ethereum goal without buying more ETH - CryptoSlate
+   (CryptoSlate · 09/07 03:10)
+→ Bitmine은 추가로 이더리움을 구매하지 않고도 5% 목표를 초과 달성할 수 있는 방법에 대해 설명했습니다. 이 회사는 효율적인 자산 관리와 전략적인 투자 접근 방식을 통해 이익을 극대화할 계획입니다. 이를 통해 Bitmine은 이더리움 보유량을 자연스럽게 늘릴 수 있을 것으로 보입니다.
+
+📰 [SOL-USD] Cathie Wood Buys The Dip In Robinhood Stock, Solana ETF As Jobs Data Sparks Market Crash - CoinGape
+   (CoinGape · 09/07 05:48)
+→ 캐시 우드는 고용 데이터로 인해 시장이 하락하자 로빈후드 주식과 솔라나 ETF를 매수했다. 이를 통해 그는 시장의 저점에서 투자 기회를 포착하려는 전략을 보였다.
+
+📰 [SOL-USD] Solana’s App Revenue Hits $143M in August, Driving Investor - Cryptonews.net
+   (Cryptonews.net · 09/07 05:42)
+→ 솔라나의 앱 수익이 8월에 1억 4천 3백만 달러에 달하며 투자자들의 관심을 끌고 있습니다. 이 같은 성장은 플랫폼의 인기를 반영하고 있으며, 추가적인 발전 가능성을 보여줍니다.
+
+📰 [SOL-USD] Solana’s Raydium Sees Token Surge Amid Growing DeFi Activity - Cryptonews.net
+   (Cryptonews.net · 09/07 05:24)
+→ 솔라나의 레이디움(Raydium) 토큰이 DeFi 활동의 증가에 힘입어 급격히 상승하고 있다. 이러한 성장세는 DeFi 생태계의 활성화와 밀접한 관련이 있으며, 투자자들의 관심이 집중되고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장은 블랙록의 50억 달러 규모 ETF 인카인드 전환 소식과 알트코인 미결제약정 증가가 주목받고 있다. 전반적으로 시장은 혼조세를 보이며 청산액이 증가하고 있다.
+
+[핵심 뉴스]
+1. (ETF) 블랙록, 50억달러 ETF 전환 진행
+   → 블랙록이 비트코인(BTC)을 현금으로 판매하지 않고 아이셰어즈 비트코인 트러스트(IBIT) 지분으로 전환하는 인카인드 전환을 50억 달러 규모로 진행했다. 이는 기존 BTC를 ETF 구조로 이동시키는 것으로, 신규 자금 유입이 아닌 기존 자산의 재배치에 해당한다.
+   (토큰포스트 · 09/07 06:22)
+2. (온체인) 알트코인 미결제약정 비트코인 초과
+   → 국내 거래소 코빗과 코인원이 거래 수수료 무료 정책 이후 각각 188.6%, 85.8%의 거래대금 증가를 기록했으나, 이 증가분은 대부분 스테이블코인 거래에 집중됐다. 스테이블코인의 비중이 높아진 것은 자동화 거래의 유인을 높였다는 분석이 나온다.
+   (토큰포스트 · 09/07 06:11)
+3. (기타) 암호화폐 청산 1억6014만달러 기록
+   → 비트코인(BTC) 가격이 8만 달러 부근에서 방향을 잃는 가운데, 알트코인 파생상품 미결제약정이 BTC를 초과하는 양상이다. 지캐시(ZEC)에서 대규모 청산이 발생하며 레버리지 위험이 드러났다.
+   (토큰포스트 · 09/07 05:36)
+4. (규제) 미국 암호화폐 시장 구조 법안 지체
+   → 암호화폐 시장에서 공공 블록체인과 사용자간의 관계가 크립토 기업의 경쟁 요소로 강조되고 있으며, 최종 사용자 제품과 접근성이 더 중요해질 것이라는 전망이 제시됐다. 특히 런치패드 시장의 경쟁이 심화되고 있다.
+   (토큰포스트 · 09/07 05:14)
+5. (시세) 암호화폐 시장 혼조세 지속
+   → 암호화폐 시장에서 24시간 청산액이 1억6014만 달러에 달하며, 숏 포지션 청산이 전체의 69.42%를 차지했다. 미국 현물 비트코인 ETF의 9월 4일 하루 순유입이 76.1% 감소하는 등 시장 혼란이 지속되고 있다.
+   (토큰포스트 · 09/07 05:04)
+
+[흐름·전망]
+• 블랙록의 ETF 인카인드 전환이 앞으로의 시장 구조에 미치는 영향을 주목할 필요가 있다.
+• 알트코인 시장의 미결제약정 증가가 리스크와 기회를 동시에 발생시킬 가능성이 크므로 주의가 요구된다.
+• 국내 거래소의 수수료 무료화가 장기적인 고객 유치보다는 자동화 거래의 증가를 유도하고 있어 향후 거래 환경 변화가 예상된다.
+• 가격 변동성이 큰 현재 상황에서 레버리지 포지션 관리에 대한 투자자들의 경각심이 더욱 중요해 질 것이다.
+
+📊 공포탐욕지수
+  - CNN 기준: 42 (Fear)
+  - 크립토 기준: 73 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 전세난이 심화됨에 따라 정부가 법인형 임대사업자의 세제 부담을 경감하는 방안을 검토 중이다. 이에 따라 전반적으로 민간 임대 공급 증가에 대한 기대감이 감지되고 있다.
+
+[핵심 뉴스]
+1. (정책) 전월세난 다급해진 정부…기업형 임대사업자 종부세부담 줄인다
+   → 정부가 법인형 임대사업자에 대한 종부세 부담을 완화하는 방안을 검토하고 있으며, 이를 통해 민간 임대주택 공급을 촉진하려는 계획이 있다.
+   (매일경제 · 09/06 19:53)
+2. (전세) 전세 사라지고, 월세는 오르고… 해외 큰손들, 韓임대시장 군침
+   → 국내 임대차 시장에서 월세 비중이 68.3%로 증가하며 글로벌 투자자들이 한국 임대 시장에 높은 관심을 보이고 있다.
+   (매일경제 · 09/06 17:31)
+3. (전세) 이래저래 세입자만 울상…강남은 전세가 매매보다 더 뛰고, 외곽은 동반 상승
+   → 서울에서 11개 자치구의 전세가격이 매매가격 상승률을 초과하며, 강남권에서는 전세가격이 다시 상승세를 보일 것으로 예상된다.
+   (매일경제 · 09/06 09:11)
+4. (전세) “3억은 올려주셔야”…서울 아파트 전세 갱신 10건 중 9건 보증금 인상
+   → 서울 아파트 전세 갱신 시 보증금 인상 사례가 증가하고 있으며, 매물 감소로 인한 세입자의 주거비 부담이 커지고 있다.
+   (매일경제 · 09/06 13:56)
+5. (기타) 강남 부자들만 내는 줄 알았는데…종부세, 서울 22개구로 번지나
+   → 2030년 서울 25개 자치구 중 22개구에서 종부세 과세 대상이 늘어날 가능성이 제기되어, 일반 시민들에게도 추가 세부담이 발생할 수 있다.
+   (매일경제 · 09/06 09:11)
+6. (매매) 30년간 거래 없던 빌라 샀다고… 취득세 8배 날벼락
+   → 30년된 빌라 매수자가 예상보다 8배 높은 취득세로 인해 큰 부담을 겪고 있으며, 정부는 이와 같은 세제 사각지대 개선을 검토할 계획이라고 밝혔다.
+   (매일경제 · 09/06 17:12)
+
+[흐름·전망]
+• 법인형 임대사업자의 세제 혜택이 실제로 시행된다면 민간 임대 공급의 신속한 증가가 기대된다.
+• 월세 중심의 시장 변화가 계속된다면, 주거비 부담 문제가 심화되고 중장기적으로 임대 수요에 변화가 있을 것이다.
+• 강남과 비강남의 가격 차가 커질 것으로 예상되며, 이는 주거 트렌드에 영향을 미칠 것이다.
+• 종부세가 일반 시민에게 미치는 영향이 증가할 경우, 세제 및 정책에 대한 사회적 논의가 활발해질 가능성이 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 과거의 성과와 비판에 대한 불만을 표현하며, 미국의 경제와 정치에서 자신의 역할을 강조했다. 또한, 국제적 재정 불균형 문제에 대한 입장을 드러냈다.
+
+[주요 발언]
+1. (경제) 트럼프는 미국의 주식과 기타 자산에서 수백억 달러의 이익을 올렸다고 주장하며, 자신이 아닌 미국을 위해 노력하고 있다고 강조했다.
+   (Truth Social · 09/07 04:17)
+2. (경제) 트럼프는 캐나다와의 통화 불균형이 수년간 문제가 되었으며, 더 이상 이를 용납할 수 없다고 언급했다.
+   (Truth Social · 09/07 04:06)
+3. (기타) 트럼프는 자신의 업적을 강조하며 마라라고 클럽을 최고의 장소로 언급했으며, 이는 미국의 남부 백악관 역할을 하고 있다고 전했다.
+   (Truth Social · 09/07 03:44)
+4. (사법) 트럼프는 민주당이 유권자 신분증 승인에 실패하고 있으며, 이는 부정행위로 이어질 수 있다고 주장했다.
+   (Truth Social · 09/07 02:57)
+5. (기타) 트럼프는 존 딩겔 의원의 장례식에서 자신의 역할을 강조하며, 관계자들에게 감사를 받았지만 정치적 비난을 받는 것에 대해 불만을 표출했다.
+   (Truth Social · 09/07 00:54)
+
+[시장·경제 관련]
+• 수년간 지속된 캐나다와의 통화 불균형 문제에 대한 트럼프의 언급은 향후 무역 정책에 영향을 미칠 수 있다.
+
+[흐름·전망]
+• 트럼프의 경제 관련 발언은 그가 정치적 입지를 강화하기 위한 전략의 일환일 수 있다.
+• 유권자 신분증 문제는 미국 내 정치적 논쟁을 심화시킬 가능성이 있다.
+• 트럼프의 외교적 입장은 향후 국제 관계에 어떤 변화가 생길지 주목해야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
