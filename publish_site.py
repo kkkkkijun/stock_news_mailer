@@ -19,7 +19,7 @@ import csv
 import json
 import calendar
 import html as _html
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 import pytz
 
@@ -152,6 +152,24 @@ a:hover{opacity:.72;}
 .ev-n{flex:1;font-size:12px;font-weight:600;color:var(--ink);line-height:1.35;}
 .igauge{display:flex;gap:2px;flex-shrink:0;}
 .igauge i{width:8px;height:6px;border-radius:2px;display:block;}
+.ev.has-res{align-items:flex-start;}
+.ev.has-res .igauge{margin-top:5px;}
+.ev.has-res .ev-t{padding-top:1px;}
+.ev.past .ev-t{color:var(--faint);}
+.ev-body{flex:1;min-width:0;}
+.ev-body .ev-n{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.ev-done{font-size:9px;font-weight:800;color:#fff;background:var(--ink);border-radius:5px;
+ padding:2px 5px;letter-spacing:.02em;}
+.ev-res{display:flex;align-items:center;gap:7px;margin-top:5px;font-size:10.5px;font-weight:600;
+ color:var(--muted);white-space:nowrap;flex-wrap:wrap;}
+.ev-res .act{font-size:12.5px;font-weight:800;color:var(--ink);}
+.ev-res .k{color:var(--faint);margin-right:2px;}
+.ev-vs{font-size:10px;font-weight:800;border-radius:6px;padding:2px 6px;line-height:1.3;}
+.ev-vs.beat{color:#e5484d;background:rgba(229,72,77,.12);}
+.ev-vs.miss{color:#3b82f6;background:rgba(59,130,246,.12);}
+.ev-vs.inl{color:var(--muted);background:var(--nav-track);}
+.ev-pre{display:flex;gap:8px;margin-top:4px;font-size:10.5px;color:var(--faint);font-weight:600;}
+.ev-pre b{color:var(--muted);font-weight:700;}
 .sched-src{font-size:9.5px;color:var(--faint);text-align:right;margin-top:9px;}
 /* 일정 2단: 좌 경제지표 / 우 기업실적 */
 /* 일정: 전 기기 공통 서브탭 → 한 번에 한 컬럼(단일) */
@@ -1097,15 +1115,28 @@ def _load_econ_events(now):
         except OSError:
             continue
     # B 로직: 이번 달=오늘 이후만 · 미래 달=전체 · 지난 달=제외
+    #   + 높음(HIGH) 지표는 지난 7일치(결과 있는 것)를 남겨 '발표 결과'를 보여준다.
+    try:
+        from econ_results import load as _load_res
+        results = _load_res()
+    except Exception:  # noqa
+        results = {}
     cur_ym = now.strftime("%Y-%m")
     today = now.date()
+    keep_from = today - timedelta(days=7)      # 주말 넘어도 금요일 고용지표 등 유지
     kept = []
-    for e in rows.values():
-        ym = e["dt"].strftime("%Y-%m")
-        if ym < cur_ym:
-            continue
-        if ym == cur_ym and e["dt"].date() < today:
-            continue
+    for key, e in rows.items():
+        d = e["dt"].date()
+        recent_high = (e["impact"] == "HIGH" and keep_from <= d < today
+                       and bool((results.get(key) or {}).get("act")))   # 결과 있는 것만
+        if not recent_high:
+            ym = e["dt"].strftime("%Y-%m")
+            if ym < cur_ym:
+                continue
+            if ym == cur_ym and d < today:
+                continue
+        e["past"] = e["dt"] <= now
+        e["res"] = results.get(key) if e["impact"] == "HIGH" else None
         kept.append(e)
     kept.sort(key=lambda e: e["dt"])
     # 월별로 묶기: [[ym, label, [events...]], ...] (오름차순)
@@ -1136,9 +1167,36 @@ def _econ_row(e):
             f'alt="{_e(e["cur"])}" title="{_e(e["cur"])}" '
             f'width="22" height="16" decoding="async">'
             if cc else '<span class="ev-flag"></span>')
-    return (f'<div class="ev" data-imp="{e["impact"]}"><span class="ev-t">{t}</span>'
-            f'{flag}<span class="ev-n">{_e(name)}</span>'
-            f'{_impact_gauge(e["impact"])}</div>')
+    res, extra, badge, cls = e.get("res"), "", "", ""
+    if res and e.get("past") and res.get("act"):
+        # 발표 완료: 실제 + 예상 대비 방향(숫자 방향일 뿐, 좋다/나쁘다 판단 아님)
+        a, c = res.get("act_n"), res.get("cons_n")
+        vs = ""
+        if a is not None and c is not None:
+            k, tx = (("beat", "▲ 상회") if a > c else ("miss", "▼ 하회") if a < c
+                     else ("inl", "= 부합"))
+            vs = f'<span class="ev-vs {k}">{tx}</span>'
+        parts = [f'<span class="k">실제</span><span class="act">{_e(res["act"])}</span>{vs}']
+        if res.get("cons"):
+            parts.append(f'<span><span class="k">예상</span>{_e(res["cons"])}</span>')
+        if res.get("prev"):
+            parts.append(f'<span><span class="k">이전</span>{_e(res["prev"])}</span>')
+        extra = '<div class="ev-res">' + "".join(parts) + '</div>'
+        badge = '<span class="ev-done">발표</span>'
+        cls = " has-res"
+    elif res and (res.get("cons") or res.get("prev")):
+        pre = []
+        if res.get("cons"):
+            pre.append(f'<span>예상 <b>{_e(res["cons"])}</b></span>')
+        if res.get("prev"):
+            pre.append(f'<span>이전 <b>{_e(res["prev"])}</b></span>')
+        extra = '<div class="ev-pre">' + "".join(pre) + '</div>'
+        cls = " has-res"
+    if e.get("past"):
+        cls += " past"
+    return (f'<div class="ev{cls}" data-imp="{e["impact"]}"><span class="ev-t">{t}</span>'
+            f'{flag}<div class="ev-body"><span class="ev-n">{_e(name)}{badge}</span>'
+            f'{extra}</div>{_impact_gauge(e["impact"])}</div>')
 
 
 def _render_schedule(months, now):
@@ -1159,7 +1217,7 @@ def _render_schedule(months, now):
            '<button class="imp-chip on" data-k="med"><i style="background:#f59e0b"></i>중간</button>'
            '<button class="imp-chip" data-k="low"><i style="background:#94a3b8"></i>낮음</button>'
            '</div></div>'
-           '<div class="sched-tz2">시간 기준 KST · 데이터 FXStreet</div>'
+           '<div class="sched-tz2">시간 기준 KST · 데이터 FXStreet · 높음 지표 결과: ▲상회/▼하회 = 예상치 대비 숫자 방향</div>'
            '</div><div class="econ-months" data-default="%s">' % default_ym]
     for ym, label, evs in months:
         hide = "" if ym == default_ym else ' style="display:none"'
@@ -1880,7 +1938,11 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
         first = False
 
     # 일정 탭: 좌=경제지표 / 우=기업실적 2단(모바일은 세로로 쌓임, 실적 위)
-    sched_html = _render_schedule(_load_econ_events(now), now) if schedule else ""
+    # 일정(경제지표)은 브리핑 시각이 아닌 "실제 현재 시각" 기준 — 재빌드(refresh) 때도
+    # 발표된 높음 지표 결과가 유지되도록.
+    _now_live = datetime.now(KST)
+    sched_html = (_render_schedule(_load_econ_events(_now_live), _now_live)
+                  if schedule else "")
     if sched_html:
         earn_html = _render_earnings(_load_earnings(now), now)
         navs.append('<button class="nav-t" data-p="tpS">일정</button>')

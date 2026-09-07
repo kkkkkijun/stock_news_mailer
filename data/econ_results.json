@@ -1,0 +1,452 @@
+{
+"a41fb50c-f9c4-490b-8e84-2d2e1dd86ffd": {
+"name": "ISM Services PMI",
+"dt": "2026-09-03T14:00:00Z",
+"act": "55.4",
+"cons": "54.3",
+"prev": "54.1",
+"act_n": 55.4,
+"cons_n": 54.3
+},
+"6d68c541-24aa-45d8-b7c7-ec7451dce531": {
+"name": "Average Hourly Earnings (MoM)",
+"dt": "2026-09-04T12:30:00Z",
+"act": "0.3%",
+"cons": "0.3%",
+"prev": "0.2%",
+"act_n": 0.3,
+"cons_n": 0.3
+},
+"61e0e764-c044-44c7-8d33-71281e4a48b0": {
+"name": "Average Hourly Earnings (YoY)",
+"dt": "2026-09-04T12:30:00Z",
+"act": "3.1%",
+"cons": "3%",
+"prev": "3.2%",
+"act_n": 3.1,
+"cons_n": 3.0
+},
+"77b633f6-431b-4da0-a9e1-05ab3a57033d": {
+"name": "Nonfarm Payrolls",
+"dt": "2026-09-04T12:30:00Z",
+"act": "162K",
+"cons": "56K",
+"prev": "21K",
+"act_n": 162.0,
+"cons_n": 56.0
+},
+"0e8768a7-ec66-45f1-8e0b-73ed77d24e4d": {
+"name": "Gross Domestic Product (QoQ)",
+"dt": "2026-09-07T23:50:00Z",
+"act": null,
+"cons": "0.4%",
+"prev": "0.3%",
+"act_n": null,
+"cons_n": 0.4
+},
+"d4e45fb8-e4c7-45c0-95df-28353011a014": {
+"name": "Producer Price Index ex Food & Energy (YoY)",
+"dt": "2026-09-10T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": "4.2%",
+"act_n": null,
+"cons_n": null
+},
+"3e882694-dd74-4fae-a29a-d20098a1c906": {
+"name": "Consumer Price Index (MoM)",
+"dt": "2026-09-11T12:30:00Z",
+"act": null,
+"cons": "0.4%",
+"prev": "0.1%",
+"act_n": null,
+"cons_n": 0.4
+},
+"e39adcbf-65f3-4fd0-92e9-a02b3685d81f": {
+"name": "Consumer Price Index (YoY)",
+"dt": "2026-09-11T12:30:00Z",
+"act": null,
+"cons": "3.4%",
+"prev": "3.4%",
+"act_n": null,
+"cons_n": 3.4
+},
+"b1abcb9e-c0fe-4e44-a669-9ef42706b92d": {
+"name": "Consumer Price Index ex Food & Energy (MoM)",
+"dt": "2026-09-11T12:30:00Z",
+"act": null,
+"cons": "0.2%",
+"prev": "0.2%",
+"act_n": null,
+"cons_n": 0.2
+},
+"5ed3ff6f-37ab-47b3-9a06-73d714b36083": {
+"name": "Consumer Price Index ex Food & Energy (YoY)",
+"dt": "2026-09-11T12:30:00Z",
+"act": null,
+"cons": "2.4%",
+"prev": "2.5%",
+"act_n": null,
+"cons_n": 2.4
+},
+"c7d46fc3-7c5d-46d9-95fb-8f707bbc70ea": {
+"name": "Michigan Consumer Sentiment Index",
+"dt": "2026-09-11T14:00:00Z",
+"act": null,
+"cons": null,
+"prev": "51.7",
+"act_n": null,
+"cons_n": null
+},
+"15c93b10-4ad3-473c-84f4-d7e41714de13": {
+"name": "Retail Sales (MoM)",
+"dt": "2026-09-16T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": "-0.6%",
+"act_n": null,
+"cons_n": null
+},
+"5f8162f8-16b9-401e-8820-271aee0d9539": {
+"name": "Retail Sales Control Group",
+"dt": "2026-09-16T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": "-0.4%",
+"act_n": null,
+"cons_n": null
+},
+"2f1b6a4a-ff1e-428b-b8ad-d8521ebc870f": {
+"name": "Fed Interest Rate Decision",
+"dt": "2026-09-16T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": "3.75%",
+"act_n": null,
+"cons_n": null
+},
+"6058ca5b-901f-46b7-bfd9-657446035047": {
+"name": "Fed Monetary Policy Statement",
+"dt": "2026-09-16T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"11c9039f-f6ea-4b36-a7bd-dc45ccff3bd5": {
+"name": "FOMC Economic Projections",
+"dt": "2026-09-16T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"10532ed2-469b-48d2-97e8-0491e6a6c191": {
+"name": "Interest Rate Projections - 1st year",
+"dt": "2026-09-16T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": "3.6%",
+"act_n": null,
+"cons_n": null
+},
+"e844484f-c3a0-4354-a254-d392dbf57d7e": {
+"name": "Interest Rate Projections - 2nd year",
+"dt": "2026-09-16T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": "3.4%",
+"act_n": null,
+"cons_n": null
+},
+"a0e42f03-df7d-478a-a5c4-fc2a27de7320": {
+"name": "Interest Rate Projections - 3rd year",
+"dt": "2026-09-16T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": "3.1%",
+"act_n": null,
+"cons_n": null
+},
+"9b41c2fd-eb89-4863-9310-fa2f4bd0a28b": {
+"name": "Interest Rate Projections - Current",
+"dt": "2026-09-16T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": "3.8%",
+"act_n": null,
+"cons_n": null
+},
+"6c1d5e6e-d2d5-4cbd-bbd8-f4191b45c93b": {
+"name": "Interest Rate Projections - Longer",
+"dt": "2026-09-16T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": "3.1%",
+"act_n": null,
+"cons_n": null
+},
+"f560c035-6567-4131-bd62-1e686a974676": {
+"name": "FOMC Press Conference",
+"dt": "2026-09-16T18:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"8e17cf2f-7fa7-4ceb-b303-33a6098af56a": {
+"name": "BoJ Interest Rate Decision",
+"dt": "2026-09-18T03:00:00Z",
+"act": null,
+"cons": null,
+"prev": "1%",
+"act_n": null,
+"cons_n": null
+},
+"34d7a1f7-2cd9-48bb-9212-1f6350d3d005": {
+"name": "BoJ Monetary Policy Statement",
+"dt": "2026-09-18T03:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"b4633dd0-7b80-449e-a272-5746f0e40581": {
+"name": "BoJ Press Conference",
+"dt": "2026-09-18T06:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"6dd30953-081a-47f8-bd4c-1d8c81ccc7bb": {
+"name": "S&P Global Manufacturing PMI",
+"dt": "2026-09-23T13:45:00Z",
+"act": null,
+"cons": null,
+"prev": "53.9",
+"act_n": null,
+"cons_n": null
+},
+"11406332-cc3c-4add-a860-087f85dfddc6": {
+"name": "S&P Global Services PMI",
+"dt": "2026-09-23T13:45:00Z",
+"act": null,
+"cons": null,
+"prev": "56.5",
+"act_n": null,
+"cons_n": null
+},
+"6409072f-d406-4f49-882f-5987e7652fb9": {
+"name": "Tokyo Consumer Price Index (YoY)",
+"dt": "2026-09-29T23:30:00Z",
+"act": null,
+"cons": null,
+"prev": "1.9%",
+"act_n": null,
+"cons_n": null
+},
+"28c07540-929a-4ccb-998f-fd7f6fac4bd8": {
+"name": "Tokyo CPI ex Food, Energy (YoY)",
+"dt": "2026-09-29T23:30:00Z",
+"act": null,
+"cons": null,
+"prev": "2%",
+"act_n": null,
+"cons_n": null
+},
+"c64df516-64bb-4737-9430-1ff3df1bab9a": {
+"name": "ADP Employment Change",
+"dt": "2026-09-30T12:15:00Z",
+"act": null,
+"cons": null,
+"prev": "38K",
+"act_n": null,
+"cons_n": null
+},
+"ef95f488-2906-40b6-93ea-2a2ca30e6d07": {
+"name": "Core Personal Consumption Expenditures - Price Index (MoM)",
+"dt": "2026-09-30T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": "0.2%",
+"act_n": null,
+"cons_n": null
+},
+"afc8067a-4f0d-4f1b-b39d-355dbc61dd7c": {
+"name": "Core Personal Consumption Expenditures - Price Index (YoY)",
+"dt": "2026-09-30T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": "3.3%",
+"act_n": null,
+"cons_n": null
+},
+"deafc9c6-01be-41ed-b3b4-d7f66b6a1e89": {
+"name": "Tankan Large Manufacturing Index",
+"dt": "2026-09-30T23:50:00Z",
+"act": null,
+"cons": null,
+"prev": "22",
+"act_n": null,
+"cons_n": null
+},
+"05dd9d6f-3824-41d0-9c6f-ce69efbb311a": {
+"name": "ISM Manufacturing PMI",
+"dt": "2026-10-01T14:00:00Z",
+"act": null,
+"cons": null,
+"prev": "54.6",
+"act_n": null,
+"cons_n": null
+},
+"a8be8ae1-e0eb-43b4-8b98-4c2333560680": {
+"name": "Average Hourly Earnings (MoM)",
+"dt": "2026-10-02T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": "0.3%",
+"act_n": null,
+"cons_n": null
+},
+"a0485df5-8fd5-477b-9a61-0daad1abde41": {
+"name": "Average Hourly Earnings (YoY)",
+"dt": "2026-10-02T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": "3.1%",
+"act_n": null,
+"cons_n": null
+},
+"42eb369a-fa30-4a2e-b508-ba4dc3fd8073": {
+"name": "Nonfarm Payrolls",
+"dt": "2026-10-02T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": "162K",
+"act_n": null,
+"cons_n": null
+},
+"01cb6076-cca0-46ff-b8a7-98f6bd803237": {
+"name": "ISM Services PMI",
+"dt": "2026-10-05T14:00:00Z",
+"act": null,
+"cons": null,
+"prev": "55.4",
+"act_n": null,
+"cons_n": null
+},
+"02a53a33-4794-47f5-9def-bc39d26272b3": {
+"name": "FOMC Minutes",
+"dt": "2026-10-07T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"43c05090-4826-452f-bcb9-232a1c32cf38": {
+"name": "Michigan Consumer Sentiment Index",
+"dt": "2026-10-09T14:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"cbe30686-e724-42b1-b883-36bd8925fe5a": {
+"name": "Consumer Price Index (MoM)",
+"dt": "2026-10-14T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"1e25f809-a3a8-4256-a9f1-de86b4f61f4a": {
+"name": "Consumer Price Index (YoY)",
+"dt": "2026-10-14T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"cfaffea7-7471-4647-926d-581b3eecb400": {
+"name": "Consumer Price Index ex Food & Energy (MoM)",
+"dt": "2026-10-14T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"e3111bf6-764b-4b93-9319-9fe860d7bf34": {
+"name": "Consumer Price Index ex Food & Energy (YoY)",
+"dt": "2026-10-14T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"bddcb0ff-7ede-4f39-b61b-5ccbb8ac4fa9": {
+"name": "Producer Price Index ex Food & Energy (YoY)",
+"dt": "2026-10-15T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"9453b39f-605b-4293-b963-452070d91eb0": {
+"name": "Retail Sales (MoM)",
+"dt": "2026-10-15T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"1113728e-7e61-44c9-acd2-393d3ac0f9cc": {
+"name": "Retail Sales Control Group",
+"dt": "2026-10-15T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"64455197-8e57-4821-a0b9-895cdf923d38": {
+"name": "Jackson Hole Symposium",
+"dt": "2026-08-29T14:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"34556718-8fe3-4115-8ca2-a061712ff7b0": {
+"name": "ISM Manufacturing PMI",
+"dt": "2026-09-01T14:00:00Z",
+"act": "54.6",
+"cons": "55.2",
+"prev": "55.6",
+"act_n": 54.6,
+"cons_n": 55.2
+},
+"29611bc0-b129-4936-95b4-cf2d08478b8e": {
+"name": "ADP Employment Change",
+"dt": "2026-09-02T12:15:00Z",
+"act": "38K",
+"cons": "47K",
+"prev": "46K",
+"act_n": 38.0,
+"cons_n": 47.0
+}
+}

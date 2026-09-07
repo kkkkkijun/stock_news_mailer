@@ -196,9 +196,15 @@ function init(){
     $("g_kPrin").textContent = money(m.principal);
     const kr=$("g_kReal"); kr.textContent=signMoney(m.realizedPnl); kr.className="g-v "+(m.realizedPnl>=0?"up":"dn");
     const ku=$("g_kUnreal"); ku.textContent=signMoney(m.unreal); ku.className="g-v "+(m.unreal>=0?"up":"dn");
+    const cashPct = m.equity>0 ? Math.max(0,Math.min(100,m.cash/m.equity*100)) : 0, posPct = m.equity>0 ? 100-cashPct : 0;
+    $("g_mixPct").textContent = Math.round(cashPct)+"%";
+    $("g_mixCash").textContent = money(m.cash);
+    $("g_mixBarC").style.width = cashPct.toFixed(1)+"%"; $("g_mixBarS").style.width = posPct.toFixed(1)+"%";
+    $("g_mixLegC").textContent = money(m.cash)+" · "+Math.round(cashPct)+"%";
+    $("g_mixLegS").textContent = money(m.posVal)+" · "+Math.round(posPct)+"%";
     const fx = num(g.fx);
     $("g_won").innerHTML = fx>0
-      ? "≈ <b>"+wonN(m.equity*fx)+"</b> <span class='g-fxhint'>원화환산 · 평가손익 "+(m.pnl>=0?"+":"−")+wonN(Math.abs(m.pnl)*fx)+"</span>"
+      ? "≈ <b>"+wonN(m.equity*fx)+"</b> <span class='g-fxhint'>원화환산 · 평가손익 "+(m.pnl>=0?"+":"−")+wonN(Math.abs(m.pnl)*fx)+" · 현금 "+wonN(m.cash*fx)+"</span>"
       : "<span class='g-fxhint'>환율 입력/↻ 자동 시 원화 환산 표시</span>";
 
     const cr=$("g_cashRows"); cr.innerHTML="";
@@ -419,6 +425,14 @@ function SHELL_HTML(){ return ''+
         '<div id="g_pnlBadge" class="g-pnlbadge pos">▲ +$0 · +0%</div>'+
         '<div class="g-note" id="g_gRemain"></div>'+
       '</div></div>'+
+    '<div class="g-mix">'+
+      '<div class="g-mixhead"><span class="g-mixttl">자산 구성</span><span class="g-mixpct">평가액 기준</span></div>'+
+      '<div class="g-mixrow"><div class="g-mixbig"><span id="g_mixPct">0%</span><small>현금 비중</small></div>'+
+        '<div class="g-mixamt"><span>현금</span><b id="g_mixCash">$0</b></div></div>'+
+      '<div class="g-mixbar"><i id="g_mixBarC" class="c"></i><i id="g_mixBarS" class="s"></i></div>'+
+      '<div class="g-mixleg"><span><i style="background:#16a34a"></i>현금 <b id="g_mixLegC">$0 · 0%</b></span>'+
+        '<span><i style="background:var(--accent)"></i>주식 <b id="g_mixLegS">$0 · 0%</b></span></div>'+
+      '<div class="g-mixnote">현금 = 순입금 − 매수금액 + 매도금액 (수수료 반영) · 매매일지에서 자동 계산</div></div>'+
     '<div class="g-kpis">'+
       '<div class="g-kpi"><div class="g-l">원금(순입금)</div><div class="g-v" id="g_kPrin">0</div></div>'+
       '<div class="g-kpi"><div class="g-l">실현손익</div><div class="g-v" id="g_kReal">0</div></div>'+
@@ -522,6 +536,23 @@ function injectStyle(){
   #goalRoot .g-note{font-size:10.5px;color:var(--faint);margin-top:6px}
   #goalRoot .g-kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:14px}
   #goalRoot .g-kpi{background:var(--nav-track);border-radius:12px;padding:11px 12px}
+  #goalRoot .g-mix{margin-top:14px;background:var(--nav-track);border-radius:12px;padding:12px 12px 11px}
+  #goalRoot .g-mixhead{display:flex;justify-content:space-between;align-items:baseline}
+  #goalRoot .g-mixttl{font-size:10px;color:var(--muted);font-weight:700;letter-spacing:.02em}
+  #goalRoot .g-mixpct{font-size:11px;color:var(--faint);font-weight:600}
+  #goalRoot .g-mixrow{display:flex;justify-content:space-between;align-items:flex-end;margin-top:6px}
+  #goalRoot .g-mixbig{font-size:22px;font-weight:800;letter-spacing:-.02em;color:#16a34a;line-height:1}
+  #goalRoot .g-mixbig small{font-size:12px;color:var(--muted);font-weight:700;margin-left:4px}
+  #goalRoot .g-mixamt{font-size:13px;font-weight:800;color:var(--ink)}
+  #goalRoot .g-mixamt span{font-size:10.5px;color:var(--faint);font-weight:600;margin-right:4px}
+  #goalRoot .g-mixbar{display:flex;height:14px;border-radius:8px;overflow:hidden;margin:9px 0 7px;border:1px solid var(--border);background:var(--card)}
+  #goalRoot .g-mixbar i{display:block;height:100%;transition:width .4s ease}
+  #goalRoot .g-mixbar .c{background:#16a34a;width:0}
+  #goalRoot .g-mixbar .s{background:var(--accent);width:0}
+  #goalRoot .g-mixleg{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;font-weight:700;color:var(--muted)}
+  #goalRoot .g-mixleg b{color:var(--ink)}
+  #goalRoot .g-mixleg i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+  #goalRoot .g-mixnote{font-size:10px;color:var(--faint);margin-top:7px}
   #goalRoot .g-l{font-size:10px;color:var(--muted);font-weight:600}
   #goalRoot .g-v{font-size:16px;font-weight:800;margin-top:3px;letter-spacing:-.01em}
   #goalRoot .g-break{margin-top:12px;background:var(--nav-track);border:1px dashed var(--border);border-radius:12px;

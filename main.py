@@ -1020,6 +1020,11 @@ if __name__ == "__main__":
                     build_qualitative(client=client)  # 10-K 정성(캐시)
                 except Exception as fe:
                     print(f"[site] fundamentals 실패: {fe}")
+                try:
+                    from econ_results import refresh as refresh_econ
+                    print("[site] 경제지표 결과:", refresh_econ())  # data/econ_results.json
+                except Exception as ee:
+                    print(f"[site] econ_results 실패: {ee}")
                 print("[site] 발행:", publish(final_body, quotes=quotes))
             except Exception as e:
                 print(f"[site] 발행 실패: {e}")
