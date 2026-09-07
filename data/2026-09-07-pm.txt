@@ -1,0 +1,218 @@
+2026-09-07T17:03:00.462147+09:00
+
+[오늘의 뉴스 요약] 2026-09-07 17:01 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 원/달러 환율이 약 2년 만에 1,330원대까지 하락했다가 국민연금의 환 헤지 중단으로 인해 다시 1,340원대로 반등하는 모습을 보였다. 국고채 금리는 혼조세를 보였으며, 정부는 추석 민생대책을 추가 발표할 예정이다.
+
+[핵심 뉴스]
+1. (환율) 환율 1,330원대 진입
+   → 원/달러 환율이 7일 오후 3시 30분 기준으로 1,340.5원에 거래되며 전 거래일보다 9.9원 하락했다. 환율이 1,330원대에 진입한 것은 약 2년 만이며, 국민연금의 환 헤지 중단 소식으로 하락 폭이 줄어들었다.
+   (연합뉴스 · 09/07 16:00)
+2. (금리) 국고채 금리 혼조세
+   → 7일 국고채 금리는 혼조세를 나타내며 3년 만기 국고채 금리는 3.900%로 1.6bp 상승, 10년물은 4.385%로 2.5bp 상승했다. 반면, 20년물과 30년물은 각각 소폭 하락했다.
+   (연합뉴스 · 09/07 16:40)
+3. (정책) 추석 민생대책 추가 발표
+   → 이형일 경제부총리 후보자는 이번주 중 농축수산물 할인과 공급 확대 등의 추가적인 추석 민생대책을 발표할 예정이라 밝혔다. 이를 통해 장바구니 물가 부담을 낮추겠다는 의지를 보였다.
+   (연합뉴스 · 09/07 13:00)
+4. (정책) 세금 부담 완화 요청
+   → 소상공인연합회는 이형일 재경장관 후보자를 만나 세금 부담 완화와 자금 유동성 개선 등 3대 현안을 건의하였다. 소상공인 체감경기지수는 55.6으로 떨어져 있어 이들의 경영 안정이 필요하다는 목소리가 높아지고 있다.
+   (연합뉴스 · 09/07 16:15)
+5. (기타) 원/달러 환율 9.9원 하락
+   → 원의 달러 환율은 7일 1,340.5원으로 하락하며 전 거래일보다 9.9원 내렸다. 이는 4거래일 연속 하락하며, 최근 하락폭이 29.9원에 달하는 수치이다.
+   (연합뉴스 · 09/07 15:30)
+
+[흐름·전망]
+• 환율이 국민연금의 환헤지 중단 소식으로 인해 1,340원대에서 지지선을 찾을지 주목해야 한다.
+• 국고채 금리의 혼조세가 지속되며 경제 전반에 미치는 영향을 분석할 필요가 있다.
+• 추석 민생대책 발표 후 물가 안정에 대한 효과와 소상공인의 반응을 지켜봐야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Global Financial Private Client LLC Increases Position in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 09/07 16:53)
+→ Global Financial Private Client LLC가 NVIDIA Corporation의 주식을 추가로 매입하며 보유 비율을 늘렸다는 내용입니다. 이 움직임은 NVIDIA의 성장성과 투자 매력을 반영하는 것으로 해석됩니다.
+
+📰 [NVDA] Farmers & Merchants Investments Inc. Purchases 13,817 Shares of NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 09/07 16:53)
+→ Farmers & Merchants Investments Inc.가 NVIDIA Corporation의 주식 13,817주를 구매했습니다. 이 거래는 회사의 투자 전략 일환으로 보입니다.
+
+📰 [NVDA] Colony Family Offices LLC Purchases 2,732 Shares of NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 09/07 16:53)
+→ Colony Family Offices LLC가 NVIDIA Corporation의 주식 2,732주를 매입했습니다. 이번 구매는 회사의 투자 포트폴리오 다각화의 일환으로 보입니다.
+
+📰 [TSLA] Castleark Management LLC Takes Position in Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/07 16:55)
+→ Castleark Management LLC가 테슬라(Tesla, Inc.)에 투자했다는 소식입니다. 이 회사는 테슬라 주식을 매입하며 포트폴리오를 확장하고 있습니다.
+
+📰 [TSLA] EFG International AG Purchases Shares of 59,375 Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/07 16:55)
+→ EFG International AG가 테슬라(Tesla, Inc.)의 주식 59,375주를 구매했다고 보도됐다. 이번 거래는 EFG의 포트폴리오 다변화를 위한 전략의 일환으로 분석된다.
+
+📰 [TSLA] Fiduciary Financial Advisors Invests $1.44 Million in Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/07 16:53)
+→ Fiduciary Financial Advisors가 테슬라(Tesla, Inc.)에 144만 달러를 투자했습니다. 이 투자 결정은 시장에서 주목받고 있습니다.
+
+📰 [HIMS] 2026-09-06 | Bronstein, Gewirtz & Grossman, LLC Announces an Investigation Against Hims & Hers Health, Inc. (HIMS) and Encourages Investors to Learn More About the Investigation | NYSE:HIMS | Press Release - Stockhouse
+   (Stockhouse · 09/07 02:00)
+→ Bronstein, Gewirtz & Grossman, LLC은 Hims & Hers Health, Inc.에 대한 조사를 발표하고 투자자들에게 이 조사에 대해 더 알아볼 것을 권장하고 있습니다. 이 회사는 NYSE에서 HIMS라는 티커로 거래되고 있습니다.
+
+📰 [HIMS] Bronstein, Gewirtz & Grossman LLC Urges Hims & Hers Health, Inc. Investors to Act: Class Action Filed Alleging Investor Harm - PR Newswire
+   (PR Newswire · 09/07 01:00)
+→ Bronstein, Gewirtz & Grossman LLC가 Hims & Hers Health, Inc.의 투자자들에게 행동을 촉구하고 있습니다. 이들은 투자자 피해를 주장하며 집단소송을 제기했습니다.
+
+📰 [HIMS] INVESTOR DEADLINE ALERT: Hims & Hers Health, Inc. (HIMS) Investors with Substantial Losses Have Opportunity to Lead Class Action Lawsuit - PR Newswire
+   (PR Newswire · 09/05 23:40)
+→ Hims & Hers Health, Inc.의 투자자들 중 상당한 손실을 입은 이들은 집단 소송을 이끌 기회를 갖게 되었다는 내용의 뉴스입니다. 투자자들은 소송 참여를 위해 특정 기한 내에 행동해야 합니다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW, RKTO Extend Slide Premarket After Blue Origin Blowup — Analyst Pushes AST Coverage Timeline To 2028 - Stocktwits
+   (Stocktwits · 09/07 02:27)
+→ ASTS, RKLB, LUNR, RDW, RKTO 주식이 블루 오리진의 폭발 사건 이후 프리마켓에서 하락세를 이어가고 있으며, 한 분석가는 AST의 커버리지 일정을 2028년으로 연장했습니다. 이로 인해 투자자들의 우려가 커지고 있습니다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW Stocks Slide Overnight: Analyst Questions Whether Rivals Can Compete If SpaceX Controls Access To Orbit - Stocktwits
+   (Stocktwits · 09/07 00:05)
+→ ASTS, RKLB, LUNR, RDW 주식이 하락하였으며, 분석가는 SpaceX가 궤도로의 접근을 통제할 경우 경쟁업체들이 경쟁할 수 있을지 의문을 제기했습니다.
+
+📰 [RDW] RDW Stock Surges Overnight On Blockbuster Earnings: Retail Wants ‘Valuation Rebalance’ Now - Stocktwits
+   (Stocktwits · 09/06 10:15)
+→ RDW 주식이 예상 이상의 실적 발표로 급등했습니다. 소매 투자자들은 현재 주식의 가치 조정을 원하고 있습니다.
+
+📰 [IREN] Analyzing Applied Digital vs. IREN: Accelerating Upward Trajectories vs. Sequential Contractions in Quarterly Revenue Generation
+   (Yahoo Finance · 09/07 06:06)
+→ Applied Digital의 매출은 두 분기 만에 두 배로 증가한 반면, IREN의 매출은 최고점에서 43% 감소했다. 이로 인해 두 회사 간의 격차가 확대되며 경쟁 양상이 변화하고 있다.
+
+📰 [IREN] Is Investis Holding (SWX:IREN) Still Below Fair Value As Bond Issuance And Earnings Land?
+   (Yahoo Finance · 09/06 16:07)
+→ Investis Holding이 2026년 상반기 실적 발표 후 1억 스위스 프랑 규모의 0.95% 채권 발행을 완료하면서 투자자들의 관심을 끌고 있다. 현재 주가는 CHF 145.0로 한 달 간 약 4% 하락했지만, 1년간 총 주주 수익률은 약 16%, 3년간은 60%를 넘어서 우상향 모멘텀을 보이고 있다.
+
+📰 [IREN] $IREN Ltd (IREN.US)$ will hopefully be out at 45-46. will probably crash soon. - Moomoo
+   (Moomoo · 09/06 16:00)
+→ $IREN Ltd (IREN.US)$의 주가가 45-46까지 상승할 것으로 기대되지만, 곧 급락할 가능성이 있다는 전망이 나왔습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Liquid Network pauses after $320M BTC withdrawal - TNGlobal
+   (TNGlobal · 09/07 16:55)
+→ Liquid Network는 3억 2천만 달러 상당의 비트코인 출금 이후 서비스를 일시 중단했습니다. 이 결정은 대규모 출금으로 인한 리스크 관리 차원에서 이루어진 것으로 보입니다.
+
+📰 [BTC-USD] Hackers siphoned off $320 million worth of bitcoin from the Liquid Network - Українські Національні Новини (УНН)
+   (Українські Національні Новини (УНН) · 09/07 16:37)
+→ 해커들이 Liquid Network에서 3억 2천만 달러 상당의 비트코인을 해킹해 빼내갔습니다. 이 사건은 암호화폐 보안에 대한 우려를 다시 불러일으키고 있습니다.
+
+📰 [BTC-USD] Bitcoin Declines in Low Trading Volumes Due to U.S. Holiday -- Market Talk - Moomoo
+   (Moomoo · 09/07 16:32)
+→ 비트코인이 미국의 공휴일 영향으로 거래량이 낮아지며 하락세를 보이고 있습니다. 거래 활동이 줄어들면서 시장의 변동성이 커지고 있다는 분석이 나왔습니다.
+
+📰 [ETH-USD] Harmony Is Shutting Down. ONE Holders Get Ethereum Tokens Automatically
+   (Yahoo Finance · 09/07 16:40)
+→ Harmony는 블록체인을 종료하고, ONE을 이더리움에서 재발행한다고 발표했습니다. 이 결정은 국가 행위자와 AI 요인으로부터의 위협을 이유로 하고 있습니다. ONE 보유자들은 자동으로 이더리움 토큰을 받게 됩니다.
+
+📰 [ETH-USD] Harmony Is Shutting Down. ONE Holders Get Ethereum Tokens Automatically - BeInCrypto
+   (BeInCrypto · 09/07 16:40)
+→ 하모니(Harmony) 블록체인이 종료되며, ONE 토큰 보유자들은 자동으로 이더리움 토큰을 받게 됩니다. 이 변화는 하모니의 서비스 종료와 관련된 조치로 진행됩니다.
+
+📰 [ETH-USD] Ethereum nears key $2,560 resistance with poten... - Pluang
+   (Pluang · 09/07 16:07)
+→ 이더리움이 2,560달러의 중요한 저항선에 근접하고 있으며, 이에 대한 잠재적 상승세가 기대되고 있다는 내용입니다. 투자자들은 이 저항을 돌파할 경우 더욱 큰 가격 상승이 가능할 것으로 보고 있습니다.
+
+📰 [SOL-USD] Solana (SOLUSD) Is down 1.03% on Sep 7: Key Drivers to Watch - TradingKey
+   (TradingKey · 09/07 16:35)
+→ 9월 7일 솔라나(SOLUSD)의 가격이 1.03% 하락했다. 시장 동향 및 주요 경제 지표들이 투자자들의 주목을 받고 있는 가운데, 향후 가격 변동에 영향을 미칠 주요 요인들이 주시되고 있다.
+
+📰 [SOL-USD] Solana holds $103, eyes $110 resistance amid st... - Pluang
+   (Pluang · 09/07 16:30)
+→ 솔라나의 현재 가격은 103달러이며, 110달러의 저항선突破을 목표로 하고 있습니다.
+
+📰 [SOL-USD] Raydium LaunchLab adds support for any token pair on Solana - Crypto News
+   (Crypto News · 09/07 15:47)
+→ Raydium LaunchLab이 솔라나(Solana)에서 모든 토큰 쌍에 대한 지원을 추가했습니다. 이를 통해 사용자들은 다양한 암호화폐 간의 거래를 더 쉽게 진행할 수 있게 됩니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+비트코인이 8만2000달러 근처에서 하락하여 8만달러 아래로 밀려난 가운데 주요 밈코인의 거래대금은 12억7200만달러로 집계되며 시장에 활기를 주고 있다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 8만달러 아래로 하락
+   → 비트코인이 8만2000달러를 재시험한 후 8만달러 아래로 하락했으며, 주요 밈코인의 거래대금이 12억7200만달러로 나타났다.
+   (토큰포스트 · 09/07 17:01)
+2. (기타) 기관 비트코인 보유량 413만개
+   → 기관이 보유한 비트코인의 총량은 약 412만6814 BTC로, 가장 많은 비트코인을 보유한 기관은 스트래티지로 84만5050 BTC를 보유하고 있다.
+   (토큰포스트 · 09/07 14:58)
+3. (기타) 한국, ZEC에 대한 관심 증가
+   → 한국 이용자들 사이에서 지캐시(ZEC)에 대한 관심이 증가하고 있으며, ZEC는 일간 4.2% 상승하여 1,213달러에 거래되고 있다.
+   (토큰포스트 · 09/07 16:01)
+4. (온체인) 비트코인 거래소 순유출 지속
+   → 거래소에서 비트코인 잔고가 지속적으로 순유출되고 있으며, 일간 기준으로 약 85 BTC가 빠져나갔고, 최근 1주일 동안은 4755 BTC의 순유출이 발생했다.
+   (토큰포스트 · 09/07 13:32)
+5. (기타) 마켓 동향 서비스 개편
+   → 지난 5시간 동안 비트코인에서 2419만 달러가 유출되었고, 스테이블코인으로는 USDT가 2819만 달러로 가장 큰 유입을 기록했다.
+   (토큰포스트 · 09/07 14:31)
+
+[흐름·전망]
+• 비트코인이 8만달러를 유지할 수 있는지 주목해야 하며, 주요 밈코인의 거래대금 증가는 전반적인 시장 활기에 긍정적 요소로 작용할 수 있다.
+• 기관의 비트코인 보유량 변화는 시장의 신뢰도를 나타내므로, 기관의 매매 동향이 중요한 관전 포인트가 된다.
+• ZEC와 같은 프라이버시 코인에 대한 관심 증가는 시장의 다변화를 보여주며, 추가 투자 기회를 탐색하는 데 도움이 될 수 있다.
+• 거래소의 비트코인 순유출 현상은 비트코인 가격에 미치는 영향이 클 수 있으므로, 유출 트렌드를 지속적으로 관찰할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 42 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울에서 주택 착공과 인허가 실적이 크게 증가하며 긍정적인 공급 기반을 나타내고 있으나, 세제 개편안 혼란과 거래 감소로 인한 불확실성이 지속되고 있습니다.
+
+[핵심 뉴스]
+1. (공급) 올해 서울 주택 2만호 착공
+   → 서울에서는 올해 7월까지 총 1만9507가구의 주택이 착공되었으며, 이는 최근 3년 평균보다 34.6% 증가한 수치입니다. 또한 주택 인허가 실적도 2만8634가구로 절반 이상이 재건축·재개발 등 정비사업에서 나오고 있습니다.
+   (매일경제 · 09/07 15:10)
+2. (정책) 오락가락 세제 개편 영향
+   → 2026년 8월 서울 아파트 거래량이 2322건으로, 7월 5800건에서 60% 가까이 감소하면서 올해 최저치를 기록했습니다. 이는 세제 개편안 변경으로 인한 시장의 불확실성 때문입니다.
+   (매일경제 · 09/07 11:47)
+3. (전세) 압구정 전세 보증금 폭탄
+   → 서울에서 계약갱신요구권을 사용하지 않은 아파트 전세 재계약의 경우 평균 보증금이 4678만원 상승했습니다. 이는 갱신요구권을 통해 제약을 받지 않는 재계약에서 나타나는 시세 상승을 반영하고 있습니다.
+   (매일경제 · 09/07 15:38)
+4. (매매) 경매 시장 낙찰가율 동반 하락
+   → 전국 주거시설의 경매 낙찰가율이 20년 7개월 만에 69.9%로 떨어졌고, 서울 아파트 낙찰가율도 97.0%로 5개월 만에 100% 이하로 하락했습니다. 이는 매수심리 위축으로 인한 결과입니다.
+   (연합뉴스 · 09/07 11:17)
+5. (매매) 분당 아파트값 29.5% 상승
+   → 최근 1년간 아파트값 상승률이 경기 성남시 분당구에서 29.5%로 가장 높게 조사되었으며, 비강남 지역 집값이 크게 상승하고 있다.
+   (시사저널 · 09/07 16:14)
+
+[흐름·전망]
+• 서울의 주택 착공과 인허가가 증가하고 있는 만큼, 향후 물량 증가가 기대되며 공급이 원활하게 이뤄질지 주목해야 합니다.
+• 계약갱신요구권 미사용으로 인한 전세 보증금 인상은 세입자 부담을 가중시킬 것으로 우려되며, 향후 전세 시장의 동향에 주의가 필요합니다.
+• 세제 개편안에 대한 불확실성은 매수·매도자 모두의 관망세를 지속시키고 있으며, 정부의 정책 변화에 따른 시장 반응을 세심히 지켜봐야 할 시점입니다.
+• 경매 시장의 낙찰가율 하락은 매수심리 위축을 반영하고 있으나, 지역별로 양극화가 심화되는 모습이 보이므로, 위치에 따라 차별화된 움직임을 보여줄 가능성도 있습니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 발언에서 자신의 고유한 가치와 정책을 강조하며 강한 지지세력을 재확인하고 있습니다. 경제와 관련된 긍정적인 보고서에 주목하며, 저조한 물가 상승률과 낮은 세금 정책을 강조했습니다.
+
+[주요 발언]
+1. (경제) 트럼프는 강한 고용 보고서에 대해 환영하며 금리 인하를 촉구했습니다.
+   (Truth Social · 09/07 09:48)
+2. (인사) 플로리다 주의 제임스 우스마이어 법무장관을 지지하며 그의 강력한 범죄 및 국경 보호 정책을 강조했습니다.
+   (Truth Social · 09/07 11:24)
+3. (경제) 여성이 트럼프 취임 이후 미국의 거의 모든 순 고용 증가를 차지했다고 언급하며 긍정적인 성과를 강조했습니다.
+   (Truth Social · 09/07 09:47)
+4. (외교) 트럼프 대사는 테러 스캔들 이후 유엔에 NATO와 같은 개혁을 약속하며 유엔의 개혁 필요성을 주장했습니다.
+   (Truth Social · 09/07 09:49)
+5. (기타) 트럼프는 미국의 백악관에 헬리콥터 착륙장 설치의 필요성을 강조하며 이를 완공했다고 전했습니다.
+   (Truth Social · 09/07 02:57)
+
+[시장·경제 관련]
+• 트럼프는 낮은 세금과 저조한 물가 상승률을 강조하며 경제 개선에 대한 긍정적인 전망을 보였습니다.
+
+[흐름·전망]
+• 트럼프의 발언은 자신의 경제 정책에 대해 긍정적인 반응을 보일 가능성을 시사합니다.
+• 향후 금리 인하에 대한 논의가 부각될 수 있으며, 이에 따른 경제적 반응을 주목할 필요가 있습니다.
+• 트럼프의 인사 및 지지 언급은 그의 정치적 기반을 더욱 확고히 할 것으로 예상됩니다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
