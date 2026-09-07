@@ -71,6 +71,24 @@ a:hover{opacity:.72;}
 .ev-n{flex:1;font-size:12px;font-weight:600;color:var(--ink);line-height:1.35;}
 .igauge{display:flex;gap:2px;flex-shrink:0;}
 .igauge i{width:8px;height:6px;border-radius:2px;display:block;}
+.ev.has-res{align-items:flex-start;}
+.ev.has-res .igauge{margin-top:5px;}
+.ev.has-res .ev-t{padding-top:1px;}
+.ev.past .ev-t{color:var(--faint);}
+.ev-body{flex:1;min-width:0;}
+.ev-body .ev-n{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.ev-done{font-size:9px;font-weight:800;color:#fff;background:var(--ink);border-radius:5px;
+ padding:2px 5px;letter-spacing:.02em;}
+.ev-res{display:flex;align-items:center;gap:7px;margin-top:5px;font-size:10.5px;font-weight:600;
+ color:var(--muted);white-space:nowrap;flex-wrap:wrap;}
+.ev-res .act{font-size:12.5px;font-weight:800;color:var(--ink);}
+.ev-res .k{color:var(--faint);margin-right:2px;}
+.ev-vs{font-size:10px;font-weight:800;border-radius:6px;padding:2px 6px;line-height:1.3;}
+.ev-vs.beat{color:#e5484d;background:rgba(229,72,77,.12);}
+.ev-vs.miss{color:#3b82f6;background:rgba(59,130,246,.12);}
+.ev-vs.inl{color:var(--muted);background:var(--nav-track);}
+.ev-pre{display:flex;gap:8px;margin-top:4px;font-size:10.5px;color:var(--faint);font-weight:600;}
+.ev-pre b{color:var(--muted);font-weight:700;}
 .sched-src{font-size:9.5px;color:var(--faint);text-align:right;margin-top:9px;}
 /* 일정 2단: 좌 경제지표 / 우 기업실적 */
 /* 일정: 전 기기 공통 서브탭 → 한 번에 한 컬럼(단일) */
