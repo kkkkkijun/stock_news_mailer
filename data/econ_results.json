@@ -48,10 +48,10 @@
 "name": "Producer Price Index ex Food & Energy (YoY)",
 "dt": "2026-09-10T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "4.6%",
 "prev": "4.2%",
 "act_n": null,
-"cons_n": null
+"cons_n": 4.6
 },
 "3e882694-dd74-4fae-a29a-d20098a1c906": {
 "name": "Consumer Price Index (MoM)",
@@ -93,10 +93,10 @@
 "name": "Michigan Consumer Sentiment Index",
 "dt": "2026-09-11T14:00:00Z",
 "act": null,
-"cons": null,
+"cons": "51",
 "prev": "51.7",
 "act_n": null,
-"cons_n": null
+"cons_n": 51.0
 },
 "15c93b10-4ad3-473c-84f4-d7e41714de13": {
 "name": "Retail Sales (MoM)",
