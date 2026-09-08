@@ -109,10 +109,10 @@
     }
    ],
    "target": {
-    "price": "$230.36",
+    "price": "$225.94",
     "mean": "$327.13",
     "range": "$180~$515",
-    "upside": "+42%",
+    "upside": "+45%",
     "upside_pos": true
    },
    "rec": {
@@ -234,10 +234,10 @@
     }
    ],
    "target": {
-    "price": "$499.70",
+    "price": "$491.93",
     "mean": "$572.92",
     "range": "$400~$870",
-    "upside": "+15%",
+    "upside": "+16%",
     "upside_pos": true
    },
    "rec": {
@@ -359,10 +359,10 @@
     }
    ],
    "target": {
-    "price": "$319.97",
+    "price": "$316.14",
     "mean": "$323.86",
     "range": "$215~$400",
-    "upside": "+1%",
+    "upside": "+2%",
     "upside_pos": true
    },
    "rec": {
@@ -484,7 +484,7 @@
     }
    ],
    "target": {
-    "price": "$338.46",
+    "price": "$338.56",
     "mean": "$428.07",
     "range": "$340~$515",
     "upside": "+26%",
@@ -609,10 +609,10 @@
     }
    ],
    "target": {
-    "price": "$258.51",
+    "price": "$257.38",
     "mean": "$328.17",
     "range": "$230~$405",
-    "upside": "+27%",
+    "upside": "+28%",
     "upside_pos": true
    },
    "rec": {
@@ -734,7 +734,7 @@
     }
    ],
    "target": {
-    "price": "$616.77",
+    "price": "$618.24",
     "mean": "$754.77",
     "range": "$580~$1,000",
     "upside": "+22%",
@@ -859,10 +859,10 @@
     }
    ],
    "target": {
-    "price": "$354.08",
+    "price": "$368.91",
     "mean": "$390.09",
     "range": "$125~$600",
-    "upside": "+10%",
+    "upside": "+6%",
     "upside_pos": true
    },
    "rec": {
@@ -979,10 +979,10 @@
     }
    ],
    "target": {
-    "price": "$27.71",
+    "price": "$27.94",
     "mean": "$31.23",
     "range": "$23~$42",
-    "upside": "+13%",
+    "upside": "+12%",
     "upside_pos": true
    },
    "rec": {
@@ -1104,10 +1104,10 @@
     }
    ],
    "target": {
-    "price": "$10.53",
+    "price": "$11.15",
     "mean": "$14.69",
     "range": "$8~$20",
-    "upside": "+39%",
+    "upside": "+32%",
     "upside_pos": true
    },
    "rec": {
@@ -1128,10 +1128,10 @@
   "detail": {
    "prev": {
     "period": "26.06",
-    "eps_act": "-",
+    "eps_act": "$-0.25",
     "eps_est": "$-0.46",
-    "surprise": null,
-    "surprise_pos": null
+    "surprise": "+44.09%",
+    "surprise_pos": true
    },
    "surprises": [
     {
@@ -1147,6 +1147,11 @@
     {
      "fmt": "+38.42%",
      "v": 38.42,
+     "pos": true
+    },
+    {
+     "fmt": "+44.09%",
+     "v": 44.09,
      "pos": true
     }
    ],
@@ -1202,10 +1207,10 @@
      "cq": "2026-2",
      "label": "2026 2Q",
      "reported": true,
-     "eps_act": "-",
+     "eps_act": "$-0.25",
      "eps_est": "$-0.46",
-     "surprise": null,
-     "surprise_pos": null
+     "surprise": "+44.09%",
+     "surprise_pos": true
     },
     {
      "cq": "2026-3",
@@ -1224,10 +1229,10 @@
     }
    ],
    "target": {
-    "price": "$44.68",
+    "price": "$48.44",
     "mean": "$77.84",
     "range": "$43~$131",
-    "upside": "+74%",
+    "upside": "+61%",
     "upside_pos": true
    },
    "rec": {
@@ -1349,10 +1354,10 @@
     }
    ],
    "target": {
-    "price": "$174.33",
+    "price": "$171.59",
     "mean": "$193.88",
     "range": "$80~$255",
-    "upside": "+11%",
+    "upside": "+13%",
     "upside_pos": true
    },
    "rec": {
@@ -1474,10 +1479,10 @@
     }
    ],
    "target": {
-    "price": "$64.26",
+    "price": "$66.31",
     "mean": "$111.00",
     "range": "$64~$150",
-    "upside": "+73%",
+    "upside": "+67%",
     "upside_pos": true
    },
    "rec": {
