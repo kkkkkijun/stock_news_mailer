@@ -1,0 +1,221 @@
+2026-09-08T17:02:43.641430+09:00
+
+[오늘의 뉴스 요약] 2026-09-08 17:01 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 서울 채권시장에서는 국고채 금리가 상승하며 마감했다. 또한, 원/달러 환율은 5거래일 만에 상승세로 돌아섰고, 청년 고용 정책의 대상이 34세 이하로 확대되며 정책적인 변화가 이뤄졌다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 대체로 상승
+   → 8일 국고채 금리는 3년물과 10년물이 각각 0.1bp와 1.6bp 상승하여 연 3.901%와 연 4.401%를 기록했다.
+   (연합뉴스 · 09/08 16:40)
+2. (환율) 환율 상승, 1,345.6원
+   → 원/달러 환율은 1,345.6원으로, 전 거래일 대비 5.1원이 상승하면서 5거래일 만에 상승세로 반전했다.
+   (연합뉴스 · 09/08 15:56)
+3. (고용) 청년고용정책 대상 확대
+   → 청년고용정책의 대상 나이가 기존 29세에서 34세로 확대되며 청년층의 노동시장 진입 지원이 강화된다는 내용이 8일 국무회의에서 의결되었다.
+   (연합뉴스 · 09/08 13:17)
+4. (정책) 무디스, 예산안과 미래기금 균형 촉구
+   → 무디스는 한국 정부의 내년 예산안과 미래기금 편성에 대한 평을 통해 재정건전성과 성장의 균형을 평가하며 긍정적인 경제 성장 전망을 밝혔다.
+   (연합뉴스 · 09/08 15:00)
+5. (성장) 춘천시, 반도체 팹리스 산업 육성
+   → 춘천시는 541억 원 규모의 반도체 연구소를 설계 및 개발 전문 기업인 '팹리스' 산업 육성을 위해 착공할 예정이며, 2028년 완공 목표로 추진하고 있다.
+   (연합뉴스 · 09/08 16:43)
+
+[흐름·전망]
+• 국고채 금리 상승은 글로벌 금리 환경과 관련이 있을 수 있으므로, 금리 변동을 주의 깊게 살펴봐야 한다.
+• 원/달러 환율의 상승은 국제 유가 및 수입업체의 매수세와 관련이 있으므로, 향후 대외 경제 상황의 변화를 관찰해야 한다.
+• 청년고용정책의 확대는 고용 시장의 구조 변화에 긍정적인 영향을 미칠 것으로 예상되며, 구직자에게 새로운 기회를 제공할 수 있다.
+• 무디스의 긍정적인 평가와 미래기금의 활용 방안은 한국 경제 정책의 지속 가능성을 나타내지만, 재정 건전성을 지속적으로 지켜봐야 한다.
+• 춘천시의 반도체 산업 육성 계획은 지역 경제 다각화 및 혁신적인 산업 발전에 기여할 가능성이 있는 만큼, 향후 성과가 주목될 것이다.
+
+📈 해외주식 PART
+📰 [NVDA] Market Street Wealth Management Advisors LLC Increases Holdings in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 09/08 16:43)
+→ Market Street Wealth Management Advisors LLC가 NVIDIA Corporation의 주식을 추가로 매입하였습니다. 이번 주식 매입은 회사의 투자 전략의 일환으로, 더 많은 지분을 확보하게 되었습니다.
+
+📰 [NVDA] Brindle & Bay Financial Advisors LLC Takes Position in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 09/08 16:41)
+→ Brindle & Bay Financial Advisors LLC가 NVIDIA Corporation($NVDA)에 투자했다고 보도되었습니다. 이 투자로 인해 해당 회사의 포트폴리오가 확대될 것으로 기대됩니다.
+
+📰 [NVDA] Oak Family Advisors LLC Has $3.97 Million Stock Position in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 09/08 16:41)
+→ Oak Family Advisors LLC가 NVIDIA Corporation(NVDA)에 397만 달러 규모의 주식을 보유하고 있다는 소식입니다. 이 투자액은 최근 시장 동향과 관련이 있습니다.
+
+📰 [TSLA] Proficio Capital Partners LLC Has $8.03 Million Stock Holdings in Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/08 16:47)
+→ Proficio Capital Partners LLC가 테슬라(Tesla Inc.) 주식을 803만 달러어치 보유하고 있다는 소식이 전해졌습니다. 이 보유 규모는 테슬라의 종목에 대한 투자 신뢰도를 나타냅니다.
+
+📰 [TSLA] Tesla, Inc. $TSLA is Perennial Investment Advisors LLC's 9th Largest Position - MarketBeat
+   (MarketBeat · 09/08 16:47)
+→ Tesla, Inc.의 주식이 Perennial Investment Advisors LLC의 9번째로 큰 투자 포지션으로 보고되었다.
+
+📰 [TSLA] Freestone Grove Partners LP Makes New Investment in Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/08 16:47)
+→ Freestone Grove Partners LP가 테슬라(Tesla, Inc.)에 새로운 투자를 진행했습니다. 이번 투자는 테슬라의 성장 가능성을 반영한 것으로 보입니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (HIMS) Investigation: Bronstein, Gewirtz & Grossman, LLC Encourages Investors to Contact the Firm to Learn More About the Investigation - ACCESS Newswire
+   (ACCESS Newswire · 09/08 03:48)
+→ Hims & Hers Health, Inc.에 대한 조사가 진행되고 있으며, 법률 회사인 브론슈타인, 게위르츠 & 그로스먼 LLC가 투자자들에게 이 조사에 대한 정보를 얻기 위해 연락할 것을 권장하고 있습니다.
+
+📰 [HIMS] Bronstein, Gewirtz & Grossman LLC Urges Hims & Hers Health, - GlobeNewswire
+   (GlobeNewswire · 09/08 01:00)
+→ Bronstein, Gewirtz & Grossman LLC는 Hims & Hers Health에 대한 주의를 촉구하고 있습니다. 이 법률 사무소는 회사의 주주들에게 중요한 정보를 전달하고 있으며, 투자자들에게 영향력을 미칠 수 있는 사안으로 보입니다.
+
+📰 [HIMS] INVESTOR DEADLINE ALERT: Hims & Hers Health, Inc. (HIMS) Investors with Substantial Losses Have Opportunity to Lead Class Action Lawsuit - PR Newswire
+   (PR Newswire · 09/05 23:40)
+→ Hims & Hers Health, Inc. (HIMS)의 투자자들은 상당한 손실을 겪은 경우 집단 소송을 이끌 기회를 가진다는 소식이 전해졌습니다. 투자자들은 이 소송의 주도권을 쥐기 위해 기한 내에 행동해야 합니다.
+
+📰 [RDW] ASTS, RKLB, RDW, SATS Jump As SpaceX Prices Historic IPO — Cloudflare CEO Weighs In On 'Perfect' 20% Pop Prediction - Stocktwits
+   (Stocktwits · 09/07 12:32)
+→ ASTS, RKLB, RDW, SATS 주식이 SpaceX의 역사적인 IPO 가격 설정 소식에 급등했습니다. 또한 Cloudflare CEO가 주가가 20% 상승할 것이라는 '완벽한' 예측에 대해 의견을 제시했습니다.
+
+📰 [RDW] ONDS, AVAV, RCAT, RDW Rise Premarket: Investors Pour $10.7B Into Drone Stocks – S3 Sees 'More Fireworks' Ahead - Stocktwits
+   (Stocktwits · 09/07 11:21)
+→ 드론 관련 주식인 ONDS, AVAV, RCAT, RDW가 프리마켓에서 상승세를 보이고 있으며, 투자자들이 107억 달러를 이 분야에 투자하고 있습니다. S3는 앞으로 더 많은 변동성이 예상된다고 전했습니다.
+
+📰 [RDW] RKLB, LUNR, RDW Jump Premarket As Musk Pitches AI Satellites, Orbital Data Centers — Analyst Says The Odds Are Just 7% - Stocktwits
+   (Stocktwits · 09/07 10:11)
+→ RKLB, LUNR, RDW 주식이 프리마켓에서 상승했으며, 이는 일론 머스크가 AI 위성과 궤도 데이터 센터에 대한 아이디어를 제안한 것과 관련이 있습니다. 그러나 한 분석가는 이 프로젝트의 성공 확률이 7%에 불과하다고 언급했습니다.
+
+📰 [IREN] IREN Stock at $44.68: Only 25% of Its $4 Billion ARR Is Operating - ts2.tech
+   (ts2.tech · 09/08 15:18)
+→ IREN 주가는 44.68달러로, 연간 반복 수익(ARR) 40억 달러 중 25%만 운영되고 있는 상황입니다. 이는 회사의 수익 구조에 대한 우려를 나타내고 있습니다.
+
+📰 [IREN] IREN CEO: "AI Computing Supply Can't Keep Up with Demand No Matter How Much We Add" - finance.biggo.com
+   (finance.biggo.com · 09/08 10:25)
+→ IREN의 CEO는 AI 컴퓨팅 공급이 수요를 따라잡을 수 없다고 주장하며, 추가 생산 노력에도 불구하고 이러한 상황이 개선되지 않을 것이라고 경고했습니다. AI 기술에 대한 수요 증가로 인해 공급이 부족하다는 점을 강조했습니다.
+
+📰 [IREN] IREN’s Roberts reckons compute will never catch up - Capital Brief
+   (Capital Brief · 09/08 05:20)
+→ IREN의 로버츠는 컴퓨터 성능이 절대 따라잡지 못할 것이라고 예상하고 있습니다. 이는 기술 발전 속도와 데이터 처리 요구가 계속 증가하기 때문입니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] 5 Best Crypto Casinos: Which Bitcoin Casinos Offer Instant Withdrawals in 2026? - Sports Gambling Podcast
+   (Sports Gambling Podcast · 09/08 16:36)
+→ 2026년 즉시 출금을 제공하는 최고의 비트코인 카지노 5곳에 대한 정보가 Sports Gambling Podcast에서 소개되었습니다. 이 카지노들은 사용자에게 빠르고 편리한 거래를 제공하여 많은 관심을 받고 있습니다.
+
+📰 [BTC-USD] Hayes: Money Printing in the US Will Push Bitcoin to $500,000 - incrypted
+   (incrypted · 09/08 16:25)
+→ 헤이즈는 미국에서의 돈 풀기가 비트코인의 가격을 50만 달러로 끌어올릴 것이라고 주장했다. 그는 이러한 통화 정책이 비트코인에 대한 수요를 증가시킬 것이라고 전망했다.
+
+📰 [BTC-USD] Bitcoin Declines as Caution Sets in Ahead of Next Week's Fed Decision -- Market Talk - Moomoo
+   (Moomoo · 09/08 16:21)
+→ 비트코인은 다음 주 연준의 결정에 대한 우려가 커지면서 하락세를 보이고 있습니다. 투자자들이 신중한 태도를 취함에 따라 시장의 변동성이 증가하고 있습니다.
+
+📰 [ETH-USD] ETH/USD Analysis: False Wedge Breakout Amid Diverging Bitcoin and Ethereum ETF Inflows - Action Forex
+   (Action Forex · 09/08 16:50)
+→ ETH/USD 분석에 따르면, 비트코인과 이더리움 ETF 자금 유입의 차별화 속에서 잘못된 웨지 브레이크아웃이 발생했다고 합니다. 이러한 시장 동향은 이더리움의 가격에 영향을 미치고 있으며, 투자자들은 신중해야 한다는 경고가 제기되었습니다.
+
+📰 [ETH-USD] Tron Founder Justin Sun Withdraws Thousands of ETH from Ethereum Staking Platform Lido! Here Are the Details - Cryptonews.net
+   (Cryptonews.net · 09/08 16:48)
+→ 트론 창립자인 저스틴 선이 이더리움 스테이킹 플랫폼인 라이도에서 수천 개의 ETH를 인출했습니다. 이번 인출의 세부 사항은 아직 공개되지 않았습니다.
+
+📰 [ETH-USD] Ethereum aims for quantum-resistant Layer 1 by 2029 to secure against future quantum attacks. - pluang.com
+   (pluang.com · 09/08 16:36)
+→ 이더리움은 2029년까지 양자 저항성 레이어 1을 목표로 하여 미래의 양자 공격으로부터 안전성을 확보하고자 하고 있습니다.
+
+📰 [SOL-USD] Solana triples max transaction size in upgrade set for Sept 9, boosting complex app capabilities. - pluang.com
+   (pluang.com · 09/08 16:34)
+→ 솔라나가 9월 9일 예정된 업그레이드에서 최대 거래 크기를 세 배로 확대하여 복잡한 애플리케이션 기능을 강화한다고 발표했다. 이번 변화는 개발자들이 더 많은 데이터와 기능을 활용할 수 있도록 돕는 데 초점을 맞추고 있다.
+
+📰 [SOL-USD] Solana Pulls In $348M In 30-Day RWA Inflows - Cryptonews.net
+   (Cryptonews.net · 09/08 14:11)
+→ 솔라나가 지난 30일 동안 3억 4,800만 달러의 실제 자산(RWA) 유입을 기록했습니다. 이는 블록체인 생태계 내에서의 활발한 투자 흐름을 나타냅니다.
+
+📰 [SOL-USD] Solana (SOLUSD) Suddenly Goes down 1.06% on Sep 8: What You Need to Watch - tradingkey.com
+   (tradingkey.com · 09/08 14:00)
+→ 9월 8일, 솔라나(SOLUSD)의 가격이 갑자기 1.06% 하락했다. 전문가들은 시장 변동성과 관련된 요소들을 주의 깊게 관찰할 필요가 있다고 전하고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+가상자산 시장에서 비트코인은 2025년 고점 대비 36% 하락했지만, 프라이버시 코인들은 213% 상승하며 두드러진 성과를 보였다. NFT 시장에서는 판매량이 소폭 증가했으나 참여 지표는 급격히 감소한 상황이다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 36% 하락, 프라이버시 코인 213% 상승
+   → 비트코인은 2025년 10월 고점 대비 36% 하락한 반면, 프라이버시 코인은 90% 상승률을 기록하며 시가총액이 71억달러에서 336억달러로 증가했다.
+   (토큰포스트 · 09/08 17:01)
+2. (시세) NFT 주간 판매량 4951만 달러로 3% 증가
+   → NFT 주간 판매량이 4951만 달러로 전주 대비 3.30% 증가했지만, 거래 건수는 21% 감소하며 구매자 수가 1000명에서 0명으로 줄어들었다.
+   (토큰포스트 · 09/08 16:54)
+3. (시세) 지캐시 1000달러 회복, 하이퍼리퀴드 신고가 경신
+   → 지캐시(ZEC)가 약 10년 만에 1000달러를 회복했으며, ETF 출시에 힘입어 상승세를 이어갔다.
+   (토큰포스트 · 09/08 16:38)
+4. (거래소) 업비트 거래량 2억9800만 달러로 95.64% 증가
+   → 업비트의 24시간 거래량이 2억9800만 달러로 95.64% 증가했으며, 리플(XRP)/원화 거래쌍이 가장 많은 거래량을 차지했다.
+   (토큰포스트 · 09/08 16:25)
+5. (규제) 원화 스테이블코인 준비자산 규제 제언
+   → 올해 토큰 자사매입 규모가 6억4000만 달러로 증가했으나, 자사매입이 반드시 가격 상승으로 이어지지는 않는다는 분석이 제기되고 있다.
+   (토큰포스트 · 09/08 16:19)
+
+[흐름·전망]
+• 프라이버시 코인의 강세가 지속될지 주목해야 하며, 비트코인의 회복세와 이에 따른 시장의 반응이 중요하다.
+• NFT 시장의 참여자 수 감소는 향후 시장 활성화에 부담이 될 수 있으며, 이더리움 NFT의 감소세가 지속될지도 관전 포인트다.
+• 지캐시와 하이퍼리퀴드의 상승 요인이 각각 다르므로 기업들의 전략과 시장의 반응을 주의 깊게 살펴봐야 한다.
+• 업비트의 거래량 증가가 가상자산 시장 전체의 흐름을 반영하는지, 특정 자산에 집중되는지 확인할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 42 (Fear)
+  - 크립토 기준: 69 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+서울 아파트 가격이 82주 연속 상승하며 시장 불안감이 계속되고 있는 가운데, 공급 부족과 정부의 추가 대책들이 중요한 변수로 작용하고 있다.
+
+[핵심 뉴스]
+1. (공급) 9·7 공급대책 1년 성적표
+   → 이재명 정부의 '9·7 대책' 발표 1주년을 맞아, 실제 수도권의 아파트 착공 속도가 목표치를 크게 밑도는 것으로 나타나 정부가 제시한 올해 수도권 착공 목표 26만8000호 중 7만8000호에 그쳤다.
+   (매일경제 · 09/08 16:38)
+2. (공급) LH, 서울 도심에 2만가구 공급
+   → LH는 3년간 서울 도심에 2만 가구의 매입임대주택을 공급할 계획을 밝혔고, 그중 1만5000호는 청년임대주택으로 배정될 예정이다.
+   (매일경제 · 09/08 16:38)
+3. (분양청약) 9월 아파트 분양전망 악화
+   → 9월 아파트 분양전망지수가 86.3으로, 수도권에서 4.5포인트 하락하며 두 달 연속 기준선을 밑돌고 있으며, 대출 규제와 금리 상승이 가장 큰 원인으로 지목되고 있다.
+   (매일경제 · 09/08 16:02)
+4. (매매) 서울 아파트값 82주 연속 상승
+   → 서울 아파트 가격이 82주 연속 상승하며 누적 상승률 16.9%를 기록했지만, 정부의 세제개편안 발표 이후 강남권에서 하락세도 관측되고 있다.
+   (매일경제 · 09/08 15:27)
+5. (정책) 오세훈, 장기전세 만기 후 재공급 방침 강조
+   → 오세훈 서울시장은 장기전세주택의 계약 연장을 일축하고, 만기 후에는 새로운 무주택 시민에게 재공급하겠다고 했다.
+   (매일경제 · 09/08 14:39)
+6. (공급) 송파 거여새마을 공공재개발 속도
+   → 송파구 거여새마을 공공재개발 사업이 잦은 어려움을 겪은 끝에 사업시행계획 인가를 완료하고 1천700가구 규모의 공급을 목표로 착공에 나설 예정이다.
+   (연합뉴스 · 09/08 14:26)
+
+[흐름·전망]
+• 부동산 공급 부족이 지속되며 주택 가격 상승 압력을 더욱 강화할 것으로 보인다.
+• LH의 청년임대주택 공급과 같은 정책이 주거 안정에 기여할 수 있으나, 실질적인 공급 실적이 뒷받침되어야 한다.
+• 아파트 분양전망지수 하락은 향후 분양시장에도 부정적인 영향을 미칠 가능성이 높으며, 자금조달 여건의 개선 여부가 관전 포인트가 될 것이다.
+• 장기전세주택의 정책 방향이 바뀜에 따라 무주택자들의 주거 안정이 더욱 어려워질 수 있으며, 이에 대한 대안 모색이 필요하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+오늘 트럼프는 이란 전쟁 승리를 통한 원유 가격 하락과 미국 내 친미 정책 등을 강조하며, 미국 국민의 권리 보호와 세금 감면에 대한 지지를 나타냈다. 또한, 미국 제품 구매를 장려하며 외국 제품에 대한 비판적인 입장을 보였다.
+
+[주요 발언]
+1. (경제) 트럼프는 이란과의 전쟁에서 승리하면 원유 가격이 급격히 하락할 것이라고 주장하며, 최종적으로 갤런당 2달러 이하로 떨어질 것이라고 언급했다.
+   (Truth Social · 09/08 08:16)
+2. (경제) 트럼프는 세금 감면이 미국의 근로자와 가정에 큰 혜택을 주었으며, SEC의 세금 인하 결정이 많은 투자자에게 이익이 될 것이라고 강조했다.
+   (Truth Social · 09/08 08:01)
+3. (국내정치) 트럼프는 미국 내 모든 유권자가 사진 신분증과 시민권 증명을 제시해야 한다는 법안을 제안하며, 투표의 합법성을 강조했다.
+   (Truth Social · 09/08 06:47)
+4. (사법) 트럼프는 반미 성향의 단체들을 비판하며, 그들이 범죄에 대한 해결책으로 국가 방어력을 부정한다고 언급했다.
+   (Truth Social · 09/08 06:35)
+5. (기타) 트럼프는 크리스토퍼 콜럼버스 동상을 백악관 인근에 세운 것을 언급하며, 이탈리아계 미국인 커뮤니티에 대한 경의를 표했다.
+   (Truth Social · 09/08 06:17)
+
+[흐름·전망]
+• 트럼프의 이란 정책 발표가 중동과 유가에 미칠 영향에 주목할 필요가 있다.
+• 세금 감면과 관련한 새로운 정책 발표가 미국 경제에 어떤 파급효과를 가져올지 지켜봐야 한다.
+• 투표법 강화가 미국 내 정치적 분열과 선거 결과에 미치는 영향에 주목할 필요가 있다.
+• 트럼프의 외국 제품에 대한 비판이 무역 관계에 어떤 변화를 가져올지 살펴봐야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

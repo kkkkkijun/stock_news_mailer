@@ -38,10 +38,10 @@
 "0e8768a7-ec66-45f1-8e0b-73ed77d24e4d": {
 "name": "Gross Domestic Product (QoQ)",
 "dt": "2026-09-07T23:50:00Z",
-"act": null,
+"act": "0.4%",
 "cons": "0.4%",
 "prev": "0.3%",
-"act_n": null,
+"act_n": 0.4,
 "cons_n": 0.4
 },
 "d4e45fb8-e4c7-45c0-95df-28353011a014": {
