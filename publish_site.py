@@ -78,6 +78,8 @@ TICKER_COLORS = {
     "AMD": "#ED1C24",
     "PLTR": "#101820",   # Palantir 블랙
     "IREN": "#12B886",   # IREN 그린
+    "RKLB": "#1A2A4A",   # Rocket Lab 네이비
+    "BMNR": "#F7931A",   # BitMine 비트코인 오렌지
 }
 
 _DOW = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
