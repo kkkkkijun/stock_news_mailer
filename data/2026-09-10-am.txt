@@ -1,0 +1,238 @@
+2026-09-10T06:32:44.090655+09:00
+
+[오늘의 뉴스 요약] 2026-09-10 06:31 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘은 글로벌 경제에 대한 재정정책의 영향과 물가 안정 대책 등의 쟁점들이 부각되며, 각종 지표의 변화가 시장에서의 투자 방향에 영향을 미칠 것으로 보인다. 전반적으로 금리 인상 가능성이 높아져 관련 논의가 심화되고 있다.
+
+[핵심 뉴스]
+1. (금리) 글로벌 재정지배의 시대, 금리 인상 허들 높아졌다
+   → NH투자증권은 재정 정책이 통화정책을 주도하는 국면에서, 2026년 글로벌 채권 발행 규모가 29조 달러에 달할 것으로 전망하고 있다.
+   (연합뉴스 · 09/09 18:11)
+2. (고용) 취업자수 3개월 연속 증가하지만 청년 고용 한파 지속
+   → 2026년 8월 대한민국의 취업자 수는 1년 전 대비 18만 4천 명 증가했으나, 청년층 고용은 14만 3천 명 감소하며 K자형 양극화 현상이 심화되고 있다.
+   (매일경제 · 09/09 17:47)
+3. (환율) 환율, 유가 상승에도 기업 달러 매도에 하락
+   → 환율은 9월 9일 중동 정세 불안 속에서도 반도체 기업의 달러 매도로 인해 1,336.1원으로 하락, 5거래일 연속 하락세를 이어갔다.
+   (연합뉴스 · 09/09 16:25)
+4. (정책) 중소·중견 기업 무역금융 내년 140조로 확대
+   → 정부는 내년에 중소·중견기업 무역금융을 140조원으로 확대하며, 수출 촉진을 위한 다양한 지원 방안을 내세우고 있다.
+   (연합뉴스 · 09/09 17:18)
+5. (물가) 추석 물가 잡기 위해 농축수산물 할인예산 2배 확대
+   → 정부는 추석을 앞두고 농축수산물 할인 예산을 1930억원으로 확대하고, 바가지요금 근절을 위한 점검을 실시할 계획이다.
+   (매일경제 · 09/09 15:58)
+
+[흐름·전망]
+• 재정정책의 지속적인 확장이 중앙은행의 금리 인상 결정을 어렵게 만들 것으로 보이며, 시장은 이러한 상황을 주의 깊게 지켜보아야 한다.
+• 청년층 고용 문제에 대한 정부의 실효성 있는 대책 마련이 중요한 시점이며, 지속적인 청년 고용 지원이 필요하다.
+• 환율이 하락세를 이어가지만, 국제 유가 상승이 환율 하락을 저지하는 주요 변수로 작용할 가능성이 있다.
+• 무역금융 지원 확대가 중소기업의 수출 경로 활성화에 미칠 긍정적인 효과로 인해 중소기업 생태계가 개선될 것으로 전망된다.
+
+📈 해외주식 PART
+📰 [NVDA] The Overlooked Chip Stock Poised to Outperform Nvidia, AMD, and Broadcom in the AI Semiconductor Boom
+   (Yahoo Finance · 09/10 05:43)
+→ 퀄컴이 AI 반도체 시장에서 점차 성과를 내고 있으며, 이는 엔비디아, AMD, 브로드컴보다 더 나은 성과를 낼 가능성이 있는 주식으로 주목받고 있다.
+
+📰 [NVDA] Nvidia CEO Jensen Huang Claims AGI Has Arrived as OpenAI Launches New Model - Barchart.com
+   (Barchart.com · 09/10 05:36)
+→ Nvidia CEO인 젠슨 황은 OpenAI가 새로운 모델을 출시하면서 인공지능 일반(AGI)이 도래했다고 주장했다. 이번 발표는 AGI 개발의 중요한 이정표로 여겨지고 있다.
+
+📰 [NVDA] CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs - NVIDIA Developer
+   (NVIDIA Developer · 09/10 05:29)
+→ CUDA Toolkit 13.4는 Arm 기반의 Windows 지원을 추가하고, 공유 GPU에 대한 더 큰 제어 기능을 제공합니다. 이를 통해 개발자들은 다양한 플랫폼에서 더 효과적으로 GPU를 활용할 수 있게 됩니다.
+
+📰 [TSLA] Tesla’s two defunct flagship models are getting a big upgrade - Teslarati
+   (Teslarati · 09/10 05:57)
+→ 테슬라의 두 가지 단종된 주요 모델이 대규모 업그레이드를 받을 예정이다. 이 업그레이드는 모델의 성능과 기능을 개선하는 방향으로 진행된다.
+
+📰 [TSLA] Could Tesla’s (TSLA) Cybercab Unlock a New Growth Driver?
+   (Yahoo Finance · 09/10 05:06)
+→ 테슬라가 자율주행 시장으로 진출하면서 Cybercab을 이용한 로봇택시 서비스를 시작했습니다. 이와 관련해 골드만 삭스는 테슬라에 대해 중립적인 관점을 유지하며 12개월 목표 주가를 360달러로 설정했습니다.
+
+📰 [TSLA] Could Tesla’s (TSLA) Cybercab Unlock a New Growth Driver? - Yahoo Finance
+   (Yahoo Finance · 09/10 05:06)
+→ 테슬라의 사이버캡이 새로운 성장 동력이 될 가능성이 주목받고 있습니다. 이 차량은 혁신적인 디자인과 기술로 주목을 받으며, 테슬라의 비즈니스 모델에 긍정적인 영향을 미칠 것으로 예상됩니다.
+
+📰 [HIMS] Deadline Alert: Hims & Hers Health, Inc. (HIMS) - GlobeNewswire
+   (GlobeNewswire · 09/10 03:45)
+→ Hims & Hers Health, Inc. (HIMS)에 대한 마감 경고가 발표되었습니다. 이에 따라 투자자들은 관련 기한을 확인하고 주의할 필요가 있습니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. • Robinhood Token (HIMS) Preț Azi - Bybit
+   (Bybit · 09/10 02:04)
+→ Hims & Hers Health, Inc.의 주식과 Robinhood Token(HIMS)의 현재 가격이 Bybit에서 확인할 수 있다는 내용입니다.
+
+📰 [HIMS] HIMS Class Action Reminder – Robbins LLP Reminds Investors - GlobeNewswire
+   (GlobeNewswire · 09/10 01:40)
+→ Robbins LLP가 HIMS에 대한 집단 소송을 알리며 투자자들에게 주의를 촉구했습니다. 해당 안내는 투자자들이 소송과 관련된 사항을 숙지하고 대응할 수 있도록 돕기 위한 것입니다.
+
+📰 [RDW] Redwire Corporation (NYSE:RDW) Given Consensus Rating of "Hold" by Analysts - MarketBeat
+   (MarketBeat · 09/09 15:18)
+→ 레드와이어 코퍼레이션(Redwire Corporation, NYSE: RDW)은 애널리스트들에 의해 "보유(Hold)"라는 합의 등급을 받았다. 이 정보는 시장 분석 플랫폼인 마켓비트(MarketBeat)에 의해 보도되었다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Up 6.8% - Still a Buy? - MarketBeat
+   (MarketBeat · 09/09 06:27)
+→ Redwire의 주가가 6.8% 상승했으며, 이에 대한 투자 의견이 논의되고 있습니다. 전문가들은 여전히 이 주식이 매수할 가치가 있는지에 대해 평가하고 있습니다.
+
+📰 [RDW] Can Redwire's Phased-Array Investment Drive Defense Growth?
+   (Yahoo Finance · 09/08 22:01)
+→ Redwire는 차세대 위상 배열 기술에 투자하여 저궤도(LEO), 중궤도(MEO), 그리고 정지궤도(GEO)에서 군사 통신을 확장하려 하고 있습니다. 이러한 투자가 국방 성장에 기여할 수 있을지 주목됩니다.
+
+📰 [IREN] Is Iren Stock a Buy Now? - The Globe and Mail
+   (The Globe and Mail · 09/10 05:02)
+→ "Globe and Mail"에 따르면, Iren 주식이 현재 매수 적합한지에 대한 분석이 진행되었습니다. 여러 요인을 고려했을 때, 투자자들은 신중하게 판단해야 하며, 시장 동향에 따라 변동이 클 수 있다고 보도되었습니다.
+
+📰 [IREN] HOW-TO: Read TidalCore’s ribbon, regimes, and extreme signals for NASDAQ:IREN by TidalEdge - TradingView
+   (TradingView · 09/10 05:00)
+→ TidalEdge의 가이드는 NASDAQ:IREN의 TidalCore 리본, 상태, 극단적인 신호를 해석하는 방법에 대해 설명합니다. 이 내용은 기술적 분석을 통해 주식의 가격 움직임을 이해하고 예측하는 데 도움을 줍니다.
+
+📰 [IREN] Is Iren Stock a Buy Now? - The Motley Fool
+   (The Motley Fool · 09/10 04:46)
+→ 모틀리 풀이 Iren 주식에 대해 현재 매수 시점인지 분석한 내용입니다. 투자자들은 Iren의 재정 상태와 성장 가능성을 고려하여 주식 구매 결정을 내릴 필요가 있습니다.
+
+📰 [RKLB] RKLB Stock Jumps as Rocket Lab Debuts New Solar Cell for Space - Barchart.com
+   (Barchart.com · 09/10 05:14)
+→ 로켓랩(Rocket Lab)이 새로운 우주용 태양전지를 발표하자 RKLB 주가가 상승했습니다. 이 태양전지는 우주 환경에서의 에너지 생산성을 높이는 데 기여할 것으로 기대됩니다.
+
+📰 [RKLB] Rocket Lab Jumps as ARK Invest Boosts Stake and New Solar Cell Debuts - finance.biggo.com
+   (finance.biggo.com · 09/10 03:17)
+→ 로켓랩의 주가가 ARK 인베스트가 지분을 늘리면서 급등했으며, 신규 태양전지 또한 출시되었습니다. 이러한 소식은 투자자들에게 긍정적인 반응을 이끌어내고 있습니다.
+
+📰 [RKLB] Rocket Lab (RKLB) Stock May Be 44% Undervalued Despite NASA Contract Loss - simplywall.st
+   (simplywall.st · 09/10 02:25)
+→ Rocket Lab (RKLB) 주식은 NASA 계약 손실에도 불구하고 44% 저평가되어 있을 가능성이 있다는 분석이 나왔다. 전문가들은 회사의 미래 전망이 긍정적이라고 평가하고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Strive Added 1,375 Bitcoin While Strategy Added None. Their Preferred Shares Explain Why.
+   (Yahoo Finance · 09/10 06:07)
+→ Strive는 1,375 비트코인을 추가로 구매한 반면, Strategy는 자사주매입에 1억 7,600만 달러를 지출하며 비트코인을 추가하지 않았다. 두 회사는 동일한 변동 금리 우선주 구조를 사용하지만, 각 우선주가 액면가 대비 거래되는 위치가 그 차이를 만들어냈다.
+
+📰 [BTC-USD] Strive Added 1,375 Bitcoin While Strategy Added None. Their Preferred Shares Explain Why. - 24/7 Wall St.
+   (24/7 Wall St. · 09/10 06:07)
+→ 스트라이브는 1,375 비트코인을 추가했지만 전략적으로는 변동이 없었다. 이 변화는 그들의 우선주에 기인하고 있다.
+
+📰 [BTC-USD] 5 Best Bitcoin Casinos – Ranked by Payout Speed, Bonuses &1000+ Games - Muddy River Sports
+   (Muddy River Sports · 09/10 06:04)
+→ "Muddy River Sports"에서 발표한 "최고의 비트코인 카지노 5곳"에서는 지급 속도, 보너스 및 1000개 이상의 게임을 기준으로 카지노를 평가했습니다. 이들 카지노는 빠른 출금과 다양한 게임 옵션을 제공하여 사용자에게 매력적인 선택지를 제공합니다.
+
+📰 [ETH-USD] Ethereum Validator Check: 0x01 Sweeps Your Rewards - CryptoTicker
+   (CryptoTicker · 09/10 06:21)
+→ Ethereum의 검증자 체크에서 0x01이 보상을 압수한다는 내용이 보도되었습니다. 이로 인해 사용자들은 자신의 보상이 안전한지를 확인할 필요성이 커졌습니다. 문제 해결을 위한 대책 마련이 요구되고 있습니다.
+
+📰 [ETH-USD] Apeing New Crypto Presale Breaks Into Stage 3 After 380M+ $APEING Tokens Fly Off the Presale as Ethereum Makes Key Moves - StreetInsider
+   (StreetInsider · 09/10 06:12)
+→ Apeing의 새로운 암호화폐 프리세일이 3단계로 접어들며 3억8000만 개 이상의 $APEING 토큰이 판매되었습니다. 이와 함께 이더리움의 중요한 움직임도 주목받고 있습니다.
+
+📰 [ETH-USD] Ethereum’s Robinhood Testnet Faucet Offers $1 for 2.8 ETH - Cryptonews.net
+   (Cryptonews.net · 09/10 04:57)
+→ 이더리움의 로빈후드 테스트넷 파우셋에서 2.8 ETH를 받기 위해 1달러를 제공하는 프로그램이 실행된다. 이는 사용자들이 테스트넷에서 이더리움 기능을 경험하고 실험할 수 있도록 지원하기 위한 것이다.
+
+📰 [SOL-USD] Solana’s 300ms speed boost to outrun trading bots might come with a hidden cost - CryptoSlate
+   (CryptoSlate · 09/10 05:50)
+→ 솔라나가 거래 봇을 제치기 위해 300ms의 속도 향상을 꾀하고 있지만, 이로 인해 숨겨진 비용이 발생할 수 있다는 우려가 제기되고 있다. 이 속도 증가가 네트워크의 안정성이나 보안에 영향을 미칠 가능성이 있다는 지적이 있다.
+
+📰 [SOL-USD] PayBox Integrates Sunrise to Enable AI-Driven Crypto Trading on Solana via ChatGPT and Claude - FF News
+   (FF News · 09/10 05:48)
+→ PayBox가 Sunrise와 통합하여 ChatGPT와 Claude를 통해 Solana에서 AI 기반의 암호화폐 거래를 가능하게 했습니다. 이 협력을 통해 사용자들은 인공지능을 활용한 효율적인 거래를 경험할 수 있게 됩니다.
+
+📰 [SOL-USD] Solana Price Prediction: SOL Reclaims Key Moving Averages as Bulls Target a Breakout Toward $116 - bravenewcoin.com
+   (bravenewcoin.com · 09/10 05:42)
+→ 솔라나(SOL) 가격이 주요 이동 평균선을 회복하며 상승세를 보이고 있으며, 투자자들은 가격이 116달러로의 돌파를 목표로 하고 있습니다. 이로 인해 시장의 낙관적인 전망이 커지고 있습니다.
+
+📰 [BMNR] BitMine now holds 5.93M ETH — What does it mean for BMNR stock? - AMBCrypto
+   (AMBCrypto · 09/10 03:30)
+→ BitMine이 현재 5.93만 이더리움(ETH)을 보유하고 있으며, 이는 BMNR 주식에 긍정적인 영향을 미칠 가능성이 있습니다. 이와 관련하여 투자자들은 BMNR의 주가 상승 기대감에 주목하고 있습니다.
+
+📰 [BMNR] Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH
+   (Yahoo Finance · 09/09 22:00)
+→ 비트마인은 28,086개의 이더리움(ETH)를 추가로 구매하며 보유 규모가 150억 달러에 가까워졌습니다. 그러나 이번 대규모 구매가 ETH 가격에 영향을 미칠지 아니면 BMNR이 이미 반 토막 난 코인에 대한 고위험 투자로 전락할지는 의문입니다.
+
+📰 [BMNR] What Bitmine Immersion Technologies (BMNR)'s Ethereum Buying Spree Means For Shareholders - simplywall.st
+   (simplywall.st · 09/09 11:25)
+→ Bitmine Immersion Technologies (BMNR)가 대량의 이더리움을 구매한 것은 주주들에게 긍정적인 신호로 해석될 수 있습니다. 이 전략은 회사의 자산을 다변화하고 잠재적인 수익을 증가시키려는 노력으로 보이며, 주가에 긍정적인 영향을 미칠 가능성이 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 전반적으로 약세를 보이며 비트코인과 이더리움 가격이 하락했다. 비트코인은 78,208달러, 이더리움은 2,464달러로 거래되고 있다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 약세… 비트코인 78,208달러, 이더리움 2,464달러
+   → 점프트레이딩이 하이퍼리퀴드 시장에서 1500억달러의 거래량을 기록하며 전체 거래량의 약 19%를 차지했다. 이 거래사는 비트코인, 솔라나, 하이퍼리퀴드를 포함해 다양한 자산에 집중한 거래를 펼쳤다.
+   (토큰포스트 · 09/10 05:36)
+2. (시세) 암호화폐 파생상품 시장 2억3100만달러 청산
+   → 지난 24시간 동안 암호화폐 시장에서 1억5187만달러의 레버리지 포지션이 청산됐으며, 이 중 비트코인이 최대 청산 규모인 5900만달러를 기록했다. 롱 포지션이 전체 청산의 52.08%를 차지했다.
+   (토큰포스트 · 09/10 04:56)
+3. (ETF) 비트코인 ETF에서 4665만달러 자금 유출
+   → 비트코인 ETF에서 4665만달러가 유출되고 이더리움 ETF에서도 2429만달러가 빠져나간 가운데, 리플 ETF에는 155만달러가 유입됐다. 전체적으로 ETF 자금 흐름은 비트코인과 이더리움보다 리플 상품에 대한 수요가 두드러졌다.
+   (토큰포스트 · 09/10 04:37)
+4. (기타) 24시간 암호화폐 청산 1억5187만달러
+   → 비트코인이 8만달러 회복에 실패하며 하락세를 보였고, 국제유가의 급등과 엔화 강세가 시장에 부담으로 작용하고 있다. 미국과 이란의 긴장으로 인해 위험자산에 대한 투자심리가 위축되었다.
+   (토큰포스트 · 09/10 05:01)
+5. (기타) 비트코인 8만달러 회복 실패… 유가 상승과 엔화 강세
+   → 비트코인 가격이 8만달러를 회복하지 못하고, 국제유가의 급등과 엔화의 강세가 시장에 부담이 되고 있다.
+   (토큰포스트 · 09/10 01:44)
+
+[흐름·전망]
+• 현재 비트코인과 이더리움의 하락세가 계속될지 주목해야 하며, 필요한 지지선을 유지할 수 있을지가 관전 포인트이다.
+• 점프트레이딩의 거래량 증가가 시장에 미치는 영향과 다른 거래사들의 반응을 지켜보는 것도 중요하다.
+• ETF 시장의 자금 유출 흐름이 시장 전반에 미칠 변화를 관찰하여 기관 투자자의 움직임을 예의주시해야 한다.
+• 글로벌 거시경제 변수들이 암호화폐 시장에 미치는 영향을 분석하고, 특히 유가와 엔화 강세의 상관관계를 살펴보는 것이 중요하다.
+
+📊 공포탐욕지수
+  - CNN 기준: 39 (Fear)
+  - 크립토 기준: 66 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+서울의 생애최초 주택 매수 비중이 53.8%로 역대 최대치를 기록하며 젊은층의 주택 매수가 활발해지고 있다. 수도권에서도 청약 경쟁률이 높아지고 있으며, 부동산 거래 감소로 인한 경기도 재정위기가 우려되고 있다.
+
+[핵심 뉴스]
+1. (매매) 서울 생애최초 주택 구입 비중 역대 최대
+   → 8월 서울에서 생애최초 주택 매수자가 9천343건으로 6년 만에 최다를 기록하며 전체 거래의 53.8%를 차지하였다.
+   (연합뉴스 · 09/10 05:55)
+2. (분양청약) 목동윤슬자이 청약 경쟁률 높아
+   → 목동윤슬자이가 평균 5.8대1의 청약 경쟁률을 보이며, 서울 거주자 우선 청약에서 32대1의 높은 경쟁률을 기록하였다.
+   (매일경제 · 09/10 06:24)
+3. (기타) 경기도 재정위기 원인으로 부동산 거래 감소 지적
+   → 경기도의 지방세 세수가 부동산 거래 감소로 인해 70% 급감했다는 윤호중 장관의 발언이 있었다.
+   (연합뉴스 · 09/09 18:13)
+4. (정책) 금융위, 주택공급 촉진 대책 점검 완료
+   → 금융위가 주택 공급 촉진을 위한 21개 과제 중 12개를 완료하며 지원 정책을 강화하고 있다.
+   (연합뉴스 · 09/09 12:00)
+5. (전세) 전월세 씨가 말라 집 매수하는 무주택자들
+   → 전월세 매물 부족으로 무주택자들이 실거주를 위한 ‘생존 매수’ 현상이 이어지고 있으며, 전문가들은 신중한 접근을 권장하고 있다.
+   (매일경제 · 09/09 15:05)
+6. (기타) HUG, AI 도입으로 전세 매입 심사 시간 단축
+   → HUG가 AI를 도입하여 전세 매입 심사 시간을 93% 단축시키며 업무 효율성을 높이고 있다.
+   (연합뉴스 · 09/09 12:05)
+
+[흐름·전망]
+• 생애최초 주택 매수자 비중이 증가함에 따라 시장의 수요가 지속적으로 변화할 가능성이 있다.
+• 경기도의 재정 위기는 부동산 거래 회복과 함께 해결될 수 있는지 주목해야 한다.
+• 금융지원 정책이 주택 공급에 미치는 영향을 면밀히 살펴볼 필요가 있다.
+• 전월세 매물 부족 상황은 향후 부동산 가격에 미치는 영향이 클 것으로 예상되며, 무주택자들의 전략적 매수 선택이 중요할 것이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 게시물에서 9.11 테러에 대한 자신의 존재를 입증하려고 했으며, 독일의 민족주의 정당인 탈당당의 성공을 언급하며 이민 정책에 대한 비판도 내놓았다.
+
+[주요 발언]
+1. (사법) 트럼프는 FBI의 비공식 기록과 플린 인터뷰 간의 불일치를 폭로하며, 자신이 9.11 타워 붕괴 후 현장에 있었다는 점을 강조했다.
+   (Truth Social · 09/09 21:00)
+2. (국내정치) 그는 CNN의 보도를 비판하며, 네트워크의 시청률 하락을 언급하고 그들의 저명한 앵커들이 신뢰를 잃었다고 주장했다.
+   (Truth Social · 09/09 10:23)
+3. (해외정치) 트럼프는 독일에서 민족주의 정당이 성공을 거둔 것을 언급하며, 그들의 이민 정책에 대한 불만이 커지고 있다고 강조했다.
+   (Truth Social · 09/09 10:10)
+
+[흐름·전망]
+• 트럼프의 9.11 관련 발언은 정치적 이슈로 다시금 부각될 가능성이 있어 관심이 모아질 것.
+• 이민 정책 및 국제 정세의 변화에 따라 트럼프의 발언이 미국 내 정치적 연대에 미치는 영향을 주목할 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
