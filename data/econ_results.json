@@ -448,5 +448,23 @@
 "prev": "46K",
 "act_n": 38.0,
 "cons_n": 47.0
+},
+"7ac62fc5-13ab-4771-ace3-3d50ed33effe": {
+"name": "S&P Global Manufacturing PMI",
+"dt": "2026-10-23T13:45:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"54e677df-4e09-443c-84c6-6aaee1aff3bb": {
+"name": "S&P Global Services PMI",
+"dt": "2026-10-23T13:45:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
