@@ -189,6 +189,18 @@ a:hover{opacity:.72;}
  color:var(--muted-2);background:transparent;border:0;border-radius:7px;
  padding:8px 4px;cursor:pointer;}
 .sub-tab.on{background:#3a6fd8;color:#fff;}   /* 서브탭 활성=블루(상위 다크와 구분) */
+/* A안: 언더라인 서브탭(주식 탭) — 상단 뉴스탭과 통일감 */
+.sub-tabs.sub-underline{gap:22px;background:none;border-radius:0;padding:0 2px;
+ border-bottom:1px solid var(--border);}
+.sub-underline .sub-tab{flex:none;font-size:14px;font-weight:800;color:var(--faint);
+ background:none;border-radius:0;padding:8px 2px 11px;position:relative;
+ display:flex;align-items:center;gap:6px;}
+.sub-underline .sub-tab.on{background:none;color:var(--ink);}
+.sub-underline .sub-tab.on::after{content:"";position:absolute;left:0;right:0;
+ bottom:-1px;height:2.5px;background:var(--ink);border-radius:2px;}
+.sub-underline .subcnt{font-size:11px;font-weight:700;color:var(--faint);
+ background:var(--nav-track);border-radius:999px;padding:1px 7px;}
+.sub-underline .sub-tab.on .subcnt{color:#fff;background:var(--ink);}
 .sub-pane .part-head{display:none;}   /* 서브탭이 제목 역할 → 파트 헤더 중복 제거 */
 .tk-groups{display:flex;flex-direction:column;gap:10px;}
 .tk-group{background:var(--card);border:1px solid var(--border);border-radius:14px;
@@ -2051,14 +2063,16 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
         if pids == ["os", "coin"] and len(have) > 1:
             btns, panes = [], []
             for j, p in enumerate(have):
-                pico, pnm = _PART_META.get(p, ("", p))
+                _pico, pnm = _PART_META.get(p, ("", p))
                 ons = " on" if j == 0 else ""
                 sty = "" if j == 0 else ' style="display:none"'
+                cnt = rendered[p].count('class="tk-ghead"')   # 종목 수
+                cntchip = f' <span class="subcnt">{cnt}</span>' if cnt else ""
                 btns.append(f'<button class="sub-tab{ons}" data-sub="{p}">'
-                            f'{pico} {_e(pnm)}</button>')
+                            f'{_e(pnm)}{cntchip}</button>')
                 panes.append(f'<div class="sub-pane" data-pane="{p}"{sty}>'
                              f'{rendered[p]}</div>')
-            inner = ('<div class="stock-wrap"><div class="sub-tabs">'
+            inner = ('<div class="stock-wrap"><div class="sub-tabs sub-underline">'
                      + "".join(btns) + '</div>' + "".join(panes) + '</div>')
         else:
             inner = "".join(rendered[p] for p in have)
