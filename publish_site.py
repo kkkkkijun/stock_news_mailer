@@ -82,6 +82,13 @@ TICKER_COLORS = {
     "BMNR": "#F7931A",   # BitMine 비트코인 오렌지
 }
 
+# 티커 → 한글 표기(그룹 헤더용). 없으면 티커만 표시.
+_TICKER_KO = {
+    "NVDA": "엔비디아", "TSLA": "테슬라", "HIMS": "힘스앤허스",
+    "RDW": "레드와이어", "IREN": "아이렌", "RKLB": "로켓랩",
+    "BTC": "비트코인", "ETH": "이더리움", "SOL": "솔라나", "BMNR": "비트마인",
+}
+
 _DOW = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
 
 HEAD = """<meta charset="utf-8">
@@ -182,6 +189,24 @@ a:hover{opacity:.72;}
  color:var(--muted-2);background:transparent;border:0;border-radius:7px;
  padding:8px 4px;cursor:pointer;}
 .sub-tab.on{background:#3a6fd8;color:#fff;}   /* 서브탭 활성=블루(상위 다크와 구분) */
+.sub-pane .part-head{display:none;}   /* 서브탭이 제목 역할 → 파트 헤더 중복 제거 */
+.tk-groups{display:flex;flex-direction:column;gap:10px;}
+.tk-group{background:var(--card);border:1px solid var(--border);border-radius:14px;
+ padding:12px 13px;box-shadow:0 1px 3px var(--shadow);}
+.tk-ghead{display:flex;align-items:center;gap:9px;}
+.tk-badge{font-size:12px;font-weight:800;border-radius:7px;padding:3px 9px;
+ font-family:ui-monospace,monospace;flex:none;}
+.tk-name{font-size:12.5px;font-weight:700;color:var(--muted);}
+.tk-group .news.tk-item{background:transparent;border:0;box-shadow:none;
+ padding:11px 0 0;margin:0;}
+.tk-group .tk-item + .tk-item{border-top:1px solid var(--border);margin-top:0;padding-top:11px;}
+.tk-group .tk-rest .tk-item:first-child{border-top:1px solid var(--border);padding-top:11px;}
+.tk-rest{display:none;}
+.tk-group.open .tk-rest{display:block;}
+.tk-more{width:100%;margin-top:10px;font:inherit;font-size:12px;font-weight:700;
+ color:var(--accent);background:var(--chip);border:1px solid var(--border);
+ border-radius:9px;padding:8px;cursor:pointer;}
+.tk-caret{font-size:10px;}
 /* 서브탭이 제목 역할 → 컬럼 헤더 중복 제거(경제=제목 숨김·칩 유지 / 기업=헤더 숨김) */
 .sched-col.econ .sched-head>span{display:none;}
 .sched-col.earn .sched-head{display:none;}
@@ -729,7 +754,55 @@ def _is_new(headline, prev_sets, thresh=0.6):
     return True
 
 
-def _render_part(pid, icon, name, lines, hero=False, quotes=None, prev_sets=None):
+def _render_ticker_groups(items, prev_sets):
+    """뉴스 아이템을 티커별로 묶어 대표 1건만 펼치고 나머지는 접는다."""
+    groups = []
+    for it in items:
+        lbl = it["label"] if it["kind"] == "ticker" else None
+        if lbl and groups and groups[-1][0] == lbl:
+            groups[-1][1].append(it)
+        else:
+            groups.append([lbl, [it]])
+    out = ['<div class="tk-groups">']
+    for lbl, gitems in groups:
+        out.append('<div class="tk-group">')
+        if lbl:
+            key = lbl.split("-")[0]
+            bg = _ticker_color(lbl)
+            ko = _TICKER_KO.get(key.upper(), "")
+            out.append(
+                '<div class="tk-ghead">'
+                f'<span class="tk-badge" style="background:{bg};color:{_text_on(bg)}">'
+                f'{_e(key)}</span>'
+                + (f'<span class="tk-name">{_e(ko)}</span>' if ko else "")
+                + '</div>')
+        rest_open = False
+        for i, it in enumerate(gitems):
+            new = ('<span class="badge-new">NEW</span>'
+                   if (prev_sets is not None and _is_new(it["title"], prev_sets)) else "")
+            tag = (f'<span class="tag">{_e(it["label"])}</span>'
+                   if (it["kind"] == "tag" and it["label"]) else "")
+            src = f'<span class="src">{_e(it["src"])}</span>' if it["src"] else ""
+            meta = (f'<div class="news-meta">{new}{tag}{src}</div>'
+                    if (new or tag or src) else "")
+            desc = f'<p>{_e(it["desc"])}</p>' if it["desc"] else ""
+            card = f'<div class="news tk-item">{meta}<h3>{_e(it["title"])}</h3>{desc}</div>'
+            if i == 1:
+                out.append('<div class="tk-rest">')
+                rest_open = True
+            out.append(card)
+        if rest_open:
+            out.append('</div>')
+            out.append(f'<button class="tk-more" type="button" data-n="{len(gitems)-1}">'
+                       f'뉴스 {len(gitems)-1}건 더 보기 '
+                       f'<span class="tk-caret">▾</span></button>')
+        out.append('</div>')
+    out.append('</div>')
+    return "".join(out)
+
+
+def _render_part(pid, icon, name, lines, hero=False, quotes=None, prev_sets=None,
+                 group_by_ticker=False):
     summary, items, blocks, note = _parse_part(lines)
     h = [f'<section class="part" id="{pid}">',
          f'<div class="part-head"><span class="part-icon">{icon}</span>'
@@ -745,7 +818,9 @@ def _render_part(pid, icon, name, lines, hero=False, quotes=None, prev_sets=None
     items = [it for it in items if (it.get("title") or "").strip()
              and not (re.fullmatch(r"\(.*?\)", it["title"].strip())
                       and not (it.get("desc") or "").strip())]
-    if items:
+    if items and group_by_ticker:
+        h.append(_render_ticker_groups(items, prev_sets))
+    elif items:
         h.append('<div class="news-list">')
         for i, it in enumerate(items):
             is_hero = hero and i == 0          # 섹션의 1번 뉴스만 핵심 강조
@@ -1316,10 +1391,22 @@ document.querySelectorAll('.sched').forEach(function(sc){
 });
 document.querySelectorAll('.sub-tab').forEach(function(b){
   b.addEventListener('click', function(){
-    var wrap = b.parentNode.parentNode.querySelector('.sched-2col');
-    if(wrap) wrap.setAttribute('data-sub', b.getAttribute('data-sub'));
+    var host = b.parentNode.parentNode, sub = b.getAttribute('data-sub');
+    var col = host.querySelector('.sched-2col');
+    if(col) col.setAttribute('data-sub', sub);
+    host.querySelectorAll('.sub-pane').forEach(function(p){
+      p.style.display = (p.getAttribute('data-pane')===sub) ? '' : 'none';
+    });
     b.parentNode.querySelectorAll('.sub-tab').forEach(function(x){x.classList.remove('on');});
     b.classList.add('on');
+  });
+});
+document.querySelectorAll('.tk-more').forEach(function(b){
+  b.addEventListener('click', function(){
+    var g=b.closest('.tk-group'); if(!g) return;
+    var open=g.classList.toggle('open');
+    b.innerHTML = open ? '\uc811\uae30 <span class="tk-caret">\u25b4</span>'
+                       : '\ub274\uc2a4 '+b.getAttribute('data-n')+'\uac74 \ub354 \ubcf4\uae30 <span class="tk-caret">\u25be</span>';
   });
 });
 document.querySelectorAll('.ern-item').forEach(function(item){
@@ -1951,14 +2038,30 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
             rendered[pid] = _render_part(pid, icon, name, lines,
                                          hero=(pid in HERO_PARTS),
                                          quotes=qmap.get(pid),
-                                         prev_sets=prev_sets)
+                                         prev_sets=prev_sets,
+                                         group_by_ticker=(pid in {"os", "coin"}))
 
     # 탭 + 패널
+    _PART_META = {pid: (icon, nm) for pid, icon, nm, _k in PARTS}
     navs, panels, first = [], [], True
     for i, (tab, pids) in enumerate(TABS):
-        inner = "".join(rendered[p] for p in pids if p in rendered)
-        if not inner:
+        have = [p for p in pids if p in rendered]
+        if not have:
             continue
+        if pids == ["os", "coin"] and len(have) > 1:
+            btns, panes = [], []
+            for j, p in enumerate(have):
+                pico, pnm = _PART_META.get(p, ("", p))
+                ons = " on" if j == 0 else ""
+                sty = "" if j == 0 else ' style="display:none"'
+                btns.append(f'<button class="sub-tab{ons}" data-sub="{p}">'
+                            f'{pico} {_e(pnm)}</button>')
+                panes.append(f'<div class="sub-pane" data-pane="{p}"{sty}>'
+                             f'{rendered[p]}</div>')
+            inner = ('<div class="stock-wrap"><div class="sub-tabs">'
+                     + "".join(btns) + '</div>' + "".join(panes) + '</div>')
+        else:
+            inner = "".join(rendered[p] for p in have)
         on = " on" if first else ""
         navs.append(f'<button class="nav-t{on}" data-p="tp{i}">{_e(tab)}</button>')
         panels.append(f'<div class="panel{on}" id="tp{i}">{inner}</div>')
