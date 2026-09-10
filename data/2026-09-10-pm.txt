@@ -1,0 +1,236 @@
+2026-09-10T17:04:33.278665+09:00
+
+[오늘의 뉴스 요약] 2026-09-10 17:01 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국고채 금리 상승과 함께 한국은행의 추가 금리 인상 가능성이 거론되며, 전반적으로 금리가 상승하는 분위기입니다. 또한, 환율은 상승세를 보였고 시중은행의 정기예금 금리 인상 소식이 전해졌습니다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 대체로 상승
+   → 국고채 금리가 상승하여 3년물은 2.0bp 올라 연 3.930%, 10년물은 5.2bp 상승해 연 4.453%에 마감했습니다.
+   (연합뉴스 · 09/10 16:40)
+2. (금리) 한은, 추가 금리 인상 예고
+   → 한국은행은 물가 상승률이 2%를 초과할 것으로 예상하며, 추가 기준금리 인상 가능성을 언급했습니다. 올해 한국의 성장률은 3.3%로 예상되고 있습니다.
+   (매일경제 · 09/10 16:01)
+3. (환율) 환율 3.1원 오른 1,339.2원
+   → 원/달러 환율이 3.1원 오른 1,339.2원으로 마감되었으며, 국제 유가 상승이 영향을 미쳤습니다.
+   (연합뉴스 · 09/10 16:08)
+4. (기타) 시중은행 정기예금 금리 줄인상
+   → 주요 시중은행들이 정기예금 금리를 일제히 인상하여, 하나은행은 3.2%에서 3.3%로 올렸습니다.
+   (연합뉴스 · 09/10 15:10)
+5. (정책) 재정운용 정상화 추진
+   → 조용범 기획예산처 차관은 재정운용 정상화 추진을 지속하겠다고 밝히며 TF 회의를 개최했습니다.
+   (연합뉴스 · 09/10 16:53)
+
+[흐름·전망]
+• 국고채 금리가 상승하면서 금통위의 향후 금리 결정이 더욱 주목받고 있으며, 신중한 통화정책이 요구됩니다.
+• 추가 금리 인상이 실제로 이루어질 경우, 소비자와 기업의 대출 부담이 증가할 수 있어 경제 전반에 미치는 영향에 주의해야 합니다.
+• 환율 상승은 수출업체에 긍정적일 수 있으나, 원자재 수입가 상승으로 이어질 우려가 있으므로 수입업체의 영향을 모니터링해야 합니다.
+• 정기예금 금리 상승이 '
+• 역머니무브
+• ' 현상을 촉진할 가능성이 있으며, 금융시장 유입 자금의 흐름 변화에 주목해야 할 필요가 있습니다.
+
+📈 해외주식 PART
+📰 [NVDA] U.S. investigates Nvidia’s acqui-hire of Groq - Techzine Global
+   (Techzine Global · 09/10 16:55)
+→ 미국 정부가 엔비디아의 그록(Groq) 인수 인력 채용(acqui-hire)을 조사하고 있습니다. 이 조사는 기업 합병 및 인수에 대한 규제를 강화하려는 일환으로 진행되고 있습니다.
+
+📰 [NVDA] Piper Sandler initiates Nvidia stock with overweight rating on AI demand - Investing.com
+   (Investing.com · 09/10 16:51)
+→ 파이퍼 샌들러가 인공지능 수요에 힘입어 엔비디아 주식을 "비중 확대" 등급으로 시작했다고 보도했다. 이는 엔비디아의 성장 가능성을 긍정적으로 평가하는 의미로 해석된다.
+
+📰 [NVDA] 70% Revenue Growth for Nvidia Next Year May Make It the Best Stock to Buy In the Market - The Motley Fool
+   (The Motley Fool · 09/10 16:43)
+→ Nvidia는 내년 70%의 수익 성장률을 기록할 것으로 예상되며, 이는 시장에서 가장 유망한 주식으로 평가받을 수 있는 이유가 되고 있습니다. 이러한 성장 전망은 투자자들에게 긍정적인 신호로 작용할 수 있습니다.
+
+📰 [TSLA] TESLA to play at Island Showroom in February - - Iron Mountain Daily News
+   (Iron Mountain Daily News · 09/10 15:45)
+→ TESLA가 2월에 Island Showroom에서 공연할 예정입니다. 이 소식은 Iron Mountain Daily News에서 보도되었습니다.
+
+📰 [TSLA] Elon Musk rips ABC News over fatal NYC Tesla crash report - teslarati.com
+   (teslarati.com · 09/10 14:48)
+→ 일론 머스크가 ABC 뉴스의 뉴욕에서 발생한 테슬라 충돌 사고 보도에 대해 강력히 반발했다. 그는 보도의 내용이 사실을 왜곡하고 억측으로 가득 차 있다고 비판했다.
+
+📰 [TSLA] tesla-cybertruck-side-repeater-camera-update - teslarati.com
+   (teslarati.com · 09/10 14:20)
+→ 테슬라 사이버트럭의 업데이트에서 측면 리피터 카메라가 개선되었다. 이 카메라는 차량의 주행 안전성을 높이는 데 기여할 것으로 기대된다. 새로운 디자인과 기능이 추가되어 사용자 경험이 향상될 예정이다.
+
+📰 [HIMS] Hims & Hers Health Shareholder Alert: ClaimsFiler Reminds - GlobeNewswire
+   (GlobeNewswire · 09/10 11:42)
+→ Hims & Hers Health의 주주들에게 ClaimsFiler가 주의할 것을 알리는 내용입니다. 주주들은 자신들의 권리를 보호하기 위해 필요한 조치를 취해야 한다고 경고하고 있습니다.
+
+📰 [HIMS] Hims & Hers Tokenized bStocks Exchanges HIMSB Markets | Buy & Sell & Trade - CryptoRank
+   (CryptoRank · 09/10 11:26)
+→ Hims & Hers에서는 토큰화된 bStocks를 거래할 수 있는 HIMSB 마켓을 운영하고 있습니다. 이 플랫폼을 통해 사용자는 다양한 암호화폐를 구매, 판매 및 거래할 수 있습니다.
+
+📰 [HIMS] Kaplan Fox Continues to Alert Investors of a Securities Class Action Deadline on November 2, 2026 Against Hims & Hers Health, Inc. (NYSE: HIMS) - FinancialContent
+   (FinancialContent · 09/10 09:30)
+→ Kaplan Fox는 Hims & Hers Health, Inc. (NYSE: HIMS)에 대한 유가증권 집단 소송의 마감일이 2026년 11월 2일임을 투자자들에게 계속 알리고 있습니다. 투자자들은 해당 기한 내에 관련 서류를 제출해야 합니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Price Down 4.6% - Should You Sell? - MarketBeat
+   (MarketBeat · 09/10 06:24)
+→ 레드와이어(Redwire)의 주가가 4.6% 하락했으며, 투자자들에게 주식을 판매할지 여부에 대한 질문이 제기되고 있습니다. 시장 전문가들은 주가 하락의 원인과 향후 전망을 분석하고 있습니다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW Stocks Slide Overnight: Analyst Questions Whether Rivals Can Compete If SpaceX Controls Access To Orbit - Stocktwits
+   (Stocktwits · 09/09 20:45)
+→ ASTS, RKLB, LUNR, RDW 주식이 하락했으며, 한 애널리스트는 SpaceX가 궤도 접근을 통제할 경우 경쟁사들이 제대로 경쟁할 수 있을지 의문을 제기했습니다. 이러한 우려로 인해 관련 주식들이 영향을 받은 것으로 보입니다.
+
+📰 [RDW] Redwire Corporation (NYSE:RDW) Given Consensus Rating of "Hold" by Analysts - MarketBeat
+   (MarketBeat · 09/09 15:18)
+→ 레드와이어 코퍼레이션(Redwire Corporation, NYSE: RDW)이 분석가들로부터 "보유(Hold)" 의견을 얻었다는 소식입니다. 이는 현재 주식에 대한 매도 또는 매수 추천이 아닌, 보유를 유지하라는 평가입니다.
+
+📰 [IREN] Arlington Capital Management Inc. Sells 94,760 Shares of IREN Limited $IREN - MarketBeat
+   (MarketBeat · 09/10 16:18)
+→ Arlington Capital Management Inc.가 IREN Limited의 주식 94,760주를 매도했습니다. 이번 매각은 시장에서의 주식 거래와 관련된 소식입니다.
+
+📰 [IREN] Ameritas Advisory Services LLC Has $1.61 Million Stake in IREN Limited $IREN - MarketBeat
+   (MarketBeat · 09/10 16:18)
+→ Ameritas Advisory Services LLC가 IREN Limited(티커: IREN)에 161만 달러 규모의 지분을 보유하고 있다는 소식이 전해졌다.
+
+📰 [IREN] IREN (IREN) Wins Conditional ERCOT Base Load Status For 2 GW Sweetwater Hub - simplywall.st
+   (simplywall.st · 09/10 11:40)
+→ IREN이 2GW 스위트워터 허브에 대해 ERCOT 기초 부하 상태를 조건부로 획득했습니다. 이번 승인은 IREN의 전력 공급 능력을 강화할 것으로 기대됩니다.
+
+📰 [RKLB] Rocket Lab: A $2.36 Billion Backlog Doesn't Remove The Neutron Risk (NASDAQ:RKLB) - Seeking Alpha
+   (Seeking Alpha · 09/10 16:25)
+→ 로켓랩이 23억 6천만 달러의 백로그를 보유하고 있지만, 이는 네우트론 로켓의 위험 요소를 해소하지 못한다고 분석했다. 전문가들은 네우트론의 개발과 상업화 과정에서 예상되는 다양한 도전 과제가 여전히 존재한다고 경고하고 있다.
+
+📰 [RKLB] Key facts: Rocket Lab (RKLB) $2.4B cash; $190M hypersonics deal - tradingview.com
+   (tradingview.com · 09/10 16:14)
+→ 로켓랩(RKLB)이 24억 달러의 현금을 보유하고 있으며, 1억 9천만 달러 규모의 극초음속 거래를 체결했습니다. 이 소식은 트레이딩뷰에서 보도되었습니다.
+
+📰 [RKLB] RKLB, ASTS, SPCX, PL In Focus: New Trump Task Force Targets 10,000 Annual Space Operations By 2035
+   (Yahoo Finance · 09/10 14:42)
+→ 트럼프 전 대통령의 새로운 태스크포스가 2035년까지 연간 10,000개의 우주 작업을 목표로 설정했습니다. 이들은 우주 작업 승인을 신속히 하고, 더 많은 우주발사장을 만들며, 우선 launch 대역과 공역 통합을 개선하는 방안을 추구할 예정입니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Coinbase CEO calls the bottom in Bitcoin - Investing.com
+   (Investing.com · 09/10 16:56)
+→ 코인베이스 CEO가 비트코인의 바닥을 찍었다고 언급하며, 현재 가격이 저점에 도달했다고 평가했습니다. 이는 암호화폐 시장의 회복 가능성을 암시하는 발언으로 해석됩니다.
+
+📰 [BTC-USD] The Best-Performing ETF This Year Has Nothing To Do With AI Or Bitcoin — It's Linked To Crude Tanker Futures And Is Up 2,900%
+   (Yahoo Finance · 09/10 16:53)
+→ 올해 가장 성과가 좋은 ETF는 인공지능(AI)이나 비트코인과는 관련이 없으며, 원유 유조선 선물에 연결되어 2,900% 상승했습니다. BWET 펀드는 주로 호르무즈 해협을 통한 중동 걸프-중국 경로의 유조선 요금을 추적합니다.
+
+📰 [BTC-USD] Bankrupt ATM network sells 2,446 machines below $1M
+   (Yahoo Finance · 09/10 16:48)
+→ 파산한 ATM 네트워크가 2,446대를 백만 달러 이하에 판매했습니다. 비트코인 뱅콥은 북미 최대 비트코인 ATM 네트워크의 기계에 대한 입찰에서 100만 달러 미만의 현금을 지불했습니다.
+
+📰 [ETH-USD] New Crypto Coin: Apeing Sells 350M Presale Tokens in Few Hours, Raises $60K+ as ETH Holds Above $2,500 - markets.businessinsider.com
+   (markets.businessinsider.com · 09/10 16:30)
+→ 새로운 암호화폐 코인 'Apeing'이 몇 시간 만에 3억 5천만 개의 사전 판매 토큰을 판매하며 6만 달러 이상을 모금했습니다. 이 과정에서 이더리움(ETH) 가격이 2,500달러 이상으로 유지되고 있습니다.
+
+📰 [ETH-USD] Lido and Stakely Launch Public and Institutional ETH Staking Vaults - CryptoRank
+   (CryptoRank · 09/10 16:30)
+→ Lido와 Stakely가 공공 및 기관 투자자를 위한 이더리움(ETH) 스테이킹 금고를 출시했습니다. 이 새로운 서비스는 사용자들이 더 쉽게 이더리움을 스테이킹할 수 있도록 돕고, 기관의 참여를 확대하는 데 기여할 것으로 기대됩니다.
+
+📰 [ETH-USD] Why Bitcoin, Ethereum and XRP Could Benefit from Trump’s $5000 Midterms Dividend - CoinGape
+   (CoinGape · 09/10 15:59)
+→ 트럼프가 미 중간선거에서 5,000달러 배당금을 제안하면서 비트코인, 이더리움, XRP와 같은 암호화폐들이 긍정적인 영향을 받을 수 있다는 전망이 제기됐다. 이러한 배당금이 유권자들에게 지불되면, 암호화폐에 대한 수요가 증가할こと이 예상된다. 결과적으로 시장에서 이들 자산의 가치가 상승할 가능성이 있다.
+
+📰 [SOL-USD] Dogecoin Price Is Testing Key Breakout Level as DOGE Joins Solana - The Coin Republic
+   (The Coin Republic · 09/10 15:30)
+→ 도지코인(DOGE) 가격이 중요한 저항 수준을 테스트하고 있으며, 이는 솔라나와 함께 높은 관심을 받고 있다는 소식이다. 시장의 변동성 속에서 도지코인의 상승 가능성이 주목받고 있다.
+
+📰 [SOL-USD] Apeing’s Crypto Presale Goes Parabolic on Launch Day With Over $70k Raised in Hours, While Solana Whales Drop $9.11M - The Manila Times
+   (The Manila Times · 09/10 15:29)
+→ Apeing의 암호화폐 프리세일이 출시 당일에 7만 달러 이상을 모금하며 급격한 상승세를 보였습니다. 한편, 솔라나의 주요 투자자들은 911만 달러를 매각했습니다.
+
+📰 [SOL-USD] Solana (SOLUSD) Suddenly Goes down 1.06% on Sep 10: What You Need to Watch - TradingKey
+   (TradingKey · 09/10 15:20)
+→ 2023년 9월 10일, 솔라나(SOLUSD)가 1.06% 급락했다. 이 하락세에 대한 원인 분석과 앞으로의 전망에 대한 주의가 필요하다.
+
+📰 [BMNR] BMNR Stock Dips Even As Its Latest Ethereum Buy Leaves It Just 0.1% From Its 'Alchemy Of 5%' Goal - Stocktwits
+   (Stocktwits · 09/10 11:42)
+→ BMNR 주가는 최근 이더리움 매입에도 불구하고 하락했으며, 목표인 '5%의 연금술'에 0.1%가 남아있는 상황이다. 이로 인해 투자자들의 관심이 집중되고 있다.
+
+📰 [BMNR] BitMine now holds 5.93M ETH — What does it mean for BMNR stock? - AMBCrypto
+   (AMBCrypto · 09/10 03:30)
+→ BitMine은 현재 5.93백만 이더리움(ETH)을 보유하고 있으며, 이는 BMNR 주식에 긍정적인 영향을 미칠 것으로 예상됩니다. 이 보유량은 BitMine의 자산 가치를 높이고, 주식 투자자들에게도 긍정적인 신호로 작용할 가능성이 있습니다.
+
+📰 [BMNR] Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH
+   (Yahoo Finance · 09/09 22:00)
+→ Bitmine이 28,086개의 이더리움을 추가로 구매하면서 보유 자산이 거의 150억 달러에 달하며, 이는 회사의 전체 시가총액에 버금가는 규모가 되었습니다. 하지만 이러한 대규모 구매가 ETH 가격에 영향을 미칠지 아니면 이미 최대치의 절반 가치가 줄어든 코인에 대한 투기적인 베팅에 불과할지는 의문입니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장은 규제와 제도화를 둘러싼 논의가 활발히 진행되고 있다. 민병덕 의원이 디지털자산기본법의 연내 결론을 예고하며 공청회 일정도 발표한 가운데, 전반적인 제도 개선에 대한 필요성이 강조되고 있다.
+
+[핵심 뉴스]
+1. (정책) 디지털자산기본법 연내 결론
+   → 민병덕 의원이 디지털자산기본법의 연내 결론을 예고하며, 이달 중 공청회를 개최할 계획임을 밝혔다.
+   (연합뉴스 · 09/10 16:43)
+2. (정책) 디지털자산 제도 논의 구체화
+   → 민병덕 의원은 국감 후인 11월부터 가상자산 제도화 논의가 구체화될 것이라 전했다.
+   (디지털애셋 · 09/10 16:40)
+3. (정책) 디지털자산 제도화 더 이상 미뤄선 안 된다
+   → 안도걸 의원은 제도적 공백이 자금 이탈 초래할 수 있다며 가상자산 제도화의 필요성을 강조했다.
+   (블루밍비트 · 09/10 14:37)
+4. (ETF) 한국은 자본 유출 우려
+   → 월가는 디지털자산 ETF 혁신이 이루어지고 있지만, 한국은 제도 공백으로 인해 자본 유출이 우려된다고 언급했다.
+   (매일경제 마켓 · 09/10 15:38)
+5. (규제) 클래리티 법안 표결 임박
+   → 미국에서 '클래리티 법안' 표결이 임박해 있으며, 가상자산과 은행권에 대한 막판 로비전이 펼쳐지고 있다.
+   (블루밍비트 · 09/10 11:30)
+
+[흐름·전망]
+• 디지털자산에 대한 명확한 법적 지침이 마련될 경우 시장의 신뢰도가 높아질 가능성이 있다.
+• 한국의 규제 개선이 이루어질지 여부가 글로벌 가상자산 시장에 미치는 영향을 지켜봐야 한다.
+• 비트코인과 이더리움 등 주요 자산의 움직임이 규제 소식에 영향을 받을 수 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 36 (Fear)
+  - 크립토 기준: 69 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 서울 청약 시장에서 고분양가에도 불구하고 청약 경쟁률이 상승하며 실수요자와 투자수요가 유입되고 있습니다. 또한, 서울 내 소형 아파트 가격이 증가세를 보이는 가운데 수도권 강남3구는 가격 하락 전환을 겪고 있습니다.
+
+[핵심 뉴스]
+1. (분양청약) 고분양가에도 청약 호조 사례 등장
+   → 서울 양천구의 '목동윤슬자이'와 강남구 '아크로 드 서초'가 각각 32대 1, 1099대 1의 청약 경쟁률을 기록하며 고분양가에도 불구하고 청약 시장의 호조를 보여주고 있습니다.
+   (매일경제 · 09/10 16:30)
+2. (매매) 서울 소형 아파트 가격 상승률 최대
+   → 서울 전용 60㎡ 이하 소형 아파트 가격 상승률이 1.66%로 2018년 이후 가장 높으며, 평균 매매가격이 9억 원을 처음 초과했습니다.
+   (매일경제 · 09/10 15:35)
+3. (매매) 강남3구 아파트 가격 하락 전환
+   → 서울 강남3구 아파트 가격이 하락세로 돌아섰으며, 송파구는 21주 만에 하락하였습니다.
+   (연합뉴스 · 09/10 14:00)
+4. (재건축) 노원구 재건축 혁신전략 협의체 발족
+   → 서울 노원구는 '재건축·재개발 혁신전략 추진협의체'를 발족해 정비사업 진행을 촉진할 방안을 모색하고 있습니다.
+   (연합뉴스 · 09/10 15:46)
+5. (공급) 건설수주 감소, 공급 마저 시급한 상황
+   → 2026년 7월 국내 건설수주액이 지난해보다 30.6% 감소하며, 주거용 건축기성이 7.9% 줄어드는 등 건설경기 침체가 지속되고 있습니다.
+   (매일경제 · 09/10 14:00)
+6. (금리) 가계대출 증가와 금융불균형 위험
+   → 한국은행은 수도권 집값과 가계대출이 여전히 증가하고 있으며, 금융불균형 위험이 커지고 있다고 분석했습니다.
+   (연합뉴스 · 09/10 12:00)
+
+[흐름·전망]
+• 서울의 고분양가 청약 호조는 공급 부족 우려 및 지역적 특성에 기인하며, 향후 추가 공급계획의 이행 여부가 관건이 될 것입니다.
+• 소형 아파트의 가격 상승은 상대적으로 낮은 대출 규제와 충분한 공급이 이루어지지 않을 경우 더 지속될 가능성이 높습니다.
+• 강남3구의 하락세가 이어지는 만큼, 투자자들은 이 지역의 매도 물량과 부동산 세제 개편의 영향에 주목해야 합니다.
+• 노원구의 재건축 사업 추진과 관련된 협의체의 성과가 향후 서울 전반의 재개발 속도를 가늠하는 중요한 지표가 될 것입니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 소셜미디어에서 필 플린의 에너지 분석에 대한 찬사를 표하며 주목할 만한 조언이라고 강조했다. 또한 FBI에 의한 플린 인터뷰와 공식 기록 간의 불일치를 폭로하는 비밀 해제 메모에 대해서도 언급하였다.
+
+[주요 발언]
+1. (기타) 트럼프는 필 플린의 에너지 분석을 강조하며 그의 조언이 꼭 봐야 할 것이라고 주장했다.
+   (Truth Social · 09/09 21:00)
+2. (사법) 트럼프는 FBI의 해제된 메모가 플린 인터뷰와 공식 기록 간의 불일치를 드러내며 조작의 가능성을 제기한다고 언급했다.
+
+[흐름·전망]
+• 트럼프의 발언은 에너지 분야의 전문가 의견에 대한 신뢰도를 높일 가능성이 있다.
+• FBI의 비밀 해제 메모와 관련된 논란이 향후 법적 대응이나 정치적 논의에 어떤 영향을 미칠지 주목할 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
