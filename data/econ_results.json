@@ -47,10 +47,10 @@
 "d4e45fb8-e4c7-45c0-95df-28353011a014": {
 "name": "Producer Price Index ex Food & Energy (YoY)",
 "dt": "2026-09-10T12:30:00Z",
-"act": null,
+"act": "4.6%",
 "cons": "4.6%",
-"prev": "4.2%",
-"act_n": null,
+"prev": "4.3%",
+"act_n": 4.6,
 "cons_n": 4.6
 },
 "3e882694-dd74-4fae-a29a-d20098a1c906": {
@@ -400,7 +400,7 @@
 "dt": "2026-10-15T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "4.6%",
 "act_n": null,
 "cons_n": null
 },
