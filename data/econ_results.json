@@ -56,56 +56,56 @@
 "3e882694-dd74-4fae-a29a-d20098a1c906": {
 "name": "Consumer Price Index (MoM)",
 "dt": "2026-09-11T12:30:00Z",
-"act": null,
+"act": "0.4%",
 "cons": "0.4%",
 "prev": "0.1%",
-"act_n": null,
+"act_n": 0.4,
 "cons_n": 0.4
 },
 "e39adcbf-65f3-4fd0-92e9-a02b3685d81f": {
 "name": "Consumer Price Index (YoY)",
 "dt": "2026-09-11T12:30:00Z",
-"act": null,
+"act": "3.4%",
 "cons": "3.4%",
 "prev": "3.4%",
-"act_n": null,
+"act_n": 3.4,
 "cons_n": 3.4
 },
 "b1abcb9e-c0fe-4e44-a669-9ef42706b92d": {
 "name": "Consumer Price Index ex Food & Energy (MoM)",
 "dt": "2026-09-11T12:30:00Z",
-"act": null,
+"act": "0.3%",
 "cons": "0.2%",
 "prev": "0.2%",
-"act_n": null,
+"act_n": 0.3,
 "cons_n": 0.2
 },
 "5ed3ff6f-37ab-47b3-9a06-73d714b36083": {
 "name": "Consumer Price Index ex Food & Energy (YoY)",
 "dt": "2026-09-11T12:30:00Z",
-"act": null,
+"act": "2.4%",
 "cons": "2.4%",
 "prev": "2.5%",
-"act_n": null,
+"act_n": 2.4,
 "cons_n": 2.4
 },
 "c7d46fc3-7c5d-46d9-95fb-8f707bbc70ea": {
 "name": "Michigan Consumer Sentiment Index",
 "dt": "2026-09-11T14:00:00Z",
-"act": null,
+"act": "47.8",
 "cons": "51",
 "prev": "51.7",
-"act_n": null,
+"act_n": 47.8,
 "cons_n": 51.0
 },
 "15c93b10-4ad3-473c-84f4-d7e41714de13": {
 "name": "Retail Sales (MoM)",
 "dt": "2026-09-16T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "0.9%",
 "prev": "-0.6%",
 "act_n": null,
-"cons_n": null
+"cons_n": 0.9
 },
 "5f8162f8-16b9-401e-8820-271aee0d9539": {
 "name": "Retail Sales Control Group",
@@ -120,10 +120,10 @@
 "name": "Fed Interest Rate Decision",
 "dt": "2026-09-16T18:00:00Z",
 "act": null,
-"cons": null,
+"cons": "4%",
 "prev": "3.75%",
 "act_n": null,
-"cons_n": null
+"cons_n": 4.0
 },
 "6058ca5b-901f-46b7-bfd9-657446035047": {
 "name": "Fed Monetary Policy Statement",
@@ -201,10 +201,10 @@
 "name": "BoJ Interest Rate Decision",
 "dt": "2026-09-18T03:00:00Z",
 "act": null,
-"cons": null,
+"cons": "1.25%",
 "prev": "1%",
 "act_n": null,
-"cons_n": null
+"cons_n": 1.25
 },
 "34d7a1f7-2cd9-48bb-9212-1f6350d3d005": {
 "name": "BoJ Monetary Policy Statement",
@@ -364,7 +364,7 @@
 "dt": "2026-10-14T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "0.4%",
 "act_n": null,
 "cons_n": null
 },
@@ -373,7 +373,7 @@
 "dt": "2026-10-14T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "3.4%",
 "act_n": null,
 "cons_n": null
 },
@@ -382,7 +382,7 @@
 "dt": "2026-10-14T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "0.3%",
 "act_n": null,
 "cons_n": null
 },
@@ -391,7 +391,7 @@
 "dt": "2026-10-14T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "2.4%",
 "act_n": null,
 "cons_n": null
 },

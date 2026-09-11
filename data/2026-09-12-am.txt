@@ -1,0 +1,236 @@
+2026-09-12T06:32:56.991218+09:00
+
+[오늘의 뉴스 요약] 2026-09-12 06:31 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 금융 시장은 NH농협은행의 주택담보대출 금리 인하 소식과 함께 환율 상승, 자영업자 대출 부실 우려가 나타나는 가운데 전반적으로 혼조세를 보이고 있다.
+
+[핵심 뉴스]
+1. (금리) NH농협은행, 주담대 금리 인하
+   → NH농협은행은 2026년 9월 16일부터 주택담보대출 금리를 최대 0.45%포인트 인하한다고 발표하며, 이는 실수요자의 금융 부담 완화를 목적으로 한다.
+   (매일경제 · 09/11 20:53)
+2. (환율) 환율 상승, 원/달러 1,345.9원
+   → 원/달러 환율은 6.7원 상승하여 1,345.9원으로 마감했으며, 이는 미국 금리인상 우려와 국제유가 급등의 영향을 받았다.
+   (연합뉴스 · 09/11 16:32)
+3. (고용) 자영업자 대출 부실 위험 증가
+   → 고용원이 없는 1인 자영업자의 대출 연체액이 2021년 5조 3천억 원에서 올해 1분기에는 22조 3천억 원으로 증가하며 대출 부실 위험이 커지고 있다.
+   (매일경제 · 09/11 17:35)
+4. (기타) 전쟁 장기화에 따른 시장 불안
+   → 코스피가 3거래일 만에 7,000선을 내주었으며, 미국과 이란 간 전쟁의 장기화와 국제 유가 급등이 시장에 부정적인 영향을 미쳤다.
+   (연합뉴스 · 09/11 17:23)
+5. (성장) 9월 누적 수출액 급증
+   → 2026년 9월 1일부터 10일 사이의 수출액이 350억 달러로 지난해 동기 대비 82.6% 증가하였고, 반도체 수출이 165억 달러로 급증하여 전체 수출 증가를 견인했다.
+   (매일경제 · 09/11 14:22)
+
+[흐름·전망]
+• NH농협은행의 금리 인하가 시장에 미치는 영향을 주의 깊게 살펴보아야 하며, 이는 가계대출의 변화에 영향을 줄 가능성이 있다.
+• 원/달러 환율 변동성이 심화되고 있으며, 국제 유가의 추가 상승이 물가에 미치는 영향을 주의 깊게 모니터링할 필요가 있다.
+• 영세 자영업자의 대출 부실 우려가 심화되면서 금융권의 건전성에 미치는 영향에 대한 논의가 필요하다.
+• 전쟁 장기화와 고물가 상황이 한국 경제에 미치는 리스크를 분석하는 것이 기업과 투자자들에게 중요할 것이다.
+
+📈 해외주식 PART
+📰 [NVDA] Cisco Jumps Over 3.7% While Huang Calls Cybersecurity AI's Next Blockbuster
+   (Yahoo Finance · 09/12 06:11)
+→ 시스코 주가가 3.7% 이상 상승하였으며, 엔비디아 CEO인 젠슨 황은 사이버 보안 분야에서 인공지능이 다음 주목할 만한 혁신이 될 것이라고 언급했다. 그는 시스코의 보안 및 네트워킹 플랫폼이 향후 수요 경쟁의 주요 요소가 될 것이라고 전망하였다.
+
+📰 [NVDA] Nvidia CEO Jensen Huang Sees 70% Growth as AI Demand Stays Red-Hot
+   (Yahoo Finance · 09/12 06:10)
+→ Nvidia의 CEO 젠슨 황은 AI 수요가 여전히 뜨거워 70%의 성장을 예상하며, 다음 큰 기회로 사이버 보안을 언급했습니다. 그는 또 다른 AI 성장 파도가 올 것이라고 신호를 보냈습니다.
+
+📰 [NVDA] Executive at NVIDIA (NASDAQ: NVDA) receives 172,507-share stock award - Stock Titan
+   (Stock Titan · 09/12 06:05)
+→ NVIDIA의 한 임원이 172,507주의 주식 보상을 받았습니다. 이 주식 보상은 회사의 성과 보상 프로그램의 일환으로 제공된 것으로 보입니다.
+
+📰 [TSLA] Tesla Gains as Semi Opens a $17 Billion Software Door - Yahoo Finance
+   (Yahoo Finance · 09/12 06:12)
+→ 테슬라의 세미 트럭 출시가 170억 달러 규모의 소프트웨어 시장에 대한 새로운 기회를 열면서 주가가 상승하고 있다. 이는 자율주행과 연결된 다양한 소프트웨어 서비스에 대한 수익 잠재력을 시사한다.
+
+📰 [TSLA] Kalshi stock futures plan targets Tesla and Apple shares - Bloomberg - Investing.com
+   (Investing.com · 09/12 05:31)
+→ Kalshi는 테슬라와 애플 주식에 대한 선물 거래 계획을 발표했습니다. 이 계획은 투자자들이 두 회사의 주가 변동에 베팅할 수 있는 기회를 제공할 것으로 기대됩니다.
+
+📰 [TSLA] Inside Tesla’s Cybertruck and robotaxi experience
+   (Yahoo Finance · 09/12 05:21)
+→ 테슬라의 사이버트럭 출시 일주일 후, 기자 맥 드규린이 마켓 도미네이션에서 사이버트럭의 작동 방식과 테슬라의 고대하던 로봇 택시 경험을 소개합니다.
+
+📰 [HIMS] JPMorgan Tweaks Hims & Hers Stock Outlook on Key Risk - Yahoo Finance Singapore
+   (Yahoo Finance Singapore · 09/12 06:12)
+→ JPMorgan은 Hims & Hers의 주식 전망을 조정하며 주요 리스크를 언급했습니다. 이 회사의 성장 전망에 대한 우려로 주가 목표가 하향 조정되었습니다.
+
+📰 [HIMS] J.P. Morgan Assigns Hims & Hers Stock a ‘Hold’ Rating. What’s Behind the Cautious Stance? - TipRanks
+   (TipRanks · 09/12 06:07)
+→ J.P. Morgan이 Hims & Hers 주식에 대해 '보유' 등급을 부여하였으며, 이는 신중한 입장을 반영하고 있습니다. 이 결정의 배경에는 시장 조건 및 회사 실적에 대한 우려가 포함되어 있습니다.
+
+📰 [HIMS] DEADLINE ALERT for YSS, HIMS, UNCY, and PZZA: The Law - GlobeNewswire
+   (GlobeNewswire · 09/12 01:06)
+→ YSS, HIMS, UNCY, PZZA와 관련된 법적 마감일이 다가오고 있다는 경고가 발표되었습니다. 투자자들은 해당 기업들과 관련된 중요한 소식에 주의해야 합니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Trading Down 2.3% - What's Next? - MarketBeat
+   (MarketBeat · 09/12 06:28)
+→ Redwire (NYSE:RDW)의 주가가 2.3% 하락했습니다. 앞으로의 전망에 대한 논의가 이어지고 있습니다.
+
+📰 [RDW] Redwire (RDW) Stock May Be 23% Undervalued Despite Edge Autonomy Deal - simplywall.st
+   (simplywall.st · 09/11 20:37)
+→ Redwire (RDW) 주식은 Edge Autonomy와의 거래에도 불구하고 23% undervalued할 수 있다는 분석이 제기되었습니다. 이는 투자자들에게 주가 상승의 기회를 시사하는 것입니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Price Up 1.3% - What's Next? - MarketBeat
+   (MarketBeat · 09/11 06:54)
+→ Redwire의 주가가 1.3% 상승했습니다. 앞으로의 전망에 대한 시장의 관심이 커지고 있습니다.
+
+📰 [IREN] Oracle's AI Cloud Growth Lifts CoreWeave, Nebius and IREN
+   (Yahoo Finance · 09/12 06:10)
+→ 오라클의 AI 클라우드 성장 덕분에 CoreWeave, Nebius, IREN의 주가가 상승하고 있습니다. 이는 오라클의 성과가 AI 인프라 분야의 투자 신뢰를 강화하고 있음을 보여줍니다.
+
+📰 [IREN] Iris Energy Stock (IREN) Opinions on AI Data Center Pivot and Recent Earnings - Quiver Quantitative
+   (Quiver Quantitative · 09/12 02:38)
+→ Iris Energy의 주식(IREN)에 대한 최근 분석에서는 AI 데이터 센터로의 전환과 최근 실적에 대한 의견이 제시되었습니다. 전문가들은 이러한 변화가 기업의 성장 가능성에 긍정적인 영향을 미칠 것으로 보고 있습니다.
+
+📰 [IREN] TeraWulf Rallies 7% as Miner Selloff Reverses; Applied Digital Gains 4%, IREN Sits Out the Rally
+   (Yahoo Finance · 09/12 01:50)
+→ 비트코인 채굴업체들이 목요일의 매각 후 반등하고 있으며, TeraWulf는 7% 상승하고 Applied Digital은 4% 상승했다. 반면 IREN은 이번 반등에 참여하지 않고 있어, 시장의 주도 요인을 보여준다.
+
+📰 [RKLB] Raymond James Has Strong Message For Rocket Lab Investors - GuruFocus
+   (GuruFocus · 09/12 06:25)
+→ 레이먼드 제임스가 로켓랩 투자자들에게 강력한 메시지를 전했습니다. 이 투자은행은 로켓랩의 성장 잠재력과 시장 전략에 대해 긍정적인 전망을 제시하며, 투자자들에게 신뢰를 가질 것을 권장했습니다.
+
+📰 [RKLB] Rocket Lab’s Core Business Makes The Neutron Gamble Worth Taking (NASDAQ:RKLB) - Seeking Alpha
+   (Seeking Alpha · 09/12 06:23)
+→ 로켓랩(Rocket Lab)의 핵심 사업이 네우트론(Neutron) 로켓 개발에 대한 도박을 할 가치가 있다는 분석이 제기되었습니다. 회사의 기존 비즈니스 모델이 안정성을 제공하며, 새로운 로켓을 통해 성장 가능성을 높일 수 있다는 전망이 담겨 있습니다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Shares Up 1.6% - Still a Buy? - MarketBeat
+   (MarketBeat · 09/12 06:22)
+→ 로켓랩(Rocket Lab, NASDAQ:RKLB)의 주가가 1.6% 상승했습니다. 이에 대한 시장의 반응과 향후 투자 가능성에 대한 논의가 이어지고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin's 'Unusual Mix': Report - Bitcoin Magazine
+   (Bitcoin Magazine · 09/12 06:23)
+→ Bitcoin Magazine의 보고서에 따르면 비트코인의 구성 요소가 비정상적으로 혼합되어 있다고 보도됐다. 이 조사에서는 비트코인의 최신 동향과 시장 반응에 대한 분석이 포함되어 있다.
+
+📰 [BTC-USD] Blockstream Tells Hackers To Return Remaining Bitcoin Stolen In Liquid Theft - Bitcoin Magazine
+   (Bitcoin Magazine · 09/12 06:13)
+→ Blockstream이 해커들에게 Liquid에서 도난당한 잔여 비트코인을 반환하라고 요청했습니다. 이 사건은 보안 침해와 관련된 것이며, Blockstream은 도난된 자산을 회수하기 위해 노력하고 있습니다.
+
+📰 [BTC-USD] 5 Best Crypto Casinos – What Are the Safest Bitcoin Casinos to Play in 2026? - Muddy River Sports
+   (Muddy River Sports · 09/12 06:00)
+→ 2026년 플레이하기에 가장 안전한 비트코인 카지노 5곳에 대한 정보가 제공됩니다. 이 기사에서는 최고의 암호화폐 카지노를 선정하고, 각 카지노의 안전성과 신뢰성을 평가합니다.
+
+📰 [ETH-USD] Philadelphia Fed finds Bitcoin traders follow whale signals faster than Ethereum users - cryptoslate.com
+   (cryptoslate.com · 09/12 05:10)
+→ 필라델피아 연방준비은행 연구에 따르면, 비트코인 거래자들이 이더리움 사용자들보다 '고래'의 거래 신호를 더 빠르게 따르는 것으로 나타났다. 이는 비트코인 시장의 반응 속도가 더 빠르다는 것을 시사한다.
+
+📰 [ETH-USD] Analyst Flags Ethereum Breakout Setup With $15K Target - Cryptonews.net
+   (Cryptonews.net · 09/12 04:46)
+→ 분석가는 이더리움의 상승세를 예고하며 목표 가격을 15,000달러로 설정했습니다. 이더리움의 최근 기술적 지표들이 강력한 상승 신호를 보이고 있다는 점이 주목받고 있습니다.
+
+📰 [ETH-USD] Ethereum Price Prediction: Could ETH Reach $3,500 This Year? AlphaPepe Is Still Before Its First Exchange Run - StreetInsider
+   (StreetInsider · 09/12 04:40)
+→ 이더리움(Ethereum) 가격이 올해 $3,500에 도달할 가능성에 대한 예측이 나오고 있다. 한편, AlphaPepe는 아직 첫 거래소 상장 전 단계에 있다.
+
+📰 [SOL-USD] Is There a New Crypto Worth Buying in September 2026? Pepeto, Solana, and Ethereum Say Yes - TechBullion
+   (TechBullion · 09/12 05:47)
+→ 2026년 9월에 투자할 가치가 있는 새로운 암호화폐로 Pepeto, Solana, Ethereum이 추천되고 있다는 내용을 담고 있습니다. 이들 암호화폐는 미래 성장 가능성이 크다고 평가받고 있습니다.
+
+📰 [SOL-USD] Friends of Solana Beach Library to present a ‘Clean Air Fair’ event - San Diego Union-Tribune
+   (San Diego Union-Tribune · 09/12 05:39)
+→ 솔라나 비치 도서관의 친구들(Friends of Solana Beach Library)이 '청정 공기 박람회(Clean Air Fair)' 행사를 개최합니다. 이 행사는 지역 사회의 공기 질 개선과 환경 보호에 대한 인식을 높이기 위한 목적으로 마련되었습니다.
+
+📰 [SOL-USD] Solana Price Drops Below $100 as SOL Cuts 18.9 Million Tokens: Why Pepeto Is the Move Right Now - TechBullion
+   (TechBullion · 09/12 04:47)
+→ 솔라나 가격이 100달러 아래로 하락하면서 1,890만 개의 SOL 토큰이 줄어들었다. 현재 Pepeto가 주목받고 있는 이유에 대한 분석이 이어지고 있다.
+
+📰 [BMNR] BitMine Immersion Stock Rallies Friday: What's Happening? - TradingView
+   (TradingView · 09/12 01:18)
+→ BitMine Immersion의 주식이 금요일에 큰 폭으로 상승했습니다. 이 주가 상승의 배경에는 긍정적인 시장 반응이나 외부 요인들이 작용하고 있는 것으로 보입니다.
+
+📰 [BMNR] $BMNR stock is up 8% today. Here's what we see in our data. - Quiver Quantitative
+   (Quiver Quantitative · 09/11 23:52)
+→ $BMNR 주식이 오늘 8% 상승했습니다. Quiver Quantitative의 데이터에 따르면 이 상승세에 대한 통찰이 포함되어 있습니다.
+
+📰 [BMNR] Why is Bitmine Immersion stock surging today? - Investing.com
+   (Investing.com · 09/11 23:36)
+→ Bitmine Immersion의 주가가 급등한 이유는 긍정적인 시장 반응과 투자자들 사이에서의 기대감이 높아졌기 때문입니다. 이는 회사의 전략적 결정이나 발표가 주효했음을 나타냅니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+전반적으로 비트코인과 이더리움 등 주요 가상자산 시장은 혼조세를 보이고 있으며, 금리 인상 우려가 상존하는 가운데 일부 기계적 청산이 발생하고 있다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 86.5% 금리 인상 확률에 일봉 골든크로스 해제
+   → 비트코인의 일봉 골든크로스가 해제되었고, 미국의 금리 인상 확률이 86.5%로 높아지면서 비트코인 가격이 7만7438달러로 하락했다.
+   (토큰포스트 · 09/12 06:00)
+2. (시세) 비트코인 966500번서 한 블록 재조직
+   → 토큰화된 실물자산 시장이 462억달러로 확대되었지만, 미국 국채와 일부 기관급 상품으로 집중되는 경향이 나타났다.
+   (토큰포스트 · 09/12 05:37)
+3. (기타) 비트코인 7만7000 USDT 아래로…24시간 0.24% 하락
+   → 바이낸스의 비트코인 보유량이 69만3000BTC로 2년 만에 최고치를 기록했으나 비트코인이 7만7000 USDT 아래에서 움직이며 하락세를 보였다.
+   (토큰포스트 · 09/12 05:22)
+4. (시세) 이더리움 8.3% 장중 상승…숏 청산 2억5500만달러
+   → 비트코인 고래 거래 알림이 단기 변동성을 높인 반면, 이더리움에 대한 반응은 제한적이었다는 연구 결과가 발표되었다.
+   (토큰포스트 · 09/12 05:16)
+5. (시세) 암호화폐 시장, 24시간 동안 레버리지 포지션 6억4303만달러 청산
+   → 이더리움은 8.3% 상승하며 2600달러를 잠시 웃돌았고, 이 과정에서 약 2억5500만달러의 숏 포지션이 청산됐다.
+   (토큰포스트 · 09/12 05:07)
+
+[흐름·전망]
+• 금리 인상 기대가 지속됨에 따라 비트코인과 기술주에 대한 압박이 커질 가능성이 높으므로, 해당 가격대에서의 매물 심리를 주의 깊게 관찰해야 한다.
+• 토큰화된 실물자산 시장의 성장세가 실제 거래량 확대와 함께 이어질지를 지켜보는 것이 중요하며, 특정 자산군에 대한 집중도를 확인해야 한다.
+• 바이낸스의 BTC 보유량 증가가 실제 매도 압력으로 전환되는지를 확인하는 것이 중요하며, 보유량과 가격 간의 상관관계를 분석해야 한다.
+• 이더리움의 숏 포지션 청산이 간헐적인 상승의 기여 요소로 작용하고 있는 만큼, 청산 이후 가격 조정이 어떻게 나타나는지를 주의 깊게 살펴보아야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 33 (Fear)
+  - 크립토 기준: 56 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 전국적으로 1만1천521가구의 분양이 예정되면서 분위기가 활기를 띠고 있다. 서울에서는 전세 가격이 평균 7억원을 초과하며 주거비 부담이 심화되고 있다.
+
+[핵심 뉴스]
+1. (분양청약) 내주 1만1천521가구 분양 예정
+   → 다음 주 전국 10개 단지에서 총 1만1천521가구가 분양될 예정이며, 이 중 1만490가구가 일반분양으로 진행된다.
+   (연합뉴스 · 09/12 06:05)
+2. (재개발) 영등포 신길동, 서울 서남권 주거지역으로 부상
+   → 영등포 신길동이 여의도와 가까우면서 가격이 상대적으로 저렴해 주목받고 있으며, 신길동의 전용 84㎡ 아파트가 20억4000만원에 거래됐다.
+   (매일경제 · 09/12 05:00)
+3. (공급) 서울 유일 신규택지 개발 무산
+   → 강서구 염창근린공원의 신규 공공택지 개발 주민 설명회가 주민 반발로 무산되었으며, 지역 주민들은 공공주택 공급에 대한 협의 부족을 문제 삼고 있다.
+   (연합뉴스 · 09/11 23:28)
+4. (매매) 강남 아파트 값 내리막 지속
+   → 서울 아파트 매매가격은 0.22% 상승했으나 강남구는 4주 연속 하락세를 보이며 매수 심리가 위축되고 있다.
+   (매일경제 · 09/11 11:33)
+5. (전세) 서울 전셋값 7억원 돌파
+   → 서울 아파트 평균 전세가격은 7억458만원으로 상승세를 이어가며, 경기권에서도 전세가격이 4%대 상승률을 기록하고 있다.
+   (매일경제 · 09/11 09:58)
+6. (금리) 대출 규제가 주거 거래에 미치는 영향
+   → 거래 절벽이 지속되고 있는 가운데, 민간 주택 공급 재개가 절실하다는 목소리가 나오고 있다.
+   (YTN · 09/12 05:26)
+
+[흐름·전망]
+• 향후 분양 시장의 공급 물량에 따라 청약 경쟁률과 매수 심리에 영향을 줄 것으로 예상된다.
+• 서울 강남구의 매도 문의 증가와 관망세 지속이 시장에 미치는 영향을 주목해야 한다.
+• 전세 시장의 급격한 가격 상승세가 실수요자들에게 미치는 영향을 분석할 필요가 있다.
+• 비규제 지역의 신규 단지에 대한 관심이 증대하면서 이동할 지역적 수요에 주목할 필요가 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 미국 경제가 엄청난 발전과 성공을 이루고 있으며, 모든 성인에게 지급될 5,000달러 배당금에 대한 비판에 반박하는 내용을 전달했다. 그는 민주당원들이 이러한 사실이 이루어지지 않기를 바라고 있다고 주장했다.
+
+[주요 발언]
+1. (경제) 트럼프는 미국 경제의 발전을 강조하며 모든 성인에게 5,000달러를 지급할 계획이 실현될 것이라고 주장했다.
+   (Truth Social · 09/12 04:08)
+2. (국내정치) 트럼프는 텍사스에서 열린 공화당 대회에서 중간선거를 위해 지지자들을 격려하며 대규모 군중과의 에너지를 표현했다.
+   (Truth Social · 09/12 05:13)
+
+[흐름·전망]
+• 트럼프의 배당금 지급 발언이 실제로 구현될 경우, 미국 내 경제적 파급 효과에 주목할 필요가 있다.
+• 중간선거를 앞둔 공화당의 결집이 선거 결과에 어떤 영향을 미칠지 지켜보아야 할 것이다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
