@@ -1,0 +1,239 @@
+2026-09-11T17:02:50.500420+09:00
+
+[오늘의 뉴스 요약] 2026-09-11 17:01 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제는 금리와 환율 상승 등의 불확실성 속에서도 일부 긍정적인 지표가 있는 가운데 전반적으로 긴축 우려가 커지고 있다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 일제히 상승
+   → 국고채 금리가 3년물은 8.4bp 상승해 연 4.014%로, 10년물은 8.7bp 상승해 연 4.540%로 마감하며 전반적으로 상승세를 보였다.
+   (연합뉴스 · 09/11 16:41)
+2. (환율) 환율, 6.7원 오른 1,345.9원
+   → 원/달러 환율이 6.7원 오른 1,345.9원으로 마감하였으며, 이는 미국 금리인상 우려와 국제유가 상승에 따른 것이다.
+   (연합뉴스 · 09/11 16:32)
+3. (기타) 글로벌 부동산 회복 국면 진입
+   → 누빈은 고금리 장기화 속에서도 글로벌 부동산 시장이 회복 국면에 들어섰다고 진단하며, 서울 오피스와 한국 임대주택에 투자를 주목할 만하다고 강조했다.
+   (연합뉴스 · 09/11 13:38)
+4. (성장) 한국 경제에 대한 긍정적 진단 유지
+   → 8월 소비자물가 상승률이 3.1%에 도달하는 등 일부 경기 지표가 긍정적이지만, 자동차 내수 판매가 28.3% 감소하는 등 우려 요인도 있으며, 정부는 성장세를 지속할 것이라고 전망했다.
+   (매일경제 · 09/11 11:09)
+5. (고용) 산업전환 일자리 키운다
+   → 김영훈 고용노동부 장관은 조일공업을 방문하여, 공정 자동화와 미래차 전환을 통해 고용이 37% 증가한 사례를 소개하며 산업전환과 고용의 긍정적 관계를 강조하였다.
+   (연합뉴스 · 09/11 15:10)
+
+[흐름·전망]
+• 금리 상승과 외부 경제 불확실성 속에서 채권 시장의 방향성과 기업 비용 압박이 주요 관전 포인트가 될 것이다.
+• 환율의 동향은 국제유가 및 금리에 영향을 받을 가능성이 있으며, 이를 통해 기업의 수익성이 달라질 가능성이 높다.
+• 부동산 시장은 회복세를 보일 것으로 기대되지만, 금리가 높게 유지될 경우 장기적인 투자 심리에 영향을 미칠 수 있다.
+• 고용 증가가 지속된다면 경기 회복의 긍정적인 신호로 작용할 가능성이 있으며, 정부의 민생 안정 대책의 효과도 지속적으로 모니터링해야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] China's AI chip IPO boom rolls on as another Nvidia challenger soars 200% in market debut - Business Insider
+   (Business Insider · 09/11 16:50)
+→ 중국의 AI 칩 기업들이 IPO 열풍을 이어가고 있으며, 신규 상장된 한 기업이 시장에서 200% 상승하는 성과를 거두었다. 이는 엔비디아의 강력한 경쟁자를 의미하며, 중국의 AI 산업 성장세를 보여준다.
+
+📰 [NVDA] Nvidia CEO Jensen Huang Said Nvidia Compute Is 'Fungible, Durable and Highly Rentable' — Now Oracle CEO Stands Impressed as 4-Year Old GPUs Fetch 20% Premium
+   (Yahoo Finance · 09/11 15:47)
+→ Nvidia CEO 젠슨 황이 AI 하드웨어의 지속성과 수익성을 강조한 가운데, Oracle CEO 클레이 마구이르크는 구형 GPU가 20% 프리미엄으로 거래되고 있다고 전했습니다. 그는 Oracle의 AI 인프라 사업의 강세를 언급하며 GPU의 가치가 계속 증가하고 있다고 밝혔습니다.
+
+📰 [NVDA] Kalshi wants 24/7 Tesla and Nvidia perps as Wall Street fights over who regulates them - CoinDesk
+   (CoinDesk · 09/11 15:19)
+→ Kalshi는 테슬라와 엔비디아의 24시간 선물 거래를 원하고 있으며, 월가에서는 이들 거래의 규제를 누가 맡을지를 두고 논쟁하고 있습니다.
+
+📰 [TSLA] BYD Outsold Tesla by Roughly 77,000 EVs Again in Q2. Can Tesla Close the Gap? - The Motley Fool
+   (The Motley Fool · 09/11 16:59)
+→ BYD가 2분기 동안 테슬라를 약 77,000대의 전기차(EV)로 초과 판매하며 다시 한 번 선두를 차지했습니다. 많은 이들이 테슬라가 이 격차를 좁힐 수 있을지 주목하고 있습니다.
+
+📰 [TSLA] BYD Outsold Tesla by Roughly 77,000 EVs Again in Q2. Can Tesla Close the Gap?
+   (Yahoo Finance · 09/11 16:50)
+→ BYD가 2분기에 테슬라보다 약 77,000대 더 많은 전기차를 판매하며 다시 한번 우위를 점했다. 테슬라가 BYD와의 격차를 좁힐 수 있는 방안이 경쟁 자체보다 더 흥미롭다는 분석이 제기되고 있다.
+
+📰 [TSLA] Morgan Stanley reiterates Tesla stock Equalweight on trucking outlook - Investing.com
+   (Investing.com · 09/11 16:35)
+→ 모건스탠리는 테슬라 주식에 대해 '동일 비중' 의견을 재확인하며, 트럭 부문 전망에 주목하고 있습니다. 이는 해당 기업의 성장 가능성을 평가하는 데 중요한 요소로 작용하고 있습니다.
+
+📰 [HIMS] Kaplan Fox Announces a Securities Class Action Filed Against Hims - The National Law Review
+   (The National Law Review · 09/11 10:42)
+→ Kaplan Fox가 Hims를 상대로 증권 집단소송을 제기했다고 발표했다. 이번 소송은 Hims의 일부 경영진과 관련된 불법 행위에 대한 것으로, 투자자들의 손해를 배상하기 위한 것이다.
+
+📰 [HIMS] HIMS INVESTOR DEADLINE: Hims & Hers Health, Inc. Investors with Substantial Losses Have Opportunity to Lead Class Action Lawsuit Before November 2, 2026 Deadline, Robbins Geller Rudman & Dowd LLP Announces - The Daily Tribune News
+   (The Daily Tribune News · 09/11 08:10)
+→ Hims & Hers Health, Inc.의 투자자들은 substantial losses가 있는 경우, 2026년 11월 2일을 기한으로 집단 소송을 주도할 기회를 갖게 되었다고 Robbins Geller Rudman & Dowd LLP가 발표했다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (HIMS) Class Action Lawsuit Seeks - GlobeNewswire
+   (GlobeNewswire · 09/11 05:20)
+→ Hims & Hers Health, Inc.에 대한 집단소송이 제기되었다. 이 소송은 회사의 특정 행동과 관련하여 피해를 입은 투자자들의 보상을 목적으로 하고 있다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Price Up 1.3% - What's Next? - MarketBeat
+   (MarketBeat · 09/11 06:54)
+→ Redwire 주식이 1.3% 상승했습니다. 향후 주가의 동향에 대한 관심이 모이고 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Price Down 4.6% - Should You Sell? - MarketBeat
+   (MarketBeat · 09/10 06:24)
+→ Redwire(NYSE: RDW) 주가가 4.6% 하락했습니다. 이 주가 변동에 대해 투자자들이 매도 여부를 고민해야 할 시점이라는 분석이 제기되고 있습니다.
+
+📰 [RDW] Redwire Corporation (NYSE:RDW) Given Consensus Rating of "Hold" by Analysts - MarketBeat
+   (MarketBeat · 09/09 15:18)
+→ 레드와이어 코퍼레이션(Redwire Corporation, NYSE: RDW)은 분석가들에 의해 "보유(Hold)"라는 합의 평가를 받았습니다. 이 평가는 시장에서의 투자 의견을 반영한 것입니다.
+
+📰 [IREN] Does AI Capacity Delivery Change The Bull Case For IREN Stock (IREN)? - simplywall.st
+   (simplywall.st · 09/11 16:40)
+→ AI 용량 제공이 IREN 주식(IREN)의 긍정적인 전망에 영향을 미치는지 여부에 대한 논의가 이루어졌습니다. 분석에 따르면 AI 기술의 발전이 회사 성장 가능성에 긍정적인 역할을 할 수 있지만, 투자자들은 신중하게 접근해야 한다고 강조하고 있습니다.
+
+📰 [IREN] IREN Stock Falls 3.8% Despite Nvidia’s 2 GW Australia Plan—Bundey Starts in 2028 - TechStock²
+   (TechStock² · 09/11 15:58)
+→ IREN 주가는 Nvidia의 호주 2GW 프로젝트 발표에도 불구하고 3.8% 하락했다. 이 프로젝트는 2028년부터 시작될 예정이다.
+
+📰 [IREN] IREN Stock Falls as Investors Demand Proof Over AI Promises
+   (Yahoo Finance · 09/11 11:29)
+→ IREN 주가가 3.3% 하락했으며, 공동 CEO인 다니엘 로버츠는 투자자들이 계약 소식이 아닌 실제 AI 능력을 요구하고 있다고 밝혔습니다.
+
+📰 [RKLB] Rocket Lab Corporation Successfully Launches Dedicated Mission For Confidential Customer - marketscreener.com
+   (marketscreener.com · 09/11 14:50)
+→ 로켓랩 코퍼레이션이 비공식 고객을 위한 전용 미션을 성공적으로 발사했습니다. 이번 임무는 고객의 요구에 맞춘 것으로, 구체적인 내용은 공개되지 않았습니다.
+
+📰 [RKLB] Rocket Lab launches 31.5%-efficient inverted metamorphic space solar cell - pv magazine Global
+   (pv magazine Global · 09/11 14:40)
+→ 로켓랩이 31.5% 효율의 역변형 메타모픽 우주 태양 전지를 발사했습니다. 이 전지는 우주 환경에서 에너지를 효율적으로 생산할 수 있는 신기술로 평가받고 있습니다.
+
+📰 [RKLB] Rocket Lab Successfully Launches 16th Electron Mission of 2026, Deploys Earth Observation Satellite - Quiver Quantitative
+   (Quiver Quantitative · 09/11 13:50)
+→ 로켓랩이 2026년의 16번째 일렉트론 미션을 성공적으로 발사하고 지구 관측 위성을 배치했습니다. 이 미션은 우주 산업의 중요한 이정표로 평가받고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Why Bitcoin Price Is Struggling to Reclaim $80K: Here’s The Missing Catalyst - CryptoRank
+   (CryptoRank · 09/11 16:57)
+→ 비트코인 가격이 80,000달러로 회복하는 데 어려움을 겪고 있는 이유는 시장에 필요한 촉매가 부족하기 때문입니다. 투자자들은 전반적인 경제 환경과 규제 변화 등의 불확실성으로 인해 매수에 신중하고, 이로 인해 비트코인 가격이 상승하지 못하고 있습니다.
+
+📰 [BTC-USD] Blockstream says it will not pay ransom for stolen Liquid Bitcoin - Crypto News
+   (Crypto News · 09/11 16:36)
+→ Blockstream은 도난당한 Liquid 비트코인에 대해 랜섬을 지불하지 않겠다고 발표했다. 회사는 이 결정이 보안과 자산 보호를 위한 것이라고 밝혔다.
+
+📰 [BTC-USD] Bitcoin Price Drops 4% in a Week, and the Chart Just Got Interesting - CryptoTicker
+   (CryptoTicker · 09/11 16:32)
+→ 비트코인 가격이 지난 주 동안 4% 하락했으며, 차트가 흥미로운 변화가 나타나고 있다는 소식이다. 시장의 변동성이 커지면서 투자자들의 주의가 집중되고 있다.
+
+📰 [ETH-USD] Ethereum's Glamsterdam upgrade tentatively set for Oct 6 on Sepolia testnet, pending further testing. - Pluang
+   (Pluang · 09/11 16:16)
+→ 이더리움의 글램스다움 업그레이드가 10월 6일 세폴리아 테스트넷에서 예정되어 있으며, 추가 테스트 완료 후 확정될 예정이다.
+
+📰 [ETH-USD] Ethereum targets Oct. 6 for Glamsterdam on Sepolia - Crypto News
+   (Crypto News · 09/11 16:06)
+→ 이더리움은 10월 6일에 세폴리아에서 Glamsterdam 이벤트를 개최할 계획입니다. 이번 행사는 이더리움 생태계의 발전을 촉진하기 위한 중요한 행사로 기대됩니다.
+
+📰 [ETH-USD] Ethereum Price Holds $2.47K as SGX Opens US Crypto Perpetual Futures - KuCoin
+   (KuCoin · 09/11 15:11)
+→ 이더리움 가격이 2,470달러를 유지하고 있는 가운데, SGX가 미국의 암호화폐 영구 선물을 개시했습니다. KuCoin에서 이 소식을 전했습니다.
+
+📰 [SOL-USD] Solana's real-world asset holders soar past 400... - Pluang
+   (Pluang · 09/11 15:47)
+→ 솔라나의 실제 자산 보유자가 400명을 넘어서며 급증하고 있습니다. 이는 솔라나의 성장과 인기도를 반영하는 지표입니다.
+
+📰 [SOL-USD] SEC Chair Paul Atkins to Deliver Keynote at Solana Policy Institute Summit on Sept. 14 - bloomingbit
+   (bloomingbit · 09/11 14:37)
+→ SEC 의장인 폴 앳킨스가 9월 14일 솔라나 정책 연구소 정상 회담에서 기조 연설을 할 예정입니다. 이번 행사에서는 블록체인과 관련된 정책 이슈에 대한 논의가 이루어질 것으로 보입니다.
+
+📰 [SOL-USD] Air quality in Solana Beach - IQAir
+   (IQAir · 09/11 10:57)
+→ 솔라나 비치의 공기 질이 IQAir에 의해 측정되었습니다. 구체적인 수치는 제공되지 않았지만, 해당 지역의 대기 상태에 대한 정보가 담겨 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies Options Spot-On: On September 10th, 90,875 Contracts Were Traded, With 1.58 Million Open Interest - news.futunn.com
+   (news.futunn.com · 09/11 13:59)
+→ 비트마인 임머전 테크놀로지스의 옵션 거래가 활발히 이루어졌다. 9월 10일에는 90,875 계약이 거래되었으며, 오픈 이자는 158만 계약에 달했다.
+
+📰 [BMNR] BitMine now holds 5.93M ETH — What does it mean for BMNR stock? - AMBCrypto
+   (AMBCrypto · 09/10 03:30)
+→ BitMine이 현재 5.93만 개의 이더리움을 보유하게 되면서 BMNR 주식에 대한 영향이 주목받고 있습니다. 이 보유량은 회사의 자산 가치를 높이고 투자자들 사이에서 긍정적인 반응을 이끌어낼 수 있습니다. 이러한 변화는 BMNR 주식의 시장 성과에 중요한 영향을 미칠 것으로 예상됩니다.
+
+📰 [BMNR] Bitmine’s Ethereum Holdings Near $15 Billion After Buying 28,086 More ETH
+   (Yahoo Finance · 09/09 22:00)
+→ 비트마인은 28,086개의 이더리움(ETH)을 추가 구매하며 보유 이더리움 규모가 약 150억 달러에 달하게 되었습니다. 이 구매가 ETH 가격에 영향을 미칠지, 아니면 BMNR이 이미 반토막 난 코인에 대한 고위험 투자가 될지는 의문입니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장에서는 XRP의 국내 거래 비중이 증가하며 관심을 받았고, 비트코인 현물 ETF는 계속해서 순유출이 이어졌다. 카스파의 DEX 거래량이 눈에 띄게 증가하며 시장의 활발한 움직임을 보여주고 있다.
+
+[핵심 뉴스]
+1. (시세) XRP가 WLD 제치고 국내 1위
+   → 국내 코인 거래에서 XRP가 21.25%의 비중을 차지하며 1위를 기록했으며, WLD는 3.05%로 큰 격차가 있었다. 국내 관심지수 또한 XRP가 86.2점으로 가장 높았다.
+   (토큰포스트 · 09/11 17:01)
+2. (ETF) 비트코인 현물 ETF 3거래일 연속 약세
+   → 미국 비트코인 현물 ETF 시장에서 9월 10일 기준으로 3거래일 연속으로 순유출이 발생하며, 총 2억8256만 달러가 유출됐다. 누적 순유입은 551억6801만 달러로 집계됐다.
+   (토큰포스트 · 09/11 16:01)
+3. (기타) 하이퍼리퀴드 고래 포지션 73억달러
+   → 하이퍼리퀴드 고래의 전체 포지션 규모는 73억2700만 달러에 달하며, 숏 포지션 비율이 롱보다 4.68%포인트 높았다. 롱 포지션은 2억9300만 달러의 이익을 기록했다.
+   (토큰포스트 · 09/11 16:49)
+4. (시세) 카스파 DEX 거래량 113% 증가
+   → 카스파의 DEX 거래량이 113% 증가하여 약 140만 달러에 도달했고, 미결제약정이 170만 달러로 늘었다. 현재 0.0357달러의 저항선이 통과할지 주목되고 있다.
+   (토큰포스트 · 09/11 16:06)
+5. (기타) 지난 1년 USYC, 토큰화 미 국채 증가폭 1위
+   → 서클의 USYC는 지난 1년간 시가총액이 20억 달러 증가하며 가장 큰 증가폭을 기록했다. 이는 단순한 스테이블코인이 아닌 투자형 상품으로 기능하고 있다.
+   (토큰포스트 · 09/11 16:50)
+
+[흐름·전망]
+• XRP의 거래 비중이 계속해서 상승할 경우, 다른 코인들 간의 거래 경쟁에 영향을 미칠 수 있다.
+• 비트코인 현물 ETF의 순유출이 지속된다면 시장의 투자 심리에 부정적인 영향을 미칠 가능성이 존재한다.
+• 하이퍼리퀴드 고래의 포지션 변화가 향후 가격 변동성에 어떤 영향을 미칠 것인지 주의 깊게 살펴봐야 한다.
+• 카스파의 저항선突破 여부는 가격 방향성에 중요한 영향을 미치며 향후 거래 참여도의 지속성 또한 포인트가 될 것이다.
+
+📊 공포탐욕지수
+  - CNN 기준: 31 (Fear)
+  - 크립토 기준: 56 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 전반적으로 상승세가 이어지나 지역별로 차별화된 흐름을 보이고 있으며, 특히 서울 강남구는 4주 연속 하락세를 기록하고 있다.
+
+[핵심 뉴스]
+1. (매매) 강남 아파트 가격 4주 연속 하락
+   → 서울 아파트 매매가격은 0.22% 상승했으나 상승폭은 줄어들었고, 강남구는 4주 연속 하락하며 약세가 지속되고 있다. 반면 경기 아파트는 0.24% 상승하여 상승폭이 커졌다.
+   (매일경제 · 09/11 11:33)
+2. (전세) 서울 아파트 전세 평균가 7억원 돌파
+   → 서울 아파트 전세 평균가격이 7억458만원으로, 1년 전보다 8.49% 상승하여 처음으로 7억원을 돌파했다. 경기도 아파트 전세가격도 전반적으로 상승세를 보이고 있으며, 매물 부족 현상이 나타나고 있다.
+   (매일경제 · 09/11 09:58)
+3. (재건축) 광진구 '자양4동 A구역' 재개발 조합설립인가
+   → 광진구 자양4동 A구역의 재개발 조합이 설립되어 지하 3층-지상 49층, 총 2,999세대의 공동주택이 추진될 예정이다. 이로 인해 지역 내 주거환경 개선 기대감이 커지고 있다.
+   (연합뉴스 · 09/11 11:41)
+4. (기타) 고금리 속 글로벌 부동산 회복 전망
+   → 누빈은 고금리 장기화에도 불구하고 글로벌 부동산 시장이 새로운 회복 국면에 접어든다고 전망했다. 서울의 오피스 및 임대주택이 주목받고 있으며, 장기적으로 투자 기회가 존재할 것으로 평가되었다.
+   (연합뉴스 · 09/11 13:38)
+5. (전세) 전세난에 자가 이전하는 30대
+   → 30대가 전세난으로 인해 서울 외곽에서 경기도로 자가 이전을 확대하고 있는 현상이 두드러지고 있다.
+   (에너지경제신문 · 09/11 16:34)
+6. (공급) 수도권 아파트 경매지표 강세
+   → 수도권 아파트 경매시장에서 낙찰률과 낙찰가율이 동반 증가세를 보이고 있어 공급 증가에 대한 관심이 커지고 있다.
+   (매일일보 · 09/11 16:40)
+
+[흐름·전망]
+• 서울 및 수도권 내 아파트 시장의 지역별 차별화된 흐름에 주목해야 하며, 특히 강남구의 상황이 향후 시장에 미칠 영향을 관찰할 필요가 있다.
+• 전세가격이 계속해서 상승하고 있는 만큼, 전세 매물의 부족 현상이 지속될 경우 주거비 부담이 더욱 심화될 가능성이 크다.
+• 재개발 및 정비사업이 지역 주거환경을 개선할 수 있는 중요한 요소로 작용할 것이며, 이는 지역 부동산 시장에 긍정적인 영향을 미칠 수 있다.
+• 고금리 속에서도 글로벌 부동산 시장 회복세가 지속될 것으로 보이므로, 서울 내 오피스 및 임대주택에 대한 투자자들의 집중이 필요하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 텍사스에서 열린 공화당 중간 선거 행사에 대한 긍정적인 반응을 보였으며, 참석자 수가 예상 이상으로 많았다. 그는 행사 성과를 강조하며 자신의 정치적 지지층에 대한 확신을 나타냈다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 텍사스에서 열린 공화당 중간 선거 대회가 예상보다 훨씬 더 많은 참석자로 성공적이었다고 주장했다.
+   (Truth Social · 09/11 00:23)
+2. (국내정치) 트럼프는 행사에 수천 명이 몰려들었고 많은 사람들이 들어가지 못해 스크린으로 중계 시청했다고 언급하며 자신의 인기를 강조했다.
+   (Truth Social · 09/10 21:52)
+3. (기타) 트럼프는 자신이 다시 행사에 참석할 것이라고 하며, 이를 통해 지지자들에게 긍정적인 메시지를 전달했다.
+   (Truth Social · 09/10 21:51)
+
+[흐름·전망]
+• 트럼프의 강한 지지 기반은 2024년 대선 후보 선출 과정에 중요한 영향을 미칠 가능성이 있다.
+• 행사의 성공적인 개최가 향후 공화당 내 분위기에 어떻게 작용할지 주목할 필요가 있다.
+• 트럼프의 높은 인기는 경기와 소비자 신뢰에 긍정적인 신호일 수 있으며, 이에 따른 경제적 영향도 관찰해야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
