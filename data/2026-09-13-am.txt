@@ -1,0 +1,237 @@
+2026-09-13T06:32:43.780702+09:00
+
+[오늘의 뉴스 요약] 2026-09-13 06:31 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제는 원화의 급락과 반도체 기업들의 이익 전망 하락이 주된 이슈로 부각되고 있으며, 미국의 금리 인상 우려가 국내 금융시장에 긴장을 불어넣고 있다.
+
+[핵심 뉴스]
+1. (환율) 환율 급락에 반도체 이익 전망도 하락
+   → 원/달러 환율이 1,501.4원에서 1,345.9원으로 10.4% 급락하면서 삼성전자와 SK하이닉스의 영업이익 전망이 21조 원 감소했다.
+   (연합뉴스 · 09/13 06:01)
+2. (금리) 미 연준 금리 올릴까 긴장 고조
+   → 미국의 기준금리 인상 가능성이 커지면서 금융당국이 'F4' 회의를 개최하고, 가계부채 관리 방안을 논의할 예정이다.
+   (연합뉴스 · 09/13 05:52)
+3. (고용) 20대 취업자 외환위기 후 최대폭 감소
+   → 20대 취업자 수가 19만 명 감소하여 고용률이 59.1%로 떨어지며, 20대 초반 고용률은 41.3%로 역대 최저를 기록했다.
+   (연합뉴스 · 09/13 05:49)
+4. (환율) 3분기 원화 절상률 1위, 엔화의 3배
+   → 3분기 원화 절상률이 15.41%로 주요 통화 중 가장 높아, 환율이 1,560원에서 1,340원대로 하락했으나 금리 인상 우려로 변동성이 커지고 있다.
+   (연합뉴스 · 09/13 05:53)
+5. (기타) 韓 OECD 선행지수 75개월 만에 세계 1위
+   → OECD의 한국 경기선행지수가 102.87로 75개월 만에 세계 1위를 기록했으나, 유가 및 금리 급등에 따라 상승 폭이 축소되고 있다.
+   (연합뉴스 · 09/13 05:47)
+
+[흐름·전망]
+• 단기적으로 반도체 기업의 이익 전망이 환율 하락에 따라 더욱 우려스러운 상황이며, 이에 따른 기업 전략 변화가 주목받을 것이다.
+• 미국의 금리 인상 여부가 글로벌 시장에 미칠 영향, 특히 한국의 금융시장 및 가계부채 상황을 중심으로 관찰해야 한다.
+• 20대 고용시장의 심각한 둔화는 전반적인 경제활동에 부정적인 영향을 미칠 수 있으므로, 이를 개선할 정책적 노력이 필요하다.
+• 한국의 경기선행지수 상승에도 불구하고 국제 유가와 금리 상승으로 인한 경기 둔화 가능성은 경계해야 할 요소로 작용할 것이다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia vs. AMD: Elon Musk Picked a Side on the SpaceX Earnings Call - The Motley Fool
+   (The Motley Fool · 09/13 06:22)
+→ 엘론 머스크가 스페이스X의 수익 전화 회의에서 Nvidia와 AMD 중 Nvidia를 지지한다고 밝혔습니다. 머스크는 Nvidia의 기술이 우수하다고 언급하며, 이 회사의 제품이 스페이스X의 혁신에 중요한 역할을 하고 있다는 점을 강조했습니다.
+
+📰 [NVDA] Nvidia vs. AMD: Elon Musk Picked a Side on the SpaceX Earnings Call
+   (Yahoo Finance · 09/13 06:20)
+→ 일론 머스크가 스페이스X의 수익 발표 전화 회의에서 특정 GPU 주식을 칭찬하며 Nvidia와 AMD 간의 경쟁에서 한쪽을 지지했습니다.
+
+📰 [NVDA] Intel, AMD Stock Drop 4.2% as Nvidia Unveils N1X - shattered.io
+   (shattered.io · 09/13 06:15)
+→ Nvidia가 N1X를 발표하면서 Intel과 AMD의 주가가 4.2% 하락했습니다. 이로 인해 두 회사의 시장 경쟁력이 우려되고 있는 상황입니다.
+
+📰 [TSLA] Tesla gives the Roadster an official "Go for launch" demonstration date - Teslarati
+   (Teslarati · 09/13 06:24)
+→ 테슬라가 로드스터의 공식 시연 날짜를 발표했습니다. 이 시연은 로드스터의 출시 준비를 위한 중요한 단계로 여겨집니다.
+
+📰 [TSLA] Tesla's 30-Day Blitz: Cybercab, Semi, and Roadster All Launch in One Month - BASENOR - Tesla Accessories
+   (BASENOR - Tesla Accessories · 09/13 06:04)
+→ 테슬라가 한 달 안에 사이버택시, 세미, 로드스터 등 새로운 모델을 동시에 출시했습니다. 이로 인해 테슬라의 제품 라인업이 더욱 다양해졌습니다.
+
+📰 [TSLA] Tesla Sets October 1 Event for Roadster Reveal, Sends Invites - Not a Tesla App
+   (Not a Tesla App · 09/13 05:27)
+→ 테슬라는 10월 1일 로드스터 공개 이벤트를 개최한다고 발표하고 초대장을 발송했습니다. 이번 행사에서 신모델 로드스터의 자세한 정보가 공개될 예정입니다.
+
+📰 [HIMS] Hims & Hers Health (HIMS) Faces FTC Lawsuit, Is The Stock Now A Bargain? - simplywall.st
+   (simplywall.st · 09/13 03:26)
+→ Hims & Hers Health가 연방거래위원회(FTC)의 소송에 직면하면서 주가에 대한 논란이 일고 있다. 투자자들은 이 상황이 주식을 저렴한 가격으로 구매할 기회로 볼 수 있는지 판단하고 있다.
+
+📰 [HIMS] HIMS Investors Have Opportunity to Lead Hims & Hers Health, Inc. Securities Fraud Lawsuit - PR Newswire
+   (PR Newswire · 09/13 01:25)
+→ Hims & Hers Health, Inc.의 투자자들이 증권 사기 소송의 주도로 나설 기회를 갖게 되었다는 소식입니다. 이 소송은 투자자들에게 피해를 준 경과와 관련된 내용으로, 관심 있는 투자자들은 주도권을 쥘 수 있는 가능성이 있습니다.
+
+📰 [HIMS] Hims & Hers Stock Faces a Margin Test Just as Its Legal Troubles Mount. Here’s What Every Investors Need to Know. - TIKR.com
+   (TIKR.com · 09/12 23:13)
+→ Hims & Hers의 주가는 법적 문제들이 증가하는 가운데 마진 테스트에 직면하고 있습니다. 투자자들은 현재 상황에 대해 주의 깊게 살펴볼 필요가 있습니다.
+
+📰 [RDW] ASTS, RKLB, RDW, SIDU Slip Overnight: Retail Hopes For SpaceX-Fueled S&P 500 Buying Frenzy Take A Hit - Stocktwits
+   (Stocktwits · 09/12 23:59)
+→ ASTS, RKLB, RDW, SIDU 주가가 하락하며, 투자자들은 SpaceX의 영향으로 S&P 500의 매수 열기가 줄어들고 있다고 우려하고 있다. 이러한 현상은 소매 투자자들의 기대에 타격을 주고 있다.
+
+📰 [RDW] Redwire (RDW) Could Be 17% Below Fair Value After Backlog And Revenue Gains - simplywall.st
+   (simplywall.st · 09/12 21:35)
+→ Redwire (RDW)는 최근 증가한 수주 및 매출에도 불구하고 공정 가치보다 약 17% 저평가된 것으로 보입니다. 이는 회사의 성장 가능성과 시장 반응을 고려할 때 주목할 만한 투자 기회를 나타냅니다.
+
+📰 [RDW] Why Is RDW Stock Falling Today? - Stocktwits
+   (Stocktwits · 09/12 16:51)
+→ RDW 주가가 오늘 하락한 이유는 여러 요인에 기인하며, 주식 투자자들이 이에 대한 우려를 표출하고 있습니다. 시장 반응과 관련된 정보가 보도되며, 주가에 부정적인 영향을 미치고 있습니다.
+
+📰 [IREN] Is IREN (IREN) Still Undervalued On Execution Concerns And A 3.3% Share Price Drop? - simplywall.st
+   (simplywall.st · 09/12 21:25)
+→ IREN의 주가는 최근 3.3% 하락했으며, 해당 회사의 실행력에 대한 우려로 여전히 저평가된 상태인지에 대한 분석이 이루어졌다. 전문가들은 이러한 주가 하락에도 불구하고 IREN의 잠재력을 평가하고 있다.
+
+📰 [IREN] Oracle's AI Cloud Growth Lifts CoreWeave, Nebius and IREN
+   (Yahoo Finance · 09/12 06:10)
+→ 오라클의 성장이 AI 인프라 관련 기업인 CoreWeave, Nebius, IREN의 주가를 상승시키고 있다. 이러한 성과는 AI 클라우드 시장의 성장 가능성을 더욱 강조하고 있다.
+
+📰 [IREN] Oracle's AI Cloud Growth Lifts CoreWeave, Nebius and IREN - TradingView
+   (TradingView · 09/12 06:10)
+→ Oracle의 AI 클라우드 성장으로 CoreWeave, Nebius, IREN이 혜택을 보고 있다는 소식이다. 이러한 성장 덕분에 이들 기업은 시장에서 긍정적인 반응을 얻고 있다.
+
+📰 [RKLB] How New Analyst Coverage At Rocket Lab (RKLB) Has Changed Its Investment Story - simplywall.st
+   (simplywall.st · 09/13 06:27)
+→ 로켓랩(Rocket Lab, RKLB)에 대한 새로운 애널리스트 커버리지가 투자 이야기에 긍정적인 변화를 가져왔습니다. 이로 인해 회사의 성장 가능성과 시장에서의 위치에 대한 인식이 향상되었습니다. 애널리스트들은 로켓랩의 기술과 비즈니스 모델에 대한 더 나은 이해를 바탕으로 긍정적인 전망을 제시하고 있습니다.
+
+📰 [RKLB] Could Neutron Change Rocket Lab (NASDAQ:RKLB) Forever? - Kalkine Media
+   (Kalkine Media · 09/13 03:21)
+→ 로켓랩(Rocket Lab, NASDAQ: RKLB)은 새로운 로켓인 뉴트론(Neutron)의 개발로 큰 변화를 맞이할 가능성이 있다. 이 로켓은 더 큰 payload와 우주 탐사 기회 확대를 통해 회사의 성장에 기여할 것으로 기대된다. 뉴트론의 성공 여부가 로켓랩의 미래에 중대한 영향을 미칠 수 있다.
+
+📰 [RKLB] Rocket Lab Tackles a Supply Chain Bottleneck as the Stock Hunts for a Bottom. Time to Buy? - MarketBeat
+   (MarketBeat · 09/13 00:42)
+→ 로켓랩은 공급망 병목 현상을 해결하기 위해 노력하고 있으며, 현재 주가는 어느 시점에서 저점을 찾고 있는 상황입니다. 이로 인해 투자자들 사이에서 매수 시점에 대한 논의가 활발히 이루어지고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Can XRP Flip Bitcoin?
+   (Yahoo Finance · 09/13 06:24)
+→ 리플의 CTO 에머리투스인 데이비드 슈워츠는 9월 9일 한 X 스페이스에서 XRP가 결국 비트코인(BTC)의 시장 가치를 초과할 것이라고 예상했지만, 조건을 붙였습니다. 9월 12일 현재 XRP는 1.36달러, 비트코인은 약 77,310달러에 거래되고 있으며, 비트코인의 시장 자본은 1.54조에서 1.58조 달러 사이입니다.
+
+📰 [BTC-USD] Can XRP Flip Bitcoin? - 24/7 Wall St.
+   (24/7 Wall St. · 09/13 06:24)
+→ XRP가 비트코인을 능가할 수 있을지에 대한 질문이 제기되고 있다. XRP의 성장을 뒷받침하는 요인과 시장의 변화가 주목받고 있으며, 투자자들의 관심이 집중되고 있다.
+
+📰 [BTC-USD] Ethereum ETFs Took In $216 Million on Friday. Bitcoin’s Lost Money for a Fourth Day and XRP’s Took Zero
+   (Yahoo Finance · 09/13 06:11)
+→ 금요일에 이더리움 ETF는 2억 1,600만 달러를 유입했지만, 비트코인은 4일 연속 손실을 기록했고 XRP는 한 푼도 유입되지 않았다. 세 개의 암호화폐 ETF가 같은 날 방향을 바꿨지만, 그 중 하나만 기관 투자자의 자금 흐름을 반영하는 중요한 변화를 나타냈다.
+
+📰 [ETH-USD] Ethereum ETFs Took In $216 Million on Friday. Bitcoin’s Lost Money for a Fourth Day and XRP’s Took Zero
+   (Yahoo Finance · 09/13 06:11)
+→ 금요일에 이더리움 ETF는 2억 1천6백만 달러를 유입한 반면, 비트코인은 4일 연속 손실을 기록했고, XRP는 자금을 전혀 유입되지 않았다. 세 가지 암호화폐 ETF가 같은 날 서로 다른 방향으로 변화했지만, 그 중 오직 하나만이 기관 자금의 흐름을 나타내는 중요한 신호를 가지고 있다.
+
+📰 [ETH-USD] Ethereum Price Prediction: ETH Could Jump 24% to $3,050 as AlphaPepe Gives Retail a 34x Path to $1 - StreetInsider
+   (StreetInsider · 09/13 06:06)
+→ 이더리움(ETH)의 가격이 24% 상승하여 3,050달러에 이를 수 있다는 전망이 나왔습니다. AlphaPepe라는 암호화폐가 소매 투자자에게 34배의 수익 경로를 제공할 것으로 예상됩니다.
+
+📰 [ETH-USD] Ethereum Price Prediction: $3,050 ETH Could Lift Altcoins; Could DigiTap Deliver More Gains at $0.0589? - StreetInsider
+   (StreetInsider · 09/13 06:01)
+→ 이더리움 가격이 3,050달러에 도달할 경우 알트코인들이 상승할 가능성이 있으며, DigiTap은 0.0589달러에서 더 많은 수익을 제공할 수 있을지 주목받고 있다는 내용입니다.
+
+📰 [SOL-USD] The Solana hosts free Fiesta de la Cultura with mariachi, folklórico and local vendors - cbs4local.com
+   (cbs4local.com · 09/13 05:31)
+→ 솔라나는 무료로 'Fiesta de la Cultura' 행사를 개최하며, 이 행사에서는 마리아치 음악, 전통 민속 무용, 지역 상인들이 참여합니다. 다양한 문화 체험과 즐길 거리로 지역 주민들이 함께 즐길 수 있는 기회를 제공합니다.
+
+📰 [SOL-USD] The Solana hosts free Fiesta de la Cultura with mariachi, folklórico and local vendors - KFOX
+   (KFOX · 09/13 05:27)
+→ 솔라나에서 마리아치, 민속춤, 그리고 지역 상인들이 참여하는 무료 '문화 축제(Fiesta de la Cultura)'가 열립니다. 이 행사는 다양한 문화 활동을 통해 지역 사회를 기념하는 자리입니다.
+
+📰 [SOL-USD] Billions in Solana staking held by Coinbase, Bi... - pluang.com
+   (pluang.com · 09/13 04:54)
+→ 코인베이스에서 수십억 달러 가치의 솔라나(Staking)가 보유되고 있으며, 이는 다양한 투자자들에게 큰 관심을 받고 있습니다. 이러한 스테이킹 활동은 솔라나의 생태계 확장과 관련성을 높이고 있습니다.
+
+📰 [BMNR] BMNR’s Tom Lee Says Tokenization, Agentic AI Are Breaking ETH-BTC Multiyear Downtrend - Stocktwits
+   (Stocktwits · 09/12 19:59)
+→ BMNR의 톰 리(Tom Lee)는 토큰화와 에이전틱 AI가 이더리움(ETH)과 비트코인(BTC)의 다년간 하락세를 타개하고 있다고 밝혔다. 이러한 변화가 시장에 긍정적인 영향을 미칠 것이라고 전망하고 있다.
+
+📰 [BMNR] BMNR Stock Slips After Bitmine Buys Ethereum Dip – Retail Demands 'HYPE-PURR-Style' Rally - Stocktwits
+   (Stocktwits · 09/12 14:26)
+→ BMNR 주가는 Bitmine이 이더리움 하락을 매수한 후 하락세를 보이고 있으며, 소매 투자자들은 'HYPE-PURR 스타일'의 랠리를 요구하고 있습니다.
+
+📰 [BMNR] BMNR, CRCL, MSTR Stocks Lead Slide In Crypto Equities Amid Bitcoin’s Tumble To $63K - Stocktwits
+   (Stocktwits · 09/12 13:20)
+→ 비트코인이 $63,000으로 하락하면서 BMNR, CRCL, MSTR 주식이 암호화폐 주식 시장에서 급락을 주도하고 있습니다. 이러한 하락세는 암호화폐 시장의 전반적인 불안정성을 반영하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 비트코인이 24% 반등하며 7만9809달러로 상승세를 보이고 있으며, 기관 투자자들이 비트코인을 디지털 자본시장의 기반으로 보고 있다는 분석이 나오고 있다. 스테이블코인과 디지털 지갑의 사용 증가에도 불구하고 소비자들은 여전히 이에 대한 신뢰를 구축하는 데 필요한 시간이 더 필요하다는 반응을 보였다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 24% 반등, 8만1700달러가 첫 관문
+   → 스트레티지는 비트코인을 디지털 자본시장의 핵심 요소로 설명하며, 비트코인 가격은 9월 4일 기준 7만9809달러였고, 이동평균 대비 프리미엄은 23.3%로 다소 높은 위치에 있다.
+   (토큰포스트 · 09/13 03:57)
+2. (온체인) 고위험 주소로 1749억달러 스테이블코인 유입
+   → S&P 글로벌 마켓 인텔리전스에 따르면, 미국 소비자의 67%가 최근 90일간 디지털 지갑을 사용했으나 스테이블코인에 대해서는 인식이 낮아 16%에 불과하고, 주요 우려 요인은 사기 위험과 자금 안전이다.
+   (토큰포스트 · 09/13 03:12)
+3. (기타) 디지털 지갑 67% 쓰는데…스테이블코인 인지도 16%
+   → Base에서 거래된 코인베이스의 토큰화 주식 거래대금이 8월 26일 2억6258만7871달러로 집계되었고, 특정 하루의 거래대금이 1억달러에 달했다는 주장은 확인되지 않았다.
+   (토큰포스트 · 09/13 03:05)
+4. (규제) 은행들 8월 근원 PCE 전망 상향, FOMC 전 CPI 주시
+   → 이탈리아은행의 실험에 따르면 스테이블코인 송금 비용이 송금액의 0.30%에서 최대 9%까지 발생하며, 환율과 환전 과정이 비용에 큰 영향을 미친다고 밝혔다.
+   (토큰포스트 · 09/13 02:38)
+5. (ETF) 모건스탠리 BTC 3거래일 매수
+   → 모건스탠리는 BTC 거래에서 매수세가 나타났고, 여러 금융기관들이 8월 근원 PCE 물가 상승률 전망을 상향 조정했으며, 이로 인해 연준의 금리 결정 전 시장의 관심이 집중되고 있다.
+   (토큰포스트 · 09/13 02:12)
+
+[흐름·전망]
+• 비트코인의 반등이 지속될지, 혹은 과거의 변동성을 이어갈지 주목할 필요가 있다.
+• 소비자들의 디지털 자산에 대한 신뢰가 높아지기 위해서는 스테이블코인과 관련한 사기 위험 문제 해결이 중요할 것이다.
+• 토큰화 주식 거래가 확대되면서 기존 금융 시스템과의 연계가 어떻게 이루어질지에 대한 관심이 필요하다.
+• 연준의 금리 정책 결정이 디지털 자산 시장에 미치는 영향을 면밀히 관찰할 필요가 있으며, 물가 지표 발표가 시장에 미치는 영향에 주목해야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 33 (Fear)
+  - 크립토 기준: 63 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 전세사기 피해자 지원과 아파트 전세 가격 상승 등으로 전반적인 불안감을 보이며, 젊은층의 주거비 부담이 심화되고 있다.
+
+[핵심 뉴스]
+1. (전세) 전세사기 피해자 채무조정 4천명 육박
+   → 전세사기 피해자 지원을 위한 특례채무조정 이용자가 3년 만에 3천898명에 달하며, 이 중 90%가 20·30대다. 채무액 총 합계는 3천942억원으로 평균 1억원 수준이다.
+   (연합뉴스 · 09/13 05:55)
+2. (전세) 서울 전셋값 결국 7억원 돌파
+   → 서울 아파트 평균 전세가격이 7억원을 돌파하며, 수도권 인근 지역 또한 전세가격 상승세를 이어가고 있다. 광명시의 전세가격은 7.08% 상승을 기록했다.
+   (매일경제 · 09/11 09:58)
+3. (정책) '세금 폭탄은 피하고 보자'…2주택자 비율 3년 전 수준으로
+   → 2주택자 비율이 지난 3년간 가장 낮은 수준으로 하락하며 매물 출회가 증가하고 있다. 이는 양도소득세 중과 유예 종료와 세제 개편안의 영향으로 보인다.
+   (매일경제 · 09/12 21:05)
+4. (매매) 대출규제도 대규모 성과급은 막지 못했다
+   → 서울 강남권 아파트값은 4주 연속 하락세를 보인 반면, 수도권 외곽 지역의 아파트값은 상승세를 이어가고 있다. 특히 반도체 벨트 지역의 가격 상승이 두드러졌다.
+   (매일경제 · 09/12 17:46)
+5. (공급) 서울 유일 신규택지 '삐걱'
+   → 서울 내 유일한 신규 공공택지 개발 설명회가 주민 반대에 부딪혔다. 주민들은 충분한 협의 없이 주택 공급 계획이 발표된 것에 불만을 표시했다.
+   (연합뉴스 · 09/11 23:28)
+6. (매매) 강남도 영 힘을 못쓰네? 4주째 내리막 걷는 강남 아파트 값
+   → 서울 아파트 가격 상승폭이 감소하면서 매수 심리가 위축되고 있다. 강남구는 4주 연속 하락하며 가격 조정이 지속되고 있으나 경기 남부권은 상승세를 보이며 지역별 차별화가 나타나고 있다.
+   (매일경제 · 09/11 11:33)
+
+[흐름·전망]
+• 전세사기 피해자 지원 확대가 필요하며, 20·30대의 주거안정을 위한 정책 마련이 중요하다.
+• 서울 아파트 전세가격 상승 지속에 따라 실수요자들의 비규제 지역으로의 이동이 더욱 활성화될 것으로 예상된다.
+• 2주택자 압박으로 인한 매물 출회가 여전히 지속될 것으로 보이며, 이에 따른 시장의 반응을 주목해야 한다.
+• 강남권과 수도권 외곽 간의 가격 차별화가 심화될 가능성이 높아, 지역별 시장 동향의 세밀한 분석이 필요할 것이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 조지 워싱턴의 업적을 기리기 위해 스미소니언 박물관에서 특별 전시를 개최하길 요청하고, 새로운 동상을 설치할 것을 주장했다.
+
+[주요 발언]
+1. (기타) 트럼프는 스미소니언 박물관에 조지 워싱턴의 생애와 유산을 기리는 5년 전시회를 개막하길 요청했다.
+   (Truth Social · 09/12 11:31)
+2. (기타) 시민으로서의 자부심을 강조하며, 워싱턴의 30피트 동상을 박물관 외부에 설치할 것을 제안했다.
+   (Truth Social · 09/12 11:31)
+
+[흐름·전망]
+• 트럼프의 제안이 문화적 담론에 미칠 영향에 주목할 필요가 있다.
+• 박물관 전시 제안이 트럼프의 정치적 지지 기반에 어떤 반향을 일으킬지 지켜봐야 한다.
+• 워싱턴 기념비에 대한 논쟁이 동상 설치와 관련하여 사회적 반응을 이끌어낼 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
