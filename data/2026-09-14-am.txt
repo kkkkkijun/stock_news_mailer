@@ -1,0 +1,234 @@
+2026-09-14T06:32:39.670677+09:00
+
+[오늘의 뉴스 요약] 2026-09-14 06:31 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제는 현대경제연구원의 성장률 전망 상향 조정과 중금리 대출 수요 증가로 긍정적인 흐름을 보이고 있다. 하지만 내년 경제 성장률 둔화 및 가계부채 문제는 여전히 중요한 쟁점으로 남아 있다.
+
+[핵심 뉴스]
+1. (성장) 올해 한국 경제 성장률 3.5%로 상향
+   → 현대경제연구원이 올해 한국 경제 성장률을 기존 2.7%에서 3.5%로 상향 조정했다. 반도체 수출 호조 및 정부 재정지출 확대가 주요 요인으로, 내년 성장률은 2.4%로 둔화할 것으로 예상된다.
+   (연합뉴스 · 09/13 11:00)
+2. (금리) 중금리 생활안전대출 두 달 만에 2천500억 원 넘어
+   → 저축은행의 중금리 생활안전대출은 두 달 만에 2천500억원을 넘었다. 소득 규제 제외로 서민층의 급전 창구로 부상하였으나 가계부채 관리와의 충돌 가능성도 지적되고 있다.
+   (연합뉴스 · 09/14 05:55)
+3. (기타) 미중 갈등에 따른 한국의 베트남 우회 수출 증가
+   → 한국이 미중 갈등 속에서 베트남 등 아세안 국가의 생산망을 활용하여 간접 수출을 증가시키고 있다. 2022년 한국산 중간재의 미국 최종 수요 연결 비중은 18.5%로 상승하며 중국 비중은 감소했다.
+   (매일경제 · 09/13 17:50)
+4. (정책) AI로 중소기업 성장잠재력 측정 지원
+   → 이소영 중소벤처기업부 장관 후보자는 AI를 활용해 중소기업 성장잠재력을 측정하고 지원 체계를 개편하겠다고 밝혔다. 이는 기업별 특성에 맞춘 지원의 필요성을 강조하는 것이다.
+   (연합뉴스 · 09/14 06:01)
+5. (정책) 주택 공급부진이 투기 수요 자극
+   → 이형일 부총리는 주택 공급 부족이 투기 수요를 자극했다고 진단했으며, 내년 종부세가 현행보다 증가할 것이라 밝혔다. 공급 부족 해소를 위한 조속한 실질적 성과의 필요성을 강조했다.
+   (연합뉴스 · 09/13 17:49)
+
+[흐름·전망]
+• 올해 한국 경제의 성장률 상향 조정으로 반도체 및 정부 투자에 대한 기대가 커지며, 그러나 내년 성장률 둔화에 대비할 필요가 있다.
+• 중금리 대출의 수요 증가가 서민층 금융 접근성을 높일 수 있지만, 가계부채 관리와의 균형이 필요하다.
+• 미중 갈등에서 아세안의 역할이 강화되면서 한국의 공급망 다변화 전략이 중요한 관전 포인트가 되고 있다.
+• 중소기업 지원을 위한 AI 활용 방안은 향후 정부 정책 방향을 엿보게 하며, 혁신 기업에 대한 맞춤형 지원 확대가 주목받고 있다.
+
+📈 해외주식 PART
+📰 [NVDA] If I Could Only Buy 1 Artificial Intelligence (AI) Stock, This Would Be It
+   (Yahoo Finance · 09/14 05:46)
+→ 인공지능(AI) 주식 중 단 하나만 구매할 수 있다면, Nvidia가 가장 유망한 선택으로 꼽힌다. Nvidia는 여전히 AI 분야에서 최고의 기업으로 자리잡고 있다.
+
+📰 [NVDA] Nvidia's $13B deal anchors a $78B week of M&A - Dealroom
+   (Dealroom · 09/14 04:58)
+→ Nvidia가 체결한 130억 달러 규모의 계약이 지난 주 780억 달러에 이르는 인수합병(M&A) 활동의 중심이 되었습니다. 이 주 동안 여러 기업들이 활발히 거래를 추진하며 인수합병 시장이 활기를 띠었습니다.
+
+📰 [NVDA] Nvidia (NVDA) Looks Cheap on Piper’s Forecasts, but the Earnings Assumptions Are the Real Test
+   (Yahoo Finance · 09/14 04:13)
+→ Nvidia는 Piper Sandler의 예측에 따르면 현재 AI 분야에서 저렴한 가격으로 거래되고 있으며, 빠른 AI 성장에 힘입어 매력적인 평가를 받고 있습니다. Piper Sandler의 애널리스트 David O’Connor는 9월 9일 Nvidia에 대한 커버리지를 시작했습니다.
+
+📰 [TSLA] Georgia homeowner told to check Tesla solar strings, roof wires, and Powerwall Wi-Fi info - The Cool Down
+   (The Cool Down · 09/14 06:04)
+→ 조지아 주의 한 주택 소유자가 테슬라의 태양광 스트링, 지붕 전선, 그리고 파워월 Wi-Fi 정보 점검을 권고받았다. 이는 테슬라의 에너지 시스템의 효율성을 보장하기 위한 조치로 보인다.
+
+📰 [TSLA] Two Years Ago, a Tesla Cybertruck Sold for $262,000. Now, Someone Just Bought One for $65,000 - autoevolution
+   (autoevolution · 09/14 06:00)
+→ 2년 전 테슬라 사이버트럭이 262,000달러에 판매되었으나, 최근 한 사람이 65,000달러에 구매했습니다. 이 가격 차이는 전반적인 자동차 시장에서의 변화와 수급에 따라 발생한 것으로 보입니다.
+
+📰 [TSLA] Tesla owner eyes Model YL as extra home battery, but PowerShare still needs an update - The Cool Down
+   (The Cool Down · 09/14 05:53)
+→ 한 테슬라 소유자가 모델 YL을 추가 가정용 배터리로 고려하고 있지만, PowerShare 기능은 여전히 업데이트가 필요하다는 내용입니다. 이로 인해 모델 YL의 활용에 제한이 있을 수 있습니다.
+
+📰 [HIMS] INVESTOR ALERT: Hims & Hers Health, Inc. Investors with - GlobeNewswire
+   (GlobeNewswire · 09/14 05:40)
+→ Hims & Hers Health, Inc.에 대한 투자자 경고가 전해졌습니다. 이와 관련한 자세한 내용은 GlobeNewswire를 통해 확인할 수 있습니다.
+
+📰 [HIMS] I'm Calling It: Hims & Hers Health Will Soar 56% by the End of 2026 - The Motley Fool
+   (The Motley Fool · 09/13 18:15)
+→ Hims & Hers Health의 주가가 2026년 말까지 56% 상승할 것이라는 분석이 나왔습니다. 이 회사는 건강 및 웰빙 제품에 주력하며, 시장의 성장 가능성에 대한 긍정적인 전망이 반영된 것으로 보입니다.
+
+📰 [HIMS] I'm Calling It: Hims & Hers Health Will Soar 56% by the End of 2026
+   (Yahoo Finance · 09/13 17:35)
+→ Hims & Hers Health는 빠르게 성장하고 있으며, 2026년까지 56% 증가할 것으로 예상됩니다. 그러나 이러한 성장이 경제적 실적 개선으로 이어질 수 있는지가 주가 상승에 중요한 영향을 미칠 것입니다.
+
+📰 [RDW] ASTS, RKLB, RDW, LUNR Slip Overnight: SpaceX IPO Hype Loses Orbit After Valuation Target Reportedly Falls Below $2 Trillion - Stocktwits
+   (Stocktwits · 09/13 19:21)
+→ ASTS, RKLB, RDW, LUNR 주가가 하락했다. 이는 SpaceX의 IPO에 대한 기대감이 사라지면서 이 회사의 가치 평가가 2조 달러 아래로 떨어졌다는 보도와 관련이 있다.
+
+📰 [RDW] Tidal Investments LLC Purchases Shares of 630,957 Redwire Corporation $RDW - marketbeat.com
+   (marketbeat.com · 09/13 17:40)
+→ Tidal Investments LLC가 Redwire Corporation의 주식 630,957주를 매입했습니다. 이 거래는 회사의 성장 가능성에 대한 긍정적인 신호로 해석될 수 있습니다.
+
+📰 [RDW] RKLB, LUNR, RDW Jump Premarket As Musk Pitches AI Satellites, Orbital Data Centers — Analyst Says The Odds Are Just 7% - Stocktwits
+   (Stocktwits · 09/13 14:51)
+→ 머스크가 AI 위성과 궤도 데이터 센터에 대한 아이디어를 제안하자 RKLB, LUNR, RDW 주식이 프리마켓에서 급등했다. 그러나 한 분석가는 이러한 프로젝트가 성공할 확률이 7%에 불과하다고 언급했다.
+
+📰 [IREN] IREN Limited $IREN Shares Acquired by California State Teachers Retirement System - marketbeat.com
+   (marketbeat.com · 09/13 16:26)
+→ 캘리포니아 주 교사 연금 시스템이 IREN Limited의 주식을 인수했습니다. 이 거래는 회사의 주식 가치에 긍정적인 영향을 미칠 것으로 예상됩니다.
+
+📰 [IREN] Better Than Nvidia? Why IREN Is the New King of AI Infrastructure - TradingKey
+   (TradingKey · 09/13 10:08)
+→ IREN이 AI 인프라의 새로운 강자로 떠오르고 있다는 뉴스입니다. 이 기사는 IREN이 Nvidia보다 더 나은 성과를 보일 것으로 예상되며, AI 기술 발전에 있어서 중요한 역할을 할 것이라고 보도하고 있습니다.
+
+📰 [IREN] Is IREN (IREN) Still Undervalued On Execution Concerns And A 3.3% Share Price Drop? - simplywall.st
+   (simplywall.st · 09/12 21:25)
+→ IREN(IREN)의 주가는 3.3% 하락했으며, 실행에 대한 우려로 여전히 저평가되어 있는지에 대한 논의가 진행되고 있습니다. 이러한 하락에도 불구하고, 투자자들은 회사의 잠재력을 재고하고 있는 상황입니다.
+
+📰 [RKLB] Rocket Lab Stock (RKLB) Opinions on Iridium Merger Proposal - Quiver Quantitative
+   (Quiver Quantitative · 09/14 02:33)
+→ Rocket Lab(주식 코드: RKLB)의 Iridium 인수 제안에 대한 의견이 Quiver Quantitative에서 발표되었습니다. 해당 기사에서는 인수 제안이 주식에 미치는 잠재적 영향과 시장 반응에 대해 논의하고 있습니다.
+
+📰 [RKLB] SpaceX and Rocket Lab Have a New Space Rival -- in Norway - The Motley Fool
+   (The Motley Fool · 09/13 21:07)
+→ 노르웨이가 스페이스X와 로켓랩의 새로운 우주 경쟁자로 부상하고 있습니다. 이 나라는 자국의 우주 산업을 발전시키기 위해 새로운 발사체와 기술을 개발하고 있으며, 이에 따라 글로벌 우주 시장에서의 경쟁이 치열해질 전망입니다.
+
+📰 [RKLB] SpaceX and Rocket Lab Have a New Space Rival -- in Norway
+   (Yahoo Finance · 09/13 20:27)
+→ 노르웨이에서 새로운 우주 기업이 등장하여 SpaceX와 Rocket Lab의 경쟁에 합류했습니다. 이 새로운 기업은 Rocket Lab에 더 큰 위협이 될 것으로 보입니다. 우주 회사의 수는 계속 증가하고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] 5 Best Crypto Casinos 2026 – Safe & Trusted Bitcoin Sites to Try This September - Muddy River Sports
+   (Muddy River Sports · 09/14 06:00)
+→ 2026년을 맞아 안전하고 신뢰할 수 있는 비트코인 카지노 5곳이 소개되었습니다. 이 카지노들은 오는 9월에 사용자들에게 추천될 예정입니다.
+
+📰 [BTC-USD] A 2% Bitcoin investment grew to 85% of portfoli... - Pluang
+   (Pluang · 09/14 05:59)
+→ 한 투자자가 포트폴리오의 2%를 비트코인에 투자했는데, 이 비트코인 투자 가치가 현재 포트폴리오의 85%를 차지하게 되었다고 전해졌다. 이는 비트코인 가격 상승에 따른 결과로, 투자자에게 큰 수익을 안겨주었다.
+
+📰 [BTC-USD] Revolut Reportedly Released Customer Passports and Bitcoin Transaction Logs after Fake Government Email - Crowdfund Insider
+   (Crowdfund Insider · 09/14 05:34)
+→ 레볼루트가 가짜 정부 이메일로 인해 고객의 여권 정보와 비트코인 거래 로그를 유출한 것으로 보도됐다. 이 사건은 보안 취약점을 드러내며, 고객 정보 보호에 대한 우려를 불러일으키고 있다.
+
+📰 [ETH-USD] Analyst Predicts Ethereum Price Could Hit $3k This Week, Here’s Why - CoinGape
+   (CoinGape · 09/14 04:18)
+→ 분석가는 이번 주 이더리움 가격이 3천 달러에 이를 가능성이 있다고 예측하고 있습니다. 그 이유로는 시장의 긍정적인 동향과 기술적 지표들이 언급되고 있습니다.
+
+📰 [ETH-USD] Ethereum Price Prediction: $3,000 Comes Back Into Play as AlphaPepe’s $1 Target Implies 34x From Presale - StreetInsider
+   (StreetInsider · 09/14 03:43)
+→ 이더리움 가격이 $3,000으로 돌아올 가능성이 제기되었으며, AlphaPepe의 $1 목표가 프리세일 가격 대비 34배 상승을 암시하고 있습니다. 투자자들은 이러한 상승 잠재력에 주목하고 있습니다.
+
+📰 [ETH-USD] BitMine Stock Forms Golden Cross as Ethereum Buying Spree Nears the Finish Line - Benzinga
+   (Benzinga · 09/14 03:40)
+→ BitMine 주식이 골든 크로스 형성을 나타내며, 이더리움 구매 열풍이 마무리 단계에 접어들고 있습니다. 이는 투자자들 사이에서 긍정적인 신호로 해석되고 있습니다.
+
+📰 [SOL-USD] Solana Mobile suspends marketing email after Br... - Pluang
+   (Pluang · 09/14 02:37)
+→ Solana Mobile은 최근 브레이크스루 사건 이후 마케팅 이메일 발송을 중단했습니다. 이 결정은 사용자와의 소통 방식에 대한 re-evaluation의 일환으로 보입니다.
+
+📰 [SOL-USD] Solana's dApps earn nearly 17x more daily reven... - Pluang
+   (Pluang · 09/14 02:27)
+→ 솔라나의 분산 애플리케이션(dApps)이 하루에 거의 17배 더 많은 수익을 올리고 있다는 내용입니다. 이는 솔라나 플랫폼의 성장과 효율성을 보여주는 지표로 평가됩니다.
+
+📰 [SOL-USD] Solana Price Gears Up for a Break as $6B in Leverage Piles In - Cryptonews.net
+   (Cryptonews.net · 09/13 23:55)
+→ 솔라나 가격이 60억 달러 규모의 레버리지가 유입되면서 급등할 준비를 하고 있다. 투자자들의 대규모 매수로 인해 가격 상승이 기대되고 있다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) As Crypto Treasury Optimism Builds, Is It Still Cheap - simplywall.st
+   (simplywall.st · 09/13 08:53)
+→ Bitmine Immersion Technologies (BMNR)은 암호화폐 금고에 대한 낙관론이 커짐에 따라 여전히 저렴한 평가를 받고 있는지에 대한 분석이 진행되고 있습니다. 시장의 흐름과 BMNR의 향후 전망을 고려할 필요성이 제기되고 있습니다.
+
+📰 [BMNR] Bitmine (NYSE: BMNR) Immersion Surges 8% As Cantor Fitzgerald Doubles Price Target And Ethereum Climbs 7% - foreignpolicyjournal.com
+   (foreignpolicyjournal.com · 09/13 07:35)
+→ Bitmine(NYSE: BMNR)의 주가가 8% 상승했으며, Cantor Fitzgerald가 목표 주가를 두 배로 늘렸습니다. 이러한 상승은 이더리움 가격이 7% 오르면서 힘을 얻었습니다.
+
+📰 [BMNR] BitMine Stock Forecast: Can Ethereum Holdings and Buybacks Drive BMNR Higher? - TradingKey
+   (TradingKey · 09/13 03:14)
+→ BitMine의 주식 전망에 따르면, 이더리움 보유와 자사주 매입이 BMNR 주가 상승에 기여할 수 있을지 평가되고 있습니다. 전문가들은 이러한 전략이 투자자 신뢰를 높이고 주가를 끌어올릴 가능성이 있다고 분석하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 미 상원 민주당의 클래리티 법안 표결 앞두고 혼조세를 보이고 있으며, 비트코인은 소폭 상승한 반면 이더리움은 하락세를 이어가고 있다. 규제와 정치적 불확실성이 여전히 시장에 영향을 미치는 상황이다.
+
+[핵심 뉴스]
+1. (규제) 미 상원 민주당, 클래리티 법안 표결 앞두고 의원총회
+   → 미 상원 민주당이 클래리티 법안의 절차 표결을 위한 의원총회를 소집했다. 이 상황에서 비트코인은 0.17% 상승한 7만7254달러, 이더리움은 0.56% 하락한 2504달러로 거래되고 있다.
+   (토큰포스트 · 09/14 06:19)
+2. (시세) 암호화폐 시장 혼조세… 비트코인 77,255달러, 이더리움 2,505달러
+   → 현재 비트코인은 77,255달러에서 0.17% 상승했으며, 이더리움은 2,505달러로 0.56% 하락했다. 비트코인의 점유율은 58.85%로 증가했지만, 이더리움 점유율은 11.59%로 감소했다.
+   (토큰포스트 · 09/14 05:01)
+3. (기타) 24시간 동안 1억1859만달러 레버리지 포지션 청산
+   → 지난 24시간 동안 1억1859만 달러의 레버리지 포지션이 청산되었으며, 이 중 79.27%가 롱 포지션이었다. 이는 정치적 불확실성과 함께 약세 구간에서의 상승 베팅 정리 상황을 보여준다.
+   (토큰포스트 · 09/14 05:01)
+4. (기타) BNB체인 실물자산 36억달러 늘어 성장액 1위
+   → BNB체인의 올해 실물자산 토큰화 가치 증가가 36억 달러에 달하며, 이는 솔라나와 이더리움의 증가액을 웃도는 수치다. BNB체인의 RWA 가치는 네트워크 성장의 중요한 신호일 수 있다.
+   (토큰포스트 · 09/14 01:01)
+5. (기타) 67% 자산관리자 암호화폐 미배분…60%는 1년 내 계획
+   → 자산관리자 10명 중 7명은 고객 포트폴리오에 암호화폐를 배분하지 않았지만, 60%는 향후 12개월 내에 암호화폐 배분 계획이 있다고 응답했다.
+   (토큰포스트 · 09/14 05:39)
+
+[흐름·전망]
+• 미 상원 민주당의 클래리티 법안 표결 결과에 따라 시장의 방향성이 결정될 수 있는 중요한 시점이다.
+• 비트코인의 점유율 증가와 알트코인의 하락세는 단기적으로 방어적인 투자 경향을 나타내며, 이 점이 향후 매매 전략에 영향을 줄 것이다.
+• 레버리지 포지션의 청산이 지속될 경우, 투자자들의 시급한 리스크 관리 필요성이 부각될 수 있다.
+• 자산관리자들의 암호화폐 배분 계획이 실제 행동으로 이어지는지 여부가 향후 시장 심리에 중요한 변수가 될 것이다.
+
+📊 공포탐욕지수
+  - CNN 기준: 33 (Fear)
+  - 크립토 기준: 61 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 서울 부동산 시장은 8월 토지거래허가 신청 건수가 지난해 10월 이후 최저 수준으로 감소하며 대출 규제와 세제개편안에 대한 관망세가 계속되고 있다.
+
+[핵심 뉴스]
+1. (공급) 8월 서울 토지거래허가신청 3천12건…작년 10월 이래 최저
+   → 8월 서울 아파트 토지거래허가 신청 건수는 3,012건으로, 지난해 10월 이후 최저치를 기록했다. 이는 5월 6,011건, 4월 8,896건에서 지속적으로 감소한 결과이다.
+   (연합뉴스 · 09/14 06:00)
+2. (정책) 이재명표 청년 임대 … 월급 500만원도 OK
+   → 정부는 서울의 전월세 급등에 대응하기 위해 새로운 청년 주거복지 플랜을 24일 발표할 계획이다. 중위소득 200%까지 지원 대상을 확대하고, 주거 품질을 민간 아파트 수준으로 높일 예정이다.
+   (매일경제 · 09/13 17:53)
+3. (기타) 국세청 부동산 세법 질의 급증…양도세는 작년 동기의 2배
+   → 올해 1~7월 국세청에 접수된 부동산 관련 세법 질의가 지난해 연간 건수의 90%를 초과하며 급증하고 있으며, 특히 양도세 관련 질의는 작년 동기 대비 2배 증가하였다.
+   (연합뉴스 · 09/14 05:57)
+4. (매매) 유찰 늘고 낙찰가율도 하락…고가아파트 경매시장 '찬바람'
+   → 고가 아파트 경매 시장에서 찬바람이 불고 있으며, 감정가 30억원 이상 경매의 낙찰가율이 90%대로 하락하고 유찰이 빈번하게 발생하고 있다. 반면 중저가 아파트는 응찰자가 몰리고 있다.
+   (연합뉴스 · 09/13 09:48)
+5. (재건축) 은마재건축에 '투쟁' 구호…상가갈등 새 복병
+   → 서울 강남구 은마아파트 재건축 사업을 두고 상가 세입자와 조합 간의 보상 갈등이 심화되고 있으며, 이로 인해 향후 사업 절차에 차질이 우려되고 있다.
+   (매일경제 · 09/13 16:30)
+6. (기타) 부동산 입지 서열 바꾸는 철도 … 집값 올릴 ‘황금노선’ 찾는 법
+   → 부동산 시장의 입지 변수를 분석하는 데 있어 교통망이 가장 중요하게 언급되고 있다. 교통망이 개선될 경우 아파트 가격에 긍정적인 영향을 미칠 것으로 기대된다.
+   (매일경제 · 09/14 04:00)
+
+[흐름·전망]
+• 부동산 시장에서 투자자들이 대출 규제와 세제개편안 발표 이후 매수심리가 위축되고 있으므로 주의가 필요하다.
+• 청년층을 대상으로 한 새로운 임대주택 정책이 시장에 미치는 영향을 관찰할 필요가 있다.
+• 고가 아파트 경매 시장의 침체가 지속되면, 전체 부동산 시장에 미치는 파급 효과가 클 수 있다.
+• 교통망 확충이 이루어질 경우, 해당 지역의 부동산 가격이 어떻게 변화하는지 주목해야 한다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 백악소에서 건설 중인 새로운 대형 무도회장이 세계에서 가장 훌륭한 시설이 될 것이라고 강조하며, 이 프로젝트는 세금이 아닌 자신의 개인 기부로 이루어지고 있다고 주장했다.
+
+[주요 발언]
+1. (기타) 트럼프는 백악관에 건설 중인 대형 무도회장이 미국의 자랑이 될 것이라고 언급하며, 개인 기부로 추진되고 있다고 밝혔다.
+   (Truth Social · 09/13 18:06)
+
+[흐름·전망]
+• 백악관의 새로운 무도회장 건설이 앞으로의 정치적 논의나 자원 배분에 어떤 영향을 미칠지 주목할 필요가 있다.
+• 트럼프의 개인 기부 프로젝트가 다른 공공 프로젝트에 미칠 파급 효과가 예상되므로, 해당 사항에 대한 논의가 확산될 수 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
