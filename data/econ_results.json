@@ -466,5 +466,32 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"0fa5c63c-f61c-4436-8763-66222addfe7a": {
+"name": "Fed Interest Rate Decision",
+"dt": "2026-10-28T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"3c0c7b61-7aaa-4ca6-bff2-15593a479a36": {
+"name": "Fed Monetary Policy Statement",
+"dt": "2026-10-28T18:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"2b6b68dc-4cea-41c4-ba47-4766f56bf18d": {
+"name": "FOMC Press Conference",
+"dt": "2026-10-28T18:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
