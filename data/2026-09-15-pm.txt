@@ -1,0 +1,246 @@
+2026-09-15T17:02:44.152593+09:00
+
+[오늘의 뉴스 요약] 2026-09-15 17:01 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+AI의 확산이 한국의 지역 노동 시장에 큰 영향을 미치고 있으며, 수도권과 비수도권 간 일자리 및 임금 격차가 더욱 심화되고 있다. 또한, 한국은행은 내년 경제 성장률을 2.6%로 예상하며 고유가로 인한 물가 상승 압박이 클 것이라고 경고했다.
+
+[핵심 뉴스]
+1. (고용) AI가 일자리 양극화 키웠다
+   → 한국은행의 분석에 따르면 생성형 AI의 확산으로 2023년 이후 AI 관련 직업에서 24만7000명이 추가 취업하였지만, 이 중 80.8%인 19만9000명이 수도권에 집중되어 지역 간 일자리 및 임금 격차가 커질 것으로 보인다.
+   (매일경제 · 09/15 16:12)
+2. (성장) 이형일 경제팀 원팀 이끌겠다고 자신감 표명
+   → 이형일 경제부총리 후보자는 국회 청문회에서 올해 3% 성장과 국민소득 4만 달러 달성을 자신하며, 인공지능 수요 확대로 수출 및 고용 지표 개선을 기대하고 있다고 밝혔다.
+   (매일경제 · 09/15 16:00)
+3. (금리) 주담대 변동금리 ‘숨고르기’
+   → 변동금리 기준인 코픽스는 3.18%로 동결되며, 주택담보대출 이용자들에게 금리 인상 압박이 완화되었으나, 고정형 금리는 7.29%로 상승하여 대출 수요가 어떻게 변화할지 주목해야 한다.
+   (매일경제 · 09/15 15:36)
+4. (물가) 집을 못 사게 해놨잖아요
+   → 청년층 무주택 비율이 71.2%에 달하고, 주거비는 7년간 55.3% 증가했다는 조사 결과가 나왔다. 청년층의 주거 환경과 비용 부담이 심각해지고 있다.
+   (매일경제 · 09/15 05:50)
+5. (성장) 한은, 내년 韓성장률 2.6% 그쳐
+   → 한국은행은 내년 물가 상승률을 2.7%로 조정했으며, 중동 전쟁 장기화에 따른 유가 상승이 소비자 물가에 부정적인 영향을 미칠 것으로 전망하고 있다.
+   (매일경제 · 09/14 18:00)
+
+[흐름·전망]
+• AI의 발전에 따른 지역 인력의 질적 변화와 전문 인력의 필요성이 커질 것이므로, 기업과 정부의 인재 육성 정책이 중요한 관전 포인트가 될 것이다.
+• 고용과 소비가 시차를 두고 개선될 것이라는 전망이 있지만, 청년층의 주거비 부담 증가가 소비 회복을 저해할 가능성도 시사한다.
+• 은행의 고정금리와 변동금리의 격차가 확대되면서 차주들이 변동형 주담대 선호를 지속할 가능성이 높고, 이에 따라 금리 조정이 시장에 미치는 영향이 중요하게 다뤄질 것이다.
+• 고유가가 지속될 경우 중산층과 서민의 생활에 실질적인 영향을 미칠 것이며, 정부 재정 건전성에도 부정적인 요인이 될 수 있어 향후 정책적 대응이 관건이 될 수 있다.
+
+📈 해외주식 PART
+📰 [NVDA] Trump says AI fears a ‘hoax’ on call with Nvidia CEO - CNN
+   (CNN · 09/15 15:20)
+→ 트럼프는 엔비디아 CEO와의 통화에서 인공지능(AI)에 대한 두려움이 ‘속임수’라고 주장했습니다. 그는 AI에 대한 공포가 과장된 것이라며 이를 신뢰하지 말 것을 강조했습니다.
+
+📰 [NVDA] Nvidia announces project with Palantir to develop AI supply chain management - The Jerusalem Post
+   (The Jerusalem Post · 09/15 15:09)
+→ Nvidia가 Palantir와 협력하여 인공지능 기반의 공급망 관리 시스템을 개발하는 프로젝트를 발표했습니다. 이 프로젝트는 효율적인 공급망 관리를 목표로 하며, 두 기업의 기술을 결합할 계획입니다.
+
+📰 [NVDA] Trump rejects AI fears in surprise onstage call with Nvidia’s Jensen Huang (NVDA:NASDAQ) - Seeking Alpha
+   (Seeking Alpha · 09/15 14:34)
+→ 트럼프가 엔비디아의 젠슨 화황과의 뜻밖의 무대 전화 연결을 통해 인공지능에 대한 우려를 일축했습니다. 그는 AI가 가져올 긍정적인 혁신과 발전에 대해 강조하며 부정적인 시각을 반박했습니다.
+
+📰 [TSLA] HB Wealth Management LLC Increases Stake in Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/15 16:48)
+→ HB Wealth Management LLC가 Tesla, Inc.의 지분을 늘렸다는 소식이 전해졌습니다. 이 결정은 회사의 포트폴리오 다각화를 위한 전략의 일환으로 해석됩니다.
+
+📰 [TSLA] Tesla, Inc. $TSLA Shares Sold by Fortitude Advisory Group L.L.C. - MarketBeat
+   (MarketBeat · 09/15 16:48)
+→ Fortitude Advisory Group L.L.C.가 테슬라(Tesla, Inc.)의 주식을 매각했다고 보도되었습니다. 이 정보는 MarketBeat를 통해 전해졌습니다.
+
+📰 [TSLA] Saudi Central Bank Buys 92,657 Shares of Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/15 16:48)
+→ 사우디 중앙은행이 테슬라 주식 92,657주를 매입했다. 이는 테슬라에 대한 투자 확대의 일환으로 보인다.
+
+📰 [HIMS] Kaplan Fox Deadline Alert: Hims & Hers Health, Inc. (NYSE: HIMS) - The National Law Review
+   (The National Law Review · 09/15 10:21)
+→ Hims & Hers Health, Inc. (NYSE: HIMS)에 대한 법적 기한 관련 경고가 Kaplan Fox에서 발표되었습니다. 자세한 사항은 관련 법률 리뷰를 통해 확인할 수 있습니다.
+
+📰 [HIMS] HIMS Bulls Should Heed This Historic Chart Signal
+   (Yahoo Finance · 09/15 04:21)
+→ HIMS 주식에 대한 역사적인 차트 신호가 나타났으며, 이는 HIMS 주식을 지금 피해야 한다는 경고를 담고 있습니다. 투자자들은 이 신호를 주의 깊게 살펴볼 필요가 있습니다.
+
+📰 [HIMS] Hims & Hers: Pivot To Branded Distribution Is Eating The Margins Alive (NYSE:HIMS) - Seeking Alpha
+   (Seeking Alpha · 09/15 04:10)
+→ Hims & Hers가 브랜드 유통으로 전환하면서 수익성에 부정적인 영향을 미치고 있는 것으로 나타났다. 이로 인해 마진이 급격히 감소하고 있으며, 회사의 재정적 상황에 우려가 커지고 있다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Down 1.2% - What's Next? - MarketBeat
+   (MarketBeat · 09/15 06:23)
+→ Redwire의 주가가 1.2% 하락했습니다. 투자자들은 앞으로의 전망에 주목하고 있습니다.
+
+📰 [RDW] ASTS, RKLB, RDW, SIDU Slip Overnight: Retail Hopes For SpaceX-Fueled S&P 500 Buying Frenzy Take A Hit - Stocktwits
+   (Stocktwits · 09/15 06:02)
+→ ASTS, RKLB, RDW, SIDU의 주가가 overnight에서 하락했습니다. 이는 투자자들이 SpaceX의 영향으로 S&P 500의 구매 열풍을 기대했지만, 그 기대가 실망으로 이어졌다는 것을 반영합니다.
+
+📰 [RDW] RDW Stock Rises On $21.5M Air Force Drone Contract - Stocktwits
+   (Stocktwits · 09/14 21:35)
+→ RDW 주식이 2,150만 달러 규모의 공군 드론 계약 발표에 따라 상승했습니다. 이 계약은 RDW의 주가에 긍정적인 영향을 미쳤습니다.
+
+📰 [IREN] (IREN) Volatility Zones as Tactical Triggers - Stock Traders Daily
+   (Stock Traders Daily · 09/15 11:18)
+→ (IREN)에서는 변동성이 있는 구역을 전술적 신호로 활용하는 방법에 대해 논의하고 있습니다. 주식 거래자들이 이러한 변동성 구역을 이용해 매매 전략을 세울 수 있도록 안내하는 내용입니다.
+
+📰 [IREN] IREN Stock Slips, But A Top Wall Street Bank Is Bullish With Double-Upgrade And 50% Upside
+   (Yahoo Finance · 09/15 08:21)
+→ JPMorgan이 IREN 주식에 대해 두 단계 상향 조정을 하며, 밸류에이션 상승 요인으로 다수의 억 달러 규모의 Nvidia 계약과 증가하는 계약 가치를 언급했습니다. 이로 인해 IREN의 주가는 50% 상승할 것으로 예상하고 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Trading Down 1.5% - Time to Sell? - MarketBeat
+   (MarketBeat · 09/15 06:23)
+→ IREN(NASDAQ:IREN) 주식이 1.5% 하락하며 투자자들 사이에서 매도 여부에 대한 논의가 일고 있다. 시장 상황을 고려할 때 투자자들은 신중한 판단이 필요하다는 의견이 제기되고 있다.
+
+📰 [RKLB] Rocket Lab Expects Iridium Deal To Double Its Size ‘Overnight’ — CFO Says More Space Deals May Follow
+   (Yahoo Finance · 09/15 14:25)
+→ 로켓랩은 이리디움과의 계약이 회사의 규모를 "하룻밤 사이에" 두 배로 늘릴 것으로 기대하고 있으며, CFO는 앞으로 더 많은 우주 관련 거래가 있을 수 있다고 언급했습니다. 다만, 성장률이 약 100%인 로켓랩은 이리디움 사업의 초기 영향으로 성장이 다소 둔화될 것으로 예상하고 있습니다.
+
+📰 [RKLB] Rocket Lab is seeing red about NASA’s decision on a Mars spacecraft - Ars Technica
+   (Ars Technica · 09/15 06:32)
+→ Rocket Lab은 NASA가 화성 탐사선에 대한 결정을 내린 것에 대해 불만을 표하고 있습니다. 이 결정이 Rocket Lab의 사업에 부정적인 영향을 미칠 것으로 우려하고 있습니다.
+
+📰 [RKLB] Rocket Lab challenges NASA’s $700M Mars contract award - WESH
+   (WESH · 09/15 06:30)
+→ 로켓랩이 NASA의 7억 달러 규모 화성 계약 수상에 이의를 제기했다. 로켓랩은 이 계약이 부당하게 주어졌다고 주장하고 있으며, 사건의 결과가 주목받고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] BTC/USD Signal 15/09: BTC Steady, CLARITY Act Vote Rise - DailyForex
+   (DailyForex · 09/15 16:38)
+→ 비트코인(BTC)의 가격이 안정세를 보이고 있으며, CLARITY 법안에 대한 투표가 증가하고 있다는 소식입니다. 이 법안은 암호화폐 규제에 중요한 영향을 미칠 것으로 예상됩니다.
+
+📰 [BTC-USD] Strategic Bitcoin Reserve bill set for House committee vote Wednesday - Crypto News
+   (Crypto News · 09/15 16:26)
+→ 비트코인 전략적 비축법안이 수요일 하원 위원회에서 투표에 부쳐질 예정이다. 이 법안은 비트코인을 국가 자산으로 활용하기 위한 전략을 포함하고 있다.
+
+📰 [BTC-USD] Bitcoin Falls Ahead of Vote on Digital Asset Clarity Act -- Market Talk - Moomoo
+   (Moomoo · 09/15 16:16)
+→ 비트코인이 디지털 자산 명확성 법안에 대한 투표를 앞두고 하락했다. 시장의 불확실성이 반영된 결과로 보인다.
+
+📰 [ETH-USD] Ethereum Drops 3.6% -- Crypto Mover - Moomoo
+   (Moomoo · 09/15 16:42)
+→ 이더리움이 3.6% 하락했다고 보도되었다. 암호화폐 시장의 변동성이 다시 한번 나타난 것으로 보인다.
+
+📰 [ETH-USD] Ethereum Price Prediction: Analyst Says ETH Could Rally to $3,000 if Clarity Act Passes - CryptoRank
+   (CryptoRank · 09/15 16:34)
+→ 분석가에 따르면, 만약 '클래리티 법안'이 통과된다면 이더리움(ETH) 가격이 3,000달러로 상승할 가능성이 있다고 전해졌다. 이 법안이 암호화폐 시장에 긍정적인 영향을 미칠 수 있다는 전망이다.
+
+📰 [ETH-USD] Ethereum gets jittery ahead of CLARITY Act vote and Fed decision. What to watch next? - investingLive
+   (investingLive · 09/15 16:20)
+→ 이더리움이 CLARITY 법안 투표와 연준의 결정 앞에서 불안한 모습을 보이고 있습니다. 투자자들은 이러한 중요한 사건들이 시장에 미칠 영향에 주목하고 있습니다.
+
+📰 [SOL-USD] DeFi Development Corp. boosts Solana treasury a... - Pluang
+   (Pluang · 09/15 16:25)
+→ DeFi Development Corp.가 솔라나 재무를 지원하기 위해 자금을 추가했습니다. 이 결정은 솔라나 생태계의 성장과 발전을 촉진하기 위한 노력의 일환으로 보입니다.
+
+📰 [SOL-USD] Solana price today Analysis: Bullish Trend Meets Short-Term Fatigue Near $100 - en.cryptonomist.ch
+   (en.cryptonomist.ch · 09/15 16:22)
+→ 현재 솔라나 가격은 강세 추세를 보이고 있으나, 100달러 근처에서 단기적인 피로감이 나타나고 있습니다. 전문가들은 이러한 경향이 가격 변동에 영향을 미칠 수 있다고 분석하고 있습니다.
+
+📰 [SOL-USD] Solana price hovers near $101.50 amid key resis... - Pluang
+   (Pluang · 09/15 16:13)
+→ 솔라나 가격은 주요 저항선 근처인 $101.50에서 머무르고 있습니다. 시장 상황에 따라 향후 가격 변동이 예상됩니다.
+
+📰 [BMNR] BMNR Stock Price Slips After Bitmine’s 27,180 ETH Purchase - CryptoRank
+   (CryptoRank · 09/15 08:50)
+→ BMNR 주가가 Bitmine의 27,180 ETH 구매 이후 하락세를 보였습니다. 이 거래로 시장에서 BMNR에 대한 우려가 커진 것으로 분석됩니다.
+
+📰 [BMNR] Tom Lee's BMNR Adds 1 BTC, Expands ORBS Stake By $7M Amid Ethereum Buying Spree
+   (Yahoo Finance · 09/15 01:03)
+→ Tom Lee의 BMNR이 비트코인을 1개 추가하고 ORBS에 대한 투자를 700만 달러 확대했습니다. BitMine은 이더리움에서 5% 지분을 확보하는 데 집중하며 암호화폐와 주식 보유를 늘렸습니다.
+
+📰 [BMNR] Tom Lee's BMNR Adds 1 BTC, Expands ORBS Stake By $7M Amid Ethereum Buying Spree - Yahoo Finance
+   (Yahoo Finance · 09/15 01:03)
+→ 톰 리의 BMNR이 비트코인 1개를 추가하고 ORBS 지분을 700만 달러 확대했습니다. 이는 이더리움 구매 열풍 속에서 이루어진 결정입니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 미국 국채금리 상승과 함께 고전하고 있으며, 투자자들은 파생상품 포지션 축소로 리스크 회피에 나섰다. 비트코인 가격은 약세를 보이며 7만7257달러에서 거래되고 있다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 7만8000달러에서 약세
+   → 미국 10년물 국채금리가 5%를 넘어서면서 비트코인은 0.39% 하락하여 7만7257달러에 거래된다. 위험선호가 약화되며 알트코인 전반에서도 하락세가 나타났다.
+   (토큰포스트 · 09/15 16:36)
+2. (규제) 비트코인 선물 미결제약정 감소
+   → 비트코인 선물 미결제약정이 지난 9월 3일 32만 1,497 BTC에서 9월 11일 27만 8,151 BTC로 약 13.5% 감소했다. 레버리지 청산도 증가하며 시장의 위험 축소 현상을 보여주고 있다.
+   (토큰포스트 · 09/15 15:25)
+3. (규제) 미 상원 클래스법 표결 임박
+   → 미 상원에서 가상자산 시장구조 법안인 클래리티 법안의 절차표결이 예정된 가운데 비트코인은 7만9530달러에서 3% 하락했다. 블랙록의 비트코인 ETF에는 10억8000만달러가 유입되었다.
+   (토큰포스트 · 09/15 16:01)
+4. (기타) 국내 XRP 시장 집중도 높아
+   → 국내 거래소에서 XRP가 31.86%의 거래 비중을 차지하며 큰 인기를 끌고 있다. ONDO와 WLD 역시 국내 비중이 각각 20.6배, 17.3배 높은 것으로 나타났다.
+   (토큰포스트 · 09/15 17:01)
+5. (규제) 코인 과세 유예 청원 확산
+   → 국내에서 '코인 과세 2년 유예' 청원에 5만명이 동참하며 시장의 큰 반향을 일으켰다. 이는 투자자들에게 긍정적인 신호로 작용할 수 있다.
+   (토큰포스트 · 09/15 15:27)
+
+[흐름·전망]
+• 달러 금리 상승이 암호화폐 강세를 저해하는 구조에서, 향후 금리 변동에 따라 시장 추세가 더욱 뚜렷하게 드러날 것으로 관측된다.
+• 비트코인과 같은 대형 자산으로의 자금 이동이 계속되는 만큼, 알트코인의 비중 변화에 주목해야 할 시점이다.
+• 클래리티 법안의 진행 여부와 연준의 통화정책 결정이 단기적인 가격 변동성을 좌우할 결정적 요소로 작용할 예정이다.
+• 코인 시장의 정책 환경 변화와 과세 유예 청원 등의 이슈가 투자 심리에 긍정적인 영향을 미칠 가능성도 엿보인다.
+
+📊 공포탐욕지수
+  - CNN 기준: 30 (Fear)
+  - 크립토 기준: 69 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 한국 부동산 시장은 월세 수요가 증가하고 있는 가운데 소수의 주요 지역에서 가격 조정이 관찰되고 있습니다. 특히 서울 외곽 지역과 수도권 일부는 고액 월세와 계약 갱신이 급증하며 주거비 부담이 커지고 있습니다.
+
+[핵심 뉴스]
+1. (전세) 노도강에 괜찮은 월세? 월300만원 짜리도 있어요
+   → 노원, 도봉, 강북구에서 월 300만원 이상의 고액 월세 계약이 12건 체결되어 지난해 같은 기간 1건에서 12배 증가했습니다. 전세 매물 부족으로 전셋값 상승이 이어지며 월세로의 전환 수요가 증가하고 있습니다.
+   (매일경제 · 09/15 16:43)
+2. (전세) 집주인이 월세 두 배로 올린답니다
+   → 서울 아파트 전월세 계약 중 갱신계약 비중이 8월에 51.3%로 증가했으며, 이 중 74.9%에서 월세가 상승했습니다. 특히 성동구 등에서 기존 세입자의 월세 인상 사례가 늘어나고 있습니다.
+   (매일경제 · 09/15 15:31)
+3. (매매) 8월 서울 중위 주택 매매가격 8억원대 진입
+   → 8월 서울 주택 매매가격은 0.97% 상승했으며, 강남권은 세법 개편에 따라 하락세를 보이고 있습니다. 반면 성북구와 노원구 등 중위권 이하 지역에서는 상승세를 이어가고 있습니다.
+   (매일경제 · 09/15 14:36)
+4. (매매) 8월 서울 주택 매매가 0.97% 상승
+   → 9월 수도권 주택사업 경기 전망지수가 89.2로 개선되었습니다. 서울과 경기는 상승세를 보였으나, 비수도권은 하락세로 전환되었습니다.
+   (연합뉴스 · 09/15 14:00)
+5. (공급) 9월 수도권 주택사업 경기전망 개선
+   → 더불어민주당은 토지거래허가구역 내 실거주 의무 유예 기한을 내년까지 연장하고 임대차 계약 갱신을 허용하자는 방안을 정부에 제안했습니다.
+   (연합뉴스 · 09/15 11:00)
+6. (정책) 토허제 실거주 유예, 내년까지 연장 제안
+   → 더불어민주당이 주택 거래의 실거주 의무 유예 조치 연장을 제안하며 임대차 계약 갱신을 허용하는 방안을 추진 중이다.
+   (매일경제 · 09/15 14:18)
+
+[흐름·전망]
+• 전세 공급 부족 상황이 지속되는 가운데 전세에서 월세로의 전환 추세가 강화될 것으로 보입니다.
+• 가격 조정이 발생하는 강남권이 향후 지속적인 하락세로 이어질 가능성이 있으며, 중위권 지역의 가격 상승이 관심을 끌고 있습니다.
+• 업계에서는 정부의 주택 공급 정책과 관련된 추가 대책에 따라 시장의 방향성이 결정될 것으로 전망하고 있습니다.
+• 향후 임대차 계약 갱신의 비율 변화와 매물 부족 현상이 임대료에 미치는 영향을 주의 깊게 살펴봐야 할 시점입니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 게시물에서 미국의 경제적 성공과 그에 따른 성과를 강조하며, 현재의 AI 논란과 가격 인상 문제에 대해 자신이 주장하는 진실을 이야기했다.
+
+[주요 발언]
+1. (경제) 트럼프는 공화당이 하원과 상원에서 승리하면 성인 시민들에게 $5,000를 지급하겠다는 공약을 제시하며, 이는 미국의 경제 발전 덕분이라고 주장했다.
+   (Truth Social · 09/15 12:53)
+2. (사법) 트럼프는 AI가 세상을 지배할 것이라는 주장을 '사기'로 간주하며, 이를 전 세계가 불미스러운 일로 보고 있어 안심해야 한다고 말했다.
+   (Truth Social · 09/15 12:53)
+3. (외교) 트럼프는 이란과의 군사적 갈등이 종식되면 유가가 급락할 것이라고 언급하며, 현재 유가는 비록 높은 수준이지만 곧 안정될 것이라고 주장했다.
+   (Truth Social · 09/15 12:52)
+4. (기타) 트럼프는 미국이 다양한 정밀 무기를 생산하고 있으며, 이를 중동 지역 및 세계 여러 곳에 공급하고 있다고 강조했다.
+   (Truth Social · 09/15 12:23)
+5. (국내정치) 트럼프는 바이든 행정부가 가격 인상을 초래했으며, 자신은 이를 통제했던 대통령이라고 반박했다.
+   (Truth Social · 09/15 09:02)
+6. (기타) 트럼프는 미국의 AI 관련 리더십을 강조하며, 강력한 대통령이 AI 통제에 필요하다고 주장했다.
+   (Truth Social · 09/15 09:01)
+
+[흐름·전망]
+• 트럼프의 공약이 실제로 시행될 가능성과 그 정치적 파급 효과에 주목할 필요가 있다.
+• AI와 관련된 논의가 향후 어떻게 진행될지, 그리고 이는 정치적 이슈가 될지 관심이 간다.
+• 현재의 외교적 긴장이 가격에 미치는 영향과 관련된 향후 변화를 지켜볼 필요가 있다.
+• 트럼프가 주장하는 무기 생산 확대가 미국의 방위 정책에 미치는 영향에 대한 분석이 필요하다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

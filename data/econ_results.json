@@ -493,5 +493,41 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"eee5daa2-7168-46ec-bf09-83c8fbe8ce20": {
+"name": "Gross Domestic Product Annualized",
+"dt": "2026-10-29T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"f1a492c1-7a0d-446b-a2ae-a0afee0703f1": {
+"name": "Gross Domestic Product Price Index",
+"dt": "2026-10-29T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"056a440f-010d-4dce-a2e1-5c229b56f350": {
+"name": "Tokyo Consumer Price Index (YoY)",
+"dt": "2026-10-29T23:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"fdf64815-c973-4e1d-bf62-35dc8f7deca6": {
+"name": "Tokyo CPI ex Food, Energy (YoY)",
+"dt": "2026-10-29T23:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
