@@ -109,8 +109,8 @@
     }
    ],
    "target": {
-    "price": "$210.96",
-    "mean": "$327.18",
+    "price": "$211.54",
+    "mean": "$328.66",
     "range": "$180~$515",
     "upside": "+55%",
     "upside_pos": true
@@ -234,10 +234,10 @@
     }
    ],
    "target": {
-    "price": "$505.41",
+    "price": "$500.36",
     "mean": "$572.92",
     "range": "$400~$870",
-    "upside": "+13%",
+    "upside": "+15%",
     "upside_pos": true
    },
    "rec": {
@@ -359,18 +359,18 @@
     }
    ],
    "target": {
-    "price": "$333.08",
-    "mean": "$325.66",
-    "range": "$215~$400",
-    "upside": "-2%",
+    "price": "$329.80",
+    "mean": "$327.20",
+    "range": "$215~$405",
+    "upside": "-1%",
     "upside_pos": false
    },
    "rec": {
     "label": "매수",
     "count": 39,
     "buy": 25,
-    "hold": 14,
-    "sell": 5
+    "hold": 13,
+    "sell": 6
    }
   }
  },
@@ -484,10 +484,10 @@
     }
    ],
    "target": {
-    "price": "$349.39",
+    "price": "$343.87",
     "mean": "$428.07",
     "range": "$340~$515",
-    "upside": "+23%",
+    "upside": "+24%",
     "upside_pos": true
    },
    "rec": {
@@ -609,16 +609,16 @@
     }
    ],
    "target": {
-    "price": "$253.54",
+    "price": "$249.21",
     "mean": "$328.17",
     "range": "$230~$405",
-    "upside": "+29%",
+    "upside": "+32%",
     "upside_pos": true
    },
    "rec": {
     "label": "적극 매수",
     "count": 60,
-    "buy": 60,
+    "buy": 59,
     "hold": 2,
     "sell": 0
    }
@@ -734,7 +734,7 @@
     }
    ],
    "target": {
-    "price": "$665.60",
+    "price": "$666.19",
     "mean": "$758.28",
     "range": "$580~$1,000",
     "upside": "+14%",
@@ -859,7 +859,7 @@
     }
    ],
    "target": {
-    "price": "$358.97",
+    "price": "$359.40",
     "mean": "$390.09",
     "range": "$125~$600",
     "upside": "+9%",
@@ -915,7 +915,7 @@
    },
    "rev": {
     "up": 0,
-    "down": 1
+    "down": 2
    },
    "next": {
     "period": "26.12",
@@ -979,10 +979,10 @@
     }
    ],
    "target": {
-    "price": "$28.81",
+    "price": "$27.99",
     "mean": "$31.29",
     "range": "$23~$42",
-    "upside": "+9%",
+    "upside": "+12%",
     "upside_pos": true
    },
    "rec": {
@@ -1104,10 +1104,10 @@
     }
    ],
    "target": {
-    "price": "$10.49",
+    "price": "$10.86",
     "mean": "$14.69",
     "range": "$8~$20",
-    "upside": "+40%",
+    "upside": "+35%",
     "upside_pos": true
    },
    "rec": {
@@ -1159,7 +1159,7 @@
     "period": "26.09",
     "eps": "$-0.51",
     "eps_range": "$-0.51~$-0.51",
-    "rev": "$223.72M",
+    "rev": "$222.02M",
     "growth": "-6,427.54%",
     "growth_pos": false
    },
@@ -1171,7 +1171,7 @@
     "period": "26.12",
     "eps": "$-0.48",
     "eps_range": "$-0.48~$-0.48",
-    "rev": "$402.96M",
+    "rev": "$404.33M",
     "growth": "-1,560.90%",
     "growth_pos": false
    },
@@ -1217,7 +1217,7 @@
      "label": "2026 3Q",
      "reported": false,
      "eps_est": "$-0.51",
-     "rev": "$223.72M",
+     "rev": "$222.02M",
      "date": "2026-11-06"
     },
     {
@@ -1225,22 +1225,22 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$-0.48",
-     "rev": "$402.96M"
+     "rev": "$404.33M"
     }
    ],
    "target": {
-    "price": "$43.17",
-    "mean": "$77.84",
+    "price": "$41.35",
+    "mean": "$79.03",
     "range": "$43~$131",
-    "upside": "+80%",
+    "upside": "+91%",
     "upside_pos": true
    },
    "rec": {
-    "label": "매수",
+    "label": "적극 매수",
     "count": 16,
-    "buy": 13,
+    "buy": 14,
     "hold": 3,
-    "sell": 1
+    "sell": 0
    }
   }
  },
@@ -1285,7 +1285,7 @@
     "eps": "$0.41",
     "eps_range": "$0.38~$0.48",
     "rev": "$2.18B",
-    "growth": "+97.39%",
+    "growth": "+96.99%",
     "growth_pos": true
    },
    "rev": {
@@ -1297,7 +1297,7 @@
     "eps": "$0.46",
     "eps_range": "$0.43~$0.55",
     "rev": "$2.46B",
-    "growth": "+85.80%",
+    "growth": "+85.52%",
     "growth_pos": true
    },
    "quarters": [
@@ -1354,10 +1354,10 @@
     }
    ],
    "target": {
-    "price": "$173.31",
-    "mean": "$195.73",
+    "price": "$175.78",
+    "mean": "$196.84",
     "range": "$80~$255",
-    "upside": "+13%",
+    "upside": "+12%",
     "upside_pos": true
    },
    "rec": {
@@ -1479,10 +1479,10 @@
     }
    ],
    "target": {
-    "price": "$62.55",
+    "price": "$64.33",
     "mean": "$109.37",
     "range": "$64~$150",
-    "upside": "+75%",
+    "upside": "+70%",
     "upside_pos": true
    },
    "rec": {
