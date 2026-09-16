@@ -2,6 +2,7 @@
 """원문·시세·실적·경제지표 데이터 저장/로드(publish_site.py 분리)."""
 import csv
 import json
+import logging
 import os
 from datetime import date, datetime, timedelta
 
@@ -9,6 +10,8 @@ import pytz
 
 from render import config
 from render.config import KST
+
+log = logging.getLogger(__name__)
 
 
 # =========================================================
@@ -47,6 +50,7 @@ def _load_quotes(slug):
         with open(path, encoding="utf-8") as f:
             return json.load(f)
     except (OSError, ValueError):
+        log.warning("failed to load quotes file: %s", path, exc_info=True)
         return None
 
 
@@ -56,6 +60,7 @@ def _load_body(path):
     try:
         now = datetime.fromisoformat(head.strip())
     except ValueError:
+        log.warning("failed to parse timestamp header in %s: %r", path, head)
         now = None
     return now, body
 
@@ -64,7 +69,11 @@ def _load_reports():
     try:
         with open(config.REPORTS_FILE, encoding="utf-8") as f:
             return json.load(f)
+    except FileNotFoundError:
+        log.info("reports file not found: %s", config.REPORTS_FILE)
+        return []
     except (OSError, ValueError):
+        log.warning("failed to load reports file: %s", config.REPORTS_FILE, exc_info=True)
         return []
 
 
@@ -73,9 +82,13 @@ def _load_earnings(now):
     try:
         with open(config.EARN_FILE, encoding="utf-8") as f:
             rows = json.load(f)
-    except (OSError, ValueError):
+    except FileNotFoundError:
+        log.info("earnings file not found: %s", config.EARN_FILE)
         return []
-    today, out = now.date(), []
+    except (OSError, ValueError):
+        log.warning("failed to load earnings file: %s", config.EARN_FILE, exc_info=True)
+        return []
+    out = []
     for r in rows:
         d = None
         if r.get("date"):
@@ -108,7 +121,11 @@ def _load_fundamentals():
     try:
         with open(config.FUND_FILE, encoding="utf-8") as f:
             return json.load(f)
+    except FileNotFoundError:
+        log.info("fundamentals file not found: %s", config.FUND_FILE)
+        return []
     except (OSError, ValueError):
+        log.warning("failed to load fundamentals file: %s", config.FUND_FILE, exc_info=True)
         return []
 
 
@@ -139,6 +156,7 @@ def _load_econ_events(now):
                     rows[key] = {"dt": dt, "name": (row.get("Name") or "").strip(),
                                  "impact": imp, "cur": ccy}
         except OSError:
+            log.warning("failed to read econ csv: %s", fn, exc_info=True)
             continue
     # B 로직: 이번 달=오늘 이후만 · 미래 달=전체 · 지난 달=제외
     #   + 높음(HIGH) 지표는 지난 7일치(결과 있는 것)를 남겨 '발표 결과'를 보여준다.
@@ -146,6 +164,7 @@ def _load_econ_events(now):
         from econ_results import load as _load_res
         results = _load_res()
     except Exception:  # noqa
+        log.info("econ_results unavailable, continuing without result badges", exc_info=True)
         results = {}
     cur_ym = now.strftime("%Y-%m")
     today = now.date()

@@ -195,7 +195,7 @@ def _gr_qual(d):
             '<span style="font-size:12px;font-weight:700;color:var(--muted)">정성 분석</span>'
             + (f'<span style="font-size:11px;color:var(--muted-2)">해자 {ms}점</span>'
                if ms is not None else "")
-            + f'<span style="margin-left:auto;font-size:10.5px;color:var(--faint)">'
+            + '<span style="margin-left:auto;font-size:10.5px;color:var(--faint)">'
             + f'10-K {_e(q.get("src",""))} · AI 요약</span></div>')
     return head + '<div style="display:flex;gap:10px;flex-wrap:wrap">' + inner + '</div>' + risk
 

@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 """브리핑 본문(plain text) 파싱(publish_site.py 분리)."""
+import logging
 import os
 import re
 
 from render import config
 from render.config import PARTS
 from render.files import _load_body
+
+log = logging.getLogger(__name__)
 
 _SECTION_RE = re.compile(r"^(📈|🪙|📊|💹|🌐|🏘️|💬)\s*(.+)$")
 _LABEL_RE = re.compile(r"^\[(.+)\]$")
@@ -133,6 +136,7 @@ def _prev_item_tokensets(slug, back=2):
     try:
         slugs = sorted(f[:-4] for f in os.listdir(config.DATA_DIR) if f.endswith(".txt"))
     except OSError:
+        log.warning("failed to list data dir: %s", config.DATA_DIR, exc_info=True)
         return []
     prev = slugs[:slugs.index(slug)] if slug in slugs else slugs
     out = []

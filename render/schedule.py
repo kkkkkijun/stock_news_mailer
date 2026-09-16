@@ -340,26 +340,6 @@ document.querySelectorAll('.sched').forEach(function(sc){
   }
   groups();
 });
-document.querySelectorAll('.sub-tab').forEach(function(b){
-  b.addEventListener('click', function(){
-    var host = b.parentNode.parentNode, sub = b.getAttribute('data-sub');
-    var col = host.querySelector('.sched-2col');
-    if(col) col.setAttribute('data-sub', sub);
-    host.querySelectorAll('.sub-pane').forEach(function(p){
-      p.style.display = (p.getAttribute('data-pane')===sub) ? '' : 'none';
-    });
-    b.parentNode.querySelectorAll('.sub-tab').forEach(function(x){x.classList.remove('on');});
-    b.classList.add('on');
-  });
-});
-document.querySelectorAll('.tk-more').forEach(function(b){
-  b.addEventListener('click', function(){
-    var g=b.closest('.tk-group'); if(!g) return;
-    var open=g.classList.toggle('open');
-    b.innerHTML = open ? '접기 <span class="tk-caret">▴</span>'
-                       : '뉴스 '+b.getAttribute('data-n')+'건 더 보기 <span class="tk-caret">▾</span>';
-  });
-});
 document.querySelectorAll('.ern-item').forEach(function(item){
   var row=item.querySelector('.ern');
   if(!row || !item.querySelector('.ern-detail')) return;   // 상세 없으면 클릭 비활성

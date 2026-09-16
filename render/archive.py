@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """지난 브리핑(캘린더/검색) 아카이브 인덱스 렌더링(publish_site.py 분리)."""
+from __future__ import annotations
+
 import json
 import os
 import re
@@ -145,8 +147,9 @@ def _search_index():
     return idx
 
 
-def render_archive_index():
-    days = {}
+def render_archive_index() -> str:
+    """지난 브리핑 아카이브 인덱스(캘린더+검색) 페이지 HTML을 렌더링한다."""
+    days: dict[str, dict[str, str]] = {}
     try:
         names = os.listdir(config.ARCHIVE_DIR)
     except OSError:

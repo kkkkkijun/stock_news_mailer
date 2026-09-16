@@ -28,7 +28,8 @@
 11. [기술 스택](#기술-스택)
 12. [저장소 구조](#저장소-구조)
 13. [로드맵](#로드맵)
-14. [검증 방법](#검증-방법)
+14. [개발·검증](#개발검증)
+15. [검증 방법](#검증-방법)
 
 ---
 
@@ -46,22 +47,31 @@
 
 | 경로 | 역할 | 누가 건드리나 |
 |---|---|---|
-| `main.py` | 오케스트레이터. 수집 → 요약 → 발행 → 푸시 흐름 전체와 `refresh` 모드 | 사람 |
+| `main.py` | 오케스트레이터(얇음). 수집 → 요약 → 발행 → 푸시 흐름 전체와 `refresh` 모드를 아래 모듈에 위임해 호출만 한다 | 사람 |
+| `settings.py` | 설정 단일 출처. 환경변수 로딩, 시간대, 티커 목록(`TICKER_NAMES`)/`EARNINGS_TICKERS`/`_EARN_KO`, `configure_logging()` | 사람 |
+| `llm.py` | OpenAI 클라이언트 생성 + 뉴스 요약(main.py에서 분리) | 사람 |
+| `newsfeed.py` | 티커별 뉴스 기사 수집(Yahoo Finance RSS + Google News RSS) | 사람 |
+| `netutil.py` | HTTP 공통 헬퍼(타임아웃 기본값, 일시 오류 재시도, JSON 디코딩) | 사람 |
+| `quotes.py` | Yahoo Finance 시세 수집과 `docs/prices.json` 생성 | 사람 |
+| `earnings.py` | Yahoo 실적 일정·컨센서스(`data/earnings.json`) + SEC 8-K 기반 실적 리포트(`data/reports.json`) | 사람 |
+| `sec.py` | SEC EDGAR 접근 헬퍼(CIK 조회, 8-K 보도자료 본문) | 사람 |
 | `news_brief.py` + `topic_briefing.py`/`realestate_briefing.py`/`trump_briefing.py` | 뉴스 수집·요약 공통 엔진(`news_brief.py`) + 주제별 설정 3종(쿼리·피드·문구만 다름) | 사람 |
 | `fundamentals.py` | SEC XBRL 기반 성장주 스코어 산출, 10-K 정성 분석 | 사람 |
 | `econ_results.py` | FXStreet 경제지표 실제/예상/이전 수집 | 사람 |
 | `rwa.py` | Ostium 온체인 포지션(주식·지수·원자재) 집계 | 사람 |
 | `whales.py` | Hyperliquid 고래 포지션 집계 | 사람 |
-| `publish_site.py` | `data/*`를 읽어 `docs/` 정적 HTML로 렌더 | 사람 |
+| `publish_site.py` | 호환 파사드. 실제 구현은 `render/` 패키지이며, 기존 `import publish_site` 경로를 유지하기 위해 재노출만 한다 | 사람 |
+| `render/` | 정적 사이트 렌더링 구현(`publish_site.py`가 위임). `config.py`(경로·상수) · `common.py`(공용 헬퍼) · `parse.py`(본문 파싱) · `files.py`(저장/로드) · `layout.py`(페이지 셸·CSS·`render_html`) · `schedule.py`(경제지표 일정) · `earnings.py`(실적 탭) · `news.py`(뉴스 카드) · `growth.py`(성장주 탭) · `rwamap.py`(지도 탭) · `archive.py`(아카이브 인덱스) · `assets.py`(정적 자산 기록) · `clock.py`(현재 시각) · `publish.py`(발행/재렌더링) | 사람 |
 | `notify.py` | 브리핑 완료 알림(앱 푸시 + 선택 이메일) | 사람 |
 | `push_send.py` | Firestore 구독자에게 Web Push 발송 | 사람 |
 | `data/` | 수집 원문(`*.txt`)·시세(`*.quotes.json`)·재무(`fundamentals.json`)·경제지표(`econ_results.json`) | **생성물**, 봇이 커밋(직접 편집하지 않음). 단 `data/econ/YYYY-MM.csv`(캘린더 원본)는 사람이 월별로 추가 |
 | `docs/` | GitHub Pages 산출물(`index.html`, `whales.json`, `rwamap.json`, `prices.json` 등) + 수작업 자산(`goal-app.js`, `push.js`, `sw.js`, `manifest.webmanifest`, `flags/`, `assets/`) | 산출물은 **생성물**(봇이 커밋, 직접 편집하지 않음). `goal-app.js`·`push.js`·`sw.js`·`manifest.webmanifest`·`flags/`·`assets/`만 사람이 직접 관리 |
 | `docs/archive/` | 회차 스냅샷(`YYYY-MM-DD-am.html` 등)과 날짜 캘린더 | **생성물**, 봇이 커밋(직접 편집하지 않음) |
 | `.github/workflows/` | `briefing.yml`(뉴스 브리핑) · `earnings-refresh.yml`(실적) · `map-refresh.yml`(지도) | 사람 |
-| `airflow/` | 같은 파이프라인을 재현한 선택적 오케스트레이션 레이어(로컬/Codespaces 프로토타입, 운영에는 미사용) | 사람 |
+| `airflow/` | 같은 파이프라인을 재현한 선택적 오케스트레이션 레이어(로컬/Codespaces 프로토타입, 운영에는 미사용). 두 DAG 공통 로직은 `airflow/dags/_common.py` | 사람 |
 | `tools/` | 선택 실행 보조 도구(`tools/store.py`: 브리핑 SQLite 파생 인덱스) | 사람 |
-| `tests/` | 골든 렌더 등 회귀 테스트(`tests/golden_render.py`) | 사람 |
+| `tests/` | 단위 테스트 + 골든 렌더 회귀 도구. `conftest.py`(sys.path 설정) · `test_parse.py`(본문 파싱) · `test_common.py`(공용 헬퍼) · `test_econ_fmt.py`/`test_fundamentals_pure.py`/`test_netutil.py`/`test_quotes_order.py`(각 모듈 순수 로직) · `test_golden_determinism.py`(rebuild_all 결정성) · `golden_render.py`(고정 시각 전체 렌더 하네스) · `normalize_html.py`(정규화 비교 헬퍼) | 사람 |
+| `requirements-dev.txt` | 테스트 실행에 필요한 개발 의존성(pytest 등) | 사람 |
 | `legacy/` | 대체된 구버전 구현, 참고용으로만 보관하며 서빙되지 않음 | 아무도 건드리지 않음(참고용) |
 | `.env.template` | 필요한 환경변수와 기본값·설명을 모아둔 템플릿(실제 값은 로컬 `.env`나 GitHub Secrets에) | 사람 |
 
@@ -131,16 +141,16 @@ python tests/golden_render.py <out_dir>   # 골든 렌더(회귀 확인용, 아�
 
 | 하고 싶은 것 | 건드릴 곳 |
 |---|---|
-| 주식/코인 티커 추가 | `main.py`의 `STOCK_TICKERS`/`CRYPTO_TICKERS` 기본값과 `TICKER_NAMES`; 배지 색은 `publish_site.py`의 `TICKER_COLORS`, 한글명은 `_TICKER_KO` |
-| 경제지표 캘린더 월 추가 | `data/econ/YYYY-MM.csv` 새로 추가; 이벤트명 한글 번역은 `publish_site.py`의 `_ECON_KO` |
-| 지표 노출 국가 변경 | `publish_site.py`의 `_ECON_CCY`(현재 미국·한국·일본만 화이트리스트) |
-| 뉴스 파트/탭 추가 | `publish_site.py`의 `PARTS`, `TABS`, `HERO_PARTS` |
-| 화면 스타일 변경 | `publish_site.py`의 `CSS` |
-| 실적 일정에 종목 추가 | `main.py`의 `EARNINGS_TICKERS`, `_EARN_KO` |
+| 주식/코인 티커 추가 | `settings.py`의 `STOCK_TICKERS`/`CRYPTO_TICKERS` 기본값과 `TICKER_NAMES`; 배지 색은 `render/config.py`의 `TICKER_COLORS`, 한글명은 `_TICKER_KO` |
+| 경제지표 캘린더 월 추가 | `data/econ/YYYY-MM.csv` 새로 추가; 이벤트명 한글 번역은 `render/schedule.py`의 `_ECON_KO` |
+| 지표 노출 국가 변경 | `render/config.py`의 `_ECON_CCY`(현재 미국·한국·일본만 화이트리스트) |
+| 뉴스 파트/탭 추가 | `render/config.py`의 `PARTS`, `TABS`, `HERO_PARTS` |
+| 화면 스타일 변경 | `render/layout.py`의 `CSS`(빌드 시 `docs/assets/site.css`로 기록됨) |
+| 실적 일정에 종목 추가 | `settings.py`의 `EARNINGS_TICKERS`, `_EARN_KO` |
 | 성장주 스코어 가중치 조정 | `fundamentals.py`의 `_axes()` |
 | 브리핑 발행 시각 변경 | cron-job.org의 잡 설정 + (Airflow 레이어를 쓴다면) `airflow/dags/daily_briefing.py`의 `schedule` |
 | 푸시 알림 문구 변경 | `notify.py`의 `notify_briefing()` |
-| 사이트 제목/슬로건/목표일 변경 | `publish_site.py`의 `SITE_TITLE`, `SLOGAN`, `DDAY_TARGET` |
+| 사이트 제목/슬로건/목표일 변경 | `render/config.py`의 `SITE_TITLE`, `SLOGAN`, `DDAY_TARGET` |
 
 ## 동작 흐름 한 장 (아키텍처)
 
@@ -193,13 +203,20 @@ flowchart LR
 
 | 모듈 | 입력 | 처리 | 출력 |
 |---|---|---|---|
-| `main.py` | 환경변수, 아래 모듈 | 오케스트레이션(수집→요약→발행→푸시), `refresh` 모드(LLM 없이 실적/시세만) | `docs/index.html`, 푸시 |
+| `main.py` | 환경변수, 아래 모듈 | 오케스트레이션(수집→요약→발행→푸시), `refresh` 모드(LLM 없이 실적/시세만). 로직은 각 모듈로 분리된 **얇은** 진입점 | `docs/index.html`, 푸시 |
+| `settings.py` | 환경변수(.env/Secrets) | 티커·모델·시간대 등 설정값 로딩 단일화, `configure_logging()` | 설정 상수, 로거 설정 |
+| `llm.py` | `OPENAI_API_KEY`, 요약 대상 텍스트 | OpenAI 클라이언트 생성, 한국어 요약 | 클라이언트, 요약 문자열 |
+| `newsfeed.py` | Yahoo Finance RSS, Google News RSS | 티커별 기사 수집(발행시간 역순) | 기사 목록 |
+| `netutil.py` | requests 인자(url/headers/params 등) | 타임아웃 기본값 적용, 일시 오류(연결 오류·429·5xx) 재시도(backoff) | `requests.Response` 또는 파싱된 JSON |
+| `quotes.py` | Yahoo Finance chart API | 시세 조회 | 시세 dict, `docs/prices.json` |
+| `earnings.py` | Yahoo quoteSummary, `sec.py`(8-K), `quotes.py`, `newsfeed.py` | 실적 일정·컨센서스 정리, 8-K 기반 AI 리포트 생성 | `data/earnings.json`, `data/reports.json` |
+| `sec.py` | SEC EDGAR 공개 API | CIK 조회, 최근 8-K(Item 2.02) 보도자료 본문 추출 | CIK, 8-K 본문 |
 | `news_brief.py` (+ `topic_briefing.py`, `realestate_briefing.py`, `trump_briefing.py`) | Google News RSS + 언론사 RSS | 발견(폭넓은 쿼리) → 근거(언론사 리드 문단) → 2단계 요약. 주제 모듈은 **설정만** 담고 로직은 공유 | 섹션 텍스트 |
 | `fundamentals.py` | SEC XBRL companyfacts, 10-K | 태그 드리프트 보정, Q4 유도(연간−3분기), TTM, 성장 스코어 | `data/fundamentals.json`, `data/qual_cache.json` |
 | `econ_results.py` | FXStreet 캘린더 API | 높음(HIGH) 지표만, CSV `Id`와 API `id` **정확 매칭**, 단위(`%`,`$`)·배수(`K/M/B`) 조립 | `data/econ_results.json` |
 | `whales.py` | Hyperliquid leaderboard · clearinghouseState | 상위 90 지갑 선별(자산+누적 PnL) → 코인별 롱/숏/레버 집계 | `docs/whales.json` |
 | `rwa.py` | Ostium 서브그래프(Arbitrum) | 1,000건 페이지네이션, `USD = collateral/1e6 × leverage/100`, 카테고리 분류(주식·지수·원자재·암호화폐), 외환·채권 제외 | `docs/rwamap.json` |
-| `publish_site.py` | `data/*` | 서버사이드 HTML 렌더(UTC→KST, 탭·아카이브·일정·지도·성장주) | `docs/**/*.html` |
+| `publish_site.py` (→ `render/`) | `data/*` | 호환 파사드(`publish_site.py`)가 실제 구현체인 `render/` 패키지로 위임해 서버사이드 HTML 렌더(UTC→KST, 탭·아카이브·일정·지도·성장주) | `docs/**/*.html` |
 | `tools/store.py` | `data/*.txt`, `*.quotes.json` | 브리핑 원문을 SQLite로 색인하는 **파생 인덱스**(원 파이프라인과 무관하게 선택 실행) | `data/briefings.db` |
 | `push_send.py` | Firestore `push_subs`, VAPID 키 | Web Push 발송, 404/410 구독 자동 정리 | 폰 알림 + 배지 |
 | `notify.py` | `main.py`의 발행 결과 | 브리핑 알림: 앱 푸시(항상) + 이메일(`SEND_EMAIL=1`일 때만, 선택) | 푸시 알림, (선택) 이메일 |
@@ -283,7 +300,14 @@ GitHub Actions · GitHub Pages · Firebase Auth/Firestore · Service Worker · W
 
 ```
 .
-├── main.py                 # 오케스트레이션 · refresh 모드 · 푸시
+├── main.py                 # 오케스트레이션(얇음) · refresh 모드 · 푸시
+├── settings.py             # 설정 단일 출처(환경변수·티커·configure_logging)
+├── llm.py                  # OpenAI 클라이언트 · 뉴스 요약
+├── newsfeed.py             # 티커별 뉴스 기사 수집
+├── netutil.py              # HTTP 공통 헬퍼(타임아웃·재시도)
+├── quotes.py               # Yahoo Finance 시세 · docs/prices.json
+├── earnings.py             # 실적 일정·컨센서스 · 8-K 리포트
+├── sec.py                  # SEC EDGAR 헬퍼(CIK · 8-K 본문)
 ├── news_brief.py           # 뉴스 수집/요약 공통 엔진
 ├── topic_briefing.py       # 경제·코인시장 (설정)
 ├── realestate_briefing.py  # 부동산 (설정)
@@ -291,14 +315,16 @@ GitHub Actions · GitHub Pages · Firebase Auth/Firestore · Service Worker · W
 ├── fundamentals.py         # SEC XBRL → 성장 스코어 · 10-K 정성
 ├── econ_results.py         # FXStreet 지표 결과
 ├── whales.py / rwa.py      # 온체인 포지션 집계
-├── publish_site.py         # 정적 HTML 렌더
+├── publish_site.py         # 호환 파사드(실제 구현은 render/)
+├── render/                 # 정적 사이트 렌더링 구현(config·parse·files·layout·schedule·earnings·news·growth·rwamap·archive·assets·clock·publish)
 ├── push_send.py            # Web Push
 ├── notify.py               # 알림: 앱 푸시 + (선택) 이메일
 ├── data/                   # 브리핑 원문·시세·재무·지표 (수집 결과)
 ├── docs/                   # GitHub Pages 산출물 · PWA · goal-app.js · flags/
-├── airflow/                # 선택 오케스트레이션 레이어(로컬/Codespaces 프로토타입)
+├── airflow/                # 선택 오케스트레이션 레이어(로컬/Codespaces 프로토타입), dags/_common.py에 공통 설정
 ├── tools/                  # 선택 실행 도구 (tools/store.py: SQLite 파생 인덱스)
-├── tests/                  # 골든 렌더 등 회귀 테스트
+├── tests/                  # 단위 테스트 + 골든 렌더 등 회귀 테스트
+├── requirements-dev.txt    # 테스트 실행용 개발 의존성(pytest)
 ├── legacy/                 # 구버전 참고용, 미서빙
 └── .github/workflows/      # briefing · earnings-refresh · map-refresh
 ```
@@ -308,6 +334,17 @@ GitHub Actions · GitHub Pages · Firebase Auth/Firestore · Service Worker · W
 - 지도 갱신도 외부 크론으로 이관
 - `tools/store.py` 색인을 이용한 브리핑 검색·전일 대비 변화 UI
 - 커스텀 도메인
+
+## 개발·검증
+
+```bash
+pip install -r requirements-dev.txt   # pytest 등 테스트 전용 의존성
+python -m pytest -q                   # render/*.py 등 순수 로직 단위 테스트 전체 실행
+```
+
+- `tests/golden_render.py`: 저장된 `data/*.txt`로 **고정 시각**에 사이트 전체를 재생성하는 하네스. 리팩터 전후 결과 디렉터리를 비교해 회귀를 기계적으로 확인한다(아래 "검증 방법" 참고).
+- `tests/normalize_html.py`: `golden_render.py`로 만든 두 트리를 비교하는 헬퍼. `<style>/<script>/<link rel=stylesheet>`를 제거한 **정규화 HTML**이 바이트 단위로 같은지(내용 회귀 없음), 그리고 자산 파일(`assets/*.css`, `assets/*.js`) 내용이 이전 인라인 블록과 같은지(자산 이동만 있었는지) 두 층위로 검사한다.
+- 로깅은 각 엔트리포인트(`main.py`, `econ_results.py`, `fundamentals.py`, `rwa.py`, `whales.py`, `tools/store.py`)에서만 `settings.configure_logging()`을 호출해 구성한다. 라이브러리 성격의 모듈(`render/*`, `netutil.py` 등)은 `logging.getLogger(__name__)`만 두고 핸들러 설정은 하지 않는다.
 
 ## 검증 방법
 

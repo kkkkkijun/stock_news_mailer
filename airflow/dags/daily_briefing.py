@@ -13,40 +13,20 @@ Schedule: 06:00 and 17:00 Asia/Seoul, every day.
 """
 
 import os
-import sys
 from datetime import timedelta
 
 import pendulum
 
+from _common import setup_repo_env
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-
-# ---------------------------------------------------------------------------
-# Repo path setup
-# ---------------------------------------------------------------------------
-
-REPO_ROOT = os.environ.get("PIPELINE_REPO", "/opt/airflow/repo")
-
-
-def _setup_repo_env():
-    """Make the pipeline repo importable and set it as the CWD.
-
-    The existing pipeline modules (main.py, fundamentals.py, etc.) assume
-    the process CWD is the repo root because they read/write relative
-    paths such as data/... and docs/.... Every task callable must call
-    this before importing/using those modules.
-    """
-    if REPO_ROOT not in sys.path:
-        sys.path.insert(0, REPO_ROOT)
-    os.chdir(REPO_ROOT)
-
 
 # ---------------------------------------------------------------------------
 # Task callables
 # ---------------------------------------------------------------------------
 
 def _fetch_quotes(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import main
         quotes = main.fetch_all_quotes()
@@ -56,7 +36,7 @@ def _fetch_quotes(**context):
 
 
 def _build_earnings(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import main
         main.build_earnings()
@@ -65,7 +45,7 @@ def _build_earnings(**context):
 
 
 def _build_prices(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import main
         ti = context["ti"]
@@ -76,7 +56,7 @@ def _build_prices(**context):
 
 
 def _build_reports(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import main
         main.build_reports(client=main.get_openai_client())
@@ -85,7 +65,7 @@ def _build_reports(**context):
 
 
 def _build_fundamentals(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import fundamentals
         fundamentals.build_fundamentals()
@@ -94,7 +74,7 @@ def _build_fundamentals(**context):
 
 
 def _build_qualitative(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import main
         import fundamentals
@@ -104,7 +84,7 @@ def _build_qualitative(**context):
 
 
 def _refresh_econ(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import econ_results
         econ_results.refresh()
@@ -113,7 +93,7 @@ def _refresh_econ(**context):
 
 
 def _build_news(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import main
         body = main.build_body(client=main.get_openai_client())
@@ -123,7 +103,7 @@ def _build_news(**context):
 
 
 def _publish(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import publish_site
         ti = context["ti"]
@@ -135,7 +115,7 @@ def _publish(**context):
 
 
 def _send_push(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import push_send
         now = pendulum.now("Asia/Seoul")

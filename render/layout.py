@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 """페이지 셸(HEAD/CSS/스크립트)과 브리핑 본문 렌더링(publish_site.py 분리)."""
+from __future__ import annotations
+
+from datetime import datetime
+from typing import Any
+
 from render import assets, clock
 from render.common import _dday_progress, _dday_text, _e
 from render.config import DDAY_TARGET, HERO_PARTS, PARTS, SITE_TITLE, SLOGAN, TABS, _DOW
@@ -514,6 +519,26 @@ document.querySelectorAll('.nav-t').forEach(function(b){
     document.getElementById(b.getAttribute('data-p')).classList.add('on');
   });
 });
+document.querySelectorAll('.sub-tab').forEach(function(b){
+  b.addEventListener('click', function(){
+    var host = b.parentNode.parentNode, sub = b.getAttribute('data-sub');
+    var col = host.querySelector('.sched-2col');
+    if(col) col.setAttribute('data-sub', sub);
+    host.querySelectorAll('.sub-pane').forEach(function(p){
+      p.style.display = (p.getAttribute('data-pane')===sub) ? '' : 'none';
+    });
+    b.parentNode.querySelectorAll('.sub-tab').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+  });
+});
+document.querySelectorAll('.tk-more').forEach(function(b){
+  b.addEventListener('click', function(){
+    var g=b.closest('.tk-group'); if(!g) return;
+    var open=g.classList.toggle('open');
+    b.innerHTML = open ? '접기 <span class="tk-caret">▴</span>'
+                       : '뉴스 '+b.getAttribute('data-n')+'건 더 보기 <span class="tk-caret">▾</span>';
+  });
+});
 /* 신선도: 빌드 시각 대비 '지금'까지의 경과시간을 뷰 시점에 계산.
    → 빌드가 실패해 페이지가 갱신 안 돼도 지연이 눈에 보임. */
 (function(){
@@ -534,8 +559,12 @@ document.querySelectorAll('.nav-t').forEach(function(b){
 </script>"""
 
 
-def render_html(body, now=None, links="", quotes=None, mark_new=False,
-                schedule=False, asset_prefix=""):
+def render_html(body: str, now: datetime | None = None, links: str = "",
+                 quotes: dict[str, Any] | None = None, mark_new: bool = False,
+                 schedule: bool = False, asset_prefix: str = "") -> str:
+    """브리핑 본문(plain text)을 완성된 페이지 HTML로 렌더링한다.
+
+    schedule=True 인 경우(홈)에만 경제지표/기업실적 '일정' 탭을 채워 넣는다."""
     now = now or clock.now()
     qmap = quotes or {}
     # 직전 회차 대비 '새 뉴스' 표시용 토큰셋(요청 시에만).

@@ -90,3 +90,7 @@ docker compose up -d
   흡수한다.
 - tz-aware 스케줄: `pendulum`으로 `Asia/Seoul` 타임존을 명시해 DST 등 이슈 없이
   06:00/17:00 KST에 정확히 트리거된다.
+- 공통 설정 중복 제거: 두 DAG 모두 파이프라인 저장소를 임포트 가능하게 만들고
+  CWD를 저장소 루트로 옮기는 로직이 필요했는데, `airflow/dags/_common.py`의
+  `setup_repo_env()`(및 `REPO_ROOT`)로 묶어 각 DAG는 `from _common import
+  setup_repo_env`만 한다(Airflow가 dags 폴더를 `sys.path`에 넣어주므로 동작).

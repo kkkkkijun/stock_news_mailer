@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """정적 자산(CSS/JS) 기록 + 캐시버스터 해시. 페이지는 인라인 대신 <link>/<script src>로 참조."""
+from __future__ import annotations
+
 import functools
 import hashlib
 import os
 import re
+from types import ModuleType
 
 # <script[ ...]>내용</script> 에서 첫 블록만 추출(내용, 그 뒤 나머지 원문). 이 모듈이 다루는
 # 상수들은 <script> 태그를 자체 포함하고 있어(예: _PWA_JS는 인라인 블록 뒤에 이미 외부 참조인
@@ -64,11 +67,13 @@ def _pwa_tail():
 _STATIC_NAMES = ("site.css", "site.js", "tab.js", "sched.js", "growth.js", "rwa.js")
 
 
-def write_assets(config):
+def write_assets(config: ModuleType) -> dict[str, str]:
     """정적 CSS/JS를 config.DOCS_DIR/assets/ 에 기록. rebuild_all()/publish() 시작 시 호출.
 
     (archive.js는 브리핑 날짜 인덱스·검색 색인을 담아 렌더마다 내용이 바뀌므로 여기서 쓰지
     않는다 — render.archive.render_archive_index()가 write_archive_js()로 직접 기록한다.)
+
+    반환값은 {파일명: 해시10자} 맵.
     """
     out_dir = os.path.join(config.DOCS_DIR, "assets")
     os.makedirs(out_dir, exist_ok=True)
@@ -81,7 +86,7 @@ def write_assets(config):
     return hashes
 
 
-def write_archive_js(config, js_text, prefix):
+def write_archive_js(config: ModuleType, js_text: str, prefix: str) -> str:
     """CAL_JS+SEARCH_JS(데이터 치환 완료)를 archive.js로 기록하고 <script src> 태그를 반환."""
     out_dir = os.path.join(config.DOCS_DIR, "assets")
     os.makedirs(out_dir, exist_ok=True)
@@ -91,19 +96,19 @@ def write_archive_js(config, js_text, prefix):
     return f'<script src="{prefix}assets/archive.js?v={h}"></script>'
 
 
-def tag(name, prefix):
+def tag(name: str, prefix: str) -> str:
     """<script src="{prefix}assets/{name}?v={hash}"></script>"""
     _content, h = _asset(name)
     return f'<script src="{prefix}assets/{name}?v={h}"></script>'
 
 
-def tag_css(prefix):
+def tag_css(prefix: str) -> str:
     """<link rel="stylesheet" href="{prefix}assets/site.css?v={hash}">"""
     _content, h = _asset("site.css")
     return f'<link rel="stylesheet" href="{prefix}assets/site.css?v={h}">'
 
 
-def site_scripts_tag(prefix):
+def site_scripts_tag(prefix: str) -> str:
     """body 끝 공통 스크립트(TOP_JS+THEME_JS+PWA_JS) 자리를 대신하는 태그.
 
     _PWA_JS 뒤에 이미 붙어있던 외부 참조(push.js) 태그는 옮기지 않고 그대로 붙인다."""

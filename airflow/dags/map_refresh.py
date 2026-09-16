@@ -5,26 +5,17 @@ Hourly refresh of the two "map" style data feeds (RWA map + whale
 tracker) that are independent of the twice-daily briefing pipeline.
 """
 
-import os
-import sys
 from datetime import timedelta
 
 import pendulum
 
+from _common import setup_repo_env
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-REPO_ROOT = os.environ.get("PIPELINE_REPO", "/opt/airflow/repo")
-
-
-def _setup_repo_env():
-    if REPO_ROOT not in sys.path:
-        sys.path.insert(0, REPO_ROOT)
-    os.chdir(REPO_ROOT)
-
 
 def _rwa_refresh(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import rwa
         rwa.build_rwa()
@@ -33,7 +24,7 @@ def _rwa_refresh(**context):
 
 
 def _whales_refresh(**context):
-    _setup_repo_env()
+    setup_repo_env()
     try:
         import whales
         whales.refresh()

@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 """발행 / 재렌더링(publish_site.py 분리)."""
+from __future__ import annotations
+
 import os
+from datetime import datetime
+from typing import Any
 
 from render import assets, clock, config
 from render.archive import render_archive_index
@@ -9,8 +13,10 @@ from render.files import _load_body, _load_quotes, _save_body, _save_quotes, _sl
 from render.layout import render_html
 
 
-def rebuild_all():
-    """저장된 원문으로 모든 페이지를 다시 렌더링(뉴스 수집·LLM 호출 없음)."""
+def rebuild_all() -> int:
+    """저장된 원문으로 모든 페이지를 다시 렌더링(뉴스 수집·LLM 호출 없음).
+
+    반환값은 처리한 회차(.txt) 파일 개수(data/가 없으면 0)."""
     if not os.path.isdir(config.DATA_DIR):
         return 0
     assets.write_assets(config)
@@ -34,7 +40,7 @@ def rebuild_all():
     return len(files)
 
 
-def publish(body, now=None, quotes=None):
+def publish(body: str, now: datetime | None = None, quotes: dict[str, Any] | None = None) -> str:
     """최신 페이지 + 회차 스냅샷 + 캘린더 생성. 최신 경로 반환."""
     now = now or clock.now()
     assets.write_assets(config)
