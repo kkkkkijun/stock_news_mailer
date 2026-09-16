@@ -1,20 +1,25 @@
 """성장주 발굴 — SEC XBRL companyfacts 기반 재무 파이프라인.
-main.py의 _sec_cik / _SEC_UA 재사용. build_fundamentals()가 data/fundamentals.json 생성.
+sec.py의 _sec_cik / _SEC_UA 재사용. build_fundamentals()가 data/fundamentals.json 생성.
 
-입력: SEC XBRL companyfacts API, 10-K 원문, main.py의 _sec_cik/_SEC_UA
+입력: SEC XBRL companyfacts API, 10-K 원문, sec.py의 _sec_cik/_SEC_UA, llm.py의 get_openai_client
 출력: data/fundamentals.json(성장주 스코어), data/qual_cache.json(10-K 정성 분석 캐시)
 실행: python fundamentals.py (지정된 몇 개 티커로 fundamentals_test.json 생성, 단독 테스트용). 평소엔 main.py가 build_fundamentals()/build_qualitative() 호출
-관련: main.py, publish_site.py
+관련: settings.py, sec.py, llm.py, netutil.py, main.py, publish_site.py
 """
+from __future__ import annotations
+
 import json
+import logging
 import statistics
 import time
 from datetime import date
 
-import requests
-
-import main
+import netutil
+from settings import EARNINGS_TICKERS, SUMMARY_MODEL
 from sec import _sec_cik, _SEC_UA
+from llm import get_openai_client
+
+log = logging.getLogger(__name__)
 
 REV = ["RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues",
        "RevenueFromContractWithCustomerIncludingAssessedTax", "SalesRevenueNet"]
@@ -141,22 +146,21 @@ def _build_one(sym):
     if not cik:
         return None
     try:
-        j = requests.get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json",
-                         headers=_SEC_UA, timeout=30).json()
-    except Exception:
+        j = netutil.get_json(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json",
+                             headers=_SEC_UA, timeout=30)
+    except Exception as e:
+        log.warning(f"[fund] {sym}: companyfacts 조회 실패: {e}")
         return None
     g = j["facts"].get("us-gaap", {})
 
     rev = _fill_q4(_quarters(g, REV), _annuals(g, REV))
     gp = _fill_q4(_quarters(g, GP), _annuals(g, GP))
     opi = _fill_q4(_quarters(g, OPINC), _annuals(g, OPINC))
-    ni = _fill_q4(_quarters(g, NI), _annuals(g, NI))
+    # NI/LIAB/ASSETS는 현재 스코어링에 쓰이지 않아 계산하지 않는다(불필요한 SEC 데이터 순회 축소).
     ocf = _fill_q4(_quarters(g, OCF), _annuals(g, OCF))
     capex = _fill_q4(_quarters(g, CAPEX), _annuals(g, CAPEX))
     rnd = _fill_q4(_quarters(g, RND), _annuals(g, RND))
     cash = _instants(g, CASH)
-    liab = _instants(g, LIAB)
-    assets = _instants(g, ASSETS)
     dlt = _instants(g, DEBT_LT)
     dcur = _instants(g, DEBT_CUR)
     shares = _quarters(g, SHARES, 80, 100) or _quarters(g, SHARES, 80, 200)
@@ -368,20 +372,20 @@ def _axes(d):
 
 
 def build_fundamentals(path="data/fundamentals.json", tickers=None):
-    tickers = tickers or main.EARNINGS_TICKERS
+    tickers = tickers or EARNINGS_TICKERS
     out = []
     for t in tickers:
         d = _build_one(t)
         if d:
             out.append(d)
-            print(f"[fund] {t}: 매출 {d['rev']}M YoY {d['rev_yoy']}% · "
-                  f"영업마진 {d['opm']}%(Δ{d['opm_delta']}) · 순현금 {d['netcash']}M · "
-                  f"희석 {d['dilution']}%")
+            log.info(f"[fund] {t}: 매출 {d['rev']}M YoY {d['rev_yoy']}% · "
+                     f"영업마진 {d['opm']}%(Δ{d['opm_delta']}) · 순현금 {d['netcash']}M · "
+                     f"희석 {d['dilution']}%")
         else:
-            print(f"[fund] {t}: skip")
+            log.info(f"[fund] {t}: skip")
         time.sleep(0.3)
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"[fund] 저장 {len(out)}개 → {path}")
+    log.info(f"[fund] 저장 {len(out)}개 → {path}")
     return out
 
 
@@ -407,8 +411,8 @@ def _sec_10k_sections(sym):
     if not cik:
         return None
     try:
-        rec = requests.get(f"https://data.sec.gov/submissions/CIK{cik}.json",
-                           headers=_SEC_UA, timeout=20).json()["filings"]["recent"]
+        rec = netutil.get_json(f"https://data.sec.gov/submissions/CIK{cik}.json",
+                               headers=_SEC_UA, timeout=20)["filings"]["recent"]
         acc = doc = when = None
         for form, a, pd, adt in zip(rec["form"], rec["accessionNumber"],
                                     rec["primaryDocument"], rec["acceptanceDateTime"]):
@@ -419,7 +423,7 @@ def _sec_10k_sections(sym):
             return None
         accn = acc.replace("-", "")
         url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{accn}/{doc}"
-        raw = requests.get(url, headers=_SEC_UA, timeout=30).text
+        raw = netutil.get(url, headers=_SEC_UA, timeout=30).text
         text = _htmlmod.unescape(_re.sub(r"\s+", " ",
                                          _re.sub(r"<[^>]+>", " ", raw))).strip()
         biz = _last_section(text, r"item\s*1\.?\s+business", 7000)
@@ -427,7 +431,8 @@ def _sec_10k_sections(sym):
         if len(biz) < 500 and len(risk) < 500:
             return None
         return {"acc": acc, "when": when, "biz": biz, "risk": risk}
-    except Exception:
+    except Exception as e:
+        log.warning(f"[qual] {sym}: 10-K 조회 실패: {e}")
         return None
 
 
@@ -454,7 +459,7 @@ def _gen_qual(client, d, sec):
         '형식: {"moat":"","moat_score":0,"necessity":"","expansion":"","risk_note":""}'
     )
     resp = client.chat.completions.create(
-        model=main.SUMMARY_MODEL,
+        model=SUMMARY_MODEL,
         messages=[{"role": "user", "content": prompt}],
         response_format={"type": "json_object"}, max_tokens=700)
     return json.loads(resp.choices[0].message.content)
@@ -465,7 +470,7 @@ def build_qualitative(fund_path="data/fundamentals.json",
     """fundamentals.json 각 종목에 10-K 기반 정성 분석(qual)을 추가.
     qual_cache.json에 (ticker→acc,qual) 캐시 → 10-K 바뀔 때만 재생성(비용 절감)."""
     if client is None:
-        client = main.get_openai_client()
+        client = get_openai_client()
     try:
         funds = json.load(open(fund_path, encoding="utf-8"))
     except (OSError, ValueError):
@@ -480,29 +485,31 @@ def build_qualitative(fund_path="data/fundamentals.json",
         if not sec:
             if cache.get(t, {}).get("qual"):
                 d["qual"] = cache[t]["qual"]
-            print(f"[qual] {t}: 10-K 없음")
+            log.info(f"[qual] {t}: 10-K 없음")
             continue
         if cache.get(t, {}).get("acc") == sec["acc"] and cache[t].get("qual"):
             d["qual"] = cache[t]["qual"]
-            print(f"[qual] {t}: 캐시 재사용")
+            log.info(f"[qual] {t}: 캐시 재사용")
             continue
         try:
             q = _gen_qual(client, d, sec)
             q["src"] = sec["when"][:10] if sec.get("when") else ""
             d["qual"] = q
             cache[t] = {"acc": sec["acc"], "qual": q}
-            print(f"[qual] {t}: 생성 (해자 {q.get('moat_score')}점)")
+            log.info(f"[qual] {t}: 생성 (해자 {q.get('moat_score')}점)")
         except Exception as e:
-            print(f"[qual] {t}: 실패 {e}")
+            log.warning(f"[qual] {t}: 실패 {e}")
         time.sleep(0.3)
     json.dump(funds, open(fund_path, "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     json.dump(cache, open(cache_path, "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
-    print(f"[qual] 완료 → {fund_path}")
+    log.info(f"[qual] 완료 → {fund_path}")
     return funds
 
 
 if __name__ == "__main__":
+    from settings import configure_logging
+    configure_logging()
     build_fundamentals("fundamentals_test.json",
                        ["RKLB", "PLTR", "HIMS", "IREN", "NVDA", "RDW"])

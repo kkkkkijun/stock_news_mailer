@@ -4,180 +4,33 @@
 입력: 환경변수(OPENAI_API_KEY, STOCK_TICKERS, CRYPTO_TICKERS 등), news_brief.py/topic_briefing.py/realestate_briefing.py/trump_briefing.py, fundamentals.py, econ_results.py
 출력: docs/index.html(publish_site.publish 경유로 발행), 앱 푸시·이메일 알림(notify.py). `refresh` 모드는 실적/시세/10-K만 갱신 후 재렌더만 한다
 실행: python main.py (전체 브리핑) 또는 python main.py refresh (LLM 뉴스 수집 없이 실적·시세만 갱신 후 재렌더)
-관련: news_brief.py, publish_site.py, notify.py, fundamentals.py, econ_results.py, settings.py, sec.py, quotes.py, earnings.py
+관련: news_brief.py, publish_site.py, notify.py, fundamentals.py, econ_results.py, settings.py, sec.py, quotes.py, earnings.py, llm.py, newsfeed.py
 """
+from __future__ import annotations
+
+import logging
 import os
-import time
-import html
-import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
-from urllib.parse import quote
 
-import feedparser
-import requests
-from openai import OpenAI
-
-from settings import (
-    KST, SUMMARY_MODEL, SUMMARY_MAX_TOKENS, NEWS_PER_TICKER, TICKER_NAMES,
-)
+import netutil
+from settings import KST, stock_tickers, crypto_tickers
 
 # ---- 호환 re-export: DAG/fundamentals가 main.X 로 접근 ----
+from llm import get_openai_client, chatgpt_summarize
+from newsfeed import fetch_news_articles
 from quotes import fetch_quote, fetch_all_quotes, build_prices
 from earnings import build_earnings, build_reports, EARNINGS_TICKERS, _EARN_KO
 from sec import _sec_cik, _SEC_UA, _sec_8k_press
-from settings import stock_tickers, crypto_tickers, TICKER_NAMES, NEWS_PER_TICKER, KST
 
+__all__ = [
+    "get_openai_client", "chatgpt_summarize", "fetch_news_articles",
+    "fetch_quote", "fetch_all_quotes", "build_prices",
+    "build_earnings", "build_reports", "EARNINGS_TICKERS", "_EARN_KO",
+    "_sec_cik", "_SEC_UA", "_sec_8k_press",
+]
 
-# =========================================================
-# 1) ChatGPT 요약 (모델 env화 + fallback + rate limit 처리)
-# =========================================================
-def get_openai_client():
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        return None
-    return OpenAI(api_key=api_key)
-
-
-def chatgpt_summarize(text, client=None, max_retries=2):
-    """뉴스 텍스트를 한국어로 요약.
-    - 모델명은 SUMMARY_MODEL(env)에서 가져옴 (하드코딩 금지)
-    - 빈 입력 / API 에러 / rate limit 처리
-    - 실패 시 원문 일부를 fallback 으로 반환
-    """
-    text = (text or "").strip()
-    if not text:
-        return "(요약할 뉴스 본문이 없습니다)"
-
-    if client is None:
-        client = get_openai_client()
-    if client is None:
-        # API 키가 없으면 요약 없이 원문 앞부분만 fallback
-        return text[:200] + ("..." if len(text) > 200 else "")
-
-    last_err = None
-    for attempt in range(max_retries + 1):
-        try:
-            response = client.chat.completions.create(
-                model=SUMMARY_MODEL,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": f"다음 뉴스 내용을 한국어로 2~3문장으로 간결히 요약해줘:\n{text}",
-                    }
-                ],
-                max_tokens=SUMMARY_MAX_TOKENS,
-            )
-            content = response.choices[0].message.content
-            return content.strip() if content else "(요약 결과가 비어 있습니다)"
-        except Exception as e:
-            last_err = e
-            msg = str(e).lower()
-            # rate limit / 일시적 오류는 지수 백오프 재시도
-            if "rate" in msg or "429" in msg or "timeout" in msg or "503" in msg:
-                if attempt < max_retries:
-                    time.sleep(2 ** attempt)
-                    continue
-            break
-
-    # 최종 실패 시: 원문 앞부분 fallback (메일이 깨지지 않도록)
-    fallback = text[:200] + ("..." if len(text) > 200 else "")
-    return f"(요약 실패, 원문 일부) {fallback}"
-
-
-# =========================================================
-# 2) 뉴스 수집
-#
-# [중요 - 수집 기준 명확화]
-# Yahoo Finance RSS(및 yfinance)는 "조회수/인기순/트렌딩" 정렬을 제공하지 않는다.
-#   - RSS 피드는 발행시간 역순(최신순)으로만 내려온다.
-#   - 조회수(view count) 데이터 자체가 공개 API로 노출되지 않으므로
-#     "조회수 많은 뉴스" 정렬은 기술적으로 불가능하다.
-# 따라서 현실적인 대체 정렬 기준을 적용한다:
-#   1) 발행시간 최신순
-#   2) 제목/요약에 티커명 또는 기업명이 포함된 뉴스 우선 (관련성)
-#   3) 동일 뉴스 중복 제거 (제목/링크 기준)
-#   4) Google News RSS로 티커별 최신 뉴스를 보완
-# 각 기사: publisher, published_at, link, title, related_ticker 저장.
-# =========================================================
-def _entry_published_ts(entry):
-    """RSS entry의 발행시각을 epoch(float)로. 없으면 0."""
-    for key in ("published_parsed", "updated_parsed"):
-        val = entry.get(key)
-        if val:
-            try:
-                return time.mktime(val)
-            except Exception:
-                pass
-    return 0.0
-
-
-def _clean(text):
-    if not text:
-        return ""
-    text = re.sub(r"<[^>]+>", "", text)  # HTML 태그 제거
-    return html.unescape(text).strip()
-
-
-def fetch_news_articles(ticker):
-    """티커별 뉴스 기사 목록(dict)을 구조화해서 반환."""
-    articles = []
-    name = TICKER_NAMES.get(ticker, "")
-
-    # --- 소스 1: Yahoo Finance RSS (기본, 최신순) ---
-    yahoo_url = (
-        f"https://feeds.finance.yahoo.com/rss/2.0/headline"
-        f"?s={ticker}&region=US&lang=en-US"
-    )
-    # --- 소스 2: Google News RSS (보완) ---
-    query = f'{ticker} OR "{name}"' if name else ticker
-    google_url = (
-        f"https://news.google.com/rss/search?q={quote(query)}"
-        f"&hl=en-US&gl=US&ceid=US:en"
-    )
-
-    for src_url, src_name in ((yahoo_url, "Yahoo Finance"), (google_url, "Google News")):
-        try:
-            feed = feedparser.parse(src_url)
-        except Exception:
-            continue
-        for entry in feed.entries:
-            title = _clean(entry.get("title", ""))
-            if not title:
-                continue
-            publisher = src_name
-            # Google News는 source 태그에 실제 매체명을 담는 경우가 있음
-            if entry.get("source") and entry["source"].get("title"):
-                publisher = entry["source"]["title"]
-            articles.append(
-                {
-                    "title": title,
-                    "summary": _clean(entry.get("summary", "")),
-                    "link": entry.get("link", ""),
-                    "publisher": publisher,
-                    "published_at": _entry_published_ts(entry),
-                    "related_ticker": ticker,
-                }
-            )
-
-    # --- 중복 제거 (정규화한 제목 기준) ---
-    seen = set()
-    unique = []
-    for a in articles:
-        key = re.sub(r"\W+", "", a["title"].lower())[:80]
-        if key and key not in seen:
-            seen.add(key)
-            unique.append(a)
-
-    # --- 정렬: (관련성 우선) → (최신순) ---
-    def relevance(a):
-        blob = (a["title"] + " " + a["summary"]).lower()
-        hit = ticker.split("-")[0].lower() in blob
-        if name and name.lower() in blob:
-            hit = True
-        return 1 if hit else 0
-
-    unique.sort(key=lambda a: (relevance(a), a["published_at"]), reverse=True)
-    return unique[:NEWS_PER_TICKER]
+log = logging.getLogger(__name__)
 
 
 def fetch_and_summarize_news(ticker, client=None):
@@ -230,8 +83,7 @@ def get_cnn_fear_greed():
         "Accept": "application/json",
     }
     try:
-        r = requests.get(url, headers=headers, timeout=15)
-        r.raise_for_status()
+        r = netutil.get(url, headers=headers, timeout=15)
         fg = r.json()["fear_and_greed"]
         return {
             "source": "CNN 기준",
@@ -251,8 +103,7 @@ def get_cnn_fear_greed():
 def get_crypto_fear_greed():
     """Crypto Fear & Greed Index (암호화폐 기준, Alternative.me)."""
     try:
-        r = requests.get("https://api.alternative.me/fng/?limit=1", timeout=15)
-        r.raise_for_status()
+        r = netutil.get("https://api.alternative.me/fng/?limit=1", timeout=15)
         data = r.json()["data"][0]
         ts = data.get("timestamp", "")
         updated = ""
@@ -301,10 +152,14 @@ def build_body(client=None):
     stock_summaries = []
     crypto_summaries = []
 
-    for ticker in stock_tickers:
-        stock_summaries.extend(fetch_and_summarize_news(ticker, client=client))
-    for ticker in crypto_tickers:
-        crypto_summaries.extend(fetch_and_summarize_news(ticker, client=client))
+    # 티커별 뉴스 수집·요약은 서로 독립적이므로 병렬로 실행하되,
+    # executor.map은 입력 순서를 보존해 반환하므로 본문 순서는 순차 실행과 동일하다.
+    with ThreadPoolExecutor(max_workers=3) as ex:
+        for res in ex.map(lambda t: fetch_and_summarize_news(t, client=client), stock_tickers):
+            stock_summaries.extend(res)
+    with ThreadPoolExecutor(max_workers=3) as ex:
+        for res in ex.map(lambda t: fetch_and_summarize_news(t, client=client), crypto_tickers):
+            crypto_summaries.extend(res)
 
     now = datetime.now(KST)
     body = f"[오늘의 뉴스 요약] {now.strftime('%Y-%m-%d %H:%M KST')}\n\n"
@@ -348,6 +203,8 @@ def build_body(client=None):
 
 if __name__ == "__main__":
     import sys as _sys
+    from settings import configure_logging
+    configure_logging()
     # 'refresh' 모드: 뉴스·메일 없이 실적/시세/보고서만 갱신 후 저장된 본문으로 재렌더.
     #   → 실적 발표(SEC 8-K) 직후 자주 돌려 '즉각 반영'. (Yahoo 지연 무관)
     if len(_sys.argv) > 1 and _sys.argv[1] == "refresh":
@@ -362,10 +219,10 @@ if __name__ == "__main__":
                 build_fundamentals()          # data/fundamentals.json (성장주 탭)
                 build_qualitative(client=get_openai_client())  # 10-K 정성(캐시)
             except Exception as fe:  # noqa
-                print(f"[refresh] fundamentals 실패: {fe}")
-            print("[refresh] 재빌드:", rebuild_all())
+                log.exception(f"[refresh] fundamentals 실패: {fe}")
+            log.info(f"[refresh] 재빌드: {rebuild_all()}")
         except Exception as e:  # noqa
-            print(f"[refresh] 실패: {e}")
+            log.exception(f"[refresh] 실패: {e}")
         _sys.exit(0)
 
     client = get_openai_client()
@@ -389,15 +246,15 @@ if __name__ == "__main__":
                     build_fundamentals()      # data/fundamentals.json (성장주 탭)
                     build_qualitative(client=client)  # 10-K 정성(캐시)
                 except Exception as fe:
-                    print(f"[site] fundamentals 실패: {fe}")
+                    log.exception(f"[site] fundamentals 실패: {fe}")
                 try:
                     from econ_results import refresh as refresh_econ
-                    print("[site] 경제지표 결과:", refresh_econ())  # data/econ_results.json
+                    log.info(f"[site] 경제지표 결과: {refresh_econ()}")  # data/econ_results.json
                 except Exception as ee:
-                    print(f"[site] econ_results 실패: {ee}")
-                print("[site] 발행:", publish(final_body, quotes=quotes))
+                    log.exception(f"[site] econ_results 실패: {ee}")
+                log.info(f"[site] 발행: {publish(final_body, quotes=quotes)}")
             except Exception as e:
-                print(f"[site] 발행 실패: {e}")
+                log.exception(f"[site] 발행 실패: {e}")
 
         # 새 브리핑 알림. 기본은 '앱 푸시'(배지+팝업)로 보낸다.
         site = os.getenv(

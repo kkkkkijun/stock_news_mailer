@@ -6,6 +6,9 @@
 실행: 모듈로만 사용(main.py가 notify_briefing() 호출)
 관련: push_send.py, main.py
 """
+from __future__ import annotations
+
+import logging
 import os
 import smtplib
 from email.mime.text import MIMEText
@@ -13,6 +16,8 @@ from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 
 import pytz
+
+log = logging.getLogger(__name__)
 
 KST = pytz.timezone("Asia/Seoul")
 
@@ -26,7 +31,7 @@ recipients = [r.strip() for r in recipients if r.strip()]
 # =========================================================
 # 이메일 발송
 # =========================================================
-def send_email(body, subject=None):
+def send_email(body: str, subject: str | None = None) -> None:
     # 발송 시각 표기는 항상 KST(timezone-aware)로 고정
     now = datetime.now(KST)
     hour = now.hour
@@ -53,7 +58,7 @@ def send_email(body, subject=None):
         server.sendmail(email_user, recipients, msg.as_string())
 
 
-def notify_briefing(now, site_url, notice_text):
+def notify_briefing(now: datetime, site_url: str, notice_text: str) -> None:
     """새 브리핑 알림: 앱 푸시(항상 시도) + 이메일(SEND_EMAIL=1일 때만)."""
     tag = "오전" if now.hour < 12 else "오후"
 
@@ -64,7 +69,7 @@ def notify_briefing(now, site_url, notice_text):
                   "새 뉴스 브리핑이 준비됐어요. 눌러서 확인하세요.",
                   url=site_url)
     except Exception as pe:
-        print(f"[push] 발송 실패: {pe}")
+        log.warning(f"[push] 발송 실패: {pe}")
 
     # 이메일 알림은 기본 꺼짐(앱 푸시로 대체). 다시 켜려면 SEND_EMAIL=1.
     # 메일이 오지 않으면 파이프라인 문제 신호로 쓰고 싶을 때 사용.

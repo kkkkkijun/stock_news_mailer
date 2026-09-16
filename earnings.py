@@ -2,20 +2,27 @@
 """Yahoo 실적 일정·컨센서스 수집(data/earnings.json)과 SEC 8-K 기반 실적 리포트 생성(data/reports.json).
 
 입력: Yahoo quoteSummary(calendarEvents/earnings/earningsTrend/earningsHistory/financialData/recommendationTrend),
-      sec._sec_8k_press(8-K 보도자료), quotes.fetch_quote(주가 반응), main.fetch_news_articles(관련 뉴스, 지연 import)
+      sec._sec_8k_press(8-K 보도자료), quotes.fetch_quote(주가 반응), newsfeed.fetch_news_articles(관련 뉴스)
 출력: data/earnings.json(실적 일정·컨센서스), data/reports.json(8-K 기반 AI 한글 요약)
 실행: 별도 실행 없음 — main.py가 import해서 사용
-관련: settings.py, sec.py, quotes.py, main.py
+관련: settings.py, sec.py, quotes.py, llm.py, newsfeed.py, netutil.py, main.py
 """
+from __future__ import annotations
+
+import logging
 import os
 import time
 from datetime import datetime
+from typing import Any
 
-import requests
-
-from settings import EARNINGS_TICKERS, _EARN_KO, stock_tickers, KST, SUMMARY_MODEL
+import netutil
+from settings import EARNINGS_TICKERS, _EARN_KO, KST, SUMMARY_MODEL
 from sec import _sec_8k_press, _report_kdate
 from quotes import _QUOTE_UA, fetch_quote
+from llm import get_openai_client
+from newsfeed import fetch_news_articles
+
+log = logging.getLogger(__name__)
 
 # =========================================================
 # 기업 실적 일정 (M7 + 관심종목) → data/earnings.json (일정 탭 우측)
@@ -23,14 +30,15 @@ from quotes import _QUOTE_UA, fetch_quote
 #   전부 실패 시 기존 파일 유지(덮어쓰지 않음).
 # =========================================================
 def _yahoo_earn_session():
+    import requests
     s = requests.Session()
     s.headers.update({"User-Agent": _QUOTE_UA["User-Agent"]})
     try:
-        s.get("https://fc.yahoo.com", timeout=8)
-    except Exception:
-        pass
-    crumb = s.get("https://query1.finance.yahoo.com/v1/test/getcrumb",
-                  timeout=8).text.strip()
+        netutil.get("https://fc.yahoo.com", timeout=8, session=s)
+    except Exception as e:
+        log.warning("[earnings] Yahoo 쿠키 워밍업 실패(계속 진행): %s", e)
+    crumb = netutil.get("https://query1.finance.yahoo.com/v1/test/getcrumb",
+                        timeout=8, session=s).text.strip()
     return s, crumb
 
 
@@ -79,8 +87,8 @@ def _fetch_earning(session, crumb, sym):
     from datetime import datetime as _dt
     mods = ("calendarEvents,earnings,earningsTrend,earningsHistory,"
             "financialData,recommendationTrend")
-    r = session.get(f"https://query1.finance.yahoo.com/v10/finance/quoteSummary/"
-                    f"{sym}?modules={mods}&crumb={crumb}", timeout=12)
+    r = netutil.get(f"https://query1.finance.yahoo.com/v10/finance/quoteSummary/"
+                    f"{sym}?modules={mods}&crumb={crumb}", timeout=12, session=session)
     if r.status_code != 200:
         return None
     res = r.json()["quoteSummary"]["result"][0]
@@ -187,23 +195,24 @@ def _fetch_earning(session, crumb, sym):
             "est": est, "detail": d}
 
 
-def build_earnings(path=None):
+def build_earnings(path: str | None = None) -> None:
     import json
     path = path or os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 "data", "earnings.json")
     try:
         session, crumb = _yahoo_earn_session()
     except Exception as e:  # noqa
-        print(f"[earnings] 세션 실패: {e}")
+        log.exception(f"[earnings] 세션 실패: {e}")
         return
     if not crumb:
-        print("[earnings] crumb 없음 → 기존 파일 유지")
+        log.warning("[earnings] crumb 없음 → 기존 파일 유지")
         return
     out, ok = [], False
     for t in EARNINGS_TICKERS:
         try:
             info = _fetch_earning(session, crumb, t)
-        except Exception:
+        except Exception as e:
+            log.warning(f"[earnings] {t} 조회 실패: {e}")
             info = None
         if info is not None:
             ok = True
@@ -213,12 +222,12 @@ def build_earnings(path=None):
                     "est": bool(info["est"]) if info else False,
                     "detail": info.get("detail") if info else None})
     if not ok:
-        print("[earnings] 전부 실패 → 기존 파일 유지")
+        log.warning("[earnings] 전부 실패 → 기존 파일 유지")
         return
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
-    print(f"[earnings] 저장: {sum(1 for r in out if r['date'])}/{len(out)}개 실적일")
+    log.info(f"[earnings] 저장: {sum(1 for r in out if r['date'])}/{len(out)}개 실적일")
 
 
 # =========================================================
@@ -286,12 +295,12 @@ def _gen_report(client, name, sym, qlabel, numbers, press_text,
                 "guidance": data.get("guidance", ""),
                 "bullets": (data.get("bullets") or [])[:4]}
     except Exception as e:
-        print(f"[reports] {sym} 요약 실패: {e}")
+        log.exception(f"[reports] {sym} 요약 실패: {e}")
         return {"headline": f"{name} {qlabel} 실적", "verdict": "",
                 "metrics": [], "guidance": "", "bullets": []}
 
 
-def build_reports(path=None, client=None):
+def build_reports(path: str | None = None, client: Any = None) -> None:
     import json as _json
     from datetime import datetime as _dt
     edir = os.path.dirname(os.path.abspath(__file__))
@@ -300,14 +309,13 @@ def build_reports(path=None, client=None):
         earns = {r["ticker"]: r for r in
                  _json.load(open(os.path.join(edir, "data", "earnings.json"), encoding="utf-8"))}
     except (OSError, ValueError):
-        print("[reports] earnings.json 없음 → 중단")
+        log.warning("[reports] earnings.json 없음 → 중단")
         return
     try:
         existing = {r["ticker"]: r for r in _json.load(open(path, encoding="utf-8"))}
     except (OSError, ValueError):
         existing = {}
     if client is None:
-        from main import get_openai_client  # 지연 import: main↔earnings 순환 방지
         client = get_openai_client()
     now = datetime.now(KST)
     out = []
@@ -373,12 +381,11 @@ def build_reports(path=None, client=None):
             pm = f"전일대비 {c:+.2f}% ({'상승' if c >= 0 else '하락'})"
         news_text = ""
         try:
-            from main import fetch_news_articles  # 지연 import: main↔earnings 순환 방지
             arts = fetch_news_articles(t)[:4]
             news_text = " / ".join(a.get("title") or "" for a in arts if a.get("title"))
-        except Exception:
-            pass
-        print(f"[reports] {t} 8-K 요약 생성… ({qlabel}, 주가 {pm or '-'})")
+        except Exception as e:
+            log.warning(f"[reports] {t} 관련 뉴스 조회 실패: {e}")
+        log.info(f"[reports] {t} 8-K 요약 생성… ({qlabel}, 주가 {pm or '-'})")
         summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"],
                            price_move=pm, news_text=news_text)
         rec = {"ticker": t, "name": name,
@@ -391,10 +398,10 @@ def build_reports(path=None, client=None):
         rec.update(summ)
         out.append(rec)
     if not out:
-        print("[reports] 생성된 보고서 없음")
+        log.warning("[reports] 생성된 보고서 없음")
         return
     out.sort(key=lambda r: r.get("date", ""), reverse=True)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         _json.dump(out, f, ensure_ascii=False, indent=1)
-    print(f"[reports] 저장: {len(out)}개")
+    log.info(f"[reports] 저장: {len(out)}개")

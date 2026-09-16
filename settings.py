@@ -2,10 +2,13 @@
 """파이프라인 설정 단일 출처. 환경변수 로딩, 시간대, 티커 목록, 상수.
 
 입력: 환경변수(.env 또는 GitHub Actions secrets) — OPENAI_API_KEY, STOCK_TICKERS, CRYPTO_TICKERS 등
-출력: KST, stock_tickers/crypto_tickers, TICKER_NAMES, NEWS_PER_TICKER, SUMMARY_MODEL/SUMMARY_MAX_TOKENS, EARNINGS_TICKERS, _EARN_KO
+출력: KST, stock_tickers/crypto_tickers, TICKER_NAMES, NEWS_PER_TICKER, SUMMARY_MODEL/SUMMARY_MAX_TOKENS, EARNINGS_TICKERS, _EARN_KO, configure_logging()
 실행: 별도 실행 없음 — 다른 모듈이 import해서 사용
 관련: main.py, quotes.py, earnings.py
 """
+from __future__ import annotations
+
+import logging
 import os
 
 import pytz
@@ -62,3 +65,11 @@ _EARN_KO = {
 # M7 필수 + 관심종목(HIMS·RDW·IREN) + PLTR·RKLB(일정 전용)
 EARNINGS_TICKERS = ["NVDA", "MSFT", "AAPL", "GOOGL", "AMZN", "META", "TSLA",
                     "HIMS", "RDW", "IREN", "PLTR", "RKLB"]
+
+
+def configure_logging(level: int = logging.INFO) -> None:
+    """루트 로거 기본 설정(entry point에서 1회만 호출). 이미 설정돼 있으면 무시."""
+    if logging.getLogger().handlers:
+        return
+    logging.basicConfig(level=level,
+                        format="%(asctime)s %(levelname)s %(name)s: %(message)s")

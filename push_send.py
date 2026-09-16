@@ -5,13 +5,20 @@ VAPID 비공개키는 환경변수(GitHub Secret) VAPID_PRIVATE_KEY(PEM)에서 �
 입력: Firestore push_subs 컬렉션(REST), 환경변수 VAPID_PRIVATE_KEY/VAPID_SUBJECT
 출력: 구독자 폰의 Web Push 알림(반환값은 전송 성공 건수), 죽은 구독은 Firestore에서 삭제
 실행: python push_send.py [제목] [본문] (테스트 발송). 평소엔 notify.py가 send_push()를 호출
-관련: notify.py, main.py
+관련: notify.py, main.py, netutil.py
 """
+from __future__ import annotations
+
 import json
+import logging
 import os
 import tempfile
 
 import requests
+
+import netutil
+
+log = logging.getLogger(__name__)
 
 PROJ = "stock-news-mailer-6f86b"
 API_KEY = "AIzaSyCIsIbniZhAc4mdSCdtwgvafwRC0nuetl4"
@@ -22,9 +29,9 @@ SITE = "https://kkkkkijun.github.io/stock_news_mailer/"
 def _subs():
     out = []
     try:
-        r = requests.get(f"{FS}/push_subs?key={API_KEY}&pageSize=300", timeout=20).json()
+        r = netutil.get_json(f"{FS}/push_subs?key={API_KEY}&pageSize=300", timeout=20)
     except Exception as e:
-        print(f"[push] 구독 조회 실패: {e}")
+        log.warning(f"[push] 구독 조회 실패: {e}")
         return out
     for d in r.get("documents", []):
         f = d.get("fields", {})
@@ -39,23 +46,23 @@ def _subs():
 def _delete(name):
     try:
         requests.delete(f"https://firestore.googleapis.com/v1/{name}?key={API_KEY}", timeout=15)
-    except Exception:
-        pass
+    except Exception as e:
+        log.warning(f"[push] 구독 삭제 실패({name}): {e}")
 
 
-def send_push(title, body, url=None):
+def send_push(title: str, body: str, url: str | None = None) -> int:
     pem = os.getenv("VAPID_PRIVATE_KEY")
     if not pem:
-        print("[push] VAPID_PRIVATE_KEY 없음 — 건너뜀")
+        log.warning("[push] VAPID_PRIVATE_KEY 없음 — 건너뜀")
         return 0
     try:
         from pywebpush import webpush, WebPushException
     except ImportError:
-        print("[push] pywebpush 미설치 — 건너뜀")
+        log.warning("[push] pywebpush 미설치 — 건너뜀")
         return 0
     subs = _subs()
     if not subs:
-        print("[push] 구독자 없음")
+        log.info("[push] 구독자 없음")
         return 0
     claim = {"sub": (os.getenv("VAPID_SUBJECT") or "mailto:admin@example.com")}
     payload = json.dumps({"title": title, "body": body, "url": url or SITE})
@@ -80,15 +87,15 @@ def send_push(title, body, url=None):
                 code = getattr(getattr(e, "response", None), "status_code", None)
                 if code in (404, 410):     # 죽은 구독 정리
                     _delete(s["name"])
-                print(f"[push] 실패({code}): {str(e)[:70]}")
+                log.warning(f"[push] 실패({code}): {str(e)[:70]}")
             except Exception as e:
-                print(f"[push] 오류: {str(e)[:70]}")
+                log.warning(f"[push] 오류: {str(e)[:70]}")
     finally:
         try:
             os.remove(tf.name)
         except OSError:
             pass
-    print(f"[push] 전송 {sent}건 / 구독 {len(seen)}")
+    log.info(f"[push] 전송 {sent}건 / 구독 {len(seen)}")
     return sent
 
 

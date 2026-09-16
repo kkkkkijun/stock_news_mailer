@@ -20,8 +20,9 @@ topic_briefing.py(경제·코인시장)와 realestate_briefing.py(부동산)가 
 입력: Google 뉴스 RSS + 언론사 RSS(topic_briefing.py/realestate_briefing.py가 넘기는 쿼리·피드·키워드), OpenAI API
 출력: plain-text 브리핑 섹션 문자열(build_briefing() 반환값)
 실행: 모듈로만 사용(topic_briefing.py, realestate_briefing.py 등에서 호출)
-관련: topic_briefing.py, realestate_briefing.py, main.py
+관련: topic_briefing.py, realestate_briefing.py, main.py, netutil.py
 """
+import logging
 import os
 import re
 import json
@@ -33,6 +34,10 @@ from urllib.parse import quote
 
 import feedparser
 import pytz
+
+import netutil
+
+log = logging.getLogger(__name__)
 
 try:
     from dotenv import load_dotenv
@@ -139,7 +144,8 @@ def fetch_google_pool(queries, pool_per_query=30):
                f"&hl={hl}&gl={gl}&ceid={ceid}")
         try:
             feed = feedparser.parse(url)
-        except Exception:
+        except Exception as e:
+            log.warning(f"구글 뉴스 RSS 파싱 실패({url}): {e}")
             continue
         for e in feed.entries[:pool_per_query]:
             title = clean(e.get("title", ""))
@@ -163,7 +169,8 @@ def fetch_publisher_pool(feeds, keywords, max_age_days=2, lead_chars=220):
     for name, url in feeds:
         try:
             f = feedparser.parse(url)
-        except Exception:
+        except Exception as e:
+            log.warning(f"언론사 RSS 파싱 실패({name} {url}): {e}")
             continue
         for e in f.entries:
             title = clean(e.get("title", ""))
@@ -309,13 +316,12 @@ def fetch_article_body(url, max_chars=None):
     if not url or "news.google.com" in url:
         return ""
     try:
-        import requests
         import trafilatura
     except Exception:
         return ""          # 의존성 없으면 2단계 자체를 건너뜀
     try:
-        r = requests.get(url, headers={"User-Agent": _UA},
-                         timeout=ARTICLE_FETCH_TIMEOUT)
+        r = netutil.get(url, headers={"User-Agent": _UA},
+                        timeout=ARTICLE_FETCH_TIMEOUT)
         if r.status_code != 200:
             return ""
         txt = trafilatura.extract(r.text) or ""
@@ -460,7 +466,7 @@ def build_briefing(*, header, queries, role, theme_options,
                                          today_hint=today_hint)
             if refined:
                 today, picks, outlook = refined
-        except Exception:  # noqa
-            pass
+        except Exception as e:  # noqa
+            log.warning(f"[2단계] 원문 본문 보강 실패(1단계 결과 유지): {e}")
 
     return render_section(header, today, picks, outlook, today_label)

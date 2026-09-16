@@ -4,12 +4,18 @@
 입력: Ostium 서브그래프(Arbitrum) API
 출력: docs/rwamap.json
 실행: python rwa.py refresh (docs/rwamap.json 갱신) 또는 python rwa.py (테스트용 rwamap_test.json 생성)
-관련: main.py, publish_site.py
+관련: main.py, publish_site.py, netutil.py
 """
-import json
-from datetime import datetime, timezone, timedelta
+from __future__ import annotations
 
-import requests
+import json
+import logging
+from datetime import datetime, timezone, timedelta
+from typing import Any
+
+import netutil
+
+log = logging.getLogger(__name__)
 
 KST = timezone(timedelta(hours=9))
 URL = ("https://api.subgraph.ormilabs.com/api/public/"
@@ -46,8 +52,8 @@ def _fetch_all():
     while True:
         query = ('{ trades(first:1000, skip:%d, where:{isOpen:true}){ '
                  'isBuy leverage collateral trader pair{ from to } } }' % skip)
-        r = requests.post(URL, json={"query": query}, timeout=40).json()
-        t = r.get("data", {}).get("trades", [])
+        r = netutil.post_json(URL, {"query": query}, timeout=40)
+        t = r.json().get("data", {}).get("trades", [])
         out += t
         if len(t) < 1000 or skip > 8000:
             break
@@ -55,7 +61,7 @@ def _fetch_all():
     return out
 
 
-def build_rwa(out_path="docs/rwamap.json"):
+def build_rwa(out_path: str = "docs/rwamap.json") -> dict[str, Any]:
     trades = _fetch_all()
     agg = {}
     for x in trades:
@@ -95,12 +101,14 @@ def build_rwa(out_path="docs/rwamap.json"):
     cats = {}
     for z in assets:
         cats[z["cat"]] = cats.get(z["cat"], 0) + 1
-    print(f"[rwa] 포지션 {len(trades)} · 자산 {len(assets)} · 카테고리 {cats} → {out_path}")
+    log.info(f"[rwa] 포지션 {len(trades)} · 자산 {len(assets)} · 카테고리 {cats} → {out_path}")
     return data
 
 
 if __name__ == "__main__":
     import sys
+    from settings import configure_logging
+    configure_logging()
     if len(sys.argv) > 1 and sys.argv[1] == "refresh":
         build_rwa("docs/rwamap.json")
     else:

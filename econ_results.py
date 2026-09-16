@@ -9,13 +9,19 @@ data/econ/*.csv 의 Id 와 API 의 eventDate id 가 동일하므로 id 로 정�
 입력: data/econ/YYYY-MM.csv(캘린더), FXStreet 캘린더 API
 출력: data/econ_results.json
 실행: python econ_results.py (refresh() 실행 후 결과 건수 출력). 평소엔 main.py가 refresh() 호출
-관련: main.py, publish_site.py
+관련: main.py, publish_site.py, netutil.py
 """
+from __future__ import annotations
+
 import json
+import logging
 import os
 from datetime import datetime, timedelta, timezone
+from typing import Any
 
-import requests
+import netutil
+
+log = logging.getLogger(__name__)
 
 API = "https://calendar-api.fxstreet.com/en/api/v1/eventDates/{a}/{b}"
 HDR = {"Referer": "https://www.fxstreet.com/", "Origin": "https://www.fxstreet.com",
@@ -32,7 +38,7 @@ def _num(v):
     return "0" if s in ("", "-0") else s
 
 
-def fmt(v, unit, potency):
+def fmt(v: float | None, unit: str | None, potency: str | None) -> str | None:
     """FXStreet 수치 → 표시 문자열. potency(K/M/B) + unit($/%)."""
     s = _num(v)
     if s is None:
@@ -46,7 +52,7 @@ def fmt(v, unit, potency):
     return s
 
 
-def load():
+def load() -> dict[str, Any]:
     try:
         with open(OUT, encoding="utf-8") as f:
             return json.load(f)
@@ -54,7 +60,7 @@ def load():
         return {}
 
 
-def refresh(days_back=9, days_fwd=45):
+def refresh(days_back: int = 9, days_fwd: int = 45) -> str:
     """지난 days_back일 ~ 향후 days_fwd일 HIGH 지표를 주 단위로 받아 병합 저장."""
     now = datetime.now(timezone.utc)
     start = (now - timedelta(days=days_back)).replace(hour=0, minute=0, second=0, microsecond=0)
@@ -67,11 +73,10 @@ def refresh(days_back=9, days_fwd=45):
         url = API.format(a=cur.strftime("%Y-%m-%dT%H:%M:%SZ"),
                          b=nxt.strftime("%Y-%m-%dT%H:%M:%SZ"))
         try:
-            r = requests.get(url, headers=HDR, timeout=20)
-            r.raise_for_status()
+            r = netutil.get(url, headers=HDR, timeout=20)
             items = r.json()
         except Exception as e:  # noqa
-            print(f"[econ] fetch 실패 {cur.date()}~{nxt.date()}: {e}")
+            log.warning(f"[econ] fetch 실패 {cur.date()}~{nxt.date()}: {e}")
             cur = nxt
             continue
         for it in items:
@@ -98,4 +103,6 @@ def refresh(days_back=9, days_fwd=45):
 
 
 if __name__ == "__main__":
+    from settings import configure_logging
+    configure_logging()
     print(refresh())

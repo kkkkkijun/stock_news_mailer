@@ -193,6 +193,8 @@ def stats(path=DB_PATH):
 
 if __name__ == "__main__":
     import sys
+    from settings import configure_logging
+    configure_logging()
     try:
         sys.stdout.reconfigure(encoding="utf-8")
     except Exception:

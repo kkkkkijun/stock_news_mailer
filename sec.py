@@ -4,13 +4,17 @@
 입력: SEC EDGAR 공개 API(company_tickers.json, submissions, Archives 문서)
 출력: 종목별 CIK, 최근 실적 8-K(Item 2.02) 보도자료 본문(dict) 또는 None
 실행: 별도 실행 없음 — earnings.py/fundamentals.py가 import해서 사용
-관련: settings.py, earnings.py, fundamentals.py
+관련: settings.py, earnings.py, fundamentals.py, netutil.py
 """
+from __future__ import annotations
+
+import logging
 import re
 
-import requests
-
+import netutil
 from settings import KST
+
+log = logging.getLogger(__name__)
 
 # =========================================================
 # 실적 보고서용 SEC 접근 헬퍼
@@ -20,19 +24,20 @@ _SEC_UA = {"User-Agent": "stock-news-mailer research (contact: tjrlwns93@ermore.
 _CIK_CACHE = None
 
 
-def _sec_cik(sym):
+def _sec_cik(sym: str) -> str | None:
     global _CIK_CACHE
     if _CIK_CACHE is None:
         try:
-            ct = requests.get("https://www.sec.gov/files/company_tickers.json",
-                              headers=_SEC_UA, timeout=15).json()
+            ct = netutil.get_json("https://www.sec.gov/files/company_tickers.json",
+                                  headers=_SEC_UA, timeout=15)
             _CIK_CACHE = {v["ticker"]: str(v["cik_str"]).zfill(10) for v in ct.values()}
-        except Exception:
+        except Exception as e:
+            log.warning("SEC CIK 목록 조회 실패: %s", e)
             _CIK_CACHE = {}
     return _CIK_CACHE.get(sym)
 
 
-def _sec_8k_press(sym):
+def _sec_8k_press(sym: str) -> dict | None:
     """최근 실적 8-K(Item 2.02)의 보도자료 원문 텍스트 + 메타. 실패 시 None."""
     import re
     import html as _html
@@ -40,8 +45,8 @@ def _sec_8k_press(sym):
     if not cik:
         return None
     try:
-        rec = requests.get(f"https://data.sec.gov/submissions/CIK{cik}.json",
-                           headers=_SEC_UA, timeout=15).json()["filings"]["recent"]
+        rec = netutil.get_json(f"https://data.sec.gov/submissions/CIK{cik}.json",
+                               headers=_SEC_UA, timeout=15)["filings"]["recent"]
         acc = accept = None
         for form, a, items, adt in zip(rec["form"], rec["accessionNumber"],
                                        rec["items"], rec["acceptanceDateTime"]):
@@ -55,14 +60,15 @@ def _sec_8k_press(sym):
         # 문서 목록: index.json(타입·크기) 우선, 실패 시 디렉터리 HTML 스크랩.
         htms = []
         try:
-            for it in requests.get(base + "/index.json", headers=_SEC_UA,
-                                   timeout=15).json()["directory"]["item"]:
+            for it in netutil.get_json(base + "/index.json", headers=_SEC_UA,
+                                       timeout=15)["directory"]["item"]:
                 n = it.get("name", "")
                 if n.lower().endswith((".htm", ".html")):
                     htms.append((n, (it.get("type") or ""), int(it.get("size") or 0)))
-        except Exception:
+        except Exception as e:
+            log.warning("[sec] %s index.json 실패, 디렉터리 스크랩으로 대체: %s", sym, e)
             for n in re.findall(r'href="([^"]+\.html?)"',
-                                requests.get(base + "/", headers=_SEC_UA, timeout=15).text):
+                                netutil.get(base + "/", headers=_SEC_UA, timeout=15).text):
                 htms.append((n.split("/")[-1], "", 0))
         pr = None
         for n, ty, _sz in htms:                       # 1) EX-99* 타입
@@ -82,14 +88,15 @@ def _sec_8k_press(sym):
         if not pr:
             return None
         url = base + "/" + pr
-        raw = requests.get(url, headers=_SEC_UA, timeout=15).text
+        raw = netutil.get(url, headers=_SEC_UA, timeout=15).text
         text = _html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw))).strip()
         return {"text": text[:7000], "url": url, "acc": acc, "accept": accept}
-    except Exception:
+    except Exception as e:
+        log.warning("[sec] %s 8-K 보도자료 조회 실패: %s", sym, e)
         return None
 
 
-def _report_kdate(accept):
+def _report_kdate(accept: str) -> tuple[str, str]:
     """8-K 접수시각(ET ISO) → KST (yymmdd, YYYY-MM-DD)."""
     from datetime import datetime as _dt
     for s in (accept, re.sub(r"\.\d+", "", accept or "")):
