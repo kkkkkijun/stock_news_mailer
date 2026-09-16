@@ -17,9 +17,14 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CORE__FERNET_KEY: ''
-    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'false'
+    # Shared secret so webserver and scheduler agree on session signing.
+    AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW__WEBSERVER__SECRET_KEY:?set a random AIRFLOW__WEBSERVER__SECRET_KEY in .env}
     PIPELINE_REPO: /opt/airflow/repo
     PYTHONPATH: /opt/airflow/repo
+    # Admin login is created by airflow-init from these (NO default password).
+    AIRFLOW_ADMIN_USER: ${AIRFLOW_ADMIN_USER:-admin}
+    AIRFLOW_ADMIN_PASSWORD: ${AIRFLOW_ADMIN_PASSWORD:?set a strong AIRFLOW_ADMIN_PASSWORD in .env before exposing the UI}
     OPENAI_API_KEY: ${OPENAI_API_KEY}
     VAPID_PRIVATE_KEY: ${VAPID_PRIVATE_KEY}
     VAPID_SUBJECT: ${VAPID_SUBJECT}
@@ -59,8 +64,8 @@ services:
       - |
         airflow db migrate
         airflow users create \
-          --username admin \
-          --password admin \
+          --username "$${AIRFLOW_ADMIN_USER}" \
+          --password "$${AIRFLOW_ADMIN_PASSWORD}" \
           --firstname admin \
           --lastname admin \
           --role Admin \

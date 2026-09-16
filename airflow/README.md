@@ -41,15 +41,37 @@ daily_briefing DAG은 위 그래프대로 하루 두 번(06:00, 17:00 KST) 돈�
 | `daily_briefing` | 매일 06:00, 17:00 (`0 6,17 * * *`) | fetch_quotes, build_earnings, build_prices, build_reports, build_fundamentals, build_qualitative, refresh_econ, build_news, publish, send_push |
 | `map_refresh` | 매시 정각 (`0 * * * *`) | rwa_refresh, whales_refresh |
 
-## 실행 방법
+## 실행 방법 A — 외부 접속 (GitHub Codespaces, 무료·관리자 불필요, 추천)
+
+로컬에 Docker/WSL/관리자 권한이 없어도 되고, 공개 HTTPS URL로 외부에서 접속된다.
+회사/개인 PC를 인터넷에 여는 게 아니라 **GitHub 클라우드 컨테이너**만 열린다.
+
+1. 저장소 페이지 → **Code ▸ Codespaces ▸ Create codespace on main**.
+2. 컨테이너가 뜨면 `.devcontainer/postCreate.sh`가 자동으로 `airflow/.env`를
+   임의 시크릿·강한 admin 비밀번호로 생성하고 `docker compose up -d`까지 실행한다.
+   터미널 로그에 **admin 비밀번호가 1회 출력**되니 저장해 둘 것.
+3. 아래 **PORTS** 탭에서 포트 **8080** 우클릭 → **Port Visibility ▸ Public**.
+4. 그 포트의 URL을 열어 `admin` + (2에서 받은 비번)으로 로그인.
+5. DAG 목록에서 `daily_briefing`·`map_refresh`를 Unpause.
+
+> 태스크가 실제로 뉴스·시세를 처리하게 하려면 `airflow/.env`의 `OPENAI_API_KEY`
+> 등을 실제 값으로 바꾸고 `docker compose up -d`를 다시 실행한다. 키가 없어도
+> UI·DAG 구조는 정상적으로 뜬다.
+
+## 실행 방법 B — 로컬 (Docker 필요)
+
+로컬에 Docker Desktop(관리자 권한·WSL2 필요)이 있는 경우:
 
 ```bash
-cp .env.example .env      # OPENAI_API_KEY 등 값 채우기
+cp .env.template .env      # AIRFLOW_ADMIN_PASSWORD, SECRET_KEY, OPENAI_API_KEY 채우기
 docker compose up -d
 ```
 
-브라우저에서 http://localhost:8080 접속 (계정: `admin` / `admin`), DAG 목록에서
-`daily_briefing`과 `map_refresh` 두 개를 켠다(Unpause).
+브라우저에서 http://localhost:8080 접속, `.env`에 설정한 계정으로 로그인.
+
+> ⚠️ Airflow는 임의 파이썬 코드를 실행한다. UI를 외부에 노출한다면 **약한 비밀번호
+> 금지** — `.env`의 `AIRFLOW_ADMIN_PASSWORD`를 반드시 길고 임의의 값으로. 개인 PC를
+> 포트포워딩으로 직접 여는 방식은 권장하지 않는다(방법 A 사용).
 
 ## 참고
 
