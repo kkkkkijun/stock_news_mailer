@@ -34,9 +34,9 @@ def _yahoo_earn_session():
     s = requests.Session()
     s.headers.update({"User-Agent": _QUOTE_UA["User-Agent"]})
     try:
-        netutil.get("https://fc.yahoo.com", timeout=8, session=s)
+        s.get("https://fc.yahoo.com", timeout=8)  # 의도된 404(쿠키 설정용) → 상태 무시
     except Exception as e:
-        log.warning("[earnings] Yahoo 쿠키 워밍업 실패(계속 진행): %s", e)
+        log.debug("[earnings] Yahoo 쿠키 워밍업 예외(계속 진행): %s", e)
     crumb = netutil.get("https://query1.finance.yahoo.com/v1/test/getcrumb",
                         timeout=8, session=s).text.strip()
     return s, crumb
