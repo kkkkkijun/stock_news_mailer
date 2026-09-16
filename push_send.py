@@ -51,7 +51,7 @@ def send_push(title, body, url=None):
     if not subs:
         print("[push] 구독자 없음")
         return 0
-    claim = {"sub": os.getenv("VAPID_SUBJECT", "mailto:tjrlwns93@ermore.co.kr")}
+    claim = {"sub": (os.getenv("VAPID_SUBJECT") or "mailto:admin@example.com")}
     payload = json.dumps({"title": title, "body": body, "url": url or SITE})
 
     tf = tempfile.NamedTemporaryFile("w", suffix=".pem", delete=False, encoding="utf-8")

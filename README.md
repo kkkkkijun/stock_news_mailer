@@ -109,8 +109,9 @@ flowchart LR
 | `whales.py` | Hyperliquid leaderboard · clearinghouseState | 상위 90 지갑 선별(자산+누적 PnL) → 코인별 롱/숏/레버 집계 | `docs/whales.json` |
 | `rwa.py` | Ostium 서브그래프(Arbitrum) | 1,000건 페이지네이션, `USD = collateral/1e6 × leverage/100`, 카테고리 분류(주식·지수·원자재·암호화폐), 외환·채권 제외 | `docs/rwamap.json` |
 | `publish_site.py` | `data/*` | 서버사이드 HTML 렌더(UTC→KST, 탭·아카이브·일정·지도·성장주) | `docs/**/*.html` |
-| `store.py` | `data/*.txt`, `*.quotes.json` | 브리핑 원문을 SQLite로 색인하는 **파생 인덱스**(원 파이프라인 무변경) | `data/briefings.db` |
+| `tools/store.py` | `data/*.txt`, `*.quotes.json` | 브리핑 원문을 SQLite로 색인하는 **파생 인덱스**(원 파이프라인과 무관하게 선택 실행) | `data/briefings.db` |
 | `push_send.py` | Firestore `push_subs`, VAPID 키 | Web Push 발송, 404/410 구독 자동 정리 | 폰 알림 + 배지 |
+| `notify.py` | `main.py`의 발행 결과 | 브리핑 알림: 앱 푸시(항상) + 이메일(`SEND_EMAIL=1`일 때만, 선택) | 푸시 알림, (선택) 이메일 |
 | `docs/goal-app.js` | Firestore(사용자별) | 입출금·매매 기록, **FIFO 로트 매칭**으로 실현손익·승률·손익비·평균보유일, 현금 비중 | 내 목표 탭 |
 
 ### 스케줄링 신뢰성
@@ -212,7 +213,7 @@ python whales.py refresh       # Hyperliquid 고래 스냅샷
 python econ_results.py         # 경제지표 실제/예상/이전 수집
 ```
 
-GitHub Actions에서는 위 명령을 `send_email.yml`(브리핑) · `earnings-refresh.yml`(실적) · `map-refresh.yml`(지도)이 나눠 실행하고, 변경된 `docs/`·`data/`를 봇 계정으로 커밋합니다. 내 목표 탭은 Firebase 프로젝트(Auth + Firestore, 사용자별 보안 규칙)가 필요합니다.
+GitHub Actions에서는 위 명령을 `briefing.yml`(브리핑) · `earnings-refresh.yml`(실적) · `map-refresh.yml`(지도)이 나눠 실행하고, 변경된 `docs/`·`data/`를 봇 계정으로 커밋합니다. 내 목표 탭은 Firebase 프로젝트(Auth + Firestore, 사용자별 보안 규칙)가 필요합니다.
 
 ## 저장소 구조
 
@@ -227,12 +228,14 @@ GitHub Actions에서는 위 명령을 `send_email.yml`(브리핑) · `earnings-r
 ├── econ_results.py         # FXStreet 지표 결과
 ├── whales.py / rwa.py      # 온체인 포지션 집계
 ├── publish_site.py         # 정적 HTML 렌더
-├── store.py                # SQLite 파생 인덱스
 ├── push_send.py            # Web Push
-├── scheduler.py            # (선택) 상시 서버용 APScheduler
+├── notify.py               # 알림: 앱 푸시 + (선택) 이메일
 ├── data/                   # 브리핑 원문·시세·재무·지표 (수집 결과)
 ├── docs/                   # GitHub Pages 산출물 · PWA · goal-app.js · flags/
-└── .github/workflows/      # send_email · earnings-refresh · map-refresh
+├── tools/                  # 선택 실행 도구 (tools/store.py: SQLite 파생 인덱스)
+├── tests/                  # 골든 렌더 등 회귀 테스트
+├── legacy/                 # 구버전 참고용, 미서빙
+└── .github/workflows/      # briefing · earnings-refresh · map-refresh
 ```
 
 ## 로드맵

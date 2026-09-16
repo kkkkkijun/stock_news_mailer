@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
 import time
-import smtplib
 import html
 import re
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 from urllib.parse import quote
 
@@ -38,11 +35,6 @@ crypto_tickers = os.getenv("CRYPTO_TICKERS", "BTC-USD,ETH-USD,SOL-USD,BMNR").spl
 stock_tickers = [t.strip() for t in stock_tickers if t.strip()]
 crypto_tickers = [t.strip() for t in crypto_tickers if t.strip()]
 
-# 수신자 (env로 override 가능)
-recipients = os.getenv(
-    "EMAIL_RECIPIENTS", "seo930714@gmail.com,mjikshouse@naver.com"
-).split(",")
-recipients = [r.strip() for r in recipients if r.strip()]
 
 # 티커별 최대 뉴스 개수
 NEWS_PER_TICKER = int(os.getenv("NEWS_PER_TICKER", "3"))
@@ -326,36 +318,6 @@ def format_fear_greed_section():
         f"{line(stock)}\n"
         f"{line(crypto)}\n"
     )
-
-
-# =========================================================
-# 4) 이메일 발송
-# =========================================================
-def send_email(body, subject=None):
-    # 발송 시각 표기는 항상 KST(timezone-aware)로 고정
-    now = datetime.now(KST)
-    hour = now.hour
-
-    if subject is None:
-        # 실제 스케줄(07:37 / 17:13) 기준으로 오전/오후 판정
-        time_tag = "1차 (오전)" if hour < 12 else "2차 (오후)"
-        # %-m/%-d 는 리눅스 전용이라 OS 무관하게 직접 조합
-        subject = f"[{now.month}/{now.day} 뉴스 요약 - {time_tag}]"
-
-    email_user = os.getenv("EMAIL_USER")
-    email_pass = os.getenv("EMAIL_PASS")
-    if not email_user or not email_pass:
-        raise RuntimeError("EMAIL_USER / EMAIL_PASS 환경변수가 설정되지 않았습니다.")
-
-    msg = MIMEMultipart()
-    msg["Subject"] = subject
-    msg["From"] = email_user
-    msg["To"] = ", ".join(recipients)
-    msg.attach(MIMEText(body, "plain", "utf-8"))
-
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-        server.login(email_user, email_pass)
-        server.sendmail(email_user, recipients, msg.as_string())
 
 
 # =========================================================
@@ -1036,24 +998,10 @@ if __name__ == "__main__":
             "SITE_URL", "https://kkkkkijun.github.io/stock_news_mailer/")
         now = datetime.now(KST)
         tag = "오전" if now.hour < 12 else "오후"
-
-        # 앱 푸시 — 이메일 대체. 구독자·VAPID 키 없으면 조용히 건너뜀.
-        try:
-            from push_send import send_push
-            send_push(f"{now.month}/{now.day} {tag} 브리핑",
-                      "새 뉴스 브리핑이 준비됐어요. 눌러서 확인하세요.",
-                      url=site)
-        except Exception as pe:
-            print(f"[push] 발송 실패: {pe}")
-
-        # 이메일 알림은 기본 꺼짐(앱 푸시로 대체). 다시 켜려면 SEND_EMAIL=1.
-        # 메일이 오지 않으면 파이프라인 문제 신호로 쓰고 싶을 때 사용.
-        if os.getenv("SEND_EMAIL", "0") == "1":
-            notice = (
-                f"{now.month}월 {now.day}일 {tag} 뉴스 브리핑이 준비됐습니다.\n\n"
-                f"{site}\n\n"
-                "경제 · 해외주식 · 코인 · 부동산 브리핑을 사이트에서 확인하세요.\n"
-                "지난 브리핑은 사이트의 '지난 브리핑'에서 날짜별로 볼 수 있습니다.\n")
-            send_email(notice,
-                       subject=f"[{now.month}/{now.day} {tag}] "
-                               "뉴스 브리핑이 준비됐습니다")
+        notice = (
+            f"{now.month}월 {now.day}일 {tag} 뉴스 브리핑이 준비됐습니다.\n\n"
+            f"{site}\n\n"
+            "경제 · 해외주식 · 코인 · 부동산 브리핑을 사이트에서 확인하세요.\n"
+            "지난 브리핑은 사이트의 '지난 브리핑'에서 날짜별로 볼 수 있습니다.\n")
+        from notify import notify_briefing
+        notify_briefing(now, site, notice)

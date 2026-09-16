@@ -1,4 +1,4 @@
-name: Daily News Briefing (Email + Site)
+name: Daily Briefing (Site + Push)
 
 on:
   workflow_dispatch:
@@ -16,9 +16,9 @@ jobs:
   send-news:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
       - name: Install dependencies
@@ -27,10 +27,11 @@ jobs:
       - name: Run script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # SEND_EMAIL=1 일 때만 사용(기본 꺼짐)
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
-          VAPID_SUBJECT: 'mailto:tjrlwns93@ermore.co.kr'
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
           PUBLISH_SITE: '1'
           SEND_EMAIL: '0'
           SITE_URL: 'https://kkkkkijun.github.io/stock_news_mailer/'

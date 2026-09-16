@@ -11,12 +11,18 @@
   git 에 커밋하지 않는다(.gitignore). 원문 텍스트가 항상 진실의 원천.
 - publish_site 의 파서(_split_sections/_parse_part)를 재사용해 중복 로직 없음.
 
-사용
-  python store.py reindex          # data/*.txt 전체를 DB로 재색인
-  python store.py search 금리       # 헤드라인/요약 검색
-  python store.py stats            # 색인 현황
+사용(저장소 루트에서 실행)
+  python tools/store.py reindex          # data/*.txt 전체를 DB로 재색인
+  python tools/store.py search 금리       # 헤드라인/요약 검색
+  python tools/store.py stats            # 색인 현황
 """
 import os
+import sys
+
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _ROOT not in sys.path:
+    sys.path.insert(0, _ROOT)
+
 import re
 import sqlite3
 
@@ -201,4 +207,4 @@ if __name__ == "__main__":
         for name, c in s["by_part"]:
             print(f"  {name}: {c}")
     else:
-        print("사용법: python store.py [reindex | search <검색어> | stats]")
+        print("사용법: python tools/store.py [reindex | search <검색어> | stats]")
