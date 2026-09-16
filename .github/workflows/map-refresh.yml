@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install deps
-        run: pip install requests
+        run: pip install -r requirements.txt
       - name: Snapshot RWA + whales
         run: |
           python rwa.py refresh
