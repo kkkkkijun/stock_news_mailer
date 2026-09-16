@@ -529,5 +529,50 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"c802a3fb-fac4-49e4-8082-f9e8445120f3": {
+"name": "BoJ Interest Rate Decision",
+"dt": "2026-10-30T03:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"240a5d56-e79c-4889-a204-2ceb275ee9bd": {
+"name": "BoJ Monetary Policy Statement",
+"dt": "2026-10-30T03:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"1f6e45de-03bd-457d-89d8-72142aa32639": {
+"name": "BoJ Press Conference",
+"dt": "2026-10-30T06:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"2241a1cd-eb29-4740-a28d-fc2b8cc813ef": {
+"name": "Core Personal Consumption Expenditures - Price Index (MoM)",
+"dt": "2026-10-30T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"401e58cb-1252-4e02-9c2a-144d3ea169e1": {
+"name": "Core Personal Consumption Expenditures - Price Index (YoY)",
+"dt": "2026-10-30T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
