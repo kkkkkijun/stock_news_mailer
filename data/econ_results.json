@@ -101,28 +101,28 @@
 "15c93b10-4ad3-473c-84f4-d7e41714de13": {
 "name": "Retail Sales (MoM)",
 "dt": "2026-09-16T12:30:00Z",
-"act": null,
+"act": "1.2%",
 "cons": "0.8%",
-"prev": "-0.6%",
-"act_n": null,
+"prev": "-0.5%",
+"act_n": 1.2,
 "cons_n": 0.8
 },
 "5f8162f8-16b9-401e-8820-271aee0d9539": {
 "name": "Retail Sales Control Group",
 "dt": "2026-09-16T12:30:00Z",
-"act": null,
+"act": "1.4%",
 "cons": null,
 "prev": "-0.4%",
-"act_n": null,
+"act_n": 1.4,
 "cons_n": null
 },
 "2f1b6a4a-ff1e-428b-b8ad-d8521ebc870f": {
 "name": "Fed Interest Rate Decision",
 "dt": "2026-09-16T18:00:00Z",
-"act": null,
+"act": "4%",
 "cons": "4%",
 "prev": "3.75%",
-"act_n": null,
+"act_n": 4.0,
 "cons_n": 4.0
 },
 "6058ca5b-901f-46b7-bfd9-657446035047": {
@@ -146,46 +146,46 @@
 "10532ed2-469b-48d2-97e8-0491e6a6c191": {
 "name": "Interest Rate Projections - 1st year",
 "dt": "2026-09-16T18:00:00Z",
-"act": null,
+"act": "4.1%",
 "cons": null,
 "prev": "3.6%",
-"act_n": null,
+"act_n": 4.1,
 "cons_n": null
 },
 "e844484f-c3a0-4354-a254-d392dbf57d7e": {
 "name": "Interest Rate Projections - 2nd year",
 "dt": "2026-09-16T18:00:00Z",
-"act": null,
+"act": "3.9%",
 "cons": null,
 "prev": "3.4%",
-"act_n": null,
+"act_n": 3.9,
 "cons_n": null
 },
 "a0e42f03-df7d-478a-a5c4-fc2a27de7320": {
 "name": "Interest Rate Projections - 3rd year",
 "dt": "2026-09-16T18:00:00Z",
-"act": null,
+"act": "3.6%",
 "cons": null,
 "prev": "3.1%",
-"act_n": null,
+"act_n": 3.6,
 "cons_n": null
 },
 "9b41c2fd-eb89-4863-9310-fa2f4bd0a28b": {
 "name": "Interest Rate Projections - Current",
 "dt": "2026-09-16T18:00:00Z",
-"act": null,
+"act": "4.1%",
 "cons": null,
 "prev": "3.8%",
-"act_n": null,
+"act_n": 4.1,
 "cons_n": null
 },
 "6c1d5e6e-d2d5-4cbd-bbd8-f4191b45c93b": {
 "name": "Interest Rate Projections - Longer",
 "dt": "2026-09-16T18:00:00Z",
-"act": null,
+"act": "3.2%",
 "cons": null,
 "prev": "3.1%",
-"act_n": null,
+"act_n": 3.2,
 "cons_n": null
 },
 "f560c035-6567-4131-bd62-1e686a974676": {
@@ -409,7 +409,7 @@
 "dt": "2026-10-15T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "1.2%",
 "act_n": null,
 "cons_n": null
 },
@@ -418,7 +418,7 @@
 "dt": "2026-10-15T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "1.4%",
 "act_n": null,
 "cons_n": null
 },
@@ -472,7 +472,7 @@
 "dt": "2026-10-28T18:00:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "4%",
 "act_n": null,
 "cons_n": null
 },
