@@ -1,5 +1,10 @@
 """지도 탭 — Ostium(온체인 RWA 파생) 서브그래프 기반.
 암호화폐/주식/지수/원자재 4개 카테고리 자산별 롱·숏·레버 집계 → docs/rwamap.json.
+
+입력: Ostium 서브그래프(Arbitrum) API
+출력: docs/rwamap.json
+실행: python rwa.py refresh (docs/rwamap.json 갱신) 또는 python rwa.py (테스트용 rwamap_test.json 생성)
+관련: main.py, publish_site.py
 """
 import json
 from datetime import datetime, timezone, timedelta

@@ -11,6 +11,11 @@ OpenAI로 한국어 번역·요약한다. main.py build_body() 가 '💬 트럼�
 자체 완결형: feedparser / openai(news_brief 재사용) / pytz.
 환경변수: TRUMP_MAX_POSTS(요약 대상 최대 게시물, 기본 25),
           TRUMP_TOP_N(노출 발언 수, 기본 6), TRUMP_MAX_AGE_HOURS(기본 24)
+
+입력: trumpstruth.org(Truth Social 공개 미러) RSS, OpenAI API
+출력: plain-text 브리핑 섹션 문자열(build_trump_section() 반환값)
+실행: python trump_briefing.py (섹션을 콘솔에 출력, 단독 테스트용). 평소엔 main.py의 build_body()가 호출
+관련: news_brief.py, main.py
 """
 import os
 import re

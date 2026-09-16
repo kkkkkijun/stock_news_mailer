@@ -16,6 +16,11 @@ topic_briefing.py(경제·코인시장)와 realestate_briefing.py(부동산)가 
   → dedupe_picks() 로 코드 레벨에서 한 번 더 거른다.
 
 자체 완결형: feedparser / openai / pytz (기존 requirements) 만 사용.
+
+입력: Google 뉴스 RSS + 언론사 RSS(topic_briefing.py/realestate_briefing.py가 넘기는 쿼리·피드·키워드), OpenAI API
+출력: plain-text 브리핑 섹션 문자열(build_briefing() 반환값)
+실행: 모듈로만 사용(topic_briefing.py, realestate_briefing.py 등에서 호출)
+관련: topic_briefing.py, realestate_briefing.py, main.py
 """
 import os
 import re

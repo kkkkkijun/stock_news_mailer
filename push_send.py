@@ -1,6 +1,12 @@
 """새 브리핑 발행 시 구독자에게 Web Push 전송(→ 앱 배지 + 팝업).
 구독정보는 Firestore(push_subs)에서 REST로 읽고, 죽은 구독은 정리한다.
-VAPID 비공개키는 환경변수(GitHub Secret) VAPID_PRIVATE_KEY(PEM)에서 읽는다."""
+VAPID 비공개키는 환경변수(GitHub Secret) VAPID_PRIVATE_KEY(PEM)에서 읽는다.
+
+입력: Firestore push_subs 컬렉션(REST), 환경변수 VAPID_PRIVATE_KEY/VAPID_SUBJECT
+출력: 구독자 폰의 Web Push 알림(반환값은 전송 성공 건수), 죽은 구독은 Firestore에서 삭제
+실행: python push_send.py [제목] [본문] (테스트 발송). 평소엔 notify.py가 send_push()를 호출
+관련: notify.py, main.py
+"""
 import json
 import os
 import tempfile

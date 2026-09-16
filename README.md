@@ -15,43 +15,134 @@
 ---
 
 ## 목차
-1. [왜 만들었나](#왜-만들었나)
-2. [한눈에 보는 숫자](#한눈에-보는-숫자)
-3. [아키텍처](#아키텍처)
-4. [데이터 파이프라인 (Data Engineering)](#데이터-파이프라인-data-engineering)
-5. [분석 로직 (Data Analysis)](#분석-로직-data-analysis)
-6. [AX: LLM을 어디에, 어떻게 썼나](#ax-llm을-어디에-어떻게-썼나)
-7. [운영 중 겪은 문제와 해결](#운영-중-겪은-문제와-해결)
-8. [기술 스택](#기술-스택)
-9. [실행 방법](#실행-방법)
-10. [저장소 구조](#저장소-구조)
-11. [로드맵](#로드맵)
+1. [1분 요약](#1분-요약)
+2. [폴더 지도](#폴더-지도)
+3. [로컬에서 돌려보기](#로컬에서-돌려보기)
+4. [어디를 고치면 무엇이 바뀌나](#어디를-고치면-무엇이-바뀌나)
+5. [동작 흐름 한 장 (아키텍처)](#동작-흐름-한-장-아키텍처)
+6. [데이터 파이프라인 (Data Engineering)](#데이터-파이프라인-data-engineering)
+7. [분석 로직 (Data Analysis)](#분석-로직-data-analysis)
+8. [AX: LLM을 어디에, 어떻게 썼나](#ax-llm을-어디에-어떻게-썼나)
+9. [운영 중 겪은 문제와 해결](#운영-중-겪은-문제와-해결)
+10. [PWA · 알림](#pwa--알림)
+11. [기술 스택](#기술-스택)
+12. [저장소 구조](#저장소-구조)
+13. [로드맵](#로드맵)
+14. [검증 방법](#검증-방법)
 
 ---
 
-## 왜 만들었나
+## 1분 요약
 
-매일 아침 뉴스·실적·경제지표·온체인 포지션을 여러 사이트에서 따로 확인하는 시간을 없애고 싶었습니다.
-요구사항은 세 가지였습니다.
+매일 아침 뉴스·실적·경제지표·온체인 포지션을 여러 사이트에서 따로 확인하는 시간을 없애려고 만들었습니다. 처음엔 이메일 발송 스크립트 하나였고, 운영하면서 정적 사이트 → PWA → 실적/재무 분석 → 온체인 포지션 지도 → 경제지표 결과 반영으로 넓어졌습니다.
 
-- **자동**: 사람이 손대지 않아도 정시에 수집 → 요약 → 발행 → 알림까지 끝난다.
-- **저비용**: 상시 서버 없이, 유료 API 최소화. (실제 월 $2~6)
-- **근거 유지**: LLM 요약이라도 원문 링크·수치 출처를 잃지 않는다.
+- **무엇을 하나**: 뉴스·실적·경제지표·온체인 포지션을 수집해 OpenAI로 요약하고, 결과를 `docs/`에 정적 페이지로 발행합니다.
+- **언제 도나**: 뉴스 브리핑 2회/일(06:30, 17:00 KST) · 실적 리프레시 4회/일 · 포지션 지도 1회/시간. 트리거는 cron-job.org → GitHub `repository_dispatch`.
+- **얼마 드나**: 월 약 $2~6(OpenAI 요약·번역·리포트 생성만 유료, 나머지 데이터 소스 15개는 전부 무료).
+- **산출물은 어디**: `docs/`(GitHub Pages로 서빙되는 정적 HTML/JSON). 브리핑 원문은 `data/`에 회차별로 누적됩니다.
+- **규모**: Python 약 5,800줄 · JavaScript 약 850줄.
 
-처음엔 이메일 발송 스크립트 하나였고, 운영하면서 정적 사이트 → PWA → 실적/재무 분석 → 온체인 포지션 지도 → 경제지표 결과 반영으로 확장했습니다.
+## 폴더 지도
 
-## 한눈에 보는 숫자
+| 경로 | 역할 | 누가 건드리나 |
+|---|---|---|
+| `main.py` | 오케스트레이터. 수집 → 요약 → 발행 → 푸시 흐름 전체와 `refresh` 모드 | 사람 |
+| `news_brief.py` + `topic_briefing.py`/`realestate_briefing.py`/`trump_briefing.py` | 뉴스 수집·요약 공통 엔진(`news_brief.py`) + 주제별 설정 3종(쿼리·피드·문구만 다름) | 사람 |
+| `fundamentals.py` | SEC XBRL 기반 성장주 스코어 산출, 10-K 정성 분석 | 사람 |
+| `econ_results.py` | FXStreet 경제지표 실제/예상/이전 수집 | 사람 |
+| `rwa.py` | Ostium 온체인 포지션(주식·지수·원자재) 집계 | 사람 |
+| `whales.py` | Hyperliquid 고래 포지션 집계 | 사람 |
+| `publish_site.py` | `data/*`를 읽어 `docs/` 정적 HTML로 렌더 | 사람 |
+| `notify.py` | 브리핑 완료 알림(앱 푸시 + 선택 이메일) | 사람 |
+| `push_send.py` | Firestore 구독자에게 Web Push 발송 | 사람 |
+| `data/` | 수집 원문(`*.txt`)·시세(`*.quotes.json`)·재무(`fundamentals.json`)·경제지표(`econ_results.json`) | **생성물**, 봇이 커밋(직접 편집하지 않음). 단 `data/econ/YYYY-MM.csv`(캘린더 원본)는 사람이 월별로 추가 |
+| `docs/` | GitHub Pages 산출물(`index.html`, `whales.json`, `rwamap.json`, `prices.json` 등) + 수작업 자산(`goal-app.js`, `push.js`, `sw.js`, `manifest.webmanifest`, `flags/`, `assets/`) | 산출물은 **생성물**(봇이 커밋, 직접 편집하지 않음). `goal-app.js`·`push.js`·`sw.js`·`manifest.webmanifest`·`flags/`·`assets/`만 사람이 직접 관리 |
+| `docs/archive/` | 회차 스냅샷(`YYYY-MM-DD-am.html` 등)과 날짜 캘린더 | **생성물**, 봇이 커밋(직접 편집하지 않음) |
+| `.github/workflows/` | `briefing.yml`(뉴스 브리핑) · `earnings-refresh.yml`(실적) · `map-refresh.yml`(지도) | 사람 |
+| `airflow/` | 같은 파이프라인을 재현한 선택적 오케스트레이션 레이어(로컬/Codespaces 프로토타입, 운영에는 미사용) | 사람 |
+| `tools/` | 선택 실행 보조 도구(`tools/store.py`: 브리핑 SQLite 파생 인덱스) | 사람 |
+| `tests/` | 골든 렌더 등 회귀 테스트(`tests/golden_render.py`) | 사람 |
+| `legacy/` | 대체된 구버전 구현, 참고용으로만 보관하며 서빙되지 않음 | 아무도 건드리지 않음(참고용) |
+| `.env.template` | 필요한 환경변수와 기본값·설명을 모아둔 템플릿(실제 값은 로컬 `.env`나 GitHub Secrets에) | 사람 |
 
-| 항목 | 값 |
+## 로컬에서 돌려보기
+
+```bash
+pip install -r requirements.txt
+cp .env.template .env        # 최소한 OPENAI_API_KEY만 채우면 동작
+DRY_RUN=1 python main.py     # 발송·발행 없이 본문만 콘솔에 출력해 확인
+```
+
+그 외 자주 쓰는 명령:
+
+```bash
+python main.py refresh                    # LLM 없이 실적·시세·보고서만 갱신 후 재렌더
+python rwa.py refresh                     # 주식·지수·원자재 포지션 스냅샷
+python whales.py refresh                  # Hyperliquid 고래 스냅샷
+python econ_results.py                    # 경제지표 실제/예상/이전 수집
+python tools/store.py stats               # 브리핑 SQLite 색인 현황
+python tests/golden_render.py <out_dir>   # 골든 렌더(회귀 확인용, 아래 "검증 방법" 참고)
+```
+
+환경변수(`.env.template`과 동기화된 전체 목록)
+
+**필수**
+
+| 변수 | 용도 | 기본값 |
+|---|---|---|
+| `OPENAI_API_KEY` | 뉴스 요약·정성 분석 등에 사용 | 없음(반드시 설정) |
+
+**알림 (앱 푸시 · 선택 이메일)**
+
+| 변수 | 용도 | 기본값 |
+|---|---|---|
+| `VAPID_PRIVATE_KEY` | 웹 푸시용 VAPID 비공개키(PEM) | 없음(없으면 푸시는 조용히 건너뜀) |
+| `VAPID_SUBJECT` | VAPID 클레임의 연락처(`mailto:...`) | `mailto:admin@example.com` |
+| `SITE_URL` | 브리핑 알림에 담을 사이트 URL | `https://kkkkkijun.github.io/stock_news_mailer/` |
+| `SEND_EMAIL` | 1이면 앱 푸시 외에 이메일도 발송(선택) | `0`(꺼짐) |
+| `EMAIL_USER` / `EMAIL_PASS` | 이메일 발신 계정(Gmail)/앱 비밀번호. `SEND_EMAIL=1`일 때만 사용 | 없음 |
+| `EMAIL_RECIPIENTS` | 이메일 수신자(콤마 구분). `SEND_EMAIL=1`일 때만 사용 | `seo930714@gmail.com,mjikshouse@naver.com` |
+
+**파이프라인 옵션**
+
+| 변수 | 용도 | 기본값 |
+|---|---|---|
+| `PUBLISH_SITE` | 웹사이트(`docs/index.html`) 발행 여부, 0이면 건너뜀 | `1` |
+| `DRY_RUN` | 발송/발행 없이 본문만 콘솔 출력(테스트용) | 없음(꺼짐) |
+| `OPENAI_SUMMARY_MODEL` | 요약에 쓰는 OpenAI 모델 | `gpt-4o-mini` |
+| `OPENAI_SUMMARY_MAX_TOKENS` | 요약 응답의 최대 토큰 수 | `500` |
+| `STOCK_TICKERS` | 추적할 주식 티커(콤마 구분) | `NVDA,TSLA,HIMS,RDW,IREN,RKLB` |
+| `CRYPTO_TICKERS` | 추적할 코인 티커(콤마 구분) | `BTC-USD,ETH-USD,SOL-USD,BMNR` |
+| `NEWS_PER_TICKER` | 티커별 최대 뉴스 개수 | `3` |
+| `USE_ARTICLE_BODIES` | 기사 원문 본문을 2단계 요약에 붙일지(1=사용) | `1` |
+| `ARTICLE_BODY_CHARS` | 기사 원문에서 잘라 쓸 최대 글자 수 | `1500` |
+| `ARTICLE_FETCH_TIMEOUT` | 기사 원문 요청 타임아웃(초) | `12` |
+| `REALESTATE_TOP_N` | 부동산 브리핑에 담을 최대 항목 수 | `6` |
+| `REALESTATE_POOL_PER_QUERY` | 부동산 브리핑 쿼리당 후보 풀 크기 | `30` |
+| `TOPIC_TOP_N` | 토픽(경제·코인) 브리핑에 담을 최대 항목 수 | `5` |
+| `TOPIC_POOL_PER_QUERY` | 토픽 브리핑 쿼리당 후보 풀 크기 | `30` |
+| `TRUMP_FEED_URL` | 트럼프 브리핑 RSS 피드 URL | `https://trumpstruth.org/feed` |
+| `TRUMP_MAX_POSTS` | 트럼프 브리핑에서 훑어볼 최대 게시물 수 | `25` |
+| `TRUMP_TOP_N` | 트럼프 브리핑에 담을 최대 항목 수 | `6` |
+| `TRUMP_MAX_AGE_HOURS` | 브리핑에 반영할 게시물의 최대 경과 시간(시간 단위) | `24` |
+| `PIPELINE_REPO` | (Airflow 전용) 파이프라인 저장소 경로 | `/opt/airflow/repo` |
+
+## 어디를 고치면 무엇이 바뀌나
+
+| 하고 싶은 것 | 건드릴 곳 |
 |---|---|
-| 자동 실행 | 뉴스 브리핑 2회/일 · 실적 리프레시 4회/일 · 포지션 지도 1회/시간 |
-| 데이터 소스 | 15개 (RSS 6종, 공개 API 9종) — 전부 무료, 인증키 필요 없는 것 위주 |
-| 유료 구간 | OpenAI `gpt-4o-mini` 요약·번역·리포트 생성만 (월 약 $2~6) |
-| 인프라 | GitHub Actions(실행) + GitHub Pages(호스팅) + Firestore(개인 데이터·푸시 구독) + cron-job.org(정시 트리거) |
-| 코드 | Python 약 5,800줄 · JavaScript 약 850줄 |
-| 산출물 | 정적 HTML/JSON (docs/), 브리핑 원문 아카이브 (data/, 2회/일 누적) |
+| 주식/코인 티커 추가 | `main.py`의 `STOCK_TICKERS`/`CRYPTO_TICKERS` 기본값과 `TICKER_NAMES`; 배지 색은 `publish_site.py`의 `TICKER_COLORS`, 한글명은 `_TICKER_KO` |
+| 경제지표 캘린더 월 추가 | `data/econ/YYYY-MM.csv` 새로 추가; 이벤트명 한글 번역은 `publish_site.py`의 `_ECON_KO` |
+| 지표 노출 국가 변경 | `publish_site.py`의 `_ECON_CCY`(현재 미국·한국·일본만 화이트리스트) |
+| 뉴스 파트/탭 추가 | `publish_site.py`의 `PARTS`, `TABS`, `HERO_PARTS` |
+| 화면 스타일 변경 | `publish_site.py`의 `CSS` |
+| 실적 일정에 종목 추가 | `main.py`의 `EARNINGS_TICKERS`, `_EARN_KO` |
+| 성장주 스코어 가중치 조정 | `fundamentals.py`의 `_axes()` |
+| 브리핑 발행 시각 변경 | cron-job.org의 잡 설정 + (Airflow 레이어를 쓴다면) `airflow/dags/daily_briefing.py`의 `schedule` |
+| 푸시 알림 문구 변경 | `notify.py`의 `notify_briefing()` |
+| 사이트 제목/슬로건/목표일 변경 | `publish_site.py`의 `SITE_TITLE`, `SLOGAN`, `DDAY_TARGET` |
 
-## 아키텍처
+## 동작 흐름 한 장 (아키텍처)
 
 ```mermaid
 flowchart LR
@@ -182,38 +273,11 @@ FIFO 로트 매칭으로 청산 매매를 자동 생성하고 실현손익·승�
 ## PWA · 알림
 - `manifest.webmanifest` + `sw.js`(network-first, 오프라인 시 캐시 폴백)로 홈 화면 설치.
 - iOS 안전영역(`env(safe-area-inset-*)`) 대응.
-- Web Push(VAPID) + Badge API: 브리핑 발행 시 배지·팝업. 구독은 Firestore에 저장, 🔔 버튼으로 토글.
+- Web Push(VAPID) + Badge API: 브리핑 발행 시 배지·팝업. 구독은 Firestore에 저장, 🔔 버튼으로 토글. 발송은 `push_send.py`, 발행 후 알림 트리거는 `notify.py`가 맡고, 이메일은 `SEND_EMAIL=1`일 때만 함께 나가는 선택 경로입니다.
 
 ## 기술 스택
-Python 3 · feedparser · requests · trafilatura · pypdf · Pillow · pywebpush · OpenAI SDK
+Python 3 · feedparser · requests · trafilatura · pywebpush · python-dotenv · OpenAI SDK
 GitHub Actions · GitHub Pages · Firebase Auth/Firestore · Service Worker · Web Push · d3-force · SQLite
-
-## 실행 방법
-
-```bash
-pip install -r requirements.txt
-```
-
-환경변수
-
-| 변수 | 용도 | 필수 |
-|---|---|---|
-| `OPENAI_API_KEY` | 요약·번역·리포트 | 선택(없으면 헤드라인 폴백) |
-| `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` | Web Push | 푸시 사용 시 |
-| `EMAIL_USER`, `EMAIL_PASS`, `SEND_EMAIL` | 이메일 발송(기본 꺼짐 `0`) | 선택 |
-| `PUBLISH_SITE` | 정적 사이트 발행(기본 `1`) | |
-| `SITE_URL` | 푸시에 담을 링크 | |
-| `DRY_RUN=1` | 발송·발행 없이 본문만 출력 | 테스트 |
-
-```bash
-python main.py                 # 전체 브리핑: 수집 → 요약 → 발행 → 푸시
-python main.py refresh         # LLM 없이 실적·시세·보고서만 갱신 후 재렌더
-python rwa.py refresh          # 주식·지수·원자재 포지션 스냅샷
-python whales.py refresh       # Hyperliquid 고래 스냅샷
-python econ_results.py         # 경제지표 실제/예상/이전 수집
-```
-
-GitHub Actions에서는 위 명령을 `briefing.yml`(브리핑) · `earnings-refresh.yml`(실적) · `map-refresh.yml`(지도)이 나눠 실행하고, 변경된 `docs/`·`data/`를 봇 계정으로 커밋합니다. 내 목표 탭은 Firebase 프로젝트(Auth + Firestore, 사용자별 보안 규칙)가 필요합니다.
 
 ## 저장소 구조
 
@@ -232,6 +296,7 @@ GitHub Actions에서는 위 명령을 `briefing.yml`(브리핑) · `earnings-ref
 ├── notify.py               # 알림: 앱 푸시 + (선택) 이메일
 ├── data/                   # 브리핑 원문·시세·재무·지표 (수집 결과)
 ├── docs/                   # GitHub Pages 산출물 · PWA · goal-app.js · flags/
+├── airflow/                # 선택 오케스트레이션 레이어(로컬/Codespaces 프로토타입)
 ├── tools/                  # 선택 실행 도구 (tools/store.py: SQLite 파생 인덱스)
 ├── tests/                  # 골든 렌더 등 회귀 테스트
 ├── legacy/                 # 구버전 참고용, 미서빙
@@ -241,8 +306,18 @@ GitHub Actions에서는 위 명령을 `briefing.yml`(브리핑) · `earnings-ref
 ## 로드맵
 - 포지션 **움직임 피드**: 시간별 스냅샷 diff를 DB에 남겨 "누가 언제 무엇을 늘렸나" 표시
 - 지도 갱신도 외부 크론으로 이관
-- `store.py` 색인을 이용한 브리핑 검색·전일 대비 변화 UI
+- `tools/store.py` 색인을 이용한 브리핑 검색·전일 대비 변화 UI
 - 커스텀 도메인
+
+## 검증 방법
+
+`tests/golden_render.py`는 저장된 `data/*.txt` 원문으로 **고정 시각**에 사이트 전체를 재생성하는 골든 렌더 하네스입니다. 변경 전후 각각 실행해 출력 디렉터리를 `diff -r`로 비교하면 렌더 결과가 바이트 단위로 동일한지(=동작 회귀 없음) 기계적으로 확인할 수 있습니다. 시각을 고정하는 이유는 일정 탭처럼 "실제 현재 시각" 기준으로 과거/미래가 갈리는 화면이 있어, 고정하지 않으면 두 실행 사이의 시간차만으로 diff가 생기기 때문입니다. LLM·네트워크 호출은 하지 않습니다.
+
+```bash
+python tests/golden_render.py /tmp/golden/before   # 변경 전
+python tests/golden_render.py /tmp/golden/after    # 변경 후
+diff -rq /tmp/golden/before /tmp/golden/after       # 비어 있으면 회귀 없음
+```
 
 ---
 

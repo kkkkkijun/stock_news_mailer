@@ -5,6 +5,11 @@ data/econ/*.csv 의 Id 와 API 의 eventDate id 가 동일하므로 id 로 정�
   { "<id>": {"name":..., "dt":"UTC ISO", "act":"48.7", "cons":"49.0", "prev":"48.0",
              "act_n":48.7, "cons_n":49.0} }
 브리핑 발행(main.py) 때 refresh() 호출 → 지난 며칠 결과 + 향후 예상치를 병합 저장.
+
+입력: data/econ/YYYY-MM.csv(캘린더), FXStreet 캘린더 API
+출력: data/econ_results.json
+실행: python econ_results.py (refresh() 실행 후 결과 건수 출력). 평소엔 main.py가 refresh() 호출
+관련: main.py, publish_site.py
 """
 import json
 import os

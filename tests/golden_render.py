@@ -11,6 +11,11 @@
 
 고정 시각을 쓰는 이유: 일정 탭 등은 "실제 현재 시각" 기준으로 과거/미래를 나누므로,
 시각을 고정하지 않으면 두 실행 사이의 시간차만으로 diff가 생긴다.
+
+입력: 이미 저장된 data/*.txt 등 원문(네트워크·LLM 호출 없음), publish_site.py
+출력: <out_dir> 아래에 재생성된 정적 페이지(docs/**/*.html 상당)
+실행: python tests/golden_render.py <out_dir>
+관련: publish_site.py
 """
 import os
 import shutil

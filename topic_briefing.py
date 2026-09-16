@@ -10,6 +10,11 @@ main.py 의 build_body() 가 아래 두 함수를 호출한다.
   OPENAI_SUMMARY_MODEL      기본 gpt-4o-mini
   TOPIC_TOP_N               핵심 뉴스 개수(기본 5)
   TOPIC_POOL_PER_QUERY      쿼리당 수집 개수(기본 30)
+
+입력: Google 뉴스 RSS + 경제·코인 언론사 RSS(이 파일에 정의된 쿼리·피드·키워드)
+출력: plain-text 브리핑 섹션 문자열(build_economy_section(), build_crypto_market_section() 반환값)
+실행: python topic_briefing.py (두 섹션을 콘솔에 출력, 단독 테스트용). 평소엔 main.py의 build_body()가 호출
+관련: news_brief.py, main.py
 """
 import os
 

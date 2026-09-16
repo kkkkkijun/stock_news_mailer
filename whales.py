@@ -1,6 +1,11 @@
 """고래 추적 — Hyperliquid 무료 공개 API.
 build_whale_list(): 리더보드에서 상위 고래 주소 선별(하루 1회).
 build_whales(): 고래별 포지션 스냅샷 → 코인별 롱/숏·레버 집계(15분).
+
+입력: Hyperliquid leaderboard API, clearinghouseState API
+출력: docs/whales.json
+실행: python whales.py refresh (docs/whales.json 갱신) 또는 python whales.py [N] (테스트용 wl_test.json/wh_test.json 생성)
+관련: main.py, publish_site.py
 """
 import json
 import time

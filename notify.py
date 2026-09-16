@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
-"""브리핑 완료 알림. 기본은 앱 푸시, `SEND_EMAIL=1`이면 이메일도 발송(선택)."""
+"""브리핑 완료 알림. 기본은 앱 푸시, `SEND_EMAIL=1`이면 이메일도 발송(선택).
+
+입력: main.py의 발행 결과(발행 시각, 사이트 URL, 알림 문구), 환경변수 SEND_EMAIL/EMAIL_USER/EMAIL_PASS/EMAIL_RECIPIENTS
+출력: 앱 푸시 알림(push_send.send_push 경유), 선택적으로 이메일 발송
+실행: 모듈로만 사용(main.py가 notify_briefing() 호출)
+관련: push_send.py, main.py
+"""
 import os
 import smtplib
 from email.mime.text import MIMEText

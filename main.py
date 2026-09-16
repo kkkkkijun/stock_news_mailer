@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+"""브리핑 파이프라인 오케스트레이터. 수집, 요약, 발행, 푸시 알림을 한 번에 실행한다.
+
+입력: 환경변수(OPENAI_API_KEY, STOCK_TICKERS, CRYPTO_TICKERS 등), news_brief.py/topic_briefing.py/realestate_briefing.py/trump_briefing.py, fundamentals.py, econ_results.py
+출력: docs/index.html(publish_site.publish 경유로 발행), 앱 푸시·이메일 알림(notify.py). `refresh` 모드는 실적/시세/10-K만 갱신 후 재렌더만 한다
+실행: python main.py (전체 브리핑) 또는 python main.py refresh (LLM 뉴스 수집 없이 실적·시세만 갱신 후 재렌더)
+관련: news_brief.py, publish_site.py, notify.py, fundamentals.py, econ_results.py
+"""
 import os
 import time
 import html

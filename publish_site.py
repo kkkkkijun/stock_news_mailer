@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """브리핑 본문(plain text)을 웹 페이지(docs/)로 발행.
 
-디자인은 briefing-template.html 기준.
+디자인 토큰·스타일은 이 파일의 CSS 상수에 정의(외부 템플릿 없음).
 - 다크 헤더 + 카드형 페이지
 - 공포탐욕지수 게이지(그라데이션 트랙 + 마커)
 - 섹션 앵커 내비게이션(경제·코인시장·해외주식·코인·부동산)
@@ -12,6 +12,11 @@
   docs/archive/YYYY-MM-DD-am.html  회차 스냅샷
   docs/archive/index.html          날짜 캘린더
   data/YYYY-MM-DD-am.txt           원문 보관(재렌더링용)
+
+입력: main.py가 넘기는 브리핑 본문 문자열, data/*.txt(재렌더 시), data/fundamentals.json, data/econ_results.json, docs/whales.json, docs/rwamap.json
+출력: 위 "생성물" 목록(docs/**/*.html)
+실행: python publish_site.py rebuild (LLM 호출·뉴스 재수집 없이 저장된 data/*.txt로 전체 페이지 재생성). 평소엔 main.py가 publish()를 호출
+관련: main.py, tests/golden_render.py
 """
 import os
 import re

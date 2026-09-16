@@ -15,6 +15,11 @@
   python tools/store.py reindex          # data/*.txt 전체를 DB로 재색인
   python tools/store.py search 금리       # 헤드라인/요약 검색
   python tools/store.py stats            # 색인 현황
+
+입력: data/*.txt(브리핑 원문), data/*.quotes.json(시세 스냅샷)
+출력: data/briefings.db(SQLite, .gitignore 대상)
+실행: 위 "사용" 참조. 원 파이프라인과 무관하게 선택 실행
+관련: publish_site.py(파서 재사용), data/
 """
 import os
 import sys

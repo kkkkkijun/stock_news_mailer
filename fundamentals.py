@@ -1,5 +1,10 @@
 """성장주 발굴 — SEC XBRL companyfacts 기반 재무 파이프라인.
 main.py의 _sec_cik / _SEC_UA 재사용. build_fundamentals()가 data/fundamentals.json 생성.
+
+입력: SEC XBRL companyfacts API, 10-K 원문, main.py의 _sec_cik/_SEC_UA
+출력: data/fundamentals.json(성장주 스코어), data/qual_cache.json(10-K 정성 분석 캐시)
+실행: python fundamentals.py (지정된 몇 개 티커로 fundamentals_test.json 생성, 단독 테스트용). 평소엔 main.py가 build_fundamentals()/build_qualitative() 호출
+관련: main.py, publish_site.py
 """
 import json
 import statistics
