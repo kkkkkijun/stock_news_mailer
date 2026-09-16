@@ -14,6 +14,7 @@ from datetime import date
 import requests
 
 import main
+from sec import _sec_cik, _SEC_UA
 
 REV = ["RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues",
        "RevenueFromContractWithCustomerIncludingAssessedTax", "SalesRevenueNet"]
@@ -136,12 +137,12 @@ def _m(x):
 
 
 def _build_one(sym):
-    cik = main._sec_cik(sym)
+    cik = _sec_cik(sym)
     if not cik:
         return None
     try:
         j = requests.get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json",
-                         headers=main._SEC_UA, timeout=30).json()
+                         headers=_SEC_UA, timeout=30).json()
     except Exception:
         return None
     g = j["facts"].get("us-gaap", {})
@@ -402,12 +403,12 @@ def _last_section(t, start_pat, maxlen):
 
 def _sec_10k_sections(sym):
     """최신 10-K의 사업(Item1)·리스크(Item1A) 발췌 + accession. 실패 시 None."""
-    cik = main._sec_cik(sym)
+    cik = _sec_cik(sym)
     if not cik:
         return None
     try:
         rec = requests.get(f"https://data.sec.gov/submissions/CIK{cik}.json",
-                           headers=main._SEC_UA, timeout=20).json()["filings"]["recent"]
+                           headers=_SEC_UA, timeout=20).json()["filings"]["recent"]
         acc = doc = when = None
         for form, a, pd, adt in zip(rec["form"], rec["accessionNumber"],
                                     rec["primaryDocument"], rec["acceptanceDateTime"]):
@@ -418,7 +419,7 @@ def _sec_10k_sections(sym):
             return None
         accn = acc.replace("-", "")
         url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{accn}/{doc}"
-        raw = requests.get(url, headers=main._SEC_UA, timeout=30).text
+        raw = requests.get(url, headers=_SEC_UA, timeout=30).text
         text = _htmlmod.unescape(_re.sub(r"\s+", " ",
                                          _re.sub(r"<[^>]+>", " ", raw))).strip()
         biz = _last_section(text, r"item\s*1\.?\s+business", 7000)
