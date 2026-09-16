@@ -16,20 +16,14 @@ from airflow.operators.python import PythonOperator
 
 def _rwa_refresh(**context):
     setup_repo_env()
-    try:
-        import rwa
-        rwa.build_rwa()
-    except Exception:
-        raise
+    import rwa
+    rwa.build_rwa()
 
 
 def _whales_refresh(**context):
     setup_repo_env()
-    try:
-        import whales
-        whales.refresh()
-    except Exception:
-        raise
+    import whales
+    whales.refresh()
 
 
 default_args = {

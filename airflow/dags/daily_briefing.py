@@ -27,105 +27,75 @@ from airflow.operators.python import PythonOperator
 
 def _fetch_quotes(**context):
     setup_repo_env()
-    try:
-        import main
-        quotes = main.fetch_all_quotes()
-        return quotes
-    except Exception:
-        raise
+    import main
+    quotes = main.fetch_all_quotes()
+    return quotes
 
 
 def _build_earnings(**context):
     setup_repo_env()
-    try:
-        import main
-        main.build_earnings()
-    except Exception:
-        raise
+    import main
+    main.build_earnings()
 
 
 def _build_prices(**context):
     setup_repo_env()
-    try:
-        import main
-        ti = context["ti"]
-        quotes = ti.xcom_pull(task_ids="fetch_quotes")
-        main.build_prices(quotes=quotes)
-    except Exception:
-        raise
+    import main
+    ti = context["ti"]
+    quotes = ti.xcom_pull(task_ids="fetch_quotes")
+    main.build_prices(quotes=quotes)
 
 
 def _build_reports(**context):
     setup_repo_env()
-    try:
-        import main
-        main.build_reports(client=main.get_openai_client())
-    except Exception:
-        raise
+    import main
+    main.build_reports(client=main.get_openai_client())
 
 
 def _build_fundamentals(**context):
     setup_repo_env()
-    try:
-        import fundamentals
-        fundamentals.build_fundamentals()
-    except Exception:
-        raise
+    import fundamentals
+    fundamentals.build_fundamentals()
 
 
 def _build_qualitative(**context):
     setup_repo_env()
-    try:
-        import main
-        import fundamentals
-        fundamentals.build_qualitative(client=main.get_openai_client())
-    except Exception:
-        raise
+    import main
+    import fundamentals
+    fundamentals.build_qualitative(client=main.get_openai_client())
 
 
 def _refresh_econ(**context):
     setup_repo_env()
-    try:
-        import econ_results
-        econ_results.refresh()
-    except Exception:
-        raise
+    import econ_results
+    econ_results.refresh()
 
 
 def _build_news(**context):
     setup_repo_env()
-    try:
-        import main
-        body = main.build_body(client=main.get_openai_client())
-        return body
-    except Exception:
-        raise
+    import main
+    body = main.build_body(client=main.get_openai_client())
+    return body
 
 
 def _publish(**context):
     setup_repo_env()
-    try:
-        import publish_site
-        ti = context["ti"]
-        quotes = ti.xcom_pull(task_ids="fetch_quotes")
-        body = ti.xcom_pull(task_ids="build_news")
-        publish_site.publish(body, quotes=quotes)
-    except Exception:
-        raise
+    import publish_site
+    ti = context["ti"]
+    quotes = ti.xcom_pull(task_ids="fetch_quotes")
+    body = ti.xcom_pull(task_ids="build_news")
+    publish_site.publish(body, quotes=quotes)
 
 
 def _send_push(**context):
     setup_repo_env()
-    try:
-        import push_send
-        now = pendulum.now("Asia/Seoul")
-        title = f"{now.month}/{now.day} 브리핑"
-        site_url = os.getenv(
-            "SITE_URL", "https://kkkkkijun.github.io/stock_news_mailer/"
-        )
-        push_send.send_push(title, "새 뉴스 브리핑이 준비됐어요.", url=site_url)
-    except Exception:
-        raise
+    import push_send
+    now = pendulum.now("Asia/Seoul")
+    title = f"{now.month}/{now.day} 브리핑"
+    site_url = os.getenv(
+        "SITE_URL", "https://kkkkkijun.github.io/stock_news_mailer/"
+    )
+    push_send.send_push(title, "새 뉴스 브리핑이 준비됐어요.", url=site_url)
 
 
 # ---------------------------------------------------------------------------
