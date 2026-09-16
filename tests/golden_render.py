@@ -28,26 +28,19 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 os.chdir(ROOT)
 
-import publish_site as ps  # noqa: E402  (ROOT를 sys.path에 넣은 뒤 import)
+from render import clock, config  # noqa: E402  (ROOT를 sys.path에 넣은 뒤 import)
 
 FIXED_NOW = pytz.timezone("Asia/Seoul").localize(datetime(2026, 9, 16, 12, 0, 0))
-
-
-class FrozenDatetime(datetime):
-    """datetime.now()만 고정 시각을 돌려주는 서브클래스(strptime 등은 그대로)."""
-
-    @classmethod
-    def now(cls, tz=None):
-        return FIXED_NOW.astimezone(tz) if tz else FIXED_NOW.replace(tzinfo=None)
 
 
 def main(out_dir: str) -> int:
     out_dir = os.path.abspath(out_dir)
     shutil.rmtree(out_dir, ignore_errors=True)
     os.makedirs(out_dir)
-    ps.datetime = FrozenDatetime
-    ps.DOCS_DIR = out_dir
-    ps.ARCHIVE_DIR = os.path.join(out_dir, "archive")
+    config.DOCS_DIR = out_dir
+    config.ARCHIVE_DIR = os.path.join(out_dir, "archive")
+    clock.now = lambda: FIXED_NOW
+    import publish_site as ps
     n = ps.rebuild_all()
     print(f"rendered {n} pages -> {out_dir}")
     return 0
