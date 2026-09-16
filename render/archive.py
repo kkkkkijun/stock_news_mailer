@@ -4,7 +4,7 @@ import json
 import os
 import re
 
-from render import config
+from render import assets, config
 from render.config import PARTS, SITE_TITLE
 from render.files import _load_body
 from render.layout import _shell
@@ -176,7 +176,9 @@ def render_archive_index():
              + '<div id="calview">' + msel
              + '<div class="cal" id="calbox"></div>'
              + '<div class="det" id="det"></div></div></div>')
-    js = _CAL_JS.replace("__DATA__", json.dumps(days, ensure_ascii=False))
-    js += _SEARCH_JS.replace(
-        "__SEARCH__", json.dumps(_search_index(), ensure_ascii=False))
-    return _shell(SITE_TITLE, inner, script=js)
+    cal_js, _tail = assets._split_script(
+        _CAL_JS.replace("__DATA__", json.dumps(days, ensure_ascii=False)))
+    search_js, _tail = assets._split_script(
+        _SEARCH_JS.replace("__SEARCH__", json.dumps(_search_index(), ensure_ascii=False)))
+    tag = assets.write_archive_js(config, cal_js + "\n" + search_js, prefix="../")
+    return _shell(SITE_TITLE, inner, script=tag, asset_prefix="../")

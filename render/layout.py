@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 """페이지 셸(HEAD/CSS/스크립트)과 브리핑 본문 렌더링(publish_site.py 분리)."""
-from render import clock
+from render import assets, clock
 from render.common import _dday_progress, _dday_text, _e
 from render.config import DDAY_TARGET, HERO_PARTS, PARTS, SITE_TITLE, SLOGAN, TABS, _DOW
 from render.earnings import _render_earnings
 from render.files import _load_earnings, _load_econ_events, _load_fundamentals, _slug
-from render.growth import _GROWTH_JS, _render_growth
+from render.growth import _render_growth
 from render.news import _render_part
 from render.parse import _fear_greed, _mood_color, _prev_item_tokensets, _split_sections
-from render.rwamap import _RWA_JS, _render_rwa
-from render.schedule import _SCHED_JS, _render_schedule
+from render.rwamap import _render_rwa
+from render.schedule import _render_schedule
 
 HEAD = """<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -484,13 +484,13 @@ if('serviceWorker' in navigator){
 <script src="/stock_news_mailer/push.js" defer></script>"""
 
 
-def _shell(title, inner, extra_head="", script="", rail=""):
+def _shell(title, inner, extra_head="", script="", rail="", asset_prefix=""):
     return f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
 {HEAD}
 <title>{_e(title)}</title>{extra_head}
-<style>{CSS}</style>
+{assets.tag_css(asset_prefix)}
 </head>
 <body>
 <div class="wrap"><div class="page">
@@ -499,7 +499,7 @@ def _shell(title, inner, extra_head="", script="", rail=""):
 </div>{rail}</div>
 <button id="theme" aria-label="다크/라이트 테마 전환" title="테마 전환">🌙</button>
 <button id="top" aria-label="맨 위로">↑</button>
-{script}{_TOP_JS}{_THEME_JS}{_PWA_JS}
+{script}{assets.site_scripts_tag(asset_prefix)}
 </body>
 </html>
 """
@@ -535,7 +535,7 @@ document.querySelectorAll('.nav-t').forEach(function(b){
 
 
 def render_html(body, now=None, links="", quotes=None, mark_new=False,
-                schedule=False):
+                schedule=False, asset_prefix=""):
     now = now or clock.now()
     qmap = quotes or {}
     # 직전 회차 대비 '새 뉴스' 표시용 토큰셋(요청 시에만).
@@ -656,8 +656,10 @@ def render_html(body, now=None, links="", quotes=None, mark_new=False,
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
 
-    scripts = (_TAB_JS + (_SCHED_JS if sched_html else "")
-               + (_GROWTH_JS if funds else "") + _RWA_JS
+    scripts = (assets.tag("tab.js", asset_prefix)
+               + (assets.tag("sched.js", asset_prefix) if sched_html else "")
+               + (assets.tag("growth.js", asset_prefix) if funds else "")
+               + assets.tag("rwa.js", asset_prefix)
                + '<script type="module" src="goal-app.js"></script>')
     return _shell(SITE_TITLE, hd + gauges_html + nav_html + "".join(panels),
-                  script=scripts)
+                  script=scripts, asset_prefix=asset_prefix)
