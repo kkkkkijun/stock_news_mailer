@@ -30,3 +30,8 @@ data/*.db
 Thumbs.db
 .vscode/
 .idea/
+
+# ===== Airflow (오케스트레이션 프로토타입) =====
+airflow/logs/
+airflow/.env
+airflow/plugins/
