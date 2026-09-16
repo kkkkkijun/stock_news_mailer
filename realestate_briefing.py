@@ -18,7 +18,7 @@ main.py 의 build_body() 가 build_realestate_section() 을 호출한다.
 """
 import os
 
-from news_brief import build_briefing, get_openai_client  # noqa: F401
+from news_brief import build_briefing
 
 TOP_N = int(os.getenv("REALESTATE_TOP_N", "6"))
 POOL_PER_QUERY = int(os.getenv("REALESTATE_POOL_PER_QUERY", "30"))
