@@ -1,0 +1,239 @@
+2026-09-18T06:32:27.218853+09:00
+
+[오늘의 뉴스 요약] 2026-09-18 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국내외 경제는 금리 인상과 물가 상승 압력으로 긴장감이 감돌고 있다. 특히 생산자물가가 상승세로 돌아섰고, 추석 물가 상승이 가시화되며 소비자 부담이 증가하고 있다.
+
+[핵심 뉴스]
+1. (물가) 생산자물가 한 달 만에 반등
+   → 8월 생산자물가는 0.2% 상승하며 지난해 9월부터 9개월 연속 상승세를 이어갔다. 폭염과 유가 상승으로 채소 및 축산물 가격이 크게 올랐다.
+   (연합뉴스 · 09/18 06:00)
+2. (물가) 추석 차례상 물가 5.1%↑
+   → 올해 추석 차례상 비용이 지난해보다 5.1% 상승, 특히 애호박과 무 가격이 급등하며 소비자 부담이 커졌다.
+   (연합뉴스 · 09/18 06:00)
+3. (환율) 원/달러 환율 3주만에 1,380원대
+   → 원/달러 환율이 1,382.2원으로 3주 만에 상승하며, 미국 연준의 금리 인상 우려가 지속되고 있다.
+   (연합뉴스 · 09/17 16:08)
+4. (금리) 한미 금리차 1%P로 벌어져 11월 금리인상 무게
+   → 한국과 미국 간 금리 차이가 1%포인트로 확대되면서 향후 한국의 금리 인상 가능성이 높아지고 있다.
+   (매일경제 · 09/17 17:37)
+5. (금리) 영국 금리 동결, 금리 인상 가능성 시사
+   → 잉글랜드은행(BOE)은 기준금리를 3.75%로 동결했지만, 물가 상승의 위험으로 금리 인상 가능성을 시사했다.
+   (연합뉴스 · 09/17 21:29)
+
+[흐름·전망]
+• 생산자물가의 상승은 물가 전반에 걸친 상승 압력으로 작용할 수 있으며, 소비자 물가 지표에 미치는 영향이 주목된다.
+• 추석을 앞두고 물가가 상승하면서 공급망 문제와 기상 이변의 영향도 더욱 부각될 가능성이 있다.
+• 원화 가치 하락과 금리 인상이 맞물려 외환 시장의 불안정성이 증가할 수 있으므로, 환율 흐름에 주의가 필요하다.
+• 국내 금리 인상 여부는 수출과 내수 경제에 중요한 변수가 될 것이며, 이는 앞으로의 경제 성장률에 미치는 영향도 고려해야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia Stock Split in 2026? My Prediction: It's Unlikely, but the Stock Is Still a Buy. - The Motley Fool
+   (The Motley Fool · 09/18 06:20)
+→ 모티리폴은 2026년에 엔비디아의 주식 분할 가능성은 낮다고 예상하면서도, 여전히 주식 매수가 유효하다고 평가했습니다.
+
+📰 [NVDA] Nvidia cloud partner crosses major compute threshold
+   (Yahoo Finance · 09/18 06:17)
+→ Nvidia의 새로운 랙 규모 AI 시스템이 단일 테스트에서 전체 클러스터로 전환되었으며, 이는 투자자들에게 중요한 시점이 됩니다. 이 변화는 Nvidia의 클라우드 파트너가 주요 계산 역량을 달성한 것을 의미합니다.
+
+📰 [NVDA] Nvidia Stock Split in 2026? My Prediction: It's Unlikely, but the Stock Is Still a Buy.
+   (Yahoo Finance · 09/18 06:08)
+→ Nvidia의 주식 분할이 2026년에 있을 가능성은 적지만, 주식은 여전히 매수할 만한 가치가 있다는 예측이 나왔습니다. 이 회사의 GPU 수요 전망이 견고하며, 다른 유망한 제품 카테고리로도 확장을 진행하고 있습니다.
+
+📰 [TSLA] Four Tesla Decade-Long Veterans Confirm Departures - basenor.com
+   (basenor.com · 09/18 06:09)
+→ 테슬라에서 10년 이상 재직한 네 명의 베테랑 직원들이 퇴사했다고 확인했습니다. 이들은 회사에서의 오랜 경력을 마무리하며 새로운 단계로 나아가기로 결정한 것으로 보입니다.
+
+📰 [TSLA] Tesla's Door Redesign, Explained in 5 Points - basenor.com
+   (basenor.com · 09/18 06:07)
+→ 테슬라의 새로운 도어 디자인에 대한 주요 내용이 5가지 포인트로 설명되었다. 이 디자인은 안전성과 편리성을 개선하는 것을 목표로 하며, 사용자의 접근성과 차량의 외관을 향상시키는 특징이 있다. 이러한 변화는 테슬라의 혁신적인 기술 개발을 반영한다.
+
+📰 [TSLA] Samsung Starts 2nm AI5 Chip Production for Tesla FSD and Optimus - basenor.com
+   (basenor.com · 09/18 06:04)
+→ 삼성전자가 테슬라의 완전자율주행(FSD) 및 로봇인 오프티무스에 사용할 2nm AI5 칩 생산을 시작했습니다. 이 칩은 인공지능 기능 향상을 위해 설계되었으며, 테슬라의 기술 발전에 기여할 것으로 기대됩니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (HIMS) Investors: November 2, 2026, Deadline in Securities Fraud Class Action Lawsuit - Morningstar
+   (Morningstar · 09/18 05:00)
+→ Hims & Hers Health, Inc.의 투자자들에게 2026년 11월 2일이 증권 사기 집단 소송의 기한임을 알리는 뉴스입니다. 이 사건에 관련된 투자자들은 해당 기한 내에 조치를 취해야 합니다.
+
+📰 [HIMS] Officer at Hims & Hers (NYSE: HIMS) plans $355K stock sale - stocktitan.net
+   (stocktitan.net · 09/18 04:55)
+→ Hims & Hers의 한 임원이 35만 5천 달러 규모의 주식 매각을 계획하고 있다는 소식입니다. 이 계획은 NYSE 상장 기업인 HIMS와 관련이 있습니다.
+
+📰 [HIMS] Hims & Hers Health Shareholder Alert: ClaimsFiler Reminds - GlobeNewswire
+   (GlobeNewswire · 09/18 01:24)
+→ Hims & Hers Health의 주주들에게 ClaimsFiler가 알림을 전달했습니다. 이 알림은 주주들이 관련 청구를 놓치지 않도록 주의하라는 내용입니다.
+
+📰 [RDW] Redwire (RDW) Stock May Offer A 30% Discount To Fair Value
+   (Yahoo Finance · 09/18 01:12)
+→ Redwire의 주가는 최근 몇 년간 급격하게 변동했으며, 현재 주가인 10.79달러가 장기적으로 발생할 수익에 의해 지지되는지가 중요하다. 회사는 지난 3년 동안 239.3%의 수익률을 기록했지만, 앞으로의 현금 흐름이 과거 성과를 유지할 수 있을지가 큰 관건이다.
+
+📰 [RDW] Redwire (RDW) Stock May Offer A 30% Discount To Fair Value - Yahoo Finance
+   (Yahoo Finance · 09/18 01:12)
+→ Redwire (RDW) 주가는 공정가치에 비해 30% 할인된 가격으로 거래되고 있을 가능성이 있다. 이는 투자자들에게 매력적인 기회를 제공할 수 있음을 시사한다.
+
+📰 [RDW] Winners And Losers Of Q2: Redwire (NYSE:RDW) Vs The Rest Of The Aerospace Stocks
+   (Yahoo Finance · 09/18 00:54)
+→ 항공 우주 주식의 2분기 실적을 돌아보며 Redwire (NYSE:RDW)와 다른 동종 업계 주식들의 성과를 비교한 결과, 이번 분기에서 최상위 및 최하위 주식들이 나타났다. Redwire를 포함한 여러 기업들의 이익을 분석하였다.
+
+📰 [IREN] IREN Vs MARA: Why JPMorgan Favors One Bitcoin Miner Turned AI Play Over The Other - Stocktwits
+   (Stocktwits · 09/18 05:09)
+→ JPMorgan은 두 비트코인 채굴 기업 중에서 IREN을 MARA보다 선호하는 이유를 분석했습니다. IREN은 비트코인 채굴에서 AI로의 전환을 통해 더 큰 잠재력을 갖고 있다고 평가받고 있습니다. 이러한 변화가 향후 성장에 긍정적인 영향을 미칠 것이라는 전망이 담겨 있습니다.
+
+📰 [IREN] Nebius Stock and IREN Gain. AI Neoclouds Are Flexing Their Pricing Power.
+   (Yahoo Finance · 09/18 03:19)
+→ AI 칩에 대한 수요가 급증함에 따라 Nebius는 고객에게 AI 칩의 온디맨드 대여 가격을 약 20% 인상할 것이라고 알려주었다. 이와 관련해 인공지능 칩의 가치가 유지되고 있다는 추가 증거가 나타났다.
+
+📰 [IREN] Nebius Stock and IREN Gain. AI Neoclouds Are Flexing Their Pricing Power. - Barron's
+   (Barron's · 09/18 03:19)
+→ 네비우스(Nebius)와 아이렌(IREN) 주식이 상승하며 인공지능 클라우드 서비스 업체들이 가격 인상 능력을 발휘하고 있다는 뉴스입니다. 이러한 동향은 AI 기술의 발전과 시장 수요 증가에 따른 결과로 보입니다.
+
+📰 [RKLB] Rocket Lab Options Spot-On: On September 17th, 166.79K Contracts Were Traded, With 1.24 Million Open Interest - 富途牛牛
+   (富途牛牛 · 09/18 05:45)
+→ 2023년 9월 17일, 로켓랩의 옵션 거래에서 166,790개의 계약이 거래되었고, 개방된 이자는 124만 건에 달한다는 소식이다.
+
+📰 [RKLB] Palantir, Rocket Lab among biggest climbers in power ranking - roundtable.io
+   (roundtable.io · 09/18 04:19)
+→ Palantir와 Rocket Lab이 최근 권력 순위에서 가장 크게 상승한 기업들로 주목받고 있습니다. 이들은 시장에서의 영향력과 성장을 바탕으로 긍정적인 평가를 받고 있습니다.
+
+📰 [RKLB] Palantir, Rocket Lab among biggest climbers in power ranking - thestreet.com
+   (thestreet.com · 09/18 04:10)
+→ Palantir와 Rocket Lab이 최근 파워 랭킹에서 가장 큰 상승세를 보인 기업으로 주목받고 있다. 이 두 회사는 기술 혁신과 성장 잠재력으로 인해 시장에서의 입지를 강화하고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] 5 Best Bitcoin Casinos – Top Crypto Casinos with Fast Payouts in 2026 - Muddy River Sports
+   (Muddy River Sports · 09/18 06:03)
+→ 2026년에 빠른 지급 처리를 제공하는 최고의 비트코인 카지노 5곳을 소개하는 기사입니다. 이 카지노들은 암호화폐 사용자가 원활하게 게임을 즐길 수 있도록 설계되어 있습니다.
+
+📰 [BTC-USD] Bloomberg’s ETF Analyst Says Bitcoin Funds Will Triple Gold Hours After Admitting They Burned Cash
+   (Yahoo Finance · 09/18 05:56)
+→ 블룸버그의 ETF 분석가가 비트코인 펀드가 금의 세 배로 성장할 것이라는 전망을 발표한 지 불과 90분 후, 해당 펀드가 현금을 소모했다는 사실을 인정했습니다. 이로 인해 두 가지 상반된 주장이 나오면서 비트코인 가격 차트의 방어가 어려워졌습니다.
+
+📰 [BTC-USD] US sanctions Iranian crypto exchange BitBank over alleged bitcoin transfers to IRGC - The Block
+   (The Block · 09/18 05:05)
+→ 미국은 이란의 암호화폐 거래소 비트뱅크에 대해 이란 혁명수비대(IRGC)로의 비트코인 이전 혐의로 제재를 가했다고 보도했다. 이 조치는 비트뱅크가 테러 지원과 관련된 활동에 연루되었다는 미국 정부의 주장에 따른 것이다.
+
+📰 [ETH-USD] Ethereum Gained 1.77% to $2451.62 -- Data Talk - Moomoo
+   (Moomoo · 09/18 06:15)
+→ 이더리움의 가격이 1.77% 상승하여 2,451.62달러에 도달했다.
+
+📰 [ETH-USD] BMNR Stock Rides Massive Ethereum Hoard And Bullish Targets - StocksToTrade
+   (StocksToTrade · 09/18 05:47)
+→ BMNR 주식은 대량의 이더리움 보유와 긍정적인 목표에 힘입어 상승세를 보이고 있다. 투자자들은 이더리움의 가치 상승에 따른 긍정적인 전망을 반영하고 있다.
+
+📰 [ETH-USD] BMNR Stock Rallies As Massive Ethereum Bet Draws Wall Street - timothysykes.com
+   (timothysykes.com · 09/18 05:47)
+→ BMNR 주식이 대규모 이더리움 베팅으로 월가의 주목을 받으며 급등했습니다. 투자자들이 이 베팅에 관심을 기울이면서 BMNR의 주가가 상승세를 보이고 있습니다.
+
+📰 [SOL-USD] UPXI: Shift to Solana treasury led to $246M net loss on $8M revenue, driven by $195M SOL losses - tradingview.com
+   (tradingview.com · 09/18 05:39)
+→ UPXI는 솔라나 재무로의 전환으로 인해 8백만 달러의 수익에 대해 2억 4천6백만 달러의 순손실을 기록했으며, 이 손실의 주된 원인은 1억 9천5백만 달러에 달하는 솔(SOL) 손실 때문입니다.
+
+📰 [SOL-USD] KIDZ AI Secures $1.9 Million Senior Secured Convertible Note From Solana Growth Ventures - tradingview.com
+   (tradingview.com · 09/18 05:33)
+→ KIDZ AI가 Solana Growth Ventures로부터 190만 달러 규모의 선순위 전환 사채를 확보했습니다. 이 자금은 KIDZ AI의 성장과 발전을 지원하는 데 사용될 예정입니다.
+
+📰 [SOL-USD] Solana eyes $130 as it nears $105 breakout amid rising crypto market and institutional inflows. - Pluang
+   (Pluang · 09/18 05:12)
+→ 솔라나(Solana)는 암호화 시장의 상승과 기관 투자자들의 유입에 힘입어 105달러 돌파를 눈앞에 두고 있으며, 목표가는 130달러로 설정하고 있습니다.
+
+📰 [BMNR] BMNR Stock Rides Massive Ethereum Hoard And Bullish Targets - StocksToTrade
+   (StocksToTrade · 09/18 05:47)
+→ BMNR 주식은 대규모 이더리움 보유와 긍정적인 목표에 의해 상승세를 타고 있습니다. 투자자들은 이 회사의 이더리움 자산에 대한 기대를 높이고 있으며, 주가는 긍정적인 전망에 따라 상승하고 있습니다.
+
+📰 [BMNR] BMNR Stock Rallies As Massive Ethereum Bet Draws Wall Street - timothysykes.com
+   (timothysykes.com · 09/18 05:47)
+→ BMNR 주식이 대규모 이더리움 투자 소식에 힘입어 급등하고 있습니다. 이러한 움직임은 월가의 관심을 끌며, 투자자들 사이에서 BMNR의 성장 가능성에 대한 기대가 커지고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies Options Spot-On: On September 17th, 126.24K Contracts Were Traded, With 1.67 Million Open Interest - 富途牛牛
+   (富途牛牛 · 09/18 05:44)
+→ 비트마인 이머전 테크놀로지스의 옵션 거래가 활발하게 이루어졌으며, 9월 17일에 126.24K 계약이 거래되었고, 오픈 이자는 167만 계약에 달했습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 미 연준의 금리 인상 발표 이후 변동성이 유지되는 가운데, 비트코인과 이더리움이 각각 0.64%와 1.72% 상승하며 일정 부분 저항을 보였다. 시장 참여자들은 금리 인상을 통해 향후 경제 상황에 대한 불확실성을 고려하고 있다.
+
+[핵심 뉴스]
+1. (시세) 미 연준 금리 인상에 따른 비트코인 변동성
+   → 미 연준이 기준금리를 0.25%포인트 인상하며 3.75-4.00% 범위로 조정했으며, 비트코인은 24시간 기준 0.64% 상승한 7만6503달러를 기록했다.
+   (토큰포스트 · 09/18 06:22)
+2. (기타) 암호화폐 시장에서 큰 규모의 레버리지 포지션 청산
+   → 지난 24시간 동안 암호화폐 시장에서 1억5452만 달러 규모의 레버리지 포지션이 청산되었고, 숏 포지션 청산이 전체의 76.73%를 차지했다.
+   (토큰포스트 · 09/18 04:56)
+3. (시세) 혼조세 속 비트코인과 이더리움 소폭 상승
+   → 미국 증시가 상승세를 보이면서 비트코인과 이더리움도 각각 소폭 상승하며 투자 심리가 개선되는 양상을 보였다.
+   (토큰포스트 · 09/18 05:05)
+4. (규제) 미 재무부, 이란 비트뱅크 제재 실시
+   → 미국 재무부가 이란 비트뱅크에 대해 제재 조치를 실시했으며, 이는 가상자산을 통한 자금 이동이 제재 대상이라는 점을 나타낸다.
+   (토큰포스트 · 09/18 04:10)
+5. (규제) 골드만삭스, 연준 10월 금리 인상 전망
+   → 골드만삭스가 연준의 10월 추가 금리 인상을 전망하며, 금리 인상 신호가 비트코인에 한정적인 영향을 줬다고 보도했다.
+   (토큰포스트 · 09/18 02:46)
+
+[흐름·전망]
+• 미 연준의 금리 인상이 자산시장에 미치는 영향을 지속적으로 모니터링할 필요가 있다.
+• 비트코인과 이더리움의 상승세가 지속되는지 살펴봐야 하며, 시장 참여자들의 대응이 또 다른 방향성을 가질 수 있다.
+• 레버리지 포지션 청산이 늘어나는 가운데, 향후 가격 변동성과 거래량에 주목해야 할 시점이다.
+• 미국과 이란 간의 긴장이 계속해서 암호화폐 시장에 미치는 영향을 관찰함으로써 글로벌 규제 환경 변화에도 대응할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 29 (Fear)
+  - 크립토 기준: 50 (Neutral)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울 아파트 가격이 84주 연속 상승하며 강세를 보이고 있으나, 강남3구는 하락세를 나타내는 등 지역별 차별화가 지속되고 있다.
+
+[핵심 뉴스]
+1. (매매) 서울 아파트값 7월에도 상승세 지속
+   → 7월 서울 아파트 매매가격이 전월 대비 1.93% 상승하여 작년 대비 14.56% 상승했다. 8월의 매매 거래량은 전월 대비 46.2% 감소한 3,143건으로 집계되었다.
+   (연합뉴스 · 09/18 06:00)
+2. (매매) 강남3구 약세에도 서울 아파트값 84주째 상승
+   → 서울 아파트 매매가격이 84주 연속 상승하며 평균 0.16% 올랐고, 강남3구는 하락세가 지속되고 있다. 중하위권 지역에서 상승세를 보이며 '디커플링' 현상이 나타났다.
+   (연합뉴스 · 09/17 14:00)
+3. (매매) 7월 서울 아파트값, 1.93% 올라
+   → 7월 서울 아파트값이 전월 대비 1.93% 상승하며 거래량은 위축되는 상황이 이어지고 있다.
+   (이투데이 · 09/18 06:00)
+4. (정책) 토지거래허가구역 내 실거주 의무 유예 신청 내년말까지 연장
+   → 임대차 분쟁이 지난해 전체 수치를 초과하며 증가하고 있으며, 세입자들의 이사 선택지가 줄어들면서 계약 갱신을 둘러싼 갈등이 심화되고 있다.
+   (연합뉴스 · 09/17 15:12)
+5. (전세) 세낀 서울집 매수자, 최장 2029년까지 실거주 안해도 된다
+   → 서울 아파트 전셋값이 계속 오르며 전세 시장의 불안감이 커지고 있고, 계약갱신청구권 사용 대신 집주인과의 합의로 임대 연장 사례가 증가하고 있다.
+   (매일경제 · 09/17 20:09)
+6. (전세) “전세도 없는데 나가라니요”…‘계약갱신 분쟁’ 이미 작년치 넘어서
+   → 올해 전세 계약 갱신과 관련한 분쟁이 작년보다 더 증가하고 있는 상황이다.
+   (매일경제 · 09/17 16:03)
+
+[흐름·전망]
+• 서울 아파트 가격 상승세가 지속되고 있는 가운데, 강남3구의 하락세 여부가 향후 시장 흐름에 미치는 영향을 주목해야 한다.
+• 전세 매물 부족 상황이 악화되면서 계약 갱신을 둘러싼 갈등이 지속될 가능성이 있으며, 이는 임대차 시장의 불안정성을 더욱 부각시킬 수 있다.
+• 토지거래허가구역 내 실거주 의무 유예 조치가 장기적인 매물 잠김 현상을 완화할 수 있지만, 궁극적인 주택 시장 안정에 기여할지는 미지수이다.
+• 세제 개편이 실거주에 미치는 영향과 함께, 무주택자의 주택 구매 및 실거주 의무 사항이 시장에 어떤 영향을 미칠지 지켜봐야 한다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 농업 법안 통과와 폴란드 내 미군 기지 설립 진전 소식을 전하며 긍정적인 전망을 나타냈다. 그는 농업 법안이 양당 간 긴밀한 협력 덕분에 통과되었음을 강조하고 폴란드와의 군사 동맹 강화에 대한 기대감을 드러냈다.
+
+[주요 발언]
+1. (경제) 트럼프는 과거 농업 법안이 통과된 것을 자랑하며, 미래의 더 나은 농업 법안 통과를 기대한다고 언급했다.
+   (Truth Social · 09/18 04:35)
+2. (기타) 트럼프는 대학 스포츠와 관련된 상황이 심각해지고 있다며, 프로 선수들이 대학에서 활동하는 것에 대한 우려를 표시했다.
+   (Truth Social · 09/18 03:14)
+3. (외교) 폴란드와의 관계에서 미군 기지 설립을 위한 주요 진전이 이루어졌다고 전하며, 이는 미-폴란드 동맹에 역사적인 사건이 될 것이라고 강조했다.
+   (Truth Social · 09/18 02:25)
+
+[흐름·전망]
+• 농업 법안 통과가 향후 정치적, 경제적 안정성에 미치는 영향을 주목해야 할 것이다.
+• 폴란드 내 미군 기지 설립 과정에서의 정치적 동향이 NATO의 동유럽 방위 태세에 미치는 영향도 관찰할 필요가 있다.
+• 대학 스포츠 문제는 향후 교육계와 스포츠계에 중대한 영향을 미칠 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
