@@ -16,7 +16,10 @@ main.py 의 build_body() 가 build_realestate_section() 을 호출한다.
 실행: python realestate_briefing.py (섹션을 콘솔에 출력, 단독 테스트용). 평소엔 main.py의 build_body()가 호출
 관련: news_brief.py, main.py
 """
+from __future__ import annotations
+
 import os
+from typing import Any
 
 from news_brief import build_briefing
 
@@ -46,7 +49,7 @@ REALESTATE_KEYWORDS = [
 ]
 
 
-def build_realestate_section(client=None):
+def build_realestate_section(client: Any = None) -> str:
     return build_briefing(
         header="🏘️ 부동산 PART",
         queries=QUERIES,

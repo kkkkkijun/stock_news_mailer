@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """경로 상수·전역 설정값(publish_site.py 분리)."""
+from __future__ import annotations
+
 import os
 from datetime import date
 

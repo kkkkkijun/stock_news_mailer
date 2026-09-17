@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """기업실적 일정·결과 렌더링(publish_site.py 분리)."""
+from __future__ import annotations
+
 import re
 from datetime import date, datetime
 

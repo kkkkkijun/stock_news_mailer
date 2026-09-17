@@ -17,6 +17,8 @@ OpenAI로 한국어 번역·요약한다. main.py build_body() 가 '💬 트럼�
 실행: python trump_briefing.py (섹션을 콘솔에 출력, 단독 테스트용). 평소엔 main.py의 build_body()가 호출
 관련: news_brief.py, main.py
 """
+from __future__ import annotations
+
 import os
 import re
 import json
@@ -24,6 +26,7 @@ import html
 import time
 import calendar
 from datetime import datetime
+from typing import Any
 
 import feedparser
 import pytz
@@ -63,7 +66,7 @@ def _when(ts):
         return "시간미상"
 
 
-def fetch_posts():
+def fetch_posts() -> list[dict[str, Any]]:
     """최근 발언(dict: text, ts, when) 목록. 최신순."""
     feed = feedparser.parse(FEED_URL, request_headers={"User-Agent": _UA})
     now, out = time.time(), []
@@ -132,7 +135,7 @@ def _analyze(posts, client):
     return (data.get("today") or "").strip(), picks, market, outlook
 
 
-def build_trump_section(client=None):
+def build_trump_section(client: Any = None) -> str:
     """이메일/사이트 본문에 붙일 '트럼프 PART' 문자열. 실패해도 빈 값 아님."""
     header = "💬 트럼프 PART"
     if client is None:

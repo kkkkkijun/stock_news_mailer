@@ -22,6 +22,8 @@ topic_briefing.py(경제·코인시장)와 realestate_briefing.py(부동산)가 
 실행: 모듈로만 사용(topic_briefing.py, realestate_briefing.py 등에서 호출)
 관련: topic_briefing.py, realestate_briefing.py, main.py, netutil.py
 """
+from __future__ import annotations
+
 import logging
 import os
 import re
@@ -29,7 +31,9 @@ import json
 import html
 import time
 import calendar
+from collections.abc import Sequence
 from datetime import datetime
+from typing import Any
 from urllib.parse import quote
 
 import feedparser
@@ -65,7 +69,7 @@ _UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 # =========================================================
 # 공통 유틸
 # =========================================================
-def get_openai_client():
+def get_openai_client() -> Any | None:
     key = os.getenv("OPENAI_API_KEY")
     if not key:
         return None
@@ -76,13 +80,13 @@ def get_openai_client():
         return None
 
 
-def clean(t):
+def clean(t: str | None) -> str:
     if not t:
         return ""
     return html.unescape(re.sub(r"<[^>]+>", "", t)).strip()
 
 
-def entry_ts(entry):
+def entry_ts(entry: Any) -> float:
     for k in ("published_parsed", "updated_parsed"):
         v = entry.get(k)
         if v:
@@ -96,7 +100,7 @@ def entry_ts(entry):
     return 0.0
 
 
-def when_str(ts):
+def when_str(ts: float | int | None) -> str:
     if not ts:
         return "시간미상"
     try:
@@ -110,7 +114,7 @@ def _toks(s):
             if len(w) > 1}
 
 
-def is_blocked_publisher(pub):
+def is_blocked_publisher(pub: str | None) -> bool:
     """포털 재게시/도메인형 출처면 True. (매체명이 비어 있으면 통과)"""
     p = (pub or "").strip().lower()
     if not p:
@@ -121,7 +125,7 @@ def is_blocked_publisher(pub):
     return bool(re.fullmatch(r"[a-z0-9][a-z0-9.\-]*\.[a-z]{2,}", p))
 
 
-def news_window():
+def news_window() -> str:
     """구글 뉴스 검색 기간. 오전 회차(07:37)는 when:1d 로는 전일 오전이 잘리므로
     2일 창으로 넓혀 '전일 전체'를 포괄한다. 오후 회차는 당일 위주로 1일."""
     return "2d" if datetime.now(KST).hour < 12 else "1d"
@@ -130,7 +134,8 @@ def news_window():
 # =========================================================
 # 수집
 # =========================================================
-def fetch_google_pool(queries, pool_per_query=30):
+def fetch_google_pool(queries: Sequence[tuple[str, str, str, str]],
+                      pool_per_query: int = 30) -> list[dict[str, Any]]:
     """구글 뉴스 RSS 다중 쿼리 → 기사 풀(리드 없음). 포털 재게시 출처는 제외.
 
     queries: (query, hl, gl, ceid) 튜플 목록. query 안의 'when:1d' 는 실행 시각에
@@ -163,7 +168,8 @@ def fetch_google_pool(queries, pool_per_query=30):
     return arts
 
 
-def fetch_publisher_pool(feeds, keywords, max_age_days=2, lead_chars=220):
+def fetch_publisher_pool(feeds: Sequence[tuple[str, str]], keywords: Sequence[str],
+                         max_age_days: int = 2, lead_chars: int = 220) -> list[dict[str, Any]]:
     """언론사 RSS에서 주제 키워드에 맞는 최근 기사 + '리드 문단'을 수집."""
     out, now = [], time.time()
     for name, url in feeds:
@@ -189,7 +195,7 @@ def fetch_publisher_pool(feeds, keywords, max_age_days=2, lead_chars=220):
     return out
 
 
-def merge_pool(items):
+def merge_pool(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """제목 기준 중복 제거(리드가 있는 쪽 우선) 후 최신순 정렬."""
     best = {}
     for a in items:
@@ -204,7 +210,8 @@ def merge_pool(items):
     return uniq
 
 
-def select_candidates(pool, limit=40, lead_quota=25):
+def select_candidates(pool: list[dict[str, Any]], limit: int = 40,
+                      lead_quota: int = 25) -> list[dict[str, Any]]:
     """리드(사실 근거)가 있는 기사를 우선 배치하고, 나머지는 구글 뉴스로 채운다."""
     withlead = [a for a in pool if a.get("lead")]
     nolead = [a for a in pool if not a.get("lead")]
@@ -212,7 +219,8 @@ def select_candidates(pool, limit=40, lead_quota=25):
     return (picked + nolead[:limit - len(picked)])[:limit]
 
 
-def dedupe_picks(picks, head_overlap=0.6, full_jaccard=0.5):
+def dedupe_picks(picks: list[dict[str, Any]], head_overlap: float = 0.6,
+                 full_jaccard: float = 0.5) -> list[dict[str, Any]]:
     """선택된 뉴스 중 '사실상 같은 사건'을 제거(프롬프트만으론 불안정해 코드로 보강).
 
     - 제목 단어 overlap 계수(교집합/짧은쪽) ≥ 0.6  → 같은 사건으로 간주
@@ -240,9 +248,9 @@ def dedupe_picks(picks, head_overlap=0.6, full_jaccard=0.5):
 # =========================================================
 # 분석(LLM) · 렌더링
 # =========================================================
-def analyze(pool, client, *, role, theme_options, top_n,
-            scope="", today_hint="오늘 상황 요약 2~3문장(무슨 일/전반 분위기)",
-            pick_criteria="중요한 순으로"):
+def analyze(pool: list[dict[str, Any]], client: Any, *, role: str, theme_options: str, top_n: int,
+            scope: str = "", today_hint: str = "오늘 상황 요약 2~3문장(무슨 일/전반 분위기)",
+            pick_criteria: str = "중요한 순으로") -> tuple[str, list[dict[str, Any]], list[str]]:
     """후보 뉴스를 OpenAI로 분석 → (today, picks, outlook)."""
     candidates = select_candidates(pool)
     rows = []
@@ -306,7 +314,7 @@ def analyze(pool, client, *, role, theme_options, top_n,
     return (data.get("today") or "").strip(), picks, outlook
 
 
-def fetch_article_body(url, max_chars=None):
+def fetch_article_body(url: str, max_chars: int | None = None) -> str:
     """기사 원문에서 본문만 추출(실패 시 빈 문자열).
 
     구글 뉴스 링크는 JS 리다이렉트라 본문을 얻을 수 없어 건너뛴다.
@@ -330,8 +338,9 @@ def fetch_article_body(url, max_chars=None):
         return ""
 
 
-def refine_with_bodies(picks, client, *, role, scope="",
-                       today_hint="오늘 상황 요약 2~3문장(무슨 일/전반 분위기)"):
+def refine_with_bodies(picks: list[dict[str, Any]], client: Any, *, role: str, scope: str = "",
+                       today_hint: str = "오늘 상황 요약 2~3문장(무슨 일/전반 분위기)"
+                       ) -> tuple[str, list[dict[str, Any]], list[str]] | None:
     """[2단계] 선정된 기사의 '원문 본문'을 근거로 today/요약/전망을 다시 작성.
 
     본문을 하나도 확보하지 못하면 None 을 돌려 1단계 결과를 그대로 쓰게 한다.
@@ -402,7 +411,8 @@ def _fallback_headlines(pool, header, top_n, note=""):
     return "\n".join(lines)
 
 
-def render_section(header, today, picks, outlook, today_label):
+def render_section(header: str, today: str, picks: list[dict[str, Any]],
+                   outlook: list[str], today_label: str) -> str:
     lines = [header, ""]
     if today:
         lines += [today_label, today, ""]
@@ -427,13 +437,16 @@ def render_section(header, today, picks, outlook, today_label):
 # =========================================================
 # 주제별 진입점에서 호출하는 단일 함수
 # =========================================================
-def build_briefing(*, header, queries, role, theme_options,
-                   feeds=(), keywords=(), top_n=5, pool_per_query=30,
-                   scope="", today_label="[오늘 한눈에]",
-                   today_hint="오늘 상황 요약 2~3문장(무슨 일/전반 분위기)",
-                   pick_criteria="중요한 순으로",
-                   empty_msg="오늘 수집된 뉴스가 없습니다.",
-                   feed_max_age_days=2, lead_chars=220, client=None):
+def build_briefing(*, header: str, queries: Sequence[tuple[str, str, str, str]], role: str,
+                   theme_options: str,
+                   feeds: Sequence[tuple[str, str]] = (), keywords: Sequence[str] = (),
+                   top_n: int = 5, pool_per_query: int = 30,
+                   scope: str = "", today_label: str = "[오늘 한눈에]",
+                   today_hint: str = "오늘 상황 요약 2~3문장(무슨 일/전반 분위기)",
+                   pick_criteria: str = "중요한 순으로",
+                   empty_msg: str = "오늘 수집된 뉴스가 없습니다.",
+                   feed_max_age_days: int = 2, lead_chars: int = 220,
+                   client: Any = None) -> str:
     """주제별 브리핑 섹션 문자열 반환. 실패해도 빈 값은 반환하지 않는다."""
     if client is None:
         client = get_openai_client()

@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """브리핑 본문(plain text) 파싱(publish_site.py 분리)."""
+from __future__ import annotations
+
 import logging
 import os
 import re

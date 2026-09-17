@@ -12,6 +12,7 @@ import logging
 import os
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
+from typing import Any
 
 import netutil
 from settings import KST, stock_tickers, crypto_tickers
@@ -33,7 +34,7 @@ __all__ = [
 log = logging.getLogger(__name__)
 
 
-def fetch_and_summarize_news(ticker, client=None):
+def fetch_and_summarize_news(ticker: str, client: Any = None) -> list[str]:
     """티커별 뉴스를 수집·요약해 메일용 문자열 리스트로 반환."""
     articles = fetch_news_articles(ticker)
     if not articles:
@@ -67,7 +68,7 @@ def fetch_and_summarize_news(ticker, client=None):
 # → 주식시장 지표는 CNN, 암호화폐 지표는 Alternative.me 로 분리하고
 #   각각 출처를 명확히 표기한다.
 # =========================================================
-def get_cnn_fear_greed():
+def get_cnn_fear_greed() -> dict[str, Any]:
     """CNN Fear & Greed Index (미국 주식시장 기준).
     CNN 비공식 JSON 엔드포인트. 브라우저 User-Agent 필요(없으면 418).
     ※ 도메인 주의: CNN이 .com → .io 로 이전함.
@@ -100,7 +101,7 @@ def get_cnn_fear_greed():
         }
 
 
-def get_crypto_fear_greed():
+def get_crypto_fear_greed() -> dict[str, Any]:
     """Crypto Fear & Greed Index (암호화폐 기준, Alternative.me)."""
     try:
         r = netutil.get("https://api.alternative.me/fng/?limit=1", timeout=15)
@@ -129,12 +130,12 @@ def get_crypto_fear_greed():
         }
 
 
-def format_fear_greed_section():
+def format_fear_greed_section() -> str:
     """공포탐욕지수 섹션 문자열 생성 (출처 명확히 표기)."""
     stock = get_cnn_fear_greed()
     crypto = get_crypto_fear_greed()
 
-    def line(d):
+    def line(d: dict[str, Any]) -> str:
         val = d["value"] if d["value"] is not None else "-"
         return f"  - {d['source']}: {val} ({d['classification']})"
         
@@ -148,56 +149,66 @@ def format_fear_greed_section():
 # =========================================================
 # 메인 실행
 # =========================================================
-def build_body(client=None):
-    stock_summaries = []
-    crypto_summaries = []
+def _section_ticker_news(header: str, tickers: list[str], client: Any = None) -> str:
+    """티커 목록의 뉴스 요약을 병렬 수집해 'header + 요약들' 텍스트로 반환한다.
 
-    # 티커별 뉴스 수집·요약은 서로 독립적이므로 병렬로 실행하되,
-    # executor.map은 입력 순서를 보존해 반환하므로 본문 순서는 순차 실행과 동일하다.
+    executor.map은 입력 순서를 보존해 반환하므로 본문 순서는 순차 실행과 동일하다.
+    해외주식/코인 PART 둘 다 이 헬퍼로 만든다."""
+    summaries: list[str] = []
     with ThreadPoolExecutor(max_workers=3) as ex:
-        for res in ex.map(lambda t: fetch_and_summarize_news(t, client=client), stock_tickers):
-            stock_summaries.extend(res)
-    with ThreadPoolExecutor(max_workers=3) as ex:
-        for res in ex.map(lambda t: fetch_and_summarize_news(t, client=client), crypto_tickers):
-            crypto_summaries.extend(res)
+        for res in ex.map(lambda t: fetch_and_summarize_news(t, client=client), tickers):
+            summaries.extend(res)
+    return header + "\n".join(summaries)
 
-    now = datetime.now(KST)
-    body = f"[오늘의 뉴스 요약] {now.strftime('%Y-%m-%d %H:%M KST')}\n\n"
-    # 💹 경제 PART (국내+글로벌 거시 맥락을 먼저)
+
+def _section_economy(client: Any = None) -> str:
+    """💹 경제 PART (국내+글로벌 거시 맥락을 먼저). 실패해도 전체를 깨지 않도록 방어."""
     try:
         from topic_briefing import build_economy_section
-        body += build_economy_section(client=client) + "\n\n"
+        return build_economy_section(client=client) + "\n\n"
     except Exception as e:
-        body += f"💹 경제 PART\n(생성 실패: {e})\n\n"
+        return f"💹 경제 PART\n(생성 실패: {e})\n\n"
 
-    body += "📈 해외주식 PART\n"
-    body += "\n".join(stock_summaries) + "\n\n"
-    body += "🪙 코인 PART\n"
-    body += "\n".join(crypto_summaries)
 
-    # 🌐 코인시장 PART (코인 시장 전반 뉴스·흐름·전망)
+def _section_crypto_market(client: Any = None) -> str:
+    """🌐 코인시장 PART (코인 시장 전반 뉴스·흐름·전망)."""
     try:
         from topic_briefing import build_crypto_market_section
-        body += "\n\n" + build_crypto_market_section(client=client)
+        return "\n\n" + build_crypto_market_section(client=client)
     except Exception as e:
-        body += f"\n\n🌐 코인시장 PART\n(생성 실패: {e})"
+        return f"\n\n🌐 코인시장 PART\n(생성 실패: {e})"
 
-    body += "\n" + format_fear_greed_section()
 
-    # 🏘️ 부동산 PART (구글 뉴스 종합 + LLM 요약/전망).
-    # 부동산 수집/요약 실패가 뉴스 메일 전체를 깨지 않도록 방어.
+def _section_realestate(client: Any = None) -> str:
+    """🏘️ 부동산 PART (구글 뉴스 종합 + LLM 요약/전망).
+
+    부동산 수집/요약 실패가 뉴스 메일 전체를 깨지 않도록 방어."""
     try:
         from realestate_briefing import build_realestate_section
-        body += "\n\n" + build_realestate_section(client=client)
+        return "\n\n" + build_realestate_section(client=client)
     except Exception as e:
-        body += f"\n\n🏘️ 부동산 PART\n(생성 실패: {e})"
+        return f"\n\n🏘️ 부동산 PART\n(생성 실패: {e})"
 
-    # 💬 트럼프 PART (Truth Social 발언 번역·요약).
+
+def _section_trump(client: Any = None) -> str:
+    """💬 트럼프 PART (Truth Social 발언 번역·요약)."""
     try:
         from trump_briefing import build_trump_section
-        body += "\n\n" + build_trump_section(client=client)
+        return "\n\n" + build_trump_section(client=client)
     except Exception as e:
-        body += f"\n\n💬 트럼프 PART\n(생성 실패: {e})"
+        return f"\n\n💬 트럼프 PART\n(생성 실패: {e})"
+
+
+def build_body(client: Any = None) -> str:
+    now = datetime.now(KST)
+    body = f"[오늘의 뉴스 요약] {now.strftime('%Y-%m-%d %H:%M KST')}\n\n"
+    body += _section_economy(client)
+    body += _section_ticker_news("📈 해외주식 PART\n", stock_tickers, client) + "\n\n"
+    body += _section_ticker_news("🪙 코인 PART\n", crypto_tickers, client)
+    body += _section_crypto_market(client)
+    body += "\n" + format_fear_greed_section()
+    body += _section_realestate(client)
+    body += _section_trump(client)
     return body
 
 

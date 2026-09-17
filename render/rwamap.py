@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """RWA/고래 심리 지도 탭 렌더링(publish_site.py 분리)."""
+from __future__ import annotations
 
 
-def _render_rwa():
+def _render_rwa() -> str:
     head = ('<div class="sched-head" style="margin-bottom:8px"><span>'
             '<span class="sched-ico">🗺️</span>지도 '
             '<span class="sched-tz">Ostium · 온체인 RWA 심리</span></span></div>')

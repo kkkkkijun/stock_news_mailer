@@ -16,7 +16,10 @@ main.py 의 build_body() 가 아래 두 함수를 호출한다.
 실행: python topic_briefing.py (두 섹션을 콘솔에 출력, 단독 테스트용). 평소엔 main.py의 build_body()가 호출
 관련: news_brief.py, main.py
 """
+from __future__ import annotations
+
 import os
+from typing import Any
 
 from news_brief import build_briefing, get_openai_client  # noqa: F401
 
@@ -59,7 +62,7 @@ CRYPTO_KEYWORDS = [
 ]
 
 
-def build_economy_section(client=None):
+def build_economy_section(client: Any = None) -> str:
     return build_briefing(
         header="💹 경제 PART",
         queries=ECONOMY_QUERIES,
@@ -70,7 +73,7 @@ def build_economy_section(client=None):
     )
 
 
-def build_crypto_market_section(client=None):
+def build_crypto_market_section(client: Any = None) -> str:
     return build_briefing(
         header="🌐 코인시장 PART",
         queries=CRYPTO_MARKET_QUERIES,

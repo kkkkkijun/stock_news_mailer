@@ -82,6 +82,118 @@ def _ym_str(s):
     return f"{s[2:4]}.{s[5:7]}" if s and len(s) >= 7 else ""
 
 
+def _earn_prev_block(hist):
+    """직전 실적(EPS 실측/예상/서프라이즈) + 분기별 서프라이즈 목록. hist 없으면 빈 dict."""
+    if not hist:
+        return {}
+    last = hist[-1]
+    ea, ee = _num(last.get("epsActual")), _num(last.get("epsEstimate"))
+    sfmt, spos = _signfmt(_g(last, "surprisePercent", "fmt"))
+    out = {"prev": {"period": _ym_ts(_num(last.get("quarter"))),
+                    "eps_act": f"${ea:.2f}" if ea is not None else "-",
+                    "eps_est": f"${ee:.2f}" if ee is not None else "-",
+                    "surprise": sfmt, "surprise_pos": spos}}
+    sp = []
+    for q in hist:
+        v = _pctval(_g(q, "surprisePercent", "fmt"))
+        if v is not None:
+            sf, sposq = _signfmt(_g(q, "surprisePercent", "fmt"))
+            sp.append({"fmt": sf, "v": v, "pos": sposq})
+    out["surprises"] = sp
+    return out
+
+
+def _earn_trend_blocks(res):
+    """이번/다음 분기 컨센서스(cur/next)와 최근 30일 EPS 리비전(rev) 블록."""
+    out = {}
+    for t in res.get("earningsTrend", {}).get("trend", []) or []:
+        per = t.get("period")
+        if per not in ("0q", "+1q"):
+            continue
+        avg = _num(_g(t, "earningsEstimate", "avg"))
+        lo = _num(_g(t, "earningsEstimate", "low"))
+        hi = _num(_g(t, "earningsEstimate", "high"))
+        gfmt, gpos = _signfmt(_g(t, "growth", "fmt"))
+        rev = _g(t, "revenueEstimate", "avg", "fmt")
+        blk = {"period": _ym_str(t.get("endDate")),
+               "eps": f"${avg:.2f}" if avg is not None else "-",
+               "eps_range": (f"${lo:.2f}~${hi:.2f}"
+                             if lo is not None and hi is not None else ""),
+               "rev": f"${rev}" if rev else "-",
+               "growth": gfmt, "growth_pos": gpos}
+        if per == "0q":          # 곧 발표할 그 분기 = '이번 발표 예상'
+            out["cur"] = blk
+            out["rev"] = {"up": _num(_g(t, "epsRevisions", "upLast30days")),
+                          "down": _num(_g(t, "epsRevisions", "downLast30days"))}
+        else:                    # +1q = 그 다음 분기
+            out["next"] = blk
+    return out
+
+
+def _earn_cq(per):
+    """'26.06' → ('2026-2','2026 2Q'): 회계분기를 캘린더 분기(1Q~4Q) 키로."""
+    try:
+        y = 2000 + int(per[:2]); mo = int(per[3:5]); q = (mo - 1) // 3 + 1
+        return f"{y}-{q}", f"{y} {q}Q"
+    except (ValueError, TypeError):
+        return None, None
+
+
+def _earn_quarters(hist, res, date):
+    """분기별(과거 실제 + 다가올 예상) 목록 → 기업실적 '분기별' 토글용.
+    회계분기 종료월의 '캘린더 분기(1Q~4Q)'로 그룹핑(NVDA 등 오프셋 흡수)."""
+    qmap = {}
+    for q in hist:
+        per = _ym_ts(_num(q.get("quarter")))
+        cq, cql = _earn_cq(per)
+        if not cq:
+            continue
+        ea, ee = _num(q.get("epsActual")), _num(q.get("epsEstimate"))
+        sfmt, spos = _signfmt(_g(q, "surprisePercent", "fmt"))
+        qmap[cq] = {"cq": cq, "label": cql, "reported": True,
+                    "eps_act": f"${ea:.2f}" if ea is not None else "-",
+                    "eps_est": f"${ee:.2f}" if ee is not None else "-",
+                    "surprise": sfmt, "surprise_pos": spos}
+    for t in res.get("earningsTrend", {}).get("trend", []) or []:
+        if t.get("period") not in ("0q", "+1q"):
+            continue
+        cq, cql = _earn_cq(_ym_str(t.get("endDate")))
+        if not cq or cq in qmap:
+            continue
+        avg = _num(_g(t, "earningsEstimate", "avg"))
+        rev = _g(t, "revenueEstimate", "avg", "fmt")
+        e = {"cq": cq, "label": cql, "reported": False,
+             "eps_est": f"${avg:.2f}" if avg is not None else "-",
+             "rev": f"${rev}" if rev else None}
+        if t.get("period") == "0q":
+            e["date"] = date
+        qmap[cq] = e
+    return [qmap[k] for k in sorted(qmap)]
+
+
+def _earn_target_and_rec(fd, rt):
+    """목표주가(target)와 애널리스트 의견(rec) 블록."""
+    pr, mn = _num(fd.get("currentPrice")), _num(fd.get("targetMeanPrice"))
+    lo2, hi2 = _num(fd.get("targetLowPrice")), _num(fd.get("targetHighPrice"))
+    up = round((mn - pr) / pr * 100) if pr and mn else None
+    target = {"price": f"${pr:,.2f}" if pr else "-",
+              "mean": f"${mn:,.2f}" if mn else "-",
+              "range": (f"${lo2:,.0f}~${hi2:,.0f}" if lo2 and hi2 else ""),
+              "upside": (f"{'+' if up >= 0 else ''}{up}%" if up is not None else None),
+              "upside_pos": (up is not None and up >= 0)}
+    _rk = {"strong_buy": "적극 매수", "buy": "매수", "hold": "보유",
+           "underperform": "비중 축소", "sell": "매도"}
+    key = fd.get("recommendationKey")
+    rec = {"label": _rk.get(key, key or "-"),
+           "count": _num(fd.get("numberOfAnalystOpinions"))}
+    if rt:
+        t0 = rt[0]
+        rec.update({"buy": (t0.get("strongBuy", 0) or 0) + (t0.get("buy", 0) or 0),
+                    "hold": t0.get("hold", 0) or 0,
+                    "sell": (t0.get("sell", 0) or 0) + (t0.get("strongSell", 0) or 0)})
+    return {"target": target, "rec": rec}
+
+
 def _fetch_earning(session, crumb, sym):
     """종목 다음 실적일 + 상세(직전실적·컨센서스·목표주가·의견·리비전·서프라이즈)."""
     from datetime import datetime as _dt
@@ -98,99 +210,14 @@ def _fetch_earning(session, crumb, sym):
     date = (_dt.fromtimestamp(min(raws), KST).strftime("%Y-%m-%d")
             if raws else None)   # 실적 발표일: 한국시간(KST) 기준
     est = bool(ce.get("isEarningsDateEstimate"))
+    hist = res.get("earningsHistory", {}).get("history", []) or []
 
     d = {}
-    hist = res.get("earningsHistory", {}).get("history", []) or []
-    if hist:
-        last = hist[-1]
-        ea, ee = _num(last.get("epsActual")), _num(last.get("epsEstimate"))
-        sfmt, spos = _signfmt(_g(last, "surprisePercent", "fmt"))
-        d["prev"] = {"period": _ym_ts(_num(last.get("quarter"))),
-                     "eps_act": f"${ea:.2f}" if ea is not None else "-",
-                     "eps_est": f"${ee:.2f}" if ee is not None else "-",
-                     "surprise": sfmt, "surprise_pos": spos}
-        sp = []
-        for q in hist:
-            v = _pctval(_g(q, "surprisePercent", "fmt"))
-            if v is not None:
-                sf, sposq = _signfmt(_g(q, "surprisePercent", "fmt"))
-                sp.append({"fmt": sf, "v": v, "pos": sposq})
-        d["surprises"] = sp
-    for t in res.get("earningsTrend", {}).get("trend", []) or []:
-        per = t.get("period")
-        if per in ("0q", "+1q"):
-            avg = _num(_g(t, "earningsEstimate", "avg"))
-            lo = _num(_g(t, "earningsEstimate", "low"))
-            hi = _num(_g(t, "earningsEstimate", "high"))
-            gfmt, gpos = _signfmt(_g(t, "growth", "fmt"))
-            rev = _g(t, "revenueEstimate", "avg", "fmt")
-            blk = {"period": _ym_str(t.get("endDate")),
-                   "eps": f"${avg:.2f}" if avg is not None else "-",
-                   "eps_range": (f"${lo:.2f}~${hi:.2f}"
-                                 if lo is not None and hi is not None else ""),
-                   "rev": f"${rev}" if rev else "-",
-                   "growth": gfmt, "growth_pos": gpos}
-            if per == "0q":          # 곧 발표할 그 분기 = '이번 발표 예상'
-                d["cur"] = blk
-                d["rev"] = {"up": _num(_g(t, "epsRevisions", "upLast30days")),
-                            "down": _num(_g(t, "epsRevisions", "downLast30days"))}
-            else:                    # +1q = 그 다음 분기
-                d["next"] = blk
-    # 분기별(과거 실제 + 다가올 예상) → 기업실적 '분기별' 토글용.
-    #   회계분기 종료월의 '캘린더 분기(1Q~4Q)'로 그룹핑(NVDA 등 오프셋 흡수).
-    def _cq(per):
-        try:
-            y = 2000 + int(per[:2]); mo = int(per[3:5]); q = (mo - 1) // 3 + 1
-            return f"{y}-{q}", f"{y} {q}Q"
-        except (ValueError, TypeError):
-            return None, None
-    qmap = {}
-    for q in hist:
-        per = _ym_ts(_num(q.get("quarter")))
-        cq, cql = _cq(per)
-        if not cq:
-            continue
-        ea, ee = _num(q.get("epsActual")), _num(q.get("epsEstimate"))
-        sfmt, spos = _signfmt(_g(q, "surprisePercent", "fmt"))
-        qmap[cq] = {"cq": cq, "label": cql, "reported": True,
-                    "eps_act": f"${ea:.2f}" if ea is not None else "-",
-                    "eps_est": f"${ee:.2f}" if ee is not None else "-",
-                    "surprise": sfmt, "surprise_pos": spos}
-    for t in res.get("earningsTrend", {}).get("trend", []) or []:
-        if t.get("period") in ("0q", "+1q"):
-            cq, cql = _cq(_ym_str(t.get("endDate")))
-            if not cq or cq in qmap:
-                continue
-            avg = _num(_g(t, "earningsEstimate", "avg"))
-            rev = _g(t, "revenueEstimate", "avg", "fmt")
-            e = {"cq": cq, "label": cql, "reported": False,
-                 "eps_est": f"${avg:.2f}" if avg is not None else "-",
-                 "rev": f"${rev}" if rev else None}
-            if t.get("period") == "0q":
-                e["date"] = date
-            qmap[cq] = e
-    d["quarters"] = [qmap[k] for k in sorted(qmap)]
-
-    fd = res.get("financialData", {}) or {}
-    pr, mn = _num(fd.get("currentPrice")), _num(fd.get("targetMeanPrice"))
-    lo2, hi2 = _num(fd.get("targetLowPrice")), _num(fd.get("targetHighPrice"))
-    up = round((mn - pr) / pr * 100) if pr and mn else None
-    d["target"] = {"price": f"${pr:,.2f}" if pr else "-",
-                   "mean": f"${mn:,.2f}" if mn else "-",
-                   "range": (f"${lo2:,.0f}~${hi2:,.0f}" if lo2 and hi2 else ""),
-                   "upside": (f"{'+' if up >= 0 else ''}{up}%" if up is not None else None),
-                   "upside_pos": (up is not None and up >= 0)}
-    _rk = {"strong_buy": "적극 매수", "buy": "매수", "hold": "보유",
-           "underperform": "비중 축소", "sell": "매도"}
-    key = fd.get("recommendationKey")
-    d["rec"] = {"label": _rk.get(key, key or "-"),
-                "count": _num(fd.get("numberOfAnalystOpinions"))}
-    rt = res.get("recommendationTrend", {}).get("trend", []) or []
-    if rt:
-        t0 = rt[0]
-        d["rec"].update({"buy": (t0.get("strongBuy", 0) or 0) + (t0.get("buy", 0) or 0),
-                         "hold": t0.get("hold", 0) or 0,
-                         "sell": (t0.get("sell", 0) or 0) + (t0.get("strongSell", 0) or 0)})
+    d.update(_earn_prev_block(hist))
+    d.update(_earn_trend_blocks(res))
+    d["quarters"] = _earn_quarters(hist, res, date)
+    d.update(_earn_target_and_rec(res.get("financialData", {}) or {},
+                                  res.get("recommendationTrend", {}).get("trend", []) or []))
     return {"date": date, "ts": (min(raws) if raws else None),
             "est": est, "detail": d}
 
@@ -300,9 +327,119 @@ def _gen_report(client, name, sym, qlabel, numbers, press_text,
                 "metrics": [], "guidance": "", "bullets": []}
 
 
+def _recent_press(t: str, now: datetime, existing: dict[str, Any]) -> tuple[dict[str, Any], str, str] | None:
+    """최근(130일 내)·미캐시 8-K 보도자료를 가져온다. 해당 없으면 None(호출부가 existing 재사용)."""
+    from datetime import datetime as _dt
+    time.sleep(0.3)                     # SEC 레이트리밋 여유
+    press = _sec_8k_press(t)
+    if not press:
+        return None
+    kshort, kiso = _report_kdate(press.get("accept"))
+    try:
+        days = (now.date() - _dt.strptime(kiso, "%Y-%m-%d").date()).days
+    except (ValueError, TypeError):
+        days = 999
+    if days > 130:                      # 최근 한 분기(약 130일) 내 발표만 카드화
+        return None
+    if existing.get(t, {}).get("acc") == press["acc"]:   # 캐시
+        return None
+    return press, kshort, kiso
+
+
+def _resolve_report_quarter(cur: dict[str, Any], rq: list[dict[str, Any]],
+                            kiso: str) -> tuple[str, str, bool] | None:
+    """발표 분기 판정(8-K 접수일 기준): 접수일이 cur(0q) 분기말 이후면 Yahoo 실제치 미반영
+    상태 → cur(0q)가 방금 발표분. 아니면 최신 실제분기(rq 마지막). 판정 불가면 None."""
+    cur_cq, cur_label = (_period_cq(cur["period"]) if cur.get("period") else (None, None))
+    yahoo_lag = bool(cur_cq and kiso and kiso > _period_qend(cur["period"]))
+    if yahoo_lag:
+        return cur_cq, cur_label, yahoo_lag
+    if rq:
+        return rq[-1].get("cq"), rq[-1].get("label", ""), yahoo_lag
+    return None
+
+
+def _report_numbers_text(cur: dict[str, Any], prev: dict[str, Any], yahoo_lag: bool) -> str:
+    """LLM 프롬프트에 넘길 '확정 숫자' 문구."""
+    if yahoo_lag:        # Yahoo 실제치 미반영 → 발표문 원문에서 실제 추출 유도
+        return (f"이번 분기 시장 예상 EPS {cur.get('eps', '-')} 매출 {cur.get('rev', '-')}; "
+                "실제 수치·서프라이즈는 발표문 원문 기준으로 추출할 것")
+    return (f"EPS 실제 {prev.get('eps_act', '-')} / 예상 {prev.get('eps_est', '-')} "
+            f"(서프라이즈 {prev.get('surprise', '-')})")
+
+
+def _report_market_context(t: str) -> tuple[str, str]:
+    """주가 반응 + 관련 뉴스(왜 올랐/내렸는지 근거 확보) → (price_move, news_text)."""
+    q = fetch_quote(t)
+    pm = ""
+    if q and q.get("chg") is not None:
+        c = q["chg"]
+        pm = f"전일대비 {c:+.2f}% ({'상승' if c >= 0 else '하락'})"
+    news_text = ""
+    try:
+        arts = fetch_news_articles(t)[:4]
+        news_text = " / ".join(a.get("title") or "" for a in arts if a.get("title"))
+    except Exception as e:
+        log.warning(f"[reports] {t} 관련 뉴스 조회 실패: {e}")
+    return pm, news_text
+
+
+def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, Any],
+                       client: Any, now: datetime) -> dict[str, Any] | None:
+    """티커 하나의 실적 보고서 레코드를 만든다(발표 없음/캐시 히트 시 existing 재사용, 실패 시 None)."""
+    if not er:
+        return None
+    det = er.get("detail") or {}
+    cur, prev = det.get("cur") or {}, det.get("prev") or {}
+    rq = [q for q in (det.get("quarters") or []) if q.get("reported")]
+    if not rq and not cur.get("period"):
+        return None
+    press_info = _recent_press(t, now, existing)
+    if press_info is None:
+        return existing.get(t)
+    press, kshort, kiso = press_info
+    resolved = _resolve_report_quarter(cur, rq, kiso)
+    if resolved is None:
+        return existing.get(t)
+    cq, qlabel, yahoo_lag = resolved
+    if not cq:
+        return existing.get(t)
+    try:
+        qnum = int(cq.split("-")[1])
+    except (ValueError, IndexError):
+        qnum = 0
+    name = _EARN_KO.get(t, t)
+    numbers = _report_numbers_text(cur, prev, yahoo_lag)
+    pm, news_text = _report_market_context(t)
+    log.info(f"[reports] {t} 8-K 요약 생성… ({qlabel}, 주가 {pm or '-'})")
+    summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"],
+                       price_move=pm, news_text=news_text)
+    rec = {"ticker": t, "name": name,
+           "title": f"{kshort}_{name}_{qnum}분기_실적보고서",
+           "date": kiso, "qnum": qnum, "quarter": qlabel, "cq": cq,
+           "acc": press["acc"], "url": press["url"]}
+    if not yahoo_lag:    # Yahoo 실제치 있을 때만 EPS/서프라이즈 첨부
+        rec.update({"eps_act": prev.get("eps_act"), "eps_est": prev.get("eps_est"),
+                    "surprise": prev.get("surprise"), "surprise_pos": prev.get("surprise_pos")})
+    rec.update(summ)
+    return rec
+
+
+def _save_reports(path: str, reports: list[dict[str, Any]], prev: dict[str, Any]) -> None:
+    """생성된 보고서를 저장한다. 전부 실패(reports 비어있음)면 기존 파일을 그대로 둔다."""
+    import json as _json
+    if not reports:
+        log.warning("[reports] 생성된 보고서 없음")
+        return
+    reports.sort(key=lambda r: r.get("date", ""), reverse=True)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        _json.dump(reports, f, ensure_ascii=False, indent=1)
+    log.info(f"[reports] 저장: {len(reports)}개")
+
+
 def build_reports(path: str | None = None, client: Any = None) -> None:
     import json as _json
-    from datetime import datetime as _dt
     edir = os.path.dirname(os.path.abspath(__file__))
     path = path or os.path.join(edir, "data", "reports.json")
     try:
@@ -320,88 +457,7 @@ def build_reports(path: str | None = None, client: Any = None) -> None:
     now = datetime.now(KST)
     out = []
     for t in EARNINGS_TICKERS:
-        er = earns.get(t)
-        if not er:
-            continue
-        det = er.get("detail") or {}
-        cur, prev = det.get("cur") or {}, det.get("prev") or {}
-        rq = [q for q in (det.get("quarters") or []) if q.get("reported")]
-        if not rq and not cur.get("period"):
-            continue
-        time.sleep(0.3)                     # SEC 레이트리밋 여유
-        press = _sec_8k_press(t)
-        if not press:
-            if t in existing:
-                out.append(existing[t])
-            continue
-        kshort, kiso = _report_kdate(press.get("accept"))
-        try:
-            days = (now.date() - _dt.strptime(kiso, "%Y-%m-%d").date()).days
-        except (ValueError, TypeError):
-            days = 999
-        if days > 130:                      # 최근 한 분기(약 130일) 내 발표만 카드화
-            if t in existing:
-                out.append(existing[t])
-            continue
-        if existing.get(t, {}).get("acc") == press["acc"]:   # 캐시
-            out.append(existing[t])
-            continue
-        # 발표 분기 판정(8-K 접수일 기준): 접수일이 cur(0q) 분기말 이후면
-        #   Yahoo 실제치 미반영 상태 → cur(0q)가 방금 발표분. 아니면 최신 실제분기(prev).
-        cur_cq, cur_label = (_period_cq(cur["period"]) if cur.get("period") else (None, None))
-        yahoo_lag = bool(cur_cq and kiso and kiso > _period_qend(cur["period"]))
-        if yahoo_lag:
-            cq, qlabel = cur_cq, cur_label
-        elif rq:
-            cq, qlabel = rq[-1].get("cq"), rq[-1].get("label", "")
-        else:
-            if t in existing:
-                out.append(existing[t])
-            continue
-        if not cq:
-            if t in existing:
-                out.append(existing[t])
-            continue
-        try:
-            qnum = int(cq.split("-")[1])
-        except (ValueError, IndexError):
-            qnum = 0
-        name = _EARN_KO.get(t, t)
-        if yahoo_lag:        # Yahoo 실제치 미반영 → 발표문 원문에서 실제 추출 유도
-            numbers = (f"이번 분기 시장 예상 EPS {cur.get('eps', '-')} 매출 {cur.get('rev', '-')}; "
-                       "실제 수치·서프라이즈는 발표문 원문 기준으로 추출할 것")
-        else:
-            numbers = (f"EPS 실제 {prev.get('eps_act', '-')} / 예상 {prev.get('eps_est', '-')} "
-                       f"(서프라이즈 {prev.get('surprise', '-')})")
-        # 주가 반응 + 시장 뉴스 → 왜 올랐/내렸는지 근거 확보
-        q = fetch_quote(t)
-        pm = ""
-        if q and q.get("chg") is not None:
-            c = q["chg"]
-            pm = f"전일대비 {c:+.2f}% ({'상승' if c >= 0 else '하락'})"
-        news_text = ""
-        try:
-            arts = fetch_news_articles(t)[:4]
-            news_text = " / ".join(a.get("title") or "" for a in arts if a.get("title"))
-        except Exception as e:
-            log.warning(f"[reports] {t} 관련 뉴스 조회 실패: {e}")
-        log.info(f"[reports] {t} 8-K 요약 생성… ({qlabel}, 주가 {pm or '-'})")
-        summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"],
-                           price_move=pm, news_text=news_text)
-        rec = {"ticker": t, "name": name,
-               "title": f"{kshort}_{name}_{qnum}분기_실적보고서",
-               "date": kiso, "qnum": qnum, "quarter": qlabel, "cq": cq,
-               "acc": press["acc"], "url": press["url"]}
-        if not yahoo_lag:    # Yahoo 실제치 있을 때만 EPS/서프라이즈 첨부
-            rec.update({"eps_act": prev.get("eps_act"), "eps_est": prev.get("eps_est"),
-                        "surprise": prev.get("surprise"), "surprise_pos": prev.get("surprise_pos")})
-        rec.update(summ)
-        out.append(rec)
-    if not out:
-        log.warning("[reports] 생성된 보고서 없음")
-        return
-    out.sort(key=lambda r: r.get("date", ""), reverse=True)
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        _json.dump(out, f, ensure_ascii=False, indent=1)
-    log.info(f"[reports] 저장: {len(out)}개")
+        rec = _report_for_ticker(t, earns.get(t), existing, client, now)
+        if rec is not None:
+            out.append(rec)
+    _save_reports(path, out, existing)

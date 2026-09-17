@@ -21,6 +21,8 @@
 사용:
     python tests/normalize_html.py <old_dir> <new_dir>
 """
+from __future__ import annotations
+
 import os
 import re
 import sys
@@ -37,7 +39,7 @@ _SRC_ATTR_RE = re.compile(r'src="([^"]*)"')
 _HREF_ATTR_RE = re.compile(r'href="([^"]*)"')
 
 
-def strip_all(html):
+def strip_all(html: str) -> str:
     """<style>/<script>/<link rel=stylesheet> 를 모두 제거한 나머지 텍스트."""
     html = _STYLE_BLOCK_RE.sub("", html)
     html = _SCRIPT_BLOCK_RE.sub("", html)
@@ -58,7 +60,7 @@ def _is_asset_path(path):
     return path is not None and ("assets" + os.sep) in (path + os.sep)
 
 
-def old_inline_blocks(html):
+def old_inline_blocks(html: str) -> tuple[list[str], list[str]]:
     """(css_list, js_list): 문서 순서대로 <style> 본문, <script>(src 없는 것) 본문."""
     css_list = [m.group(1) for m in _STYLE_TAG_RE.finditer(html)]
     js_list = []
@@ -70,7 +72,7 @@ def old_inline_blocks(html):
     return css_list, js_list
 
 
-def new_asset_contributions(html, html_path):
+def new_asset_contributions(html: str, html_path: str) -> tuple[list[str], list[str]]:
     """(css_list, js_list): 문서 순서대로,
     - <style> 본문(옮기지 않고 남아있다면) 또는 <link rel=stylesheet href=".../assets/*.css">가
       가리키는 로컬 파일의 내용
@@ -103,7 +105,7 @@ def new_asset_contributions(html, html_path):
     return css_list, js_list
 
 
-def check_normalized_equivalence(old_dir, new_dir):
+def check_normalized_equivalence(old_dir: str, new_dir: str) -> bool:
     ok = True
     old_files = {os.path.relpath(os.path.join(dp, f), old_dir).replace(os.sep, "/")
                  for dp, _dn, fs in os.walk(old_dir) for f in fs if f.endswith(".html")}
@@ -126,7 +128,7 @@ def check_normalized_equivalence(old_dir, new_dir):
     return ok
 
 
-def check_asset_equivalence(old_dir, new_dir):
+def check_asset_equivalence(old_dir: str, new_dir: str) -> bool:
     ok = True
     new_files = sorted(os.path.relpath(os.path.join(dp, f), new_dir).replace(os.sep, "/")
                         for dp, _dn, fs in os.walk(new_dir) for f in fs if f.endswith(".html"))
@@ -161,7 +163,7 @@ def check_asset_equivalence(old_dir, new_dir):
     return ok
 
 
-def main(old_dir, new_dir):
+def main(old_dir: str, new_dir: str) -> int:
     print("== 1) 정규화 동치성(HTML, style/script/link 제거 후 비교) ==")
     ok1 = check_normalized_equivalence(old_dir, new_dir)
     print()

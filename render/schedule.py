@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """경제지표 일정 렌더링(publish_site.py 분리)."""
+from __future__ import annotations
+
 from render.common import _e
 from render.config import _CUR_CC, _WD_KO
 

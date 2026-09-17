@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """원문·시세·실적·경제지표 데이터 저장/로드(publish_site.py 분리)."""
+from __future__ import annotations
+
 import csv
 import json
 import logging

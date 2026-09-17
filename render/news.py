@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """뉴스/시세 카드 렌더링(publish_site.py 분리)."""
+from __future__ import annotations
+
 import re
 
 from render.common import _e, _spark_svg, _text_on, _ticker_color

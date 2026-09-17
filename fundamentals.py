@@ -13,6 +13,7 @@ import logging
 import statistics
 import time
 from datetime import date
+from typing import Any
 
 import netutil
 from settings import EARNINGS_TICKERS, SUMMARY_MODEL
@@ -371,7 +372,8 @@ def _axes(d):
     }
 
 
-def build_fundamentals(path="data/fundamentals.json", tickers=None):
+def build_fundamentals(path: str = "data/fundamentals.json",
+                       tickers: list[str] | None = None) -> list[dict[str, Any]]:
     tickers = tickers or EARNINGS_TICKERS
     out = []
     for t in tickers:
@@ -465,8 +467,9 @@ def _gen_qual(client, d, sec):
     return json.loads(resp.choices[0].message.content)
 
 
-def build_qualitative(fund_path="data/fundamentals.json",
-                      cache_path="data/qual_cache.json", client=None):
+def build_qualitative(fund_path: str = "data/fundamentals.json",
+                      cache_path: str = "data/qual_cache.json",
+                      client: Any = None) -> list[dict[str, Any]]:
     """fundamentals.json 각 종목에 10-K 기반 정성 분석(qual)을 추가.
     qual_cache.json에 (ticker→acc,qual) 캐시 → 10-K 바뀔 때만 재생성(비용 절감)."""
     if client is None:

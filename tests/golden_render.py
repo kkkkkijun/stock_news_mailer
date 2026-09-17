@@ -17,6 +17,8 @@
 실행: python tests/golden_render.py <out_dir>
 관련: publish_site.py
 """
+from __future__ import annotations
+
 import os
 import shutil
 import sys

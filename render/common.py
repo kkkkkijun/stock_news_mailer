@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """공용 렌더링 헬퍼(publish_site.py 분리)."""
+from __future__ import annotations
+
 import html as _html
 import re
 from datetime import date

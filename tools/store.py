@@ -21,6 +21,8 @@
 실행: 위 "사용" 참조. 원 파이프라인과 무관하게 선택 실행
 관련: publish_site.py(파서 재사용), data/
 """
+from __future__ import annotations
+
 import os
 import sys
 
@@ -30,6 +32,8 @@ if _ROOT not in sys.path:
 
 import re
 import sqlite3
+from datetime import datetime
+from typing import Any
 
 from publish_site import (
     DATA_DIR, PARTS, HERO_PARTS,
@@ -65,7 +69,7 @@ CREATE INDEX IF NOT EXISTS idx_quotes_ticker  ON quotes(ticker);
 """
 
 
-def connect(path=DB_PATH):
+def connect(path: str = DB_PATH) -> sqlite3.Connection:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     con = sqlite3.connect(path)
     con.executescript(SCHEMA)
@@ -82,7 +86,8 @@ def _split_src(src):
     return parts[0], ""
 
 
-def index_briefing(con, slug, now, body, quotes=None):
+def index_briefing(con: sqlite3.Connection, slug: str, now: datetime | None, body: str,
+                   quotes: dict[str, Any] | None = None) -> None:
     """한 회차(slug)를 DB에 색인(기존 행은 교체). publish_site 파서 재사용."""
     m = _SLUG_RE.fullmatch(slug)
     date = f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else ""
@@ -129,7 +134,7 @@ def index_briefing(con, slug, now, body, quotes=None):
     con.commit()
 
 
-def reindex_all(path=DB_PATH):
+def reindex_all(path: str = DB_PATH) -> int:
     """data/*.txt 전체를 DB로 재색인(전량 재생성). 색인한 회차 수 반환."""
     con = connect(path)
     for t in ("items", "quotes", "briefings"):
@@ -149,8 +154,9 @@ def reindex_all(path=DB_PATH):
     return n
 
 
-def search(term, part=None, ticker=None, since=None, until=None,
-           limit=50, path=DB_PATH):
+def search(term: str, part: str | None = None, ticker: str | None = None,
+           since: str | None = None, until: str | None = None,
+           limit: int = 50, path: str = DB_PATH) -> list[dict[str, Any]]:
     """헤드라인/요약 부분일치 검색(+ 파트·티커·기간 필터). dict 목록 반환."""
     con = connect(path)
     con.row_factory = sqlite3.Row
@@ -179,7 +185,7 @@ def search(term, part=None, ticker=None, since=None, until=None,
     return rows
 
 
-def stats(path=DB_PATH):
+def stats(path: str = DB_PATH) -> dict[str, Any]:
     con = connect(path)
     b = con.execute("SELECT COUNT(*) FROM briefings").fetchone()[0]
     it = con.execute("SELECT COUNT(*) FROM items").fetchone()[0]

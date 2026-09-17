@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 """성장주 스크리너·심층 카드 렌더링(publish_site.py 분리)."""
+from __future__ import annotations
+
+from typing import Any
+
 from render.common import _e, _ticker_color
 from render.config import _GR_SIG, _GR_SIGTXT
 
@@ -52,21 +56,9 @@ def _gr_axis_card(title, ax, spark_svg):
         f'{spark_svg}</div>')
 
 
-def _gr_deep(d):
-    tk = _e(d["ticker"])
-    col = _ticker_color(d["ticker"])
-    ax = d.get("axes", {})
-    sc = d.get("score", 0)
-    sc_col = "#16a37f" if sc >= 78 else "#e0930a" if sc >= 55 else "#e5484d"
-    revs = [q.get("v") for q in d.get("series", {}).get("rev", [])]
-    opis = d.get("series", {}).get("opi", [])
-    revsr = d.get("series", {}).get("rev", [])
-    opms = []
-    for r, o in zip(revsr, opis):
-        rv, ov = r.get("v"), o.get("v")
-        opms.append(round(ov / rv * 100, 1) if (rv and ov is not None) else None)
-
-    head = (
+def _gr_deep_head(d: dict[str, Any], tk: str, col: str, sc: int, sc_col: str) -> str:
+    """심층 카드 상단: 뒤로가기 버튼·티커 배지·종목명·기준일·종합점수."""
+    return (
         '<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">'
         f'<button class="gr-back" style="border:1px solid var(--border);background:var(--card);'
         'color:var(--muted);border-radius:8px;padding:5px 9px;font:inherit;font-size:12px;'
@@ -82,7 +74,10 @@ def _gr_deep(d):
         f'line-height:1;color:{sc_col}">{sc}</div>'
         '<div style="font-size:10px;color:var(--faint)">종합점수/100</div></div></div>')
 
-    verdict = (
+
+def _gr_deep_verdict(d: dict[str, Any], ax: dict[str, Any], sc_col: str) -> str:
+    """한 줄 총평(태그 + 4축 라벨 요약)."""
+    return (
         '<div style="background:var(--chip);border-radius:12px;padding:12px 14px;margin-bottom:16px;'
         'font-size:13px;line-height:1.6;color:var(--ink)">'
         f'<b style="color:{sc_col}">{_e(d.get("tag",""))}</b> · '
@@ -90,7 +85,11 @@ def _gr_deep(d):
         f'{_e(ax.get("balance",{}).get("lab",""))}. '
         f'주주가치: {_e(ax.get("shareholder",{}).get("lab",""))}.</div>')
 
-    cards = (
+
+def _gr_deep_cards(ax: dict[str, Any], revs: list[float | None],
+                   opms: list[float | None]) -> str:
+    """4축(성장/수익성경로/재무건전성/주주가치) 카드 행."""
+    return (
         '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px">'
         + _gr_axis_card("① 성장", ax.get("growth", {}), _gr_spark(revs, "#3a6fd8"))
         + _gr_axis_card("② 수익성 경로", ax.get("path", {}), _gr_spark(opms, "#e0930a", zero=True))
@@ -98,7 +97,10 @@ def _gr_deep(d):
         + _gr_axis_card("④ 주주가치", ax.get("shareholder", {}), "")
         + '</div>')
 
-    # 매출 막대
+
+def _gr_deep_story(d: dict[str, Any], revs: list[float | None],
+                   revsr: list[dict[str, Any]], opms: list[float | None]) -> str:
+    """매출 성장 막대그래프 + 적자 갭(영업이익률) 스파크라인 2단 카드."""
     rmax = max([v for v in revs if v is not None] or [1])
     bars = ""
     for q in revsr:
@@ -108,7 +110,7 @@ def _gr_deep(d):
         bg = "#3a6fd8" if last else "#3a6fd855"
         bars += (f'<div title="{_e(q.get("cq",""))}: {_gr_money(v)}" style="flex:1;background:{bg};'
                  f'border-radius:3px 3px 0 0;height:{max(hpct,3)}%"></div>')
-    story = (
+    return (
         '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px">'
         '<div style="flex:1;min-width:240px;background:var(--card);border:1px solid var(--border);'
         'border-radius:12px;padding:14px">'
@@ -126,34 +128,38 @@ def _gr_deep(d):
         + (f' · Δ{d["opm_delta"]:+.0f}%p (전년비)' if d.get("opm_delta") is not None else "")
         + '</div></div></div>')
 
-    # 부채→자산 브릿지
-    bridge = ""
-    br = d.get("bridge")
-    if br and br.get("d_debt") and br.get("capex"):
-        dd, cx = br["d_debt"], br["capex"]
-        ratio = min(100, round(cx / dd * 100)) if dd else 0
-        good = ratio >= 60
-        msg = (f'늘어난 부채의 {ratio}%가 설비투자(CapEx)로 유입 → '
-               + ("<b style=\"color:#16a37f\">투자형 성장</b>" if good
-                  else "<b style=\"color:#e5484d\">일부만 투자·점검 필요</b>"))
-        bridge = (
-            '<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;'
-            'padding:14px;margin-bottom:14px">'
-            f'<div style="font-size:12px;color:var(--muted);margin-bottom:8px">부채 → 자산 브릿지 · '
-            f'지난 1년 부채 {_gr_money(dd)} 증가</div>'
-            '<div style="display:flex;height:26px;border-radius:6px;overflow:hidden;gap:2px;margin-bottom:8px">'
-            f'<div style="width:{ratio}%;background:#16a37f;min-width:2px"></div>'
-            f'<div style="width:{100-ratio}%;background:#cbd5e1"></div></div>'
-            f'<div style="font-size:12px;color:var(--ink);line-height:1.5">CapEx {_gr_money(cx)} · {msg}</div></div>')
 
-    # 커스텀 지표(정량 자동 계산)
+def _gr_deep_bridge(d: dict[str, Any]) -> str:
+    """부채→자산(CapEx) 브릿지 바. 데이터 없으면 빈 문자열."""
+    br = d.get("bridge")
+    if not (br and br.get("d_debt") and br.get("capex")):
+        return ""
+    dd, cx = br["d_debt"], br["capex"]
+    ratio = min(100, round(cx / dd * 100)) if dd else 0
+    good = ratio >= 60
+    msg = (f'늘어난 부채의 {ratio}%가 설비투자(CapEx)로 유입 → '
+           + ("<b style=\"color:#16a37f\">투자형 성장</b>" if good
+              else "<b style=\"color:#e5484d\">일부만 투자·점검 필요</b>"))
+    return (
+        '<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;'
+        'padding:14px;margin-bottom:14px">'
+        f'<div style="font-size:12px;color:var(--muted);margin-bottom:8px">부채 → 자산 브릿지 · '
+        f'지난 1년 부채 {_gr_money(dd)} 증가</div>'
+        '<div style="display:flex;height:26px;border-radius:6px;overflow:hidden;gap:2px;margin-bottom:8px">'
+        f'<div style="width:{ratio}%;background:#16a37f;min-width:2px"></div>'
+        f'<div style="width:{100-ratio}%;background:#cbd5e1"></div></div>'
+        f'<div style="font-size:12px;color:var(--ink);line-height:1.5">CapEx {_gr_money(cx)} · {msg}</div></div>')
+
+
+def _gr_deep_metrics(d: dict[str, Any]) -> str:
+    """커스텀 지표(런웨이·룰40·R&D/매출·FCF) 정량 자동 계산 카드 행."""
     runway = "흑자" if (d.get("fcf") or 0) > 0 else (
         f'{round(d["cash"]/(abs(d["fcf"])/12))}개월'
         if (d.get("cash") and d.get("fcf")) else "—")
     rule40 = (round((d.get("rev_yoy") or 0) + (d.get("opm") or 0))
               if (d.get("rev_yoy") is not None and d.get("opm") is not None) else None)
     rnd_txt = f'{d["rnd_pct"]:.0f}%' if d.get("rnd_pct") is not None else "—"
-    metrics = (
+    return (
         '<div style="font-size:12px;font-weight:700;color:var(--muted);margin:6px 0 8px">내 지표(정량 자동)</div>'
         '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px">'
         f'{_gr_kpi("런웨이(현금÷소진)", runway)}'
@@ -161,6 +167,28 @@ def _gr_deep(d):
         f'{_gr_kpi("R&D/매출", rnd_txt)}'
         f'{_gr_kpi("FCF(TTM)", _gr_money(d.get("fcf")))}'
         '</div>')
+
+
+def _gr_deep(d):
+    tk = _e(d["ticker"])
+    col = _ticker_color(d["ticker"])
+    ax = d.get("axes", {})
+    sc = d.get("score", 0)
+    sc_col = "#16a37f" if sc >= 78 else "#e0930a" if sc >= 55 else "#e5484d"
+    revs = [q.get("v") for q in d.get("series", {}).get("rev", [])]
+    opis = d.get("series", {}).get("opi", [])
+    revsr = d.get("series", {}).get("rev", [])
+    opms = []
+    for r, o in zip(revsr, opis):
+        rv, ov = r.get("v"), o.get("v")
+        opms.append(round(ov / rv * 100, 1) if (rv and ov is not None) else None)
+
+    head = _gr_deep_head(d, tk, col, sc, sc_col)
+    verdict = _gr_deep_verdict(d, ax, sc_col)
+    cards = _gr_deep_cards(ax, revs, opms)
+    story = _gr_deep_story(d, revs, revsr, opms)
+    bridge = _gr_deep_bridge(d)
+    metrics = _gr_deep_metrics(d)
 
     note = ('<div style="font-size:11.5px;color:var(--faint);margin-top:12px">'
             '수치는 SEC 공시(XBRL·10-K) 원본 기반이며 정성 요약은 AI가 작성했습니다. '

@@ -559,42 +559,32 @@ document.querySelectorAll('.tk-more').forEach(function(b){
 </script>"""
 
 
-def render_html(body: str, now: datetime | None = None, links: str = "",
-                 quotes: dict[str, Any] | None = None, mark_new: bool = False,
-                 schedule: bool = False, asset_prefix: str = "") -> str:
-    """브리핑 본문(plain text)을 완성된 페이지 HTML로 렌더링한다.
-
-    schedule=True 인 경우(홈)에만 경제지표/기업실적 '일정' 탭을 채워 넣는다."""
-    now = now or clock.now()
-    qmap = quotes or {}
-    # 직전 회차 대비 '새 뉴스' 표시용 토큰셋(요청 시에만).
-    prev_sets = _prev_item_tokensets(_slug(now)) if mark_new else None
-    sections = _split_sections(body)
-    ampm = "오전" if now.hour < 12 else "오후"
-
-    # 헤더 (요일은 뱃지, 토/일은 색 구분)
+def _render_header(now: datetime, ampm: str, links: str) -> str:
+    """헤더(kicker/제목/최종 업데이트/D-day 진행바) HTML 조각을 만든다."""
     kicker = now.strftime("%Y.%m.%d") + " · MARKET BRIEF"
     dcls = {5: " sat", 6: " sun"}.get(now.weekday(), "")
     dowb = f'<span class="dowb{dcls}">{_DOW[now.weekday()]}</span>'
     sub = f"최종 업데이트 {now.strftime('%H:%M')}"
     built_ep = int(now.timestamp())   # 뷰 시점 경과시간(신선도) 계산용
     pct = _dday_progress(now)
-    hd = (f'<header class="hd"><div class="hd-top">'
-          f'<span class="hd-kicker">{_e(kicker)}</span>'
-          f'<div class="hd-links">{links}'
-          f'<button id="pushBtn" class="hd-archive" onclick="togglePush()">🔔 알림</button>'
-          f'<button id="authSlot" class="auth-slot">로그인</button></div></div>'
-          f'<h1>{ampm} 뉴스 브리핑</h1>'
-          f'<div class="hd-sub"><span class="hd-updated">{dowb}'
-          f'<span class="hd-uptxt"><span>{_e(sub)}</span>'
-          f'<span class="fresh" data-built="{built_ep}"></span></span></span>'
-          f'<span class="hd-slogan">{_e(SLOGAN)}'
-          f'<span class="hd-pct">{_e(_dday_text(now))} · {pct:.2f}%</span>'
-          f'<span class="hd-bar"><i style="width:{pct:.3f}%"></i></span>'
-          f'<span class="hd-target">목표일 {DDAY_TARGET:%Y.%m.%d}</span>'
-          f'</span></div></header>')
+    return (f'<header class="hd"><div class="hd-top">'
+            f'<span class="hd-kicker">{_e(kicker)}</span>'
+            f'<div class="hd-links">{links}'
+            f'<button id="pushBtn" class="hd-archive" onclick="togglePush()">🔔 알림</button>'
+            f'<button id="authSlot" class="auth-slot">로그인</button></div></div>'
+            f'<h1>{ampm} 뉴스 브리핑</h1>'
+            f'<div class="hd-sub"><span class="hd-updated">{dowb}'
+            f'<span class="hd-uptxt"><span>{_e(sub)}</span>'
+            f'<span class="fresh" data-built="{built_ep}"></span></span></span>'
+            f'<span class="hd-slogan">{_e(SLOGAN)}'
+            f'<span class="hd-pct">{_e(_dday_text(now))} · {pct:.2f}%</span>'
+            f'<span class="hd-bar"><i style="width:{pct:.3f}%"></i></span>'
+            f'<span class="hd-target">목표일 {DDAY_TARGET:%Y.%m.%d}</span>'
+            f'</span></div></header>')
 
-    # 공포탐욕 게이지
+
+def _render_gauges(sections: list[tuple[str, list[str]]]) -> str:
+    """공포탐욕 게이지(최대 2개) HTML 조각을 만든다. 대상이 없으면 빈 문자열."""
     gauges = []
     for name, val, grade in _fear_greed(sections)[:2]:
         color = _mood_color(val)
@@ -604,9 +594,12 @@ def render_html(body: str, now: datetime | None = None, links: str = "",
             f'<span class="gauge-mood" style="background:{color};">{_e(grade)}</span></div>'
             f'<div class="gauge-track"><div class="gauge-marker" style="left:{val}%;"></div></div>'
             '<div class="gauge-scale"><span>공포</span><span>탐욕</span></div></div>')
-    gauges_html = f'<div class="gauges">{"".join(gauges)}</div>' if gauges else ""
+    return f'<div class="gauges">{"".join(gauges)}</div>' if gauges else ""
 
-    # 파트 렌더 (본문에 있는 것만)
+
+def _render_parts(sections: list[tuple[str, list[str]]], qmap: dict[str, Any],
+                   prev_sets: dict[str, set[str]] | None) -> dict[str, str]:
+    """본문에 실제로 존재하는 파트만 렌더링해 {part_id: html} 딕셔너리로 반환."""
     rendered = {}
     for pid, icon, name, key in PARTS:
         lines = next((ls for t, ls in sections if key in t), None)
@@ -616,8 +609,13 @@ def render_html(body: str, now: datetime | None = None, links: str = "",
                                          quotes=qmap.get(pid),
                                          prev_sets=prev_sets,
                                          group_by_ticker=(pid in {"os", "coin"}))
+    return rendered
 
-    # 탭 + 패널
+
+def _render_tab_panels(rendered: dict[str, str]) -> tuple[list[str], list[str]]:
+    """TABS 구성에 따라 (nav 버튼 목록, panel HTML 목록)을 만든다.
+
+    주식(os)·코인(coin)이 함께 있으면 서브탭(밑줄 스타일)으로 감싼다."""
     _PART_META = {pid: (icon, nm) for pid, icon, nm, _k in PARTS}
     navs, panels, first = [], [], True
     for i, (tab, pids) in enumerate(TABS):
@@ -644,7 +642,14 @@ def render_html(body: str, now: datetime | None = None, links: str = "",
         navs.append(f'<button class="nav-t{on}" data-p="tp{i}">{_e(tab)}</button>')
         panels.append(f'<div class="panel{on}" id="tp{i}">{inner}</div>')
         first = False
+    return navs, panels
 
+
+def _render_extra_panels(now: datetime, schedule: bool,
+                          navs: list[str], panels: list[str]) -> tuple[str, list[dict[str, Any]]]:
+    """일정/성장주/지도/내 목표 탭을 navs·panels에 이어붙이고 (sched_html, funds)를 반환.
+
+    반환값은 이후 스크립트 태그 조립(assets.tag 조건)에 쓰인다."""
     # 일정 탭: 좌=경제지표 / 우=기업실적 2단(모바일은 세로로 쌓임, 실적 위)
     # 일정(경제지표)은 브리핑 시각이 아닌 "실제 현재 시각" 기준 — 재빌드(refresh) 때도
     # 발표된 높음 지표 결과가 유지되도록.
@@ -681,6 +686,28 @@ def render_html(body: str, now: datetime | None = None, links: str = "",
     panels.append('<div class="panel" id="tpGoal">'
                   '<div id="goalRoot" class="goal-root">'
                   '<div class="goal-msg">불러오는 중…</div></div></div>')
+    return sched_html, funds
+
+
+def render_html(body: str, now: datetime | None = None, links: str = "",
+                 quotes: dict[str, Any] | None = None, mark_new: bool = False,
+                 schedule: bool = False, asset_prefix: str = "") -> str:
+    """브리핑 본문(plain text)을 완성된 페이지 HTML로 렌더링한다.
+
+    schedule=True 인 경우(홈)에만 경제지표/기업실적 '일정' 탭을 채워 넣는다."""
+    now = now or clock.now()
+    qmap = quotes or {}
+    # 직전 회차 대비 '새 뉴스' 표시용 토큰셋(요청 시에만).
+    prev_sets = _prev_item_tokensets(_slug(now)) if mark_new else None
+    sections = _split_sections(body)
+    ampm = "오전" if now.hour < 12 else "오후"
+
+    hd = _render_header(now, ampm, links)
+    gauges_html = _render_gauges(sections)
+
+    rendered = _render_parts(sections, qmap, prev_sets)
+    navs, panels = _render_tab_panels(rendered)
+    sched_html, funds = _render_extra_panels(now, schedule, navs, panels)
 
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
