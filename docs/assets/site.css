@@ -267,7 +267,14 @@ a:hover{opacity:.72;}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
  font-size:13px;color:#94a3b8;}
+.hd-left{display:flex;flex-direction:column;gap:9px;align-items:flex-start;}
 .hd-updated{display:flex;align-items:flex-start;gap:6px;}
+/* 단기 이벤트 디데이 pill(요일 배지와 같은 형태, 연한 빨강) */
+.hd-ev{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;
+ color:#ffd6d6;background:rgba(255,120,120,.16);border:1px solid rgba(255,140,140,.28);
+ padding:4px 11px 4px 8px;border-radius:999px;white-space:nowrap;}
+.hd-ev b{font-size:12.5px;color:#fff;letter-spacing:.02em;}
+.hd-ev-dt{color:#f3b4b4;font-weight:600;opacity:.85;}
 .hd-uptxt{display:flex;flex-direction:column;gap:2px;}
 .fresh{display:block;font-size:10px;color:#86efac;font-weight:600;}  /* 신선함=연녹색 */
 .fresh.warn{color:#fbbf24;}                            /* 다소 지연=주황 */
