@@ -322,6 +322,7 @@ GitHub Actions · GitHub Pages · Firebase Auth/Firestore · Service Worker · W
 ├── data/                   # 브리핑 원문·시세·재무·지표 (수집 결과)
 ├── docs/                   # GitHub Pages 산출물 · PWA · goal-app.js · flags/
 ├── airflow/                # 선택 오케스트레이션 레이어(로컬/Codespaces 프로토타입), dags/_common.py에 공통 설정
+├── streaming/              # Kafka 실시간 시세 집계 프로토타입(포트폴리오용, 운영 사이트와 무관)
 ├── tools/                  # 선택 실행 도구 (tools/store.py: SQLite 파생 인덱스)
 ├── tests/                  # 단위 테스트 + 골든 렌더 등 회귀 테스트
 ├── requirements-dev.txt    # 테스트 실행용 개발 의존성(pytest)

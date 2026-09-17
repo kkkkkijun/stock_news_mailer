@@ -35,3 +35,7 @@ Thumbs.db
 airflow/logs/
 airflow/.env
 airflow/plugins/
+
+# ===== streaming (Kafka 스트리밍 ETL 프로토타입) =====
+streaming/out/
+!streaming/.env.example
