@@ -6,8 +6,31 @@
 실행: pytest -q tests/test_common.py
 관련: render/common.py, render/config.py(TICKER_COLORS)
 """
-from render.common import _text_on, _ticker_color
+from datetime import date, datetime
+
+from render import common
+from render.common import _event_ddays, _text_on, _ticker_color
 from render.config import TICKER_COLORS
+
+
+def _events(monkeypatch, *days):
+    monkeypatch.setattr(common, "EVENT_DDAYS", [(f"ev{i}", d) for i, d in enumerate(days)])
+
+
+def test_event_ddays_counts_down_and_formats_date(monkeypatch):
+    _events(monkeypatch, date(2026, 11, 3))
+    assert _event_ddays(datetime(2026, 9, 18, 7)) == [("ev0", "D-46", "11.03(화)")]
+
+
+def test_event_ddays_shows_dday_on_the_day_and_hides_after(monkeypatch):
+    _events(monkeypatch, date(2026, 11, 3))
+    assert _event_ddays(datetime(2026, 11, 3, 23))[0][1] == "D-DAY"
+    assert _event_ddays(datetime(2026, 11, 4, 0)) == []
+
+
+def test_event_ddays_keeps_config_order_and_skips_past(monkeypatch):
+    _events(monkeypatch, date(2026, 12, 1), date(2026, 1, 1), date(2026, 10, 1))
+    assert [e[0] for e in _event_ddays(datetime(2026, 9, 18))] == ["ev0", "ev2"]
 
 
 def test_ticker_color_known_ticker_uses_brand_color():

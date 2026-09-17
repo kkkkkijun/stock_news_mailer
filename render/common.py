@@ -6,7 +6,7 @@ import html as _html
 import re
 from datetime import date
 
-from render.config import DDAY_START, DDAY_TARGET, TICKER_COLORS
+from render.config import DDAY_START, DDAY_TARGET, EVENT_DDAYS, TICKER_COLORS, _WD_KO
 
 
 # =========================================================
@@ -70,6 +70,20 @@ def _dday_text(now):
     if d == 0:
         return "🗓️ D-DAY"
     return "🗓️ 달성"
+
+
+def _event_ddays(now) -> list[tuple[str, str, str]]:
+    """EVENT_DDAYS 중 아직 지나지 않은 이벤트를 (라벨, 'D-n'/'D-DAY', 'MM.DD(요일)')로.
+
+    당일까지 표시하고 다음 날부터는 목록에서 빠진다(자동 숨김)."""
+    out = []
+    for label, day in EVENT_DDAYS:
+        d = (day - now.date()).days
+        if d < 0:
+            continue
+        dtxt = "D-DAY" if d == 0 else f"D-{d}"
+        out.append((label, dtxt, f"{day:%m.%d}({_WD_KO[day.weekday()]})"))
+    return out
 
 
 def _dday_progress(now):

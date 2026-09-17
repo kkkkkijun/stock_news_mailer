@@ -6,7 +6,7 @@ from datetime import datetime
 from typing import Any
 
 from render import assets, clock
-from render.common import _dday_progress, _dday_text, _e
+from render.common import _dday_progress, _dday_text, _e, _event_ddays
 from render.config import DDAY_TARGET, HERO_PARTS, PARTS, SITE_TITLE, SLOGAN, TABS, _DOW
 from render.earnings import _render_earnings
 from render.files import _load_earnings, _load_econ_events, _load_fundamentals, _slug
@@ -301,7 +301,14 @@ a:hover{opacity:.72;}
 .hd h1{font-size:27px;font-weight:700;margin:16px 0 5px;letter-spacing:-.01em;}
 .hd-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;
  font-size:13px;color:#94a3b8;}
+.hd-left{display:flex;flex-direction:column;gap:9px;align-items:flex-start;}
 .hd-updated{display:flex;align-items:flex-start;gap:6px;}
+/* 단기 이벤트 디데이 pill(요일 배지와 같은 형태, 연한 빨강) */
+.hd-ev{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;
+ color:#ffd6d6;background:rgba(255,120,120,.16);border:1px solid rgba(255,140,140,.28);
+ padding:4px 11px 4px 8px;border-radius:999px;white-space:nowrap;}
+.hd-ev b{font-size:12.5px;color:#fff;letter-spacing:.02em;}
+.hd-ev-dt{color:#f3b4b4;font-weight:600;opacity:.85;}
 .hd-uptxt{display:flex;flex-direction:column;gap:2px;}
 .fresh{display:block;font-size:10px;color:#86efac;font-weight:600;}  /* 신선함=연녹색 */
 .fresh.warn{color:#fbbf24;}                            /* 다소 지연=주황 */
@@ -567,15 +574,19 @@ def _render_header(now: datetime, ampm: str, links: str) -> str:
     sub = f"최종 업데이트 {now.strftime('%H:%M')}"
     built_ep = int(now.timestamp())   # 뷰 시점 경과시간(신선도) 계산용
     pct = _dday_progress(now)
+    pills = "".join(
+        f'<span class="hd-ev">{_e(label)} <b>{_e(dtxt)}</b> <span class="hd-ev-dt">{_e(dt)}</span></span>'
+        for label, dtxt, dt in _event_ddays(now))
     return (f'<header class="hd"><div class="hd-top">'
             f'<span class="hd-kicker">{_e(kicker)}</span>'
             f'<div class="hd-links">{links}'
             f'<button id="pushBtn" class="hd-archive" onclick="togglePush()">🔔 알림</button>'
             f'<button id="authSlot" class="auth-slot">로그인</button></div></div>'
             f'<h1>{ampm} 뉴스 브리핑</h1>'
-            f'<div class="hd-sub"><span class="hd-updated">{dowb}'
+            f'<div class="hd-sub"><div class="hd-left"><span class="hd-updated">{dowb}'
             f'<span class="hd-uptxt"><span>{_e(sub)}</span>'
             f'<span class="fresh" data-built="{built_ep}"></span></span></span>'
+            f'{pills}</div>'
             f'<span class="hd-slogan">{_e(SLOGAN)}'
             f'<span class="hd-pct">{_e(_dday_text(now))} · {pct:.2f}%</span>'
             f'<span class="hd-bar"><i style="width:{pct:.3f}%"></i></span>'
