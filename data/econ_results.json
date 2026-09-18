@@ -228,19 +228,19 @@
 "name": "S&P Global Manufacturing PMI",
 "dt": "2026-09-23T13:45:00Z",
 "act": null,
-"cons": null,
+"cons": "53.6",
 "prev": "53.9",
 "act_n": null,
-"cons_n": null
+"cons_n": 53.6
 },
 "11406332-cc3c-4add-a860-087f85dfddc6": {
 "name": "S&P Global Services PMI",
 "dt": "2026-09-23T13:45:00Z",
 "act": null,
-"cons": null,
+"cons": "56",
 "prev": "56.5",
 "act_n": null,
-"cons_n": null
+"cons_n": 56.0
 },
 "6409072f-d406-4f49-882f-5987e7652fb9": {
 "name": "Tokyo Consumer Price Index (YoY)",
