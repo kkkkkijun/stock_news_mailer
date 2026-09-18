@@ -1,0 +1,243 @@
+2026-09-18T17:02:34.784751+09:00
+
+[오늘의 뉴스 요약] 2026-09-18 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국고채 금리는 전반적으로 하락세를 보였으며, 원/달러 환율은 일본은행의 금리 인상에 따른 반응으로 상승세를 이어갔다. 한국의 성장 전망에 대한 긍정적인 평가가 이어지는 가운데, 경북의 수출이 9개월 연속 증가하는 등 긍정적인 경제 흐름을 나타냈다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 일제히 하락
+   → 18일 서울 채권시장에서 3년물 국고채 금리는 2.8bp 하락해 연 4.035%로 마감했으며, 전체 국고채 금리가 하락세를 보였다.
+   (연합뉴스 · 09/18 16:45)
+2. (환율) 원/달러 환율, 1.1원 오른 1,383.3원
+   → 원/달러 환율은 1.1원 상승한 1,383.3원을 기록하며 7거래일 연속 상승했다.
+   (연합뉴스 · 09/18 16:05)
+3. (성장) 씨티 "반도체 호황에 2028년까지 한국 성장률 3%대 지속"
+   → 한국씨티은행은 2026년에 한국의 GDP 성장률이 3%대를 유지할 것이라고 전망하며, 올해 성장률을 3.7%로 예상했다.
+   (연합뉴스 · 09/18 11:39)
+4. (기타) 진도군-한국은행, 경제정책 포럼
+   → 화성시는 개발제한구역 해제 지역의 도시관리 방안을 마련하기 위한 정비 용역을 실시한다고 밝혔다.
+   (연합뉴스 · 09/18 16:18)
+5. (성장) 경북 수출 9개월 연속 증가
+   → 경북의 수출은 지난달 38억5천만 달러로 14.5% 증가하며 9개월 연속 증가세를 기록했다.
+   (연합뉴스 · 09/18 16:37)
+
+[흐름·전망]
+• 국고채 금리 하락은 금융시장 안정에 대한 긍정적 신호일 수 있으며, 향후 금리 결정에 영향을 줄 수 있다.
+• 원/달러 환율의 상승 추세는 외환시장에서의 불확실성을 반영하며, 수출업체의 수익성에 잠재적 영향을 미칠 수 있다.
+• 씨티은행의 한국 성장률 전망은 반도체 산업의 중요성을 강조하며, 향후 투자 결정에서 중요한 참고자료가 될 것.
+• 경북 수출 증가세는 지역 경제 회복의 긍정적인 신호로, 각 품목별 동향을 지속적으로 모니터링할 필요가 있다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA Pushes Partner-Based Live Localization Workflow at IBC 2026 - Slator
+   (Slator · 09/18 16:35)
+→ NVIDIA는 2026년 IBC 행사에서 파트너 기반의 실시간 현지화 작업 흐름을 강조했습니다. 이 새로운 접근 방식은 협력을 통해 더 효율적인 콘텐츠 현지화를 목표로 하고 있습니다.
+
+📰 [NVDA] Jensen Huang Says Nvidia Will Sell Twice the Chips Next Year - Money Morning
+   (Money Morning · 09/18 16:15)
+→ 엔비디아의 CEO인 젠슨 황은 내년에 엔비디아가 판매할 칩 수가 두 배로 증가할 것이라고 발표했습니다. 이는 회사의 성장 전략과 수요 증가에 기반한 전망입니다.
+
+📰 [NVDA] Jensen Huang says Nvidia will double chip volume next year amid strong AI demand (NVDA:NASDAQ) - Seeking Alpha
+   (Seeking Alpha · 09/18 14:22)
+→ 젠슨 황은 인공지능 수요 증가에 따라 내년에 엔비디아의 칩 생산량을 두 배로 늘릴 것이라고 발표했습니다. 이는 시장에서의 강력한 AI 수요에 대응하기 위한 조치입니다.
+
+📰 [TSLA] Core Capital Management & Research inc. Takes $1.21 Million Position in Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 09/18 16:39)
+→ Core Capital Management & Research Inc.가 테슬라(Tesla, Inc.)에 1.21백만 달러 규모의 투자를 진행했습니다. 이 투자 결정은 최근 시장 정보 서비스인 마켓비트를 통해 보도되었습니다.
+
+📰 [TSLA] 623,903 Shares in Tesla, Inc. $TSLA Bought by Nykredit A S - MarketBeat
+   (MarketBeat · 09/18 16:39)
+→ Nykredit A/S가 테슬라 주식 623,903주를 매입했다는 뉴스입니다. 이 거래는 MarketBeat에서 보도되었습니다.
+
+📰 [TSLA] Key facts: Tesla, Inc. NHTSA audits robotaxi; limited service, $16.8B - TradingView
+   (TradingView · 09/18 16:15)
+→ 테슬라가 자율주행 택시 서비스에 대해 미국 고속도로교통안전국(NHTSA)의 감사를 받고 있으며, 이 서비스는 제한적으로 운영되고 있다. 현재 테슬라의 가치는 168억 달러에 달한다.
+
+📰 [HIMS] Kaplan Fox & Kilsheimer LLP Alerts Hims & Hers Health, Inc. (NYSE: HIMS) Investors to the Lead Plaintiff Deadline on November 2, 2026 - NewMediaWire
+   (NewMediaWire · 09/18 10:45)
+→ Kaplan Fox & Kilsheimer LLP는 Hims & Hers Health, Inc. (NYSE: HIMS) 투자자들에게 2026년 11월 2일까지 주도 원고 마감일이 있음을 알렸습니다. 이 정보는 투자자들이 주의해야 할 중요한 사항입니다.
+
+📰 [HIMS] What’s Changing Around Hims & Hers Health (NYSE:HIMS) Right Now? - Kalkine Media
+   (Kalkine Media · 09/18 07:58)
+→ Hims & Hers Health는 최근 중요한 변화를 겪고 있으며, 이는 주식 시장에서의 반응과 관련이 있습니다. 회사는 헬스케어 서비스와 제품을 확장하며, 소비자에게 접근성을 높이는 데 집중하고 있습니다. 이러한 변화는 앞으로의 성장 가능성과 시장에서의 경쟁력에 긍정적인 영향을 미칠 것으로 예상됩니다.
+
+📰 [HIMS] HIMS Chief Legal Officer Soleil Boughton Sells 6,236 Shares - GuruFocus
+   (GuruFocus · 09/18 07:25)
+→ HIMS의 최고 법무 책임자인 솔레일 보턴이 6,236주를 매도했습니다. 이 거래는 GuruFocus에서 보도되었습니다.
+
+📰 [RDW] RKLB, RDW, SIDU, PL: Why Are These Space Stocks Gaining Overnight? - Stocktwits
+   (Stocktwits · 09/18 08:22)
+→ RKLB, RDW, SIDU, PL 등 여러 우주 관련 주식들이 최근 밤사이 상승세를 보였다. 이들 주식의 상승 원인은 특정 이벤트나 우주 산업에 대한 긍정적인 전망 때문으로 분석되고 있다. 투자자들 사이에서 이러한 주식에 대한 관심이 높아지고 있다.
+
+📰 [RDW] Redwire Corp (RDW) Stock Up 7.0% but GF Value Says Overvalued -- GF Score: 46/100 - GuruFocus
+   (GuruFocus · 09/18 08:02)
+→ Redwire Corp (RDW) 주가가 7.0% 상승했으나, GF Value 분석에서는 과대 평가되었다고 평가되고 있으며, GF 점수는 100점 만점에 46점으로 나타났다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Up 7% - What's Next? - MarketBeat
+   (MarketBeat · 09/18 06:45)
+→ Redwire의 주가가 7% 상승했습니다. 투자자들은 향후 회사의 성장 가능성과 전략에 주목하고 있습니다. 추가적인 분석과 전망이 필요합니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Trading Up 2% - Still a Buy? - MarketBeat
+   (MarketBeat · 09/18 06:53)
+→ IREN(NASDAQ:IREN)의 주가가 2% 상승했으며, 시장 분석가들은 여전히 매수 추천 의견을 내고 있습니다. 이 회사의 미래 성장 가능성에 대한 긍정적인 전망이 반영된 것으로 보입니다.
+
+📰 [IREN] IREN Vs MARA: Why JPMorgan Favors One Bitcoin Miner Turned AI Play Over The Other - Stocktwits
+   (Stocktwits · 09/18 05:09)
+→ JPMorgan은 두 비트코인 채굴 기업 IREN과 MARA 중에서 IREN을 더 선호한다고 밝혔습니다. 그 이유는 IREN이 비트코인 채굴에서 인공지능(AI)으로 사업을 확장하는 가능성이 높기 때문이라고 합니다.
+
+📰 [IREN] Nebius Stock and IREN Gain. AI Neoclouds Are Flexing Their Pricing Power.
+   (Yahoo Finance · 09/18 03:19)
+→ 이번 뉴스에 따르면 AI 칩의 수요가 급증하고 있으며, Nebius는 고객에게 여러 AI 칩의 임대 가격을 약 20% 인상할 것이라고 알렸습니다. 이는 인공지능 관련 컴퓨팅 파워의 가치가 유지되고 있다는 추가적인 증거로 해석됩니다.
+
+📰 [RKLB] RKLB, ASTS, VOYG, LUNR Steal SpaceX’s Thunder — Here’s What Lit Up Space Stocks This Week
+   (Yahoo Finance · 09/18 15:44)
+→ 로켓랩(RKLB)은 80억 달러 규모의 이리듐 인수를 위해 19억 4천만 달러를 모금했으며, 버지니아에서 뉴트론 하드웨어 테스트를 진행하고 있다. 이로 인해 최근 우주 관련 주식들이 주목받고 있다.
+
+📰 [RKLB] RKLB, ASTS, VOYG, LUNR Steal SpaceX’s Thunder — Here’s What Lit Up Space Stocks This Week - Stocktwits
+   (Stocktwits · 09/18 15:44)
+→ 이번 주에 RKLB, ASTS, VOYG, LUNR 등의 우주 관련 주식들이 SpaceX의 주목을 받는 대신 두각을 나타냈습니다. 이러한 회사들은 최근 긍정적인 뉴스와 투자자들의 관심 덕분에 주가 상승세를 보였습니다.
+
+📰 [RKLB] SpaceX or Rocket Lab: Which Space Stock Is the Better Buy for the Next Decade? - The Motley Fool
+   (The Motley Fool · 09/18 11:05)
+→ 모틀리 풀(Motley Fool) 기사에서는 SpaceX와 Rocket Lab 중 향후 10년 동안 더 유망한 투자처가 어느 쪽인지 비교하고 있습니다. 두 회사의 기술력, 시장 점유율, 수익 성장 가능성 등을 분석하여 투자자들에게 보다 나은 선택을 할 수 있도록 안내하고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Holds Key Averages as ETH and XRP Test Barriers - TradingPedia
+   (TradingPedia · 09/18 16:28)
+→ 비트코인이 주요 평균선을 유지하고 있는 가운데 이더리움(ETH)과 리플(XRP)이 저항선을 시험하고 있다는 뉴스입니다. 시장의 주요 암호화폐들이 각각의 저항과 지원 수준에서 중요한 움직임을 보이고 있습니다.
+
+📰 [BTC-USD] Bitcoin Rises Following Tech-Fueled Gains on Wall Street -- Market Talk - Moomoo
+   (Moomoo · 09/18 16:22)
+→ 비트코인이 월가의 기술주 상승에 힘입어 상승세를 보이고 있습니다. 기술주들이 긍정적인 성과를 내면서 비트코인 가격이 영향을 받았습니다.
+
+📰 [BTC-USD] 🚨𝗝𝗨𝗦𝗧 𝗜𝗡:🇺🇸 Bitcoin spot ETFs recorded a net inflow of $159.5M on September 17. - Moomoo
+   (Moomoo · 09/18 16:03)
+→ 2023년 9월 17일, 비트코인 스팟 ETF는 1억 5천 9백 5십만 달러의 순 유입을 기록했습니다.
+
+📰 [ETH-USD] 🚨𝗝𝗨𝗦𝗧 𝗜𝗡:🇺🇸 Ethereum spot ETFs recorded a net outflow of $39.3M on September 17. - Moomoo
+   (Moomoo · 09/18 16:23)
+→ 9월 17일에 이더리움 스팟 ETF에서 3930만 달러의 자금 유출이 발생했다고 보고되었습니다.
+
+📰 [ETH-USD] Ethereum Set Date for Glamsterdam Testing, but Developers Warned of Attack on Sepolia - incrypted
+   (incrypted · 09/18 16:21)
+→ 이더리움은 글램스탐 테스트의 일정을 발표했지만, 개발자들은 세폴리아 네트워크에 대한 공격 위험이 있음을 경고했습니다. 이로 인해 개발자들이 테스트와 보안 점검에 더욱 주의할 필요성이 커졌습니다.
+
+📰 [ETH-USD] Ethereum (ETH) Price Prediction: $2,400 Support Holds as Bulls Eye $2,570 and $3,000 - Brave New Coin
+   (Brave New Coin · 09/18 16:20)
+→ 이더리움(ETH) 가격 예측에 따르면, 2,400달러 지지가 유지되며 강세세력이 2,570달러와 3,000달러를 목표로 하고 있다고 전해졌다. 시장은 이 지지를 바탕으로 상승세를 이어갈 가능성이 있다.
+
+📰 [SOL-USD] Solana speeds up block production by 17% with r... - Pluang
+   (Pluang · 09/18 16:44)
+→ 솔라나가 블록 생산 속도를 17% 향상시켰습니다. 이는 네트워크 효율성을 높이고 거래 처리 능력을 개선하는 데 기여할 것으로 기대됩니다.
+
+📰 [SOL-USD] Solana Crypto Analysis: Trend Strength Near $106 Risks Overbought Levels - The Cryptonomist
+   (The Cryptonomist · 09/18 16:34)
+→ 솔라나의 현재 가격이 106달러 근처에 있으며, 이로 인해 시장의 과매수 상태가 우려되고 있다는 분석이 발표됐다. 가격 상승의 강도는 높지만, 과도한 평가가 이루어질 위험이 존재한다고 전했다.
+
+📰 [SOL-USD] Solana Price Today Analysis: Bullish Trend Amid $106 Resistance - The Cryptonomist
+   (The Cryptonomist · 09/18 16:21)
+→ 솔라나 가격이 현재 $106의 저항선에서 강세를 보이고 있다는 분석이 나왔다. 시장의 긍정적인 흐름 속에서 가격 상승이 기대되고 있다.
+
+📰 [BMNR] BMNR Stock Dips Even As Its Latest Ethereum Buy Leaves It Just 0.1% From Its 'Alchemy Of 5%' Goal - Stocktwits
+   (Stocktwits · 09/18 12:53)
+→ BMNR 주식이 하락했지만 최근 이더리움 구매로 '5%의 연금술' 목표에 0.1%에 가까워졌습니다. 투자자들은 이 변동성을 주목하고 있습니다.
+
+📰 [BMNR] Tom Lee's BMNR Adds 1 BTC, Expands ORBS Stake By $7M Amid Ethereum Buying Spree - Stocktwits
+   (Stocktwits · 09/18 06:00)
+→ Tom Lee의 BMNR이 비트코인 1개를 추가하고 ORBS 지분을 700만 달러 확대했습니다. 이는 이더리움 매수 열풍 속에서 이루어진 결정입니다.
+
+📰 [BMNR] BMNR Stock Rallies As Massive Ethereum Bet Draws Wall Street - timothysykes.com
+   (timothysykes.com · 09/18 05:47)
+→ BMNR 주식이 대규모 이더리움 투자 소식에 힘입어 상승했습니다. 이 투자로 인해 월가의 관심을 끌며 주가가 급등하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 상승세를 보이며, 비트코인은 77,505달러, 이더리움은 2,485달러에 거래되고 있다. 거래소 바이낸스에서 테더의 순유입이 활발히 이루어지고 있으며, 시장의 주요 자산도 긍정적인 흐름을 나타내고 있다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 상승세… 비트코인 77,505달러
+   → 최근 24시간 동안 바이낸스에 테더(USDT)가 1억5500만개 순유입되었으며, 이로 인해 비트코인은 77,505달러로 상승했다.
+   (토큰포스트 · 09/18 16:56)
+2. (시세) 레버리지 포지션 청산 규모 1억8796만달러
+   → 24시간 동안 암호화폐 시장에서 1억8796만달러 규모의 레버리지 포지션이 청산되었으며, 이 중 81%가 숏 포지션이었다.
+   (토큰포스트 · 09/18 15:55)
+3. (시세) 이더리움, 2,485달러로 소폭 상승
+   → 비트코인은 1.45% 상승하여 77,505달러, 이더리움은 1.89% 상승하여 2,485달러에 거래되고 있다.
+   (토큰포스트 · 09/18 16:02)
+4. (시세) 비트코인, 602개 매도 후 이더리움 1만8800개 매수
+   → 업홀드 지갑에서 5억 XRP가 신규 주소 5곳으로 이동하였으나, 이는 매도나 고객 이탈을 나타내는 증거는 없다.
+   (토큰포스트 · 09/18 16:38)
+5. (기타) 비트겟, PoR 검증 자산 확대
+   → 비트겟은 준비금 증명(PoR) 검증 자산을 4종에서 19종으로 확대하였으며, 이용자는 자산의 준비금 비율을 검증할 수 있다.
+   (토큰포스트 · 09/18 16:35)
+
+[흐름·전망]
+• 비트코인 점유율의 축소는 알트코인으로의 자금 분산을 시사하므로, 알트코인 매매 기회에 주목할 필요가 있다.
+• 일부 레버리지 포지션의 청산이 지속적으로 발생하고 있어 시장의 변동성이 예상되며, 투자자들은 리스크 관리에 유의해야 한다.
+• 전반적인 거래량 감소는 관망 심리를 반영하며, 시장 방향성을 판단하는 데 추가적인 지표를 주의 깊게 관찰할 필요가 있다.
+• 비트겟의 PoR 확장은 사용자에게 자산의 안전성을 확인할 수 있는 기회를 제공하므로, 거래소의 신뢰성에 대한 관심이 증가할 것으로 보인다.
+
+📊 공포탐욕지수
+  - CNN 기준: 29 (Fear)
+  - 크립토 기준: 56 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 청년과 신혼부부를 위한 금융 혜택과 주택 공급 확대를 통해 집값 안정화에 기여할 방안을 모색하고 있다.
+
+[핵심 뉴스]
+1. (정책) 청년·신혼부부 위한 내 집 마련 프로젝트 진행
+   → 충남 아산의 '아산테크노밸리 더원 7차' 프로젝트가 청년과 신혼부부를 위해 계약금 비율을 낮추고 무이자 대출을 지원하는 등 다양한 금융 혜택을 제공하며 주목받고 있다.
+   (매일경제 · 09/18 15:17)
+2. (정책) 수도권 집값 안정화 위해 신속한 주택 공급 강조
+   → 이재명 대통령이 기자회견을 통해 수도권 집값 안정화를 위해 신속한 주택 공급을 강조하며, 공급 확대와 금융 지원 촉진 방안을 세부적으로 추진하고 있다고 밝혔다.
+   (매일경제 · 09/18 14:59)
+3. (청약) 서울 청약시장 강남 쏠림 현상 심화
+   → 서울 아파트 청약시장에서 강남 3구와 용산구의 경쟁률이 평균 490.3대 1로, 비강남권의 36.7대 1에 비해 현저하게 높은 수치를 기록하며 강남 쏠림 현상이 더욱 심화되고 있다.
+   (연합뉴스 · 09/18 12:34)
+4. (기타) 부동산 불법 광고 1만여 건 적발
+   → 최근 1년간 온라인 부동산 광고에서 1만여 건의 불법 광고가 적발되었으며, 이는 거래 투명성을 해치는 요소로 작용하고 있다.
+   (연합뉴스 · 09/18 16:00)
+5. (매매) 서울 강남 아파트값 상승세 둔화
+   → 서울과 경기 지역의 아파트값 상승률이 둔화된 가운데, 강남권은 하락세를 지속하고 있으며, 전반적인 부동산 시장의 안정화 조짐이 보이고 있다.
+   (매일경제 · 09/18 10:16)
+6. (전세) LH, 전세임대주택에 보증 제도 전면 적용
+   → 오는 10월 1일부터 LH의 전세임대주택에 HUG의 전세 보증금 반환보증 제도가 적용되며, 이는 주거 취약계층의 보증금 보호에 도움이 될 것으로 예상된다.
+   (매일경제 · 09/18 09:50)
+
+[흐름·전망]
+• 청년층과 신혼부부를 위한 금융 혜택이 주택 구매에 긍정적인 영향을 줄 가능성이 있으며, 이에 따른 실수요 증가가 주목된다.
+• 이재명 대통령의 추진 의지가 실제 공급 수치로 이어질 경우, 수도권 부동산 시장의 안정화가 더욱 가속화될 전망이다.
+• 강남 쏠림 현상이 심화됨에 따라 비강남권의 상대적 상승률에 대한 관전이 필요하며, 불법 광고의 차단은 시장의 건강성을 높이는 계기가 될 것이다.
+• LH의 보증 제도 외에도 세입자 보호를 위한 추가적인 정책이 필요하며, 이러한 노력이 주거 환경 개선으로 이어질지 귀추가 주목된다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 폴란드에 미국 군 기지가 설립될 가능성에 대해 긍정적인 반응을 보였으며, 여러 공직자들을 지지하는 발언을 하고 있다. 또한, 대학 스포츠에서의 NIL 문제에 대한 우려를 표명하였다.
+
+[주요 발언]
+1. (외교) 트럼프는 폴란드에 미국 군 기지가 세워질 가능성에 대한 긍정적인 소식을 전하며, 이는 미국-폴란드 동맹에 역사적인 진전을 가져올 것이라고 강조했다.
+   (Truth Social · 09/18 10:24)
+2. (사법) 트럼프는 앤드류 퍼거슨의 사기 전담 팀이 사기범들을 압박하고 있으며, 이로 인해 막대한 금액이 회수될 것이라는 점을 강조하고 긍정적인 반응을 보였다.
+   (Truth Social · 09/18 09:20)
+3. (경제) 트럼프는 자신이 마지막 농업 법안을 통과시킨 대통령이라는 자부심을 드러내며, 다음 농업 법안을 더욱 효과적으로 만들겠다는 의지를 전했다.
+   (Truth Social · 09/18 09:19)
+4. (기타) 트럼프는 대학 스포츠의 NIL 문제에 대한 심각성을 언급하며, 이는 많은 대학들의 재정적 어려움을 초래할 수 있다고 경고했다.
+   (Truth Social · 09/18 09:13)
+5. (인사) 트럼프는 존 맥과이어, 젠 키간스, 롭 윗맨 등의 공화당 정치인들을 전폭 지지하며, 이들이 미국의 이익을 위해 노력하고 있다고 강조했다.
+   (Truth Social · 09/18 04:35)
+
+[흐름·전망]
+• 폴란드 군 기지 설립이 실제로 이루어진다면, 미국의 군사적 입지가 한층 강화될 것으로 보이며, 이는 동유럽 안보에 큰 영향을 미칠 가능성이 있다.
+• 대학 스포츠의 NIL 문제 해결 과제가 지속적으로 논의될 것으로 예상되며, 이로 인해 스포츠 정책에 변화가 있을 수 있다.
+• 트럼프의 강력한 지지 의사가 여러 정치인에게 긍정적인 영향을 미칠 가능성이 있으며, 이는 향후 선거에 중요한 변수로 작용할 수 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

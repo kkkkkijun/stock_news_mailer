@@ -199,11 +199,11 @@
 },
 "8e17cf2f-7fa7-4ceb-b303-33a6098af56a": {
 "name": "BoJ Interest Rate Decision",
-"dt": "2026-09-18T03:00:00Z",
-"act": null,
+"dt": "2026-09-18T02:54:26.623Z",
+"act": "1.25%",
 "cons": "1.25%",
 "prev": "1%",
-"act_n": null,
+"act_n": 1.25,
 "cons_n": 1.25
 },
 "34d7a1f7-2cd9-48bb-9212-1f6350d3d005": {
@@ -535,7 +535,7 @@
 "dt": "2026-10-30T03:00:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "1.25%",
 "act_n": null,
 "cons_n": null
 },
