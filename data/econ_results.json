@@ -574,5 +574,14 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"f2f9d593-a194-49f6-8eea-fec094f159bc": {
+"name": "ISM Manufacturing PMI",
+"dt": "2026-11-02T14:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }

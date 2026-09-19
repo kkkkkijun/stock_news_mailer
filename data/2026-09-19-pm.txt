@@ -1,0 +1,237 @@
+2026-09-19T17:02:20.048161+09:00
+
+[오늘의 뉴스 요약] 2026-09-19 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 거시경제 지표가 혼재된 상황을 보이고 있으며, 국내 은행의 수익성 감소와 원/달러 환율 상승이 주요 이슈로 떠올랐다.
+
+[핵심 뉴스]
+1. (금리) 국내은행 상반기 순익 줄어…이자이익 늘어도 부실 위험 커져
+   → 2026년 상반기 국내은행의 당기순이익이 13조8천억원으로 지난해 대비 9천억원 감소했으며, 연체율과 부실채권비율이 각각 0.56%와 0.63%로 상승해 건전성 관리 필요성이 제기되고 있다.
+   (연합뉴스 · 09/19 09:00)
+2. (금리) 중간선거 불리해진 트럼프? 공화당에 쏠린 정치 후원금
+   → 미국 연방준비위원회가 기준금리를 0.25% 인상하여 한국과의 금리 차가 1%포인트로 확대되면서, 트럼프 전 대통령이 중간선거에서 불리한 상황에 놓이고 있다는 분석이 제기되었다.
+   (매일경제 · 09/18 20:35)
+3. (물가) 폭염은 끝났는데 이제 기름값이 문제…휘발유·경유 부담 다시 커진다
+   → 9월 생산자물가가 전월 대비 0.2% 상승하며 반등했으며, 중동 분쟁과 유가 급등 현상이 겹치면서 물가 상승 압력이 증가할 것으로 보인다.
+   (매일경제 · 09/18 22:00)
+4. (환율) 원/달러 환율, 1.1원 오른 1,383.3원…7거래일 연속 상승
+   → 원/달러 환율이 1.1원 오른 1,383.3원으로 7거래일 연속 상승을 기록했으며, 일본은행의 금리 인상과 숏 포지션 청산이 영향을 미친 것으로 분석된다.
+   (연합뉴스 · 09/18 16:05)
+5. (성장) [다음주 경제] 올해 韓 성장전망 더 높아질까…금융안정 상황도 주목
+   → 다음 주 아시아개발은행(ADB)에서 한국의 성장률 전망치가 수정 발표될 예정이며, 금융안정 상황 점검이 주요 이슈로 부각되고 있다.
+   (연합뉴스 · 09/19 08:48)
+
+[흐름·전망]
+• 국내은행의 수익성과 건전성에 대한 주의가 필요하며, 앞으로의 금리 인상 상황에서 기업과 가계의 부실 위험 관리는 중요한 포인트가 될 것이다.
+• 환율 상승이 지속될 경우 수출 기업에 미치는 영향과 국내 소비자물가에 대한 전향적인 분석이 요구된다.
+• 물가 상황이 불안정해지는 가운데 정부의 물가 안정 대책이 얼마나 효과를 발휘할지 여부도 주목해야 할 사안이다.
+• 향후 한국의 경제 성장률 전망이 어떻게 변할지, 특히 ADB와 한국은행의 발표를 통해 금융안정 관련 리스크가 어떻게 평가될지가 관전 포인트가 될 것이다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia CEO says AI development should move ‘as fast as we can’ - Anadolu Ajansı
+   (Anadolu Ajansı · 09/19 13:14)
+→ Nvidia CEO는 인공지능(AI) 개발이 가능한 한 빠르게 진행되어야 한다고 강조했습니다. 그는 기술 발전의 속도를 최대한 늘리는 것이 중요하다고 언급했습니다.
+
+📰 [NVDA] Ross Gerber Sees Jensen Huang’s Charisma As Part Of Nvidia’s Edge, Says ‘This Is Why I Own Nvidia’ After Dreamforce Exchange With Marc Benioff: 'Big is Unnecessary'
+   (Yahoo Finance · 09/19 11:30)
+→ 투자자 로스 거버는 엔비디아의 CEO 젠슨 황의 카리스마가 엔비디아의 경쟁력 중 하나라고 강조하며, 세일즈포스의 드림포스 2026 행사에서 마크 베니오프와의 유쾌한 대화가 엔비디아 리더십의 일부를 보여주었다고 언급했다. 그는 황의 무대 존재감이 엔비디아에 대한 자신의 투자 이유라고 덧붙였다.
+
+📰 [NVDA] Nvidia, SK Hynix send strong signal to Micron investors
+   (Yahoo Finance · 09/19 10:17)
+→ Nvidia와 SK Hynix가 마이크론 투자자들에게 강력한 신호를 보내고 있다. 마이크론의 실적 발표가 임박한 가운데, 경쟁사들이 느끼고 있는 압박에 대해 의견을 밝혔다.
+
+📰 [TSLA] Why Tesla's Robotaxi/Cybercab Bet Just Got Complicated. What It Means to Investors. - The Motley Fool
+   (The Motley Fool · 09/19 16:30)
+→ 테슬라의 로보택시 및 사이버택시 계획이 복잡해졌다는 내용의 뉴스 기사에서, 이러한 변화가 투자자들에게 미치는 영향을 설명하고 있습니다. 특히 기술적 도전과 경쟁 증가로 인해 테슬라의 목표 달성이 어려워질 수 있다는 우려가 제기되고 있습니다.
+
+📰 [TSLA] Key facts: TSLA $16.8B chips; Giga Shanghai >50% output; Sept.30 reply - TradingView
+   (TradingView · 09/19 16:14)
+→ 테슬라(TSLA)는 168억 달러의 반도체 칩을 확보했으며, 상하이 기가 팩토리는 50% 이상의 생산량을 기록했습니다. 또한, 9월 30일자 응답이 TradingView에 보고되었습니다.
+
+📰 [TSLA] Tesla solar owner says roof replacement left panels off for a year, and lease bills kept coming - Yahoo
+   (Yahoo · 09/19 16:08)
+→ 테슬라 태양광 패널 소유자는 지붕 교체로 인해 패널이 1년 동안 설치되지 않았음에도 불구하고 임대 청구서가 계속 왔다고 주장했다. 이로 인해 경비와 불만이 쌓였다는 내용이다.
+
+📰 [HIMS] Hims & Hers Health Shareholder Alert: ClaimsFiler Reminds Investors With Losses In Excess Of $100,000 Of Lead Plaintiff Deadline In Class Action Lawsuit Against Hims & Hers Health, Inc. - HIMS - PR Newswire
+   (PR Newswire · 09/19 11:00)
+→ ClaimsFiler는 Hims & Hers Health, Inc.에 대한 집단 소송의 주도 원고 마감일을 알리며, 10만 달러 이상의 손실을 입은 투자자들에게 해당 마감일을 상기시켰습니다. 이 소송은 Hims & Hers Health에 대한 투자자들의 법적 권리를 다루고 있습니다.
+
+📰 [HIMS] Kaplan Fox Alerts Hims & Hers Health, Inc. (NYSE: HIMS) Investors to Seek Leadership in a Securities Fraud Lawsuit by November 2, 2026 - newmediawire.com
+   (newmediawire.com · 09/19 10:38)
+→ Kaplan Fox는 Hims & Hers Health, Inc.의 투자자들에게 2026년 11월 2일까지 증권 사기 소송의 리더십을 찾을 것을 알렸습니다. 이는 해당 회사의 투자자들에게 중요한 정보를 제공하는 것입니다.
+
+📰 [HIMS] Hims & Hers Health CTO Elshenawy Mohamed Offloads 7,954 Shares at $28.39 Each - Kalkine Media
+   (Kalkine Media · 09/19 07:36)
+→ Hims & Hers Health의 CTO인 Elshenawy Mohamed가 주당 $28.39에 7,954주를 매도했습니다. 이번 주식 매도는 회사의 경영진이 주식을 처분한 사례로 보입니다.
+
+📰 [RDW] Redwire Corp (RDW) Stock Down 7.0% but Still Overvalued -- GF Sc - GuruFocus
+   (GuruFocus · 09/19 09:01)
+→ Redwire Corp (RDW)의 주가가 7.0% 하락했으나 여전히 과대 평가된 상태라고 GuruFocus가 보고했습니다. 이 분석은 해당 주식의 실제 가치에 비해 현재 주가가 높다는 것을 시사합니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Down 7% - Here's What Happened - MarketBeat
+   (MarketBeat · 09/19 06:23)
+→ Redwire의 주가가 7% 하락했습니다. 이 하락의 원인에 대한 세부 사항은 뉴스 기사에서 확인할 수 있습니다.
+
+📰 [RDW] RDW Stock In Focus As BofA Lifts Price Target - StocksToTrade
+   (StocksToTrade · 09/19 05:49)
+→ BofA가 RDW의 주가 목표를 상향 조정하면서 RDW 주식에 대한 관심이 커지고 있습니다. 이로 인해 투자자들의 관심이 집중되고 있는 상황입니다.
+
+📰 [IREN] Baird Financial Group Inc. Invests $1.46 Million in IREN Limited $IREN - MarketBeat
+   (MarketBeat · 09/19 16:10)
+→ Baird Financial Group Inc.가 IREN Limited에 146만 달러를 투자했습니다. 이번 투자는 기업 성장에 긍정적인 영향을 미칠 것으로 기대됩니다.
+
+📰 [IREN] Bitcoin Mining Faces A Shakeout As CORZ, KEEL, IREN, CIFR Get Ready To Exit, Says CoinShares - Stocktwits
+   (Stocktwits · 09/19 10:15)
+→ 비트코인 채굴이 어려움을 겪고 있으며, CORZ, KEEL, IREN, CIFR 등 여러 기업들이 시장에서 퇴출할 준비를 하고 있다는 소식이 CoinShares에 의해 전해졌습니다. 이러한 변화는 비트코인 채굴 산업의 구조적 조정으로 해석될 수 있습니다.
+
+📰 [IREN] IREN Ltd (IREN) Shares Surge 7.4% -- What GF Score of 64 Tells I - GuruFocus
+   (GuruFocus · 09/19 07:20)
+→ IREN Ltd의 주가가 7.4% 상승했으며, GF 스코어는 64로 평가되었습니다. 이 점수는 회사의 재무 건전성과 성장 가능성을 나타내는 지표로, 긍정적인 시장 반응을 이끌어낸 것으로 보입니다.
+
+📰 [RKLB] Rocket Lab Successfully Launches Synspective’s 12th StriX Satellite on 96th Electron Mission - Quiver Quantitative
+   (Quiver Quantitative · 09/19 14:00)
+→ 로켓랩이 96번째 일렉트론 미션을 통해 신스펙티브의 12번째 스트릭스 위성을 성공적으로 발사했다. 이 발사는 우주 데이터 수집을 위한 중요한 단계로 평가받고 있다.
+
+📰 [RKLB] Rocket Lab launches a satellite, with 15 more missions set for the same customer - Stock Titan
+   (Stock Titan · 09/19 13:54)
+→ 로켓랩이 한 고객을 위해 위성을 발사했으며, 앞으로 15건의 추가 임무도 예정되어 있습니다. 이로 인해 고객과의 지속적인 협력이 강화될 것으로 보입니다.
+
+📰 [RKLB] MISSION SUCCESS: Rocket Lab Launches 96th Electron Mission - GlobeNewswire
+   (GlobeNewswire · 09/19 13:52)
+→ 로켓랩이 96번째 일렉트론 미션을 성공적으로 발사했다. 이번 미션은 다양한 위성을 궤도로 전송하는 임무를 수행했다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Which Crypto ETF Drew the Most Money Last Week? Not Bitcoin, and Not Ethereum
+   (Yahoo Finance · 09/19 16:39)
+→ 지난주 가장 많은 자금을 유치한 암호화폐 ETF는 비트코인이나 이더리움이 아닌 Zcash ETF였으며, 총 14개의 암호화폐 펀드 중에서 가장 많은 유입을 기록했습니다. 반면 이더리움은 1억 4천만 달러의 순유출을 경험했습니다.
+
+📰 [BTC-USD] Which Crypto ETF Drew the Most Money Last Week? Not Bitcoin, and Not Ethereum - BeInCrypto
+   (BeInCrypto · 09/19 16:39)
+→ 지난주 가장 많은 자금을 유치한 암호화폐 ETF는 비트코인이나 이더리움이 아닌 다른 ETF로 나타났다. 구체적인 ETF의 이름이나 투자 금액에 대한 정보는 기사에 포함되어 있다. 이같은 현상은 암호화폐 시장의 다양화와 투자자의 관심 변화를 반영하고 있다.
+
+📰 [BTC-USD] $Bitcoin (BTC.CC)$ - moomoo.com
+   (moomoo.com · 09/19 16:19)
+→ 비트코인(BTC.CC)은 최근 가격 변동성이 커지고 있으며, 투자자들의 관심이 집중되고 있습니다. 전문가들은 비트코인의 시장 동향과 경제적 요인들이 향후 가격에 미칠 영향을 주목하고 있습니다.
+
+📰 [ETH-USD] Which Crypto ETF Drew the Most Money Last Week? Not Bitcoin, and Not Ethereum
+   (Yahoo Finance · 09/19 16:39)
+→ 지난 주, 14개의 암호화폐 ETF 가운데 Zcash ETF가 가장 많은 자금을 끌어모았으며, Ethereum은 1억 4천만 달러의 순 유출을 기록했습니다. 비트코인과 이더리움이 아닌 Zcash ETF가 주목받은 것입니다.
+
+📰 [ETH-USD] Which Crypto ETF Drew the Most Money Last Week? Not Bitcoin, and Not Ethereum - BeInCrypto
+   (BeInCrypto · 09/19 16:39)
+→ 지난주 가장 많은 자금을 유치한 암호화폐 ETF는 비트코인이나 이더리움이 아닌 다른 ETF로 나타났다. 이 소식은 암호화폐 시장에서 다양한 투자 옵션에 대한 관심이 증가하고 있음을 시사한다.
+
+📰 [ETH-USD] Ethereum ETFs Lost $140M, while ZEC Funds Attracted Nearly $100M in a Week - incrypted
+   (incrypted · 09/19 16:27)
+→ 이더리움 ETF가 한 주 동안 1억 4천만 달러를 잃은 반면, ZEC 자산은 거의 1억 달러를 유치했습니다. 이는 암호화폐 시장에서 ZEC에 대한 수요가 증가하고 있음을 나타냅니다.
+
+📰 [SOL-USD] Solana Cat Price Today | SOLCAT Live Price, Chart & Market Cap - OKX
+   (OKX · 09/19 13:35)
+→ 오늘 솔라나 캣(SOLCAT)의 실시간 가격, 차트 및 시장 가치를 OKX에서 제공합니다.
+
+📰 [SOL-USD] ZetaChain Seeks to Shut Down Its L1 and Migrate to Solana - bloomingbit
+   (bloomingbit · 09/19 13:09)
+→ ZetaChain은 현재의 L1 플랫폼을 종료하고 Solana로 이전할 계획을 밝히고 있습니다. 이 결정은 ZetaChain의 기술적 발전과 효율성을 향상시키기 위한 것으로 보입니다.
+
+📰 [SOL-USD] Injective (INJ) Surges 17-18% on Solana Launch and ETF Progress - CoinMarketCap
+   (CoinMarketCap · 09/19 13:03)
+→ Injective( INJ) 가격이 Solana 출시와 ETF 진행 소식으로 17-18% 상승했습니다. 이러한 긍정적인 소식이 투자자들의 관심을 끌고 있는 것으로 보입니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Trade At A Discount To Book Value
+   (Yahoo Finance · 09/19 11:10)
+→ Bitmine Immersion Technologies의 주가는 최근 몇 년간 급격히 변화했으며, 현재 주가인 25.99달러가 장부 가치에 부합하는지를 논의하는 상황이다. 투자자들은 주가가 장부 가치를 얼마나 반영하고 있는지, 그리고 시장의 낙관론이 얼마나 작용하고 있는지를 주목하고 있다. 지난 3년 동안 주가는 132.1% 상승했다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Trade At A Discount To Book Value - Yahoo Finance
+   (Yahoo Finance · 09/19 11:10)
+→ Bitmine Immersion Technologies (BMNR)의 주가는 장부가치에 비해 할인된 가격에 거래될 가능성이 있는 것으로 보인다. 이와 관련된 분석이 Yahoo Finance에 소개되었다.
+
+📰 [BMNR] Is BitMine Immersion Technologies Inc (BMNR) Overvalued After 8. - GuruFocus
+   (GuruFocus · 09/19 07:33)
+→ BitMine Immersion Technologies Inc (BMNR)가 최근 8의 평가를 받은 후 과대 평가되었는지에 대한 논란이 일고 있다. 전문가들은 BMNR의 현재 주가가 회사의 실제 가치에 비해 지나치게 높을 수 있다고 분석하고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 비트코인 ETF에 4억3300만달러가 유입되는 등 긍정적인 자금 흐름이 이어지며 암호화폐 시장 전체가 상승세를 보이고 있다. 비트코인은 8만2000달러선을 재돌파 시도 중이며 알트코인 시장에서도 일부 상승세가 포착되었다.
+
+[핵심 뉴스]
+1. (ETF) 비트코인 ETF 4억3303만달러 유입…IBIT·FBTC에 96.8%
+   → 비트코인 옵션시장에서 변동성 지표 DVOL이 35.6으로 하락해 역사적 2.8% 범위에 진입하며, 변동성 프리미엄은 -12.3로 확대되었다.
+   (토큰포스트 · 09/19 16:37)
+2. (ETF) 비트코인·이더리움 ETF 순유입 5억7700만달러
+   → 9월 18일 기준 미국 현물 비트코인 ETF에 4억3300만달러, 이더리움 ETF에 1억4400만달러가 순유입되며, 비트코인이 약 5% 상승해 8만2000달러선에 접근했다.
+   (토큰포스트 · 09/19 16:01)
+3. (시세) 암호화폐 시장 상승세…비트코인 81,013달러, 이더리움 2,626달러
+   → 비트코인 가격이 4.50% 상승해 81,012.73달러에 거래되고 있으며, 이더리움도 5.68% 상승해 2,626.33달러를 기록했다.
+   (토큰포스트 · 09/19 16:02)
+4. (시세) 알트코인 시총 10% 늘었지만 알트시즌 기준은 못 미쳐
+   → 알트코인 시장 시가총액이 이번 주 10% 증가했지만, 아직 '알트시즌' 기준인 75에는 미치지 못하는 것으로 나타났다.
+   (토큰포스트 · 09/19 14:06)
+5. (거래소) 암호화폐 시장, 24시간 동안 레버리지 포지션 5억1904만달러 청산
+   → 24시간 동안 5억1904만달러 규모의 레버리지 포지션이 청산되었고, 이 가운데 90.20%가 숏 포지션으로 나타났다.
+   (토큰포스트 · 09/19 15:56)
+
+[흐름·전망]
+• 비트코인 옵션시장에서 DVOL의 움직임은 향후 가격 변동성에 큰 영향을 미칠 것으로 보인다. DVOL의 낮은 수치가 지속되는지 주목해야 한다.
+• 비트코인과 이더리움 ETF에 대한 유입이 긍정적 신호로 작용할 가능성이 있으며, 추가적인 자금 흐름이 시장에 미치는 영향을 모니터링할 필요가 있다.
+• 알트코인 시장의 시가총액 증가에도 불구하고 알트시즌 기준에 미치지 못하는 만큼, 향후 수익률 개선 여부를 지켜보아야 한다.
+• 레버리지 포지션 청산이 대규모로 이루어지면서 단기 변동성이 확대될 가능성이 있으며, 이를 고려한 투자 전략이 요구된다.
+
+📊 공포탐욕지수
+  - CNN 기준: 29 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 구로구 아파트의 신고가 기록과 함께 전월세 시장의 치열한 경쟁이 눈에 띄는 상황이다.
+
+[핵심 뉴스]
+1. (매매) 구로구 구로동 아파트, 최근 3년 신고가 기록
+   → 구로구 구로동 아파트가 최근 3년 내 신고가로 거래되었으며, 2024년 3월 기준 구로구 아파트값이 22주 하락 후 상승 전환하였다.
+   (매일경제 · 09/19 12:31)
+2. (전세) 전월세 '비상구' 찾는 2030, 공공임대에 수천대 일 경쟁
+   → 서울의 전세물량이 올해 들어 10% 줄어들며 전월세 시장에서 청년층의 공공임대주택 경쟁률이 평균 266대1로 치열해졌다.
+   (매일경제 · 09/18 17:56)
+3. (기타) 서울 공공임대주택, 1가구에 2088명 몰려
+   → 서울 전월세난의 심화로 공공임대주택에 대한 수요가 급증하고 있으며, 서울 아파트 평균 전셋값은 계속해서 상승세를 보이고 있다.
+   (매일경제 · 09/18 17:50)
+4. (정책) 李대통령, 수도권 집값 안정화 의지 밝혀
+   → 이재명 대통령은 수도권 집값 안정화를 위해 신속한 주택 공급을 강조하였고, 공급 증가에 대한 조치를 적극 추진하겠다고 밝혔다.
+   (매일경제 · 09/18 14:59)
+
+[흐름·전망]
+• 구로구 아파트의 신고가 기록은 외곽 지역 부동산 시장의 회복세를 시사하며, 향후 유사한 거래가 증가할 가능성이 있다.
+• 전월세 시장의 경쟁 심화는 청년층의 주거 안정성을 더욱 어렵게 만들며, 공공임대주택 공급의 필요성을 강조할 것이다.
+• 이재명 대통령의 주택 공급 확대 의지는 수도권 부동산 시장의 안정화에 기여할 가능성이 있으나, 금리 인상 등의 외부 요인도 함께 고려해야 한다.
+• 서울 아파트 평균 전셋값의 지속적인 상승세는 입주자 및 신규 주택 구매자에게 부담을 줄 수 있다, 따라서 정부의 추가적인 공급 대책이 필요한 시점이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 그린란드에 대한 미국의 영구적 통제 권한을 확보했다고 발표하며, 이는 국가 안보와 관련된 여러 우려를 해결한 것이라고 주장했다. 그는 미국에 비용이 발생하지 않을 것이라고 강조했다.
+
+[주요 발언]
+1. (외교) 트럼프는 미국이 덴마크 및 그린란드와 체결한 협정에 따라 그린란드의 안보에 대한 영구적 통제권을 확보했다고 발표했다.
+   (Truth Social · 09/19 06:18)
+2. (사법) 트럼프는 CNN, MSNOW, Politico를 백악관 출입 금지 대상으로 지정하며 이들 매체가 지속적으로 허위 정보를 보도한다고 주장했다.
+   (Truth Social · 09/19 05:46)
+3. (인사) 트럼프는 아이오와 주 상원의원으로 애슐리 힌슨을 지지하며 그녀가 결코 실망시키지 않을 것이라고 강조했다.
+   (Truth Social · 09/19 04:04)
+4. (인사) 텍사스 주 상원의원으로 켄 팩스턴을 지지하며 그가 실망시키지 않을 것이라고 언급했다.
+   (Truth Social · 09/19 03:35)
+5. (인사) 풍부한 지지를 받는 트럼프는 공화당 내에서 자신의 지지율이 95%에 달한다고 주장했다.
+   (Truth Social · 09/19 03:31)
+
+[흐름·전망]
+• 트럼프의 외교적 발표가 미-덴마크 관계 및 북극 지역의 안보에 미칠 영향에 주목할 필요가 있다.
+• 언론 관련 언급이 향후 언론의 보도 방식에 영향을 미칠 가능성이 있다.
+• 트럼프의 높은 지지율은 그의 정계 복귀에 긍정적인 요소로 작용할 수 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
