@@ -583,5 +583,14 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"b3dc9f7b-c6f5-419d-aa17-f827b79f264c": {
+"name": "US Midterm Elections",
+"dt": "2026-11-03T05:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }

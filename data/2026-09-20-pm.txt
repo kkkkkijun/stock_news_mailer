@@ -1,0 +1,245 @@
+2026-09-20T17:02:30.847868+09:00
+
+[오늘의 뉴스 요약] 2026-09-20 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘은 한국과 미국의 장기금리 동조화 현상에 대한 분석이 발표되었고, 주요국 금리 인상이 기업 경영에 미치는 압박이 심화되고 있다는 보도가 이어졌다. 또한, 저신용 자영업자의 연체율 급등과 경기도의 건설 현장 대금체불 문제, 그리고 중소기업의 수출 애로 사항이 주목받고 있다.
+
+[핵심 뉴스]
+1. (금리) 한미 장기금리 동조화, 글로벌 인플레 충격 영향
+   → 한국은행은 한미 장기금리 동조화가 글로벌 인플레이션 충격에 기인한다는 분석을 발표하며, 2008년 금융위기 이후와 2021년 인플레이션 충격 시기에 동조화가 발생했다는 사실을 확인했다.
+   (연합뉴스 · 09/20 12:00)
+2. (금리) 주요국 금리인상에 기업 경영전략 '빨간불'
+   → 미국 연준이 기준금리를 0.25%포인트 인상하면서, 기업들의 자금조달 부담이 증가하고 있으며, 특히 중소기업의 재무 구조가 취약한 상황에서 위기 상황에 대비해야 한다는 우려가 커지고 있다.
+   (연합뉴스 · 09/20 05:55)
+3. (고용) 고금리에 깊어진 양극화, 저신용 자영업 연체율 증가
+   → 저신용 자영업자의 연체율이 지난 5년간 4∼5배 증가하여 8월 10등급 연체율이 44.6%에 달했으며, 저신용 차주들의 금융 건전성이 악화되고 있다는 결과가 나타났다.
+   (연합뉴스 · 09/20 05:45)
+4. (기타) 경기도, 추석 앞두고 건설 현장 대금체불 민원 집중관리
+   → 경기도는 추석을 앞두고 건설 현장에서의 대금체불 민원을 집중 관리하며, 1∼8월 동안 총 137건의 민원 중 41건을 해소했다고 밝혔다.
+   (연합뉴스 · 09/20 09:54)
+5. (기타) 중소기업 수출에 바이어 발굴이 최대 애로
+   → 중소기업의 70%가 바이어 및 거래선 발굴의 어려움을 최대 애로사항으로 꼽았으며, 중동 국가들이 유망 수출 시장으로 부상하고 있다는 조사가 발표됐다.
+   (연합뉴스 · 09/20 11:00)
+
+[흐름·전망]
+• 단기적으로 금리 인상에 따른 기업 자금조달 비용 증가가 우려되며, 특히 중소기업과 저신용 자영업자들의 재무 건전성이 악화될 가능성이 크다.
+• 국제적인 경제 여건 변화가 장기금리에 미치는 영향을 고민해야 하며, 한국은행의 시장 소통 노력이 중요할 것이다.
+• 경기도의 대금체불 문제는 건설 산업의 건전성을 해칠 수 있으며, 민원 해소가 양호한 만큼 행정적 노력이 계속되어야 한다.
+• 중소기업의 수출 확대를 위해 바이어 발굴 및 지원이 필수적이며, 특히 중동 시장에 대한 관심이 높아지고 있는 만큼 이에 대한 전략적 접근이 필요하다.
+
+📈 해외주식 PART
+📰 [NVDA] Osprey Private Wealth LLC Increases Stake in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 09/20 16:44)
+→ Osprey Private Wealth LLC가 NVIDIA Corporation($NVDA)의 지분을 늘렸다는 소식이 전해졌습니다. 이로 인해 Osprey는 해당 기업에서의 투자 비중을 증가시킨 것으로 보입니다.
+
+📰 [NVDA] NVIDIA Vice President Ian Buck: The Evolution of Computing Power in the Era of Agentic AI from the Perspective of the Vera Rubin Platform - Moomoo
+   (Moomoo · 09/20 15:07)
+→ NVIDIA 부사장인 이안 벅은 에이전틱 AI 시대의 컴퓨팅 파워 발전을 베라 루빈 플랫폼의 관점에서 설명했습니다. 그는 컴퓨팅 능력의 진화가 AI 기술의 발전과 밀접하게 연결되어 있다고 강조했습니다.
+
+📰 [NVDA] Nvidia Stock And 2 US AI Infrastructure Plays Tied To Federal Defense Spending
+   (Yahoo Finance · 09/20 11:11)
+→ 워싱턴이 AI와 국방 인프라에 대한 관심을 재조명하며 "AI 포스"와 AI 책임자 임명을 통해 칩, 클라우드 용량, 그리고 연방 수요에 대응할 수 있는 계약자들에 대한 수요가 증가할 것으로 보입니다. 이러한 변화는 자본 유입 경로에 영향을 미치고 AI 관련 주식에 대한 투자자들에게 새로운 기회와 위험을 창출합니다. 기사에서는 이 정책 테마에 노출된 미국 상장 대형주 3종목과 각 주식이 AI 및 국방 지출과 어떻게 연결되는지를 설명합니다.
+
+📰 [TSLA] Key facts: Goldman Cuts TSLA Deliveries; Tokenization, Terafab Dispute - TradingView
+   (TradingView · 09/20 16:13)
+→ 골드만삭스가 테슬라의 차량 인도 예측을 하향 조정했습니다. 이와 함께 토큰화 및 테라팹과 관련된 분쟁도 언급되고 있습니다.
+
+📰 [TSLA] Tesla Roadster Reveal Set for October 1; Production Scale Is the Investor Test - TechStock²
+   (TechStock² · 09/20 14:36)
+→ 테슬라의 로드스터가 10월 1일 공개될 예정이며, 생산 규모가 투자자들에게 중요한 시험대가 될 것이라고 보도됐다. 이번 발표는 테슬라의 향후 전략과 시장 반응에 큰 영향을 미칠 것으로 예상된다.
+
+📰 [TSLA] Main structure of Tesla's robot factory in Texas nears completion, steadily advancing 2027 mass production plan - Moomoo
+   (Moomoo · 09/20 13:34)
+→ 테슬라의 로봇 공장이 텍사스에서 주요 구조물 완공을 눈앞에 두고 있으며, 2027년 대량 생산 계획이 순조롭게 진행되고 있습니다.
+
+📰 [HIMS] Hims & Hers Chief Legal Officer Soleil Boughton Sells 6,236 Shares
+   (Yahoo Finance · 09/19 23:15)
+→ Hims & Hers의 법무 책임자 솔레일 보턴이 6,236주를 매각했습니다. 그러나 그는 여전히 850만 달러에 달하는 상당한 지분을 보유하고 있습니다.
+
+📰 [HIMS] Hims & Hers Chief Legal Officer Soleil Boughton Sells 6,236 Shares - Yahoo Finance
+   (Yahoo Finance · 09/19 23:15)
+→ Hims & Hers의 법률 담당 최고 책임자인 소레일 보우튼이 6,236주의 주식을 매각했습니다. 이번 판매는 회사의 주식 거래와 관련된 주요 소식으로 언급되고 있습니다.
+
+📰 [HIMS] HIMS INVESTOR DEADLINE APPROACHING: Faruqi & Faruqi, LLP Reminds - The National Law Review
+   (The National Law Review · 09/19 21:43)
+→ Faruqi & Faruqi, LLP는 HIMS의 투자자들에게 임박한 마감일을 상기시키고 있습니다. 해당 법률 회사는 투자자들이 법적 권리를 주장할 수 있는 기회를 놓치지 않도록 주의할 것을 권고하고 있습니다.
+
+📰 [RDW] Redwire (RDW) Could Be 16% Undervalued After Q2 Beat And Higher Outlook - simplywall.st
+   (simplywall.st · 09/20 05:33)
+→ Redwire (RDW)는 2분기 실적을 예상보다 뛰어나게 발표한 후, 향후 전망이 긍정적이라는 이유로 약 16% undervalued일 가능성이 있다는 분석이 제기되었습니다. 이로 인해 투자자들에게 매력적인 기회를 제공할 수 있다는 의견이 나오고 있습니다.
+
+📰 [RDW] RKLB, LUNR, RDW Jump Premarket As Musk Pitches AI Satellites, Orbital Data Centers — Analyst Says The Odds Are Just 7% - Stocktwits
+   (Stocktwits · 09/20 04:32)
+→ 머스크가 인공지능 위성과 궤도 데이터 센터에 대한 제안을 하면서 RKLB, LUNR, RDW 주식이 프리마켓에서 상승했습니다. 그러나 한 분석가는 이 계획의 성공 확률이 7%에 불과하다고 평가했습니다.
+
+📰 [RDW] Jim Cramer Suggests Avoiding Redwire (RDW) In A Rate Tightening Cycle
+   (Yahoo Finance · 09/20 03:36)
+→ 짐 크레이머는 금리 인상 사이클에 있는 현재, 적자 상태인 레드와이어 코퍼레이션(RDW)과 같은 회사를 피해야 한다고 강조했다. 그는 이러한 환경에서 수익을 내지 못하는 기업에 투자하는 것은 효과적이지 않다고 언급했다.
+
+📰 [IREN] $IREN — HIEQ Model Just Observation | Where Are We on this T - kucoin.com
+   (kucoin.com · 09/20 11:34)
+→ $IREN과 관련된 HIEQ 모델에 대한 최신 분석이 진행되었으며, 현재 시장 상황에 대한 관찰이 이루어지고 있습니다. kucoin.com에서 제공한 정보에 따르면 투자자들이 주목해야 할 주요 지표와 동향이 언급되었습니다.
+
+📰 [IREN] IREN (IREN) Could Be 35% Undervalued After AI Contract Wins And Nvidia Tie Up - simplywall.st
+   (simplywall.st · 09/20 02:30)
+→ IREN이 인공지능 계약 수주와 엔비디아와의 협력으로 인해 35% 저평가될 가능성이 있다는 분석이 나왔다. 이로 인해 IREN의 주가 상승이 기대된다고 보고했다.
+
+📰 [IREN] 1 Year Into the Microsoft Deal, IREN Is Delivering and a Rally May Follow Soon
+   (Yahoo Finance · 09/19 23:27)
+→ 마이크로소프트와 97억 달러 규모의 계약 체결 1년을 맞이한 IREN이 성과를 내고 있다. 이에 따라 주가 상승이 곧 이어질 가능성이 있다.
+
+📰 [RKLB] Rocket Lab Launches New Earth Observation Satellite - Fana News -
+   (Fana News - · 09/20 16:47)
+→ 로켓랩이 새로운 지구 관측 위성을 성공적으로 발사했다고 보도되었습니다. 이 위성은 지구의 다양한 데이터를 수집하여 연구 및 관측에 기여할 것으로期待되고 있습니다.
+
+📰 [RKLB] Rocket Lab Stock Reverses 4.8%; Iridium’s FCC Review Is Only Starting - TechStock²
+   (TechStock² · 09/20 11:18)
+→ 로켓랩 주식이 4.8% 하락했으며, 이리듐의 FCC(연방통신위원회) 검토가 이제 시작되었다고 보도했다.
+
+📰 [RKLB] RKLB Stock Slips Overnight: Rocket Lab Protests Blue Origin’s $700M NASA Mars Deal, Calls Review ‘Punitive’ - Stocktwits
+   (Stocktwits · 09/20 03:45)
+→ 로켓랩(Rocket Lab)의 주가가 하락한 가운데, 로켓랩은 블루 오리진(Blue Origin)이 미 NASA와 체결한 7억 달러 규모의 화성 계약에 대해 이의를 제기하며 해당 검토가 '처벌적'이라고 주장했다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin called a "dead cat" by Calacanis as pri... - Pluang
+   (Pluang · 09/20 16:43)
+→ 칼라카니스가 비트코인을 "죽은 고양이"로 표현하며 최근 가격 하락을 언급했습니다. 이는 비트코인이 반등할 가능성 없이 계속 하락할 것이라는 경고로 해석됩니다.
+
+📰 [BTC-USD] Canadian Business "Shark" Kevin O’Leary Named Main Threat to Bitcoin on Its Path to $1M - incrypted
+   (incrypted · 09/20 16:33)
+→ 캐나다의 사업가 케빈 오리 리가 비트코인이 100만 달러에 도달하는 데 가장 큰 위협으로 지목되었다. 그는 비트코인의 지속 가능성에 대해 의문을 제기하고 있으며, 이로 인해 암호화폐 시장의 조정이 우려되고 있다.
+
+📰 [BTC-USD] Bitcoin Rally Meets $82K Sell Signal Amid Saudi-Houthi Escalation - Yellow.com
+   (Yellow.com · 09/20 16:02)
+→ 비트코인이 급등하면서 82,000 달러에서 매도 신호가 발생했으며, 이는 사우디와 후티 간의 긴장이 심화되는 가운데 나타났다. 이러한 상황은 비트코인의 향후走势에 영향을 미칠 수 있다.
+
+📰 [ETH-USD] Robinhood Chain earned $4.5M in fees on Sept 3, paying only $398 to settle on Ethereum Layer 1. - Pluang
+   (Pluang · 09/20 16:07)
+→ 로빈후드 체인은 9월 3일에 450만 달러의 수수료를 올렸으며, 이더리움 레이어 1에서 결제하는 데 단 398달러를 지불했습니다.
+
+📰 [ETH-USD] Ethereum doubles down on privacy with new tech for private transactions and censorship resistance - Pluang
+   (Pluang · 09/20 16:06)
+→ 이더리움은 새로운 기술을 도입하여 개인 거래와 검열 저항성을 강화하며 프라이버시를 강조하고 있습니다. 이번 업데이트는 사용자들이 보다 안전하게 거래할 수 있도록 돕는 데 초점을 맞추고 있습니다.
+
+📰 [ETH-USD] Robinhood Chain fees hit $4.5M as Ethereum gets $398 - crypto.news
+   (crypto.news · 09/20 15:42)
+→ Robinhood Chain의 수수료가 450만 달러에 달한 가운데, 이더리움은 398달러의 가치를 기록했다. 이로 인해 두 플랫폼의 거래량과 수익 구조에 대한 관심이 증가하고 있다.
+
+📰 [SOL-USD] Weekend Crypto Reset: Bitcoin Retakes $80K as VOIDTRACE AI Tracks the Next Rotation Across Ethereum, Solana and XRP - StreetInsider
+   (StreetInsider · 09/20 14:48)
+→ 이번 주말 비트코인이 8만 달러를 회복하며 상승세를 이어갔고, VOIDTRACE AI는 이더리움, 솔라나, XRP 등 다른 암호화폐의 다음 움직임을 분석하고 있습니다. 시장의 변화가 주목받고 있는 가운데, 주요 암호화폐의 동향에 대한 관심이 높아지고 있습니다.
+
+📰 [SOL-USD] PEPE token hits $40M trading volume on Solana w... - Pluang
+   (Pluang · 09/20 14:23)
+→ PEPE 토큰이 솔라나에서 4천만 달러의 거래량을 기록했습니다. 이는 최근 DeFi와 NFT 시장에서의 활발한 거래 덕분으로 보입니다.
+
+📰 [SOL-USD] Solana Rose 10% and Bitcoin 5%: Is the Rotation Into Altcoins Starting?
+   (Yahoo Finance · 09/20 10:45)
+→ 솔라나가 비트코인의 5% 상승에 비해 10% 이상 급등하면서 알트코인으로의 자본 이동 가능성이 제기되고 있습니다. 그러나 이러한 상승의 배경은 알트코인 투자자들에게 그렇게 긍정적인 신호는 아닙니다.
+
+📰 [BMNR] BMNR Stock Slips After Bitmine Buys Ethereum Dip – Retail Demands 'HYPE-PURR-Style' Rally - Stocktwits
+   (Stocktwits · 09/20 04:25)
+→ BMNR 주식이 Bitmine이 이더리움을 구매한 후 하락했습니다. 소매 투자자들은 'HYPE-PURR-스타일'의 랠리를 요구하고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Trade At A Discount To Book Value
+   (Yahoo Finance · 09/19 11:10)
+→ Bitmine Immersion Technologies(BMNR)의 주가가 최근 몇 년 동안 급격히 변동하면서 현재 주가인 25.99달러가 장부 가치와 일치하는지에 대한 의문이 제기되고 있다. 과거 3년간 132.1%의 수익률을 기록한 만큼, 현재 주가가 장부 가치에 얼마나 기반을 두고 있는지가 중요한 쟁점이다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Trade At A Discount To Book Value - Yahoo Finance
+   (Yahoo Finance · 09/19 11:10)
+→ Bitmine Immersion Technologies (BMNR) 주식이 장부 가치에 비해 할인된 가격에 거래될 가능성이 있다는 소식이 전해졌습니다. 이와 관련된 자세한 분석은 야후 파이낸스에서 확인할 수 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 비트코인은 8만1000달러를 회복하며 회복세를 보였으나, 그 반등에 대해 '죽은 고양이의 반등' 논쟁이 일었다. 비트코인 ETF는 최근 순유입을 기록했으나 이더리움은 반대로 자금이 유출되며 약세를 보였다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 8만1000달러 회복
+   → 9월 18일 비트코인은 장중 8만1000달러를 넘어섰고, 반등의 의미에 대해 논란이 발생하였다. 비트코인 ETF는 9월 18일 4억3300만 달러의 순유입을 기록했다.
+   (토큰포스트 · 09/20 16:38)
+2. (ETF) 비트코인 ETF 610만달러 순유입
+   → 비트코인 ETF는 9월 14일부터 18일까지 총 610만 달러의 주간 순유입을 기록했지만, 평균적으로 거래의 유출과 유입이 변동성을 보여주었다. 이더리움 ETF는 같은 기간 동안 1억4060만 달러가 순유출되었다.
+   (토큰포스트 · 09/20 16:17)
+3. (기타) 이더리움 프라이버시 기본값 추진
+   → 비탈릭 부테린은 이더리움의 프라이버시 기술 개발을 포기하지 않을 것이라고 재확인하며, 프라이버시 기능을 네트워크 기본값으로 전환하겠다는 계획을 밝혔다. 구체적인 일정은 아직 제시되지 않았다.
+   (토큰포스트 · 09/20 16:09)
+4. (거래소) 암호화폐 시장 레버리지 포지션 청산
+   → 암호화폐 시장에서는 비트코인 점유율이 증가한 반면, 이더리움 점유율은 감소하였다. 비트코인은 24시간 기준으로 0.90% 하락했으나 점유율은 58.82%로 소폭 상승하였다.
+   (토큰포스트 · 09/20 16:02)
+5. (온체인) 알트코인 70%가 BTC 상회
+   → 최근 일주일간 알트코인의 약 70%가 비트코인보다 높은 성과를 보였으며, 탈중앙화 거래소 및 플랫폼 중심으로 강세를 나타냈다. 현재까지 알트시즌 여부는 명확하지 않다.
+   (토큰포스트 · 09/20 16:02)
+
+[흐름·전망]
+• 비트코인의 최근 반등에도 불구하고 '죽은 고양이의 반등'이란 비판적인 시각이 존재해 향후 가격 방향성에 주목할 필요가 있다.
+• 비트코인 ETF의 순유입이 긍정적인 신호인 반면, 이더리움 ETF의 순유출은 시장의 다소 부정적인 sentiment를 반영할 수 있다.
+• 이더리움의 프라이버시 기술 강화 진행 상황은 블록체인 네트워크에서의 사용자 보호 관점에서 중요한 변화가 될 수 있다.
+• 알트코인의 비트코인 대비 강세가 지속될 경우, 향후 알트코인 중심의 시장 변화가 예상되므로 주의 깊게 분석할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 29 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울 외곽 지역에서도 전세가격이 급등하며 전반적으로 상승세를 보이고 있다. 성북구와 동대문구 등 중하위권 지역에서 전세가 10억원을 넘는 사례가 증가하고 있다.
+
+[핵심 뉴스]
+1. (전세) 서울 외곽도 ‘국평 전세 11억’
+   → 서울 아파트 전세가격이 올해 누적 상승률 7.79%를 기록하였으며, 중하위권 지역에서도 전세 가격이 10억원에 육박하고 있다. 성북구 아파트 매매가 상승률은 14.01%로 서울에서 가장 높고, 전세 가격 역시 최고치인 12.84%를 기록했다.
+   (매일경제 · 09/20 16:06)
+2. (전세) 전세 상승도 가파른 중하위권…국평서 '한강벨트 수준' 10억
+   → 서울 전세가격이 올해 7.79% 급등하면서 성북·동대문 등 중하위권 지역에서 국평 10억원 전세가 등장하고 있다. 특히 성북구는 매매가 상승률이 가장 높아 서울 내에서 큰 주목을 받고 있다.
+   (연합뉴스 · 09/20 08:31)
+3. (정책) 부동산 정책 몇달만에 잇단 조정…시장은 '예측가능성' 우려
+   → 정부의 부동산 정책이 자주 조정됨에 따라 시장의 예측 가능성이 떨어지고 있다는 우려가 제기되고 있다. 최근 주요 정책들이 단기간에 재조정되고 있으며 이는 시장 참여자들에게 혼란을 야기하고 있다.
+   (연합뉴스 · 09/20 06:01)
+4. (공급) 청년·고령자 맞춤형 공공임대 '특화주택' 공모
+   → 국토부가 청년과 고령자 등을 위한 특화주택 공모를 시작하며 맞춤형 임대주택 공급을 확대하려고 하고 있다. 이 조치는 다양한 주거 수요를 반영하는 정책으로 추진되고 있다.
+   (연합뉴스 · 09/20 11:00)
+5. (금리) 삼성맨 저금리 사내대출…동탄·영통 ‘반세권’ 주목
+   → 삼성전자의 저금리 사내대출 정책이 동탄과 영통지역의 집값을 상승시키고 있는 가운데, 동탄구는 연 누적 상승률 17.9%로 전국에서 가장 높은 상승세를 보이고 있다.
+   (매일경제 · 09/20 07:35)
+6. (매매) 강북 ‘껑충’…서울 집값 84주째 상승
+   → 서울 아파트 가격이 84주 연속 상승하고 있으며, 특히 강북 지역에서 두드러진 상승세가 나타나고 있다.
+   (디지털데일리 · 09/20 15:19)
+
+[흐름·전망]
+• 서울 외곽 지역의 전세가격 급등세가 앞으로도 지속될 가능성이 있어, 중하위권의 매매 및 전세 시장을 주의 깊게 살펴볼 필요가 있다.
+• 정부의 잦은 정책 수정이 시장의 예측 가능성을 저해하고 있으며, 이는 향후 집값 안정성에 부정적 영향을 미칠 수 있다.
+• 청년과 고령자를 위한 특화주택 정책이 실제로 어떻게 효과를 발휘할지 지켜보는 것이 중요하며, 주거 안정성에 긍정적으로 작용할지 기대된다.
+• 삼성전자의 사내대출 정책이 특정 지역에서 집값을 끌어올리고 있는 만큼, 향후 유사한 정책들이 어떻게 다른 지역에 영향을 미칠지도 관심을 가져야 한다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 소셜미디어에서 여러 거짓 주장과 관련된 내용들을 언급하며 현재 사회 문제에 대한 우려를 표명했다. 특히 인공지능에 대한 자신의 입장을 강조하며 관련 논의를 촉구했다.
+
+[주요 발언]
+1. (사법) 트럼프는 미국 대법원이 정치적이고 잘못된 결정을 내렸다고 비판하며, 이로 인해 미국 경제에 수조 달러의 손실이 발생했다는 주장을 했다.
+   (Truth Social · 09/20 02:12)
+2. (기타) 트럼프는 인공지능(AI)에 대한 공적 논의에서 보다 적합한 명칭을 제안하며 설문조사를 진행하겠다고 밝혔다.
+   (Truth Social · 09/20 01:52)
+3. (기타) 트럼프는 AI와 관련된 최근 상황을 'AI 재앙 사기'로 묘사하며, 이에 대한 저항이 필요하다고 주장했다.
+   (Truth Social · 09/20 00:29)
+4. (국내정치) 트럼프는 극좌 진영의 여러 허위 주장들이 미국을 파괴하려는 목적에서 비롯되었다고 언급했다.
+5. (기타) 트럼프는 인공지능의 명칭을 '우수 지능(SI)'이나 '극단적 지능(EI)'으로 바꿔야 한다고 강조했다.
+6. (경제) 트럼프는 과거의 여러 허위 주장들이 경제 및 정책에 미치는 영향을 우려하며 대책 마련의 필요성을 언급했다.
+
+[시장·경제 관련]
+• 이와 관련된 경제적 언급은 없었다.
+
+[흐름·전망]
+• 트럼프의 발언은 향후 AI 및 데이터 관련 정책 논의에서 중요한 영향을 미칠 수 있다.
+• 대법원의 결정이 경제와 시민권 시스템에 미친 영향을 재조명하는 기회가 될 가능성이 있다.
+• AI와 관련된 명칭 논의가 대중 및 정책 입안자들 사이에서의 인식 변화를 유도할 수 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
