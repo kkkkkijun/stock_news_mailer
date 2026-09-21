@@ -228,10 +228,10 @@
 "name": "S&P Global Manufacturing PMI",
 "dt": "2026-09-23T13:45:00Z",
 "act": null,
-"cons": "53.6",
+"cons": "53.5",
 "prev": "53.9",
 "act_n": null,
-"cons_n": 53.6
+"cons_n": 53.5
 },
 "11406332-cc3c-4add-a860-087f85dfddc6": {
 "name": "S&P Global Services PMI",
@@ -587,6 +587,24 @@
 "b3dc9f7b-c6f5-419d-aa17-f827b79f264c": {
 "name": "US Midterm Elections",
 "dt": "2026-11-03T05:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"e2138b09-c406-415c-999d-36e58d770ae5": {
+"name": "ADP Employment Change",
+"dt": "2026-11-04T12:15:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"3c1033c6-6706-445b-bcaf-55e38dfbbe6f": {
+"name": "ISM Services PMI",
+"dt": "2026-11-04T14:00:00Z",
 "act": null,
 "cons": null,
 "prev": null,

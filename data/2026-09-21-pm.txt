@@ -1,0 +1,248 @@
+2026-09-21T17:02:38.316462+09:00
+
+[오늘의 뉴스 요약] 2026-09-21 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘은 국고채 금리가 대체로 상승하며 시장 분위기가 혼조세를 보였다. 원/달러 환율은 8거래일 만에 하락했지만, 외국인 투자자들의 초단기 채권 순매도는 지속되고 있다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 대체로 상승
+   → 21일 국고채 금리는 3년물 4.056%로 2.1bp 상승했으며, 10년물 금리는 4.457%로 0.9bp 하락했다.
+   (연합뉴스 · 09/21 16:49)
+2. (환율) 원/달러 환율, 8거래일만에 하락
+   → 원/달러 환율은 1,381.0원으로 2.3원 하락하며 8거래일 만에 하락세를 보였다.
+   (연합뉴스 · 09/21 16:08)
+3. (성장) 2024년 한국 경제, 수출 비중 커지고 부가가치율 상승
+   → 2024년 한국 경제는 반도체 회복 덕분에 수출 비중이 31.1%로 확대되었고, 부가가치율은 42.0%로 2년 째 상승세를 이어가고 있다.
+   (연합뉴스 · 09/21 12:00)
+4. (기타) 외국인, 초단기물 韓채권 순매도 행렬
+   → 외국인 투자자들이 7월 이후 초단기 한국 채권을 순매도하며, 이달 들어서는 2조5천억원을 매도했다.
+   (연합뉴스 · 09/21 11:07)
+5. (정책) IBK기업은행, 가계대출 금리 감면 확대
+   → IBK기업은행은 22일부터 가계대출 금리를 주담대 최고 0.5%p, 전세대출 0.3%p 감면하기로 했다.
+   (연합뉴스 · 09/21 11:07)
+
+[흐름·전망]
+• 금리 상승세가 지속될 경우 단기 채권 시장의 안정성을 주목해야 한다.
+• 원/달러 환율 하락세가 추세로 이어질지 여부와 수출업체의 달러 매도 관행에 주목할 필요가 있다.
+• 2024년 경제 전망은 반도체 산업 회복과 관련된 요소를 주의 깊게 살펴보아야 한다.
+• 가계대출 금리 인하가 소비와 경제 성장에 미치는 긍정적인 영향을 주시해야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia's CEO Huang says there's a ‘0% chance’ AI ends the world — 4 AI giants are sued over an alleged pact to slow it
+   (Yahoo Finance · 09/21 16:35)
+→ Nvidia의 CEO 젠슨 황은 인공지능(AI)이 세상을 끝낼 가능성이 '0%'라고 주장하며, AI의 멸종 경고는 재앙론에 불과하다고 말했습니다. 한편, 네 개의 AI 대기업이 이러한 경고를 제기한 회사들에 대해 불법적인 연합을 했다고 주장하며 소송을 제기했습니다.
+
+📰 [NVDA] Nvidia's CEO says there's a '0% chance' AI ends the world - moneywise.com
+   (moneywise.com · 09/21 16:28)
+→ Nvidia CEO는 인공지능(AI)이 세계를 종식시킬 가능성이 '0%'라고 언급했습니다. 그는 AI 기술의 발전이 긍정적인 방향으로 나아갈 것이라는 입장을 밝혔습니다.
+
+📰 [NVDA] Nvidia boss says there is ‘0% chance’ AI destroys the world by 2030 - The Guardian
+   (The Guardian · 09/21 16:24)
+→ Nvidia CEO는 2030년까지 인공지능이 세계를 파괴할 가능성이 "0%"라고 주장했습니다. 그는 AI 기술의 발전이 긍정적인 방향으로 나아갈 것이라고 강조했습니다.
+
+📰 [TSLA] Tesla solar owner nears final 10-cent interest payment on 0.99% loan from 2021 as Tesla financing hits 7.24% - The Cool Down
+   (The Cool Down · 09/21 16:39)
+→ 테슬라의 태양광 패널 소유자가 2021년 저금리 0.99% 대출의 마지막 10센트 이자 지급을 앞두고 있는 가운데, 테슬라의 금융 금리는 7.24%로 상승했습니다. 이는 대출 조건의 변화가 태양광 소유자들에게 미치는 영향을 보여줍니다.
+
+📰 [TSLA] Tesla Reopens Reservations for Next-Gen Roadster, Stock Ticker T - GuruFocus
+   (GuruFocus · 09/21 16:19)
+→ 테슬라가 차세대 로드스터의 예약을 재개했습니다. 이 모델은 향후 출시될 예정으로, 빠른 성능과 혁신적인 기술이 특징입니다.
+
+📰 [TSLA] Key facts: Tesla, Inc. NHTSA seeks Cybercab answers; Goldman cuts Q3 - TradingView
+   (TradingView · 09/21 16:13)
+→ 테슬라가 NHTSA(미국 도로교통안전국)의 조사 대상이 되고 있으며, 사이버 택시(Cybercab)와 관련된 답변을 요구받고 있습니다. 또한, 골드만삭스는 테슬라의 3분기 실적을 하향 조정했습니다.
+
+📰 [HIMS] Hims & Hers Chief Legal Officer Soleil Boughton Sells 6,236 Shares
+   (Yahoo Finance · 09/19 23:15)
+→ Hims & Hers의 수석 법률 책임자 소레일 보우튼이 6,236주를 매도했습니다. 그러나 판매에도 불구하고 그녀는 여전히 850만 달러 상당의 상당한 지분을 보유하고 있습니다.
+
+📰 [HIMS] HIMS INVESTOR DEADLINE APPROACHING: Faruqi & Faruqi, LLP Reminds - The National Law Review
+   (The National Law Review · 09/19 21:43)
+→ HIMS에 투자한 주주들은 투자 마감일이 다가오고 있다는 Faruqi & Faruqi, LLP의 경고를 받고 있습니다. 주주들은 이에 대한 주의를 기울여야 할 필요가 있습니다.
+
+📰 [HIMS] Hims & Hers Health Shareholder Alert: ClaimsFiler Reminds Investors With Losses In Excess Of $100,000 Of Lead Plaintiff Deadline In Class Action Lawsuit Against Hims & Hers Health, Inc. - HIMS - PR Newswire
+   (PR Newswire · 09/19 11:00)
+→ Hims & Hers Health에 대한 집단 소송의 원고 마감일이 다가오고 있으며, 10만 달러 이상의 손실을 입은 투자자들에게 알림이 발송되었습니다. ClaimsFiler는 해당 주주들에게 이 소송에 참여할 기회를 제공하고 있습니다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW Stocks Slide Overnight: Analyst Questions Whether Rivals Can Compete If SpaceX Controls Access To Orbit - Stocktwits
+   (Stocktwits · 09/21 00:05)
+→ ASTS, RKLB, LUNR, RDW 주식이 하락한 가운데, 분석가는 SpaceX가 궤도로의 접근을 통제할 경우 경쟁사들이 견딜 수 있을지 의문을 제기했습니다. 이러한 상황은 우주 산업 내 경쟁력에 영향을 미칠 수 있습니다.
+
+📰 [RDW] Redwire (RDW) Could Be 16% Undervalued After Q2 Beat And Higher Outlook - simplywall.st
+   (simplywall.st · 09/20 05:33)
+→ Redwire (RDW)는 2분기 실적이 예상치를 초과하고 더 높은 전망을 제시하면서 16% 저평가되었을 가능성이 있는 것으로 분석되고 있습니다. 이 회사의 긍정적인 실적 발표가 투자자들에게 주목받고 있습니다.
+
+📰 [RDW] RKLB, LUNR, RDW Jump Premarket As Musk Pitches AI Satellites, Orbital Data Centers — Analyst Says The Odds Are Just 7% - Stocktwits
+   (Stocktwits · 09/20 04:32)
+→ RKLB, LUNR, RDW 주식이 사전 거래에서 급등했으며, 이는 일론 머스크가 AI 위성 및 궤도 데이터 센터에 대한 구상을 발표한 데 기인한 것으로 보인다. 그러나 분석가는 이러한 프로젝트의 성공 확률이 단 7%에 지나지 않다고 언급했다.
+
+📰 [IREN] Rothschild Redburn initiates IREN stock with neutral rating - Investing.com India
+   (Investing.com India · 09/21 16:54)
+→ Rothschild Redburn이 IREN 주식에 대해 중립적인 평가를 시작했습니다. 이 기관은 해당 주식에 대한 긍정적이거나 부정적인 전망 없이 중립적인 입장을 취하고 있습니다.
+
+📰 [IREN] Neocloud Boom: Comparing Nebius, CoreWeave, & IREN - Zacks Investment Research
+   (Zacks Investment Research · 09/21 13:07)
+→ Zacks Investment Research는 Nebius, CoreWeave, IREN이라는 세 가지 클라우드 서비스 제공업체를 비교하며, 이들이 새로운 클라우드 시장에서의 성장을 다루고 있습니다. 각 회사의 기술, 시장 전략, 및 성장 잠재력을 분석하여 투자자들에게 정보 제공을 목표로 하고 있습니다.
+
+📰 [IREN] Neocloud Boom: Comparing Nebius, CoreWeave, & IREN
+   (Yahoo Finance · 09/21 11:03)
+→ 네오클라우드 제공업체는 매력적인 "도구" 투자를 제안하지만, 모든 업체가 동일하게 우수한 것은 아니다. Nebius, CoreWeave, IREN을 비교하여 각 업체의 차별성과 장점을 분석한 내용이다.
+
+📰 [RKLB] Rocket Lab's Factory-Floor Rhythm Meets Its Billion-Dollar Bet - AD HOC NEWS
+   (AD HOC NEWS · 09/21 16:20)
+→ 로켓랩이 10억 달러 규모의 투자를 통해 공장 생산 체제를 최적화하고 있습니다. 이 회사는 효율적인 생산 라인을 구축하여 더 많은 발사를 수행하고, 경쟁력을 강화하려는 전략을 추진하고 있습니다. 로켓랩의 목표는 지속적인 성장과 우주 산업 내 입지를 확립하는 것입니다.
+
+📰 [RKLB] $Rocket Lab (RKLB.US)$ (Breaking out of a long-term downtrend) - Moomoo
+   (Moomoo · 09/21 11:33)
+→ 로켓랩(Rocket Lab, RKLB.US)이 장기 하락세를 벗어나고 있다는 소식이 전해졌다. 이로 인해 주식 전망에 긍정적인 변화가 기대되고 있다.
+
+📰 [RKLB] Analysts Highlight Oracle, Rocket Lab and Meta for Long-Term Growth - ozarab.media
+   (ozarab.media · 09/21 11:18)
+→ 분석가들은 오라클, 로켓랩, 메타를 장기 성장 가능성이 높은 기업으로 주목하고 있다. 이들 기업은 각각의 산업에서 혁신과 성장을 이끌어낼 주요 요소로 평가받고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] BTC/USD Forex Signal 21/09: Bullish Outlook Despite Elevated - DailyForex
+   (DailyForex · 09/21 16:51)
+→ BTC/USD 외환 신호 보고서에 따르면, 9월 21일 비트코인 가격에 대해 긍정적인 전망이 제시되었으며, 가격 상승에도 불구하고 변동성이 높은 상황이 지속되고 있다는 내용입니다. 전문가들은 비트코인이 여전히 상승할 가능성이 있다고 분석하고 있습니다.
+
+📰 [BTC-USD] Bitcoin Reclaims 50-Week Moving Average for the First Time in Over 10 Months - CryptoRank
+   (CryptoRank · 09/21 16:39)
+→ 비트코인이 10개월 만에 처음으로 50주 이동평균선을 회복했습니다. 이는 비트코인 가격 상승의 긍정적인 신호로 해석되고 있습니다.
+
+📰 [BTC-USD] BTC/USD: Bitcoin Tests $82,000 for a Third Time. Do Bulls Finally Punch Through? - TradingView
+   (TradingView · 09/21 16:36)
+→ 비트코인(BTC/USD)이 $82,000 저항선을 세 번째로 시험하고 있으며, 투자자들은 상승세가 지속될 수 있을지를 주목하고 있습니다. 이번 시도가 성공할 경우 강세장 전환이 기대됩니다.
+
+📰 [ETH-USD] XRP Price Prediction: Can XRP Flip Ethereum and Hit $3,000? - Cryptonews
+   (Cryptonews · 09/21 16:54)
+→ XRP의 가격 전망에 대한 기사에서는 XRP가 이더리움을 제치고 3,000달러에 도달할 가능성을 논의하고 있습니다. 전문가들은 XRP의 성장 잠재력을 강조하며 시장의 변동성을 고려할 것을 권고합니다.
+
+📰 [ETH-USD] ethereum:0xe28b3b32b6c345a34ff64674606124dd5aceca30 retestin - KuCoin
+   (KuCoin · 09/21 16:51)
+→ 이더리움의 주소 0xe28b3b32b6c345a34ff64674606124dd5aceca30이 KuCoin에서 재테스트되고 있다는 소식입니다. 이는 해당 주소와 관련된 거래나 활동에 대한 점검이 이루어지고 있음을 의미합니다.
+
+📰 [ETH-USD] Ethereum breaks $2,560 resistance, eyes $2,760 next after strong bullish momentum - Pluang
+   (Pluang · 09/21 16:05)
+→ 이더리움은 2,560달러 저항선을 돌파하며 강한 상승세를 보이고 있으며, 다음 목표로 2,760달러를 바라보고 있습니다.
+
+📰 [SOL-USD] ZetaChain holders approve plan to wind down L1, move ZETA to Solana - TradingView
+   (TradingView · 09/21 16:31)
+→ ZetaChain의 보유자들이 L1 운영 종료 계획을 승인하고 ZETA 토큰을 솔라나로 이동하기로 결정했습니다. 이 결정은 ZetaChain의 구조 조정과 새로운 블록체인 플랫폼으로의 전환을 목표로 하고 있습니다.
+
+📰 [SOL-USD] ZetaChain votes to end its Layer 1 blockchain, migrating ZETA token to Solana for better speed and AI focus. - Pluang
+   (Pluang · 09/21 16:24)
+→ ZetaChain은 Layer 1 블록체인을 종료하고 ZETA 토큰을 속도 향상과 AI 집중을 위해 Solana로 이전하기로 결정했습니다.
+
+📰 [SOL-USD] Solana Climbs as On-Chain Equity Holders Hit Record Levels - TradingPedia
+   (TradingPedia · 09/21 16:13)
+→ 솔라나의 온체인 지분 보유자가 사상 최대 수준에 도달하면서 해당 암호화폐의 가격이 상승하고 있습니다. 이는 투자자들의 관심과 신뢰가 증가하고 있음을 나타냅니다.
+
+📰 [BMNR] Why Did Bitmine Immersion Technologies (BMNR) Move Today? - simplywall.st
+   (simplywall.st · 09/20 17:37)
+→ Bitmine Immersion Technologies (BMNR)의 주가가 오늘 상승한 이유는 주식 시장에서의 긍정적인 반응과 관련된 몇 가지 요인이 작용했기 때문입니다. 구체적인 원인으로는 최근 발표된 재무 결과나 전략적 결정 등이 있을 수 있습니다. 이로 인해 투자자들의 관심이 증가하면서 주가가 올랐습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Trade At A Discount To Book Value
+   (Yahoo Finance · 09/19 11:10)
+→ Bitmine Immersion Technologies(BMNR)의 주가가 최근 몇 년 동안 급격히 변동하며 현재 25.99달러가 회사의 장부가치와 일치하는지에 대한 의문이 제기되고 있다. 투자자들은 이 주가의 반영이 장부가치에 얼마나 기반을 두고 있는지, 얼마나 시장의 낙관론에 의한 것인지 주목해야 한다. 지난 3년간 BMNR 주가는 132.1% 상승했다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Trade At A Discount To Book Value - Yahoo Finance
+   (Yahoo Finance · 09/19 11:10)
+→ Bitmine Immersion Technologies (BMNR)의 주식이 장부가치에 비해 할인된 가격에 거래될 가능성이 있다는 소식이 전해졌습니다. 이는 투자자들이 주식의 가치를 주의 깊게 살펴볼 필요가 있음을 시사합니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 이더리움 현물 ETF에서 1억4000만달러가 순유출되며 기관 자금의 보수적 대응 신호가 나타났다. 그러나 비트코인과 이더리움의 현물 가격은 상승세를 이어가며 시장에서 위험 선호가 회복되고 있는 분위기다.
+
+[핵심 뉴스]
+1. (ETF) 이더리움 ETF 1.4억달러 순유출
+   → 이더리움 현물 ETF에서 1억4000만달러가 유출되었고, 블랙록 ETHA에서 5604만5600달러가 빠져나간 반면, 비트코인은 24시간 기준 1.66% 상승해 8만1637달러에 거래되고 있다.
+   (토큰포스트 · 09/21 16:59)
+2. (기타) 비트코인 장기 보유자 규모 지속 감소
+   → 비트코인 장기 보유자 보유량이 5주 연속 줄어들었으나 최근 30일의 감소 속도가 둔화되었으며, 지난주 한 주 사이에 4만7800BTC가 감소했다.
+   (토큰포스트 · 09/21 16:47)
+3. (기타) 현실세계자산 토큰화에 160억달러 유입
+   → 현실세계자산 토큰화(RWA)에 지난 12개월간 약 160억달러가 유입되었으며, RWA는 향후 가상자산 시장의 유동성 통로로 주목받고 있다.
+   (토큰포스트 · 09/21 16:35)
+4. (시세) 비트코인 8만달러대 반등
+   → 비트코인이 9월 20일 8만323달러에 도달하며 반등세를 보였고, 최근 7일간 상승률은 4.82%에 달한다.
+   (토큰포스트 · 09/21 15:41)
+5. (기타) 글로벌 NEAR 조회수 1위
+   → 글로벌에서 네어 프로토콜(NEAR)이 조회수 1위를 기록하였고, 가격은 4.26달러로 23% 상승했으며, 한국에서는 그래비티(G)가 가장 많이 조회되었지만 가격은 52% 하락했다.
+   (토큰포스트 · 09/21 16:00)
+
+[흐름·전망]
+• 이더리움 ETF의 자금 유출이 극복되지 않는 한, 기관 자금의 흐름에 따라 시장 분위기가 영향을 받을 가능성이 있다.
+• 비트코인과 이더리움의 상승세가 지속된다면, 단기적으로 알트코인으로의 자금이 유입될 수 있으며, 순환매가 강화될 여지가 있다.
+• 장기 보유자의 보유량 감소 속도의 둔화는 매도 압력이 약해지는 신호로 해석되지만, 여전히 보유량은 줄고 있어 주의가 필요하다.
+• RWA의 자산 토큰화가 가상자산 시장에 미치는 영향에 주목해야 하며, 이는 향후 유동성 이동의 새 경로가 될 수 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 29 (Fear)
+  - 크립토 기준: 70 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 정부의 주거안정플랜 발표로 공공임대주택 공급이 확대될 예정이다. 그러나 청약 경쟁률과 미분양 문제 등은 여전히 하락세를 보이고 있어 시장의 전반적인 분위기는 여유롭지 않다.
+
+[핵심 뉴스]
+1. (정책) 주거안정플랜, 주거복지 외연 확대…실현 가능성은 지켜봐야
+   → 정부는 '주거안정플랜'을 발표하며 2030년까지 보편형 공공임대 19만가구를 공급할 계획이다. 이 정책은 청년과 중산층을 포함한 다양한 계층에 주거복지를 제공하고 기존 공공임대의 품질 개선을 목표로 하고 있다.
+   (연합뉴스 · 09/21 16:23)
+2. (공급) 2030년까지 공적주택 119만호 공급…수도권에 92만호
+   → 정부는 2030년까지 총 119만호의 공적주택을 공급할 계획이며, 이 중 77%인 92만호를 수도권에 배정할 예정이다. 이에 따라 정부는 공공임대주택의 품질을 개선하고 청년과 신혼부부 등 다양한 수요층을 위한 맞춤형 지원 강화에 나선다.
+   (연합뉴스 · 09/21 16:00)
+3. (정책) 전현희, '토지임대부 지원법' 발의…“강남 아파트 3억원대 분양”
+   → 공공임대주택은 기존의 낮은 생활 만족도를 개선하기 위해 중형 평형과 품질 개선 방안이 도입된다. 청년 세대에 대한 우선 공급 비율 역시 50% 이상으로 설정될 예정이다.
+   (연합뉴스 · 09/21 16:00)
+4. (매매) 수도권 3곳 모두 하락…전국 1순위 청약 경쟁률 5개월 연속 내리막
+   → 전국 1순위 청약 경쟁률은 5.34대 1로 하락해 38개월 만에 최저치를 기록했다. 특히 수도권의 경쟁률이 모두 하락해 미달 주택이 증가하고 있는 것으로 나타났다.
+   (매일경제 · 09/21 14:48)
+5. (공급) 수도권에 2만3천가구 공급…고양 대곡·의왕 왕곡, 2029년 착공
+   → 경기 고양시와 의왕시에 총 2만3천가구 규모의 신규 공공주택지구가 지정되었고, 2029년부터 착공될 예정이다. 이는 수도권 주택 공급을 위해 마련된 조치이다.
+   (매일경제 · 09/21 11:54)
+6. (공급) 10월 전국 아파트 1만 6567가구 입주, 전월대비 65% ↑
+   → 10월에 예정된 전국 아파트 입주 물량은 1만6567가구로 9월보다 65% 증가할 전망이다. 그러나 최근 입주율은 하락세를 보이고 있으며, 주택산업연구원 조사에 따르면 입주율은 59.5%로 떨어졌다.
+   (매일경제 · 09/21 14:33)
+
+[흐름·전망]
+• 공공임대주택의 공급 확대와 품질 개선이 시장에 미치는 영향이 주목받고 있으며, 이로 인해 청년 및 중산층의 주거 안정에 긍정적인 요소로 작용할 가능성이 있다.
+• 청약 경쟁률의 지속적인 하락세와 미분양 주택 증가 문제는 시장 전반에 걸쳐 우려를 낳고 있어, 이에 대한 대응책이 필요할 것으로 보인다.
+• 수도권의 신규 주택 공급이 활성화될 경우, 매물 부족 문제 해소에 긍정적 영향을 미칠 수 있으나, 공급 속도와 시장 반응을 고려해야 할 시점이다.
+• 입주율 하락세는 향후 임대시장과 매매 시장에 부정적 영향을 미칠 수 있으며, 이는 자금 마련의 어려움과 시장의 불안정성을 반영하고 있어 주의가 필요하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+오늘 트럼프는 주요 뉴스 매체에 대한 비판과 함께 경제 상황에 대한 의견을 제시했다. 그는 Biden 행정부 하의 경제 문제를 비난하며 자신의 정책이 그보다 더 좋았다고 주장했다.
+
+[주요 발언]
+1. (사법) 트럼프는 존 브레넌의 트럼프-러시아 음모 논란에서의 역할에 대한 검찰의 조사에 주목했다.
+   (Truth Social · 09/21 14:06)
+2. (경제) 트럼프는 바이든 행정부 때의 가스 가격 상승을 비판하며 자신의 재임 시절과 비교했다.
+   (Truth Social · 09/21 13:59)
+3. (국내정치) 그는 CNN, MSNBC, 그리고 Politico의 백악관 출입을 금지하는 조치를 발표했다.
+   (Truth Social · 09/21 13:58)
+4. (기타) 트럼프는 아링턴 기념교 근처에 군사 복합체를 설계하겠다고 밝혔다.
+   (Truth Social · 09/21 13:57)
+5. (기타) 그는 'Supreme Intelligence'라는 용어를 삭제하고 투표를 통해 새로운 용어를 결정할 계획이라고 전했다.
+   (Truth Social · 09/21 11:02)
+6. (기타) 트럼프는 유명 골프 선수와의 만남을 언급하며 개인적인 소식을 공유했다.
+   (Truth Social · 09/21 10:05)
+
+[시장·경제 관련]
+• 가스 가격 상승과 관련된 발언이 있었지만, 직접적인 시장·경제 정책에 대한 언급은 없었다.
+
+[흐름·전망]
+• 트럼프의 미디어 출입 금지 조치를 통해 향후 백악관과 언론의 관계가 어떻게 변화할지 주목할 필요가 있다.
+• 그의 경제 관련 발언이 향후 정치적 논의에 어떤 영향을 미칠지 귀추가 주목된다.
+• 트럼프의 군사 복합체 설계 발표가 향후 국가 안보 정책에 미칠 영향에 대한 분석이 필요할 것이다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
