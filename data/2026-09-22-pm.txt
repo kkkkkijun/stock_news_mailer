@@ -1,0 +1,245 @@
+2026-09-22T17:03:00.205232+09:00
+
+[오늘의 뉴스 요약] 2026-09-22 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 원/달러 환율이 이틀 연속 하락하며 1,350원대로 진입했다. 미국 이란 대화 재개 기대감과 수출업체의 네고물량이 영향을 미쳤고, 국내 금리는 상승 추세를 보이고 있다.
+
+[핵심 뉴스]
+1. (환율) 원/달러 환율 급락 1,350원대 진입
+   → 원/달러 환율이 1,358.2원으로 22.8원 하락하며 1,350원대에 진입했다. 이는 추석 연휴를 앞두고 수출업체의 달러 매도 물량과 미국 이란 정상회담 가능성으로 인한 것으로 보인다.
+   (연합뉴스 · 09/22 16:23)
+2. (금리) 카카오뱅크 예금 금리 인상
+   → 카카오뱅크가 1년 만기 정기예금 금리를 연 3.7%로 인상하며 은행권 최고 수준을 기록하였다. 이에 따라 여러 은행 역시 수신 금리를 3% 중반으로 조정하고 있다.
+   (연합뉴스 · 09/22 16:22)
+3. (정책) 이형일 부총리, 경제 리스크 재점검
+   → 이형일 신임 부총리는 부동산, 금융, 외환 리스크를 재점검하고 대미 투자 차질을 방지할 것을 강조하였다. 그는 경기 개선이 지속되지만 여전히 불확실성이 높다고 언급했다.
+   (연합뉴스 · 09/22 15:30)
+4. (기타) 한은, 원화 강세 원인 설명
+   → 한국은행은 원화 강세가 국내 은행의 자본비율에 하락 압력을 줄 수 있다고 분석하며, 최근 환율 하락이 자본비율 개선에 긍정적 영향을 미칠 것으로 전망하고 있다.
+   (연합뉴스 · 09/22 14:43)
+5. (환율) 환율 강세, 22.8원 급락
+   → 원/달러 환율은 2개월 보름만에 최대 낙폭인 22.8원 하락하며 1,358.2원에 마감했다.
+   (이투데이 · 09/22 15:58)
+
+[흐름·전망]
+• 원/달러 환율이 추가 하락할 가능성이 있지만, 미국의 금리 인상 및 글로벌 자본 흐름에 따라 방향성이 불확실하다.
+• 금리 인상 경쟁이 심화됨에 따라 흡수기능이 높아질 것으로 보이며, 이는 소비자들의 저축 유인을 증가시킬 수 있다.
+• 이형일 부총리의 발언이 경제 정책 방향에 어떤 변화를 가져올지 주목할 필요가 있다.
+• 원화 강세가 지속될 경우 금융기관의 대출 여력이 늘어날 수 있으나, 시장상황 변화에 대한 주의가 필요하다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA And 2 Other AI Stocks To Own - simplywall.st
+   (simplywall.st · 09/22 16:30)
+→ NVIDIA와 함께 투자할 만한 두 개의 AI 주식이 소개되었습니다. 이 기사에서는 AI 기술의 성장 잠재력을 고려할 때, 관련 기업의 주식이 유망하다고 평가하고 있습니다.
+
+📰 [NVDA] Not Micron. Not Alphabet. Here's My Top Artificial Intelligence (AI) Stock Pick for the Next 3 Years.
+   (Yahoo Finance · 09/22 15:50)
+→ 향후 3년 동안의 인공지능(AI) 주식으로 추천하는 종목은 엔비디아(Nvidia)이다. 엔비디아는 뛰어난 위치에 있어 놀라운 수익을 제공할 것으로 기대된다.
+
+📰 [NVDA] Trump’s Nvidia Deal Turns Armenia Into Surprising AI Hotspot - Bloomberg.com
+   (Bloomberg.com · 09/22 15:34)
+→ 트럼프의 엔비디아 거래로 아르메니아가 예상치 못한 AI 중심지로 떠오르고 있다. 이 거래는 아르메니아의 기술 생태계와 인공지능 산업에 긍정적인 영향을 미치고 있으며, 해당 지역의 성장 가능성을 높이고 있다.
+
+📰 [TSLA] Key facts: Tesla (TSLA) rated BBB by Fitch; heavy capex, CA trial - TradingView
+   (TradingView · 09/22 16:15)
+→ Fitch가 테슬라(TSLA)의 신용등급을 BBB로 평가했습니다. 이는 대규모 자본 지출과 캘리포니아 법정 사건이 영향을 미친 것으로 보입니다.
+
+📰 [TSLA] Tesla faces trial over ‘rampant racism’ against Black workers at US plant - The Times of India
+   (The Times of India · 09/22 15:19)
+→ 테슬라가 미국 공장에서 흑인 노동자들에 대한 만연한 인종 차별 문제로 재판에 직면했습니다. 이 사건은 노동 환경에서의 인종 차별을 집중적으로 다루고 있습니다.
+
+📰 [TSLA] The Tesla Cybercab has a pretty silly design fail - Creative Bloq
+   (Creative Bloq · 09/22 15:07)
+→ 테슬라 사이버캡이 디자인에서 다소 어리석은 결함을 보였다는 내용이다. 이 결함 때문에 차량의 실용성이 저하될 수 있다는 비판이 제기되고 있다.
+
+📰 [HIMS] Hims and Hers Health (HIMS): The Smallcap Stocks Name Everyone's Asking About - Kalkine Media
+   (Kalkine Media · 09/22 15:18)
+→ Hims and Hers Health (HIMS)는 최근 투자자들 사이에서 주목받고 있는 소형주로, 건강 및 웰니스 분야에서 서비스를 제공하는 기업이다. 이 회사의 주식은 많은 관심을 받고 있으며, 앞으로의 성장 가능성에 대한 기대가 높아지고 있다.
+
+📰 [HIMS] Hims & Hers Health Inc (HIMS) Shares Surge 4.9% -- What GF Score of 77 Tells Investors - GuruFocus
+   (GuruFocus · 09/22 08:31)
+→ Hims & Hers Health Inc (HIMS)의 주가가 4.9% 상승했으며, GF 점수 77은 투자자에게 긍정적인 신호를 주고 있습니다. 이 점수는 회사의 재무 상태와 성장 가능성을 평가하는 데 도움을 줍니다.
+
+📰 [HIMS] Kahn Swick & Foti, LLC Alerts Hims & Hers Health, Inc. (HIMS) Investors With Six-Figure Losses to Filing Deadline - The National Law Review
+   (The National Law Review · 09/22 07:36)
+→ Kahn Swick & Foti, LLC는 Hims & Hers Health, Inc. (HIMS) 투자자들에게 여섯 자리 수의 손실을 신고할 마감일이 다가오고 있음을 알리고 있습니다. 투자자들은 손실을 보전하기 위한 법적 조치를 취할 수 있는 기회를 놓치지 않도록 주의가 필요합니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Up 8% - Time to Buy? - MarketBeat
+   (MarketBeat · 09/22 06:44)
+→ Redwire(NYSE: RDW)의 주가가 8% 상승하며 투자자들 사이에서 매수 시점에 대한 논의가 일고 있습니다. 시장에서의 긍정적인 반응이 주가 상승에 기여한 것으로 보입니다.
+
+📰 [RDW] Redwire (RDW) Stock Gains As Growth And Space Bets Accelerate - StocksToTrade
+   (StocksToTrade · 09/22 01:33)
+→ Redwire(RDW) 주식이 성장과 우주 산업에 대한 투자 증가에 힘입어 상승하고 있다. 이 회사는 우주 관련 기술 및 서비스 분야에서의 확장을 통해 주목받고 있다.
+
+📰 [RDW] RDW Stock Climbs As Redwire Bets Big On Space Data - timothysykes.com
+   (timothysykes.com · 09/22 01:32)
+→ RDW 주가는 Redwire가 우주 데이터에 크게 투자하면서 상승했습니다. 이 회사는 우주 관련 데이터 사업에서 성장 가능성을 높이고 있으며, 이에 따라 주식 가치가 상승하고 있습니다.
+
+📰 [IREN] IREN Lands Two Wall Street Endorsements as Texas Power Hub and AI Contracts Take Shape - AD HOC NEWS
+   (AD HOC NEWS · 09/22 16:02)
+→ IREN은 최근 텍사스 전력 허브 및 인공지능 계약의 발전에 따라 두 건의 월스트리트 지지를 받았다. 이러한endorsement는 IREN의 성장 가능성을 높이는 긍정적 신호로 해석되고 있다.
+
+📰 [IREN] Why IREN (IREN) Is Suddenly a Talking Point in Technical Analysis - Kalkine Media
+   (Kalkine Media · 09/22 15:20)
+→ IREN(아이렌)이 기술 분석에서 주목받고 있는 이유는 최근 주가 변동성과 거래량 증가로 인한 관심 증대 때문이다. 전문가들은 이 기업의 차트 패턴과 지표들이 향후 투자 결정을 위한 중요한 신호를 제공할 것으로 보고 있다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Shares Up 1.2% - What's Next? - MarketBeat
+   (MarketBeat · 09/22 06:23)
+→ IREN (NASDAQ:IREN) 주가가 1.2% 상승했습니다. 향후 전망에 대한 논의가 이어지고 있습니다.
+
+📰 [RKLB] Rocket Lab Sold $1.9 Billion of New Stock to Pay for Iridium. Here's the Dilution Math. - The Globe and Mail
+   (The Globe and Mail · 09/22 16:34)
+→ 로켓랩이 이리듐을 구매하기 위해 19억 달러 규모의 신규 주식을 판매했다. 이로 인해 주주들에게는 주식 희석의 영향이 있을 것으로 보인다.
+
+📰 [RKLB] Rocket Lab Sold $1.9 Billion of New Stock to Pay for Iridium. Here's the Dilution Math.
+   (Yahoo Finance · 09/22 16:34)
+→ 로켓랩이 19억 달러 규모의 신주를 발행하여 이리듐에 대한 36억 달러의 대출을 피했습니다. 이번 주식 판매를 통해 회사의 약 5%가 희석되었으며, 주식 수는 앞으로도 증가할 것으로 보입니다.
+
+📰 [RKLB] Rocket Lab Sold $1.9 Billion of New Stock to Pay for Iridium. Here's the Dilution Math. - The Motley Fool
+   (The Motley Fool · 09/22 16:19)
+→ 로켓랩이 이리디움 인수 자금을 마련하기 위해 19억 달러 규모의 신규 주식을 판매했습니다. 이로 인해 기존 주주들의 지분이 희석되는 문제가 발생할 것으로 보입니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] BTC/USD Signal 22/09: Bitcoin Price Breaks Out - DailyForex
+   (DailyForex · 09/22 16:50)
+→ 비트코인 가격이 상승세를 보이며 새로운 고점을 돌파했다는 소식이 전해졌습니다. 이러한 변동성은 시장의 긍정적인 신호로 해석될 수 있으며, 투자자들 사이에서 주목받고 있습니다.
+
+📰 [BTC-USD] Spot bitcoin ETFs attract nearly $1 billion in largest daily inflow in 11 months - theblock.co
+   (theblock.co · 09/22 16:44)
+→ 스팟 비트코인 ETF가 지난 11개월 중 가장 큰 하루 유입액인 거의 10억 달러를 기록했습니다. 이는 투자자들의 비트코인에 대한 관심이 급증하고 있음을 보여줍니다.
+
+📰 [BTC-USD] Spot bitcoin ETFs attracted nearly $1 billion on Monday, the 9th largest inflow ever - CoinDesk
+   (CoinDesk · 09/22 16:40)
+→ 비트코인 현물 ETF가 월요일에 거의 10억 달러에 가까운 자금을 유치하며 역대 9번째로 큰 유입 규모를 기록했습니다. 이 뉴스는 비트코인 ETF에 대한 투자자들의 높은 관심을 보여줍니다.
+
+📰 [ETH-USD] Ethereum jumps 4.8% to $2,752 amid strong insti... - Pluang
+   (Pluang · 09/22 16:38)
+→ 이더리움 가격이 4.8% 상승하여 2,752달러에 이르렀습니다. 강력한 기관의 매수세가 이 상승을 견인하고 있습니다.
+
+📰 [ETH-USD] Vitalik Buterin Welcomes Prediction Market Contender to Ethereum Base Chain, Says It Does 'Interesting and Meaningful' Things Ethically
+   (Yahoo Finance · 09/22 16:36)
+→ 이더리움 공동 창립자 비탈릭 부테린이 예측 시장 경쟁자인 Trueo를 지지하며, 이 플랫폼이 윤리적이고 의미 있는 활동을 한다고 언급했습니다. 그는 Trueo가 '기업의 더러움'이 없다고 강조하며, Layer 1에서의 성공을 기쁘게 생각한다고 전했습니다.
+
+📰 [ETH-USD] Circle Launches Bitcoin-Backed USDC Borrowing for Institutions on Arc and Ethereum - Bitcoin Foundation
+   (Bitcoin Foundation · 09/22 16:06)
+→ Circle은 아크(Arc)와 이더리움(Ethereum) 플랫폼에서 기관을 대상으로 비트코인으로 담보된 USDC 대출 서비스를 출시했습니다. 이는 기관 투자자들에게 새로운 자산 관리 옵션을 제공하고, 비트코인을 활용한 유동성을 확장하는 데 기여할 것으로 기대됩니다.
+
+📰 [SOL-USD] Solana hits $117.23, its highest since January, with $18M in short liquidations and bullish momentum ahead. - Pluang
+   (Pluang · 09/22 16:55)
+→ 솔라나의 가격이 1월 이후 최고치인 117.23달러에 도달했으며, 1,800만 달러의 공매도 청산과 함께 상승세를 보이고 있습니다.
+
+📰 [SOL-USD] Raflux Closes $300K Pre-Seed to Scale Super Gacha on Solana - macaubusiness.com
+   (macaubusiness.com · 09/22 16:03)
+→ Raflux는 Solana 플랫폼에서 슈퍼 가챠 서비스를 확장하기 위해 30만 달러의 프리 시드 자금을 확보했습니다. 이 투자 자금은 프로젝트의 성장을 지원하는 데 사용될 예정입니다.
+
+📰 [SOL-USD] Wavebridge to Host Institutional Conference Next Month, Bringing Tether, Robinhood, and Solana Together - finance.biggo.com
+   (finance.biggo.com · 09/22 15:56)
+→ 웨이브브릿지가 다음 달 기관 회의를 개최하며, 테더, 로빈후드, 솔라나와 같은 주요 기업들이 참석할 예정이다. 이 회의는 블록체인 및 금융 분야의 최신 트렌드를 논의하는 장이 될 것으로 예상된다.
+
+📰 [BMNR] BMNR Stock Price Surges 5.9% as Bitmine Adds 27,562 ETH - KuCoin
+   (KuCoin · 09/22 13:41)
+→ BMNR 주가가 5.9% 상승한 이유는 Bitmine이 27,562 ETH를 추가했기 때문입니다. 이 소식은 KuCoin에서 보도되었습니다.
+
+📰 [BMNR] BMNR Stock Price Surges 5% as Bitmine Adds Another 27,562 Ethereum - CryptoRank
+   (CryptoRank · 09/22 13:24)
+→ BMNR의 주가가 5% 상승했습니다. 이는 Bitmine이 추가로 27,562 이더리움을 확보했기 때문입니다.
+
+📰 [BMNR] Bitmine (NASDAQ: BMNR) Chairman Tom Lee Crowns Crypto A 'Huge Winner' As Banks Eye Tech Valuations; Dan Ives Labels AI A 'Two-Horse Race' - foreignpolicyjournal.com
+   (foreignpolicyjournal.com · 09/22 11:10)
+→ Bitmine의 회장 톰 리는 암호화폐를 '큰 승자'로 평가하며, 은행들이 기술 기업의 가치에 주목하고 있다고 전했습니다. 또한, Dan Ives는 인공지능 분야를 '두 마리 말의 경쟁'으로 묘사했습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 비트코인의 반등과 함께 전반적인 상승세를 보였다. 특히, 위험자산 선호가 높아지면서 알트코인도 동반 상승하였다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 85,369달러, 이더리움 2,730달러
+   → 페페(PEPE)는 9월 22일 24시간 동안 31.17% 상승하여 0.00000526달러에 거래되었다. 비트코인 반등으로 인해 공매도 포지션 청산이 발생하며 단기 상승세가 강화되었다.
+   (토큰포스트 · 09/22 16:49)
+2. (시세) 페페, 31.17% 상승
+   → 비트코인은 전날 대비 4.59% 상승하여 85,368달러에 거래되었으며, 이더리움도 2.55% 상승하여 2,730달러에 도달했다. 위험 선호 회복 속에서 알트코인들도 상승세를 보이고 있다.
+   (토큰포스트 · 09/22 16:36)
+3. (ETF) 비트코인 현물 ETF 3거래일째 유입세
+   → 암호화폐 거래소의 AI 전략 발달에 따른 효과로, 주문 실행과 데이터 관리의 효율을 높이기 위한 노력이 이어지고 있다. 시장에서 AI의 역할은 점차 확대될 것으로 예상된다.
+   (토큰포스트 · 09/22 16:21)
+4. (ETF) 이더리움 현물 ETF 유입액 1.9배 확대
+   → 이더리움 현물 ETF에 하루 2억7000만달러가 유입되었으며, 이는 기관 자금의 지속적인 흐름을 보여주는 것과 함께, 비트코인의 점유율 확대와 연결된다.
+   (토큰포스트 · 09/22 16:02)
+5. (기타) 가상자산 세금 유예 국민청원 움직임
+   → 가상자산 세금 유예를 위한 국민청원이 진행되고 있으며, 이는 개발자와 투자자들 사이에서 큰 관심을 받고 있다. 시장 흐름에 영향을 미칠 수 있는 중요한 사안으로 떠오르고 있다.
+   (토큰포스트 · 09/22 16:02)
+
+[흐름·전망]
+• 단기적으로 비트코인의 점유율 확대가 지속된다면, 대형주에 대한 투자 심리를 강화할 수 있다.
+• 파생상품 거래량 급증은 시장의 변동성을 야기할 가능성이 있으며, 이는 레버리지 사용에 주의가 필요하다는 점을 시사한다.
+• AI 기술의 발전이 거래소 및 투자자에게 편리함을 제공하면서도, 관련 보안 문제 역시 신경 써야 할 요소로 부각될 것이다.
+• 가상자산 세금 유예 청원은 시장의 정책적 변화를 이끌어낼 가능성이 있으며, 이에 대한 대중의 반응과 정부의 입장이 주목된다.
+
+📊 공포탐욕지수
+  - CNN 기준: 34 (Fear)
+  - 크립토 기준: 78 (Extreme Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 한국 부동산 시장은 다양한 정책적 변화 속에서 투자자들의 우려가 커지고 있으며, 주거비 안정과 공급 확대가 주요 목표로 설정되고 있다.
+
+[핵심 뉴스]
+1. (정책) HUG 전월세 안심신탁센터 출범
+   → HUG 전월세 안심신탁센터가 출범하였으며, 이는 임차인의 주거비 부담을 줄이고 전세사기 위험을 차단하는 방안으로 작용할 예정이다.
+   (연합뉴스 · 09/22 16:33)
+2. (기타) 이형일 부총리, 부동산 리스크 재점검
+   → 이형일 신임 부총리는 경제 회복을 위한 부동산, 금융, 외환 리스크를 재점검할 필요성을 강조하며, 불확실한 대내외 경제 상황에 대응하고자 했다.
+   (연합뉴스 · 09/22 15:30)
+3. (정책) 홍지선 국토장관, 부동산 민심 회복 노력
+   → 홍지선 국토교통부 장관은 수도권 150만 가구 공급 목표를 달성하고 전월세 시장을 안정시키기 위해 정책 추진에 속도를 내겠다고 밝혔다.
+   (연합뉴스 · 09/22 14:31)
+4. (금리) 한은, 수도권 아파트 가격 상승세 지속
+   → 한국은행은 8월 부동산 대책에도 불구하고 수도권 아파트 가격 상승 예상이 여전히 높다고 언급하며, 가격별로 다른 시장 반응을 보여주고 있다.
+   (연합뉴스 · 09/22 11:00)
+5. (금리) 한은, 금융 불균형 경고
+   → 한국은행은 수도권 주택 가격 상승과 가계대출 증가로 금융 불균형이 확대될 수 있다는 우려를 표명하며, 금리 상승기의 취약 부문 상태를 경계할 필요가 있다고 강조했다.
+   (연합뉴스 · 09/22 11:00)
+6. (매매) 경기 아파트값 53주 연속 상승
+   → 경기도 아파트값이 53주 연속 상승세를 보이고 있으며, 전세값 또한 동반 상승하고 있다.
+   (인천일보 · 09/22 16:49)
+
+[흐름·전망]
+• 정부의 전월세 안심신탁센터 출범이 주거비 절감과 시장 안정에 긍정적인 영향을 미칠지 주목해야 한다.
+• 부동산 리스크 재점검의 필요성이 거론됨에 따라 향후 거시경제 대응 전략이 관건이 될 것이다.
+• 수도권 150만 가구 공급 목표의 이행 여부가 향후 부동산 민심 회복에 크게 기여할 것으로 기대된다.
+• 가계 대출 증가와 집값 상승으로 인해 금융 불균형이 심화될 경우, 정책적 대응이 시급할 것이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+오늘 트럼프는 미국의 경제 상황 개선과 기후 변화에 대한 비판적 입장을 강조했다. 그는 미국의 재정 상황이 나아지고 있으며, 이를 폄하하는 언론에 반박하고자 했다.
+
+[주요 발언]
+1. (경제) 트럼프는 미국 가계 소득이 늘어난 것과 함께 빈곤율이 크게 감소했다고 주장하며 이를 축하해야 한다고 강조했다.
+   (Truth Social · 09/22 12:26)
+2. (경제) 트럼프는 벨라루스에서의 대규모 비료 구매 협상이 현재 캐나다에서 지불하는 가격보다 훨씬 저렴할 것이라고 언급하며 농부들에게 긍정적인 소식이 될 것이라고 말했다.
+   (Truth Social · 09/21 23:47)
+3. (사법) 트럼프는 언론이 백악관 접근을 강하게 주장하는 법적 소송을 제기했다고 밝혔으며, 이는 자신에 대한 음해라고 강조했다.
+   (Truth Social · 09/22 04:39)
+4. (외교) 트럼프는 우크라이나 전쟁으로 인해 러시아의 디젤 오일 산업이 통제력을 잃고 있으며, 전쟁을 조속히 끝내야 한다고 언급했다.
+   (Truth Social · 09/21 21:03)
+5. (국내정치) 트럼프는 상원 공화당원이 필리버스터를 종료하지 않을 경우 당이 결국 패배할 것이라고 경고하며, 이는 미국의 끝을 의미할 것이라고 주장했다.
+   (Truth Social · 09/22 02:18)
+6. (기타) 트럼프는 EPA의 정책 변경으로 소비자들에게 3100억 달러를 절감할 수 있을 것이라고 언급했다.
+   (Truth Social · 09/22 12:19)
+
+[흐름·전망]
+• 트럼프의 경제 수치 긍정 발언은 즉각적인 유권자 반응을 유도할 수 있으며, 이에 따라 정치적 지형 변화에 주목해야 할 가능성이 있다.
+• 우크라이나 전쟁에 대한 언급은 유럽 및 국제 정치에 미치는 파급 효과를 살펴봐야 할 시점이 될 수 있다.
+• 트럼프의 언론에 대한 비판은 향후 국내 정치 및 미디어 관계의 긴장을 일으킬 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
