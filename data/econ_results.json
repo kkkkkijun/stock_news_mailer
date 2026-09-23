@@ -610,5 +610,41 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"7300f597-d4d2-4360-832a-33657038e139": {
+"name": "Average Hourly Earnings (MoM)",
+"dt": "2026-11-06T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"85a16cc6-8da3-4cf5-87d4-3e18b491a0ef": {
+"name": "Average Hourly Earnings (YoY)",
+"dt": "2026-11-06T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"63edec8e-cde5-4efa-8469-1a9c17ff2eee": {
+"name": "Nonfarm Payrolls",
+"dt": "2026-11-06T12:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"1357b476-3290-4e06-a80f-44d32779cd4d": {
+"name": "Michigan Consumer Sentiment Index",
+"dt": "2026-11-06T14:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }

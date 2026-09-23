@@ -1,0 +1,244 @@
+2026-09-23T17:03:03.994354+09:00
+
+[오늘의 뉴스 요약] 2026-09-23 17:01 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 채권 금리가 전반적으로 하락하면서 안정세를 보였고, 원/달러 환율이 변동성을 나타내며 상승 요인을 반영했습니다. 소비자심리지수는 충북에서 반등하며 긍정적인 신호를 보내고 있습니다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 일제히 하락
+   → 23일 3년 만기 국고채 금리는 전 거래일보다 3.4bp 내린 연 4.006%로 마감했으며, 10년물 금리는 6.9bp 하락한 연 4.392%로 거래되었습니다.
+   (연합뉴스 · 09/23 16:47)
+2. (환율) 환율, 1,340원대 찍고 반등해 1,360원선 접근
+   → 원/달러 환율은 장중 1,340원대에서 반등해 오후 3시 30분 기준 1,358.4원으로, 전 거래일 같은 시각보다 0.2원 상승했습니다.
+   (연합뉴스 · 09/23 16:06)
+3. (금리) 바클레이즈, 한국 장기 국고채 신중 접근
+   → 바클레이즈는 한국 장기 국고채에 대해 신중한 접근을 유지하며, 10년물 금리를 올해 말 4.55%, 내년 3분기 4.30%로 전망했습니다.
+   (연합뉴스 · 09/23 14:30)
+4. (기타) 한은, 추석 앞두고 3조6천억원 화폐 공급
+   → 한은은 추석 전 10영업일간 총 3조6천억원의 화폐를 공급했으며, 이는 지난해보다 17.9% 감소한 규모입니다.
+   (연합뉴스 · 09/23 12:00)
+5. (기타) 충북 9월 소비자심리지수 106.0으로 반등
+   → 충북의 9월 소비자심리지수는 106.0으로 상승해 긍정적인 소비 심리를 반영하며, 경기 전망 지수를 상승시켰습니다.
+   (연합뉴스 · 09/23 10:26)
+
+[흐름·전망]
+• 단기적으로 채권 시장의 금리 하락세가 이어질지, 인플레이션 및 금리 정책에 대한 시장의 반응이 주목됩니다.
+• 환율은 글로벌 경제 및 미국의 금리 정책 변화에 크게 영향을 받을 가능성이 높으며, 예의주시 필요합니다.
+• 소비자심리지수의 반등은 소비 회복의 신호일 수 있지만, 경제 전반의 신뢰도를 높이기 위해선 지속적인 지표 개선이 요구됩니다.
+• 한은의 화폐 공급 감소는 경기 회복세와 관련된 행보로 해석될 수 있으며, 향후 통화정책에 대한 방향성을 시사합니다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia-Backed AI Startup Seeks $10 Billion Before Australian IPO - Bloomberg.com
+   (Bloomberg.com · 09/23 16:46)
+→ Nvidia 지원을 받는 AI 스타트업이 호주에서 IPO 이전에 100억 달러를 모집하려 하고 있습니다. 이 회사는 대규모 자금 조달을 통해 성장 및 확장을 목표로 하고 있습니다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA is Heritage Investors Management Corp's 8th Largest Position - MarketBeat
+   (MarketBeat · 09/23 16:15)
+→ NVIDIA Corporation($NVDA)은 Heritage Investors Management Corp의 8번째로 큰 보유 종목이다.
+
+📰 [NVDA] Nvidia director Mark Stevens sells another $300M in shares (NVDA:NASDAQ) - Seeking Alpha
+   (Seeking Alpha · 09/23 15:11)
+→ Nvidia 이사 마크 스티븐스가 3억 달러 규모의 주식을 추가로 매각했습니다. 이번 매각은 NVIDIA 주식이 상장된 NASDAQ에서 이루어졌습니다.
+
+📰 [TSLA] Inside ETFs: Tesla's appeal was 'never' cars - Reuters
+   (Reuters · 09/23 15:59)
+→ 텔사의 매력은 '결코' 자동차에 국한되지 않았다는 주장이 제기되었습니다. 이는 텔사가 자동차 제조업체로는 물론 혁신적인 기술과 지속 가능성의 아이콘으로 자리 잡았음을 시사합니다. 다양한 투자자들이 텔사의 미래 성장 가능성에 주목하고 있음을 나타냅니다.
+
+📰 [TSLA] Tesla Semi lands the biggest electric truck deal in U.S. history - Teslarati
+   (Teslarati · 09/23 14:45)
+→ 테슬라 세미가 미국 역사상 최대의 전기 트럭 계약을 체결했습니다. 이 계약은 테슬라의 전기 트럭 판매에 중요한 이정표가 될 것으로 기대됩니다.
+
+📰 [TSLA] Gary Black Says Legacy Automakers Will Not License Tesla FSD, Instead Bet on In-House Self-Driving Efforts: ‘Inclined to Build’
+   (Yahoo Finance · 09/23 14:11)
+→ 투자자 게리 블랙은 제너럴 모터스(GM), 포드 등 기존 자동차 제조사들이 테슬라의 풀 셀프 드라이빙(FSD) 기술을 라이센스하지 않고 자체적으로 자율주행 기술 개발에 투자할 것이라고 주장했다. 그는 기존 자동차 제조사들이 테슬라의 FSD 기술을 채택하지 않을 것이라는 예상을 해온 바 있다.
+
+📰 [HIMS] Kaplan Fox Reminds Hims & Hers Health, Inc. (NYSE: HIMS) Investors With Significant Losses to Seek a Leadership Role Before Deadline on November 2, 2026 - Barchart.com
+   (Barchart.com · 09/23 10:00)
+→ Kaplan Fox는 Hims & Hers Health, Inc.의 투자자들에게 2026년 11월 2일 전에 중요한 손실을 겪은 경우 리더십 역할을 신청하라고 상기시켰습니다. 이 기회는 지속적인 법적 절차의 일환으로 투자자들에게 제공됩니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. Securities Fraud Class Action - GlobeNewswire
+   (GlobeNewswire · 09/23 08:00)
+→ Hims & Hers Health, Inc.에 대해 증권 사기와 관련한 집단 소송이 제기되었습니다. 이 사건은 투자자들이 회사의 주가와 관련하여 허위 정보를 제공받았다고 주장하고 있습니다.
+
+📰 [HIMS] Hims & Hers Suit Spotlights Health Data-Sharing Privacy Risks - Law360
+   (Law360 · 09/23 04:14)
+→ Hims & Hers의 소송은 건강 데이터 공유와 관련된 개인 정보 보호 위험을 부각시킵니다. 해당 사건은 고객의 민감한 건강 정보가 어떻게 관리되고 보호되는지에 대한 우려를 제기하고 있습니다. 이로 인해 사용자들의 개인 정보 보호에 대한 신뢰가 흔들릴 가능성이 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Trading 1.4% Higher - Still a Buy? - MarketBeat
+   (MarketBeat · 09/23 06:43)
+→ Redwire (NYSE:RDW)의 주가는 1.4% 상승했으며, 여전히 매수 추천 여부에 대한 논의가 진행되고 있습니다. 투자자들은 이 주식의 향후 전망을 주의 깊게 살펴보고 있습니다.
+
+📰 [RDW] RDW Stock Rises On $21.5M Air Force Drone Contract - Stocktwits
+   (Stocktwits · 09/23 02:57)
+→ RDW 주가가 2,150만 달러 규모의 미 공군 드론 계약 소식에 힘입어 상승했다. 이 계약은 회사의 성장 전망에 긍정적인 영향을 미칠 것으로 기대된다.
+
+📰 [RDW] Can Redwire's Docking Technology Unlock New Growth Opportunities?
+   (Yahoo Finance · 09/22 23:03)
+→ Redwire의 자율 도킹 시스템이 만남, 도킹 및 자원 전송을 지원하여 미래 우주 인프라의 새로운 성장 기회를 열어줄 전망이다. 이 기술은 우주 탐사와 임무 수행 방식에 혁신을 가져올 것으로 기대된다.
+
+📰 [IREN] Iren (IREN) Stock Looks Stretched With AI Hopes Already Priced In
+   (Yahoo Finance · 09/23 07:13)
+→ IREN 주가는 최근 3년 동안 13배 상승했지만, 현재 주가가 기업의 매출에 부합하는지에 대한 논란이 일고 있다. AI 기대감이 이미 가격에 반영된 상황에서, 앞으로의 매출 성장 여부가 주가의 지속 가능성을 결정할 중요한 요소로 보인다.
+
+📰 [IREN] Iren (IREN) Stock Looks Stretched With AI Hopes Already Priced In - Yahoo Finance
+   (Yahoo Finance · 09/23 07:13)
+→ Iren 주식은 인공지능에 대한 기대가 이미 가격에 반영되어 있어 과대 평가된 것으로 보인다는 분석이 나왔다. 전문가들은 현재 주가가 AI 관련 기대감을 충분히 포함하고 있어 향후 상승 여력이 제한적일 수 있다고 경고하고 있다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Price Up 2.8% - What's Next? - MarketBeat
+   (MarketBeat · 09/23 06:48)
+→ IREN(NASDAQ: IREN)의 주가가 2.8% 상승했다. 앞으로의 전망에 대한 관심이 모아지고 있다.
+
+📰 [RKLB] Rocket Lab Corporation (NASDAQ:RKLB) Given Consensus Recommendation of "Moderate Buy" by Brokerages - MarketBeat
+   (MarketBeat · 09/23 15:33)
+→ 로켓랩 코퍼레이션(NASDAQ: RKLB)이 여러 중개업체들로부터 "보통 매수"라는 합의 추천을 받았습니다. 이 정보는 마켓비트에서 보도되었습니다.
+
+📰 [RKLB] Tracking Cathie Wood: Scaling Rocket Lab Exposure, Trimming 10x Genomics - Moomoo
+   (Moomoo · 09/23 15:30)
+→ 캐시 우드가 Rocket Lab의 지분을 확대하고 10x Genomics의 지분을 줄였습니다. 이는 그녀의 투자 전략 변화에 따른 것으로 보입니다. 해당 내용은 Moomoo에서 보도되었습니다.
+
+📰 [RKLB] If the Market Crashes, This Is the 1 Space Stock I Can't Wait to Buy
+   (Yahoo Finance · 09/23 15:25)
+→ 시장이 급락할 경우 로켓랩(Rocket Lab) 주식이 매력적인 구매 대상이 될 수 있다는 내용이다. 저렴해진 주가는 투자자들에게 좋은 기회를 제공할 것으로 보인다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Coinbase users can now borrow USDC against bitcoin at a fixed rate - CoinDesk
+   (CoinDesk · 09/23 16:49)
+→ 코인베이스 사용자들은 이제 비트코인을 담보로 고정 금리로 USDC를 대출받을 수 있게 되었습니다. 이 새로운 서비스는 거래소의 이용자들에게 더 많은 유동성을 제공할 것으로 보입니다.
+
+📰 [BTC-USD] Bitcoin At $80,000 Today Vs. Bitcoin At $80,000 in May: 'Very Different,' Says This Analyst - Benzinga
+   (Benzinga · 09/23 16:30)
+→ 현재 비트코인이 80,000달러에 거래되고 있지만, 5월의 80,000달러와는 상황이 매우 다르다는 분석이 제기됐다. 전문가들은 시장 환경과 투자 심리가 크게 변화했음을 강조하고 있다.
+
+📰 [BTC-USD] Bitcoin Rises as Middle East Diplomacy Hopes Help Risk Appetite -- Market Talk - Moomoo
+   (Moomoo · 09/23 16:13)
+→ 비트코인이 중동 외교에 대한 기대감으로 투자 심리가 개선되면서 상승세를 보이고 있습니다. 이러한 외교적 진전이 위험 자산에 대한 수요를 촉진하고 있다는 분석입니다.
+
+📰 [ETH-USD] Ethereum Priced for Ascendancy Amid Institutional Waves - OneSafe.io
+   (OneSafe.io · 09/23 15:56)
+→ 이더리움이 기관의 관심 증가와 함께 상승 가능성이 높은 가격으로 평가받고 있다. 최근의 투자 흐름이 이더리움의 가치 상승에 긍정적인 영향을 미치고 있다는 분석이다.
+
+📰 [ETH-USD] Ethereum surges 14% weekly, spot ETFs attract $413M inflows, eyes $3,300-$3,400 next if key resistance breaks - Pluang
+   (Pluang · 09/23 15:45)
+→ 이더리움이 주간 14% 상승하며, 현물 ETF에 4억 1천 3백만 달러의 자금 유입이 이어졌다. 주요 저항선을突破할 경우 이더리움 가격은 3,300~3,400 달러를 목표로 할 것으로 예상된다.
+
+📰 [ETH-USD] ETH Price Ethereum TA ETH Technical Analysis - Altcoin Buzz
+   (Altcoin Buzz · 09/23 15:18)
+→ ETH 가격과 관련된 기술 분석에 대한 내용이 담긴 뉴스입니다. 이 보고서는 이더리움(ETH)의 가격 변동성과 시장 동향을 평가하고, 투자자들에게 유용한 통찰력을 제공하고자 합니다.
+
+📰 [SOL-USD] Solana Price Prediction 2026: SOL Eyes $130, XRP Targets $1.89 as Apeing’s Crypto Presale Eyes 1000x - StreetInsider
+   (StreetInsider · 09/23 16:45)
+→ 2026년 솔라나(SOL)의 가격은 130달러를 목표로 하고 있으며, XRP는 1.89달러를 목표로 하고 있습니다. 또한, Apeing의 암호화폐 프리세일은 1000배 상승을 노리고 있습니다.
+
+📰 [SOL-USD] Solana's Alpenglow upgrade enters public testne... - Pluang
+   (Pluang · 09/23 16:35)
+→ 솔라나의 알펭글로우 업그레이드가 공개 테스트 네트워크에 들어갔습니다. 이번 업그레이드는 성능 향상과 새로운 기능을 포함하고 있으며, 개발자들과 사용자의 피드백을 통해 개선될 예정입니다.
+
+📰 [SOL-USD] Solana Alpenglow testnet: What does the 150ms finality upgrade change? - Crypto News
+   (Crypto News · 09/23 16:18)
+→ Solana의 Alpenglow 테스트넷 업데이트는 거래 완료 속도를 150ms로 단축시켜 블록 생성 시간을 개선합니다. 이는 네트워크의 효율성을 높이고 사용자 경험을 향상시키는 데 기여할 것으로 기대됩니다.
+
+📰 [BMNR] Trump-Xi Meeting, SEC Tokenization Rule Seen As Near-Term Catalysts for Crypto Stocks, B. Riley Says
+   (Yahoo Finance · 09/23 01:57)
+→ B. Riley는 트럼프와 시진핑의 회의, SEC의 토큰화 규정이 암호화폐 관련 주식에 긍정적인 영향을 미칠 것으로 보인다고 전하며, Strategy, SharpLink Gaming, Bitmine Immersion Technologies, Strive 등 여섯 개 암호화폐 관련 주식의 목표 주가를 상향 조정했습니다.
+
+📰 [BMNR] BMNR Stock Surges After Firm’s Record Buyback, Tom Lee Sets $2,500 Ethereum Target - Stocktwits
+   (Stocktwits · 09/22 14:58)
+→ BMNR 주가는 회사의 기록적인 자사주 매입 발표 이후 급등했습니다. 또한 투자 전문가 톰 리는 이더리움 목표가를 2,500달러로 설정했습니다.
+
+📰 [BMNR] BMNR Stock Price Surges 5.9% as Bitmine Adds 27,562 ETH - KuCoin
+   (KuCoin · 09/22 13:48)
+→ BMNR 주가가 5.9% 상승했으며, 이는 Bitmine이 27,562 ETH를 추가했기 때문입니다. KuCoin에서 이 소식이 전해졌습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+비트코인 시가총액이 8월 18일 이후 36% 증가하며 주요 금융자산과의 동조화가 약화되었다. 반면, 미국 비트코인 현물 ETF에 7억1500만달러가 순유입되며 기관 자금의 안정적인 흐름이 지속되고 있다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 시총 36% 증가...금·주식과 동조화 약화
+   → 비트코인의 시가총액은 8월 18일 이후 36% 증가했으며, 이는 S&P500(0.8% 상승) 및 금(-1.5% 하락)보다 높은 상승률이다.
+   (토큰포스트 · 09/23 16:47)
+2. (ETF) 비트코인 현물 ETF 4거래일 연속 순유입
+   → 미국 비트코인 현물 ETF에 4거래일 연속으로 7억1500만달러가 순유입되었으며, 블랙록의 IBIT에만 3억5000만달러가 유입되었다.
+   (토큰포스트 · 09/23 16:24)
+3. (온체인) 알트코인 수익 공급 중간값 25% 밑돌아
+   → 비트코인과 이더리움은 각각 1.35%와 0.93% 상승했으나, 두 자산의 시장 점유율은 감소하며 알트코인으로 자금이 이동하는 모습이다.
+   (토큰포스트 · 09/23 16:02)
+4. (시세) 암호화폐 시장 상승세...비트코인 86,497달러
+   → 암호화폐 시장이 상승세를 보이며, 비트코인은 86,497달러에 거래되고 있다. 상위 알트코인들도 대체로 상승했다.
+   (토큰포스트 · 09/23 16:01)
+5. (규제) 금융위, 가상자산 불공정거래 혐의자 고발·통보 의결
+   → 금융위원회가 가상자산 불공정 거래 혐의자에 대한 고발과 통보를 의결하며, 미국과 홍콩에서 관련 법안이 추진되고 있는 상황이다.
+   (토큰포스트 · 09/23 16:01)
+
+[흐름·전망]
+• 비트코인의 시가총액 및 가격 상승세가 지속되더라도 글로벌 경제 불확실성이 여전하므로 관전 포인트로 중요하다.
+• 기관 자금의 지속적인 유입 여부를 지켜보며 ETF에 대한 투자 심리를 분석할 필요가 있다.
+• 비트코인 점유율의 감소는 알트코인으로의 자금 유입을 보여주므로, 알트코인 시장의 동향도 면밀히 살펴야 한다.
+• 금리 인상이 지속될 경우 자금 흐름 및 투자 심리에 영향 미칠 수 있음을 염두에 두어야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 35 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 입주 물량이 증가하고 청약 물량도 강화되는 반면, 전세에서 월세로의 전환이 가속화되고 있어 실수요자들의 부담이 심화되고 있습니다.
+
+[핵심 뉴스]
+1. (전세) 신축 전셋집 찾는다면 주목 … 은평·등촌 등 서울 3300가구
+   → 10월 수도권에서 8668가구가 입주를 시작하며, 그 중 서울은 3302가구로 대단지 비중이 높습니다. 특히 은평구의 힐스테이트메디알레는 2451가구로 서울 입주 물량의 74%를 차지하며, 전세 매물은 전용 84㎡ 기준 7억원대에 제공됩니다.
+   (매일경제 · 09/23 15:52)
+2. (분양청약) "3억대 서울 분양도 나와" 추석후 청약 큰장
+   → 10월 수도권에서 1만7841가구의 신축 아파트가 공급될 예정이며, 서울에서는 3억대 토지임대부 주택이 큰 관심을 받고 있습니다. 특히, 강남권의 신반포22차 재건축 단지의 분양가에 대해 주목되고 있습니다.
+   (매일경제 · 09/23 15:52)
+3. (전세) “월세 200만원이 기본 될라”…서울 실수요자 주거비 부담에 서민 ‘한숨’
+   → 서울의 월세가 평균 131만원을 초과하며, 특히 아파트 평균 월세는 164만원에 달해 주거비 부담이 사상 최고 수준에 이르고 있습니다. 전세의 월세화 현상이 가속화되고 있으며, 전세 매물의 감소도 큰 영향을 미치고 있습니다.
+   (매일경제 · 09/23 10:27)
+4. (정책) 홍지선 신임 국토장관 "주거 안정에 집중할것…민간 장기임대 확대"
+   → 홍지선 신임 국토부 장관은 주거 안정 문제를 최우선 과제로 삼고, 3기 신도시와 도심 주택사업의 속도를 높이며 민간 장기 임대를 확대할 것을 강조했습니다.
+   (매일경제 · 09/23 10:46)
+5. (금리) "금리 상승국면서 0.25%p 올리면 6개월후 아파트값 1.2%↓"
+   → 금리 인상이 주택 가격에 미치는 영향은 시차를 두고 나타나며, 0.25% 인상 시 6개월 후 아파트값이 1.2% 하락할 것이라는 분석이 나왔습니다.
+   (연합뉴스 · 09/23 13:51)
+6. (공급) 재건축·재개발로 공공임대 8.3만가구 공급
+   → 재건축과 재개발을 통해 8.3만 가구의 공공임대 주택이 공급될 예정이다.
+   (한국경제 · 09/23 16:36)
+
+[흐름·전망]
+• 입주 물량 증가와 청약 물량이 늘어나면서 부동산 시장의 공급 측면은 긍정적이나, 월세 전환 가속화로 인한 실수요자들의 부담은 우려 요소로 작용할 가능성이 높습니다.
+• 저렴한 분양가의 토지임대부 주택과 같은 새로운 공급 모델이 주목받고 있으며, 향후 시장에서 어떤 영향을 미칠지 지켜봐야 합니다.
+• 금리 인상이 지속될 경우 주택 가격 하락폭이 더 커질 수 있으므로, 향후 금리 정책과 부동산 시장의 동향을 면밀히 관찰해야 합니다.
+• 주거 안정 정책의 실효성이 시장에 미칠 영향을 두고 지속적인 논의와 피드백이 필요할 것으로 보이며, 무주택자 지원이 주요 테마가 될 것입니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 소셜미디어에서 여러 이슈에 대해 언급하며 강한 반발과 자신감을 나타냈다. 그는 언론과 정치적 반대자들에 대해 비판하고, 미국의 군사력을 강조했다.
+
+[주요 발언]
+1. (사법) 트럼프는 언론의 보도와 관련해 반발하며 '가짜 뉴스' 언론이 자신을 다루는 방식에 대해 비난했다.
+   (Truth Social · 09/23 13:04)
+2. (경제) 트럼프는 자신의 경제정책이 모두에게 긍정적인 영향을 미친다고 주장하며, 미국의 군수물자 생산이 증가하고 있다고 언급했다.
+   (Truth Social · 09/23 13:04)
+3. (외교) 트럼프는 미국의 군사력이 충분하다고 주장하며, 현재의 무기 비축량보다 더욱 많은 양을 확충하고 있다고 강조했다.
+   (Truth Social · 09/23 12:53)
+4. (외교) 트럼프는 아제르바이잔 측의 발언을 인용하며, 그가 중재자로서의 역할을 강조하고 이란과의 협상 가능성에 대해 언급했다.
+   (Truth Social · 09/23 07:13)
+5. (국내정치) 그는 CNN 등 언론을 비난하며 자신에 대한 관심이 필요하다고 주장했다.
+   (Truth Social · 09/22 20:14)
+6. (기타) 트럼프는 미국을 더 위대하게 만들 것이라는 다짐을 되새겼다.
+
+[흐름·전망]
+• 트럼프의 발언은 정치적 논란에 대한 지지자들의 반응을 부추길 가능성이 있다.
+• 앞으로 군사력 증강과 관련한 논의가 더욱 활발해질 수 있으며, 이를 통해 외교 정책에 미치는 영향도 주목해야 한다.
+• 트럼프의 언론 비판은 향후 대선 및 정치적 캠페인에 있어 중요한 이슈로 부각될 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
