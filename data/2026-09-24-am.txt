@@ -1,0 +1,245 @@
+2026-09-24T06:32:54.611154+09:00
+
+[오늘의 뉴스 요약] 2026-09-24 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제에 대한 긍정적인 전망이 제시되면서 성장률이 크게 상향 조정되었습니다. 국제 유가 하락과 외환 시장의 변화가 시장에 영향을 미치는 가운데, 중소기업의 외상값 미수금 문제도 부각되었습니다.
+
+[핵심 뉴스]
+1. (성장) OECD, 한국 성장률 3.7%로 상향 조정
+   → OECD는 올해 한국의 경제성장률을 기존 2.6%에서 3.7%로 상향 조정하였으며, 내년 성장률도 1.9%에서 2.6%로 높아질 것으로 예상하고 있습니다.
+   (매일경제 · 09/23 17:03)
+2. (금리) 국고채 금리 일제히 하락
+   → 국고채 금리가 국제 유가 하락에 따라 전반적으로 하락세를 보였으며, 3년물은 4.006%로 마감되었습니다.
+   (연합뉴스 · 09/23 17:14)
+3. (환율) 환율, 1,340원대에서 반등
+   → 원/달러 환율은 미국과 이란 간의 협상 소식에 장중 1,340원대까지 하락한 후, 저가 매수세와 연준의 긴축 기대에 의해 1,360원 근처로 반등했습니다.
+   (연합뉴스 · 09/23 16:06)
+4. (기타) 중소기업 외상값 못받는 사례 증가
+   → 중소기업의 매출채권보험 사고액이 4년 만에 64.8% 증가하며, 연쇄 부실 확산 우려가 커지고 있습니다.
+   (연합뉴스 · 09/24 05:20)
+5. (정책) 바클레이즈, 한국 장기 국고채에 신중한 접근
+   → 바클레이즈는 한국의 10년물 국고채 금리를 올해 말 4.55%, 내년 3분기에는 4.30%로 예상하며, 추가 금리 인상이 있을 것으로 보았습니다.
+   (연합뉴스 · 09/23 14:30)
+
+[흐름·전망]
+• 한국의 성장률이 긍정적으로 조정된 만큼, 향후 경제 회복세를 더욱 주목할 필요가 있습니다.
+• 국고채 금리 하락 및 국제 유가의 동향이 금융시장에 어떤 영향을 미칠지 지속 관찰해야 합니다.
+• 환율 변동에 따른 수출업체의 대응 전략이 시장에 큰 영향을 미칠 것으로 예상됩니다.
+• 중소기업 부실 문제 해결을 위한 정책적 대응이 시급하며, 관련 장치의 강화 여부에 유의해야 합니다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia Executive Argues A.I. Can Help Climate, Despite Current Emissions - The New York Times
+   (The New York Times · 09/24 05:43)
+→ Nvidia의 한 임원은 인공지능(AI)이 현재의 온실가스 배출에도 불구하고 기후 변화에 긍정적인 기여를 할 수 있다고 주장했습니다. 그는 AI가 에너지 효율성을 높이고 지속 가능한 발전을 촉진하는 데 중요한 역할을 할 것이라고 덧붙였습니다.
+
+📰 [NVDA] How the Trump-Xi Meeting Could Move Nvidia, Boeing and Your 401(k)
+   (Yahoo Finance · 09/24 05:25)
+→ 이번 주 트럼프와 시진핑의 회담은 11월 만료 예정인 관세 휴전과 관련하여 투자자들에게 중요한 영향을 미칠 수 있다. 특히, 두 대기업인 엔비디아와 보잉은 중국 무역 상황에 따라 상반된 방향으로 움직일 가능성이 크다.
+
+📰 [NVDA] How the Trump-Xi Meeting Could Move Nvidia, Boeing and Your 401(k) - Yahoo Finance
+   (Yahoo Finance · 09/24 05:25)
+→ 트럼프와 시진핑의 회담이 Nvidia와 Boeing 주식 및 401(k) 계좌에 미칠 잠재적인 영향을 다룬 기사입니다. 이러한 회담이 두 나라 간의 무역 관계와 기술 산업에 중요한 변화를 가져올 수 있어, 투자자들에게 큰 관심을 받고 있습니다.
+
+📰 [TSLA] Tesla Expands Immersive Audio X to Model 3 and Y in China - Not a Tesla App
+   (Not a Tesla App · 09/24 06:18)
+→ 테슬라가 중국에서 모델 3와 모델 Y에 '몰입형 오디오 X' 기능을 확장했습니다. 이 기능은 운전자가 더욱 향상된 오디오 경험을 즐길 수 있도록 설계되었습니다.
+
+📰 [TSLA] Tesla Starts Rolling Out FSD v14.2 Lite to HW3 Model S and Model X - Not a Tesla App
+   (Not a Tesla App · 09/24 05:15)
+→ 테슬라가 HW3를 장착한 모델 S와 모델 X에 FSD v14.2 Lite 버전을 배포하기 시작했습니다. 이번 업데이트는 자율주행 기능을 개선하는 데 초점을 맞추고 있습니다.
+
+📰 [TSLA] Tesla Driver Arrested Weeks After 100+ MPH Crash Leaves Honda Driver Critically Injured - Yahoo
+   (Yahoo · 09/24 05:14)
+→ 테슬라 운전자가 시속 160km 이상의 속도로 사고를 일으켜 혼다 운전자가 중상을 입은 사건에서, 수주 후 경찰에 의해 체포되었습니다. 사건은 안전 문제와 고속 주행의 위험성을 다시 한번 부각시켰습니다.
+
+📰 [HIMS] Hims and Hers Is Scaling Rapidly, But Management Needs To Address The Difficult Questions
+   (Yahoo Finance · 09/24 05:22)
+→ Hims & Hers Health, Inc.는 38%의 매출 성장과 연간 목표 상향 조정, 인수 완료를 통해 소비자 건강 플랫폼으로서의 입지를 강화했습니다. 그러나 경영진은 향후 해결해야 할 어려운 질문들이 있다고 지적되었습니다.
+
+📰 [HIMS] Hims and Hers Is Scaling Rapidly, But Management Needs To Address The Difficult Questions - Insider Monkey
+   (Insider Monkey · 09/24 05:22)
+→ Hims and Hers는 빠른 성장세를 보이고 있지만, 경영진은 해결해야 할 중요한 질문들에 직면해 있습니다. 회사의 지속 가능한 성장과 관련된 전략적인 고민이 필요하다는 지적이 있습니다.
+
+📰 [HIMS] Bragar Eagel & Squire, P.C. Reminds Hims & Hers Health, - GlobeNewswire
+   (GlobeNewswire · 09/24 05:01)
+→ Bragar Eagel & Squire, P.C.는 Hims & Hers Health에 대한 중요한 정보를 전달하며 투자자들에게 주의를 촉구하고 있습니다. 이 법률 사무소는 최근의 사건과 관련하여 주주들에게 관련 사항을 알리고 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Trading Down 4.5% - Time to Sell? - MarketBeat
+   (MarketBeat · 09/24 06:25)
+→ 레드와이어(Redwire)의 주가가 4.5% 하락하며 투자자들 사이에 매도 여부에 대한 논의가 일고 있다. 시장 분석가들은 현재 상황을 주의 깊게 살펴볼 필요가 있다고 강조하고 있다.
+
+📰 [RDW] RDW Sep 2026 12.000 call (RDW260925C00012000) stock price, news, quote and history - Yahoo Finance UK
+   (Yahoo Finance UK · 09/24 00:21)
+→ Yahoo Finance UK에서 제공된 정보에 따르면 RDW의 2026년 9월 만기 12.000 달러 콜 옵션(RDW260925C00012000)의 주가, 뉴스, 인용 및 역사적 데이터가 포함되어 있습니다. 해당 옵션에 대한 세부 사항을 확인할 수 있습니다.
+
+📰 [RDW] RDW Sep 2026 20.000 put (RDW260925P00020000) stock price, news, quote and history - Yahoo Finance UK
+   (Yahoo Finance UK · 09/24 00:16)
+→ RDW의 2026년 9월 만기 20.000 풋 옵션(RDW260925P00020000)의 주가, 뉴스, 인용 및 역사 정보가 Yahoo Finance UK에 게시되었습니다. 해당 옵션에 대한 상세한 정보가 제공되고 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Shares Down 3.1% - Should You Sell? - MarketBeat
+   (MarketBeat · 09/24 06:25)
+→ IREN의 주가가 3.1% 하락했으며, 투자자들은 매도 여부를 고민하고 있습니다. 현재 주가 감소에 따른 시장 반응이 주목되고 있습니다.
+
+📰 [IREN] Rothschild Redburn starts IREN at Neutral with $40 target, forecasts $13.3 billion revenue by fiscal 2029
+   (Yahoo Finance · 09/23 22:36)
+→ 로스차일드 레드번이 IREN에 대해 중립 의견을 제시하며 40달러 목표가를 설정했습니다. 2029 회계연도까지 133억 달러의 매출을 예상하지만, 최근 주가 종가에서 17.6% 하락할 것이라고 보았습니다. 임대 약정, 자금 조달 비용, 건설 실행이 핵심 요소로 자리 잡고 있습니다.
+
+📰 [IREN] IREN Has Microsoft and $14 Billion of Funding. Execution Is the Real Test
+   (Yahoo Finance · 09/23 22:14)
+→ IREN은 비트코인 채굴업체에서 AI 클라우드 운영자로 변환하며 재정 상태와 성장 계획이 눈에 띄게 변화하였습니다. 6월 말 기준으로 약 76억 달러의 현금을 보유하고 있으며, 이는 17억 달러의 제한된 자금을 포함합니다. 경영진에 따르면 기존 현금, GPU 자금 지원 및 고객 선불금을 통해 약 140억 달러의 재원을 확보했다고 밝혔습니다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Stock Price Down 2.3% - Here's What Happened - MarketBeat
+   (MarketBeat · 09/24 06:23)
+→ 로켓랩(Rocket Lab)의 주가가 2.3% 하락했습니다. 이 하락의 원인에 대한 세부 사항은 기사에서 다루어지고 있습니다.
+
+📰 [RKLB] Rocket Lab Options Spot-On: On September 23rd, 107.74K Contracts Were Traded, With 1.18 Million Open Interest - 富途牛牛
+   (富途牛牛 · 09/24 06:16)
+→ 로켓랩의 옵션 거래가 활발하게 진행되고 있으며, 9월 23일에 107,740개의 계약이 거래되었습니다. 현재 미결제 약정은 118만 개에 이릅니다.
+
+📰 [RKLB] Rocket Lab Readies For Mission, Cathie Wood Buys $25 Million In Shares
+   (Yahoo Finance · 09/24 06:14)
+→ 캐시 우드의 ARK 인베스트가 로켓랩 주식 2500만 달러어치를 매입했습니다. 분석가는 로켓랩의 수익 기회를 높이 평가하고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Set for Its First Q3 Winning Streak Since 2012: What Can History Teach Us?
+   (Yahoo Finance · 09/24 06:24)
+→ 비트코인이 2012년 이후 처음으로 7월부터 9월까지의 상승세를 기록할 준비를 하고 있다. 7월과 8월의 종가가 상승했고, 9월은 8월 종가보다 현재 8.8% 상승한 상태이다. 이는 매월 마지막 거래 가격에 따른 결과다.
+
+📰 [BTC-USD] Bitcoin Set for Its First Q3 Winning Streak Since 2012: What Can History Teach Us? - Yahoo Finance
+   (Yahoo Finance · 09/24 06:24)
+→ 비트코인이 2012년 이후 처음으로 3분기 연속 상승세를 이어갈 것으로 예상되고 있다. 역사적으로 비트코인의 3분기 성과가 긍정적이었다는 점이 주목받고 있으며, 투자자들에게 중요한 인사이트를 제공할 수 있을 것으로 보인다.
+
+📰 [BTC-USD] Bitcoin Set for Its First Q3 Winning Streak Since 2012: What Can History Teach Us? - 247wallst.com
+   (247wallst.com · 09/24 06:24)
+→ 비트코인이 2012년 이후 처음으로 3분기 연속 상승세를 기록할 전망이다. 역사적으로 이러한 패턴이 비트코인의 미래 움직임에 어떤 의미를 갖는지에 대한 분석이 필요하다.
+
+📰 [ETH-USD] Ethereum hash functions clash over BLAKE3’s speed and SHA-3’s safety - Cryptonews.net
+   (Cryptonews.net · 09/24 06:10)
+→ 이더리움의 해시 함수들 간에 BLAKE3의 속도와 SHA-3의 안전성에 대한 논쟁이 벌어지고 있다. BLAKE3는 빠른 처리 속도로 주목받고 있으나, SHA-3는 보안 측면에서 강점을 가진다는 의견이 대립하고 있다. 이 문제는 이더리움 커뮤니티 내에서 활발한 논의의 대상이 되고 있다.
+
+📰 [ETH-USD] Crypto News: Neon EVM Brings Ethereum Apps to Solana but AlphaPepe Turns AI Trading Into the Bigger Retail Story - StreetInsider
+   (StreetInsider · 09/24 06:10)
+→ Neon EVM이 솔라나에서 이더리움 애플리케이션을 사용 가능하게 하면서 크립토 생태계에 변화를 가져오고 있습니다. 동시에 AlphaPepe는 AI 트레이딩을 통해 소매 투자자들에게 더 큰 이야기를 만들어내고 있습니다.
+
+📰 [ETH-USD] Why Is ETH Up 1.15% Today? Key Factors Behind Ethereum’s Surge and What It Means for the Best Crypto Presale - StreetInsider
+   (StreetInsider · 09/24 06:01)
+→ 이더리움(ETH)의 가격이 1.15% 상승한 이유는 여러 요인에 기인하며, 이는 암호화폐 프리세일에 긍정적인 영향을 미칠 수 있다. 이러한 상승세는 투자자들의 관심 증가와 시장의 전반적인 긍정적인 분위기와 관련이 있다.
+
+📰 [SOL-USD] Crypto News: Neon EVM Brings Ethereum Apps to Solana but AlphaPepe Turns AI Trading Into the Bigger Retail Story - StreetInsider
+   (StreetInsider · 09/24 06:10)
+→ Neon EVM이 이더리움 애플리케이션을 솔라나에 도입하면서 두 블록체인 간의 상호운용성이 강화되고 있다. 반면, AlphaPepe는 AI 거래를 통해 소매 투자자들에게 더 큰 관심을 불러일으키고 있다.
+
+📰 [SOL-USD] Remittix, Solana and Cardano: Next Crypto to Make You Rich as Strategy Holds More Than $73 Billion in Bitcoin - StreetInsider
+   (StreetInsider · 09/24 05:57)
+→ Remittix, Solana, 그리고 Cardano가 다음 부자를 만들어 줄 암호화폐로 주목받고 있으며, 현재 이들 전략이 730억 달러 이상의 비트코인을 보유하고 있다고 보도됐다. 이러한 암호화폐에 대한 관심이 높아지고 있는 가운데, 투자자들이 이들 자산의 잠재적 성장 가능성에 주목하고 있다.
+
+📰 [SOL-USD] Solana DEXs surpass NYSE with 208M weekly trades, marking a major milestone in onchain trading activity. - Pluang
+   (Pluang · 09/24 05:56)
+→ 솔라나의 분산형 거래소(DEX)가 주간 거래량에서 2억 8천만 건을 기록하며 뉴욕증권거래소(NYSE)를 초월하는 중요한 이정표를 세웠습니다. 이는 온체인 거래 활동에서 큰 변화를 나타냅니다.
+
+📰 [BMNR] Bitmine Immersion Technologies Options Spot-On: On September 23rd, 105.69K Contracts Were Traded, With 1.63 Million Open Interest - Moomoo
+   (Moomoo · 09/24 05:44)
+→ Bitmine Immersion Technologies의 옵션 거래가 주목받고 있으며, 9월 23일에는 105,690개의 계약이 거래되었고, 미결제 약정은 163만 건에 달했습니다.
+
+📰 [BMNR] What Bitmine Immersion Technologies (BMNR)'s 6 Million ETH Holdings Means For Shareholders - simplywall.st
+   (simplywall.st · 09/23 18:34)
+→ Bitmine Immersion Technologies(BMNR)가 보유한 600만 개의 이더리움(ETH) 자산은 주주들에게 긍정적인 신호가 될 수 있습니다. 이러한 보유량은 회사의 자산 가치를 증가시키고, 향후 이익 성장에 기여할 것으로 예상됩니다. 주주들은 이와 같은 자산 구성으로 인해 장기적인 수익 잠재력을 기대할 수 있습니다.
+
+📰 [BMNR] MSTR Purchases Bitcoin After 2-Week Pause, Keeps Buying Back STRC: BMNR, ASST Keep Adding To Their Crypto Treasuries
+   (Yahoo Finance · 09/23 18:28)
+→ 마이클 세일러의 전략에 따라 MSTR가 2주간의 휴식 후 비트코인을 구매했으며, STRC 주식 177만 주를 1억 7400만 달러에 다시 매입했습니다. 이로 인해 해당 주간 비트코인과 STRC에 대한 총 지출이 약 2억 5000만 달러에 이릅니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 전반적으로 하락세를 나타내며 비트코인과 이더리움이 각각 2.01%와 2.69% 하락했다. 비트코인의 시장 점유율은 소폭 증가한 반면, 이더리움은 감소하며 대형주 위주의 자금 집중을 시사하고 있다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 하락세
+   → 비트코인은 84,497.88달러로 2.01% 하락했으며, 이더리움은 2,677.43달러로 2.69% 하락했다. 시가총액은 전체 2조 8,673억 달러로 집계되었고, 알트코인들은 대체로 약세를 보였다.
+   (토큰포스트 · 09/24 05:01)
+2. (시세) 암호화폐 시장에서 대규모 청산 발생
+   → 지난 24시간 동안 4억4057만달러 규모의 레버리지 포지션이 청산되었으며, 이 중 75.22%가 롱 포지션이었다. 비트코인은 이 기간 동안 84,479달러로 2.02% 하락했다.
+   (토큰포스트 · 09/24 04:56)
+3. (시세) 비트코인 선물 미결제약정 증가
+   → 비트코인 선물 미결제약정이 600억달러에 근접하며 증가세를 보이고 있으며, 최근 24시간 신규 거래량에서는 풋옵션의 비중이 58.2%로 높아졌다. 과거 8월 하락세에 비해 다시 증가한 흐름을 나타내고 있다.
+   (토큰포스트 · 09/24 04:35)
+4. (규제) 연준 금리 인상 우려
+   → 비트코인 라이트닝 네트워크 결제 규격이 개방형 인터넷 결제 표준에 포함되어 AI 에이전트들이 새로운 결제 방안을 사용할 수 있게 되었다. 이는 블록체인 기반 결제 인프라의 기술적 변화를 의미한다.
+   (토큰포스트 · 09/24 04:34)
+5. (기타) 모포 대출시장 담보 규모 증가
+   → XRP 옵션시장에서 상승 방향의 수요가 강해지고 있으며, 1주일 만기 25델타 콜-풋 스큐는 9.3 변동성 포인트로 과거 관측치의 95번째 백분위에 올랐다. 그러나 이는 가격 상승을 단정짓기 어려운 신호일 수 있다.
+   (토큰포스트 · 09/24 04:23)
+
+[흐름·전망]
+• 비트코인과 이더리움의 하락세가 계속될 경우 알트코인의 추가적인 조정이 우려됨.
+• 레버리지 포지션 청산이 증가하므로, 시장의 단기적 변동성이 클 수 있다.
+• 파생상품 미결제약정의 증가와 풋옵션 비중 확대가 시장의 하방 압력을 시사할 가능성이 크다.
+• 기술적 발전으로 인해 비트코인 관련 서비스와 결제 시스템이 늘어나겠지만, 실제 실적과 시장 반응은 지켜봐야 할 것으로 보인다.
+
+📊 공포탐욕지수
+  - CNN 기준: 35 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+10월 수도권에서 8668가구가 입주를 시작하며, 전세와 월세 시장의 긴장감이 지속되고 있다. 전세가 월세로 전환되는 현상이 심화되며 실수요자들은 점점 더 큰 주거비 부담에 직면하고 있다.
+
+[핵심 뉴스]
+1. (전세) 신축 전세 타이밍, 명절 끝나면 옵니다…서울 3300가구, 내달 입주
+   → 서울에서 3300가구가 입주하며, 가을 이사철 전세난이 심화하고 있는 상황이다. 특히, 은평구 힐스테이트메디알레는 2451가구가 10월 입주하여 전세 가격은 7억원대에 형성되고 있다.
+   (매일경제 · 09/23 17:23)
+2. (정책) “집 팔아야 하는데 갱신권 쓰면?”…임대사업자·세입자 모두 난감해진 이유
+   → 정부의 2026년 세법 개편안이 발표되며, 임대사업자의 양도세 규제가 강화될 예정이다. 이는 세입자와 임대사업자 모두에게 시장에 혼란을 일으킬 수 있는 요소로 작용할 전망이다.
+   (매일경제 · 09/23 17:09)
+3. (재건축) 창동주공19단지, 재건축 추진위 승인... 내년 상반기 조합 설립 목표
+   → 창동주공19단지가 재건축 추진위 승인을 받고, 2933가구 규모의 대단지로 탈바꿈할 예정이다. GTX-C 노선과 주변 개발이 진행돼 동북권의 신규 주거 중심지로 부각될 가능성이 커지고 있다.
+   (매일경제 · 09/23 17:07)
+4. (매매) “3억대 서울 분양도 나와” 추석후 청약 큰장
+   → 10월 청약이 본격적으로 시작되며, 서울과 수도권에서 다수의 신규 분양이 예정되어 있다. 이 중에도 3억원대의 분양물량이 등장해 실수요자들의 이목을 끌고 있다.
+   (매일경제 · 09/23 15:52)
+5. (전세) “월세 200만원이 기본 될라”…서울 실수요자 주거비 부담에 서민 ‘한숨’
+   → 서울의 월세 평균이 131만원을 기록하며 사상 최고치를 경신했다. 전세 물량 감소와 매물 부족으로 인해 월세와 전세의 가격 압박이 심화되고 있는 상황이다.
+   (매일경제 · 09/23 10:27)
+6. (금리) “금리 상승국면서 0.25%p 올리면 6개월후 아파트값 1.2%↓”
+   → 국토연구원의 보고서에 따르면, 금리 상승 시점에서 주택 가격이 6개월 후 1.2% 하락할 것으로 예상되고 있다. 금리 인상이 주택 시장에 미치는 효과는 시차를 두고 나타날 것으로 보인다.
+   (연합뉴스 · 09/23 13:51)
+
+[흐름·전망]
+• 수도권 아파트 입주 증가로 인해 실수요자들의 선호와 관심이 높아질 전망이다.
+• 전세의 월세 전환 현상이 계속되면서 주거비 부담이 더욱 심화될 것으로 예상된다.
+• 임대사업자에 대한 규제가 강화됨에 따라, 임대시장에서의 전세난이 지속될 가능성이 크다.
+• 금리 인상이 계속될 경우, 아파트 가격에 미치는 영향과 시장의 변동성을 주의 깊게 관찰해야 한다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 캐나다의 인구 증가가 심각한 문제를 일으키고 있으며, 현재의 통치 방침이 결국 재앙으로 이어질 것이라고 주장했다. 그는 미국 내에서 발생하는 일에 대한 연관성을 언급하며, 정치적이고 경제적인 문제를 동시에 지적했다.
+
+[주요 발언]
+1. (외교) 트럼프는 캐나다가 무분별하게 사람을 받아들이고 있어 심각한 고용 문제를 초래하고 있으며, 이는 리버럴한 지배가 가져올 재앙이라고 언급했다.
+   (Truth Social · 09/23 22:26)
+2. (국내정치) 트럼프는 언론, 특히 CNN과의 갈등을 언급하며 그들이 자신을 보도하지 않겠다고 했지만 사실은 그에 대해 반응하고 있다고 주장했다.
+   (Truth Social · 09/23 22:08)
+3. (기타) 그는 자신에 대한 언론의 과도한 관심이 트럼프 중독이라고 표현하며, 언론이 이익을 위해 자신을 이용한다고 주장했다.
+   (Truth Social · 09/23 21:36)
+4. (기타) 트럼프는 언론 보도의 왜곡과 부정직함을 비난하며, 이는 미국과 민주주의를 해치는 행위라고 비판했다.
+   (Truth Social · 09/23 13:04)
+5. (경제) 트럼프는 '상승하는 트럼프는 모든 배를 띄운다'는 주장을 반복하며 자신의 경제 정책의 긍정적 영향을 강조했다.
+   (Truth Social · 09/23 13:04)
+6. (사법) 트럼프는 잭 스미스 사건에서 관련된 에이전트가 소환된 휴대전화 데이터에 대해 충분한 정보를 알지 못했다는 주장을 언급했다.
+   (Truth Social · 09/23 13:04)
+
+[흐름·전망]
+• 트럼프의 캐나다 비판이 북미 외교 관계에 미치는 영향에 주목해야 할 것이다.
+• 그의 언론 비난이 향후 언론 보도 방식에 어떤 변화를 초래할지 지켜볼 필요가 있다.
+• 트럼프의 경제 정책에 대한 긍정적 평가가 시장에 미치는 파급 효과를 살펴볼 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
