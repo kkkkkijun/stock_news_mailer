@@ -1,0 +1,244 @@
+2026-09-25T06:32:50.927018+09:00
+
+[오늘의 뉴스 요약] 2026-09-25 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 원/달러 환율이 1,366.0원으로 상승했고, OECD가 한국 경제 성장률 전망치를 상향 조정했다. 또한, 국고채 금리는 국제 유가 하락에 따라 일제히 하락했으며, 경남 지역에서 임금 체불이 적발됐다.
+
+[핵심 뉴스]
+1. (환율) 원/달러 환율 7.6원 오른 1,366.0원
+   → 원/달러 환율이 7.6원 오른 1,366.0원으로 거래되었으며, 오후 3시30분 기준으로 이전 거래일보다 소폭 상승했다.
+   (연합뉴스 · 09/24 15:32)
+2. (성장) OECD, 한국 올해 성장률 전망 2.6%→3.7% 상향
+   → OECD가 올해 한국의 성장률 전망치를 2.6%에서 3.7%로 상향 조정했으며, 이에 따라 물가 상승률 전망도 3.0%로 올랐다.
+   (연합뉴스 · 09/23 17:00)
+3. (금리) 국고채 금리 유가 하락에 동반 하락
+   → 국고채 금리가 국제유가 하락에 따라 3년물은 4.006%로, 10년물은 4.392%로 각각 하락했다.
+   (연합뉴스 · 09/23 17:14)
+4. (고용) 경남 8개 사업장서 임금 체불 적발
+   → 고용노동부가 경남 창원 지역에서 8개 사업장에서 8천690만원의 임금 체불을 적발했다고 밝혔다.
+   (연합뉴스 · 09/24 08:15)
+5. (환율) 환율, 1,340원대 찍고 반등해 1,360원선 접근
+   → 원/달러 환율이 장중 1,340원대까지 하락한 후 저가 매수세 유입으로 다시 상승하였고, 오후 3시30분에는 1,358.4원으로 마감했다.
+   (연합뉴스 · 09/23 16:06)
+
+[흐름·전망]
+• 단기적으로 원/달러 환율의 상승 추세가 지속될 가능성이 있으며, 이는 연준의 금리 정책과 국제유가 변화에 따른 영향일 것이다.
+• OECD의 성장률 및 물가 상승률 전망치 상향에 따라 수출업체의 심리에 긍정적인 영향을 줄 것으로 보인다.
+• 국고채 금리의 하락은 향후 금리 인상 가능성에 대한 시장의 판단에 영향을 미칠 것으로 예상된다.
+• 임금 체불 문제는 고용 시장의 건강성에 부정적인 신호를 주며, 노동 시장의 안정성을 위한 지속적인 감시가 필요하다.
+
+📈 해외주식 PART
+📰 [NVDA] Why Semiconductor Investors Are Rotating From SMH’s Nvidia Concentration to PSI’s Equal-Weight Approach
+   (Yahoo Finance · 09/25 06:01)
+→ 반도체 투자자들은 NVIDIA에 집중된 SMH ETF에서 PSI의 균등 비중 접근 방식으로 이동하고 있습니다. 이는 최근 1년간 PSI가 SMH보다 더 나은 성과를 올린 이유와 관련이 있으며, 많은 투자자들이 의문을 제기하지 않는 하나의 특정 포지션 때문입니다.
+
+📰 [NVDA] Nvidia’s Immense Dividend Hike Puts Dividend Growth Stocks in the Spotlight - Morningstar
+   (Morningstar · 09/25 05:49)
+→ Nvidia가 대규모 배당금을 인상하면서 배당 성장 주식이 주목받고 있습니다. 이와 같은 변화는 투자자들에게 배당주에 대한 관심을 불러일으키고 있습니다.
+
+📰 [NVDA] Stock Market Today: Dow Slides As Treasury Yields Surge; Nvidia Slips While Micron Rises
+   (Yahoo Finance · 09/25 05:34)
+→ 오늘 주식시장에서 다우존스 지수가 국채 수익률 상승으로 하락했다. 엔비디아 주가는 오전 거래에서 하락했으며, 마이크론 주가는 상승했다.
+
+📰 [TSLA] Tesla's Roadster Reveal Is Oct. 1. The Real Story Is Optimus.
+   (Yahoo Finance · 09/25 06:20)
+→ 테슬라의 로드스터 공개는 10월 1일로 예정되어 있으며, 많은 주목을 받을 것으로 예상된다. 그러나 실제로 중요한 것은 그 뒤에서 진행되고 있는 옵티머스와 관련된 이야기다.
+
+📰 [TSLA] Dow Jones Futures: Market Rally Resilient As Yields, Oil Prices Keep Rising; Tesla Event On Deck
+   (Yahoo Finance · 09/25 06:08)
+→ 주식 시장이 혼조세로 마감했지만 반등세를 보였고, 금리와 유가가 계속 상승하고 있습니다. 타이완 반도체는 매수 추천 주식으로, 테슬라의 세미 이벤트도 예정되어 있습니다.
+
+📰 [TSLA] Tesla's Roadster Reveal Is Oct. 1. The Real Story Is Optimus. - The Motley Fool
+   (The Motley Fool · 09/25 06:03)
+→ 테슬라의 로드스터 공개는 10월 1일로 예정되어 있으며, 이번 행사에서 더 주목받는 것은 인공지능 로봇 '옵티머스'이다. '옵티머스'는 테슬라의 미래 전략과 혁신을 담고 있는 중요한 프로젝트로, 로드스터보다 더 큰 의미를 지닌다고 전해진다.
+
+📰 [HIMS] INVESTOR ALERT: Pomerantz Law Firm Reminds Investors with Losses on their Investment in Hims & Hers Health, Inc. of Class Action Lawsuit and Upcoming Deadlines - HIMS - PR Newswire
+   (PR Newswire · 09/25 06:05)
+→ Pomerantz 법무법인이 Hims & Hers Health, Inc.에 투자하여 손실을 본 투자자들에게 집단 소송 및 다가오는 기한에 대해 상기했습니다. 투자자들은 해당 소송에 참여할 수 있는 기회를 놓치지 않도록 주의해야 합니다.
+
+📰 [HIMS] Hims & Hers Slides Nearly 7% as Legal Pressure Adds to Its Growing List of Risks - MarketBeat
+   (MarketBeat · 09/25 03:27)
+→ Hims & Hers의 주가가 거의 7% 하락하였으며, 이는 법적 압박이 증가함에 따라 회사가 직면한 위험 요소가 확대되고 있기 때문입니다. 이러한 상황은 투자자들에게 우려를 불러일으키고 있습니다.
+
+📰 [HIMS] DEADLINE ALERT for YSS, HIMS, UNCY, and PZZA: The Law - globenewswire.com
+   (globenewswire.com · 09/25 01:08)
+→ YSS, HIMS, UNCY, PZZA 주식에 대한 법적 마감일이 임박했음을 알리는 뉴스입니다. 이와 관련된 투자자들은 중요한 기한을 놓치지 않도록 주의해야 합니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Climb 2.6% - Still a Buy? - MarketBeat
+   (MarketBeat · 09/25 06:24)
+→ 레드와이어(Redwire)의 주가가 2.6% 상승했으며, 여전히 매수할 만한 가치가 있는지에 대한 질문이 제기되고 있습니다. 전문가들은 주식의 전망에 대해 다양한 의견을 내놓고 있습니다.
+
+📰 [RDW] Analysts Warn the Entire Space Trade Is Sitting in Neutral Waiting on One Rocket
+   (Yahoo Finance · 09/25 01:22)
+→ 분석가들은 우주 산업 전반이 특정 로켓에 의존하고 있으며, 이 로켓이 없어선 각 회사의 수익 예상이 불확실하다고 경고하고 있습니다. 두 가지 주식의 차이가 시장이 이 베팅을 어떻게 보고 있는지를 잘 보여줍니다.
+
+📰 [RDW] RDW vs. PL: Which Satellite Stock Has the Stronger Investment Case? - Zacks Investment Research
+   (Zacks Investment Research · 09/24 23:13)
+→ Zacks Investment Research에서 RDW와 PL 두 위성 주식의 투자 가치를 비교했습니다. 분석 결과, 두 기업의 재무 상황과 성장 잠재력을 고려할 때 어떤 주식이 더 투자에 적합한지에 대한 논의가 이루어졌습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Price Down 1.9% - Here's What Happened - MarketBeat
+   (MarketBeat · 09/25 06:24)
+→ IREN 주식(NASDAQ:IREN) 가격이 1.9% 하락했습니다. 이와 관련된 최근 뉴스와 시장 반응이 보도되었습니다.
+
+📰 [IREN] Applied Digital vs. IREN: Which Technology Stock Is a Better Buy in 2026?
+   (Yahoo Finance · 09/25 03:22)
+→ Applied Digital과 IREN 중 2026년 더 나은 기술 주식은 무엇인가? 한 회사는 대규모 고객 계약을 보유하고 있지만 자금을 지속적으로 소모하고 있으며, 다른 회사는 고객 집중도가 높지만 더 우수한 마진을 자랑한다.
+
+📰 [IREN] Applied Digital vs. IREN: Which Technology Stock Is a Better Buy in 2026? - Yahoo Finance
+   (Yahoo Finance · 09/25 03:22)
+→ 2026년에는 Applied Digital과 IREN 중 어느 기술주가 더 나은 투자 대상인지에 대한 분석이 다뤄졌다. 두 회사의 성장 potential, 시장 경쟁력 및 재무 상황 등이 비교되었으며, 투자자들은 각 회사의 미래 전망을 신중히 검토할 필요가 있다.
+
+📰 [RKLB] Cathie Wood Buys Rocket Lab: A Deep Dive into Why - Dr. Robert Castellano's Semiconductor Deep Dive Newsletter
+   (Dr. Robert Castellano's Semiconductor Deep Dive Newsletter · 09/25 06:23)
+→ 캐시 우드는 로켓랩을 매입한 이유에 대해 깊이 있는 분석을 제공했습니다. 드. 로버트 카스텔라노의 반도체 전문 뉴스레터에서 이와 관련된 세부 사항을 다루고 있습니다. 우드의 투자 결정은 기술 발전과 시장 전망에 기반하고 있습니다.
+
+📰 [RKLB] IRDM Looks 33.5% Overvalued on GF Value™ Amid Rocket Lab Merger Approval - GuruFocus
+   (GuruFocus · 09/25 06:05)
+→ IRDM 주식이 Rocket Lab의 합병 승인을 앞두고 GF Value™ 기준으로 33.5% 과대평가된 것으로 분석되었습니다. 이로 인해 투자자들 사이에서 주식의 현재 가치에 대한 재평가가 필요할 것으로 보입니다.
+
+📰 [RKLB] Iridium Stockholders Approve Acquisition by Rocket Lab - marketscreener.com
+   (marketscreener.com · 09/25 05:56)
+→ 이리듐 주주들은 록켓랩의 인수를 승인했습니다. 이번 인수 합의는 이리듐의 성장과 혁신을 위한 중요한 단계로 평가받고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Tests Support as Gold Rally Falls Flat, Falls to FOMC Lows - stonex.com
+   (stonex.com · 09/25 06:27)
+→ 비트코인이 지지선을 시험하고 있으며, 금 가격 상승이 기대에 미치지 못하며 최근 연방공개시장위원회(FOMC) 저점으로 하락했습니다. 시장의 불안정성 속에서 비트코인과 금 모두 어려움을 겪고 있는 상황입니다.
+
+📰 [BTC-USD] Bitcoin’s September 2026 Rally Puts 3-Month Positive BTC Price Streak within Reach : Analysis - Crowdfund Insider
+   (Crowdfund Insider · 09/25 06:22)
+→ 2026년 9월 비트코인의 상승세가 3개월 연속 긍정적인 BTC 가격 흐름을 이끌 가능성을 보여주고 있다는 분석이 나왔다. 이러한 추세는 투자자들에게 희망을 주며 비트코인의 시장 전망에 긍정적인 영향을 미칠 것으로 기대되고 있다.
+
+📰 [BTC-USD] Bitcoin traders prepare for $16B options expiry this Friday
+   (Yahoo Finance · 09/25 06:20)
+→ 비트코인 트레이더들이 이번 금요일 160억 달러 규모의 옵션 만료를 준비하고 있습니다. 풋-콜 비율이 0.68로, 이는 비트코인 옵션 거래자들 사이에서 강세 심리가 있음을 나타냅니다.
+
+📰 [ETH-USD] Crypto Casinos 2026 - Bitcoin, Ethereum & Altcoin Casino Guide - 25yearslatersite.com
+   (25yearslatersite.com · 09/25 05:40)
+→ 2026년의 암호화폐 카지노에 대한 가이드를 제공하는 이 기사에서는 비트코인, 이더리움, 그리고 다양한 알트코인을 활용한 카지노 운영에 대해 설명하고 있습니다. 최신 트렌드와 게임 방식 등을 다루며, 암호화폐 기반의 카지노가 향후 어떻게 발전할지를 전망합니다.
+
+📰 [ETH-USD] Top 3 Price Prediction: Bitcoin (BTC), Ethereum (ETH), and XRP (XRP) - Cryptonews.net
+   (Cryptonews.net · 09/25 05:06)
+→ Cryptonews.net에서 발표한 Bitcoin (BTC), Ethereum (ETH), XRP (XRP)의 가격 예측에 관한 기사에서는 이들 주요 암호화폐의 향후 가격 움직임에 대한 분석과 전망이 다뤄졌습니다. 전문가들은 시장 트렌드와 기술적 지표를 기반으로 각각의 전망을 제시하였습니다.
+
+📰 [ETH-USD] Ethereum price today holds $2,641 as short-term charts flash oversold warning - Cryptonews.net
+   (Cryptonews.net · 09/25 04:45)
+→ 오늘 이더리움 가격은 2,641달러를 기록하며 단기 차트에서 과매도 신호가 나타나고 있습니다. 이는 시장에서 이더리움이 저평가되었음을 시사합니다.
+
+📰 [SOL-USD] Kash Dhanda of Jupiter Exchange Talks Solana’s Future - Cryptonews.net
+   (Cryptonews.net · 09/25 05:56)
+→ Jupiter Exchange의 Kash Dhanda는 Solana의 미래에 대해 논의했습니다. 그는 Solana의 기술 발전과 생태계 확장 가능성을 강조하며, 향후 시장에서의 경쟁력을 설명했습니다.
+
+📰 [SOL-USD] Solana Shred Streams are live on GetBlock → Raw Solana shr - KuCoin
+   (KuCoin · 09/25 05:11)
+→ Solana Shred Streams가 GetBlock에서 활성화되었으며, 이는 KuCoin에서 Raw Solana SHR로 제공됩니다. 이를 통해 사용자들은 다양한 솔라나 관련 콘텐츠에 접근할 수 있습니다.
+
+📰 [SOL-USD] Solana stablecoins can now book flights with 30... - Pluang
+   (Pluang · 09/25 04:35)
+→ 솔라나 스테이블코인을 사용하여 항공편 예약이 가능해졌습니다. 이 새로운 기능은 사용자들에게 더욱 다양한 결제 옵션을 제공하게 될 것입니다.
+
+📰 [BMNR] BMNR, CRCL, MSTR Stocks Lead Slide In Crypto Equities Amid Bitcoin’s Tumble To $63K - Stocktwits
+   (Stocktwits · 09/24 23:06)
+→ BMNR, CRCL, MSTR 주식이 비트코인이 63,000달러로 하락하면서 암호화폐 관련 주식에서 급락세를 주도하고 있다. 비트코인의 가격 하락이 전체 암호화폐 시장에 부정적인 영향을 미치고 있는 상황이다.
+
+📰 [BMNR] Bitmine Immersion Technologies Options Spot-On: On September 23rd, 105.69K Contracts Were Traded, With 1.63 Million Open Interest - Moomoo
+   (Moomoo · 09/24 05:44)
+→ 비트마인 이머전 테크놀로지스의 옵션 거래가 활발하게 진행되었으며, 9월 23일에 105,690개의 계약이 거래되고 163만 개의 미결제 약정이 형성되었습니다.
+
+📰 [BMNR] What Bitmine Immersion Technologies (BMNR)'s 6 Million ETH Holdings Means For Shareholders - simplywall.st
+   (simplywall.st · 09/23 18:34)
+→ Bitmine Immersion Technologies (BMNR)가 보유한 600만 ETH는 주주들에게 중요한 의미를 갖고 있습니다. 이러한 대량의 이더리움 보유는 기업의 자산 가치를 높이고, 주주들에게 잠재적인 이익을 가져올 수 있는 기회를 제공할 것으로 보입니다. BMNR의 암호화폐 투자 전략이 주가에 긍정적인 영향을 미칠 가능성이 높습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 비트코인의 작은 하락과 이더리움의 상승이 겹치며 혼조세를 보이고 있다. 일부 알트코인은 상승폭을 기록했지만, 전체 거래량은 감소세를 이어가 관망 심리가 감지된다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 혼조세… 비트코인 84,372달러, 이더리움 2,692달러
+   → 비트코인은 84,372달러로 0.13% 하락했으며, 이더리움은 2,692달러로 0.55% 상승하였다. 비트코인 점유율은 58.85%로 줄어든 반면, 이더리움 점유율은 11.42%로 증가하였다.
+   (토큰포스트 · 09/25 05:01)
+2. (시세) 유니스왑 11.08% 하락…9.01달러 지지선 시험대
+   → 유니스왑은 24시간 동안 11.08% 하락하여 9.43달러에 거래되고 있으며, 9.01달러의 지지선을 시험하고 있다. 현물 거래량은 19.3% 감소하면서 거래 활동도 둔화됐다.
+   (토큰포스트 · 09/25 05:10)
+3. (기타) 암호화폐 시장, 24시간 동안 레버리지 포지션 2억6942만달러 청산
+   → 지난 24시간 동안 2억6942만 달러의 레버리지 포지션이 청산되었으며, 롱 포지션이 전체의 65.54%를 차지한다. 비트코인은 84,505달러로 0.02% 상승했고, 이더리움은 2,698달러로 0.81% 상승하였다.
+   (토큰포스트 · 09/25 04:56)
+4. (시세) 비트코인 MVRV, 365일선 상회
+   → 비트코인의 MVRV가 365일 이동평균선을 초과했으며, 미국 현물 비트코인 ETF에 9억9900만 달러가 유입됐다. 그러나 강세장 재개를 단언할 수는 없다고 Glassnode가 밝혔다.
+   (토큰포스트 · 09/25 05:01)
+5. (시세) 비트코인, 310일 만에 365일선 회복
+   → 비트코인은 310일 만에 365일 이동평균선을 회복했으나, 이동평균선의 회복이 향후 가격 상승을 보장하지는 않는다는 분석이 있다.
+   (토큰포스트 · 09/25 03:55)
+
+[흐름·전망]
+• 가격 변동성과 점유율 변화 속에서 알트코인 순환 매매 가능성을 주의 깊게 관찰할 필요가 있다.
+• 유니스왑의 지지선과 거래량 감소는 단기적 관망 심리를 시사하므로, 기술적 반전이 있는지 지켜봐야 한다.
+• 레버리지 포지션 청산이 많아지는 가운데, 시장의 불안정성이 커지고 있어 신중한 접근이 요구된다.
+• 비트코인의 이동평균선 회복 여부는 향후 가격 방향에 중요한 지표가 될 수 있으니 지속적으로 확인할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 36 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 청년층의 전세 대출 문제와 서울 아파트 가격 상승이라는 두 가지 주요 이슈가 부각되고 있습니다.
+
+[핵심 뉴스]
+1. (전세) 전세대출 대신 갚아준 돈 7283억…3년 새 138.6% 급증
+   → 전세자금 대출 대위변제액이 2022년 3053억원에서 2025년 7283억원으로 138.6% 증가했으며, 청년층의 보증 사고율도 증가하고 있습니다.
+   (매일경제 · 09/25 06:31)
+2. (매매) 서울 집값 85주째 올랐다…文정부 때 세운 ‘최장 기록’ 따라잡아
+   → 서울 아파트 매매가격이 85주 연속 상승하며 문재인 정부 당시 최고 기록과 동률을 이루었고, 최근 누적 상승률은 약 17.5%에 달했습니다.
+   (매일경제 · 09/24 15:45)
+3. (정책) ‘이재명표 공적주택 정책’…청년층, 선뜻 환호하지 못하는 이유
+   → 정부의 대규모 공적주택 공급 계획에 대한 청년층의 기대는 낮으며, 엄격한 소득 및 자산 기준이 큰 장벽으로 작용하고 있습니다.
+   (매일경제 · 09/24 12:52)
+4. (공급) GH-이천시, '반도체 산업단지 클러스터' 조성 업무협약
+   → GH는 이천시와 18만㎡ 규모의 반도체 산업단지 클러스터 조성을 위한 협약을 체결하며, 2029년 하반기 착공을 목표로 하고 있습니다.
+   (연합뉴스 · 09/23 16:47)
+5. (재건축) 창동주공19단지, 재건축 추진위 승인
+   → 창동주공19단지가 도봉구청으로부터 재건축 추진위원회 승인을 받으며, 총 2933가구 규모로 탈바꿈할 계획입니다.
+   (매일경제 · 09/23 17:07)
+6. (공급) LH, 서울 성대야구장·위례 등 유휴부지 개발 총력
+   → LH는 도심 내 유휴부지인 성대야구장을 활용해 2100호 규모의 주택공급을 내년 상반기 착공을 목표로 추진하고 있습니다.
+   (매일경제 · 09/23 14:08)
+
+[흐름·전망]
+• 전세자금 대출 문제는 높은 청년층 사고율과 상환 여력 악화로 이어져 주목할 필요가 있습니다.
+• 서울 아파트 상승세가 지속되는 가운데, 금리 및 세제 변화에 따라 향후 거래 위축 가능성도 염두에 두어야 합니다.
+• 정부의 청년층 주거 안정 정책이 실질적인 혜택을 주기 위해서는 소득 및 자산 기준의 개선이 필요합니다.
+• 반도체 산업단지와 대규모 주택 공급 프로젝트는 지역 경제를 활성화하는 중요한 요소로 작용하므로 지속적인 관찰이 필요합니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 중국과의 외교 관계와 경제 성장에 대해 긍정적인 견해를 표명하였다. 특히 그는 중국 국가주석과의 만남을 강조하며, 미국의 경제가 강력하게 성장하고 있다고 주장했다.
+
+[주요 발언]
+1. (외교) 트럼프는 중국 국가주석과의 만남에서 미국과 중국 간의 관계를 강조하며, 향후 대화에서 '슈퍼 인텔리전스'를 주요 주제로 다룰 것이라고 언급했다.
+   (Truth Social · 09/25 04:23)
+2. (경제) 트럼프는 최근 S&P 플래시 서베이를 인용하여 미국 경제가 62개월 만에 가장 높은 성장률을 기록했다고 주장하며, 고용자들에게 더 많은 임금 협상력을 제공하는 '뜨거운 경제'임을 강조했다.
+   (Truth Social · 09/25 04:22)
+3. (사법) 트럼프는 포드 극장 관련으로 자신이 이름을 붙이려는 주장은 말도 안 되는 거짓이라고 반박하며, 이를 퍼뜨리는 세력을 '가짜 뉴스'라고 주장했다.
+   (Truth Social · 09/25 04:22)
+4. (기타) 트럼프는 보잉의 대규모 판매 계약에 대해 언급하며, 미국 내 제조업이 강하게 지지받고 있음을 강조했다.
+   (Truth Social · 09/25 04:22)
+
+[시장·경제 관련]
+• 트럼프는 보잉에 대한 대규모 판매 계약을 언급하며, 미국의 수출과 제조업의 강화를 강조했다.
+
+[흐름·전망]
+• 트럼프의 발언은 미중 관계의 지속적인 긴장 및 협력의 가능성을 주목하게 만든다.
+• 미국 경제 성장과 관련된 긍정적인 지표가 향후 정치적 논의의 중심이 될 가능성이 있다.
+• 보잉의 성장이 미국 내 일자리 창출에 미치는 영향력을 지켜볼 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
