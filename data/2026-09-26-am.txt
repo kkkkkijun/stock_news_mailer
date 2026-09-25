@@ -1,0 +1,240 @@
+2026-09-26T06:32:21.042894+09:00
+
+[오늘의 뉴스 요약] 2026-09-26 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘은 한국의 거시경제 상황이 여러 측면에서 복합적으로 전개되고 있다. 미국 장기 금리 상승이 국내 금리와 환율에 부정적 영향을 미치고 있으며, 자영업자와 청년층의 고용 상황은 여전히 어려운 상황이다.
+
+[핵심 뉴스]
+1. (금리) 美 장기금리 상승의 국내 영향
+   → 미국 장기 국채 수익률 상승이 국내 금리 상승과 원화 약세를 유발하고 있으며, 이에 따라 변동금리 가계대출의 이자 부담이 확대될 우려가 나오고 있다.
+   (연합뉴스 · 09/25 10:00)
+2. (정책) '자산토큰화반' 신설한 한은
+   → 한국은행이 국채 등 자산의 토큰화를 위한 전담 조직을 신설했으며, 이는 디지털화폐 기반의 국채 발행 및 유통을 위한 준비의 일환이다.
+   (연합뉴스 · 09/26 05:51)
+3. (환율) “달러 쌀 때 들어두자”…원화 강세에 다시 뜨는 달러보험
+   → 원화 강세로 달러보험 판매가 다시 늘어났으며, 8월에는 판매액이 3배 증가하여 1,818억원에 달했다.
+   (매일경제 · 09/25 13:24)
+4. (고용) 연소득 '1천200만원 이하' 자영업 사업장 4년새 43% 증가
+   → 연소득 1천200만원 이하의 자영업 사업장이 4년 새 42% 증가하여 현재 838만개에 달해 전체 사업장 중 66.8%를 차지하고 있다.
+   (연합뉴스 · 09/25 10:10)
+5. (성장) K자 양극화 심화…반도체는 잔치, 서민·청년은 시름
+   → 반도체 산업의 호황으로 대기업의 성장과 성과급이 증가하고 있지만, 중소기업과 자영업자와 서민의 상황은 여전히 어렵고, 청년 취업률도 계속 감소하고 있다.
+   (연합뉴스 · 09/25 08:00)
+
+[흐름·전망]
+• 미국 금리 상승이 지속될 경우 국내 변동금리 대출자들의 부담이 증가할 가능성이 커 향후 가계 소비에 제동이 걸릴 수 있다.
+• 한국은행의 자산토큰화 추진이 앞으로 금융시장에 미치는 영향과 함께 관련 정책의 발전 가능성에 주목할 필요가 있다.
+• 원화 강세가 지속되면 달러보험 판매 증가는 계속될 것으로 보이며, 환테크를 활용하려는 소비자들의 심리도 주시해야 한다.
+• K자 양극화가 심화되면서 중소기업과 서민의 경제적 어려움을 해소하기 위한 정책과 지원 방안이 논의되어야 할 것이다.
+
+📈 해외주식 PART
+📰 [NVDA] Does IonQ's NVIDIA Quantum Tie-Up Reframe the Long-Term Hardware Opportunity for Rigetti Computing (RGTI)?
+   (Yahoo Finance · 09/26 06:07)
+→ IonQ는 NVIDIA의 가속화된 양자 연구 센터에 Superion 256 양자 프로세서를 배포한다고 발표하며 양자 및 AI 인프라 간의 통합을 강화하고 있다. 이로 인해 Rigetti Computing과 같은 동종 업체의 미래의 양자 하드웨어 상업적 잠재성에 대한 투자자의 관심이 높아지고 있다.
+
+📰 [NVDA] Micron vs. NVIDIA: 1 AI Stock to Buy Now and 1 to Watch - The Globe and Mail
+   (The Globe and Mail · 09/26 05:30)
+→ 글로벌 매일(The Globe and Mail) 보도에 따르면, 인공지능(AI) 관련 주식 중 현재 매수할 만한 주식으로는 마이크론(Micron)을, 주목해야 할 주식으로는 엔비디아(NVIDIA)를 추천하고 있습니다. 마이크론은 메모리 반도체 부문에서 성장 가능성이 높아 보이는 반면, 엔비디아는 AI 기술의 선두주자로서 큰 주목을 받고 있습니다.
+
+📰 [NVDA] Thieves Stole ‘Nvidia’ Trailers. They Got 20 Tons of Sand - WIRED
+   (WIRED · 09/26 05:30)
+→ 범죄자들이 'Nvidia' 트레일러를 훔쳤으나, 내부에는 20톤의 모래가 적재되어 있었다. 이 사건은 범죄자들이 기대했던 고급 전자제품 대신 가치가 낮은 물품을 훔친 것으로 드러났다.
+
+📰 [TSLA] Stock Market Today, Sept. 25: Tesla Stock Under Pressure Despite Plans to Ramp Semi Truck Production
+   (Yahoo Finance · 09/26 06:17)
+→ 2026년 9월 25일, 상장사 Tesla의 주가는 반도체 트럭 생산 확대 계획에도 불구하고 압박을 받고 있으며, BNP Paribas는 가격 목표를 268달러로 하향 조정해 투자자들이 단기 수익 기대에 집중하도록 하고 있습니다.
+
+📰 [TSLA] Tesla Semi meets $6 diesel - Axios
+   (Axios · 09/26 06:15)
+→ 테슬라 세미 트럭이 배급된 디젤 가격이 갤런당 6달러에 달하는 상황에서 주목받고 있다. 이는 전기 트럭과 전통적인 디젤 트럭 간의 가격 경쟁에 중요한 변화를 가져올 가능성이 있다.
+
+📰 [TSLA] Tesla workers balk at training Optimus humanoid robots as replacements - Ars Technica
+   (Ars Technica · 09/26 06:10)
+→ 테슬라 직원들이 옵티머스 휴머노이드 로봇을 자신들의 대체자로 훈련하는 것에 반발하고 있습니다. 이로 인해 회사의 로봇 개발 및 배치 과정에 도전이 발생할 가능성이 있습니다.
+
+📰 [HIMS] HIMS Investor Alert: Kessler Topaz Meltzer & Check, LLP Encourages HIMS Investors with Losses to Contact the Firm - GlobeNewswire
+   (GlobeNewswire · 09/26 05:51)
+→ HIMS 투자자 경고: Kessler Topaz Meltzer & Check, LLP이 손실을 입은 HIMS 투자자들에게 법무법인에 연락할 것을 권장하고 있습니다.
+
+📰 [HIMS] HIMS Investors Have Opportunity to Lead Hims & Hers Health, Inc. Securities Fraud Lawsuit with SBS Law - GlobeNewswire
+   (GlobeNewswire · 09/25 23:22)
+→ Hims & Hers Health, Inc.의 투자자들이 SBS 법무법인과 함께 증권 사기 소송을 주도할 기회를 얻었다. 이 소송은 Hims & Hers의 투자자들에게 법적인 대응을 할 수 있는 중요한 기회를 제공하고 있다.
+
+📰 [HIMS] HIMS SHAREHOLDER NOTICE: Faruqi & Faruqi, LLP Reminds Hims Investors of Securities Class Action Lawsuit Deadline on November 2, 2026 - TMX Newsfile
+   (TMX Newsfile · 09/25 23:04)
+→ Faruqi & Faruqi, LLP는 Hims 투자자들에게 증권 집단 소송의 마감일인 2026년 11월 2일을 상기시켰습니다. Hims 주주들은 이번 기한에 유의해야 합니다.
+
+📰 [RDW] After a sale at $11.34 a share, Redwire (RDW) holders reported 147,984 shares remaining. - Stock Titan
+   (Stock Titan · 09/26 05:18)
+→ 레드와이어(RDW) 주주들이 주당 11.34달러에 매도한 후, 남은 주식이 147,984주라고 보고했습니다.
+
+📰 [RDW] Is Redwire (RDW) A Bargain Following Its NITE STAR Contract Win?
+   (Yahoo Finance · 09/26 04:08)
+→ 레드와이어(RDW)는 최근 미국 정부의 NITE-STAR 계약에서 15개 공급업체 중 하나로 선정되어 9억 8천만 달러 이상의 가치를 지닌 기회를 얻었다. 이 계약 수주는 레드와이어의 최근 주가 상승세와 함께 이루어진 것으로, 올해 주식 가격은 28.46% 증가했으며, 3년 총 주주 수익률은 약 3배에 달한다.
+
+📰 [RDW] Stocktwits Space Race Weekly: Why RKLB, FLY, RDW And PL Are Outpacing SPCX - Stocktwits
+   (Stocktwits · 09/26 04:01)
+→ Stocktwits의 '우주 경주 주간' 보고서에 따르면 RKLB, FLY, RDW, PL과 같은 주식들이 SPCX를 초과하는 성장을 보이고 있는 이유를 분석하고 있습니다. 이들 기업은 우주 산업에서의 경쟁력과 시장 반응이 긍정적이라는 점에서 주목받고 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Falls 4.4% - Time to Sell? - MarketBeat
+   (MarketBeat · 09/26 06:22)
+→ IREN 주가가 4.4% 하락하면서 매도 적기라는 의견이 제기되고 있다. 투자자들은 향후 주가 변동성을 고려해야 할 때에 접어든 것으로 보인다.
+
+📰 [IREN] Should Facility Issues Require Action From IREN Stock Investors? - simplywall.st
+   (simplywall.st · 09/26 05:42)
+→ IREN 주식 투자자들은 시설 문제에 대해 어떤 조치를 취해야 할까요? 최근 분석에 따르면 이러한 문제들은 기업의 운영에 영향을 미칠 수 있으며, 투자 결정에 신중을 기할 필요가 있습니다. 시설 문제 해결을 위한 계획이나 조치가 투자자들에게 중요할 수 있다는 점이 강조됩니다.
+
+📰 [IREN] Is IREN (IREN) Cheap As Sector Selling And Mixed Views Test Its AI Buildout?
+   (Yahoo Finance · 09/26 05:12)
+→ IREN(IREN)은 최근 산업 전반의 매도 압력과 복잡한 연구 의견 속에서 다시 주목받고 있다. 현재 IREN의 주가는 $46.15로, 지난 주 동안 매도 압력이 있었지만 한 달 동안 16.60% 상승하고 연초 대비 8.08% 증가했다. 3년간 총 주주 수익률은 투자자들의 감정 변화가 크다는 것을 보여준다.
+
+📰 [RKLB] SpaceX’s Falcon 9 Wind Down: Rocket Lab Is Set To Gain, Here’s How
+   (Yahoo Finance · 09/26 06:18)
+→ 스페이스X가 자사의 신뢰성 높은 로켓인 팔콘 9의 라이드를 위한 새로운 예약 접수를 중단했으며, 이는 스타쉽이 그 빈자리를 채울 것이라는 기대에 따른 것입니다. 이 결정은 엘론 머스크가 '중대한 전환점'이라고 언급한 스타쉽에 대한 대담한 베팅으로 해석됩니다.
+
+📰 [RKLB] SpaceX’s Falcon 9 Wind Down: Rocket Lab Is Set To Gain, Here’s How - Insider Monkey
+   (Insider Monkey · 09/26 06:18)
+→ SpaceX의 팔콘 9 로켓 프로그램이 축소됨에 따라 로켓랩이 혜택을 볼 것으로 예상된다. 이 변화로 인해 로켓랩은 시장에서 더 큰 기회를 얻게 될 것이며, 앞으로의 상황에 대한 분석이 이루어지고 있다.
+
+📰 [RKLB] Stocktwits Space Race Weekly: Why RKLB, FLY, RDW And PL Are Outpacing SPCX - Stocktwits
+   (Stocktwits · 09/26 04:01)
+→ 이번 Stocktwits Space Race Weekly에서는 RKLB, FLY, RDW, PL이 SPCX보다 두드러진 성과를 보이는 이유를 분석했습니다. 이들 기업은 우주 산업에서의 성장 가능성으로 주목받고 있으며, 투자자들 사이에서 긍정적인 반응을 얻고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Coinbase Global (COIN) Unveils Fixed Rate Bitcoin Backed Loans - simplywall.st
+   (simplywall.st · 09/26 06:27)
+→ 코인베이스는 비트코인을 담보로 하는 고정 금리 대출 상품을 출시했다고 발표했습니다. 이 새로운 서비스를 통해 사용자들은 비트코인을 담보로 안정적인 금리를 제공받으며 대출을 받을 수 있게 됩니다.
+
+📰 [BTC-USD] Bitcoin survives a 5.2% Treasury shock as traders slash $1.7 billion in leverage - CryptoRank
+   (CryptoRank · 09/26 06:23)
+→ 비트코인이 5.2%의 재무 충격에도 불구하고 회복세를 보였으며, 트레이더들은 17억 달러의 레버리지를 줄였습니다. 이러한 시장 반응은 비트코인에 대한 신뢰를 보여주고 있습니다.
+
+📰 [BTC-USD] Sequans Sells Last 314 Bitcoin - CryptoTicker
+   (CryptoTicker · 09/26 06:14)
+→ Sequans가 나머지 314 비트코인을 판매했습니다. 이로써 회사는 비트코인 보유를 완전히 마무리짓게 되었습니다.
+
+📰 [ETH-USD] Ethereum Lost 0.11% to $2684.39 -- Data Talk - Moomoo
+   (Moomoo · 09/26 06:16)
+→ 이더리움 가격이 0.11% 하락해 2,684.39달러에 거래되고 있다고 보도되었습니다.
+
+📰 [ETH-USD] IMD tests Ethereum network using NFT seats for AI job processing and paid requests. - Pluang
+   (Pluang · 09/26 05:55)
+→ IMD는 Ethereum 네트워크를 활용해 AI 작업 처리 및 유료 요청을 위한 NFT 좌석을 테스트하고 있습니다. 이를 통해 블록체인 기술과 AI의 융합 가능성을 탐색하고 있습니다.
+
+📰 [ETH-USD] Inside IMD, Ethereum's New AI Swarm Experiment
+   (Yahoo Finance · 09/26 05:24)
+→ 이더리움 생태계에서 새로운 형태의 AI 인력이 등장하고 있으며, 실험적인 토큰 경제 모델이 적용되고 있습니다. 이러한 변화는 중요하며, 투자자들에게 새로운 기회를 제공할 수 있습니다.
+
+📰 [SOL-USD] BONK Price Prediction After a Volatile Week: Solana Meme-Coin Traders Turn to Remittix Following Its Confirmed Launch-Date Reveal - TechBullion
+   (TechBullion · 09/26 05:21)
+→ 최근 변동성이 컸던 BONK 가격 예측에 대한 소식이다. 솔라나 기반의 밈코인 거래자들이 Remittix의 출시 날짜가 확정되면서 관심을 기울이고 있다.
+
+📰 [SOL-USD] BREAKING: @BIRDEYE_DATA REPORT SHOWS SOLANA WALLETS HOLDIN - KuCoin
+   (KuCoin · 09/26 04:28)
+→ 브레이킹 뉴스: @BIRDEYE_DATA의 보고서에 따르면, 솔라나 지갑에서 KuCoin이 보유한 수치가 나타났습니다.
+
+📰 [SOL-USD] Kamino Launches Sterling Lending Market for tGBP on Solana - tokenpost.com
+   (tokenpost.com · 09/26 03:57)
+→ Kamino는 Solana 블록체인에서 tGBP를 위한 스털링 대출 시장을 출시했습니다. 이 플랫폼은 사용자들이 tGBP를 담보로 대출을 받을 수 있도록 지원합니다.
+
+📰 [BMNR] Unusual Options Activity: BMNR, MSTR and Others Attract Market Bets, BMNR V/OI Ratio Reaches 937.5 - 富途牛牛
+   (富途牛牛 · 09/26 05:53)
+→ BMNR과 MSTR 등 여러 종목에서 이례적인 옵션 거래 활동이 발생하고 있으며, 특히 BMNR의 거래량 대비 열린 포지션 비율이 937.5에 달해 주목받고 있다. 이러한 높은 비율은 시장에서의 베팅이 활발하다는 것을 시사한다.
+
+📰 [BMNR] BMNR Stock Slips After Bitmine Buys Ethereum Dip – Retail Demands 'HYPE-PURR-Style' Rally - Stocktwits
+   (Stocktwits · 09/25 22:54)
+→ BMNR 주가가 Bitmine이 이더리움을 저가에 매입한 이후 하락했습니다. 소액 투자자들은 'HYPE-PURR 스타일'의 반등을 요청하고 있습니다.
+
+📰 [BMNR] What Bitmine Immersion Technologies (BMNR)'s 6 Million ETH Holdings Means For Shareholders - webull.com
+   (webull.com · 09/25 16:50)
+→ Bitmine Immersion Technologies (BMNR)가 보유한 600만 ETH는 주주들에게 긍정적인 영향을 미칠 가능성이 있습니다. 이 대규모 보유량은 회사의 자산 가치를 높이며, 향후 수익성에 기여할 것으로 기대됩니다. 주주들은 BMNR의 암호화폐 투자 전략과 그에 따른 성장 잠재력에 주목할 필요가 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장은 비트코인과 알트코인 모두에서 상승세가 보이면서 혼조세를 보이고 있다. 비트코인은 84,008달러로 소폭 상승했으며, 여러 알트코인들이 비트코인 상승을 추종하며 강세를 보였다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 혼조세… 비트코인 84,008달러, 이더리움 2,692달러
+   → 비트코인 선물시장에서 비상업 거래자의 순매수 포지션이 2756계약으로 집계되었고, 미결제약정은 2만2315계약으로 전주보다 증가했다. 비상업 거래자와 상업 거래자의 포지션 변화가 시장 기대감을 달리하고 있음이 나타났다.
+   (토큰포스트 · 09/26 06:18)
+2. (기타) NFT 2000개 AI 좌석으로…IMD 작업 5만건 기록
+   → 9월 5일 기준 토큰화 주식 시장의 시가총액이 31억달러로 사상 최고치를 기록했으며, BNB Chain이 전체 시장의 32.7%를 차지했다. 특히 시큐리타이즈의 SECZ가 개별 자산 중 가장 큰 규모를 보이고 있다.
+   (토큰포스트 · 09/26 05:53)
+3. (시세) 8월 이후 60.4% 오른 인터넷컴퓨터, 3.23달러 돌파 시험
+   → 인터넷컴퓨터(ICP)는 8월 이후 약 60.4% 상승하며 3.23달러 돌파 시험을 하고 있으며, 기술적 분석상 추가 상승 가능성이 나타나고 있다. 그러나 현물 시장의 매수세 회복이 부진하다는 점이 우려된다.
+   (토큰포스트 · 09/26 03:38)
+4. (시세) 비트코인 도미넌스 56.5%…알트코인 상승 확산
+   → 비트코인 도미넌스가 56.5%로 하락하며 알트코인들의 상승세가 두드러지며, 비트코인의 상승률이 둔화되는 가운데 에테나, 니어프로토콜 등의 알트코인이 급등세를 보이고 있다.
+   (토큰포스트 · 09/26 00:22)
+5. (기타) 2억8500만달러 가상자산 선물 청산…롱·숏 모두 정리
+   → 지난 24시간 동안 가상자산 선물시장에서는 2억8500만달러 규모의 롱·숏 포지션이 모두 청산되었으며, 비트코인 관련 청산액은 약 7187만달러로 집계되었다.
+   (토큰포스트 · 09/26 00:37)
+
+[흐름·전망]
+• 비상업 거래자의 순매수 포지션이 늘어난 만큼, 다음 주 시장 동향을 주의 깊게 살펴볼 필요가 있다.
+• 토큰화 주식 시장의 성장은 블록체인 기반 자산에 대한 투자 관심이 증가하고 있다는 점에서 긍정적이며, 관련된 법규와 인프라 발전 여부도 중요한 관전 포인트이다.
+• 인터넷컴퓨터가 3.23달러를 넘어서는지의 여부는 단기적인 가격 흐름을 결정짓는 중요한 요소가 될 것이다.
+• 알트코인의 상승세가 지속된다면, 비트코인 도미넌스의 변화가 시장 구조에 어떤 영향을 미칠지에 대한 분석이 필요하다.
+
+📊 공포탐욕지수
+  - CNN 기준: 37 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 한국 부동산 시장은 서울 아파트 가격이 85주째 상승을 이어가며 최장 상승 기간 타이 기록을 세우고 있는 가운데, 경기 남부 지역인 수원 영통구에서 반도체 산업의 영향으로 매수세가 활발한 분위기다.
+
+[핵심 뉴스]
+1. (매매) 영통구 열기 뜨겁다더니…이창섭 ‘51평’ 집값 제자리, 이유 보니?
+   → 수원 영통구의 이창섭 자택은 16년 전 5억원에 분양받아 현재 시세가 7억원에 달하지만, 해당 자택이 속한 주상복합 아파트는 시세 상승이 더딘 상황이다. 영통구는 지난 9월 14일 기준 주간 아파트 가격이 0.61% 증가하며 전국 상승률 1위를 기록했다.
+   (매일경제 · 09/26 06:16)
+2. (매매) 아파트 문턱 높아지자 오피스텔 뜬다…상반기 거래량 전년比 8.24% ‘쑥’
+   → 오피스텔 거래량이 올해 상반기 1만8035건으로 지난해 대비 8.24% 증가했으며, 중대형 오피스텔의 거래량은 지난해 하반기 대비 21.44% 증가했다. 정부 규제로 아파트의 진입 장벽이 높아지면서 오피스텔이 대체 주거 상품으로 주목받고 있다.
+   (매일경제 · 09/25 22:08)
+3. (전세) 이러니 전세 찾기가 하늘의 별 따기…서울 아파트 7개월째 월세 거래가 더 많아
+   → 서울 아파트 임대시장에서 월세 거래가 7개월 연속 증가하며 4887건을 기록한 반면 전세 거래는 4297건에 그쳤다. 임차시장 전반에 걸친 매물 감소와 가격 상승으로 임차인의 주거 비용 부담이 커지고 있다.
+   (매일경제 · 09/25 21:25)
+4. (공급) 집값도 비싼데 착공까지 감감무소식…뿔난 민심, 신임 국토장관 과제 ‘산적’
+   → 신임 국토교통부 장관 홍지선은 주택 공급을 우선 과제로 삼아 입주 물량의 불안정을 해소하고, 지방 정부와의 협의를 통해 공급 속도를 높이겠다고 밝혔다. 공급 부족이 지속되며 시장 불안이 가중되는 가운데 정책 실행이 필요하다.
+   (매일경제 · 09/25 19:00)
+5. (금리) 전세대출 대신 갚아준 돈 7283억…3년 새 138.6% 급증
+   → 한국주택금융공사가 대위변제한 전세자금보증액이 2022년 3053억 원에서 2025년 7283억 원으로 급증했으며, 청년층의 사고율이 특히 높아지고 있다. 전세자금 대출의 부실화 우려가 커지고 있어 취약계층의 재정 부담이 심각해지고 있다.
+   (매일경제 · 09/25 06:31)
+6. (매매) 서울 아파트 매매가격 85주째 상승…최장 상승기간 동률
+   → 서울 아파트 매매가격이 85주 연속 상승을 기록했지만, 강남3구는 약세를 보이는 가운데 중하위권 지역의 상승세가 이를 견인하고 있다. 앞으로의 가격 흐름은 주택 공급과 생활 인프라의 영향을 받을 것으로 전망된다.
+   (연합뉴스 · 09/24 14:00)
+
+[흐름·전망]
+• 서울 아파트 시장은 강남3구의 약세에도 불구하고 중하위권의 지속적인 상승이 전망되며, 향후 공급 증가가 시장에 미치는 영향을 주목해야 한다.
+• 경기 '반도체 벨트' 지역의 아파트 가격 상승 흐름은 지속될 것으로 보이며, 추가적인 매수세가 어떻게 변화하는지 관찰할 필요가 있다.
+• 전세 시장의 월세화가 가속화됨에 따라 월세 거래 비중 증가와 임차인의 주거 비용 부담 확대가 지속될 가능성이 높다.
+• 정부의 정책 집행 속도가 지역 주택 공급을 얼마나 개선할 수 있을지가 향후 시장 안정성에 핵심적인 변수가 될 것이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 뉴욕주 보수당 의장 재선과 중국 시진핑 주석과의 최근 회담에 대해 이야기하며 긍정적인 성과와 향후 계획을 강조했다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 제리 카사르가 뉴욕주 보수당 의장으로 재선된 것을 축하하며, 카사르가 보수당을 위해 많은 성과를 거둘 것이라고 언급했다.
+   (Truth Social · 09/26 02:17)
+2. (외교) 트럼프는 시진핑 주석과의 만남이 우정과 성공을 기반으로 하였으며, 다음 회담이 11월과 12월에 있을 것이라고 밝혔다.
+   (Truth Social · 09/26 01:49)
+3. (사법) 트럼프는 스콧 베센트가 수퍼 인텔리전스 직책에 가지 않을 것이라며, 그가 재무부에서 잘하고 있다고 강조했다.
+   (Truth Social · 09/25 21:46)
+4. (기타) 트럼프는 제임스 코펜하버의 부고를 언급하며 그가 진정한 미국의 전사였음을 기리며 애도했다.
+   (Truth Social · 09/25 20:09)
+
+[흐름·전망]
+• 트럼프의 뉴욕 보수당 지원 발언은 2026년 중간 선거에 대한 향후 전략에 중요한 시사점을 제공할 가능성이 있다.
+• 중국과의 외교 관계 개선에 대한 언급이 향후 글로벌 경제 및 무역 관계에 미치는 영향에 주목할 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
