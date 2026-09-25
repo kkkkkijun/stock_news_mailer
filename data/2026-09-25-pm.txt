@@ -1,0 +1,233 @@
+2026-09-25T17:02:37.571289+09:00
+
+[오늘의 뉴스 요약] 2026-09-25 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 금리 상승의 글로벌적 영향과 국내 경제에 대한 우려가 커지고 있다. 특히 한국의 경기에 대한 양극화가 심화되고 있다는 분석이 나타났다.
+
+[핵심 뉴스]
+1. (환율) 美 장기금리 상승의 국내 영향은?
+   → 미국의 장기 국채 수익률이 5%를 넘으며 한국 국고채 3년물 금리도 4%를 초과하는 상황이다. 이로 인해 변동금리 대출자들의 이자 부담이 확대될 우려가 제기되고 있다.
+   (연합뉴스 · 09/25 10:00)
+2. (환율) 다시 고개 든 엔저…日 "트럼프, 우려 표명" 이례적 공개
+   → 일본 엔화가 다시 약세를 보이며, 트럼프 전 대통령이 엔저에 대한 우려를 공식적으로 표명한 바 있다. 일본 10년물 국채 금리는 30년 만에 최고 수준으로 상승했다.
+   (연합뉴스 · 09/25 14:24)
+3. (고용) 연소득 '1천200만원 이하' 자영업 사업장 4년새 43% 증가
+   → 연소득 1천200만원 이하의 자영업 사업장이 4년간 42% 증가해 838만 개로 늘어났다. 자영업자의 소득 저하와 고용 시장 부진이 계속되고 있다는 지적이 있다.
+   (연합뉴스 · 09/25 10:10)
+4. (성장) [4만달러 눈 앞] ③ K자 양극화 심화…반도체는 잔치, 서민·청년은 시름
+   → 1인당 국민총소득(GNI)이 4만 달러를 초과할 전망인 가운데, 대기업과 반도체 산업만이 성장을 누리고 있으며, 중소기업 및 자영업자들의 상황은 여전히 열악하다.
+   (연합뉴스 · 09/25 08:00)
+5. (금리) 미 30년물 국채 금리 22년 만에 최고...국채 매도세 확산
+   → 미국의 30년물 국채 금리가 22년 만에 최고치를 기록하며 국채 매도세가 확산되고 있다.
+   (YTN · 09/25 14:22)
+
+[흐름·전망]
+• 미국의 금리 인상 지속 여부와 한국 금리에 미치는 영향을 주의 깊게 관찰해야 한다.
+• 일본의 환율 정책 변화와 엔화 강세에 대한 논의가 한국 시장에 미치는 영향을 점검할 필요가 있다.
+• 자영업자와 중소기업의 경제적 어려움은 장기적으로 고용률과 소비에 부정적인 영향을 미칠 수 있다.
+• K자 양극화가 심화되면서 경제 성장이 고르게 확산되지 않고 있는 상황을 주의 깊게 살펴야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Trump-Xi state dinner guest list includes SpaceX’s Musk, Nvidia’s Huang and LVMH’s Arnault - Reuters
+   (Reuters · 09/25 16:37)
+→ 트럼프와 시진핑의 국빈 만찬 참석자 목록에 스페이스X의 일론 머스크, Nvidia의 젠슨 황, LVMH의 베르나르 아르노가 포함됐다. 이 만찬은 두 나라의 주요 기업 지도자들이 모이는 자리로 주목받고 있다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Stock Purchased by LiftPoint Family Wealth Advisors LLC - MarketBeat
+   (MarketBeat · 09/25 16:24)
+→ LiftPoint Family Wealth Advisors LLC가 NVIDIA Corporation의 주식을 구매했습니다. 이로 인해 시장에서 NVIDIA의 주가에 긍정적인 영향을 미칠 것으로 예상됩니다.
+
+📰 [NVDA] Key facts: NVIDIA (NVDA) 71.1% gross margin; Huang urges AI controls - TradingView
+   (TradingView · 09/25 16:00)
+→ NVIDIA의 총 마진은 71.1%에 달하며, CEO인 젠슨 황은 인공지능(AI)에 대한 규제가 필요하다고 강조했습니다.
+
+📰 [TSLA] Tesla Starts Semi Deliveries as Musk Teases Self-Driving for ‘Very Near Future’ - eletric-vehicles.com
+   (eletric-vehicles.com · 09/25 16:55)
+→ 테슬라가 전기 대형 트럭인 세미의 배송을 시작했다. 일론 머스크는 자율주행 기능이 가까운 미래에 도입될 것이라고 기대감을 나타냈다.
+
+📰 [TSLA] I Just Drove the New Tesla Semi, and It Was Several Tons of Fun - MotorTrend
+   (MotorTrend · 09/25 16:22)
+→ 모터트렌드에서 새로 출시된 테슬라 세미 트럭을 시승한 기사를 다뤘습니다. 테슬라 세미는 뛰어난 성능과 주행 재미를 제공하며, 대규모 화물 운송을 위한 혁신적인 옵션으로 주목받고 있습니다. 전반적으로 긍정적인 경험이 강조되었습니다.
+
+📰 [TSLA] Tesla’s FSD system exceeded speed limits in Belgium tests, safety group finds - Automotive News
+   (Automotive News · 09/25 16:10)
+→ 벨기에에서 진행된 테스트에서 Tesla의 완전 자율주행(FSD) 시스템이 속도 제한을 초과한 것으로 나타났다고 안전 단체가 밝혔습니다. 이 결과는 FSD 시스템의 안전성에 대한 우려를 불러일으키고 있습니다.
+
+📰 [HIMS] Revenue Growth Might Change The Case For Investing In Hims & Hers Health Stock (HIMS) - simplywall.st
+   (simplywall.st · 09/25 14:49)
+→ Hims & Hers Health의 주식에 대한 투자 가능성이 수익 증가에 따라 변화할 수 있다는 분석이 제기되었습니다. 회사의 실적이 개선되면 투자자들에게 매력적인 기회가 될 수 있다고 보고되고 있습니다.
+
+📰 [HIMS] HIMSCON 2026 charts the future of HIMS through skills, technology, and evolving roles - BusinessMirror
+   (BusinessMirror · 09/25 13:13)
+→ HIMSCON 2026은 HIMS의 미래를 기술, 기술력, 그리고 변화하는 역할을 통해 모색하는 행사입니다. 이 회의에서는 헬스 정보 관리 시스템의 발전 방향과 관련된 다양한 주제가 논의될 예정입니다.
+
+📰 [HIMS] ROSEN, HIGHLY REGARDED INVESTOR COUNSEL, Encourages Hims & Hers Health, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - HIMS - TMX Newsfile
+   (TMX Newsfile · 09/25 10:22)
+→ 로젠 법률사무소는 Hims & Hers Health, Inc.의 투자자들에게 중요한 기한 이전에 법률 상담을 받을 것을 권장하고 있습니다. 이는 증권 집단 소송과 관련된 사항으로, 투자자들이 자신의 권리를 보호하기 위해 조치를 취할 필요가 있음을 강조하고 있습니다.
+
+📰 [RDW] RDW Oct 2026 8.000 put (RDW261023P00008000) stock price, news, quote and history - Yahoo Finance Singapore
+   (Yahoo Finance Singapore · 09/25 11:06)
+→ RDW의 2026년 10월 만기 8.000 풋 옵션(RDW261023P00008000)의 주식 가격과 관련된 뉴스, 시세 및 역사 정보가 Yahoo Finance Singapore에 게재되었습니다.
+
+📰 [RDW] RKLB, RDW, SIDU, PL: Why Are These Space Stocks Gaining Overnight? - Stocktwits
+   (Stocktwits · 09/25 09:27)
+→ RKLB, RDW, SIDU, PL 등 여러 우주 관련 주식들이 최근 밤새 상승했다. 이 같은 상승은 투자자들의 관심 증가와 우주 산업에 대한 긍정적인 전망에서 비롯된 것으로 보인다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Climb 2.6% - Still a Buy? - MarketBeat
+   (MarketBeat · 09/25 06:24)
+→ Redwire의 주가가 2.6% 상승했으며, 이에 대해 여전히 매수 추천이 가능한지에 대한 논의가 이루어지고 있습니다. 시장 전문가들은 이 주식의 향후 전망에 대한 의견을 교환하고 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Price Down 1.9% - Here's What Happened - MarketBeat
+   (MarketBeat · 09/25 06:24)
+→ IREN(NASDAQ:IREN) 주가가 1.9% 하락했습니다. 이번 하락의 원인에 대한 구체적인 내용은 기사에서 설명되고 있습니다.
+
+📰 [IREN] Applied Digital vs. IREN: Which Technology Stock Is a Better Buy in 2026?
+   (Yahoo Finance · 09/25 03:22)
+→ Applied Digital과 IREN의 2026년 기술 주식 투자 비교에서, Applied Digital은 대규모 고객 계약을 보유하고 있지만 현금 유출이 심한 반면, IREN은 고객 집중도가 높지만 높은 이익률을 자랑한다. 두 기업의 장단점이 뚜렷하게 나타난다.
+
+📰 [IREN] Applied Digital vs. IREN: Which Technology Stock Is a Better Buy in 2026? - finance.yahoo.com
+   (finance.yahoo.com · 09/25 03:22)
+→ Applied Digital과 IREN 중에서 2026년에 어떤 기술 주식이 더 나은 투자 대상인지 분석한 기사입니다. 두 회사의 기술 혁신과 시장 전망을 비교하며 투자자의 선택에 영향을 미칠 요소들을 다루고 있습니다.
+
+📰 [RKLB] IRDM Shareholders Approve Acquisition By RKLB In $54-A-Share Deal — Iridium-Rocket Lab Merger Expected To Close By Mid-2027
+   (Yahoo Finance · 09/25 07:12)
+→ IRDM 주주들은 RKLB의 주당 54달러에 대한 인수안을 승인했습니다. 거의 100%의 투표가 찬성했으며, 이로써 로켓랩은 2027년 중반까지 이리듐 인수를 완료할 예정입니다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Stock Price Up 4.7% - Still a Buy? - MarketBeat
+   (MarketBeat · 09/25 06:34)
+→ 로켓랩(Rocket Lab)의 주가가 4.7% 상승하였으며, 투자자들이 여전히 매수할 만한 가치가 있는지에 대한 논의가 이루어지고 있다. 전문가들은 회사의 성장 가능성에 긍정적인 전망을 제시하고 있다.
+
+📰 [RKLB] Rocket Lab Corp (RKLB) Stock Up 4.7% but GF Value Says Overvalued -- GF Score: 74/100 - GuruFocus
+   (GuruFocus · 09/25 06:33)
+→ 로켓랩 코퍼레이션(RKLB)의 주가가 4.7% 상승했으나, GuruFocus의 GF 가치 평가에 따르면 과대 평가된 것으로 나타났습니다. GF 점수는 100점 만점 중 74점입니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Hovers At $84k As Morgan Stanley Boosts Holdings - MarketForces Africa
+   (MarketForces Africa · 09/25 16:33)
+→ 비트코인이 84,000달러에서 안정세를 보이고 있으며, 모건 스탠리가 비트코인 보유량을 늘렸다고 보도됐다. 이번 투자 확대는 암호화폐 시장에 긍정적인 영향을 미칠 것으로 예상된다.
+
+📰 [BTC-USD] Bitcoin pauses near $84k with focus on rate jitters, Bitget hack
+   (Yahoo Finance · 09/25 16:27)
+→ 비트코인은 금리가 상승하는 압박 속에서 8만 4천 달러 근처에서 잠시 정체 상태에 있으며, 암호화폐 시장은 거래소 비트겟(Bitget)을 겨냥한 대규모 해킹 사건의 여파에도 주목하고 있다.
+
+📰 [BTC-USD] ‘Bull Market Confirmed!’ Rare Bitcoin Onchain Signal Triggers for Only the 5th Time in History - CCN.com
+   (CCN.com · 09/25 16:15)
+→ 비트코인 온체인 신호가 이번에 역사상 5번째로 발생하면서 '황소 시장이 확인됐다'는 분석이 나왔습니다. 이 신호는 비트코인 가격 상승의 주요한 징후로 여겨지며, 투자자들 사이에서 긍정적인 반응을 보이고 있습니다.
+
+📰 [ETH-USD] Bitcoin, Ethereum outlook as US Iran talks revive Hormuz reopening hopes - Crypto News
+   (Crypto News · 09/25 16:53)
+→ 미국과 이란 간의 대화가 호르무즈 해협 재개방에 대한 희망을 불러일으키며 비트코인과 이더리움의 전망에 긍정적인 영향을 미치고 있는 가운데, 암호화폐 시장이 주목받고 있다. 이와 관련된 상황은 암호화폐 가격에 변동성을 일으킬 수 있는 요소로 작용할 가능성이 있다.
+
+📰 [ETH-USD] Experts: Ethereum Reserves on Exchanges Have Fallen to a Record Low, and Demand for Staking Has Surged 11-Fold - incrypted.com
+   (incrypted.com · 09/25 16:16)
+→ 전문가들에 따르면 이더리움의 거래소 보유량이 사상 최저 수준으로 감소했으며, 스테이킹에 대한 수요가 11배 급증한 것으로 나타났습니다. 이는 이더리움 생태계에서의 변동성을 보여줍니다.
+
+📰 [ETH-USD] ARK Invest's $1.3B ARKVX fund is now tokenized on Ethereum for eligible investors. - Pluang
+   (Pluang · 09/25 16:15)
+→ ARK 인베스트의 13억 달러 규모 ARKVX 펀드가 에이치리움에서 토큰화되어 자격이 있는 투자자들에게 제공된다. 이로 인해 투자자들은 보다 쉽게 접근하고 거래할 수 있는 기회를 얻게 된다.
+
+📰 [SOL-USD] Circle Mints 250M USDC On Solana In Fresh Treasury Issuance - TradingView
+   (TradingView · 09/25 16:30)
+→ Circle이 솔라나 네트워크에서 새로운 재무 발행을 통해 2억 5천만 USDC를 발행했습니다. 이 조치는 Circle의 자산 확대와 유동성 확보를 위한 전략으로 보입니다.
+
+📰 [SOL-USD] Solana (SOL) rallies to $116 amid technical gai... - Pluang
+   (Pluang · 09/25 16:14)
+→ 솔라나(SOL)가 기술적 호재에 힘입어 $116로 상승했습니다. 이 상승세는 투자자들의 관심을 끌고 있으며, 시장의 전반적인 분위기에 긍정적인 영향을 미치고 있습니다.
+
+📰 [SOL-USD] Circle Mints $500 Million USDC on Solana in Six Hours - Cryptonews.net
+   (Cryptonews.net · 09/25 13:51)
+→ Circle이 솔라나 플랫폼에서 6시간 동안 5억 달러 규모의 USDC를 발행했습니다. 이번 발행은 Solana의 빠른 처리 속도와 효율성을 보여주는 사례로 평가받고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies Options Spot-On: On September 23rd, 105.69K Contracts Were Traded, With 1.63 Million Open Interest - Moomoo
+   (Moomoo · 09/24 05:44)
+→ 비트마인 침수 기술 옵션이 9월 23일에 105,690개의 계약이 거래되었으며, 개방된 관심은 163만에 달했다고 전해졌다.
+
+📰 [BMNR] What Bitmine Immersion Technologies (BMNR)'s 6 Million ETH Holdings Means For Shareholders - simplywall.st
+   (simplywall.st · 09/23 18:34)
+→ Bitmine Immersion Technologies(BMNR)는 600만 이더리움(ETH)을 보유하고 있으며, 이는 주주들에게 긍정적인 영향을 미칠 수 있는 중요한 자산으로 평가됩니다. 이러한 대규모 보유량은 기업의 재정적 안정성과 성장 가능성을 높일 수 있는 요소로 작용할 것으로 보입니다.
+
+📰 [BMNR] MSTR Purchases Bitcoin After 2-Week Pause, Keeps Buying Back STRC: BMNR, ASST Keep Adding To Their Crypto Treasuries
+   (Yahoo Finance · 09/23 18:28)
+→ 마이클 세일러의 전략이 2주간의 중단 후 비트코인을 다시 구매했으며, BMNR과 ASST는 암호화 자산을 계속 추가하고 있습니다. 이번 주 동안 STRC 주식 177만 주를 1억 7천400만 달러에 재구매하여 비트코인과 STRC에 대한 총 지출이 2억 5천만 달러에 달했습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 연준의 금리 인상 가능성 발언 이후 경계감을 드러내며 방향성을 잡지 못하고 있다. 비트코인은 소폭 하락했으며, 알트코인들 사이에서 자금이 분산되는 모습이 보인다.
+
+[핵심 뉴스]
+1. (거래소) 비트겟 대규모 비인가 전송 사건 발생
+   → 국내 거래 비중에서 XRP와 ONDO가 각각 19.69%, 17.53%를 차지하며 최상위를 기록했다. ONDO의 거래량은 최근 18.5배 급증했으며, 한국 거래소와 바이낸스를 합한 거래량 중 국내 비중은 15.70%로 높아졌다.
+   (토큰포스트 · 09/25 17:00)
+2. (시세) 비트코인 장기 보유자의 실현이익 저조
+   → 비트코인 장기 보유자의 실현이익은 현재 약 72%로, 2024년 12월 전망치인 350%에 크게 미치지 못하고 있다. 이는 장기 보유자들이 대규모 차익 실현에 나서는 상태가 아님을 나타낸다.
+   (토큰포스트 · 09/25 17:01)
+3. (ETF) 비트코인 현물 ETF 시장, 연속 순유입 기록
+   → 미국 비트코인 현물 ETF 시장은 6거래일 연속으로 순유입을 기록하며 9월 24일 기준 1억9065만 달러가 유입되었다. 누적 순유입 규모는 574억1226만 달러로, 블랙록과 피델리티 ETF에서 대규모 유입이 발생했다.
+   (토큰포스트 · 09/25 14:01)
+4. (시세) 암호화폐 시장 약세, 비트코인 소폭 하락
+   → 암호화폐 시장은 연준의 금리 인상 우려로 비트코인이 0.13% 하락하고, 이더리움은 0.55% 상승했다. 전체 시가총액은 2조8788억달러로 유지되고 있으며, 거래량은 증가하지 않은 상황이다.
+   (토큰포스트 · 09/25 16:37)
+
+[흐름·전망]
+• 향후 금리 인상 우려가 지속될 경우, 비트코인 및 주요 알트코인들의 가격 안정성에 영향을 미칠 가능성이 크다.
+• 장기 보유자들이 매도 압력을 적게 느끼고 있는 상황에서, 실현이익이 증가할 경우 시장의 변동성이 커질 수 있다.
+• 비트코인 현물 ETF의 지속적인 자금 유입은 기관 투자자들의 긍정적인 투자 신호로 해석될 수 있으며, 주목할 필요가 있다.
+• 거래량이 두둑하지 않은 상황은 공격적인 매수세가 감소하고 있다는 신호일 수 있으며, 이로 인해 조정 구간이 이어질 가능성이 높다.
+
+📊 공포탐욕지수
+  - CNN 기준: 36 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 청약 취소 사례 증가와 서울 아파트 매매가격 상승이 두드러진 가운데, 전세대출 대위변제액과 관련한 경각심이 커지고 있다.
+
+[핵심 뉴스]
+1. (분양청약) 청약 당첨 취소 사례 5만 건 넘었다
+   → 최근 6년간 아파트 청약에서 당첨이 취소된 사례가 5만명을 초과했으며, 전체 당첨자의 6.8%가 부적격 판정을 받은 것으로 나타났다. 특히 수도권에서 부적격 당첨 사례가 집중되고 있는 것으로 분석됐다.
+   (매일경제 · 09/25 15:42)
+2. (매매) 노후 아파트, 신축 아파트 매매가 상승폭 넘었다
+   → 서울의 20년 초과 노후 아파트 가격 상승폭이 신축 아파트를 초과하며 강북 정비사업의 영향을 받고 있다. 이는 5년 이하 신축 아파트 가격 상승률도 높지만 전체적으로는 노후 아파트 강세가 두드러진 변화다.
+   (연합뉴스 · 09/25 07:01)
+3. (금리) 전세대출 대위변제액 3년 새 138.6% 증가
+   → 전세자금 보증 대위변제액이 2022년 3053억 원에서 2025년 7283억 원으로 급증하며 취약계층의 상환 부담이 커지고 있다. 청년층의 보증 사고율이 큰 폭으로 상승해 우려가 확산되고 있다.
+   (매일경제 · 09/25 06:31)
+4. (매매) 서울 아파트 매매가격 85주 연속 상승
+   → 서울 아파트 매매가격이 85주 연속 상승하며 문재인 정부 당시 기록과 동률을 이뤘다. 비강남 지역이 상승세를 이끌고 있는 반면 강남권은 상승폭이 줄어들며 주춤하는 모습이다.
+   (매일경제 · 09/24 15:45)
+5. (정책) 이재명 정부 공적주택 정책에 회의적 반응
+   → 이재명 정부의 공적주택 정책은 총 119만 호 중 77%를 수도권에 공급하는 계획을 포함하고 있으나, 소득 기준의 높은 장벽으로 청년들의 불만이 커지고 있다.
+   (매일경제 · 09/24 12:52)
+
+[흐름·전망]
+• 청약 시장에서의 부적격 당첨 사례의 증가가 청약 규정에 대한 재검토를 촉구할 수 있는 계기가 될 것으로 예상된다.
+• 노후 아파트의 상승세가 지속되면서 투자자와 실수요자들이 해당 시장에 관심을 가질 것으로 보인다.
+• 전세자금 보증 사고가 증가하면서 금융기관의 리스크 관리가 중요하게 여겨질 것이며, 특히 청년층 지원 방안에 대한 논의가 필요하다.
+• 서울 아파트 매매가격의 상승세가 지속된다면 앞으로의 금리 정책 변화나 정부의 세제 개선이 시장에 미치는 영향은 더욱 주목받을 것이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 중국의 시진핑 주석과의 만남에 대해 강조하며 자신이 하는 외교 정책이 성공적이라고 언급했다. 또한 미디어에 대한 비판을 통해 자신의 인기 상승을 주장하며 경제 상황에 대해서도 긍정적인 평가를 내렸다.
+
+[주요 발언]
+1. (외교) 트럼프는 시진핑 주석과의 만남이 중요하다고 강조하며, 이날의 논의 주제가 '슈퍼 인텔리전스'가 될 것이라고 전했다.
+   (Truth Social · 09/25 05:50)
+2. (사법) 트럼프는 '포드 극장'과 관련된 잘못된 보도에 대해 반발하며, 미디어와 민주당이 자신에 대한 허위 기사를 만들어 내고 있다고 주장했다.
+   (Truth Social · 09/25 04:32)
+3. (경제) 트럼프는 최근 발표된 S&P 플래시 조사에서 긍정적인 경제 성장을 언급하며 현재 경제가 세계에서 가장 '뜨거운(hot)' 상황이라고 주장했다.
+   (Truth Social · 09/25 04:23)
+
+[흐름·전망]
+• 트럼프의 외교적 행보가 향후 미국과 중국의 관계에 어떤 영향을 미칠지 주목할 필요가 있다.
+• 미디어 비판을 통해 자신의 지지를 다지려는 전략이 유권자들에게 어떻게 받아들여질지 관찰할 만하다。
+• 경제적인 긍정 메시지가 향후 시장과 선거에 어떤 반응을 일으킬지 주의 깊게 살펴봐야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
