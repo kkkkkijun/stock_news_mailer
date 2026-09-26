@@ -309,10 +309,10 @@
 "name": "Average Hourly Earnings (MoM)",
 "dt": "2026-10-02T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "0.3%",
 "prev": "0.3%",
 "act_n": null,
-"cons_n": null
+"cons_n": 0.3
 },
 "a0485df5-8fd5-477b-9a61-0daad1abde41": {
 "name": "Average Hourly Earnings (YoY)",
