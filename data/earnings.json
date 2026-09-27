@@ -743,9 +743,9 @@
    "rec": {
     "label": "적극 매수",
     "count": 57,
-    "buy": 55,
+    "buy": 54,
     "hold": 7,
-    "sell": 0
+    "sell": 1
    }
   }
  },
