@@ -646,5 +646,41 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"75a2fedb-a0e4-446b-94fb-726f952c0f8e": {
+"name": "Consumer Price Index (MoM)",
+"dt": "2026-11-10T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"a1dff83e-b073-4270-8424-4a7acfaed89c": {
+"name": "Consumer Price Index (YoY)",
+"dt": "2026-11-10T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"c116284f-54cf-4db0-a413-9f9a6be6908d": {
+"name": "Consumer Price Index ex Food & Energy (MoM)",
+"dt": "2026-11-10T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"80ef0474-f22d-4da0-ac0b-e5de230a6538": {
+"name": "Consumer Price Index ex Food & Energy (YoY)",
+"dt": "2026-11-10T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }

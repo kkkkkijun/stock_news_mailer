@@ -1,0 +1,243 @@
+2026-09-27T17:02:14.879955+09:00
+
+[오늘의 뉴스 요약] 2026-09-27 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘은 반도체 업황과 관련한 기업들의 지출 증가가 두드러진 날이다. 또한 제조업 경기 전망이 소폭 개선되었지만, 여전히 영업이익 목표 미달을 우려하는 기업들이 많다는 점이 주목할 만하다.
+
+[핵심 뉴스]
+1. (성장) 반도체 호황에 법인카드 사용액 역대 최대
+   → 2023년 2분기 법인 신용카드 이용 금액이 61조7836억원으로 지난해 대비 10.6% 증가하며 최대치를 기록했다. 반도체 업황 호조와 기업 실적 개선이 기업 지출 증가에 기여하고 있다.
+   (매일경제 · 09/27 16:50)
+2. (성장) 수출호조·환율안정에 제조업 경기전망 개선
+   → 2026년 4분기 제조업 경기전망지수(BSI)가 86으로, 전분기보다 6포인트 상승했다. 그러나 제조기업의 60.4%는 영업이익 목표 달성에 어려움을 겪을 것으로 보인다.
+   (연합뉴스 · 09/27 12:00)
+3. (금리) 당국, 정책금융 등 고정금리 확대 주력
+   → 금융당국이 정책서민금융상품의 고정금리 확대에 집중하고 있으며, 내년 예산안에 관련 내용을 반영하고 추가 확대를 계획하고 있다.
+   (연합뉴스 · 09/27 05:51)
+4. (물가) 韓銀 “도미노 가격 인상 확산되는 중”
+   → 한국은행은 4분기 물가의 최대 변수가 도미노 가격 인상 확산이라고 경고했다.
+   (서울경제 · 09/27 15:30)
+5. (고용) 중장년 인생2막 활짝…노동부 '중장년고용 강조 주간' 실시
+   → 고용노동부가 중장년 고용 강조 주간을 실시하며, 지역 맞춤형 경력 지원 및 각종 프로그램을 제공할 예정이다.
+   (연합뉴스 · 09/27 12:00)
+
+[흐름·전망]
+• 반도체 업황의 지속성과 기업의 법인 카드 이용 증가 배경을 주의 깊게 살펴야 한다.
+• 제조업의 BSI 상승에도 불구하고 영업이익 목표 미달 우려가 높은 만큼, 기업의 실제 수익성에 대한 점검이 필요하다.
+• 금융당국의 고정금리 확대가 저신용자에 미치는 영향과 향후 금리 흐름에 대한 영향을 검토해야 할 것이다.
+• 중장년층의 고용 지원 정책이 실효를 거둘 수 있을지 지속적으로 관찰해야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] 3 Reasons Why Nvidia Fits Warren Buffett's Investment Style - The Motley Fool
+   (The Motley Fool · 09/27 16:57)
+→ Nvidia는 워렌 버핏의 투자 스타일에 적합한 세 가지 이유로 언급됩니다. 첫째, Nvidia는 강력한 브랜드와 지속적인 시장 지배력을 보유하고 있으며, 둘째, 안정적인 수익 성장과 높은 수익성을 나타냅니다. 마지막으로, Nvidia는 기술 혁신을 통해 장기적인 발전 가능성을 가지고 있습니다.
+
+📰 [NVDA] What Could Stop NVIDIA Stock Over The Next Six Months? - Trefis
+   (Trefis · 09/27 15:08)
+→ NVIDIA 주식의 향후 6개월 동안의 상승세를 저해할 수 있는 요인들은 여러 가지가 있다. 시장의 경기 둔화, 반도체 공급망 문제, 그리고 경쟁 심화 등이 NVIDIA의 성장에 부정적인 영향을 미칠 가능성이 제기되고 있다. 이러한 외부 요인들이 주가에 미치는 영향을 주의 깊게 살펴봐야 한다.
+
+📰 [NVDA] NVIDIA CEO Rejects AI Doomsday Theory, Stresses Safety - 조선일보
+   (조선일보 · 09/27 14:09)
+→ NVIDIA CEO는 인공지능의 종말론을 부정하며, AI 기술의 안전성을 강조했다. 그는 AI가 사회에 긍정적인 영향을 미칠 수 있다고 주장했다.
+
+📰 [TSLA] A Tesla Drove Itself From Florida To Ohio, But One Moment Forced The Driver To Take Over - HotCars
+   (HotCars · 09/27 16:05)
+→ 플로리다에서 오하이오까지 자율주행을 한 테슬라 차량이 있었으나, 특정 순간에 운전자가 직접 개입해야 했습니다. 이 사건은 자율주행 기술의 한계를 보여주는 사례로 주목받고 있습니다.
+
+📰 [TSLA] After the SpaceX frenzy, have investors forgotten why they loved Tesla shares? - Yahoo Finance UK
+   (Yahoo Finance UK · 09/27 15:37)
+→ 스페이스X에 대한 열기가 고조된 이후, 투자자들이 테슬라 주식에 대한 애정을 잊었는지에 대한 논의가 일고 있다. 일부 분석가들은 스페이스X의 성공이 테슬라에 대한 관심을 희석시키고 있다고 지적하고 있다. 테슬라의 기초와 미래 성장 가능성에 대한 집중이 필요한 시점이라는 의견이 제기되고 있다.
+
+📰 [TSLA] Tesla Owner Takes a Cybertruck Loaner, But Driving Home The Tailgate Panel Comes Off. Others Say The Company Charged Them Nothing - Torque News
+   (Torque News · 09/27 12:40)
+→ 테슬라 소유자가 사이버트럭을 대여했으나 집으로 가는 도중에 테일게이트 패널이 떨어졌다. 다른 고객들은 회사가 아무런 비용을 청구하지 않았다고 주장하고 있다.
+
+📰 [HIMS] Can Hims & Hers Health (HIMS) Stay Cheap As Sales Face Scrutiny?
+   (Yahoo Finance · 09/27 16:08)
+→ Hims & Hers Health의 주가는 지난 몇 년 동안 크게 상승했지만, 현재 매출 기반이 이러한 높은 평가를 지탱할 수 있는지에 대한 의문이 제기되고 있다. 새로운 제품 출시와 규제 검토와 관련된 최근 뉴스가 주목받으면서, 투자자들이 매출 1달러당 지불하는 금액에 어느 정도 반영되어 있는지가 중요해졌다.
+
+📰 [HIMS] Hims & Hers CFO Okupe sells $876,846 of HIMS stock - Investing.com
+   (Investing.com · 09/27 12:22)
+→ Hims & Hers의 CFO인 Okupe가 HIMS 주식 876,846 달러어치를 매각했습니다. 이 뉴스는 투자자들에게 회사의 주식 변동성에 대한 우려를 불러일으킬 수 있습니다.
+
+📰 [HIMS] Form 4 Hims Hers Health Inc For: 26 September By Investing.com - Investing.com Canada
+   (Investing.com Canada · 09/27 11:52)
+→ Hims Hers Health Inc.의 9월 26일자 Form 4가 공개되었습니다. 이 문서는 회사의 내부 거래와 관련된 정보를 담고 있습니다.
+
+📰 [RDW] RILY,RCAT,RDW,DOMH,KRT,FRST,CODI,FIS,PLAY,IDN,SVRA,TRST,ULBI,CADL,SHBI,GLSI,BOTJ | Stock Prices | Quote Comparison - Yahoo Finance - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 09/27 10:12)
+→ 야후 재무에서 RILY, RCAT, RDW, DOMH 등 여러 주식의 가격을 비교하는 내용을 다루고 있습니다. 이들 주식은 캐나다 시장에서도 주목받고 있으며, 투자자들에게 다양한 선택지를 제공합니다.
+
+📰 [RDW] RKLB, LUNR, RDW Jump Premarket As Musk Pitches AI Satellites, Orbital Data Centers — Analyst Says The Odds Are Just 7% - Stocktwits
+   (Stocktwits · 09/27 04:05)
+→ 머스크가 AI 위성과 궤도 데이터 센터를 제안하면서 RKLB, LUNR, RDW 주식이 프리마켓에서 급등했다. 그러나 분석가는 이러한 프로젝트의 성공 확률이 단 7%에 불과하다고 언급했다.
+
+📰 [RDW] RDW Stock Rises On $21.5M Air Force Drone Contract - Stocktwits
+   (Stocktwits · 09/27 03:30)
+→ RDW 주가가 2천150만 달러 규모의 공군 드론 계약 소식에 상승했습니다. 이 계약은 회사의 성장 가능성을 높이는 긍정적인 요소로 작용하고 있습니다.
+
+📰 [IREN] JPMorgan upgrades IREN, forecasting $24B annual revenue by 2030 as it shifts to AI cloud services. - Pluang
+   (Pluang · 09/27 01:16)
+→ JPMorgan이 IREN의 등급을 상향 조정하며 2030년까지 연간 240억 달러의 수익을 예상하고, 회사가 AI 클라우드 서비스로 전환하고 있음을 강조했습니다.
+
+📰 [IREN] JPMorgan Predicts IREN Will Generate $24 Billion in Annual Revenue by 2030
+   (Yahoo Finance · 09/27 00:59)
+→ JPMorgan은 IREN의 투자 등급을 '저체중'에서 '과체중'으로 조정하며, 2030년까지 연간 매출이 240억 달러에 이를 것이라고 예측했습니다. 이 보고서는 AI 인프라에 투자하는 모든 투자자에게 중요한 질문을 제기하고 있습니다.
+
+📰 [IREN] JPMorgan Predicts IREN Will Generate $24 Billion in Annual Revenue by 2030 - 247wallst.com
+   (247wallst.com · 09/27 00:59)
+→ JPMorgan은 IREN이 2030년까지 연간 240억 달러의 수익을 창출할 것으로 예상하고 있습니다. 이 전망은 IREN의 성장 가능성을 반영하고 있습니다.
+
+📰 [RKLB] Rocket Lab Corporation $RKLB Position Boosted by Envestnet Portfolio Solutions Inc. - MarketBeat
+   (MarketBeat · 09/27 16:07)
+→ 루켓랩 코퍼레이션($RKLB)의 주식이 Envestnet 포트폴리오 솔루션즈에 의해 상승했다고 보도됐다. 이로 인해 루켓랩의 시장 내 입지가 강화되었다.
+
+📰 [RKLB] Rocket Lab (RKLB) Stock May Be 37% Undervalued Despite Neutron Launch Buzz - simplywall.st
+   (simplywall.st · 09/27 09:54)
+→ 로켓랩(RKLB)의 주가는 현재 37% 저평가된 것으로 보이며, 이는 최근의 뉴트론 로켓 발사와 관련된 긍정적인 분위기에도 불구하고 나타난 평가입니다. 전문가들은 이 회사의 성장 잠재력을 감안할 때 주가가 더욱 상승할 가능성이 있다고 분석하고 있습니다.
+
+📰 [RKLB] S&P 500, Dow, Nasdaq Drop As Yields Spike Amid Calls For More Rate Hikes — AMZN, GOOGL, NFLX, SPCX, RKLB In Focus - Stocktwits
+   (Stocktwits · 09/27 03:23)
+→ S&P 500, 다우, 나스닥 지수가 금리 인상 요구 증가에 따라 하락하고 있으며, 채권 수익률이 급등하고 있습니다. 아마존(AMZN), 구글(GOOGL), 넷플릭스(NFLX) 등 주요 기업들이 주목받고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin nears $80K resistance; a break could co... - Pluang
+   (Pluang · 09/27 16:55)
+→ 비트코인이 8만 달러의 저항선에 가까워지고 있으며, 이 저항선을 뚫게 되면 가격 상승이 이어질 가능성이 있습니다. 투자자들은 이 중요한 수준을 주목하고 있습니다.
+
+📰 [BTC-USD] Bitcoin eyes $100K after breaking $80K resistan... - Pluang
+   (Pluang · 09/27 16:45)
+→ 비트코인이 8만 달러의 저항선을 돌파한 후 10만 달러를 목표로 하고 있습니다. 현재 상승세가 이어지고 있으며, 투자자들의 관심이 집중되고 있습니다.
+
+📰 [BTC-USD] Zcash Surges as Bitcoin Slips, Fueling Privacy Narrative - Altcoin Buzz
+   (Altcoin Buzz · 09/27 16:45)
+→ 비트코인이 하락하는 가운데 Zcash가 급등하며 개인정보 보호 관련 주장이 강화되고 있습니다. 이로 인해 Zcash의 관심이 높아지고 있으며, 투자자들 사이에서 프라이버시 중심의 암호화폐에 대한 논의가 활발해지고 있습니다.
+
+📰 [ETH-USD] Ethereum, Solana, and Zcash show mixed growth f... - Pluang
+   (Pluang · 09/27 16:37)
+→ 이더리움, 솔라나, 그리고 지캐시의 성장세가 엇갈리고 있다는 내용이다. 각 암호화폐의 성과가 다르게 나타나며 시장의 반응이 상이한 상황이다.
+
+📰 [ETH-USD] Ethereum Breakout Hinges On $2.8K After 200-Day Average Reclaim - Yellow.com
+   (Yellow.com · 09/27 15:42)
+→ 이더리움의 상승세는 2,800달러 수준에 달려 있으며, 최근 200일 평균선을 회복한 것이 주요 요인으로 작용하고 있다. 전문가들은 이 가격대를 넘어설 경우 더욱 강력한 상승이 있을 것으로 전망하고 있다.
+
+📰 [ETH-USD] Ethereum Bulls Are Closing In on a Major Breakout: Is This Resistance the Final Barrier? - CryptoRank
+   (CryptoRank · 09/27 14:43)
+→ 이더리움의 상승세가 강해지면서 주요 저항선突破를 앞두고 있다는 분석이 나왔습니다. 투자자들은 현재의 저항이 이더리움의 마지막 장벽인지에 대한 관심을 가지며, 앞으로의 가격 변동에 주목하고 있습니다.
+
+📰 [SOL-USD] Ethereum, Solana, and Zcash show mixed growth f... - Pluang
+   (Pluang · 09/27 16:37)
+→ 이더리움, 솔라나, 그리고 제트캐시의 성장세가 혼재된 모습을 보이고 있다. 각 암호화폐의 성장은 상이하며, 시장의 변동성과 투자자 심리의 영향을 받고 있다.
+
+📰 [SOL-USD] U.S. Spot Solana ETFs Draw Record Weekly Inflows of $188.21 Million Since Launch - bloomingbit
+   (bloomingbit · 09/27 16:27)
+→ 미국의 스팟 솔라나 ETF가 출시 이후 주간 기준으로 1억 8천821만 달러의 기록적인 유입을 기록했습니다. 이는 투자자들의 높은 관심을 반영하는 수치입니다.
+
+📰 [SOL-USD] ZetaChain to Shut Down L1 and Migrate to Solana, ZETA Price Surges 40% - KuCoin
+   (KuCoin · 09/27 15:03)
+→ ZetaChain이 L1을 중단하고 Solana로 이전하기로 결정하면서 ZETA 가격이 40% 상승했습니다. 이 소식은 KuCoin에서 보도되었습니다.
+
+📰 [BMNR] BitMine Immersion Technologies, Inc. $BMNR Stock Position Increased by Corient Private Wealth LP - MarketBeat
+   (MarketBeat · 09/27 16:54)
+→ Corient Private Wealth LP가 BitMine Immersion Technologies, Inc.의 주식 보유량을 늘렸다는 소식이 전해졌다. 이로 인해 $BMNR 주식에 대한 관심이 증가하고 있다.
+
+📰 [BMNR] BMNR Stock Surges After Firm’s Record Buyback, Tom Lee Sets $2,500 Ethereum Target - Stocktwits
+   (Stocktwits · 09/27 06:09)
+→ BMNR 주식이 회사의 사상 최대 자사주 매입 소식에 급등했다. 또한, 투자 analyst Tom Lee는 이더리움 목표 가격을 2,500달러로 설정했다.
+
+📰 [BMNR] BMNR Stock Dips Even As Its Latest Ethereum Buy Leaves It Just 0.1% From Its 'Alchemy Of 5%' Goal - Stocktwits
+   (Stocktwits · 09/27 01:47)
+→ BMNR 주식은 최근 이더리움 구매에도 불구하고 하락세를 보였다. 이 구매로 인해 BMNR은 '5%의 알케미' 목표에 0.1%만 남겨두고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 비트코인 가격은 8만3600달러를 유지하며 안정세를 보였고, 암호화폐 시장은 혼조세를 나타냈다. 비트코인의 옵션 만기가 다가오면서 시장 심리가 조심스러워지고 있는 양상이다.
+
+[핵심 뉴스]
+1. (시세) 156억달러 비트코인 옵션 만기…가격 8만3600달러 유지
+   → 156억달러 규모의 비트코인 옵션이 9월 25일 만기된 가운데 비트코인 가격은 8만3600달러 수준을 기록했다. 만기 전 비트코인은 약 8만7000달러까지 상승했지만 이후 하락세를 보였다.
+   (토큰포스트 · 09/27 16:36)
+2. (온체인) 비트코인, 7일간 거래소서 순유출
+   → 비트코인 채굴자의 보유량이 일주일 사이 1530 BTC 감소하면서 현재 약 119만2800 BTC에 이르렀다. 7일 평균 해시레이트 또한 약 9억1580만 TH/s로 감소했다.
+   (토큰포스트 · 09/27 16:38)
+3. (시세) 암호화폐 시장 혼조세… 비트코인 소폭 상승
+   → 암호화폐 시장이 혼조세를 보이는 가운데 비트코인은 전날 대비 0.73% 상승한 8만4496.35달러에 거래되고 있다. 비트코인의 시장 점유율은 58.54%로 소폭 감소했으며, 알트코인으로의 자금 유출이 엿보인다.
+   (토큰포스트 · 09/27 16:02)
+4. (기타) 세일러, 디지털 자산 활용 권리 제안
+   → 마이클 세일러는 디지털 자산 활용의 중요성을 강조하며, 개인과 기업에 대한 디지털 자산 권리 보장을 주장했다. 이 제안은 경제 성장과 관련된 새로운 디지털 자산 관리에 대한 구상을 담고 있다.
+   (토큰포스트 · 09/27 16:36)
+5. (규제) 미 연준, 스테이블코인 규정 초안 제시
+   → 미 연준은 스테이블코인 규정 초안을 발표하며, 발행사에게 자산의 준비금을 단기 미국 국채로 보유하도록 요구할 계획이다. 이는 스테이블코인의 안정성을 높이는 방안으로 작용할 수 있다.
+   (토큰포스트 · 09/27 16:01)
+
+[흐름·전망]
+• 비트코인 옵션 만기 후 가격 안정이 지속될지 여부에 주목해야 한다.
+• 해시레이트 감소와 채굴자 보유량의 변화는 공급 흐름에 영향을 미칠 수 있으므로 장기적인 흐름을 확인해야 한다.
+• 비트코인 점유율 감소가 알트코인 시장에 긍정적인 영향을 미칠 가능성을 고려해야 한다.
+• 세일러의 제안이 실제 정책으로 이어질지 여부가 디지털 자산 시장의 향후 방향에 중요한 영향을 미칠 것으로 보인다.
+
+📊 공포탐욕지수
+  - CNN 기준: 37 (Fear)
+  - 크립토 기준: 70 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 서울 아파트의 평균 전세금이 역대 최고치를 기록하며 주거비 부담이 가중되고 있는 상황이다. 신규 물량 부족과 규제가 겹쳐 전세 매물이 품귀현상을 보이고 있다.
+
+[핵심 뉴스]
+1. (전세) 서울 전세금 역대 최고치 찍었다
+   → 서울 아파트 평균 전세가격이 6억3662만8000원으로 2년 전보다 약 8200만원 상승하며 역대 최고치를 기록했다. 신규 입주 물량 부족과 규제 여파로 전세 매물이 극심하게 줄어 서민의 주거비 부담이 더욱 가중되고 있다.
+   (매일경제 · 09/27 12:25)
+2. (공급) 서울 서리풀 1지구에 500가구 더 짓는다
+   → LH는 서리풀 1지구에 500가구 규모의 신규 주택 공급을 계획하고 있으며, 보편형 임대주택도 포함될 예정이다. 내년 3월 지구계획 승인을 목표로 사업 일정을 앞당길 예정이다.
+   (매일경제 · 09/27 16:35)
+3. (분양청약) 광명 등 이번주 1927가구 분양
+   → 이번 주에 전국 7곳에서 총 1927가구가 분양될 예정이며, 경기 광명시에서는 '광명 시티프라디움 에듀하임'이 분양을 시작한다. 수도권과 지역별로 다양한 주택 옵션이 제공된다.
+   (매일경제 · 09/27 16:35)
+4. (정책) 서울시 주택 공급 방안 촉구
+   → 오세훈 서울시장은 서울의 주택 공급 절벽 상황에 대해 정부와 소통하고 있으며, 이전 시장의 공급 기반 축소를 강조했다. 주거공급을 위한 정책 개선이 요구되고 있다.
+   (매일경제 · 09/26 18:23)
+5. (재건축) 서울 용산 한강변 재건축 사업 속도
+   → 서울 용산 한강변의 재건축 사업이 진행 중이며, 한강맨션과 신동아아파트 모두 중대형 주택으로 재건축해 한강 조망을 확보할 예정이다. 두 단지의 재건축 계획이순조롭게 진행되고 있다.
+   (매일경제 · 09/27 16:38)
+6. (기타) 빌딩 임대시장 양극화 뚜렷
+   → JLL코리아는 서울 오피스 시장에서 프라임 오피스와 B등급 오피스 간의 양극화가 뚜렷해질 것으로 전망하고 있다. 2030년까지 70만~80만평의 신규 오피스 공급이 계획되고 있다.
+   (매일경제 · 09/27 16:35)
+
+[흐름·전망]
+• 서울 아파트의 전세가격 상승세가 계속될 경우, 임대 시장에서의 서민 주거비 부담은 더욱 증가할 가능성이 있다.
+• LH의 신규 공급 확대로 수도권의 주택 공급에 긍정적인 변화가 예상되나, 실질적인 공급 속도는 관건이 될 것이다.
+• 전국적으로 분양 물량이 증가하지만, 수도권 내 수요와 공급의 균형 유지 여부가 중요하다.
+• 오세훈 시장의 공급 논의가 주택 정책에 실질적인 변화를 가져올 수 있을지 관심을 끌고 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 미국의 경제 지표가 역대 최고 수준임을 주장하며, 언론이 이를 보도하지 않는다고 비판했습니다. 또한 공화당이 승리할 경우 성인을 대상으로 5000달러 배당금을 제공하겠다고 언급했습니다.
+
+[주요 발언]
+1. (경제) 트럼프는 최근 미국의 경제 성장 수치가 역대 최고라고 주장하며, 언론이 이를 외면하고 있다고 비판했습니다.
+   (Truth Social · 09/27 09:59)
+2. (경제) 트럼프는 공화당이 승리할 경우 성인들에게 5000달러의 배당금을 제공할 것이라고 언급했습니다.
+   (Truth Social · 09/27 07:27)
+3. (경제) 트럼프는 새로운 연비 기준을 승인했으며, 이는 자동차 제조업체들에게 비용을 절감시킬 것이라고 강조했습니다.
+   (Truth Social · 09/27 04:14)
+4. (경제) 트럼프는 미국의 제조업 부문이 성장하고 있으며, 더 많은 일자리가 창출되고 있다고 주장했습니다.
+   (Truth Social · 09/27 03:58)
+5. (사법) 트럼프는 가짜 뉴스가 백악관에 출입하는 것을 허용하지 말아야 한다고 주장하며, 이를 통해 국가에 피해가 간다고 비판했습니다.
+   (Truth Social · 09/26 21:22)
+
+[흐름·전망]
+• 트럼프의 경제 성장 주장은 향후 공화당의 정책 방향과 유권자들의 반응에 영향을 미칠 가능성이 있습니다.
+• 그가 제안한 배당금 지급은 공화당의 선거 전략에 중요한 요소로 작용할 수 있습니다.
+• 자동차 산업에 대한 그의 정책 변화가 소비자들에게 가격 인하로 이어질지 주목할 필요가 있습니다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
