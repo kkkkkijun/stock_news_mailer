@@ -1,0 +1,237 @@
+2026-09-28T06:32:17.098512+09:00
+
+[오늘의 뉴스 요약] 2026-09-28 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 중동 긴장의 재고조로 인해 국내 기업의 경기 전망이 다시 부정적으로 돌아섰고, 반면 법인 신용카드 결제액은 사상 최대치를 기록하며 반도체 업황 호조를 나타냈다.
+
+[핵심 뉴스]
+1. (성장) 중동 긴장 재고조에…기업 경기전망 한달만에 다시 '부정적'
+   → 10월 기업경기실사지수(BSI)가 98.6으로 한 달 만에 부정 전환되었으며, 수출 BSI는 5개월 만에 부정 전망을 보였다. 반면 고용은 4년 1개월 만에 긍정 전망으로 전환되었다.
+   (연합뉴스 · 09/28 06:00)
+2. (성장) 법인 신용카드 결제액 사상 최대
+   → 2023년 2분기 법인 신용카드 이용 금액이 61조7836억원으로 전년 동기 대비 10.6% 증가하여 역대 최대치를 기록했으며, 총영업잉여는 433조원으로 48% 증가했다.
+   (매일경제 · 09/28 05:57)
+3. (성장) 대구 제조업 경기전망 개선
+   → 대구지역 제조업의 4분기 BSI가 78로 전 분기 대비 10포인트 상승했으나, 건설업은 여전히 36으로 부진을 지속할 것으로 전망되었다.
+   (연합뉴스 · 09/27 12:03)
+4. (기타) 신보, 보증사고로 9조원 회수 못 해
+   → 신용보증기금의 미회수 구상채권이 8조9천310억원에 달하며, 장기 미회수 채권도 1조3천억원 규모에 이르고 있다.
+   (연합뉴스 · 09/28 06:00)
+
+[흐름·전망]
+• 중동 긴장 상화와 글로벌 금리 인상 움직임에 따라 기업 심리 위축이 지속될 가능성을 주의 깊게 살펴봐야 할 것이다.
+• 법인 신용카드 결제액의 증가가 내부 소비로 이어질지, 향후 가계 소비에 미치는 영향을 지켜보는 것이 중요하다.
+• 대구 제조업의 개선이 지속될지, 건설업의 부진이 해소될 수 있는지에 대한 정책적 지원 필요성을 검토해야 한다.
+• 신용보증기금의 미회수 채권 관리 강화가 필요하며, 이를 통해 도덕적 해이를 방지하는 전략이 필요할 것이다.
+
+📈 해외주식 PART
+📰 [NVDA] 3 Simple Reasons I'd Rather Own Nvidia Than SpaceX
+   (Yahoo Finance · 09/28 06:27)
+→ 스페이스X는 많은 주목을 받고 있지만, 엔비디아가 더 나은 투자 선택이라는 세 가지 간단한 이유가 있다. 엔비디아의 안정성과 성장 가능성이 스페이스X보다 더 유리하다는 의견이다.
+
+📰 [NVDA] 3 Simple Reasons I'd Rather Own Nvidia Than SpaceX - The Motley Fool
+   (The Motley Fool · 09/28 06:10)
+→ "Nvidia를 SpaceX보다 소유하고 싶은 3가지 간단한 이유"라는 제목의 기사는 Nvidia가 더 안정적인 투자라는 점, 기술의 지속적인 발전 가능성, 그리고 뛰어난 재무성과를 기준으로 SpaceX보다 우선시해야 한다고 설명하고 있습니다. 투자자에게 Nvidia가 더 유망한 선택이라고 강조합니다.
+
+📰 [NVDA] Apple and Nvidia Are the Two Largest Companies in the World. Which is the Better Stock to Buy? - The Motley Fool
+   (The Motley Fool · 09/28 05:45)
+→ 애플과 엔비디아는 현재 세계에서 가장 큰 두 기업으로, 어느 주식이 더 나은 투자 선택인지에 대한 논의가 이루어지고 있다. 두 회사의 성장 잠재력과 시장 상황을 비교하며 투자자들에게 적합한 선택을 제안하는 내용이다.
+
+📰 [TSLA] SpaceX vs. Tesla: Which Will Be the Largest Company at the End of 2027?
+   (Yahoo Finance · 09/28 06:05)
+→ 엘론 머스크는 세계에서 가장 큰 두 회사인 스페이스X와 테슬라를 관리하고 있으며, 2027년 말 어느 회사가 더 큰 규모가 될지에 대한 논의가 이루어지고 있다.
+
+📰 [TSLA] SpaceX vs. Tesla: Which Will Be the Largest Company at the End of 2027? - AOL.com
+   (AOL.com · 09/28 06:05)
+→ 2027년 말까지 SpaceX와 Tesla 중 어느 회사가 더 큰 규모로 성장할지를 놓고 비교하는 기사입니다. 두 기업의 성장 잠재성과 시장 환경을 분석하며, 향후 전망에 대한 의견이 제시됩니다.
+
+📰 [TSLA] Elon Musk’s Path to Trillionaire Stalls Ahead of Key Tesla and SpaceX Events - benzinga.com
+   (benzinga.com · 09/28 05:55)
+→ 일론 머스크의 트리리어(Tillionaire) 달성에 차질이 생겼으며, 이는 테슬라와 스페이스X의 중요한 이벤트를 앞두고 발생하고 있다. 이러한 상황은 그의 자산 가치에 영향을 미치고 있다.
+
+📰 [HIMS] Form 144 Hims & Hers Health For: 27 September By Investing.com - Investing.com Nigeria
+   (Investing.com Nigeria · 09/28 03:13)
+→ Hims & Hers Health가 9월 27일자로 제출한 Form 144에 대한 내용이 보고되었습니다. 이 문서는 주식의 매각 또는 거래를 위한 계획을 나타내며, 투자자들에게 중요한 정보를 제공합니다.
+
+📰 [HIMS] HIMS Investors Have Opportunity to Lead Hims & Hers Health, Inc. Securities Fraud Lawsuit - Morningstar
+   (Morningstar · 09/28 00:51)
+→ Hims & Hers Health, Inc.의 투자자들이 이 회사와 관련된 증권 사기 소송의 주도권을 가질 수 있는 기회를 갖게 되었다는 소식입니다. 이 사건은 투자자들에게 중요한 일로, 법적 조치를 통해 손해배상을 추구할 수 있는 가능성이 열려 있습니다.
+
+📰 [HIMS] Can Hims & Hers Health (HIMS) Stay Cheap As Sales Face Scrutiny?
+   (Yahoo Finance · 09/27 16:08)
+→ Hims & Hers Health의 주가는 최근 몇 년 동안 강력한 상승세를 보였으나, 현재의 기업 가치는 판매 실적에 의해 뒷받침될 수 있는지에 대한 우려가 커지고 있다. 새로운 제품과 규제 문제에 대한 소식이 전해짐에 따라, 투자자들이 매출 1달러당 지불하고 있는 금액에 이러한 요소가 얼마나 반영되고 있는지에 대한 질문이 제기되고 있다.
+
+📰 [RDW] RKLB, RDW, FLY, VSAT Climb Overnight: $981M Space Force IDIQ Contract Opens Fresh Pentagon Opportunity - stocktwits.com
+   (stocktwits.com · 09/27 18:43)
+→ RKLB, RDW, FLY, VSAT 주식이 상승하며, 미 공군 우주부대의 9억 8천 1백만 달러 규모의 IDIQ 계약으로 새로운 펜타곤 기회가 열렸다는 소식이다. 이 계약은 해당 기업들에게 긍정적인 영향을 미칠 것으로 기대된다.
+
+📰 [RDW] RDW Oct 2026 10.000 call (RDW261030C00010000) Stock Price, News, Quote & History - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 09/27 17:02)
+→ Yahoo! Finance Canada에서 RDW의 2026년 10월 10.000 콜 옵션(RDW261030C00010000)의 주가, 뉴스, 견적 및 역사에 대한 정보를 제공하고 있습니다. 해당 옵션의 투자에 관심이 있는 투자자들에게 유용한 자료입니다.
+
+📰 [RDW] RILY,RCAT,RDW,DOMH,KRT,FRST,CODI,FIS,PLAY,IDN,SVRA,TRST,ULBI,CADL,SHBI,GLSI,BOTJ | Stock Prices | Quote Comparison - Yahoo Finance - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 09/27 10:12)
+→ Yahoo Finance Canada에서 RILY, RCAT, RDW, DOMH 등 여러 주식의 가격과 인용 비교 정보를 제공하고 있습니다. 이 목록은 다양한 기업의 주식 현황을 간결히 보여주고 있습니다.
+
+📰 [IREN] IREN's 4.5% Friday Slide Exposes a Sector Reckoning Over AI Cloud Economics - AD HOC NEWS
+   (AD HOC NEWS · 09/27 21:51)
+→ IREN의 주가가 금요일에 4.5% 하락하면서 AI 클라우드 경제에 대한 산업 전반의 재조정을 암시하고 있습니다. 이 사건은 AI 기술과 관련된 클라우드 서비스의 경제적 현실에 대한 우려를 불러일으키고 있습니다.
+
+📰 [IREN] IREN's 4.5% Slide Puts Capital Discipline Under the Microscope - AD HOC NEWS
+   (AD HOC NEWS · 09/27 18:20)
+→ IREN의 주가가 4.5% 하락하면서 기업의 자본 관리에 대한 논란이 제기되고 있다. 이로 인해 투자자들은 IREN의 재정 건전성과 경영 전략에 대해 다시 생각하게 되었다.
+
+📰 [IREN] JPMorgan Predicts IREN Will Generate $24 Billion in Annual Revenue by 2030
+   (Yahoo Finance · 09/27 00:59)
+→ JPMorgan이 IREN의 평가를 기존의 언더웨이트에서 오버웨이트로 변경하며, 2030년까지 연간 240억 달러의 수익을 생성할 것으로 예측했습니다. 이와 관련하여 제시된 목표 주가는 해당 회사가 현재 존재감이 미미하다는 점을 시사하며, 이는 모든 AI 인프라 투자자들이 고민해야 할 질문을 던집니다.
+
+📰 [RKLB] Rocket Lab (NASDAQ: RKLB) Eyes 69% Upside As Neutron Launch And Iridium Deal Define Its Next Chapter - foreignpolicyjournal.com
+   (foreignpolicyjournal.com · 09/28 01:58)
+→ 로켓랩(Rocket Lab)은 네우트론 로켓 발사와 이리듐(Iridium) 계약을 통해 69%의 성장 가능성을 보고 있다. 이러한 발전은 회사의 다음 단계에 중요한 전환점을 제공할 것으로 기대된다.
+
+📰 [RKLB] Cathie Wood Loads Up On RKLB Stock — Cantor Pegs Iridium And Neutron As Major Catalysts For Rocket Lab - stocktwits.com
+   (stocktwits.com · 09/27 18:52)
+→ 캐시 우드는 RKLB 주식을 대량으로 매입했으며, Cantor는 로켓랩의 주요 촉매제로 이리듐과 뉴트론을 지목했습니다. 이는 로켓랩의 성장 가능성을 높이는 중요한 요소로 평가되고 있습니다.
+
+📰 [RKLB] Rocket Lab Corporation $RKLB Position Boosted by Envestnet Portfolio Solutions Inc. - MarketBeat
+   (MarketBeat · 09/27 16:07)
+→ Envestnet Portfolio Solutions Inc.가 로켓랩 코퍼레이션($RKLB)의 지분을 늘렸다는 소식이 전해졌습니다. 이로 인해 Rocket Lab의 투자 포지션이 강화되었다고 보도되었습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] New Bitcoin proposal rescues locked multisig wallets – At a hidden cost - cryptonews.net
+   (cryptonews.net · 09/28 05:22)
+→ 새로운 비트코인 제안이 잠긴 멀티시그 지갑을 복구할 수 있는 방법을 제공하지만, 숨겨진 비용이 따를 수 있다는 내용입니다. 이 제안은 사용자들이 잠긴 자산에 접근할 수 있게 하면서도, 일부 부작용이나 위험 요소를 동반할 수 있음을 경고하고 있습니다.
+
+📰 [BTC-USD] Bitcoin Price Climbs Back Toward $85K With Bulls in the Driver's Seat - cryptonews.net
+   (cryptonews.net · 09/28 05:22)
+→ 비트코인 가격이 상승하며 다시 85,000달러에 가까워지고 있으며, 강세장이 지속되고 있는 상황입니다. 투자자들이 시장에 대한 긍정적인 전망을 보이고 있습니다.
+
+📰 [BTC-USD] AI Model Watches Bitcoin’s Underworld as Illicit Transactions Evolve Into Hidden Networks - Bioengineer.org
+   (Bioengineer.org · 09/28 05:07)
+→ AI 모델이 비트코인 관련 불법 거래의 진화를 추적하며, 이러한 거래가 숨겨진 네트워크로 발전하고 있음을 감시하고 있다. 이러한 변화는 범죄 행위가 더욱 은밀해지고 있다는 것을 시사한다.
+
+📰 [ETH-USD] Can Arbitrum Reach $1? What It Would Take, and Why Ethereum Could Decide It
+   (Yahoo Finance · 09/28 05:50)
+→ Arbitrum은 최근 급등세를 보였지만, 다음 단계로 나아가기 위해서는 이더리움이 중요한 역할을 할 수 있는지에 대한 의문이 제기되고 있다. 이더리움의 상태와 건강성이 Arbitrum의 미래에 영향을 미칠 것으로 보인다.
+
+📰 [ETH-USD] Can Arbitrum Reach $1? What It Would Take, and Why Ethereum Could Decide It - Yahoo Finance
+   (Yahoo Finance · 09/28 05:50)
+→ Arbitrum이 1달러에 도달할 수 있는 가능성과 그 조건에 대해 분석한 기사입니다. 특히, 이더리움의 가격과 생태계가 Arbitrum의 성장에 영향을 줄 수 있다는 점을 강조하고 있습니다. 성공적인 발전과 채택이 이루어질 경우, Arbitrum의 가치 상승이 기대된다는 내용입니다.
+
+📰 [ETH-USD] Is XRP a Good Investment Right Now at $1.54?
+   (Yahoo Finance · 09/28 05:42)
+→ 현재 XRP 가격이 $1.54인 가운데, 여름 저점에서 54% 반등했지만 지속적인 저항으로 상승세가 제한되고 있습니다. 2026년 손실률이 다른 주요 암호화폐들보다 더 크므로, 현재 가격에서 구매하기 전에 향후 회복 가능성을 판단할 중요한 수준들이 존재합니다.
+
+📰 [SOL-USD] A New Dawn for XRP and Solana ETFs in the Crypto Sphere - OneSafe
+   (OneSafe · 09/28 05:58)
+→ XRP와 Solana ETF가 암호화폐 시장에서 새롭게 등장하며 주목받고 있습니다. 이러한 상품들은 투자자들에게 새로운 기회를 제공할 것으로 기대됩니다.
+
+📰 [SOL-USD] Solana Sees Biggest ETF Week Since Launch - cryptonews.net
+   (cryptonews.net · 09/28 05:32)
+→ 솔라나가 출시 이후 가장 큰 ETF 주를 기록했습니다. 투자자들의 관심이 높아지면서 거래량이 급증하며, 이는 솔라나의 시장에서의 성장을 반영하고 있습니다.
+
+📰 [SOL-USD] Top 5 Crypto Growth Picks for 2026: Remittix, Solana, Polkadot, Chainlink and Aave - TechBullion
+   (TechBullion · 09/28 05:26)
+→ 2026년의 암호화폐 성장 기대주로 Remittix, Solana, Polkadot, Chainlink, Aave가 선정되었다. 이들 프로젝트는 향후 성장 가능성이 높아 투자자들 사이에서 주목받고 있다.
+
+📰 [BMNR] The Technical Signals Behind (BMNR) That Institutions Follow - Stock Traders Daily
+   (Stock Traders Daily · 09/27 20:38)
+→ BMNR의 기술 신호가 기관 투자자들이 따르는 기준을 설명하는 내용입니다. 이 신호는 주식 거래에 있어 중요한 지표로 작용하며, 투자자들에게 유용한 정보를 제공합니다.
+
+📰 [BMNR] BitMine Immersion Technologies, Inc. $BMNR Stock Position Increased by Corient Private Wealth LP - MarketBeat
+   (MarketBeat · 09/27 16:54)
+→ Corient Private Wealth LP가 BitMine Immersion Technologies, Inc.의 주식 보유 비율을 증가시켰다는 소식이 전해졌다. 이로 인해 회사의 주식에 대한 관심이 높아질 것으로 예상된다.
+
+📰 [BMNR] Buy BitMine Immersion Technologies, Inc. (XBMNR) with credit card | How to Buy BitMine Immersion Technologies, Inc. - OKX
+   (OKX · 09/27 13:57)
+→ OKX에서 신용카드를 사용하여 BitMine Immersion Technologies, Inc. (XBMNR)를 구매하는 방법에 대한 안내가 제공되었습니다. 관련 절차와 정보를 통해 사용자들이 쉽게 이 회사를 구매할 수 있도록 지원하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 전반적으로 혼조세를 보이며, 일부 자산은 상승세를 유지하는 가운데 비트코인 점유율이 소폭 증가했다. 특히, 금리 인상 등의 거시적 요인에도 불구하고 주요 암호자산들이 안정세를 찾고 있음이 눈에 띈다.
+
+[핵심 뉴스]
+1. (규제) 8420만달러 캡스톤 자산 압류
+   → 미국 캘리포니아 동부지방법원은 캡스톤 리미티드 명의의 약 8420만달러(약 1143억원)의 자산을 압류 대상으로 발표했다. 압류된 자산에는 웰스파고와 JP모건체이스 계좌, 약 117만 USDT 등의 가상자산이 포함되어 있으며, 캡스톤은 정부의 재산 몰수 청구에 이의를 제기할 예정이다.
+   (토큰포스트 · 09/28 06:22)
+2. (온체인) 이더리움 숏 포지션 증가
+   → 이더리움(ETH) 가격이 6월 저점 대비 약 86% 반등한 가운데, 비트파이넥스의 ETH 숏 포지션이 9월 24일 기준 약 7만3056ETH로 증가했다. 이는 최근 일주일 동안 5만3800ETH 이상 늘어난 것으로, 증가율이 약 280%에 달했다.
+   (토큰포스트 · 09/28 06:12)
+3. (시세) 암호화폐 시장 혼조세
+   → 미국 연방준비제도의 기준금리 인상과 30년물 국채금리 상승 속에서도 암호화폐 시장은 단기적으로 가격 방어력을 보이며 비트코인과 이더리움 모두 상승세를 이어가고 있다. 전체 시가총액은 2조9027억달러를 기록하며 거래량은 618억8700만달러에 달했다.
+   (토큰포스트 · 09/28 05:57)
+4. (기타) 비트겟 해킹 사건
+   → 비트코인 가격이 전날 대비 0.85% 상승해 8만4710달러에 거래되고 있으며, 이더리움은 0.27% 오른 2691달러에 거래되고 있다. 비트코인 점유율은 58.63%로 확대됐고, 파생상품 거래량은 12.62% 증가하며 단기 매매 수요가 커졌다.
+   (토큰포스트 · 09/28 05:01)
+5. (시세) 미국 국채금리 급등과 비트코인
+   → 미국 국채금리가 급등하면서 비트코인 시장에 부담이 커질 가능성이 지적되고 있다.
+   (경향게임스 · 09/28 05:05)
+
+[흐름·전망]
+• 단기적으로 비트코인과 이더리움의 점유율 변화가 시장의 향후 방향성을 가늠하는 중요한 지표가 될 것으로 보인다.
+• 캡스톤 자산 압류 사건의 진행 상황이 시장에 미치는 영향도 주목할 필요가 있다.
+• 이더리움의 숏 포지션 증가가 향후 가격 변동성에 어떻게 작용할지 관심 있게 지켜봐야 한다.
+• 금리 인상과 같은 거시적인 요인이 암호화폐 시장에 미치는 영향 역시 지속적으로 분석해야 할 포인트이다.
+
+📊 공포탐욕지수
+  - CNN 기준: 37 (Fear)
+  - 크립토 기준: 70 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+서울 아파트 전세보증금이 2년 새 8천만원 상승하며 역사적인 최고치를 기록하고 있으며, 이는 임차인들의 주거비 부담을 가중시키고 있다. 공급 물량 부족과 대출 규제가 주요 요인으로 분석된다.
+
+[핵심 뉴스]
+1. (전세) 매물 품귀에 서울 아파트 전세보증금 2년 전보다 8천만원 상승
+   → 서울 아파트 평균 전세가는 2년 전 대비 8천268만원 상승하여 6억3천662만원에 이르렀고, 중위 전세가격 또한 8천만원 증가하였다. 이에 따라 임차인들은 전세 계약 만료 시 평균 8천만원 이상의 보증금을 더 지불해야 하는 상황이다.
+   (연합뉴스 · 09/27 05:55)
+2. (분양청약) 광명 등 이번주 1927가구 분양
+   → 28일부터 다음 달 2일까지 광명 등에서 1927가구가 분양될 예정이며, 광명 시티프라디움 에듀하임의 경우 전용면적 84㎡ 분양가가 11억8000만원에 달할 것으로 보인다.
+   (매일경제 · 09/27 16:35)
+3. (공급) 서울 서리풀 1지구에 500가구 더 짓는다
+   → LH는 서울 서리풀 1지구 공급 물량을 500가구 늘려 총 1만 8500가구로 확대할 예정이다. 신혼부부와 출산 가구를 위한 중형 평형 임대주택도 포함되어 있으며, 착공은 2028년 하반기에 계획되고 있다.
+   (매일경제 · 09/27 16:35)
+4. (재건축) 62층 한강맨션·49층 신동아 …'한강뷰' 용산 재건축 다시 뛴다
+   → 용산에서 한강뷰를 갖춘 재건축 아파트의 투자가 다시 활성화되고 있으며, 이는 리테일 상권 개발과 함께 전반적인 상업용 부동산 시장의 변화가 주효하고 있음을 나타낸다.
+   (매일경제 · 09/28 04:00)
+5. (정책) 계속 오르는 서울 집값 국감 도마…규제·공급대책 실효성 따진다
+   → 서울의 집값 상승 문제에 대해 국정감사에서 규제와 공급대책의 실효성을 검토하는 논의가 진행되고 있다.
+   (뉴스1 · 09/28 05:20)
+6. (매매) 높아진 서울 내집 문턱…유주택 신혼부부 10쌍 중 3쌍 '6억초과'
+   → 서울의 유주택 신혼부부 중 31%가 보유 주택이 6억원 이상의 공시가격을 기록하고 있으며, 이는 9년 전의 5.9%에서 급증한 수치다. 주거자산의 양극화 현상이 심화되고 있다.
+   (연합뉴스 · 09/28 05:51)
+
+[흐름·전망]
+• 서울 아파트 전세가 상승에 따른 임차인 부담이 증가하고 있어, 향후 전세 재계약 시 임대료 상승 여부가 관심사로 남을 것이다.
+• 공급 부족과 대출 규제 등이 맞물려 신규 분양 시장에 어떤 영향을 미칠 것인지 주의가 필요하다.
+• 서울 서리풀 1지구의 주택 공급 확대가 향후 지역의 주거 안정성에 미치는 영향을 주목할 필요가 있다.
+• 양극화되고 있는 주거 자산 현상이 서울 부동산 시장의 구조적 문제로 작용할 것으로 예상되며, 정책적 대응이 요구된다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 미 대법원이 미주리주에서의 선거 승리를 방해하고 있다고 주장하며, 공정성과 선거 안전을 위한 시민들의 노력에 감사함을 표했다. 또한, 현재 미국 내 고용률이 역사상 최고로 증가했다고 강조했다.
+
+[주요 발언]
+1. (경제) 트럼프는 현재 미국에서 역사상 가장 많은 사람들이 일하고 있다고 주장했다.
+   (Truth Social · 09/27 22:07)
+2. (경제) 그는 국면록에서 재정 수치가 최고라고 언급하며 미디어가 이를 보도하지 않는다고 비판했다.
+   (Truth Social · 09/27 21:09)
+3. (사법) 트럼프는 미 대법원이 미주리주에 대한 판결을 반복적으로 무시하고 있다고 비난하며, 공정한 선거를 위한 노력을 지지했다.
+   (Truth Social · 09/28 00:19)
+4. (경제) 또한, 공화당이 승리할 경우 모든 성인에게 5000달러의 배당금을 지급할 것이라고 주장했다.
+   (Truth Social · 09/27 07:27)
+
+[흐름·전망]
+• 트럼프가 주장한 고용 증가와 재정 상태는 대선과 관련한 정책에 영향을 줄 가능성이 있다.
+• 미 대법원의 결정이 선거 관련 논란에 어떤 영향을 미칠지 주목해야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
