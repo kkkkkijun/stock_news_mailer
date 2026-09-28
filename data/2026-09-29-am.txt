@@ -1,0 +1,245 @@
+2026-09-29T06:32:33.011760+09:00
+
+[오늘의 뉴스 요약] 2026-09-29 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 금융시장에서는 미국 국채금리 급등의 영향으로 코스피가 2.70% 하락하며 7천 피트 아래로 떨어졌다. 원/달러 환율도 상승세를 보이며 1,365.1원에 마감했다.
+
+[핵심 뉴스]
+1. (금리) 미국 국채금리 급등, 기술주에 부정적 영향
+   → 미국 국채금리가 5.20%를 넘어서며 2007년 이후 최고치를 기록하고, S&P500과 나스닥 지수가 각각 0.77%, 0.92% 하락하는 등 우려가 확산됐다.
+   (매일경제 · 09/29 05:36)
+2. (환율) 원/달러 환율, 미국 국채 금리에 따라 상승
+   → 28일 원/달러 환율은 1,365.1원으로 7.6원 상승하며, 이는 미국 국채 금리 급등의 부정적 영향을 반영한 결과로 분석된다.
+   (연합뉴스 · 09/28 15:53)
+3. (성장) 비제조업 체감경기 3년 만에 최고 기록
+   → 9월 비제조업 체감경기는 3년 만에 최고치인 98.9로 집계되었지만, 제조업은 파업과 고용일수 감소로 99.5로 하락했다.
+   (연합뉴스 · 09/29 06:00)
+4. (정책) 한은, 대규모 통화안정증권 발행 계획
+   → 한국은행은 다음 달 최대 7조 원 규모의 통화안정증권을 발행 예정이며, 경쟁 입찰을 통해 6조3천억 원을 모집할 계획이다.
+   (연합뉴스 · 09/28 17:27)
+5. (기타) 코스피 급락, 추석 이후 악재 영향
+   → 코스피는 2.70% 하락하며 6,889.74로 마감했으며, 외국인과 기관의 순매도가 4조 원에 달하면서 주요 기업들이 큰 폭으로 하락했다.
+   (연합뉴스 · 09/28 16:19)
+
+[흐름·전망]
+• 미국 국채금리 상승세가 지속될 경우 글로벌 증시에 미치는 추가적인 부정적 영향을 주의 깊게 지켜봐야 한다.
+• 원/달러 환율의 상승 추세가 이어진다면 수출업체의 수익성에 미치는 영향과 이에 대한 정책 대응이 주목받을 전망이다.
+• 비제조업의 호조세가 제조업에 미치는 영향을 고려할 때, 통화정책이 이러한 경제 구조 변화에 어떻게 대응할지가 중요한 과제가 될 것이다.
+• 한국은행의 통화안정증권 발행이 유동성 조절에 어떤 효과를 미칠지와 함께 시장 반응을 지켜보아야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia says new tool can contain rogue AI agents in "milliseconds" - Axios
+   (Axios · 09/29 06:21)
+→ Nvidia는 새로운 도구를 개발하여 비정상적인 AI 에이전트를 "밀리초" 단위로 차단할 수 있다고 발표했습니다. 이 기술은 AI의 안전성을 높이고 잠재적인 위험 요소를 신속하게 대응하는 데 기여할 것으로 기대됩니다.
+
+📰 [NVDA] Nvidia Thinks It Can Stop Rogue AI—Without All That Government Oversight - motherjones.com
+   (motherjones.com · 09/29 06:18)
+→ Nvidia는 정부의 감독 없이도 악의적인 AI의 발전을 막을 수 있다고 주장하고 있습니다. 이들은 자사의 기술적 조치를 통해 AI의 위험을 관리할 수 있다고 믿고 있습니다.
+
+📰 [NVDA] What Nvidia's $150 billion stock buyback means for shareholders and potential investors
+   (Yahoo Finance · 09/29 06:18)
+→ Nvidia는 1,500억 달러 규모의 대규모 자사주 매입을 발표했습니다. 이는 현재 주주에게는 주가 상승의 긍정적인 신호로 작용할 수 있으며, 잠재적인 투자자에게는 회사의 재무 건전성을 나타내는 중요한 지표가 될 것입니다.
+
+📰 [TSLA] Tesla (NASDAQ:TSLA) Shares Down 3.9% After Analyst Downgrade - MarketBeat
+   (MarketBeat · 09/29 06:02)
+→ 테슬라(NASDAQ:TSLA) 주가가 분석가의 하향 조정 피드백 이후 3.9% 하락했다. 이 조정은 투자자들에게 부정적인 영향을 미친 것으로 보인다.
+
+📰 [TSLA] [Key Points of NY Stocks] Boeing and Tesla fall; NVIDIA remains firm (28th) - Moomoo
+   (Moomoo · 09/29 05:53)
+→ 28일 미국 주식 시장에서 보잉과 테슬라 주가는 하락한 반면, NVIDIA 주가는 견조한 모습이었습니다. 전체적으로 기술주와 항공우주 산업 주식 간의 차별화된 움직임이 나타났습니다.
+
+📰 [TSLA] Dow Jones Futures: Trump Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla In Focus - Investor's Business Daily
+   (Investor's Business Daily · 09/29 05:48)
+→ 도우 존스 선물 시장이 트럼프의 발언으로 인해 하락세를 보였으며, 엘론 머스크가 이끄는 스페이스엑스와 테슬라가 주목받고 있다. 이로 인해 투자자들의 관심이 집중되고 있다.
+
+📰 [HIMS] Bronstein, Gewirtz & Grossman LLC Urges Hims & Hers Health, - GlobeNewswire
+   (GlobeNewswire · 09/29 01:00)
+→ Bronstein, Gewirtz & Grossman LLC가 Hims & Hers Health에 주주들의 이익을 보호할 것을 촉구했습니다. 이들은 기업의 경영 및 재무 상황에 대한 우려를 표현하며 조치를 요구하고 있습니다.
+
+📰 [HIMS] Kaplan Fox Reminds Investors of Hims & Hers Health, Inc. - GlobeNewswire
+   (GlobeNewswire · 09/28 23:30)
+→ Kaplan Fox는 투자자들에게 Hims & Hers Health, Inc.에 대한 정보를 상기시키고 있습니다. 이번 공지는 투자자들이 회사를 주의 깊게 살펴보도록 독려하는 내용을 담고 있습니다.
+
+📰 [HIMS] Can Hims & Hers Health (HIMS) Stay Cheap As Sales Face Scrutiny?
+   (Yahoo Finance · 09/27 16:08)
+→ Hims & Hers Health의 주가는 최근 여러 해에 걸쳐 강한 상승세를 보였으나, 현재의 가치가 매출에 의해 뒷받침될 수 있을지에 대한 의문이 제기되고 있다. 새로운 제품 출시와 규제 검사와 관련된 최근 뉴스가 주목받으면서, 투자자들이 매출당 지불하는 금액에 얼마나 반영되었는지가 주요 쟁점으로 떠오르고 있다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Price Down 3.6% Following Insider Selling - MarketBeat
+   (MarketBeat · 09/29 06:04)
+→ Redwire의 주가가 내부자 매각 사건 이후 3.6% 하락했습니다. 시장에서의 반응은 부정적이며, 투자자들의 우려가 커지고 있는 상황입니다.
+
+📰 [RDW] One NYSE-Listed Aerospace & Defense Company Near Resistance Level: RDW - Kalkine
+   (Kalkine · 09/28 22:32)
+→ NYSE에 상장된 항공우주 및 방산 회사가 저항선 근처에 위치하고 있다는 내용의 뉴스입니다. 특정 주식인 RDW에 대한 언급이 있으며, 현재 주가가 주요 기술적 저항 구간에 도달했다고 보고되고 있습니다.
+
+📰 [RDW] Space Stocks Are Roaring Back In August — Here’s Why ASTS, RKLB, RDW And Their Peers Are Leaving SpaceX Behind - Stocktwits
+   (Stocktwits · 09/28 02:31)
+→ 8월에 우주 관련 주식들이 급등하며 ASTS, RKLB, RDW 등의 기업들이 SpaceX를 앞서고 있는 이유를 설명하고 있습니다. 이들 기업은 새로운 기술 및 사업 전략을 통해 시장에서 강력한 성과를 보이고 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Price Down 5.5% - Should You Sell? - MarketBeat
+   (MarketBeat · 09/29 06:22)
+→ IREN 주식이 5.5% 하락했습니다. 투자자들은 주식을 매도하는 것이 좋을지 검토해야 할 시점입니다.
+
+📰 [IREN] IREN Limited (IREN) Stock Prediction: $65 Bull, $26 Bear - FinanceFeeds
+   (FinanceFeeds · 09/29 01:30)
+→ IREN Limited의 주식 예측에 따르면, 주가는 낙관적인 경우 65달러까지 상승할 수 있는 반면, 비관적인 경우 26달러까지 하락할 수 있는 것으로 보입니다. 이를 통해 시장의 변동성을 반영하고 있습니다.
+
+📰 [IREN] IREN Stock Is Up 17% in 2026. Here’s Where the Stock Could Go - tikr.com
+   (tikr.com · 09/29 00:14)
+→ 2026년 IREN 주식이 17% 상승한 가운데, 앞으로의 주가 전망에 대한 논의가 이어지고 있습니다. 전문가들은 주가의 추가 상승 가능성을 분석하고 있으며, 투자자들에게 주의 깊은 접근을 권장하고 있습니다.
+
+📰 [RKLB] Cantor Backs Rocket Lab’s Launch Momentum After 97th Electron Mission – Highlights These ‘Competitive Advantages’
+   (Yahoo Finance · 09/29 02:15)
+→ Cantor Fitzgerald는 Rocket Lab의 발사 기록이 중요한 차별점이라고 강조하며, 'Overweight' 등급과 122달러의 목표 주가를 다시 확인했습니다. 이는 Rocket Lab의 발사 모멘텀에 대한 긍정적인 평가를 반영합니다.
+
+📰 [RKLB] Increased Rocket Lab (RKLB ~;-) - Moomoo
+   (Moomoo · 09/29 01:52)
+→ 로켓랩(Rocket Lab)의 주가가 상승하고 있으며, 이는 Moomoo와 관련이 있는 것으로 보인다. 이와 같은 주가 상승은 투자자들의 관심을 끌고 있다.
+
+📰 [RKLB] Can Rocket Lab's Rapid Prototyping Support Faster Production Growth? - The Globe and Mail
+   (The Globe and Mail · 09/29 00:34)
+→ 로켓랩의 신속한 프로토타입 제작이 생산 성장을 가속화할 수 있을지에 대한 논의가 담긴 기사이다. 이 과정은 더 빠른 혁신과 효율성을 가능하게 하여 회사의 전체 생산 능력을 향상시킬 것으로 기대된다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Riot Platforms Falls as Bitcoin Weakens and Investors Digest Recent Debt Paydown - Quiver Quantitative
+   (Quiver Quantitative · 09/29 06:20)
+→ 비트코인의 하락으로 Riot Platforms 주가가 하락했으며, 투자자들은 최근의 부채 상환 소식을 분석하고 있다. 이로 인해 시장에서의 반응이 영향을 받고 있다.
+
+📰 [BTC-USD] Coinbase CEO says his $400K Bitcoin target isn't guaranteed
+   (Yahoo Finance · 09/29 06:03)
+→ 코인베이스 CEO 브라이언 암스트롱은 비트코인의 목표가 40만 달러라는 입장을 유지하였으나, 이 목표가 보장된 것은 아니라고 경고했습니다.
+
+📰 [BTC-USD] Bitcoin Could Go as High as $600,000 in Best-Case Scenario, Veteran Trader Says - Benzinga
+   (Benzinga · 09/29 05:54)
+→ 경험 많은 트레이더는 비트코인이 최상의 시나리오에서 60만 달러까지 상승할 수 있다고 전망했습니다. 그는 시장의 여러 요인에 따라 비트코인의 가치는 크게 변동할 수 있다고 덧붙였습니다.
+
+📰 [ETH-USD] Tom Lee's Bitmine Buys Another $46 Million Worth of Ethereum
+   (Yahoo Finance · 09/29 06:17)
+→ 톰 리의 비트마인은 암호화폐 이더리움의 4,600만 달러 상당을 추가로 구매하며, 전체 유통 이더리움의 5%를 확보하는 목표에 접근하고 있다.
+
+📰 [ETH-USD] Solana Price Prediction: Could SOL Overtake Ethereum as Remittix Prepares for Its RTX Market Debut? - StreetInsider
+   (StreetInsider · 09/29 04:57)
+→ Solana(SOL)의 가격 전망에 대한 분석이 진행되고 있으며, Remittix가 RTX 시장에 데뷔하면서 SOL이 이더리움(ETH)을 초과할 가능성이 제기되고 있습니다. 전문가들은 Solana의 성장 잠재력이 이더리움에 도전할 수 있는지에 대해 논의하고 있습니다.
+
+📰 [ETH-USD] Ethereum Pulls Back as DigiTap’s September 30 Reveal Puts a Fresh Presale Catalyst Two Days Away - StreetInsider
+   (StreetInsider · 09/29 04:46)
+→ 이더리움이 DigiTap의 9월 30일 발표를 앞두고 하락세를 보이고 있으며, 이는 새로운 사전판매 촉매제가 이틀 남았음을 의미합니다. 시장의 관심이 DigiTap의 행사에 집중되고 있는 상황입니다.
+
+📰 [SOL-USD] Solana to triple transaction size and speed wit... - Pluang
+   (Pluang · 09/29 06:09)
+→ 솔라나가 거래 규모와 속도를 세 배로 늘리겠다고 발표했습니다. 이를 통해 더 많은 사용자와 거래를 처리할 수 있게 될 것으로 기대됩니다.
+
+📰 [SOL-USD] Solana Price Prediction: Could SOL Overtake Ethereum as Remittix Prepares for Its RTX Market Debut? - StreetInsider
+   (StreetInsider · 09/29 04:57)
+→ 솔라나(SOL)의 가격 예측에 따르면, 리미틱스가 RTX 시장 데뷔를 준비하는 가운데 솔라나가 이더리움(ETH)을 능가할 가능성이 제기되고 있다. 이러한 상황은 암호화폐 시장의 경쟁 구도를 변화시킬 수 있는 중요한 시점으로 분석되고 있다.
+
+📰 [SOL-USD] Solana Price Prediction: A Return to $150 or a First Run Toward $1 for DigiTap? - StreetInsider
+   (StreetInsider · 09/29 04:52)
+→ 솔라나의 가격 전망에 대한 논의가 이루어지고 있으며, 이 코인이 150달러로 회복할 가능성이나 DigiTap이 1달러를 향해 첫 걸음을 내디딜지에 대한 의견이 나누어지고 있다. 시장의 변동성과 투자자들의 관심이 중요한 변수로 작용할 것으로 보인다.
+
+📰 [BMNR] Strategy ($MSTR) and Bitmine ($BMNR) Add to Bitcoin (BTC) and Ethereum (ETH) Holdings Amid Iran Tensions and AI Uncertainty - Crowdfund Insider
+   (Crowdfund Insider · 09/29 03:40)
+→ 기업 Strategy와 Bitmine이 이란의 긴장 상황과 인공지능의 불확실성 속에서 비트코인(BTC)과 이더리움(ETH) 소 holdings를 늘리고 있다. 이러한 결정은 암호화폐 시장에서의 변동성에 대응하기 위한 전략으로 보인다.
+
+📰 [BMNR] Bitmine Buys 17,362 ETH as BMNR Stock Holds $27 - Benzinga
+   (Benzinga · 09/28 23:36)
+→ Bitmine은 17,362 ETH를 구매했으며, BMNR 주식은 27달러를 유지하고 있습니다. 이와 같은 움직임은 암호화폐 시장에서의 Bitmine의 전략을 반영하고 있습니다.
+
+📰 [BMNR] Bitmine Buys 17,362 ETH as BMNR Stock Holds $27 - TradingView
+   (TradingView · 09/28 23:36)
+→ Bitmine은 BMNR 주가가 $27를 유지하는 가운데 17,362 이더리움을 구매했습니다. 이번 구매는 암호화폐 시장에서의 기업 활동을 보여줍니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 규제 뉴스와 청산 이벤트로 인해 전반적으로 하락세를 보이고 있다. 시장 심리는 불확실성과 경계심으로 가득 차 있으며, 투자자들은 신중한 자세를 취하고 있다.
+
+[핵심 뉴스]
+1. (규제) SEC FAQ 갱신으로 투자자 경계심 고조
+   → 미 증권거래위원회(SEC)의 가상자산 증권법 FAQ 갱신 이후, 비트코인은 24시간 기준 1.59% 하락해 83,363달러로 거래 중이며, 이더리움은 0.63% 하락해 2,674달러에 거래되고 있다.
+   (토큰포스트 · 09/29 06:24)
+2. (기타) 암호화폐 시장에서 3억7683만달러 청산
+   → 지난 24시간 동안 암호화폐 시장에서 3억7683만달러 규모의 레버리지 포지션이 청산되었으며, 롱 포지션의 청산이 77.16%를 차지했다.
+   (토큰포스트 · 09/29 04:57)
+3. (시세) 암호화폐 시장 하락세 지속
+   → 비트코인과 이더리움의 시장 점유율은 각각 58.64%와 11.43%로 소폭 증가했지만, 거래소에서는 전체적으로 하락세가 지속되고 있다.
+   (토큰포스트 · 09/29 05:02)
+4. (기타) 디센트 지갑서 XRP 탈취 사건 발생
+   → 디센트 앱 월렛에서 XRP 1240만개가 탈취되었으며, 피해 규모는 약 1800만달러로 추정된다.
+   (토큰포스트 · 09/29 05:01)
+5. (거래소) 소셜 트레이딩 앱, 바이낸스 대체 가능성 제기
+   → 소셜 트레이딩 앱이 향후 바이낸스와 같은 기존 거래소를 대체할 가능성이 제기되며, 이 앱들은 거래의 재미와 편리함을 강조하고 있다.
+   (토큰포스트 · 09/29 06:13)
+
+[흐름·전망]
+• 규제 뉴스로 인한 투심 위축이 단기적으로 가격에 영향을 줄 것으로 보인다.
+• 청산 규모가 증가하고 있는 만큼, 레버리지 투자자들은 위험 관리에 더욱 주의해야 할 시점이다.
+• 소셜 트레이딩의 부상은 거래 시장의 구조를 변화시킬 가능성이 있으며, 사용자 경험 개선이 핵심 요인으로 작용할 것이다.
+• 디센트 지갑 사건은 보안 문제를 다시금 강조하는 계기가 되었으며, 이에 대한 관심이 더욱 높아질 것으로 예상된다.
+
+📊 공포탐욕지수
+  - CNN 기준: 34 (Fear)
+  - 크립토 기준: 74 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울의 매수심리가 하락하는 가운데 인천에서는 거래량 증가와 신고가가 이어지며 벗어나고 있는 모습이다.
+
+[핵심 뉴스]
+1. (매매) 서울 집값 부담에 인천으로…거래량 10% 늘고 신고가 6배↑
+   → 서울의 주택매매시장 소비심리지수는 132.5로 7.4포인트 하락한 반면, 인천은 0.5포인트 하락하며 비교적 안정세를 보이고 있다. 인천 아파트 매매거래는 올해 1~7월 1만8366건으로 지난해 같은 기간 대비 10.8% 증가했다.
+   (매일경제 · 09/28 16:36)
+2. (분양청약) “기다리던 새 아파트 나온다”…공급 가뭄 지역, 신규 분양에 수요자 ‘눈길’
+   → 공급이 부족했던 지역에서 신규 아파트 청약이 호조를 보이며, 예를 들어 진주에서 평균 21.15대 1의 경쟁률을 기록하였다. 공급 공백이 있었던 지역에서 새로운 아파트가 입주 후 시세를 이끄는 경향이 뚜렷해지고 있다.
+   (매일경제 · 09/28 13:52)
+3. (기타) 3기 신도시 보상금, 벌써 1조 더 썼다
+   → 3기 신도시 보상금이 당초 예상보다 1조원 넘게 증가하여 총 13조1726억원에 달하며, 명도소송이 2700건 이상으로 늘었다. 이로 인해 착공 지연 우려가 커지고 있다.
+   (매일경제 · 09/28 18:53)
+4. (임대) "품질도 중요" 청년 공공임대, 입주 늘어나니 시설보수도 급증
+   → 청년층을 위한 공공임대주택의 입주물량이 2배 증가하면서 같은 기간 시설보수 건수도 9배 넘게 급증하였다. 이에 따라 관리 역량과 주거 품질 문제도 대두되고 있다.
+   (연합뉴스 · 09/29 06:05)
+5. (공급) 모아주택 '1호' 입주 … 서울시 "5년간 4만가구 착공"
+   → 서울 광진구의 '강변역 센트럴 아이파크'가 모아주택 1호로서 최근 입주를 시작하였고, 서울시는 2031년까지 4만호를 착공할 계획을 밝혔다.
+   (매일경제 · 09/28 17:11)
+6. (기타) 건설수주도 반도체 훈풍… 회복 온기는 대형사 쏠려
+   → 2026년 2분기 건설공사 계약액이 80조9000억원으로, 지난해보다 27.3% 증가하였으나, 대형 건설사에만 집중되는 경향이 나타났다.
+   (매일경제 · 09/28 17:11)
+
+[흐름·전망]
+• 서울 시장의 약세 지속 여부와 인천의 안정세가 다른 지역으로 확산될지 주목할 필요가 있다.
+• 신규 아파트 청약 성과가 시장 전반의 가격 상승에 미칠 영향도 지켜봐야 할 포인트다.
+• 3기 신도시에서의 보상 문제 해결 여부가 향후 공급 동향에 크게 영향을 미칠 것으로 예상된다.
+• 청년층을 위한 공공임대주택의 품질 유지가 향후 시장에 미치는 영향과 관리 방안이 중요할 것으로 보인다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 방송인들의 저조한 시청률과 가짜 여론조사에 대한 언급을 하며 공화당의 지지를 촉구했다. 또한, 미국의 고용 수치가 역사상 최고라며 언론의 보도를 비판했다.
+
+[주요 발언]
+1. (사법) 트럼프는 펜실베니아에서의 선거 부정 사건과 관련해 이민자가 기소되었다고 언급하며 법의 이중 기준을 비판했다.
+   (Truth Social · 09/28 21:02)
+2. (사법) 대법원이 트럼프의 유권자 시민권 확인 규정을 재확인했다고 전하며, 이는 유권자 등록 과정의 투명성을 높일 것으로 기대하고 있다.
+   (Truth Social · 09/28 20:57)
+3. (경제) 트럼프는 미국의 고용 수치가 역사적으로 최고라고 주장하며, 언론이 이를 보도하지 않는다고 비판했다.
+   (Truth Social · 09/28 20:50)
+4. (국내정치) 트럼프는 최신 여론조사들이 신뢰할 수 없다고 강조하며, 공화당원들이 이를 믿지 말 것을 권장했다.
+   (Truth Social · 09/28 20:38)
+5. (국내정치) 트럼프는 중간 선거에서 공화당 후보들을 지원할 것이라고 밝히며, 선거에서의 승리를 다짐했다.
+   (Truth Social · 09/28 20:33)
+6. (기타) 트럼프는 방송인 조 스카보로의 프로그램이 조만간 종료될 것이라며, 그 프로그램의 시청률을 언급했다.
+   (Truth Social · 09/28 20:33)
+
+[흐름·전망]
+• 트럼프의 고용 수치에 대한 주장과 법적 조치들이 향후 정치적 논의에 어떻게 영향을 미칠지 주목할 필요가 있다.
+• 공화당이 중간 선거를 앞두고 어떤 노력을 할지와 그 결과에 대한 관심이 확대될 것으로 기대된다.
+• 언론에 대한 트럼프의 비판이 공화당원 및 지지자들 사이에서 어떤 반향을 일으킬지 지켜볼 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
