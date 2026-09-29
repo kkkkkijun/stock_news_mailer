@@ -264,10 +264,10 @@
 "name": "ADP Employment Change",
 "dt": "2026-09-30T12:15:00Z",
 "act": null,
-"cons": "72K",
+"cons": "70K",
 "prev": "38K",
 "act_n": null,
-"cons_n": 72.0
+"cons_n": 70.0
 },
 "ef95f488-2906-40b6-93ea-2a2ca30e6d07": {
 "name": "Core Personal Consumption Expenditures - Price Index (MoM)",
@@ -282,10 +282,10 @@
 "name": "Core Personal Consumption Expenditures - Price Index (YoY)",
 "dt": "2026-09-30T12:30:00Z",
 "act": null,
-"cons": "3.4%",
+"cons": "3.3%",
 "prev": "3.3%",
 "act_n": null,
-"cons_n": 3.4
+"cons_n": 3.3
 },
 "deafc9c6-01be-41ed-b3b4-d7f66b6a1e89": {
 "name": "Tankan Large Manufacturing Index",
@@ -300,10 +300,10 @@
 "name": "ISM Manufacturing PMI",
 "dt": "2026-10-01T14:00:00Z",
 "act": null,
-"cons": "54.9",
+"cons": "55",
 "prev": "54.6",
 "act_n": null,
-"cons_n": 54.9
+"cons_n": 55.0
 },
 "a8be8ae1-e0eb-43b4-8b98-4c2333560680": {
 "name": "Average Hourly Earnings (MoM)",
@@ -327,10 +327,10 @@
 "name": "Nonfarm Payrolls",
 "dt": "2026-10-02T12:30:00Z",
 "act": null,
-"cons": "84K",
+"cons": "90K",
 "prev": "162K",
 "act_n": null,
-"cons_n": 84.0
+"cons_n": 90.0
 },
 "01cb6076-cca0-46ff-b8a7-98f6bd803237": {
 "name": "ISM Services PMI",

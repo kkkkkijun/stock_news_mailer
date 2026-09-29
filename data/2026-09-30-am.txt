@@ -1,0 +1,237 @@
+2026-09-30T06:32:29.498187+09:00
+
+[오늘의 뉴스 요약] 2026-09-30 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘은 비정규직 근로자의 생활 만족도와 관련된 연구 결과가 발표되었고, 상반기 반도체 산업의 성장이 지역 경제에 미치는 영향이 살펴보였다. 미국 국채금리와 고금리 적금 상품의 경쟁도 금융 시장에 중요한 변화를 야기하고 있다.
+
+[핵심 뉴스]
+1. (고용) 비정규직 생활 만족도, 구조적 문제에 기인
+   → 비정규직 근로자의 생활 만족도가 정규직에 비해 평균 0.273점 낮았으며, 고용보험 가입 여부가 큰 영향을 미친다는 연구 결과가 발표됐다. 연구에 따르면 생활 만족도 격차의 76%가 고용보험 미가입과 경제적 조건에서 비롯된 것으로 나타났다.
+   (연합뉴스 · 09/30 06:01)
+2. (금리) 은행권 고금리 특판 경쟁, 적금으로 자금 이동
+   → 은행권의 고금리 적금 상품에 자금이 이동하며, 5대 시중은행의 정기적금 잔액이 한 달 새 1.2조원 증가했다. 이는 금융 시장의 불안정성 속에서 상대적으로 높은 금리를 추구하는 경향을 반영한다.
+   (매일경제 · 09/30 05:55)
+3. (금리) 미국 국채금리 5% 돌파, 고금리 시대 개막
+   → 미국 국채금리가 5%를 돌파하며 고금리 시대가 본격 개막되었고, 30년물 국채금리는 5.5%까지 상승했다. 이는 미국 국채의 국제적 신뢰도 하락과 초과 세수로 인해 발생한 재정적자의 심각성을 암시한다.
+   (매일경제 · 09/29 19:08)
+4. (성장) 반도체의 영향으로 충북 고성장, 호남은 역성장
+   → 충북 지역의 2분기 GRDP 성장률이 11.9%를 기록하며 전국 1위를 차지했으며, 반도체 산업의 호황이 주요 요인으로 작용했다. 반면 호남권은 6분기 연속 역성장으로 부진을 겪고 있다.
+   (매일경제 · 09/29 17:47)
+5. (정책) 지방자치단체장들, 미래기금 신설에 반발
+   → 정부의 '미래대응기금' 신설 계획에 대해 지방자치단체장들이 반발하고 있으며, 이로 인해 지방재정이 더욱 악화될 것이라는 우려가 커지고 있다. 지자체들은 교부세율 인상과 함께 대책 마련을 촉구하고 있다.
+   (매일경제 · 09/29 17:47)
+
+[흐름·전망]
+• 비정규직 근로자의 생활 만족도 개선을 위한 정책 방향에 대한 논의가 필요하며, 고용보험 확대로 구조적 문제를 해결하는 것이 중요할 것으로 보인다.
+• 금리가 지속적으로 상승하는 가운데 고금리 적금 상품의 인기가 계속될 경우, 기존의 예금 구조에 변화가 있을 것으로 예상된다.
+• 미국 국채금리의 상승세는 글로벌 자금 시장에 대한 신뢰도를 의식하게 하며, 이에 따라 투자자들의 전략을 재조정할 필요가 있다.
+• 반도체 산업의 성장은 지역 경제의 성장 동력으로 작용할 것이나, 부진한 지역의 재정적 문제 해결이 우선시되어야 할 것이다.
+• '미래대응기금' 신설에 대한 지방자치단체의 반발은 중앙-지방 간 재정 분배 문제를 다시 금화할 수 있는 계기가 될 것.
+
+📈 해외주식 PART
+📰 [NVDA] LANL: NVIDIA CPU Arrives At Los Alamos - Los Alamos Reporter
+   (Los Alamos Reporter · 09/30 06:01)
+→ 로스앨러모스 국립연구소(LANL)에 NVIDIA의 최신 CPU가 도착했습니다. 이 CPU는 고성능 컴퓨팅을 위한 연구와 개발을 지원할 것으로 기대됩니다.
+
+📰 [NVDA] Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today’s Market
+   (Yahoo Finance · 09/30 05:52)
+→ 애플, 메타, 아이오반스, 카니발 등 여러 기업들이 오늘 시장 상황을 설명하는 주식 목록에 올랐습니다. 엔비디아는 0.7% 하락하며 1,500억 달러 규모의 자사주 매입 계획과 AI 안전 문제를 해결할 소프트웨어 발표 후 월요일의 상승세를 되돌렸습니다. 나비타스 반도체는 미국 육군의 전력 반도체 기술 개발 지원금 수혜 후 전일 상승분을 지우며 변동 없이 마감했습니다.
+
+📰 [NVDA] Stock Market Today: Dow, Nasdaq Finish In The Red; AI Play Offers Entry
+   (Yahoo Finance · 09/30 05:49)
+→ 오늘 주식 시장에서 다우존스 지수는 하락세를 보였고, 유가가 하락하며 국채 수익률이 상승했습니다. Nvidia와 기타 AI 관련 주식이 매수 기회를 시험하고 있습니다.
+
+📰 [TSLA] Tesla lines up $30B in new credit, one of the largest energy debt deals ever - Dealroom.co
+   (Dealroom.co · 09/30 06:24)
+→ 테슬라가 300억 달러 규모의 신규 신용을 확보하여 역대 가장 큰 에너지 부채 거래 중 하나를 성사시켰다. 이 거래는 회사의 확장 계획과 에너지 사업을 지원하는 데 중요한 역할을 할 것으로 기대된다.
+
+📰 [TSLA] Tesla secures $30B in new credit lines as it looks to scale Cybercab, Optimus - TechCrunch
+   (TechCrunch · 09/30 06:20)
+→ 테슬라는 사이버캡과 옵티머스의 확장을 위해 300억 달러의 신규 신용 한도를 확보했다. 이 자금은 테슬라의 전기차 및 로봇 개발을 가속화하는 데 사용될 예정이다.
+
+📰 [TSLA] Tesla Enters Into $30 Billion Term Loan and Revolving Credit Facilities
+   (Yahoo Finance · 09/30 06:13)
+→ 테슬라가 300억 달러 규모의 대출 및 회전 신용 시설 계약을 체결했다고 발표했다. 이 중 200억 달러는 3년 만기 순수익 없는 대출로 구성되어 있다.
+
+📰 [HIMS] Hims & Hers Health (HIMS) Investors: Securities Fraud Class Action Filed, Contact Hagens Berman Before November 2, 2026 Lead Plaintiff Deadline - PR Newswire
+   (PR Newswire · 09/30 01:39)
+→ Hims & Hers Health의 투자자들이 증권 사기와 관련해 집단 소송을 제기했습니다. 투자자들은 2026년 11월 2일 이전에 Hagens Berman에 연락하여 주요 원고로 참여할 수 있습니다.
+
+📰 [HIMS] HIMS Investors Have Opportunity to Lead Hims & Hers Health, Inc. Securities Fraud Lawsuit with SBS Law - GlobeNewswire
+   (GlobeNewswire · 09/29 23:15)
+→ Hims & Hers Health, Inc.의 투자자들은 SBS 법률과 함께 증권 사기 소송을 주도할 기회를 갖게 되었습니다. 이번 소송은 투자자들의 권익을 보호하기 위한 것으로, 피해를 본 투자자들이 참여할 수 있습니다.
+
+📰 [HIMS] INVESTOR ALERT: Hims & Hers Health, Inc. (NYSE: HIMS) Investors with Substantial Losses Have Opportunity to Lead Class Action Lawsuit - PR Newswire
+   (PR Newswire · 09/29 21:42)
+→ Hims & Hers Health, Inc.의 투자자들은 상당한 손실이 있는 경우 집단 소송을 주도할 기회를 가질 수 있다는 경고가 나왔습니다. 이는 투자자들에게 법적 대응의 가능성을 알리는 내용입니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Down 4.5% - Here's What Happened - MarketBeat
+   (MarketBeat · 09/30 06:26)
+→ Redwire의 주가가 4.5% 하락했습니다. 이 하락은 특정 사건이나 시장 반응이 영향을 미친 것으로 보입니다. 자세한 이유는 추가적인 분석이 필요합니다.
+
+📰 [RDW] Redwire (RDW) Nudges Higher As BofA Lifts Price Target - StocksToTrade
+   (StocksToTrade · 09/30 05:46)
+→ Redwire (RDW) 주가는 뱅크오브아메리카(BofA)가 목표 주가를 상향 조정하면서 소폭 상승했다. 이는 투자자들 사이에서 긍정적인 반응을 이끌어내고 있다.
+
+📰 [RDW] Is Redwire (RDW) Undervalued Following Its NITE STAR Contract Win? - simplywall.st
+   (simplywall.st · 09/30 03:33)
+→ Redwire (RDW)는 NITE STAR 계약을 수주한 후 주가가 저평가되었는지에 대한 논의가 진행되고 있다. 계약의 중요성과 회사의 성장 가능성이 주목받고 있으며, 투자자들의 관심이 집중되고 있다.
+
+📰 [IREN] How IREZ Works: The Mechanics of the Tradr 2X Short IREN Daily ETF - kalkine.ca
+   (kalkine.ca · 09/30 05:25)
+→ Tradr 2X Short IREN Daily ETF는 이란의 부동산 시장을 추적하며, 하루 동안의 가격 변동에 대해 두 배의 수익을 목표로 하는 상장지수펀드(ETF)입니다. 이 ETF는 트레이더들이 하락장에서 수익을 얻을 수 있도록 설계되었으며, 매일 리밸런싱을 통해 목표 수익률을 조정합니다.
+
+📰 [IREN] Iren (BIT:IRE) And The Infrastructure Upgrade Narrative Behind Its Valuation
+   (Yahoo Finance · 09/30 04:06)
+→ Iren의 주가가 €2.44로 마감하며 주목받고 있으며, 올해 들어 약 5.9% 하락했습니다. 최근 7일간 주가는 3.17% 떨어졌지만, 3년간 총 주주 수익률은 65.57%로 장기적인 성장이 더 강했음을 보여줍니다.
+
+📰 [IREN] Iren (BIT:IRE) And The Infrastructure Upgrade Narrative Behind Its Valuation - Yahoo Finance
+   (Yahoo Finance · 09/30 04:06)
+→ Iren (BIT:IRE)의 가치는 인프라 업그레이드에 대한 기대 속에서 형성되고 있으며, 이 회사의 성장 가능성과 시장에서의 위치가 주목받고 있다. 투자자들은 인프라 개선이 기업의 수익성과 안정성에 긍정적인 영향을 미칠 것으로 보고 있다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Stock Falls 3.4% - Should You Sell? - MarketBeat
+   (MarketBeat · 09/30 06:26)
+→ 로켓랩(Rocket Lab)의 주가가 3.4% 하락했습니다. 투자자들은 주식 매도 여부에 대한 고민을 하고 있는 상황입니다.
+
+📰 [RKLB] Rocket Lab Steps In Where SpaceX Just Walked Away - barchart.com
+   (barchart.com · 09/30 05:50)
+→ Rocket Lab이 SpaceX가 포기한 프로젝트를 맡아 진행하기로 했습니다. 이로 인해 Rocket Lab은 우주 발사 시장에서 중요한 역할을 맡게 될 것으로 보입니다.
+
+📰 [RKLB] Rocket Lab Protest Could Torpedo NASA’s 2028 Launch Of Mars Orbiter - Forbes
+   (Forbes · 09/30 05:36)
+→ 로켓랩의 프로테스트가 NASA의 2028년 화성 궤도선 발사 계획에 큰 영향을 미칠 수 있다는 우려가 제기되고 있습니다. 이로 인해 발사 일정이 지연되거나 취소될 가능성이 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin drops to $82,000 on US data, and inflation fear is blamed - CryptoSlate
+   (CryptoSlate · 09/30 06:10)
+→ 비트코인이 미국 경제 데이터 발표 이후 82,000달러로 하락했으며, 인플레이션 우려가 원인으로 지목되고 있다. 이러한 가격 변동은 투자자들의 심리에 영향을 미친 것으로 보인다.
+
+📰 [BTC-USD] Bitcoin Kingpin Michael Saylor of Strategy Has Something New to Sell You - Bloomberg.com
+   (Bloomberg.com · 09/30 06:00)
+→ 비트코인 전문가 마이클 세일러가 새로운 투자 상품을 선보이고 있다. 그는 전략적 접근 방식을 통해 비트코인과 관련된 혁신적인 기회를 제공하고 있으며, 시장에서의 영향력을 더욱 확대하려 하고 있다.
+
+📰 [BTC-USD] Bitcoin's Rally Is Real, Glassnode Says: So Why Are Spot Buyers Uninterested? - Benzinga
+   (Benzinga · 09/30 05:58)
+→ Glassnode에 따르면 비트코인의 상승세는 실제이며, 그러나 현물 구매자들은 이에 관심을 두지 않고 있다고 전했습니다. 이는 시장의 불확실성이나 다른 요인으로 인해 현물 거래를 피하는 경향이 나타나고 있음을 시사합니다.
+
+📰 [ETH-USD] Ethereum Price Prediction Turns Bullish After 500% Whale Jump as Pepeto Bridge Gains Momentum - techbullion.com
+   (techbullion.com · 09/30 06:08)
+→ 이더리움 가격 예측이 긍정적으로 바뀌면서 500%의 큰 거래량이 발생한 모양새이며, Pepeto Bridge의 인기가 상승하면서 이더리움에 대한 기대감이 높아지고 있다. 이는 시장에서의 큰 변동성과 함께 이더리움의 잠재적인 상승세를 시사하고 있다.
+
+📰 [ETH-USD] Bitcoin, Ethereum, XRP, Dogecoin Hold Firm as Treasury Yield Hits 24-Year High - Benzinga
+   (Benzinga · 09/30 05:34)
+→ 비트코인, 이더리움, XRP, 도지코인이 미국 재무부 채권 수익률이 24년 만에 최고치에 도달했음에도 불구하고 가격을 안정적으로 유지하고 있습니다. 이러한 상황에서도 암호화폐 시장은 강한 저항력을 보이고 있습니다.
+
+📰 [ETH-USD] Ethereum Price Breaks the September Curse With 9% Gains as Pepeto Presale Crosses $11 Million - techbullion.com
+   (techbullion.com · 09/30 05:08)
+→ 이더리움 가격이 9% 상승하며 9월의 악몽을 깨뜨렸습니다. 또한, Pepeto의 사전 판매가 1,100만 달러를 돌파했습니다.
+
+📰 [SOL-USD] 21Shares Solana Staking ETF declares $0.0765 dividend - TradingView
+   (TradingView · 09/30 05:50)
+→ 21Shares Solana Staking ETF가 주당 $0.0765의 배당금을 선언했습니다. 이번 배당금 발표는 투자자들에게 긍정적인 신호로 해석되고 있습니다.
+
+📰 [SOL-USD] New Cryptocurrency Alert: $686 Million Bybit Deal Shakes the Market, Can Pepeto Beat SUI and Solana? - techbullion.com
+   (techbullion.com · 09/30 05:28)
+→ $686 million 규모의 Bybit 거래가 암호화폐 시장에 큰 파장을 일으켰습니다. 이로 인해 Pepeto가 SUI와 솔라나를 제치고 경쟁력을 가질 수 있을지에 대한 관심이 집중되고 있습니다.
+
+📰 [SOL-USD] Solana Price Prediction: SOL Eyes $300 as DigiTap Enters the Best Crypto Presale Race With $13M Raised - StreetInsider
+   (StreetInsider · 09/30 05:01)
+→ 솔라나(SOL)의 가격이 $300에 이를 것으로 예상되며, DigiTap가 1300만 달러를 모금하며 최고의 암호화폐 프리세일에 참여하고 있습니다. 이로 인해 SOL의 성장 가능성이 더욱 주목받고 있습니다.
+
+📰 [BMNR] Bitmine Continues to Load Up on Ethereum, Now Owns 4.9% of all ETH in Circulation. Is BMNR Stock a Buy?
+   (Yahoo Finance · 09/30 02:20)
+→ Bitmine은 세계에서 두 번째로 큰 암호화폐인 이더리움에 집중 투자하고 있으며, 현재 circulating 중인 전체 ETH의 4.9%를 보유하고 있습니다. 이러한 투자 전략으로 BMNR 주식이 매수해볼 만한 가치가 있는지에 대한 논의가 진행되고 있습니다.
+
+📰 [BMNR] Bitmine Continues to Load Up on Ethereum, Now Owns 4.9% of all ETH in Circulation. Is BMNR Stock a Buy? - Currently.com
+   (Currently.com · 09/30 02:20)
+→ Bitmine은 이더리움을 지속적으로 구매하여 현재 전체 유통량의 4.9%를 보유하고 있습니다. 이에 따라 BMNR 주식의 투자 가치에 대한 논의가 진행되고 있습니다.
+
+📰 [BMNR] Bitmine Continues to Load Up on Ethereum, Now Owns 4.9% of all ETH in Circulation. Is BMNR Stock a Buy? - The Motley Fool
+   (The Motley Fool · 09/30 02:04)
+→ Bitmine이 현재 유통되고 있는 이더리움(ETH)의 4.9%를 보유하게 되면서 지속적으로 이더리움을 매입하고 있습니다. BMNR 주식에 대한 구매 여부에 대한 질문이 제기되고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+비트코인이 미국의 경제 지표 발표 후 8만2000달러대로 하락하며 시장이 혼조세를 보이고 있다. 소비자 신뢰 지수의 하락과 인플레이션 우려가 부각되면서 전반적인 매수 심리가 위축된 상황이다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 8만2000달러대 하락
+   → 비트코인은 미국 경제지표 발표 후 8만2775.94달러로 하락했으며, 노동시장은 안정세를 유지하고 있지만 소비자 신뢰지수가 81.9로 6.7포인트 하락했다.
+   (토큰포스트 · 09/30 06:18)
+2. (기타) 파키스탄, 잉여 전력 비트코인 채굴에 배정
+   → 파키스탄 정부는 2025년부터 잉여 전력 2000MW를 비트코인 채굴과 AI 데이터센터에 배정할 계획을 발표했으나, 구체적인 채굴장 운영 방식은 공개되지 않았다.
+   (토큰포스트 · 09/30 06:08)
+3. (규제) 연준, 스테이블코인 1대1 준비금 제안
+   → 미 증시에서 메타는 3.11% 상승한 반면 애플은 2.74% 하락했으며, 서클과 스트래티지와 같은 가상자산 관련주도 각각 2.40%와 2.15% 하락했다.
+   (토큰포스트 · 09/30 05:07)
+4. (온체인) 비트코인 실현이익 증가로 조정 가능성 제기
+   → 비트코인은 24시간 기준 0.21% 오른 83,560.20달러에 거래되었으며, 비트코인 점유율은 58.71%로 확대되었지만 파생상품 거래량은 9.98% 감소했다.
+   (토큰포스트 · 09/30 05:01)
+5. (기타) 암호화폐 시장, 레버리지 포지션 2억 달러 청산
+   → 연준이 스테이블코인 발행사의 1대1 준비금 보유를 제안하며, 문페이가 한국 법인을 통해 원화 연동 스테이블코인 협력을 추진하고 있다고 발표했다.
+   (토큰포스트 · 09/30 05:01)
+
+[흐름·전망]
+• 비트코인의 하락세는 소비자 신뢰도와 인플레이션 영향의 복합적인 결과로 볼 수 있으며, 향후 경제지표 발표에 따라 추가 변동성이 예상된다.
+• 파키스탄의 잉여 전력 채굴 계획이 실제로 실행될 경우, 비트코인 채굴 산업에 대한 새로운 모델을 제시할 수 있을 것이지만 여전히 불확실성이 존재한다.
+• 미국 증시의 불확실성 속에서 가상자산 관련주들이 엇갈린 흐름을 보이고 있어, 주목할 만한 기업의 실적 발표가 중요한 관전 포인트가 될 것이다.
+• 스테이블코인 규제안이 뒷받침될 경우, 암호화폐 생태계의 안정성에 긍정적인 신호를 줄 수 있으며, 이에 따른 가격 반응이 주목된다.
+
+📊 공포탐욕지수
+  - CNN 기준: 32 (Fear)
+  - 크립토 기준: 73 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울 아파트 인허가가 크게 증가했고, 임대사업자에 대한 세제 혜택 종료가 임박해 긴장감을 더하고 있다.
+
+[핵심 뉴스]
+1. (공급) 서울 인허가 올들어 개선 추세
+   → 올해 1~8월 서울 아파트 준공 물량이 작년 대비 23% 감소했지만, 인허가는 40% 증가하며 공급 선행지표가 개선되고 있다.
+   (연합뉴스 · 09/30 06:00)
+2. (공급) 거래 줄고 공급 선행지표는 개선
+   → 서울 아파트 거래가 전월 대비 30% 감소했으나, 인허가는 40% 증가하며 공급 지표는 개선되고 있다.
+   (파이낸셜뉴스 · 09/30 06:00)
+3. (정책) 내년이 마지막 골든타임
+   → 조정대상지역 내 임대사업자들은 내년 말까지 양도세 중과 배제 등의 혜택이 종료되므로, 시한 내 주택 매도가 필요하다.
+   (매일경제 · 09/29 16:46)
+4. (공급) 급증한 서울 아파트 인허가 물량
+   → 서울의 아파트 인허가 물량이 10년 평균을 5년 만에 넘어서며 공급 증가세가 두드러지고 있다.
+   (뉴스핌 · 09/30 06:00)
+5. (정책) 부동산 정책에 대한 불만 증대
+   → 30대 응답자 중 78.8%가 현 정부의 부동산 정책을 부정적으로 평가하며, 특히 대출 규제가 주택 구매 기회를 확대하는 데 부정적 영향을 미쳤다고 인식하고 있다.
+   (매일경제 · 09/29 14:12)
+6. (재건축) 은마아파트 ‘분담금’ 폭탄
+   → 서울 강남구 은마아파트 재건축 사업에서 조합원들의 추가 부담금이 지난해보다 2억5000만원 증가해 총 4억3000만원에 달할 것으로 예상된다.
+   (매일경제 · 09/29 16:22)
+
+[흐름·전망]
+• 안정적인 공급이 긴요한 상황에서 인허가 증가세가 시장에 긍정적인 영향을 미칠 수 있지만, 준공 감소세가 걱정된다.
+• 임대사업자들은 내년까지 시한이 있는 만큼, 조급한 시장 움직임이 나타날 가능성이 있다.
+• 대출 규제에 대한 부정적인 여론이 높아짐에 따라, 정부가 정책 방향을 조정할 필요성이 커 보인다.
+• 재건축 및 재개발 예정 단지에서 추가 부담금 증가가 예상되는 가운데, 가격과 투자자 신뢰도 변화에 주목해야 한다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 소셜 미디어에서 의회에서 통과된 법안과 관련하여 긍정적인 반응을 보였다. 또한 자신에게 대한 주장에 대해 강한 반박을 하며 언론의 보도를 비판했다.
+
+[주요 발언]
+1. (기타) 트럼프는 'Protect College Sport Act'가 미 상원에서 통과된 것을 축하하며, 이 법안이 대학 스포츠와 대학 자체를 구할 것이라고 강조했다.
+   (Truth Social · 09/29 11:33)
+2. (사법) 트럼프는 Axios의 보도를 반박하며, 자신이 이란에 대해 어떤 지원을 제안한 적이 없다고 주장했다. 그는 이 보도를 '가짜 뉴스'라고 비난했다.
+   (Truth Social · 09/29 06:34)
+
+[흐름·전망]
+• 트럼프의 대학 스포츠 보호 법안 통과는 교육 분야의 정책 변화 가능성에 주목할 필요가 있다.
+• 트럼프의 언론 비판은 향후 미디어와의 관계가 어떻게 형성될지를 지켜볼 포인트가 될 것이다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
