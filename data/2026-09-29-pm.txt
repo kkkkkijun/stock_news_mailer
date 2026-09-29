@@ -1,0 +1,244 @@
+2026-09-29T17:02:56.958617+09:00
+
+[오늘의 뉴스 요약] 2026-09-29 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국고채 금리가 일제히 하락하며 전반적인 채권 시장의 긴장이 완화된 가운데, 환율은 일본 엔화 약세의 영향으로 다시 1,350원대로 하락하였다. 주식 시장에서는 코스피가 미국 국채 금리 급등 등의 악재로 2거래일 연속 하락하였고, 대구·경북 지역의 기업 심리지수 또한 소폭 하락하였다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 일제히 하락
+   → 29일 3년 만기 국고채 금리는 4.076%로 4.3bp 하락했으며, 10년물 금리는 4.476%로 6.3bp 내렸다. 이는 전일 급등한 금리에 대한 되돌림과 호주 중앙은행의 신중한 추가 인상 태도가 영향을 미쳤다.
+   (연합뉴스 · 09/29 16:48)
+2. (환율) 환율 다시 1,350원대로
+   → 원/달러 환율은 29일 1,356.7원으로 8.4원 하락하였으며, 이는 일본의 엔화 약세 우려와 수출업체의 달러 매도가 가세하여 이루어진 하락이다.
+   (연합뉴스 · 09/29 16:10)
+3. (성장) 코스피, 0.27% 하락 마감
+   → 코스피 지수는 29일 6,870.81로 0.27% 하락 마감하였고, 이는 미국 국채 금리 급등 등의 외부 악재에 따른 것이다. 반면 코스닥은 0.38% 상승하여 849.80으로 마감하였다.
+   (연합뉴스 · 09/29 15:36)
+4. (고용) 대구·경북 기업심리지수 소폭 하락
+   → 대구·경북 지역의 9월 제조업 기업심리지수는 100.6으로 0.1p 하락하였으며, 비제조업 심리지수도 2.3p 하락한 95.0을 기록하였다. 내수 부진이 주된 경영 애로사항으로 지적되었다.
+   (연합뉴스 · 09/29 16:29)
+5. (정책) 다시 오르는 금리…여신전문금융사 위기감 고조
+   → 최근 채권 금리 상승으로 인해 여신전문금융사(여전사)의 신용등급이 건전성에 크게 의존하게 되었으며, A급 이하 중소형 캐피탈사는 부실 및 조달 비용의 이중고를 겪고 있다.
+   (연합뉴스 · 09/29 15:38)
+
+[흐름·전망]
+• 단기적으로 국고채 금리의 하락세가 계속될지 주목해야 하며, 주요국의 금리 정책도 변동성을 가중시킬 가능성 있다.
+• 환율이 일본 엔화의 동향에 큰 영향을 받고 있으므로, 엔화 관련 발언을 주의 깊게 살펴야 한다.
+• 주식 시장의 하락이 지속되는 가운데, 외부 변수인 미국 국채 금리에 따라 변동성이 클 것으로 보여 투자자들은 신중한 접근이 필요하다.
+• 대구·경북 지역의 제조업 경영 애로사항 중 내수 문제와 함께 건전성 위험을 관리하는 것이 중요해 보인다.
+
+📈 해외주식 PART
+📰 [NVDA] Michael Burry Says Jensen Huang Is 'Becoming A Bit Like' Palantir's Alex Karp After Nvidia CEO's Media Blitz
+   (Yahoo Finance · 09/29 16:38)
+→ 마이클 버리는 엔비디아 CEO 젠슨 황이 팔란티어의 알렉스 카프와 비슷해지고 있다고 언급하며, 엔비디아의 자본 배분 및 커뮤니케이션 전략에 의문을 제기했다. 이는 인공지능에 대한 회의감이 계속되고 있는 상황에서 나온 발언이다.
+
+📰 [NVDA] Arrowroot Family Office LLC Raises Stake in NVIDIA Corporation $NVDA - marketbeat.com
+   (marketbeat.com · 09/29 16:09)
+→ Arrowroot Family Office LLC가 NVIDIA Corporation의 지분을 증가시켰다는 소식입니다. 이번 투자 확대는 NVIDIA의 성장 가능성을 높게 평가한 결과로 보입니다.
+
+📰 [NVDA] Jensen Huang Press Q&A: 'Nvidia Stock Is Undervalued' - Key Context by Tae Kim
+   (Key Context by Tae Kim · 09/29 15:49)
+→ 엔비디아의 CEO 젠슨 황이 최근 기자회견에서 엔비디아 주식이 저평가되어 있다고 주장했습니다. 그는 회사의 성장 잠재력과 기술 혁신이 주가에 반영되지 않았다고 언급했습니다.
+
+📰 [TSLA] Safety group urges EU to reject Tesla FSD over speed offset - Reuters
+   (Reuters · 09/29 16:39)
+→ 안전 단체는 유럽연합(EU)에 테슬라의 완전 자율주행 시스템(FSD)을 거부할 것을 요청했습니다. 이들은 FSD가 속도를 조정하는 방식에서 안전 문제가 발생할 수 있다고 주장하고 있습니다.
+
+📰 [TSLA] Safety group urges EU to reject Tesla FSD over speed offset - TradingView
+   (TradingView · 09/29 16:33)
+→ 안전 단체가 유럽연합(EU)에 테슬라의 완전자율주행(FSD) 시스템을 속도 보정 문제로 반대할 것을 촉구하고 있다. 이들은 FSD가 안전성을 저해할 수 있다고 경고하며, 제도적인 조치가 필요하다고 강조하고 있다.
+
+📰 [TSLA] A Matte Dark Sage Tesla Model S With Unplugged Performance UP-03 Wheels - mycarportal.net
+   (mycarportal.net · 09/29 16:06)
+→ 매트 다크 세이지 색상의 테슬라 모델 S가 Unplugged Performance의 UP-03 휠을 장착한 모습이 소개되었습니다. 이 차량은 독특한 디자인과 성능 향상을 강조하며, 자동차 애호가들에게 큰 관심을 받고 있습니다.
+
+📰 [HIMS] Bronstein, Gewirtz & Grossman LLC Urges Hims & Hers Health, - GlobeNewswire
+   (GlobeNewswire · 09/29 01:00)
+→ Bronstein, Gewirtz & Grossman LLC가 Hims & Hers Health에 대한 주주들의 행동을 촉구하고 있습니다. 이들의 요청은 회사의 재정적 투명성과 책임을 요구하는 내용으로 보입니다.
+
+📰 [HIMS] Kaplan Fox Reminds Investors of Hims & Hers Health, Inc. - GlobeNewswire
+   (GlobeNewswire · 09/28 23:30)
+→ Kaplan Fox는 Hims & Hers Health, Inc.의 투자자들에게 중요한 정보를 상기시키고 있습니다. 이 발표는 투자자들에게 회사와 관련된 중요한 사항들을 알리기 위한 것입니다.
+
+📰 [HIMS] Can Hims & Hers Health (HIMS) Stay Cheap As Sales Face Scrutiny?
+   (Yahoo Finance · 09/27 16:08)
+→ Hims & Hers Health의 주가가 강하게 상승했지만, 현재 판매 기반으로 그 가치를 유지할 수 있을지에 대한 의문이 제기되고 있다. 최근 새로운 제품 출시와 규제 검토가 이루어지면서 투자자들이 매출 1달러당 지불하는 금액에 얼마나 반영되어 있는지가 주목받고 있다. 지난 3년 간 주주들에게 약 3.7배의 수익을 제공한 만큼, 향후 성장이 중요해졌다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW Stocks Slide Overnight: Analyst Questions Whether Rivals Can Compete If SpaceX Controls Access To Orbit - Stocktwits
+   (Stocktwits · 09/29 10:49)
+→ ASTS, RKLB, LUNR, RDW 주식이 하락했으며, 한 분석가는 SpaceX가 궤도 접근을 통제할 경우 경쟁업체들이 경쟁할 수 있을지 의문을 제기했습니다.
+
+📰 [RDW] Redwire Corp (RDW) Stock Down 3.6% but Still Overvalued -- GF Sc - gurufocus.com
+   (gurufocus.com · 09/29 09:35)
+→ Redwire Corp (RDW)의 주가가 3.6% 하락했지만 여전히 고평가 상태에 있다는 분석이 나왔다. 전문가들은 회사의 주식 가치가 시장에서 실제 가치보다 과도하게 높게 평가되고 있다고 지적하고 있다.
+
+📰 [RDW] Space Stocks Are Roaring Back In August — Here’s Why ASTS, RKLB, RDW And Their Peers Are Leaving SpaceX Behind - Stocktwits
+   (Stocktwits · 09/29 09:03)
+→ 8월에 우주 관련 주식들이 급등하며 ASTS, RKLB, RDW와 같은 기업들이 SpaceX를 앞서가고 있다는 소식입니다. 이러한 현상의 배경에는 여러 요인들이 작용하고 있으며, 특히 투자자들의 관심과 시장의 긍정적인 반응이 중요한 역할을 하고 있습니다.
+
+📰 [IREN] IREN Slips 5.4% as Jones Trading Opens Coverage With a Hold - AD HOC NEWS
+   (AD HOC NEWS · 09/29 15:01)
+→ IREN 주가는 Jones Trading이 '보유' 등급으로 커버리지를 시작하면서 5.4% 하락했습니다. 이는 투자자들 사이에서 주가에 대한 우려를 반영한 결과로 보입니다.
+
+📰 [IREN] IREN Ltd (IREN) Shares Fall 5.5% -- GF Value Says Still Overvalued - gurufocus.com
+   (gurufocus.com · 09/29 07:01)
+→ IREN Ltd의 주가가 5.5% 하락했으며, GF Value는 여전히 기업 가치가 과대 평가되어 있다고 평가했습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Price Down 5.5% - Should You Sell? - marketbeat.com
+   (marketbeat.com · 09/29 06:22)
+→ IREN의 주가가 5.5% 하락했습니다. 이에 따라 투자자들은 주식을 팔아야 할지에 대한 고민이 깊어지고 있는 상황입니다.
+
+📰 [RKLB] Key facts: Rocket Lab (RKLB) wins NITE-STAR; $8B Iridium OK; Neutron - TradingView
+   (TradingView · 09/29 16:00)
+→ 로켓랩(RKLB)은 NITE-STAR 프로젝트를 수주했으며, 80억 달러 규모의 이리듐 계약도 승인받았습니다. 또한, Neutron 로켓에 대한 관련 정보도 발표되었습니다.
+
+📰 [RKLB] Rocket Lab Finances Its Orbital Ambitions as Iridium Deal Clears Shareholder Vote - AD HOC NEWS
+   (AD HOC NEWS · 09/29 14:01)
+→ 로켓랩이 주주 투표를 통과한 이리듐 계약을 통해 자금을 확보하며 궤도 관련 사업 확장을 계획하고 있다. 이를 통해 회사의 우주 산업 진출이 더욱 가시화될 전망이다.
+
+📰 [RKLB] Rocket Lab's Orbital Rhythm Holds Firm as Iridium Merger Clears Its Final Shareholder Gate - AD HOC NEWS
+   (AD HOC NEWS · 09/29 11:01)
+→ Rocket Lab의 Orbital Rhythm은 Iridium 인수의 마지막 주주 승인을 통과하며 안정세를 유지하고 있다. 이 인수는 회사의 성장 전략에 중요한 이정표로 작용할 것으로 예상된다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] When will Liquid Network restore Bitcoin peg outs? - Crypto News
+   (Crypto News · 09/29 16:46)
+→ Liquid Network가 비트코인 페그 아웃을 언제 재개할지에 대한 뉴스가 보도되었습니다. 현재 Liquid Network는 이 기능을 일시 중단한 상태이며, 재개 일정에 대한 구체적인 계획은 아직 공개되지 않았습니다.
+
+📰 [BTC-USD] Bitcoin to Hit $500,000 by 2030, Reiterates Financial Advisor Ric Edelman: 'Don't Really Care About the 4-Year Cycle' - Benzinga
+   (Benzinga · 09/29 16:34)
+→ 재정 고문 리크 에델만은 비트코인이 2030년까지 50만 달러에 이를 것이라고 전망하며, 4년 주기에는 크게 신경 쓰지 않는다고 밝혔습니다.
+
+📰 [BTC-USD] Coinbase Wins CFTC Approval for 24/7 USDC Derivatives Clearing - Bitcoin Foundation
+   (Bitcoin Foundation · 09/29 16:31)
+→ 코인베이스가 미국 상품선물거래위원회(CFTC)로부터 24시간 운영되는 USDC 파생상품 청산 승인 권한을 획득했습니다. 이는 코인베이스의 파생상품 거래 서비스 확대에 중요한 이정표가 될 것으로 기대됩니다.
+
+📰 [ETH-USD] Bitcoin, Ethereum, Solana, and XRP spot ETFs se... - Pluang
+   (Pluang · 09/29 16:46)
+→ 비트코인, 이더리움, 솔라나, XRP의 스팟 ETF가 출시되었다. 이 새로운 ETF들은 투자자들에게 각 디지털 자산에 직접 투자할 수 있는 기회를 제공한다. 이는 암호화폐 시장의 활성화에 기여할 것으로 예상된다.
+
+📰 [ETH-USD] Ethereum dips 1.53% amid US-Iran tensions; BitM... - Pluang
+   (Pluang · 09/29 16:46)
+→ 미국과 이란 간의 긴장이 고조됨에 따라 이더리움 가격이 1.53% 하락했습니다. 이러한 시장 반응은 글로벌 불안정성이 암호화폐에 미치는 영향을 반영하고 있습니다.
+
+📰 [ETH-USD] Volatility Shares 2x Ether ETF struggles in cho... - Pluang
+   (Pluang · 09/29 16:46)
+→ Volatility Shares 2x Ether ETF는 시장의 변동성 속에서 어려움을 겪고 있으며, 투자자들의 관심을 끌기 위해 고군분투하고 있습니다. 시장 상황이 불안정한 가운데 이 ETF의 성과가 저조해지고 있는 상황입니다.
+
+📰 [SOL-USD] Bitcoin, Ethereum, Solana, and XRP spot ETFs se... - Pluang
+   (Pluang · 09/29 16:46)
+→ 비트코인, 이더리움, 솔라나, XRP의 현물 ETF가 승인되었습니다. 이는 암호화폐 투자자들에게 새로운 기회를 제공하며, 암호화폐 시장의 성장을 촉진할 것으로 예상됩니다.
+
+📰 [SOL-USD] Solana dips to $118 support after falling from $125, with a potential drop to $100 before aiming for $150. - Pluang
+   (Pluang · 09/29 16:38)
+→ 솔라나가 125달러에서 하락하여 118달러 지지선에 도달했으며, 100달러까지 추가 하락할 가능성이 있는 반면, 이후에는 150달러를 목표로 삼을 수 있다고 전해졌습니다.
+
+📰 [SOL-USD] Bitwise's Solana Staking ETF buys $9.65M SOL, d... - Pluang
+   (Pluang · 09/29 16:05)
+→ Bitwise의 솔라나 스테이킹 ETF가 9.65백만 달러 상당의 솔라나(SOL)를 구매했습니다. 이 투자로 해당 ETF는 솔라나 생태계에 대한 노출을 확대하고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Leads Corporate Ethereum Holdings, Is The Upside Already Priced In? - simplywall.st
+   (simplywall.st · 09/29 09:24)
+→ Bitmine Immersion Technologies (BMNR)는 기업의 이더리움 보유량에서 선두를 차지하고 있으며, 이로 인해 앞으로의 성장 잠재력에 대한 기대가 커지고 있습니다. 그러나 이러한 긍정적인 전망이 이미 시장에 반영되었는지에 대한 의문이 제기되고 있습니다.
+
+📰 [BMNR] BMNR 8-K & SEC Filings - Yahoo Finance
+   (Yahoo Finance · 09/29 09:12)
+→ BMNR은 최근 8-K 보고서를 SEC에 제출하였으며, 이와 관련된 내용이 Yahoo Finance에 보도되었습니다. 해당 보고서는 회사의 주요 사건이나 변경 사항을 공시하는 문서로, 투자자들에게 중요한 정보를 제공합니다.
+
+📰 [BMNR] Strategy ($MSTR) and Bitmine ($BMNR) Add to Bitcoin (BTC) and Ethereum (ETH) Holdings Amid Iran Tensions and AI Uncertainty - Crowdfund Insider
+   (Crowdfund Insider · 09/29 03:40)
+→ Strategy와 Bitmine이 이란의 긴장과 인공지능 불확실성 속에서 비트코인(BTC)과 이더리움(ETH) 보유량을 증가시켰습니다. 이러한 결정은 암호화폐 시장의 변동성과 투자자들의 안전 자산 선호를 반영하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘은 금융위원회의 스테이블코인 정책 입법 논의와 함께 암호화폐 시장이 전반적으로 상승세를 보였다. 비트코인과 이더리움이 각각 1.03%와 2.18% 상승하며 점유율이 확대됐다.
+
+[핵심 뉴스]
+1. (정책) 금융위, 스테이블코인 협의체 입법 논의 진행
+   → 금융위원회가 스테이블코인 정책을 두고 법안화 논의를 진행 중이며, 이로 인해 국내 가상자산 시장의 제도화 기대가 커지고 있다. 비트코인은 8만3970.39달러(1.03% 상승), 이더리움은 2705.72달러(2.18% 상승)로 거래되고 있다.
+   (토큰포스트 · 09/29 16:36)
+2. (시세) XLM이 ONDO 제치고 국내 1위
+   → 국내 암호화폐 거래에서 XLM이 91.1점으로 1위에 올르며 거래 비중이 6.47%에 달했다. ONDO와 WLD는 각각 7.88%와 5.00%의 거래 비중을 기록했다.
+   (토큰포스트 · 09/29 17:00)
+3. (시세) 암호화폐 시장 전반 상승세
+   → 전체 암호화폐 시가총액은 2조8753억 달러이며, 비트코인 점유율은 58.67%, 이더리움은 11.49%로 상승했다. 파생상품 거래량은 1조311억 달러로 전일 대비 29.34% 증가했다.
+   (토큰포스트 · 09/29 16:01)
+4. (기타) 암호화폐 시장, 레버리지 포지션 청산 규모 2억7230만 달러
+   → 지난 24시간 암호화폐 시장에서 2억7230만 달러 규모의 레버리지 포지션이 청산되었으며 롱 포지션이 71.68%로 압도적으로 많았다. 비트코인은 6875만 달러, 이더리움은 6385만 달러의 청산이 발생했다.
+   (토큰포스트 · 09/29 15:56)
+5. (ETF) 비트코인 현물 ETF 시장, 3107만 달러 순유입
+   → 미국 비트코인 현물 ETF 시장에서 8거래일 연속으로 순유입이 계속되었고, 9월 28일 기준 3107만 달러의 추가 유입이 발생했다. 누적 순유입 규모는 575억7779만 달러에 달한다.
+   (토큰포스트 · 09/29 15:00)
+
+[흐름·전망]
+• 스테이블코인 정책 입법이 실제 시행으로 이어질 경우 국내 시장의 유동성이 확대될 것으로 기대된다.
+• 비트코인과 이더리움의 점유율 상승이 대형주로의 자금 집중을 시사하며, 향후 알트코인 시장에도 영향을 줄 수 있다.
+• 레버리지 청산이 잦아지면서 변동성 확대가 우려되므로 투자자는 신중한 포지션 관리를 해야 한다.
+• 현물 ETF의 지속적인 자금 유입은 비트코인 시장에 긍정적인 신호를 보낼 수 있으며, 이러한 추세가 다른 자산에도 번지는지 주목해야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 34 (Fear)
+  - 크립토 기준: 73 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 강북 아파트의 평균 전세가가 10억원을 초과하면서 전반적인 상승세가 이어지고 있으며, 대학 밀집 지역 아파트의 거래가 활발한 모습을 보이고 있다.
+
+[핵심 뉴스]
+1. (전세) 강북 국평 전세 10억 시대
+   → 서울 강북권의 국민평형 전셋값이 10억원대로 상승하였고, 이는 강남과 유사한 수준이다. 리얼투데이에 따르면 전세 매물의 수급 불균형이 지속되고 있어 전셋값 상승세가 당분간 이어질 것으로 전망된다.
+   (매일경제 · 09/29 16:31)
+2. (매매) 대학 몰린 곳, 집값도 올랐다
+   → 대학교 인근 아파트는 교수 및 학생 수요에 힘입어 매매가 상승세를 보이고 있다. 예를 들어, 안산시의 ‘안산 레이크타운 푸르지오’ 아파트는 신고가 거래가 이루어졌다.
+   (매일경제 · 09/29 15:34)
+3. (정책) 30대 79% “부동산 정책 잘못돼”
+   → 30대층의 78.8%가 현 정부의 부동산 정책을 부정적으로 평가하고 있으며, 대출규제가 무주택자의 내 집 마련을 어렵게 한다고 응답한 비율이 높았다.
+   (매일경제 · 09/29 14:12)
+4. (매매) 강남 거래한파, 마포·용산까지 덮쳐
+   → 강남에서 시작된 거래 위축이 마포와 용산 등 다른 지역으로 확산되고 있다. 특히 8월 용산과 마포의 아파트 매매건수는 31.7% 감소했다.
+   (매일경제 · 09/29 10:30)
+5. (전세) 서울 원룸 월세 평균 2만원 내렸다
+   → 올해 8월 서울 원룸 평균 월세가 67만원으로 2만원 하락한 반면, 평균 전세보증금은 2억2228만원으로 소폭 상승하였다.
+   (매일경제 · 09/29 11:01)
+6. (매매) 반포·개포 5~6억 '뚝'
+   → 강남 3구 아파트의 거래가 감소하면서 가격 하락 현상이 나타나고 있다.
+   (뉴시스 · 09/29 16:36)
+
+[흐름·전망]
+• 강북권 아파트 전셋값이 상승세를 지속하면서 실거주 의무가 강화된 상황에서 민간임대주택의 수요 증가가 예상된다.
+• 대학 인근 지역의 아파트 상승세는 지속될 가능성이 높지만, 전체적 시장의 불안정성이 이어질 수 있다.
+• 30대의 부동산 정책에 대한 불만이 커지면서 정책 변화의 필요성이 대두되고 있어 향후 정부의 대응이 주목된다.
+• 강남을 비롯한 한강변 고가 주거지역의 거래량 감소가 지속되며, 매물 이탈로 인한 가격 조정이 예상된다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+오늘 트럼프는 최근 뉴스와 정치적 상황을 비판하며 자신의 업적을 강조했다.
+
+[주요 발언]
+1. (사법) 트럼프는 Axios의 보도가 허위라며, 자신이 이란에 어떤 제재 완화나 동결 자금을 제안한 적이 없다고 주장했다.
+   (Truth Social · 09/29 06:34)
+2. (기타) 트럼프는 미국 상원에서 대학 스포츠 보호 법안이 통과된 것을 축하하며, 이는 대학들 자체를 구할 것이라고 강조했다.
+   (Truth Social · 09/29 11:33)
+3. (국내정치) 트럼프는 미드텀 선거에서 공화당이 승리할 것이라며, 이를 위한 지지와 자금을 아끼지 않겠다고 말했다.
+   (Truth Social · 09/28 20:50)
+4. (경제) 트럼프는 미국의 고용 수치가 역사상 최고라며, 가짜 뉴스 미디어가 이를 보도하지 않고 있다고 비난했다.
+   (Truth Social · 09/28 20:38)
+5. (사법) 트럼프는 대법원이 자신의 유권자 시민권 검증 규칙을 복원했다고 알리며 이는 중요한 승리라고 언급했다.
+   (Truth Social · 09/28 20:33)
+6. (국내정치) 트럼프는 조 스카버로우와 빌 마허의 방송 내용과 시청률에 대해 비판하며, 공화당은 그들을 이용해서는 안 된다고 말했다.
+   (Truth Social · 09/28 20:57)
+
+[흐름·전망]
+• 트럼프의 허위 보도 반박은 언론과의 관계에서의 갈등을 더욱 부각시킬 가능성이 있다.
+• 미드텀 선거에서의 공화당 지원 강화를 통해 트럼프의 정치적 영향력이 확대될 수 있는지 주목할 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
