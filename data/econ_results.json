@@ -263,28 +263,28 @@
 "c64df516-64bb-4737-9430-1ff3df1bab9a": {
 "name": "ADP Employment Change",
 "dt": "2026-09-30T12:15:00Z",
-"act": null,
+"act": "90K",
 "cons": "70K",
-"prev": "38K",
-"act_n": null,
+"prev": "36K",
+"act_n": 90.0,
 "cons_n": 70.0
 },
 "ef95f488-2906-40b6-93ea-2a2ca30e6d07": {
 "name": "Core Personal Consumption Expenditures - Price Index (MoM)",
 "dt": "2026-09-30T12:30:00Z",
-"act": null,
+"act": "0.2%",
 "cons": "0.3%",
-"prev": "0.2%",
-"act_n": null,
+"prev": "0.1%",
+"act_n": 0.2,
 "cons_n": 0.3
 },
 "afc8067a-4f0d-4f1b-b39d-355dbc61dd7c": {
 "name": "Core Personal Consumption Expenditures - Price Index (YoY)",
 "dt": "2026-09-30T12:30:00Z",
-"act": null,
+"act": "3%",
 "cons": "3.3%",
-"prev": "3.3%",
-"act_n": null,
+"prev": "3%",
+"act_n": 3.0,
 "cons_n": 3.3
 },
 "deafc9c6-01be-41ed-b3b4-d7f66b6a1e89": {
@@ -499,7 +499,7 @@
 "dt": "2026-10-29T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "2.2%",
 "act_n": null,
 "cons_n": null
 },
@@ -508,7 +508,7 @@
 "dt": "2026-10-29T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "6.1%",
 "act_n": null,
 "cons_n": null
 },
@@ -562,7 +562,7 @@
 "dt": "2026-10-30T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "0.2%",
 "act_n": null,
 "cons_n": null
 },
@@ -571,7 +571,7 @@
 "dt": "2026-10-30T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "3%",
 "act_n": null,
 "cons_n": null
 },
@@ -598,7 +598,7 @@
 "dt": "2026-11-04T12:15:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "90K",
 "act_n": null,
 "cons_n": null
 },
