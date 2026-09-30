@@ -1,0 +1,237 @@
+2026-09-30T17:02:38.176364+09:00
+
+[오늘의 뉴스 요약] 2026-09-30 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 채권 금리는 일제히 하락하며 안정적인 모습을 보였고, 원/달러 환율은 수출업체의 달러 매도로 인해 이틀 연속 하락세를 이어갔다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 일제히 하락
+   → 30일 서울 채권시장에서 3년 만기 국고채 금리는 전 거래일보다 6.5bp 하락한 연 4.011%에 마감했다. 10년물 금리도 6.9bp 하락해 연 4.407%를 기록했다.
+   (연합뉴스 · 09/30 16:46)
+2. (환율) 美금리 상승도 누른 수출업체 달러 매도…환율 1,350원대 초반
+   → 원/달러 환율은 30일 달러당 1,352.8원으로 전 거래일 대비 3.9원 하락했다. 이로써 환율은 이틀 연속 하락하며 1,350원대 초반으로 들어섰다.
+   (연합뉴스 · 09/30 16:01)
+3. (성장) 씨티은행, 한국 성장률 전망치 3.8%로 0.1%p 올려
+   → 씨티은행은 올해 한국 GDP 성장률 전망치를 3.8%로 0.1%p 상향 조정하며, 내년 성장률은 3.3%로 예상하고 있다.
+   (연합뉴스 · 09/30 14:34)
+4. (고용) 물가 반영한 실질임금 봤더니
+   → 고용노동부에 따르면, 7월 실질임금은 4개월 연속 감소세를 보였으며, 물가 상승에 따라 실질임금은 2.8% 상승한 소비자물가를 따라가지 못했다.
+   (매일경제 · 09/30 15:37)
+5. (기타) 원/달러 환율 3.9원 내린 1,352.8원
+   → 원/달러 환율은 30일 15시 30분 기준 3.9원 하락한 1,352.8원으로 집계되었으며, 이는 국내 수출업체들의 달러 매도가 원화 강세를 이끌었다.
+   (연합뉴스 · 09/30 15:31)
+
+[흐름·전망]
+• 앞으로의 채권 금리 흐름은 글로벌 금리 동향에 따라 달라질 수 있으므로 주의 깊은 모니터링이 필요하다.
+• 원/달러 환율은 수출업체의 달러 매도와 일본 엔화 강세에 따른 국내외 경제 동향에 따라 변동성이 클 것으로 예상된다.
+• 한국의 GDP 성장률 상승 전망이 경제 전반에 긍정적인 영향을 미칠 가능성이 있으며, 자동차 및 반도체 산업의 동향이 특히 중요하다.
+• 실질임금 감소가 고용 시장에 미치는 여파를 관찰할 필요가 있으며, 경기 회복과 임금 협상이 향후 경제 성장에 어떤 영향을 미칠지 주목해야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA Corporation $NVDA Shares Sold by Rice Hall James & Associates LLC - MarketBeat
+   (MarketBeat · 09/30 16:30)
+→ Rice Hall James & Associates LLC가 NVIDIA Corporation($NVDA) 주식을 매도했습니다. 이 소식은 MarketBeat를 통해 전해졌습니다.
+
+📰 [NVDA] Nvidia (NVDA) Ships an AI Safety Platform After Huang Called Rival Warnings Odd
+   (Yahoo Finance · 09/30 15:34)
+→ 엔비디아가 9월 28일 AI 안전 플랫폼인 '오픈 에이전트 안전 플랫폼'을 출시했습니다. 이 플랫폼은 AI 에이전트가 독립적으로 행동할 때 보안 문제를 방지하기 위한 도구 세트를 제공합니다. 이 발표는 엔비디아 CEO인 젠슨 황이 앤트로픽과 오픈AI의 경고를 이상하다고 언급한 며칠 후에 이루어졌습니다.
+
+📰 [NVDA] Nvidia (NVDA) Ships an AI Safety Platform After Huang Called Rival Warnings Odd - Yahoo Finance
+   (Yahoo Finance · 09/30 15:34)
+→ Nvidia는 Huang CEO가 경쟁사들의 경고를 이상하다고 언급한 후에 AI 안전 플랫폼을 출시했습니다. 이 플랫폼은 AI 기술의 안전한 사용을 지원하기 위해 개발되었습니다.
+
+📰 [TSLA] Surprise: Tesla has delayed the Roadster reveal - this time, it's the weather - Autocar
+   (Autocar · 09/30 16:47)
+→ 테슬라가 로드스터 공개를 날씨 문제로 연기했다는 소식이 전해졌습니다. 이는 예상치 못한 결정으로, 새로운 출시 일정에 대한 관심이 모이는 상황입니다.
+
+📰 [TSLA] Zacks Investment Ideas feature highlights: Tesla - Zacks Investment Research
+   (Zacks Investment Research · 09/30 15:53)
+→ Zacks Investment Research는 테슬라에 대한 투자 아이디어를 강조하고 있습니다. 이 보고서는 테슬라의 성장 가능성과 시장 내 위치를 분석하며, 투자자들에게 유망한 투자 선택으로 제시되고 있습니다.
+
+📰 [TSLA] Tesla 2026.38 Rolls Out: Supercharger Site Maps and Security Fixes - BASENOR
+   (BASENOR · 09/30 15:05)
+→ 테슬라가 2026.38 버전을 출시하며 슈퍼차저 사이트 지도와 보안 수정 사항을 포함했습니다. 이번 업데이트는 충전소 이용의 편리함과 보안 강화를 목표로 하고 있습니다.
+
+📰 [HIMS] Robbins LLP Urges HIMS Stockholders to Contact the Firm for Information About the Hims & Hers Health, Inc. Class Action Lawsuit - PR Newswire
+   (PR Newswire · 09/30 09:24)
+→ Robbins LLP는 HIMS 주주들에게 Hims & Hers Health, Inc.의 집단소송에 대한 정보를 제공하기 위해 법무법인에 연락할 것을 촉구하고 있습니다. 이 소송은 주주들의 권리를 보호하는 차원에서 진행되고 있습니다.
+
+📰 [HIMS] Hims & Hers Health (HIMS) Investors: Securities Fraud Class Action Filed, Contact Hagens Berman Before November 2, 2026 Lead Plaintiff Deadline - PR Newswire
+   (PR Newswire · 09/30 01:39)
+→ Hims & Hers Health의 투자자들을 대상으로 증권 사기 집단 소송이 제기되었으며, 2026년 11월 2일 이전에 Hagens Berman에 연락할 것을 권장하고 있습니다. 이 소송은 투자자들에게 피해를 입혔다는 주장에 기반하고 있습니다.
+
+📰 [HIMS] HIMS Investors Have Opportunity to Lead Hims & Hers Health, Inc. Securities Fraud Lawsuit with SBS Law - GlobeNewswire
+   (GlobeNewswire · 09/29 23:15)
+→ Hims & Hers Health, Inc.의 투자자들은 SBS 법률사무소와 함께 증권 사기 소송을 주도할 기회를 얻었습니다. 이번 소송은 Hims & Hers의 투자자들이 회사를 상대로 제기한 사기에 대한 내용으로, 법률 전문가들의 참여를 통해 행해질 예정입니다.
+
+📰 [RDW] Sophia Space and Redwire Team Up to Advance Orbital Data Center Infrastructure
+   (Yahoo Finance · 09/30 13:51)
+→ 소피아 스페이스와 레드와이어가 궤도 데이터 센터 인프라 개발을 위해 양해각서를 체결했다. 이 협력은 소피아 스페이스의 모듈형 궤도 컴퓨팅 아키텍처와 레드와이어의 다양한 우주 시스템 기술 솔루션을 결합하여 궤도에서 확장 가능한 컴퓨팅 인프라를 구축하는 데 집중하고 있다.
+
+📰 [RDW] Space Stocks Are Roaring Back In August — Here’s Why ASTS, RKLB, RDW And Their Peers Are Leaving SpaceX Behind - Stocktwits
+   (Stocktwits · 09/30 09:13)
+→ 8월에 우주 관련 주식들이 급등하며 ASTS, RKLB, RDW 등 기업들이 SpaceX를 앞서고 있는 이유에 대해 다루고 있습니다. 이러한 상승세는 투자자들의 관심과 긍정적인 시장 환경에 기인하고 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Down 4.5% - Here's What Happened - MarketBeat
+   (MarketBeat · 09/30 06:26)
+→ 레드와이어(Redwire)의 주가가 4.5% 하락했습니다. 이와 관련된 구체적인 이유는 뉴스 기사에서 다루어졌습니다.
+
+📰 [IREN] How IREZ Works: The Mechanics of the Tradr 2X Short IREN Daily ETF - kalkine.ca
+   (kalkine.ca · 09/30 05:25)
+→ Tradr 2X Short IREN Daily ETF(IREZ)는 이중 레버리지를 사용하여 IREN 지수의 일일 변동에 따라 수익을 추구하는 투자 상품입니다. 이 ETF는 기본 자산이 하락할 때 더 큰 수익을 내는 구조로 설계되어 있으며, 시장의 하락세에서 이익을 볼 수 있는 전략을 제공합니다.
+
+📰 [IREN] Iren (BIT:IRE) And The Infrastructure Upgrade Narrative Behind Its Valuation
+   (Yahoo Finance · 09/30 04:06)
+→ Iren(BIT:IRE)의 주가는 최근 2.44유로로 마감하며, 올해 약 5.9% 하락 후 주목을 받았다. 7일간 주가는 3.17% 하락했지만, 3년 동안 주주 총 수익률은 65.57%에 달해 장기적으로는 긍정적인 성과를 보였다.
+
+📰 [IREN] Iren (BIT:IRE) And The Infrastructure Upgrade Narrative Behind Its Valuation - Yahoo Finance
+   (Yahoo Finance · 09/30 04:06)
+→ Iren(BIT:IRE)의 가치는 인프라 업그레이드와 관련된 이야기에 의해 높아지고 있다. 이 회사는 강화된 인프라를 통해 미래 성장 가능성을 제시하며, 이는 투자자들에게 긍정적인 신호가 되고 있다. 이러한 배경 속에서 Iren의 주가는 상승세를 보이고 있다.
+
+📰 [RKLB] 13,761 Shares in Rocket Lab Corporation $RKLB Purchased by Cim Investment Management Inc. - MarketBeat
+   (MarketBeat · 09/30 08:16)
+→ Cim Investment Management Inc.가 로켓랩 주식 13,761주를 매입했다고 보도됐다. 이 투자 정보는 MarketBeat를 통해 전해졌다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Stock Falls 3.4% - Should You Sell? - MarketBeat
+   (MarketBeat · 09/30 06:26)
+→ 로켓랩(Rocket Lab)의 주가가 3.4% 하락했습니다. 이에 따라 투자자들 사이에서 주식을 판매해야 하는지에 대한 논의가 일고 있습니다.
+
+📰 [RKLB] Rocket Lab slides as Iridium deal financing and dilution overhang remain in focus - Quiver Quantitative
+   (Quiver Quantitative · 09/30 06:21)
+→ Rocket Lab 주가는 Iridium 계약 관련 자금 조달과 주식 희석 우려가 지속되면서 하락세를 보이고 있다. 이러한 요인들이 투자자들의 우려를 증대시키고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin could put the average ETF buyer back in losses this week - CryptoSlate
+   (CryptoSlate · 09/30 16:40)
+→ 비트코인이 이번 주 평균 ETF 투자자에게 다시 손실을 안길 가능성이 있다는 보도가 전해졌다. 시장의 변동성이 커지면서 투자자들이 다시 위험에 처할 수 있다는 우려가 제기되고 있다.
+
+📰 [BTC-USD] Strive Buys 6,106 Bitcoin in a Month at Average Price of About $80,375 - bloomingbit
+   (bloomingbit · 09/30 16:39)
+→ Strive는 한 달 동안 평균 약 80,375달러에 6,106개의 비트코인을 구매했습니다. 이번 구매는 Strive의 비트코인 보유량을 크게 늘리는 데 기여했습니다.
+
+📰 [BTC-USD] Bitcoin Demand Showing 'Signs of Improvement' Despite 'Challenging' Backdrop, Says Binance Co-CEO as Spot - Benzinga
+   (Benzinga · 09/30 16:39)
+→ 바이낸스 공동 CEO는 비트코인 수요가 어려운 환경 속에서도 개선의 조짐을 보이고 있다고 전했다. 이는 비트코인 시장에 긍정적인 신호로 나타나고 있다.
+
+📰 [ETH-USD] Ethereum trades near $2,680 amid selling pressu... - Pluang
+   (Pluang · 09/30 16:44)
+→ 이더리움 가격이 약 2,680달러에서 거래되고 있으며, 판매 압력이 지속되고 있는 상황입니다. 이로 인해 시장에서의 불확실성이 커지고 있습니다.
+
+📰 [ETH-USD] Ethereum ETFs Snap 7-Day Inflow Streak as Bitcoin Funds Keep Buying - BeInCrypto
+   (BeInCrypto · 09/30 16:31)
+→ 이더리움 ETF의 자금 유입이 7일간의 연속을 끊은 반면, 비트코인 펀드는 계속해서 자금을 추가하고 있는 것으로 나타났습니다. 이는 암호화폐 시장의 투자 흐름에 변화를 나타내고 있습니다.
+
+📰 [ETH-USD] Will BlackRock Launch an XRP ETF?
+   (Yahoo Finance · 09/30 16:25)
+→ 블랙록이 미국에서 가장 큰 비트코인과 이더리움 ETF를 운영하고 있지만, XRP에 대한 모든 신청 마감일을 놓쳤습니다. 이에 반해 다른 7개의 경쟁사는 이미 XRP에 수십억 달러를 보유하고 있습니다. 이러한 블랙록의 결정은 투자자들이 XRP의 미래를 바라보는 방식에 큰 영향을 미칠 수 있습니다.
+
+📰 [SOL-USD] 281M $APEING Tokens Burned as Solana Pullback Draws Attention to Emerging Crypto Projects - manilatimes.net
+   (manilatimes.net · 09/30 16:53)
+→ 281만 개의 $APEING 토큰이 소각되면서 솔라나의 조정이 떠오르는 암호화폐 프로젝트들에 대한 관심을 불러일으키고 있다. 이러한 소각 조치는 시장의 변동성 속에서 신생 암호화폐의 주목도를 높이는 계기가 되고 있다.
+
+📰 [SOL-USD] Is Avalanche a Smart Investment in 2026? What It Has to Prove That Solana Already Did
+   (Yahoo Finance · 09/30 16:49)
+→ 아발란체(AVAX)는 최근 한 달간 59% 상승했지만 여전히 최고가 대비 92% 낮은 가격으로 거래되고 있다. 2026년 투자 가치가 있는지, 그리고 이미 검증된 트랙레코드를 가진 솔라나(SOL)와 경쟁하기 위해 무엇을 입증해야 하는지가 주목받고 있다.
+
+📰 [SOL-USD] Is Avalanche a Smart Investment in 2026? What It Has to Prove That Solana Already Did - 24/7 Wall St.
+   (24/7 Wall St. · 09/30 16:49)
+→ 2026년 아발란치(Avalanche)가 스마트한 투자일지를 논의하는 기사에서는 아발란치가 솔라나(Solana)가 이미 입증한 것처럼 확장성, 속도, 개발자의 관심을 증명해야 한다고 강조하고 있습니다. 두 플랫폼의 경쟁력을 비교하며, 아발란치의 미래 전망에 대한 기대와 우려가 언급되고 있습니다.
+
+📰 [BMNR] Bitmine Continues to Load Up on Ethereum, Now Owns 4.9% of all ETH in Circulation. Is BMNR Stock a Buy? - The Motley Fool
+   (The Motley Fool · 09/30 03:00)
+→ 비트마인은 이더리움을 계속 매입하며 현재 유통 중인 전체 ETH의 4.9%를 보유하게 되었습니다. BMNR 주식의 매수 여부에 대한 질문이 제기되고 있습니다.
+
+📰 [BMNR] Bitmine Continues to Load Up on Ethereum, Now Owns 4.9% of all ETH in Circulation. Is BMNR Stock a Buy?
+   (Yahoo Finance · 09/30 02:20)
+→ 비트마인은 이더리움에 집중 투자해 현재 유통 중인 모든 이더리움의 4.9%를 보유하고 있다. 이로 인해 BMNR 주식에 대한 투자 여부가 화제로 떠오르고 있다.
+
+📰 [BMNR] Bitmine Continues to Load Up on Ethereum, Now Owns 4.9% of all ETH in Circulation. Is BMNR Stock a Buy? - Currently.com
+   (Currently.com · 09/30 02:20)
+→ Bitmine이 이더리움을 지속적으로 구매하여 현재 시중에 유통되는 모든 ETH의 4.9%를 보유하게 되었습니다. 이와 관련해 BMNR 주식이 투자 가치가 있는지에 대한 논의가 이루어지고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 비트코인 개인 수요가 감소세로 돌아서면서 전반적인 시장 분위기가 약화되고 있다. 주요 알트코인도 함께 하락세를 보이고 있으며, 규제 관련 소식이 시장에 부정적인 영향을 미치는 것으로 해석된다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 개인 수요, 30일 변화율 -3.5%로 감소
+   → 비트코인의 개인 수요가 30일 변화율로 -3.5% 감소했으며, XRP와 XLM의 거래 비중이 상대적으로 높았다. 특히 XLM은 국내에서 649억 원 거래대금을 기록하며 가장 높은 관심을 받았다.
+   (토큰포스트 · 09/30 17:00)
+2. (규제) 일리노이주, 디지털자산 거래세 초안 공개
+   → 비트코인 개인 투자자 수요가 최근 30일 동안 17%에서 -3.5%로 감소하여 소액 거래자 활동이 줄어든 흐름을 보인다.
+   (토큰포스트 · 09/30 17:00)
+3. (ETF) 비트코인 2.2% 하락 시 ETF 평균 손익분기점 하회
+   → 일리노이주에서 디지털자산에 대한 0.2% 거래세 초안을 발표하며 규제 우려가 커지고 있다. 비트코인은 24시간 기준 1.03% 하락했다.
+   (토큰포스트 · 09/30 16:54)
+4. (온체인) 에이브, 토큰화 주식 7종으로 대출 시장 열어
+   → 비트코인이 2.2% 하락하면 ETF 평균 손익분기점인 8만1722달러를 하회할 가능성이 있으며, 현재 시장에서 비트코인의 가격 하락이 계속되고 있다.
+   (토큰포스트 · 09/30 16:51)
+5. (정책) 하이퍼리퀴드 CEO, 온체인 금융시장 확장 전망
+   → 에이브가 7종의 토큰화 주식을 기반으로 대출 시장을 열었지만, 초기 대출 이용률이 5.34%로 낮다. 이는 토큰화 자산의 활용 가능성에 대한 의문을 제기한다.
+   (토큰포스트 · 09/30 16:50)
+
+[흐름·전망]
+• 비트코인 수요 감소가 이어지면 단기적으로 가격 하락 압력이 계속될 가능성이 있다.
+• 지속적인 규제 소식이 시장에 불안감을 조성하면서 투자자들이 조심스러운 접근을 할 것으로 보인다.
+• 디지털 자산 시장에서 토큰화 주식의 활용 가능성이 높아지면, 장기적으로는 DeFi 생태계 확장에 긍정적인 영향을 미칠 수 있다.
+• 시장 카운터가 하락장 속에서도 종목별 분산 투자 전략이 필요할 때라는 점에 유의해야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 29 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울의 주택 인허가가 40% 증가하는 등의 긍정적인 선행지표가 나타났으나, 실제 준공 물량은 여전히 감소세를 보이며 공급 부족 우려가 이어지고 있다.
+
+[핵심 뉴스]
+1. (공급) 서울 주택 인허가 40% 늘었다
+   → 올해 1~8월 서울의 주택 인허가는 3만9940가구로 지난해 같은 기간보다 40.4% 증가했으며, 서울 착공도 41.1% 증가해 공급 선행지표 개선이 나타났으나, 1~8월 준공은 19.1% 감소하여 공급 부족 우려가 여전하다.
+   (매일경제 · 09/30 14:03)
+2. (정책) 부산은행·주택도시보증공사, 400억원 규모 상생펀드 대출 시행
+   → 부산은행과 주택도시보증공사는 400억원 규모의 상생펀드 대출을 시행하며, 지역 중소기업에 최대 1.7%포인트 금리 우대 혜택을 통해 건설업 지원이 강화될 예정이다.
+   (연합뉴스 · 09/30 16:41)
+3. (금리) 은행 주담대 금리 연 4.66%...넉달째 상승
+   → 주택담보대출 금리는 4.66%로 4개월 연속 상승하며 3년 9개월 만에 최고치를 기록했으며, 전체 가계대출 금리도 상승세를 보이고 있다.
+   (연합뉴스 · 09/30 12:00)
+4. (분양청약) 올 가을 최대 공급…10월 전국 4만5000가구 분양
+   → 10월 한 달에 걸쳐 전국에서 4만5000가구의 아파트가 분양될 예정으로, 가을철 주택 시장에 큰 영향을 미칠 것으로 보인다.
+   (아시아경제 · 09/30 16:21)
+5. (매매) 대구·울산·경북 미분양 소진 전국 TOP 3
+   → 대구·울산·경북 지역은 최근 1년 반 동안 가장 많은 미분양 물량이 소화되었고, 이는 공급 감소가 영향을 미쳐 신고가 거래로 이어지고 있다.
+   (매일경제 · 09/30 12:13)
+6. (가격) 착공 2년 연속 감소 예상…“신규 입주 부족→4분기도 가격 상승압력”
+   → 4분기 주택시장은 임대차 시장의 강세와 소비심리 회복이 맞물리며 매수세가 확대될 가능성이 있지만, 신규 입주 물량 부족에 따른 가격 상승 압력이 지속될 전망이다.
+   (매일경제 · 09/30 10:00)
+
+[흐름·전망]
+• 서울과 수도권의 주택 공급 선행지표가 개선되고 있으나 준공 물량의 감소가 지속된다면 가격 상승 압력은 더욱 클 것으로 보인다.
+• 부산 지역의 상생펀드가 건설업계에 미치는 영향을 주의 깊게 살펴볼 필요가 있으며, 이러한 지원은 지역 경기 회복에 긍정적 역할을 할 수 있다.
+• 주택담보대출 금리의 지속적인 상승이 가계의 금융 부담을 가중시킬 것으로 예상되며, 이는 주택 수요에 영향을 미칠 가능성이 있다.
+• 지방시장, 특히 대구·울산·경북의 미분양 감소세가 최근 상승세로 이어지고 있어 해당 지역의 부동산 강세가 지속될 가능성이 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 이란이 호르무즈 해협을 통제하지 못하고 있다고 주장하며, 이란의 군사적 상황을 비판했다. 그는 또한 자신이 대통령이던 시절 이란과의 관계를 강조했다.
+
+[주요 발언]
+1. (외교) 트럼프는 이란이 호르무즈 해협을 잃었다고 언급하며, 이란의 군사적 통제력이 약화되었다고 주장했다.
+   (Truth Social · 09/30 06:00)
+2. (기타) 트럼프는 저명한 기자의 언급을引用하며 자신에 대한 긍정적인 평가를 강조했다.
+   (Truth Social · 09/29 21:30)
+
+[흐름·전망]
+• 트럼프의 이란 관련 발언은 중동 지역의 긴장 상황에 대한 관심을 불러일으킬 가능성이 있다.
+• 이란과의 관계에서 미국의 정책 방향을 주목할 필요가 있다.
+• 트럼프의 부각된 발언은 앞으로 국내 여론에 미치는 영향이 주목된다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
