@@ -290,10 +290,10 @@
 "deafc9c6-01be-41ed-b3b4-d7f66b6a1e89": {
 "name": "Tankan Large Manufacturing Index",
 "dt": "2026-09-30T23:50:00Z",
-"act": null,
+"act": "24",
 "cons": "25",
 "prev": "22",
-"act_n": null,
+"act_n": 24.0,
 "cons_n": 25.0
 },
 "05dd9d6f-3824-41d0-9c6f-ce69efbb311a": {
