@@ -308,38 +308,38 @@
 "a8be8ae1-e0eb-43b4-8b98-4c2333560680": {
 "name": "Average Hourly Earnings (MoM)",
 "dt": "2026-10-02T12:30:00Z",
-"act": null,
+"act": "0.1%",
 "cons": "0.3%",
 "prev": "0.3%",
-"act_n": null,
+"act_n": 0.1,
 "cons_n": 0.3
 },
 "a0485df5-8fd5-477b-9a61-0daad1abde41": {
 "name": "Average Hourly Earnings (YoY)",
 "dt": "2026-10-02T12:30:00Z",
-"act": null,
+"act": "3%",
 "cons": "3.2%",
 "prev": "3.1%",
-"act_n": null,
+"act_n": 3.0,
 "cons_n": 3.2
 },
 "42eb369a-fa30-4a2e-b508-ba4dc3fd8073": {
 "name": "Nonfarm Payrolls",
 "dt": "2026-10-02T12:30:00Z",
-"act": null,
+"act": "29K",
 "cons": "90K",
-"prev": "162K",
-"act_n": null,
+"prev": "133K",
+"act_n": 29.0,
 "cons_n": 90.0
 },
 "01cb6076-cca0-46ff-b8a7-98f6bd803237": {
 "name": "ISM Services PMI",
 "dt": "2026-10-05T14:00:00Z",
 "act": null,
-"cons": null,
+"cons": "55.7",
 "prev": "55.4",
 "act_n": null,
-"cons_n": null
+"cons_n": 55.7
 },
 "02a53a33-4794-47f5-9def-bc39d26272b3": {
 "name": "FOMC Minutes",
@@ -354,10 +354,10 @@
 "name": "Michigan Consumer Sentiment Index",
 "dt": "2026-10-09T14:00:00Z",
 "act": null,
-"cons": null,
+"cons": "48.1",
 "prev": "48.1",
 "act_n": null,
-"cons_n": null
+"cons_n": 48.1
 },
 "cbe30686-e724-42b1-b883-36bd8925fe5a": {
 "name": "Consumer Price Index (MoM)",
@@ -616,7 +616,7 @@
 "dt": "2026-11-06T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "0.1%",
 "act_n": null,
 "cons_n": null
 },
@@ -625,7 +625,7 @@
 "dt": "2026-11-06T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "3%",
 "act_n": null,
 "cons_n": null
 },
@@ -634,7 +634,7 @@
 "dt": "2026-11-06T12:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "29K",
 "act_n": null,
 "cons_n": null
 },
