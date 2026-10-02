@@ -1,0 +1,242 @@
+2026-10-02T17:02:58.527740+09:00
+
+[오늘의 뉴스 요약] 2026-10-02 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국내 채권 금리가 일제히 하락하며 안정세를 보였고, 원/달러 환율은 강달러에서 조정받아 하락세로 전환했다. 9월 소비자물가는 상승률이 다시 2%대로 내려오면서 물가 안정의 신호를 보였다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 일제히 하락
+   → 국고채 금리는 3년물 3.937%, 10년물 4.365%로 각각 7.3bp, 7.1bp 하락하며 연휴 이후 급등분을 반납했다. 재경부는 10월 국고채 발행 규모를 5조원 축소하기로 했다.
+   (연합뉴스 · 10/02 16:46)
+2. (환율) 원/달러 환율, 강달러 영향 후 조정
+   → 원/달러 환율은 장 초반 1,366원까지 올랐다가 이후 수출업체의 매도로 1,350.6원으로 하락하며 1,350원 밑으로 떨어졌다. 이날 환율의 변동폭은 16.4원으로 최근 최대치를 기록했다.
+   (연합뉴스 · 10/02 16:11)
+3. (물가) 9월 소비자물가 2.9% 상승
+   → 9월 소비자물가는 전년 동월 대비 2.9% 상승하며 다시 2%대로 내려갔다. 농산물 가격 하락에도 불구하고 석유류 가격이 여전히 14.8% 상승세를 이어갔다.
+   (연합뉴스 · 10/02 11:04)
+4. (환율) 원·달러 환율 1350.6원으로 마감
+   → 원·달러 환율이 7.8원 내린 1350.6원으로 마감하며, 최근 20일 중 최저치를 기록했다.
+   (서울파이낸스 · 10/02 15:34)
+
+[흐름·전망]
+• 금리 시장에서의 안정세가 지속될지 여부에 대한 주목이 필요하다.
+• 원/달러 환율의 향후 추세 변화는 수출업체의 달러 매도 물량 움직임에 크게 영향을 받을 것으로 보인다.
+• 소비자 물가가 다시 2%대로 내려온 만큼, 한국은행의 통화 정책 방향에 대한 논의가 활발할 전망이다.
+• 미국의 비농업 부문 고용지표 발표 후 국내 시장 변동에 주의해야 할 필요가 있다.
+
+📈 해외주식 PART
+📰 [NVDA] OpenAI’s GPT-6 Astra Ultrafast Runs 8x Faster On NVIDIA Blackwell GPUs - Quantum Zeitgeist
+   (Quantum Zeitgeist · 10/02 16:41)
+→ OpenAI의 GPT-6 Astra Ultrafast는 NVIDIA Blackwell GPU에서 8배 더 빠르게 실행됩니다. 이 성능 향상은 최신 기술의 발전을 반영합니다.
+
+📰 [NVDA] Stocktwits AI Roundup: Micron’s Blowout Quarter, Nvidia’s $150B Buyback And The Race For AI Agents
+   (Yahoo Finance · 10/02 16:11)
+→ 이번 Stocktwits AI 라운드업에서는 마이크론의 뛰어난 분기 실적과 엔비디아의 1500억 달러 규모 자사주 매입 소식을 다루고 있으며, AI 인프라에 대한 수요가 여전하지만 비용 상승과 경쟁 심화로 투자자들이 긴장하고 있다는 내용을 전했습니다.
+
+📰 [NVDA] NVIDIA GPUs Help AI Factories Get The Most Tokens Per Megawatt - Quantum Zeitgeist
+   (Quantum Zeitgeist · 10/02 16:02)
+→ NVIDIA의 GPU가 AI 공장에서 전력소비 효율성을 높여주는 역할을 하고 있으며, 이를 통해 메가와트당 최대의 토큰을 생성할 수 있도록 돕고 있다는 내용입니다. 이러한 기술은 AI의 생산성과 자원 효율성을 개선하는 데 중요한 영향을 미치고 있습니다.
+
+📰 [TSLA] Tesla Roadster launch was postponed by two weeks due to 'high winds' - Mashable
+   (Mashable · 10/02 16:25)
+→ 테슬라 로드스터의 출시가 '강한 바람'으로 인해 2주 연기되었다고 마샤블이 보도했다. 새로운 출시 일정은 아직 발표되지 않았다.
+
+📰 [TSLA] Tesla sales come off the boil due to shipment dates, but Model 3 leaps ahead before release of cut-price model - thedriven.io
+   (thedriven.io · 10/02 13:46)
+→ 테슬라의 판매가 배송 일정으로 인해 감소세를 보이고 있지만, 모델 3는 저렴한 모델 출시를 앞두고 상승세를 기록하고 있습니다.
+
+📰 [TSLA] Tesla Is the Only Magnificent Seven Stock in the Red for 2026 - The Motley Fool
+   (The Motley Fool · 10/02 12:37)
+→ 2026년 현재, 테슬라는 '매그니피센트 세븐' 주식 중 유일하게 하락세를 보이고 있습니다. 다른 여섯 개의 주식들은 긍정적인 성과를 기록하고 있지만, 테슬라는 부정적인 상황에 처한 것으로 분석됩니다.
+
+📰 [HIMS] hims faces legal action as fda restricts compounded weight-loss drugs - BusinessWorld
+   (BusinessWorld · 10/02 16:29)
+→ Hims가 FDA의 병용 체중 감량 약물에 대한 제한으로 인해 법적 조치에 직면하고 있습니다. 이로 인해 해당 약물의 개발 및 판매에 어려움이 예상됩니다.
+
+📰 [HIMS] Kaplan Fox Reminds Hims & Hers Health, Inc. (NYSE: HIMS) Investor - The National Law Review
+   (The National Law Review · 10/02 11:05)
+→ Kaplan Fox가 Hims & Hers Health, Inc. (NYSE: HIMS) 투자자들에게 해당 기업에 대한 중요 정보를 상기시켰습니다. 이 뉴스는 투자자들에게 관련된 법적 사항이나 주의를 의도한 것으로 보입니다.
+
+📰 [HIMS] The Technical Signals Behind (HIMS) That Institutions Follow - Stock Traders Daily
+   (Stock Traders Daily · 10/02 11:02)
+→ "HIMS"에 대한 기관 투자자들이 따르는 기술적 신호에 관한 내용이 다루어졌습니다. 주식 거래에 있어서 이러한 신호들이 어떻게 활용되는지에 대한 분석이 포함되어 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Price Up 1.4% - What's Next? - marketbeat.com
+   (marketbeat.com · 10/02 06:24)
+→ Redwire의 주가가 1.4% 상승했습니다. 향후 주가 움직임에 대한 분석이 진행되고 있으며, 투자자들은 다음 단계에 주목하고 있습니다.
+
+📰 [RDW] RKLB, LUNR, RDW Jump Premarket As Musk Pitches AI Satellites, Orbital Data Centers — Analyst Says The Odds Are Just 7% - Stocktwits
+   (Stocktwits · 10/02 05:16)
+→ RKLB, LUNR, RDW 주식이 프리마켓에서 상승했으며, 이는 일론 머스크가 AI 위성과 궤도 데이터 센터에 대한 아이디어를 제안한 데 따른 것입니다. 그러나 한 애널리스트는 이 계획이 실현될 확률이 7%에 불과하다고 평가했습니다.
+
+📰 [RDW] RDW Stock Alert: What to Know as Redwire Teams Up With Honda on Robotics
+   (Yahoo Finance · 10/02 03:50)
+→ 레드와이어(RDW) 주가는 미국의 우주 개발 부문과의 파트너십을 통해 혼다와 협력하게 되면서 상승세를 보이고 있습니다. 이로 인해 RDW 주식의 매수 가치가 높아졌다는 분석이 나오고 있습니다.
+
+📰 [IREN] IREN Drops 18% in a Week Despite Booming AI Demand as $30B Spending Plan Raises Questions
+   (Yahoo Finance · 10/02 02:05)
+→ IREN 주식이 AI 수요가 증가하는 가운데도 지난 주에 약 18% 하락했습니다. 이는 회사의 250억~300억 달러 규모의 투자 계획에 대한 우려 때문입니다.
+
+📰 [IREN] IREN Drops 18% in a Week Despite Booming AI Demand as $30B Spending Plan Raises Questions - Benzinga
+   (Benzinga · 10/02 02:05)
+→ AI 수요가 급증하는 가운데 IREN 주가가 일주일 동안 18% 하락했습니다. 이는 300억 달러 규모의 지출 계획이 투자자들 사이에서 의문을 불러일으키고 있기 때문입니다.
+
+📰 [IREN] IREN Drops 18% in a Week Despite Booming AI Demand as $30B Spending Plan Raises Questions - Yahoo Finance
+   (Yahoo Finance · 10/02 02:05)
+→ IREN 주가는 최근 1주일 동안 18% 하락했으며, 이는 인공지능 수요가 급증하는 상황에서도 발생했습니다. 300억 달러 규모의 지출 계획이 의문을 불러일으키고 있습니다.
+
+📰 [RKLB] RKLB through the recent ups and downs - Moomoo
+   (Moomoo · 10/02 16:13)
+→ RKLB는 최근의 변동성을 겪으며 주가의 상승과 하락을 경험하고 있습니다. 주식 시장의 변동에 따른 영향을 분석한 내용입니다.
+
+📰 [RKLB] Prediction: 2 Space Stocks That Could Join SpaceX and Rocket Lab in the Nasdaq-100 by 2030 - The Motley Fool
+   (The Motley Fool · 10/02 15:34)
+→ 모티리 퓰의 예측에 따르면, 2030년까지 스페이스엑스와 로켓랩과 함께 나스닥-100에 진입할 가능성이 있는 두 개의 우주 관련 주식이 있을 것으로 보입니다. 이 주식들은 향후 우주 산업의 성장에 따라 높은 잠재력을 지닌 것으로 평가받고 있습니다.
+
+📰 [RKLB] Prediction: 2 Space Stocks That Could Join SpaceX and Rocket Lab in the Nasdaq-100 by 2030 - The Globe and Mail
+   (The Globe and Mail · 10/02 15:25)
+→ 글로브 앤 메일에 따르면, 2030년까지 SpaceX와 Rocket Lab이 나스닥-100에 합류할 가능성이 있는 두 개의 우주 관련 주식이 예측되었다. 이러한 기업들은 향후 성장 잠재력을 지니고 있어 투자자들의 주목을 받고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Core Lightning Urges Bitcoin Lightning Nodes to Upgrade After Reported Attacks - Altcoin Buzz
+   (Altcoin Buzz · 10/02 16:54)
+→ Core Lightning은 최근 발생한 공격에 대응하기 위해 비트코인 라이트닝 노드의 업그레이드를 촉구하고 있습니다. 이 조치는 보안 강화를 목표로 하며, 사용자 보호를 위한 대응 방안으로 제시되었습니다.
+
+📰 [BTC-USD] Fed officials lean toward pausing rate hikes in October, could Bitcoin benefit? - Crypto News
+   (Crypto News · 10/02 16:29)
+→ 연방준비제도(Fed) 관계자들이 10월 금리 인상 중단을 선호하고 있으며, 이로 인해 비트코인이 혜택을 볼 수 있는 가능성이 제기되고 있다. 금리 동결이 암호화폐 시장에 긍정적인 영향을 미칠 것으로 예상되고 있다.
+
+📰 [BTC-USD] Why are Bitcoin whales sending $30.5B to Binance? - Crypto News
+   (Crypto News · 10/02 16:25)
+→ 비트코인 대량 보유자들(whales)이 Binance로 305억 달러를 전송한 이유에 대한 궁금증이 커지고 있다. 이러한 대규모 이동은 시장의 변동성과 관련이 있을 것으로 추측되며, 투자자들의 관심이 집중되고 있다.
+
+📰 [ETH-USD] EIP-8363 Authors Pull Ethereum Staking Reward Burn From Hegotá Upgrade - CryptoPotato
+   (CryptoPotato · 10/02 16:42)
+→ EIP-8363의 저자들이 이더리움 스테이킹 보상 소각 기능을 헤고타 업그레이드에서 제외했습니다. 이 결정은 업그레이드의 구현에 영향을 미칠 것으로 보입니다.
+
+📰 [ETH-USD] Two Safe Wallets Lose $305,000 in FlashLoopAdapter Attack
+   (Yahoo Finance · 10/02 15:47)
+→ 두 개의 Safe 월렛이 Ethereum에서 발생한 FlashLoopAdapter 공격으로 약 305,000 달러 상당의 114.09 ETH를 잃었다. 공격자는 Safe 인증 절차를 속여 Morpho WETH 플래시 론을 이용해 부채를 상환하는 방식으로 해킹을 시도했다.
+
+📰 [ETH-USD] Reflections on Reading Vitalik's Novel: Ethereum's Utopia, the Philosophy of Water and Ice - 深潮TechFlow
+   (深潮TechFlow · 10/02 15:46)
+→ 비탈릭 부테린의 소설 "이더리움의 유토피아"를 읽고 느낀 점들을 다룬 이 글에서는 물과 얼음의 철학을 통해 이더리움이 지향하는 이상적인 사회에 대한 반성을 제시하고 있습니다. 저자는 기술과 철학의 융합이 어떻게 새로운 가능성을 열어줄 수 있는지를 탐구하고 있습니다.
+
+📰 [SOL-USD] Solana enters US banking with 90 North Dakota banks leading it - CryptoSlate
+   (CryptoSlate · 10/02 16:20)
+→ 솔라나가 미국 은행업에 진출하며, 북다코타의 90개 은행이 그 선두에 나섰다. 이번 진출은 암호화폐와 전통 금융의 통합을 더욱 가속화할 것으로 기대된다.
+
+📰 [SOL-USD] Payments Giant Fiserv Launches Stablecoin Settlement on Solana - Altcoin Buzz
+   (Altcoin Buzz · 10/02 16:13)
+→ 결제 대기업 Fiserv가 솔라나 블록체인에서 스테이블코인 결제 서비스를 시작했습니다. 이 새로운 서비스는 빠르고 효율적인 결제 프로세스를 제공하여 디지털 자산 사용을 촉진할 것으로 기대됩니다.
+
+📰 [SOL-USD] Why Ripple, Cardano and Solana price are rallying today? - FXStreet
+   (FXStreet · 10/02 15:41)
+→ Ripple, Cardano, Solana의 가격이 오늘 상승하는 이유는 시장의 긍정적인 분위기와 함께 이들 암호화폐에 대한 관심이 증가했기 때문입니다. 투자자들은 기술 발전 및 신규 프로젝트 소식을 주목하며 매수세를 확대하고 있습니다.
+
+📰 [BMNR] Bitmine Immersion: ETH Rally Just Starting (NYSE:BMNR) - Seeking Alpha
+   (Seeking Alpha · 10/02 01:46)
+→ Bitmine Immersion은 이더리움(ETH)의 상승세가 이제 시작되었다고 전하며, 이와 관련된 투자 기회를 강조하고 있습니다. 이에 따라 기업의 주식도 긍정적인 영향을 받을 것으로 예상됩니다.
+
+📰 [BMNR] BMNR 8-K & SEC Filings - Yahoo Finance
+   (Yahoo Finance · 10/01 10:02)
+→ BMNR은 SEC에 8-K 양식을 제출하여 최근의 중요한 사건이나 정보를 공개했습니다. 이 파일링은 투자자들에게 기업의 재무 상태 및 운영에 대한 업데이트를 제공하기 위한 것입니다. 상세한 내용은 Yahoo Finance에서 확인할 수 있습니다.
+
+📰 [BMNR] I'm Cashing Out Of Bitmine Immersion (Downgrade) (NYSE:BMNR) - Seeking Alpha
+   (Seeking Alpha · 10/01 08:37)
+→ Bitmine Immersion (BMNR)에 대한 투자 의견이 하향 조정되었으며, 이에 따라 해당 주식에서 자금을 철수하려는 움직임이 보이고 있습니다. 이는 시장 전망이 악화되었음을 반영하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 비트코인의 가격 상승세에 힘입어 전반적으로 긍정적인 분위기를 보이고 있다. 특히 비트코인은 8만6044달러에 거래되며 점유율이 증가했고, 이더리움은 현물 ETF 순유출이 지속되며 상대적으로 부진한 모습을 보였다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 8만6000달러 기록
+   → 클라우드플레어는 AI 에이전트를 위한 Monetization Gateway의 비공식 테스트를 시작했으며, 이 플랫폼에서는 USDC를 통해 소액 결제가 이루어진다.
+   (토큰포스트 · 10/02 16:56)
+2. (ETF) 비트코인 현물 ETF 하루 만에 유입세로 전환
+   → 비트코인은 10월 2일 오후 3시 28분 기준 8만6044달러에 거래되었고, 해당 날짜에 비트코인 현물 ETF의 순유출은 9290만달러에 달했다.
+   (토큰포스트 · 10/02 16:59)
+3. (ETF) 이더리움 현물 ETF 3거래일째 유출세
+   → 미국 이더리움 현물 ETF 시장은 10월 1일 기준 3거래일 연속 순유출을 기록하여, 누적 순유입 규모는 138억3924만 달러에 이른다.
+   (토큰포스트 · 10/02 14:04)
+4. (기타) 암호화폐 시장에서 레버리지 포지션 청산 규모 증가
+   → 지난 24시간 동안 암호화폐 시장에서 청산된 레버리지 포지션 규모는 2억4768만달러에 달하며, 이 중 숏 포지션이 72.15%를 차지했다.
+   (토큰포스트 · 10/02 15:56)
+5. (시세) 암호화폐 시장 상승세 지속
+   → 10월 2일 오후 3시 59분 기준 비트코인은 2.22% 상승하여 85,958.59달러에 거래되고 있으며, 이더리움은 24시간 기준 0.49% 상승하여 2,728.29달러에 거래되고 있다.
+   (토큰포스트 · 10/02 16:02)
+
+[흐름·전망]
+• 비트코인의 점유율이 늘어나고 있는 만큼, 향후 대형 암호화폐에 대한 자금 집중 현상이 지속될 가능성이 있다.
+• 이더리움 현물 ETF의 순유출이 계속되고 있어, 향후 투자자의 심리와 이더리움의 가격 변동성에 주의가 필요하다.
+• 레버리지 포지션의 청산 규모 증가가 이어지는 가운데, 단기 매매에 따른 변동성이 확대될 가능성이 있음을 염두에 두어야 한다.
+• 스테이블코인과 파생상품 시장의 활발한 거래가 비트코인 및 주요 알트코인의 가격 흐름에 미치는 영향을 살펴볼 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 27 (Fear)
+  - 크립토 기준: 72 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 올해 3분기까지 수도권에서 1.7만 가구의 공공주택이 착공되었으며, 4분기에는 추가적인 물량이 집중될 예정입니다.
+
+[핵심 뉴스]
+1. (공급) 수도권 공공주택 3분기까지 1.7만가구 착공
+   → 올해 3분기까지 수도권에서 착공된 공공주택은 1만7천 가구로, 연간 목표의 27.4%에 해당하며, 4분기 중 4만5천 가구가 추가 착공될 것으로 전망된다.
+   (연합뉴스 · 10/02 16:49)
+2. (재건축) 송파한양1차 조합설립 신청 사흘 만에 승인
+   → 서울 송파구는 송파한양1차 재건축의 조합설립 신청을 사흘 만에 승인하여, 기존 577가구에서 954가구 규모로 변신할 계획이다.
+   (연합뉴스 · 10/02 15:32)
+3. (공급) LH, 보상 기간제 인력 250명 채용
+   → 한국토지주택공사(LH)는 수도권 주택 공급 속도를 높이기 위해 보상 업무를 담당할 기간제근로자 250명을 채용할 계획을 발표했다.
+   (연합뉴스 · 10/02 14:31)
+4. (공급) 고양대곡지식융합·의왕오전왕곡 지구계획 착수
+   → LH는 고양대곡지식융합과 의왕오전왕곡 공공주택지구의 지구계획 수립 절차를 앞당기고, 2029년까지 각각 9400가구와 1만4000호를 공급할 예정이다.
+   (매일경제 · 10/02 10:56)
+5. (매매) 서울 아파트 매수심리 5주째 하락
+   → 서울의 아파트 매수 심리가 5주 연속 하락하며 강남권에서도 매도 우위의 시장이 나타나고 있다.
+   (동아일보 · 10/02 16:26)
+6. (매매) 강남 대신 강북이 끌었다…달라진 서울 집값 공식
+   → 서울의 주택 시장에서 강북 지역의 상승세가 두드러지며 강남 대신 강북이 주목받고 있다.
+   (아이뉴스24 · 10/02 16:08)
+
+[흐름·전망]
+• 4분기 공공주택 착공이 집중됨에 따라 시장 공급 부족 해소에 도움이 될 것으로 예상된다.
+• 재건축 사업의 빠른 진행이 송파구의 주거 환경을 개선하고, 지역 가치 상승에 기여할 가능성이 있다.
+• LH의 인력 채용은 주택 공급 증대를 위한 효율적인 보상 프로세스 구축의 일환으로 볼 수 있으며, 이에 따라 공급도 촉진될 것으로 보인다.
+• 고양과 의왕 지역의 공공주택지구 착공 예정은 해당 지역의 장기적인 주택 공급 안정을 위한 긍정적인 신호로 해석된다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 미국과 그 국민에 대한 사랑을 강조하며, 시계 변경 문제를 해결할 것을 요청했다. 또한, 가격이 하락하고 있다는 점을 주장하며 그 원인을 민주당에 돌렸다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 미국은 그것을 미워하는 사람들에게 속하지 않고, 사랑하는 사람들에게 속한다고 강조했다.
+   (Truth Social · 10/02 13:36)
+2. (경제) 트럼프는 가격이 빠르게 하락하고 있다고 주장하며, 이는 민주당의 잘못이라고 언급했다.
+   (Truth Social · 10/02 13:12)
+3. (인사) 트럼프는 브라이언 마이어스를 북부 캐롤라이나 동부 지구 연방 지방 법원 판사로 지명했다고 발표했다.
+   (Truth Social · 10/02 01:27)
+4. (인사) 트럼프는 필립 오바르트를 북부 캐롤라이나 중부 지구 연방 지방 법원 판사로 지명했다고 발표했다.
+   (Truth Social · 10/02 00:57)
+5. (인사) 트럼프는 타드 버틀러를 제5순회 항소법원 판사로 지명했다고 발표했다.
+   (Truth Social · 10/02 00:38)
+6. (기타) 트럼프는 보잉사가 만든 737 맥스 비행기가 탁월한 성능을 보여주었다고 칭찬했다.
+   (Truth Social · 10/01 23:58)
+
+[흐름·전망]
+• 트럼프의 가격 하락 주장은 향후 경제 회복과 정책 추진에 어떤 영향을 미칠지 주목할 필요가 있다.
+• 앞으로 트럼프의 인사 발표가 법원 구조에 미칠 영향을 지켜보아야 한다.
+• 그의 시계 변경 법안 제안이 정치적으로 어떤 반응을 이끌어낼지 관심이 모아진다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

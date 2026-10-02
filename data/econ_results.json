@@ -245,19 +245,19 @@
 "6409072f-d406-4f49-882f-5987e7652fb9": {
 "name": "Tokyo Consumer Price Index (YoY)",
 "dt": "2026-10-01T23:30:00Z",
-"act": null,
+"act": "2.7%",
 "cons": null,
 "prev": "1.9%",
-"act_n": null,
+"act_n": 2.7,
 "cons_n": null
 },
 "28c07540-929a-4ccb-998f-fd7f6fac4bd8": {
 "name": "Tokyo CPI ex Food, Energy (YoY)",
 "dt": "2026-10-01T23:30:00Z",
-"act": null,
+"act": "3%",
 "cons": null,
 "prev": "2%",
-"act_n": null,
+"act_n": 3.0,
 "cons_n": null
 },
 "c64df516-64bb-4737-9430-1ff3df1bab9a": {
@@ -517,7 +517,7 @@
 "dt": "2026-10-29T23:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "2.7%",
 "act_n": null,
 "cons_n": null
 },
@@ -526,7 +526,7 @@
 "dt": "2026-10-29T23:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "3%",
 "act_n": null,
 "cons_n": null
 },
@@ -689,6 +689,15 @@
 "act": null,
 "cons": null,
 "prev": null,
+"act_n": null,
+"cons_n": null
+},
+"14be18ad-4b90-4333-ab99-e5a653d86ef7": {
+"name": "Gross Domestic Product (QoQ)",
+"dt": "2026-11-15T23:50:00Z",
+"act": null,
+"cons": null,
+"prev": "0.4%",
 "act_n": null,
 "cons_n": null
 }
