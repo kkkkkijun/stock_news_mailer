@@ -1,0 +1,241 @@
+2026-10-03T17:02:49.234567+09:00
+
+[오늘의 뉴스 요약] 2026-10-03 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 소비자물가는 3% 전후의 상승률이 예상되며, 이는 일부 서비스 및 전자제품 가격 상승에 기인하고 있다. 원화 강세로 인해 기업들이 달러 대출 상환에 나서고 있으며, 글로벌 금리 상승은 채권 투자 상품의 인기를 끌고 있다.
+
+[핵심 뉴스]
+1. (물가) 한은 “10월 소비자물가 3% 안팎 전망”
+   → 한국은행은 10월 소비자물가 상승률이 3% 안팎에 이를 것으로 전망하며, 이는 항공료와 전자제품 가격 상승에 기인한다고 밝혔다. 9월 소비자물가는 지난해보다 2.9% 상승하였으나, 통신요금 할인에 따른 기저효과가 작용해 감소했다.
+   (매일경제 · 10/03 09:41)
+2. (환율) 달러 대출 정리 나선 기업들
+   → 원화 가치 상승에 힘입어 5대 은행의 달러 대출 잔액이 지난달 말 75억8400만달러로 두 달 만에 12.7% 감소했다. 특히, 원화 매출 비중이 높은 기업들이 이 기회를 활용해 외화부채를 정리하고 있다.
+   (매일경제 · 10/03 06:30)
+3. (금리) 금리 고공행진에 CD·채권 관련 ETF 인기
+   → 미국에서 국채금리가 급등하고 'TIGER CD금리투자' ETF에 5천576억원이 유입되며 채권금리가 다시 주목받고 있다. 이는 글로벌 금리 상승과 채권 수익률 변동에 따른 반응으로 해석된다.
+   (연합뉴스 · 10/03 08:00)
+4. (금리) 국고채, 금리 하락세 전망
+   → 국고채 금리가 일제히 하락하며, 3년물 금리가 3.937%로 떨어졌다. 재정부의 국고채 발행 규모 축소와 미국 금리 하락이 주 요인으로 작용하고 있다.
+   (연합뉴스 · 10/02 16:46)
+
+[흐름·전망]
+• 10월 소비자물가data이 상반된 신호를 보내고 있는 만큼, 가격 추세에 대한 면밀한 모니터링이 필요하다.
+• 원화 강세와 이에 따른 기업들의 외화부채 정리 현상이 지속될 경우, 향후 기업 재무 구조에도 긍정적인 영향을 미칠 것으로 보인다.
+• 글로벌 금리 동향이 채권시장에 미치는 영향을 고려할 때, 국내 채권 투자자들은 외부 요인에 더욱 주의해야 할 시점에 있다.
+• 미국의 고용지표 발표 이후 금리 및 환율 변동성에 의해 국내 금융시장도 영향을 받을 가능성이 높으므로, 투자 전략에 대한 재검토가 요구된다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA Corporation $NVDA Stock Sold by Addison Advisors LLC - MarketBeat
+   (MarketBeat · 10/03 16:08)
+→ Addison Advisors LLC가 NVIDIA Corporation의 주식을 매도했다는 내용을 다루고 있는 기사입니다. 이 매각은 시장 분석가들에 의해 주목을 받고 있습니다.
+
+📰 [NVDA] Chinese Savers Want to Invest in U.S. Stocks. Now There’s an Easier Way.
+   (Yahoo Finance · 10/03 16:00)
+→ 중국 정부가 무허가 해외 거래를 단속하는 한편, 엔비디아, 아마존, 국채, 금 등을 보유한 글로벌 펀드로의 투자 통로를 개설하고 있어 중국 투자자들이 미국 주식에 더 쉽게 투자할 수 있는 길이 열리고 있다.
+
+📰 [NVDA] Nvidia’s $500 billion AI financing plan gets a Wall Street reality check - calcalistech.com
+   (calcalistech.com · 10/03 15:50)
+→ 엔비디아는 5천억 달러의 인공지능(AI) 금융 계획을 발표했으나, 월스트리트는 이에 대해 신중한 시각을 갖고 재정적 현실을 점검하고 있습니다. 투자자들은 이 계획의 실현 가능성과 기대되는 수익에 대해 우려를 표명하고 있는 상황입니다.
+
+📰 [TSLA] Dan Ives Says Tesla Could Have A ‘Golden Year’ In 2027 — Robotaxis, Optimus And Cybercab In Focus
+   (Yahoo Finance · 10/03 16:09)
+→ 댄 아이브스는 CNBC와의 인터뷰에서 테슬라가 2027년에 로보택시, 옵티머스, 사이버캡 등으로 '황금의 해'를 맞을 수 있을지에 대한 질문이 중요하다고 언급했습니다. 그는 테슬라가 안정적인 전기차 수요를 자율주행 및 AI 목표로 전환할 수 있을지가关键라고 강조했습니다.
+
+📰 [TSLA] Dan Ives Says Tesla Could Have A ‘Golden Year’ In 2027 — Robotaxis, Optimus And Cybercab In Focus - Yahoo Finance
+   (Yahoo Finance · 10/03 16:09)
+→ 댄 아이브스는 테슬라가 2027년에 로봇택시, 옵티머스, 사이버캡 등을 통해 '황금의 해'를 맞이할 수 있을 것이라고 전망했다. 그는 이러한 혁신들이 테슬라의 성장을 크게 촉진할 것으로 기대하고 있다.
+
+📰 [TSLA] Tesla Q3 deliveries better-than-expected, stock jumps on news - CNBC
+   (CNBC · 10/03 11:12)
+→ 테슬라의 3분기 자동차 인도량이 예상보다 나쁘지 않았고, 이에 따라 주가가 급등했습니다. 투자자들은 긍정적인 결과에 반응하며 회사의 미래 성장 가능성을 높게 평가하고 있습니다.
+
+📰 [HIMS] Hims & Hers Health Shareholder Alert: ClaimsFiler Reminds Investors With Losses In Excess Of $100,000 Of Lead Plaintiff Deadline In Class Action Lawsuit Against Hims & Hers Health, Inc. - HIMS - Morningstar
+   (Morningstar · 10/03 11:32)
+→ Hims & Hers Health에 대한 집단 소송과 관련하여, ClaimsFiler가 10만 달러 이상의 손실을 입은 투자자들에게 원고 자격 마감일을 상기시켰습니다. 투자자들은 소송 참여를 위한 기한을 놓치지 않도록 주의해야 합니다.
+
+📰 [HIMS] Is New Regional CMOs Altering The Investment Case For Hims & Hers Stock (HIMS)? - Simply Wall Street
+   (Simply Wall Street · 10/03 11:25)
+→ 새로운 지역 최고 마케팅 책임자(CMO)의 임명이 Hims & Hers의 주식 투자 사례에 변화를 주고 있는지에 대한 논의가 이루어지고 있다. 이러한 인사는 회사의 마케팅 전략과 성장 가능성에 긍정적인 영향을 미칠 것으로 기대되고 있다.
+
+📰 [HIMS] Kaplan Fox Encourages Investors of Hims & Hers Health, Inc. (NYSE - natlawreview.com
+   (natlawreview.com · 10/03 11:01)
+→ Kaplan Fox는 Hims & Hers Health, Inc. 투자자들에게 주의를 촉구하고 있습니다. 이 회사의 주식과 관련하여 법적 대응을 고려하고 있는 것으로 보입니다. 투자자들은 이에 대해 추가 정보를 확인할 것을 권장받고 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Jumps 2.9% - Here's What Happened - MarketBeat
+   (MarketBeat · 10/03 06:23)
+→ Redwire (NYSE:RDW)의 주가가 2.9% 상승했다. 이번 주가 상승의 배경에 대한 자세한 내용은 기사에서 확인할 수 있다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW Stocks Slide Overnight: Analyst Questions Whether Rivals Can Compete If SpaceX Controls Access To Orbit - Stocktwits
+   (Stocktwits · 10/03 02:45)
+→ ASTS, RKLB, LUNR, RDW 주가가 하락했으며, 분석가는 SpaceX가 궤도 접근을 통제할 경우 경쟁업체들이 어떻게 경쟁할 수 있을지 의문을 제기했습니다. 이로 인해 투자자들의 우려가 커지고 있는 상황입니다.
+
+📰 [RDW] Stocktwits Space Race Weekly: SPCX Holds Pole Position As ASTS, RKLB, PL, RDW, FLY Lose Altitude - Stocktwits
+   (Stocktwits · 10/02 18:52)
+→ 최근 Stocktwits의 우주 산업 주간 업데이트에 따르면, SPCX가 강력한 위치를 유지하고 있는 반면, ASTS, RKLB, PL, RDW, FLY는 하락세를 보이고 있습니다. 이러한 변동은 우주 관련 주식 시장에서의 경쟁 상황을 반영합니다.
+
+📰 [IREN] Citadel's Griffin Takes 4.7% IREN Stake as Buyback Mechanics Take Shape - AD HOC NEWS
+   (AD HOC NEWS · 10/03 10:20)
+→ 시타델의 케네스 그리핀은 IREN의 4.7% 지분을 취득했으며, 이는 자사주 매입 메커니즘이 형성되고 있는 가운데 이루어졌다.
+
+📰 [IREN] IREN (IREN) Dropped, What Is Behind The Latest Attention? - Simply Wall Street
+   (Simply Wall Street · 10/03 09:55)
+→ IREN(IREN)의 주가가 하락하며 최근 주목을 받고 있는 이유에 대한 분석이 이어지고 있다. 여러 요인들이 복합적으로 작용하며 투자자들의 관심이 집중되고 있는 상황이다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Jumps 2.7% - Still a Buy? - MarketBeat
+   (MarketBeat · 10/03 06:23)
+→ IREN 주식이 2.7% 상승했으며, 여전히 매수 추천 대상인지에 대한 질문이 제기되고 있다. 시장 전망과 투자자의 관심이 집중되고 있는 상황이다.
+
+📰 [RKLB] Rocket Lab Corporation $RKLB Shares Acquired by Versant Capital Management Inc - MarketBeat
+   (MarketBeat · 10/03 16:30)
+→ Versant Capital Management Inc.가 Rocket Lab Corporation의 주식을 인수하였습니다. 이 거래는 회사의 성장 가능성을 반영하는 것으로 평가됩니다.
+
+📰 [RKLB] If I Could Only Buy 1 Space Stock for the Next Decade, It Wouldn't Be SpaceX or Rocket Lab - The Motley Fool
+   (The Motley Fool · 10/03 15:54)
+→ 모티리훌(Motley Fool)에서는 향후 10년간 하나의 우주 관련 주식을 선택해야 한다면 SpaceX나 Rocket Lab이 아닌 다른 회사를 선택할 것이라고 전했습니다. 이 기사에서는 특정 주식에 대한 높은 잠재력과 기대감을 표현하고 있습니다.
+
+📰 [RKLB] If I Could Only Buy 1 Space Stock for the Next Decade, It Wouldn't Be SpaceX or Rocket Lab
+   (Yahoo Finance · 10/03 15:25)
+→ 향후 10년간 한 개의 우주 관련 주식을 구매할 수 있다면, SpaceX나 Rocket Lab보다는 더 저렴한 평가를 받고 있는 다른 주식이 더 좋은 선택일 것이라는 분석이 제기되었다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin jumps past $87,000 on weak US jobs data, eyes $90,000 rally amid falling Treasury yields. - pluang.com
+   (pluang.com · 10/03 16:25)
+→ 비트코인이 미국의 부진한 고용 데이터와 하락하는 재무 수익률에 힘입어 87,000달러를 넘겼고, 90,000달러로의 상승을 기대하고 있습니다.
+
+📰 [BTC-USD] Crypto ETF flows split as Bitcoin gains $82.9m, Ethereum bleeds - Crypto News
+   (Crypto News · 10/03 15:57)
+→ 비트코인 ETF에 8,290만 달러의 자금이 유입된 반면, 이더리움 ETF는 자금을 잃는 상황에 직면했습니다. 이로 인해 암호화폐 ETF의 자금 흐름이 엇갈리고 있습니다.
+
+📰 [BTC-USD] BlackRock's Bitcoin ETF Has Net Bought $1.57 Billion Worth of Bitcoin in the Past Month. - Moomoo
+   (Moomoo · 10/03 15:45)
+→ 블랙록의 비트코인 ETF가 지난 한 달 동안 15억 7천만 달러 규모의 비트코인을 순매수한 것으로 나타났습니다. 이러한 매수 활동은 비트코인 시장에서의 투자 관심을 반영하고 있습니다.
+
+📰 [ETH-USD] Bitcoin ETFs see $82.9M inflows while Ethereum ETFs face $118M outflows in early October trading - pluang.com
+   (pluang.com · 10/03 16:09)
+→ 10월 초 거래에서 비트코인 ETF는 8290만 달러의 자금 유입을 기록한 반면, 이더리움 ETF는 1억 1800만 달러의 자금 유출을 경험했다. 이러한 흐름은 두 암호화폐의 시장 상황을 반영하고 있다.
+
+📰 [ETH-USD] Crypto ETF flows split as Bitcoin gains $82.9m, Ethereum bleeds - Crypto News
+   (Crypto News · 10/03 15:57)
+→ 비트코트 ETF는 8290만 달러의 유입을 기록한 반면, 이더리움은 자본이 유출되는 상황을 겪고 있습니다. 이러한 흐름은 암호화폐 시장의 혼조세를 반영하고 있습니다.
+
+📰 [ETH-USD] Massive Ethereum Awakening: Why 580M in Dormant ETH Just Moved Without Crashing Price - CryptoRank
+   (CryptoRank · 10/03 15:44)
+→ 약 5억 8천만 달러에 달하는 휴면 이더리움(ETH)이 최근 이동했으나, 가격이 급락하지 않은 이유에 대한 분석이 있었습니다. 이 이동은 투자자들이 시장에 다시 진입할 가능성을 보여주며, 이더리움 생태계의 회복력을 나타냅니다.
+
+📰 [SOL-USD] JUST IN: Solana processed a record 14.2B non-vote transactions in Q3, up 45% from Q2. Source: @Blockworks - Moomoo
+   (Moomoo · 10/03 13:51)
+→ 솔라나가 3분기에 기록적인 142억 건의 비투표 트랜잭션을 처리했으며, 이는 2분기 대비 45% 증가한 수치입니다.
+
+📰 [SOL-USD] Solana Launchpad Buzz Puts Remittix's BINANCE500 Bonus in the Best Crypto to Buy Conversation - TechBullion
+   (TechBullion · 10/03 12:16)
+→ Solana Launchpad의 관심이 Remittix의 BINANCE500 보너스를 주목받게 하여, 이 암호화폐가 투자할 만한 최고의 선택 중 하나로 거론되고 있다. 기술 전문 매체인 TechBullion에 따르면, Remittix의 높은 관심이 시장에서 긍정적인 반응을 일으키고 있다.
+
+📰 [SOL-USD] Solana Price Prediction: $150 Would Mean About 23% Upside, So Why Is AlphaPepe at $0.03205 Worth a Look? - StreetInsider
+   (StreetInsider · 10/03 10:56)
+→ 솔라나 가격이 150달러에 도달하면 약 23% 상승할 것으로 예상되며, 이와 함께 AlphaPepe가 0.03205달러에 거래되고 있는 이유에 대해 관심이 집중되고 있다. 분석가들은 AlphaPepe의 잠재력을 주목하고 있다.
+
+📰 [BMNR] BMNR Stock Surges After Firm’s Record Buyback, Tom Lee Sets $2,500 Ethereum Target - Stocktwits
+   (Stocktwits · 10/03 08:18)
+→ BMNR 주식이 회사의 역대 최대 자사주 매입 발표 이후 급등했습니다. 또한, 금융 분석가 톰 리는 이더리움의 목표가를 2,500달러로 설정했습니다.
+
+📰 [BMNR] Unusual Options Activity: BMNR, NFLX and Others Attract Market Bets, BMNR V/OI Ratio Reaches 289.5 - Moomoo
+   (Moomoo · 10/03 02:33)
+→ BMNR과 NFLX를 포함한 여러 주식에서 비정상적인 옵션 거래가 발생하고 있으며, BMNR의 거래량 대비 미결제약정(V/OI) 비율이 289.5에 달하고 있습니다. 이러한 활동이 시장에서 큰 관심을 끌고 있습니다.
+
+📰 [BMNR] Bitcoin Price Rebounds To $86K With Jobs Data Looming — MSTR, COIN, BMNR Stocks Gain - TradingView
+   (TradingView · 10/02 19:46)
+→ 비트코인 가격이 86,000달러로 반등했으며, 이는 향후 발표될 고용 데이터와 관련이 있는 것으로 보입니다. 이로 인해 MSTR, COIN, BMNR 주식도 상승세를 보이고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 하락세를 지속하고 있으며, 비트코인의 점유율은 감소하고 있습니다. 이러한 분위기 속에서 투자자들은 단기 관망에 나서는 모습입니다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 하락세 지속
+   → 비트코인은 84,563.62달러로 24시간 기준 1.64% 하락했으며, 이더리움은 2,679.21달러로 1.80% 떨어졌습니다. 비트코인의 점유율은 59.03%로 감소했습니다.
+   (토큰포스트 · 10/03 16:01)
+2. (시세) 암호화폐 시장 레버리지 포지션 청산
+   → 지난 24시간 동안 3억624만달러 규모의 레버리지 포지션이 청산되었으며, 이 중 74.91%가 롱 포지션 청산으로 나타났습니다.
+   (토큰포스트 · 10/03 15:56)
+3. (온체인) 이더리움 롱 포지션 평가이익 상승
+   → 한 주소는 이더리움의 롱 포지션으로 1652만달러의 평가이익을 기록했으며, 이 주소는 8월부터 포지션을 구축했습니다.
+   (토큰포스트 · 10/03 16:39)
+4. (기타) 고용 둔화, 비트코인에 긍정적 영향
+   → 지난 9월 미국의 고용 증가폭이 기대치를 크게 밑돈 것과 관련하여 비트코인에 대한 금리 인하 기대가 커지고 있습니다.
+   (토큰포스트 · 10/03 15:55)
+5. (기타) 스테이블코인 시총 증가세에도 유동성 부족
+   → 스테이블코인 시가총액이 9월 이후 40억달러 증가하여 약 2700억달러를 회복했지만, 유동성이 부족해 회복세가 약하다고 분석되었습니다.
+   (토큰포스트 · 10/03 15:52)
+
+[흐름·전망]
+• 암호화폐 시장의 최근 하락세가 지속되는 상황에서 알트코인 순환매 가능성을 주목할 필요가 있습니다.
+• 레버리지 포지션 청산의 빈도가 증가하는 가운데, 향후 시장의 방향성이 어떻게 형성될지 살펴봐야 할 것입니다.
+• 이더리움의 평가이익 상승은 롱 포지션의 매력도를 보여주지만, 시장의 전반적인 흐름과 관계가 있을 수 있습니다.
+• 고용지표 둔화가 비트코인에 긍정적 영향을 미칠 수 있지만, 이는 비정상적인 시장 구조에 따른 것으로 주의가 필요합니다.
+• 스테이블코인의 시가총액 회복세와 함께 동반되는 유동성 부족 현상을 모니터링하며, 이는 비트코인 및 알트코인의 상승에 어떤 영향을 미칠지 지켜봐야 합니다.
+
+📊 공포탐욕지수
+  - CNN 기준: 31 (Fear)
+  - 크립토 기준: 67 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울 주택구입부담지수가 185.3으로 3년 6개월 내 최고치를 기록하면서 주요 도시에서 전반적인 부담이 증가하고 있다. 경기 남부 지역의 아파트값 강세가 지속되고 있으며, 수도권 공공주택 착공이 계속되고 있다.
+
+[핵심 뉴스]
+1. (매매) 서울 주택구입부담지수 3년 6개월 내 최고치
+   → 서울의 주택구입부담지수는 185.3으로 전 분기 대비 6포인트 상승했으며, 이는 가계 소득의 절반을 주택담보대출 원리금 상환에 사용해야 함을 나타낸다.
+   (매일경제 · 10/03 09:57)
+2. (매매) 경기 남부 지역 아파트값 강세 지속
+   → 경기 남부 지역의 아파트값이 상승세를 지속하며, 화성 병점구는 0.70% 상승했다. 서울의 매수우위지수는 71.7로 전주 대비 감소세를 보였다.
+   (매일경제 · 10/03 08:58)
+3. (공급) 수도권 공공주택 3분기까지 1.7만가구 착공
+   → 올해 3분기까지 수도권 공공주택 1.7만 가구가 착공되었으며, 4분기 동안 4.5만 가구가 추가로 착공될 예정이다.
+   (연합뉴스 · 10/02 16:49)
+4. (기타) 부동산 시장에서 조망권 가치 증가
+   → 부동산 시장에서 조망권의 가치가 증가하고 있으며, 광교신도시 등에서는 호수 조망이 역세권 아파트보다 높은 시세를 기록하고 있다.
+   (매일경제 · 10/03 11:41)
+5. (재건축) 송파한양1차 재건축 조합설립 인가
+   → 송파구에서는 송파한양1차 재건축 조합설립이 신청 사흘 만에 승인되었으며, 기존 577가구에서 954가구로 증축될 예정이다.
+   (연합뉴스 · 10/02 15:32)
+6. (공급) LH, 수도권 주택공급 속도↑을 위한 인력 채용
+   → LH는 수도권 주택공급 속도를 높이기 위해 250명의 기간제 근로자를 공개 채용하고, 고용 조건을 정규직보다 높은 임금으로 설정했다.
+   (연합뉴스 · 10/02 14:31)
+
+[흐름·전망]
+• 국내 주택시장 불안정성과 고금리에 따른 가계 부담 증가가 계속될 전망이며, 이는 향후 거래 활성화에 부정적 영향을 미칠 수 있다.
+• 남부 지역의 아파트값 강세가 언제까지 지속될지가 관전 포인트가 될 것이며, 특히 신규 단지의 분양이 시장에 미칠 영향력을 주목해야 한다.
+• 공공주택 공급의 속도가 시장 안정화에 기여할 수 있으나, 지속적인 관찰이 필요하다.
+• 조망권의 가치 상승이 앞으로의 주택 가격에 미치는 영향은 향후 투자 및 개발 전략에 중요한 변수로 작용할 예정이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 연방준비제도 건물의 Renovation 문제와 관련한 언론 보도를 거짓이라고 주장하며, 관계 당국의 조사가 있을 것임을 강조했다. 또한, 한국과의 에너지 거래와 관련한 소식을 전하며, 긍정적인 발전을 기대했다.
+
+[주요 발언]
+1. (사법) 트럼프는 연방준비제도 건물의 Renovation에 대한 조사가 시작될 것이라고 밝히며, 현재 진행 중인 조사에서 잘못된 부분에 대한 조사를 강조했다.
+   (Truth Social · 10/03 12:37)
+2. (경제) 트럼프는 한국과의 거래에서 84억 달러 규모의 향상된 석유 회수 프로젝트가 체결되었다고 알리며, 이는 미국의 에너지 우위와 안보에 기여할 것이라고 주장했다.
+   (Truth Social · 10/03 12:37)
+3. (경제) 트럼프는 2000만 명의 노인들에게 메디케어 비용을 지원하기 위해 약 100달러의 '체크'를 발송할 것이라고 발표하며, 이는 메디케어 개선 기금에서 나올 것이라고 말했다.
+   (Truth Social · 10/03 11:56)
+4. (국내정치) 트럼프는 민주당의 사회적 정책이 미국에 막대한 재정적 비용을 초래할 것이라고 주장하며, 공화당에 투표할 것을 촉구했다.
+   (Truth Social · 10/03 12:06)
+5. (기타) 트럼프는 백악사에서 건설 중인 대형 무도회장과 군사 복합체에 대해 흥미롭게 언급하며, 완공 시 세계 최고가 될 것이라고 기대감을 밝혔다.
+   (Truth Social · 10/03 12:02)
+
+[흐름·전망]
+• 트럼프의 발언은 미국의 에너지 독립성과 안전성 강화를 위한 외교적 노력이 중요하다는 점을 시사한다.
+• 연방준비제도 관련 조사는 향후 경제 정책에 어떠한 영향을 미칠지 주목해야 한다.
+• 트럼프의 장기적인 정책이 국내 정치 및 선거에 미치는 영향이 어떻게 전개될지 지켜봐야 할 것이다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
