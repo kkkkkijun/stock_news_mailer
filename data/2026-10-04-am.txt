@@ -1,0 +1,246 @@
+2026-10-04T06:32:39.354527+09:00
+
+[오늘의 뉴스 요약] 2026-10-04 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘은 한국 국채의 WGBI 편입 마무리와 외국인 투자에 대한 관심이 집중되고 있으며, 최근 원화 강세가 기업들의 달러 대출 상환에 긍정적인 영향을 미치고 있다.
+
+[핵심 뉴스]
+1. (금리) WGBI 편입 마무리...외국인 투자 촉각
+   → 한국 국채의 WGBI 편입이 11월 마무리되며, 4월 이후 외국인 국고채가 약 42조원 순매수됐다. 편입 종료 이후 채권시장 수급 공백에 대한 우려가 커지고 있다.
+   (연합뉴스 · 10/04 06:10)
+2. (물가) 10월 소비자물가 3% 안팎 전망
+   → 한국은행은 10월 소비자물가 상승률이 3% 안팎에 이를 것으로 전망하며, 최근 항공료와 전자제품 가격 상승이 물가에 영향을 미치고 있다. 9월 소비자물가는 작년 동월 대비 2.9% 올라갔다.
+   (매일경제 · 10/03 09:41)
+3. (환율) 원화 강세로 기업들 달러 대출 상환 나서
+   → 원화 강세가 지속되면서 기업들이 달러 대출을 상환하고 있으며, 5대 은행의 달러 대출 잔액은 약 12.7% 감소했다. 원화 매출 비중이 높은 기업에서 더욱 두드러진 효과를 나타내고 있다.
+   (매일경제 · 10/03 06:30)
+4. (정책) 농축산물 할인 지원 예산 급증
+   → 정부의 농축산물 할인 지원 예산이 올해 4천580억원으로 급증했으나, 농민 소득 효과는 미비하다는 지적이 나오고 있다. 할인 지원이 대형 유통업체에 집중되고 있다는 문제도 부각되었다.
+   (연합뉴스 · 10/04 06:01)
+5. (금리) 국고채 금리 일제히 하락
+   → 국고채 금리가 일제히 하락하며 통화 긴축 속도 조절에 대한 기대가 커지고 있다. 최근 미국 국채 금리 하락과 한국의 국채 발행 규모 축소가 긍정적인 영향을 미쳤다.
+   (연합뉴스 · 10/02 16:46)
+
+[흐름·전망]
+• WGBI 편입 종료 후 외국인 자금 유입이 얼마나 지속될지 관찰해야 하며, 채권시장에서의 자금 수급 상황이 주목된다.
+• 소비자물가 상승률이 3%를 넘을 경우 한국은행의 통화정책에도 영향이 미칠 수 있어 향후 물가 추세를 주의 깊게 지켜봐야 한다.
+• 원화 강세가 기업 대출 상환에 긍정적 영향을 미치고 있지만, 외환시장의 변동성이 커질 경우 다시 달러 대출 부담이 늘어날 수 있으므로 주의가 필요하다.
+• 농축산물 할인 지원이 소비자에게 긍정적 영향을 줄 수 있지만 농민 소득을 함께 고려한 정책이 필요하다는 점도 향후 시사점으로 남는다.
+• 국고채 금리 하락이 지속되면서 채권시장 안정에 기여할 가능성이 있으며, 미국 경제지표의 변화가 한국 시장에 미치는 영향도 면밀히 지켜봐야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Intel (INTC) Data Center Comeback: Real Recovery or Just a Supply Squeeze?
+   (Yahoo Finance · 10/04 04:57)
+→ 인텔은 인공지능 중심의 전환을 지속하며 CPU, ASIC, 고급 패키징 및 파운드리 네트워크에 대한 강력한 수요를 기반으로 하고 있습니다. NVIDIA와의 파트너십, 소프트뱅크의 20억 달러 투자, 18A 공정 기술 발전 등이 이번 회복의 중요한 전략으로 작용하고 있으며, 인텔은 반도체 시장에서의 리더십 회복에 박차를 가하고 있습니다.
+
+📰 [NVDA] NVIDIA raises SHIELD TV Pro price by 50% to $299.99 - TweakTown
+   (TweakTown · 10/04 04:57)
+→ 엔비디아가 SHIELD TV Pro 가격을 50% 인상하여 299.99달러로 책정했습니다. 이번 가격 인상은 제품의 경쟁력과 시장 상황에 따른 결정으로 보입니다.
+
+📰 [NVDA] Dow Jones Futures: Nasdaq Hits High As Nvidia, SpaceX, Bloom Energy Flash Buy Signals, But Note These Risks
+   (Yahoo Finance · 10/04 02:58)
+→ 다우 존스 선물 지수에서 나스닥이 Nvidia, SpaceX, Bloom Energy의 구매 신호로 최고치를 기록했지만, 시장의 대부분은 여전히 약세를 보이고 있다. 투자자들은 이러한 위험 요소를 고려해야 한다.
+
+📰 [TSLA] Tesla's Cybercab Hits Speed Bumps in Austin Debut - The Tech Buzz
+   (The Tech Buzz · 10/04 06:06)
+→ 테슬라의 사이버캡이 오스틴에서 첫 출시를 맞이했으나 여러 가지 장애물에 직면했습니다. 이 차량의 초기 반응과 성능에 대한 기대와 우려가 섞여 있는 상황입니다.
+
+📰 [TSLA] Tesla Patent Teases 'Electric Fan Car' That Sucks Itself To The Road At Any Speed - SlashGear
+   (SlashGear · 10/04 05:45)
+→ 테슬라가 특허를 신청한 '전기 팬 자동차'는 주행 중에도 차량이 도로에 자신을 붙잡을 수 있는 기술을 갖추고 있다고 밝혀졌다. 이 기술은 다양한 속도에서 안정성을 높여줄 것으로 기대된다.
+
+📰 [TSLA] Why Tesla Roadster Event Was Delayed—and What It Means for the Stock - Barron's
+   (Barron's · 10/04 04:54)
+→ 테슬라 로드스터 이벤트가 지연된 이유는 기술적 문제와 생산 일정 조정 때문이며, 이는 주식에 부정적인 영향을 미칠 수 있습니다. 투자자들은 이 지연이 테슬라의 미래 성장 전망과 관련된 신뢰성을 약화시킬 것으로 우려하고 있습니다.
+
+📰 [HIMS] Hims & Hers Health Shareholder Alert: ClaimsFiler Reminds Investors With Losses In Excess Of $100,000 Of Lead Plaintiff Deadline In Class Action Lawsuit Against Hims & Hers Health, Inc. - HIMS - Morningstar
+   (Morningstar · 10/03 11:32)
+→ Hims & Hers Health에 대한 집단소송에서 10만 달러 이상의 손실을 입은 투자자들에게 원고 등록 마감일이 다가오고 있음을 알리는 공지가 있습니다. ClaimsFiler는 해당 투자자들이 적극적으로 소송에 참여할 것을 촉구하고 있습니다.
+
+📰 [HIMS] Is New Regional CMOs Altering The Investment Case For Hims & Hers Stock (HIMS)? - Simply Wall Street
+   (Simply Wall Street · 10/03 11:26)
+→ Hims & Hers의 새로운 지역 최고 마케팅 책임자(CMO) 임명이 주가에 미치는 투자 관점을 변화시키고 있는지에 대한 논의가 이루어지고 있다. 이 변화가 회사의 전략과 시장 반응에 어떤 영향을 미칠지 주목할 필요가 있다.
+
+📰 [HIMS] Kaplan Fox Encourages Investors of Hims & Hers Health, Inc. (NYSE - The National Law Review
+   (The National Law Review · 10/03 11:01)
+→ Kaplan Fox는 Hims & Hers Health, Inc.의 투자자들에게 주의를 촉구하고 있습니다. 이 법률사는 해당 기업에 대한 투자자들의 권리와 선택을 강조하며 추가적인 정보 제공을 원하고 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Jumps 2.9% - Here's What Happened - MarketBeat
+   (MarketBeat · 10/03 06:23)
+→ Redwire(NYSE:RDW) 주가가 2.9% 상승했습니다. 이는 최근의 몇 가지 긍정적인 기업 소식과 투자자들의 관심이 반영된 결과로 보입니다.
+
+📰 [RDW] RKLB, LUNR, RDW Jump Premarket As Musk Pitches AI Satellites, Orbital Data Centers — Analyst Says The Odds Are Just 7% - Stocktwits
+   (Stocktwits · 10/03 01:11)
+→ RKLB, LUNR, RDW 주식이 프리마켓에서 상승했으며, 이는 일론 머스크가 AI 위성과 궤도 데이터 센터에 대한 아이디어를 제안한 데 기인하고 있습니다. 그러나 한 분석가는 이러한 프로젝트의 성공 확률이 7%에 불과하다고 언급했습니다.
+
+📰 [RDW] Stocktwits Space Race Weekly: SPCX Holds Pole Position As ASTS, RKLB, PL, RDW, FLY Lose Altitude - Stocktwits
+   (Stocktwits · 10/02 17:47)
+→ 스톡트윗에서 발표한 우주 경쟁 주간 보고서에 따르면, SPCX는 여전히 선두 자리를 유지하고 있는 반면, ASTS, RKLB, PL, RDW, FLY 등의 주식은 하락세를 보이고 있다고 전했습니다.
+
+📰 [IREN] IREN's Next Test: Turning Sector Tailwinds Into Its Own Megawatt Milestones - AD HOC NEWS
+   (AD HOC NEWS · 10/04 01:51)
+→ IREN은 현재 발생하고 있는 산업의 긍정적인 변화들을 활용하여 자체적인 성장을 이루는 데 도전하고 있습니다. 이 회사는 에너지 분야에서의 성공적인 성과를 달성하기 위해 지속적으로 노력하고 있습니다.
+
+📰 [IREN] IREN Gains 2.5% as Applied Digital's 250 MW Milestone Lifts AI Data-Center Peers - AD HOC NEWS
+   (AD HOC NEWS · 10/03 22:11)
+→ Applied Digital의 250 MW 이정표가 AI 데이터 센터 기업들의 주가를 끌어올리면서 IREN의 주가가 2.5% 상승했습니다. 이러한 성장은 AI 데이터 센터 관련 기업들에 긍정적인 영향을 미치고 있습니다.
+
+📰 [IREN] IREN Rides AI Data-Center Rebound as Griffin Discloses 4.7% Stake - AD HOC NEWS
+   (AD HOC NEWS · 10/03 18:50)
+→ IREN은 인공지능 데이터 센터의 회복세에 힘입어 성장하고 있으며, 그리핀은 IREN의 4.7% 지분을 공개했습니다. 이러한 투자 소식은 IREN의 주가 상승에 긍정적인 영향을 미치고 있습니다.
+
+📰 [RKLB] Rocket Lab secures largest-ever commercial Elec... - Pluang
+   (Pluang · 10/04 06:07)
+→ 로켓랩이 역대 최대 규모의 상업적 일렉트론 발사 계약을 체결했습니다. 이 계약은 회사의 성장과 시장에서의 경쟁력을 강화하는데 중요한 이정표가 될 것으로 예상됩니다.
+
+📰 [RKLB] Rocket Lab Just Signed the Biggest Commercial Electron Deal in Its History. Its Launch Backlog Now Tops 100.
+   (Yahoo Finance · 10/04 04:07)
+→ 로켓랩이 역대 최대 규모의 상업적 일렉트론 계약을 체결하며, 발사 일정이 100건을 넘어섰다. 한 고객은 2031년까지 일렉트론 발사를 예약했으며, 이에 따라 주식 매입 여부에 대한 관심이 증가하고 있다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Upgraded at Citigroup - MarketBeat
+   (MarketBeat · 10/03 19:05)
+→ 로켓랩(Rocket Lab, NASDAQ:RKLB)이 시티그룹(Citigroup)에서 투자의견이 상향 조정되었습니다. 이로 인해 로켓랩의 주가에 긍정적인 영향을 미칠 것으로 예상됩니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Is Up 33% in 90 Days but Still Down 30% From Last Year: Who’s Still Facing Losses?
+   (Yahoo Finance · 10/04 05:33)
+→ 비트코인은 지난 90일 동안 33% 상승했지만, 여전히 지난해 대비 30% 하락한 상태입니다. 많은 투자자들이 여전히 손실을 보고 있으며, 손익은 구매 가격에 따라 달라집니다.
+
+📰 [BTC-USD] Bitcoin Is Up 33% in 90 Days but Still Down 30% From Last Year: Who’s Still Facing Losses? - Yahoo Finance
+   (Yahoo Finance · 10/04 05:33)
+→ 비트코인은 최근 90일 동안 33% 상승했지만, 지난해에 비해 여전히 30% 하락한 상태입니다. 이에 따라 여전히 손실을 보고 있는 투자자들이 존재합니다.
+
+📰 [BTC-USD] Bitcoin Is Up 33% in 90 Days but Still Down 30% From Last Year: Who’s Still Facing Losses? - AOL.com
+   (AOL.com · 10/04 05:33)
+→ 비트코인은 지난 90일 동안 33% 상승했지만, 여전히 지난해 대비 30% 하락한 상태이다. 이러한 가격 변동으로 인해 여전히 손실을 겪고 있는 투자자들이 있는 것으로 보인다.
+
+📰 [ETH-USD] Ethereum unstaking queue jumps 392% amid MetaMa... - Pluang
+   (Pluang · 10/04 05:59)
+→ 이더리움 언스테이킹 대기열이 메타마스크와 관련된 소식으로 인해 392% 급증했습니다. 이로 인해 사용자들이 스테이킹을 해제하려는 수요가 크게 증가한 것으로 보입니다.
+
+📰 [ETH-USD] Ethereum Faces a Bear Market Storm as Trading Activity Soars - onesafe.io
+   (onesafe.io · 10/04 05:17)
+→ 이더리움이 거래 활동이 급증하는 가운데 하락 시장의 어려움에 직면하고 있습니다. 투자자들은 시장 변동성에 주목하고 있으며, 이러한 상황에서 이더리움의 추세가 주목받고 있습니다.
+
+📰 [ETH-USD] Bitcoin Funds Took In $2.5 Billion as the 10-Year Yield Hit 5.31%. Is Bitcoin Ignoring the Bond Market?
+   (Yahoo Finance · 10/04 04:58)
+→ 비트코인이 10년물 채권 수익률이 5.31%에 달하는 상황에서 25억 달러의 자금을 유입하며 10년 만에 가장 좋은 9월 실적을 기록했다. 이는 투자자들이 일반적으로 따라야 할 규칙을 무시하는 조합으로, 향후 어떤 변화가 있을지 주목된다.
+
+📰 [SOL-USD] Locals attack litter in Del Mar, Solana Beach at annual Coastal Cleanup Day - San Diego Union-Tribune
+   (San Diego Union-Tribune · 10/04 05:30)
+→ 델마와 솔라나 비치에서 열린 연례 해안 정화 행사에 지역 주민들이 참여해 쓰레기를 수거하며 청소 작업을 진행했다. 이 행사는 지역사회의 환경 보호 의식을 높이는 데 기여하고 있다.
+
+📰 [SOL-USD] Top 3 Cryptos to Buy Now in October 2026: Pepeto, Solana and XRP Eye Bigger Gains - TechBullion
+   (TechBullion · 10/04 03:47)
+→ 2026년 10월 현재, Pepeto, Solana, 그리고 XRP가 큰 수익을 기대할 수 있는 상위 3개의 암호화폐로 추천되고 있다. 이들 암호화폐는 향후 더 큰 성장을 목표로 하고 있다.
+
+📰 [SOL-USD] We Asked AI Models Whether Solana Reaches $150 Before Bitcoin Reaches $100,000
+   (Yahoo Finance · 10/04 02:29)
+→ AI 모델인 ChatGPT와 Grok은 비트코인이 10만 달러에 도달하기 전에 솔라나가 150달러에 이를 가능성이 더 크다고 평가했습니다. 이들은 변동성, 자금 흐름, 그리고 주요 플레이어의 숨은 역할 등을 통해 놀라운 주장을 펼쳤습니다.
+
+📰 [BMNR] Bitcoin Price Rebounds To $86K With Jobs Data Looming — MSTR, COIN, BMNR Stocks Gain - TradingView
+   (TradingView · 10/02 19:46)
+→ 비트코인 가격이 86,000달러로 반등하며 MSTR, COIN, BMNR 주식도 상승세를 보이고 있다. 이는 곧 발표될 고용 데이터에 대한 기대감과 관련이 있다.
+
+📰 [BMNR] Is Record Buyback Altering The Investment Case For Bitmine Immersion Technologies (BMNR)? - Simply Wall Street
+   (Simply Wall Street · 10/02 19:41)
+→ 비트마인 임머전 테크놀로지스(BMNR)가 기록적인 자사주 매입을 실시하면서 투자 매력이 변화하고 있다는 분석이 제기되었습니다. 이러한 매입은 주가에 긍정적인 영향을 미칠 수 있으며, 투자자들에게 새로운 기회를 제공할 가능성이 있습니다.
+
+📰 [BMNR] Tom Lee’s AI Crypto Bull Case Puts BMNR in Focus - BitMine Immersion (NYSE:BMNR) - Benzinga
+   (Benzinga · 10/02 03:21)
+→ 탐 리(Tom Lee)는 AI 기술을 활용한 암호화폐의 긍정적인 전망을 제시하며 비트마인 이머션(BMNR)에 대한 관심을 높였습니다. 그의 분석은 BMNR의 가능성을 재조명하고 있으며, 투자자들 사이에서 주목받고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 혼조세를 보이며 일부 자산이 소폭 상승하는 모습이다. 다만, 단기 관망 심리가 감지되며 파생상품 거래량이 감소하고 있다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 혼조세에서 비트코인 소폭 상승
+   → 10월 5일 금융시장 폭락설이 확산되면서 비트코인(BTC)이 소폭 상승했지만, 위험자산의 급락 가능성이 여전히 제기되고 있다.
+   (토큰포스트 · 10/04 05:40)
+2. (규제) CFTC, 가상자산 투자 사기 경고
+   → 이뮤터블(IMX)의 가격이 13% 상승했으나, 현물 시장에서 순유출이 발생해 투자자들의 전략이 다양해지고 있다.
+   (토큰포스트 · 10/04 05:08)
+3. (시세) 비트코인, 8만7000달러 돌파 뒤 하락
+   → 비트코인은 84,837.11달러로 0.64% 상승했으나, 점유율은 58.94%로 감소하며 자금이 알트코인으로 분산되고 있다.
+   (토큰포스트 · 10/04 05:01)
+4. (기타) 가상자산 9월 채용공고 증가
+   → 9월 동안 5400여 BTC가 장기 휴면 주소에서 이동했으며, 스택스(STX)는 새로운 스테이킹 공모 방안을 제안했다.
+   (토큰포스트 · 10/04 05:01)
+5. (온체인) 비트코인 휴면 주소서 5400여 BTC 이동
+   → 지난 24시간 동안 1,859만 달러 규모의 레버리지 포지션이 청산됐으며, 대부분이 숏 포지션이었다.
+   (토큰포스트 · 10/04 04:56)
+
+[흐름·전망]
+• 단기적으로 비트코인과 이더리움의 점유율 변화에 주목하며 자금 흐름을 추적하는 것이 중요하다.
+• 파생상품 거래량 감소는 투자자들의 관망 심리를 반영하므로, 향후 방향성을 확인한 후에 거래를 고려할 필요가 있다.
+• 시장 유동성 위축에 따른 자산 매도 압력이 변수로 작용할 수 있으니, 관련 뉴스와 데이터를 지속적으로 모니터링해야 한다.
+• 장기적으로는 비트코인의 하락 경로가 금융시장 전반의 유동성에 어떻게 영향을 받을지가 주요 관심사로 남을 것이다.
+
+📊 공포탐욕지수
+  - CNN 기준: 31 (Fear)
+  - 크립토 기준: 67 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울의 주택구입부담지수가 3년 6개월 내 최고치를 기록하며 전반적인 부담이 커진 상황이다. 수도권에서는 공공주택이 지속적으로 착공되고 있으며, 일부 지역의 아파트 가격이 강세를 보이는 모습이다.
+
+[핵심 뉴스]
+1. (기타) 서울 주택구입부담지수, 3년 6개월 내 최고치
+   → 서울의 주택구입부담지수가 185.3으로 전 분기 대비 6포인트 상승했으며, 중간소득 가구가 소득의 47.6%를 주택담보대출 원리금 상환에 사용하는 것으로 나타났다.
+   (매일경제 · 10/03 09:57)
+2. (매매) 수원 팔달·영통, 용인 수지 아파트값 강세
+   → 수도권 아파트 매매가격이 0.14% 상승했으며, 특히 화성 병점구(0.70%)와 동탄구(0.63%)에서 강세를 보이고 있다.
+   (매일경제 · 10/03 08:58)
+3. (공급) 수도권 공공주택 3분기 1.7만가구 착공
+   → 올해 3분기까지 수도권에서 공공주택 1.7만 가구가 착공되었으며, 4분기에는 4.5만 가구가 집중될 예정이다.
+   (연합뉴스 · 10/02 16:49)
+4. (공급) LH, 기간제 인력 채용해 주택공급 속도↑
+   → LH는 주택공급 속도를 높이기 위해 보상 기간제 근로자 250명을 공개 채용한다고 발표했다.
+   (연합뉴스 · 10/02 14:31)
+5. (재건축) 송파한양1차 재건축 조합설립인가 신청 승인
+   → 송파구의 송파한양1차 재건축 조합설립이 신청 3일 만에 승인되었으며, 이는 서울시의 개선된 절차 덕분이다.
+   (연합뉴스 · 10/02 15:32)
+6. (매매) 조망권의 가치가 집값에 미치는 영향 확대
+   → 조망권의 가치가 높아지면서 아파트 가격에 영향을 미치고 있으며, 특정 지역에서는 조망이 좋은 단지가 높은 시세를 기록하고 있다.
+   (매일경제 · 10/02 13:31)
+
+[흐름·전망]
+• 전체적으로 서울의 주택구입부담이 증가하였으므로, 중산층 이하 가구의 주택 구매가 더욱 어려워질 가능성이 있다.
+• 수도권 공공주택 공급이 증가하는 가운데, 이로 인해 장기적으로 주택 가격 안정화에 기여할 수 있을 것으로 예상된다.
+• 조망권의 가치는 더욱 중요해지고 있으며, 이는 차별화된 주택 수요를 만들어 갈 것이다.
+• 주택 시장에서 팔릴 수 있는 매물은 점차 줄어들고 있고, 거래가 한산해지는 모습이 보이고 있어 관망세가 지속될 것으로 판단된다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+오늘 트럼프는 아칸소주에서의 시간 변경 문제와 관련하여 불편을 호소하며, 이를 해결하기 위한 법안 통과를 촉구했다. 그는 또한 2026년 중간선거에서 공화당의 중요성을 강조하며 지지자들에게 투표를 독려했다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 아칸소주 상원 의원 톰 코튼이 '선샤인 보호법' 통과를 저지하고 있다며, 주민들이 시간 변경으로 고생하고 있으니 법안을 통과시켜달라고 촉구했다.
+   (Truth Social · 10/04 02:46)
+2. (국내정치) 트럼프는 2026년 중간선거에서 공화당이 하원과 상원을 모두 차지하면 성인 시민들에게 $5,000을 지급하겠다고 밝혔다.
+   (Truth Social · 10/03 23:32)
+3. (인사) 알래스카주 상원 의원 다니엘 설리반과 뉴멕시코주 하원 의원 그렉 커닝햄을 지지한다고 밝혔다.
+   (Truth Social · 10/03 23:01)
+4. (경제) 트럼프는 자신이 실시한 의료비 절감 계산으로 노인들에게 지원금을 지급할 것이라고 언급하며, 이는 불필요한 자금이 아닌 실제 도움이라고 강조했다.
+   (Truth Social · 10/03 22:10)
+5. (기타) 트럼프는 미 여당의 사회주의적 agenda가 국가 경제에 큰 비용을 초래할 것이라고 주장하며, 이에 대한 반대를 촉구했다.
+   (Truth Social · 10/03 21:56)
+6. (사법) 트럼프는 연방준비위원회의 건물 리노베이션과 관련된 조사의 허위 보도를 반박하며, 독립적인 감사를 진행하겠다고 설명했다.
+   (Truth Social · 10/03 21:53)
+
+[흐름·전망]
+• 트럼프의 발언에서 아칸소주의 법안 통과가 얼마나 신속하게 이루어질지가 주목된다.
+• 2026년 중간선거에서 공화당의 승리가 미국 정치에 미칠 영향에 대해 관심을 기울일 필요가 있다.
+• 알래스카 및 뉴멕시코에서의 정치적 지지도 변화가 향후 선거에 어떤 결과를 가져올지 살펴볼 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
