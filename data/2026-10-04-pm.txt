@@ -1,0 +1,246 @@
+2026-10-04T17:02:50.643545+09:00
+
+[오늘의 뉴스 요약] 2026-10-04 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 소비자물가는 10월에도 3% 안팎의 상승률을 보일 것으로 예상되고 있으며, 고금리에 따른 가계 이자 부담이 증가하고 있다. 또한, 정부는 농축산물 할인 지원 예산을 대폭 확대하고 나섰지만 농민의 실질 소득에는 큰 영향을 미치지 못하고 있다.
+
+[핵심 뉴스]
+1. (물가) 한은 “10월 소비자물가 3% 안팎 전망…상승 압력 여전”
+   → 한국은행은 10월 소비자물가 상승률이 3% 안팎에 이를 것으로 전망하고, 통신요금 기저효과가 사라짐에 따라 다시 물가 오름세가 확대될 것이라고 밝혔다.
+   (매일경제 · 10/03 09:41)
+2. (금리) “생활비 아낀 돈, 이자로 다 나갑니다”…월평균 이자비용 55% 급증
+   → 2022년 2분기부터 2023년 2분기까지 가계의 월평균 이자비용이 55% 증가한 반면, 카드 무이자 할부기간은 단축되며 전체적인 금융비용 부담이 커지고 있다.
+   (매일경제 · 10/04 09:10)
+3. (정책) 정부, 농축산물 할인 지원에 6년간 1조3천억…예산 25배 급증
+   → 정부는 6년 동안 총 1조3천억 원의 농축산물 할인 지원 예산을 편성하면서 소비자 물가 안정을 도모하고 있지만, 농민의 소득 효과는 확인되지 않고 있다.
+   (연합뉴스 · 10/04 06:01)
+4. (환율) “1550원일땐 차마 못 갚았습니다”…1350원에 달러빚 정리나선 기업들
+   → 원화 가치가 상승하면서 기업들이 달러 대출 상환을 늘리고 있으며, 이는 원화 매출 비중이 높은 기업에 더욱 유리한 상황이 형성되고 있다.
+   (매일경제 · 10/03 06:30)
+5. (금리) [머니플로우] 금리 고공행진에 CD·채권 관련 ETF 인기 '쑥'
+   → 미국 및 주요국의 국채금리가 급등하면서 CD 및 채권 관련 ETF에 대한 투자자들의 관심이 급증하고 있으며, 국내 금리도 상승세를 보이고 있다.
+   (연합뉴스 · 10/03 08:00)
+
+[흐름·전망]
+• 소비자물가의 지속적인 상승세는 가계의 구매력에 부정적인 영향을 미칠 수 있으며, 이에 따른 정책 대응이 주목된다.
+• 가계 이자비용의 급증은 소비여력 감소로 이어질 가능성이 높으며, 금융회사들은 이자 혜택 축소 상황을 면밀히 살펴야 한다.
+• 농민 소득을 고려하지 않은 소비자 물가 중심의 할인 지원 정책이 향후 농업 생태계에 미칠 영향에 대한 논의가 필요하다.
+• 원화 강세에 따른 외환 부채 상환이 증가하고 있으나, 대외 불안정성 등으로 환율이 다시 약세로 돌아설 가능성도 존재한다.
+• 국채금리의 지속적인 상승은 성장 전망에 영향을 미칠 수 있으므로, 변동성 장세에서 안전자산에 대한 선호가 커질 가능성이 있다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia Stock (NVDA) Hits a New All-Time High – Wall Street Still Sees 39% Upside - TipRanks
+   (TipRanks · 10/04 16:19)
+→ Nvidia 주식(NVDA)이 새로운 사상 최고가를 기록했으며, 월스트리트에서는 여전히 39%의 추가 상승 여력을 보고 있다고 전해졌다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Stock Sold by Planning Directions Inc. - MarketBeat
+   (MarketBeat · 10/04 16:16)
+→ Planning Directions Inc.에서 NVIDIA Corporation의 주식을 매도했다는 소식이 전해졌다. 이 거래는 최근 시장에서의 주식 동향과 관련이 있다.
+
+📰 [NVDA] Key facts: NVIDIA (NVDA) $150B Buybacks; MS $300 Target; $220 Pullback - TradingView
+   (TradingView · 10/04 16:00)
+→ NVIDIA가 1500억 달러 규모의 자사주 매입을 발표했으며, 모건 스탠리는 이 회사의 목표 주가를 300달러로 설정했습니다. 그러나 현재 주가는 220달러 수준으로 하락했습니다.
+
+📰 [TSLA] Thinking about buying a Tesla Model Y L? You need to read this. - drive.com.au
+   (drive.com.au · 10/04 15:53)
+→ 테슬라 모델 Y L 구매를 고려하고 있다면, 이 기사를 꼭 읽어보아야 합니다. 차량에 대한 중요한 정보와 추천 사항이 포함되어 있습니다.
+
+📰 [TSLA] Tesla Cuts AI Chip Memory Capacity Amid Supply Shortage - 조선일보
+   (조선일보 · 10/04 15:51)
+→ 테슬라는 공급 부족 문제로 인해 AI 칩의 메모리 용량을 줄이기로 결정했다. 이는 생산 효율성을 높이기 위한 조치로, 향후 테슬라 제품에 영향을 미칠 수 있다.
+
+📰 [TSLA] Man Gets Wrecked Tesla In The Shop, Then Plugs It In: 'I Wouldn't Do That' - Motor1.com
+   (Motor1.com · 10/04 15:26)
+→ 한 남성이 파손된 테슬라 자동차를 수리 가게에 가져간 후 충전기에 꽂았습니다. 이 행동에 대해 전문가들은 "그렇게 하지 않을 것"이라고 경고했습니다.
+
+📰 [HIMS] Is Hims & Hers Health (HIMS) A Bargain After The Fraud Lawsuit Claims? - simplywall.st
+   (simplywall.st · 10/04 15:29)
+→ Hims & Hers Health (HIMS)가 사기 소송 주장 이후 주식이 저렴한지에 대한 논의가 이루어지고 있다. 투자자들은 소송의 영향과 기업 가치를 재평가하는 데 주목하고 있다. 회사의 재무 상황과 향후 성장 가능성도 중요한 고려 사항으로 언급되고 있다.
+
+📰 [HIMS] Hims & Hers Health Shareholder Alert: ClaimsFiler Reminds Investors With Losses In Excess Of $100,000 Of Lead Plaintiff Deadline In Class Action Lawsuit Against Hims & Hers Health, Inc. - HIMS - Morningstar
+   (Morningstar · 10/03 11:32)
+→ Hims & Hers Health에 대한 집단소송과 관련하여, ClaimsFiler는 10만 달러 이상의 손실을 입은 투자자들에게 주도 원고 등록 마감일을 상기시키고 있습니다. 투자자들은 소송에 참여할 기회를 놓치지 않도록 주의해야 합니다.
+
+📰 [HIMS] Is New Regional CMOs Altering The Investment Case For Hims & Hers Stock (HIMS)? - simplywall.st
+   (simplywall.st · 10/03 11:26)
+→ Hims & Hers의 새로운 지역 최고 마케팅 책임자(CMO) 임명이 회사의 투자 가치에 변화를 가져올 가능성이 제기되고 있습니다. 이 변화를 통해 기업의 성장 전략이나 브랜드 이미지 개선이 기대되고 있으며, 투자자들은 이에 주목하고 있습니다.
+
+📰 [RDW] Redwire Corporation (NYSE:RDW) Stock Rated "Hold" by Wall Street Brokerages - MarketBeat
+   (MarketBeat · 10/04 15:18)
+→ 레드와이어 코퍼레이션(Redwire Corporation, NYSE: RDW)의 주식이 월가 브로커리지에서 "보유(Hold)" 등급을 받았습니다. 이는 현재 주식 매수보다는 보유를 추천한다는 의미입니다.
+
+📰 [RDW] RDW Oct 2026 10.000 call (RDW261009C00010000) stock price, news, quote and history - Yahoo Finance UK
+   (Yahoo Finance UK · 10/04 09:30)
+→ RDW의 2026년 10월 만기 10.000 콜 옵션(RDW261009C00010000)의 주가, 뉴스, 견적 및 역사에 대한 정보가 Yahoo Finance UK에 게시되었습니다.
+
+📰 [RDW] Why Is RDW Stock Falling Today? - Stocktwits
+   (Stocktwits · 10/04 08:27)
+→ RDW 주식이 오늘 하락한 이유는 명확하지 않지만, 투자자들의 우려와 시장 전반의 분위기 영향이 있을 수 있습니다. 추가적인 정보나 분석이 필요할 것으로 보입니다.
+
+📰 [IREN] IREN's Next Test: Turning Sector Tailwinds Into Its Own Megawatt Milestones - AD HOC NEWS
+   (AD HOC NEWS · 10/04 01:51)
+→ IREN은 전력 산업의 긍정적인 흐름을 활용해 자체적인 발전량 목표를 달성하는 데 도전하고 있습니다. 이러한 목표를 실현하기 위해 전략적인 접근과 실행이 필요하다고 강조하고 있습니다.
+
+📰 [IREN] IREN (IREN) Dropped, What Is Behind The Latest Attention? - simplywall.st
+   (simplywall.st · 10/03 09:55)
+→ IREN(IREN)의 주가가 하락한 이유에 대한 관심이 집중되고 있다. 최근의 변동성에 대한 분석과 투자자들의 반응이 주목받고 있으며, 이는 시장 상황과 회사의 경제적 변화와 관련이 있을 수 있다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Jumps 2.7% - Still a Buy? - MarketBeat
+   (MarketBeat · 10/03 06:23)
+→ IREN(나스닥: IREN) 주식이 2.7% 상승하며 투자자들 사이에서 여전히 매수 의견이 제기되고 있습니다. 시장 분석은 해당 주식의 매력에 대해 논의하고 있습니다.
+
+📰 [RKLB] Rocket Lab's Order Book Clears 100 Missions as CFO Spice Cashes In 140,157 Shares - AD HOC NEWS
+   (AD HOC NEWS · 10/04 16:40)
+→ 로켓랩의 주문서가 100개 미션을 넘어섰으며, CFO인 스파이스는 140,157주를 매각했습니다. 이로 인해 로켓랩의 성장 가능성이 기대되고 있습니다.
+
+📰 [RKLB] Rocket Lab (RKLB) Could Be 13% Below Fair Value After 20 Launch Synspective Deal - simplywall.st
+   (simplywall.st · 10/04 16:35)
+→ 로켓랩(Rocket Lab, RKLB)이 20회의 발사 계약을 체결한 후, 공정 가치보다 13% 저평가될 수 있다는 분석이 나왔다. 이 징후는 투자자들에게 신뢰할 만한 기회를 제공할 수 있다.
+
+📰 [RKLB] How Investors May Respond To Rocket Lab (RKLB) Winning Synspective’s Record 20-Launch Electron Contract
+   (Yahoo Finance · 10/04 13:14)
+→ 로켓랩이 2026년 9월, 신스펙티브와 20회 전자 발사 계약을 체결했다고 발표했다. 이 계약은 로켓랩의 최대 상업 발사 계약으로, 2028년부터 2031년까지 매년 StriX 레이더 위성을 발사하며, 로켓랩의 미션 물량이 100건을 넘기는 계기가 되었다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] $Bitcoin (BTC.CC)$ May this lucky cat bring good fortune, prosperity, and new opportunities your way. - Moomoo
+   (Moomoo · 10/04 16:23)
+→ 비트코인과 관련된 메시지가 "행운의 고양이가 여러분에게 좋은 운, 번영, 새로운 기회를 가져다주길 바란다"는 내용을 담고 있습니다. Moomoo라는 기업이 이러한 메시지를 전했습니다.
+
+📰 [BTC-USD] Bitcoin often gains in October but Q4 gains are less consistent; XRP and others show mixed seasonal results. - pluang.com
+   (pluang.com · 10/04 15:37)
+→ 비트코인은 일반적으로 10월에 상승하지만, 4분기 상승세는 일관성이 떨어진다. XRP를 포함한 다른 암호화폐들은 혼합된 계절적 성과를 보인다.
+
+📰 [BTC-USD] Uptober recalculated: 7 of 9 years at Bitcoin - CryptoTicker
+   (CryptoTicker · 10/04 15:23)
+→ '업토버'가 재계산된 결과, 비트코인 역사에서 9년 중 7년이 긍정적인 성과를 보였다는 내용입니다. 이 기간 동안 비트코인의 가격 상승이 두드러져 투자자들에게 희망적인 신호로 전해지고 있습니다.
+
+📰 [ETH-USD] Ethereum holds above $2,600 with $3,400 target; futures dominate trading despite ETF outflows. - pluang.com
+   (pluang.com · 10/04 15:04)
+→ 이더리움 가격은 2,600달러 이상을 유지하며 3,400달러 목표를 설정하고 있다. ETF 자금 유출에도 불구하고 선물 거래가 주를 이루고 있다.
+
+📰 [ETH-USD] Ethereum Faces a Bear Market Storm as Trading Activity Soars - OneSafe
+   (OneSafe · 10/04 14:43)
+→ 이더리움이 거래 활동이 급증하는 가운데 약세장에 직면하고 있다. 시장의 변동성이 커지면서 투자자들의 관심이 집중되고 있는 상황이다.
+
+📰 [ETH-USD] Ethereum Price Holds $2,600 as Futures Activity Dominates - Cryptonews.net
+   (Cryptonews.net · 10/04 14:06)
+→ 이더리움 가격이 2,600달러를 유지하고 있으며, 선물 거래 활동이 주를 이루고 있습니다. 시장에서의 선물 거래가 주요 요인으로 작용하고 있는 상황입니다.
+
+📰 [SOL-USD] Solana's Agency Token Surpasses $20M Market Cap, Rises Over 11x in 24 Hours - kucoin.com
+   (kucoin.com · 10/04 16:13)
+→ 솔라나의 에이전시 토큰이 시가 총액 2000만 달러를 돌파했으며, 24시간 내에 11배 이상 상승했습니다. 이는 시장에서 큰 관심을 받고 있음을 나타냅니다.
+
+📰 [SOL-USD] Top 3 Cryptos to Buy Now in October 2026: Pepeto, Solana and XRP Eye Bigger Gains - TechBullion
+   (TechBullion · 10/04 14:08)
+→ 2026년 10월에 주목할 만한 암호화폐로 Pepeto, Solana, XRP가 소개되었으며, 이들 자산은 더 큰 수익 잠재성을 가지고 있다고 전해졌다. 이 암호화폐들은 투자자들에게 매력적인 선택이 될 것으로 보인다.
+
+📰 [SOL-USD] Solana Beach approves ordinance for residential beekeeping, chicken coops - San Diego Union-Tribune
+   (San Diego Union-Tribune · 10/04 13:11)
+→ 솔라나 비치가 주택에서의 양봉과 닭 사육을 허용하는 조례를 승인했습니다. 이 조례는 주민들이 자신의 집에서 꿀벌과 닭을 기를 수 있도록 하는 내용을 담고 있습니다.
+
+📰 [BMNR] BMNR’s Tom Lee Says Tokenization, Agentic AI Are Breaking ETH-BTC Multiyear Downtrend - Stocktwits
+   (Stocktwits · 10/04 06:22)
+→ BMNR의 톰 리(Tom Lee)는 토큰화와 능동적 인공지능(agentic AI)이 이더리움(ETH)과 비트코인(BTC)의 다년간 하락세를 깨고 있다고 언급했습니다. 그는 이러한 기술들이 시장에 긍정적인 영향을 미칠 것이라고 보고했습니다.
+
+📰 [BMNR] Bitcoin Price Rebounds To $86K With Jobs Data Looming — MSTR, COIN, BMNR Stocks Gain - TradingView
+   (TradingView · 10/02 19:46)
+→ 비트코인 가격이 86,000달러로 반등했으며, 이는 일자리 데이터 발표를 앞두고 이루어진 변화입니다. 이에 따라 MSTR, COIN, BMNR 등의 주가도 상승세를 보이고 있습니다.
+
+📰 [BMNR] Is Record Buyback Altering The Investment Case For Bitmine Immersion Technologies (BMNR)? - simplywall.st
+   (simplywall.st · 10/02 19:41)
+→ 비트마인 이머전 테크놀로지스(BMNR)가 역대 최대 주식 매입을 진행하면서 투자 논리에 변화가 발생하고 있다는 분석이 나왔다. 이로 인해 투자자들의 관심이 높아지고 있으며, 향후 주가에 긍정적인 영향을 미칠 가능성이 제기되고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장은 국내 거래소에서 특정 코인에 대한 관심이 높아지고 있으며, 브라질에서는 범죄 조직과 관련된 채굴 시설 수사가 진행되고 있는 것이 눈에 띈다.
+
+[핵심 뉴스]
+1. (기타) 국내에서만 도는 ONDO…해외 비중의 28배
+   → 국내 비중이 28.1배 높은 ONDO가 가장 두드러지며, WLD는 15.04%의 거래 비중을 기록하고 있다. 최근 WLD의 거래대금은 1,155억 원, ONDO는 361억 원으로 확인되었다.
+   (토큰포스트 · 10/04 17:00)
+2. (규제) 브라질 범죄 조직, 채굴 시설·핀테크망 활용 수사
+   → 브라질에서 범죄 조직과 연관된 가상자산 채굴 시설이 발견되고, 핀테크 업체들의 자금 흐름에 대한 수사가 진행되고 있다. 브라질 연방세무청은 2022~2025년 이상 거래 규모를 260억 헤알로 집계하였다.
+   (토큰포스트 · 10/04 16:36)
+3. (온체인) 비트코인 거래소 유입·유출 비율 하락
+   → 비트코인의 거래소 유입·유출 비율이 약 0.97로 하락하여 유출이 우세하다는 분석이 나왔다. 이는 투자자들이 비트코인을 장기 보유하려는 움직임으로 해석될 수 있다.
+   (토큰포스트 · 10/04 16:26)
+4. (기타) 국내 가상자산 거래액 상반기 44% 감소
+   → 국내 가상자산 거래액이 상반기 동안 44% 감소했으며, 한 주소에서 이더리움 1420개가 출금되어 스테이킹에 사용된 사례가 보도되었다.
+   (토큰포스트 · 10/04 16:19)
+5. (기타) 레버리지 포지션 청산 2096만 달러
+   → UBS가 뉴욕에서 디지털 자산 상품 관련 직무를 채용하고 있으며, 기본 연봉은 직무에 따라 16만4000~24만2500달러 사이에 형성되고 있다.
+   (토큰포스트 · 10/04 16:09)
+
+[흐름·전망]
+• 국내에서 특정 코인에 대한 높은 관심과 거래량 확대가 지속될지 지켜볼 필요가 있다.
+• 브라질의 범죄 조직과 가상자산 관련 수사의 진행 상황이 시장에 미치는 영향이 중요할 것으로 보인다.
+• 비트코인 유출 흐름이 계속된다면, 장기 투자 심리가 개선될 수 있다는 점을 주목해야 한다.
+• 국내 거래소의 거래액 감소가 지속되면, 향후 시장 회복에 어려움이 있을 수 있으므로 관련 동향을 주의 깊게 살펴야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 31 (Fear)
+  - 크립토 기준: 65 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+서울 주택 시장에서 구매 자금 조달 방식이 변화하고 있으며, 전반적인 분위기는 증여와 사적 자금으로의 의존도가 높아지고 있다.
+
+[핵심 뉴스]
+1. (매매) 갭투자 막았더니…집 살때 증여·상속 등 2배로
+   → 올해 1~8월 서울 주택 매입 자금은 71조1278억원이며, 이 중 증여·상속과 가족 및 지인에게서 차입한 사적 자금 비중이 11.55%로 증가했다.
+   (매일경제 · 10/04 16:41)
+2. (정책) 토허제로 조이니…상속자산·가족에 손벌린 자금 2배로 늘었다
+   → 서울 25개 자치구 중 24곳에서 증여·상속과 사적 자금의 비중이 임대보증금 비중을 초과했으며, 취득주택 임대보증금 비중은 6.51%로 감소했다.
+   (매일경제 · 10/04 12:47)
+3. (금리) 지역별로 엇갈린 부동산 대출 의존도…강남 9%·노원38%
+   → 노원구의 금융기관 대출 비중은 38.2%로 작년 대비 8.2%포인트 증가했으나, 강남3구에서는 대출 비중이 평균 11.1%로 감소했다.
+   (매일경제 · 10/04 11:29)
+4. (공급) 공사비 오르자 분양가도 뛴다…가격 확정된 기분양 단지 재조명
+   → 올해 상반기 전국 아파트 평균 분양가는 3.3㎡당 2143만원으로 작년 대비 2.2% 상승했으며, 건설공사비 상승이 분양가 증가의 원인으로 분석된다.
+   (매일경제 · 10/04 11:28)
+5. (기타) 서울 전월세시장 해법 찾는다…7일 프레스센터서 '서울주거포럼'
+   → 서울시는 7일 서울주거포럼을 개최하고, 전월세 시장 안정화 방안에 대해 전문가와 시민 의견을 수렴할 예정이다.
+   (연합뉴스 · 10/04 11:15)
+6. (기타) 부정청약 할만한데?…5년간 1699건 걸렸는데 당첨취소 273건뿐
+   → 최근 5년간 부정청약 사례가 1700건에 달하였으며, 특히 위장전입이 주요 원인으로 지적되고 있다.
+   (매일경제 · 10/04 10:58)
+
+[흐름·전망]
+• 서울 주택 시장에서 사적 자금의 비중 증가가 향후 주택 구매 트렌드에 어떤 영향을 미칠지 주목해야 하며, 이로 인해 관련 정책 변화 가능성도 존재한다.
+• 강남과 외곽 지역의 대출 비율 차이가 자산 포트폴리오 방식과 매매시장에 미치는 영향에 대한 분석이 필요하다.
+• 건설공사비 상승으로 인해 향후 신규 분양시장에서도 가격 상승이 지속될 것으로 보이며, 기분양 단지에 대한 수요가 더욱 증가할 수 있다.
+• 전월세 시장 안정화와 관련한 정책 제안이 실제 주거복지에 얼마나 효과적으로 반영될 수 있는지 지켜보아야 할 시점이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 오하이오주에서 새로운 제약 제조 시설이 발표되었다고 전하며, 이는 그의 제약 관세 정책 덕분이라고 주장했다. 또한, 트럼프는 공화당의 2026년 중간 선거에서 승리가 중요하다고 강조하며, 유권자들에게 투표를 독려했다.
+
+[주요 발언]
+1. (경제) 트럼프는 오하이오주 콜럼버스 근처에 22억 달러 규모의 제약 제조 캠퍼스가 새로 열리며 수천 개의 일자리가 창출될 것이라고 언급했다. 이는 그의 제약 관세 정책 덕분이라고 강조했다.
+   (Truth Social · 10/04 07:20)
+2. (국내정치) 트럼프는 2026년 중간 선거에서 공화당이 승리해야 하며, 유권자들에게 적극적으로 투표에 참여할 것을 촉구했다. 그는 대규모 투표 참여를 통해 극단적인 좌파에 맞서 싸워야 한다고 주장했다.
+   (Truth Social · 10/03 22:10)
+3. (국내정치) 트럼프는 만약 공화당이 2026년 중간 선거에서 하원과 상원을 모두 차지한다면, 모든 성인 시민에게 5,000달러를 제공하겠다고 언급했다.
+   (Truth Social · 10/03 21:56)
+4. (인사) 트럼프는 알래스카주 상원의원 댄 설리반의 재선 후보를 전폭 지지한다고 밝혔다.
+   (Truth Social · 10/03 23:01)
+5. (인사) 트럼프는 뉴멕시코 2구의 하원의원 후보인 그렉 커닝햄을 전면 지지한다고 밝혔다.
+   (Truth Social · 10/03 21:53)
+6. (인사) 트럼프는 알래스카 하원의원인 닉 베기치의 재선 후보를 지지한다고 표현했다.
+   (Truth Social · 10/03 21:51)
+
+[흐름·전망]
+• 트럼프의 제약 관세 정책이 향후 미국 내 제조업과 일자리 창출에 미치는 영향을 주목할 필요가 있다.
+• 2026년 중간 선거를 앞두고 유권자들의 참여와 공화당의 전략적 대응이 중요할 것으로 보인다.
+• 그의 재정 지원 약속이 유권자들에게 어떤 반응을 이끌어낼지 감시할 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

@@ -700,5 +700,23 @@
 "prev": "0.4%",
 "act_n": null,
 "cons_n": null
+},
+"94a81821-a5f9-49b8-aa91-78fa3992fb3c": {
+"name": "Retail Sales (MoM)",
+"dt": "2026-11-17T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"9e7b2e58-e6d0-417d-b9d7-56ea5eedecec": {
+"name": "Retail Sales Control Group",
+"dt": "2026-11-17T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
