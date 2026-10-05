@@ -1,0 +1,239 @@
+2026-10-05T17:02:48.736505+09:00
+
+[오늘의 뉴스 요약] 2026-10-05 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 경제에 대한 긍정적인 성장 전망이 제시된 가운데, 정부는 미래대응기금 도입을 통해 투자 및 지원 확대를 계획하고 있다. 그러나 재정통제권에 대한 우려도 동시에 불거지고 있다.
+
+[핵심 뉴스]
+1. (성장) AMRO, 한국 올해 성장률 3.3% 전망
+   → 아세안+3 거시경제조사기구(AMRO)는 한국의 올해 경제성장률을 3.3%로 전망하며, 이는 지난 4월 1.9%에서 두 번째로 상향 조정된 수치이다. 물가상승률은 소폭 상승하여 2.7%로 제시되었다.
+   (매일경제 · 10/05 11:50)
+2. (정책) 정부 162조 쌈짓돈 만들어줄 판
+   → 정부가 162조원 규모의 미래대응기금을 도입하려 하며, 이는 반도체 초호황을 활용한 세수 증가에 따른 것이다. 그러나 국회는 재정통제권이 약화될 우려를 제기하고 있다.
+   (매일경제 · 10/04 20:06)
+3. (기타) 거제·통영 특별재난지역 정책자금 우대
+   → 중소벤처기업부는 거제·통영 지역의 소상공인과 중소기업을 위해 긴급경영안정자금의 금리를 1.5%로 인하하고 대출 한도를 각각 3억과 10억원으로 늘리는 정책을 시행한다고 발표했다.
+   (연합뉴스 · 10/05 12:00)
+4. (기타) 산업은행 해외점포 대대적 재편 나선다
+   → 산업은행은 성장 가능성이 낮은 해외 점포를 재편하고, 우즈베키스탄 법인 매각을 검토하는 등 해외 영업망 효율화를 추진하고 있다.
+   (매일경제 · 10/05 16:57)
+
+[흐름·전망]
+• 한국의 경제 성장률 상향 조정이 예상보다 긍정적인 신호로 받아들여지는 가운데, 물가 상승이 경제에 미치는 영향을 주목해야 할 것이다.
+• 미래대응기금의 운영과 국회의 재정통제권 간의 갈등이 어떻게 전개될지에 대한 지켜봐야 하며, 이는 향후 경제 정책에도 영향이 있을 것이다.
+• 거제·통영 지역의 긴급경영안정자금 지원이 소상공인과 중소기업의 회복에 기여할 수 있을지 확인할 필요가 있다.
+• 산업은행의 해외 영업망 재편이 외환 리스크 관리 및 효율성에 어떤 영향을 미칠지 면밀히 살펴봐야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia Partner Hon Hai Beats Sales Estimates Due to AI Frenzy - Bloomberg.com
+   (Bloomberg.com · 10/05 16:43)
+→ Nvidia의 파트너인 헝다이(혼하이)가 AI 열풍 덕분에 판매 추정치를 초과 달성했습니다. 이 회사는 인공지능 관련 수요 증가로 인해 높은 실적을 기록했습니다.
+
+📰 [NVDA] A Soft Jobs Report Takes the Heat Off Rates, and Nvidia Closes In on $6 Trillion - ChartMill
+   (ChartMill · 10/05 16:29)
+→ 부드러운 고용 보고서가 금리에 대한 압박을 완화시키는 가운데, 엔비디아의 시가총액이 6조 달러에 근접하고 있다는 소식입니다. 이로 인해 금융 시장의 긴장감이 줄어들고 있습니다.
+
+📰 [NVDA] Portfolio Design Labs LLC Sells 7,009 Shares of NVIDIA Corporation $NVDA - marketbeat.com
+   (marketbeat.com · 10/05 16:26)
+→ Portfolio Design Labs LLC가 NVIDIA 주식 7,009 주를 매도했다고 보고되었습니다. 이 판매는 주식 시장에서의 거래 활동의 일환으로 이루어졌습니다.
+
+📰 [TSLA] Thinking about buying a Tesla Model Y L? You need to read this. - drive.com.au
+   (drive.com.au · 10/05 16:21)
+→ 테슬라 모델 Y L 구매를 고려하고 있다면, 반드시 이 기사를 읽어보아야 합니다. 이 기사에서는 모델 Y L의 주요 특징과 구매 시 유의해야 할 사항들을 다루고 있습니다.
+
+📰 [TSLA] Key facts: Tesla (TSLA) Q3 beat; $30B credit secured; NHTSA probe - TradingView
+   (TradingView · 10/05 16:00)
+→ 테슬라(TSLA)는 3분기 실적에서 예상을 초과했고, 300억 달러의 자금을 확보했습니다. 또한, 미국 교통 안전국(NHTSA)의 조사도 받고 있습니다.
+
+📰 [TSLA] Tesla CEO Elon Musk Cuts AI Chip Memory Amid Shortage - 조선일보
+   (조선일보 · 10/05 15:50)
+→ 테슬라 CEO 일론 머스크가 인공지능 칩 메모리를 줄이기로 결정했다. 이는 현재 메모리 부족 사태에 대응하기 위한 조치로 보인다.
+
+📰 [HIMS] Is Hims & Hers Health (HIMS) A Bargain After The Fraud Lawsuit Claims? - Simply Wall Street
+   (Simply Wall Street · 10/04 15:29)
+→ Hims & Hers Health는 최근 사기 소송 주장으로 주목받고 있으며, 이로 인해 회사 주가가 하락하면서 투자자들 사이에서 저평가된 투자 기회로 여겨지고 있습니다. 전문가들은 이러한 소송의 영향을 분석하며, 향후 회사의 성장 가능성을 평가하고 있습니다.
+
+📰 [HIMS] Is New Regional CMOs Altering The Investment Case For Hims & Hers Stock (HIMS)? - Simply Wall Street
+   (Simply Wall Street · 10/03 11:26)
+→ Hims & Hers의 새로운 지역 최고 마케팅 책임자(CMO) 임명이 회사의 투자 가치에 어떠한 영향을 미칠지에 대한 분석이 진행되고 있다. 전문가들은 이 변화가 기업의 성장과 시장 경쟁력에 긍정적인 영향을 줄 수 있다고 보고 있다.
+
+📰 [HIMS] Kaplan Fox Encourages Investors of Hims & Hers Health, Inc. (NYSE - natlawreview.com
+   (natlawreview.com · 10/03 11:01)
+→ Kaplan Fox는 Hims & Hers Health, Inc.의 투자자들에게 이 회사의 주식에 대한 주의를 촉구하고 있습니다. 이들은 투자자들이 회사의 최근 활동과 관련된 정보를 검토하고 필요한 경우 법적 조치를 고려할 것을 권장하고 있습니다.
+
+📰 [RDW] Is Redwire (RDW) Using Honda Robotics To Quietly Redefine Its Space Infrastructure Strategy?
+   (Yahoo Finance · 10/05 10:07)
+→ 레드와이어(Redwire)는 2026년 9월과 10월 사이에 소피아 스페이스와 궤도 컴퓨팅 인프라 협업을 발표하고, 아메리칸 혼다 모터와는 상업용 우주 정거장을 위한 통합 로봇에 관한 협력 관계를 체결했습니다. 또한, 레드와이어는 9억 8천만 달러 규모의 NITE-STAR IDIQ 계약에서 15개 공급업체 중 하나로 선정되어, 우주 기반 인프라와 자동화 분야로의 전략적 발전을 강화하고 있습니다.
+
+📰 [RDW] RDW Oct 2026 12.000 put (RDW261009P00012000) stock price, news, quote and history - Yahoo Finance Australia
+   (Yahoo Finance Australia · 10/05 01:14)
+→ RDW Oct 2026 12.000 풋옵션(RDW261009P00012000)의 주식 가격, 뉴스, 견적 및 역사에 관한 정보가 Yahoo Finance Australia에서 제공되고 있습니다.
+
+📰 [RDW] Redwire Corporation (NYSE:RDW) Stock Rated "Hold" by Wall Street Brokerages - marketbeat.com
+   (marketbeat.com · 10/04 15:18)
+→ Redwire Corporation (NYSE:RDW) 주식은 월스트리트 중개업체들에 의해 "보유" 등급을 받았습니다. 이는 현재 주식 매수를 추천하지 않지만, 기존 보유를 유지하라는 의미입니다.
+
+📰 [IREN] IREN Ends Week Up 2.5% as Citadel's Griffin Reveals 4.7% Stake and B. Riley Trims Target - AD HOC NEWS
+   (AD HOC NEWS · 10/05 11:10)
+→ IREN의 주가는 이번 주 2.5% 상승했으며, 시타델의 켄 그리핀의 4.7% 지분 보유 사실이 공개되었습니다. 또한, B. 라일리에서는 목표 주가를 하향 조정했습니다.
+
+📰 [IREN] IREN's Rally Rests on Borrowed Momentum as Wall Street Trims Its Targets - AD HOC NEWS
+   (AD HOC NEWS · 10/04 23:30)
+→ IREN의 주가는 외부의 긍정적인 영향에 의존하고 있으며, 월가에서 목표 주가를 줄이고 있는 상황이다. 이러한 분위기 속에서 IREN의 상승세가 지속될 수 있을지에 대한 우려가 커지고 있다.
+
+📰 [IREN] Better Than Nvidia? Why IREN Is the New King of AI Infrastructure - TradingKey
+   (TradingKey · 10/04 22:56)
+→ IREN이 AI 인프라 분야에서 Nvidia보다 더 우수하다는 주장을 담고 있는 기사로, IREN의 기술력과 시장 경쟁력에 대해 다루고 있습니다. IREN은 혁신적인 솔루션을 통해 AI 관련 서비스를 제공하며, 이를 통해 업계에서 새로운 강자로 떠오르고 있다는 내용입니다.
+
+📰 [RKLB] Rocket Lab's Backlog Breaks 100 Missions as Synspective Deepens Its Electron Commitment - AD HOC NEWS
+   (AD HOC NEWS · 10/05 14:41)
+→ 로켓랩의 미션 적체가 100건을 초과했으며, 일본의 신스펙티브가 로켓랩의 일렉트론 발사체에 대한 의지를 더욱 강화하고 있습니다. 이로 인해 로켓랩의 향후 발사 계획이 더욱 활성화될 것으로 기대됩니다.
+
+📰 [RKLB] SpaceX (SPCX) vs Rocket Lab (RKLB): Which is a Better Stock to Buy?
+   (Yahoo Finance · 10/05 07:00)
+→ SpaceX와 Rocket Lab의 주식 비교에서, SpaceX는 158.96달러로 거래되고 있고 Rocket Lab은 73.92달러로, 둘의 규모 차이는 약 40배입니다. 둘 다 아직 이익을 내지 않고 있지만, 시장에서는 매출의 각 달러당 비슷한 가격을 부과하고 있어 흥미로운 상황입니다.
+
+📰 [RKLB] SpaceX (SPCX) vs Rocket Lab (RKLB): Which is a Better Stock to Buy? - Yahoo Finance
+   (Yahoo Finance · 10/05 07:00)
+→ SpaceX와 Rocket Lab의 주식을 비교하는 기사에서는 두 회사의 성장 가능성과 재무 상황을 분석하여 투자자들에게 어떤 주식이 더 나은 선택인지에 대한 정보를 제공하고 있습니다. 각 회사의 기술력, 시장 잠재력, 최근 성과 등을 고려할 때, 투자 결정에 도움이 되는 여러 요인이 제시되었습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Japan’s Remixpoint Buys 7.45 More Bitcoin, Raising Holdings to 1,508.72 BTC - bloomingbit
+   (bloomingbit · 10/05 16:54)
+→ 일본의 Remixpoint사가 비트코인을 추가로 7.45개 구매하여 총 보유량이 1,508.72 BTC로 증가했습니다.
+
+📰 [BTC-USD] Strategy Bought More Bitcoin Last Week. Can It Keep Doing It? - Altcoin Buzz
+   (Altcoin Buzz · 10/05 16:49)
+→ 지난주 전략적으로 비트코인을 추가 매입한 것으로 알려진 이들은 앞으로도 계속 매입할 수 있을지에 대한 질문이 제기되고 있습니다. 이 투자 전략의 지속 가능성에 대한 분석이 필요하다는 내용입니다.
+
+📰 [BTC-USD] Bitcoin Regains Some Momentum But Stays Below $87,000 -- Market Talk - Moomoo
+   (Moomoo · 10/05 16:39)
+→ 비트코인이 다시 일부 상승세를 보였지만 87,000달러 아래에 머물고 있다. 시장에서는 비트코인의 가격 변동성에 대한 우려가 여전히 존재하고 있다.
+
+📰 [ETH-USD] NEOS Ethereum High Income ETF offers 28.9% yiel... - Pluang
+   (Pluang · 10/05 16:35)
+→ NEOS Ethereum High Income ETF는 28.9%의 높은 수익률을 제공한다고 보도되었습니다. 해당 ETF는 이더리움 기반의 투자로 투자자들에게 매력적인 수익 기회를 제안하고 있습니다.
+
+📰 [ETH-USD] Ethereum Staking Withdrawal Queue Hits 780,000 ETH Amid MetaMask Validator Exodus - finance.biggo.com
+   (finance.biggo.com · 10/05 16:25)
+→ 이더리움 스테이킹 출금 대기열이 78만 이더(Ethereum)에 도달한 가운데, 메타마스크의 밸리데이터들이 대거 이탈하고 있는 상황입니다. 이로 인해 스테이킹 시장에 혼란이 발생하고 있습니다.
+
+📰 [ETH-USD] Ethereum Outruns Bitcoin in Q3 With 70% Gain, But Order-Book Depth Shrinks Sharply - CoinGape
+   (CoinGape · 10/05 16:16)
+→ 이더리움이 3분기 동안 70% 상승하며 비트코인을 초과하는 성과를 기록했지만, 주문서 깊이는 급격히 감소했다. 이는 거래량 감소와 시장의 변동성 증가를 반영하는 것으로 보인다.
+
+📰 [SOL-USD] US Spot Crypto ETFs See Weekly Inflows Into Bitcoin, Solana and XRP, While Ether Posts $138 Million Outflow - bloomingbit
+   (bloomingbit · 10/05 15:39)
+→ 미국의 스팟 암호화폐 ETF에서 비트코인, 솔라나, XRP에 주간 유입이 있었으나, 이더리움은 1억 3,800만 달러의 유출을 기록했다.
+
+📰 [SOL-USD] Could Solana rally regain momentum? - FXStreet
+   (FXStreet · 10/05 14:20)
+→ FXStreet에서는 솔라나(Solana)의 가격 상승세가 다시 힘을 받을 수 있을지에 대한 가능성을 다루고 있습니다. 최근의 시장 동향과 기술적 지표를 바탕으로 솔라나의 향후 성장 가능성에 대한 심층 분석을 제공합니다.
+
+📰 [SOL-USD] Solana (SOLUSD) Price Forecast & Predictions for 2026, 2027, 2028–2030, 2040 and Beyond - LiteFinance
+   (LiteFinance · 10/05 13:59)
+→ LiteFinance의 보고서에 따르면, Solana(SOLUSD)의 가격 예측은 2026년부터 2040년까지 긍정적인 전망을 보이고 있으며, 장기적으로 상승세를 지속할 것으로 예상됩니다. 또한, 향후 몇 년 동안의 시장 변화에 따라 가격 변동이 있을 것으로 전망하고 있습니다.
+
+📰 [BMNR] Decoding Bitmine’s (BMNR) 98% Outperformance in Q3: What to Watch Out for Next?
+   (Yahoo Finance · 10/05 13:23)
+→ Bitmine Immersion Technologies Inc. (BMNR)은 3분기에 98.57% 상승하며 성과가 가장 뛰어난 주식 중 하나로 자리매김했다. 이는 주로 이더리움 구매 증가와 같은 암호화폐의 71% 상승에 힘입은 결과다. 최근 보고서에 따르면, 이 회사는 6백만 개 이상의 이더리움을 보유하고 있다.
+
+📰 [BMNR] Decoding Bitmine’s (BMNR) 98% Outperformance in Q3: What to Watch Out for Next? - Yahoo Finance
+   (Yahoo Finance · 10/05 13:23)
+→ Bitmine(BMNR)가 3분기 동안 98%의 뛰어난 성과를 기록한 이유를 분석하고 있으며, 앞으로 주목해야 할 사항들을 다루고 있습니다. 이 성장은 시장에서의 독특한 전략과 트렌드를 반영한 결과로 보입니다. 투자자들은 향후 Bitmine의 발전 방향에 대해 관심을 기울여야 할 것으로 보입니다.
+
+📰 [BMNR] BMNR’s Tom Lee Says Tokenization, Agentic AI Are Breaking ETH-BTC Multiyear Downtrend - Stocktwits
+   (Stocktwits · 10/05 02:28)
+→ BMNR의 톰 리는 토큰화와 주체적인 인공지능이 이더리움(ETH)과 비트코인(BTC)의 다년간 하락세를 타개하고 있다고 전했습니다. 이는 암호화폐 시장의 새로운 전환점을 의미할 수 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+현재 암호화폐 시장은 전반적으로 상승세를 보이며, 주요 암호화폐들이 가격 상승을 이어가고 있다. 최근 비트코인의 점유율이 증가하며 시장의 주도권이 대형주로 이전되고 있는 모습이다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 86,235달러로 상승
+   → 비트코인은 24시간 동안 1.43% 상승하여 86,235달러에 거래되고 있으며, 플룸은 피델리티 채권 ETF를 기초자산으로 한 nBND 토큰화 금고를 출시했다.
+   (토큰포스트 · 10/05 16:40)
+2. (시세) SUI가 국내 거래 비중 1위
+   → SUI의 국내 거래 비중이 5.51%로, 국내 관심지수 1위를 기록하여 XRP와 BTC보다 큰 비중을 차지하고 있다.
+   (토큰포스트 · 10/05 17:00)
+3. (시세) 암호화폐 시장 전체 상승세
+   → 암호화폐 시장은 비트코인과 이더리움이 각각 1.43%와 0.98% 상승하며, 비트코인의 시장 점유율이 59.06%로 증가했다.
+   (토큰포스트 · 10/05 16:01)
+4. (온체인) 이더리움 스테이킹 대기량 150만 개
+   → 이더리움 스테이킹의 대기량이 약 150만 ETH에 달하고 있으며, 예상 대기 기간은 25일로 집계되었다.
+   (토큰포스트 · 10/05 15:47)
+5. (규제) 일리노이주, 디지털자산세 시행 연기 신청
+   → 일리노이주가 디지털자산세 시행을 2027년으로 늦춰달라는 공동 신청서를 법원에 제출했으나, 법률상 시행일은 여전히 2027년 1월 1일로 남아 있다.
+   (토큰포스트 · 10/05 13:55)
+
+[흐름·전망]
+• 비트코인 점유율이 증가하고 있는 만큼, 대형 암호화폐에 대한 투자자들의 관심이 높아질 것으로 예상된다.
+• 향후 SUI와 같은 특정 자산의 거래 비중이 증가하는 경향을 주의 깊게 살펴봐야 할 것이다.
+• 이더리움의 스테이킹 대기열 변화가 가격에 미치는 영향을 분석하는 것이 필요하다.
+• 디지털자산세 관련 소송과 관련된 법적 체계의 변화가 향후 시장에 미치는 영향도 지속적으로 모니터링할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 31 (Fear)
+  - 크립토 기준: 70 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+서울 아파트 시장에서 15억원 이하 transactions 비중이 80%에 달해 저가 아파트의 거래가 활발해지고 있으며, 판교 인근의 대규모 주택 개발 프로젝트는 그린벨트 규제로 중단된 상태입니다.
+
+[핵심 뉴스]
+1. (정책) 세제개편안 뒤 서울 아파트 15억원 이하 거래 비중 80% 차지
+   → 정부의 8·3 세제개편안 발표 이후 서울 아파트 거래 중 15억원 이하가 차지하는 비중이 79%로 상승했으며, 6억원 이하 거래는 전체의 25%에 달해 저가 아파트에 대한 수요가 증가하고 있습니다.
+   (매일경제 · 10/05 14:35)
+2. (공급) 판교 옆 2200가구 멈췄다
+   → 경기 성남시 금토동의 2200가구 주택 개발 사업은 그린벨트로 인해 1년 동안 진행되지 못하고 있으며, 이 지역은 판교와 근접해 있어 아파트 개발의 잠재력이 높음에도 불구하고 규제에 막혀 있습니다.
+   (매일경제 · 10/05 14:47)
+3. (세제) 2030년 주요 아파트 재산세 54%↑
+   → 2030년까지 서울 주요 아파트 재산세가 평균 54% 증가할 것으로 예상되며, 특히 노·도·강 지역의 증가율은 76%에 이를 것으로 보입니다.
+   (연합뉴스 · 10/05 05:51)
+4. (전세) 청년특례 전세대출보증 시행
+   → 정부가 청년특례 전세대출보증을 통해 주거 안정성을 높이기 위한 조치를 취하여, 임차보증금 7억원 이하의 주택에 대해 청년층의 대출 한도를 확대할 예정입니다.
+   (매일경제 · 10/04 17:43)
+5. (매매) 서울 아파트 매매 79%가 15억 이하
+   → 세제개편안 발표 이후 매매된 서울 아파트의 79%가 15억원 이하로, 중저가 매매 거래가 활발해지고 있다.
+   (동아일보 · 10/05 15:36)
+
+[흐름·전망]
+• 저가 아파트 거래 비중 상승으로 인해 중저가 시장의 강세가 지속될 가능성이 높으며, 고가 시장은 조정 국면에 접어들 것으로 보입니다.
+• 판교 인근의 개발 지연으로 인해 지역 부동산의 공급과잉이 단기적으로 발생할 수 있으며, 향후 수요에 영향을 줄 수 있습니다.
+• 재산세 문제는 주요 아파트 수요자들에게 경제적 부담을 증가시킬 수 있으며, 이는 향후 매수 심리에 부정적인 영향을 미칠 수 있습니다.
+• 청년을 대상으로 하는 전세대출 보증 확대는 청년층의 주거비 부담을 경감할 수 있지만, 주택시장 전반에 미치는 영향은 지켜봐야 합니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 미국의 대선과 정권 교체 과정에서 부정선거를 주장하며 투표 시스템에 대한 비판을 이어갔다. 그는 국내 정치 및 경제와 관련된 여러 주제를 다루었다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 미국 내 투표 시스템이 부정확하며 부패했다고 주장하며, 특히 자신이 강조하는 주에서의 투표 결과가 늦어지는 점을 비판했다.
+   (Truth Social · 10/05 12:32)
+2. (경제) 트럼프는 관세가 오하이오에 제약회사 제조 시설을 유치하는 데 기여했다고 언급하며, 자신의 경제 정책의 성과를 강조했다.
+   (Truth Social · 10/05 02:49)
+3. (경제) 트럼프는 주류 언론이 미국 경제의 긍정적인 지표에 대한 보도를 무시하고 있다고 주장했다.
+   (Truth Social · 10/04 23:10)
+4. (사법) 트럼프는 케네디 센터의 상태가 위험하다고 언급하며, 이를 개선하기 위한 자신의 계획이 지연되고 있다고 비판했다.
+   (Truth Social · 10/05 02:08)
+5. (기타) 트럼프는 최근 오하이오에서 열린 지지 집회가 매우 성공적이었음을 강조하며, 자신의 지지 기반이 안정적임을 주장했다.
+   (Truth Social · 10/04 22:11)
+6. (인사) 트럼프는 존 코일을 새로운 인질 문제 특사로 지명하며 그의 경력과 성과를 강조했다.
+   (Truth Social · 10/04 21:22)
+
+[흐름·전망]
+• 트럼프의 투표 시스템에 대한 비판은 향후 대선에서 투표 신뢰도에 관한 논란을 일으킬 가능성이 있다.
+• 그의 경제 정책 관련 주장과 관세의 긍정적 효과에 대한 언급은 향후 경제 정책 논의에 영향을 미칠 수 있다.
+• 트럼프가 인지도를 높이기 위한 집회 및 정책 발표를 계속하면 그의 지지 기반 유지에 긍정적인 요소가 될 것으로 기대된다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

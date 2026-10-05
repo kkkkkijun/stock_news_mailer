@@ -718,5 +718,14 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"d97b15ef-1df0-4a15-b58a-326c46646d1a": {
+"name": "FOMC Minutes",
+"dt": "2026-11-18T19:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
