@@ -1,0 +1,239 @@
+2026-10-06T06:32:32.532562+09:00
+
+[오늘의 뉴스 요약] 2026-10-06 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국내 경제는 여러 기관의 한국 성장률 전망 상향 및 물가 상승 경고와 함께, 가상자산 거래소들의 장애인 고용 의무 미비와 국제 유가 하락 등의 복합적인 이슈가 부각되고 있다.
+
+[핵심 뉴스]
+1. (성장) 올해 한국 성장률 3.3%로 상향
+   → 아세안+3 거시경제조사기구(AMRO)는 한국의 올해 경제 성장률을 3.3%로 상향 조정했으며, 이는 반도체 호황에 따른 수출과 생산 증가를 반영한 결과다.
+   (매일경제 · 10/05 17:22)
+2. (고용) 가상자산 거래소 장애인 고용 미달
+   → 국내 주요 가상자산 거래소들이 장애인 의무 고용 비율을 충족하지 않아 최근 5년간 총 13억5천만원의 고용부담금을 납부한 것으로 나타났다.
+   (연합뉴스 · 10/06 05:59)
+3. (기타) 국제유가 1.8% 하락
+   → 국제유가는 중동 원유 수출 증가와 G7의 비축유 방출 결정에 힘입어 2거래일 연속 하락하며, 브렌트유가 100.32달러로 거래를 마감했다.
+   (연합뉴스 · 10/06 04:57)
+4. (정책) 내년 아동수당 확대에 8600억 재정 소요
+   → 정부는 내년 7월부터 아동기본수당과 아이맞이지원금 개편 계획을 밝히며, 1월 출생아에 대한 소급 적용으로 8,127억원의 추가 재정을 예상하고 있다.
+   (매일경제 · 10/05 17:22)
+
+[흐름·전망]
+• 한국의 경제성장률이 상향 조정됨에 따라 반도체 산업의 글로벌 수요 변화가 주요 관전 포인트가 될 것이다.
+• 가상자산 거래소들의 장애인 고용 의무 미이행 문제가 지속된다면, 이에 대한 정책적 압박이 강화될 가능성이 있다.
+• 국제유가는 공급 측면에서 여전히 불안정성이 존재하므로 향후 에너지 가격 변동성을 주목해야 한다.
+• 아동수당 확대와 관련된 재정 소요 증가가 정부의 다른 복지 정책에 미치는 영향을 면밀히 살펴볼 필요가 있다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA (NASDAQ:NVDA) Stock Jumps 2.1% - Here's What Happened - MarketBeat
+   (MarketBeat · 10/06 06:24)
+→ NVIDIA의 주가가 2.1% 상승했습니다. 이 상승은 기업의 긍정적인 실적 발표와 반도체 산업의 성장 기대감 덕분으로 분석됩니다.
+
+📰 [NVDA] Dow Jones Futures: Nasdaq Hits Record Highs; TSMC, Nvidia, Elon Musk-Led SpaceX, Tesla Rally
+   (Yahoo Finance · 10/06 06:11)
+→ 다우존스 선물이 거래되는 가운데 나스닥 지수가 월요일에 기록적인 최고치를 경신했다. Nvidia와 TSMC의 주가가 상승세를 보였고, 일론 머스크가 이끄는 스페이스X와 테슬라도 급등했다.
+
+📰 [NVDA] Nvidia-backed Reflection unveils first AI model to take on Chinese open models - Reuters
+   (Reuters · 10/06 05:54)
+→ Nvidia가 지원하는 Reflection이 중국의 오픈 모델에 대응하기 위한 첫 번째 인공지능 모델을 발표했다. 이 모델은 경쟁력을 갖추고 있으며, AI 시장에서의 혁신을 목표로 하고 있다.
+
+📰 [TSLA] Dow Jones Futures: Nasdaq Hits Record Highs; TSMC, Nvidia, Elon Musk-Led SpaceX, Tesla Rally
+   (Yahoo Finance · 10/06 06:11)
+→ 다우 존스 선물 지수는 월요일 나스닥이 사상 최고치를 기록했다고 전하며, Nvidia와 TSMC가 매수 포인트를 넘어서며 상승세를 보였다. 또한, 일론 머스크가 이끄는 스페이스엑스와 테슬라도 함께 강세를 보였다.
+
+📰 [TSLA] Rivian posts record Q3 deliveries as Tesla sales slip but beat expectations - news.dealershipguy.com
+   (news.dealershipguy.com · 10/06 05:50)
+→ 리비안은 3분기 기록적인 차량 인도를 달성했으며, 테슬라의 판매는 감소했지만 예상보다 나은 성과를 보였습니다. 이러한 결과는 리비안의 성장 가능성을 보여주고 있습니다.
+
+📰 [TSLA] Uber Stock: Can It Thrive Alongside Waymo and Tesla Robotaxis? - The Acquirer's Multiple
+   (The Acquirer's Multiple · 10/06 05:34)
+→ 우버 주식이 웨이모 및 테슬라의 로보택시와 함께 성장할 수 있을지에 대한 논의가 있다. 이 기사는 우버의 미래 전망과 자율주행 차량 시장에서의 경쟁력을 분석하고 있다.
+
+📰 [HIMS] How Investors May Respond To Hims & Hers Health (HIMS) Appointing Regional Chief Medical Officers For Global Expansion
+   (Yahoo Finance · 10/05 23:08)
+→ Hims & Hers Health, Inc.는 영국 및 EMEA 지역의 최고 의학 책임자로 Dr. Kultar Garcha를, 호주 최고 의학 책임자로 Dr. Matt Vickers를 임명하여 글로벌 확장에 대한 임상 감독을 강화하고 있습니다. 이로 인해 각 지역의 의료 품질 및 규제 준수에 대한 집중을 높이고 있으며, 투자자들은 이 변화에 어떻게 반응할지 살펴볼 것입니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (HIMS) Is a Trending Stock: Facts to Know Before Betting on It
+   (Yahoo Finance · 10/05 21:00)
+→ Hims & Hers Health, Inc. (HIMS)는 최근 Zacks.com 사용자들 사이에서 주목받고 있는 주식이다. 이 주식의 향후 전망을 살펴보는 것이 중요하다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (HIMS) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo Finance
+   (Yahoo Finance · 10/05 21:00)
+→ Hims & Hers Health, Inc. (HIMS)는 최근 주목받고 있는 주식으로, 투자 전에 알아야 할 여러 사실들이 있다. 이 회사는 건강 및 웰니스 제품을 제공하며, 현재 시장에서의 성과와 전망이 중요하게 평가되고 있다. 투자자들은 HIMS의 성장 가능성과 리스크를 신중히 고려해야 한다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Falls 4.3% - Here's Why - MarketBeat
+   (MarketBeat · 10/06 06:24)
+→ 레드와이어(Redwire) 주식이 4.3% 하락한 이유는 시장 분석에 따른 것으로, 특정 요인이 부정적인 영향을 미쳤습니다. 해당 내용은 MarketBeat에서 보도되었습니다.
+
+📰 [RDW] Why Redwire (RDW) Stock Is Down Today - Quiver Quantitative
+   (Quiver Quantitative · 10/06 03:33)
+→ Redwire (RDW) 주가가 하락한 이유는 여러 가지 요인으로 분석되고 있으며, 시장의 전반적인 불안감과 함께 회사의 실적 관련 이슈가 영향을 미쳤습니다. 투자자들은 이에 따라 신중한 태도를 보이고 있습니다.
+
+📰 [RDW] RDW Stock Rises Premarket: Wins New Axiom Space Contract To Power Next Station Module - Stocktwits
+   (Stocktwits · 10/06 03:19)
+→ RDW 주식이 프리마켓에서 상승하며, Axiom Space와 새로운 계약을 체결하여 다음 우주 정거장 모듈에 전력을 공급하게 되었다고 보도되었습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Falls 3.1% - Here's What Happened - MarketBeat
+   (MarketBeat · 10/06 06:24)
+→ IREN(나스닥:IREN) 주가가 3.1% 하락했습니다. 이날 주가는 여러 요인으로 인해 하락세를 보였으며, 이에 대한 시장 반응이 중요한 주제로 부각되고 있습니다.
+
+📰 [IREN] What Caused the Surge in Iren's AI Neocloud Stock in September? - The Motley Fool
+   (The Motley Fool · 10/06 02:34)
+→ Iren의 AI Neocloud 주식이 9월에 급등한 원인은 다양한 요인으로 분석되며, 특히 인공지능 기술에 대한 수요 증가와 회사의 긍정적인 실적 발표가 주요 영향을 미쳤습니다. 또한, 투자자들의 관심이 집중되면서 주가가 상승한 것으로 보입니다.
+
+📰 [IREN] What Caused the Surge in Iren's AI Neocloud Stock in September?
+   (Yahoo Finance · 10/06 02:13)
+→ 이렌(Iren)의 AI 네오클라우드 주가는 9월에 급등하였으며, 이는 데이터 센터 용량을 임대하려는 경쟁자들에 비해 이렌이 가진 우월한 경쟁력이 주요 원인으로 분석된다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Stock Falls 1.2% After Insider Selling - MarketBeat
+   (MarketBeat · 10/06 06:24)
+→ 로켓랩(Rocket Lab)의 주가가 내부자의 주식 매각 이후 1.2% 하락했습니다. 이 사건은 투자자들 사이에서 우려를 불러일으키며 시장에 영향을 미쳤습니다.
+
+📰 [RKLB] Can Rocket Lab's Supply-Chain Strategy Support Future Growth? - Zacks Investment Research
+   (Zacks Investment Research · 10/06 03:07)
+→ 로켓랩의 공급망 전략이 향후 성장에 기여할 수 있을지에 대한 분석이 이루어졌다. 이 연구에서는 공급망의 효율성과 안정성이 미래의 생산 능력 향상과 수익 증가에 중요한 역할을 할 것으로 제시되었다.
+
+📰 [RKLB] Rocket Lab Stock Pulls Back: What's Going On? - Benzinga
+   (Benzinga · 10/06 01:49)
+→ 로켓랩의 주가가 최근 하락세를 보이고 있습니다. 이와 관련된 원인과 시장의 반응이 주목받고 있습니다. 투자자들은 앞으로의 전망에 대해 우려하고 있는 상황입니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Why Is Bitcoin Worth $1.7 Trillion Right Now? - The Motley Fool
+   (The Motley Fool · 10/06 06:17)
+→ 비트코인의 현재 가치는 약 1.7조 달러로 평가되고 있으며, 이는 수요 증가와 기관 투자자들의 참여, 블록체인 기술에 대한 신뢰 등 여러 요인에 기인하고 있다. 암호화폐 시장의 성장과 함께 비트코인이 디지털 자산으로 자리 잡았다는 점도 중요한 요소로 작용하고 있다.
+
+📰 [BTC-USD] Coinbase's Ryan VanGrack: CFTC Approval "Opens Many Doors" For Bitcoin - Bitcoin Magazine
+   (Bitcoin Magazine · 10/06 06:14)
+→ 코인베이스의 라이언 밴그래크는 CFTC(상품선물거래위원회)의 승인으로 비트코인에 대한 새로운 기회가 열렸다고 강조했습니다. 이 승인은 시장의 신뢰를 높이고 비트코인 관련 제품의 발전을 촉진할 것으로 기대됩니다.
+
+📰 [BTC-USD] Caitlin Long: Fiscal Dominance, Stablecoins & The Macro Case For Bitcoin - Bitcoin Magazine
+   (Bitcoin Magazine · 10/06 05:55)
+→ Caitlin Long은 재정 지배(fiscal dominance), 스테이블코인, 그리고 비트코인에 대한 거시 경제적 주장을 논의했다. 그녀는 비트코인이 이러한 환경에서 중요한 역할을 할 수 있으며, 경제 불확실성 속에서 안정성을 제공한다고 강조했다.
+
+📰 [ETH-USD] Ethereum Gained 0.28% to $2713.00 -- Data Talk - Moomoo
+   (Moomoo · 10/06 06:17)
+→ 이더리움이 0.28% 상승하여 현재 가격은 2,713.00달러에 도달했습니다.
+
+📰 [ETH-USD] MetaMask’s precautionary validator exits leave Ethereum stakers facing a near two-week withdrawal wait - eGamers.io
+   (eGamers.io · 10/06 05:08)
+→ MetaMask의 예방적 검증자 탈퇴로 인해 이더리움 스테이커들이 출금 요청을 처리받기까지 거의 2주를 기다려야 하는 상황에 직면했습니다. 이로 인해 이더리움 사용자들 사이에 불안감이 커지고 있습니다.
+
+📰 [ETH-USD] Ethereum Price Prediction and XRP Price Prediction: Can ETH or XRP Beat Remittix Through Year-End? - TechBullion
+   (TechBullion · 10/06 04:51)
+→ 이더리움(ETH)과 리플(XRP)의 연말 가격 전망에 대한 분석이 진행되었으며, 두 암호화폐가 Remittix의 성과를 넘어설 수 있을지에 대한 질문이 제기됐다. 전문가들은 ETH와 XRP의 시장 동향을 고려해 이들의 경쟁력을 평가하고 있다.
+
+📰 [SOL-USD] Shiba Inu price prediction: burn balance and Solana route - CryptoTicker
+   (CryptoTicker · 10/06 06:17)
+→ Shiba Inu의 가격 예측은 주로 토큰의 소각(balance) 및 솔라나(Solana) 경로와 관련이 있습니다. 최근 분석에 따르면, 이러한 요소들이 가격 변동에 미치는 영향이 클 것으로 보이며, 투자자들은 이에 주목하고 있습니다.
+
+📰 [SOL-USD] Solana's Stocklana hackathon ends with 604 proj... - Pluang
+   (Pluang · 10/06 05:58)
+→ Solana의 Stocklana 해커톤이 604개의 프로젝트와 함께 성공적으로 마무리되었습니다. 이 행사에서는 다양한 혁신적인 아이디어와 개발이 showcase되었습니다.
+
+📰 [SOL-USD] Solana Price Prediction: SOL Eyes a New High While Remittix Enters Its Final $4M Stretch - StreetInsider
+   (StreetInsider · 10/06 05:27)
+→ 솔라나(SOL)의 가격이 새로운 최고치에 도달할 가능성이 있는 가운데, 리미틱스(Remittix)가 400만 달러의 최종 모금 단계에 접어들었다는 내용의 뉴스입니다. 투자자들은 SOL의 상승세와 함께 리미틱스의 진행 상황에 주목하고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies Says Ethereum Holdings Reach 6 Million Tokens - marketscreener.com
+   (marketscreener.com · 10/06 02:03)
+→ Bitmine Immersion Technologies는 자사의 이더리움 보유량이 600만 토큰에 달했다고 발표했습니다. 이는 회사의 암호화폐 포트폴리오 확장을 나타내는 성과입니다.
+
+📰 [BMNR] BMNR Stock Gains Alongside Ethereum After Tom Lee's BitMine Makes One Of Its Smallest Ethereum Purchases Ever
+   (Yahoo Finance · 10/06 01:14)
+→ BMNR 주가는 Tom Lee의 BitMine이 에테리움 구매를 단행한 후 상승했습니다. Tom Lee는 이 회사가 가장 큰 암호화 자산 보유 계획을 추진했다고 언급했습니다.
+
+📰 [BMNR] Bitmine Buys 15,112 ETH as BMNR Hits a Make-Or-Break Level - Benzinga
+   (Benzinga · 10/05 23:58)
+→ Bitmine이 BMNR 가격이 중요한 고비에 접어든 가운데 15,112 ETH를 구매했습니다. 이 결정은 시장에서의 비트코인 채굴 기업의 전략적 움직임으로 해석됩니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 비트코인은 8만5000달러 후반에서 유지되는 반면, 암호화폐 시장에서는 대규모 레버리지 포지션 청산이 발생하였다. 시장 참여자들은 혼조세 속에서 단기 변동성과 함께 거래량의 증가를 보이고 있다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 8만5000달러대 유지
+   → 비트코인은 8만5000달러 후반을 유지하고 있으며, 미국 달러인덱스(DXY)는 102.5 안팎으로 약 18개월 만에 최고치를 기록했다.
+   (토큰포스트 · 10/06 06:12)
+2. (기타) 암호화폐 시장에서 대규모 레버리지 포지션 청산
+   → 지난 24시간 동안 암호화폐 시장에서 1억9138만 달러 규모의 레버리지 포지션이 청산됐으며, 숏 포지션이 54.16%를 차지했다.
+   (토큰포스트 · 10/06 04:55)
+3. (시세) 암호화폐 시장 혼조세
+   → 암호화폐 시장은 혼조세를 보이고 있으며, 비트코인은 0.36% 상승한 85,722.06달러, 이더리움은 0.24% 상승한 2,708.33달러로 거래되고 있다.
+   (토큰포스트 · 10/06 05:01)
+4. (규제) ICBA, OCC 가상자산 신탁은행 인가 소송 제기
+   → ICBA는 OCC를 상대로 가상자산 기업의 국가 신탁은행 인가에 대한 소송을 제기하였으며, CCI는 이를 금융 혁신 저해로 간주하고 있다.
+   (토큰포스트 · 10/06 04:27)
+5. (기타) 하이브 GPU 클라우드 계약으로 사업 확장
+   → 하이브 디지털 테크놀로지스는 캐나다에서 약 5억7000만 달러 규모의 GPU 클라우드 계약을 체결하며 사업을 확장하고 있다.
+   (토큰포스트 · 10/06 05:43)
+
+[흐름·전망]
+• 비트코인은 현재 달러 강세와 금리 인상의 압박 속에서도 상대적으로 견고한 모습을 보이고 있으며, 장기적인 시장 흐름에 주목할 필요가 있다.
+• 레버리지 포지션 청산이 발생한 상황에서는 변동성이 더욱 확대될 가능성이 있으므로, 리스크 관리가 필수적이다.
+• 암호화폐 시장의 혼조세 속에서 비트코인이 점유율을 확대하는 만큼, 대형 자산에 대한 비중을 조정하는 전략이 필요하다.
+• 하이브의 GPU 클라우드 사업 확장은 가상 자산과 AI 분야의 융합을 암시하며, 관련 기업의 성공적인 발달 여부도 중요한 관전 포인트가 될 것이다.
+
+📊 공포탐욕지수
+  - CNN 기준: 43 (Fear)
+  - 크립토 기준: 70 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+정부의 수도권 주택 공급 추진에도 불구하고 비수도권의 공공주택 착공이 수요 부족으로 지연되고 있는 상황이다. 서울 아파트 가격 상승세는 계속되고 있으나, 상승폭은 줄어드는 조짐을 보이고 있다.
+
+[핵심 뉴스]
+1. (공급) 수도권은 집 부족…지방은 수요 부족
+   → LH는 작년 수요 부족으로 인해 비수도권에서 14개 공공주택 사업 착공을 미뤘으며, 올해 전체 비수도권 공공주택 착공 계획은 5,477가구이다.
+   (연합뉴스 · 10/06 06:01)
+2. (매매) ‘부동산 대세’ 한강벨트에도 조정 신호?
+   → 서울 아파트 가격은 86주 연속 상승세를 이어갔으나, 최근 상승폭은 줄어들며 보합권에 진입한 모습이다. 강남구 및 용산구는 하락세를 보여 조정 신호가 감지되고 있다.
+   (매일경제 · 10/06 05:00)
+3. (정책) 세제개편안 후 서울 아파트 거래 비중 변화
+   → 8·3 세제개편안 이후 서울 아파트 거래의 79%가 15억원 이하로, 6억원 이하 저가 아파트 거래 비중이 25%에 달해 중저가 시장으로의 쏠림 현상이 두드러진다.
+   (매일경제 · 10/05 14:35)
+4. (재건축) 재건축·재개발 47곳서 불법행위 적발
+   → 국내 47개 재건축·재개발 조합에서 700건의 법령 위반이 적발되었으며, 중대 비위는 4년간 83.3% 증가했다.
+   (연합뉴스 · 10/06 05:55)
+5. (금리) 보험사 주담대 연체 악성화
+   → 보험사 주담대의 장기연체 비중이 55.8%로 늘어났으며, 특히 ABL생명의 연체율은 2.76%로 급증세를 보이고 있다.
+   (연합뉴스 · 10/06 05:55)
+6. (기타) 집값은 86주째 상승
+   → 서울 집값이 86주째 오름세를 이어가고 있으나, 국토부가 이 상황에 대한 공급 실행력을 검토하고 있습니다.
+   (메트로신문 · 10/06 05:30)
+
+[흐름·전망]
+• 수도권 주택 공급 확대의 필요성이 더욱 강조되고 있으며, 비수도권의 수요 예측이 중요해졌다.
+• 서울 아파트의 지속적인 상승세와 보합권 진입의 변동성을 주의 깊게 살펴봐야 한다.
+• 중저가 아파트 거래가 증가하는 현상은 향후 시장 구조에 중요한 변화를 유발할 수 있다.
+• 정비사업의 불법 행위에 대한 강력한 단속이 필요하며, 이는 투자자들에게 부정적인 영향을 미칠 수 있다.
+• 보험사의 장기연체 상황은 금융시장에 위험 요인이 될 수 있으므로 지속적인 감시가 필요하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 오하이오에서 열린 집회의 관중 수에 대해 언론 보도를 반박하며, 자신이 주최한 집회가 항상 만석이라는 주장을 했다. 또한, 기름값 상승 원인을 블루 주에서의 정유소 폐쇄와 우크라이나 전쟁에 연결지었다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 뉴욕 타임스가 자신의 오하이오 집회에 빈 좌석이 있었다고 보도한 것에 대해 반박하며, 집회가 만석이라는 자기 주장을 강조했다.
+   (Truth Social · 10/06 02:57)
+2. (사법) 트럼프는 뉴욕 타임스를 포함한 언론이 부정확한 보도를 하고 있다며, 이들 언론이 자신의 집회를 제대로 보도하지 않았다고 주장했다.
+   (Truth Social · 10/06 02:56)
+3. (경제) 그는 최근 기름값 상승의 원인이 우크라이나 전쟁과 블루 주의 정유소 폐쇄에 있다고 지적하며, 정치적 요인을 언급했다.
+   (Truth Social · 10/06 01:32)
+4. (기타) 트럼프는 미국 내에서 선거 결과가 조작된다고 주장하며, 인도 대통령 선거와 대비해 미국의 선거 과정이 부패하다고 언급했다.
+   (Truth Social · 10/05 14:25)
+
+[흐름·전망]
+• 트럼프의 주장에 따르면, 향후 언론과의 갈등이 계속될 가능성이 있으며, 이는 그의 지지 기반에 영향을 미칠 수 있다.
+• 기름값 상승 원인에 대한 트럼프의 언급이 정치적 논란을 일으킬 것으로 보이며, 에너지 정책에 대한 논의가 촉발될 것이다.
+• 선거 투표 과정에 대한 트럼프의 비판이 앞으로 선거법 변화와 여론에 어떤 영향을 미칠지 주목할 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
