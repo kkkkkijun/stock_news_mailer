@@ -109,10 +109,10 @@
     }
    ],
    "target": {
-    "price": "$238.90",
+    "price": "$240.12",
     "mean": "$328.72",
     "range": "$180~$515",
-    "upside": "+38%",
+    "upside": "+37%",
     "upside_pos": true
    },
    "rec": {
@@ -164,8 +164,8 @@
     "period": "26.09",
     "eps": "$4.72",
     "eps_range": "$4.43~$4.83",
-    "rev": "$90.66B",
-    "growth": "+14.33%",
+    "rev": "$90.67B",
+    "growth": "+14.37%",
     "growth_pos": true
    },
    "rev": {
@@ -176,7 +176,7 @@
     "period": "26.12",
     "eps": "$4.83",
     "eps_range": "$4.72~$5.02",
-    "rev": "$95.56B",
+    "rev": "$95.6B",
     "growth": "+16.64%",
     "growth_pos": true
    },
@@ -222,7 +222,7 @@
      "label": "2026 3Q",
      "reported": false,
      "eps_est": "$4.72",
-     "rev": "$90.66B",
+     "rev": "$90.67B",
      "date": "2026-10-29"
     },
     {
@@ -230,14 +230,14 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$4.83",
-     "rev": "$95.56B"
+     "rev": "$95.6B"
     }
    ],
    "target": {
-    "price": "$525.18",
-    "mean": "$582.60",
+    "price": "$530.78",
+    "mean": "$585.61",
     "range": "$440~$870",
-    "upside": "+11%",
+    "upside": "+10%",
     "upside_pos": true
    },
    "rec": {
@@ -359,10 +359,10 @@
     }
    ],
    "target": {
-    "price": "$332.89",
+    "price": "$333.12",
     "mean": "$328.09",
     "range": "$215~$405",
-    "upside": "-1%",
+    "upside": "-2%",
     "upside_pos": false
    },
    "rec": {
@@ -484,10 +484,10 @@
     }
    ],
    "target": {
-    "price": "$346.47",
+    "price": "$348.56",
     "mean": "$429.36",
     "range": "$340~$515",
-    "upside": "+24%",
+    "upside": "+23%",
     "upside_pos": true
    },
    "rec": {
@@ -609,10 +609,10 @@
     }
    ],
    "target": {
-    "price": "$251.40",
+    "price": "$256.29",
     "mean": "$330.59",
     "range": "$230~$405",
-    "upside": "+32%",
+    "upside": "+29%",
     "upside_pos": true
    },
    "rec": {
@@ -734,7 +734,7 @@
     }
    ],
    "target": {
-    "price": "$741.90",
+    "price": "$743.19",
     "mean": "$794.96",
     "range": "$580~$1,000",
     "upside": "+7%",
@@ -787,10 +787,10 @@
    ],
    "cur": {
     "period": "26.09",
-    "eps": "$0.44",
-    "eps_range": "$0.30~$0.60",
+    "eps": "$0.45",
+    "eps_range": "$0.30~$0.70",
     "rev": "$27.91B",
-    "growth": "-12.63%",
+    "growth": "-10.52%",
     "growth_pos": false
    },
    "rev": {
@@ -846,7 +846,7 @@
      "cq": "2026-3",
      "label": "2026 3Q",
      "reported": false,
-     "eps_est": "$0.44",
+     "eps_est": "$0.45",
      "rev": "$27.91B",
      "date": "2026-10-22"
     },
@@ -859,10 +859,10 @@
     }
    ],
    "target": {
-    "price": "$378.73",
+    "price": "$380.20",
     "mean": "$396.41",
     "range": "$128~$600",
-    "upside": "+5%",
+    "upside": "+4%",
     "upside_pos": true
    },
    "rec": {
@@ -979,10 +979,10 @@
     }
    ],
    "target": {
-    "price": "$29.67",
+    "price": "$29.25",
     "mean": "$31.15",
     "range": "$23~$42",
-    "upside": "+5%",
+    "upside": "+7%",
     "upside_pos": true
    },
    "rec": {
@@ -1104,10 +1104,10 @@
     }
    ],
    "target": {
-    "price": "$10.43",
+    "price": "$10.96",
     "mean": "$14.69",
     "range": "$8~$20",
-    "upside": "+41%",
+    "upside": "+34%",
     "upside_pos": true
    },
    "rec": {
@@ -1229,10 +1229,10 @@
     }
    ],
    "target": {
-    "price": "$40.48",
+    "price": "$41.92",
     "mean": "$77.69",
     "range": "$40~$131",
-    "upside": "+92%",
+    "upside": "+85%",
     "upside_pos": true
    },
    "rec": {
@@ -1354,10 +1354,10 @@
     }
    ],
    "target": {
-    "price": "$189.40",
+    "price": "$192.48",
     "mean": "$195.57",
     "range": "$80~$255",
-    "upside": "+3%",
+    "upside": "+2%",
     "upside_pos": true
    },
    "rec": {
@@ -1479,10 +1479,10 @@
     }
    ],
    "target": {
-    "price": "$73.02",
+    "price": "$75.20",
     "mean": "$109.15",
     "range": "$64~$150",
-    "upside": "+49%",
+    "upside": "+45%",
     "upside_pos": true
    },
    "rec": {
