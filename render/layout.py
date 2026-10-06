@@ -27,17 +27,19 @@ HEAD = """<meta charset="utf-8">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="MARKET BRIEF">
 <link rel="apple-touch-icon" href="/stock_news_mailer/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="icon" type="image/png" sizes="192x192" href="/stock_news_mailer/icon-192.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"></noscript>
 <script>(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>"""
 
 CSS = """
 :root{
  --bg:#e8ecf1;--page:#f6f8fb;--border:#e6ebf2;
- --ink:#0f1b2d;--ink-2:#1e293b;--muted:#475569;--muted-2:#64748b;--faint:#94a3b8;
+ --ink:#0f1b2d;--ink-2:#1e293b;--muted:#475569;--muted-2:#5b6b80;--faint:#6b7280;
  --card:#fff;--chip:#eaf0fb;--accent:#3a6fd8;--header:#0f1b2d;--nav-track:#eef2f7;
- --hover:#dbe6f8;--chip-ink:#3a6fd8;--shadow:rgba(15,27,45,.10);}
+ --hover:#dbe6f8;--chip-ink:#2a56b3;--shadow:rgba(15,27,45,.10);}
+/* 라이트 모드 보조 텍스트(--faint/--muted-2/--chip-ink)는 흰 배경 대비 4.5:1 이상(WCAG AA)으로 맞춘 값 */
 :root[data-theme="dark"]{
  --bg:#0b0e13;--page:#12161d;--border:#262c36;
  --ink:#e7ecf3;--ink-2:#d6dde8;--muted:#aab6c6;--muted-2:#9aa7b8;--faint:#8b96a6;
@@ -157,7 +159,7 @@ a:hover{opacity:.72;}
 .ern-item:has(.ern-detail) .ern{cursor:pointer;}
 .ern-arrow{color:var(--faint);font-size:10px;flex-shrink:0;transition:transform .15s;}
 .ern-item.open .ern-arrow{transform:rotate(180deg);color:var(--accent);}
-.ern-tag.rep{font-size:9.5px;font-weight:800;color:#fff;background:#16a34a;
+.ern-tag.rep{font-size:9.5px;font-weight:800;color:#fff;background:#15803d;
  padding:2px 7px;border-radius:5px;flex-shrink:0;}
 .ern-tag.wait{font-size:9.5px;font-weight:800;color:#fff;background:#f59e0b;
  padding:2px 7px;border-radius:5px;flex-shrink:0;margin-left:4px;}  /* 발표됐으나 집계 전 */
@@ -234,7 +236,7 @@ a:hover{opacity:.72;}
 .up-sub{font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.45;}
 .up-qh{font-size:12px;font-weight:800;color:var(--ink);margin:14px 0 7px;
  padding-bottom:5px;border-bottom:2px solid var(--border);}
-.ev-new{font-size:8.5px;font-weight:800;color:#fff;background:#16a34a;
+.ev-new{font-size:8.5px;font-weight:800;color:#fff;background:#15803d;
  border-radius:5px;padding:1px 5px;margin-left:5px;vertical-align:middle;}
 .up-rec{font-size:10.5px;color:var(--muted);margin-top:3px;display:flex;
  align-items:center;gap:6px;flex-wrap:wrap;}
@@ -376,7 +378,7 @@ a:hover{opacity:.72;}
 .news.hero h3{font-size:16.5px;font-weight:700;}
 .badge-key{font-size:10px;font-weight:800;color:#fff;background:var(--accent);
  padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
-.badge-new{font-size:10px;font-weight:800;color:#fff;background:#16a34a;
+.badge-new{font-size:10px;font-weight:800;color:#fff;background:#15803d;
  padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
 .quotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
  gap:8px;margin-bottom:14px;}
@@ -454,9 +456,40 @@ a:hover{opacity:.72;}
     padding-left:calc(18px + env(safe-area-inset-left,0px));
     padding-right:calc(18px + env(safe-area-inset-right,0px));}
   .hd h1{font-size:22px;}
-  .nav a{font-size:12px;padding:8px 3px;}
+  /* 좁은 폭: 슬로건·디데이 블록이 잘리지 않도록 다음 줄로 내리고 우측 정렬 유지 */
+  .hd-sub{flex-wrap:wrap;row-gap:10px;}
+  .hd-slogan{margin-left:auto;}
+  /* 탭 8개가 두 줄로 꺾이지 않도록 한 줄 유지 + 가로 스크롤 */
+  .nav{overflow-x:auto;scrollbar-width:none;}
+  .nav::-webkit-scrollbar{display:none;}
+  .nav a,.nav button{flex:1 0 auto;white-space:nowrap;font-size:12px;padding:8px 9px;}
 }
 """
+
+
+# 내 목표 앱(goal-app.js, Firebase ~120KB) 지연 로드:
+#   첫 화면 렌더에 불필요하므로 '내 목표' 탭 또는 로그인 버튼 클릭 시 즉시,
+#   아니면 load 이후 유휴 시간에 로드한다. 로드 전 클릭은 모듈 실행 후 재전달.
+#   경로는 push.js처럼 절대경로 → 아카이브(archive/) 페이지에서도 404 없이 동작.
+_GOAL_LOADER_JS = """<script>
+(function(){
+  var done=false, pending=null;
+  function load(){
+    if(done) return; done=true;
+    var s=document.createElement('script'); s.type='module';
+    s.src='/stock_news_mailer/goal-app.js';
+    s.onload=function(){ if(pending){ var p=pending; pending=null; p.click(); } };
+    document.body.appendChild(s);
+  }
+  var slot=document.getElementById('authSlot');
+  var tab=document.querySelector('.nav-t[data-p="tpGoal"]');
+  if(slot) slot.addEventListener('click', function(){ if(!done){ pending=slot; load(); } });
+  if(tab) tab.addEventListener('click', load);
+  window.addEventListener('load', function(){
+    (window.requestIdleCallback||function(f){ setTimeout(f,1500); })(load);
+  });
+})();
+</script>"""
 
 
 # 맨 위로 가기 버튼 동작 (스크롤 200px 이상이면 노출)
@@ -505,7 +538,7 @@ def _shell(title, inner, extra_head="", script="", rail="", asset_prefix=""):
 {assets.tag_css(asset_prefix)}
 </head>
 <body>
-<div class="wrap"><div class="page">
+<div class="wrap"><div class="page" role="main">
 {inner}
 <footer class="ft">기사 요약은 각 언론사 보도를 바탕으로 자동 생성되었으며, 저작권은 해당 언론사에 있습니다. 정보 제공 목적이며 투자 판단의 책임은 본인에게 있습니다.</footer>
 </div>{rail}</div>
@@ -727,6 +760,6 @@ def render_html(body: str, now: datetime | None = None, links: str = "",
                + (assets.tag("sched.js", asset_prefix) if sched_html else "")
                + (assets.tag("growth.js", asset_prefix) if funds else "")
                + assets.tag("rwa.js", asset_prefix)
-               + '<script type="module" src="goal-app.js"></script>')
+               + _GOAL_LOADER_JS)
     return _shell(SITE_TITLE, hd + gauges_html + nav_html + "".join(panels),
                   script=scripts, asset_prefix=asset_prefix)

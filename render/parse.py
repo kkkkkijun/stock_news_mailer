@@ -111,14 +111,15 @@ def _mood_color(value):
         v = int(value)
     except (TypeError, ValueError):
         return "#94a3b8"
+    # 흰 글자 배지 배경 → 모두 흰색 대비 4.5:1 이상(WCAG AA)인 진한 톤
     if v <= 24:
         return "#c0392b"
     if v <= 44:
-        return "#d98324"
+        return "#b45309"
     if v <= 55:
-        return "#c9a227"
+        return "#a16207"
     if v <= 75:
-        return "#4a9d5b"
+        return "#15803d"
     return "#2e7d32"
 
 
