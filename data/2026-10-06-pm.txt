@@ -1,0 +1,245 @@
+2026-10-06T17:02:40.814263+09:00
+
+[오늘의 뉴스 요약] 2026-10-06 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국고채 금리는 혼조세를 보여 3년물 금리는 3.933%로 하락한 반면, 10년물은 4.369%로 올랐다. 원/달러 환율은 반도체 기업의 매도로 보합세를 유지했다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 혼조세
+   → 6일 국고채 금리는 3년물 3.933%로 0.4bp 하락했으며, 10년물은 4.369%로 0.4bp 상승했다.
+   (연합뉴스 · 10/06 16:41)
+2. (환율) 원/달러 환율 보합 움직임
+   → 원/달러 환율은 1,343.6원으로 0.4원 내리며 보합세를 유지했다.
+   (연합뉴스 · 10/06 16:13)
+3. (기타) 청년미래적금 2차 가입신청 시작
+   → 청년미래적금의 2차 가입 신청이 10월 7일부터 16일까지 진행되며, 정부 기여금으로 최대 연 19.4%의 금리 효과가 기대된다.
+   (매일경제 · 10/06 15:49)
+4. (기타) 구리 등 7대 핵심광물 지원 확대
+   → 대덕특구 본부는 '대덕 커넥트 라운지'를 운영하여 기술 교류와 투자 유치를 지원한다고 발표했다.
+   (연합뉴스 · 10/06 16:06)
+5. (기타) 신협 자산관리회사, 부실채권 매입 가능해진다
+   → 신협 자산관리회사는 부실채권 매입이 가능해지고, 중소형 조합 의무 선임 기준이 완화되었다.
+   (연합뉴스 · 10/06 14:09)
+
+[흐름·전망]
+• 단기적으로 국고채 금리의 향방은 경제 지표에 민감하게 반응할 가능성이 크므로, 관련 데이터에 주목할 필요가 있다.
+• 원/달러 환율은 계속해서 기업의 달러 매도와 글로벌 달러 강세에 따라 변동할 가능성이 높다.
+• 청년미래적금의 높은 금리는 청년 세대의 자산 형성에 긍정적인 영향을 미칠 것으로 보이며, 금융업계의 관심도 증대할 것이다.
+• 부실채권 매입이 시작되면 신협의 경영 안정성 및 시장에 미치는 영향에 대해 면밀히 살펴볼 필요가 있다.
+
+📈 해외주식 PART
+📰 [NVDA] The Overlooked AI Stock Poised to Outperform Nvidia and Palantir - The Motley Fool
+   (The Motley Fool · 10/06 16:47)
+→ 모틀리 풀에 따르면, Nvidia와 Palantir를 초월할 가능성이 있는 주목받지 못한 AI 관련 주식에 대한 분석이 소개되었습니다. 이 주식은 시장에서 과소평가되고 있으며, 향후 성장이 기대된다고 전했습니다.
+
+📰 [NVDA] Michael Burry Quoted a 1968 Book to Answer Nvidia (NVDA). The Passage Is Uncomfortable
+   (Yahoo Finance · 10/06 16:42)
+→ 마이클 버리는 NVIDIA가 자사의 반도체 가치 유지에 대해 발표한 후, 1968년의 책을 인용하며 시장에 대한 경고를 했다. 그는 "우리는 모두 이 상황을 경험한 적이 있다"고 언급하며 주식 시장의 불확실성에 대한 불안감을 표명했다.
+
+📰 [NVDA] Michael Burry Quoted a 1968 Book to Answer Nvidia (NVDA). The Passage Is Uncomfortable - Yahoo Finance
+   (Yahoo Finance · 10/06 16:42)
+→ 마이클 버리는 1968년 출판된 책의 내용을 인용하며 엔비디아(NVDA)에 대한 의견을 제시했다. 그의 발언은 다소 불편한 내용을 포함하고 있어 주목받고 있다.
+
+📰 [TSLA] Elon Musk's Trump Admin 'Return' Puts Tesla, SpaceX in Focus: Analyst Says TSLA Faces 'Key Test' — Prediction Market Weighs in
+   (Yahoo Finance · 10/06 16:33)
+→ 엘론 머스크가 트럼프 행정부에서 새로운 역할을 맡으면서 테슬라와 스페이스엑스에 주목이 쏠리고 있다는 분석이 나왔다. 전문가들은 머스크의 영향을 바탕으로 테슬라가 중요한 시험대에 직면한다고 언급하며, 예측 시장도 이에 대해 의견을 제시하고 있다.
+
+📰 [TSLA] Key facts: TSLA deliveries top production; sales rise; AI5/6 2027-28 - TradingView
+   (TradingView · 10/06 16:00)
+→ 테슬라(TSLA)는 생산량을 초과하는 차량을 인도했으며, 판매가 증가했습니다. 또한 AI 버전 5과 6은 2027-2028년으로 예정되어 있습니다.
+
+📰 [TSLA] Elon Musk Says Gray Kittens Are Grounding Tesla Robotaxis At Night - Motor1.com
+   (Motor1.com · 10/06 15:47)
+→ 엘론 머스크는 회색 고양이들이 밤에 테슬라 로보택시의 운행을 방해하고 있다고 언급했다. 이 문제는 고양이들이 로보택시의 센서에 영향을 미쳐 차량의 정체성을 혼란스럽게 만든다고 설명했다.
+
+📰 [HIMS] Kaplan Fox Alerts Hims & Hers Health, Inc. (NYSE: HIMS) Investors - The National Law Review
+   (The National Law Review · 10/06 15:58)
+→ Kaplan Fox는 Hims & Hers Health, Inc. (NYSE: HIMS) 투자자들에게 경고를 발령했습니다. 이 공지는 투자자들이 회사와 관련된 중요한 사항들을 주의 깊게 살펴보도록 촉구하고 있습니다.
+
+📰 [HIMS] Bronstein, Gewirtz & Grossman LLC Urges Hims & Hers Health, - globenewswire.com
+   (globenewswire.com · 10/06 12:00)
+→ Bronstein, Gewirtz & Grossman LLC는 Hims & Hers Health에 대한 주주들에게 회사에 대해 주의할 것을 촉구하고 있습니다. 이는 투자자들이 회사의 경영 및 재무 상태를 면밀히 검토할 필요가 있음을 시사합니다.
+
+📰 [HIMS] ROSEN, SKILLED INVESTOR COUNSEL, Encourages Hims & Hers - globenewswire.com
+   (globenewswire.com · 10/06 09:44)
+→ 로젠 투자 자문이 Hims & Hers에 대한 투자자들에게 주의를 촉구하고 있습니다. 이들은 회사의 최근 동향과 관련된 사항들을 강조하며, 투자자들이 신중한 결정을 내릴 것을 권장하고 있습니다.
+
+📰 [RDW] Redwire Corp (RDW) Shares Fall 4.1% -- GF Value Says Still Overv - GuruFocus
+   (GuruFocus · 10/06 10:34)
+→ Redwire Corp (RDW)의 주가가 4.1% 하락했습니다. GF Value는 여전히 이 주식이 과대평가되어 있다고 분석했습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Falls 4.3% - Here's Why - MarketBeat
+   (MarketBeat · 10/06 06:24)
+→ 레드와이어(Redwire) 주식이 4.3% 하락한 이유에 대한 분석이 전해졌다. 주요 원인은 시장 불안정성과 관련된 요소들로, 투자자들의 우려가 주가에 영향을 미친 것으로 보인다.
+
+📰 [RDW] RDW Oct 2026 9.000 call (RDW261023C00009000) Interactive Stock Chart - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/06 05:18)
+→ RDW의 2026년 10월 만기 9.000 달러 콜옵션(RDW261023C00009000)에 대한 주식 차트가 Yahoo! Finance Canada에서 제공되고 있습니다. 해당 옵션의 성과와 동향을 분석할 수 있는 자료가 포함되어 있습니다.
+
+📰 [IREN] IREN Slips Behind AI Peers as Platinum Snub Meets a $30 Billion Question - AD HOC NEWS
+   (AD HOC NEWS · 10/06 15:31)
+→ IREN이 인공지능 분야의 동료들에 비해 뒤처지고 있으며, 이는 플래티넘의 배제가 300억 달러의 질문에 직면했음을 나타낸다. 이러한 상황은 IREN의 성장과 경쟁력에 부정적인 영향을 미치고 있다.
+
+📰 [IREN] Did AI Cloud Deals Just Shift IREN's (IREN) Investment Narrative? - Simply Wall Street
+   (Simply Wall Street · 10/06 08:37)
+→ AI 클라우드 거래가 IREN의 투자 내러티브를 변화시켰는지에 대한 기사를 다루고 있습니다. 이러한 거래는 IREN의 성장 가능성에 긍정적인 영향을 미칠 것으로 예상되며, 투자자들에게 새로운 기회를 제공하고 있습니다.
+
+📰 [IREN] IREN Ltd (IREN) Shares Fall 3.1% -- What GF Score of 71 Tells In - GuruFocus
+   (GuruFocus · 10/06 07:35)
+→ IREN Ltd (IREN)의 주가가 3.1% 하락했습니다. 이와 관련하여 GF 점수가 71인 것이 어떤 의미인지에 대한 분석이 이루어졌습니다.
+
+📰 [RKLB] Key facts: Rocket Lab (RKLB) Iridium OK; Synspective 20-launch; ARK buys - TradingView
+   (TradingView · 10/06 16:00)
+→ 로켓랩(RKLB)은 이리디움 발사를 성공적으로 완료하였고, 신스펙티브는 20회의 발사 계획을 세웠습니다. 또한 ARK 인베스트는 주식을 매입하였습니다.
+
+📰 [RKLB] RKLB Stock Rises Overnight: Cathie Wood’s ARK Sees ‘Enormous Opportunity’ As SpaceX Eyes Falcon 9 Retirement
+   (Yahoo Finance · 10/06 15:35)
+→ RKLB 주가가 상승하며 Cathie Wood의 ARK 투자 회사는 SpaceX가 Falcon 9을 퇴역할 경우 Rocket Lab과 Stoke Space에 큰 기회가 생길 것이라고 언급했습니다. ARK는 중형 로켓이 성공적으로 발사된다면 이들 회사가 시장 점유율을 확보할 수 있을 것이라고 전망했습니다.
+
+📰 [RKLB] Rocket Lab's Synspective Contract Pushes Launch Manifest Past 100 Missions - AD HOC NEWS
+   (AD HOC NEWS · 10/06 11:11)
+→ 로켓랩이 신스펙티브와 계약을 체결함으로써 발사 계획이 100회 이상으로 확대되었습니다. 이로 인해 로켓랩은 향후 더 많은 위성을 궤도로 배치할 수 있는 기회를 가지게 되었습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Polymarket V2 Nears Launch With New Prediction Market Architecture - Bitcoin Foundation
+   (Bitcoin Foundation · 10/06 16:54)
+→ Polymarket V2가 새로운 예측 시장 구조를 갖추고 곧 출시될 예정입니다. 이번 업데이트는 사용자 경험을 개선하고 예측 시장의 기능을 확장하는 데 중점을 두고 있습니다.
+
+📰 [BTC-USD] Bitcoin defies a historically weak September as fundamentals lead - 21shares.com
+   (21shares.com · 10/06 16:27)
+→ 비트코인이 역사적으로 약한 9월에도 불구하고 강력한 기초 데이터에 힘입어 상승세를 보이고 있습니다. 시장의 기본 요인들이 비트코인 가격을 지탱하며 긍정적인 반응을 이끌어내고 있습니다.
+
+📰 [BTC-USD] This Company Just Became the World's 2nd-Largest Bitcoin Hoarder and It Has More BTC Than Tesla, SpaceX a - Benzinga
+   (Benzinga · 10/06 16:22)
+→ 이 회사가 세계에서 두 번째로 큰 비트코인 보유자가 되었으며, 현재 테슬라와 스페이스X보다 더 많은 비트코인을 보유하고 있다고 보도되었다.
+
+📰 [ETH-USD] Ethereum could make moving between L1 and L2 much easier - crypto.news
+   (crypto.news · 10/06 16:52)
+→ 이더리움이 레이어 1(L1)과 레이어 2(L2) 간의 이동을 훨씬 더 용이하게 만들 수 있는 방안을 모색하고 있다. 이로 인해 사용자들이 더 효율적으로 트랜잭션을 처리할 수 있을 것으로 기대된다.
+
+📰 [ETH-USD] Ethereum completes first atomic L1-to-L2 transa... - Pluang
+   (Pluang · 10/06 16:52)
+→ 이더리움이 최초의 원자적 L1에서 L2로의 거래를 완료했습니다. 이는 프로토콜 간의 상호 운용성을 향상시키고, 이더리움의 확장성 문제 해결에 기여할 것으로 기대됩니다.
+
+📰 [ETH-USD] Ethereum settles above $2,700 for first time in 9 months as BitMine buys 15K ETH and technical outlook brightens. - Pluang
+   (Pluang · 10/06 16:40)
+→ 이더리움이 9개월 만에 처음으로 2,700달러 이상으로 상승하며 안정세를 보이고 있으며, BitMine이 15,000 ETH를 구매한 것이 영향을 미쳤습니다. 기술적 전망도 긍정적으로 변하고 있습니다.
+
+📰 [SOL-USD] Solana (SOLUSD) Volatility Intensified on Oct 6: What You Should Know - TradingKey
+   (TradingKey · 10/06 15:10)
+→ 10월 6일, 솔라나(SOL)의 변동성이 급증했습니다. 이로 인해 투자자들은 시장의 변화에 주의를 기울여야 할 필요성이 커졌습니다.
+
+📰 [SOL-USD] Bitcoin and Solana ETFs see outflows while Ethe... - Pluang
+   (Pluang · 10/06 15:05)
+→ 비트코인과 솔라나 ETF에서 자금 유출이 발생하고 있는 반면, 이더리움 ETF는 상대적으로 안정된 흐름을 보이고 있습니다. 투자자들이 비트코인과 솔라나에 대한 관심을 줄이는 가운데, 이더리움은 여전히 주목받고 있습니다.
+
+📰 [SOL-USD] Trader opens $19.78M 5x leveraged long on Solan... - Pluang
+   (Pluang · 10/06 14:48)
+→ 한 트레이더가 솔라나(Solana)에 대해 1,978만 달러 규모의 5배 레버리지 롱 포지션을 개설했습니다. 이 움직임은 암호화폐 시장에서 주목받고 있습니다.
+
+📰 [BMNR] Key facts: BMNR Adds 15,112 ETH; Holds 6,016,414 ETH, 84% Staked - TradingView
+   (TradingView · 10/06 16:00)
+→ BMNR은 15,112 ETH를 추가로 보유하게 되었으며, 총 6,016,414 ETH를 가지고 있습니다. 이 중 84%는 스테이킹 상태입니다.
+
+📰 [BMNR] BMNR 8-K & SEC Filings - Yahoo Finance
+   (Yahoo Finance · 10/06 13:12)
+→ BMNR은 최근 8-K와 SEC 제출서를 발표했습니다. 이 문서들은 회사의 중요한 사건이나 재무 상태에 대한 정보를 포함하고 있습니다. 자세한 내용은 Yahoo Finance에서 확인할 수 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies Says Ethereum Holdings Reach 6 Million Tokens - marketscreener.com
+   (marketscreener.com · 10/06 02:03)
+→ Bitmine Immersion Technologies는 이더리움 보유량이 600만 토큰에 도달했다고 발표했습니다. 이 회사는 이더리움의 비트코인과는 다른 특성을 이용하여 사업을 확장할 계획입니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 하락세를 지속하며 전체적으로 약세 분위기가 형성되고 있다. 비트코인과 이더리움이 모두 소폭 하락했으며, 알트코인으로의 자금 이동이 감지되고 있다.
+
+[핵심 뉴스]
+1. (ETF) 비트코인 현물 ETF서 8989만달러 순유출
+   → 비트코인 현물 ETF에서 8989만달러가 순유출되었으며, 일본의 금융기관과 기술기업 9곳이 증권 토큰과 스테이블코인의 모의 거래 실증을 완료했다.
+   (토큰포스트 · 10/06 16:58)
+2. (시세) 암호화폐 시장 하락세
+   → 비트코인은 1.05% 하락해 85,302.25달러에 거래 중이며, 이더리움은 0.93% 하락해 2,697.14달러를 기록하고 있다. 암호화폐 전체 시가총액은 2조 9,059억 달러로 감소했다.
+   (토큰포스트 · 10/06 16:01)
+3. (기타) 글로벌 코인 트렌드 변화
+   → 글로벌 트렌드에서는 도플러 파이낸스(XDP)가 조회수 1위를 차지하고 있으며, 한국에서는 펌프(PUMP)가 가장 많은 조회수를 기록했다.
+   (토큰포스트 · 10/06 16:07)
+4. (기타) 레버리지 포지션 1억969만달러 청산
+   → 비트코인 현물 ETF에서 8989만달러가 순유출되었고, 이더리움 출금 대기 물량이 87만개에 달했다. 비트코인 선물 미결제약정은 14억달러 감소하였다.
+   (토큰포스트 · 10/06 16:01)
+5. (ETF) 이더리움 현물 ETF 순자산 증가
+   → 미국 이더리움 현물 ETF가 4거래일 만에 1억1084만 달러의 순유입으로 전환되었으며, 누적 순유입은 139억1273만 달러에 이른다.
+   (토큰포스트 · 10/06 14:02)
+
+[흐름·전망]
+• 투자자들은 비트코인과 이더리움의 점유율 변화에 주목해야 하며, 알트코인으로의 자금 이동 가능성을 확인하는 것이 중요하다.
+• 전반적인 하락세 속에서 파생상품 거래량 증가가 단기 변동성을 더욱 확대할 가능성이 있어 주의가 필요하다.
+• 일본의 증권 토큰과 스테이블코인 관련 실증이 향후 블록체인 활용 사례에 긍정적인 영향을 미칠 것으로 예상된다.
+• 이더리움 현물 ETF의 순유입이 지속될 경우, 시장 신뢰도가 회복되면서 가격 안정에 기여할 것으로 보인다.
+
+📊 공포탐욕지수
+  - CNN 기준: 43 (Fear)
+  - 크립토 기준: 73 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 수도권 공급 확대에 총력을 다하는 반면, 비수도권의 주택 수요 부족이 지속되고 있어 전반적인 위기 감이 감지되고 있다.
+
+[핵심 뉴스]
+1. (공급) LH, 비주택 용도변경 매입 공고 목표 초과 달성
+   → LH는 비주택 리모델링 사업에서 목표치인 2000호를 초과한 2125호의 매입 신청을 확보했으며, 연말부터 본격적인 약정 체결에 나설 계획이다.
+   (매일경제 · 10/06 16:42)
+2. (매매) 노원구 아파트 최근 신고가 기록
+   → 노원구 상계주공系列 아파트에서 신고가 거래가 발생했으며, 특히 58㎡ 면적이 최근 8억 8000만원으로 거래되어 수익성이 도드라지고 있다.
+   (매일경제 · 10/06 15:25)
+3. (정책) 전세사기 피해 보증금 최소 보장 추진
+   → 정부는 전세사기 피해자의 보증금 회복을 보장하는 제도를 11월 13일부터 시행할 예정이며, LH가 지급 업무를 담당한다.
+   (연합뉴스 · 10/06 13:28)
+4. (분양청약) 서초구 아크로서초, 청약 경쟁률 1099.1대 1
+   → 서초구 아크로서초는 평균 1099.1대 1의 경쟁률을 기록하며 청약 시장에서 큰 관심을 끌었고, 서울의 다른 단지들도 청약 신청이 집중되고 있다.
+   (매일경제 · 10/06 09:35)
+5. (공급) 수도권 주택 공급 확대 총력, 비수도권은 어려움 겪어
+   → 수도권에서의 주택 공급 확대 노력에도 비수도권의 14개 공공주택 사업장이 수요 부족으로 착공하지 못하고 있으며, 이는 지역별 주택 시장의 불균형을 드러낸다.
+   (매일경제 · 10/06 06:54)
+6. (정책) 전세보증금 3분의 1 국가 최소보장 정책 시행
+   → 11월 13일부터 전세사기 피해자에 대한 보증금 최소 보장 정책이 시행되며, 이는 사회적 안정망 강화에 기여할 것으로 기대된다.
+   (티제이비 · 10/06 16:25)
+
+[흐름·전망]
+• 수도권의 주택 공급 확대가 여전히 중요하며, 청년 및 신혼부부를 위한 임대주택 공급에 주목해야 한다.
+• 노원구 아파트 거래 증가가 다른 지역으로 확산될지 지켜보아야 할 필요가 있다.
+• 전세사기 피해 지원책의 효과성과 실제 피해자 회복 수준이 어떻게 나타날지 주의 깊게 살펴봐야 한다.
+• 비수도권의 주택 시장 활성화를 위한 정책적 노력이 필요한 상황이며, 이에 대한 대안 마련이 시급하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프 대통령은 최근 네브래스카에서의 대규모 투자와 의료 혁신을 강조하며 경제 성장과 보건의료 분야의 변화를 촉구했다. 또한, 정치적 지지자들을 소개하며 앞으로의 선거에서도 자신들의 정치적 비전을 실현할 것이라고 주장했다.
+
+[주요 발언]
+1. (경제) 트럼프는 의료기기 제조업체인 BD가 30억 달러 규모의 투자를 통해 네브래스카에서 필수 의료 제품의 생산을 확대한다고 발표했다.
+   (Truth Social · 10/06 12:18)
+2. (내국정치) 트럼프는 의료 분야에서 노인들을 위한 혁신을 위해 헨리 케슬러를 지지하며, 그가 보건의료 비용을 낮추고 새로운 기술을 도입할 것이라고 주장했다.
+   (Truth Social · 10/06 12:04)
+3. (내국정치) 트럼프는 테네시주 6선거구의 주 하원의원 조니 가렛을 지지하며, 그가 경제 성장과 농업 지원을 위해 노력할 것이라고 언급했다.
+   (Truth Social · 10/06 11:55)
+4. (내국정치) 트럼프는 와이오밍주 국무장관을 역임한 척 그레이를 지지하며, 그가 경제 성장과 세금 감면을 위해 최선을 다할 것이라고 언급했다.
+   (Truth Social · 10/06 11:54)
+5. (사법) 트럼프는 뉴욕 타임스가 자신의 리조트 사진을 조작해 부정적으로 보이게 했다며 언론의 부정확성을 비판했다.
+   (Truth Social · 10/06 11:52)
+6. (기타) 트럼프는 2026년 중간 선거에서 공화당이 승리할 경우 미국 성인들에게 5,000달러를 줄 것이라고 놀라운 공약을 제시했다.
+   (Truth Social · 10/06 07:25)
+
+[흐름·전망]
+• 트럼프의 대규모 투자 발표는 미국 제조업 및 의료 분야의 회복과 성장을 이끌 수 있는 중요한 전환점이 될 가능성이 있다.
+• 앞으로 다가오는 선거에서 트럼프가 지지하는 후보들이 어떤 성과를 낼지 주목해야 하며, 그의 지지 세력을 어떻게 끌어모을지가 관전 포인트가 될 것이다.
+• 트럼프의 의료 혁신 및 비용 절감 공약이 실제로 어떻게 이행될지, 그리고 노인층의 보건복지에 미칠 영향에 대한 주목이 필요하다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
