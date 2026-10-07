@@ -1,0 +1,240 @@
+2026-10-07T17:03:11.786703+09:00
+
+[오늘의 뉴스 요약] 2026-10-07 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 원/달러 환율이 3.2원 하락하여 1,340원으로 거래되며, 원화 강세가 지속되고 있다. 그러나 외국인 투자자의 순매도로 인해 환율 하락폭이 제한되었다.
+
+[핵심 뉴스]
+1. (환율) 원/달러 환율 3.2원 내린 1,340원
+   → 오늘 원/달러 환율은 1,340.4원으로 장중 한때 1,330원대 후반까지 떨어졌으며, 이는 약 한 달 만에 최저 수준이다.
+   (연합뉴스 · 10/07 16:12)
+2. (금리) 국고채 금리 대체로 상승…3년물 연 3.961%
+   → 7일 국고채 금리가 대체로 상승하여 3년물 금리는 연 3.961%로 종가를 기록했으며, 10년물과 20년물도 소폭 상승했다.
+   (연합뉴스 · 10/07 16:40)
+3. (성장) 잠재성장률 반등 노리는 정부
+   → 이형일 부총리와 경제 6단체는 기업환경 개선과 잠재성장률 반등을 위한 민관 협력 방안을 논의하였으며, 청년 일자리 보호를 위한 유연한 고용 방식이 제안되었다.
+   (매일경제 · 10/07 15:26)
+4. (성장) 올해 韓 성장률 4%? 해외 IB들 전망치 계속 상승
+   → 해외 투자은행들이 올해 한국의 성장률 전망치를 속속 올리고 있으며, 4% 달성 가능성도 제기되고 있다.
+   (Daum · 10/07 15:36)
+5. (기타) 토지거래허가제 수요 있어…시장상황 보며 연장 검토
+   → 국토교통부 장관이 토지거래허가제를 연장할 수 있는 가능성을 시사하며 시장 상황을 주시하겠다고 밝혔다.
+   (연합뉴스 · 10/07 16:55)
+
+[흐름·전망]
+• 원/달러 환율의 지속적인 하락은 내수 경기 회복에 긍정적인 영향을 미칠 수 있으며, 특히 반도체 산업의 성장은 중요한 관전 포인트가 될 것이다.
+• 국고채 금리 상승은 향후 통화정책 방향에 대한 시장의 기대를 반영하고 있으며, 정부의 자산 관리를 주의 깊게 지켜봐야 할 것이다.
+• 정부의 대기업 및 청년 일자리 관련 정책이 실행될 때, 잠재성장률 반등 여부가 관건이며, 기업의 반응이 주목된다.
+• 부동산 시장 안정화 여부와 함께 주택 공급 실적이 완전히 달성되지 않을 가능성이 있으므로, 토지 관련 정책 변화에도 귀 기울일 필요가 있다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA Corporation $NVDA Shares Acquired by George Kaiser Family Foundation - MarketBeat
+   (MarketBeat · 10/07 16:43)
+→ 조지 카이저 재단이 엔비디아(NVIDIA Corporation)의 주식을 매입했다는 소식이 전해졌습니다. 이로 인해 재단의 포트폴리오에 기술 기업의 주요 주식이 추가된 것으로 보입니다.
+
+📰 [NVDA] The $500 Billion Question Causing Waves Across Every AI Stock: How Much Are Nvidia GPUs Actually Worth?
+   (Yahoo Finance · 10/07 16:37)
+→ Nvidia의 GPU 가치에 대한 의견 차이가 큰 파장을 일으키고 있으며, 이는 AI 주식 전반에 영향을 미치고 있습니다. Nvidia와 이를 지원하는 주요 은행들은 강력한 프로세서의 유용한 수명에 대해 이견을 보이고 있습니다.
+
+📰 [NVDA] IonQ (IONQ) Could Be 10% Below Fair Value After FIU Quantum Deal
+   (Yahoo Finance · 10/07 16:15)
+→ IonQ가 플로리다 국제대학교(FIU)에 256-qubit 트랩 아이온 양자 컴퓨터인 Superion을 납품하기로 계약하면서 FIU와의 협력을 강화했습니다. 이와 함께 IonQ는 NVIDIA의 가속 양자 연구 센터와 Congruity360 사이버 보안 계약에도 참여하며 실용적인 양자 컴퓨팅 사례에 집중하고 있습니다. 현재 주가는 공정 가치보다 10% 낮을 수 있다는 분석이 있습니다.
+
+📰 [TSLA] Tesla to showcase its Cybercab robotaxi at Paris auto show - Automotive News
+   (Automotive News · 10/07 16:02)
+→ 테슬라가 파리 자동차 쇼에서 사이버캡 로봇택스를 공개할 예정이다. 이 신모델은 자율주행 기술을 기반으로 하며, 도시 교통 개선에 기여할 것으로 기대된다.
+
+📰 [TSLA] Key facts: Tesla, Inc. Q3 deliveries>production; EU FSD vote; >$25B cap - TradingView
+   (TradingView · 10/07 16:00)
+→ 테슬라가 3분기 배송량이 생산량을 초과했다고 발표했으며, 유럽연합에서 완전자율주행(FSD)에 대한 투표가 진행되었습니다. 이와 함께 테슬라의 시장 가치가 250억 달러를 초과했습니다.
+
+📰 [TSLA] Inside Tesla's pressure campaign to win EU approval for 'Full Self-Driving' - Reuters
+   (Reuters · 10/07 15:31)
+→ 테슬라는 '완전 자율 주행' 시스템에 대한 유럽연합(EU)의 승인을 얻기 위해 여러 가지 압박 작업을 벌이고 있다. 이와 관련해 다양한 이해관계자들과의 소통을 강화하며 규제 당국에 영향력을 미치려는 전략을 취하고 있다.
+
+📰 [HIMS] Hims & Hers Health, Inc. Securities Fraud Class Action - GlobeNewswire
+   (GlobeNewswire · 10/07 10:52)
+→ Hims & Hers Health, Inc.에 대한 증권 사기 집단 소송이 제기되었습니다. 이 사건은 투자자들이 회사를 상대로 손해배상을 요구하는 내용을 포함하고 있습니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (HIMS) Shareholders Who Lost Money Have Opportunity to Lead Securities Fraud Lawsuit - PR Newswire
+   (PR Newswire · 10/07 02:30)
+→ Hims & Hers Health, Inc.의 주주들은 손실을 본 경우 증권 사기 소송을 이끌 기회를 갖게 되었다. 이 소송은 주주들이 회사를 상대로 벌일 수 있는 법적 조치로, 손실에 대한 배상을 요구할 수 있는 기회를 제공한다.
+
+📰 [HIMS] Hims & Hers Health (NYSE: HIMS) Faces Securities Fraud Class Action After FTC Lawsuit Reveal Drives Stock Sharply Lower - PR Newswire
+   (PR Newswire · 10/07 01:49)
+→ Hims & Hers Health가 FTC의 소송으로 인해 주가가 급락하면서 증권 사기 집단소송에 직면했습니다. 이러한 상황은 회사의 재정적 문제가 부각되면서 투자자들의 우려를 증대시켰습니다.
+
+📰 [RDW] RDW Stock Rises Premarket: Wins New Axiom Space Contract To Power Next Station Module - Stocktwits
+   (Stocktwits · 10/07 09:56)
+→ RDW 주식이 프리마켓에서 상승했다. 이는 Axiom Space와 새로운 계약을 체결하여 다음 우주 정거장 모듈에 전력을 공급하기로 한 때문입니다.
+
+📰 [RDW] Redwire stock (RDW): New Axiom Space contract expands station role - Beinsure
+   (Beinsure · 10/07 07:32)
+→ Redwire는 Axiom Space와 새로운 계약을 체결하여 우주 정거장에서의 역할을 확대했습니다. 이 계약으로 Redwire의 주가에 긍정적인 영향을 미칠 것으로 기대됩니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Price Up 2.1% - Still a Buy? - MarketBeat
+   (MarketBeat · 10/07 06:27)
+→ Redwire(NYSE: RDW)의 주가가 2.1% 상승했으며, 이를 기회로 매수를 고려할 수 있는지에 대한 논의가 이루어지고 있다. 전문가들은 이번 상승세가 장기적인 투자 가치에 미치는 영향을 분석하고 있다.
+
+📰 [IREN] IREN stock gained 1.98 percent as AI revenue accelerated - AD HOC NEWS
+   (AD HOC NEWS · 10/07 10:25)
+→ IREN 주가는 AI 수익이 증가하면서 1.98% 상승했습니다. 이는 회사의 성장 가능성을 반영하는 긍정적인 신호로 평가됩니다.
+
+📰 [IREN] B. Riley cuts target for IREN stock from USD 96 to USD 91 - AD HOC NEWS
+   (AD HOC NEWS · 10/07 08:02)
+→ B. 라이리(B. Riley)는 IREN 주식의 목표 가치를 기존 96달러에서 91달러로 하향 조정했다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Shares Climb 2% - Still a Buy? - MarketBeat
+   (MarketBeat · 10/07 06:27)
+→ IREN의 주가가 2% 상승했으며, 여전히 매수할 가치가 있는지에 대한 논의가 이루어지고 있습니다. 추가적인 분석이 필요한 상황입니다.
+
+📰 [RKLB] Rocket Lab's Transformation Story: A Record Electron Deal, an Iridium Integration, and the Neutron Q - AD HOC NEWS
+   (AD HOC NEWS · 10/07 14:40)
+→ 로켓랩은 최근 일렉트론 로켓의 기록적인 계약을 체결하고, 이리디움 통합 프로젝트를 성공적으로 진행했습니다. 또한, 네우트론 Q 로켓 개발에 대한 진전도 이루어졌으며, 이로 인해 회사의 혁신적인 변화를 보여주고 있습니다.
+
+📰 [RKLB] SpaceX Comfortably Wins on Scale. Here’s How Rocket Lab Still Competes.
+   (Yahoo Finance · 10/07 14:36)
+→ 스페이스X가 우주 산업에서 두각을 나타내는 가운데, 로켓랩이 99.6%의 찬성 투표를 통해 이리듐 인수를 승인받았다. 이 거래는 이리듐의 가치를 약 80억 달러로 평가하며, 로켓랩은 인수 후 대규모 활성 위성 네트워크를 운영하게 된다.
+
+📰 [RKLB] Rocket Lab Booked 20 Launches Through 2031. The Catch Is in the Price.
+   (Yahoo Finance · 10/07 12:40)
+→ 로켓랩이 2031년까지 20회의 발사를 예약했고, 이는 그들의 최대 엘리먼트 계약을 반영한다. 시티의 애널리스트는 이 주식을 우주 산업의 핵심 보유 자산으로 평가하며 105달러의 목표가를 제시했다. 로켓랩 주가는 10월 1일 프리마켓 거래에서 4.7% 상승했다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin.de Turns to Regulated Partners After BaFin Rejects MiCA License - Bitcoin Foundation
+   (Bitcoin Foundation · 10/07 16:59)
+→ Bitcoin.de는 독일 금융 감독 기관인 BaFin이 MiCA 라이선스를 거부한 이후 규제를 준수하는 파트너와 협력하기로 결정했습니다. 이는 비트코인 거래소가 법적 요건을 충족하기 위해 새로운 전략을 모색하고 있음을 나타냅니다.
+
+📰 [BTC-USD] South African banking giant opens Bitcoin trading to nearly nine million customers through VALR deal - Business Insider Africa
+   (Business Insider Africa · 10/07 16:53)
+→ 남아프리카 공화국의 대형 은행이 VALR과의 제휴를 통해 약 900만 고객에게 비트코인 거래 서비스를 제공하기 시작했습니다. 이번 협력을 통해 고객들은 보다 쉽게 가상화폐에 접근할 수 있게 되었습니다.
+
+📰 [BTC-USD] Down but not out. Bitcoin's stair-step bullish trajectory is still intact - CoinDesk
+   (CoinDesk · 10/07 16:52)
+→ 비트코인이 하락세를 겪고 있지만 여전히 상승세를 유지하고 있다는 분석이 나왔다. 비트코인의 상승 경로는 변함없이 지속되고 있으며, 향후 추세에 대한 기대감이 여전하다.
+
+📰 [ETH-USD] AI could transform blockchain interaction with enhanced privacy and security, says Ethereum co-founder Vitalik Buterin. - Pluang
+   (Pluang · 10/07 16:25)
+→ 이더리움 공동 창립자 비탈릭 부테린은 AI가 블록체인 상호작용을 향상된 개인 정보 보호 및 보안으로 혁신할 수 있다고 언급했습니다.
+
+📰 [ETH-USD] Machine intelligence and crypto will merge naturally: Ethereum co-founder - CNBC
+   (CNBC · 10/07 14:52)
+→ 이더리움 공동 창립자에 따르면 기계 지능과 암호화폐는 자연스럽게 융합될 것으로 보인다. 그는 두 기술의 결합이 새로운 가능성을 열어줄 것이라고 강조했다.
+
+📰 [ETH-USD] Kalshi’s 15-Minute Gold Market Surpasses Ethereum, Generates $5 Million in September Fees - bloomingbit
+   (bloomingbit · 10/07 14:51)
+→ Kalshi의 15분 금 시장이 이더리움을 초과하며 9월에 500만 달러의 수익을 올렸습니다. 이 시장의 인기 상승으로 거래량이 크게 증가한 것으로 보입니다.
+
+📰 [SOL-USD] Solana Foundation Chair Says Tokenization’s Core Value Is Expanding Access to US Assets - bloomingbit
+   (bloomingbit · 10/07 16:45)
+→ 솔라나 재단 의장은 토큰화의 핵심 가치는 미국 자산에 대한 접근성을 확대하는 것이라고 언급했습니다. 이는 보다 많은 사람들이 자산에 참여할 수 있도록 하는 데 기여할 것이라고 강조했습니다.
+
+📰 [SOL-USD] Solana (SOL) nears $125 resistance after rising to $120.68 with strong DeFi activity and market interest. - Pluang
+   (Pluang · 10/07 16:24)
+→ 솔라나(SOL)는 강력한 DeFi 활동과 시장 관심 덕분에 120.68달러까지 상승하며 125달러 저항선에 가까워졌습니다.
+
+📰 [SOL-USD] Solana Tokenized Silver Project Dominion Announces Closure Following September Attack - KuCoin
+   (KuCoin · 10/07 15:09)
+→ 솔라나의 토큰화된 은 프로젝트인 도미니온이 9월 공격 이후 종료를 발표했습니다. 이 결정은 해당 공격으로 인한 피해와 관련이 있습니다.
+
+📰 [BMNR] BitMine’s Estimated $3.6B ETH Loss Overshadows Stock Edge
+   (Yahoo Finance · 10/07 00:47)
+→ Ethereum 뉴스에 따르면, BitMine Immersion Technologies의 BMNR 주가는 2026년 첫 9개월 동안 약 3% 하락했으며, 이는 이더리움의 약 10% 하락보다 나은 성적입니다. 그러나 BitMine의 이더리움 보유액은 약 36억 달러의 미실현 손실을 안고 있는 상태입니다.
+
+📰 [BMNR] Cantor Fitzgerald reiterates Bitmine Immersion stock Overweight rating By Investing.com - Investing.com India
+   (Investing.com India · 10/06 21:32)
+→ Cantor Fitzgerald는 Bitmine Immersion의 주식에 대해 '과중 비중' 평가를 재확인했습니다. 이는 해당 주식의 긍정적인 전망을 시사합니다.
+
+📰 [BMNR] Strategy ($MSTR) Accumulates 848,000 Bitcoin as Bitmine ($BMNR) Hits 6.02 Million ETH and Strive ($ASST) BTC Holdings Close In on MARA Holdings - Crowdfund Insider
+   (Crowdfund Insider · 10/06 21:26)
+→ Strategy($MSTR)가 848,000 비트코인을 축적했으며, Bitmine($BMNR)는 6.02 백만 이더리움을 기록했습니다. 또한 Strive($ASST)의 비트코인 보유량이 MARA Holdings에 육박하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 전반적으로 하락세를 이어가고 있으며, 특히 비트코인과 이더리움의 가격이 내림세를 보이고 있다. 비트코인 점유율은 증가한 반면, 이더리움 점유율은 소폭 감소하여 시장 내 자금 흐름의 변화가 감지된다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 하락세
+   → 비트코인은 24시간 기준으로 1.27% 하락하여 84,216.67달러에 거래되고 있으며, 이더리움은 2.93% 내린 2,617.88달러를 기록했다. 비트코인의 점유율은 59.08%로 0.10% 증가했고, 이더리움의 점유율은 11.16%로 0.17% 감소했다.
+   (토큰포스트 · 10/07 16:01)
+2. (ETF) 비트코인 현물 ETF 하루 1억1886만 달러 유치
+   → 미국 비트코인 현물 ETF 시장에서 10월 6일 기준으로 하루 1억1886만 달러의 순유입이 발생하여, 누적 순유입 규모는 578억1678만 달러에 이르렀다. 이틀 전인 10월 5일의 순유출에서 순유입으로 전환되었다.
+   (토큰포스트 · 10/07 14:01)
+3. (ETF) 이더리움 현물 ETF 하루 2억189만 달러 이탈
+   → 이더리움 현물 ETF 시장은 10월 6일 기준으로 하루 2억189만 달러의 순유출을 기록하며, 6일 연속 순유출이 이어지고 있다. 누적 순유입 규모는 135억4924만 달러이다.
+   (토큰포스트 · 10/07 14:01)
+4. (기타) 바이낸스 BTC 잔액 증가
+   → 바이낸스 이용자의 9월 비트코인(BTC) 잔액은 5억3700만 달러 증가했으며, 이더리움(ETH) 잔액은 4억9900만 달러 감소했다. 비트코인 잔액은 0.91% 증가하여 약 68만8600개에 이르렀다.
+   (토큰포스트 · 10/07 16:14)
+5. (시세) 비트코인 급락
+   → 비트코인이 20분 만에 8만4000달러대로 급락하는 등 변동성이 커지고 있다.
+   (디지털투데이 · 10/07 15:26)
+
+[흐름·전망]
+• 비트코인의 점유율 증가가 지속됨에 따라 대형주의 우세가 계속될 가능성이 있으며, 이는 단기 거래 및 자산 재조정에 영향을 줄 수 있다.
+• 파생상품 거래량의 증가가 암호화폐 시장의 변동성을 높일 수 있으므로 투자자들은 시장 상황에 따라 유의미한 대처가 필요하다.
+• 이더리움 ETF의 지속적인 순유출은 해당 자산에 대한 투자 심리가 약해지고 있음을 반영하며, 향후 가격 회복에 부정적인 영향을 미칠 수 있다.
+• 비트코인의 잔액 증가는 시장 참여자의 신뢰를 나타낼 수 있으며, 이는 향후 가격 상승의 불씨가 될 수 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 47 (Neutral)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+국토교통부 장관이 연말 주택 가격 상승폭이 줄어들 것이라고 전망하며 전세소멸이 메가트렌드라고 강조하였다. 서울 아파트 전셋값은 86주 연속 상승세를 기록하며, 여전히 높은 수준을 유지하고 있다.
+
+[핵심 뉴스]
+1. (정책) 홍지선 국토장관 “연말쯤 집값 상승폭 줄어들 것···전세 감소는 메가트렌드”
+   → 홍지선 국토교통부 장관은 올해 말까지 주택 가격 상승폭이 줄어들 것이라고 전망하며, 서울 강남 3구와 용산구는 이미 가격 하락이 감지되고 있다고 밝혔다.
+   (매일경제 · 10/07 14:56)
+2. (전세) “내 집 없으니 서럽네요”…서울 아파트 전셋값 86주 연속 고공행진
+   → 서울 아파트 전셋값은 지난 9월 0.16% 상승하며 86주 연속 상승세를 기록하고, 이는 전방의 대출 규제와 매물 감소로 인해 실거주세대의 주거안정성이 흔들리고 있음을 나타낸다.
+   (매일경제 · 10/07 14:55)
+3. (정책) 국토부장관, 토허제 연장 시사…서울 주택공급엔 “착공·인허가 빨리”
+   → 홍 장관은 토지거래허가제가 연장될 가능성을 열어두고 있으며, 서울 주택 공급을 빠르게 진행하겠다고 언급하면서 재개발·재건축 사업에도 속도를 내겠다고 밝혔다.
+   (매일경제 · 10/07 14:02)
+4. (기타) 고가 아파트 약세에 서울 아파트 경매 낙찰가율 1년7개월만 최저
+   → 서울 아파트 경매 낙찰가율이 94.7%로 1년 7개월 만에 최저치를 기록하였으며, 초고가 아파트의 감정가 하락이 주요 원인으로 지목되었다.
+   (연합뉴스 · 10/07 11:14)
+5. (정책) 국토장관 "토지거래허가제 수요 있어…시장상황 보며 연장 검토"
+   → 홍지선 장관은 서울 주택 공급의 성과가 80%~88%에 이를 것으로 예상했음에도 불구하고, 올해 일부 공급 목표량을 달성하기 어려울 것이라고 밝혔다.
+   (연합뉴스 · 10/07 16:55)
+
+[흐름·전망]
+• 서울 지역의 집값 상승폭이 줄어들 것으로 예상되며, 단기적으로 전세 수요와 공급 불균형이 지속될 수 있다.
+• 토지거래허가제의 연장 여부에 따라 수도권 주택시장의 변화가 있을 것으로 보이며, 시장의 반응에도 주목해야 할 시점이다.
+• 전세시장의 공급 부족이 언제까지 지속될지는 불확실하지만, 공급 확대 노력이 있어야 한다는 점은 긍정적인 신호다.
+• 경매 낙찰가율의 하락은 고가 주택 시장의 침체를 나타내며, 앞으로 중저가 아파트에 대한 수요가 어떻게 변화할지 주목해야 한다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 발언에서 프랑스의 이민 문제와 미국 내 범죄 문제를 강조하며 강한 비판을 쏟았다. 또한 자신과 공화당을 지지하는 랠리의 성공에 대해 자랑스럽게 이야기했다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 자신의 최근 랠리들이 공화당을 재건하는 데 큰 역할을 하고 있다고 주장했다.
+   (Truth Social · 10/07 00:25)
+2. (사법) 트럼프는 민주당이 자신의 지지자들에게 긍정적인 노출을 주지 않는다며 언론의 불공정성을 비판했다.
+   (Truth Social · 10/06 23:04)
+3. (경제) 트럼프는 미국 내 범죄가 심각한 상황이라고 주장하며 연방정부의 개입이 필요하다고 언급했다.
+   (Truth Social · 10/06 22:51)
+4. (기타) 트럼프는 Fox 뉴스가 민주당 후보들에 대한 부정확한 보도를 하고 있다고 불만을 나타냈다.
+   (Truth Social · 10/06 22:50)
+5. (기타) 트럼프는 프랑스의 이민사태를 언급하며 이슬람이 국가를 장악하려 하고 있다고 비판했다.
+   (Truth Social · 10/06 21:36)
+
+[흐름·전망]
+• 트럼프의 비판적인 발언은 향후 해외 이민 정책에 대한 논의에 영향을 미칠 가능성이 있다.
+• 트럼프의 랠리 성과는 공화당 내부의 결속을 강화할 수 있는 중요한 요소가 될 수 있다.
+• 범죄 문제에 대한 트럼프의 발언은 미국 내 범죄 해결을 위한 정치적 압박으로 작용할 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
