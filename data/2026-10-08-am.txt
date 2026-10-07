@@ -1,0 +1,239 @@
+2026-10-08T06:32:42.740850+09:00
+
+[오늘의 뉴스 요약] 2026-10-08 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 미국 국채 시장의 매도세가 재개되며 주요 금리가 24년 만에 최고치를 기록한 가운데, 인도 중앙은행도 기준금리를 인상하고 있다. 한국의 원/달러 환율은 반도체 수출 기업의 달러 매도로 인해 하락했지만, 외국인 투자자의 주식 순매도로 하락폭은 제한되었다.
+
+[핵심 뉴스]
+1. (금리) 美국채 매도세 재개…장중 10년물 금리 2002년 4월 이후 최고
+   → 7일 미국 10년물 국채 금리가 5.362%로 올라 2002년 4월 이후 최고치를 경신했다. 이는 인플레이션 상승과 연준의 긴축 우려가 복합적으로 작용한 결과이다.
+   (연합뉴스 · 10/07 23:05)
+2. (물가) 인도중앙은행, 3년8개월만 첫 기준금리 인상…"인플레 대응"
+   → 인도 중앙은행(RBI)은 기준금리를 5.50%로 0.25%포인트 인상했다. 이는 인플레이션 대응과 루피화 약세를 반영한 결정으로, 금리 기조를 '단계적 긴축'으로 변경했다.
+   (연합뉴스 · 10/07 21:51)
+3. (환율) 환율, 수출기업 달러 매도 등에 3.2원 내린 1,340원
+   → 한국 원/달러 환율은 3.2원 하락해 1,340.4원을 기록했다. 이는 반도체 수출 기업의 달러 매도로 인한 원화 강세에 기인하며, 외국인 투자자의 주식 순매도가 하락폭을 제한했다.
+   (연합뉴스 · 10/07 16:12)
+4. (기타) 지방재정 버팀목 3년새 반토막…"미래기금보다 자체 여력 보강"
+   → 비수도권 14개 지자체의 재정안정화계정 잔액이 54% 감소하여, 지방정부의 재정 충격 대응 여력이 약화되고 있다. 반면 국고보조사업 대응 지방비는 23% 증가했다.
+   (연합뉴스 · 10/08 05:55)
+5. (정책) 이소영 장관 "홈플러스 협력업체 정책자금 금리인하 적극 검토"
+   → 이소영 중소벤처기업부 장관은 홈플러스 협력업체에 대한 정책자금 금리를 낮추는 방안을 검토 중이라고 밝혔다. 이는 협력업체의 자금 소진이 저조하다는 지적에 따른 것이다.
+   (연합뉴스 · 10/07 18:38)
+
+[흐름·전망]
+• 미국의 국채 금리가 상승하면서 인플레이션 압력과 중앙은행의 통화 정책 변화가 지속될 가능성이 커졌다. 이로 인해 향후 경제 전반에 미칠 영향에 주목해야 한다.
+• 인도의 기준금리 인상이 물가 상승을 억제하는 한편, 경제 성장에도 영향을 미칠 것으로 예상된다. 향후 금리 정책의 유연한 변화에 주목해야 할 것이다.
+• 한국에서 원/달러 환율이 하락세를 보이고 있지만, 외국인 투자자의 순매도가 지속된다면 하락폭이 제한될 가능성이 있어 경제의 복잡한 상호작용을 관찰할 필요가 있다.
+• 지방정부의 재정안정화계정 잔액이 감소하였다는 점은 중장기적으로 재정적 위험 요인으로 작용할 수 있으므로, 중앙정부의 지원체계와 지방정부의 자구 노력이 함께 논의되어야 할 시점이다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia Earned About Twice as Much as Apple Last Quarter. Its Stock Is Worth Only About 20% More.
+   (Yahoo Finance · 10/08 05:57)
+→ Nvidia는 지난 분기에 애플보다 두 배의 수익을 올렸으나, 주가는 애플보다 약 20% 더 높은 수준에 그치고 있다. 그럼에도 불구하고 투자자들은 여전히 애플의 매출에 대해 더 높은 가치를 부여하는 이유에 대해 의문이 제기되고 있다.
+
+📰 [NVDA] If You'd Invested $1,000 in Nvidia (NVDA) Stock 10 Years Ago, Here's How Much You'd Have Today
+   (Yahoo Finance · 10/08 05:56)
+→ 만약 10년 전 Nvidia(NVDA) 주식에 1,000달러를 투자했다면, 오늘날 그 가치는 무려 140배 상승했을 것입니다. 이 회사는 AI 프로세서 분야에서 선두주자로 자리잡고 있습니다.
+
+📰 [NVDA] If You'd Invested $1,000 in Nvidia (NVDA) Stock 10 Years Ago, Here's How Much You'd Have Today - Yahoo Finance
+   (Yahoo Finance · 10/08 05:56)
+→ 10년 전 NVIDIA(NVDA) 주식에 1,000달러를 투자했다면 현재 상당한 수익을 얻었을 것이라는 내용의 기사입니다. NVIDIA의 주가는 지난 10년간 크게 상승하여 투자금의 가치가 몇 배로 증가했음을 보여줍니다.
+
+📰 [TSLA] TSLA Oct 2026 380.000 call (TSLA261007C00380000) Stock Price, News, Quote & History - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/08 06:04)
+→ TSLA의 2026년 10월 만기 380.000 콜 옵션(TSLA261007C00380000)에 대한 주가, 뉴스, 인용 및 역사적 정보가 Yahoo! Finance Canada에서 제공되고 있습니다.
+
+📰 [TSLA] Which Dates Could Move Tesla Stock Most?
+   (Yahoo Finance · 10/08 05:43)
+→ 테슬라(TSLA) 주가는 지난 12개월 동안 11.4% 하락한 반면, S&P 500은 17.8% 상승해 투자자들이 변화의 가능성을 주목하고 있다. 경영진은 2026년까지 250억 달러 이상의 자본 지출을 예상하고 있으며, 향후 재무 보고서가 자금 조달 방식을 밝혀줄 예정이다. 향후 6개월 동안 테슬라 주가에 영향을 미칠 주요 이벤트가 목록화되어 있다.
+
+📰 [TSLA] Which Dates Could Move Tesla Stock Most? - Trefis
+   (Trefis · 10/08 05:42)
+→ Trefis는 테슬라 주식에 영향을 미칠 주요 날짜를 분석하며, 특정 이벤트나 발표가 주가에 상당한 변동을 가져올 수 있다고 언급했습니다. 이러한 날짜는 투자자들이 주의 깊게 주목해야 할 시점으로 여겨집니다.
+
+📰 [HIMS] Hims & Hers Names Jon Franklin Chief Accounting Officer - citybiz
+   (citybiz · 10/08 06:25)
+→ Hims & Hers가 Jon Franklin을 새로운 최고회계책임자(Chief Accounting Officer)로 임명했다. Franklin은 회사의 회계 및 재무 업무를 이끌게 된다.
+
+📰 [HIMS] Hims & Hers Health Names Jon Franklin as Chief Accounting Officer - marketscreener.com
+   (marketscreener.com · 10/08 05:30)
+→ Hims & Hers Health는 Jon Franklin을 신임 최고 회계 책임자로 임명했습니다. 이를 통해 회사의 회계 부문을 강화하고 소통을 개선할 계획입니다.
+
+📰 [HIMS] Hims & Hers appoints Jon Franklin as chief accounting officer By Investing.com - Investing.com India
+   (Investing.com India · 10/08 05:28)
+→ Hims & Hers는 Jon Franklin을 최고회계책임자(CAO)로 임명했습니다. 이 결정은 회사의 재무 관리 강화를 위한 전략의 일환으로 보입니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Price Down 3.5% - Here's Why - MarketBeat
+   (MarketBeat · 10/08 06:25)
+→ Redwire의 주가가 3.5% 하락했다. 이 하락의 이유에 대한 상세한 설명은 기사에서 확인할 수 있다.
+
+📰 [RDW] Redwire (RDW), Why Is This Space Stock Getting Fresh Attention? - Simply Wall Street
+   (Simply Wall Street · 10/08 00:51)
+→ Redwire (RDW) 주식이 최근 관심을 받고 있는 이유는 우주 산업의 성장과 함께 회사의 기술 및 서비스가 주목받고 있기 때문입니다. 특히, 우주 탐사 및 인프라 구축에 대한 수요 증가가 이들 기업의 가치에 긍정적인 영향을 미치고 있습니다.
+
+📰 [RDW] Can Redwire's Microgravity Pharma Work Create New Revenue Streams?
+   (Yahoo Finance · 10/07 22:42)
+→ 레드와이어(Redwire)는 미세 중력 응용 분야를 제약 연구로 확장하여 연구 및 라이선스를 통해 새로운 수익원을 창출할 가능성을 모색하고 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Falls 6.3% - Here's What Happened - MarketBeat
+   (MarketBeat · 10/08 06:25)
+→ IREN(NASDAQ:IREN) 주식이 6.3% 하락했다. 이번 주가 하락은 회사의 최신 발표와 관련이 있으며, 투자자들의 우려를 반영한 결과로 보인다.
+
+📰 [IREN] All-In Summit: IREN Exec Kent Draper Discusses Customer Development Amid Demand
+   (Yahoo Finance · 10/08 05:05)
+→ IREN의 경영진인 켄 드레이퍼가 올인 서밋에서 크리스틴 쇼러와 함께 고객 개발에 대한 논의를 진행했습니다. 이들은 수요 증가에 따른 전략을 다루었습니다.
+
+📰 [IREN] All-In Summit: IREN Exec Kent Draper Discusses Customer Development Amid Demand - Yahoo Finance
+   (Yahoo Finance · 10/08 05:05)
+→ All-In Summit에서 IREN의 경영진인 켄 드레이퍼가 고객 개발에 대해 논의했습니다. 그는 현재 수요 증가 속에서 고객의 요구를 충족시키는 방법에 대해 강조했습니다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Shares Down 4.2% - Here's Why - MarketBeat
+   (MarketBeat · 10/08 06:25)
+→ 로켓랩(Rocket Lab)의 주가가 4.2% 하락했습니다. 이번 하락은 시장 전반의 불안정성과 관련된 여러 요인들이 영향을 미쳤기 때문입니다.
+
+📰 [RKLB] Sanmina, Rocket Lab, Kratos, Advanced Energy, and AECOM Stocks Trade Down, What You Need To Know
+   (Yahoo Finance · 10/08 05:16)
+→ Sanmina, Rocket Lab, Kratos, Advanced Energy, AECOM 등의 주식이 오후 장에서 하락했습니다. 이는 국채 수익률 상승과 유가 상승이 투자자 심리를 위축시켰기 때문이며, 연방준비제도의 9월 회의록 발표를 앞두고 발생한 일입니다.
+
+📰 [RKLB] Sanmina, Rocket Lab, Kratos, Advanced Energy, and AECOM Stocks Trade Down, What You Need To Know - Yahoo Finance Australia
+   (Yahoo Finance Australia · 10/08 05:16)
+→ Sanmina, Rocket Lab, Kratos, Advanced Energy, AECOM의 주식이 하락세를 보이고 있으며, 이에 대한 주요 정보를 제공하고 있습니다. 시장 상황과 각 회사의 주가 변동에 대한 분석이 포함되어 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Slips Below $84K, Traders Are Watching BITO And IBIT - Benzinga
+   (Benzinga · 10/08 05:50)
+→ 비트코인이 84,000달러 이하로 하락했으며, 트레이더들은 BITO와 IBIT의 동향을 주의 깊게 지켜보고 있습니다. 이러한 가격 변동에 따라 투자자들의 움직임에 관심이 집중되고 있습니다.
+
+📰 [BTC-USD] Robinhood Buys $25 Million in Bitcoin. Why Now?
+   (Yahoo Finance · 10/08 05:46)
+→ 로빈후드가 2,500만 달러 상당의 비트코인을 자산에 추가했습니다. 이는 지난해 CFO가 이 결정에 대해 의문을 제기한 이후의 변화입니다. 비트코인 투자에 대한 회사의 입장이 바뀐 이유를 살펴볼 필요가 있습니다.
+
+📰 [BTC-USD] Robinhood Buys $25 Million in Bitcoin. Why Now? - BeInCrypto
+   (BeInCrypto · 10/08 05:46)
+→ 로빈후드는 최근 2,500만 달러 규모의 비트코인을 매입했다. 시장 상황과 투자 전략에 따라 비트코인에 대한 수요가 증가하고 있는 가운데, 이 결정은 로빈후드의 암호화폐 비즈니스 확장을 위한 전략적인 대응으로 보인다.
+
+📰 [ETH-USD] Ethereum Price Forecast: ETH drops below $2,600 as Tom Lee says BitMine will end buying spree - FXStreet
+   (FXStreet · 10/08 06:23)
+→ 이더리움(ETH) 가격이 $2,600 이하로 하락했습니다. 톰 리(Tom Lee)는 비트마인(BitMine)이 구매 활황을 종료할 것이라고 예측했습니다.
+
+📰 [ETH-USD] Ethereum Researcher Says AI May Break Encryption Before Quantum Does - Decrypt News
+   (Decrypt News · 10/08 06:16)
+→ 이더리움 연구자가 인공지능(AI)이 양자컴퓨터보다 먼저 암호화를 해독할 가능성이 있다고 주장했다. AI 기술이 발전함에 따라 기존의 암호 체계에 대한 위협이 커지고 있다는 경고를 담고 있다.
+
+📰 [ETH-USD] Ethereum Price Prediction: Thin Liquidity Threatens ETH’s Recovery as Remittix Nears November 24 - TechBullion
+   (TechBullion · 10/08 06:06)
+→ 에이더리움의 가격 회복이 얇은 유동성으로 위협받고 있다는 분석이 나왔습니다. 특히 Remittix가 11월 24일에 예정되어 있는 가운데, 이는 시장에 부정적인 영향을 미칠 수 있다고 전해집니다.
+
+📰 [SOL-USD] AI models pick Hyperliquid's HYPE, Solana's SOL, and Zcash's ZEC as top crypto picks for 2026 growth. - Pluang
+   (Pluang · 10/08 06:07)
+→ AI 모델이 2026년 성장을 위해 Hyperliquid의 HYPE, Solana의 SOL, Zcash의 ZEC를 주요 암호화폐로 추천했습니다.
+
+📰 [SOL-USD] Solana Price: $1.7B in Fund Assets Builds Institutional Case as Remittix Targets Everyday Users - TechBullion
+   (TechBullion · 10/08 05:01)
+→ 솔라나의 가격은 현재 1.7억 달러 규모의 펀드 자산을 보유하고 있으며, 이는 기관 투자자들에게 긍정적인 신호로 작용하고 있습니다. 또한, Remittix는 일상 사용자들을 겨냥한 서비스 개발에 집중하고 있습니다.
+
+📰 [SOL-USD] Solana Consolidates After Sharp Expansion, Eyes $110 Support Level - KuCoin
+   (KuCoin · 10/08 04:43)
+→ 솔라나(Solana)는 급격한 성장 이후 조정을 겪고 있으며, 현재 110달러 지지선에 주목하고 있습니다. 시장의 동향을 살피며 안정세를 찾고 있는 상황입니다.
+
+📰 [BMNR] How Is BitMine (NYSE:BMNR) Connected to the NYSE Composite? - Kalkine Media
+   (Kalkine Media · 10/08 03:32)
+→ BitMine (NYSE: BMNR)는 뉴욕 증권 거래소(NYSE) 종합 지수와의 연결성을 탐구하는 기사입니다. 이 회사의 주가는 NYSE 지수의 움직임과 밀접한 관련이 있으며, 투자자들은 BitMine의 성과가 전체 시장의 흐름에 영향을 받을 수 있음을 이해해야 합니다.
+
+📰 [BMNR] BitMine Immersion Technologies (NYSE:BMNR) Stock Falls 6.6% - Here's Why - MarketBeat
+   (MarketBeat · 10/08 02:29)
+→ BitMine Immersion Technologies(NYSE:BMNR)의 주가가 6.6% 하락했습니다. 이 하락의 이유에 대한 자세한 내용은 기사에서 설명되고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Builds Its Ethereum Stash, Is The Stock Undervalued?
+   (Yahoo Finance · 10/08 01:11)
+→ Bitmine Immersion Technologies(BMNR)는 최근 Ethereum을 공격적으로 매수하고 대규모 자사주 매입을 통해 주가 하락을 억제하며 TOKEN2049 싱가포르 행사에 참가하고 있다. 비록 최근 1일간 주가가 2.2%, 1주일간 1.98% 하락했지만, 30일 동안 4.93% 상승하고 90일 동안 76.31%의 주가 상승률을 기록하고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 중국의 가상자산 거래 재개 가능성 언급과 바이낸스의 비트코인 보유량 감소로 인해 하락세를 보였다. 공포·탐욕 지수도 소폭 하락했지만 여전히 탐욕 구간에 위치하고 있다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 하락세
+   → 중국의 조지프 치 CEO는 10월 6일 인터뷰에서 중국이 가상자산 거래를 허용하면 새 슈퍼사이클을 맞이할 가능성을 언급했으나, 구체적인 정책 발표는 없었다. 바이낸스의 비트코인 보유량은 9월 중순 70만4800BTC에서 66만3100BTC로 감소했다.
+   (토큰포스트 · 10/08 06:05)
+2. (시세) 레버리지 포지션 5억7298만 달러 청산
+   → 지난 24시간 동안 암호화폐 시장에서 5억7298만달러 규모의 레버리지 포지션이 청산되었고, 이 중 롱 포지션이 92.82%를 차지했다. 비트코인은 2.65% 하락했으며, 이더리움은 4.54% 하락했다.
+   (토큰포스트 · 10/08 04:56)
+3. (온체인) 비트코인 4499개 지갑 간 이동
+   → 비트코인 4499개가 미확인 지갑 간에 이동하며 그 가치는 약 5033억원으로 평가된다. 그러나 지갑 간의 이동에 따른 거래소 입출금이나 매매 여부는 확인되지 않았다.
+   (토큰포스트 · 10/08 05:40)
+4. (기타) Spiral, AI 연산비 비트코인 라이트닝 결제 개발
+   → Spiral은 AI 연산비를 비트코인으로 지불하는 결제 기능을 개발하고 있으며, 이 기능은 비트코인 라이트닝 네트워크를 통해 작동할 예정이다.
+   (토큰포스트 · 10/08 05:49)
+5. (기타) 에이브 V4, 주식 토큰 담보로 USDC 대출 지원
+   → 에이브 V4는 토큰화 주식을 담보로 USDC를 대출해주는 전용 시장인 ‘에퀴티 허브’를 Base에 열었다. 초기 대출 자산은 USDC로 제한되며, 주식 담보에 대한 리스크가 다른 에이브 시장에 영향을 미치지 않도록 설계되었다.
+   (토큰포스트 · 10/08 05:22)
+
+[흐름·전망]
+• 중국의 가상자산 정책 발표가 시장에 미치는 영향을 주의 깊게 살펴봐야 할 것이다.
+• 최근 레버리지 포지션 청산은 투자자들의 과도한 신뢰와 시장 변동성을 시사하며, 향후 투자 심리에 영향을 줄 수 있다.
+• 비트코인 및 주요 자산의 대형 지갑 및 거래소 유출 추세는 시장의 매도 압력을 반증할 수 있으니 지속적인 모니터링이 필요하다.
+• Spiral의 AI 결제 기능 개발은 비트코인 사용 사례 확장에 긍정적인 영향을 미칠 수 있으며, 관련 기술의 진전을 주목할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 45 (Fear)
+  - 크립토 기준: 71 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장에서는 서울 주택 가격의 안정화가 전망되며, 특히 강남 3구와 용산구는 이미 하락세로 돌아섰다는 분석이 나오고 있다.
+
+[핵심 뉴스]
+1. (정책) 홍지선 장관, 연말 서울 집값 안정화 전망
+   → 홍지선 국토교통부 장관은 강남 3구와 용산구의 집값 상승률이 마이너스로 돌아섰으며, 다른 지역도 가격 상승 폭이 줄어들고 있다고 말했다. 또한 연말까지 주택 가격이 안정화될 것으로 예상하고 있다.
+   (매일경제 · 10/07 17:26)
+2. (전세) 전세 소멸은 메가 트렌드
+   → 홍 장관은 전세 제도가 소멸하는 것을 메가 트렌드로 보며, 주택 가격의 안정화와 함께 공급 부족이 원인으로 작용했음을 강조했다. 현재 서울 아파트 가격 상승률이 둔화되고 있는 상황이다.
+   (매일경제 · 10/07 14:56)
+3. (공급) 토지거래허가제 연장 가능성 열려
+   → 홍 장관은 토지거래허가제의 연장 가능성을 검토하겠다고 밝혔으며, 주택 공급 속도전도 계획하고 있다고 전했다. 연말까지 집값 상승률이 둔화될 것이라는 진단도 덧붙였다.
+   (매일경제 · 10/07 14:02)
+4. (재건축) 재개발·재건축 속도 내기
+   → 국토부장관이 재개발 및 재건축 사업에 대한 속도전을 강조하며, 보편형 임대 추진을 알렸다.
+   (연합뉴스TV · 10/08 05:54)
+5. (분양청약) 강변역 아이파크, 6만명 청약 몰려
+   → ‘강변역 센트럴 아이파크’의 무순위 청약에 6만명이 넘는 신청이 접수되었으며, 이는 높은 시세차익 기대감 때문으로 분석된다. 당첨자는 단기간에 큰 금액의 자금 조달이 필요할 것으로 보인다.
+   (매일경제 · 10/07 10:55)
+6. (정책) 토지거래허가제, 시장상황 보며 연장 검토
+   → 홍 장관은 토지거래허가구역의 연장 여부를 시장 상황에 따라 검토하겠다고 밝히며, 주택 가격 상승률과 청약 경쟁률을 종합적으로 관찰할 필요가 있다고 말했다.
+   (연합뉴스 · 10/07 16:55)
+
+[흐름·전망]
+• 주택 가격 안정화 여부는 공급 속도와 연말까지의 경제 상황과 밀접한 관련이 있으므로 지속적인 모니터링이 필요하다.
+• 전세 소멸이라는 장기적 트렌드가 확인될 경우, 임대 시장의 구조적 변화가 나타날 수 있으므로 주의할 필요가 있다.
+• 토지거래허가제의 연장 여부에 따라 수요와 공급의 균형에 변화가 생길 수 있음에 따라서 주택 시장의 영향을 주의 깊게 살펴봐야 한다.
+• 단기간에 자산을 투자할 경우, 과도한 초기 자금 부담이 될 수 있으니 투자 결정을 신중히 해야 할 것이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프 전 대통령은 위스콘신 주 주지사 후보인 톰 티파니를 지지하며 천연재해 복구를 위한 재정 지원을 약속했다. 또한, 법적 논란에 대한 의혹을 언급하며 계속해서 자신의 입장을 강하게 피력하고 있다.
+
+[주요 발언]
+1. (인사) 트럼프는 톰 티파니 후보를 전폭 지지하며 위스콘신의 자연재해 복구를 위해 1,790만 달러를 승인하겠다고 밝혔다.
+   (Truth Social · 10/08 01:02)
+2. (사법) 트럼프는 잭 스미스 특검이 자신의 캠페인 직원과 변호사들의 통신을 염탐했다고 주장하며 불만을 표시했다.
+   (Truth Social · 10/08 00:15)
+3. (기타) 트럼프는 외부 컨설턴트인 크리스 라시비타와 제임스 블레어가 자신과는 관계가 없으며, 그들이 귀속된 회사에 대한 질문은 직접 해보라고 말했다.
+   (Truth Social · 10/07 22:46)
+
+[흐름·전망]
+• 트럼프의 위스콘신 지원 발표가 향후 주 정치에 미치는 영향에 주목할 필요가 있다.
+• 법적 논란에 대한 트럼프의 강한 반발이 여론에 어떤 영향을 미칠지 지켜봐야 할 것이다.
+• 트럼프의 캠페인과 관련된 사법적 의혹은 향후 대선 레이스에 추가적인 변수를 제공할 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
