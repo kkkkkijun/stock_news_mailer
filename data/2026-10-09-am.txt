@@ -1,0 +1,245 @@
+2026-10-09T06:32:26.760720+09:00
+
+[오늘의 뉴스 요약] 2026-10-09 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘, 한국의 경상수지는 8월에 461억 달러의 흑자를 기록하며 역대 두 번째로 큰 규모를 나타냈다. 또한, 원/달러 환율은 하락세를 보였으나, 환율 변동성은 여전히 존재하는 가운데 외환 시장의 전반적인 분위기가 혼조세를 보이고 있다.
+
+[핵심 뉴스]
+1. (성장) 8월 경상수지 461억弗 흑자 … 역대 2위
+   → 8월 한국의 경상수지는 461억1000만 달러의 흑자를 기록하며 역대 두 번째로 큰 규모에 도달했고, 올해 누적 흑자는 2792억 달러로 지난해 같은 기간의 4배에 달한다.
+   (매일경제 · 10/08 17:39)
+2. (고용) 중기부 고용보험 지원 끝난 소상공인 10명 중 6명은 해지
+   → 중기부의 고용보험 지원사업이 종료된 소상공인 중 62%가 고용보험을 해지한 것으로 나타났으며, 이들은 경영 악화로 인해 많은 어려움을 겪고 있다.
+   (연합뉴스 · 10/09 06:03)
+3. (환율) 원/달러 환율 1.9원 내린 1,338.5원…박스권 등락
+   → 원/달러 환율은 1.9원 하락하여 1,338.5원으로 마감하며 지난달 10일 이후 가장 낮은 수준을 기록했다.
+   (연합뉴스 · 10/08 16:01)
+4. (기타) 삼성생명, 해외 신종자본증권 2조원 첫 발행…"해외투자 강화"
+   → 삼성생명이 2조 원 규모의 해외 신종자본증권을 발행하기로 결정하며, 이는 해외 투자와 자본 건전성 강화를 위한 조치이다.
+   (연합뉴스 · 10/08 18:07)
+5. (정책) 한은 앞 'CBDC 반대' 현수막…한은 "일반인용 도입 안해"
+   → 한국은행은 일반인용 CBDC 도입 계획이 없음을 재확인하였고, 일반 국민 대상 예금 토큰의 실거래는 연말에 재개할 예정이다.
+   (연합뉴스 · 10/09 05:55)
+
+[흐름·전망]
+• 경상수지 흑자 확대가 한국 경제의 긍정적인 신호로 작용할 수 있으나, 반도체 경기 변동이 지속적인 위험 요소가 될 수 있다.
+• 고용보험 해지율 증가와 소상공인의 경영 위기 상태는 경제 전반에 악영향을 미칠 수 있는 지역경제 리스크이며, 정부의 추가적인 지원책이 필요하다.
+• 환율 변동성과 외국인 주식 매도세가 계속되는 상황에서 수출기업의 성과가 원화 강세에 미칠 영향을 주의 깊게 살펴봐야 한다.
+• 삼성생명의 해외 신종자본증권 발행은 새로운 성장 동력 마련의 일환으로, 금융시장 내 지속적인 자본 확보 움직임을 보여준다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia (NVDA)’s $20 Billion Groq Deal Faces a Legal Test. Does It Matter for NVDA’s Valuation?
+   (Yahoo Finance · 10/09 05:54)
+→ Nvidia의 200억 달러 규모 Groq 인수 계약이 법적 도전에 직면하고 있습니다. 두 전직 Groq 엔지니어가 델라웨어에서 제기한 소송으로, Groq 이사회가 2025년 거래를 부적절하게 구성했다는 주장을 하고 있습니다. 이번 사건은 Nvidia의 기술 기여도에 영향을 미칠 수 있습니다.
+
+📰 [NVDA] Nvidia (NVDA)’s $20 Billion Groq Deal Faces a Legal Test. Does It Matter for NVDA’s Valuation? - Yahoo Finance
+   (Yahoo Finance · 10/09 05:54)
+→ Nvidia가 200억 달러 규모의 Groq 인수 계약이 법적 시험에 직면했다. 이 사건이 Nvidia의 기업 가치에 어떤 영향을 미칠지에 대한 논의가 이어지고 있다.
+
+📰 [NVDA] Stock Market Today: Nasdaq Slumps On AI Revenue Fears; Nvidia Slides As Chevron Gains
+   (Yahoo Finance · 10/09 05:49)
+→ 오늘 주식 시장에서는 나스닥 지수가 AI 수익 우려로 하락하고, 엔비디아 주가도 떨어졌습니다. 한편, 다우 존스 지수는 트럼프의 이란 발언 후 감소했으며, 채권 수익률과 유가가 상승했습니다.
+
+📰 [TSLA] Pilot and Tesla Open First Megacharger Site, Announce Three Additional Locations Opening Soon - Business Wire
+   (Business Wire · 10/09 06:24)
+→ Pilot과 Tesla가 첫 번째 메가차저 사이트를 개설하고, 곧 추가로 세 곳의 위치도 열 계획을 발표했습니다. 이는 전기차 충전 인프라 확장을 위한 첫걸음으로, 사용자의 편의를 도모하려는 노력이 담겨 있습니다.
+
+📰 [TSLA] Tesla (TSLA) Deliveries Beat Expectations. But TSLA’s 159x Forward P/E Is Betting on Much More
+   (Yahoo Finance · 10/09 06:17)
+→ 테슬라(TSLA)는 3분기에 486,532대를 인도하며 시장 예상치를 초과했으나, 전년 대비 2% 감소했습니다. 이로써 테슬라가 연간 인도 증가세로 돌아설 가능성이 커졌지만, 159배의 높은 선행 주가수익비율(P/E)은 그 가치가 실제 성과와 괴리되고 있음을 시사합니다.
+
+📰 [TSLA] Tesla & Pilot Open First Electric Semi Megacharger in Georgia - Commercial Carrier Journal
+   (Commercial Carrier Journal · 10/09 06:12)
+→ 테슬라와 파일럿이 조지아 주에 첫 전기 세미 메가충전기를 개통했다. 이 충전소는 전기 화물차의 충전 인프라를 확장하여 상업 운송 부문에서의 전기차 사용을 촉진할 예정이다.
+
+📰 [HIMS] Hims & Hers Health Shareholder Alert: ClaimsFiler Reminds - GlobeNewswire
+   (GlobeNewswire · 10/09 06:10)
+→ Hims & Hers Health의 주주들에게 알림을 전하는 ClaimsFiler가 발표되었습니다. 주주들은 특정 기간 내에 청구를 제출해야 할 중요한 정보가 포함되어 있습니다. 자세한 내용은 ClaimsFiler를 통해 확인할 수 있습니다.
+
+📰 [HIMS] Reasons to Retain Hims & Hers Stock in Your Portfolio for Now - The Globe and Mail
+   (The Globe and Mail · 10/09 03:43)
+→ Hims & Hers 주식을 포트폴리오에 유지해야 하는 이유로는 안정적인 성장 전망과 소비자 수요의 증가가 있다. 또한, 헬스케어 산업의 확장 속에서 이 회사의 혁신적인 제품들이 시장에서 경쟁력을 갖추고 있다는 점이 강조된다. 따라서 투자자들에게 긍정적인 시각을 제공하고 있다.
+
+📰 [HIMS] Hims & Hers Health Shares Slide as Investors Weigh Accounting Leadership Change and Ongoing Margin Questions - Quiver Quantitative
+   (Quiver Quantitative · 10/09 02:35)
+→ Hims & Hers Health의 주가가 하락하면서 투자자들은 회계 리더십 변경과 지속적인 마진 문제를 우려하고 있습니다. 이러한 불확실성으로 인해 투자자들의 신뢰가 흔들리고 있습니다.
+
+📰 [RDW] Redwire (RDW) Stock May Be Below Fair Value After Solar Array Contract
+   (Yahoo Finance · 10/09 04:12)
+→ Redwire의 주가는 지난 3년 동안 265.7% 상승하며 투자자들에게 큰 관심을 받고 있지만, 현재 주가인 10.24달러가 회사의 수익 창출 능력과 일치하는지 의문이 제기되고 있다. 최근의 태양광 배열 계약이 현금 흐름을 얼마나 지원할 수 있는지가 주요 쟁점이다.
+
+📰 [RDW] Redwire (RDW) Stock May Be Below Fair Value After Solar Array Contract - Yahoo Finance
+   (Yahoo Finance · 10/09 04:12)
+→ Redwire (RDW) 주식은 최근 태양광 배열 계약 이후 공정 가치보다 낮은 수준에 있을 수 있다는 분석이 나왔습니다. 이는 회사의 성장 잠재력을 고려할 때 주가가 저평가되었음을 시사합니다.
+
+📰 [RDW] Why Is Redwire (RDW) Supplying Solar Arrays For Another Commercial Station Module?
+   (Yahoo Finance · 10/09 03:14)
+→ 레드와이어(Redwire, NYSE:RDW)는 액시움 스페이스의 두 번째 상업용 우주 정거장 모듈에 고급 태양광 배열을 공급하는 계약을 체결했다. 이 계약은 액시움의 첫 번째 모듈에서 사용된 롤 아웃 태양광 배열(ROSA) 기술을 두 번째 모듈로 확장하는 것으로, ISS의 은퇴가 다가오는 가운데 액시움의 저지구 궤도 정거장 계획을 위한 전력 생산 능력을 제공할 예정이다.
+
+📰 [IREN] Is IREN (NasdaqGS:IREN) Overvalued After Its AI Expansion Questions?
+   (Yahoo Finance · 10/09 06:11)
+→ IREN Ltd.는 최근 몇 년간 주가가 급등하면서 현재 주가인 38.69달러가 회사의 매출과 적절히 일치하는지에 대한 질문이 제기되고 있다. 주가 상승이 매출 기반을 초과했는지에 대한 논의가 이루어지고 있으며, 이는 향후 투자 결정을 고려하는 데 중요한 요소가 될 전망이다.
+
+📰 [IREN] IREN Stock Tumbles on OpenAI Revenue Report - Benzinga
+   (Benzinga · 10/09 03:34)
+→ IREN 주식이 OpenAI의 수익 보고서 발표 이후 급격히 하락했다. 투자자들은 보고서 내용에 실망하며 주가에 영향을 미친 것으로 보인다.
+
+📰 [IREN] IREN stock falls after report flags infrastructure and disclosure concerns - Investing.com
+   (Investing.com · 10/09 03:13)
+→ IREN 주식이 인프라 및 정보 공개에 대한 우려가 제기된 보고서 이후 하락했다. 이와 관련된 문제들이 투자자들에게 부정적인 영향을 미치고 있다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Stock Falls 4.9% - Here's What Happened - MarketBeat
+   (MarketBeat · 10/09 06:28)
+→ 로켓랩(Rocket Lab)의 주가가 4.9% 하락했습니다. 이 감소의 원인에 대한 자세한 내용은 기사에서 설명되고 있습니다.
+
+📰 [RKLB] Rocket Lab Shares Slide, Adding to Yesterday’s Drop - AskTraders.com
+   (AskTraders.com · 10/09 03:17)
+→ 로켓랩 주가가 하락세를 이어가며 어제의 하락폭을 더욱 확대했습니다. 투자자들은 최근 실적에 대한 우려로 주가가 계속 하락하고 있습니다.
+
+📰 [RKLB] Rocket Lab's Neutron Lands on NASA's Lunar Radar While Rate Fears Clip the Stock - AD HOC NEWS
+   (AD HOC NEWS · 10/09 02:50)
+→ 로켓랩의 Neutron 로켓이 NASA의 달 레이더에 성공적으로 착륙했지만, 금리 우려로 주가가 하락하고 있다는 소식이다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Approaches $80,000 As Profit Taking And Macro Pressures Fuel Losses - Forbes
+   (Forbes · 10/09 05:52)
+→ 비트코인이 80,000달러에 가까워지면서 투자자들이 이익 실현을 하며 매도하고 있는 상황이다. 또한, 거시 경제적 압박이 비트코인의 가격 하락에 영향을 미치고 있다.
+
+📰 [BTC-USD] Bitcoin’s Rally Above $80,000 Could ‘Wreck a Lot of People,’ Analyst Warns - Benzinga
+   (Benzinga · 10/09 05:30)
+→ 분석가들은 비트코인이 8만 달러를 초과할 경우 많은 사람들이 큰 손실을 입을 수 있다고 경고하고 있습니다. 이들은 비트코인의 과도한 급등세가 투자자들에게 위험을 초래할 수 있다고 보고 있습니다.
+
+📰 [BTC-USD] Whales Bought 86,702 Bitcoin in Three Weeks and 24,073 Left Exchanges in a Day. Why Hasn’t the Price Followed?
+   (Yahoo Finance · 10/09 05:30)
+→ 비트코인 고래들이 3주 동안 86,702개의 비트코인을 구매하고, 하루에 24,073개가 거래소에서 유출되었음에도 불구하고 가격은 하락세를 이어가고 있다. 이러한 현상은 투자자들이 온체인 신호를 해석하는 데 있어 중요한 결함이 있음을 시사한다.
+
+📰 [ETH-USD] CryptoCasino.com Data: Cardano and Solana Outrank Ethereum 20 to 1 in Crypto Gaming Demand - Pressat.co.uk
+   (Pressat.co.uk · 10/09 05:27)
+→ CryptoCasino.com의 데이터에 따르면, 카드노(Cardano)와 솔라나(Solana)가 암호화폐 게임 수요에서 이더리움(Ethereum)을 20배 초과하는 것으로 나타났다. 이는 카드노와 솔라나가 게임 분야에서 더 높은 인기를 끌고 있다는 것을 시사한다.
+
+📰 [ETH-USD] Ethereum Test Network Raises Block Limit to Over 3x Its Current Capacity - Decrypt News
+   (Decrypt News · 10/09 05:16)
+→ 이더리움 테스트 네트워크가 현재 용량의 3배 이상으로 블록 한도를 증가시켰습니다. 이 변화는 네트워크의 처리 능력을 향상시키기 위한 것으로, 더 많은 거래를 효과적으로 처리할 수 있게 될 전망입니다.
+
+📰 [ETH-USD] Ethereum Test Network Raises Block Limit to Over 3x Its Current Capacity - Yahoo Tech
+   (Yahoo Tech · 10/09 05:16)
+→ 이더리움 테스트 네트워크가 현재 용량의 3배 이상으로 블록 한도를 증가시켰습니다. 이를 통해 네트워크의 처리 성능을 향상시키고 확장성을 높이는 것이 목표입니다.
+
+📰 [SOL-USD] Stablecoin payments hit 82M phones: Samsung-Solana deal - OneSafe
+   (OneSafe · 10/09 05:56)
+→ 삼성과 솔라나가 협력하여 스테이블코인 결제가 8,200만 대의 스마트폰에 도달했습니다. 이번 협약은 디지털 자산을 활용한 결제 방식을 확대하는 데 기여할 것으로 예상됩니다.
+
+📰 [SOL-USD] Cardano and Solana Surge in Crypto Gambling Popularity, Leaving Ethereum Behind - BusinessMole
+   (BusinessMole · 10/09 05:41)
+→ 카르다노(Cardano)와 솔라나(Solana)의 암호화폐 도박 인기가 상승하면서 이더리움(Ethereum)을 제치고 있다는 소식이 전해졌다. 두 블록체인은 최근 도박 플랫폼에서 더 많은 사용을 기록하며 주목을 받고 있다. 이로 인해 이더리움의 시장 점유율이 줄어드는 추세다.
+
+📰 [SOL-USD] Bitcoin Falls Below $82,000; Cardano, Solana Lead Altcoin Losses
+   (Yahoo Finance · 10/09 05:17)
+→ 비트코인이 82,000달러 이하로 떨어지며 주요 암호화폐 시장에서 광범위한 하락세를 이끌었습니다. 이와 함께 카르다노와 솔라나와 같은 알트코인이 큰 손실을 기록했습니다.
+
+📰 [BMNR] Ethereum News: BitMine To Halt Buying at 5% ETH Supply Cap
+   (Yahoo Finance · 10/08 20:48)
+→ 이더리움 뉴스에 따르면, BitMine Immersion Technologies는 10월 4일 기준으로 약 6,016,414 ETH를 보유하고 있으며, 이는 이더리움 공급량의 약 4.9%에 해당합니다. 회사 회장인 톰 리는 자사에서 설정한 5% 한도에 도달하면 구매를 중단할 것이라고 밝혔으며, 이를 위해 약 100,000 ETH가 남아 있다고 추정했습니다.
+
+📰 [BMNR] BMNR 8-K & SEC Filings - Yahoo Finance
+   (Yahoo Finance · 10/08 13:21)
+→ BMNR이 SEC에 8-K 서류를 제출했습니다. 이 문서에는 회사의 주요 사건 및 재정 정보가 포함되어 있습니다. 자세한 내용은 야후 파이낸스에서 확인할 수 있습니다.
+
+📰 [BMNR] BMNR Stock Price Slips as Bitmine Hints at Halting Ethereum Buy - CryptoRank
+   (CryptoRank · 10/08 08:48)
+→ BMNR 주가가 하락세를 보이고 있는 가운데, Bitmine이 이더리움 구매 중단을 암시했습니다. 이 소식은 투자자들의 우려를 불러일으키며 주가에 부정적인 영향을 미친 것으로 분석됩니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 전반적으로 하락세를 보이며 비트코인은 81,694달러, 이더리움은 2,462달러로 거래되고 있다. 비트코인의 점유율은 증가했지만 알트코인들은 약세를 기록하고 있다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 하락세
+   → 비트코인은 24시간 기준 2.04% 하락해 81,694달러에 거래되며 점유율은 59.54%로 증가했고, 이더리움은 4.17% 하락해 2,462달러를 기록했다.
+   (토큰포스트 · 10/09 05:01)
+2. (시세) 암호화폐 시장에서 9억달러 레버리지 포지션 청산
+   → 최근 24시간 동안 암호화폐 시장에서 9억1886만 달러의 레버리지 포지션이 청산되었으며, 이 중 91.25%는 롱 포지션이었다.
+   (토큰포스트 · 10/09 04:55)
+3. (기타) XRP, 팍소스 중개 플랫폼 지원 자산에 추가
+   → 팍소스는 자사의 가상자산 중개 플랫폼에 XRP를 지원하기 시작했으며, XRP의 시가총액은 약 950억달러에 달한다.
+   (토큰포스트 · 10/09 06:12)
+4. (기타) SAP Pay에 두 스테이블코인 결제 경로 추가
+   → SAP Pay는 기업 ERP에 USDC와 EURC 스테이블코인의 결제 경로를 추가했으며, 고객 검증 프로그램을 진행할 예정이다.
+   (토큰포스트 · 10/09 05:50)
+5. (기타) WhiteBIT, 비트코인 라이트닝 네트워크 통합
+   → WhiteBIT은 비트코인 입출금에 라이트닝 네트워크를 통합하였으며, 각각 0.25%와 0.15%의 수수료가 적용된다.
+   (토큰포스트 · 10/09 05:16)
+
+[흐름·전망]
+• 비트코인의 점유율 상승은 향후 대형주 중심의 거래 흐름을 시사하며, 알트코인의 약세가 이어질 수 있다.
+• 레버리지 포지션의 대규모 청산은 시장의 변동성이 커질 수 있음을 나타내므로 주의가 필요하다.
+• XRP 지원 확대는 해당 자산의 유동성 증가로 이어질 수 있지만, 실제 이용 여부는 추가적인 데이터 확인이 필요하다.
+• SAP Pay의 스테이블코인 통합은 기업 결제에서의 암호화폐 채택 가능성을 높일 수 있으며, 향후 거래량에 주목해야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 38 (Fear)
+  - 크립토 기준: 64 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울과 경기 지역의 아파트 가격 상승과 매물 증가가 두드러지며 전반적인 조정 세를 보이고 있다. 그러나 일부 지역의 높은 가격 차이는 매도자들의 개인적 사정과 재건축 일정에 영향을 받고 있다.
+
+[핵심 뉴스]
+1. (분양청약) 서울 평균분양가 20억 재돌파
+   → 서울 전용 84㎡ 평균 분양가는 20억63만원을 기록하며 4개월 만에 다시 20억원을 넘어섰고, 경기 지역의 84㎡는 9억1052만원으로 전년 대비 9.52% 상승했다.
+   (매일경제 · 10/09 06:01)
+2. (매매) 시한부 급매가 늘고 있는 서울
+   → 서울 아파트 매물은 두 달 사이 22% 증가하며 특히 강남3구에서 매물의 급증이 두드러지고 있으며, 최고와 최저 호가의 차이가 10억원 이상인 매물도 증가하고 있다.
+   (매일경제 · 10/08 17:37)
+3. (매매) 압구정 재건축 단지 호가 차이 심화
+   → 압구정 재건축 단지에서 같은 평형의 아파트 호가가 수십억 원 차이나는 이례적인 상황이 발생하고 있으며, 강남 3구의 아파트 가격은 5주 연속 하락하였다.
+   (매일경제 · 10/08 17:41)
+4. (매매) 사내대출로 반세권 아파트 상승
+   → 경기 남부 지역에서는 삼성전자의 사내대출 제도로 인해 매수 여력이 증가하며 집값이 상승하고 있으며, 동탄구의 아파트는 2월 이후 19% 급등하였다.
+   (매일경제 · 10/08 17:37)
+5. (매매) 서울 아파트 매매가 0.12% 상승
+   → 서울 아파트 매매가는 87주 연속 상승하고 있으나 상승폭이 둔화되고 있으며, 강남3구는 여전히 약세를 보이고 있다.
+   (연합뉴스 · 10/08 14:00)
+6. (공급) 민간 주택 공급 회복 필요
+   → 국토교통부 장관은 민간 주택공급 회복의 중요성을 강조하며, 2026년까지 150만 가구 이상의 착공 목표를 달성하기 위해 신속한 보증 지원을 주문하였다.
+   (연합뉴스 · 10/08 14:06)
+
+[흐름·전망]
+• 단기적으로 강남3구의 약세와 재건축 단지의 매물 증가 상황에 따라 가격 조정이 지속될 것으로 보인다.
+• 민간 주택공급의 증가가 정책적으로 지원되면 중장기적으로 시장 안정에 긍정적인 영향을 미칠 것으로 예상된다.
+• 서울 및 경기 남부에서의 가격 상승세가 지속되는 만큼, 구매력 있는 특수계층의 움직임에 주목할 필요가 있다.
+• 재건축 단지에서의 극단적인 호가 차이는 매도자 및 매수자의 심리적인 요인에 따라 더 격화될 가능성이 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프의 최근 발언은 이란에 대한 군사적 긴장과 관련된 내용들로 가득 차 있으며, 가스 가격 인상과 대도시 폭격 간의 비교를 통해 상대적으로 작은 비용을 강조하고 있다.
+
+[주요 발언]
+1. (외교) 트럼프는 미중간의 중간선거 전까지 이란에 대한 공격을 하지 않을 것이라고 언급하며, 이란이 핵무기를 가지지 못할 것이라고 주장했다.
+   (Truth Social · 10/09 02:01)
+2. (경제) 트럼프는 가스 가격의 일시적 인상이 이란의 핵무기 보유를 막는 데 있어 작은 대가라고 비교하였고, 대도시 폭격의 심각함을 강조했다.
+   (Truth Social · 10/09 01:17)
+3. (사법) 트럼프는 텍사스 상원의원 후보인 제임스 탈라프리코의 실종과 관련하여 그를 비판하며, 그의 후보자 등록의 부적합성을 주장했다.
+   (Truth Social · 10/09 01:14)
+4. (인사) 트럼프는 켄 팩스턴을 텍사스의 우수한 후보로 지지하며, 그가 의회에서 중요한 역할을 할 것이라고 언급했다.
+   (Truth Social · 10/08 12:22)
+5. (기타) 트럼프는 인공지능을 '슈퍼 지능'으로 지칭해야 한다고 주장하며, 이를 반대하는 사람들을 적으로 간주한다고 밝혔다.
+   (Truth Social · 10/08 12:13)
+6. (기타) 트럼프는 미시간의 민주당 후보인 모하메드 엘세이드에 대해 비판하며 그의 선거 출마가 잘못되었다고 주장했다.
+   (Truth Social · 10/08 07:02)
+
+[흐름·전망]
+• 트럼프의 발언은 이란에 대한 군사적 긴장 유지와 관련된 중간선거 전향이 불가피할 가능성을 시사한다.
+• 가스 가격 인상과 같은 경제적 요소가 외교 정책에 미치는 영향에 주목할 필요가 있다.
+• 텍사스의 선거와 관련하여 지지 후보들의 논쟁이 더욱 심화될 것으로 예상된다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
