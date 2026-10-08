@@ -129,7 +129,7 @@
   "name": "마이크로소프트",
   "date": "2026-10-29",
   "ts": 1793217600,
-  "est": true,
+  "est": false,
   "detail": {
    "prev": {
     "period": "26.06",
