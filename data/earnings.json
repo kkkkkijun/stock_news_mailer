@@ -301,8 +301,8 @@
     "period": "26.12",
     "eps": "$2.91",
     "eps_range": "$2.56~$3.42",
-    "rev": "$154.39B",
-    "growth": "+1.46%",
+    "rev": "$154.62B",
+    "growth": "+1.61%",
     "growth_pos": true
    },
    "quarters": [
@@ -355,7 +355,7 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$2.91",
-     "rev": "$154.39B"
+     "rev": "$154.62B"
     }
    ],
    "target": {
@@ -412,10 +412,10 @@
    ],
    "cur": {
     "period": "26.09",
-    "eps": "$3.03",
+    "eps": "$3.02",
     "eps_range": "$2.65~$3.68",
-    "rev": "$127.3B",
-    "growth": "+6.58%",
+    "rev": "$127.4B",
+    "growth": "+6.43%",
     "growth_pos": true
    },
    "rev": {
@@ -426,8 +426,8 @@
     "period": "26.12",
     "eps": "$3.35",
     "eps_range": "$3.03~$4.09",
-    "rev": "$141.54B",
-    "growth": "+21.77%",
+    "rev": "$141.59B",
+    "growth": "+21.37%",
     "growth_pos": true
    },
    "quarters": [
@@ -471,8 +471,8 @@
      "cq": "2026-3",
      "label": "2026 3Q",
      "reported": false,
-     "eps_est": "$3.03",
-     "rev": "$127.3B",
+     "eps_est": "$3.02",
+     "rev": "$127.4B",
      "date": "2026-10-29"
     },
     {
@@ -480,7 +480,7 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$3.35",
-     "rev": "$141.54B"
+     "rev": "$141.59B"
     }
    ],
    "target": {
@@ -493,7 +493,7 @@
    "rec": {
     "label": "적극 매수",
     "count": 54,
-    "buy": 56,
+    "buy": 57,
     "hold": 5,
     "sell": 0
    }
@@ -539,7 +539,7 @@
     "period": "26.09",
     "eps": "$1.95",
     "eps_range": "$1.72~$2.23",
-    "rev": "$202.03B",
+    "rev": "$202.02B",
     "growth": "+1.37%",
     "growth_pos": true
    },
@@ -551,7 +551,7 @@
     "period": "26.12",
     "eps": "$2.44",
     "eps_range": "$2.00~$2.75",
-    "rev": "$244.16B",
+    "rev": "$244.15B",
     "growth": "+23.52%",
     "growth_pos": true
    },
@@ -597,7 +597,7 @@
      "label": "2026 3Q",
      "reported": false,
      "eps_est": "$1.95",
-     "rev": "$202.03B",
+     "rev": "$202.02B",
      "date": "2026-10-30"
     },
     {
@@ -605,7 +605,7 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$2.44",
-     "rev": "$244.16B"
+     "rev": "$244.15B"
     }
    ],
    "target": {
@@ -618,7 +618,7 @@
    "rec": {
     "label": "적극 매수",
     "count": 58,
-    "buy": 57,
+    "buy": 58,
     "hold": 2,
     "sell": 0
    }
@@ -664,7 +664,7 @@
     "period": "26.09",
     "eps": "$6.25",
     "eps_range": "$2.88~$7.64",
-    "rev": "$63.33B",
+    "rev": "$63.35B",
     "growth": "-7.09%",
     "growth_pos": false
    },
@@ -722,7 +722,7 @@
      "label": "2026 3Q",
      "reported": false,
      "eps_est": "$6.25",
-     "rev": "$63.33B",
+     "rev": "$63.35B",
      "date": "2026-10-29"
     },
     {
@@ -735,9 +735,9 @@
    ],
    "target": {
     "price": "$720.89",
-    "mean": "$794.96",
-    "range": "$580~$1,000",
-    "upside": "+10%",
+    "mean": "$799.34",
+    "range": "$580~$1,050",
+    "upside": "+11%",
     "upside_pos": true
    },
    "rec": {
@@ -789,8 +789,8 @@
     "period": "26.09",
     "eps": "$0.45",
     "eps_range": "$0.30~$0.70",
-    "rev": "$28.01B",
-    "growth": "-9.86%",
+    "rev": "$28.02B",
+    "growth": "-9.78%",
     "growth_pos": false
    },
    "rev": {
@@ -847,7 +847,7 @@
      "label": "2026 3Q",
      "reported": false,
      "eps_est": "$0.45",
-     "rev": "$28.01B",
+     "rev": "$28.02B",
      "date": "2026-10-22"
     },
     {
@@ -869,7 +869,7 @@
     "label": "매수",
     "count": 37,
     "buy": 19,
-    "hold": 20,
+    "hold": 21,
     "sell": 4
    }
   }
@@ -1285,7 +1285,7 @@
     "eps": "$0.41",
     "eps_range": "$0.38~$0.48",
     "rev": "$2.18B",
-    "growth": "+96.99%",
+    "growth": "+96.78%",
     "growth_pos": true
    },
    "rev": {
@@ -1297,7 +1297,7 @@
     "eps": "$0.46",
     "eps_range": "$0.43~$0.55",
     "rev": "$2.46B",
-    "growth": "+85.52%",
+    "growth": "+85.35%",
     "growth_pos": true
    },
    "quarters": [
@@ -1355,7 +1355,7 @@
    ],
    "target": {
     "price": "$198.78",
-    "mean": "$199.84",
+    "mean": "$200.88",
     "range": "$80~$255",
     "upside": "+1%",
     "upside_pos": true
@@ -1363,8 +1363,8 @@
    "rec": {
     "label": "매수",
     "count": 25,
-    "buy": 20,
-    "hold": 9,
+    "buy": 21,
+    "hold": 8,
     "sell": 2
    }
   }
