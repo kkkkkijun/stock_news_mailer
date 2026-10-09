@@ -790,7 +790,7 @@
     "eps": "$0.45",
     "eps_range": "$0.30~$0.70",
     "rev": "$28.01B",
-    "growth": "-9.85%",
+    "growth": "-9.86%",
     "growth_pos": false
    },
    "rev": {
@@ -860,14 +860,14 @@
    ],
    "target": {
     "price": "$375.00",
-    "mean": "$396.57",
+    "mean": "$392.42",
     "range": "$128~$600",
-    "upside": "+6%",
+    "upside": "+5%",
     "upside_pos": true
    },
    "rec": {
     "label": "매수",
-    "count": 38,
+    "count": 37,
     "buy": 19,
     "hold": 20,
     "sell": 4
