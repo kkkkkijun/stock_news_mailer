@@ -1,0 +1,240 @@
+2026-10-10T06:32:39.965135+09:00
+
+[오늘의 뉴스 요약] 2026-10-10 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국내 금융 시장은 은행권의 금리 경쟁이 이어지며, 정기예금 금리가 3%대 후반으로 상승하고 있습니다. 또한 8월 경상수지가 역대 두 번째로 큰 흑자를 기록하며, 수출이 호조세를 보이고 있는 상황입니다.
+
+[핵심 뉴스]
+1. (금리) 은행권 금리 경쟁…1년만기 예금 3%대 후반으로 속속 인상
+   → 우리은행은 'WON플러스예금'의 1년 만기 금리를 3.60%로 인상했으며, 다른 주요 은행들도 정기예금 금리를 잇따라 올리고 있습니다.
+   (연합뉴스 · 10/10 05:53)
+2. (성장) 8월 경상수지 461억弗 흑자 … 역대 2위
+   → 8월 한국 경상수지는 461억1000만달러의 흑자를 기록하며, 이는 역대 두 번째로 큰 규모입니다. 올해 누적 흑자는 작년 동기 대비 약 4배 증가했습니다.
+   (매일경제 · 10/08 17:39)
+3. (환율) 원/달러 환율 1.9원 내린 1,338.5원…박스권 등락
+   → 원/달러 환율은 1,338.5원으로 1.9원 하락했고, 5거래일 연속 내림세입니다.
+   (연합뉴스 · 10/08 16:01)
+4. (환율) 원/달러 환율 4.3원 오른 1,342.8원(15:30 기준가)
+   → 원/달러 환율은 1,342.8원으로 4.3원 상승하며 소폭 반등했으며, 환율은 최근 등락을 보이고 있습니다.
+   (연합뉴스 · 10/09 15:33)
+5. (고용) 중기부 고용보험 지원 끝난 소상공인 10명 중 6명은 해지
+   → 중기부의 고용보험 지원이 끝난 소상공인 중 62%가 고용보험을 해지한 것으로 나타났습니다. 이는 지원 종료 후 생계 유지의 어려움을 암시합니다.
+   (연합뉴스 · 10/09 06:03)
+
+[흐름·전망]
+• 은행권의 금리 인상이 지속될 것으로 보이며, 이에 따른 가계와 기업의 유동성 변화가 주목됩니다.
+• 반도체 수출 호조가 지속되는 한 경상수지 흑자 확대에 긍정적인 영향을 미칠 것으로 예상되며, 반도체 경기 동향이 관건입니다.
+• 환율의 등락이 수출에 미치는 영향을 면밀히 살펴야 할 시점이며, 글로벌 경제 상황도 변수로 작용할 가능성이 높습니다.
+• 소상공인의 고용보험 해지율 증가로 인해 자영업자들의 생계가 어려워질 가능성이 있어, 정부의 추가적인 지원 방안이 필요할 것으로 보입니다.
+
+📈 해외주식 PART
+📰 [NVDA] Dow Jones Futures: S&P 500, Nasdaq Near Highs; ASML, Nvidia's Chipmaker Taiwan Semi To Kick Off AI Earnings
+   (Yahoo Finance · 10/10 05:44)
+→ 다우존스 선물 지수에 따르면 S&P 500과 나스닥 지수가 최고치 근처에 있습니다. ASML과 엔비디아의 반도체 제조사 타이완 반도체의 실적 발표가 AI 주식의 조정이 상승 신호인지 여부를 결정할 수 있습니다.
+
+📰 [NVDA] Nvidia's head of corporate communications has left after roughly four months - Business Insider
+   (Business Insider · 10/10 05:35)
+→ Nvidia의 홍보 담당 부서장이 약 4개월만에 사임했습니다. 이번 퇴사는 회사의 홍보 전략에 영향을 미칠 것으로 보입니다.
+
+📰 [NVDA] Jim Cramer Said NVIDIA’s Shares Were Due For A Gut Check Following Morgan Stanley’s Coverage
+   (Yahoo Finance · 10/10 05:22)
+→ 짐 크래머는 모건 스탠리의 보도 이후 NVIDIA 주식에 대해 조정이 필요하다고 언급했다. 또한, 아마존이 NVIDIA의 AI GPU를 위한 페이퍼 컴퍼니를 만들려는 관심을 보였다는 보도가 나왔다. 이를 통해 아마존은 GPU를 자산에서 분리하고 외부 투자자들에게 제공할 수 있는 방안을 검토하고 있다.
+
+📰 [TSLA] Tesla Robotaxi App 26.8.3 Now Live on iOS - BASENOR
+   (BASENOR · 10/10 06:03)
+→ 테슬라의 로보택시 앱 버전 26.8.3이 iOS에서 배포되었습니다. 이 업데이트는 사용자에게 새로운 기능과 개선된 성능을 제공합니다.
+
+📰 [TSLA] New project from Tesla in the works in Taylor, TDLR filings show - KVUE
+   (KVUE · 10/10 05:40)
+→ 테슬라가 텍사스 테일러에서 새로운 프로젝트를 추진 중이며, 이에 대한 파일링이 TDLR에 제출된 것으로 나타났습니다. 상세한 내용은 아직 공개되지 않았습니다.
+
+📰 [TSLA] Jim Cramer On SpaceX (SPCX): Buy Tesla (TSLA) If You Like It As An Earnings Explosion Might Be Coming
+   (Yahoo Finance · 10/10 05:22)
+→ 짐 크레이머는 스페이스엑스(SPCX)의 주식이 상장 첫날 종가 대비 4% 상승했다고 전하며, 테슬라(TSLA) 투자에 대해 긍정적인 전망을 내놓았다. 그는 스페이스엑스가 인공지능 컴퓨팅 계획을 통해 26.5조 달러 규모의 시장을 겨냥하고 있는 점에 주목하며, 향후 실적 폭발이 예상된다고 강조했다.
+
+📰 [HIMS] Hims & Hers Health climbs 10% amid recent volatile trading (HIMS:NYSE) - Seeking Alpha
+   (Seeking Alpha · 10/10 06:06)
+→ Hims & Hers Health 주가가 최근 변동성이 큰 거래 속에서 10% 상승했습니다. 이 회사의 주식은 최근 급등과 급락을 반복하며 투자자들의 관심을 끌고 있습니다.
+
+📰 [HIMS] Hims & Hers Surges 8.8%, Adding Roughly Half a Billion in Value - 24/7 Wall St.
+   (24/7 Wall St. · 10/10 04:31)
+→ Hims & Hers의 주가가 8.8% 상승하며 약 5억 달러의 가치를 추가했습니다. 이로 인해 회사의 시장 가치가 크게 증가했습니다.
+
+📰 [HIMS] HIMS jumps 7% on peptide tailwind — but Citi sees 17% downside from here - Investing.com
+   (Investing.com · 10/10 03:22)
+→ HIMS의 주가가 펩타이드 관련 소식에 힘입어 7% 상승했으나, 씨티그룹은 향후 17%의 하락 가능성을 전망하고 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Down 1.8% - Time to Sell? - MarketBeat
+   (MarketBeat · 10/10 06:26)
+→ Redwire의 주가가 1.8% 하락한 것으로 보도되었으며, 이에 따라 투자자들 사이에서 주식을 판매할 시점인지에 대한 논의가 이루어지고 있습니다.
+
+📰 [RDW] SPCX Stock Outperforms Space Peers This Week As RKLB, ASTS, RDW And PL Slide - Stocktwits
+   (Stocktwits · 10/09 15:24)
+→ 이번 주 SPCX 주식이 우주 관련 주식들 중에서 가장 좋은 성과를 보였고, RKLB, ASTS, RDW, PL 주식은 하락세를 나타냈습니다.
+
+📰 [RDW] Stocktwits Space Race Weekly: SPCX Flies Solo In Green — RKLB, ASTS, RDW And PL Fall Back To Earth
+   (Yahoo Finance · 10/09 15:22)
+→ 주간 Stocktwits 우주 경연 대회에서 SPCX가 독주하며 상승세를 보인 반면, RKLB, ASTS, RDW, PL은 하락세를 보였다. AST SpaceMobile은 텔러스 네트워크 통합 테스트를 완료하고 미국과 일본의 인정을 받았지만, SpaceX의 스펙트럼 거래로 인해 경쟁 압박을 받았다.
+
+📰 [IREN] IREN's Kent Draper on AI Infrastructure, Demand and Physical AI
+   (Yahoo Finance · 10/10 03:40)
+→ IREN의 상업 담당 최고 책임자 켄 드레이퍼는 로스앤젤레스에서 열린 올인 서밋에서 AI 인프라의 발전과 증가하는 컴퓨팅 자원의 수요에 대해 논의했습니다. 그는 IREN이 소유한 데이터 센터 인프라를 통해 AI 클라우드 서비스 제공에 집중하고 있으며, AI 인프라 확장의 주요 도전 과제로는 토지, 전력, 인력 및 공급망을 강조했습니다. 또한, AI 전용 인프라의 필요성 증가가 기술 분야에 새로운 기회를 창출하고 있음을 설명하며, AI의 다양한 산업 적용 사례에 대해서도 언급했습니다.
+
+📰 [IREN] IREN's Kent Draper on AI Infrastructure, Demand and Physical AI - Yahoo Finance
+   (Yahoo Finance · 10/10 03:40)
+→ IREN의 켄 드레이퍼는 AI 인프라와 수요, 그리고 물리적 AI에 대해 언급하며, AI 기술의 발전과 이에 대한 시장의 필요성을 강조했습니다. 그는 AI 시스템의 효율적 운영을 위한 인프라 구축의 중요성을 설명했습니다.
+
+📰 [IREN] Here's Why I Sold Cipher Digital and Bought More Iren - The Motley Fool
+   (The Motley Fool · 10/09 21:30)
+→ 모틀리 풀에 따르면, 저자는 사이퍼 디지털 주식을 매도하고 아이렌 주식을 추가로 구매한 이유를 설명했습니다. 이는 사이퍼 디지털의 성장 잠재력이 둔화된 반면, 아이렌이 더 매력적인 투자 기회를 제공한다고 판단했기 때문입니다.
+
+📰 [RKLB] Rocket Lab Secures 20-Launch Commercial Contract for All-Composite Electron - CompositesWorld
+   (CompositesWorld · 10/10 03:56)
+→ 로켓랩이 전량 복합재로 제작된 일렉트론 로켓을 위한 20회의 상업 발사 계약을 체결했습니다. 이 계약은 로켓랩의 복합재 기술과 상업적 발사 능력을 강화하는 데 기여할 것으로 기대됩니다.
+
+📰 [RKLB] Rocket Lab Shares Rebound as ARK Invest Touts Neutron as Closest Rival to SpaceX's Falcon 9 - BigGo Finance
+   (BigGo Finance · 10/10 03:25)
+→ 로켓랩의 주가가 반등하며 ARK 인베스트가 뉴트론을 스페이스X의 팔콘 9와 가장 가까운 경쟁자로 강조했습니다. 이러한 평가로 주식 시장에서 긍정적인 반응을 얻고 있습니다.
+
+📰 [RKLB] Cadent Capital Advisors LLC Sells 24,268 Shares of Rocket Lab Corporation $RKLB - MarketBeat
+   (MarketBeat · 10/10 02:23)
+→ Cadent Capital Advisors LLC가 로켓랩 코퍼레이션(Rocket Lab Corporation)의 주식 24,268주를 매도했습니다. 이 소식은 최근 시장 보고서를 통해 전해졌습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin and Ethereum Slide Along with Solana, Binance Coin, Cardano as Iran Tensions Weigh on Markets Ahead of 2027 - Crowdfund Insider
+   (Crowdfund Insider · 10/10 06:22)
+→ 비트코인, 이더리움, 솔라나, 바이낸스 코인, 카르다노 등 암호화폐들이 이란의 긴장 상황으로 인해 하락세를 보이고 있습니다. 시장의 불확실성이 커짐에 따라 투자자들이 우려를 나타내고 있습니다.
+
+📰 [BTC-USD] Weekly Wrap: Rising Treasury Yields Sink Bitcoin
+   (Yahoo Finance · 10/10 05:52)
+→ 이번 주 비트코인은 상승하는 미국 국채 수익률의 영향으로 손실을 기록할 것으로 보입니다. 이로 인해 비트코드를 비롯한 위험 자산들이 압박을 받게 되었습니다.
+
+📰 [BTC-USD] Weekly Wrap: Rising Treasury Yields Sink Bitcoin - Yahoo Finance
+   (Yahoo Finance · 10/10 05:52)
+→ 이번 주, 미국 재무부 채권 수익률 상승이 비트코인 가격에 부정적인 영향을 미쳤습니다. 투자자들은 안전 자산으로의 이동을 고려하며 비트코인과 같은 위험 자산에 대한 수요가 줄어들었습니다.
+
+📰 [ETH-USD] Bitcoin and Ethereum Slide Along with Solana, Binance Coin, Cardano as Iran Tensions Weigh on Markets Ahead of 2027 - Crowdfund Insider
+   (Crowdfund Insider · 10/10 06:22)
+→ 이란의 긴장이 고조됨에 따라 비트코인, 이더리움, 솔라나, 바이낸스코인, 카드노 등 주요 암호화폐들이 하락세를 보이고 있다. 2027년을 앞두고 시장에 미치는 불안감이 커지고 있다.
+
+📰 [ETH-USD] Bitcoin and Ethereum Price Predictions Turn Bearish as Remittix Nears Its November 24 Debut - TechBullion
+   (TechBullion · 10/10 06:03)
+→ 비트코인과 이더리움의 가격 전망이 부정적으로 바뀌고 있는 가운데, Remittix가 11월 24일 출시를 앞두고 있다. 이로 인해 투자자들의 우려가 커지고 있다.
+
+📰 [ETH-USD] Binance Ethereum Reserves Fall to Lowest Level in Six Months - Cryptonews.net
+   (Cryptonews.net · 10/10 05:41)
+→ 바이낸스의 이더리움 보유량이 6개월 만에 최저 수준으로 감소했습니다. 이는 암호화폐 시장의 불안정성과 관련이 있으며, 투자자들의 우려를 불러일으키고 있습니다.
+
+📰 [SOL-USD] Bitcoin and Ethereum Slide Along with Solana, Binance Coin, Cardano as Iran Tensions Weigh on Markets Ahead of 2027 - Crowdfund Insider
+   (Crowdfund Insider · 10/10 06:22)
+→ 비트코인, 이더리움, 솔라나, 바이낸스 코인, 카르다노 등 주요 암호화폐가 이란의 긴장감 때문에 하락세를 보이고 있다. 시장은 2027년을 앞두고 이러한 geopolitical 이슈에 영향을 받고 있다.
+
+📰 [SOL-USD] Circle mints 750M USDC on Solana, boosting liqu... - Pluang
+   (Pluang · 10/10 06:20)
+→ Circle이 솔라나 블록체인에서 7억 5천만 USDC를 발행하여 유동성을 증가시켰습니다. 이번 발행은 디지털 자산 시장의 성장과 안정성을 지원하기 위한 노력으로 해석됩니다.
+
+📰 [SOL-USD] Solana News Today: ETF Outflows Pressure SOL Despite Major Institutional Infrastructure Upgrades - StreetInsider
+   (StreetInsider · 10/10 05:22)
+→ 솔라나(SOL)는 주요 기관 인프라 업그레이드에도 불구하고 ETF 유출로 인해 압박을 받고 있습니다. 이러한 상황에도 불구하고 시장에서의 성장 가능성이 여전히 주목받고 있습니다.
+
+📰 [BMNR] BMNR, CRCL, MSTR Stocks Lead Slide In Crypto Equities Amid Bitcoin’s Tumble To $63K - Stocktwits
+   (Stocktwits · 10/09 16:08)
+→ BMNR, CRCL, MSTR 주식이 비트코인이 63,000달러로 급락하면서 암호화폐 관련 주식에서 하락세를 주도하고 있습니다. 이는 전체 암호화폐 시장의 불안감을 반영하고 있습니다.
+
+📰 [BMNR] BMNR Stock Forms Golden Cross For First Time Since Bitmine’s Ethereum Pivot Rally - Stocktwits
+   (Stocktwits · 10/09 11:51)
+→ BMNR 주식이 Bitmine의 이더리움 전환 랠리 이후 처음으로 "골든 크로스"를 형성했습니다. 이는 주가 상승의 신호로 해석될 수 있습니다.
+
+📰 [BMNR] BitMine Immersion Technologies Inc (BMNP) Analyst insights, Price targets and Recommendations - Yahoo Finance UK
+   (Yahoo Finance UK · 10/08 23:10)
+→ BitMine Immersion Technologies Inc (BMNP)에 대한 분석 통찰력과 가격 목표, 추천 내용이 Yahoo Finance UK에서 발표되었습니다. 이 보고서에서는 BMNP의 향후 전망과 투자 추천 사항이 제시되고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 비트코인과 이더리움이 소폭 상승하며 혼조세를 보이고 있다. 비트코인은 82,259달러에 거래되며 시장 점유율이 소폭 증가한 반면, 이더리움 점유율은 감소했다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 혼조세... 비트코인 82,259달러
+   → 비트코인은 전날 대비 0.62% 상승하여 82,259.41달러에 거래되고 있으며, 이더리움은 0.50% 오른 2,475.63달러로 기록됐다.
+   (토큰포스트 · 10/10 05:03)
+2. (기타) 암호화폐 시장, 24시간 동안 레버리지 포지션 1억4753만달러 청산
+   → 지난 24시간 동안 암호화폐 시장에서 1억4753만달러 규모의 레버리지 포지션이 청산되었고, 이 중 72.04%가 숏 포지션 청산으로 나타났다.
+   (토큰포스트 · 10/10 04:58)
+3. (기타) IMF, 토큰화 시장과 금융 위험 경고
+   → IMF는 토큰화 자산 시장의 규모가 650억달러에 불과하며, 전통 금융과의 연결이 유동성 경색 및 금융 리스크를 초래할 수 있다고 경고했다.
+   (토큰포스트 · 10/10 05:00)
+4. (온체인) 비트코인 626만개 공개키 노출 추정
+   → 비트코인의 626만개 공개키가 온체인에 노출된 것으로 추산되며, 이는 전체 공급량의 31.2%에 해당한다.
+   (토큰포스트 · 10/10 04:58)
+5. (ETF) ETF 7억2900만달러 순유출... 비트유닉스, BTC 8만2800달러 주목
+   → 미국 비트코인 현물 ETF에서 10월 7~8일에 7억2900만달러가 순유출되었고, 비트유닉스는 8만2800달러에서 비트코인의 단기 회복 가능성을 주목하고 있다.
+   (토큰포스트 · 10/10 03:07)
+
+[흐름·전망]
+• 비트코인 점유율의 상승은 대형주에 대한 관심을 높이는 신호로 볼 수 있으며, 특히 그에 따른 파생상품 거래량 감소는 관망 심리를 부각시키고 있다.
+• IMF의 경고는 토큰화 자산의 법적 불확실성과 위험에 대한 주의를 촉구하며, 투자자들은 이와 관련된 리스크를 유념해야 할 것이다.
+• 공개키 노출 현상은 장기적인 금융 보안 문제와 관련된 우려를 내포하고 있으며, 투자자들은 이에 대한 대처 방안을 고려해야 할 것이다.
+• 비트코인 ETF에서의 순유출 현상은 투자자들의 신뢰도에 영향을 미칠 수 있으며, 향후 비트코인 가격 동향에 대한 주의가 필요하다.
+
+📊 공포탐욕지수
+  - CNN 기준: 45 (Fear)
+  - 크립토 기준: 59 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+서울역 역세권 아파트 공급과 LH의 민간 미분양 주택 매입확약이 발표되었으나, 서울 아파트값 상승세는 둔화되고 있다.
+
+[핵심 뉴스]
+1. (공급) 서울역 역세권에 35층 아파트 공급
+   → 서울역 역세권에 최고 35층의 아파트 438가구가 공급되며, 총 1735가구가 새로 지어진다. 서울시는 강서구와 중랑구의 모아타운 사업도 함께 진행된다.
+   (매일경제 · 10/09 13:44)
+2. (공급) LH, 수도권 민간 미분양 주택 매입확약 시행
+   → LH는 수도권 공공택지 내 민간 미분양 주택 1만8000가구를 매입하겠다고 발표했다. 매입가는 분양가의 85%에서 92%로 차등 적용되며, 조기 착공 유도 인센티브도 제공된다.
+   (매일경제 · 10/09 13:03)
+3. (매매) 서울 아파트값 상승세 한풀 꺾여
+   → 서울 아파트값은 전주 대비 0.15% 상승했으나 상승률이 둔화되었고, 경기 남부권은 탄탄한 실수요에 힘입어 상승세를 이어가고 있다.
+   (매일경제 · 10/09 11:18)
+4. (매매) 서울 집값 상승폭 확대, 강북권 상승
+   → LH의 미분양 매입확약은 연말까지 접수가 가능하며, 내년 상반기까지 착공하는 물량이 대상이다. 이는 주택 공급 촉진을 위한 정부의 정책 일환이다.
+   (연합뉴스 · 10/09 09:00)
+5. (매매) 서울 아파트 국평 분양가 다시 20억 돌파
+   → 서울 아파트의 국평 분양가가 20억 원을 다시 돌파하며, 최근 1년 동안 23% 상승했다.
+   (더구루 · 10/10 04:21)
+
+[흐름·전망]
+• 서울 아파트 시장의 상승세 둔화는 심리적인 영향과 더불어 세금 부담이 큰 영향을 미칠 것으로 보인다.
+• 경기 남부권의 활발한 상승세는 실수요 기반으로 강세가 지속될 가능성이 높아 향후 관전이 필요하다.
+• LH의 미분양 매입확약이 민간 건설사의 착공 촉진으로 이어질 수 있을지 주목해야 한다.
+• 서울 아파트 매매와 전세 시장의 동향을 지켜보면서 향후 가격 변동성을 예상해야 할 시점이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+오늘 트럼프는 새로운 보도관 임명과 러시아의 에너지 공급에 대한 논의 결과를 강조하며, 도널드 트럼프 대통령으로서의 위상을 드러냈다. 또한, 미국 내 정치적 동향과 관련된 비판적인 발언도 포함되어 있다.
+
+[주요 발언]
+1. (인사) 트럼프는 카티 자카리아를 새로운 보도관으로 임명했다고 발표하며 그녀의 경력을 높이 평가했다.
+   (Truth Social · 10/10 04:34)
+2. (경제) 트럼프는 러시아와의 협의를 통해 미국과 글로벌 시장에 300,000톤의 디젤 연료를 즉시 공급하기로 합의했다고 주장했다.
+   (Truth Social · 10/10 03:46)
+3. (사법) 트럼프는 뉴욕 검찰총장이 트럼프 수사를 추진했다고 주장하며, 수사에서 아무것도 발견되지 않았다는 주장을 했다.
+   (Truth Social · 10/09 22:42)
+4. (기타) 트럼프는 알래스카 주에서 공화당 후보가 여러 명 출마한 상황을 비판하며, 부적절한 투표 시스템을 언급했다.
+   (Truth Social · 10/09 22:25)
+5. (기타) 트럼프는 노벨 평화상 수여의 적절성에 대한 비판을 하며, 평화 촉진을 위한 기여가 없다는 점을 지적했다.
+   (Truth Social · 10/09 20:58)
+
+[흐름·전망]
+• 트럼프의 에너지 공급 관련 발언이 글로벌 에너지 시장에 미칠 영향에 주목할 필요가 있다.
+• 새로운 보도관 임명이 트럼프의 언론과의 관계에 어떤 변화를 가져올지 지켜봐야 한다.
+• 정치적 비판과 갈등이 계속될 수 있으며, 향후 선거에 미치는 영향에도 주목해야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

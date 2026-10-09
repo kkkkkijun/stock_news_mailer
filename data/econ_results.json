@@ -353,10 +353,10 @@
 "43c05090-4826-452f-bcb9-232a1c32cf38": {
 "name": "Michigan Consumer Sentiment Index",
 "dt": "2026-10-09T14:00:00Z",
-"act": null,
+"act": "46.3",
 "cons": "47.6",
 "prev": "48.1",
-"act_n": null,
+"act_n": 46.3,
 "cons_n": 47.6
 },
 "cbe30686-e724-42b1-b883-36bd8925fe5a": {
@@ -372,10 +372,10 @@
 "name": "Consumer Price Index (YoY)",
 "dt": "2026-10-14T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "3.6%",
 "prev": "3.4%",
 "act_n": null,
-"cons_n": null
+"cons_n": 3.6
 },
 "cfaffea7-7471-4647-926d-581b3eecb400": {
 "name": "Consumer Price Index ex Food & Energy (MoM)",
@@ -390,10 +390,10 @@
 "name": "Consumer Price Index ex Food & Energy (YoY)",
 "dt": "2026-10-14T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "2.5%",
 "prev": "2.4%",
 "act_n": null,
-"cons_n": null
+"cons_n": 2.5
 },
 "bddcb0ff-7ede-4f39-b61b-5ccbb8ac4fa9": {
 "name": "Producer Price Index ex Food & Energy (YoY)",
@@ -408,10 +408,10 @@
 "name": "Retail Sales (MoM)",
 "dt": "2026-10-15T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "0.3%",
 "prev": "1.2%",
 "act_n": null,
-"cons_n": null
+"cons_n": 0.3
 },
 "1113728e-7e61-44c9-acd2-393d3ac0f9cc": {
 "name": "Retail Sales Control Group",
