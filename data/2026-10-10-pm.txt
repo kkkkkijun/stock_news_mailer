@@ -1,0 +1,241 @@
+2026-10-10T17:02:20.298803+09:00
+
+[오늘의 뉴스 요약] 2026-10-10 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 금융 시장에서는 은행권의 정기예금 금리가 상승하고 있으며, 원/달러 환율도 오름세를 보이고 있다. 전반적으로 금리 경쟁이 심화되고 있는 모습이다.
+
+[핵심 뉴스]
+1. (금리) 은행권 금리 경쟁…예금 금리 인상
+   → 우리은행은 'WON플러스예금' 금리를 3.60%로 인상한 데 이어, 주요 은행들이 정기예금 금리를 3%대 후반으로 끌어올리며 경쟁을 지속하고 있다. 5대 은행의 9월 정기예금 잔액은 1,006조 원으로 전월 대비 8,552억 원 증가했다.
+   (연합뉴스 · 10/10 05:53)
+2. (환율) 원/달러 환율 상승
+   → 원/달러 환율이 4.3원 오른 1,342.8원으로, 외환 시장에서 상승세를 나타내고 있다. 이는 대외 불확실성과 원화의 약세를 반영하는 것으로 풀이된다.
+   (연합뉴스 · 10/09 15:33)
+3. (성장) 다음주 경제 지표 발표 예정
+   → 다음 주에는 9월 고용동향이 16일 발표될 예정이며, IMF가 13일 한국의 성장률 전망을 상향 조정할 것으로 예상된다. 가계대출 동향 및 주요 경제 지표를 통해 민생경제의 흐름을 파악할 수 있을 것으로 보인다.
+   (연합뉴스 · 10/10 09:03)
+4. (금리) 국고채 금리 혼조세
+   → 국고채 금리는 만기별로 혼조세를 보이며, 중단기물은 미국 금리 상승의 영향으로 인상되었고 초장기물은 수급 여건에 따라 강세를 나타냈다.
+   (연합뉴스 · 10/08 17:02)
+5. (정책) IMF 한국 성장률 전망 수정
+   → 다음 주 IMF에서 한국의 성장률 전망 수정치가 발표될 예정으로 주목받고 있다.
+   (천지일보 · 10/10 11:00)
+
+[흐름·전망]
+• 은행 정기예금 금리가 계속 상승할 경우, 소비자들의 저축 성향과 소비 패턴에 영향을 미칠 것으로 관측된다.
+• 원/달러 환율의 추가 상승 여부가 글로벌 경제와 외환시장에 미칠 영향이 중요하므로, 외부 요인에 대한 모니터링이 필요하다.
+• 고용 동향 발표 이후, 제조업과 서비스업의 고용 회복 여부가 투자 심리에 주요 변수로 작용할 수 있다.
+• 국고채 수익률의 변동이 향후 금리 정책 결정에 미치는 영향을 주의 깊게 살펴볼 필요가 있으며, 금리 변화에 따른 자산 배분 전략이 필요하다.
+
+📈 해외주식 PART
+📰 [NVDA] The 1 Number That Would Change My Mind About Nvidia Stock - The Motley Fool
+   (The Motley Fool · 10/10 16:51)
+→ 모틀리 풀이 제시한 기사에서는 NVIDIA 주식에 대한 의견을 바꾸게 할 단 하나의 숫자에 대해 언급하고 있습니다. 이 숫자는 주식의 성과나 전망에 중요한 영향을 미칠 수 있으며, 투자자들이 집중해야 할 주요 지표로 강조되고 있습니다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Stock: L2 Asset Management LLC Raises Stake - MarketBeat
+   (MarketBeat · 10/10 16:32)
+→ L2 Asset Management LLC가 NVIDIA Corporation의 주식을 추가로 매입하여 지분을 늘렸습니다. 이로써 NVDA 주식에 대한 투자의 신뢰도를 높이고 있습니다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Stock: Fiduciary Financial Advisors Grows Stake - MarketBeat
+   (MarketBeat · 10/10 16:32)
+→ NVIDIA Corporation의 주식을 다루는 Fiduciary Financial Advisors가 자사 지분을 늘렸다는 소식이 전해졌다. 이와 관련된 자세한 내용은 MarketBeat에서 확인할 수 있다.
+
+📰 [TSLA] Tesla's 'Emergency Drive Away' can do $25,000 in damages to charger, vehicle - The Cool Down
+   (The Cool Down · 10/10 16:47)
+→ 테슬라의 '비상 주행' 기능이 충전기와 차량에 최대 25,000달러의 손상을 일으킬 수 있는 것으로 나타났다. 이 기능이 사용될 경우, 충전 인프라 및 차량에 심각한 피해를 초래할 수 있다는 우려가 제기되고 있다.
+
+📰 [TSLA] Castleview Partners LLC Buys 2,052 Shares of Tesla, Inc. $TSLA - MarketBeat
+   (MarketBeat · 10/10 16:36)
+→ Castleview Partners LLC가 Tesla, Inc.의 주식 2,052주를 매입했습니다. 이번 주식 구입은 Tesla의 시장 동향에 대한 관심을 반영합니다.
+
+📰 [TSLA] Tesla, Inc. $TSLA Stock: Balefire LLC Increases Holdings - MarketBeat
+   (MarketBeat · 10/10 16:30)
+→ Balefire LLC가 Tesla, Inc.의 주식을 매입하여 보유량을 증가시켰다는 뉴스가 전해졌습니다. 이는 Tesla의 주가와 시장에 긍정적인 영향을 미칠 수 있는 주요 사건입니다.
+
+📰 [HIMS] Hims Shares Have The Bull Case Changed After Privacy And Billing Lawsuits - Simply Wall Street
+   (Simply Wall Street · 10/10 12:48)
+→ Hims의 주가는 개인정보 보호 및 청구 관련 소송 때문에 긍정적인 전망이 변화했다. 이러한 법적 이슈로 인해 투자자들의 우려가 커지고 있으며, 회사의 미래 성장 가능성에 부정적인 영향을 미칠 수 있다.
+
+📰 [HIMS] Hims & Hers Health, Inc. Securities Fraud Class Action Result of Deceptive Privacy and Billing Practices and Over 14% Stock Decline - Investors may Contact Lewis Kahn, Esq., at Kahn Swick & Foti, LLC - PR Newswire
+   (PR Newswire · 10/10 11:10)
+→ Hims & Hers Health, Inc.에서 소비자 개인정보 및 과도한 청구 관행으로 인한 증권 사기 집단 소송이 제기되었으며, 이로 인해 주가가 14% 이상 하락했습니다. 투자자들은 Kahn Swick & Foti, LLC의 Lewis Kahn 변호사에게 문의할 수 있습니다.
+
+📰 [HIMS] Kaplan Fox Urges Investors of Hims & Hers Health, Inc. (NYSE: HIM - The National Law Review
+   (The National Law Review · 10/10 10:07)
+→ Kaplan Fox는 Hims & Hers Health, Inc.의 투자자들에게 회사의 주식에 대한 신중한 접근을 권장하고 있습니다. 이는 최근의 법적 문제와 관련된 투자자의 불만을 해결하기 위한 것입니다. 투자자들은 이러한 상황을 면밀히 검토할 필요가 있습니다.
+
+📰 [RDW] Redwire (NYSE:RDW) Shares Down 1.8% - Time to Sell? - MarketBeat
+   (MarketBeat · 10/10 06:26)
+→ 레드와이어(Redwire)의 주가가 1.8% 하락하며, 판매 시점에 대한 우려가 커지고 있다는 내용의 뉴스입니다. 시장 전문가들은 주식 매도 여부에 대해 논의하고 있습니다.
+
+📰 [RDW] RDW Nov 2026 9.000 call (RDW261106C00009000) stock price, news, quote and history - Yahoo Finance UK
+   (Yahoo Finance UK · 10/09 23:17)
+→ RDW의 2026년 11월 만기 9.000 달러 콜 옵션(RDW261106C00009000)의 주가, 뉴스, 시세 및 역사적인 정보가 Yahoo Finance UK에 게재되었습니다.
+
+📰 [RDW] RDW Nov 2026 9.000 put (RDW261106P00009000) stock price, news, quote and history - Yahoo Finance Australia
+   (Yahoo Finance Australia · 10/09 20:26)
+→ RDW Nov 2026 9.000 풋옵션(RDW261106P00009000)의 주가, 뉴스, 시세 및 역사에 대한 정보가 Yahoo Finance Australia에 게재되었습니다.
+
+📰 [IREN] IREN's AI Honeymoon Ends as Financing Jitters and OpenAI's Slower Growth Collide - AD HOC NEWS
+   (AD HOC NEWS · 10/10 11:20)
+→ IREN의 인공지능(AI) 분야에서의 성장이 자금 조달 불안과 OpenAI의 성장 둔화로 인해 위기를 맞고 있다. 이러한 다양한 요소들이 결합하면서 IREN의 빠른 발전이 정체되고 있다는 분석이 나오고 있다.
+
+📰 [IREN] Avaii Wealth Management LLC Increases Position in IREN Limited $IREN - MarketBeat
+   (MarketBeat · 10/10 08:14)
+→ Avaii Wealth Management LLC가 IREN Limited($IREN)에서의 보유 지분을 늘렸다는 소식입니다. 이는 회사에 대한 신뢰와 투자 의지를 나타내는 것으로 풀이됩니다.
+
+📰 [IREN] IREN CCO Kent Draper at All-In ‘whole new paradigm’ for AI and data centers - qz.com
+   (qz.com · 10/10 07:14)
+→ IREN의 CCO인 Kent Draper는 All-In 행사에서 AI와 데이터 센터의 새로운 패러다임에 대해 논의했습니다. 그는 AI의 발전이 데이터 센터 운영 방식에 중대한 변화를 가져올 것이라고 강조했습니다.
+
+📰 [RKLB] Rocket Lab Secures 20-Launch Commercial Contract for All-Composite Electron - CompositesWorld
+   (CompositesWorld · 10/10 07:57)
+→ 로켓랩이 모든 복합재료로 제작된 전자 로켓을 위한 20회 발사 상업 계약을 체결했습니다. 이번 계약은 로켓랩의 복합재료 기술을 활용한 상업적 발사 능력을 강화하는 데 기여할 것으로 기대됩니다.
+
+📰 [RKLB] Rocket Lab Shares Rebound as ARK Invest Touts Neutron as Closest Rival to SpaceX's Falcon 9 - BigGo Finance
+   (BigGo Finance · 10/10 03:25)
+→ 로켓랩의 주가는 ARK 인베스트가 네우트론을 스페이스X의 팔콘 9에 가장 근접한 경쟁자로 평가하면서 반등하고 있습니다. 이로 인해 투자자들의 관심이 집중되고 있습니다.
+
+📰 [RKLB] Cadent Capital Advisors LLC Sells 24,268 Shares of Rocket Lab Corporation $RKLB - MarketBeat
+   (MarketBeat · 10/10 02:23)
+→ Cadent Capital Advisors LLC는 로켓랩 주식(RKLB) 24,268주를 매각했다. 이 거래는 최근 시장 보고서에서 확인되었다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] The U.S. Government Moved $1.5 Billion in Seized Crypto in Two Days. Will It Sell?
+   (Yahoo Finance · 10/10 16:56)
+→ 미국 정부가 2026년 10월 7일과 8일에 약 15억 달러 규모의 압수된 암호화폐를 이체했다. 주로 비트코인이 포함된 이번 대규모 이체는 시장에 큰 영향을 미칠 수 있어 거래자들의 주목을 받았으며, 이에도 불구하고 비트코인 가치는 지난 24시간 동안 약 1% 상승했다.
+
+📰 [BTC-USD] Does This $32M Whale Know Where Bitcoin's Price Goes After $82.5K - Bitcoin News
+   (Bitcoin News · 10/10 16:54)
+→ 32백만 달러 규모의 비트코인 고래가 비트코인의 가격이 82,500달러를 넘고 나서 어떻게 될지를 알고 있는지에 대한 논의가 이루어지고 있습니다. 전문가들은 이 고래의 움직임이 시장에 영향을 미칠 가능성이 있다고 보고 있습니다.
+
+📰 [BTC-USD] Prediction markets give Bitcoin a 2% shot at $200,000 in 2026, a record low - Crypto Briefing
+   (Crypto Briefing · 10/10 16:30)
+→ 예측 시장에서 비트코인이 2026년에 20만 달러에 도달할 확률이 2%로, 사상 최저치를 기록했습니다. 이는 향후 비트코인 가격 전망이 다소 비관적임을 나타냅니다.
+
+📰 [ETH-USD] NFT sales rise to $39.85M led by Ethereum and P... - Pluang
+   (Pluang · 10/10 16:44)
+→ NFT 판매가 3985만 달러로 증가했으며, 이는 이더리움과 다른 플랫폼들의 영향으로 나타났습니다. 이러한 증가세는 NFT 시장의 활발한 움직임을 보여줍니다.
+
+📰 [ETH-USD] Spot Ethereum ETFs see $56.1M outflows, extendi... - Pluang
+   (Pluang · 10/10 15:34)
+→ 스팟 이더리움 ETF에서 5,610만 달러가 유출되면서 추가적인 자본 이탈이 이어지고 있다. 이는 투자자들이 이 더비디이자 테크니컬 동향에 대한 우려 때문에 자산을 줄이고 있다는 신호로 해석된다.
+
+📰 [ETH-USD] Bitcoin spot ETFs see $21M inflows while Ethere... - Pluang
+   (Pluang · 10/10 15:24)
+→ 비트코인 현물 ETF에 2,100만 달러의 자금 유입이 있었으며, 이더리움 ETF도 긍정적인 흐름을 보이고 있다고 보도했다. 투자자들의 관심이 높아지면서 암호화폐 시장에 대한 기대감이 커지고 있다.
+
+📰 [SOL-USD] Solana Price Prediction: Will Tokenized Stocks and Faster Blocks Carry SOL Back Above $200? - StreetInsider
+   (StreetInsider · 10/10 12:43)
+→ 솔라나(SOL)의 가격 예측에 대한 기사에서, 토큰화된 주식과 빠른 블록 생성이 SOL이 200달러를 회복하는 데 기여할 수 있을지에 대한 분석이 이루어졌다. 투자자들은 이러한 요소들이 SOL의 상승 모멘텀에 긍정적인 영향을 미칠 것으로 기대하고 있다.
+
+📰 [SOL-USD] Solana Staking: 74.6 Percent of SOL Is Delegated - CryptoTicker
+   (CryptoTicker · 10/10 12:24)
+→ 솔라나(Solana)에서 74.6%의 SOL이 위임(staking)된 것으로 나타났습니다. 이는 투자자들이 솔라나 네트워크의 안정성과 수익성을 신뢰하고 있다는 것을 보여줍니다.
+
+📰 [SOL-USD] Best Crypto to Buy in October 2026: XRP, Solana and Pepeto After October’s $555 Million Wave of Forced Selling - StreetInsider
+   (StreetInsider · 10/10 10:15)
+→ 2026년 10월에 추천하는 암호화폐는 XRP, 솔라나, 그리고 페페토로, 이번 달 5억 5천 5백만 달러 규모의 강제 매도 이후 이들 암호화폐가 주목받고 있다는 내용이다. 이들 코인은 향후 상승 가능성을 안고 있어 투자자들에게 관심을 끌고 있다.
+
+📰 [BMNR] Wall Street Zen Upgrades BitMine Immersion Technologies (NYSE:BMNR) to "Sell" - MarketBeat
+   (MarketBeat · 10/10 14:38)
+→ Wall Street Zen은 BitMine Immersion Technologies(NYSE:BMNR)의 투자 등급을 "매도"로 상향 조정했습니다.
+
+📰 [BMNR] BMNR, CRCL, MSTR Stocks Lead Slide In Crypto Equities Amid Bitcoin’s Tumble To $63K - Stocktwits
+   (Stocktwits · 10/09 16:08)
+→ BMNR, CRCL, MSTR 주식이 비트코인이 63,000달러로 하락하면서 암호화폐 관련 주식에서 큰 폭으로 하락했다. 비트코인 가격의 급락이 암호화폐 주식에 부정적인 영향을 미쳤다.
+
+📰 [BMNR] BitMine Immersion Technologies Inc (BMNP) Analyst insights, Price targets and Recommendations - Yahoo Finance UK
+   (Yahoo Finance UK · 10/08 23:10)
+→ BitMine Immersion Technologies Inc (BMNP)에 대한 애널리스트의 통찰력, 가격 목표 및 추천 내용이 Yahoo Finance UK에서 발표되었습니다. 해당 분석에서는 BMNP의 투자 전망과 시장 반응에 대한 의견이 제시되었습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 혼조세를 보이고 있으며, 특히 ONDO가 XRP를 제치고 국내 거래에서 1위를 차지했다. 비트코인 숏 포지션이 감지되었고, ETF 관련 자금 흐름으로 인한 변동성이 포착되었다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 혼조세
+   → ONDO는 국내 거래에서 4.52%를 차지하며, XRP를 제치고 거래 비중 1위를 기록했다. WLD의 국내 거래 비중은 글로벌 대비 27.8배로 가장 큰 차이를 보였다.
+   (토큰포스트 · 10/10 17:00)
+2. (시세) 비트코인 391개 숏 포착
+   → 하이퍼리퀴드에서 391개 비트코인 숏 포지션이 포착되었으며, 그 명목가치는 약 435억원에 달한다. 해당 숏 포지션의 청산가는 9만9801.20달러로 설정되었다.
+   (토큰포스트 · 10/10 16:55)
+3. (규제) 비트코인 ETF 2110만달러 순유입
+   → 10월 9일 미국 비트코인 ETF에서 2110만달러가 순유입되었으나, 10월 5~9일 누적 순유출은 6억7890만달러에 달했다. 이와 대조적으로 이더리움 ETF에서는 9거래일 연속 순유출이 이루어졌다.
+   (토큰포스트 · 10/10 15:24)
+4. (규제) XRP 원장 결제 취약점 수정
+   → XRP 원장에서 결제 과정의 오류가 수정되었으며, 악용된 증거는 발견되지 않았다. 이 취약점 수정은 9월 25일 배포된 xrpld 3.4.1에 포함되었다.
+   (토큰포스트 · 10/10 16:01)
+
+[흐름·전망]
+• ONDO와 같은 특정 코인의 국내 비중이 높은 현상은 향후 가격 변동에 영향을 줄 수 있으므로 지속적인 모니터링이 필요하다.
+• 비트코인 숏 포지션의 증가가 시장 감정에 미치는 영향과 앞으로의 시장 흐름을 주의 깊게 지켜봐야 한다.
+• 비트코인과 이더리움 ETF의 자금 흐름 차이는 투자자 심리와 시장 전망의 중요한 지표가 될 수 있으므로, 관련 데이터 분석이 필요하다.
+• XRP의 결제 취약점 수정은 시장 신뢰도를 높일 수 있지만, 향후 유사한 취약점 발생 가능성을 항상 염두에 두어야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 45 (Fear)
+  - 크립토 기준: 64 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 서울 아파트값의 상승세가 둔화되며 경기 남부권에서의 가격 상승이 상대적으로 두드러지고 있습니다. 또한, 한국토지주택공사(LH)가 수도권 공공택지 내 미분양 주택을 직접 매입하기로 하여 주택 공급 속도를 높이려는 노력이 시작되었습니다.
+
+[핵심 뉴스]
+1. (매매) 금천·도봉구 웃고 강남은 울고…서울 아파트값 상승세 한풀 꺾였다
+   → 서울 아파트 매매가격은 지난주 대비 0.15% 상승했으나, 강남구는 세금 부담으로 0.07% 하락하며 약세를 보였다. 반면 경기 지역은 동탄구가 0.76% 오르는 등 상승세를 이어갔다.
+   (매일경제 · 10/09 11:18)
+2. (공급) LH “수도권 미분양 저희가 사드립니다”…민간건설사 1만8000가구
+   → LH는 수도권 공공택지의 민간 미분양 주택 약 1만8000가구를 매입하기로 하여, 빠른 착공을 유도할 수 있는 다양한 인센티브를 마련하고 있다.
+   (매일경제 · 10/09 13:03)
+3. (분양청약) 경기 청약시장 ‘입지 양극화’ 뚜렷⋯성남·과천·동탄 웃고 외곽은 미달
+   → 경기 청약시장에서 중심 지역인 성남, 과천, 동탄은 청약 성과가 좋지만 외곽 지역은 미달되는 양극화 현상이 나타나고 있다.
+   (이투데이 · 10/10 15:00)
+4. (공급) 서울역 역세권에 35층 아파트…준주거지 모아타운 483가구 공급
+   → 서울시가 서울역 역세권에 35층 높이의 아파트 단지를 공급하기로 하며 새로운 주거지로서 기대를 모으고 있다.
+   (매일경제 · 10/09 13:44)
+5. (전세) 서울 매매가 87주째 뜀박질·임대차 ‘월세 과반’ 전환
+   → 서울에서의 매매가는 지속적으로 상승세를 유지하고 있으며, 임대차 시장에서 월세 비중이 절반을 넘어서는 등 변화가 나타나고 있다.
+   (시티타임스 CityTimes · 10/10 14:39)
+6. (전세) 서울 아파트 임대차 월세 비중 절반 넘어…1년 새 8.3%p↑ '월세화' 가장 빨라
+   → 서울 아파트의 임대차 시장에서 월세 비중이 절반을 넘어서며, 최근 1년 사이에 비중이 8.3%포인트 상승한 것으로 보고되었다.
+   (SeattleN · 10/10 15:12)
+
+[흐름·전망]
+• 서울시 아파트 시장에서 강남구의 하락세가 지속될 경우, 중저가 주택에 대한 수요가 더욱 증가할 가능성이 있다.
+• LH의 미분양 주택 매입 제도가 어느 정도 건설업계에 안정을 가져올지 주목할 필요가 있다.
+• 모아타운 사업의 추진 속도가 빠르게 진행된다면, 서울 내 주거 환경의 개선과 일부 지역의 아파트 공급 부족 문제가 해소될 수 있다.
+• 수도권 부동산 시장의 전반적인 변화에 따라, 투자자들은 금리 변동과 세제 개편 등에 주의를 기울여야 할 것으로 보인다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프 전 대통령은 최근 노벨 평화상 수상자로 선정된 Navi Pillay를 비판하며 그녀가 미국과 이스라엘을 증오한다고 주장했다. 또한, 러시아와의 에너지 공급 관련 긍정적인 논의를 언급하며 미국과 글로벌 시장에 연료 공급이 있을 것이라고 밝혔다.
+
+[주요 발언]
+1. (기타) 트럼프는 Navi Pillay가 이스라엘을 증오하고 있으며, 그녀의 평화상 수상에 대해 비판적으로 언급했다.
+   (Truth Social · 10/10 12:39)
+2. (경제) 트럼프는 러시아가 미국과 글로벌 시장에 수백만 톤의 디젤 연료를 공급할 것이라고 밝혔으며, 이는 미국의 연료 가격에 긍정적인 영향을 미칠 것이라고 주장했다.
+   (Truth Social · 10/10 03:46)
+3. (인사) 트럼프는 Katie Zacharia를 백악관 대변인으로 임명했다고 발표하며 그녀의 경력을 강조했다.
+   (Truth Social · 10/10 04:46)
+4. (기타) 트럼프는 커밍 스토미로 인해 자신의 일정과 유세를 재조정할 수 있음을 언급했다.
+   (Truth Social · 10/10 04:34)
+
+[시장·경제 관련]
+• 트럼프는 러시아의 디젤 연료 공급이 미국의 연료 가격에 긍정적인 영향을 미칠 것이라고 주장했다.
+
+[흐름·전망]
+• 트럼프의 발언은 향후 에너지 시장의 변동성과 러시아와의 관계에 주목해야 함을 시사한다.
+• 노벨 평화상 수여로 인한 비판이 여론에 미치는 영향을 지켜볼 필요가 있다.
+• 트럼프의 대변인 임명이 그가 국내 정치에서 지지를 어떻게 강화할 지 주목할 만하다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
