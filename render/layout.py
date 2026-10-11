@@ -8,13 +8,13 @@ from typing import Any
 from render import assets, clock
 from render.common import _dday_progress, _dday_text, _e, _event_ddays
 from render.config import DDAY_TARGET, HERO_PARTS, PARTS, SITE_TITLE, SLOGAN, TABS, _DOW
-from render.earnings import _render_earnings
-from render.files import _load_earnings, _load_econ_events, _load_fundamentals, _slug
+from render.calview import _render_calendar
+from render.earnings import _render_earn_results
+from render.files import _load_earnings, _load_econ_events, _load_fundamentals, _load_reports, _slug
 from render.growth import _render_growth
 from render.news import _render_part
 from render.parse import _fear_greed, _mood_color, _prev_item_tokensets, _split_sections
 from render.rwamap import _render_rwa
-from render.schedule import _render_schedule
 
 HEAD = """<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -60,13 +60,6 @@ a:hover{opacity:.72;}
  font-size:15px;overflow:hidden;}
 .sched-tz{font-size:10px;color:var(--faint);font-weight:600;}
 .imp-filter{display:flex;gap:5px;}
-/* 연/월 드롭다운 바 */
-.econ-bar{display:flex;align-items:center;justify-content:space-between;
- gap:8px;flex-wrap:wrap;}
-.econ-sel{display:flex;gap:6px;}
-.econ-sel select{font:inherit;font-size:12.5px;font-weight:700;color:var(--ink);
- background:var(--chip);border:1px solid var(--border);border-radius:8px;
- padding:5px 9px;cursor:pointer;}
 .sched-tz2{font-size:10px;color:var(--faint);font-weight:600;text-align:right;}
 .imp-chip{display:flex;align-items:center;gap:5px;font:inherit;font-size:11px;
  font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--border);
@@ -78,7 +71,6 @@ a:hover{opacity:.72;}
 .sched.s-high .ev[data-imp="HIGH"]{display:flex;}
 .sched.s-med .ev[data-imp="MEDIUM"]{display:flex;}
 .sched.s-low .ev[data-imp="LOW"]{display:flex;}
-.sched-day{font-size:11px;font-weight:800;color:var(--accent);margin:11px 2px 5px;}
 .ev{display:flex;align-items:center;gap:7px;padding:7px 3px;
  border-bottom:1px solid var(--border);}
 .ev:last-child{border-bottom:0;}
@@ -146,12 +138,69 @@ a:hover{opacity:.72;}
  color:var(--accent);background:var(--chip);border:1px solid var(--border);
  border-radius:9px;padding:8px;cursor:pointer;}
 .tk-caret{font-size:10px;}
-/* 서브탭이 제목 역할 → 컬럼 헤더 중복 제거(경제=제목 숨김·칩 유지 / 기업=헤더 숨김) */
-.sched-col.econ .sched-head>span{display:none;}
-.sched-col.earn .sched-head{display:none;}
 /* 선택한 서브탭 컬럼만 표시 */
-.sched-2col[data-sub="econ"] .sched-col.earn{display:none;}
-.sched-2col[data-sub="earn"] .sched-col.econ{display:none;}
+.sched-2col[data-sub="cal"] .res-col{display:none;}
+.sched-2col[data-sub="res"] .cal-col{display:none;}
+/* 월간 캘린더(일요일 시작). 칸=높음 지표 약칭 고정, 중간·낮음은 필터 칩(s-med/s-low)일 때만 */
+.cal-bar{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
+.cal-title{font-size:15px;font-weight:800;color:var(--ink);min-width:92px;text-align:center;}
+.cal-nv{font:inherit;width:30px;height:30px;border-radius:8px;border:1px solid var(--border);
+ background:var(--card);color:var(--muted);font-size:17px;line-height:1;cursor:pointer;}
+.cal-nv:disabled{opacity:.35;cursor:default;}
+.cal-sp{flex:1;}
+.imp-chip.fixed{cursor:default;}
+.cal-dow,.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;}
+.cal-dow{font-size:11px;font-weight:700;color:var(--faint);text-align:center;margin-bottom:4px;}
+.cal-dow .sun{color:#e5484d;}.cal-dow .sat{color:#3b82f6;}
+.cal-c{font:inherit;text-align:left;color:var(--ink);background:var(--card);
+ border:1px solid var(--border);border-radius:9px;min-height:80px;padding:5px;
+ display:flex;flex-direction:column;align-items:stretch;gap:3px;overflow:hidden;cursor:pointer;}
+.cal-c:hover{border-color:var(--accent);}
+.cal-c.out{background:transparent;border-color:transparent;opacity:.35;cursor:default;}
+.cal-c.past{opacity:.6;}
+.cal-c.today{border-color:var(--ink);}
+.cal-c.sel{outline:2px solid var(--accent);outline-offset:-1px;background:var(--chip);opacity:1;}
+.cal-dn{font-size:11.5px;font-weight:800;align-self:flex-start;line-height:1.5;}
+.cal-c.sun .cal-dn{color:#e5484d;}.cal-c.sat .cal-dn{color:#3b82f6;}
+.cal-c.today .cal-dn{background:var(--ink);color:var(--page);border-radius:999px;padding:0 6px;}
+.lab{display:block;font-size:10px;font-weight:800;border-radius:5px;padding:1px 5px;
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lab.hi{background:rgba(229,72,77,.13);color:#b42318;}
+.lab.md{background:rgba(245,158,11,.16);color:#92400e;}
+.lab.lo{background:var(--nav-track);color:var(--muted-2);}
+:root[data-theme="dark"] .lab.hi{color:#ff9ca0;}
+:root[data-theme="dark"] .lab.md{color:#fbbf24;}
+.cal .lab.md,.cal .lab.lo{display:none;}
+.cal.s-med .lab.md,.cal.s-low .lab.lo{display:block;}
+.lab-more{font-size:9.5px;font-weight:700;color:var(--muted-2);}
+.lab-more.mob{display:none;}
+.cal-tks{display:flex;flex-wrap:wrap;gap:2px;margin-top:auto;}
+.cal-tk{font-family:ui-monospace,monospace;font-size:8.5px;font-weight:800;
+ border-radius:4px;padding:1px 4px;line-height:1.4;}
+.cal-dets{margin-top:12px;}
+.cal-det,.cal-empty{background:var(--card);border:1px solid var(--border);border-radius:12px;
+ padding:10px 12px;}
+.cal-det[hidden],.cal-empty[hidden]{display:none;}
+.cal-dh{font-size:13px;font-weight:800;color:var(--chip-ink);margin-bottom:4px;
+ display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px;}
+.cal-cnt{display:flex;gap:8px;font-size:10.5px;font-weight:600;color:var(--faint);}
+.cal .n-md,.cal .n-lo{display:none;}
+.cal.s-med .n-md,.cal.s-low .n-lo{display:inline;}
+.cal-det .up-row,.cal-det .rep-item{border-bottom:1px solid var(--border);}
+.cal-empty{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted);}
+.cal-empty b{font-size:13px;color:var(--chip-ink);}
+.cal-empty em{font-style:normal;font-size:10.5px;color:var(--faint);}
+.cal.s-med.s-low .cal-empty em{display:none;}
+.cal .sched-tz2{margin-top:8px;}
+@media (max-width:600px){
+  .cal-dow,.cal-grid{gap:3px;}
+  .cal-c{min-height:60px;padding:4px 3px;border-radius:7px;}
+  .lab{font-size:9px;padding:1px 3px;}
+  .lab.h2,.lab-more.dsk{display:none;}
+  .lab-more.mob{display:block;}
+  .cal-tk{font-size:7.5px;padding:0 2px;}
+  .cal-title{min-width:0;}
+}
 .ern-item{border-bottom:1px solid var(--border);border-radius:10px;}
 .ern-item:last-child{border-bottom:0;}
 .ern-item.open{background:var(--chip);border-bottom-color:transparent;}
@@ -163,13 +212,6 @@ a:hover{opacity:.72;}
  padding:2px 7px;border-radius:5px;flex-shrink:0;}
 .ern-tag.wait{font-size:9.5px;font-weight:800;color:#fff;background:#f59e0b;
  padding:2px 7px;border-radius:5px;flex-shrink:0;margin-left:4px;}  /* 발표됐으나 집계 전 */
-/* 기업실적 뷰 토글(예정 순 / 분기별) — 서브탭 pill과 구분되게 '밑줄 탭' */
-.earn-views{display:flex;gap:20px;margin-bottom:12px;
- border-bottom:1px solid var(--border);}
-.ev-view{font:inherit;font-size:12.5px;font-weight:700;color:var(--muted-2);
- background:none;border:0;border-bottom:2px solid transparent;
- padding:5px 2px 9px;margin-bottom:-1px;cursor:pointer;}
-.ev-view.on{color:var(--ink);border-bottom-color:var(--ink);}
 /* 분기별: 연도(다크 pill) → 분기(파란 pill) 2단 */
 .q-years{display:flex;gap:6px;margin-bottom:9px;}
 .q-year{font:inherit;font-size:12px;font-weight:800;color:var(--muted-2);
@@ -203,7 +245,6 @@ a:hover{opacity:.72;}
 .rep-body{display:none;padding:2px 13px 13px;}
 .rep-item.open .rep-body{display:block;}
 .rep-hd{font-size:12px;font-weight:800;color:var(--muted);word-break:keep-all;margin-bottom:9px;}
-.up-note{font-size:10.5px;color:var(--faint);margin-bottom:8px;}
 .rep-verdict{font-size:11px;font-weight:800;border-radius:7px;padding:3px 9px;
  background:var(--chip);color:var(--muted);}
 .rep-verdict.beat{color:#e5484d;background:rgba(229,72,77,.12);}
@@ -234,8 +275,6 @@ a:hover{opacity:.72;}
 .up-t b{font-size:12.5px;font-weight:700;}
 .up-date{font-size:10.5px;color:var(--muted);}
 .up-sub{font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.45;}
-.up-qh{font-size:12px;font-weight:800;color:var(--ink);margin:14px 0 7px;
- padding-bottom:5px;border-bottom:2px solid var(--border);}
 .ev-new{font-size:8.5px;font-weight:800;color:#fff;background:#15803d;
  border-radius:5px;padding:1px 5px;margin-left:5px;vertical-align:middle;}
 .up-rec{font-size:10.5px;color:var(--muted);margin-top:3px;display:flex;
@@ -694,24 +733,27 @@ def _render_extra_panels(now: datetime, schedule: bool,
     """일정/성장주/지도/내 목표 탭을 navs·panels에 이어붙이고 (sched_html, funds)를 반환.
 
     반환값은 이후 스크립트 태그 조립(assets.tag 조건)에 쓰인다."""
-    # 일정 탭: 좌=경제지표 / 우=기업실적 2단(모바일은 세로로 쌓임, 실적 위)
-    # 일정(경제지표)은 브리핑 시각이 아닌 "실제 현재 시각" 기준 — 재빌드(refresh) 때도
-    # 발표된 높음 지표 결과가 유지되도록.
+    # 일정 탭: 📅 캘린더(경제지표+실적 예정+지난 실적 보고서 통합) / 📄 실적 결과(분기별 카드)
+    # 브리핑 시각이 아닌 "실제 현재 시각" 기준 — 재빌드(refresh) 때도 오늘 표시·
+    # 발표된 높음 지표 결과가 맞도록.
     _now_live = clock.now()
-    sched_html = (_render_schedule(_load_econ_events(_now_live), _now_live)
-                  if schedule else "")
-    if sched_html:
-        earn_html = _render_earnings(_load_earnings(now), now)
+    months = _load_econ_events(_now_live) if schedule else []
+    sched_html = ""
+    if months:
+        earns = _load_earnings(_now_live)
+        sched_html = _render_calendar(months, earns, _load_reports(), _now_live)
+        res_html, fresh = _render_earn_results(earns, _now_live)
+        nb = '<span class="ev-new">NEW</span>' if fresh else ''
         navs.append('<button class="nav-t" data-p="tpS">일정</button>')
         panels.append(
             '<div class="panel" id="tpS"><div class="part">'
             '<div class="sub-tabs">'
-            '<button class="sub-tab on" data-sub="econ">📅 경제지표</button>'
-            '<button class="sub-tab" data-sub="earn">🏢 기업실적</button>'
+            '<button class="sub-tab on" data-sub="cal">📅 캘린더</button>'
+            f'<button class="sub-tab" data-sub="res">📄 실적 결과{nb}</button>'
             '</div>'
-            '<div class="sched-2col" data-sub="econ">'
-            f'<div class="sched-col econ">{sched_html}</div>'
-            f'<div class="sched-col earn">{earn_html}</div>'
+            '<div class="sched-2col" data-sub="cal">'
+            f'<div class="sched-col cal-col">{sched_html}</div>'
+            f'<div class="sched-col res-col">{res_html}</div>'
             '</div></div></div>')
 
     # 성장주 탭: SEC 재무(XBRL) 기반 스크리너 + 종목 심층

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import re
-from datetime import date, datetime
+from datetime import datetime
 
 from render.common import _e, _fmt_money, _hl, _mv_color, _rec_color, _rep_cq, _text_on, _ticker_color
 from render.config import KST, _WD_KO
@@ -46,102 +46,77 @@ def _report_card_html(r, open_=False):
     return f'<div class="rep-item{" open" if open_ else ""}">{header}{body}</div>'
 
 
-def _render_earnings(evs, now):
-    head = ('<div class="sched sched-earn"><div class="sched-head">'
-            '<span><span class="sched-ico">🏢</span>기업실적'
-            ' <span class="sched-tz">관심종목</span></span></div>')
-    if not evs:
-        return head + '<div class="ern-none">등록된 실적 일정이 없습니다.</div></div>'
+def _render_earn_results(evs, now):
+    """'실적 결과' 서브탭 HTML과 최근(2일 내) 발표 여부를 반환한다.
+
+    최근 발표가 있으면 그 분기를 기본 선택하고 해당 종목 카드를 펼친다."""
     fresh = sorted((r for r in _load_reports() if _is_fresh(r, now)),
                    key=lambda r: r.get("date", ""), reverse=True)
     fresh_cq = (fresh[0].get("cq") or _rep_cq(fresh[0])) if fresh else None
     fresh_tk = {r.get("ticker") for r in fresh}
-    auto = bool(fresh_cq)   # 최근 발표 있으면 '실적 결과'로 자동 진입
-    nb = '<span class="ev-new">NEW</span>' if fresh else ''
-    toggle = ('<div class="earn-views">'
-              f'<button class="ev-view{"" if auto else " on"}" data-v="up">📅 예정</button>'
-              f'<button class="ev-view{" on" if auto else ""}" data-v="r">📄 실적 결과{nb}</button></div>')
-    return (head + toggle
-            + _render_upcoming(evs, now, show=not auto, skip=fresh_tk)
-            + _render_results(evs, now, show=auto, default_cq=fresh_cq, fresh_tk=fresh_tk)
+    html = ('<div class="sched sched-earn">'
+            + _render_results(evs, now, show=True, default_cq=fresh_cq, fresh_tk=fresh_tk)
             + '<div class="sched-src">데이터: Yahoo Finance · SEC EDGAR</div></div>')
+    return html, bool(fresh)
 
 
-def _render_upcoming(evs, now, show=True, skip=None):
-    """예정 뷰: 분기별 그룹 + 컨센서스(예상 EPS/매출·목표주가·투자의견 색/비율)."""
+def _upcoming_row(e, now):
+    """실적 발표 예정 1건: D-day·티커·예정일시·컨센서스(EPS/매출/목표가)·투자의견 비율."""
     up, dn = "#e5484d", "#3b82f6"
-    skip = skip or set()
-    groups = {}
-    for e in sorted(evs, key=lambda x: (x["date"] is None, x["date"] or date.max)):
-        if e["ticker"] in skip:      # 최근 발표한 종목은 '실적 결과'로
-            continue
-        d = e["date"]
-        gk = (d.year, (d.month - 1)//3 + 1) if d else (9999, 9)
-        gl = f"{d.year} {(d.month-1)//3+1}Q" if d else "미정"
-        groups.setdefault(gk, {"label": gl, "rows": []})["rows"].append(e)
-    disp = "" if show else ' style="display:none"'
-    out = [f'<div class="earn-up"{disp}>'
-           '<div class="up-note">발표 예정일·시간 · 한국시간(KST) 기준</div>']
-    for gk in sorted(groups):
-        out.append(f'<div class="up-qh">{_e(groups[gk]["label"])}</div>')
-        for e in groups[gk]["rows"]:
-            d = e["date"]
-            det = e.get("detail") or {}
-            cur, tgt, rec = det.get("cur") or {}, det.get("target") or {}, det.get("rec") or {}
-            bg = _ticker_color(e["ticker"])
-            badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
-                     f'{_e(e["ticker"].split("-")[0])}</span>')
-            ts = e.get("ts")
-            if d:
-                dd = (d - now.date()).days
-                dtxt = "D-DAY" if dd == 0 else (f"D+{-dd}" if dd < 0 else f"D-{dd}")
-                md = f'{d.month}/{d.day}({_WD_KO[d.weekday()]})'
-                if ts:
-                    md += " " + datetime.fromtimestamp(ts, KST).strftime("%H:%M")
-                    if e.get("est"):
-                        md += " 예상"
-            else:
-                dtxt, md = "미정", "미정"
-            parts = []
-            if cur.get("eps") not in (None, "-"):
-                parts.append(f'예상 EPS <b>{_e(cur["eps"])}</b>')
-            if cur.get("rev") not in (None, "-"):
-                gg = ""
-                if cur.get("growth"):
-                    gg = f' <b style="color:{up if cur.get("growth_pos") else dn}">{_e(cur["growth"])}</b>'
-                parts.append(f'매출 <b>{_e(cur["rev"])}</b>{gg}')
-            if tgt.get("mean") not in (None, "-"):
-                uu = ""
-                if tgt.get("upside"):
-                    uu = f' <b style="color:{up if tgt.get("upside_pos") else dn}">{_e(tgt["upside"])}</b>'
-                parts.append(f'목표 <b>{_e(tgt["mean"])}</b>{uu}')
-            subline = " · ".join(parts) if parts else "컨센서스 없음"
-            sub2 = ""
-            if rec.get("label") not in (None, "-"):
-                lab = rec.get("label") or ""
-                cnt = (f' <span class="up-cnt">({rec.get("count")}명)</span>'
-                       if rec.get("count") else "")
-                b_, h_, s_ = rec.get("buy") or 0, rec.get("hold") or 0, rec.get("sell") or 0
-                tot = b_ + h_ + s_
-                bar = rt = ""
-                if tot:
-                    bar = ('<span class="rec-bar">'
-                           f'<i style="width:{b_/tot*100:.0f}%;background:#e5484d"></i>'
-                           f'<i style="width:{h_/tot*100:.0f}%;background:#f59e0b"></i>'
-                           f'<i style="width:{s_/tot*100:.0f}%;background:#3b82f6"></i></span>')
-                    rt = ('<span class="rec-ratio">'
-                          f'<b style="color:#e5484d">매수 {round(b_/tot*100)}%</b> · '
-                          f'<b style="color:#f59e0b">보유 {round(h_/tot*100)}%</b> · '
-                          f'<b style="color:#3b82f6">매도 {round(s_/tot*100)}%</b></span>')
-                sub2 = (f'<div class="up-rec">투자의견 '
-                        f'<b style="color:{_rec_color(lab)}">{_e(lab)}</b>{cnt}{bar}{rt}</div>')
-            out.append(
-                f'<div class="up-row"><span class="up-dday">{dtxt}</span>{badge}'
-                f'<div class="up-main"><div class="up-t"><b>{_e(e["name"])}</b>'
-                f'<span class="up-date">{md}</span></div>'
-                f'<div class="up-sub">{subline}</div>{sub2}</div></div>')
-    out.append('</div>')
-    return "".join(out)
+    d = e["date"]
+    det = e.get("detail") or {}
+    cur, tgt, rec = det.get("cur") or {}, det.get("target") or {}, det.get("rec") or {}
+    bg = _ticker_color(e["ticker"])
+    badge = (f'<span class="ticker" style="background:{bg};color:{_text_on(bg)};">'
+             f'{_e(e["ticker"].split("-")[0])}</span>')
+    ts = e.get("ts")
+    if d:
+        dd = (d - now.date()).days
+        dtxt = "D-DAY" if dd == 0 else (f"D+{-dd}" if dd < 0 else f"D-{dd}")
+        md = f'{d.month}/{d.day}({_WD_KO[d.weekday()]})'
+        if ts:
+            md += " " + datetime.fromtimestamp(ts, KST).strftime("%H:%M")
+            if e.get("est"):
+                md += " 예상"
+    else:
+        dtxt, md = "미정", "미정"
+    parts = []
+    if cur.get("eps") not in (None, "-"):
+        parts.append(f'예상 EPS <b>{_e(cur["eps"])}</b>')
+    if cur.get("rev") not in (None, "-"):
+        gg = ""
+        if cur.get("growth"):
+            gg = f' <b style="color:{up if cur.get("growth_pos") else dn}">{_e(cur["growth"])}</b>'
+        parts.append(f'매출 <b>{_e(cur["rev"])}</b>{gg}')
+    if tgt.get("mean") not in (None, "-"):
+        uu = ""
+        if tgt.get("upside"):
+            uu = f' <b style="color:{up if tgt.get("upside_pos") else dn}">{_e(tgt["upside"])}</b>'
+        parts.append(f'목표 <b>{_e(tgt["mean"])}</b>{uu}')
+    subline = " · ".join(parts) if parts else "컨센서스 없음"
+    sub2 = ""
+    if rec.get("label") not in (None, "-"):
+        lab = rec.get("label") or ""
+        cnt = (f' <span class="up-cnt">({rec.get("count")}명)</span>'
+               if rec.get("count") else "")
+        b_, h_, s_ = rec.get("buy") or 0, rec.get("hold") or 0, rec.get("sell") or 0
+        tot = b_ + h_ + s_
+        bar = rt = ""
+        if tot:
+            bar = ('<span class="rec-bar">'
+                   f'<i style="width:{b_/tot*100:.0f}%;background:#e5484d"></i>'
+                   f'<i style="width:{h_/tot*100:.0f}%;background:#f59e0b"></i>'
+                   f'<i style="width:{s_/tot*100:.0f}%;background:#3b82f6"></i></span>')
+            rt = ('<span class="rec-ratio">'
+                  f'<b style="color:#e5484d">매수 {round(b_/tot*100)}%</b> · '
+                  f'<b style="color:#f59e0b">보유 {round(h_/tot*100)}%</b> · '
+                  f'<b style="color:#3b82f6">매도 {round(s_/tot*100)}%</b></span>')
+        sub2 = (f'<div class="up-rec">투자의견 '
+                f'<b style="color:{_rec_color(lab)}">{_e(lab)}</b>{cnt}{bar}{rt}</div>')
+    return (f'<div class="up-row"><span class="up-dday">{dtxt}</span>{badge}'
+            f'<div class="up-main"><div class="up-t"><b>{_e(e["name"])}</b>'
+            f'<span class="up-date">{md}</span></div>'
+            f'<div class="up-sub">{subline}</div>{sub2}</div></div>')
 
 
 def _render_results(evs, now, show=False, default_cq=None, fresh_tk=None):
