@@ -1,48 +1,68 @@
 
-document.querySelectorAll('.sched').forEach(function(sc){
-  function groups(){
-    sc.querySelectorAll('.sched-group').forEach(function(g){
-      var vis=[].some.call(g.querySelectorAll('.ev'),
-        function(e){return getComputedStyle(e).display!=='none';});
-      g.style.display = vis ? '' : 'none';
+// 월간 캘린더: 월 이동 · 중요도 필터(높음 고정, 중간/낮음 토글) · 날짜 선택 → 상세
+document.querySelectorAll('.cal').forEach(function(cal){
+  var months=[].slice.call(cal.querySelectorAll('.cal-month'));
+  if(!months.length) return;
+  var title=cal.querySelector('.cal-title'), navs=cal.querySelectorAll('.cal-nv');
+  var dets=[].slice.call(cal.querySelectorAll('.cal-det'));
+  var empty=cal.querySelector('.cal-empty'), today=cal.getAttribute('data-today');
+  var WD=['일','월','화','수','목','금','토'], idx=0, sel=null;
+  function vis(el){ return getComputedStyle(el).display!=='none'; }
+  function mark(){   // 현재 필터에서 보이는 표시(라벨·티커)가 있는 칸만 '일정 있음'
+    cal.querySelectorAll('.cal-c[data-d]').forEach(function(c){
+      c.classList.toggle('has', [].some.call(c.querySelectorAll('.lab,.cal-tk'), vis));
     });
   }
-  sc.querySelectorAll('.imp-chip').forEach(function(ch){
+  function label(d){ var t=new Date(d+'T00:00:00');
+    return (t.getMonth()+1)+'월 '+t.getDate()+'일 ('+WD[t.getDay()]+')'; }
+  function pick(d){
+    sel=d;
+    cal.querySelectorAll('.cal-c.sel').forEach(function(x){ x.classList.remove('sel'); });
+    var c=cal.querySelector('.cal-c[data-d="'+d+'"]');
+    if(c) c.classList.add('sel');
+    var shown=false;
+    dets.forEach(function(x){
+      var on=x.getAttribute('data-d')===d;
+      if(on){ x.hidden=false;
+        on=[].some.call(x.querySelectorAll('.ev,.up-row,.rep-item'), vis); }
+      x.hidden=!on; if(on) shown=true;
+    });
+    empty.hidden=shown;
+    if(!shown) empty.querySelector('b').textContent=label(d);
+  }
+  function firstDay(m){
+    var cells=[].slice.call(m.querySelectorAll('.cal-c[data-d]'));
+    var t=cells.filter(function(c){ return c.getAttribute('data-d')===today; })[0];
+    if(t){
+      if(t.classList.contains('has')) return today;
+      var nx=cells.filter(function(c){ return c.classList.contains('has') &&
+        c.getAttribute('data-d')>today; })[0];
+      return nx ? nx.getAttribute('data-d') : today;
+    }
+    var h=cells.filter(function(c){ return c.classList.contains('has'); })[0];
+    return (h||cells[0]).getAttribute('data-d');
+  }
+  function show(i){
+    idx=Math.max(0, Math.min(months.length-1, i));
+    months.forEach(function(m,k){ m.style.display=(k===idx)?'':'none'; });
+    title.textContent=months[idx].getAttribute('data-label');
+    navs[0].disabled=(idx===0); navs[1].disabled=(idx===months.length-1);
+    mark(); pick(firstDay(months[idx]));
+  }
+  navs.forEach(function(b){ b.addEventListener('click', function(){
+    show(idx+parseInt(b.getAttribute('data-dir'),10)); }); });
+  cal.querySelectorAll('.cal-c[data-d]').forEach(function(c){
+    c.addEventListener('click', function(){ pick(c.getAttribute('data-d')); });
+  });
+  cal.querySelectorAll('.imp-chip[data-k]').forEach(function(ch){
     ch.addEventListener('click', function(){
       ch.classList.toggle('on');
-      sc.classList.toggle('s-'+ch.getAttribute('data-k'),
-        ch.classList.contains('on'));
-      groups();
+      cal.classList.toggle('s-'+ch.getAttribute('data-k'), ch.classList.contains('on'));
+      mark(); if(sel) pick(sel);
     });
   });
-  // 연/월 드롭다운: 미리 심어둔 월 섹션 중 선택한 달만 표시
-  var wrap=sc.querySelector('.econ-months'),
-      selY=sc.querySelector('.econ-y'), selM=sc.querySelector('.econ-m');
-  if(wrap && selY && selM){
-    var secs=[].slice.call(wrap.querySelectorAll('.sched-month'));
-    var data=secs.map(function(s){var ym=s.getAttribute('data-ym');
-      return {ym:ym, y:ym.slice(0,4), m:parseInt(ym.slice(5,7),10)};});
-    function opt(v,t){var o=document.createElement('option');
-      o.value=v;o.textContent=t;return o;}
-    var years=[]; data.forEach(function(d){if(years.indexOf(d.y)<0)years.push(d.y);});
-    years.forEach(function(y){selY.appendChild(opt(y,y+'년'));});
-    function fillM(y,pick){
-      selM.innerHTML='';
-      var ms=data.filter(function(d){return d.y===y;});
-      ms.forEach(function(d){selM.appendChild(opt(d.ym,d.m+'월'));});
-      selM.value=(pick && ms.some(function(d){return d.ym===pick;}))?pick:ms[0].ym;
-    }
-    function show(ym){
-      secs.forEach(function(s){
-        s.style.display=(s.getAttribute('data-ym')===ym)?'':'none';});
-      groups();
-    }
-    var def=wrap.getAttribute('data-default')||data[0].ym;
-    selY.value=def.slice(0,4); fillM(def.slice(0,4),def); show(selM.value);
-    selY.addEventListener('change',function(){fillM(selY.value); show(selM.value);});
-    selM.addEventListener('change',function(){show(selM.value);});
-  }
-  groups();
+  var start=0; months.forEach(function(m,k){ if(m.style.display!=='none') start=k; });
+  show(start);
 });
 document.querySelectorAll('.ern-item').forEach(function(item){
   var row=item.querySelector('.ern');
@@ -51,19 +71,6 @@ document.querySelectorAll('.ern-item').forEach(function(item){
 });
 document.querySelectorAll('.rep-head').forEach(function(h){
   h.addEventListener('click', function(){ h.parentNode.classList.toggle('open'); });
-});
-document.querySelectorAll('.ev-view').forEach(function(b){
-  b.addEventListener('click', function(){
-    var box=b.closest('.sched-earn'); if(!box) return;
-    box.querySelectorAll('.ev-view').forEach(function(x){x.classList.remove('on');});
-    b.classList.add('on');
-    var v=b.getAttribute('data-v');
-    var map={up:'.earn-up',r:'.earn-r'};
-    Object.keys(map).forEach(function(k){
-      var el=box.querySelector(map[k]);
-      if(el) el.style.display=(k===v)?'':'none';
-    });
-  });
 });
 document.querySelectorAll('.earn-r').forEach(function(box){
   function showQ(cq){
