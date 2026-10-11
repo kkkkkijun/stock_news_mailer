@@ -1,0 +1,245 @@
+2026-10-11T17:02:18.724881+09:00
+
+[오늘의 뉴스 요약] 2026-10-11 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘, 한국의 재정 정책에 대한 논의가 활발해지며 국가채무 관리와 미래대응기금 활용 방안이 주목받고 있다. 고령자 재고용 필요성에 대한 의견도 나왔으며, 원화 강세와 리츠 ETF에 대한 개인 투자자들의 관심이 증대되었다.
+
+[핵심 뉴스]
+1. (정책) 미래대응기금 적립 제안
+   → 한국재정학회는 미래대응기금을 10년간 적립하고 국가채무 비율을 40% 이내로 관리해야 한다고 주장하며, 이를 위한 토론회를 12일 개최할 예정이다.
+   (매일경제 · 10/11 16:14)
+2. (고용) 고령자 재고용 필요성 강조
+   → 한국경영자총협회는 고령자 고용 확대를 위해 정년 연장이 아닌 단계적인 재고용 방식을 제안하며, 일본 사례를 참고하고 있다.
+   (연합뉴스 · 10/11 12:00)
+3. (환율) 원화 강세 지속 가능성
+   → 원화는 달러 대비 1300원대 중반에서 안정적 위치를 유지하며, 반도체 수출 호조로 인해 강세가 지속될 것으로 보인다.
+   (매일경제 · 10/11 07:33)
+4. (금리) 리츠 ETF 순매수 증가
+   → 9월 리츠 ETF에 대한 개인의 순매수액이 전월 대비 44% 증가했으며, 금리 안정 후 개별 펀더멘털에 집중할 필요성이 언급되고 있다.
+   (연합뉴스 · 10/11 06:10)
+5. (물가) 중동전쟁 격화 시 물가 상승 예측
+   → 예정처는 중동전쟁의 격화가 내년 한국 물가에 영향을 미쳐 0.32% 포인트 상승할 것으로 전망하고 있다.
+   (헤럴드경제 · 10/11 13:00)
+
+[흐름·전망]
+• 재정 건전성을 위한 국가차입 관리와 기금 운영 방안이 논의의 중심이 될 것으로 보인다.
+• 고령화 사회에 따라 고령자 재고용 정책이 점차 중요해질 것이며, 일본의 사례와의 비교가 지속될 것이다.
+• 원화 강세가 계속될 경우 수출 기업의 수익성에 긍정적인 영향을 미칠 수 있으며, 이에 따른 투자 전략이 재조정될 필요가 있다.
+• 리츠 ETF의 순매수 증가가 나타나는 가운데, 금리 안정 후 담보자산으로서의 리츠 투자 매력이 재조명될 전망이다.
+
+📈 해외주식 PART
+📰 [NVDA] TSMC Reports Oct. 15. It's the Best Early Read on Nvidia's Next Quarter. - The Motley Fool
+   (The Motley Fool · 10/11 16:54)
+→ TSMC가 10월 15일에 발표한 보고서는 엔비디아의 다음 분기 실적에 대한 중요한 분석 결과로 여겨진다. 이 보고서는 엔비디아의 시장 전망과 재무 성과에 대한 통찰을 제공할 것으로 예상된다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Shares Bought by Canada Pension Plan Investment Board - MarketBeat
+   (MarketBeat · 10/11 16:47)
+→ 캐나다 연금 계획 투자 위원회가 NVIDIA Corporation의 주식을 매입했습니다. 이는 시장에서의 NVIDIA 주식에 대한 관심이 증가하고 있음을 나타냅니다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Stock Position Raised by Castleark Management LLC - MarketBeat
+   (MarketBeat · 10/11 16:45)
+→ 캐슬아크 매니지먼트 LLC가 NVIDIA 주식 보유량을 증가시켰다는 소식이 전해졌다. 이로 인해 NVIDIA의 주가에 긍정적인 영향을 미칠 것으로 예상된다.
+
+📰 [TSLA] FILE PHOTO: Illustration shows silhouette of Elon Musk and Tesla logo - The Lufkin Daily News
+   (The Lufkin Daily News · 10/11 16:31)
+→ 엘론 머스크와 테슬라 로고의 실루엣이 담긴 일러스트가 포함된 뉴스 이미지가 등장했다. 이는 테슬라와 머스크의 관계를 상징적으로 나타내는 자료로 보인다.
+
+📰 [TSLA] Tesla’s Cybercab fleet jumped 8x in a month, with Dallas up next - Teslarati
+   (Teslarati · 10/11 16:01)
+→ 테슬라의 사이버캡 차량 대수가 한 달 만에 8배 증가했으며, 다음으로는 달라스에서 서비스가 시작될 예정이다. 이로 인해 대도시 지역에서 테슬라의 전기 택시 서비스가 빠르게 확장되고 있다.
+
+📰 [TSLA] AI Misuse and Nuclear War Pose Extinction Risks - Tesla (NASDAQ:TSLA), SpaceX (NASDAQ:SPCX) - Benzinga
+   (Benzinga · 10/11 14:38)
+→ 테슬라와 스페이스X의 CEO인 일론 머스크가 인공지능 오용과 핵전쟁이 인류 멸종의 위험을 초래할 수 있다고 경고했다. 그는 이러한 위협들이 전 세계적으로 심각한 문제로 대두되고 있다고 주장했다.
+
+📰 [HIMS] novo nordisk sued hims & hers over copycat weight-loss drugs - Olhar Digital
+   (Olhar Digital · 10/11 09:01)
+→ 노보 노디스크가 히즈 앤 허즈를 모방한 체중 감량 약물에 대해 고소했습니다. 이 소송은 히즈 앤 허즈 제품이 노보 노디스크의 약물과 유사하다는 주장에 근거하고 있습니다.
+
+📰 [HIMS] novo nordisk sued hims & hers over compounded weight-loss drugs - Olhar Digital
+   (Olhar Digital · 10/11 06:47)
+→ 노보 노르디스크가 히밋즈 & 헐스(Hims & Hers)를 복합 체중 감소 약물과 관련하여 고소했습니다. 이 회사는 해당 약물이 자사 제품의 지적 재산권을 침해했다고 주장하고 있습니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. Tokenized Stock (Coinbase) - CryptoRank
+   (CryptoRank · 10/11 05:41)
+→ Hims & Hers Health, Inc.의 토큰화된 주식이 Coinbase에서 거래되고 있다는 내용의 뉴스입니다. 해당 주식은 암호화폐 시장에서 거래되며, 투자자들에게 새로운 투자 기회를 제공하고 있습니다.
+
+📰 [RDW] RDW Oct 2026 21.000 put (RDW261030P00021000) interactive stock chart - Yahoo Finance UK
+   (Yahoo Finance UK · 10/11 07:15)
+→ Yahoo Finance UK에서 RDW 2026년 10월 만기 21.000 풋 옵션(RDW261030P00021000)의 상호작용 주식 차트를 제공합니다. 이 차트는 옵션의 가격 움직임을 시각적으로 보여줍니다.
+
+📰 [RDW] ASTS, RKLB, RDW, SATS Jump As SpaceX Prices Historic IPO — Cloudflare CEO Weighs In On 'Perfect' 20% Pop Prediction - Stocktwits
+   (Stocktwits · 10/11 04:50)
+→ ASTS, RKLB, RDW, SATS 주식이 SpaceX의 역사적인 IPO 가격 책정으로 급등했습니다. Cloudflare CEO는 주가가 20% 상승할 것이라는 예측에 대해 "완벽하다"는 의견을 밝혔습니다.
+
+📰 [RDW] RKLB, ASTS, SPCX, RDW Stocks Set For A Boost? Pentagon Confirms Orbital Weapons Use, Ramps Up Golden Dome Plans - Stocktwits
+   (Stocktwits · 10/10 18:02)
+→ 미국 펜타곤이 궤도 무기 사용을 확인하고 '골든돔' 계획을 강화하면서 RKLB, ASTS, SPCX, RDW 주식이 상승할 것으로 예상되고 있습니다. 이로 인해 관련 주식들이 투자자들의 주목을 받고 있습니다.
+
+📰 [IREN] Nvidia-Backed Neoclouds Face a Test as IREN, CoreWeave and Nebius Stocks Slide - Benzinga
+   (Benzinga · 10/11 03:20)
+→ Nvidia의 지원을 받는 클라우드 기업들이 최근 IREN, CoreWeave, Nebius의 주가 하락으로 어려운 상황에 처해 있습니다. 이들 회사는 시장의 테스트에 직면하고 있습니다.
+
+📰 [IREN] IREN Limited $IREN Stock Holdings Lowered by Mn Services Vermogensbeheer B.V. - MarketBeat
+   (MarketBeat · 10/10 18:06)
+→ IREN Limited의 주식 보유량이 Mn Services Vermogensbeheer B.V.에 의해 감소되었습니다. 이 변화는 시장에서의 주가에 영향을 미칠 수 있습니다.
+
+📰 [IREN] Avaii Wealth Management LLC Increases Position in IREN Limited $IREN - MarketBeat
+   (MarketBeat · 10/10 08:14)
+→ Avaii Wealth Management LLC가 IREN Limited의 주식 보유량을 늘렸다는 소식입니다. 이번 투자 결정은 시장에서 주목받고 있습니다.
+
+📰 [RKLB] Firefly Aerospace vs. Rocket Lab: Which Industrials Stock Is a Better Buy in 2026? - The Globe and Mail
+   (The Globe and Mail · 10/11 05:54)
+→ 2026년에 어떤 산업 주식이 더 좋은 투자 대상이 될지에 대한 분석이 Firefly Aerospace와 Rocket Lab을 비교하고 있다. 두 회사는 항공우주 산업에서 성장 잠재력을 갖추고 있으며, 각자의 기술력과 시장 위치를 고려한 투자 판단이 필요하다.
+
+📰 [RKLB] Firefly Aerospace vs. Rocket Lab: Which Industrials Stock Is a Better Buy in 2026?
+   (Yahoo Finance · 10/11 05:50)
+→ Firefly Aerospace는 급성장하고 있지만 큰 자금 소모가 문제이고, Rocket Lab은 재정 관리가 더 우수하면서 프리미엄이 붙어 거래되고 있습니다. 이러한 평가 차이가 향후 투자 판단에 중요한 영향을 미칠 수 있습니다.
+
+📰 [RKLB] Redwire vs. Rocket Lab: Which Industrials Stock Is a Better Buy in 2026? - The Motley Fool
+   (The Motley Fool · 10/11 05:30)
+→ 2026년에는 Redwire와 Rocket Lab 중 어느 산업 주식이 더 나은 투자 대상인지에 대한 비교가 진행됐다. 두 회사의 성장 가능성과 시장 전망을 분석하면서 투자자들에게 선택 기준을 제시하고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Most Investors Are Wrong About Who Owns the Most Bitcoin. That Misunderstanding Creates a Buying Opportunity.
+   (Yahoo Finance · 10/11 15:57)
+→ 대부분의 투자자들이 비트코인을 소유하고 있는 주체에 대해 잘못 알고 있으며, 이는 매수 기회를 창출하고 있다. 비트코인을 보유한 사람들은 자금력이 큰 구매자들이 원하는 자산을 가지고 있다.
+
+📰 [BTC-USD] Whale's Insight: Will Bitcoin's 'Uptober' Hold This October? (undefined:BTC-USD) - Seeking Alpha
+   (Seeking Alpha · 10/11 15:15)
+→ "Uptober"라는 용어는 비트코인 가격이 10월에 상승하는 경향을 지칭하며, 이번 10월에도 이러한 추세가 지속될지에 대한 관심이 집중되고 있습니다. 분석가들은 과거 데이터와 현재 시장 동향을 고려하여 비트코인의 향후 움직임을 예측하고 있습니다.
+
+📰 [BTC-USD] Bitcoin Price Under Pressure as Houthis Attack Saudi Arabia and Trump Signals US Involvement - CryptoRank
+   (CryptoRank · 10/11 15:05)
+→ 비트코인 가격이 압박을 받고 있는 가운데, 후티 반군이 사우디 아라비아를 공격했고, 트럼프가 미국의 개입을 시사하고 있습니다. 이러한 지정학적 긴장 상황이 암호화폐 시장에 영향을 미치고 있습니다.
+
+📰 [ETH-USD] Bitcoin Slides Below US$83,000, Ethereum Sheds Nearly 9% In Weekly Crypto Sell-Off - BusinessToday Malaysia
+   (BusinessToday Malaysia · 10/11 10:42)
+→ 비트코인이 83,000달러 이하로 하락했고, 이더리움은 주간 기준으로 거의 9% 떨어졌다. 이번 하락은 암호화폐 시장에서의 매도세와 관련이 있다.
+
+📰 [ETH-USD] US spot Ethereum ETFs see biggest weekly outflo... - Pluang
+   (Pluang · 10/11 10:04)
+→ 미국의 현물 이더리움 ETF가 최근 주간 기준으로 가장 큰 자금 유출을 경험했습니다. 이는 투자자들이 시장 변동성에 대한 우려로 자금을 회수하고 있음을 나타냅니다.
+
+📰 [ETH-USD] Ethereum Price Prediction: ETH May Dip to $2,300 Before the Rally Resumes - FXEmpire
+   (FXEmpire · 10/11 09:29)
+→ 이더리움(ETH)의 가격이 2,300달러까지 하락한 후 다시 상승할 가능성이 있다는 분석이 나왔습니다. 전문가들은 이 하락세가 일시적인 조정이며, 이후 강세장이 재개될 것으로 예상하고 있습니다.
+
+📰 [SOL-USD] Solana's transactions hit 10.7B in Sept, boosti... - Pluang
+   (Pluang · 10/11 13:58)
+→ 솔라나(Solana)의 거래량이 9월에 107억 건에 달하며 증가세를 보였습니다. 이는 블록체인 네트워크의 사용과 활동이 활발하다는 것을 나타냅니다.
+
+📰 [SOL-USD] Solana completes upgrade, cutting slot time to 200ms, aiming to boost network speed. - Pluang
+   (Pluang · 10/11 13:26)
+→ 솔라나가 업그레이드를 완료하여 슬롯 시간을 200ms로 단축하였으며, 이를 통해 네트워크 속도를 향상시키는 것을 목표로 하고 있습니다.
+
+📰 [SOL-USD] Can Solana replicate September’s rally in October after latest upgrade? - AMBCrypto
+   (AMBCrypto · 10/11 13:00)
+→ Solana가 최신 업그레이드를 통해 9월의 상승세를 10월에도 재현할 수 있을지에 대한 논의가 진행되고 있다. 업그레이드가 긍정적인 영향을 미친다면, Solana의 가격 상승 가능성이 높아질 것으로 보인다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Stay Reasonable As AI Crypto Interest Grows - Simply Wall Street
+   (Simply Wall Street · 10/11 15:37)
+→ Bitmine Immersion Technologies (BMNR)의 주가는 인공지능 기반 암호화폐에 대한 관심이 증가함에 따라 안정세를 유지할 것으로 보입니다. 이와 같은 관심은 BMNR의 시장 전망에 긍정적인 영향을 미칠 수 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Still Be A Bargain Despite AI Crypto Focus
+   (Yahoo Finance · 10/10 20:13)
+→ Bitmine Immersion Technologies(BMNR)는 지난 3년 동안 약 99.6%의 수익을 기록했으나 최근 주가가 하락하여 현재 약 24.03달러에 거래되고 있습니다. 이로 인해 투자자들은 현재 주가가 회사의 장부 가치와 어떻게 비교되는지에 대한 질문을 하고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Still Be A Bargain Despite AI Crypto Focus - Yahoo Finance
+   (Yahoo Finance · 10/10 20:13)
+→ Bitmine Immersion Technologies(BMNR) 주식은 AI와 암호화폐에 대한 집중에도 불구하고 여전히 저평가된 것으로 보인다. 이러한 배경 속에서 투자자들은 BMNR 주식이 향후 상승 가능성이 있다고 판단하고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 혼조세를 보이고 있으며, 비트코인은 약간 상승한 83,079달러, 이더리움은 2,504달러를 기록하고 있다. 비트코인의 점유율은 소폭 증가한 반면, 파생상품 거래량은 감소하여 관망 심리가 뚜렷해졌다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 혼조세… 비트코인 83,079달러, 이더리움 2,504달러
+   → 암호화폐 시장은 비트코인이 83,079달러(+0.53%), 이더리움이 2,504달러(+0.50%)로 소폭 상승했으며, 비트코인의 시장 점유율은 59.55%로 증가했다.
+   (토큰포스트 · 10/11 16:01)
+2. (ETF) 태국, 비트코인·이더리움 ETF 규정 시행
+   → 태국 SEC는 10월 16일부터 비트코인과 이더리움 ETF 규정을 시행한다고 발표했으며, 초기 투자 대상으로 설정했다.
+   (토큰포스트 · 10/11 16:01)
+3. (기타) 암호화폐 시장, 24시간 동안 레버리지 포지션 2222만7548달러 청산
+   → 지난 24시간 동안 암호화폐 시장에서 2,227만 달러 규모의 레버리지 포지션이 청산되었으며, 이더리움의 청산 규모가 가장 컸다.
+   (토큰포스트 · 10/11 15:56)
+4. (거래소) 바이낸스 비트코인 현물 매수 잔량, 매도보다 3590만달러 많아
+   → 바이낸스에서 비트코인 현물 매수 잔량이 3,590만 달러 많았고, 일부 거래소에서는 매도 잔량이 매수보다 높은 상황이 나타났다.
+   (토큰포스트 · 10/11 15:27)
+5. (기타) USDC 7일간 8억개 순감소
+   → USDC의 유통량이 10월 8일까지 7일간 약 8억 개 감소했으며, 같은 기간 상환액이 발행액을 초과했다.
+   (토큰포스트 · 10/11 12:45)
+
+[흐름·전망]
+• 비트코인과 이더리움의 점유율 상승이 의미하는 바는 투자자들이 대형주에 더 집중하고 있다는 것이다.
+• ETF 규정 시행 후 태국 시장에서 비트코인과 이더리움의 수요가 어떻게 변할지 주목해야 한다.
+• 파생상품 거래량의 감소는 단기적으로 투자자들의 소극적인 접근을 나타내며, 이는 시장의 변동성이 감소할 가능성을 시사한다.
+• USDC의 유통량 감소는 시장의 매매 심리가 한풀 꺾였다는 신호일 수 있으며, 향후 스테이블코인 사용의 변화가 예상된다.
+
+📊 공포탐욕지수
+  - CNN 기준: 45 (Fear)
+  - 크립토 기준: 61 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘은 서울 아파트값이 87주 연속 상승하며 역대 최장 상승 기록을 이어가고 있는 가운데, 향후 시장에 대한 전문가들의 우려와 조언이 제시됐다.
+
+[핵심 뉴스]
+1. (정책) 내년 집값 불안 요소 여전… 1주택자 갈아타기 기회 노려야
+   → 부동산 전문가들은 내년에도 강남권 조정이 지속될 것으로 보이며, 시장 활성화는 어렵다고 예상하고 있다. 다주택자 매물은 이미 소화되었고 공급 부족이 가격을 지탱할 것으로 전망된다.
+   (매일경제 · 10/11 16:36)
+2. (공급) LH 신축 매입임대 인기 … 두 달 새 신청 63% 증가
+   → LH는 수도권 주택 공급을 위한 신축 매입 임대사업을 확대하고 있으며, 8~9월에 신청 건수가 63% 증가했다고 발표했다. 앞으로 3년간 서울 25개 자치구에 청년과 신혼부부 대상 2만 가구 이상의 매입 임대주택을 공급할 계획이다.
+   (매일경제 · 10/11 16:33)
+3. (공급) LH, 향후 3년간 서울 25개 자치구에 2만가구 이상 공급
+   → LH는 서울의 25개 자치구에 2만528가구의 매입 임대주택을 공급할 예정이며, 청년과 신혼부부를 중점 대상으로 한다. 동대문구가 가장 많은 1,920가구가 계획되어 있다.
+   (연합뉴스 · 10/11 12:03)
+4. (기타) 골프·스파에 24시간 건강관리…호텔 닮은 남판교 더힐
+   → 용인 고기동에 조성되는 '힐스테이트 남판교 더힐'은 892가구 규모의 시니어하우스이며, 고급 의료 및 라이프 케어 서비스를 제공할 계획이다. 이는 11년 만에 공급되는 분양형 시니어타운이다.
+   (매일경제 · 10/11 16:33)
+5. (재건축) IPARK현산·삼성물산 손잡고 … 숙대역세권 재개발 조경 특화
+   → IPARK현대산업개발은 서울 숙대입구역세권 재개발사업에서 삼성물산과 협력해 조경 특화를 추진하며, 보다 자연과 주거공간이 연결된 환경을 조성할 계획이다.
+   (매일경제 · 10/11 16:33)
+6. (정책) 규제로 왜곡된 수도권 집값 … 갈아타기로 똘똘한 한채 잡아라
+   → 부동산 전문가들은 규제로 왜곡된 수도권 집값을 언급하며, 1주택자가 갈아타기를 통해 '똘똘한 한 채'를 잡을 기회를 추천하고 전월세 난의 해결책은 어렵다고 경고했다.
+   (매일경제 · 10/11 12:01)
+
+[흐름·전망]
+• 수도권 공급 부족이 지속될 가능성이 높아, 가격 안정성에 미치는 영향을 주목해야 한다.
+• 강북권의 상승세가 둔화되는 가운데, 매수자들은 보다 신중한 접근이 요구된다.
+• LH의 매입 임대주택 공급 확대가 실수요자에게 긍정적인 영향을 미칠 수 있으므로, 이에 대한 반응을 살펴봐야 한다.
+• 시니어타운과 같은 전문화된 주거시설에 대한 수요 증가가 앞으로의 트렌드가 될 가능성이 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 자신의 높은 지지율을 강조하며 자신과 공화당의 인기를 주장했다. 또한, 새로운 임명을 발표하며 행정과 입법 부문의 협력 중요성을 언급했다.
+
+[주요 발언]
+1. (인사) 트럼프는 케이트 베일리를 입법부 업무국장으로 임명했다고 발표하며 그녀의 능력을 높이 평가했다.
+   (Truth Social · 10/11 11:01)
+2. (국내정치) 그는 민주당과 언론이 자신이 인기 없는 것처럼 이야기하고 있지만, 실제로 자신과 공화당이 더 인기를 얻고 있다고 주장했다.
+   (Truth Social · 10/11 09:03)
+3. (기타) 트럼프는 자신이 세계 여러 난제를 해결하고 있음에도 노벨 평화상을 받지 못한 점에 대해 아쉬움을 드러냈다.
+   (Truth Social · 10/11 09:03)
+4. (기타) 트럼프는 테네시에서의 집회에 대해 긍정적인 반응을 보이며 많은 지지를 받고 있다고 밝혔다.
+   (Truth Social · 10/11 08:45)
+5. (국제정세) 트럼프는 이란의 핵무기 개발을 저지한 성과를 강조하며 자신이 외교에서의 성공을 거두었다고 주장했다.
+   (Truth Social · 10/11 03:59)
+6. (기타) 트럼프는 정치 비평가 더그 쇼엔을 비난하며 언론에 대한 자신의 입장을 재차 강조했다.
+   (Truth Social · 10/11 03:39)
+
+[흐름·전망]
+• 트럼프의 높은 지지율 주장은 향후 공화당의 선거 전략에 영향을 줄 가능성이 있다.
+• 베일리의 임명이 행정과 입법 간의 협력을 더 강화할 수 있는 점에 주목할 필요가 있다.
+• 트럼프의 국제 문제 해결 발언이 향후 외교 정책 논의에서 화두가 될 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
