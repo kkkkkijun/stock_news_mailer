@@ -1,0 +1,241 @@
+2026-10-12T06:32:16.543115+09:00
+
+[오늘의 뉴스 요약] 2026-10-12 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 통화 및 재정정책에 대한 논란이 심화되고 있는 가운데, M2 통계 개편이 유동성 통화의 증가를 감추려는 의도로 해석되고 있다. 동시에 정부가 민생 물가 관리를 위해 전통시장에서 온누리상품권 사용 확대를 추진하고 있다.
+
+[핵심 뉴스]
+1. (금리) 한은 M2 통계 개편 후 증가율 격차 확대
+   → 한은의 M2 증가율이 기존 방식 12.2% 대비 신 지표에서 6.2%로 격차가 6%포인트로 증가, 박수영 의원은 유동성 증가를 감추기 위한 통계 개편 의혹을 제기하였다.
+   (연합뉴스 · 10/12 05:54)
+2. (환율) 반도체 수출 호황에…달러 넘치는 외환시장
+   → 반도체 수출 증가로 인해 달러 공급이 활발해지면서 외환시장에서 원화 가치가 안정적으로 유지되고 있다.
+   (이데일리 · 10/12 05:00)
+3. (물가) 이형일, 경제현안간담회서 온누리상품권·민생물가 논의
+   → 이형일 부총리는 경제현안 간담회에서 내년부터 전통시장에서 온누리상품권 사용 시 최대 10%의 혜택을 부여할 계획임을 밝혔다.
+   (연합뉴스 · 10/11 20:27)
+4. (정책) 국가채무비율 40%가 마지노선…미래대응기금 10년 적립
+   → 국내 적정 국가채무비율을 GDP의 40% 이내로 관리해야 한다는 주장이 제기되었으며, 정부의 재정 확대 기조에 대한 논의가 이어지고 있다.
+   (매일경제 · 10/11 16:14)
+5. (고용) 부실채권 소각에 성실 채무자 ‘허탈’
+   → 하나은행이 장기연체채권을 소각하며 금융 취약계층의 구제를 시도하고 있지만, 성실 채무자와의 형평성 문제가 제기되고 있다.
+   (매일경제 · 10/11 09:06)
+
+[흐름·전망]
+• M2 통계 개편에 따른 유동성 관리 방식이 향후 통화 정책에 미치는 영향을 주의 깊게 살펴볼 필요가 있다.
+• 온누리상품권 혜택 확대가 소비자 심리와 물가에 미치는 영향을 관찰하여 정책의 실효성을 검토해야 한다.
+• 재정건전성 강화를 목표로 한 국가채무비율 관리 논의가 향후 정부 정책에 미치는 영향을 평가할 필요가 있다.
+• 장기연체채권 소각이 경제 전반에 미치는 긍정적인 효과와 함께 채무자 간 형평성 문제를 균형 있게 다룰 필요가 있다.
+
+📈 해외주식 PART
+📰 [NVDA] Dow Jones Futures: Trump Claims Russia-Ukraine 'Energy Ceasefire'; ASML, Nvidia Chipmaker Taiwan Semi Earnings Loom
+   (Yahoo Finance · 10/12 05:27)
+→ 트럼프는 우크라이나와 러시아가 '에너지 휴전'에 합의했다고 주장했습니다. ASML과 인공지능 칩 제조업체인 대만 반도체의 수익 발표가 AI 주식에 중요한 영향을 미칠 것으로 보입니다.
+
+📰 [NVDA] Nvidia (NVDA) Stock May Be 27% Undervalued Despite Record Highs
+   (Yahoo Finance · 10/12 04:09)
+→ NVIDIA의 주가는 AI 인프라 boom 덕분에 시장 가치가 수조 달러에 달했지만, 현재 주가가 회사의 현금 흐름과 얼마나 연결되어 있는지에 대한 의문이 제기되고 있다. 지난 5년 동안 NVIDIA는 약 953.4%의 주가 상승을 기록했으며, 일부 분석가들은 현재 주가가 최대 27% 저평가되어 있을 수 있다고 평가하고 있다.
+
+📰 [NVDA] GTC DC - NVIDIA - NVIDIA
+   (NVIDIA · 10/12 03:53)
+→ NVIDIA는 GTC DC 행사에서 새로운 기술과 제품을 발표했습니다. 이 행사에서는 인공지능과 고성능 컴퓨팅 관련 혁신적인 솔루션이 소개되었습니다.
+
+📰 [TSLA] Tesla Assisted Driving Replaces Full Self-Driving In Europe - Tech My Money
+   (Tech My Money · 10/12 06:24)
+→ 유럽에서 테슬라는 '풀 자율주행(FSD)' 기능을 '보조 주행(Assisted Driving)'으로 대체했습니다. 이는 규제나 운전 안전 문제에 대응하기 위한 결정으로, 테슬라 차량의 운전 방식에 변화가 생길 것으로 예상됩니다.
+
+📰 [TSLA] Forget the Recent Delivery Beat: Here's the Key Number That Will Decide Investors' Reaction to Tesla's Earnings
+   (Yahoo Finance · 10/12 06:00)
+→ 테슬라의 3분기 배송량은 인상적이었지만, 투자자들은 전체 실적 발표 시 총 마진에 주목할 예정이다. 이는 향후 투자자들의 반응에 중요한 영향을 미칠 것으로 예상된다.
+
+📰 [TSLA] Does Tesla (TSLA) Gain More From Megachargers Or Tokenized Stock Trading?
+   (Yahoo Finance · 10/12 05:06)
+→ 테슬라(TSLA)는 미국 주요 트럭 경로에 맞춘 중대형 전기 트럭을 위한 메가차저 네트워크를 출시하고, Pilot과 함께 첫 번째 장소를 개설했습니다. 또한, 테슬라 주식은 솔라나 네트워크에서 블록체인 거래를 위한 토큰화에 포함된 미국 주식 중 첫 번째 사례입니다.
+
+📰 [HIMS] novo nordisk sues hims & hers over copycat weight-loss drugs - Olhar Digital
+   (Olhar Digital · 10/12 02:13)
+→ 노보 노르디스크(Novo Nordisk)는 유사한 체중 감량 약물을 생산한 히미스 앤 허즈(Hims & Hers)를 상대로 소송을 제기했습니다. 이 회사는 경쟁사의 제품이 자사의 특허 기술을 침해했다고 주장하고 있습니다.
+
+📰 [HIMS] Hims & Hers Stock Jumped 10% in a Day as Volume Hit 15.9 Million Shares. Here’s Where the Stock Could Go by 2030
+   (Yahoo Finance · 10/12 00:04)
+→ Hims & Hers 주식이 하루 만에 10% 상승하며 거래량이 1,590만 주에 달했습니다. 현재 주가는 30.92달러로, 목표 주가는 약 27달러에서 31달러 사이로 예상되며, 잠재적 총 수익률은 약 13%입니다.
+
+📰 [HIMS] novo nordisk sued hims & hers over compounded weight-loss drugs - Olhar Digital
+   (Olhar Digital · 10/11 06:41)
+→ 노보 노르디스크가 Hims & Hers를 상대로 복합 비만 치료제에 대해 소송을 제기했습니다. 이 소송은 두 회사 간의 경쟁과 관련된 것으로 보이며, 노보 노르디스크는 자사의 지적 재산권을 보호하고자 하는 것으로 분석됩니다.
+
+📰 [RDW] RKLB, RDW, FLY, VSAT Climb Overnight: $981M Space Force IDIQ Contract Opens Fresh Pentagon Opportunity - Stocktwits
+   (Stocktwits · 10/11 15:55)
+→ RKLB, RDW, FLY, VSAT 주식이 상승세를 보인 가운데, 미 공군이 9억8100만 달러 규모의 계약을 체결하면서 새로운 기회가 열렸다고 보도되었습니다. 이 계약은 Pentagon과의 협력을 통해 관련 기업들에게 긍정적인 영향을 미칠 것으로 기대됩니다.
+
+📰 [RDW] RDW Oct 2026 21.000 put (RDW261030P00021000) interactive stock chart - Yahoo Finance UK
+   (Yahoo Finance UK · 10/11 07:15)
+→ RDW의 2026년 10월 21.000 풋 옵션(RDW261030P00021000)에 대한 주식 차트가 Yahoo Finance UK에 제공되고 있습니다. 이 옵션은 특정 가격에 주식을 매도할 수 있는 권리를 나타냅니다.
+
+📰 [RDW] RDW Oct 2026 11.000 call (RDW261030C00011000) stock price, news, quote and history - Yahoo Finance Australia
+   (Yahoo Finance Australia · 10/11 06:49)
+→ RDW Oct 2026 11.000 콜 옵션(RDW261030C00011000)의 주가 및 관련 뉴스가 Yahoo Finance Australia에 업데이트되었습니다. 해당 옵션에 대한 최신 정보와 이력도 확인할 수 있습니다.
+
+📰 [IREN] IREN Leans On NVIDIA AI Validation As SemiAnalysis Questions Its Infrastructure Claims
+   (Yahoo Finance · 10/11 18:52)
+→ IREN은 다중 임대 작업과 성능 최적화를 위해 가상화된 GPU 환경과 물리적 클러스터를 제공한다고 밝혔습니다. 그러나 SemiAnalysis는 IREN의 인프라 주장에 대해 의문을 제기하고 있으며, IREN은 NVIDIA AI 검증을 의존하고 있습니다.
+
+📰 [IREN] IREN Leans On NVIDIA AI Validation As SemiAnalysis Questions Its Infrastructure Claims - Yahoo Finance
+   (Yahoo Finance · 10/11 18:52)
+→ IREN은 NVIDIA의 AI 검증을 바탕으로 자신들의 인프라 주장에 대한 의문을 제기하는 SemiAnalysis의 분석에 대응하고 있습니다. 이를 통해 IREN은 자사의 기술 신뢰성을 강화하려고 하고 있습니다.
+
+📰 [IREN] Nvidia-Backed Neoclouds Face a Test as IREN, CoreWeave and Nebius Stocks Slide - Benzinga
+   (Benzinga · 10/11 03:20)
+→ Nvidia의 지원을 받는 클라우드 서비스 회사들이 주가 하락의 도전에 직면하고 있습니다. IREN, CoreWeave, Nebius의 주가가 하락하면서 이들 기업의 성장 가능성이 시험대에 올랐습니다.
+
+📰 [RKLB] 3 Reasons Rocket Lab Stock Could Double in 2027 -- and 1 Reason It Might Not - The Motley Fool
+   (The Motley Fool · 10/12 01:30)
+→ 로켓랩 주식이 2027년에 두 배로 상승할 가능성이 있는 세 가지 이유는 매출 성장, 우주 임무의 증가, 그리고 신규 계약 체결 등이 있다. 그러나 시장 경쟁 심화라는 한 가지 이유로 주식 상승이 제한될 수 있는 가능성도 존재한다.
+
+📰 [RKLB] Is Rocket Lab (RKLB) Undervalued As Its 20 Launch Deal Tests Long Term Demand? - Simply Wall Street
+   (Simply Wall Street · 10/12 01:10)
+→ 로켓랩(RKLB)이 20회의 발사 계약을 통해 장기 수요를 테스트하면서 저평가되고 있는지에 대한 논의가 이어지고 있다. 이 계약은 회사의 미래 성장 가능성을 검증하는 중요한 지표로 작용할 것으로 보인다.
+
+📰 [RKLB] Rocket Lab aims to rival SpaceX with new Neutro... - Pluang
+   (Pluang · 10/12 01:04)
+→ 로켓랩이 새로운 네트로 엔진을 개발하여 스페이스X와 경쟁할 계획이라고 밝혔습니다. 이번 엔진은 더 높은 성능을 목표로 하며, 로켓랩의 우주 발사 서비스 경쟁력을 강화할 것으로 기대됩니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Treasury Yields Are Now Above 5%. Here's Why That's Bearish For Bitcoin. - The Motley Fool
+   (The Motley Fool · 10/12 06:29)
+→ 미국 재무부의 채권 수익률이 5%를 초과함에 따라 비트코인에 부정적인 영향을 미칠 수 있다는 분석이 나왔습니다. 높은 금리가 투자자들에게 안전한 자산으로의 이동을 촉진하여 비트코인과 같은 위험 자산의 수요를 감소시킬 위험이 있다는 것입니다.
+
+📰 [BTC-USD] Bitcoin Reclaims $83K as AlphaPepe Nears $3M Raised With Its Fifth Exchange Reveal Three Days Away - StreetInsider
+   (StreetInsider · 10/12 06:26)
+→ 비트코인이 83,000달러로 회복했으며, AlphaPepe는 다섯 번째 거래소 공개를 앞두고 300만 달러에 가까운 자금을 모금하고 있습니다. 이 발표는 3일 후 예정되어 있습니다.
+
+📰 [BTC-USD] Treasury Yields Are Now Above 5%. Here's Why That's Bearish For Bitcoin.
+   (Yahoo Finance · 10/12 06:25)
+→ 국채 수익률이 5%를 초과하면서 비트코인에 부정적인 영향을 미칠 수 있다는 분석이 나오고 있다. 투자자들은 법정 통화 가치 하락과 국채 수익률 상승을 혼동하지 말아야 한다.
+
+📰 [ETH-USD] New Crypto: Remittix Confirms November 24 RTX Launch as Ethereum Price Prediction Eyes $12,000 and Cardano’s Tokenized-Equity Push Revives the $1 ADA Dream - StreetInsider
+   (StreetInsider · 10/12 06:30)
+→ Remittix는 11월 24일 RTX 출시를 확인했으며, 이더리움 가격 예측은 12,000달러를 바라보고 있습니다. 또한, 카르다노는 토큰화된 자산을 통해 ADA 가격이 1달러에 이를 것이라는 희망을 다시 불러일으켰습니다.
+
+📰 [ETH-USD] Ethereum News Today: ETF Selling Tests ETH Bulls as Remittix Community PayFi Transactions Increase - StreetInsider
+   (StreetInsider · 10/12 06:26)
+→ 오늘 이더리움 뉴스에 따르면, ETF 판매가 ETH 강세를 시험하고 있는 가운데, Remittix 커뮤니티의 PayFi 거래가 증가하고 있습니다. 이는 이더리움의 시장 내 변동성과 관련된 중요한 지표로 해석될 수 있습니다.
+
+📰 [ETH-USD] Why Is Ethereum Stuck Below $2,500 in 2026?
+   (Yahoo Finance · 10/12 06:00)
+→ 2026년 이더리움 가격이 2,500달러 아래에 머무르는 이유는 세 명의 주요 구매자가 동시에 시장에서 물러났기 때문입니다. 이들의 움직임이 중요한 이유와 그로 인해 가격이 횡보하고 있는 상황에 대해 설명하고 있습니다.
+
+📰 [SOL-USD] Solana Price Prediction: Samsung Brings USDC to 82M Galaxy Phones, but Pepeto Holders Eye Gains - StreetInsider
+   (StreetInsider · 10/12 06:26)
+→ 삼성이 8,200만 대의 갤럭시 스마트폰에 USDC를 도입하며 Solana와의 연관성이 주목받고 있다. 이에 따라 Pepeto 보유자들은 이익을 기대하고 있다.
+
+📰 [SOL-USD] Solana dominates tokenized equities with 65% ma... - Pluang
+   (Pluang · 10/12 05:37)
+→ 솔라나가 토큰화된 주식 시장에서 65%의 시장 점유율을 차지하며 압도적인 주도권을 확보하고 있다는 내용입니다. 이는 블록체인 기반의 자산 거래에서 솔라나의 강력한 입지를 보여줍니다.
+
+📰 [SOL-USD] Does Tesla (TSLA) Gain More From Megachargers Or Tokenized Stock Trading?
+   (Yahoo Finance · 10/12 05:06)
+→ 테슬라가 미국의 주요 화물 운송 경로에 맞춘 중형 전기 트럭을 위한 메가충전소 네트워크를 출시했으며, 첫 번째 사이트는 파일럿과 협력하여 개설되었습니다. 또한, 테슬라 주식은 블록체인 거래를 위한 토큰화 대상으로 선택되어 솔라나 네트워크에서 Securitize를 통해 거래될 예정입니다.
+
+📰 [BMNR] BitMine Immersion Technologies Inc Shs Cert Deposito Arg Repr 0.125 Sh Actuals & Estimates (BCBA:BMNR) - TradingView
+   (TradingView · 10/12 03:20)
+→ BitMine Immersion Technologies Inc의 주식에 대한 실제 및 예상 데이터가 TradingView를 통해 제공되고 있습니다. 해당 정보는 아르헨티나 증권 거래소에서 거래되는 BMNR 주식에 관련된 내용입니다.
+
+📰 [BMNR] BMNR, CRCL, MSTR Stocks Lead Slide In Crypto Equities Amid Bitcoin’s Tumble To $63K - Stocktwits
+   (Stocktwits · 10/11 20:55)
+→ 비트코인이 63,000달러로 하락하면서 BMNR, CRCL, MSTR 주식이 암호화폐 주식에서 큰 하락세를 보였습니다. 이러한 상황은 암호화폐 시장 전반에 부정적인 영향을 미치고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Stay Reasonable As AI Crypto Interest Grows - Simply Wall Street
+   (Simply Wall Street · 10/11 15:37)
+→ Bitmine Immersion Technologies (BMNR) 주식은 인공지능 기반 암호화폐에 대한 관심이 증가함에 따라 안정적인 수준을 유지할 가능성이 있다고 전해졌다. 시장의 관심 증가가 BMNR의 주가에 긍정적인 영향을 미칠 것으로 보인다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 미국 상원에서 가상자산 시장구조 법안인 클래리티 법안의 본회의 논의 개시 동의안이 통과되지 못하면서 시장의 불확실성이 여전히 지속되고 있다. 비트코인과 이더리움은 미약한 상승세를 보였지만, 규제 이슈로 인한 긴장감이 여전하다.
+
+[핵심 뉴스]
+1. (규제) 미 상원 클래리티 법안 제동
+   → 미 상원에서 클래리티 법안 논의 개시 동의안이 49대 50으로 통과되지 못하면서 규제 관련 불확실성이 다시 부각되었고, 비트코인은 24시간 동안 0.70% 상승하여 83,579달러를 기록했다.
+   (토큰포스트 · 10/12 05:59)
+2. (시세) 암호화폐 시장 레버리지 포지션 청산
+   → 24시간 동안 암호화폐 시장에서 총 9585만8337달러의 레버리지 포지션이 청산되었으며, 이 중 숏 포지션이 81.54%를 차지하여 시장에서 상승 압박이 우세했음을 나타냈다.
+   (토큰포스트 · 10/12 04:56)
+3. (ETF) 그레이스케일 지캐시 ETF 순유출
+   → 그레이스케일 지캐시 ETF에서는 10월 2일 마감 주 기준으로 9356만달러가 순유출되었으며, 지캐시 가격은 최근 고점에서 34% 하락한 상황이다.
+   (토큰포스트 · 10/12 05:01)
+4. (규제) SEC·CFTC 조치 지속
+   → 클래리티 법안의 논의가 정체된 가운데, SEC와 CFTC는 개인의 기존 권한 내에서 조치와 의견 수렴을 지속하고 있으며, 포괄적인 시장 감독 체계는 여전히 확정되지 않았다.
+   (토큰포스트 · 10/12 01:18)
+
+[흐름·전망]
+• 클래리티 법안의 향후 상황은 투자자들에게 중요한 관전 포인트가 될 것으로 보이며, 규제 불확실성이 해소되기 전까지 시장의 변동성은 지속될 가능성이 높다.
+• 비트코인과 이더리움의 상대적인 강세는 대체 자산으로의 관심을 시사하며, 알트코인 투자자들은 이 흐름을 주의 깊게 살펴볼 필요가 있다.
+• 레버리지 포지션의 청산 현상은 시장의 단기적인 향방을 좌우할 수 있는 신호이며, 향후 거래량과 변동성이 증가할 수 있다.
+• 대체 자산과 관련된 기관들의 규제 방향이 어떻게 정립될지가 향후 시장 방향성과 유동성에 큰 영향을 미칠 것으로 예상된다.
+
+📊 공포탐욕지수
+  - CNN 기준: 45 (Fear)
+  - 크립토 기준: 61 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 전세사기 피해자 수가 증가하고 있고, 서울 아파트값은 계속해서 상승세를 보이고 있다. 이러한 상황 속에서 수도권의 주택 공급과 수요 불균형 문제가 심화되고 있는 양상이다.
+
+[핵심 뉴스]
+1. (전세) 9월 전세사기 피해자 623건 추가 인정
+   → 전세사기 피해자 수가 9월에 623건 추가 인정되어 누적 피해자는 4만1천559건에 이르며, 피해자의 60.7%가 수도권에 집중되어 있다.
+   (연합뉴스 · 10/12 06:00)
+2. (매매) 내년 집값 불안 요소 여전… 1주택자 갈아타기 기회 노려야
+   → 전문가들은 내년에도 서울 아파트 가격 상승세가 이어질 것이라고 예상하면서도, 거래 활성화에는 한계가 있을 것이라는 의견을 내놓았다.
+   (매일경제 · 10/11 16:36)
+3. (공급) 이번주 화성·양평 등 1829가구 청약
+   → 이번 주 화성과 양평에서 총 1829가구의 청약이 진행되며, 특히 향남역 인근의 아파트가 주목받고 있다.
+   (매일경제 · 10/11 16:33)
+4. (공급) 집지을 땅 없다는데 … LH 택지 절반 유찰
+   → LH의 공공택지 유찰률이 2024년 56%, 2025년 45%에 이를 것으로 전망되며, 공급 부족 사태가 지속되고 있다.
+   (매일경제 · 10/11 16:33)
+5. (공급) LH 향후 3년간 서울 25개 자치구에 2만가구 이상 공급
+   → LH는 향후 3년간 서울 전역에 2만가구 이상의 매입임대주택을 공급할 계획을 밝혔으며, 청년과 신혼부부를 위한 주택 제공이 강조되고 있다.
+   (연합뉴스 · 10/11 12:03)
+6. (매매) 규제로 왜곡된 수도권 집값 … 갈아타기로 똘똘한 한채 잡아라
+   → 규제로 인해 왜곡된 수도권 집값 상황 속에서, 전문가들은 1주택자들이 똘똘한 한 채를 확보할 기회라고 조언하고 있다.
+   (매일경제 · 10/11 12:01)
+
+[흐름·전망]
+• 전세사기 피해자 수 증가와 수도권의 주택 공급난이 심화되는 만큼, 정부의 지원 방안과 구체적인 대책이 주목받을 것으로 보인다.
+• 서울 아파트 시장의 상승세가 계속되겠지만, 거래량이 감소할 가능성이 있어 시장의 불안 요소를 면밀히 살펴야 한다.
+• LH의 공공택지 공급 유찰 현상은 향후 주택시장의 공급 부족을 더욱 악화시킬 수 있는 변수로 작용할 전망이다.
+• 1주택자의 갈아타기가 중요한 전략으로 떠오르고 있으며, 시장의 동향에 대한 지속적인 모니터링이 필요하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 카롤라인 리빗의 백악관 대변인 역할에 대해 감사를 표하며, 일부 정치인들과의 협력 가능성을 언급했다. 그는 또한 크리스토퍼 콜럼버스 기념일을 언급하며 이탈리아계 미국인 커뮤니티를 축하했다.
+
+[주요 발언]
+1. (인사) 트럼프는 카롤라인 리빗이 훌륭한 백악관 대변인 역할을 해냈다고 언급하며, 그녀에게 감사의 뜻을 전했다.
+   (Truth Social · 10/12 00:21)
+2. (기타) 트럼프는 크리스토퍼 콜럼버스 기념일을 축하하며, 극단적인 좌파에 의해 훼손된 동상들이 다시 세워지고 있다고 강조했다.
+   (Truth Social · 10/12 00:21)
+3. (외교) 트럼프는 러시아와 우크라이나 간의 에너지 전투에 대해 즉각적인 정전을 발표하며 양측의 합의를 강조했다.
+   (Truth Social · 10/12 00:09)
+4. (국내정치) 트럼프는 민주당 정치인들에게 협력할 것을 촉구하며, 특정 정치인을 예로 들어 비판했다.
+   (Truth Social · 10/12 00:08)
+5. (인사) 트럼프는 케이티 베일리를 입법 affairs 국장으로 임명했다고 발표하며 그녀의 경력과 성과를 언급했다.
+   (Truth Social · 10/12 00:06)
+
+[흐름·전망]
+• 트럼프의 정치적 발언이 향후 국내 정치 환경에 미칠 영향을 주목할 필요가 있다.
+• 기념일과 관련된 그의 발언이 이탈리아계 미국인 유권자들에게 어떤 반응을 일으킬지 지켜볼 필요가 있으며, 이는 정치적 지지에 영향을 줄 수 있다.
+• 트럼프가 제안한 정전이 외교적 논의에 어떤 새로운 전환점을 제시할지 주목해야 한다.
+• 그의 최근 인사 발표가 향후 행정부의 정책과 반응에 어떤 변화를 가져올 수 있을지 관심을 가져야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

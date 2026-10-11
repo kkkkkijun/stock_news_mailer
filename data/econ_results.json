@@ -372,10 +372,10 @@
 "name": "Consumer Price Index (YoY)",
 "dt": "2026-10-14T12:30:00Z",
 "act": null,
-"cons": "3.6%",
+"cons": "3.7%",
 "prev": "3.4%",
 "act_n": null,
-"cons_n": 3.6
+"cons_n": 3.7
 },
 "cfaffea7-7471-4647-926d-581b3eecb400": {
 "name": "Consumer Price Index ex Food & Energy (MoM)",
@@ -399,10 +399,10 @@
 "name": "Producer Price Index ex Food & Energy (YoY)",
 "dt": "2026-10-15T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "4.4%",
 "prev": "4.6%",
 "act_n": null,
-"cons_n": null
+"cons_n": 4.4
 },
 "9453b39f-605b-4293-b963-452070d91eb0": {
 "name": "Retail Sales (MoM)",
