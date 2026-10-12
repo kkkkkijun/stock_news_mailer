@@ -1,0 +1,238 @@
+2026-10-13T06:32:15.219478+09:00
+
+[오늘의 뉴스 요약] 2026-10-13 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 경제 상황은 환율과 물가에 대한 우려가 증대되고 있으며, 특히 한국은행 총재가 물가 상승이 목표치를 상당 기간 웃돌 것이라는 발언을 하여 조사와 통화 정책의 필요성이 강조되고 있다.
+
+[핵심 뉴스]
+1. (환율) 환율, 아직 예년보다 높아…추가 하락 여지 있다
+   → 신현송 한국은행 총재는 원/달러 환율이 오늘 1,332원이지만 여전히 예년보다 높은 수치며 추가 하락 여지가 있다고 밝혔다.
+   (연합뉴스 · 10/12 18:03)
+2. (물가) "물가 상당기간 목표 웃돌 것"… 한은총재 금리인상 시사
+   → 신현송 한국은행 총재는 12일 국정감사에서 물가 상승이 상당 기간 목표치를 초과할 것으로 보이며, 9월 근원물가 상승률이 2.8%를 기록했다고 말했다.
+   (매일경제 · 10/12 17:38)
+3. (기타) “이거 갚을 수 있는 빚인가요”…60대 이상 2금융권 대출, 평균 1억 눈앞
+   → 60대 이상 차주의 비은행권 대출잔액이 평균 9162만원으로 은행권보다 높아져 고령층의 금융 취약성이 우려된다는 보고가 발표되었다.
+   (매일경제 · 10/13 06:13)
+4. (물가) 한은 총재 국정감사 중 “물가 상당기간 목표 웃돌 것”
+   → 경제정책 라운드테이블에서 한국의 장기 성장률이 5년마다 1%포인트 감소할 가능성이 있으며, 이를 극복하기 위한 구조적 변화가 필요하다는 경고가 나왔다.
+   (매일경제 · 10/12 17:14)
+5. (성장) "韓, 2030년 이후 성장 정체될수도 … 반도체 호황 착시 경계를"
+   → 니어재단과 KDI는 한국 경제가 장기적으로 정체될 위험이 있으며, 새로운 성장 전략이 필요하다고 강조했다.
+   (매일경제 · 10/12 17:38)
+
+[흐름·전망]
+• 환율이 안정세를 유지할 경우 수출과 경기 회복에 긍정적인 영향을 미칠 수 있으나, 여전히 높은 물가 압박은 금리인상 가능성을 야기할 수 있다.
+• 물가 상승세가 예상보다 지속될 경우 소비자 신뢰와 경제 활동에 부정적인 영향을 미칠 수 있으므로, 정책적 대응이 필요하다.
+• 고령층의 대출 증가가 지속될 경우 금융기관의 리스크가 증가할 가능성이 있으며, 이에 대한 모니터링이 중요하다.
+• 경제 성장률의 중장기 하락이 전망되는 가운데 산업 구조 개편과 혁신 추진이 필요하다는 점에서 정책의 방향성과 실행력이 주목받고 있다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia and AMD shares fall as new AI announcements fail to re-energize investors - MarketWatch
+   (MarketWatch · 10/13 06:19)
+→ Nvidia와 AMD의 주가가 새로운 AI 발표에도 불구하고 투자자들의 관심을 되살리지 못해 하락했다. 시장에서는 기대에 미치지 못하는 결과를 보이며 두 회사의 주식이 영향을 받았다.
+
+📰 [NVDA] Nvidia’s ‘Reflection’ move could put customers on edge - TheStreet
+   (TheStreet · 10/13 06:03)
+→ Nvidia의 'Reflection' 전략이 고객들에게 불안을 초래할 수 있다는 우려가 제기되고 있습니다. 이 변화가 소비자들에게 어떤 영향을 미칠지에 대한 논쟁이 일고 있습니다.
+
+📰 [NVDA] News | Nvidia joins tech firms' push to standardize data center development - CoStar
+   (CoStar · 10/13 05:58)
+→ Nvidia가 데이터 센터 개발의 표준화를 추진하는 기술 기업들의 연합에 참여했습니다. 이 협력은 데이터 센터 설계와 운영의 일관성을 높이고, 효율성을 향상시키기 위한 것입니다.
+
+📰 [TSLA] TSLA Oct 2026 380.000 call (TSLA261012C00380000) Stock Price, News, Quote & History - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/13 06:15)
+→ TSLA의 2026년 10월 만기 380.000 콜 옵션에 대한 주가, 뉴스, 인용 및 역사 정보가 Yahoo! Finance Canada에 게시되었습니다. 이 콜 옵션은 테슬라 주식에 대한 투자자들의 관심을 반영하고 있습니다.
+
+📰 [TSLA] Tesla And Wright’s Law: My Notes On The Deviations (NASDAQ:TSLA) - Seeking Alpha
+   (Seeking Alpha · 10/13 06:07)
+→ 이 기사는 테슬라와 라이트 법칙에 대한 분석을 다루고 있으며, 테슬라의 기술 발전과 생산 효율성의 변화를 논의합니다. 라이트 법칙의 예외적인 요소에 대해 설명하고, 테슬라가 이 법칙의 예측과 어떻게 다르게 행동하는지를 검토합니다. 전반적으로 테슬라의 성장과 혁신이 기존 이론과 어떻게 상충하는지를 강조합니다.
+
+📰 [TSLA] Tesla coils in tight range near $378: Live levels - Investing.com
+   (Investing.com · 10/13 05:15)
+→ 테슬라 주가는 현재 378달러 근처에서 좁은 범위 내에서 거래되고 있습니다. 최근 시장의 변동성이 있지만 주가는 안정적인 모습을 보이고 있습니다.
+
+📰 [HIMS] Hers to Announce Third Quarter 2026 Financial Results on November 9, 2026 - HIMS investor relations
+   (HIMS investor relations · 10/13 05:06)
+→ Hers는 2026년 11월 9일에 2026년 3분기 재무 결과를 발표할 예정입니다. 이 발표는 HIMS 투자자 관계를 통해 이루어질 것입니다.
+
+📰 [HIMS] Hims & Hers to Announce Third Quarter 2026 Financial Results on November 9, 2026
+   (Yahoo Finance · 10/13 05:05)
+→ Hims & Hers Health, Inc.는 2026년 11월 9일 시장 마감 후 2026년 3분기 재무 결과를 발표할 예정이며, 같은 날 오후 5시에 실시간 콘퍼런스 콜을 통해 결과를 논의할 계획이라고 발표했다.
+
+📰 [HIMS] Hims & Hers (HIMS) Launches Hers Brand in Australia, Expanding W - GuruFocus
+   (GuruFocus · 10/13 04:54)
+→ Hims & Hers(HIMS)가 호주에서 'Hers' 브랜드를 출시하며 사업을 확장했습니다. 이번 출시를 통해 여성 건강 제품 시장에 진출하여 더욱 다양화된 서비스를 제공할 계획입니다.
+
+📰 [RDW] RDW Nov 2026 13.500 call (RDW261106C00013500) Stock Price, News, Quote & History - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/13 01:10)
+→ RDW의 2026년 11월 13.500 콜 옵션(RDW261106C00013500)에 대한 주가, 뉴스, 견적 및 역사 정보가 Yahoo! Finance Canada에 게시되었습니다. 해당 정보는 투자자들에게 관련된 옵션의 시장 동향을 제공합니다.
+
+📰 [RDW] Final Pair of Redwire ROSA Wings Launch to the ISS, Completing Historic Power Modernization Effort
+   (Yahoo Finance · 10/12 20:00)
+→ 레드와이어 코퍼레이션이 국제우주정거장(ISS)으로 최종 롤아웃 태양 전지판(ROSA) 4번째 쌍을 발사하여 역사적인 전력 현대화 작업을 완료했습니다. 2021년 이후, 총 6개의 ROSA 날개가 ISS에 배치되어 전력 공급을 현대화했습니다.
+
+📰 [RDW] RDW Nov 2026 15.500 call (RDW261106C00015500) interactive stock chart - Yahoo Finance Australia
+   (Yahoo Finance Australia · 10/12 09:12)
+→ RDW의 2026년 11월 15.500 콜 옵션(RDW261106C00015500)에 대한 정보가 Yahoo Finance Australia에 제공되었습니다. 해당 옵션의 인터랙티브 주식 차트를 통해 투자자들은 예측 및 분석을 할 수 있습니다.
+
+📰 [IREN] Stock Market Today, Oct. 12: Iren Surges on Reports of Anthropic Cloud Services Deal - The Globe and Mail
+   (The Globe and Mail · 10/13 06:21)
+→ 2023년 10월 12일 주식 시장에서 Iren 주가가 Anthropic과의 클라우드 서비스 계약 소식에 힘입어 급등했습니다. 이 보고서는 투자자들의 관심을 끌며 주식 시장의 활기를 더했습니다.
+
+📰 [IREN] Stock Market Today, Oct. 12: Iren Surges on Reports of Anthropic Cloud Services Deal
+   (Yahoo Finance · 10/13 06:21)
+→ 2026년 10월 12일, AI 인프라 운영업체 Iren이 Anthropic과 다년간의 계약을 체결한 보고서가 나오면서 주가가 급등했습니다. 이 계약은 Iren이 전통적인 채굴 작업에서 벗어나고 있음을 보여줍니다.
+
+📰 [IREN] IREN Reportedly Joins Anthropic's Cloud Providers; Shares Jump
+   (Yahoo Finance · 10/13 05:22)
+→ 앤트로픽이 데이터 센터 구축을 가속화하기 위해 IREN과 클라우드 서비스 계약을 체결했다고 보도됐다. 이에 따라 IREN 주가가 급등했다.
+
+📰 [RKLB] ‘Hang On a Minute,’ Says Investor About Rocket Lab Stock - TipRanks
+   (TipRanks · 10/12 22:16)
+→ 투자자는 로켓랩 주식에 대해 잠시 기다리라는 언급을 했습니다. 이는 주가에 대한 우려와 함께 향후 성과에 대한 신중한 접근을 나타냅니다.
+
+📰 [RKLB] AST SpaceMobile Rallies 4% as Next BlueBird Satellites Reach Cape Canaveral; Rocket Lab and Intuitive Machines Hold Flat
+   (Yahoo Finance · 10/12 21:34)
+→ AST SpaceMobile의 주가는 블루버드 위성이 케이프 카내버럴에 도착하면서 4% 상승했다. 그러나 SpaceX에 대한 분석가들의 논의가 주가 향후 흐름에 더 큰 영향을 미칠 것으로 보인다.
+
+📰 [RKLB] How Could RKLB Manage Orbital Collision Risks as Space Activity Grows?
+   (Yahoo Finance · 10/12 21:25)
+→ 로켓랩은 우주 임무의 신뢰성을 높이기 위해 우주선의 기동성과 운영 전문성을 발휘하여 증가하는 위성 활동으로 인한 궤도 충돌 위험을 관리할 수 있을 것으로 보인다. 이를 통해 혼잡한 궤도를 안전하게 탐색할 가능성이 높아진다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitfinex’s tokenized funds include one targeting 8%–12% in Bitcoin - Cryptonews.net
+   (Cryptonews.net · 10/13 06:12)
+→ 비트파이넥스(Bitfinex)는 비트코인에서 8%에서 12%의 수익을 목표로 하는 토큰화된 펀드를 포함한 여러 펀드를 출시했습니다. 이 펀드는 투자자들에게 다양한 수익률을 제공할 수 있는 기회를 제공합니다.
+
+📰 [BTC-USD] Bitcoin Could Rally to $94K, but First It Must Break Through This Key Price Zone - CryptoRank
+   (CryptoRank · 10/13 06:01)
+→ 비트코인이 94,000달러로 상승할 가능성이 있지만, 이를 위해서는 먼저 특정 가격 구역을 돌파해야 한다는 분석이 나왔다. 전문가들은 이 구역이 비트코인의 향후 가격 상승에 중요한 지점이라고 평가하고 있다.
+
+📰 [BTC-USD] FTX’s old Bitcoin mining assets have a new mission, and it’s not crypto
+   (Yahoo Finance · 10/13 06:00)
+→ FTX의 예전 비트코인 채굴 자산이 새로운 임무를 맡게 되었는데, 이제는 암호화폐가 아닌 AI 데이터 센터 사업으로 재편성되고 있다. 이 채굴 사업은 FTX 붕괴와 관련이 있다.
+
+📰 [ETH-USD] Ethereum Price Forecast: Lee predicts "largest ever crypto bull market" as BitMine nears 5% supply goal - FXStreet
+   (FXStreet · 10/13 05:28)
+→ FXStreet의 보도에 따르면, Lee는 BitMine이 공급 목표인 5%에 가까워짐에 따라 "역대 가장 큰 암호화폐 상승장"이 올 것이라고 예측했습니다. 이는 이더리움 가격에 긍정적인 영향을 미칠 것으로 보입니다.
+
+📰 [ETH-USD] Ethereum Liquidity on Binance Drops to Lowest in Seven Months - Cryptonews.net
+   (Cryptonews.net · 10/13 04:21)
+→ 바이낸스에서 이더리움의 유동성이 7개월 만에 최저 수준으로 감소했습니다. 이는 암호화폐 시장의 불확실성과 투자자 심리 위축이 원인으로 분석됩니다.
+
+📰 [ETH-USD] Starknet Founder: "Not a Divergence from Ethereum"... L1 Transition Is a Separate Matter - BigGo Finance
+   (BigGo Finance · 10/13 03:06)
+→ Starknet의 창립자는 Starknet가 이더리움과의 분기를 이루지 않았다고 말하며, 레이어 1 전환은 별개의 문제라고 밝혔습니다. 이는 Starknet의 발전 방향과 이더리움 생태계와의 관계를 명확히 하기 위한 발언으로 해석됩니다.
+
+📰 [SOL-USD] Next Crypto to Explode: Pepeto, Solana and XRP Battle for 300x Potential - TechBullion
+   (TechBullion · 10/13 05:24)
+→ Pepeto, Solana, 그리고 XRP가 각각 300배의 잠재력을 가지고 차세대 암호화폐로 주목받고 있다. 이들은 투자자들 사이에서 큰 관심을 모으고 있으며, 향후 폭발적인 성장이 예상된다.
+
+📰 [SOL-USD] DeFi Development Corp boosts Solana treasury by 12%, CHAD preferred stock nears $10 with 13% dividend - Pluang
+   (Pluang · 10/13 05:11)
+→ DeFi Development Corp가 솔라나 재정을 12% 증가시켰으며, CHAD 우선주가 10달러에 근접하고 13% 배당률을 기록하고 있습니다.
+
+📰 [SOL-USD] Massive Solana Transfer of 1.1M Tokens Raises Eyebrows - Cryptonews.net
+   (Cryptonews.net · 10/13 04:57)
+→ 1.1백만 개의 솔라나 토큰이 대규모로 전송되어 주목을 받고 있다. 이번 이동은 투자자들 사이에서 우려를 불러일으키고 있으며, 암호화폐 시장의 변동성에 영향을 미칠 것으로 예상된다.
+
+📰 [BMNR] Bitmine Raises Ether Holdings to 6M ETH, Closing In on 5% Supply Target
+   (Yahoo Finance · 10/12 23:49)
+→ Bitmine Immersion Technologies가 이더리움 보유량을 603만 ETH로 늘리며 전체 공급량의 5% 목표에 근접하고 있습니다. 이로 인해 회사의 이더리움 지분이 더욱 확대되었습니다.
+
+📰 [BMNR] Bitmine Adds 12,532 ETH as Tom Lee Predicts BMNR To Outperform Crypto Market - CoinGape
+   (CoinGape · 10/12 22:39)
+→ Bitmine이 12,532 ETH를 추가로 확보했으며, Tom Lee는 BMNR이 암호화폐 시장을 초과 성과 낼 것으로 전망하고 있습니다. 이로 인해 BMNR에 대한 관심이 높아지고 있습니다.
+
+📰 [BMNR] Bitmine Immersion's $16.2B crypto treasury: 6M ETH and bull-run bet - Seeking Alpha
+   (Seeking Alpha · 10/12 22:29)
+→ Bitmine Immersion은 162억 달러 규모의 암호화폐 자산을 보유하고 있으며, 그 중 600만 이더리움(ETH)을 포함하고 있습니다. 이 회사는 암호화폐 시장의 강세에 베팅하고 있는 것으로 보입니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+현재 암호화폐 시장은 약세를 나타내고 있으며, 비트코인과 이더리움 가격이 각각 82,756달러와 2,520달러로 하락했습니다. 비트코인의 점유율은 소폭 상승했지만 전체 시장 분위기는 여전히 부정적입니다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 약세… 비트코인 82,756달러, 이더리움 2,520달러
+   → 비트디어는 말레이시아에 AI 데이터센터 용량 67MW를 추가 확보하여 총 확보 용량을 273.5MW로 늘렸으며, 2028년까지 350MW를 목표로 하고 있습니다.
+   (토큰포스트 · 10/13 06:25)
+2. (기타) 암호화폐 시장, 24시간 동안 레버리지 포지션 1억9534만달러 청산
+   → 암호화폐 시장에서 24시간 동안 레버리지 포지션이 약 1억 9534만 달러 청산되었으며, 이는 시장의 변동성을 반영하는 지표로 작용하고 있습니다.
+   (토큰포스트 · 10/13 05:45)
+3. (온체인) 트론 3분기 거래 11억건…스테이블코인 결제 2조2126억달러
+   → 트론은 3분기 동안 11억 건의 거래를 기록하며, 스테이블코인 결제 규모는 2조 2126억 달러에 달했습니다.
+   (토큰포스트 · 10/13 05:16)
+4. (기타) 비트코인 13주 EMA, 34주 EMA 3년 반 만에 첫 상향 돌파
+   → 비트코인의 13주 EMA가 34주 EMA를 3년 반 만에 처음으로 상향 돌파했지만, 이것이 가격 상승으로 이어질지는 단정할 수 없습니다.
+   (토큰포스트 · 10/13 05:12)
+5. (규제) 스테이블코인 8억5600만달러 감소…DEX 현물 거래량 19.34% 줄어
+   → 스테이블코인 시장이 8억 5600만 달러 감소했고, DEX 현물 거래량은 19.34% 줄어드는 등, 전반적인 거래 활동이 감소하고 있습니다.
+   (토큰포스트 · 10/13 05:02)
+
+[흐름·전망]
+• 비트코인의 점유율 증가가 대형주 선호를 반영하는 만큼, 큰 변동성이 예상되는 구간에서는 안전 자산 선호가 우세할 가능성이 있습니다.
+• 레버리지 거래의 급증은 단기적 리스크를 증가시키고 있으며, 시장 참여자들은 이를 감안하여 적절한 위험 관리 전략이 필요합니다.
+• 트론의 거래량과 스테이블코인 결제 증가가 디파이 시장 활성화의 신호로 해석될 수 있지만, 시장 전반의 약세가 지속될 경우 이들의 지속 가능성에 의문을 가질 수 있습니다.
+• 비트코인의 EMA 교차는 긍정적인 신호일 수 있으나, 가격 상승으로 이어질지는 여전히 불확실하므로, 투자 결정 시 주의가 필요합니다.
+
+📊 공포탐욕지수
+  - CNN 기준: 46 (Neutral)
+  - 크립토 기준: 69 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 서울 아파트 가격이 87주 연속 상승하며 분위기를 주도하는 가운데, 변동성이 있는 지역별 흐름이 나타나고 있다.
+
+[핵심 뉴스]
+1. (매매) 서울 아파트값 ‘평탄화’가 매수 기회?
+   → 서울 아파트 매매가는 10월 첫째 주에 0.12% 상승해 87주 연속 오름세를 이어갔으며, 전세 가격은 올해 누적 상승률이 8.35%로 매매 가격 상승률을 초과했다.
+   (매일경제 · 10/13 04:30)
+2. (금리) 유동성 위기 제이알리츠 빚 상환계획 6개월 앞당겨
+   → 제이알글로벌리츠는 변제 계획을 수정하여 채무를 2029년 말까지 완납할 계획을 세우고, 이사회에서 이를 확정할 예정이다.
+   (매일경제 · 10/12 17:35)
+3. (재건축) 재건축 기대감에 힘받는 분당 아파트
+   → 분당 아파트값이 재건축 기대감에 힘입어 상승세를 보이며, 상대적으로 가격이 낮은 지역까지 신고가 행진에 동참하고 있다.
+   (매일경제 · 10/12 16:29)
+4. (매매) 강북 아파트도 ‘역대 최고가’ 매매 발생
+   → 서울에서 3분기 아파트 매매 거래의 54.7%가 과거 최고 거래가격과 같거나 높은 가격에 이루어졌으며, 상승세가 강북과 외곽 지역으로 확산됐다.
+   (매일경제 · 10/12 14:57)
+5. (공급) LH 사장, 올해 착공목표 달성 가능성 언급
+   → LH는 올해 착공 목표 달성을 자신하며 대규모 인력 충원의 필요성을 언급하고, 정부의 재정 지원을 요청했다.
+   (연합뉴스 · 10/12 16:07)
+
+[흐름·전망]
+• 서울 아파트 시장은 강남권의 약세에도 불구하고 전체적으로 매매가 상승이 지속되고 있어, 향후 세부 지역 요인에 따라 투자 전략을 조정할 필요가 있다.
+• 분당 및 인근 지역의 재건축 기대감이 지속되면서 중저가 아파트에 대한 수요가 높아질 것으로 예상되며, 이로 인해 신규 거래가 활발할 전망이다.
+• 전세 가격 상승세가 매매 시장에 미치는 영향도 주목해야 하며, 매물 부족 현상이 지속될 경우 추가적인 가격 상승을 가져올 수 있다.
+• LH의 착공 계획과 인력 충원 문제는 향후 주택 공급에 긍정적인 영향을 미칠 수 있으나, 재무구조에 대한 우려는 여전히 존재하는 만큼 주의 깊은 관찰이 필요하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 현재 미국이 황금기를 맞고 있다고 주장하며, 이를 지지하기 위해 Kansas주 상원의원을 언급하며 긍정적인 정치 환경을 강조했다. 또한, 미국 민주당과 극좌 세력에 대한 공격적인 발언을 통해 자신과 지지자들을 결집시키려는 모습을 보였다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 Kansas주 상원의원 로저 마셜이 법에 따라 적절한 조치를 취하고 있으며, 그의 상대가 이를 악용하고 있다고 주장했다.
+   (Truth Social · 10/13 04:17)
+2. (기타) 트럼프는 오하이오에서의 집회에서 대규모 인파를 언급하며 극좌 세력에 대한 강한 반발을 드러냈다.
+   (Truth Social · 10/13 04:00)
+3. (경제) 트럼프는 유럽연합이 러시아에 2500억 달러를 지불했다고 주장하며, 이는 언론이 다루지 않는 중요한 이슈라고 강조했다.
+   (Truth Social · 10/13 00:18)
+4. (사법) 트럼프는 전 북한 주지사 로이 쿠퍼가 범죄자들을 석방한 이후 발생한 범죄에 대해 강하게 비판하며 그의 범죄 기록이 최악이라고 주장했다.
+   (Truth Social · 10/12 23:45)
+
+[흐름·전망]
+• 트럼프의 발언은 향후 소셜 미디어와 정치적 캠페인에서의 여론 형성을 영향을 미칠 것으로 보인다.
+• 극좌 세력에 대한 비판이 더욱 격화될 것으로 예상되며, 이에 따른 지지자들의 반응을 주목해야 한다.
+• 경제 관련 발언이 공화당 내에서 어떤 논의로 이어질지 지켜볼 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

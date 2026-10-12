@@ -559,7 +559,7 @@
 },
 "2241a1cd-eb29-4740-a28d-fc2b8cc813ef": {
 "name": "Core Personal Consumption Expenditures - Price Index (MoM)",
-"dt": "2026-10-30T12:30:00Z",
+"dt": "2026-10-29T12:30:00Z",
 "act": null,
 "cons": null,
 "prev": "0.2%",
@@ -568,7 +568,7 @@
 },
 "401e58cb-1252-4e02-9c2a-144d3ea169e1": {
 "name": "Core Personal Consumption Expenditures - Price Index (YoY)",
-"dt": "2026-10-30T12:30:00Z",
+"dt": "2026-10-29T12:30:00Z",
 "act": null,
 "cons": null,
 "prev": "3%",
@@ -749,6 +749,15 @@
 "5a045d8e-2e1e-4b3c-85fb-78586fa73d89": {
 "name": "S&P Global Services PMI",
 "dt": "2026-11-23T14:45:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"9b95ac95-5f53-4e75-a166-92c31e08beb0": {
+"name": "Fed's Chair Warsh speech",
+"dt": "2026-10-16T03:30:00Z",
 "act": null,
 "cons": null,
 "prev": null,
