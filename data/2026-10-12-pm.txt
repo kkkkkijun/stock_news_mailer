@@ -1,0 +1,243 @@
+2026-10-12T17:02:47.241655+09:00
+
+[오늘의 뉴스 요약] 2026-10-12 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 채권 금리가 일제히 하락하며 안정세를 보였고, 원/달러 환율은 2년 여만에 최저치를 기록하는 등 외환 시장은 긍정적인 흐름을 이어갔다. 특히, 신현송 한국은행 총재는 금리와 물가 간의 상관관계를 강조하며, 경기 개선에 대한 긍정적인 평가가 있던 중에도 내수 소비 회복은 더디다는 점을 지적했다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 일제히 하락
+   → 12일 서울 채권시장에서 3년물 국고채 금리는 6.2bp 하락한 연 3.921%로 마감하였고, 10년물 금리도 8.9bp 내린 연 4.306%를 기록하였다.
+   (연합뉴스 · 10/12 16:40)
+2. (환율) 원/달러 환율 1,332.0원, 2년만에 최저
+   → 원/달러 환율이 12일 1,332.0원으로 하락하며 2년여만에 최저치를 기록하였고, 이는 반도체 네고 물량이 지속적으로 나오기 때문이라는 분석이 나왔다.
+   (연합뉴스 · 10/12 16:35)
+3. (정책) 한은 총재, 금리 향방에 인플레이션 중요 강조
+   → 신현송 한국은행 총재는 국회 국정감사에서 금리 결정 시 인플레이션 추이가 가장 중요하다고 강조하며, 내년도 정부 예산안이 GDP 성장에 미치는 영향은 0.5%포인트 정도로 제한적이라고 언급했다.
+   (매일경제 · 10/12 14:45)
+4. (정책) 한은 총재, 선제 금리 인상의 효과 설명
+   → 신 총재는 7·8월 기준금리 인상이 시장에 안정적인 영향을 미쳤음을 강조하며, 선제적 조치가 기후변화로 인한 더 큰 위기를 막는 데 기여했다고 평가했다.
+   (연합뉴스 · 10/12 11:35)
+5. (성장) KDI, 경기 개선 진단 유지
+   → KDI는 인공지능(AI) 관련 수출과 설비투자 호조로 한국 경제가 개선세를 이어가고 있다고 진단했지만, 소비 회복은 고물가와 실질임금 정체로 인해 느리다고 언급했다.
+   (연합뉴스 · 10/12 12:00)
+
+[흐름·전망]
+• 채권 금리 하락은 금리 인상에 따른 시장 안정성을 반영하지만, 채권 투자자들은 수익률 변동에 주의해야 한다.
+• 원/달러 환율 하락은 수출업체의 긍정적인 신호로 볼 수 있으나, 외환시장에서의 외국인 매수세 약화가 지속될 경우 수정될 수 있다.
+• 한국은행이 인플레이션을 중시하는 정책을 유지하면서 금리를 안정적으로 관리하는 것이 향후 경제에 미치는 영향을 주의 깊게 관찰해야 한다.
+• KDI의 진단처럼 헌재 경제가 인공지능 및 기술 분야에서 발전하더라도, 소비 개선이 더딘 경우 전체 경제에 미치는 영향은 제한적일 수 있다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia and Visa Have Little in Common. I'd Split $1,000 Between Them and Hold Until 2035. - The Motley Fool
+   (The Motley Fool · 10/12 16:40)
+→ 모티리풀에서는 엔비디아와 비자가 서로 큰 관련성이 없지만, 두 회사에 1,000달러를 나눠 투자하고 2035년까지 보유할 것을 추천하고 있습니다. 이는 각각의 기업이 다른 산업에서 강점을 가지고 있어 포트폴리오의 다양성을 제공할 수 있기 때문입니다.
+
+📰 [NVDA] Nvidia releases an open voice AI that talks while it listens, with a catch - Startup Fortune
+   (Startup Fortune · 10/12 16:30)
+→ Nvidia가 소통 중에도 듣는 기능을 갖춘 오픈 음성 AI를 출시했다. 그러나 이 AI는 특정한 조건이나 제한이 있을 것으로 보인다.
+
+📰 [NVDA] Port Capital LLC Acquires New Stake in NVIDIA Corporation $NVDA - MarketBeat
+   (MarketBeat · 10/12 16:25)
+→ Port Capital LLC가 NVIDIA Corporation($NVDA)의 새로운 지분을 인수했습니다. 이번 인수는 투자 전략의 일환으로, NVIDIA의 성장 잠재력을 반영한 결정으로 보입니다.
+
+📰 [TSLA] Tesla, Inc. : RBC keeps its Buy rating - marketscreener.com
+   (marketscreener.com · 10/12 16:07)
+→ RBC 캐피탈 마켓은 테슬라에 대한 '매수' 등급을 유지했다고 발표했습니다. 이는 테슬라의 향후 성장 가능성을 긍정적으로 평가한 결과입니다.
+
+📰 [TSLA] Key facts: Tesla, Inc.: 10 chips/yr at Giga Texas; Cybertruck lagging - TradingView
+   (TradingView · 10/12 16:00)
+→ 테슬라가 텍사스 기가팩토리에서 연간 10개의 칩을 생산하고 있으며, 사이버트럭 생산이 지연되고 있다는 보도가 나왔다.
+
+📰 [TSLA] Tesla renames its FSD system in Europe under pressure from regulators - marketscreener.com
+   (marketscreener.com · 10/12 15:53)
+→ 테슬라는 유럽에서 규제 당국의 압박을 받아 자율주행 시스템인 FSD의 이름을 변경했습니다. 이는 규제 준수를 위한 조치로 보입니다.
+
+📰 [HIMS] novo nordisk sues hims & hers over copycat weight-loss drugs - Olhar Digital
+   (Olhar Digital · 10/12 02:13)
+→ 노보 노르디스크가 히미스&헤르스를 상대로 유사한 체중 감량 약물에 대한 소송을 제기했습니다. 이 소송은 히미스&헤르스의 제품이 노보 노르디스크의 기술을 모방했다는 주장에 기반하고 있습니다.
+
+📰 [HIMS] Hims & Hers Stock Jumped 10% in a Day as Volume Hit 15.9 Million Shares. Here’s Where the Stock Could Go by 2030
+   (Yahoo Finance · 10/12 00:04)
+→ Hims & Hers 주가가 하루 만에 10% 상승하며 거래량은 1,590만 주에 달했다. 현재 주가는 $30.92이며, 중간 목표가는 약 $27로, 향후 2030년까지 잠재적 총 수익률은 약 13%로 예상된다.
+
+📰 [HIMS] novo nordisk sued hims & hers over copycat weight-loss drugs - Olhar Digital
+   (Olhar Digital · 10/11 09:01)
+→ 노보 노르디스크가 히임스 앤 헐스(Hims & Hers)를 복제 비만 치료제 관련으로 고소했습니다. 이 사건은 저작권 침해와 관련된 것으로, 노보 노르디스크는 자사의 제품을 모방했다고 주장하고 있습니다.
+
+📰 [RDW] RKLB, ASTS, SPCX, RDW Stocks Set For A Boost? Pentagon Confirms Orbital Weapons Use, Ramps Up Golden Dome Plans - Stocktwits
+   (Stocktwits · 10/12 09:10)
+→ 미국 국방부가 지구 궤도 무기 사용을 확인하고 '골든 돔' 계획을 강화함에 따라 RKLB, ASTS, SPCX, RDW 등의 주식이 상승할 가능성이 있다고 보도됐다. 이로 인해 관련 주식들에 대한 관심이 높아지고 있다.
+
+📰 [RDW] RDW Oct 2026 18.000 call (RDW261030C00018000) stock price, news, quote and history - Yahoo Finance UK
+   (Yahoo Finance UK · 10/12 08:45)
+→ RDW의 2026년 10월 만기 18.000 콜옵션(RDW261030C00018000)의 주가, 뉴스, 인용 및 역사적 데이터가 Yahoo Finance UK에 게시되었습니다.
+
+📰 [RDW] RDW Stock Gains More Than 55% In Record-Breaking Week – Here’s Everything That Drove The Super Run - Stocktwits
+   (Stocktwits · 10/12 05:01)
+→ RDW 주가는 기록적인 한 주 동안 55% 이상 상승했습니다. 이 주가 급등의 배경에는 다양한 요인이 작용했으며, 이에 대한 자세한 분석이 이어지고 있습니다.
+
+📰 [IREN] IREN's Anthropic Buzz Meets a Harder Question: Can the Balance Sheet Carry the Build-Out? - ad-hoc-news.de
+   (ad-hoc-news.de · 10/12 16:40)
+→ IREN의 앤트로픽 관련 논의가 진행되는 가운데, 재정적 안정성이 확장 계획을 지원할 수 있는지가 중요한 질문으로 떠오르고 있다. 기업의 재무제표가 이러한 성장에 필요한 자원을 충분히 뒷받침할 수 있는지가 주목받고 있다.
+
+📰 [IREN] IREN Secures Anthropic Cloud Service Deal, Stock Surges Nearly 9% to Lead Computing Sector - TradingKey
+   (TradingKey · 10/12 15:00)
+→ IREN이 Anthropic의 클라우드 서비스 계약을 체결하며 주가가 거의 9% 상승하여 컴퓨팅 분야에서 선두를 차지했습니다. 이 소식은 투자자들로부터 긍정적인 반응을 얻었습니다.
+
+📰 [IREN] Dow, S&P 500, Nasdaq Futures Climb After Oil In Focus As Trump Declares ‘Energy Ceasefire’ Between Russia And Ukraine: IREN, WFF, VSTM, CIFR Stocks In Focus
+   (Yahoo Finance · 10/12 12:50)
+→ 트럼프가 러시아와 우크라이나 간의 '에너지 휴전'을 선언하자, 다우, S&P 500, 나스닥 선물이 상승세를 보였다. 한편, 중동 갈등이 계속되면서 원유 가격은 배럴당 100달러 이상을 유지하고 있다.
+
+📰 [RKLB] RKLB Stock Rises Overnight: NASA Chief Warns Moon Race With China Is ‘Months, Not Years’ As Neutron Opportunity Grows
+   (Yahoo Finance · 10/12 16:27)
+→ RKLB 주가가 상승한 가운데, NASA의 수장인 빌 넬슨은 중국과의 달 경쟁이 '개월 단위로' 다가오고 있다고 경고했습니다. NASA는 약 300억 달러 규모의 달 기지 구축을 위해 대량 로켓 구매를 검토하고 있습니다.
+
+📰 [RKLB] Cathie Wood Keeps Buying Rocket Lab Stock as It Trades at Less Than Half Its Record
+   (Yahoo Finance · 10/12 16:24)
+→ 캐시 우드가 로켓랩 주식을 계속 구매하고 있으며, 현재 주가가 최고치의 절반 이하로 떨어져 있습니다. 그녀의 투자 회사는 2020년대 후반에 발사 부족 현상이 발생할 것이라고 예측하고 있으며, 로켓랩의 미발사 로켓이 그 시점에 맞출 수 있을지 주목하고 있습니다.
+
+📰 [RKLB] Cathie Wood Keeps Buying Rocket Lab Stock as It Trades at Less Than Half Its Record - Yahoo Finance
+   (Yahoo Finance · 10/12 16:24)
+→ 캐시 우드는 로켓랩 주식이 기록의 절반 이하로 거래되는 상황에서도 계속해서 주식을 매수하고 있습니다. 그녀의 투자 전략은 저평가된 기업에 대한 장기적인 신뢰를 반영하고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Price Prediction Ahead of US Inflation Data and Kevin Warsh’s Speech - CoinGape
+   (CoinGape · 10/12 16:53)
+→ 비트코인 가격 예측이 미국의 인플레이션 데이터 발표와 케빈 워시(Kevin Warsh)의 연설을 앞두고 관심을 받고 있다. 시장 전문가들은 이 두 가지 요소가 비트코인 가격에 미치는 영향에 주목하고 있다.
+
+📰 [BTC-USD] Bitcoin Treasury Companies Face a Test Beyond Holding Coins - Global Banking & Finance Review
+   (Global Banking & Finance Review · 10/12 16:51)
+→ 비트코인 재무 회사들이 단순히 코인을 보유하는 것 이상의 시험에 직면하고 있습니다. 이들은 시장 변화에 적응하고 효과적으로 자산을 관리해야 하는 새로운 도전에 맞서고 있습니다.
+
+📰 [BTC-USD] Bitcoin whale swaps $34M BTC for $36M Ethereum amid ETH's rising market activity - Pluang
+   (Pluang · 10/12 16:45)
+→ 비트코인 큰 손이 3억 4천만 달러 상당의 비트코인을 이더리움으로 교환하며 그 가치는 3억 6천만 달러에 달했습니다. 이는 이더리움의 시장 활동이 증가하고 있는 가운데 발생한 사건입니다.
+
+📰 [ETH-USD] Bitcoin whale swaps $34M BTC for $36M Ethereum amid ETH's rising market activity - Pluang
+   (Pluang · 10/12 16:45)
+→ 비트코인 고래가 3억 4천만 달러 상당의 비트코인을 이더리움으로 거래하며, 이더리움의 시장 활동이 증가하고 있는 상황입니다. 이번 거래로 고래는 3억 6천만 달러의 이더리움을 확보했습니다.
+
+📰 [ETH-USD] Best Crypto to Buy Now: Bitcoin and Ethereum Face Macro Pressure as Remittix Approaches Launch - TechBullion
+   (TechBullion · 10/12 16:28)
+→ 비트코인과 이더리움이 매크로 경제적 압박을 받는 가운데, 새로운 암호화폐 프로젝트인 Remittix의 출시가 다가오고 있다. 이로 인해 현재 암호화폐 시장에서 어떤 투자 전략이 적절할지에 대한 논의가 활발히 이루어지고 있다.
+
+📰 [ETH-USD] Ethereum Foundation-Linked Wallets Move $11.13M in ETH to Kraken - CoinGape
+   (CoinGape · 10/12 16:16)
+→ 이더리움 재단과 연관된 지갑들이 1,113만 달러 규모의 이더(ETH)를 크라켄 거래소로 이동시켰습니다. 이 거래는 이더리움 생태계에 미치는 영향에 대한 관심을 불러일으키고 있습니다.
+
+📰 [SOL-USD] Hong Kong Solana ETF to Launch With Lower Fees - The Cryptonomist
+   (The Cryptonomist · 10/12 16:14)
+→ 홍콩에서 솔라나 ETF가 출시되며, 낮은 수수료 혜택이 제공될 예정입니다. 이 ETF는 투자자들에게 보다 경제적인 접근을 가능하게 할 것으로 기대됩니다.
+
+📰 [SOL-USD] Solana-based meme coin BATON hits $20M market c... - Pluang
+   (Pluang · 10/12 16:05)
+→ Solana 기반의 밈 코인 BATON이 2천만 달러의 시장 가치를 기록했습니다. 이 코인은 Solana 블록체인에서 운영되며, 암호화폐 시장에서 주목받고 있습니다.
+
+📰 [SOL-USD] Pando Finance to list spot Solana ETF in Hong K... - Pluang
+   (Pluang · 10/12 15:55)
+→ Pando Finance가 홍콩에서 솔라나 ETF를 상장할 예정입니다. 이로 인해 솔라나의 거래와 투자 활성화가 기대됩니다.
+
+📰 [BMNR] BitMine Immersion Technologies Inc Shs Cert Deposito Arg Repr 0.125 Sh Actuals & Estimates (BCBA:BMNR) - TradingView
+   (TradingView · 10/12 03:20)
+→ BitMine Immersion Technologies Inc(BCBA:BMNR)에 대한 실적 및 예상 자료가 TradingView에 게시되었습니다. 이 주식은 아르헨티나 시장에서 거래되고 있으며, 향후 성과에 대한 정보가 포함되어 있습니다.
+
+📰 [BMNR] BMNR, CRCL, MSTR Stocks Lead Slide In Crypto Equities Amid Bitcoin’s Tumble To $63K - Stocktwits
+   (Stocktwits · 10/11 20:55)
+→ BMNR, CRCL, MSTR 주식이 비트코인이 63,000달러로 하락하는 가운데 암호화폐 관련 주식에서 큰 폭으로 하락했습니다. 이로 인해 암호화폐 주식들이 전반적으로 부진한 상황입니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock May Stay Reasonable As AI Crypto Interest Grows - Simply Wall Street
+   (Simply Wall Street · 10/11 15:37)
+→ Bitmine Immersion Technologies (BMNR) 주가는 AI와 암호화폐에 대한 관심 증가로 인해 안정적인 수준을 유지할 가능성이 있는 것으로 분석되고 있습니다. 이러한 추세는 투자자들에게 긍정적인 신호로 해석되고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+암호화폐 시장은 전반적으로 상승세를 보이며, 비트코인은 84,109달러, 이더리움은 2,569달러에 거래되고 있다. 비트코인 점유율은 감소하고 이더리움 점유율은 증가하는 흐름을 보이고 있다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 상승세... 비트코인 84,109달러, 이더리움 2,569달러
+   → 비트코인은 1.24% 상승해 84,108.93달러, 이더리움은 2.62% 오른 2,569.34달러에 거래되고 있다. 암호화폐 전체 시가총액은 2조 8,454억 달러이며, 알트코인 시가총액은 1조 1,546억 달러로 집계된다.
+   (토큰포스트 · 10/12 16:02)
+2. (시세) 암호화폐 시장, 24시간 동안 레버리지 포지션 1억4218만달러 청산
+   → 지난 24시간 동안 암호화폐 시장에서 1억4218만달러의 레버리지 포지션이 청산되었으며, 이 중 80.24%가 숏 포지션이다. 이더리움이 4911만달러로 가장 많은 청산 규모를 기록하였다.
+   (토큰포스트 · 10/12 15:58)
+3. (온체인) 기관 보유 비트코인 420만개...스트래티지·스트라이브 매수 확대
+   → 기관이 보유한 비트코인은 총 419만5250 BTC로, 344개 기관에 의해 보유되고 있다. 주요 기관 중 스트래티지는 최근 334 BTC를 추가 매수했다.
+   (토큰포스트 · 10/12 14:57)
+4. (규제) OKX CEO 스타, 바이낸스 8억달러 보상 발언 비판
+   → OKX CEO 스타가 바이낸스 CEO의 사용자 보상 발언을 비판하며, 시장 폭락 동안의 실질적인 손실을 강조했다.
+   (토큰포스트 · 10/12 16:49)
+5. (규제) CFTC, 소매 가상자산·예측시장 규칙안 논의 시작
+   → CFTC는 가상자산 거래 및 예측시장에 대한 규칙안을 논의 중이며, 관련 규제를 강화할 예정이다. 미국 및 유럽의 규제 당국이 감독 기준 개편을 준비하고 있다.
+   (토큰포스트 · 10/12 15:07)
+
+[흐름·전망]
+• 단기적으로 비트코인의 점유율 감소가 알트코인 쪽으로 자금이 유입되고 있음을 시사하므로 알트코인 순환매 가능성을 주의 깊게 관찰해야 한다.
+• 레버리지 포지션의 청산 비율이 높은 상황에서 단기 변동성이 확대될 수 있으니 투자자들은 리스크 관리에 유의해야 할 시점이다.
+• 기관 투자자들의 비트코인 매수 증가가 시장에 긍정적인 영향을 미칠 것으로 보이며, 이들 기관의 투자 전략에 대한 추가적인 분석이 필요하다.
+• CFTC의 규칙안 논의는 가상자산 시장의 향후 방향성을 좌우할 수 있으므로 이에 대한 시장의 반응을 면밀히 추적할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 45 (Fear)
+  - 크립토 기준: 69 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 분당 아파트의 재건축 기대감으로 인해 가격 상승세가 뚜렷해 보이며, LH 사장의 대출 규제 및 공급 확대 관련 발언이 시장에 주목받고 있다.
+
+[핵심 뉴스]
+1. (재건축) 분당 아파트, 재건축 기대감 고조
+   → 분당 아파트 시장은 재건축 기대감으로 인해 가격 상승이 두드러지고 있으며, 최근 1개월 간 매화마을의 아파트가 10억5000만원에 거래되는 등 신고가를 기록했다.
+   (매일경제 · 10/12 16:29)
+2. (정책) LH 사장, 대출 규제 강화 발언 정치적 논란
+   → LH 이성훈 사장은 국정감사에서 대출 규제를 강화할 필요성을 언급하면서 무주택 서민에 대한 비판이 제기되었고, LH의 임대사업 손실이 해를 거듭할수록 심화되고 있음이 지적됐다.
+   (매일경제 · 10/12 15:41)
+3. (매매) LH 사장, 집값 급락 가능성 언급
+   → LH 사장은 향후 주택 공급 확대와 금리 상승이 집값 급락 가능성을 초래할 것이라고 경고하며, 현재 집을 구매하지 않아도 손해를 보지 않을 것이라고 언급했다.
+   (연합뉴스 · 10/12 15:56)
+4. (공급) LH, 수도권 연 14만 가구 공급 계획
+   → LH는 2030년까지 수도권에 매년 14만 가구 이상의 임대주택을 공급할 계획으로, 올해 상반기까지는 7만5천 가구 공급을 목표로 하고 있다고 발표했다.
+   (연합뉴스 · 10/12 10:07)
+5. (정책) 서울시, 모아통합기획으로 공급 단축 계획
+   → 서울시는 '모아통합기획'을 도입하여 저층 주거지 정비사업 기간을 6년에서 4년 6개월로 단축하고, 2030년까지 100곳에서 약 8만 호의 주택 공급을 목표로 하고 있다.
+   (연합뉴스 · 10/12 11:15)
+6. (공급) 서울 정비사업 착공 물량 공개 예정
+   → 서울시는 정비사업 착공 현황을 분기별로 시민에게 공개하기로 하며, 2031년까지 31만 호의 정비사업 착공 목표를 추진 중이라고 밝혔다.
+   (연합뉴스 · 10/12 11:15)
+
+[흐름·전망]
+• 분당 아파트의 재건축 기대감이 지속될 경우, 관련 지역의 가격 상승이 더욱 가속화될 가능성이 있다.
+• LH의 개선 방안이 실효성을 보일 경우, 향후 주택 공급 문제 해결이 기대되나 대출 규제 강화가 시장에 미치는 영향은 주의 깊게 관찰해야 할 사항이다.
+• 서울시의 주택 공급 개선 방안이 실행되면 정비사업 활성화가 이루어질 가능성이 높으며, 주택 시장의 안정성을 높이는 데 기여할 수 있다.
+• 대금 상승 및 공급 확대에 따른 집값 하락 우려는 투자자들에게 불확실성을 줄 수 있으며, 이에 따른 주택 구매 결정을 신중히 검토할 필요가 있다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프 대통령은 오늘 소셜 미디어를 통해 여러 주제를 언급했습니다. 그는 북미 정치계의 인사 교체와 현직 정치인에 대한 비판을 통해 자신의 입장을 밝히고, 에너지 전쟁에 대한 발표도 있었습니다.
+
+[주요 발언]
+1. (사법) 트럼프는 로이 쿠퍼 전 노스캐롤라이나 주지사가 83명의 범죄자를 석방할 당시 COVID-19 확산을 이유로 삼았다고 비판하며, 이들 중 일부가 석방 후 즉시 범죄를 저질렀다고 주장했습니다.
+   (Truth Social · 10/12 08:54)
+2. (인사) 트럼프는 케이티 자카라가 백악관 담당 대변인으로 임명된 것을 발표하며 그녀가 훌륭한 역할을 할 것이라 기대한다고 전했습니다.
+   (Truth Social · 10/12 06:37)
+3. (국내정치) 트럼프는 콜럼버스 대축일을 맞아 이탈리아계 미국인 커뮤니티를 축하하며 역사적인 동상 복원을 강조했습니다.
+   (Truth Social · 10/11 23:34)
+4. (기타) 트럼프는 자신의 집회가 공화당의 열정을 고취시키고 있다고 언급하며, 곧 옥타호마와 알래스카에서의 집회 일정도 예고했습니다.
+   (Truth Social · 10/12 06:57)
+5. (외교) 트럼프는 러시아와 우크라이나 간 에너지 전쟁이 즉각 중단되었으며 두 당사자가 이를 준수할 것이라고 발표했습니다.
+   (Truth Social · 10/11 23:16)
+
+[흐름·전망]
+• 트럼프의 발언은 정치인들의 범죄자 석방 여부에 대한 논의가 활발해질 가능성이 높습니다.
+• 백악관 대변인 인선은 향후 보도 방향과 정치적 소통에 중요한 변수로 작용할 수 있습니다.
+• 에너지 전쟁 중단 관련 발표는 향후 에너지 정책 및 국제 관계에 영향을 미칠 수 있는 관전 포인트입니다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
