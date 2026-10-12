@@ -10,7 +10,7 @@ document.querySelectorAll('.cal').forEach(function(cal){
   function vis(el){ return getComputedStyle(el).display!=='none'; }
   function mark(){   // 현재 필터에서 보이는 표시(라벨·티커)가 있는 칸만 '일정 있음'
     cal.querySelectorAll('.cal-c[data-d]').forEach(function(c){
-      c.classList.toggle('has', [].some.call(c.querySelectorAll('.lab,.cal-tk'), vis));
+      c.classList.toggle('has', [].some.call(c.querySelectorAll('.lab,.cal-tk,.hol'), vis));
     });
   }
   function label(d){ var t=new Date(d+'T00:00:00');
@@ -24,7 +24,7 @@ document.querySelectorAll('.cal').forEach(function(cal){
     dets.forEach(function(x){
       var on=x.getAttribute('data-d')===d;
       if(on){ x.hidden=false;
-        on=[].some.call(x.querySelectorAll('.ev,.up-row,.rep-item'), vis); }
+        on=[].some.call(x.querySelectorAll('.ev,.up-row,.rep-item,.hol-row'), vis); }
       x.hidden=!on; if(on) shown=true;
     });
     empty.hidden=shown;
