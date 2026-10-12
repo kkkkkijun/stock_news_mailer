@@ -10,7 +10,8 @@ from render.common import _dday_progress, _dday_text, _e, _event_ddays
 from render.config import DDAY_TARGET, HERO_PARTS, PARTS, SITE_TITLE, SLOGAN, TABS, _DOW
 from render.calview import _render_calendar
 from render.earnings import _render_earn_results
-from render.files import _load_earnings, _load_econ_events, _load_fundamentals, _load_reports, _slug
+from render.files import (_load_earnings, _load_econ_events, _load_fundamentals, _load_reports,
+                          _load_us_holidays, _slug)
 from render.growth import _render_growth
 from render.news import _render_part
 from render.parse import _fear_greed, _mood_color, _prev_item_tokensets, _split_sections
@@ -161,6 +162,23 @@ a:hover{opacity:.72;}
 .cal-c.today{border-color:var(--ink);}
 .cal-c.sel{outline:2px solid var(--accent);outline-offset:-1px;background:var(--chip);opacity:1;}
 .cal-dn{font-size:11.5px;font-weight:800;align-self:flex-start;line-height:1.5;}
+/* 미국 공휴일: 날짜 옆 상태 태그(휴장/조기폐장) + 국기·이름 줄. 필터와 무관하게 항상 표시 */
+.cal-top{display:flex;align-items:center;justify-content:space-between;gap:3px;}
+.hol-tag{font-size:9px;font-weight:800;border-radius:4px;padding:0 4px;line-height:1.6;
+ white-space:nowrap;color:#fff;}
+.hol-tag.closed{background:#64748b;}
+.hol-tag .t-mob{display:none;}
+.hol-tag.early{background:transparent;color:var(--muted-2);border:1px solid var(--border);}
+.hol{display:flex;align-items:center;gap:3px;font-size:9.5px;font-weight:700;
+ color:var(--muted-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.hol img{flex-shrink:0;border-radius:1px;box-shadow:0 0 0 1px rgba(0,0,0,.1);}
+.hol.closed{color:var(--ink);}
+.cal-c.hol-closed{background:var(--nav-track);}
+.hol-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12px;
+ padding:8px 3px;border-bottom:1px solid var(--border);color:var(--muted);}
+.hol-row b{color:var(--ink);font-weight:700;}
+.hol-row img{border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.1);}
+.hol-row.closed span{font-weight:800;color:var(--ink);}
 .cal-c.sun .cal-dn{color:#e5484d;}.cal-c.sat .cal-dn{color:#3b82f6;}
 .cal-c.today .cal-dn{background:var(--ink);color:var(--page);border-radius:999px;padding:0 6px;}
 .lab{display:block;font-size:10px;font-weight:800;border-radius:5px;padding:1px 5px;
@@ -177,6 +195,7 @@ a:hover{opacity:.72;}
 .cal-tks{display:flex;flex-wrap:wrap;gap:2px;margin-top:auto;}
 .cal-tk{font-family:ui-monospace,monospace;font-size:8.5px;font-weight:800;
  border-radius:4px;padding:1px 4px;line-height:1.4;}
+:root[data-theme="dark"] .cal-tk{box-shadow:0 0 0 1px rgba(255,255,255,.28);}  /* 어두운 브랜드색 티커가 배경에 묻히지 않게 */
 .cal-dets{margin-top:12px;}
 .cal-det,.cal-empty{background:var(--card);border:1px solid var(--border);border-radius:12px;
  padding:10px 12px;}
@@ -200,6 +219,11 @@ a:hover{opacity:.72;}
   .lab-more.mob{display:block;}
   .cal-tk{font-size:7.5px;padding:0 2px;}
   .cal-title{min-width:0;}
+  .hol{font-size:8.5px;}
+  .hol img{display:none;}
+  .hol-tag{font-size:8px;padding:0 2px;}
+  .hol-tag .t-dsk{display:none;}
+  .hol-tag .t-mob{display:inline;}
 }
 .ern-item{border-bottom:1px solid var(--border);border-radius:10px;}
 .ern-item:last-child{border-bottom:0;}
@@ -741,7 +765,8 @@ def _render_extra_panels(now: datetime, schedule: bool,
     sched_html = ""
     if months:
         earns = _load_earnings(_now_live)
-        sched_html = _render_calendar(months, earns, _load_reports(), _now_live)
+        sched_html = _render_calendar(months, earns, _load_reports(), _now_live,
+                                      _load_us_holidays())
         res_html, fresh = _render_earn_results(earns, _now_live)
         nb = '<span class="ev-new">NEW</span>' if fresh else ''
         navs.append('<button class="nav-t" data-p="tpS">일정</button>')

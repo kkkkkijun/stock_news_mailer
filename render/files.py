@@ -131,6 +131,37 @@ def _load_fundamentals():
         return []
 
 
+def _load_us_holidays():
+    """경제지표 CSV의 미국 공휴일 행(Impact=NONE, USD) → {미국 날짜: 영문 이름}.
+
+    서머타임 전환처럼 공휴일이 아닌 NONE 행은 제외. 날짜는 미국 기준이라 UTC 날짜를 쓴다
+    (FXStreet는 미국 공휴일을 05:00 UTC로 기록 → KST로 바꾸면 같은 날이지만 의미상 미국 날짜)."""
+    out: dict[date, str] = {}
+    if not os.path.isdir(config.ECON_DIR):
+        return out
+    for fn in sorted(os.listdir(config.ECON_DIR)):
+        if not fn.endswith(".csv"):
+            continue
+        try:
+            with open(os.path.join(config.ECON_DIR, fn), encoding="utf-8-sig") as f:
+                for row in csv.DictReader(f):
+                    if ((row.get("Impact") or "").strip().upper() != "NONE"
+                            or (row.get("Currency") or "").strip().upper() != "USD"):
+                        continue
+                    name = (row.get("Name") or "").strip()
+                    if "Daylight" in name:
+                        continue
+                    try:
+                        d = datetime.strptime((row.get("Start") or "").strip(),
+                                              "%m/%d/%Y %H:%M:%S").date()
+                    except ValueError:
+                        continue
+                    out[d] = name
+        except OSError:
+            log.warning("failed to read econ csv: %s", fn, exc_info=True)
+    return out
+
+
 def _load_econ_events(now):
     """data/econ/*.csv 병합 → MEDIUM/HIGH만, UTC→KST, 'now 이후' 임박순."""
     if not os.path.isdir(config.ECON_DIR):

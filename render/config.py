@@ -88,6 +88,37 @@ EVENT_DDAYS: list[tuple[str, date]] = [
 #   data/econ/*.csv (컬럼: Id,Start[UTC],Name,Impact,Currency)
 # =========================================================
 ECON_DIR = os.path.join(DATA_DIR, "econ")
+
+# 미국 증시(NYSE) 휴장·조기폐장 — 일정 캘린더의 공휴일 표시용.
+#   출처: https://www.nyse.com/markets/hours-calendars (2026-10-12 확인). 매년 말 다음 해 추가.
+#   연방 공휴일 이름은 경제지표 CSV(Impact=NONE, USD)에서 자동으로 오고, 여기 없는 공휴일
+#   (콜럼버스의 날·재향군인의 날 등)은 '증시 정상 개장'으로 표시된다.
+#   값: (한글 이름, "closed" 휴장 | "early" 13:00 ET 조기폐장)
+US_MARKET_DAYS: dict[date, tuple[str, str]] = {
+    date(2026, 1, 1): ("새해 첫날", "closed"),
+    date(2026, 1, 19): ("마틴 루터 킹 데이", "closed"),
+    date(2026, 2, 16): ("대통령의 날", "closed"),
+    date(2026, 4, 3): ("성금요일", "closed"),
+    date(2026, 5, 25): ("메모리얼 데이", "closed"),
+    date(2026, 6, 19): ("준틴스", "closed"),
+    date(2026, 7, 3): ("독립기념일(대체)", "closed"),
+    date(2026, 9, 7): ("노동절", "closed"),
+    date(2026, 11, 26): ("추수감사절", "closed"),
+    date(2026, 11, 27): ("추수감사절 다음 날", "early"),
+    date(2026, 12, 24): ("크리스마스이브", "early"),
+    date(2026, 12, 25): ("크리스마스", "closed"),
+    date(2027, 1, 1): ("새해 첫날", "closed"),
+    date(2027, 1, 18): ("마틴 루터 킹 데이", "closed"),
+    date(2027, 2, 15): ("대통령의 날", "closed"),
+    date(2027, 3, 26): ("성금요일", "closed"),
+    date(2027, 5, 31): ("메모리얼 데이", "closed"),
+    date(2027, 6, 18): ("준틴스(대체)", "closed"),
+    date(2027, 7, 5): ("독립기념일(대체)", "closed"),
+    date(2027, 9, 6): ("노동절", "closed"),
+    date(2027, 11, 25): ("추수감사절", "closed"),
+    date(2027, 11, 26): ("추수감사절 다음 날", "early"),
+    date(2027, 12, 24): ("크리스마스(대체)", "closed"),
+}
 _WD_KO = ["월", "화", "수", "목", "금", "토", "일"]
 # 통화 → ISO 국가코드(flagcdn 국기 이미지용). Windows는 이모지 국기를 못 그려
 # 'CN' 같은 글자로 나오므로 실제 국기 이미지를 쓴다.

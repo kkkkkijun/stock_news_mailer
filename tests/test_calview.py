@@ -70,3 +70,27 @@ def test_render_calendar_defaults_to_current_month_and_only_details_in_range():
     assert 'class="cal-det" data-d="2026-10-14"' in html
     assert 'data-d="2027-02-25"' not in html          # 그려진 달 밖의 실적은 상세도 없음
     assert 'class="cal-c today" data-d="2026-10-12"' in html
+
+
+def test_us_holidays_merge_csv_names_with_nyse_status():
+    from render.calview import _us_holidays
+    h = _us_holidays({date(2026, 10, 12): "Columbus Day", date(2026, 11, 26): "Thanksgiving Day"})
+    assert h[date(2026, 10, 12)] == {"name": "콜럼버스의 날", "status": "open"}
+    assert h[date(2026, 11, 26)]["status"] == "closed"
+    assert h[date(2026, 11, 27)] == {"name": "추수감사절 다음 날", "status": "early"}  # NYSE표에만 있음
+
+
+def test_hol_note_converts_early_close_to_kst():
+    from render.calview import _hol_note
+    note = _hol_note(date(2026, 11, 27), {"name": "x", "status": "early"})
+    assert note == "미국 증시 조기 폐장 · 13:00 ET (한국시간 다음 날 03:00)"   # EST(UTC-5)
+    assert _hol_note(date(2026, 10, 12), {"name": "x", "status": "open"}) == "미국 증시 정상 개장"
+
+
+def test_holiday_cell_and_detail_render_status():
+    from render.calview import _detail
+    info = {"econ": [], "earn": [], "rep": [], "hol": {"name": "추수감사절", "status": "closed"}}
+    cell = _cell(date(2026, 11, 26), "2026-11", info, TODAY)
+    assert 'class="t-dsk">휴장<' in cell and 'hol-tag closed' in cell and "hol-closed" in cell and "추수감사절" in cell
+    det = _detail(date(2026, 11, 26), info, datetime(2026, 10, 12, tzinfo=KST))
+    assert 'class="hol-row closed"' in det and "미국 증시 휴장" in det

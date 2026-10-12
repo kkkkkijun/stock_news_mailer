@@ -201,6 +201,19 @@ _ECON_KO = {
     "Tankan Large Manufacturing Outlook": "단칸 대형 제조업 전망",
     "Tankan Large All Industry Capex": "단칸 대기업 전산업 설비투자",
     "US Midterm Elections": "미국 중간선거",
+    # 미국 공휴일(Impact=NONE, 캘린더 공휴일 표시용)
+    "Columbus Day": "콜럼버스의 날",
+    "Veterans Day": "재향군인의 날",
+    "Thanksgiving Day": "추수감사절",
+    "Christmas Day": "크리스마스",
+    "New Year's Day": "새해 첫날",
+    "Martin Luther King Jr. Day": "마틴 루터 킹 데이",
+    "Presidents' Day": "대통령의 날",
+    "Good Friday": "성금요일",
+    "Memorial Day": "메모리얼 데이",
+    "Juneteenth": "준틴스",
+    "Independence Day": "독립기념일",
+    "Labor Day": "노동절",
 }
 
 
@@ -287,7 +300,7 @@ document.querySelectorAll('.cal').forEach(function(cal){
   function vis(el){ return getComputedStyle(el).display!=='none'; }
   function mark(){   // 현재 필터에서 보이는 표시(라벨·티커)가 있는 칸만 '일정 있음'
     cal.querySelectorAll('.cal-c[data-d]').forEach(function(c){
-      c.classList.toggle('has', [].some.call(c.querySelectorAll('.lab,.cal-tk'), vis));
+      c.classList.toggle('has', [].some.call(c.querySelectorAll('.lab,.cal-tk,.hol'), vis));
     });
   }
   function label(d){ var t=new Date(d+'T00:00:00');
@@ -301,7 +314,7 @@ document.querySelectorAll('.cal').forEach(function(cal){
     dets.forEach(function(x){
       var on=x.getAttribute('data-d')===d;
       if(on){ x.hidden=false;
-        on=[].some.call(x.querySelectorAll('.ev,.up-row,.rep-item'), vis); }
+        on=[].some.call(x.querySelectorAll('.ev,.up-row,.rep-item,.hol-row'), vis); }
       x.hidden=!on; if(on) shown=true;
     });
     empty.hidden=shown;
