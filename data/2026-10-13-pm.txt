@@ -1,0 +1,245 @@
+2026-10-13T17:02:38.985317+09:00
+
+[오늘의 뉴스 요약] 2026-10-13 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 시장은 중동 긴장감으로 인한 유가 상승과 국내 증시 급락의 복합적인 영향을 받고 있으며, 원/달러 환율은 10원 오른 1,345.1원에 마감했다. 특히 외국인 투자자들이 6거래일 연속 순매도에 나서며 불안한 시장 분위기가 이어지고 있다.
+
+[핵심 뉴스]
+1. (환율) 중동발 유가상승·증시 급락에…환율 10원 오른 1,345.1원
+   → 원/달러 환율이 10원 오른 1,345.1원으로 마감하며, 사우디 공항 피격으로 인한 유가 상승과 코스피의 급락이 주요 요인으로 작용했다.
+   (연합뉴스 · 10/13 16:03)
+2. (성장) IMF, 올해 한국 성장률 3.3%로 석 달 만에 0.7%포인트 상향
+   → IMF가 올해 한국의 성장률 전망치를 3.3%로 상향 조정했으며, 이는 반도체 호황이 주효하다는 평가이다.
+   (매일경제 · 10/13 12:12)
+3. (금리) 증시 급락에 채권으로 눈 돌릴까…금리 오르자 개인 매수 확대
+   → 개인 투자자들의 올해 장외채권 순매수는 27조8천억원에 달하고, 9월순매수액도 4조원을 넘어서면서 채권 시장에 대한 관심이 확대되고 있다.
+   (연합뉴스 · 10/13 14:44)
+4. (정책) 野배준영 "한은총재, 이달 기준금리 인상 '원점 재검토'해야"
+   → 배준영 의원이 한국은행에 기준금리 인상을 원점에서 재검토할 것을 촉구하며, 물가와 청년층의 이자 부담을 고려할 필요성을 강조했다.
+   (연합뉴스 · 10/13 15:50)
+5. (기타) 산업부, 반도체 메가프로젝트 전담국 신설
+   → 산업부가 반도체 메가프로젝트를 전담할 조직을 신설하고, 인도와의 산업·통상 협력을 강화할 계획을 발표하였다.
+   (매일경제 · 10/13 14:25)
+
+[흐름·전망]
+• 원/달러 환율의 변동성이 큰 가운데, 중동 리스크에 따른 글로벌 경제의 방향성을 주목해야 한다.
+• IMF의 한국 성장률 상향 조정과 반도체 산업 호황에 따른 경제 전반의 세부 업종별 변화에 주목하는 것이 중요하다.
+• 채권 시장으로의 개인 투자자 자금 이동이 지속될 경우, 채권 금리와 가격 변동에 미치는 영향을 살펴볼 필요가 있다.
+• 금리 인상 기조 유지 여부에 따라 가계 부채 문제와 소비 여력에 미치는 영향도 심도 있게 분석해야 할 시점이다.
+
+📈 해외주식 PART
+📰 [NVDA] NVIDIA Corporation $NVDA Stock Sold by Parkwood LLC - MarketBeat
+   (MarketBeat · 10/13 16:42)
+→ Parkwood LLC가 NVIDIA Corporation의 주식을 매도했다고 전해졌다. 이번 매도는 시장에서 NVIDIA의 주가에 영향을 미칠 수 있는 중요한 결정으로 보인다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Stock: Public Employees Retirement System of Ohio Decreases Holdings - MarketBeat
+   (MarketBeat · 10/13 16:42)
+→ 오하이오주 공무원 퇴직 시스템이 NVIDIA의 주식 보유량을 감소시켰다고 보도되었습니다. 이는 시장에 미치는 영향에 대해 투자자들의 관심을 끌고 있습니다.
+
+📰 [NVDA] NVIDIA Corporation $NVDA Stock: Ma Investment Partnership LP Boosts Holdings - MarketBeat
+   (MarketBeat · 10/13 16:42)
+→ NVIDIA 주식에 대한 Ma Investment Partnership LP의 보유량이 증가했습니다. 이 투자 결정은 NVIDIA의 성장 가능성을 반영하는 것으로 보입니다.
+
+📰 [TSLA] Analysts Offer Insights on Consumer Cyclical Companies: Nio (NIO) and Tesla (TSLA) - The Globe and Mail
+   (The Globe and Mail · 10/13 16:55)
+→ 분석가들이 소비 주기 기업인 니오(Nio)와 테슬라(Tesla)에 대한 통찰을 제공했습니다. 이 보고서에서는 두 기업의 현재 시장 동향과 성장 가능성이 논의되었습니다.
+
+📰 [TSLA] $SpaceX (SPCX.US)$$Tesla (TSLA.US)$$Alphabet-C (GOOG.US)$ I follow @MarketEdgeNews on X. One of the setups he shared last week saw a strong 40% move. He just posted his market outlook and stock strategies for the week ahead. Worth taking a lo - Moomoo
+   (Moomoo · 10/13 15:53)
+→ MarketEdgeNews가 최근 주식 시장 전망과 전략을 공유하며, 지난주 제안한_setup_이 40%의 강력한 상승을 경험했다고 전했습니다. 앞으로의 주식 거래에 대한 참고 자료로 가치가 있을 것이라는 언급이 있었습니다.
+
+📰 [TSLA] Tesla Cybercab and Robotaxi’s real advantage won’t be the ride service - Teslarati
+   (Teslarati · 10/13 14:33)
+→ 테슬라의 사이버캡과 로보택시는 실제로 승차 서비스보다 더 큰 이점을 제공할 것으로 보입니다. 이들 차량은 혁신적인 기술과 자율주행 기능을 통해 새로운 비즈니스 모델과 수익 창출 기회를 열어줄 것으로 기대됩니다.
+
+📰 [HIMS] Hims & Hers Health: The Bullish Case Is Hard To Forecast, But It Is Asymmetrical - Seeking Alpha
+   (Seeking Alpha · 10/13 16:12)
+→ Hims & Hers Health의 투자 전망은 예측하기 어려운 면이 있지만, 긍정적인 경우의 수익 잠재력은 비대칭적이어서 주목할 만하다는 분석이 나왔다. 이 회사의 성장 가능성과 시장에서의 위치가 긍정적인 요인으로 작용할 수 있다는 의견이 제시되었다.
+
+📰 [HIMS] Why the Next Phase of Hospital Digital Transformation Depends on Unified HIMS - Digital Health News
+   (Digital Health News · 10/13 14:45)
+→ 모바일 헬스케어 뉴스에 따르면, 병원의 디지털 혁신은 통합된 건강정보관리시스템(HIMS)에 의존해야 한다고 강조되고 있습니다. 이를 통해 의료 서비스의 효율성을 높이고, 데이터 관리와 환자 경험을 개선할 수 있는 기회를 제공한다는 분석입니다.
+
+📰 [HIMS] Should You Trim Or Add To Your Hims & Hers Position Now?
+   (Yahoo Finance · 10/13 07:53)
+→ Hims & Hers Health의 주가는 지난 12개월 동안 52% 하락했지만, 같은 기간 S&P 500은 17% 상승했습니다. 현재 주가는 매출의 2.8배로, 지수의 3.1배에 비해 저평가된 상황이며, 회사는 2026 회계연도 2분기에 매출이 거의 40% 성장했습니다. 이러한 성장의 원인이 무엇인지에 대한 의문이 제기되고 있습니다.
+
+📰 [RDW] ASTS, RKLB, RDW, SATS Jump As SpaceX Prices Historic IPO — Cloudflare CEO Weighs In On 'Perfect' 20% Pop Prediction - Stocktwits
+   (Stocktwits · 10/13 09:45)
+→ ASTS, RKLB, RDW, SATS 주식이 SpaceX의 역사적인 IPO 가격 책정에 따라 상승했습니다. Cloudflare CEO는 주식이 20% 급등할 것이라는 예측에 대해 의견을 제시했습니다.
+
+📰 [RDW] RDW Oct 2026 5.000 call (RDW261016C00005000) Stock Price, News, Quote & History - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/13 07:37)
+→ RDW의 2026년 10월 만기, 행사 가격 5.000의 콜 옵션 정보가 Yahoo! Finance Canada에 게시되었습니다. 해당 옵션의 주가, 뉴스, 시세 및 역사적인 자료를 확인할 수 있습니다.
+
+📰 [RDW] RDW Stock Surges Overnight On Blockbuster Earnings: Retail Wants ‘Valuation Rebalance’ Now - Stocktwits
+   (Stocktwits · 10/13 07:34)
+→ RDW 주가는 실적 발표 후 급등하였으며, 소액 투자자들은 주식의 가치 재조정을 원하고 있습니다. 이들은 기업의 최근 성과에 따라 주가가 적절하게 조정되기를 기대하고 있습니다.
+
+📰 [IREN] IREN signs Anthropic cloud deal. 20 analysts cover IREN stock - ad-hoc-news.de
+   (ad-hoc-news.de · 10/13 07:22)
+→ IREN이 Anthropic와 클라우드 계약을 체결했다. 현재 20명의 애널리스트가 IREN 주식을 분석하고 있다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Price Down 1.1% - What's Next? - MarketBeat
+   (MarketBeat · 10/13 06:49)
+→ IREN 주식이 1.1% 하락했습니다. 시장 분석가들은 향후 주가의 방향성에 대해 관심을 가지고 지켜보고 있습니다.
+
+📰 [IREN] Stock Market Today, Oct. 12: Iren Surges on Reports of Anthropic Cloud Services Deal - The Globe and Mail
+   (The Globe and Mail · 10/13 06:25)
+→ 2023년 10월 12일, 아이렌(Iren) 주식이 앤트로픽(Anthropic)과의 클라우드 서비스 계약 발표 소식에 힘입어 급등했습니다. 이번 계약은 투자자들에게 긍정적인 신호로 작용하며 시장에 영향을 미쳤습니다.
+
+📰 [RKLB] Rocket Lab's Neutron Fairing Reaches Wallops as Backlog Hits $2.36 Billion - ad-hoc-news.de
+   (ad-hoc-news.de · 10/13 14:41)
+→ 로켓랩의 뉴트론 페어링이 월롭스에 도착했으며, 현재 로켓랩의 미수금은 23억6000만 달러에 달하고 있습니다. 이는 회사의 성장과 수요 증가를 반영하는 지표로 해석됩니다.
+
+📰 [RKLB] Rocket Lab CFO Adam Spice sells $9.9m in shares, exercises options - Investing.com Canada
+   (Investing.com Canada · 10/13 14:32)
+→ 로켓랩의 CFO인 아담 스파이스가 주식 990만 달러어치를 매도하고 옵션을 행사했습니다. 이러한 거래는 회사의 재무 상황에 대한 시장의 관심을 끌고 있습니다.
+
+📰 [RKLB] Form 4 Rocket Lab Corp: Adam C. Spice (CFO) For: 1 October - Investing.com Canada
+   (Investing.com Canada · 10/13 14:32)
+→ 로켓랩(Rocket Lab Corp)의 최고재무책임자(CFO)인 아담 C. 스파이스가 10월 1일 기준으로 중요한 경영 결정을 발표했습니다. 해당 내용은 Investing.com Canada에 보도되었습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Coinbase Bitcoin Premium Index stays negative f... - Pluang
+   (Pluang · 10/13 16:54)
+→ Coinbase의 비트코인 프리미엄 지수는 계속해서 부정적인 값을 유지하고 있습니다. 이는 Coinbase에서 비트코인의 가격이 다른 거래소보다 낮다는 것을 의미하며, 시장에서 비트코인 수요와 공급의 변화가 반영되고 있습니다.
+
+📰 [BTC-USD] Bitcoin fraud victims may lose gains under UK court ruling - Cryptonews.net
+   (Cryptonews.net · 10/13 16:51)
+→ 영국 법원 판결에 따라 비트코인 사기 피해자들이 얻은 이익을 잃을 수 있는 상황이 발생했습니다. 이 판결은 사기 피해로 인해 발생한 손실에 대한 보상을 제한할 가능성을 제기하고 있습니다.
+
+📰 [BTC-USD] BTC/USD Signal 13/10: Bitcoin is Sending Mixed Signals - DailyForex
+   (DailyForex · 10/13 16:41)
+→ 비트코인(BTC/USD)은 현재 혼합된 신호를 보내고 있으며, 시장의 방향성이 불확실한 상황입니다. 투자자들은 이를 유의하며 신중한 접근이 필요합니다.
+
+📰 [ETH-USD] The Whale Behind $29.75 Million in Wins Just Went Long on Ethereum
+   (Yahoo Finance · 10/13 16:51)
+→ $29.75 million의 수익을 올린 하이퍼리퀴드 고래가 이더리움에 대해 6,070만 달러 규모의 롱 포지션을 열었습니다. 이는 가격 약세와 ETFs의 10일간 유출이 이어지는 상황에서 이루어진 거래입니다.
+
+📰 [ETH-USD] The Whale Behind $29.75 Million in Wins Just Went Long on Ethereum - BeInCrypto
+   (BeInCrypto · 10/13 16:51)
+→ 29.75백만 달러의 수익을 올린 대형 투자자가 이더리움에 대한 매수 포지션을 취했다고 보도됐다. 이 투자자의 움직임은 암호화폐 시장에서 큰 주목을 받고 있으며, 이더리움의 가격 변동에 영향을 미칠 것으로 예상된다.
+
+📰 [ETH-USD] Tom Lee warns of short-term Ethereum sell-off a... - Pluang
+   (Pluang · 10/13 16:46)
+→ 톰 리는 단기적으로 이더리움의 매도세가 일어날 수 있다고 경고했다. 그는 시장 조정으로 인해 투자자들이 이더리움을 매도할 가능성이 높아진다고 언급했다.
+
+📰 [SOL-USD] Solana leads crypto mindshare but price dips 4-5% amid cautious market outlook for Oct 2026. - Pluang
+   (Pluang · 10/13 16:54)
+→ 솔라나가 암호화폐 시장에서 주목받고 있지만, 2026년 10월에 대한 시장 전망이 조심스러워지면서 가격이 4-5% 하락했습니다.
+
+📰 [SOL-USD] Solana tops tokenized equities DEX volume again, signaling strong market interest and potential price rise. - Pluang
+   (Pluang · 10/13 16:54)
+→ Solana가 다시 한 번 토큰화된 주식 DEX 거래량에서 1위를 차지하며, 시장의 강한 관심과 가격 상승 가능성을 나타내고 있습니다.
+
+📰 [SOL-USD] Solana slides back to $105.63, sitting roughly half its year-ago price - 24/7 Wall St.
+   (24/7 Wall St. · 10/13 16:52)
+→ 솔라나의 가격이 $105.63로 하락하였으며, 이는 1년 전 가격의 약 절반에 해당합니다.
+
+📰 [BMNR] Bitmine Raises Ether Holdings to 6M ETH, Closing In on 5% Supply Target
+   (Yahoo Finance · 10/12 23:49)
+→ 비트마인 이머션 테크놀로지스(BMNR)가 이더리움(Ethereum) 보유량을 603만 ETH로 늘리며 공급 목표인 5%에 가까워졌습니다. 이는 회사의 투자 전략의 일환으로, 이더리움 시장에서의 입지를 강화하는 데 기여하고 있습니다.
+
+📰 [BMNR] Bitmine Adds 12,532 ETH as Tom Lee Predicts BMNR To Outperform Crypto Market - CoinGape
+   (CoinGape · 10/12 22:39)
+→ Bitmine이 12,532 ETH를 추가했으며, Tom Lee는 BMNR이 암호화폐 시장보다 더 높은 성과를 낼 것이라고 예측했습니다.
+
+📰 [BMNR] Bitmine Immersion's $16.2B crypto treasury: 6M ETH and bull-run bet - Seeking Alpha
+   (Seeking Alpha · 10/12 22:29)
+→ Bitmine Immersion은 162억 달러 규모의 암호화폐 자산을 보유하고 있으며, 이 중 600만 이더리움을 포함하고 있습니다. 회사는 앞으로 암호화폐 시장의 상승세를 예상하고 전략적으로 투자하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 시장은 암호화폐 ETF에서 총 1억5080만 달러의 순유출이 있어 경계심이 높아지는 분위기다. 비트코인은 약간 하락했으나 점유율이 증가하며 안전 자산으로 자리 잡으려는 모습이 나타났다.
+
+[핵심 뉴스]
+1. (ETFs) 비트코인·이더리움 ETF 1.5억달러 순유출
+   → 미국 비트코인과 이더리움 현물 ETF에서 각각 6540만 달러와 8540만 달러가 순유출되며, 9월 소비자물가지수 발표를 앞두고 경계 모드에 접어들었다.
+   (토큰포스트 · 10/13 16:30)
+2. (ETFs) 비트코인 현물 ETF 순자산 6540만달러 이탈
+   → 비트코인 현물 ETF는 하루 6540만 달러가 유출되며 순자산이 1060억5781만 달러로 감소했다. 블랙록 IBIT에서만 6540만 달러의 유출이 발생했다.
+   (토큰포스트 · 10/13 15:02)
+3. (ETFs) 이더리움 현물 ETF 하루 8540만달러 유출
+   → 이더리움 현물 ETF는 10거래일 연속 순유출을 기록하며 하루 8540만 달러가 유출되었다. 전체 순자산 규모는 158억5826만 달러로 집계되었다.
+   (토큰포스트 · 10/13 14:04)
+4. (정책) 영란은행, 디지털 파운드 대안 결제수단 검토
+   → 영란은행은 디지털 파운드 발행을 서두르지 않겠다고 발표하며, 오히려 상업용 스테이블코인과 토큰화된 예금 등 대안 결제수단을 고려하겠다는 입장을 밝혔다.
+   (토큰포스트 · 10/13 15:37)
+5. (거래소) CZ “유료 FUD, 거래소 신뢰 해칠 수 있다”
+   → CZ는 유료 FUD가 거래소 신뢰를 해칠 위험이 있다고 경고하며, 경쟁사의 비방 방식에 대한 문제를 제기하였다.
+   (토큰포스트 · 10/13 16:38)
+
+[흐름·전망]
+• 가까운 미래에는 소비자물가지수 발표 결과에 따라 시장의 방향성이 크게 변화할 수 있으므로 주의가 필요하다.
+• 비트코인은 점유율 상승에도 불구하고 알트코인 대비 상대적 하락이 두드러져, 투자자들이 안전 자산으로서 비트코인을 선호하는 경향을 보여준다.
+• 이더리움의 지속적인 순유출은 투자자들이 리스크를 회피하려는 모습으로 해석되며, 기술적인 변화 상황도 주의 깊게 관찰해야 한다.
+• 영란은행의 디지털 파운드 관련 정책 결정은 향후 스테이블코인 시장에 큰 영향을 미칠 수 있으며, 이와 관련된 기업의 움직임도 주목할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 46 (Neutral)
+  - 크립토 기준: 57 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+서울 지역의 아파트 매매와 전세가격이 특히 노원구와 성북구에서 크게 상승하며 실수요자들의 주거비 부담이 가중되고 있다. 전세시장에서는 매물 부족과 높은 가격 상승세가 이어지고 있다.
+
+[핵심 뉴스]
+1. (전세) 서울 전세 상승률, 노원·성북구 최고
+   → 한 달 동안 서울 노원구 아파트 매매가격이 2.32%, 전셋값이 2.04% 각각 상승하며 서울 평균을 크게 웃돌았다. 성북구도 매매가격 1.93% 상승하게 되며 실수요자들의 부담이 커지고 있다.
+   (매일경제 · 10/13 16:13)
+2. (전세) 올해 전셋값, 강북권 폭등
+   → 올해 서울 아파트 전셋값은 8.35% 상승하며, 강북권 지역의 성북구(14.08%)와 노원구(13.52%)에서 특히 두드러진 상승률을 기록했다. 이는 입주 물량 감소와 전세 매물 부족에 기인한 것으로 분석된다.
+   (매일경제 · 10/13 14:53)
+3. (정책) 韓총리, 수도권 재개발 현장 방문
+   → 한성숙 국무총리는 민간 부문의 주택공급 비율이 80% 이상으로, 정부의 목표 달성을 위해 민간 재개발 사업의 신속한 추진이 필요하다는 입장을 밝혔다. 이는 현재 주택 공급 속도가 느리다는 문제를 강조하는 맥락이다.
+   (연합뉴스 · 10/13 16:02)
+4. (공급) 수도권 집값 상승, 분양시장 기대 개선
+   → 10월 전국 아파트 분양전망지수는 82.3으로 감소했지만, 수도권의 경우 92.0으로 개선됐다. 서울은 105.7로 기준치를 초과하며 분양시장 기대감이 높아졌다.
+   (연합뉴스 · 10/13 11:00)
+5. (공급) 서울시, 연내 3만호 착공 목표
+   → 서울시는 연내 3만 호 착공 목표를 달성하기 위해 민·관 협력을 강화하고 있으며, 현재 이미 14개 정비사업장이 착공을 마쳤다. 남은 사업장들에 대해서도 신속한 절차를 통해 첫 삽을 뜰 계획이다.
+   (매일경제 · 10/13 13:28)
+6. (정책) 주거사업장 자기자본비율규제 2년 유예
+   → 정부는 주거사업장에 대해 PF 자기자본비율 규제를 2년간 유예하기로 결정했다. 이는 주택공급을 촉진하기 위한 방안으로, 금융지원 및 사업 진행 속도를 높이는 데 기여할 것으로 예상된다.
+   (연합뉴스 · 10/13 12:00)
+
+[흐름·전망]
+• 서울의 전세가격 상승이 계속될 경우, 젊은 세대와 실수요자들의 주거 이동이 활발해질 전망으로 전세시장의 불안정성이 더욱 커질 수 있다.
+• 민간 재개발 사업의 신속한 추진을 위해 다양한 이해관계자 간의 협력이 필수적이며, 이는 주택 공급 증가에 중요한 영향을 미칠 것이다.
+• 수도권 아파트 가격 상승세가 지속되는 가운데 분양시장에 대한 기대감이 커지고 있으나, 지방은 여전히 미비한 주택 수요와 미분양 적체로 인해 골머리를 앓고 있다.
+• 서울시의 연내 3만 호 착공 목표 달성이 이루어질 경우, 장기적으로 안정적인 주거 환경 조성에 긍정적 효과를 미칠 것으로 예상된다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 이란과 관련해 중국과 러시아의 개입을 부인하며 이들의 행동에 의문을 제기했다. 그는 현재 미국의 정치적 상황과 자신의 지지자들에 대해 긍정적인 견해를 밝혔다.
+
+[주요 발언]
+1. (외교) 트럼프는 중국과 러시아가 이란을 지원한다고 주장하는 의견에 반박하며, 이들이 그렇게 할 이유가 없다고 강조했다.
+   (Truth Social · 10/13 11:45)
+2. (국내정치) 트럼프는 오하이오에서 지지자들과의 집회를 언급하며, 현재 자신이 이끄는 미국이 황금기를 맞이하고 있다고 주장했다.
+   (Truth Social · 10/13 04:23)
+3. (인사) 트럼프는 캔자스주 상원 의원 로저 마샬을 지지하며, 그가 법적 의무에 따라 환자에게 미수금을 요청한 것에 대한 비난을 반박했다.
+   (Truth Social · 10/13 04:17)
+4. (국내정치) 트럼프는 오하이오 집회에서 대규모 인파가 모인 것을 강조하며, 극좌 사회주의자들과의 대결 의지를 드러냈다.
+   (Truth Social · 10/13 04:00)
+5. (기타) 트럼프는 뉴욕 타임스가 자신의 호텔 이미지를 조작했다고 주장하며 언론은 그릇된 보도를 하고 있다고 언급했다.
+   (Truth Social · 10/13 00:18)
+6. (기타) 유럽연합이 러시아에 막대한 금액을 지불했다고 언급하며, 자신의 미국 우선주의 선택이 옳았다고 주장했다.
+   (Truth Social · 10/12 23:45)
+
+[흐름·전망]
+• 트럼프의 외교적 주장이 이란과의 관계 및 중국과 러시아의 역할에 대한 논의를 촉발할 가능성이 있다.
+• 오하이오 집회에서의 긍정적인 반응은 그의 향후 선거 캠페인에 중요할 수 있으며, 트럼프의 지지 기반 강화를 이어갈 수 있는 계기가 될 것으로 보인다.
+• 트럼프가 언론에 대해 강한 반감을 보인 만큼, 향후 미디어와의 갈등이 더욱 심화될 가능성이 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
