@@ -372,10 +372,10 @@
 "name": "Consumer Price Index (YoY)",
 "dt": "2026-10-14T12:30:00Z",
 "act": null,
-"cons": "3.7%",
+"cons": "3.6%",
 "prev": "3.4%",
 "act_n": null,
-"cons_n": 3.7
+"cons_n": 3.6
 },
 "cfaffea7-7471-4647-926d-581b3eecb400": {
 "name": "Consumer Price Index ex Food & Energy (MoM)",

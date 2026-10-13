@@ -1,0 +1,239 @@
+2026-10-14T06:32:39.092430+09:00
+
+[오늘의 뉴스 요약] 2026-10-14 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제는 IMF가 올해 성장률을 3.3%로 상향 조정하며 반도체 수출 호조와 중동전쟁 리스크를 극복할 수 있다는 긍정적인 신호를 보이고 있다. 하지만 물가와 금리 상승에 따른 민생 부담이 여전히 우려되고 있다.
+
+[핵심 뉴스]
+1. (성장) IMF, 한국 경제 성장률 3.3%로 상향 조정
+   → IMF가 한국의 경제 성장률을 2.6%에서 3.3%로 0.7%포인트 상향 조정하며 반도체 수출에 대한 강한 대외 수요가 중동전쟁의 부정적 영향을 상쇄할 것이라고 밝혔다.
+   (매일경제 · 10/14 05:43)
+2. (고용) KDI, 52시간제의 제조업 및 중소기업 성과 부정적 평가
+   → KDI 연구에 따르면 주 52시간 근로시간 상한제가 제조업과 중소기업의 고용 및 생산성에 부정적인 영향을 미쳤으며, 서비스업과 대기업은 유연근무제를 통해 상황을 극복한 것으로 평가되었다.
+   (연합뉴스 · 10/14 05:53)
+3. (환율) 원/달러 환율, 10원 상승
+   → 원/달러 환율이 10원 상승하며 1,345.1원으로 마감하였고, 이는 중동발 지정학적 리스크와 국내 증시 급락에 따른 위험회피 심리의 영향으로 분석된다.
+   (연합뉴스 · 10/13 16:03)
+4. (금리) 국고채 금리 이틀 째 큰 폭 하락
+   → 국고채 금리가 이틀 연속 하락하며 8월 말 수준으로 내려갔고, 외국인 채권 선물의 순매수가 이어지면서 채권 시장이 강세를 보였다.
+   (연합뉴스 · 10/13 17:16)
+
+[흐름·전망]
+• IMF의 성장률 전망 상향이 국내 경제에 긍정적인 영향을 줄 수 있지만, 물가와 금리 상승에 대한 대응 방안을 면밀히 살펴봐야 한다.
+• 52시간제의 성과에 대한 KDI의 부정적 평가가 향후 근로시간 정책 재검토의 기회로 작용할 수 있다.
+• 환율 상승은 글로벌 지정학적 리스크와 외국인 투자자들의 매도 흐름에 의한 것으로, 향후 변화하는 시장 환경을 주의 깊게 관찰해야 한다.
+• 채권 금리 하락은 외국인 수급 상황과 국내 시장의 위험 회피 심리에 크게 의존하며, 앞으로의 투자 심리 변동성에 귀추가 주목된다.
+
+📈 해외주식 PART
+📰 [NVDA] You Bought a Semiconductor Fund. On $500,000, $87,743 of It Is NVIDIA
+   (Yahoo Finance · 10/14 06:03)
+→ 반도체 ETF에 투자했지만, 그 안에서 자금의 상당 부분이 특정 회사인 NVIDIA에 집중되어 있다는 이야기를 다룹니다. 50만 달러를 투자하는 경우, 그 중 8만 7천743달러가 NVIDIA에 해당한다고 분석했습니다. 이로 인해 ETF의 흥미로운 수익 구조를 보여줍니다.
+
+📰 [NVDA] You Bought a Semiconductor Fund. On $500,000, $87,743 of It Is NVIDIA - 24/7 Wall St.
+   (24/7 Wall St. · 10/14 06:03)
+→ 반도체 펀드를 구매한 투자자 중 50만 달러를 투자한 경우, 그 중 8만 7,743 달러가 NVIDIA 주식에 해당한다는 내용의 기사입니다. 이는 반도체 산업 내에서 NVIDIA의 비중이 크다는 것을 시사합니다.
+
+📰 [NVDA] Nvidia’s China AI Chip Share Drops to 34% as Huawei Gains Ground - Mexico Business News
+   (Mexico Business News · 10/14 05:37)
+→ Nvidia의 중국 AI 칩 시장 점유율이 34%로 감소한 반면, 화웨이가 시장에서 점유율을 늘리고 있다는 소식입니다. 이러한 변화는 Nvidia의 경쟁력에 영향을 미칠 것으로 보입니다.
+
+📰 [TSLA] Tesla Jeltema named a 2026 American Physical Society Fellow - UC Santa Cruz - News
+   (UC Santa Cruz - News · 10/14 06:22)
+→ 테슬라 젤테마가 2026년 미국 물리학회 펠로우로 선정되었습니다. 이 소식은 UC 산타크루즈에서 보도되었습니다.
+
+📰 [TSLA] Feds Eye Probe Into Reports of Tesla Robotaxis Zooming Through School Zones - Gizmodo
+   (Gizmodo · 10/14 06:15)
+→ 연방 기관이 테슬라 로보택시가 학교 구역 내에서 과속하는 보도에 대해 조사할 계획을 세우고 있습니다. 이 조사는 안전 문제와 관련된 우려에서 비롯된 것입니다.
+
+📰 [TSLA] Motorcyclist dies in East Bay crash with Tesla - San Francisco Chronicle
+   (San Francisco Chronicle · 10/14 06:07)
+→ 동부 베이 지역에서 오토바이와 테슬라 차량의 충돌로 한 오토바이 운전자가 사망하는 사고가 발생했습니다. 사고의 원인과 자세한 사항은 아직 조사 중입니다.
+
+📰 [HIMS] Kaplan Fox Alerts Hims & Hers Health, Inc. (NYSE: HIMS) Investors - The National Law Review
+   (The National Law Review · 10/14 01:48)
+→ Kaplan Fox가 Hims & Hers Health, Inc.의 투자자들에게 알림을 보냈습니다. 이 통지 사항은 투자자들이 회사에 관한 중요한 정보에 주목해야 함을 강조하고 있습니다.
+
+📰 [HIMS] FTC Charges Hims & Hers With Duping Consumers Over Privacy, Billing 07/30/2026 - MediaPost
+   (MediaPost · 10/14 01:33)
+→ 미국 연방거래위원회(FTC)는 Hims & Hers가 소비자들을 속여 개인 정보와 청구 문제로 잘못된 정보를 제공한 혐의로 고발했습니다. 이 회사는 사용자에게 불리한 방식으로 개인정보를 관리하고 비용 청구를 했다고 주장하고 있습니다.
+
+📰 [HIMS] DEADLINE ALERT for YSS, HIMS, UNCY, and PZZA: The Law - GlobeNewswire
+   (GlobeNewswire · 10/14 01:09)
+→ YSS, HIMS, UNCY, PZZA에 대한 법적 마감일이 다가오고 있다는 경고가 보도됐다. 투자자들은 관련된 법적 조치에 주의해야 할 필요가 있다.
+
+📰 [RDW] RDW Oct 2026 8.000 call (RDW261016C00008000) Interactive Stock Chart - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/14 00:45)
+→ RDW의 2026년 10월 만기 8.000 콜 옵션(RDW261016C00008000)에 대한 주식 차트 정보가 Yahoo! Finance Canada에 제공되었습니다. 해당 옵션의 세부 내용은 투자자들이 차트를 통해 확인할 수 있습니다.
+
+📰 [RDW] RDW Oct 2026 8.000 call (RDW261016C00008000) Stock Price, News, Quote & History - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/14 00:11)
+→ RDW의 2026년 10월 8.000 콜 옵션(RDW261016C00008000)에 대한 주식 가격과 관련 뉴스, 인용, 역사 정보가 Yahoo! Finance Canada에 게시되었습니다. 이 옵션의 세부 사항과 시장 동향에 대한 정보가 포함되어 있습니다.
+
+📰 [RDW] Can Redwire's VLEO Spacecraft Expand Mission Opportunities?
+   (Yahoo Finance · 10/13 21:42)
+→ Redwire가 SabreSat과 Phantom을 추가하여 VLEO 우주선 포트폴리오를 확장했습니다. 이 새로운 우주선은 지구 근처에서의 특별한 임무를 수행하는 데 이점을 제공하여 미션 기회를 넓히는 데 기여할 것으로 기대됩니다.
+
+📰 [IREN] Form ARS IREN Ltd For: Jun 30 - StreetInsider
+   (StreetInsider · 10/14 06:20)
+→ "Form ARS IREN Ltd의 6월 30일자 보고서가 StreetInsider에 소개되었습니다."
+
+📰 [IREN] Why Is IREN (IREN) In Focus After A Reported AI Cloud Deal? - Simply Wall Street
+   (Simply Wall Street · 10/14 05:34)
+→ IREN(아이렌)이 최근 인공지능(AI) 클라우드 계약 소식으로 주목받고 있다. 이 계약이 회사의 기술 발전과 비즈니스 성장에 긍정적인 영향을 미칠 것으로 예상되기 때문이다. 이러한 배경에서 투자자들의 관심이 높아지고 있다.
+
+📰 [IREN] Why is IREN stock sliding today? - Investing.com
+   (Investing.com · 10/14 03:42)
+→ IREN 주식이 오늘 하락하는 이유는 투자자들의 우려와 시장의 부정적인 반응 때문입니다. 구체적인 원인으로는 기업 실적이나 전망에 대한 악재가 지목되고 있습니다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Stock Price Down 2.3% - Here's Why - MarketBeat
+   (MarketBeat · 10/14 06:22)
+→ 로켓랩(Rocket Lab)의 주가가 2.3% 하락한 이유에 대한 내용입니다. 시장의 변동성 또는 회사의 실적 관련 소식 등이 주가에 영향을 미쳤을 가능성이 있습니다.
+
+📰 [RKLB] AST SpaceMobile vs. Rocket Lab: Which Space-Focused Stock Is a Better Buy in 2026?
+   (Yahoo Finance · 10/14 05:42)
+→ AST SpaceMobile은 직접적으로 위성과 연결하는 휴대폰 서비스를 제공하려고 노력하고 있으며, Rocket Lab은 이를 위해 로켓을 제작하고 있습니다. 두 회사 모두 현금을 소모하고 있지만, 수익성 확보를 위한 경로는 크게 다릅니다. 2026년에는 어떤 주식이 더 매력적인 가에 대한 평가가 이뤄지고 있습니다.
+
+📰 [RKLB] AST SpaceMobile vs. Rocket Lab: Which Space-Focused Stock Is a Better Buy in 2026? - The Motley Fool
+   (The Motley Fool · 10/14 05:34)
+→ AST SpaceMobile과 Rocket Lab 중 2026년에 더 나은 투자 기회를 제공하는 주식에 대한 비교 분석이 진행되었다. 두 기업 모두 우주 관련 사업에 집중하고 있으며, 각자의 성장 가능성과 시장 전략이 다르다는 점에서 투자자들에게 흥미로운 선택을 제시하고 있다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin mining difficulty rises 5.5% on Friday - CryptoTicker
+   (CryptoTicker · 10/14 06:28)
+→ 비트코인 채굴 난이도가 금요일에 5.5% 상승했습니다. 이는 채굴자들이 블록을 생성하는 데 더 많은 자원이 필요하게 되는 것을 의미합니다. 이러한 변화는 비트코인 생태계에 영향을 미칠 수 있습니다.
+
+📰 [BTC-USD] Strive plans IPO of 15% preferred stock to fund bitcoin buys - Investing.com Nigeria
+   (Investing.com Nigeria · 10/14 06:03)
+→ Strive는 비트코인 구매 자금을 조달하기 위해 15% 우선주를 공개하지(IPO) 계획하고 있습니다. 이를 통해 자금을 확보하여 비트코인 투자에 집중할 예정입니다.
+
+📰 [BTC-USD] 98 bitcoins came from BitFuFu's own mining, even as total output fell 4% - Stock Titan
+   (Stock Titan · 10/14 06:00)
+→ BitFuFu는 자체 채굴을 통해 98 비트코인을 얻었으나, 전체 출력량은 4% 감소했습니다.
+
+📰 [ETH-USD] Ethereum FOMO Returns as ETF Investors Sell for 10 Straight Days - Cryptonews.net
+   (Cryptonews.net · 10/14 05:52)
+→ ETF 투자자들이 10일 연속으로 매도하면서 이더리움에 대한 FOMO(놓칠 수 있는 두려움)가 되살아나고 있습니다. 시장에서는 이더리움의 가격 상승에 대한 기대감이 다시 커지고 있는 상황입니다.
+
+📰 [ETH-USD] Does Ethereum Staking Launch Change The Bull Case For Interactive Brokers Stock (IBKR)? - Simply Wall Street
+   (Simply Wall Street · 10/14 05:30)
+→ 이더리움 스테이킹의 출시는 Interactive Brokers 주식 (IBKR)에 대한 긍정적인 전망에 영향을 미칠 수 있는지에 대한 논의가 있습니다. 이더리움의 성장과 스테이킹 기능이 금융 플랫폼의 수익성에 어떤 변화를 가져올지 주목받고 있습니다.
+
+📰 [ETH-USD] Ethereum FOMO Returns as ETF Outflows Hit 10 Straight Days - Altcoin Buzz
+   (Altcoin Buzz · 10/14 04:34)
+→ 최근 10일 연속으로 ETF 자금 유출이 발생하면서 이더리움에 대한 FOMO(놓칠까 두려워 하는 심리)가 다시 나타나고 있다. 투자자들은 이더리움의 잠재력에 대한 관심이 높아지고 있으며, 이에 따른 시장 반응이 두드러지고 있다.
+
+📰 [SOL-USD] Solana Reclaims Weekly Leadership in Tokenized Equity Markets - Cryptonews.net
+   (Cryptonews.net · 10/14 06:12)
+→ 솔라나가 토큰화된 주식 시장에서 주간 리더십을 되찾았습니다. 이는 시장 내 경쟁에서 우위를 점하며 투자자들의 주목을 받고 있음을 의미합니다.
+
+📰 [SOL-USD] Solana Sees Over $1B in Tokenized Credit, Half in Lending - Cryptonews.net
+   (Cryptonews.net · 10/14 06:12)
+→ 솔라나 플랫폼에서 토큰화된 신용이 10억 달러를 초과했으며, 이 중 절반이 대출에 사용되고 있습니다. 이는 솔라나 생태계의 성장과 DeFi 서비스의 확산을 보여주는 사례입니다.
+
+📰 [SOL-USD] Most tokenized stock trading on Solana, BNB Chain occurs outside US market hours - Cryptonews.net
+   (Cryptonews.net · 10/14 05:42)
+→ Solana와 BNB 체인에서 이루어지는 대부분의 토큰화 주식 거래는 미국 시장 운영 시간 외에 발생하고 있습니다. 이 현상은 투자자들이 시장이 열리지 않을 때에도 거래를 계속할 수 있는 기회를 제공하고 있습니다.
+
+📰 [BMNR] Bitmine’s Tom Lee Warns Of Ethereum Selloff
+   (Yahoo Finance · 10/13 23:26)
+→ Bitmine의 톰 리 회장은 이더리움의 매도 우려를 경고하고 있습니다. 그는 최근 이더리움의 가격 하락과 관련된 경고를 발표하며, 투자자들에게 신중한 접근을 권장하고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) annonce que ses avoirs en ETH atteignent 6,03 millions de jetons, et que le total de ses avoirs en cryptomonnaies, en liquidités et en titres négociables s'élève à 16,2 milliards de dollars - TradingView
+   (TradingView · 10/13 20:13)
+→ Bitmine Immersion Technologies (BMNR)은 보유하고 있는 이더리움(ETH) 자산이 603만 개에 달한다고 발표했습니다. 또한, 전체 암호화폐, 현금 및 유가 증권 자산의 총액은 162억 달러에 이릅니다.
+
+📰 [BMNR] BMNR, CRCL, MSTR Stocks Lead Slide In Crypto Equities Amid Bitcoin’s Tumble To $63K - Stocktwits
+   (Stocktwits · 10/13 13:36)
+→ BMNR, CRCL, MSTR 주식이 비트코인이 63,000달러로 급락하면서 암호화폐 관련 주식에서 하락세를 주도하고 있습니다. 이로 인해 암호화폐 시장 전체가 영향을 받고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장에서는 최근 중요한 발전이 있었습니다. 시타델증권이 미국 국채의 토큰화를 발표하며 시민들의 관심을 끌고 있으며, 비트코인에 대한 장기 저축 자산으로서의 재조명도 이루어졌습니다.
+
+[핵심 뉴스]
+1. (기타) 시타델증권, 토큰화 국채 활용 발표
+   → 시타델증권은 미국 국채를 토큰화하여 CME 담보로 활용하고, 2026년 4분기에 토큰화 서비스를 출시할 예정입니다. DTCC는 40여 개의 회사가 참여하는 실제 거래를 통해 일부 자산을 토큰화한 사례를 공개했습니다.
+   (토큰포스트 · 10/14 06:11)
+2. (기타) 비트코인, 저축 기술로 가치 재조명
+   → 비트코인 전문 기자 나탈리 브루넬은 비트코인을 단순한 투자 자산이 아닌 장기 저축 기술로 바라봐야 한다고 주장했습니다. 그는 비트코인이 경제적 자립을 위한 도구가 될 수 있다고 강조했습니다.
+   (토큰포스트 · 10/14 05:54)
+3. (시세) 비트코인 고래 보유량 증가
+   → 비트코인 고래 주소의 보유량이 303만 개로 증가하며 2025년 11월 이후 최고치를 기록했습니다. 미국 현물 비트코인 ETF는 연초 이후 누적 순유입이 약 2300 BTC로 플러스로 돌아섰습니다.
+   (토큰포스트 · 10/14 05:49)
+4. (ETF) 비트코인 ETF에서 대규모 자금 유출 발생
+   → 코인베이스로 이체된 1억926만 USDC에 대한 미확인 소식이 전해졌습니다. 거래 확인을 위한 추가 정보는 아직 없습니다.
+   (토큰포스트 · 10/14 05:49)
+5. (기타) 암호화폐 시장 강세장 진입 가능성 제기
+   → 스타크넷이 이더리움 L2에서 독립 L1으로 전환할 가능성을 검토하고 있으며, 2027년 완전한 양자내성 네트워크를 목표로 하고 있습니다.
+   (토큰포스트 · 10/14 05:44)
+
+[흐름·전망]
+• 시타델증권의 토큰화 발표가 성공적으로 진행되면 다른 금융 자산의 토큰화에도 긍정적인 영향을 미칠 것으로 예상됩니다.
+• 비트코인이 저축 기술로 재조명되면 기관 및 개인 투자자의 수요가 증가할 수 있으며, 장기 투자의 수익성 또한 강조될 것입니다.
+• 비트코인 고래 보유량의 증가가 지속된다면, 이는 향후 시장의 가격 안정성에 긍정적인 영향을 줄 것으로 보입니다.
+• 스타크넷의 L1 전환 검토는 DeFi 공간에 깊은 영향을 미칠 수 있으며, 이에 따라 생태계 내 경쟁이 심화될 것으로 보입니다.
+
+📊 공포탐욕지수
+  - CNN 기준: 45 (Fear)
+  - 크립토 기준: 57 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+전국 부동산 거래량이 2025년 1월 이후 최저치를 기록하며, 서울의 아파트 거래량이 전월 대비 39.7% 급감했습니다. 전세 가격 또한 오른 서울의 자치구에서 서민들의 주거비 부담이 증가하는 모습입니다.
+
+[핵심 뉴스]
+1. (매매) 서울아파트 거래 40% '뚝'
+   → 8월 전국 부동산 거래량이 7만2976건으로 전월 대비 14.3% 감소하였고, 서울의 아파트 거래량은 3529건으로 전월 대비 39.7% 줄어들었습니다.
+   (매일경제 · 10/13 17:01)
+2. (전세) 전세 상승률 ‘최고’에 곡소리난 서울 자치구
+   → 올해 서울 아파트 전셋값이 8.35% 상승하였으며, 강북권 지역에서는 14.08%에 이르는 두 자릿수 상승률을 보이고 있습니다.
+   (매일경제 · 10/13 14:53)
+3. (공급) 3기 신도시 용적률 높여 6.4만가구 더
+   → 3기 신도시의 용적률을 300%로 높이면 약 6만4000가구 추가 공급이 가능할 것으로 보이며, 이는 수도권 주택 공급 확대로 이어질 수 있습니다.
+   (매일경제 · 10/13 19:54)
+4. (재건축) 성수 한강변 9000가구 재개발 본궤도
+   → 서울 성수동 한강변에 9000여 가구의 고급 주거단지가 재개발되며, 주요 건설사가 시공사로 선정되어 사업 속도가 높아질 전망입니다.
+   (매일경제 · 10/14 04:30)
+5. (정책) 李대통령 아파트 거래, 과세 대상 아냐
+   → 이재명 대통령의 아파트 거래는 과세 대상이 아니라고 국세청이 밝혔으며, 이에 관한 논란이 이어지고 있습니다.
+   (연합뉴스 · 10/13 17:55)
+6. (공급) 신통기획·모아주택에 서울 주택 공급 속도
+   → 신통기획과 모아주택을 통해 서울에서 연내 3만 호의 주택 공급을 목표로 하고 있다.
+   (뉴시스 · 10/14 06:00)
+
+[흐름·전망]
+• 국내 부동산 시장의 거래량 감소가 지속됨에 따라, 향후 매매 수요 회복 시점을 주목해야 할 것입니다.
+• 서울의 전세 가격 상승률이 계속 이어질 경우, 세입자들의 주거 이동 패턴과 외곽 지역으로의 유입 변화에 주목할 필요가 있습니다.
+• 3기 신도시의 고밀 개발이 실제로 주택 공급에 긍정적인 영향을 미칠지 여부는 중장기 관점에서 살펴봐야 할 포인트입니다.
+• 성수동 재개발 프로젝트가 순조롭게 진행될 경우, 서울 내 고급 주거 시장이 활성화될 가능성이 높아 보입니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 일한 오마르 의원의 재정 문제와 후티 파벌의 중동에서의 행동에 대한 언급을 하며 본인의 정치적 입장을 표명했다. 또한 미 해군의 생일을 축하하며 국방의 중요성을 강조하였다.
+
+[주요 발언]
+1. (사법) 트럼프는 일한 오마르 의원의 재정 보고서에 대해 의문을 제기하며 그녀가 부정하는 수치가 실제로는 잘못된 것일 수도 있다고 주장했다.
+   (Truth Social · 10/14 05:25)
+2. (외교) 트럼프는 후티 파벌의 최근 행동이 이란의 영향을 받을 수 있으며, 그들이 사우디아라비아를 공격하고 유가를 인상하려 한다고 언급했다.
+   (Truth Social · 10/14 04:55)
+3. (기타) 트럼프는 미국 해군의 251주년 생일을 축하하며 해군의 성과와 전투력을 강조하였다.
+   (Truth Social · 10/14 04:54)
+4. (국내정치) 그는 후티들은 경각심을 가져야 한다며 자신은 선거에 출마하지 않으므로 이전의 성과를 통해 자신감이 있음을 알렸다.
+   (Truth Social · 10/14 04:09)
+5. (기타) 트럼프는 중국과 러시아가 이란을 지원하는 것에 대한 비판적인 시각을 밝히며 이들 국가의 동향을 의심했다.
+   (Truth Social · 10/14 01:04)
+
+[흐름·전망]
+• 트럼프의 외교 정책에 대한 강한 발언들은 중동 지역의 긴장 상황을 더욱 부각시킬 수 있으며, 이란과의 관계 개선 가능성에 주목할 필요가 있다.
+• 미 해군의 강력한 존재감을 언급한 트럼프의 발언이 향후 방위 정책에 어떤 영향을 미칠지 지켜봐야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
