@@ -109,10 +109,10 @@
     }
    ],
    "target": {
-    "price": "$228.52",
+    "price": "$221.80",
     "mean": "$328.72",
     "range": "$180~$515",
-    "upside": "+44%",
+    "upside": "+48%",
     "upside_pos": true
    },
    "rec": {
@@ -234,10 +234,10 @@
     }
    ],
    "target": {
-    "price": "$543.45",
+    "price": "$535.82",
     "mean": "$589.60",
     "range": "$440~$870",
-    "upside": "+8%",
+    "upside": "+10%",
     "upside_pos": true
    },
    "rec": {
@@ -301,7 +301,7 @@
     "period": "26.12",
     "eps": "$2.91",
     "eps_range": "$2.56~$3.42",
-    "rev": "$154.62B",
+    "rev": "$153.87B",
     "growth": "+1.46%",
     "growth_pos": true
    },
@@ -355,14 +355,14 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$2.91",
-     "rev": "$154.62B"
+     "rev": "$153.87B"
     }
    ],
    "target": {
-    "price": "$341.27",
+    "price": "$342.79",
     "mean": "$329.38",
     "range": "$215~$405",
-    "upside": "-3%",
+    "upside": "-4%",
     "upside_pos": false
    },
    "rec": {
@@ -412,10 +412,10 @@
    ],
    "cur": {
     "period": "26.09",
-    "eps": "$3.02",
-    "eps_range": "$2.65~$3.68",
-    "rev": "$127.5B",
-    "growth": "+5.81%",
+    "eps": "$3.01",
+    "eps_range": "$2.25~$3.68",
+    "rev": "$127.58B",
+    "growth": "+4.86%",
     "growth_pos": true
    },
    "rev": {
@@ -425,9 +425,9 @@
    "next": {
     "period": "26.12",
     "eps": "$3.35",
-    "eps_range": "$3.03~$4.09",
-    "rev": "$142.14B",
-    "growth": "+20.88%",
+    "eps_range": "$3.03~$4.13",
+    "rev": "$142.18B",
+    "growth": "+20.97%",
     "growth_pos": true
    },
    "quarters": [
@@ -471,8 +471,8 @@
      "cq": "2026-3",
      "label": "2026 3Q",
      "reported": false,
-     "eps_est": "$3.02",
-     "rev": "$127.5B",
+     "eps_est": "$3.01",
+     "rev": "$127.58B",
      "date": "2026-10-29"
     },
     {
@@ -480,14 +480,14 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$3.35",
-     "rev": "$142.14B"
+     "rev": "$142.18B"
     }
    ],
    "target": {
-    "price": "$353.78",
-    "mean": "$430.40",
+    "price": "$348.60",
+    "mean": "$430.42",
     "range": "$340~$515",
-    "upside": "+22%",
+    "upside": "+23%",
     "upside_pos": true
    },
    "rec": {
@@ -609,10 +609,10 @@
     }
    ],
    "target": {
-    "price": "$258.58",
+    "price": "$254.06",
     "mean": "$331.20",
     "range": "$230~$405",
-    "upside": "+28%",
+    "upside": "+30%",
     "upside_pos": true
    },
    "rec": {
@@ -662,7 +662,7 @@
    ],
    "cur": {
     "period": "26.09",
-    "eps": "$6.17",
+    "eps": "$6.01",
     "eps_range": "$2.88~$7.64",
     "rev": "$63.36B",
     "growth": "-7.09%",
@@ -676,7 +676,7 @@
     "period": "26.12",
     "eps": "$8.28",
     "eps_range": "$6.84~$9.66",
-    "rev": "$73.72B",
+    "rev": "$73.73B",
     "growth": "-6.14%",
     "growth_pos": false
    },
@@ -721,7 +721,7 @@
      "cq": "2026-3",
      "label": "2026 3Q",
      "reported": false,
-     "eps_est": "$6.17",
+     "eps_est": "$6.01",
      "rev": "$63.36B",
      "date": "2026-10-22"
     },
@@ -730,14 +730,14 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$8.28",
-     "rev": "$73.72B"
+     "rev": "$73.73B"
     }
    ],
    "target": {
-    "price": "$762.50",
-    "mean": "$805.50",
+    "price": "$735.91",
+    "mean": "$813.32",
     "range": "$580~$1,050",
-    "upside": "+6%",
+    "upside": "+11%",
     "upside_pos": true
    },
    "rec": {
@@ -789,8 +789,8 @@
     "period": "26.09",
     "eps": "$0.45",
     "eps_range": "$0.30~$0.70",
-    "rev": "$28.09B",
-    "growth": "-10.10%",
+    "rev": "$28.11B",
+    "growth": "-9.01%",
     "growth_pos": false
    },
    "rev": {
@@ -801,8 +801,8 @@
     "period": "26.12",
     "eps": "$0.49",
     "eps_range": "$0.33~$0.83",
-    "rev": "$29.01B",
-    "growth": "-1.97%",
+    "rev": "$28.93B",
+    "growth": "-1.33%",
     "growth_pos": false
    },
    "quarters": [
@@ -847,7 +847,7 @@
      "label": "2026 3Q",
      "reported": false,
      "eps_est": "$0.45",
-     "rev": "$28.09B",
+     "rev": "$28.11B",
      "date": "2026-10-22"
     },
     {
@@ -855,14 +855,14 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$0.49",
-     "rev": "$29.01B"
+     "rev": "$28.93B"
     }
    ],
    "target": {
-    "price": "$375.23",
+    "price": "$367.26",
     "mean": "$397.83",
     "range": "$128~$600",
-    "upside": "+6%",
+    "upside": "+8%",
     "upside_pos": true
    },
    "rec": {
@@ -979,10 +979,10 @@
     }
    ],
    "target": {
-    "price": "$29.71",
+    "price": "$28.36",
     "mean": "$31.15",
     "range": "$23~$42",
-    "upside": "+5%",
+    "upside": "+10%",
     "upside_pos": true
    },
    "rec": {
@@ -1104,10 +1104,10 @@
     }
    ],
    "target": {
-    "price": "$9.16",
+    "price": "$8.63",
     "mean": "$14.69",
     "range": "$8~$20",
-    "upside": "+60%",
+    "upside": "+70%",
     "upside_pos": true
    },
    "rec": {
@@ -1229,10 +1229,10 @@
     }
    ],
    "target": {
-    "price": "$34.80",
+    "price": "$31.16",
     "mean": "$78.14",
     "range": "$40~$139",
-    "upside": "+125%",
+    "upside": "+151%",
     "upside_pos": true
    },
    "rec": {
@@ -1354,11 +1354,11 @@
     }
    ],
    "target": {
-    "price": "$208.67",
+    "price": "$202.71",
     "mean": "$205.27",
     "range": "$80~$265",
-    "upside": "-2%",
-    "upside_pos": false
+    "upside": "+1%",
+    "upside_pos": true
    },
    "rec": {
     "label": "매수",
@@ -1479,10 +1479,10 @@
     }
    ],
    "target": {
-    "price": "$64.22",
+    "price": "$60.40",
     "mean": "$105.05",
     "range": "$64~$150",
-    "upside": "+64%",
+    "upside": "+74%",
     "upside_pos": true
    },
    "rec": {
