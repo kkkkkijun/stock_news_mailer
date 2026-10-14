@@ -1,0 +1,238 @@
+2026-10-15T06:32:32.531340+09:00
+
+[오늘의 뉴스 요약] 2026-10-15 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 원/달러 환율이 6.8원 하락하며 1,338.3원으로 마감되었고, 이는 달러 약세와 수출업체의 달러 매도에 따른 것으로 분석된다. 국고채 금리는 사흘 만에 상승하여 3년 만기 금리가 3.883%로 올라갔고, 모건스탠리는 한국은행이 11월에 금리를 인상할 것으로 전망했다.
+
+[핵심 뉴스]
+1. (환율) 원/달러 환율, 6.8원 하락
+   → 원/달러 환율이 6.8원 내린 1,338.3원으로 마감되었으며, 이는 연준의 긴축 우려 완화와 수출업체의 달러 매도 때문으로 분석된다.
+   (연합뉴스 · 10/14 16:07)
+2. (금리) 국고채 금리 상승세
+   → 국고채 금리가 사흘 만에 상승하여 3년물 금리는 3.883%, 10년물 금리는 4.261%로 각각 상승했고, 이는 미국의 9월 CPI 발표 전 관망 심리에 영향을 받은 것으로 보인다.
+   (연합뉴스 · 10/14 16:52)
+3. (정책) 모건스탠리, 한은 금리 인상 전망
+   → 모건스탠리는 한국은행이 10월 금통위에서 기준금리를 동결한 후 11월에 3.25%로 인상할 것이라고 전망하며, 자영업자와 중소기업의 부채 문제도 언급했다.
+   (연합뉴스 · 10/14 14:14)
+4. (정책) 이형일 부총리, G20 재무장관회의 참석
+   → 이형일 부총리는 G20 및 G7 재무장관회의에 참석하기 위해 방콕으로 출국하였으며, 이번 회의에서 한국의 국제적 위상을 더욱 강화할 예정이다.
+   (연합뉴스 · 10/14 18:00)
+5. (고용) 60대 연체율 두배 증가
+   → 60대 이상 취약 차주의 가계대출 연체율이 1.5%로 두 배 증가했으며, 고령층의 경제적 부담이 커지고 있는 상황이 우려되고 있다.
+   (매일경제 · 10/15 05:38)
+
+[흐름·전망]
+• 달러 약세가 지속될지, 다음 주 발표될 미국 CPI가 환율에 미치는 영향을 관찰할 필요가 있다.
+• 국고채 금리의 향후 방향성은 미국 물가 지표에 큰 영향을 받을 것으로 보이며, 금리 변동에 대한 투자자들의 심리가 중요할 것이다.
+• 모건스탠리의 금리 인상 전망에 따라 한국은행의 향후 통화정책 변화에 주목해야 한다.
+• 60대 이상의 고령층 경제적 부담이 증가함에 따라 정부의 정책 대응이 훨씬 더 중요해질 것이다.
+
+📈 해외주식 PART
+📰 [NVDA] Microsoft Just Unveiled a Brand-New AI Chip. Could It Be the "Nvidia Killer" Everyone's Been Looking For?
+   (Yahoo Finance · 10/15 06:17)
+→ 마이크로소프트가 새로운 AI 칩을 공개했다. 많은 이들이 기대하는 '엔비디아 킬러'가 될 수 있을지에 대한 의문이 제기되지만, 그 성격은 예상과 다를 수 있다.
+
+📰 [NVDA] Global X Investments Canada Inc. Closes the Market
+   (Yahoo Finance · 10/15 06:15)
+→ 글로벌 X 인베스트먼트 캐나다 Inc.의 CEO 로히트 메타가 토론토 증권거래소에서 시장을 마감하며 여섯 개의 PowerStock ETF 출시를 기념했습니다. 이번에 출시된 ETF는 구글, 아마존, 애플, NVIDIA 등 주요 기업에 투자하는 상품들입니다.
+
+📰 [NVDA] Apple Hits $5 Trillion Milestone as Rest of Tech Trade Falters. Can It Hold?
+   (Yahoo Finance · 10/15 06:00)
+→ 애플의 시가총액이 5조 달러를 초과하여 미국에서 엔비디아에 이어 두 번째로 가치 있는 회사가 되었습니다. 그러나 나머지 기술 주식이 부진한 상황에서 애플이 이 성과를 유지할 수 있을지에 대한 우려가 제기되고 있습니다.
+
+📰 [TSLA] Tesla-SpaceX Deal News Possible This Year, Barclays Analyst Says - Bloomberg.com
+   (Bloomberg.com · 10/15 06:13)
+→ 바클레이즈 애널리스트에 따르면, 올해 안에 테슬라와 스페이스X 간의 거래 관련 소식이 나올 가능성이 있다고 보도됐다. 이 거래는 두 회사의 협력 확대를 의미할 수 있다.
+
+📰 [TSLA] Tesla opens the Q&A for its biggest earnings call yet - Teslarati
+   (Teslarati · 10/15 06:08)
+→ 테슬라는 이번 분기 실적 발표에서 역대 최대 규모의 Q&A 세션을 시작했습니다. 이를 통해 투자자들과의 소통을 강화하고, 회사의 성과와 미래 계획에 대한 질문에 답변할 예정입니다.
+
+📰 [TSLA] Tesla Cybercab in Austin: 20 Rides, Real Surge Pricing Data - BASENOR - Tesla Accessories
+   (BASENOR - Tesla Accessories · 10/15 06:07)
+→ 테슬라 사이버캡이 오스틴에서 운영되며, 20개의 실제 승차 데이터를 바탕으로 서지 가격 정보를 수집하고 있다. 이 데이터는 테슬라 액세서리를 판매하는 BASENOR에 의해 제공되었다.
+
+📰 [HIMS] Portnoy Law Firm Announces Class Action on Behalf of Hims & Hers Health, Inc. Investors - GlobeNewswire
+   (GlobeNewswire · 10/15 02:42)
+→ 포트노이 법무법인이 Hims & Hers Health, Inc.의 투자자를 위한 집단소송을 발표했습니다. 이 소송은 투자자들의 이익을 보호하기 위한 조치로 보입니다.
+
+📰 [HIMS] YieldMax HIMS Option Income Strategy ETF announces weekly distribution of $0.1743 - TradingView
+   (TradingView · 10/15 00:26)
+→ YieldMax HIMS 옵션 소득 전략 ETF가 주간 배당금으로 $0.1743을 발표했습니다. 이는 투자자들에게 주간 수익을 제공하는 내용입니다.
+
+📰 [HIMS] Hims & Hers GLP-1 Program Review (2026): Insights from Real Users - Fortune
+   (Fortune · 10/15 00:08)
+→ Hims & Hers의 GLP-1 프로그램에 대한 2026년 리뷰에서는 실제 사용자들의 경험과 통찰을 다루고 있습니다. 이 프로그램은 체중 관리와 관련된 효과를 제공하며, 사용자들의 긍정적인 반응이 주요 사항으로 언급됩니다.
+
+📰 [RDW] Redwire (NYSE:RDW) What Does the Latest Update Mean for Edge Sensing And Situational Awareness? - Kalkine Media
+   (Kalkine Media · 10/14 22:30)
+→ Redwire(NYSE:RDW)의 최신 업데이트는 엣지 센싱과 상황 인식 기술에 중요한 영향을 미칠 것으로 예상된다. 이 개발은 우주 및 지구 관측 분야에서의 응용 가능성을 높일 것으로 보인다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW Stocks Slide Overnight: Analyst Questions Whether Rivals Can Compete If SpaceX Controls Access To Orbit - Stocktwits
+   (Stocktwits · 10/14 19:49)
+→ ASTS, RKLB, LUNR, RDW 주식이 밤사이 하락했습니다. 분석가는 SpaceX가 우주 접근을 통제하는 경우 경쟁업체들이 경쟁할 수 있을지 의문을 제기하고 있습니다.
+
+📰 [RDW] RDW Oct 2026 20.000 put (RDW261009P00020000) stock historical prices and data - Yahoo Finance UK
+   (Yahoo Finance UK · 10/14 19:27)
+→ Yahoo Finance UK에서 RDW Oct 2026 20.000 풋 옵션(RDW261009P00020000)의 역사적 가격 및 데이터에 대한 정보를 제공합니다. 2026년 10월까지 유효한 해당 옵션의 시장 동향을 확인할 수 있습니다.
+
+📰 [IREN] CRWV, NBIS, IREN Stocks Tumble After Gartner Forecasts 80% Of Neocloud Market Will Cease To Exist By 2030 - TradingView
+   (TradingView · 10/15 03:10)
+→ Gartner의 예측에 따르면, 2030년까지 네오클라우드 시장의 80%가 사라질 것이라는 소식에 CRWV, NBIS, IREN 주식이 급락했다. 이 전망은 투자자들에게 큰 우려를 불러일으켰다.
+
+📰 [IREN] IREN Limited's AI Pivot Gains Traction—But Can Its Data Centers Deliver? - MarketBeat
+   (MarketBeat · 10/15 02:59)
+→ IREN Limited가 인공지능 분야로의 전환을 성공적으로 추진하고 있지만, 그들의 데이터 센터가 이 수요를 충족할 수 있을지에 대한 의문이 제기되고 있다. 데이터 센터의 성능이 AI 비즈니스 성장에 중요한 역할을 할 것으로 보인다.
+
+📰 [IREN] IREN, CDC Propose Data Centres in Walla Walla, NSW - Mingtiandi
+   (Mingtiandi · 10/15 02:08)
+→ IREN과 CDC가 호주 뉴사우스웨일스 주의 월라 월라에 데이터 센터를 설립할 계획을 제안했습니다. 이 데이터 센터는 지역 경제에 긍정적인 영향을 미칠 것으로 기대되고 있습니다.
+
+📰 [RKLB] Rocket Lab Stock Tanks After Neutron Launch Officially Pushed to 2027 - Benzinga
+   (Benzinga · 10/15 06:23)
+→ 로켓랩의 주가가 2027년으로 연기된 뉴트론 발사 소식에 크게 하락했습니다. 이 발표로 투자자들의 우려가 커지며 주가가 급락한 것으로 분석됩니다.
+
+📰 [RKLB] Rocket Lab Pushes Neutron to 2027, Three Years Behind Plan - Stock Titan
+   (Stock Titan · 10/15 06:17)
+→ 로켓랩이 네프론 프로젝트의 출시 일정을 2027년으로 연기하며, 원래 계획보다 3년 지연됐다고 보도했다. 이로 인해 회사의 주가에 영향을 미칠 것으로 예상된다.
+
+📰 [RKLB] Rocket Lab Delays Neutron Launch to 2027; Shares Drop After Hours - marketscreener.com
+   (marketscreener.com · 10/15 06:17)
+→ 로켓랩이 '뉴트론' 발사를 2027년으로 연기했다고 발표했으며, 이 소식에 따라 주가가 시간 외 거래에서 하락했습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] YieldMax Bitcoin Option Income Strategy ETF declares $0.159 dividend - TradingView
+   (TradingView · 10/15 05:45)
+→ YieldMax 비트코인 옵션 소득 전략 ETF가 주당 $0.159의 배당금을 발표했습니다. 이는 투자자들에게 비트코인 옵션 거래를 통해 수익을 제공하기 위한 전략의 일환으로 이루어진 결정입니다.
+
+📰 [BTC-USD] BTC Price USD Explained: How Bitcoin’s Dollar Quote Works - www.techi.com
+   (www.techi.com · 10/15 05:30)
+→ 비트코인(BTC)의 가격은 달러로 표시되며, 이는 비트코인이 달러로 얼마의 가치를 가지는지를 나타냅니다. 비트코인의 가격 변동은 주식 시장 및 경제적 요인 등에 영향을 받으며, 투자자들에게 중요한 지표가 됩니다. 이 기사에서는 비트코인의 달러 환산 방식과 그 의미를 설명하고 있습니다.
+
+📰 [BTC-USD] Bitcoin price falls toward $81,500 after September CPI report - Quartz
+   (Quartz · 10/15 05:15)
+→ 9월 소비자물가지수(CPI) 보고서 발표 이후 비트코인 가격이 약 $81,500로 하락했다. 이 보고서는 시장에 영향을 미치면서 비트코인 거래에 변동성을 초래했다.
+
+📰 [ETH-USD] Ethereum trading in October shows slight sellin... - Pluang
+   (Pluang · 10/15 05:32)
+→ 10월 Ethereum 거래에서 약간의 매도세가 나타났습니다. 시장에서는 거래량이 감소하고 있으며, 이는 투자자들의 우려를 반영하는 것으로 보입니다.
+
+📰 [ETH-USD] Marex Launches First Institutional QIS Indices For Bitcoin And Ethereum - Pulse 2.0
+   (Pulse 2.0 · 10/15 05:14)
+→ Marex가 비트코인과 이더리움을 위한 첫 번째 기관 투자자용 양적 투자 전략(QIS) 지수를 출시했습니다. 이 지수는 기관 투자자들이 암호화폐 시장에 접근할 수 있는 새로운 방법을 제공할 것으로 기대됩니다.
+
+📰 [ETH-USD] Hyperliquid Has Bought Back $1.26 Billion of Its Own Token. Ethereum Burns Its Fees Instead. Which One Holds Its Price Better?
+   (Yahoo Finance · 10/15 05:00)
+→ Hyperliquid은 12억 6천만 달러 규모의 자사 토큰을 매입한 반면, 이더리움은 거래 수수료의 일부를 영구적으로 소각하고 있다. 두 방법 모두 공급을 줄이는 방식이지만, 현재 Hyperliquid은 기록 가격에 가까운 위치에 있는 반면, 이더리움은 절정가의 절반 이하에 머물고 있다.
+
+📰 [SOL-USD] Solana's short-term options volatility spikes 1... - Pluang
+   (Pluang · 10/15 06:22)
+→ 솔라나의 단기 옵션 변동성이 급등했습니다. 이는 투자자들의 관심 증가와 시장의 불확실성 때문으로 분석됩니다.
+
+📰 [SOL-USD] Solana, Polkadot or Remittix: Which Is the Next Crypto to Explode Before the End of 2026? - TechBullion
+   (TechBullion · 10/15 06:20)
+→ TechBullion에서는 2026년 말 이전에 급등할 가능성이 있는 암호화폐로 Solana, Polkadot, Remittix를 분석하고 있습니다. 각 암호화폐의 잠재력과 특징을 비교하여 투자자들에게 유망한 선택지를 제시하고 있습니다.
+
+📰 [SOL-USD] Best Crypto to Buy Now: Remittix, Solana or NEAR as Payments and ETF Narratives Accelerate? - TechBullion
+   (TechBullion · 10/15 05:58)
+→ 현재 투자할 만한 암호화폐로 Remittix, Solana, NEAR가 주목받고 있으며, 이는 결제 시스템과 ETF 관련 이야기가 강화되고 있기 때문입니다. 이들 암호화폐는 시장에서의 성장 가능성을 가지고 있어 관심을 받고 있습니다.
+
+📰 [BMNR] Why Is Bitmine Immersion Technologies (BMNR) Rethinking Its Ethereum Accumulation Streak?
+   (Yahoo Finance · 10/15 02:09)
+→ Bitmine Immersion Technologies (BMNR)의 의장인 톰 리는 최근 내부 논의에서 이더리움의 지속적인 매입을 중단할 가능성을 시사했습니다. 그는 현재의 매수 단계가 "성숙했다"고 언급하며, 추가 구매가 중단될 경우 Bitmine의 블록체인 인프라 목표에 대한 이더리움의 위치가 변화할 것이라고 밝혔습니다.
+
+📰 [BMNR] Why Is Bitmine Immersion Technologies (BMNR) Rethinking Its Ethereum Accumulation Streak? - Yahoo Finance
+   (Yahoo Finance · 10/15 02:09)
+→ 비트마인 임머전 테크놀로지스(BMNR)는 이더리움(Ethereum) 보유 확대 전략을 재검토하고 있습니다. 회사는 시장 상황이나 투자 방향의 변화를 고려하여 이더리움 투자 접근 방식을 조정할 필요성을 느끼고 있는 것으로 보입니다.
+
+📰 [BMNR] BitMine Completes $350M Buyback of 21M BMNR Shares - FinanceFeeds
+   (FinanceFeeds · 10/14 16:48)
+→ BitMine이 21백만 BMNR 주식의 환매를 완료하며 3억 5천만 달러를 사용했습니다. 이번 환매는 회사의 주가 안정을 위한 조치로 알려졌습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 비트코인 시장은 기관 매수와 채굴 해시레이트 회복에 힘입어 긍정적인 흐름을 보이고 있다. 그러나 높은 금리는 단기적으로 유동성에 부담을 주어 가격 변동성을 키울 수 있다는 우려가 존재한다.
+
+[핵심 뉴스]
+1. (시세) 기관 매수·해시레이트 회복…비트코인 바닥론에 힘 실리나
+   → 기관의 비트코인 순매수 규모가 하루 채굴량의 130%를 유지하며 바닥론에 힘을 실었고, 해시레이트는 약 10개월 간의 하락세를 뒤로하고 최근 상승세를 보이고 있다.
+   (토큰포스트 · 10/15 06:17)
+2. (기타) 물가 압력에 흔들린 비트코인, 장기 보유 논리는 여전
+   → 9월 소비자물가지수가 전년 대비 3.7% 상승한 가운데, 물가 압력으로 비트코인이 단기적으로 하락할 수 있다는 우려가 있지만, 정부의 통화 팽창 가능성이 장기 보유 논리를 강화하고 있다.
+   (토큰포스트 · 10/15 05:24)
+3. (시세) 비트코인 4년 주기 끝났다, 슈퍼사이클 진입 전망
+   → 비트코인의 4년 주기가 끝나고 장기 슈퍼사이클에 진입할 것으로 보이며, 이는 블록체인 기반 금융 시스템으로의 변화가 자산 확보 방식에 영향을 미치고 있다는 분석이다.
+   (토큰포스트 · 10/15 03:25)
+4. (규제) 미카 이후 유럽 암호화폐 시장 재편
+   → 미카 시행 이후 유럽의 암호화폐 시장이 재편되고 있으며, 규제 강화로 시장에 진입하려는 기업의 숫자가 증가하는 경향을 보이고 있다.
+   (토큰포스트 · 10/14 23:12)
+5. (시세) 비트코인 8만3381달러 마감, 강세 신호 지속
+   → 비트코인이 8만3381달러로 마감했으며, 이동평균에서 강세 신호가 우세한 가운데, 단기 저항 구간은 8만3800~8만4250달러로 확인되었다.
+   (토큰포스트 · 10/14 23:00)
+
+[흐름·전망]
+• 기관의 순매수가 지속되는 한 비트코인에 긍정적인 시그널이 될 것으로 보이지만, 긴축적인 통화정책의 영향도 곧바로 반영될 가능성이 있다.
+• 물가와 금리 변화가 단기적인 가격 변동에 미치는 영향을 면밀히 추적해야 하며, 이를 통해 장기 투자 시점도 조정할 필요가 있다.
+• 새로운 슈퍼사이클에 대한 믿음이 강화되면서 기관과 대중들의 비트코인 수요가 증가할 가능성이 있으며, 이를 주의 깊게 지켜봐야 한다.
+• 유럽 내 규제가 강화됨에 따라, 기업들의 시장 진입 전략과 규제 준수 여부를 지속적으로 모니터링할 필요가 있으며, 이는 장기적으로 시장의 안정성을 높이는 데 기여할 것이다.
+
+📊 공포탐욕지수
+  - CNN 기준: 32 (Fear)
+  - 크립토 기준: 62 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 서울 아파트 토지거래허가 신청 건수가 5개월 만에 소폭 반등하여 3,678건을 기록했고, 이는 한 달 전보다 24.1% 증가한 수치입니다. 하지만 여전히 주택시장 전반의 회복세로는 판단하기 어려운 상황입니다.
+
+[핵심 뉴스]
+1. (매매) 서울 아파트 토허신청 5개월만에 반등
+   → 지난달 서울 아파트 토지거래허가 신규 신청 건수가 3,678건으로 5개월 만에 반등했지만, 여전히 4월 대비 58.7% 감소한 수치입니다. 강남3구의 신청 건수는 51.5% 증가하며 가장 높은 증가율을 보였으나, 강북권 신청 비중은 감소했습니다.
+   (연합뉴스 · 10/15 06:00)
+2. (분양청약) 서울 분양가 너무 비싸…청약 80% 소형에 쏠려
+   → 올해 1월부터 9월까지 서울 아파트의 평균 분양가는 3.3㎡당 6,043만원으로 17.6% 증가했습니다. 청약에서는 전용 60㎡ 이하 소형 아파트가 79.8%를 차지하며, 국민평형 대신 소형으로 수요가 몰리는 양극화 현상이 뚜렷해지고 있습니다.
+   (매일경제 · 10/14 17:12)
+3. (공급) 올해 신규보증 PF사업장 70% '저자본·고보증'
+   → 올해 신규 PF 보증 중 70%가 저자본 사업장으로, 이는 금융당국의 개선 노력에도 불구하고 확대되고 있습니다. 저자본 관행이 지속되면서 사업 부실 시 위험이 증가할 수 있다는 우려가 제기되고 있습니다.
+   (연합뉴스 · 10/15 05:54)
+4. (공급) PF보증 수도권만 몰리고…돈 급한 지방은 찬밥
+   → 부동산 PF 보증의 64.8%가 수도권에 편중되어 있고, 경기도에만 전체 지원액의 절반 이상이 투입되었습니다. 반면 지방 건설사들은 공적 지원의 사각지대에 놓여 지원이 미미한 실정입니다.
+   (매일경제 · 10/14 17:12)
+5. (재건축) 전국 재개발·재건축 138곳 공사비 검증 안 받아
+   → 전국 재개발·재건축 사업 중 138곳이 법정 공사비 검증을 이행하지 않은 것으로 나타났으며, 국토부는 이들에 대한 특별점검을 실시할 예정입니다. 이는 과도한 공사비 산정으로 조합원 부담이 커지는 사례가 우려되는 상황에서 이루어집니다.
+   (연합뉴스 · 10/14 15:00)
+6. (전세) 서울 비강남권, 높아진 호가에 거래 주춤
+   → 서울 비강남권에서 가격 호가가 상승하자 거래가 주춤해지고 있으며, 특히 학군지 중심으로 전세 품귀 현상이 나타나고 있습니다.
+   (MTN 머니투데이방송 · 10/15 06:02)
+
+[흐름·전망]
+• 향후 서울 아파트 시장에서 세제개편안의 영향과 변동성을 주의 깊게 지켜볼 필요가 있습니다.
+• 소형 아파트 청약의 양극화 현상은 앞으로도 계속될 것으로 예상되며, 중형 평형에 대한 수요 회복 여부가 관전 포인트입니다.
+• 부동산 PF의 저자본 관행 개선과 투자자 책임 문제에 대한 사회적 논의가 필요할 것으로 보입니다.
+• 지방 건설사들이 공적 지원을 받을 수 있는 방안 마련이 시급하며, 지역 간 지원 불균형 해소가 중요한 이슈로 떠오를 전망입니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 미국과 주요 파트너국 간의 대규모 투자와 일자리 창출을 강조하며, 자신의 리더십 하에서 역사적인 무역 거래들이 이루어지고 있다고 주장했다.
+
+[주요 발언]
+1. (경제) 트럼프는 글로벌 파운드리스와 상무부가 뉴욕 말타에 반도체 제조 시설을 건설하기 위해 210억 달러 규모의 투자를 발표했다고 언급하며, 이로 인해 27,000개의 건설 및 공급망 일자리가 창출될 것이라고 주장했다.
+   (Truth Social · 10/15 01:39)
+2. (경제) 트럼프는 알래스카 LNG 프로젝트를 통해 한국에서 500억 달러의 투자와 대만으로부터 700억~800억 달러의 구매 약속을 확보했다고 발표하며 역사적인 에너지 인프라 투자를 실행하고 있다고 강조했다.
+   (Truth Social · 10/15 01:29)
+3. (기타) 트럼프는 에어포스 원에서 오른쪽 방송 네트워크를 시청하며 사람들의 열정과 사랑을 느끼고 있다고 전했다.
+   (Truth Social · 10/15 04:52)
+
+[흐름·전망]
+• 트럼프의 투자 발표는 미국 내 반도체 및 에너지 분야의 산업 발전 가능성을 확인시켜 주며, 앞으로 관련 기업들의 동향에 주목할 필요가 있다.
+• 한국 및 대만과의 거래가 미국과 이들 국가 간의 경제적 관계를 어떻게 변화시킬지 지켜볼 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
