@@ -772,5 +772,23 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"319c9a4d-abe6-44dc-80c3-463a5bc94fee": {
+"name": "Core Personal Consumption Expenditures - Price Index (MoM)",
+"dt": "2026-11-27T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"977e5a28-6554-4d7d-961d-cd730d905e84": {
+"name": "Core Personal Consumption Expenditures - Price Index (YoY)",
+"dt": "2026-11-27T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
