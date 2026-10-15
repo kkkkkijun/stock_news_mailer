@@ -398,28 +398,28 @@
 "bddcb0ff-7ede-4f39-b61b-5ccbb8ac4fa9": {
 "name": "Producer Price Index ex Food & Energy (YoY)",
 "dt": "2026-10-15T12:30:00Z",
-"act": null,
+"act": "5%",
 "cons": "4.4%",
-"prev": "4.6%",
-"act_n": null,
+"prev": "4.8%",
+"act_n": 5.0,
 "cons_n": 4.4
 },
 "9453b39f-605b-4293-b963-452070d91eb0": {
 "name": "Retail Sales (MoM)",
 "dt": "2026-10-15T12:30:00Z",
-"act": null,
+"act": "0.8%",
 "cons": "0.3%",
-"prev": "1.2%",
-"act_n": null,
+"prev": "1.3%",
+"act_n": 0.8,
 "cons_n": 0.3
 },
 "1113728e-7e61-44c9-acd2-393d3ac0f9cc": {
 "name": "Retail Sales Control Group",
 "dt": "2026-10-15T12:30:00Z",
-"act": null,
+"act": "0.1%",
 "cons": null,
-"prev": "1.4%",
-"act_n": null,
+"prev": "1.2%",
+"act_n": 0.1,
 "cons_n": null
 },
 "64455197-8e57-4821-a0b9-895cdf923d38": {
@@ -688,7 +688,7 @@
 "dt": "2026-11-13T13:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "5%",
 "act_n": null,
 "cons_n": null
 },
@@ -706,7 +706,7 @@
 "dt": "2026-11-17T13:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "0.8%",
 "act_n": null,
 "cons_n": null
 },
@@ -715,7 +715,7 @@
 "dt": "2026-11-17T13:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "0.1%",
 "act_n": null,
 "cons_n": null
 },
