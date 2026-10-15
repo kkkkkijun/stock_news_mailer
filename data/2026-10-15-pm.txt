@@ -1,0 +1,248 @@
+2026-10-15T17:02:41.208305+09:00
+
+[오늘의 뉴스 요약] 2026-10-15 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 국고채 금리는 일제히 하락하며 안정세를 보였으나, 환율은 코스피 급락과 미국 CPI 발표로 1,350원대로 상승하였다. 주택담보대출 변동금리는 신규 코픽스 상승으로 인해 또 다시 증가할 예정이다.
+
+[핵심 뉴스]
+1. (금리) 국고채 금리 일제히 하락
+   → 15일 서울 채권시장에서 3년 만기 국고채 금리는 3.867%로 1.6bp 하락했으며, 10년물 금리는 4.193%로 6.8bp 하락했다.
+   (연합뉴스 · 10/15 16:40)
+2. (환율) 환율 1,350원대로 상승
+   → 15일 원/달러 환율은 오후 3시 30분 기준으로 1,344.6원으로, 이틀 연속 상승세를 나타내며 최근 9거래일 중 가장 높은 수준에 도달했다.
+   (연합뉴스 · 10/15 16:20)
+3. (금리) 주담대 변동금리 또 오른다
+   → 9월 신규 취급액 코픽스가 3.43%로 0.25%p 상승해 2년 3개월 만에 최고 수준에 도달했으며, 주택담보대출 변동금리가 이르면 16일부터 인상될 예정이다.
+   (연합뉴스 · 10/15 16:12)
+4. (정책) 샌프란시스코 연은 총재, 금리인상 당장 급하진 않다
+   → 샌프란시스코 연은 총재는 금리인상 필요성을 인정했지만, 시급하지 않다고 밝혔으며, 9월 CPI의 인플레이션 압력에 주목하고 있다.
+   (연합뉴스 · 10/15 14:40)
+5. (성장) IMF, 올해 한국 경제성장률 3.3% 전망
+   → IMF는 한국의 올해 경제 성장률을 3.3%로 전망하며, 7월 대비 0.7% 상향 조정하였다.
+   (정책브리핑 · 10/15 16:23)
+
+[흐름·전망]
+• 국고채 금리 하락이 지속될 경우, 기업과 소비자 대출 금리에 긍정적 영향을 미칠 수 있는지关注해야 한다.
+• 환율 상승이 수출 기업에 미치는 영향과 함께 외국인 투자자의 동향을 지속적으로 살펴보아야 한다.
+• 주택담보대출 금리 인상이 주택 시장에 미치는 영향과 가계 부담을 분석하는 것이 필요하다.
+• 연준의 금리 정책에 대한 전망이 불확실한 만큼, 시장 반응에 유의하면서 주요 경제 지표를 주의 깊게 살펴봐야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Apple Tops $5T, Chases Nvidia’s $5.3T Crown [2026] - https://tech-insider.org/
+   (https://tech-insider.org/ · 10/15 16:54)
+→ Apple의 시가총액이 5조 달러를 초과하며 Nvidia의 5.3조 달러를 목표로 하고 있습니다. 이는 테크 기업 간의 경쟁이 치열해지고 있음을 보여줍니다.
+
+📰 [NVDA] Can Apple Overtake Nvidia as the World's Largest Company in 2027? - The Globe and Mail
+   (The Globe and Mail · 10/15 16:50)
+→ 애플이 2027년까지 세계 최대 기업으로 Nvidia를 능가할 수 있을지에 대한 논의가 진행되고 있다. 이와 관련해 애플의 성장 가능성과 시장 경쟁력에 대한 분석이 이루어지고 있다.
+
+📰 [NVDA] Can Apple Overtake Nvidia as the World's Largest Company in 2027?
+   (Yahoo Finance · 10/15 16:50)
+→ 애플이 2027년까지 세계 최대 기업으로 자리 잡을 수 있을지에 대한 질문이 제기되고 있습니다. 하지만 현재 Nvidia는 애플보다 훨씬 빠른 성장 속도를 보이고 있습니다.
+
+📰 [TSLA] The 1 Thing I'd Want Elon Musk to Answer on Tesla's Oct. 21 Call - The Motley Fool
+   (The Motley Fool · 10/15 16:50)
+→ 모틀리 풀에 따르면, 10월 21일 테슬라의 전화 회의에서 엘론 머스크에게 듣고 싶은 질문은 무엇인지에 대한 논의가 이루어졌다. 이 질문은 테슬라의 미래 방향성이나 전략에 대해 중요한 통찰을 제공할 수 있는 내용일 것으로 예상된다.
+
+📰 [TSLA] Tesla's Full Self-Driving Is No More In Europe After Legal Woes - CarBuzz
+   (CarBuzz · 10/15 16:44)
+→ 테슬라의 완전 자율주행 기능이 유럽에서 법적 문제로 인해 더 이상 제공되지 않게 되었다. 이로 인해 유럽 내 테슬라 차량 소유자들은 자율주행 기능을 사용할 수 없게 되었다.
+
+📰 [TSLA] Tesla, Inc. $TSLA Stock: Family Office Research LLC Cuts Position - MarketBeat
+   (MarketBeat · 10/15 16:38)
+→ Family Office Research LLC가 테슬라 주식($TSLA)의 보유량을 축소했다는 소식이 전해졌다. 이를 통해 시장의 변동성이 커질 수 있다는 우려가 나타나고 있다.
+
+📰 [HIMS] HIMS INVESTOR ALERT: Hims & Hers Health, Inc. Investors with Substantial Losses Have Opportunity to Lead Class Action Lawsuit - November 2, 2026 Deadline - PR Newswire
+   (PR Newswire · 10/15 07:00)
+→ Hims & Hers Health, Inc.의 투자자들이 상당한 손실을 입었다면, 집단소송을 주도할 기회가 있다는 경고가 발표되었다. 이와 관련된 소송의 마감 기한은 2026년 11월 2일이다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (HIMS) Suffers a Larger Drop Than the General Market: Key Insights
+   (Yahoo Finance · 10/15 05:45)
+→ Hims & Hers Health, Inc. (HIMS)의 주가는 최근 거래일에 27.72달러로 마감되며 전 거래일 대비 6.7% 하락했습니다. 이는 일반 시장보다 더 큰 하락폭입니다.
+
+📰 [HIMS] Hims & Hers Health, Inc. (HIMS) Suffers a Larger Drop Than the General Market: Key Insights - Yahoo Finance
+   (Yahoo Finance · 10/15 05:45)
+→ Hims & Hers Health, Inc. (HIMS)의 주가는 일반 시장보다 더 큰 폭으로 하락했다. 이는 회사의 최근 실적과 관련된 중요한 통찰력을 시사한다.
+
+📰 [RDW] Redwire (NYSE:RDW) Stock Price Down 5.9% - Should You Sell? - MarketBeat
+   (MarketBeat · 10/15 06:50)
+→ Redwire 주식이 5.9% 하락하면서 투자자들 사이에서 매도 여부에 대한 논의가 일고 있다. 시장 분석가들은 주식의 향후 전망에 대해 우려를 표현하고 있다.
+
+📰 [RDW] RKLB, RDW, FLY, VSAT Climb Overnight: $981M Space Force IDIQ Contract Opens Fresh Pentagon Opportunity - Stocktwits
+   (Stocktwits · 10/15 02:55)
+→ RKLB, RDW, FLY, VSAT 주식이 급등한 이유는 미 우주군이 9억8100만 달러 규모의 IDIQ 계약을 체결하면서 새로운 기회를 제공했기 때문입니다. 이 계약은 여러 방산 기업들에게 긍정적인 영향을 미치고 있습니다.
+
+📰 [RDW] RDW Oct 2026 11.500 put (RDW261030P00011500) interactive stock chart - Yahoo Finance UK
+   (Yahoo Finance UK · 10/15 00:14)
+→ RDW의 2026년 10월 만기 11.500 풋옵션(RDW261030P00011500)에 대한 상호작용 주가 차트가 Yahoo Finance UK에 게시되었다. 이 풋옵션은 특정 가격 이하로 주가가 하락할 경우 이익을 얻을 수 있는 금융 상품이다.
+
+📰 [IREN] Iren proposes 900 MW data centre campus in regional Australia - Telecompaper
+   (Telecompaper · 10/15 13:37)
+→ Iren이 호주 지방에 900MW 용량의 데이터 센터 캠퍼스를 제안했습니다. 이 프로젝트는 지역 경제 발전과 기술 인프라 확장을 목표로 하고 있습니다.
+
+📰 [IREN] IREN plans 900MW data centre campus near Wagga Wagga - ET Datacenters
+   (ET Datacenters · 10/15 12:23)
+→ IREN은 와가 와가 근처에 900MW 규모의 데이터 센터 캠퍼스를 건설할 계획입니다. 이 프로젝트는 데이터 센터의 에너지 효율성을 높이고 지역 경제에 기여하는 것을 목표로 하고 있습니다.
+
+📰 [IREN] CRWV, NBIS, IREN Stocks Extend Slide Overnight: Retail Eyes The Dip As CoreWeave CEO Says Market Acting ‘Irrationally’
+   (Yahoo Finance · 10/15 11:20)
+→ CRWV, NBIS, IREN 주식이 하락세를 이어가고 있으며, CoreWeave CEO는 시장이 ‘비이성적으로’ 행동하고 있다고 언급했습니다. Gartner의 경고에 따르면, 2030년까지 80%의 네오클라우드 공급자가 독립 운영을 중단할 수 있다고 합니다.
+
+📰 [RKLB] Key facts: Rocket Lab (RKLB) delays Neutron to 2027; to acquire Iridium - TradingView
+   (TradingView · 10/15 16:00)
+→ 로켓랩(Rocket Lab)이 네우트론 로켓의 출시를 2027년으로 연기했으며, 이와 함께 이리듐(Iridium)을 인수할 계획임을 발표했습니다.
+
+📰 [RKLB] Rocket Lab shares plunge 8%: What’s behind the selloff? - The Economic Times
+   (The Economic Times · 10/15 15:29)
+→ 로켓랩 주가가 8% 하락한 이유는 해당 회사의 실적 발표와 시장의 부정적인 반응 때문입니다. 투자자들은 매출 성장에 대한 우려와 경쟁 심화에 따라 매도에 나선 것으로 보입니다.
+
+📰 [RKLB] A 6-Day Losing Streak Has Rocket Lab Stock Down 21% - Trefis
+   (Trefis · 10/15 14:36)
+→ 로켓랩 주식이 6일 연속 하락하며 21% 떨어졌습니다. 이러한 하락은 시장의 우려와 여러 요인들에 기인한 것으로 보입니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Sinks Toward $80,000 After Hot CPI. Will Whales Keep What They Added?
+   (Yahoo Finance · 10/15 16:54)
+→ 비트코인 가격이 미국 CPI 증가로 인해 80,000달러로 하락하고 있으며, 비트코인 고래의 보유량은 2025년 11월 이후 최고치를 기록했습니다. 고래들이 추가한 비트코인을 유지할지에 대한 관심이 집중되고 있습니다.
+
+📰 [BTC-USD] Bitcoin Sinks Toward $80,000 After Hot CPI. Will Whales Keep What They Added? - BeInCrypto
+   (BeInCrypto · 10/15 16:54)
+→ 비트코인이 높은 소비자 물가 지수(CPI) 발표 이후 80,000달러 밑으로 하락했다. 투자자들, 특히 큰 손(Whales)은 최근에 추가한 비트코인을 계속 보유할지에 대한 관심이 집중되고 있다.
+
+📰 [BTC-USD] Bitcoin falls below $82K amid rising US inflati... - Pluang
+   (Pluang · 10/15 16:45)
+→ 비트코인이 미국의 상승하는 인플레이션 속에서 82,000달러 이하로 하락했습니다. 시장의 불안정성이 비트코인 가격에 영향을 미치고 있는 것으로 보입니다.
+
+📰 [ETH-USD] Ethereum price drops nearly 6% after US inflati... - Pluang
+   (Pluang · 10/15 16:45)
+→ Ethereum 가격이 미국의 인플레이션 발표 이후 거의 6% 하락했습니다. 이로 인해 암호화폐 시장 전반에 부정적인 영향을 미친 것으로 보입니다.
+
+📰 [ETH-USD] Ethereum Price falls 6% as hot CPI triggers $106M wipeout - Crypto News
+   (Crypto News · 10/15 16:32)
+→ 이더리움 가격이 6% 하락하며 1억 6천만 달러가 사라지는 상황이 발생했습니다. 이는 예상보다 높은 소비자물가지수(CPI) 발표가 원인으로 작용했습니다.
+
+📰 [ETH-USD] Polygon Price Prediction: POL Falls Toward $0.10 as Remittix Expands Across Ethereum, Base, Celo and Polygon - StreetInsider
+   (StreetInsider · 10/15 16:12)
+→ Polygon(폴리곤)의 가격이 $0.10으로 하락하는 가운데, Remittix가 이더리움, 베이스, 셀로, 폴리곤 전역으로 사업을 확장하고 있다는 소식이 전해졌다. 이로 인해 폴리곤의 시장 상황에 영향을 미치는 것으로 보인다.
+
+📰 [SOL-USD] BabyPimpin21flavors ($BABYPIMPIN): Chicago-Born Solana Meme Coin Combines 3D Entertainment, Original Art, and Bitcoin Rewards - TechBullion
+   (TechBullion · 10/15 16:51)
+→ BabyPimpin21flavors($BABYPIMPIN)은 시카고에서 탄생한 솔라나 기반의 밈 코인으로, 3D 엔터테인먼트와 독창적인 예술, 비트코인 보상을 결합한 새로운 프로젝트입니다. 이 코인은 창의성과 디지털 자산의 혁신을 통해 사용자들에게 다양한 경험을 제공하려 합니다.
+
+📰 [SOL-USD] Missed Solana at $0.22? AlphaPepe’s $0.03335 Presale Puts Early Entry Back on the Table - StreetInsider
+   (StreetInsider · 10/15 16:18)
+→ Solana의 가격이 $0.22였던 시점을 놓쳤다면, AlphaPepe의 $0.03335 프리세일을 통해 다시 초기에 진입할 기회가 주어졌다는 내용의 기사입니다. 투자자들에게 새로운 투자 기회를 제안하고 있습니다.
+
+📰 [SOL-USD] Solana (SOL) price dips 13% since Oct 1 amid co... - Pluang
+   (Pluang · 10/15 15:54)
+→ 솔라나(SOL) 가격이 10월 1일 이후 13% 하락했다. 이 요인은 여러 가지가 있으며, 암호화폐 시장의 전반적인 불안정성과 관련이 있다. 투자자들은 향후 시장 동향을 주의 깊게 지켜보고 있다.
+
+📰 [BMNR] Is Bitmine Immersion Technologies (BMNR) Overvalued Following Tom Lee's Ethereum Warning? - Simply Wall Street
+   (Simply Wall Street · 10/15 12:12)
+→ 톰 리(Tom Lee)가 이더리움에 대한 경고를 한 후, 비트마인 임머전 테크놀로지스(BMNR)의 가치가 과대 평가되었는지에 대한 논의가 일고 있다. 시장 전문가들은 BMNR의 주가가 현재 상태로 유지될 수 있을지에 대한 우려를 표명하고 있다.
+
+📰 [BMNR] BMNR Stock Slides As Traders Weigh Deep Losses And Cash War Chest - StocksToTrade
+   (StocksToTrade · 10/15 05:47)
+→ BMNR 주식이 큰 손실과 현금 준비금 문제로 인해 하락세를 보이고 있습니다. 투자자들은 회사의 재정 상황에 대한 우려로 매도에 나선 것으로 보입니다.
+
+📰 [BMNR] Why Is Bitmine Immersion Technologies (BMNR) Rethinking Its Ethereum Accumulation Streak?
+   (Yahoo Finance · 10/15 02:09)
+→ 비트마인 머지션 테크놀로지스(BMNR) 의장 톰 리가 이더리움의 장기적인 축적 중단 가능성을 시사했습니다. 그는 현재의 구매 단계가 "성숙기"에 접어들었다고 언급하며, 새로운 이더 구매 중단을 암시했습니다. 이러한 변화는 비트마인이 이더리움을 블록체인 인프라 목표에 어떻게 포지셔닝할지를 재편할 수 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 ETF 자금 유출과 미국의 물가 충격 등에 의해 비트코인과 이더리움이 하락하며 약세를 보이고 있다. 특히 시장 전반에 걸쳐 위험선호가 약해진 분위기가 지배적이다.
+
+[핵심 뉴스]
+1. (ETF) ETF 자금 유출 지속, 비트코인 약세
+   → 미국 현물 ETF에서 10월 7일 이후 7억6000만 달러가 순유출되었고, 비트코인은 24시간 동안 2.95% 하락하여 8만863.98달러를 기록했다.
+   (토큰포스트 · 10/15 16:31)
+2. (시세) 비트코인 급락, 유가 불안 지속
+   → 미국의 9월 소비자물가지수 상승률이 3.7%로 예상을 초과하며 비트코인이 급락했으나, 이는 유가 상승이 주 원인으로 지목되었다.
+   (토큰포스트 · 10/15 16:18)
+3. (시세) 가상자산 공포·탐욕 지수 하락
+   → 가상자산 공포·탐욕 지수가 52로 전날보다 11포인트 하락하며 중립 구간에 머물렀다.
+   (토큰포스트 · 10/15 16:04)
+4. (기타) 암호화폐 시장에서 대규모 청산 발생
+   → 지난 24시간 동안 암호화폐 시장에서 6억9494만 달러 규모의 레버리지 포지션이 청산되었으며, 롱 포지션의 청산이 91.54%를 차지했다.
+   (토큰포스트 · 10/15 15:56)
+5. (ETF) 비트코인 현물 ETF 하루 만에 순유출 전환
+   → 미국 비트코인 현물 ETF 시장에서는 하루 만에 2억6146만 달러의 순유출이 발생하며 피델리티 FBTC에서 1억5273만 달러가 빠져나갔다.
+   (토큰포스트 · 10/15 15:01)
+
+[흐름·전망]
+• ETF 자금 순유출과 물가 상승 우려가 시장에 미치는 영향이 지속될 것으로 보인다.
+• 유가 불안정을 감안할 때, 비트코인의 조정이 매수 기회로 작용할 가능성을 염두해야 한다.
+• 시장이 위험회피로 돌아서면서 단기적으로는 변동성이 클 수 있으며, 이에 따라 포지션 조정이 필요하다.
+• 공포·탐욕 지수의 하락이 지속될 경우 시장 심리의 부정적 영향이 확대될 수 있으므로 주의가 필요하다.
+
+📊 공포탐욕지수
+  - CNN 기준: 30 (Fear)
+  - 크립토 기준: 53 (Neutral)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 한국 부동산 시장은 서울 아파트 가격이 2주 연속 상승폭을 확대하며 전반적으로 상승세를 지속하고 있으나, 수도권 일부 지역에서 매수세 둔화가 관찰되고 있다.
+
+[핵심 뉴스]
+1. (매매) 강북 아파트 가격 상승, 안정세 드러나
+   → 최근 8주간 서울 아파트 매매가격이 비강남권 외곽 지역에서 큰 폭으로 상승하고 있으며, 특히 성북구는 3.18% 증가하여 실수요자들의 내집 마련이 더욱 어려워지고 있다.
+   (매일경제 · 10/15 16:49)
+2. (매매) 서울 아파트 매매가격 상승폭 확대
+   → 서울 아파트 매매가격이 10월 둘째 주에 평균 0.16% 상승하였으며, 한강벨트 및 중하위권 지역의 강세가 가격 상승을 이끌고 있는 상황이다.
+   (연합뉴스 · 10/15 14:00)
+3. (매매) 서울 주택매매 소비심리 둔화
+   → 서울의 주택 매매 소비자심리지수가 130.8로 두 달 연속 둔화되었으며, 이는 정부의 세제개편과 금리 인상의 영향으로 해석된다.
+   (연합뉴스 · 10/15 12:01)
+4. (금리) 주담대 변동금리 상승, 코픽스 최대폭 증가
+   → 9월 신규 코픽스가 3.43%로 2년 3개월 만에 최고치를 기록하며, 변동금리 대출의 이자 부담이 증가하고 있는 상황이다.
+   (연합뉴스 · 10/15 16:12)
+5. (정책) 보금자리론 연체잔액 증가, 서민 주거 안정 우려
+   → 보금자리론의 30일 이상 연체 차주 수가 4,659명으로 증가하며, 특히 30·40대와 저소득층의 연체가 많아 서민 주거 안보에 우려가 커지고 있다.
+   (연합뉴스 · 10/15 11:18)
+6. (정책) 용산공원 개발 반대, 주택 공급 논쟁
+   → 오세훈 서울시장이 용산공원 개발에 반대하며 정부의 주택 공급 정책에 대한 근본적인 전환을 요구하고, 외곽 지역의 가격 상승과 전세시장 불안과의 관련성을 강조하고 있다.
+   (연합뉴스 · 10/15 16:21)
+
+[흐름·전망]
+• 향후 아파트 매매가격의 상승 여부는 외곽지역 상승세가 지속될지 여부에 달려 있으며, 이는 전세시장과 밀접한 관계가 있다.
+• 정부의 경제 정책과 금리 변화가 주택 매수세에 미치는 영향이 지속적으로 주목받아야 한다.
+• 보금자리론의 연체 증가가 서민 주거 안정에 미치는 부정적 영향과 이에 대한 정부 대응이 중요한 포인트가 될 것이다.
+• 용산공원 개발과 같은 정책 결정이 주택 공급과 시장 신뢰에 미치는 영향에 대해서도 지속적인 모니터링이 필요하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 미국 경제의 긍정적인 조짐과 함께 여러 인물에 대한 지지를 표현했다. 특히 오하이오 주 상원의원 후보인 존 휴스턴에 대한 전폭적인 지지를 보내며 유권자들에게 지지를 호소했다.
+
+[주요 발언]
+1. (인사) 트럼프는 오하이오 주 상원의원 후보 존 휴스턴을 전폭적으로 지지하며 그가 훌륭한 상원이 될 것이라고 주장했다.
+   (Truth Social · 10/15 16:01)
+2. (경제) 트럼프는 일본이 미국에 210억 달러 규모의 반도체 제조 시설 건설에 투자할 것이라고 발표하며 이는 일자리 창출에 기여할 것이라고 강조했다.
+   (Truth Social · 10/15 15:00)
+3. (경제) 그는 알래스카에서 최대 에너지 인프라 프로젝트를 발표하며 이는 한국과의 무역 및 투자 협정의 일환이라고 언급했다.
+   (Truth Social · 10/15 14:07)
+4. (기타) 트럼프는 백악관의 수리 작업을 자랑하며 그의 대통령직에 대한 자부심을 드러냈다.
+   (Truth Social · 10/15 13:57)
+5. (국내정치) 트럼프는 민주당의 정치적 행위에 대한 비판적인 입장을 취하며 사회주의자들이 공직에 출마하는 것에 대한 유권자들의 우려를 강조했다.
+   (Truth Social · 10/15 13:56)
+6. (사법) 트럼프는 법적 문제에 대한 언급도 하며 현재의 정치적 상황에 대한 비판적인 시각을 드러냈다.
+   (Truth Social · 10/15 13:54)
+
+[시장·경제 관련]
+• 트럼프는 반도체 제조 및 에너지 프로젝트에 대한 투자 소식을 통해 미국 경제의 긍정적인 전망을 내비쳤다.
+
+[흐름·전망]
+• 트럼프가 강조한 대규모 투자 프로젝트들은 앞으로 미국 경제에 긍정적인 영향을 미칠 가능성이 있다.
+• 최근의 경제 지표들이 반영하는 성장세가 지속될지 여부에 주목할 필요가 있다.
+• 트럼프의 지원 공세가 정치적 선거 결과에 어떤 영향을 미칠지에 대한 관심도 높아질 것이다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
