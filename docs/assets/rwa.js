@@ -8,10 +8,11 @@
    s.onload=cb; s.onerror=fail; document.head.appendChild(s); }
  function fail(){ var a=document.getElementById('rwaAsof'); if(a)a.textContent='지도 데이터를 불러오지 못했습니다.'; }
  function fmt(m){ return m>=1?('$'+m.toFixed(2)+'M'):('$'+Math.round(m*1000)+'K'); }
+ // 스냅샷은 절대경로: 지난 회차(archive/) 페이지에서도 같은 파일을 읽어 실시간 갱신까지 이어지게
  function init(){ d3ready(function(){
    Promise.all([
-     fetch('rwamap.json?t='+Date.now()).then(function(r){return r.json();}).catch(function(){return null;}),
-     fetch('whales.json?t='+Date.now()).then(function(r){return r.json();}).catch(function(){return null;})
+     fetch('/stock_news_mailer/rwamap.json?t='+Date.now()).then(function(r){return r.json();}).catch(function(){return null;}),
+     fetch('/stock_news_mailer/whales.json?t='+Date.now()).then(function(r){return r.json();}).catch(function(){return null;})
    ]).then(function(res){
      var rwa=res[0]||{assets:[],asof:'',positions:0}, wh=res[1]||{coins:[],asof:'',whales:0};
      if(!SNAP){ SNAP={rwa:rwa,wh:wh}; build(rwaAssets(rwa),wh.coins,rwa.asof,wh.asof,rwa.positions,wh.whales,false,false); }
