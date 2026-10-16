@@ -2,6 +2,8 @@
 """성장주 스크리너·심층 카드 렌더링(publish_site.py 분리)."""
 from __future__ import annotations
 
+import json
+import os
 from datetime import date, datetime
 from typing import Any
 
@@ -13,23 +15,30 @@ from render.config import KST, _GR_SIG, _GR_SIGTXT, _WD_KO
 _TH_BANDS = ((1 / 3, "저렴", "cheap"), (2 / 3, "보통", "mid"), (1.01, "비쌈", "rich"))
 
 
-def _valuation(funds: list[dict[str, Any]], prices: dict[str, float]) -> dict[str, dict[str, Any]]:
+def _valuation(funds: list[dict[str, Any]], prices: dict[str, float],
+               nq_mcap: dict[str, float] | None = None) -> dict[str, dict[str, Any]]:
     """종목별 가격 지표. 품질 점수와 분리해 '지금 비싼가'만 본다.
 
     시가총액 = 주가 × 희석주식수, EV = 시총 − 순현금, EV/매출 = EV ÷ 최근 4분기 매출,
     성장 대비 EV/매출 = EV/매출 ÷ 매출 YoY(%) — 적자 성장주와 흑자 대형주를 한 줄로 비교하려고 쓴다.
-    성장률이 0 이하이거나 입력이 빠지면 그 종목은 순위에서 뺀다. 단위: 백만 달러."""
+    성장률이 0 이하이거나 입력이 빠지면 그 종목은 순위에서 뺀다. 단위: 백만 달러.
+    nq_mcap(나스닥 표기 시총)과 20% 넘게 어긋나면 주식분할·상장 직후로 보고 나스닥 값을 쓴다
+    (희석주식수는 분기 평균이라 분할·상장 직후엔 현재와 다르다)."""
+    nq_mcap = nq_mcap or {}
     out: dict[str, dict[str, Any]] = {}
     for d in funds:
         tk, px, sh = d["ticker"], prices.get(d["ticker"]), d.get("shares")
         revs = [q.get("v") for q in d.get("series", {}).get("rev", [])][-4:]
         if not px or not sh or len(revs) < 4 or any(v is None for v in revs) or sum(revs) <= 0:
             continue
-        mcap = px * sh
+        mcap, basis = px * sh, "희석"
+        nq = nq_mcap.get(tk)
+        if nq and abs(mcap / nq - 1) > 0.20:
+            mcap, basis = nq, "분할·상장 보정"
         ev = mcap - (d.get("netcash") or 0)
         evs = ev / sum(revs)
         yoy, fcf = d.get("rev_yoy"), d.get("fcf")
-        out[tk] = {"mcap": mcap, "ev": ev, "evs": evs,
+        out[tk] = {"mcap": mcap, "basis": basis, "ev": ev, "evs": evs,
                    "gadj": evs / yoy if (yoy and yoy > 0) else None,
                    "pfcf": mcap / fcf if (fcf and fcf > 0) else None}
     ranked = sorted((t for t, v in out.items() if v["gadj"] is not None), key=lambda t: out[t]["gadj"])
@@ -74,6 +83,8 @@ def _gr_money(m):
     if m is None:
         return "—"
     a, s = abs(m), ("-" if m < 0 else "")
+    if a >= 1e6:                       # 백만 달러 단위 → 1조 달러 이상은 T
+        return f"{s}${a/1e6:.2f}T"
     return f"{s}${a/1000:.1f}B" if a >= 1000 else f"{s}${a:.0f}M"
 
 
@@ -262,6 +273,12 @@ def _gr_price_card(tk: str, vals: dict[str, dict[str, Any]]) -> str:
     v = vals.get(tk)
     ranked = sorted((t for t, x in vals.items() if x.get("rank")), key=lambda t: vals[t]["rank"])
     top = max([vals[t]["gadj"] for t in ranked] or [1]) or 1
+    if tk in ranked:                       # 내 순위 주변 7개(앞뒤 3)만
+        i = ranked.index(tk)
+        lo = max(0, min(i - 3, len(ranked) - 7))
+        ranked = ranked[lo:lo + 7]
+    else:
+        ranked = ranked[:7]
     bars = "".join(
         f'<div class="gr-rk{" me" if t == tk else ""}"><span>{_e(t)}</span>'
         f'<span class="gr-rk-bar"><i style="width:{max(2, vals[t]["gadj"] / top * 100):.0f}%"></i></span>'
@@ -274,14 +291,16 @@ def _gr_price_card(tk: str, vals: dict[str, dict[str, Any]]) -> str:
     ]) if v else '<div class="gr-none">주가·주식수 정보가 없어 계산하지 못했습니다.</div>')
     return ('<div class="gr-box"><div class="gr-box-h"><span>가격은?<small>품질 점수와 별개</small></span>'
             f'{_gr_thermo(v, wide=True)}</div><div class="gr-kvs">{kv}</div>'
-            '<div class="gr-rk-t">성장 대비 EV/매출 · 종목 비교<small>낮을수록 성장에 비해 싸다</small></div>'
+            '<div class="gr-rk-t">성장 대비 EV/매출 · 내 주변 순위'
+            + (f'<small>{v["n"]}종목 중 {v["rank"]}번째로 저렴 · 낮을수록 성장에 비해 싸다</small>'
+               if v and v.get("rank") else '<small>낮을수록 성장에 비해 싸다</small>') + '</div>'
             f'<div class="gr-rks">{bars}</div></div>')
 
 
 def _gr_earn_card(earn: dict[str, Any] | None, hist: list[dict[str, Any]], today: date) -> str:
     if not earn:
         return ('<div class="gr-box"><div class="gr-box-h"><span>다음 실적</span></div>'
-                '<div class="gr-none">실적 일정이 등록되지 않은 종목입니다.</div></div>')
+                '<div class="gr-none">실적 일정·컨센서스는 관심 종목(기본 12개)만 제공합니다.</div></div>')
     det = earn.get("detail") or {}
     cur, rec = det.get("cur") or {}, det.get("rec") or {}
     d, ts = earn.get("date"), earn.get("ts")
@@ -353,7 +372,7 @@ def _gr_deep(d, ctx=None):
             '수치는 SEC 공시(XBRL·10-K) 원본 기반이며 정성 요약은 AI가 작성했습니다. '
             '투자 판단의 책임은 본인에게 있습니다.</div>')
 
-    return (f'<div class="gr-card" data-tk="{tk}" style="display:none">'
+    return (f'<div class="gr-card" data-tk="{tk}">'
             + head + verdict + extra + cards + story + bridge + metrics
             + _gr_qual(d) + note + '</div>')
 
@@ -361,8 +380,9 @@ def _gr_deep(d, ctx=None):
 def _gr_qual(d):
     q = d.get("qual")
     if not q:
-        return ('<div style="font-size:11.5px;color:var(--faint);margin-top:14px">'
-                '해자·산업 필연성 등 정성 분석은 10-K 수집 후 표시됩니다.</div>')
+        msg = ("해자·산업 필연성 등 정성 분석은 10-K 수집 후 표시됩니다." if d.get("watch", True)
+               else "AI 정성 분석(해자·산업 필연성)은 관심 종목(기본 12개)만 제공합니다.")
+        return f'<div style="font-size:11.5px;color:var(--faint);margin-top:14px">{msg}</div>'
     ms = d.get("moat_score")
     cards = (("경쟁 우위 (해자)", q.get("moat", "")),
              ("산업 필연성", q.get("necessity", "")),
@@ -424,92 +444,284 @@ def _gr_row(d, val=None, earn=None, hist=None, today=None):
 
 _GROWTH_JS = """<script>
 (function(){
- var sc=document.getElementById('grScreener'), dp=document.getElementById('grDeep');
- if(!sc||!dp) return;
- function show(tk){
-   dp.querySelectorAll('.gr-card').forEach(function(c){c.style.display=c.getAttribute('data-tk')===tk?'block':'none';});
-   sc.style.display='none'; dp.style.display='block'; window.scrollTo(0,0);
+ var root=document.getElementById('grRoot'); if(!root) return;
+ var DEF=JSON.parse(root.getAttribute('data-default')||'[]'), VER=root.getAttribute('data-v')||'';
+ var KEY='mb_watch_v1', DIRTY='mb_watch_dirty', PAGE=30, shown=PAGE, from='all';
+ function lg(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+ function ls(k,v){try{ if(v==null) localStorage.removeItem(k); else localStorage.setItem(k,v);}catch(e){}}
+ var fav=(function(){ try{ var a=JSON.parse(lg(KEY)); if(Array.isArray(a)) return a; }catch(e){} return DEF.slice(); })();
+ var W=null;
+ function isFav(t){ return fav.indexOf(t)>=0; }
+ // ---- 즐겨찾기 저장: 로그인 시 Firestore(users/{uid}.watch, goal-app.js의 MBWatch), 아니면 이 브라우저 ----
+ function persist(){ ls(KEY,JSON.stringify(fav));
+   if(W&&W.uid){ W.set(fav).catch(function(){}); ls(DIRTY,null); } else ls(DIRTY,'1'); }
+ function sync(){ W=window.MBWatch; if(!W||!W.ready) return;
+   if(W.uid){
+     if(W.list==null){ W.set(fav).catch(function(){}); ls(DIRTY,null); }
+     else if(lg(DIRTY)){ var u=W.list.slice(); fav.forEach(function(t){ if(u.indexOf(t)<0) u.push(t); });
+       fav=u; W.set(fav).catch(function(){}); ls(DIRTY,null); ls(KEY,JSON.stringify(fav)); }
+     else { fav=W.list.slice(); ls(KEY,JSON.stringify(fav)); }
+   }
+   paint();
  }
- function back(){ dp.style.display='none'; sc.style.display='block'; }
- sc.querySelectorAll('.gr-row').forEach(function(r){
-   r.addEventListener('click',function(){show(r.getAttribute('data-tk'));});
- });
- dp.querySelectorAll('.gr-back').forEach(function(b){b.addEventListener('click',back);});
- var list=document.getElementById('grList');
- sc.querySelectorAll('.gr-sort button').forEach(function(b){
-   b.addEventListener('click',function(){
-     sc.querySelectorAll('.gr-sort button').forEach(function(x){x.classList.toggle('on',x===b);});
-     var k=b.getAttribute('data-k'), rows=[].slice.call(list.querySelectorAll('.gr-row'));
-     rows.sort(function(a,c){
-       if(k==='score') return (+c.getAttribute('data-score'))-(+a.getAttribute('data-score'));
-       return (+a.getAttribute('data-'+k))-(+c.getAttribute('data-'+k));
-     });
-     rows.forEach(function(r){list.appendChild(r);});
-   });
- });
- sc.querySelectorAll('.gr-preset').forEach(function(p){
-   p.addEventListener('click',function(){
-     sc.querySelectorAll('.gr-preset').forEach(function(x){x.style.opacity='.55';});
-     p.style.opacity='1'; var f=p.getAttribute('data-f');
-     sc.querySelectorAll('.gr-row').forEach(function(r){
-       var ok=(f==='all')||(f==='profit'&&r.getAttribute('data-g0')==='g')||
-              (f==='turn'&&r.getAttribute('data-turn')==='1')||
-              (f==='cash'&&r.getAttribute('data-cash')==='g');
-       r.style.display=ok?'flex':'none';
-     });
-   });
- });
+ window.addEventListener('mbwatch', sync);
+ var toastT=null, undo=null;
+ function toast(msg,undoFn){ var t=document.getElementById('grToast'); if(!t) return;
+   t.innerHTML=msg+(undoFn?' <button type="button" class="gr-undo">실행 취소</button>':''); t.hidden=false; undo=undoFn;
+   clearTimeout(toastT); toastT=setTimeout(function(){ t.hidden=true; undo=null; },3000); }
+ function name(t){ var r=root.querySelector('.gt-row[data-t="'+t+'"]')||root.querySelector('.gr-row[data-tk="'+t+'"]');
+   return r?(r.getAttribute('data-nm')||t):t; }
+ function toggle(t){ var on=!isFav(t), before=fav.slice();
+   if(on) fav.push(t); else fav=fav.filter(function(x){return x!==t;});
+   persist(); paint();
+   toast(name(t)+(on?'을(를) 관심 목록에 추가했어요':'을(를) 관심 목록에서 뺐어요')+((W&&W.uid)?'':' · 로그인하면 계정에 저장돼요'),
+         function(){ fav=before; persist(); paint(); }); }
+ // ---- 탭 ----
+ function view(v){ from=v;
+   root.querySelectorAll('.gr-tab').forEach(function(b){ b.classList.toggle('on',b.getAttribute('data-v')===v); });
+   document.getElementById('grAll').style.display=v==='all'?'':'none';
+   document.getElementById('grScreener').style.display=v==='fav'?'':'none';
+   document.getElementById('grDeep').style.display='none'; }
+ // ---- 전체 선별 표: 필터·정렬·더 보기 ----
+ var tb=document.getElementById('gtBody'), sortK='yoy', sortDir=-1, gMin=-1e9, onlyProfit=false, onlyFav=false;
+ function rows(){ return [].slice.call(tb.querySelectorAll('.gt-row')); }
+ function applyTable(){ if(!tb) return;
+   var q=(document.getElementById('gtSearch').value||'').trim().toLowerCase(), sec=document.getElementById('gtSector').value;
+   var rs=rows();
+   rs.sort(function(a,b){ var x=parseFloat(a.getAttribute('data-'+sortK)), y=parseFloat(b.getAttribute('data-'+sortK));
+     if(isNaN(x)) return 1; if(isNaN(y)) return -1; return (x-y)*sortDir; });
+   var n=0;
+   rs.forEach(function(r){ tb.appendChild(r);
+     var t=r.getAttribute('data-t'), ok=true;
+     if(q && (t.toLowerCase()+' '+(r.getAttribute('data-nm')||'').toLowerCase()).indexOf(q)<0) ok=false;
+     if(sec && r.getAttribute('data-sector')!==sec) ok=false;
+     if(parseFloat(r.getAttribute('data-yoy'))<gMin) ok=false;
+     if(onlyProfit && !(parseFloat(r.getAttribute('data-opm'))>0)) ok=false;
+     if(onlyFav && !isFav(t)) ok=false;
+     if(ok) n++;
+     r.style.display=(ok && n<=shown)?'':'none';
+     if(ok) r.querySelector('.n').textContent=n; });
+   document.getElementById('gtCount').textContent=n;
+   var m=document.getElementById('gtMore'); m.style.display=n>shown?'':'none';
+   m.textContent=n+'개 중 '+Math.min(n,shown)+'개 표시 · 더 보기';
+   root.querySelectorAll('.gt-th').forEach(function(h){ var k=h.getAttribute('data-k');
+     h.classList.toggle('sorted',k===sortK); h.setAttribute('aria-sort',k===sortK?(sortDir<0?'descending':'ascending'):'none');
+     h.querySelector('i').textContent=k===sortK?(sortDir<0?'▼':'▲'):''; }); }
+ // ---- 관심 목록: 즐겨찾기 + 프리셋 + 정렬 ----
+ var preset='all';
+ function applyList(){ var list=document.getElementById('grList'); if(!list) return; var c=0;
+   [].slice.call(list.querySelectorAll('.gr-row')).forEach(function(r){
+     var ok=isFav(r.getAttribute('data-tk')), f=preset;
+     if(ok && f!=='all') ok=(f==='profit'&&r.getAttribute('data-g0')==='g')||(f==='turn'&&r.getAttribute('data-turn')==='1')||(f==='cash'&&r.getAttribute('data-cash')==='g');
+     r.style.display=ok?'flex':'none'; if(isFav(r.getAttribute('data-tk'))) c++; });
+   var e=document.getElementById('grEmpty'); if(e) e.hidden=c>0; }
+ function paint(){
+   root.querySelectorAll('.gt-star').forEach(function(b){ var on=isFav(b.getAttribute('data-t'));
+     b.classList.toggle('on',on); b.textContent=on?'★':'☆'; b.setAttribute('aria-pressed',on?'true':'false');
+     b.setAttribute('aria-label',(on?'관심 목록에서 빼기: ':'관심 목록에 추가: ')+b.getAttribute('data-t')); });
+   var c=document.getElementById('grFavN'); if(c) c.textContent=fav.filter(function(t){ return root.querySelector('.gr-row[data-tk="'+t+'"]'); }).length;
+   applyList(); applyTable(); }
+ // ---- 상세: 종목별 파일을 불러와 표시(페이지 용량 절약) ----
+ var cache={};
+ function openDeep(t){ var dp=document.getElementById('grDeep');
+   document.getElementById('grAll').style.display='none'; document.getElementById('grScreener').style.display='none';
+   dp.style.display='block'; dp.innerHTML='<div class="gr-none" style="padding:30px 0;text-align:center">불러오는 중…</div>'; window.scrollTo(0,root.getBoundingClientRect().top+window.scrollY-60);
+   var p=cache[t]?Promise.resolve(cache[t]):fetch('/stock_news_mailer/growth/'+encodeURIComponent(t)+'.html?v='+VER).then(function(r){ if(!r.ok) throw 0; return r.text(); });
+   p.then(function(h){ cache[t]=h; dp.innerHTML=h; }).catch(function(){ dp.innerHTML='<div class="gr-none" style="padding:30px 0;text-align:center">상세 정보를 불러오지 못했습니다. <button type="button" class="gr-back">← 목록</button></div>'; }); }
+ root.addEventListener('click',function(ev){ var el=ev.target;
+   var star=el.closest('.gt-star'); if(star){ ev.stopPropagation(); toggle(star.getAttribute('data-t')); return; }
+   if(el.closest('.gr-undo')){ if(undo){ var u=undo; undo=null; u(); } document.getElementById('grToast').hidden=true; return; }
+   var tab=el.closest('.gr-tab'); if(tab){ view(tab.getAttribute('data-v')); return; }
+   if(el.closest('.gr-back')){ view(from); return; }
+   var th=el.closest('.gt-th'); if(th){ var k=th.getAttribute('data-k'); if(k===sortK) sortDir=-sortDir; else { sortK=k; sortDir=-1; } applyTable(); return; }
+   var g=el.closest('.gt-g'); if(g){ root.querySelectorAll('.gt-g').forEach(function(x){x.classList.toggle('on',x===g);}); gMin=parseFloat(g.getAttribute('data-g')); shown=PAGE; applyTable(); return; }
+   var tg=el.closest('.gt-tog'); if(tg){ tg.classList.toggle('on'); var f=tg.getAttribute('data-f'); if(f==='profit') onlyProfit=tg.classList.contains('on'); else onlyFav=tg.classList.contains('on'); shown=PAGE; applyTable(); return; }
+   if(el.closest('#gtMore')){ shown+=PAGE*10; applyTable(); return; }
+   var pr=el.closest('.gr-preset'); if(pr){ root.querySelectorAll('.gr-preset').forEach(function(x){x.style.opacity='.55';}); pr.style.opacity='1'; preset=pr.getAttribute('data-f'); applyList(); return; }
+   var sb=el.closest('.gr-sort button'); if(sb){ root.querySelectorAll('.gr-sort button').forEach(function(x){x.classList.toggle('on',x===sb);});
+     var k=sb.getAttribute('data-k'), list=document.getElementById('grList'), rs=[].slice.call(list.querySelectorAll('.gr-row'));
+     rs.sort(function(a,c){ if(k==='score') return (+c.getAttribute('data-score'))-(+a.getAttribute('data-score')); return (+a.getAttribute('data-'+k))-(+c.getAttribute('data-'+k)); });
+     rs.forEach(function(r){ list.appendChild(r); }); return; }
+   var row=el.closest('.gt-row,.gr-row'); if(row && row.getAttribute('data-has')!=='0'){ openDeep(row.getAttribute('data-t')||row.getAttribute('data-tk')); } });
+ ['input','change'].forEach(function(e){ root.addEventListener(e,function(ev){ if(ev.target.id==='gtSearch'||ev.target.id==='gtSector'){ shown=PAGE; applyTable(); } }); });
+ view('all'); sync(); paint();
 })();
 </script>"""
 
 
-def _render_growth(funds, now, earnings=None, prices=None, prices_asof="", history=None):
-    """earnings: _load_earnings 결과(list), prices: {티커: 현재가}, history: 점수 이력 dict."""
+_SECTOR_ORDER = ("정보기술", "커뮤니케이션", "경기소비재", "헬스케어", "산업재", "필수소비재",
+                 "금융", "에너지", "유틸리티", "부동산", "소재", "기타")
+
+
+def _num_attr(v):
+    return "" if v is None else f"{v:.4f}"
+
+
+def _gt_row(r: dict[str, Any], d: dict[str, Any] | None, v: dict[str, Any] | None,
+            u: dict[str, Any]) -> str:
+    """전체 선별 표 1행. r=1차 선별, d=정밀 분석(없을 수 있음), v=가격, u=나스닥 목록 행."""
+    t = r["t"]
+    name = (d or {}).get("name") or u.get("name") or t
+    sec = u.get("sector") or (d or {}).get("sector") or ""
+    mcap, basis = None, ""
+    if v:
+        mcap, basis = v["mcap"], v.get("basis", "")
+    elif u.get("px") and r.get("shares_dil"):
+        mcap, basis = u["px"] * r["shares_dil"], "희석" if r.get("shares_basis") != "기본" else "기본 주식수"
+        if u.get("mcap_nq") and abs(mcap / u["mcap_nq"] - 1) > 0.20:
+            mcap, basis = u["mcap_nq"], "분할·상장 보정"
+    elif u.get("mcap_nq"):
+        mcap, basis = u["mcap_nq"], "나스닥 기준"
+    note = f'<small class="gt-sub warn">{basis}</small>' if basis in ("분할·상장 보정", "나스닥 기준", "기본 주식수") else ""
+    chips = []
+    if r.get("gw") is not None and r["gw"] >= 30 and r["yoy"] >= 25:
+        chips.append(f'<span class="gt-chip m" title="영업권 1년 {r["gw"]:+.0f}%">인수 영향 확인</span>')
+    if r.get("gap") is not None and r["gap"] > 10:
+        chips.append(f'<span class="gt-chip d" title="총매출·고객계약 매출 성장률 차 {r["gap"]}%p">매출 정의 확인</span>')
+    if r.get("per") and r["per"][-1] != "2":
+        chips.append('<span class="gt-chip q" title="회계연도가 달라 직전 분기끼리 비교">직전 분기 기준</span>')
+    sc = (d or {}).get("score")
+    q = (f'<b class="gt-sc {"g" if sc >= 78 else "y" if sc >= 55 else "r"}">{sc}</b>' if sc is not None
+         else '<span class="gt-na">—</span>')
+    th = _gr_thermo(v) if v else '<span class="gt-na">—</span>'
+    yoy, opm = r["yoy"], r.get("opm")
+    return (f'<tr class="gt-row" data-t="{_e(t)}" data-nm="{_e(name)}" data-sector="{_e(sec)}" '
+            f'data-yoy="{yoy:.2f}" data-opm="{_num_attr(opm)}" data-mcap="{_num_attr(mcap)}" '
+            f'data-rev="{r["rev"]:.2f}" data-score="{sc if sc is not None else ""}" '
+            f'data-val="{_num_attr((v or {}).get("gadj"))}" data-has="{1 if d else 0}">'
+            f'<td class="st"><button type="button" class="gt-star" data-t="{_e(t)}" aria-pressed="false">☆</button></td>'
+            f'<td class="n"></td>'
+            f'<td><div class="gt-tk"><span class="gt-sym">{_e(t)}</span><span class="gt-nm">{_e(name)}'
+            f'<small title="{_e(u.get("sector_src", ""))}"><span class="gt-tk-in">{_e(t)} · </span>{_e(sec)}</small></span></div></td>'
+            f'<td class="num">{_gr_money(mcap)}{note}</td>'
+            f'<td class="num c-rev">{_gr_money(r["rev"])}<small class="gt-sub">{_e(r.get("tag", ""))}</small></td>'
+            f'<td class="num {"up" if yoy >= 0 else "dn"}">{yoy:+.0f}%</td>'
+            f'<td class="num c-opm">{"—" if opm is None else f"{opm:+.0f}%"}</td>'
+            f'<td class="num">{q}</td><td class="c-th">{th}</td><td class="c-chips">{"".join(chips)}</td></tr>')
+
+
+def _growth_ctx(funds, now, earnings=None, prices=None, prices_asof="", history=None, universe=None):
+    """목록·표·상세가 함께 쓰는 계산 결과. 가격은 나스닥 현재가 우선(전체 선별과 같은 기준)."""
     funds = sorted(funds, key=lambda x: -x.get("score", 0))
-    vals = _valuation(funds, prices or {})
-    earn = {e["ticker"]: e for e in (earnings or [])}
-    hist = history or {}
-    today = now.date()
-    ctx = {"vals": vals, "earn": earn, "hist": hist, "today": today, "asof": prices_asof,
-           "qrank": {d["ticker"]: i + 1 for i, d in enumerate(funds)}, "n": len(funds)}
+    uni = {r["t"]: r for r in (universe or {}).get("rows", [])}
+    px = dict(prices or {})
+    for t, u in uni.items():
+        if u.get("px"):
+            px[t] = u["px"]
+    vals = _valuation(funds, px, {t: u["mcap_nq"] for t, u in uni.items() if u.get("mcap_nq")})
+    asof = (f'나스닥 {universe.get("asof")} 종가' if universe and universe.get("asof") else prices_asof)
+    return {"funds": funds, "vals": vals, "earn": {e["ticker"]: e for e in (earnings or [])},
+            "hist": history or {}, "today": now.date(), "asof": asof, "uni": uni,
+            "qrank": {d["ticker"]: i + 1 for i, d in enumerate(funds)}, "n": len(funds)}
+
+
+def _render_growth(funds, now, earnings=None, prices=None, prices_asof="", history=None,
+                   screen=None, universe=None, default_watch=None):
+    """성장주 탭: [전체 선별 · 나스닥 100] 표 / [관심 목록] 목록. 상세는 growth/<티커>.html을 불러온다.
+
+    screen: data/screen.json(1차 선별), universe: data/universe.json, default_watch: 로그인 전 기본 관심 종목."""
+    ctx = _growth_ctx(funds, now, earnings, prices, prices_asof, history, universe)
+    funds, vals, earn, hist, uni = ctx["funds"], ctx["vals"], ctx["earn"], ctx["hist"], ctx["uni"]
+    by = {d["ticker"]: d for d in funds}
+    default_watch = default_watch or [d["ticker"] for d in funds if d.get("watch", True)]
+    # 관심 목록 탭(기존 목록 화면): 정밀 분석된 모든 종목 행을 두고, 즐겨찾기만 보이게(JS)
     presets = (
         '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px">'
-        '<span class="gr-preset" data-f="all" style="font-size:12px;padding:6px 11px;'
-        'border-radius:99px;background:var(--chip);color:var(--ink);cursor:pointer;opacity:1">전체</span>'
-        '<span class="gr-preset" data-f="profit" style="font-size:12px;padding:6px 11px;'
-        'border-radius:99px;background:var(--chip);color:var(--muted-2);cursor:pointer;opacity:.55">고성장·흑자</span>'
-        '<span class="gr-preset" data-f="turn" style="font-size:12px;padding:6px 11px;'
-        'border-radius:99px;background:var(--chip);color:var(--muted-2);cursor:pointer;opacity:.55">적자 갭 축소</span>'
-        '<span class="gr-preset" data-f="cash" style="font-size:12px;padding:6px 11px;'
-        'border-radius:99px;background:var(--chip);color:var(--muted-2);cursor:pointer;opacity:.55">순현금</span></div>')
+        + "".join(f'<span class="gr-preset" data-f="{k}" style="font-size:12px;padding:6px 11px;'
+                  f'border-radius:99px;background:var(--chip);color:var(--{"ink" if k == "all" else "muted-2"});'
+                  f'cursor:pointer;opacity:{1 if k == "all" else .55}">{lab}</span>'
+                  for k, lab in (("all", "전체"), ("profit", "고성장·흑자"), ("turn", "적자 갭 축소"), ("cash", "순현금")))
+        + '</div>')
     rows = []
     for d in funds:
-        r = _gr_row(d, vals.get(d["ticker"]), earn.get(d["ticker"]), hist.get(d["ticker"], []), today)
+        r = _gr_row(d, vals.get(d["ticker"]), earn.get(d["ticker"]), hist.get(d["ticker"], []), ctx["today"])
         ax = d.get("axes", {})
-        g0 = ax.get("growth", {}).get("sig")
         turn = "1" if (d.get("opm_delta") or 0) >= 3 and (d.get("opm") or 0) < 0 else "0"
-        cashsig = ax.get("balance", {}).get("sig")
-        r = r.replace('data-score="', f'data-g0="{g0}" data-turn="{turn}" data-cash="{cashsig}" data-score="', 1)
+        r = r.replace('data-score="', f'data-nm="{_e(d.get("name", ""))}" data-g0="{ax.get("growth", {}).get("sig")}" '
+                      f'data-turn="{turn}" data-cash="{ax.get("balance", {}).get("sig")}" data-score="', 1)
         rows.append(r)
     legend = (
-        '<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:11px;'
-        'color:var(--faint)">'
+        '<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:11px;color:var(--faint)">'
         + "".join(f'<span style="display:inline-flex;align-items:center;gap:5px">'
-                  f'<span style="width:8px;height:8px;border-radius:50%;background:{_GR_SIG[s]}"></span>'
-                  f'{_GR_SIGTXT[s]}</span>' for s in ("g", "y", "r"))
-        + '<span>점수 = 품질(성장·수익성경로·재무건전성·주주가치) · 온도계 = 성장 대비 EV/매출의 종목 내 위치 · '
-          '▲▼ = 직전 기록 대비 점수 변화</span></div>')
-    head = ('<div class="sched-head" style="margin-bottom:12px"><span>'
-            '<span class="sched-ico">🔎</span>성장주 '
-            f'<span class="sched-tz">SEC 재무 · {len(funds)}종목'
-            + (f' · 주가 {_e(prices_asof)}' if prices_asof else '') + '</span></span>'
-            '<div class="gr-sort" role="group" aria-label="정렬">'
-            '<button type="button" class="on" data-k="score">품질순</button>'
-            '<button type="button" data-k="val">가격순</button>'
-            '<button type="button" data-k="ed">실적 임박순</button></div></div>')
-    screener = (f'<div id="grScreener">{head}{presets}'
-                f'<div id="grList" style="display:flex;flex-direction:column;gap:7px">{"".join(rows)}</div>'
+                  f'<span style="width:8px;height:8px;border-radius:50%;background:{_GR_SIG[s_]}"></span>'
+                  f'{_GR_SIGTXT[s_]}</span>' for s_ in ("g", "y", "r"))
+        + f'<span>점수 = 품질(성장·수익성경로·재무건전성·주주가치) · 온도계 = 성장 대비 EV/매출의 {len([v for v in vals.values() if v.get("rank")])}종목 내 위치 · '
+          '▲▼ = 직전 기록 대비 점수 변화 · 관심 종목 편집은 전체 선별 표의 ☆</span></div>')
+    fav_view = ('<div id="grScreener" style="display:none">'
+                '<div class="gr-sub-h"><div class="gr-sort" role="group" aria-label="정렬">'
+                '<button type="button" class="on" data-k="score">품질순</button>'
+                '<button type="button" data-k="val">가격순</button>'
+                '<button type="button" data-k="ed">실적 임박순</button></div></div>'
+                f'{presets}<div id="grList" style="display:flex;flex-direction:column;gap:7px">{"".join(rows)}</div>'
+                '<div id="grEmpty" class="gr-none" style="padding:24px 0;text-align:center" hidden>'
+                '관심 종목이 없습니다. 전체 선별 표에서 ☆를 눌러 추가하세요.</div>'
                 f'{legend}</div>')
-    deep = ('<div id="grDeep" style="display:none">'
-            + "".join(_gr_deep(d, ctx) for d in funds) + '</div>')
-    return f'<div class="part">{screener}{deep}</div>'
+    # 전체 선별 탭(나스닥 100)
+    sc_rows = (screen or {}).get("rows", [])
+    all_view = ""
+    if sc_rows:
+        secs = sorted({uni.get(r["t"], {}).get("sector", "") for r in sc_rows} - {""},
+                      key=lambda x: _SECTOR_ORDER.index(x) if x in _SECTOR_ORDER else 99)
+        trs = "".join(_gt_row(r, by.get(r["t"]), vals.get(r["t"]), uni.get(r["t"], {})) for r in sc_rows)
+        ths = "".join(f'<th class="gt-th{c}" data-k="{k}" role="columnheader" aria-sort="none" tabindex="0">{lab} <i></i></th>'
+                      for k, lab, c in (("mcap", "시가총액", ""), ("rev", "분기 매출", " c-rev"), ("yoy", "매출 성장", ""),
+                                        ("opm", "영업이익률", " c-opm"), ("score", "품질 점수", ""), ("val", "가격", " c-th")))
+        miss = (screen or {}).get("miss") or []
+        all_view = (
+            '<div id="grAll"><div class="gt-filters">'
+            '<input id="gtSearch" type="search" placeholder="종목·티커 검색" aria-label="종목 검색">'
+            '<select id="gtSector" aria-label="섹터"><option value="">섹터: 전체</option>'
+            + "".join(f'<option value="{_e(x)}">{_e(x)}</option>' for x in secs) + '</select>'
+            '<span class="gt-grp" role="group" aria-label="매출 성장">매출 성장'
+            '<button type="button" class="gt-g on" data-g="-1e9">전체</button><button type="button" class="gt-g" data-g="15">+15%</button>'
+            '<button type="button" class="gt-g" data-g="25">+25%</button><button type="button" class="gt-g" data-g="50">+50%</button></span>'
+            '<button type="button" class="gt-tog" data-f="profit">흑자만</button>'
+            '<button type="button" class="gt-tog" data-f="fav">★ 관심만</button></div>'
+            '<div class="gt-wrap"><table class="gt"><thead><tr><th class="st" title="관심 목록">★</th><th class="n">#</th>'
+            f'<th>종목</th>{ths}<th class="c-chips">표시</th></tr></thead><tbody id="gtBody">{trs}</tbody></table></div>'
+            '<button type="button" id="gtMore" class="gt-more"></button>'
+            f'<div class="gt-foot">조건에 맞는 <b id="gtCount">{len(sc_rows)}</b>개 · 매출 = 최근 분기 SEC 공시(총매출 우선) · '
+            '시총 = 주가 × 희석주식수 · '
+            + (f'계산 불가 {len(miss)}개: {_e(", ".join(miss))}' if miss else "")
+            + '</div></div>')
+    n_all = len(sc_rows)
+    tabs = ('<div class="gr-tabs" role="tablist">'
+            + (f'<button type="button" class="gr-tab on" data-v="all" role="tab">전체 선별 · 나스닥 100<small>{n_all}</small></button>' if sc_rows else "")
+            + f'<button type="button" class="gr-tab{"" if sc_rows else " on"}" data-v="fav" role="tab">관심 목록<small id="grFavN">{len(default_watch)}</small></button></div>')
+    head = ('<div class="sched-head" style="margin-bottom:10px"><span>'
+            '<span class="sched-ico">🔎</span>성장주 '
+            f'<span class="sched-tz">SEC 재무 · 정밀 분석 {len(funds)}종목'
+            + (f' · 주가 {_e(ctx["asof"])}' if ctx["asof"] else '') + '</span></span></div>')
+    ver = now.strftime("%Y%m%d%H%M")
+    if not sc_rows:                 # 1차 선별 데이터가 없으면 관심 목록만(이전과 같은 화면)
+        fav_view = fav_view.replace('id="grScreener" style="display:none"', 'id="grScreener"', 1)
+        all_view = '<div id="grAll" style="display:none"></div>'
+    return (f'<div class="part" id="grRoot" data-default=\'{_e(json.dumps(default_watch))}\' data-v="{ver}">'
+            f'{head}{tabs}<div id="grToast" class="gr-toast" role="status" hidden></div>'
+            f'{all_view}{fav_view}<div id="grDeep" style="display:none"></div></div>')
+
+
+def write_growth_fragments(funds, now, out_dir, earnings=None, prices=None, prices_asof="",
+                           history=None, universe=None) -> int:
+    """종목별 상세 카드를 out_dir/<티커>.html로 쓴다(메인·지난 회차 페이지가 필요할 때 불러옴).
+
+    반환: 쓴 파일 수. 더 이상 정밀 분석 대상이 아닌 종목의 옛 파일은 지운다."""
+    ctx = _growth_ctx(funds, now, earnings, prices, prices_asof, history, universe)
+    os.makedirs(out_dir, exist_ok=True)
+    keep = set()
+    for d in ctx["funds"]:
+        fn = f'{d["ticker"]}.html'
+        keep.add(fn)
+        html = _gr_deep(d, ctx)
+        p = os.path.join(out_dir, fn)
+        try:
+            if open(p, encoding="utf-8").read() == html:
+                continue
+        except OSError:
+            pass
+        with open(p, "w", encoding="utf-8") as f:
+            f.write(html)
+    for fn in os.listdir(out_dir):
+        if fn.endswith(".html") and fn not in keep:
+            os.remove(os.path.join(out_dir, fn))
+    return len(keep)

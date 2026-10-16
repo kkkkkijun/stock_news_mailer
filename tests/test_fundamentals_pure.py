@@ -92,3 +92,17 @@ def test_liquid_cash_adds_same_date_short_term_investments_only():
     assert _liquid_cash(cash, {}, [{"2026-06-30": 50}]) == (150, True)
     assert _liquid_cash(cash, {}, [{"2025-10-26": 50}]) == (100, False)      # 끊긴 태그는 섞지 않음
     assert _liquid_cash(cash, {"2026-06-30": 180}, [{"2026-06-30": 80}]) == (180, True)  # 합산 태그 우선
+
+
+def test_rev_quarters_prefers_tag_with_latest_quarterly_data_over_annual_only():
+    # IREN 사례: Revenues는 연간값만(분기 없음), 고객계약 매출에 분기값 → 분기 시계열은 고객계약 매출
+    from fundamentals import _rev_quarters
+    g = {REV[0]: _usd([("2025-07-01", "2026-06-30", 700)]),
+         REV[1]: _usd([("2026-01-01", "2026-03-31", 145), ("2026-04-01", "2026-06-30", 137)])}
+    assert max(_rev_quarters(g)) == "2026-06-30" and _rev_quarters(g)["2026-06-30"] == 137
+
+
+def test_rev_quarters_tie_goes_to_total_revenues():
+    from fundamentals import _rev_quarters
+    g = {REV[0]: _usd([("2026-04-01", "2026-06-30", 120)]), REV[1]: _usd([("2026-04-01", "2026-06-30", 100)])}
+    assert _rev_quarters(g)["2026-06-30"] == 120

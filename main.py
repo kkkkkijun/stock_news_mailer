@@ -199,6 +199,17 @@ def _section_trump(client: Any = None) -> str:
         return f"\n\n💬 트럼프 PART\n(생성 실패: {e})"
 
 
+def _build_growth_universe() -> None:
+    """성장주 '전체 선별': 나스닥 100 목록·현재가(universe) → 1차 선별(screen). 실패해도 기존 파일 유지."""
+    try:
+        from universe import build_universe
+        from screen import build_screen
+        build_universe()
+        build_screen()
+    except Exception as e:  # noqa: BLE001 — 부가 기능, 브리핑·갱신을 막지 않는다
+        log.exception(f"[growth] 나스닥 100 선별 실패: {e}")
+
+
 def build_body(client: Any = None) -> str:
     now = datetime.now(KST)
     body = f"[오늘의 뉴스 요약] {now.strftime('%Y-%m-%d %H:%M KST')}\n\n"
@@ -227,6 +238,7 @@ if __name__ == "__main__":
             build_reports(client=get_openai_client())
             try:
                 from fundamentals import build_fundamentals, build_qualitative
+                _build_growth_universe()      # data/universe.json · data/screen.json (전체 선별)
                 build_fundamentals()          # data/fundamentals.json (성장주 탭)
                 build_qualitative(client=get_openai_client())  # 10-K 정성(캐시)
             except Exception as fe:  # noqa
@@ -254,6 +266,7 @@ if __name__ == "__main__":
                 build_reports(client=client)  # data/reports.json (실적 보고서)
                 try:
                     from fundamentals import build_fundamentals, build_qualitative
+                    _build_growth_universe()  # data/universe.json · data/screen.json (전체 선별)
                     build_fundamentals()      # data/fundamentals.json (성장주 탭)
                     build_qualitative(client=client)  # 10-K 정성(캐시)
                 except Exception as fe:

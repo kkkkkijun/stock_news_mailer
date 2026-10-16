@@ -84,6 +84,10 @@ def test_rebuild_all_writes_expected_assets_and_links(tmp_path, monkeypatch):
         with open(path, encoding="utf-8") as f:
             html = f.read()
         rel = os.path.relpath(path, docs_dir).replace(os.sep, "/")
+        if rel.startswith("growth/"):
+            # 성장주 상세 조각(탭에서 불러와 끼워 넣음): 전체 페이지가 아니라 카드 하나
+            assert html.startswith('<div class="gr-card"'), rel
+            continue
         if rel.startswith("archive/"):
             assert 'href="../assets/site.css?v=' in html, rel
         else:

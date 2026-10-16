@@ -149,6 +149,16 @@ def _load_prices():
     return p.get("prices") or {}, p.get("asof") or ""
 
 
+def _load_screen():
+    """data/screen.json(성장주 1차 선별 · 나스닥 100)."""
+    return _load_json_quiet(os.path.join(config.DATA_DIR, "screen.json"), {})
+
+
+def _load_universe():
+    """data/universe.json(나스닥 100 목록·현재가·섹터)."""
+    return _load_json_quiet(os.path.join(config.DATA_DIR, "universe.json"), {})
+
+
 def _load_score_history():
     """data/score_history.json → {티커: [{date, cq, score}, ...]}."""
     return _load_json_quiet(config.SCORE_HISTORY_FILE, {})

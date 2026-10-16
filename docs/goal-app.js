@@ -17,6 +17,23 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const provider = new GoogleAuthProvider();
 
+// ---- 성장주 관심 목록(★) 동기화: users/{uid}.watch 필드(내 목표와 같은 문서, merge 저장) ----
+// 성장주 탭 스크립트가 window.MBWatch로 읽고 쓴다. 변경은 'mbwatch' 이벤트로 알린다.
+const MBW = window.MBWatch = { uid: null, list: null, ready: false,
+  set(list){ return MBW.uid ? setDoc(doc(db,"users",MBW.uid), {watch:list, updatedAt:Date.now()}, {merge:true})
+                            : Promise.resolve(false); } };
+let mbwUnsub = null;
+onAuthStateChanged(auth, user => {
+  if (mbwUnsub){ mbwUnsub(); mbwUnsub = null; }
+  MBW.uid = user ? user.uid : null; MBW.list = null;
+  if (!user){ MBW.ready = true; window.dispatchEvent(new CustomEvent("mbwatch")); return; }
+  mbwUnsub = onSnapshot(doc(db,"users",user.uid), snap => {
+    const w = snap.exists() ? snap.data().watch : null;
+    MBW.list = Array.isArray(w) ? w : null; MBW.ready = true;
+    window.dispatchEvent(new CustomEvent("mbwatch"));
+  }, () => { MBW.ready = true; window.dispatchEvent(new CustomEvent("mbwatch")); });
+});
+
 const ROOT = document.getElementById("goalRoot");
 const SLOT = document.getElementById("authSlot");
 if (ROOT) { init(); }

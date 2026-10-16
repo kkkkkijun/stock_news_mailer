@@ -10,7 +10,7 @@ from render import assets, clock, config
 from render.archive import render_archive_index
 from render.config import _LINKS_HOME, _LINKS_SNAP
 from render.files import _load_body, _load_quotes, _save_body, _save_quotes, _slug, _write
-from render.layout import render_html
+from render.layout import render_html, write_growth_details
 
 
 def rebuild_all() -> int:
@@ -36,6 +36,7 @@ def rebuild_all() -> int:
         _write(os.path.join(config.DOCS_DIR, "index.html"),
                render_html(latest[0], now=latest[1], links=_LINKS_HOME,
                            quotes=latest[2], mark_new=True, schedule=True))
+        write_growth_details(latest[1])
     _write(os.path.join(config.ARCHIVE_DIR, "index.html"), render_archive_index())
     return len(files)
 
@@ -53,5 +54,6 @@ def publish(body: str, now: datetime | None = None, quotes: dict[str, Any] | Non
     path = os.path.join(config.DOCS_DIR, "index.html")
     _write(path, render_html(body, now=now, links=_LINKS_HOME, quotes=quotes,
                              mark_new=True, schedule=True))
+    write_growth_details(now)
     _write(os.path.join(config.ARCHIVE_DIR, "index.html"), render_archive_index())
     return path

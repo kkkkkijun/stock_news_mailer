@@ -23,7 +23,8 @@ from llm import get_openai_client
 
 log = logging.getLogger(__name__)
 
-REV = ["RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues",
+# 총매출(Revenues) 우선: 두 태그의 최신 날짜가 같으면 앞의 것을 쓴다(_pick). 1차 선별(screen.py)과 같은 규칙
+REV = ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax",
        "RevenueFromContractWithCustomerIncludingAssessedTax", "SalesRevenueNet"]
 GP = ["GrossProfit"]
 OPINC = ["OperatingIncomeLoss"]
@@ -182,6 +183,20 @@ def _liquid_cash(cash, cash_sti, sti_tags):
     return cash[last], False
 
 
+def _rev_quarters(gaap):
+    """매출 분기 시계열. 후보 태그마다 분기값(+Q4 보간)을 만들어 '가장 최근 분기'가 있는 태그를 쓰고,
+    같으면 REV 순서(총매출 우선). 태그 단위 _pick만 쓰면 연간값만 있는 태그(IREN의 Revenues)가
+    날짜 동률로 뽑혀 분기 시계열이 비는 문제가 있었다."""
+    best, best_end = {}, ""
+    for t in REV:
+        if t not in gaap:
+            continue
+        q = _fill_q4(_quarters(gaap, [t]), _annuals(gaap, [t]))
+        if q and max(q) > best_end:
+            best, best_end = q, max(q)
+    return best
+
+
 def _instants(gaap, tags):
     usd = _pick(gaap, tags, dur=False)
     if not usd:
@@ -219,7 +234,7 @@ def _build_one(sym):
         return None
     g = j["facts"].get("us-gaap", {})
 
-    rev = _fill_q4(_quarters(g, REV), _annuals(g, REV))
+    rev = _rev_quarters(g)
     gp = _fill_q4(_quarters(g, GP), _annuals(g, GP))
     opi = _fill_q4(_quarters(g, OPINC), _annuals(g, OPINC))
     # NI/LIAB/ASSETS는 현재 스코어링에 쓰이지 않아 계산하지 않는다(불필요한 SEC 데이터 순회 축소).
@@ -463,25 +478,57 @@ def update_score_history(funds: list[dict[str, Any]], today: str,
     return hist
 
 
+def _load_json(path: str, default: Any) -> Any:
+    try:
+        return json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        return default
+
+
 def build_fundamentals(path: str = "data/fundamentals.json",
-                       tickers: list[str] | None = None) -> list[dict[str, Any]]:
-    tickers = tickers or EARNINGS_TICKERS
-    out = []
-    for t in tickers:
-        d = _build_one(t)
-        if d:
-            out.append(d)
-            log.info(f"[fund] {t}: 매출 {d['rev']}M YoY {d['rev_yoy']}% · "
-                     f"영업마진 {d['opm']}%(Δ{d['opm_delta']}) · 순현금 {d['netcash']}M · "
-                     f"희석 {d['dilution']}%")
+                       tickers: list[str] | None = None,
+                       screen_path: str = "data/screen.json",
+                       universe_path: str = "data/universe.json",
+                       cache_path: str = "data/fund_cache.json",
+                       max_age_days: int = 7) -> list[dict[str, Any]]:
+    """정밀 분석(4축 점수 등) 대상 = 관심 종목(EARNINGS_TICKERS) + 1차 선별(나스닥 100) 계산 가능 종목.
+
+    관심 종목은 매번 새로 계산한다. 나머지는 증분: 1차 선별이 준 최신 공시번호(accn)가 캐시와 같고
+    max_age_days 안에 계산했으면 캐시를 재사용(종목별 SEC 전체 재무 평균 3MB를 매번 받지 않기 위해)."""
+    watch = list(tickers or EARNINGS_TICKERS)
+    screen = {r["t"]: r for r in _load_json(screen_path, {}).get("rows", [])}
+    uni = {r["t"]: r for r in _load_json(universe_path, {}).get("rows", [])}
+    cache = _load_json(cache_path, {})
+    today = date.today()
+    order = watch + [t for t in screen if t not in watch]
+    out, fetched, reused = [], 0, 0
+    for t in order:
+        c = cache.get(t) or {}
+        fresh = (t not in watch and c.get("d") and c.get("accn") == screen.get(t, {}).get("accn")
+                 and (today - date.fromisoformat(c.get("built", "1970-01-01"))).days < max_age_days)
+        if fresh:
+            d = c["d"]
+            reused += 1
         else:
-            log.info(f"[fund] {t}: skip")
-        time.sleep(0.3)
+            d = _build_one(t)
+            fetched += 1
+            time.sleep(0.3)
+            if not d:
+                log.info(f"[fund] {t}: skip")
+                continue
+            if t not in NAMES and uni.get(t, {}).get("name"):
+                d["name"] = uni[t]["name"]
+            if t not in SECTORS and uni.get(t, {}).get("sector"):
+                d["sector"] = uni[t]["sector"]
+            cache[t] = {"accn": screen.get(t, {}).get("accn"), "built": today.isoformat(), "d": d}
+        d["watch"] = t in watch
+        out.append(d)
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    log.info(f"[fund] 저장 {len(out)}개 → {path}")
+    json.dump(cache, open(cache_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    log.info(f"[fund] 저장 {len(out)}개(새로 계산 {fetched} · 캐시 {reused}) → {path}")
     if out:
         hist_path = os.path.join(os.path.dirname(path) or ".", "score_history.json")
-        update_score_history(out, date.today().isoformat(), hist_path)
+        update_score_history(out, today.isoformat(), hist_path)
     return out
 
 
@@ -578,6 +625,8 @@ def build_qualitative(fund_path: str = "data/fundamentals.json",
         cache = {}
     for d in funds:
         t = d["ticker"]
+        if t not in EARNINGS_TICKERS:      # 정성 분석은 관심 종목만(비용·시간)
+            continue
         sec = _sec_10k_sections(t)
         if not sec:
             if cache.get(t, {}).get("qual"):
