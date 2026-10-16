@@ -117,7 +117,8 @@ def build_whales(list_path: str = "data/whale_list.json",
                       "net": round((c["lU"] - c["sU"]) / tot, 3)})
     coins.sort(key=lambda x: -(x["l"] + x["s"]))
     top_pos.sort(key=lambda x: -x["ntl"])
-    data = {"asof": _now(), "whales": ok, "coins": coins, "top": top_pos[:25]}
+    # addrs: 공개 리더보드의 온체인 주소. 지도 탭이 브라우저에서 같은 지갑의 최신 포지션을 직접 조회할 때 쓴다.
+    data = {"asof": _now(), "whales": ok, "coins": coins, "top": top_pos[:25], "addrs": addrs}
     json.dump(data, open(out_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     log.info(f"[whales] {ok}명 스냅샷 · 코인 {len(coins)}종 · 저장 {out_path}")
     return data

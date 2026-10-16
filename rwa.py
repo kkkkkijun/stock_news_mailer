@@ -94,8 +94,11 @@ def build_rwa(out_path: str = "docs/rwamap.json") -> dict[str, Any]:
             "net": round((a["lU"] - a["sU"]) / tot, 3),
         })
     assets.sort(key=lambda z: -z["tot"])
+    # cfg: 분류 기준·표시명. 지도 탭이 브라우저에서 Ostium을 직접 조회해 같은 규칙으로 다시 집계할 때 쓴다(규칙 단일 출처).
+    cfg = {"crypto": sorted(CRYPTO), "index": sorted(INDEX), "commod": sorted(COMMOD),
+           "forex": sorted(FOREX_FROM), "bond": sorted(BOND), "disp": DISP, "url": URL}
     data = {"asof": datetime.now(KST).strftime("%Y-%m-%d %H:%M"),
-            "positions": len(trades), "assets": assets}
+            "positions": len(trades), "assets": assets, "cfg": cfg}
     json.dump(data, open(out_path, "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     cats = {}
