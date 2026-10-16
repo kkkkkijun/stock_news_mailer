@@ -1,0 +1,242 @@
+2026-10-17T06:32:53.322262+09:00
+
+[오늘의 뉴스 요약] 2026-10-17 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 고용 시장은 전체 취업자 수가 증가했으나 청년층의 취업자 수는 지속적으로 감소하는 부진한 모습이다. 또한, 주택담보대출 금리가 상승하면서 대출자들의 이자 부담이 증가할 전망이다.
+
+[핵심 뉴스]
+1. (고용) 20대 취업자 수 감소 지속
+   → 9월 전체 취업자는 지난해 대비 11만3000명 증가했으나, 20대 취업자는 17만명 감소하여 청년층 고용이 47개월째 하락세를 보이고 있다.
+   (매일경제 · 10/17 06:18)
+2. (금리) 주담대 변동금리 6% 초과
+   → 16일 기준 주요 시중은행의 주택담보대출 변동금리가 6%를 초과하며, 특히 5대 은행의 변동형 주담대 금리는 4.82%에서 6.25%까지 상승하였다.
+   (매일경제 · 10/16 18:46)
+3. (정책) 개도국 지원 정책 논의
+   → 한국수출입은행은 EDCF 후보사업의 국익 평가를 위한 컨설팅 용역을 발주했으며, 내년도 대외기금 예산안은 1조8650억원으로 승인되었다.
+   (매일경제 · 10/16 17:41)
+4. (환율) 원/달러 환율 연저점 기록
+   → 원/달러 환율은 1,331.4원으로 2년 만에 최저치를 기록했으며, 오후에는 달러 약세와 국내 증시 반등으로 하락세로 돌아섰다.
+   (연합뉴스 · 10/16 16:46)
+5. (기타) IMF, 韓 정부부채 전망 수정
+   → IMF는 한국의 올해 정부부채 비율을 47.3%로 상향 조정했으며, 이는 이전의 46.1%보다 1.2%포인트 높아진 수치이다.
+   (연합뉴스 · 10/16 15:39)
+
+[흐름·전망]
+• 청년층 고용 악화가 지속되면서 정부의 고용 정책이 더욱 중요한 이슈로 부상할 가능성이 있다.
+• 주택담보대출 금리 상승이 대출자들의 소비에 부정적인 영향을 미칠 우려가 있어, 향후 소비지표에 대한 관심이 높아질 것이다.
+• 공적개발원조(ODA) 정책에서 국익을 고려하는 추세가 지속됨에 따라, 앞으로의 지원 정책이 경제적 실익과 연결될 것으로 보인다.
+• 원/달러 환율의 하락세가 반전될 경우, 수출기업에 미치는 영향과 외환시장의 변동성을 주의 깊게 관찰해야 할 시점이다.
+• 한국 정부의 부채 관리 방안이 재정 정책에 영향을 미칠 가능성이 크며, IMF의 계속적인 전망 수정에도 주목해야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia CEO on AI Market Turmoil: ‘All of This Is Going to Pass’ - Bloomberg.com
+   (Bloomberg.com · 10/17 05:33)
+→ Nvidia CEO는 인공지능 시장의 혼란에 대해 모든 어려움이 지나갈 것이라고 언급했습니다. AI 기술에 대한 신뢰와 전망에 긍정적인 입장을 보이며, 시장이 회복될 것임을 강조했습니다.
+
+📰 [NVDA] Dell Technologies (DELL) Lands Core AI Infrastructure Role In New Industrial Platform
+   (Yahoo Finance · 10/17 05:12)
+→ 델 테크놀로지스가 하니웰의 새로운 Forge Cognition 플랫폼의 핵심 AI 인프라 파트너로 선정되었습니다. 하니웰은 델과 NVIDIA와 협력하여 데이터 센터와 엣지 위치에서 자동화를 위해 Forge Cognition을 운영하고 있으며, 초기 파일럿이 전 세계 주요 시설에서 진행되고 있습니다.
+
+📰 [NVDA] Nvidia’s Huang and Broadcom’s Tan Debate the AI Boom - Bloomberg.com
+   (Bloomberg.com · 10/17 05:03)
+→ Nvidia의 창립자 젠슨 황과 Broadcom의 CEO 하콤 탄이 인공지능(AI)의 급성장에 대해 논의했습니다. 두 CEO는 AI 기술의 발전과 그로 인한 산업 변화에 대해 다양한 관점을 공유하며, 기술의 미래에 대한 기대와 우려를 표현했습니다. 이 토론은 지속적으로 발전하는 AI 시장의 중요성을 강조했습니다.
+
+📰 [TSLA] Tesla investors hardly impressed with Elon Musk's 'flying car'
+   (Yahoo Finance · 10/17 06:25)
+→ 일론 머스크가 테슬라의 새로운 차량 모델을 '비행 자동차'라고 칭했지만, 투자자들은 이에 큰 흥미를 보이지 않고 있습니다. 가격 차트 역시 투자자의 기대감이 낮다는 것을 보여주고 있습니다.
+
+📰 [TSLA] With flying Roadster, Tesla waves goodbye to the car business - Axios
+   (Axios · 10/17 06:17)
+→ 테슬라가 새로운 비행형 로드스터를 공개하며 전통적인 자동차 산업과 작별을 고했다. 이 혁신적인 차량은 미래 이동 수단의 새로운 가능성을 제시하고 있다. 테슬라는 더 이상 단순한 자동차 제조사가 아닌, 첨단 기술 기업으로 나아가고 있다.
+
+📰 [TSLA] Dow Jones Futures: S&P 500, Nasdaq Break Key Levels As CoreWeave, Dell Dive; Tesla, SpaceX, Meta Loom
+   (Yahoo Finance · 10/17 06:08)
+→ S&P 500과 나스닥이 50일 이동 평선 아래로 하락하며 기술 주식 전반에서 매도세가 나타났다. CoreWeave의 주가 하락이 주 요인으로 지적되며, 테슬라, 스페이스X, 메타의 실적 발표가 다가오고 있다.
+
+📰 [HIMS] What Does Hims & Hers Health (HIMS) Expansion Into The UK And Australia Mean?
+   (Yahoo Finance · 10/17 04:10)
+→ Hims & Hers Health가 2026년 10월 영국에서 여성 맞춤형 탈모 및 건강 관리 서비스를 시작하며, 호주에도 진출한다고 발표했다. 이번 확장은 테레헬스 플랫폼을 통해 여성 탈모 치료와 더 넓은 건강 서비스를 제공하고, 영어권 시장에서의 국제적 입지를 강화하는 계기가 된다.
+
+📰 [HIMS] What Does Hims & Hers Health (HIMS) Expansion Into The UK And Australia Mean? - Yahoo Finance
+   (Yahoo Finance · 10/17 04:10)
+→ Hims & Hers Health가 영국과 호주로 사업을 확장함에 따라 글로벌 시장에서의 입지를 강화하고, 다양한 의료 서비스를 제공할 수 있는 기회를 넓히게 되었다. 이는 특히 온라인 헬스케어 서비스의 수요 증가에 따른 전략적 결정으로 해석된다.
+
+📰 [HIMS] Hims & Hers Health (HIMS) Alert: Securities Class Action Filed, Investors with Losses Encouraged to Contact Hagens Berman Before November 2, 2026 Lead Plaintiff Deadline - PR Newswire
+   (PR Newswire · 10/17 00:56)
+→ Hims & Hers Health에 대한 증권 집단소송이 제기되었으며, 투자자들은 2026년 11월 2일 이전에 Hagens Berman에 연락하여 손실을 신고할 것을 권장받고 있습니다.
+
+📰 [RDW] RDW Oct 2026 16.500 put (RDW261016P00016500) Stock Price, News, Quote & History - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/17 04:35)
+→ Yahoo! Finance Canada에서는 RDW Oct 2026 16.500 풋 옵션(RDW261016P00016500)의 주식 가격, 뉴스, 인용 및 역사에 대한 정보를 제공합니다. 이 옵션의 세부사항을 통해 투자자들은 시장 동향을 분석할 수 있습니다.
+
+📰 [RDW] Redwire (RDW) Lands New Drone Orders, Is It Still Below Fair Value?
+   (Yahoo Finance · 10/17 04:14)
+→ 레드와이어(RDW)는 미국 국방부의 훈련 및 현대화 지원을 위해 약 1,380만 달러 규모의 무인 항공기 시스템 주문을 확보하며 주목받고 있습니다. 그러나 최근 주가는 30일 기준 17.12% 하락했으며, 현재 주가는 8.91달러로 여전히 적정 가치 이하로 평가되고 있습니다.
+
+📰 [RDW] Redwire (RDW) Lands New Drone Orders, Is It Still Below Fair Value? - Yahoo Finance Singapore
+   (Yahoo Finance Singapore · 10/17 04:14)
+→ 레드와이어(RDW)는 새로운 드론 주문을 확보했으며, 회사의 주가가 여전히 공정 가치 아래에 있는지에 대한 의문이 제기되고 있습니다. 투자자들은 이 새로운 계약이 주가에 미치는 영향을 주목하고 있습니다.
+
+📰 [IREN] IREN (IREN) Stock Looks About Right On Its 9x Three Year Run - Simply Wall Street
+   (Simply Wall Street · 10/17 02:43)
+→ IREN(IREN) 주가는 최근 3년 동안 9배 상승한 것으로 평가되며, 현재 적정 수준이라는 분석이 나왔다. 투자자들은 이 주식이 과대 평가되지 않았다고 판단하고 있다.
+
+📰 [IREN] IREN's Slide Is a Sector Story, but Two Company-Specific Questions Still Need Answers - ad-hoc-news.de
+   (ad-hoc-news.de · 10/17 02:31)
+→ IREN의 주가 하락은 업계 전반의 문제로 보이지만, 두 가지 회사-specific 질문에 대한 답변이 여전히 필요하다는 내용의 뉴스입니다.
+
+📰 [IREN] IREN stock falls near 52 week low: Oversold setup or deeper downside? - Investing.com
+   (Investing.com · 10/17 01:38)
+→ IREN 주식이 52주 최저치에 근접하면서 매도 과잉 상태인지, 아니면 더 깊은 하락세가 예상되는지에 대한 논의가 일고 있다. 투자자들은 향후 주가 회복 가능성에 우려를 나타내고 있다.
+
+📰 [RKLB] Rocket Lab (NASDAQ:RKLB) Stock Price Down 8% After Analyst Downgrade - MarketBeat
+   (MarketBeat · 10/17 06:07)
+→ 로켓랩(NASDAQ:RKLB)의 주가가 분석가의 등급 하향 조정에 따라 8% 하락했습니다. 시장 조사에서는 이러한 변동이 최근의 기업 실적에 대한 우려와 연결되어 있다고 분석했습니다.
+
+📰 [RKLB] Tiny air pockets stall Rocket Lab’s answer to SpaceX - TheStreet
+   (TheStreet · 10/17 04:07)
+→ Rocket Lab의 우주 발사체가 스페이스X의 경쟁 제품에 대한 대응을 지연시키고 있는 것으로 보도되었습니다. 이 문제는 작은 공기 주머니로 인해 발생하고 있으며, 이는 예상한 성능을 저하시킬 위험이 있습니다.
+
+📰 [RKLB] Rocket Lab Drops 6% as Citizens Cuts Target Over Neutron Delay; Planet Labs Slides 5%, SpaceX Slips
+   (Yahoo Finance · 10/17 01:51)
+→ 로켓랩의 뉴트론 로켓이 중요한 기한을 놓치면서 주가가 6% 하락했고, 월스트리트는 발사 수익을 기다리는 기간을 재조정하기 시작했습니다. 이로 인해 플래닛랩스는 5% 떨어졌고, 스페이스엑스도 하락세를 보이고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin's Bull Market Signal Is Hiding In Its Loan Book | @cryptonomista from @hodlwithLedn - Moomoo
+   (Moomoo · 10/17 05:57)
+→ 최근 비트코인의 대출 기록에서 상승장 신호가 발견되었다는 분석이 나왔다. 이 분석은 비트코인의 시장 동향과 투자 기회에 대한 중요한 지표를 제공하고 있다.
+
+📰 [BTC-USD] Cantor's $112,000 Bitcoin Call Lifts Strategy Target to $208 - Yahoo Finance
+   (Yahoo Finance · 10/17 05:55)
+→ Cantor의 비트코인 가격 목표가 112,000달러로 설정되면서 전략 목표가 208달러로 상향 조정되었습니다. 이는 비트코인의 전망에 대한 긍정적인 신호로 해석됩니다.
+
+📰 [BTC-USD] Bitcoin Price Predicted to Reach $90,000 This Month While AlphaPepe Puts an AI Exchange Behind the Next Meme Coin Breakout - StreetInsider
+   (StreetInsider · 10/17 05:50)
+→ 비트코인 가격이 이번 달 90,000달러에 이를 것으로 예상되고 있으며, AlphaPepe는 다음 밈 코인의 급등을 위해 AI 거래소를 도입하고 있다고 보도됐다.
+
+📰 [ETH-USD] Solana Outshines Ethereum as RWA Market Cap Soars in 2026 - Cryptonews.net
+   (Cryptonews.net · 10/17 06:29)
+→ 2026년 RWA(실제 자산) 시장 규모가 급증하면서 솔라나가 이더리움을 능가하는 성과를 거두었다. 이는 솔라나의 기술력이 돋보이게 된 결과로 분석된다.
+
+📰 [ETH-USD] Ethereum sets Hoodi test for Oct. 26, but mainnet remains open - Techi
+   (Techi · 10/17 06:26)
+→ 이더리움이 10월 26일 Hoodi 테스트를 설정했지만, 메인넷은 계속 열려 있다고 보도됐다. 이는 블록체인 네트워크의 지속적인 운영을 의미한다.
+
+📰 [ETH-USD] Ethereum News: Dual Investment Launches on BNB Chain - Cryptonews.net
+   (Cryptonews.net · 10/17 06:15)
+→ Ethereum 뉴스에 따르면, BNB 체인에서 이중 투자 상품이 출시되었습니다. 이 새로운 투자 옵션은 사용자들에게 다양한 수익 기회를 제공할 것으로 기대되고 있습니다.
+
+📰 [SOL-USD] Solana Outshines Ethereum as RWA Market Cap Soars in 2026 - Cryptonews.net
+   (Cryptonews.net · 10/17 06:29)
+→ 2026년 RWA(실물 자산) 시장 규모가 급증하면서 Solana가 Ethereum을 능가하는 성과를 보였습니다. 이러한 변화로 Solana의 경쟁력이 높아지고 있는 상황입니다.
+
+📰 [SOL-USD] The 7 Best USDC on Solana to XMR Swap Platforms in 2026 - Brave New Coin
+   (Brave New Coin · 10/17 06:02)
+→ 2026년, Solana에서 USDC를 XMR로 교환할 수 있는 최고의 7개 플랫폼이 소개되었다. 이 기사에서는 각 플랫폼의 특징과 장점을 간략히 설명하고 있다.
+
+📰 [SOL-USD] NEAR Protocol enters Solana ecosystem, boosting token access and price gains - Pluang
+   (Pluang · 10/17 05:55)
+→ NEAR 프로토콜이 솔라나 생태계에 진입함으로써 토큰 접근성이 향상되고 가격 상승이 기대된다고 플루앙이 보도했습니다. 이 변화는 NEAR의 시장 가능성을 높이는 긍정적인 영향을 미칠 것으로 분석됩니다.
+
+📰 [BMNR] BitMine Immersion Technologies (BMNR): How Much Does Its Ethereum Treasury Shape the Business? - Kalkine
+   (Kalkine · 10/16 17:47)
+→ BitMine Immersion Technologies (BMNR)의 비즈니스는 이더리움 재무 상태에 많은 영향을 받고 있으며, 이더리움 보유량이 회사의 재무 성과와 전략에 중요한 역할을 하고 있다는 분석이 제기되었다. 이와 관련된 재무 전략이 비즈니스 성장에 어떻게 기여하는지에 대한 논의도 있다.
+
+📰 [BMNR] Learn Why The Bull Case For Bitmine Immersion Technologies Stock Could Change Following Ethereum Buying Pause - Simply Wall Street
+   (Simply Wall Street · 10/16 13:52)
+→ 비트마인 이머전 테크놀로지스 주식에 대한 낙관적인 전망이 이더리움 구매 일시 중단 이후 어떻게 변할 수 있는지에 대한 논의가 진행되고 있다. 이러한 변화가 주식 성과에 미치는 잠재적 영향이 주목받고 있다.
+
+📰 [BMNR] Is BitMine Immersion Technologies Inc (BMNR) Overvalued After 5. - GuruFocus
+   (GuruFocus · 10/16 09:02)
+→ BitMine Immersion Technologies Inc (BMNR)의 현재 주가는 과대평가된 것으로 보인다는 분석이 제기되었습니다. 전문가들은 이 회사의 가치가 시장에서 평가되는 수준보다 낮을 수 있다고 경고하고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 전반적으로 약세를 보이며 주요 자산의 가격이 하락했다. 비트코인과 이더리움은 각각 81,485달러와 2,410달러로 거래되고 있다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 약세… 비트코인 81,485달러, 이더리움 2,410달러
+   → 스텔라 네트워크의 스테이블코인 규모가 9억8700만달러로 집계되었으며, 최근 7일간 3.77% 증가하였다.
+   (토큰포스트 · 10/17 06:12)
+2. (시세) 암호화폐 시장 24시간 동안 레버리지 포지션 2억2436만달러 청산
+   → 지난 24시간 동안 암호화폐 시장에서 2억2436만달러의 레버리지 포지션이 청산되었으며, 이 중 롱 포지션이 66.55%를 차지하였다.
+   (토큰포스트 · 10/17 04:56)
+3. (시세) 비트코인 채굴 난이도 5.92% 증가
+   → 비트코인 채굴 난이도가 5.92% 상승하여 140.58T를 기록하였으며, 이는 10월 16일 조정에서 확인되었다.
+   (토큰포스트 · 10/17 01:14)
+4. (기타) 고금리에도 오른 비트코인, 금융시장 충격 보험 역할
+   → 제프 박은 비트코인이 고금리 환경에서 포트폴리오 충격 보험 역할을 할 수 있다고 평가하고, 통화정책과 관계없이 비트코인의 유효성을 강조하였다.
+   (토큰포스트 · 10/17 03:49)
+5. (정책) 홍콩, 거래소·스테이블코인 육성 정책 확인
+   → 홍콩 정부는 디지털 자산 거래소와 스테이블코인 산업을 신중하게 발전시키겠다는 정책 기조를 재확인하였다.
+   (토큰포스트 · 10/17 03:57)
+
+[흐름·전망]
+• 하락세에 있는 암호화폐 시장이 단기적으로 반등할 가능성은 있지만, 레버리지 포지션 청산이 빈번한 만큼 주의가 필요하다.
+• 비트코인 채굴 난이도의 증가가 장기적으로 네트워크의 안정성과 보안성을 높일 수 있지만, 가격 전망과는 별도의 논의가 필요하다.
+• 비트코인이 금융시장에서 충격 보험 역할을 할 수 있다는 논의는 앞으로의 투자 전략에서 중요한 관전 포인트가 될 것이다.
+• 홍콩의 디지털 자산 규제 정책이 앞으로 어떻게 구체화될지는 투자자들에게 중요한 정보가 될 것이며, 스테이블코인의 발전을 주의 깊게 살펴봐야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 18 (Extreme Fear)
+  - 크립토 기준: 63 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장에서는 정부가 대출 규제를 추가하지 않겠다는 방침을 밝히며 주택값 안정화를 위한 공급 확대를 예고했습니다. 반면 공공주택 착공 실적은 예상보다 낮아 수도권 주택 공급에 대한 우려가 커지고 있습니다.
+
+[핵심 뉴스]
+1. (정책) 정부, 대출 규제 추가 없음 선언
+   → 정부는 2026년 10월 16일 강남 3구를 중심으로 주택 가격 상승세가 다소 진정되고 있다고 발표하였으며, 서울 외곽 지역과 중저가 주택은 여전히 상승세가 지속되고 있다고 전했습니다.
+   (매일경제 · 10/16 21:20)
+2. (공급) 수도권 착공 목표 달성 어려워
+   → 올해 수도권 주택 착공 목표는 26만 8000가구였으나, 실제 실적은 21만 8000~23만 5000가구에 그칠 것으로 예상되며, 공사비 상승과 정비사업 법 개정 지연이 원인으로 지적되었습니다.
+   (매일경제 · 10/16 21:09)
+3. (매매) 강남3구 매수심리 안정화
+   → 국토부는 강남3구에서 주택 가격이 안정화되고 있다고 발표하였으며, 매매 및 전세 가격 상승폭이 축소되고 있으며 매수 심리가 진정되고 있다고 진단했습니다.
+   (연합뉴스 · 10/16 18:20)
+4. (공급) 공공주택 착공 실적 미달
+   → 올해 수도권 공공주택 착공 실적은 1만 6200가구로 목표의 약 26%에 불과하며, 민간 정비사업 부진이 공급 차질의 주요 원인으로 지적되고 있습니다.
+   (매일경제 · 10/16 17:41)
+5. (매매) 강남 아파트 실거래가지수 하락
+   → 서울 강남권 아파트 실거래가 지수가 4개월 만에 하락 전환하였고, 이는 정부의 세제개편안 영향으로 고가 단지의 급매 거래가 늘어난 결과로 분석됩니다.
+   (연합뉴스 · 10/16 10:41)
+6. (전세) 서울 아파트 전세 계약갱신 비율 증가
+   → 서울 아파트 갱신 계약 비율이 증가하여 올해 전세계약 중 51.09%가 갱신 계약으로, 이는 전세 가격 상승과 신규 매물 부족이 원인으로 작용하고 있습니다.
+   (매일경제 · 10/16 10:44)
+
+[흐름·전망]
+• 단기 흐름으로는 강남3구의 안정화가 진행되고 있으나, 외곽 지역과 중저가 주택의 가격 상승은 면밀히 관찰해야 합니다.
+• 수도권 주택 공급 목표 미달 문제가 지속되면서 민간 부문의 사업성과 관련 법 개정 지연이 주요 관전 포인트로 남을 것입니다.
+• 실거래가의 변동성을 감안할 때 앞으로의 가격 흐름은 세제개편안에 큰 영향을 받을 것으로 보이며, 향후 고가주택의 시장 조정이 주목됩니다.
+• 전세 계약 갱신 비율 증가와 신규 전세 매물 부족 현상은 전세 시장의 불안정을 초래할 가능성이 있으며, 이 문제의 해소가 급선무입니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 조지아에서 진행될 대규모 집회를 앞두고 많은 지지자들이 모여있음을 언급하며, 마이크 콜린스를 미국 상원에 당선시키기 위해 노력해야 한다고 강조했다. 그는 콜린스가 조지아 주지사 후보 리크 잭슨보다 훨씬 우수하다고 주장했다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 조지아에서 열리는 집회를 언급하며 마이크 콜린스 의원을 상원에 당선시켜야 한다고 강조했다.
+   (Truth Social · 10/17 04:12)
+2. (경제) 트럼프는 텍사스 주 상원 후보 제임스 탈라프리코가 화석연료 사용을 비판했다고 언급하며, 이는 그의 정치 경선에 부정적 영향을 미칠 것이라고 주장했다.
+   (Truth Social · 10/16 13:52)
+3. (인사) 트럼프는 법원 임명에서 샘 애드키슨을 추천하며, 그의 뛰어난 능력과 헌법 준수 의지를 강조했다.
+   (Truth Social · 10/16 17:46)
+4. (국내정치) 트럼프는 여론조사 결과가 공화당에 유리하다고 언급하며, 긍정적인 전망을 보였다.
+   (Truth Social · 10/16 14:13)
+
+[흐름·전망]
+• 트럼프의 발언은 향후 공화당 후보 선거에서의 경선과 지지 세력의 동향에 주목할 필요성을 강조하고 있다.
+• 특히 트럼프가 언급한 특정 후보들의 성공 여부가 정치적 지형에 미칠 영향을 주의 깊게 살펴볼 필요가 있다.
+• 조지아 및 텍사스와 같은 주에서의 개별 후보의 발언과 그에 따른 반응이 향후 선거 결과에 어떤 영향을 미칠지 주목해야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
