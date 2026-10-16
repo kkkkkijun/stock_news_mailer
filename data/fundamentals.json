@@ -11,15 +11,16 @@
   "opm": 66.2,
   "opm_delta": 5.4,
   "gm": 75.0,
-  "netcash": -10923.0,
-  "cash": 22443.0,
+  "netcash": 23220.0,
+  "cash": 56586.0,
+  "cash_incl_sti": true,
   "debt": 33366.0,
-  "fcf": 95559.0,
+  "fcf": 127006.0,
   "dilution": -1.0,
   "rnd_pct": 7.3,
   "bridge": {
    "d_debt": 24900.0,
-   "capex": 455.0
+   "capex": 7354.0
   },
   "moat_score": 88,
   "series": {
@@ -108,7 +109,7 @@
     }
    ]
   },
-  "score": 93,
+  "score": 98,
   "axes": {
    "growth": {
     "sig": "g",
@@ -121,9 +122,9 @@
     "lab": "영업이익률 +66% · 흑자"
    },
    "balance": {
-    "sig": "y",
-    "sc": 55,
-    "lab": "순부채·FCF 흑자"
+    "sig": "g",
+    "sc": 85,
+    "lab": "순현금 $23.2B"
    },
    "shareholder": {
     "sig": "g",
@@ -153,8 +154,9 @@
   "opm": 45.1,
   "opm_delta": 0.2,
   "gm": 67.2,
-  "netcash": -19359.0,
-  "cash": 20935.0,
+  "netcash": 36549.0,
+  "cash": 76843.0,
+  "cash_incl_sti": true,
   "debt": 40294.0,
   "fcf": 66987.0,
   "dilution": -0.2,
@@ -247,7 +249,7 @@
     }
    ]
   },
-  "score": 57,
+  "score": 62,
   "axes": {
    "growth": {
     "sig": "y",
@@ -260,9 +262,9 @@
     "lab": "영업이익률 +45% · 흑자"
    },
    "balance": {
-    "sig": "y",
-    "sc": 55,
-    "lab": "순부채·FCF 흑자"
+    "sig": "g",
+    "sc": 85,
+    "lab": "순현금 $36.5B"
    },
    "shareholder": {
     "sig": "g",
@@ -292,10 +294,11 @@
   "opm": 32.6,
   "opm_delta": 2.6,
   "gm": 50.1,
-  "netcash": -42803.0,
-  "cash": 39544.0,
+  "netcash": -19948.0,
+  "cash": 62399.0,
+  "cash_incl_sti": true,
   "debt": 82347.0,
-  "fcf": 146268.0,
+  "fcf": 136683.0,
   "dilution": -1.6,
   "rnd_pct": 10.7,
   "bridge": null,
@@ -431,15 +434,16 @@
   "opm": 34.0,
   "opm_delta": 1.6,
   "gm": null,
-  "netcash": -44253.0,
-  "cash": 55911.0,
+  "netcash": 142310.0,
+  "cash": 242474.0,
+  "cash_incl_sti": true,
   "debt": 100164.0,
-  "fcf": 63125.0,
+  "fcf": 53273.0,
   "dilution": 0.9,
   "rnd_pct": 15.2,
   "bridge": {
    "d_debt": 75557.0,
-   "capex": 71172.0
+   "capex": 132402.0
   },
   "moat_score": 75,
   "series": {
@@ -528,7 +532,7 @@
     }
    ]
   },
-  "score": 61,
+  "score": 66,
   "axes": {
    "growth": {
     "sig": "y",
@@ -541,9 +545,9 @@
     "lab": "영업이익률 +34% · 흑자"
    },
    "balance": {
-    "sig": "y",
-    "sc": 55,
-    "lab": "순부채·FCF 흑자"
+    "sig": "g",
+    "sc": 85,
+    "lab": "순현금 $142.3B"
    },
    "shareholder": {
     "sig": "g",
@@ -573,15 +577,16 @@
   "opm": 13.7,
   "opm_delta": 2.3,
   "gm": null,
-  "netcash": -54011.0,
-  "cash": 78213.0,
+  "netcash": -9236.0,
+  "cash": 122988.0,
+  "cash_incl_sti": true,
   "debt": 132224.0,
-  "fcf": 153984.0,
+  "fcf": -11625.0,
   "dilution": 0.9,
   "rnd_pct": null,
   "bridge": {
    "d_debt": 76501.0,
-   "capex": 7419.0
+   "capex": 173028.0
   },
   "moat_score": 51,
   "series": {
@@ -670,7 +675,7 @@
     }
    ]
   },
-  "score": 55,
+  "score": 50,
   "axes": {
    "growth": {
     "sig": "y",
@@ -683,14 +688,14 @@
     "lab": "영업이익률 +14% · 흑자"
    },
    "balance": {
-    "sig": "y",
-    "sc": 55,
-    "lab": "순부채·FCF 흑자"
+    "sig": "r",
+    "sc": 30,
+    "lab": "순부채·현금소진"
    },
    "shareholder": {
-    "sig": "g",
-    "sc": 100,
-    "lab": "주식수 +1% · FCF흑자"
+    "sig": "y",
+    "sc": 96,
+    "lab": "주식수 +1% · FCF적자"
    }
   },
   "tag": "성장 지속",
@@ -715,15 +720,16 @@
   "opm": 30.9,
   "opm_delta": -12.1,
   "gm": null,
-  "netcash": -68202.0,
-  "cash": 15462.0,
+  "netcash": 6596.0,
+  "cash": 90260.0,
+  "cash_incl_sti": true,
   "debt": 83664.0,
-  "fcf": 44335.0,
+  "fcf": 40976.0,
   "dilution": -0.2,
   "rnd_pct": 35.6,
   "bridge": {
    "d_debt": 54832.0,
-   "capex": 45161.0
+   "capex": 89325.0
   },
   "moat_score": 52,
   "series": {
@@ -812,7 +818,7 @@
     }
    ]
   },
-  "score": 64,
+  "score": 69,
   "axes": {
    "growth": {
     "sig": "g",
@@ -825,9 +831,9 @@
     "lab": "영업이익률 +31% · 흑자"
    },
    "balance": {
-    "sig": "y",
-    "sc": 55,
-    "lab": "순부채·FCF 흑자"
+    "sig": "g",
+    "sc": 85,
+    "lab": "순현금 $6.6B"
    },
    "shareholder": {
     "sig": "g",
@@ -857,15 +863,16 @@
   "opm": 1.4,
   "opm_delta": -2.7,
   "gm": 16.8,
-  "netcash": 6158.0,
-  "cash": 15219.0,
+  "netcash": 34463.0,
+  "cash": 43524.0,
+  "cash_incl_sti": true,
   "debt": 9061.0,
-  "fcf": 14.0,
+  "fcf": 5762.0,
   "dilution": 0.6,
   "rnd_pct": 8.4,
   "bridge": {
    "d_debt": 2105.0,
-   "capex": 8834.0
+   "capex": 12923.0
   },
   "moat_score": 39,
   "series": {
@@ -969,7 +976,7 @@
    "balance": {
     "sig": "g",
     "sc": 85,
-    "lab": "순현금 $6.2B"
+    "lab": "순현금 $34.5B"
    },
    "shareholder": {
     "sig": "g",
@@ -999,10 +1006,11 @@
   "opm": -12.9,
   "opm_delta": -17.8,
   "gm": 63.8,
-  "netcash": 609.8,
-  "cash": 609.8,
+  "netcash": 841.0,
+  "cash": 841.0,
+  "cash_incl_sti": true,
   "debt": 0.0,
-  "fcf": null,
+  "fcf": 61.5,
   "dilution": -9.7,
   "rnd_pct": null,
   "bridge": null,
@@ -1108,12 +1116,12 @@
    "balance": {
     "sig": "g",
     "sc": 85,
-    "lab": "순현금 $0.6B"
+    "lab": "순현금 $0.8B"
    },
    "shareholder": {
     "sig": "g",
     "sc": 100,
-    "lab": "주식수 -10% · FCF적자"
+    "lab": "주식수 -10% · FCF흑자"
    }
   },
   "tag": "적자 갭 정체",
@@ -1140,8 +1148,9 @@
   "gm": 27.8,
   "netcash": 508.9,
   "cash": 557.0,
+  "cash_incl_sti": false,
   "debt": 48.1,
-  "fcf": -71.9,
+  "fcf": -98.2,
   "dilution": 146.2,
   "rnd_pct": 10.7,
   "bridge": null,
@@ -1279,11 +1288,15 @@
   "gm": null,
   "netcash": -1697.4,
   "cash": 5895.6,
+  "cash_incl_sti": false,
   "debt": 7592.9,
-  "fcf": null,
+  "fcf": -897.6,
   "dilution": 52.6,
   "rnd_pct": null,
-  "bridge": null,
+  "bridge": {
+   "d_debt": 6630.2,
+   "capex": 2998.0
+  },
   "moat_score": 2,
   "series": {
    "rev": [
@@ -1416,10 +1429,11 @@
   "opm": 47.1,
   "opm_delta": 20.3,
   "gm": 84.7,
-  "netcash": 2030.0,
-  "cash": 2030.0,
+  "netcash": 9409.1,
+  "cash": 9409.1,
+  "cash_incl_sti": true,
   "debt": 0.0,
-  "fcf": 1505.4,
+  "fcf": 3358.3,
   "dilution": 0.2,
   "rnd_pct": 9.9,
   "bridge": null,
@@ -1525,7 +1539,7 @@
    "balance": {
     "sig": "g",
     "sc": 85,
-    "lab": "순현금 $2.0B"
+    "lab": "순현금 $9.4B"
    },
    "shareholder": {
     "sig": "g",
@@ -1555,10 +1569,11 @@
   "opm": -24.6,
   "opm_delta": 16.7,
   "gm": 36.1,
-  "netcash": 2127.8,
-  "cash": 2129.5,
+  "netcash": 2300.5,
+  "cash": 2302.2,
+  "cash_incl_sti": true,
   "debt": 1.7,
-  "fcf": -220.1,
+  "fcf": -371.1,
   "dilution": 22.2,
   "rnd_pct": 35.2,
   "bridge": null,
@@ -1664,7 +1679,7 @@
    "balance": {
     "sig": "g",
     "sc": 85,
-    "lab": "순현금 $2.1B"
+    "lab": "순현금 $2.3B"
    },
    "shareholder": {
     "sig": "r",
