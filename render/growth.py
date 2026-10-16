@@ -243,8 +243,10 @@ def _gr_quality_phrase(rank: int, n: int) -> str:
 
 
 def _gr_price_phrase(v: dict[str, Any] | None) -> str:
-    if not v or v.get("rank") is None:
-        return "가격 비교 불가"
+    if not v:
+        return "산출 불가 (주가·주식수 없음)"
+    if v.get("rank") is None:
+        return "비교 불가 (매출 성장률 0 이하)"
     if v["rank"] == v["n"]:
         return f'{v["n"]}종목 중 가장 비쌈'
     if v["rank"] == 1:
