@@ -160,6 +160,38 @@ a:hover{opacity:.72;}
   .gr-ed{font-size:9.5px;padding:1px 5px}
   .gr-th.wide{width:120px}.gr-th.wide .gr-th-bar{display:block}
 }
+/* 성장주 4단계: 점수 검증(시점 기준 백테스트) */
+.bt-verdict{background:var(--card);border:1px solid var(--border);border-left:4px solid #f59e0b;border-radius:10px;
+ padding:11px 13px;display:flex;flex-direction:column;gap:5px;font-size:12.5px;color:var(--muted-2)}
+.bt-verdict b{font-size:15px;color:var(--ink)}
+.bt-verdict em{font-style:normal;font-weight:800;color:var(--ink)}.bt-verdict em.hi{color:var(--accent)}
+.bt-verdict small{color:var(--faint)}
+.bt-warn{font-size:11.5px;color:var(--faint)}
+.bt-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--faint);margin:14px 0 2px}
+.bt-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.bt-legend i.w,.bt-svg rect.w,.bt-ax i.w{background:var(--accent);fill:var(--accent)}
+.bt-legend i.l,.bt-svg rect.l,.bt-ax i.l{background:#9aa6b8;fill:#9aa6b8}
+.bt-svg{width:100%;display:block;max-width:640px}
+.bt-svg .ax{stroke:var(--border)}
+.bt-svg .v{font-size:13px;font-weight:800;fill:var(--ink);text-anchor:middle}
+.bt-svg .dt{font-size:12px;fill:var(--faint);text-anchor:middle}
+.bt-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:11px 13px;margin-top:12px}
+.bt-h{font-size:13px;font-weight:800;color:var(--ink);margin-bottom:8px}
+.bt-h small{font-size:11px;font-weight:500;color:var(--faint);margin-left:4px}
+.bt-ax{display:grid;grid-template-columns:86px 1fr 62px 34px;gap:8px;align-items:center;font-size:12.5px;padding:3px 0;color:var(--ink)}
+.bt-ax-bar{position:relative;height:10px;background:var(--nav-track);border-radius:4px}
+.bt-ax-bar::after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--faint)}
+.bt-ax-bar i{position:absolute;top:0;bottom:0;border-radius:3px}
+.bt-ax b{text-align:right;font-variant-numeric:tabular-nums}.bt-ax b.w{color:var(--accent)}.bt-ax b.l{color:var(--muted-2)}
+.bt-ax small{color:var(--faint);font-size:11px;text-align:right}
+.bt-det{margin-top:12px}.bt-det summary{cursor:pointer;font-size:12.5px;font-weight:700;color:var(--muted-2);padding:4px 0}
+.bt-det .gt-wrap{margin-top:6px}
+.bt-t td.c{text-align:center;color:var(--faint)}.bt-t td.tops{font-size:11.5px;color:var(--muted-2)}
+.bt-t td.num.w{color:var(--accent)}
+.bt-how{margin-top:12px;font-size:12px;color:var(--muted-2)}.bt-how b{color:var(--ink)}
+.bt-how ul{margin:6px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.gr-tab{white-space:nowrap}.bt-t td:first-child{white-space:nowrap}
+@media (max-width:600px){.gr-tab-x{display:none}.bt-ax{grid-template-columns:72px 1fr 54px 30px;font-size:12px}.bt-t td.tops{min-width:140px}}
 /* 성장주 3단계: 전체 선별(나스닥 100)/관심 목록 탭, 표, ★ 즐겨찾기, 토스트 */
 .gr-tabs{display:flex;gap:22px;border-bottom:1px solid var(--border);margin-bottom:12px}
 .gr-tab{font:inherit;font-size:14px;font-weight:800;color:var(--faint);background:none;border:0;

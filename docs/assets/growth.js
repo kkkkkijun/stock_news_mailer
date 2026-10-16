@@ -37,6 +37,7 @@
    root.querySelectorAll('.gr-tab').forEach(function(b){ b.classList.toggle('on',b.getAttribute('data-v')===v); });
    document.getElementById('grAll').style.display=v==='all'?'':'none';
    document.getElementById('grScreener').style.display=v==='fav'?'':'none';
+   document.getElementById('grBt').style.display=v==='bt'?'':'none';
    document.getElementById('grDeep').style.display='none'; }
  // ---- 전체 선별 표: 필터·정렬·더 보기 ----
  var tb=document.getElementById('gtBody'), sortK='yoy', sortDir=-1, gMin=-1e9, onlyProfit=false, onlyFav=false;
@@ -81,7 +82,7 @@
  var cache={};
  function openDeep(t){ var dp=document.getElementById('grDeep');
    document.getElementById('grAll').style.display='none'; document.getElementById('grScreener').style.display='none';
-   dp.style.display='block'; dp.innerHTML='<div class="gr-none" style="padding:30px 0;text-align:center">불러오는 중…</div>'; window.scrollTo(0,root.getBoundingClientRect().top+window.scrollY-60);
+   document.getElementById('grBt').style.display='none'; dp.style.display='block'; dp.innerHTML='<div class="gr-none" style="padding:30px 0;text-align:center">불러오는 중…</div>'; window.scrollTo(0,root.getBoundingClientRect().top+window.scrollY-60);
    var p=cache[t]?Promise.resolve(cache[t]):fetch('/stock_news_mailer/growth/'+encodeURIComponent(t)+'.html?v='+VER).then(function(r){ if(!r.ok) throw 0; return r.text(); });
    p.then(function(h){ cache[t]=h; dp.innerHTML=h; }).catch(function(){ dp.innerHTML='<div class="gr-none" style="padding:30px 0;text-align:center">상세 정보를 불러오지 못했습니다. <button type="button" class="gr-back">← 목록</button></div>'; }); }
  root.addEventListener('click',function(ev){ var el=ev.target;
