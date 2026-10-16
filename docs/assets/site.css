@@ -160,6 +160,13 @@ a:hover{opacity:.72;}
   .gr-ed{font-size:9.5px;padding:1px 5px}
   .gr-th.wide{width:120px}.gr-th.wide .gr-th-bar{display:block}
 }
+/* 성장주: 분석 대상 선정 설명 */
+.gr-uni{font-size:12px;color:var(--muted-2);margin:-2px 0 12px}
+.gr-uni summary{cursor:pointer;font-weight:700;color:var(--faint);padding:2px 0}
+.gr-uni[open] summary{color:var(--ink)}
+.gr-uni ol{margin:6px 0 0;padding:10px 12px 10px 30px;background:var(--card);border:1px solid var(--border);border-radius:10px;
+ display:flex;flex-direction:column;gap:5px;line-height:1.55}
+.gr-uni b{color:var(--ink)}
 /* 성장주 4단계: 점수 검증(시점 기준 백테스트) */
 .bt-verdict{background:var(--card);border:1px solid var(--border);border-left:4px solid #f59e0b;border-radius:10px;
  padding:11px 13px;display:flex;flex-direction:column;gap:5px;font-size:12.5px;color:var(--muted-2)}
