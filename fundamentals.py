@@ -12,7 +12,7 @@ import json
 import logging
 import statistics
 import time
-from datetime import date
+from datetime import date, timedelta
 from typing import Any
 
 import netutil
@@ -28,12 +28,18 @@ GP = ["GrossProfit"]
 OPINC = ["OperatingIncomeLoss"]
 NI = ["NetIncomeLoss"]
 OCF = ["NetCashProvidedByUsedInOperatingActivities"]
-CAPEX = ["PaymentsToAcquirePropertyPlantAndEquipment"]
+# 설비투자: 기업마다 태그가 다르다(AMZN·NVDA=ProductiveAssets). _pick이 최신 데이터 태그를 고른다.
+CAPEX = ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets",
+         "PaymentsToAcquirePropertyPlantAndEquipmentAndIntangibleAssets"]
 RND = ["ResearchAndDevelopmentExpense"]
 ASSETS = ["Assets"]
 LIAB = ["Liabilities"]
 CASH = ["CashAndCashEquivalentsAtCarryingValue",
         "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents"]
+# 현금+단기투자 합산 태그(있으면 우선) / 단기투자자산 후보(NVDA=DebtSecuritiesCurrent 등)
+CASH_STI = ["CashCashEquivalentsAndShortTermInvestments"]
+STI = ["ShortTermInvestments", "MarketableSecuritiesCurrent", "DebtSecuritiesCurrent",
+       "AvailableForSaleSecuritiesDebtSecuritiesCurrent"]
 DEBT_LT = ["LongTermDebtNoncurrent", "LongTermDebt"]
 DEBT_CUR = ["LongTermDebtCurrent", "DebtCurrent"]
 SHARES = ["WeightedAverageNumberOfDilutedSharesOutstanding",
@@ -117,6 +123,64 @@ def _fill_q4(q, ann):
     return dict(sorted(out.items()))
 
 
+def _flow_quarters(gaap, tags):
+    """현금흐름처럼 10-Q에 '연초 누적(YTD)'으로만 공시되는 flow의 단일 분기 값. {end: val}.
+
+    같은 회계연도 시작일(start)의 누적값을 끝 날짜순으로 차분해 분기를 만든다
+    (Q2=6개월−3개월, Q3=9개월−6개월, Q4=연간−9개월). 직접 공시된 ~90일 값이 있으면 그것을 쓴다.
+    차분 구간이 80~100일이 아니면(예: TTM 값과 섞인 경우) 버린다."""
+    usd = _pick(gaap, tags)
+    if not usd:
+        return {}
+    direct, cum = {}, {}
+    for e in usd:
+        s, en = e.get("start"), e.get("end")
+        if not s or not en:
+            continue
+        days = (date.fromisoformat(en) - date.fromisoformat(s)).days
+        if 80 <= days <= 100:
+            direct[en] = e["val"]
+        if 80 <= days <= 380:
+            cum.setdefault(s, {})[en] = e["val"]
+    derived = {}
+    for s, by_end in cum.items():
+        prev_end, prev_val = date.fromisoformat(s) - timedelta(days=1), 0
+        for en in sorted(by_end):
+            span = (date.fromisoformat(en) - prev_end).days
+            if 80 <= span <= 100:
+                derived.setdefault(en, by_end[en] - prev_val)
+            prev_end, prev_val = date.fromisoformat(en), by_end[en]
+    out = {**derived, **direct}
+    return dict(sorted(out.items()))
+
+
+def _ttm(d):
+    """최근 4개 분기 합. 4개가 연속된 분기(첫~끝 250~300일)가 아니면 None."""
+    ends = sorted(d)[-4:]
+    if len(ends) < 4:
+        return None
+    span = (date.fromisoformat(ends[-1]) - date.fromisoformat(ends[0])).days
+    if not 250 <= span <= 300:
+        return None
+    return sum(d[en] for en in ends)
+
+
+def _liquid_cash(cash, cash_sti, sti_tags):
+    """현금성자산 + 단기투자자산(같은 결산일 값만). 합산 태그가 같은 날짜에 있으면 그것을 쓴다.
+
+    cash, cash_sti: {end: val}. sti_tags: [{end: val}, ...] 후보 태그별 시계열.
+    반환 (총액, 단기투자 포함 여부). 오래 끊긴 태그(다른 날짜)는 섞지 않는다."""
+    if not cash:
+        return None, False
+    last = max(cash)
+    if cash_sti.get(last) is not None and cash_sti[last] >= cash[last]:
+        return cash_sti[last], cash_sti[last] > cash[last]
+    for series in sti_tags:
+        if series.get(last):
+            return cash[last] + series[last], True
+    return cash[last], False
+
+
 def _instants(gaap, tags):
     usd = _pick(gaap, tags, dur=False)
     if not usd:
@@ -158,10 +222,13 @@ def _build_one(sym):
     gp = _fill_q4(_quarters(g, GP), _annuals(g, GP))
     opi = _fill_q4(_quarters(g, OPINC), _annuals(g, OPINC))
     # NI/LIAB/ASSETS는 현재 스코어링에 쓰이지 않아 계산하지 않는다(불필요한 SEC 데이터 순회 축소).
-    ocf = _fill_q4(_quarters(g, OCF), _annuals(g, OCF))
-    capex = _fill_q4(_quarters(g, CAPEX), _annuals(g, CAPEX))
+    # 현금흐름은 10-Q에 YTD 누적으로만 나와 ~90일 값만 고르면 매년 1분기만 남는다 → 누적 차분.
+    ocf = _flow_quarters(g, OCF)
+    capex = _flow_quarters(g, CAPEX)
     rnd = _fill_q4(_quarters(g, RND), _annuals(g, RND))
     cash = _instants(g, CASH)
+    cash_sti = _instants(g, CASH_STI)
+    sti_series = [_instants(g, [t]) for t in STI]
     dlt = _instants(g, DEBT_LT)
     dcur = _instants(g, DEBT_CUR)
     shares = _quarters(g, SHARES, 80, 100) or _quarters(g, SHARES, 80, 200)
@@ -206,15 +273,13 @@ def _build_one(sym):
 
     def instlast(d):
         return d[max(d)] if d else None
-    cash_l = instlast(cash)
+    # 현금 = 현금성자산 + 단기투자자산(대형사는 국채·MMF를 단기투자로 들고 있어 빼면 순부채로 왜곡)
+    cash_l, has_sti = _liquid_cash(cash, cash_sti, sti_series)
     debt_l = (instlast(dlt) or 0) + (instlast(dcur) or 0)
     netcash = _m(cash_l - debt_l) if cash_l is not None else None
 
     # TTM FCF
-    def ttm(d):
-        vals = [d[en] for en in sorted(d)[-4:]]
-        return sum(vals) if len(vals) == 4 else None
-    ocf_ttm, capex_ttm = ttm(ocf), ttm(capex)
+    ocf_ttm, capex_ttm = _ttm(ocf), _ttm(capex)
     fcf = _m(ocf_ttm - capex_ttm) if (ocf_ttm is not None and capex_ttm is not None) else None
 
     # 희석
@@ -254,7 +319,7 @@ def _build_one(sym):
         "rev": rev_l and round(rev_l / 1e6, 1), "rev_yoy": rev_yoy,
         "rev_yoy_prev": rev_yoy_prev,
         "opm": opm, "opm_delta": opm_delta, "gm": gm,
-        "netcash": netcash, "cash": _m(cash_l), "debt": _m(debt_l),
+        "netcash": netcash, "cash": _m(cash_l), "cash_incl_sti": has_sti, "debt": _m(debt_l),
         "fcf": fcf, "dilution": dil, "rnd_pct": rnd_pct, "bridge": bridge,
         "moat_score": _moat_quant(gm, gm_list, opm, opm_list, rnd_pct),
         "series": {"rev": series8(rev), "opi": series8(opi)},

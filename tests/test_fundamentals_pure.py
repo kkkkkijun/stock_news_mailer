@@ -49,3 +49,46 @@ def test_axes_caps_score_at_50_when_yoy_below_12():
 def test_axes_caps_score_at_72_when_yoy_below_22():
     result = _axes(_profile(20))
     assert result["score"] <= 72
+
+
+# ---- 1단계 신뢰도 수정(2026-10-16): 현금흐름 YTD 차분 · TTM 연속성 · 단기투자 포함 ----
+from fundamentals import CAPEX, OCF, _flow_quarters, _liquid_cash, _ttm  # noqa: E402
+
+
+def _usd(rows):
+    return {"units": {"USD": [{"start": s, "end": e, "val": v} for s, e, v in rows]}}
+
+
+def test_flow_quarters_derives_quarters_from_ytd_cumulative():
+    # 10-Q 현금흐름은 연초 누적: 3개월 10, 6개월 25, 9개월 45, 연간 70 → 분기 10/15/20/25
+    g = {OCF[0]: _usd([("2025-01-01", "2025-03-31", 10), ("2025-01-01", "2025-06-30", 25),
+                       ("2025-01-01", "2025-09-30", 45), ("2025-01-01", "2025-12-31", 70)])}
+    assert _flow_quarters(g, OCF) == {"2025-03-31": 10, "2025-06-30": 15,
+                                      "2025-09-30": 20, "2025-12-31": 25}
+
+
+def test_flow_quarters_ignores_trailing_twelve_month_facts():
+    # AMZN처럼 TTM 값이 같은 start로 섞여도 분기로 오인하지 않는다
+    g = {OCF[0]: _usd([("2025-07-01", "2025-09-30", 30), ("2025-07-01", "2026-06-30", 160)])}
+    assert _flow_quarters(g, OCF) == {"2025-09-30": 30}
+
+
+def test_capex_picks_the_tag_with_latest_data():
+    old_tag, new_tag = CAPEX[0], CAPEX[1]
+    g = {old_tag: _usd([("2016-01-01", "2016-03-31", 1)]),
+         new_tag: _usd([("2026-01-01", "2026-03-31", 9)])}
+    assert _flow_quarters(g, CAPEX) == {"2026-03-31": 9}
+
+
+def test_ttm_requires_four_consecutive_quarters():
+    q = {"2025-03-31": 1, "2025-06-30": 2, "2025-09-30": 3, "2025-12-31": 4}
+    assert _ttm(q) == 10
+    gappy = {"2022-03-31": 1, "2023-03-31": 2, "2024-03-31": 3, "2025-03-31": 4}  # 매년 1분기만
+    assert _ttm(gappy) is None
+
+
+def test_liquid_cash_adds_same_date_short_term_investments_only():
+    cash = {"2026-06-30": 100}
+    assert _liquid_cash(cash, {}, [{"2026-06-30": 50}]) == (150, True)
+    assert _liquid_cash(cash, {}, [{"2025-10-26": 50}]) == (100, False)      # 끊긴 태그는 섞지 않음
+    assert _liquid_cash(cash, {"2026-06-30": 180}, [{"2026-06-30": 80}]) == (180, True)  # 합산 태그 우선
