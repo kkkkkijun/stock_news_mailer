@@ -2,10 +2,72 @@
 """성장주 스크리너·심층 카드 렌더링(publish_site.py 분리)."""
 from __future__ import annotations
 
+from datetime import date, datetime
 from typing import Any
 
 from render.common import _e, _ticker_color
-from render.config import _GR_SIG, _GR_SIGTXT
+from render.config import KST, _GR_SIG, _GR_SIGTXT, _WD_KO
+
+
+# 가격 온도계 구간: 성장 대비 EV/매출의 종목 내 순위 위치(0=가장 저렴 ~ 1=가장 비쌈)
+_TH_BANDS = ((1 / 3, "저렴", "cheap"), (2 / 3, "보통", "mid"), (1.01, "비쌈", "rich"))
+
+
+def _valuation(funds: list[dict[str, Any]], prices: dict[str, float]) -> dict[str, dict[str, Any]]:
+    """종목별 가격 지표. 품질 점수와 분리해 '지금 비싼가'만 본다.
+
+    시가총액 = 주가 × 희석주식수, EV = 시총 − 순현금, EV/매출 = EV ÷ 최근 4분기 매출,
+    성장 대비 EV/매출 = EV/매출 ÷ 매출 YoY(%) — 적자 성장주와 흑자 대형주를 한 줄로 비교하려고 쓴다.
+    성장률이 0 이하이거나 입력이 빠지면 그 종목은 순위에서 뺀다. 단위: 백만 달러."""
+    out: dict[str, dict[str, Any]] = {}
+    for d in funds:
+        tk, px, sh = d["ticker"], prices.get(d["ticker"]), d.get("shares")
+        revs = [q.get("v") for q in d.get("series", {}).get("rev", [])][-4:]
+        if not px or not sh or len(revs) < 4 or any(v is None for v in revs) or sum(revs) <= 0:
+            continue
+        mcap = px * sh
+        ev = mcap - (d.get("netcash") or 0)
+        evs = ev / sum(revs)
+        yoy, fcf = d.get("rev_yoy"), d.get("fcf")
+        out[tk] = {"mcap": mcap, "ev": ev, "evs": evs,
+                   "gadj": evs / yoy if (yoy and yoy > 0) else None,
+                   "pfcf": mcap / fcf if (fcf and fcf > 0) else None}
+    ranked = sorted((t for t, v in out.items() if v["gadj"] is not None), key=lambda t: out[t]["gadj"])
+    n = len(ranked)
+    for i, t in enumerate(ranked):
+        pos = i / (n - 1) if n > 1 else 0.5
+        lab, cls = next((lab, cls) for cut, lab, cls in _TH_BANDS if pos < cut)
+        out[t].update(pos=pos, rank=i + 1, n=n, label=lab, cls=cls)
+    return out
+
+
+def _gr_thermo(v: dict[str, Any] | None, wide: bool = False) -> str:
+    """가격 온도계: 파랑(저렴)~빨강(비쌈) 막대 위 현재 위치 + 구간 라벨."""
+    if not v or v.get("pos") is None:
+        why = "성장 음수 · 산출 불가" if v else "가격 정보 없음"
+        return f'<span class="gr-th na">{why}</span>'
+    return (f'<span class="gr-th{" wide" if wide else ""}" title="성장 대비 EV/매출 {v["gadj"]:.2f} · '
+            f'{v["n"]}종목 중 {v["rank"]}번째로 저렴"><span class="gr-th-bar">'
+            f'<i style="left:{v["pos"] * 100:.0f}%"></i></span>'
+            f'<span class="gr-th-lab {v["cls"]}">{v["label"]}</span></span>')
+
+
+def _gr_dday(d: date | None, today: date) -> tuple[str, int | None]:
+    if not d:
+        return "", None
+    n = (d - today).days
+    return ("D-DAY" if n == 0 else f"D-{n}" if n > 0 else f"D+{-n}"), n
+
+
+def _gr_delta(hist: list[dict[str, Any]]) -> str:
+    """직전 기록 대비 종합점수 변화. 이력이 1개 이하면 '–'."""
+    if len(hist) < 2:
+        return '<span class="gr-dl eq" title="점수 이력을 쌓는 중">–</span>'
+    dv = (hist[-1].get("score") or 0) - (hist[-2].get("score") or 0)
+    if dv == 0:
+        return '<span class="gr-dl eq">–</span>'
+    return (f'<span class="gr-dl {"up" if dv > 0 else "dn"}" title="{_e(hist[-2].get("date", ""))} 대비">'
+            f'{"▲" if dv > 0 else "▼"}{abs(dv)}</span>')
 
 
 def _gr_money(m):
@@ -56,7 +118,7 @@ def _gr_axis_card(title, ax, spark_svg):
         f'{spark_svg}</div>')
 
 
-def _gr_deep_head(d: dict[str, Any], tk: str, col: str, sc: int, sc_col: str) -> str:
+def _gr_deep_head(d: dict[str, Any], tk: str, col: str, sc: int, sc_col: str, px_asof: str = "") -> str:
     """심층 카드 상단: 뒤로가기 버튼·티커 배지·종목명·기준일·종합점수."""
     return (
         '<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">'
@@ -69,13 +131,15 @@ def _gr_deep_head(d: dict[str, Any], tk: str, col: str, sc: int, sc_col: str) ->
         f'{_e(d["name"])} <span style="font-size:12px;font-weight:600;color:var(--faint)">'
         f'{_e(d.get("sector",""))}</span></div>'
         f'<div style="font-size:11.5px;color:var(--muted-2)">기준 {_e(d.get("asof",""))} · '
-        f'매출 {_gr_money(d.get("rev"))} · SEC XBRL</div></div>'
+        f'매출 {_gr_money(d.get("rev"))} · SEC XBRL'
+        + (f' · 주가 {_e(px_asof)}' if px_asof else '') + '</div></div>'
         f'<div style="margin-left:auto;text-align:center"><div style="font-size:30px;font-weight:800;'
         f'line-height:1;color:{sc_col}">{sc}</div>'
-        '<div style="font-size:10px;color:var(--faint)">종합점수/100</div></div></div>')
+        '<div style="font-size:10px;color:var(--faint)">품질 점수/100</div></div></div>')
 
 
-def _gr_deep_verdict(d: dict[str, Any], ax: dict[str, Any], sc_col: str) -> str:
+def _gr_deep_verdict(d: dict[str, Any], ax: dict[str, Any], sc_col: str,
+                     q_phrase: str = "", p_phrase: str = "") -> str:
     """한 줄 총평(태그 + 4축 라벨 요약)."""
     return (
         '<div style="background:var(--chip);border-radius:12px;padding:12px 14px;margin-bottom:16px;'
@@ -83,7 +147,10 @@ def _gr_deep_verdict(d: dict[str, Any], ax: dict[str, Any], sc_col: str) -> str:
         f'<b style="color:{sc_col}">{_e(d.get("tag",""))}</b> · '
         f'{_e(ax.get("growth",{}).get("lab",""))}, {_e(ax.get("path",{}).get("lab",""))}, '
         f'{_e(ax.get("balance",{}).get("lab",""))}. '
-        f'주주가치: {_e(ax.get("shareholder",{}).get("lab",""))}.</div>')
+        f'주주가치: {_e(ax.get("shareholder",{}).get("lab",""))}.'
+        + (f'<div style="margin-top:4px;font-weight:700">품질은 {_e(q_phrase)}, '
+           f'가격은 <span style="color:#b42318">{_e(p_phrase)}</span></div>' if q_phrase else '')
+        + '</div>')
 
 
 def _gr_deep_cards(ax: dict[str, Any], revs: list[float | None],
@@ -169,7 +236,90 @@ def _gr_deep_metrics(d: dict[str, Any]) -> str:
         '</div>')
 
 
-def _gr_deep(d):
+def _gr_quality_phrase(rank: int, n: int) -> str:
+    if rank <= 3:
+        return "최상위"
+    return "상위권" if rank <= n / 2 else "중하위권"
+
+
+def _gr_price_phrase(v: dict[str, Any] | None) -> str:
+    if not v or v.get("rank") is None:
+        return "가격 비교 불가"
+    if v["rank"] == v["n"]:
+        return f'{v["n"]}종목 중 가장 비쌈'
+    if v["rank"] == 1:
+        return f'{v["n"]}종목 중 가장 저렴'
+    return f'{v["label"]} 구간 ({v["n"]}종목 중 {v["rank"]}번째로 저렴)'
+
+
+def _gr_kv(label, val):
+    return f'<div class="gr-kv"><small>{_e(label)}</small><b>{_e(val)}</b></div>'
+
+
+def _gr_price_card(tk: str, vals: dict[str, dict[str, Any]]) -> str:
+    v = vals.get(tk)
+    ranked = sorted((t for t, x in vals.items() if x.get("rank")), key=lambda t: vals[t]["rank"])
+    top = max([vals[t]["gadj"] for t in ranked] or [1]) or 1
+    bars = "".join(
+        f'<div class="gr-rk{" me" if t == tk else ""}"><span>{_e(t)}</span>'
+        f'<span class="gr-rk-bar"><i style="width:{max(2, vals[t]["gadj"] / top * 100):.0f}%"></i></span>'
+        f'<span>{vals[t]["gadj"]:.2f}</span></div>' for t in ranked)
+    kv = ("".join([
+        _gr_kv("시가총액", _gr_money(v["mcap"])),
+        _gr_kv("EV / 매출(TTM)", f'{v["evs"]:.1f}배'),
+        _gr_kv("성장 대비 EV/매출", f'{v["gadj"]:.2f}' if v.get("gadj") is not None else "산출 불가"),
+        _gr_kv("시총 / FCF", f'{v["pfcf"]:.0f}배' if v.get("pfcf") else "FCF 적자"),
+    ]) if v else '<div class="gr-none">주가·주식수 정보가 없어 계산하지 못했습니다.</div>')
+    return ('<div class="gr-box"><div class="gr-box-h"><span>가격은?<small>품질 점수와 별개</small></span>'
+            f'{_gr_thermo(v, wide=True)}</div><div class="gr-kvs">{kv}</div>'
+            '<div class="gr-rk-t">성장 대비 EV/매출 · 종목 비교<small>낮을수록 성장에 비해 싸다</small></div>'
+            f'<div class="gr-rks">{bars}</div></div>')
+
+
+def _gr_earn_card(earn: dict[str, Any] | None, hist: list[dict[str, Any]], today: date) -> str:
+    if not earn:
+        return ('<div class="gr-box"><div class="gr-box-h"><span>다음 실적</span></div>'
+                '<div class="gr-none">실적 일정이 등록되지 않은 종목입니다.</div></div>')
+    det = earn.get("detail") or {}
+    cur, rec = det.get("cur") or {}, det.get("rec") or {}
+    d, ts = earn.get("date"), earn.get("ts")
+    ed_txt, ed_n = _gr_dday(d, today)
+    when = "미정"
+    if d:
+        when = f'{d.month}/{d.day}({_WD_KO[d.weekday()]})'
+        if ts:
+            when += " " + datetime.fromtimestamp(ts, KST).strftime("%H:%M")
+        if earn.get("est"):
+            when += " 예상"
+    tot = (rec.get("buy") or 0) + (rec.get("hold") or 0) + (rec.get("sell") or 0)
+    rec_txt = f'매수 {round((rec.get("buy") or 0) / tot * 100)}%' if tot else (rec.get("label") or "—")
+    sp = (det.get("surprises") or [])[-4:]
+    qs = [q.get("label", "") for q in (det.get("quarters") or []) if q.get("reported")][-len(sp):] if sp else []
+    qs = [""] * (len(sp) - len(qs)) + qs
+    bars = "".join(
+        f'<div class="gr-sp"><span class="gr-sp-bar"><i class="{"beat" if x.get("pos") else "miss"}" '
+        f'style="height:{min(100, abs(x.get("v") or 0) * 3 + 12):.0f}%"></i></span>'
+        f'<em class="{"beat" if x.get("pos") else "miss"}">{_e(x.get("fmt", ""))}</em>'
+        f'<small>{_e(q.replace("20", "", 1).replace(" ", "."))}</small></div>' for x, q in zip(sp, qs))
+    chip = (f'<span class="gr-dday">{ed_txt}</span>' if ed_txt and ed_n is not None and ed_n >= 0 else "")
+    pts = [h.get("score") for h in hist[-8:] if h.get("score") is not None]
+    if len(pts) >= 2:
+        trend = (_gr_spark(pts, "#16a37f", h=40)
+                 + '<div class="gr-hl">' + "".join(f'<span>{_e(h.get("date","")[5:])} {h.get("score")}</span>'
+                                                   for h in hist[-8:][::max(1, len(pts) // 3)]) + '</div>')
+    else:
+        trend = '<div class="gr-none">점수 이력을 쌓는 중입니다. 다음 점수 변화부터 추이가 표시됩니다.</div>'
+    return ('<div class="gr-box"><div class="gr-box-h"><span>다음 실적<small>일정 탭과 같은 데이터</small></span>'
+            f'{chip}</div><div class="gr-kvs">'
+            + _gr_kv("발표 예정", when) + _gr_kv("예상 EPS", cur.get("eps") or "—")
+            + _gr_kv("예상 매출", cur.get("rev") or "—") + _gr_kv("투자의견", rec_txt)
+            + '</div>'
+            + (f'<div class="gr-rk-t">지난 {len(sp)}분기 EPS 서프라이즈<small>예상 대비</small></div>'
+               f'<div class="gr-sps">{bars}</div>' if sp else "")
+            + f'<div class="gr-hist"><div class="gr-rk-t">점수 이력</div>{trend}</div></div>')
+
+
+def _gr_deep(d, ctx=None):
     tk = _e(d["ticker"])
     col = _ticker_color(d["ticker"])
     ax = d.get("axes", {})
@@ -183,8 +333,15 @@ def _gr_deep(d):
         rv, ov = r.get("v"), o.get("v")
         opms.append(round(ov / rv * 100, 1) if (rv and ov is not None) else None)
 
-    head = _gr_deep_head(d, tk, col, sc, sc_col)
-    verdict = _gr_deep_verdict(d, ax, sc_col)
+    ctx = ctx or {}
+    vals, today = ctx.get("vals") or {}, ctx.get("today") or date.today()
+    head = _gr_deep_head(d, tk, col, sc, sc_col, ctx.get("asof", ""))
+    verdict = _gr_deep_verdict(d, ax, sc_col,
+                               _gr_quality_phrase(ctx.get("qrank", {}).get(d["ticker"], 99), ctx.get("n", 0)),
+                               _gr_price_phrase(vals.get(d["ticker"])))
+    extra = ('<div class="gr-2">' + _gr_price_card(d["ticker"], vals)
+             + _gr_earn_card((ctx.get("earn") or {}).get(d["ticker"]),
+                             (ctx.get("hist") or {}).get(d["ticker"], []), today) + '</div>')
     cards = _gr_deep_cards(ax, revs, opms)
     story = _gr_deep_story(d, revs, revsr, opms)
     bridge = _gr_deep_bridge(d)
@@ -195,7 +352,7 @@ def _gr_deep(d):
             '투자 판단의 책임은 본인에게 있습니다.</div>')
 
     return (f'<div class="gr-card" data-tk="{tk}" style="display:none">'
-            + head + verdict + cards + story + bridge + metrics
+            + head + verdict + extra + cards + story + bridge + metrics
             + _gr_qual(d) + note + '</div>')
 
 
@@ -234,19 +391,21 @@ def _gr_kpi(label, val):
             f'<div style="font-size:18px;font-weight:800;color:var(--ink)">{_e(str(val))}</div></div>')
 
 
-def _gr_row(d):
+def _gr_row(d, val=None, earn=None, hist=None, today=None):
     tk = _e(d["ticker"])
     col = _ticker_color(d["ticker"])
     sc = d.get("score", 0)
     sc_col = "#16a37f" if sc >= 78 else "#e0930a" if sc >= 55 else "#e5484d"
-    ax = d.get("axes", {})
-    dots = "".join(
-        f'<span style="width:8px;height:8px;border-radius:50%;background:{_GR_SIG[ax.get(k,{}).get("sig","y")]}"></span>'
-        for k in ("growth", "path", "balance", "shareholder"))
     yoy = d.get("rev_yoy")
-    yoy_txt = (f'{yoy:+.0f}%' if yoy is not None else "—")
+    sub = [f'EV/매출 {val["evs"]:.1f}배' if val else _e(d.get("tag", ""))]
+    if yoy is not None:
+        sub.append(f'성장 {yoy:+.0f}%')
+    ed_txt, ed_n = _gr_dday((earn or {}).get("date"), today or date.today())
+    ed = f'<span class="gr-ed">실적 {ed_txt}</span>' if ed_txt and ed_n is not None and ed_n >= 0 else ""
+    gadj = (val or {}).get("gadj")
     return (
         f'<div class="gr-row" data-tk="{tk}" data-score="{sc}" '
+        f'data-val="{gadj if gadj is not None else 999:.4f}" data-ed="{ed_n if ed_n is not None and ed_n >= 0 else 9999}" '
         'style="display:flex;align-items:center;gap:10px;padding:11px 12px;background:var(--card);'
         'border:1px solid var(--border);border-radius:12px;cursor:pointer">'
         f'<div style="width:34px;height:34px;border-radius:8px;background:{col}22;color:{col};'
@@ -255,12 +414,10 @@ def _gr_row(d):
         '<div style="min-width:0;flex:1">'
         f'<div style="font-size:13px;font-weight:700;color:var(--ink)">{_e(d["name"])}</div>'
         f'<div style="font-size:11px;color:var(--muted-2);white-space:nowrap;overflow:hidden;'
-        f'text-overflow:ellipsis">{_e(d.get("tag",""))}</div></div>'
+        f'text-overflow:ellipsis" title="{_e(d.get("tag",""))}">{" · ".join(sub)}</div></div>'
+        f'{ed}{_gr_thermo(val)}'
         f'<div style="font-size:20px;font-weight:800;color:{sc_col};flex-shrink:0;width:32px;'
-        'text-align:center">' + str(sc) + '</div>'
-        f'<div style="display:flex;gap:4px;flex-shrink:0">{dots}</div>'
-        f'<div style="font-size:13px;font-weight:700;color:#e5484d;width:48px;text-align:right;'
-        f'flex-shrink:0">{yoy_txt}</div></div>')
+        f'text-align:right">{sc}</div>{_gr_delta(hist or [])}</div>')
 
 
 _GROWTH_JS = """<script>
@@ -276,6 +433,18 @@ _GROWTH_JS = """<script>
    r.addEventListener('click',function(){show(r.getAttribute('data-tk'));});
  });
  dp.querySelectorAll('.gr-back').forEach(function(b){b.addEventListener('click',back);});
+ var list=document.getElementById('grList');
+ sc.querySelectorAll('.gr-sort button').forEach(function(b){
+   b.addEventListener('click',function(){
+     sc.querySelectorAll('.gr-sort button').forEach(function(x){x.classList.toggle('on',x===b);});
+     var k=b.getAttribute('data-k'), rows=[].slice.call(list.querySelectorAll('.gr-row'));
+     rows.sort(function(a,c){
+       if(k==='score') return (+c.getAttribute('data-score'))-(+a.getAttribute('data-score'));
+       return (+a.getAttribute('data-'+k))-(+c.getAttribute('data-'+k));
+     });
+     rows.forEach(function(r){list.appendChild(r);});
+   });
+ });
  sc.querySelectorAll('.gr-preset').forEach(function(p){
    p.addEventListener('click',function(){
      sc.querySelectorAll('.gr-preset').forEach(function(x){x.style.opacity='.55';});
@@ -292,8 +461,15 @@ _GROWTH_JS = """<script>
 </script>"""
 
 
-def _render_growth(funds, now):
+def _render_growth(funds, now, earnings=None, prices=None, prices_asof="", history=None):
+    """earnings: _load_earnings 결과(list), prices: {티커: 현재가}, history: 점수 이력 dict."""
     funds = sorted(funds, key=lambda x: -x.get("score", 0))
+    vals = _valuation(funds, prices or {})
+    earn = {e["ticker"]: e for e in (earnings or [])}
+    hist = history or {}
+    today = now.date()
+    ctx = {"vals": vals, "earn": earn, "hist": hist, "today": today, "asof": prices_asof,
+           "qrank": {d["ticker"]: i + 1 for i, d in enumerate(funds)}, "n": len(funds)}
     presets = (
         '<div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px">'
         '<span class="gr-preset" data-f="all" style="font-size:12px;padding:6px 11px;'
@@ -306,7 +482,7 @@ def _render_growth(funds, now):
         'border-radius:99px;background:var(--chip);color:var(--muted-2);cursor:pointer;opacity:.55">순현금</span></div>')
     rows = []
     for d in funds:
-        r = _gr_row(d)
+        r = _gr_row(d, vals.get(d["ticker"]), earn.get(d["ticker"]), hist.get(d["ticker"], []), today)
         ax = d.get("axes", {})
         g0 = ax.get("growth", {}).get("sig")
         turn = "1" if (d.get("opm_delta") or 0) >= 3 and (d.get("opm") or 0) < 0 else "0"
@@ -319,13 +495,19 @@ def _render_growth(funds, now):
         + "".join(f'<span style="display:inline-flex;align-items:center;gap:5px">'
                   f'<span style="width:8px;height:8px;border-radius:50%;background:{_GR_SIG[s]}"></span>'
                   f'{_GR_SIGTXT[s]}</span>' for s in ("g", "y", "r"))
-        + '<span>4축 = 성장·수익성경로·재무건전성·주주가치 · 점수순</span></div>')
+        + '<span>점수 = 품질(성장·수익성경로·재무건전성·주주가치) · 온도계 = 성장 대비 EV/매출의 종목 내 위치 · '
+          '▲▼ = 직전 기록 대비 점수 변화</span></div>')
     head = ('<div class="sched-head" style="margin-bottom:12px"><span>'
             '<span class="sched-ico">🔎</span>성장주 '
-            f'<span class="sched-tz">SEC 재무 · {len(funds)}종목</span></span></div>')
+            f'<span class="sched-tz">SEC 재무 · {len(funds)}종목'
+            + (f' · 주가 {_e(prices_asof)}' if prices_asof else '') + '</span></span>'
+            '<div class="gr-sort" role="group" aria-label="정렬">'
+            '<button type="button" class="on" data-k="score">품질순</button>'
+            '<button type="button" data-k="val">가격순</button>'
+            '<button type="button" data-k="ed">실적 임박순</button></div></div>')
     screener = (f'<div id="grScreener">{head}{presets}'
-                f'<div style="display:flex;flex-direction:column;gap:7px">{"".join(rows)}</div>'
+                f'<div id="grList" style="display:flex;flex-direction:column;gap:7px">{"".join(rows)}</div>'
                 f'{legend}</div>')
     deep = ('<div id="grDeep" style="display:none">'
-            + "".join(_gr_deep(d) for d in funds) + '</div>')
+            + "".join(_gr_deep(d, ctx) for d in funds) + '</div>')
     return f'<div class="part">{screener}{deep}</div>'

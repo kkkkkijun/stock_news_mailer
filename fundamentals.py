@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import statistics
 import time
 from datetime import date, timedelta
@@ -321,6 +322,8 @@ def _build_one(sym):
         "opm": opm, "opm_delta": opm_delta, "gm": gm,
         "netcash": netcash, "cash": _m(cash_l), "cash_incl_sti": has_sti, "debt": _m(debt_l),
         "fcf": fcf, "dilution": dil, "rnd_pct": rnd_pct, "bridge": bridge,
+        # 최근 분기 희석 가중평균 주식수(백만 주) — 시가총액(주가×주식수) 계산용
+        "shares": round(shares[max(shares)] / 1e6, 2) if shares else None,
         "moat_score": _moat_quant(gm, gm_list, opm, opm_list, rnd_pct),
         "series": {"rev": series8(rev), "opi": series8(opi)},
     }
@@ -437,6 +440,29 @@ def _axes(d):
     }
 
 
+def update_score_history(funds: list[dict[str, Any]], today: str,
+                         path: str = "data/score_history.json", keep: int = 40) -> dict[str, list]:
+    """종목별 종합점수 이력에 한 줄 추가. 직전 기록과 점수·분기가 같으면 추가하지 않는다.
+
+    {ticker: [{"date": "YYYY-MM-DD", "cq": "2026-2", "score": 62}, ...]} (오래된 것부터, 최대 keep개).
+    점수 백테스트(이후 수익률 비교)와 화면의 '지난 변화 대비 ▲▼'에 쓰인다."""
+    try:
+        hist = json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        hist = {}
+    for d in funds:
+        rows = hist.setdefault(d["ticker"], [])
+        last = rows[-1] if rows else None
+        if last and last.get("score") == d.get("score") and last.get("cq") == d.get("cq"):
+            continue
+        if last and last.get("date") == today:
+            rows.pop()                      # 같은 날 여러 번 갱신되면 마지막 값만
+        rows.append({"date": today, "cq": d.get("cq"), "score": d.get("score")})
+        del rows[:-keep]
+    json.dump(hist, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return hist
+
+
 def build_fundamentals(path: str = "data/fundamentals.json",
                        tickers: list[str] | None = None) -> list[dict[str, Any]]:
     tickers = tickers or EARNINGS_TICKERS
@@ -453,6 +479,9 @@ def build_fundamentals(path: str = "data/fundamentals.json",
         time.sleep(0.3)
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     log.info(f"[fund] 저장 {len(out)}개 → {path}")
+    if out:
+        hist_path = os.path.join(os.path.dirname(path) or ".", "score_history.json")
+        update_score_history(out, date.today().isoformat(), hist_path)
     return out
 
 

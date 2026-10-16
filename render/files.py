@@ -131,6 +131,29 @@ def _load_fundamentals():
         return []
 
 
+def _load_json_quiet(path, default):
+    """선택 데이터 파일 로드: 없으면 default, 깨졌으면 경고 후 default."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return default
+    except (OSError, ValueError):
+        log.warning("failed to load %s", path, exc_info=True)
+        return default
+
+
+def _load_prices():
+    """docs/prices.json(build_prices) → ({티커: 현재가}, 기준시각 문자열)."""
+    p = _load_json_quiet(os.path.join(config.DOCS_DIR, "prices.json"), {})
+    return p.get("prices") or {}, p.get("asof") or ""
+
+
+def _load_score_history():
+    """data/score_history.json → {티커: [{date, cq, score}, ...]}."""
+    return _load_json_quiet(config.SCORE_HISTORY_FILE, {})
+
+
 def _load_us_holidays():
     """경제지표 CSV의 미국 공휴일 행(Impact=NONE, USD) → {미국 날짜: 영문 이름}.
 

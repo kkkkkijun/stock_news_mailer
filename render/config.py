@@ -136,6 +136,7 @@ REPORTS_FILE = os.path.join(DATA_DIR, "reports.json")
 _WHEN_KO = {"amc": "장 마감 후", "bmo": "장 전", "": ""}
 
 FUND_FILE = os.path.join(DATA_DIR, "fundamentals.json")
+SCORE_HISTORY_FILE = os.path.join(DATA_DIR, "score_history.json")   # 성장주 점수 이력
 _GR_SIG = {"g": "#16a37f", "y": "#e0930a", "r": "#e5484d"}
 _GR_SIGTXT = {"g": "양호", "y": "주의", "r": "경고"}
 
