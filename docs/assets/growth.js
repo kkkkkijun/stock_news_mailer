@@ -11,6 +11,18 @@
    r.addEventListener('click',function(){show(r.getAttribute('data-tk'));});
  });
  dp.querySelectorAll('.gr-back').forEach(function(b){b.addEventListener('click',back);});
+ var list=document.getElementById('grList');
+ sc.querySelectorAll('.gr-sort button').forEach(function(b){
+   b.addEventListener('click',function(){
+     sc.querySelectorAll('.gr-sort button').forEach(function(x){x.classList.toggle('on',x===b);});
+     var k=b.getAttribute('data-k'), rows=[].slice.call(list.querySelectorAll('.gr-row'));
+     rows.sort(function(a,c){
+       if(k==='score') return (+c.getAttribute('data-score'))-(+a.getAttribute('data-score'));
+       return (+a.getAttribute('data-'+k))-(+c.getAttribute('data-'+k));
+     });
+     rows.forEach(function(r){list.appendChild(r);});
+   });
+ });
  sc.querySelectorAll('.gr-preset').forEach(function(p){
    p.addEventListener('click',function(){
      sc.querySelectorAll('.gr-preset').forEach(function(x){x.style.opacity='.55';});

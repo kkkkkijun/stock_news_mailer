@@ -22,6 +22,7 @@
    "d_debt": 24900.0,
    "capex": 7354.0
   },
+  "shares": 24285.0,
   "moat_score": 88,
   "series": {
    "rev": [
@@ -162,6 +163,7 @@
   "dilution": -0.2,
   "rnd_pct": 11.1,
   "bridge": null,
+  "shares": 7445.0,
   "moat_score": 82,
   "series": {
    "rev": [
@@ -302,6 +304,7 @@
   "dilution": -1.6,
   "rnd_pct": 10.7,
   "bridge": null,
+  "shares": 14714.68,
   "moat_score": 81,
   "series": {
    "rev": [
@@ -445,6 +448,7 @@
    "d_debt": 75557.0,
    "capex": 132402.0
   },
+  "shares": 12309.0,
   "moat_score": 75,
   "series": {
    "rev": [
@@ -588,6 +592,7 @@
    "d_debt": 76501.0,
    "capex": 173028.0
   },
+  "shares": 10903.0,
   "moat_score": 51,
   "series": {
    "rev": [
@@ -731,6 +736,7 @@
    "d_debt": 54832.0,
    "capex": 89325.0
   },
+  "shares": 2566.0,
   "moat_score": 52,
   "series": {
    "rev": [
@@ -874,6 +880,7 @@
    "d_debt": 2105.0,
    "capex": 12923.0
   },
+  "shares": 3540.0,
   "moat_score": 39,
   "series": {
    "rev": [
@@ -1014,6 +1021,7 @@
   "dilution": -9.7,
   "rnd_pct": null,
   "bridge": null,
+  "shares": 231.75,
   "moat_score": 57,
   "series": {
    "rev": [
@@ -1154,6 +1162,7 @@
   "dilution": 146.2,
   "rnd_pct": 10.7,
   "bridge": null,
+  "shares": 220.47,
   "moat_score": 40,
   "series": {
    "rev": [
@@ -1297,6 +1306,7 @@
    "d_debt": 6630.2,
    "capex": 2998.0
   },
+  "shares": 333.73,
   "moat_score": 2,
   "series": {
    "rev": [
@@ -1437,6 +1447,7 @@
   "dilution": 0.2,
   "rnd_pct": 9.9,
   "bridge": null,
+  "shares": 2568.69,
   "moat_score": 92,
   "series": {
    "rev": [
@@ -1577,6 +1588,7 @@
   "dilution": 22.2,
   "rnd_pct": 35.2,
   "bridge": null,
+  "shares": 629.68,
   "moat_score": 62,
   "series": {
    "rev": [
