@@ -709,6 +709,32 @@ def _growth_ctx(funds, now, earnings=None, prices=None, prices_asof="", history=
             "qrank": {d["ticker"]: i + 1 for i, d in enumerate(funds)}, "n": len(funds)}
 
 
+def _gr_universe_note(funds, screen, universe) -> str:
+    """'분석 대상 N종목은 어떻게 정했나' 접이식 설명. 숫자·티커는 데이터에서 계산(갱신 시 자동 반영)."""
+    u_rows = (universe or {}).get("rows") or []
+    s_rows = (screen or {}).get("rows") or []
+    if not u_rows or not s_rows:
+        return ""
+    s_set = {r["t"] for r in s_rows}
+    miss = list((screen or {}).get("miss") or [])
+    dup = [r["t"] for r in u_rows if r["t"] not in s_set and r["t"] not in miss]
+    extra = [d["ticker"] for d in funds if d["ticker"] not in s_set]
+    n_co = len(u_rows) - len(dup)
+    li = [f'<li><b>나스닥 100 목록 {len(u_rows)}개</b>(나스닥 공식 데이터)'
+          + (f' — 같은 회사의 다른 종류 주식({_e(", ".join(dup))})은 빼서 <b>{n_co}개 회사</b>' if dup else "")
+          + '</li>']
+    if miss:
+        li.append(f'<li><b>{len(miss)}개 제외 → {len(s_rows)}개</b>: SEC 표준 재무 데이터로 분기 매출을 계산할 수 없는 종목'
+                  f'({_e(", ".join(miss))}). 대부분 해외 기업이라 미국 분기 보고서(10-Q) 대신 해외 양식으로 공시하고, '
+                  '일부는 매출 항목 이름이 달라 자동 계산에서 빠집니다</li>')
+    if extra:
+        li.append(f'<li><b>관심 종목 중 나스닥 100 밖 {len(extra)}개 추가 → {len(funds)}개</b> ({_e(", ".join(extra))})</li>')
+    li.append('<li><b>왜 나스닥 100인가</b>: 성장 기업 비중이 높은 지수이고, 무료 공식 데이터(나스닥·SEC)만으로 매일 갱신할 수 있는 범위라서 먼저 이 범위로 시작했습니다. '
+              'S&amp;P 500 등으로 넓히는 것은 보류 중</li>')
+    return (f'<details class="gr-uni"><summary>분석 대상 {len(funds)}종목은 어떻게 정했나</summary>'
+            f'<ol>{"".join(li)}</ol></details>')
+
+
 def _render_growth(funds, now, earnings=None, prices=None, prices_asof="", history=None,
                    screen=None, universe=None, default_watch=None, backtest=None):
     """성장주 탭: [전체 선별 · 나스닥 100] 표 / [관심 목록] 목록 / [점수 검증]. 상세는 growth/<티커>.html을 불러온다.
@@ -794,7 +820,7 @@ def _render_growth(funds, now, earnings=None, prices=None, prices_asof="", histo
         fav_view = fav_view.replace('id="grScreener" style="display:none"', 'id="grScreener"', 1)
         all_view = '<div id="grAll" style="display:none"></div>'
     return (f'<div class="part" id="grRoot" data-default=\'{_e(json.dumps(default_watch))}\' data-v="{ver}">'
-            f'{head}{tabs}<div id="grToast" class="gr-toast" role="status" hidden></div>'
+            f'{head}{tabs}{_gr_universe_note(funds, screen, universe)}<div id="grToast" class="gr-toast" role="status" hidden></div>'
             f'{all_view}{fav_view}{_render_backtest(backtest)}<div id="grDeep" style="display:none"></div></div>')
 
 

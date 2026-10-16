@@ -66,3 +66,14 @@ def test_render_backtest_verdict_and_empty():
     assert 'id="grBt"' in h and "맞히지 못했습니다" in h and "그날까지 SEC에 공시된 재무만" in h
     assert "<svg" in h and "시점별 자세히" in h
     assert "아직 없습니다" in _render_backtest({})
+
+
+def test_universe_note_counts_from_data():
+    from render.growth import _gr_universe_note
+    uni = {"rows": [{"t": t} for t in ("NVDA", "GOOGL", "GOOG", "ASML", "MSFT")]}
+    scr = {"rows": [{"t": t} for t in ("NVDA", "GOOGL", "MSFT")], "miss": ["ASML"]}
+    funds = [{"ticker": t} for t in ("NVDA", "GOOGL", "MSFT", "HIMS")]
+    h = _gr_universe_note(funds, scr, uni)
+    assert "분석 대상 4종목" in h and "목록 5개" in h and "(GOOG)" in h and "4개 회사" in h
+    assert "1개 제외 → 3개" in h and "(ASML)" in h and "1개 추가 → 4개" in h and "(HIMS)" in h
+    assert _gr_universe_note(funds, {}, uni) == ""
