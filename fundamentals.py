@@ -207,12 +207,20 @@ def _instants(gaap, tags):
     return dict(sorted(seen.items()))
 
 
+def _year_ago(d):
+    """1년 전 같은 날(2월 29일은 2월 28일로)."""
+    try:
+        return d.replace(year=d.year - 1)
+    except ValueError:
+        return d.replace(year=d.year - 1, day=28)
+
+
 def _yoy(series_ends, series, latest):
     """latest end 대비 ~1년 전(±40일) 값. 없으면 None."""
     ld = date.fromisoformat(latest)
     best, bestgap = None, 41
     for en in series_ends:
-        gap = abs((ld.replace(year=ld.year - 1) - date.fromisoformat(en)).days)
+        gap = abs((_year_ago(ld) - date.fromisoformat(en)).days)
         if gap <= bestgap:
             best, bestgap = en, gap
     return series.get(best) if best else None
@@ -222,15 +230,23 @@ def _m(x):
     return None if x is None else round(x / 1e6, 1)
 
 
-def _build_one(sym):
+def fetch_companyfacts(sym):
+    """SEC companyfacts 원본(JSON). 실패하면 None."""
     cik = _sec_cik(sym)
     if not cik:
         return None
     try:
-        j = netutil.get_json(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json",
-                             headers=_SEC_UA, timeout=30)
+        return netutil.get_json(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json",
+                                headers=_SEC_UA, timeout=30)
     except Exception as e:
         log.warning(f"[fund] {sym}: companyfacts 조회 실패: {e}")
+        return None
+
+
+def _build_one(sym, facts=None):
+    """facts를 주면 그 재무로 계산(점수 검증의 '그 시점 공시만' 재계산용), 없으면 SEC에서 받는다."""
+    j = facts if facts is not None else fetch_companyfacts(sym)
+    if not j:
         return None
     g = j["facts"].get("us-gaap", {})
 
@@ -275,7 +291,7 @@ def _build_one(sym):
     py_end = None
     ld = date.fromisoformat(latest)
     for en in ends:
-        if abs((ld.replace(year=ld.year - 1) - date.fromisoformat(en)).days) <= 40:
+        if abs((_year_ago(ld) - date.fromisoformat(en)).days) <= 40:
             py_end = en
     if py_end and py_end in opi and rev.get(py_end):
         opm_prev = round(opi[py_end] / rev[py_end] * 100, 1)

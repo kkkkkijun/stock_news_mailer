@@ -481,6 +481,7 @@ _GROWTH_JS = """<script>
    root.querySelectorAll('.gr-tab').forEach(function(b){ b.classList.toggle('on',b.getAttribute('data-v')===v); });
    document.getElementById('grAll').style.display=v==='all'?'':'none';
    document.getElementById('grScreener').style.display=v==='fav'?'':'none';
+   document.getElementById('grBt').style.display=v==='bt'?'':'none';
    document.getElementById('grDeep').style.display='none'; }
  // ---- 전체 선별 표: 필터·정렬·더 보기 ----
  var tb=document.getElementById('gtBody'), sortK='yoy', sortDir=-1, gMin=-1e9, onlyProfit=false, onlyFav=false;
@@ -525,7 +526,7 @@ _GROWTH_JS = """<script>
  var cache={};
  function openDeep(t){ var dp=document.getElementById('grDeep');
    document.getElementById('grAll').style.display='none'; document.getElementById('grScreener').style.display='none';
-   dp.style.display='block'; dp.innerHTML='<div class="gr-none" style="padding:30px 0;text-align:center">불러오는 중…</div>'; window.scrollTo(0,root.getBoundingClientRect().top+window.scrollY-60);
+   document.getElementById('grBt').style.display='none'; dp.style.display='block'; dp.innerHTML='<div class="gr-none" style="padding:30px 0;text-align:center">불러오는 중…</div>'; window.scrollTo(0,root.getBoundingClientRect().top+window.scrollY-60);
    var p=cache[t]?Promise.resolve(cache[t]):fetch('/stock_news_mailer/growth/'+encodeURIComponent(t)+'.html?v='+VER).then(function(r){ if(!r.ok) throw 0; return r.text(); });
    p.then(function(h){ cache[t]=h; dp.innerHTML=h; }).catch(function(){ dp.innerHTML='<div class="gr-none" style="padding:30px 0;text-align:center">상세 정보를 불러오지 못했습니다. <button type="button" class="gr-back">← 목록</button></div>'; }); }
  root.addEventListener('click',function(ev){ var el=ev.target;
@@ -547,6 +548,99 @@ _GROWTH_JS = """<script>
  view('all'); sync(); paint();
 })();
 </script>"""
+
+
+_BT_AXES = (("growth", "성장"), ("path", "수익성 경로"), ("balance", "재무 건전성"), ("shareholder", "주주 가치"))
+
+
+def _bt_verdict(h3: dict[str, Any]) -> str:
+    """3개월 결과 한 줄 판정(숫자에서 기계적으로)."""
+    hi, lo, w, n = h3["hi"], h3["lo"], h3["wins"], h3["dates"]
+    if hi > lo and w * 2 > n:
+        return "점수 상위 절반이 대체로 더 올랐습니다"
+    if hi < lo and w * 2 < n:
+        return "지금 점수는 3개월 수익률을 맞히지 못했습니다"
+    return "점수와 3개월 수익률 사이에 뚜렷한 관계가 보이지 않습니다"
+
+
+def _bt_ic(x: float | None) -> str:
+    return "" if x is None else f"{x:+.2f}"
+
+
+def _bt_chart(per: list[dict[str, Any]]) -> str:
+    """시점별 (상위 절반 − 하위 절반) 3개월 수익률 차이 막대(SVG)."""
+    rows = [r for r in per if "hi3" in r]
+    if not rows:
+        return ""
+    W, H, top, bot = 560, 200, 22, 30
+    diffs = [r["hi3"] - r["lo3"] for r in rows]
+    m = max(5.0, max(abs(x) for x in diffs))
+    zero = top + (H - top - bot) / 2
+    sc = (H - top - bot) / 2 / m
+    bw = (W - 20) / len(rows)
+    out = [f'<svg viewBox="0 0 {W} {H}" class="bt-svg" role="img" aria-label="시점별 점수 상위 절반과 하위 절반의 3개월 수익률 차이">'
+           f'<line x1="10" x2="{W - 10}" y1="{zero:.1f}" y2="{zero:.1f}" class="ax"/>']
+    for i, (r, x) in enumerate(zip(rows, diffs)):
+        cx = 10 + bw * (i + .5)
+        h = max(abs(x) * sc, 1)
+        y = zero - h if x >= 0 else zero
+        out.append(f'<rect x="{cx - bw * .32:.1f}" y="{y:.1f}" width="{bw * .64:.1f}" height="{h:.1f}" rx="3" '
+                   f'class="{"w" if x > 0 else "l"}"><title>{r["d"]} 상위 {r["hi3"]:+.1f}% · 하위 {r["lo3"]:+.1f}%</title></rect>')
+        ly = (y - 5) if x >= 0 else (y + h + 11)
+        out.append(f'<text x="{cx:.1f}" y="{ly:.1f}" class="v">{x:+.0f}</text>')
+        out.append(f'<text x="{cx:.1f}" y="{H - 10}" class="dt">{r["d"][2:4]}.{r["d"][5:7]}</text>')
+    out.append("</svg>")
+    return "".join(out)
+
+
+def _render_backtest(bt: dict[str, Any] | None) -> str:
+    """성장주 '점수 검증' 탭: data/backtest.json(backtest.py) 요약."""
+    if not bt or not bt.get("h3"):
+        return ('<div id="grBt" style="display:none"><div class="gr-none" style="padding:24px 0;text-align:center">'
+                '점수 검증 결과가 아직 없습니다.</div></div>')
+    h3, h6 = bt["h3"], bt.get("h6")
+    def pct(x):
+        return f'{x:+.1f}%'
+    six = (f' · 6개월: 상위 <em class="hi">{pct(h6["hi"])}</em> / 하위 <em>{pct(h6["lo"])}</em> '
+           f'({h6["wins"]}/{h6["dates"]}회)' if h6 else "")
+    verdict = (f'<div class="bt-verdict"><b>{_bt_verdict(h3)}</b>'
+               f'<span>3개월 평균 수익률: 점수 상위 절반 <em class="hi">{pct(h3["hi"])}</em> · 하위 절반 <em>{pct(h3["lo"])}</em> · '
+               f'상위가 이긴 시점 {h3["wins"]}/{h3["dates"]}{six}</span>'
+               + (f'<span>점수 순위와 수익률 순위의 상관(평균): {h3["ic"]:+.2f} <small>(0이면 무관, +1이면 완전히 일치)</small></span>'
+                  if h3.get("ic") is not None else "")
+               + '<span class="bt-warn">⚠ 지금 나스닥 100에 남아 있는 종목만으로 계산해, 그사이 빠진 종목이 없는 만큼 '
+                 '실제보다 좋게 나왔을 수 있습니다.</span></div>')
+    axes = bt.get("axes") or {}
+    ax_rows = "".join(
+        f'<div class="bt-ax"><span>{lab}</span><span class="bt-ax-bar"><i class="{"w" if a["spread"] > 0 else "l"}" '
+        f'style="{"left:50%" if a["spread"] > 0 else "right:50%"};width:{min(abs(a["spread"]) / 10 * 50, 50):.0f}%"></i></span>'
+        f'<b class="{"w" if a["spread"] > 0 else "l"}">{a["spread"]:+.1f}%p</b><small>{a["wins"]}/{a["dates"]}</small></div>'
+        for k, lab in _BT_AXES if (a := axes.get(k)))
+    ax_box = (f'<div class="bt-box"><div class="bt-h">축별로 나눠 보면 <small>그 축 점수 상위 절반 − 하위 절반, 3개월 · 이긴 시점</small></div>'
+              f'{ax_rows}</div>') if ax_rows else ""
+    trs = "".join(
+        f'<tr><td>{_e(r["d"])}</td><td class="c">{r["n"]}</td><td class="tops">{_e(", ".join(r["top"]))}</td>'
+        f'<td class="num{" w" if r["hi3"] > r["lo3"] else ""}">{pct(r["hi3"])}</td>'
+        f'<td class="num{" w" if r["lo3"] > r["hi3"] else ""}">{pct(r["lo3"])}</td>'
+        f'<td class="num">{_bt_ic(r.get("ic3"))}</td></tr>'
+        for r in reversed(bt.get("per", [])) if "hi3" in r)
+    table = ('<details class="bt-det"><summary>시점별 자세히</summary><div class="gt-wrap"><table class="gt bt-t"><thead><tr>'
+             '<th>시점</th><th>종목 수</th><th>그때 점수 상위 5</th><th>상위 절반</th><th>하위 절반</th><th>순위 상관</th>'
+             f'</tr></thead><tbody>{trs}</tbody></table></div></details>')
+    skipped = bt.get("skipped") or []
+    how = ('<div class="bt-how"><b>어떻게 계산했나</b><ul>'
+           f'<li>{_e(bt["first"])}~{_e(bt["last"])}, 실적 시즌 직후(2·5·8·11월 15일) {h3["dates"]}개 시점마다 '
+           '<b>그날까지 SEC에 공시된 재무만</b>으로 그때의 품질 점수를 다시 계산(공시일 기준 · 미래 정보 차단)</li>'
+           '<li>그 시점 점수로 종목을 반으로 나눠 이후 91일(3개월)·182일(6개월) 주가 수익률 평균을 비교(배당 제외)</li>'
+           f'<li>대상: 지금 정밀 분석 중인 {bt["universe"]}종목 · 관측 {bt["n"]}건'
+           + (f' · 계산 불가 {len(skipped)}개' if skipped else "") + '</li>'
+           '<li><b>한계</b>: 종목을 <b>지금</b> 기준으로 골라(지금 나스닥 100 + 관심 종목) 그사이 탈락·상장폐지된 종목이 빠져 있고, '
+           '같은 시점의 수익률은 시장 전체 흐름에 함께 움직여 시점 수가 적으면 우연의 영향이 큼. 투자 판단용 아님</li>'
+           f'<li>{_e(bt["built"])} 계산 · 4주마다 다시 계산</li></ul></div>')
+    legend = ('<div class="bt-legend"><span><i class="w"></i>상위 절반이 더 오름</span><span><i class="l"></i>하위 절반이 더 오름</span>'
+              '<span>막대 = 시점별 3개월 수익률 차이(%p)</span></div>')
+    return (f'<div id="grBt" style="display:none">{verdict}{legend}{_bt_chart(bt.get("per", []))}'
+            f'{ax_box}{table}{how}</div>')
 
 
 _SECTOR_ORDER = ("정보기술", "커뮤니케이션", "경기소비재", "헬스케어", "산업재", "필수소비재",
@@ -616,10 +710,11 @@ def _growth_ctx(funds, now, earnings=None, prices=None, prices_asof="", history=
 
 
 def _render_growth(funds, now, earnings=None, prices=None, prices_asof="", history=None,
-                   screen=None, universe=None, default_watch=None):
-    """성장주 탭: [전체 선별 · 나스닥 100] 표 / [관심 목록] 목록. 상세는 growth/<티커>.html을 불러온다.
+                   screen=None, universe=None, default_watch=None, backtest=None):
+    """성장주 탭: [전체 선별 · 나스닥 100] 표 / [관심 목록] 목록 / [점수 검증]. 상세는 growth/<티커>.html을 불러온다.
 
-    screen: data/screen.json(1차 선별), universe: data/universe.json, default_watch: 로그인 전 기본 관심 종목."""
+    screen: data/screen.json(1차 선별), universe: data/universe.json, default_watch: 로그인 전 기본 관심 종목,
+    backtest: data/backtest.json(점수 검증 · 시점 기준 백테스트)."""
     ctx = _growth_ctx(funds, now, earnings, prices, prices_asof, history, universe)
     funds, vals, earn, hist, uni = ctx["funds"], ctx["vals"], ctx["earn"], ctx["hist"], ctx["uni"]
     by = {d["ticker"]: d for d in funds}
@@ -686,8 +781,10 @@ def _render_growth(funds, now, earnings=None, prices=None, prices_asof="", histo
             + '</div></div>')
     n_all = len(sc_rows)
     tabs = ('<div class="gr-tabs" role="tablist">'
-            + (f'<button type="button" class="gr-tab on" data-v="all" role="tab">전체 선별 · 나스닥 100<small>{n_all}</small></button>' if sc_rows else "")
-            + f'<button type="button" class="gr-tab{"" if sc_rows else " on"}" data-v="fav" role="tab">관심 목록<small id="grFavN">{len(default_watch)}</small></button></div>')
+            + (f'<button type="button" class="gr-tab on" data-v="all" role="tab">전체 선별<span class="gr-tab-x"> · 나스닥 100</span><small>{n_all}</small></button>' if sc_rows else "")
+            + f'<button type="button" class="gr-tab{"" if sc_rows else " on"}" data-v="fav" role="tab">관심 목록<small id="grFavN">{len(default_watch)}</small></button>'
+            + ('<button type="button" class="gr-tab" data-v="bt" role="tab">점수 검증</button>' if backtest else "")
+            + '</div>')
     head = ('<div class="sched-head" style="margin-bottom:10px"><span>'
             '<span class="sched-ico">🔎</span>성장주 '
             f'<span class="sched-tz">SEC 재무 · 정밀 분석 {len(funds)}종목'
@@ -698,7 +795,7 @@ def _render_growth(funds, now, earnings=None, prices=None, prices_asof="", histo
         all_view = '<div id="grAll" style="display:none"></div>'
     return (f'<div class="part" id="grRoot" data-default=\'{_e(json.dumps(default_watch))}\' data-v="{ver}">'
             f'{head}{tabs}<div id="grToast" class="gr-toast" role="status" hidden></div>'
-            f'{all_view}{fav_view}<div id="grDeep" style="display:none"></div></div>')
+            f'{all_view}{fav_view}{_render_backtest(backtest)}<div id="grDeep" style="display:none"></div></div>')
 
 
 def write_growth_fragments(funds, now, out_dir, earnings=None, prices=None, prices_asof="",

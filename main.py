@@ -243,6 +243,11 @@ if __name__ == "__main__":
                 build_qualitative(client=get_openai_client())  # 10-K 정성(캐시)
             except Exception as fe:  # noqa
                 log.exception(f"[refresh] fundamentals 실패: {fe}")
+            try:
+                from backtest import build_backtest
+                build_backtest()              # data/backtest.json (점수 검증 · 4주마다 재계산)
+            except Exception as be:  # noqa: BLE001 — 부가 기능
+                log.exception(f"[refresh] 점수 검증 실패: {be}")
             log.info(f"[refresh] 재빌드: {rebuild_all()}")
         except Exception as e:  # noqa
             log.exception(f"[refresh] 실패: {e}")
