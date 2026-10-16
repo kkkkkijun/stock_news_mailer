@@ -160,6 +160,72 @@ a:hover{opacity:.72;}
   .gr-ed{font-size:9.5px;padding:1px 5px}
   .gr-th.wide{width:120px}.gr-th.wide .gr-th-bar{display:block}
 }
+/* 성장주 3단계: 전체 선별(나스닥 100)/관심 목록 탭, 표, ★ 즐겨찾기, 토스트 */
+.gr-tabs{display:flex;gap:22px;border-bottom:1px solid var(--border);margin-bottom:12px}
+.gr-tab{font:inherit;font-size:14px;font-weight:800;color:var(--faint);background:none;border:0;
+ padding:0 2px 9px;position:relative;cursor:pointer}
+.gr-tab.on{color:var(--ink)}
+.gr-tab.on::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--ink)}
+.gr-tab small{font-size:11px;font-weight:700;color:var(--faint);background:var(--nav-track);
+ border-radius:999px;padding:1px 7px;margin-left:5px}
+.gr-tab.on small{background:var(--ink);color:var(--page)}
+.gr-sub-h{display:flex;justify-content:flex-end;margin-bottom:10px}
+.gt-filters{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font-size:12px}
+.gt-filters input,.gt-filters select{font:inherit;font-size:12.5px;color:var(--ink);background:var(--card);
+ border:1px solid var(--border);border-radius:8px;padding:6px 10px}
+.gt-filters input{min-width:160px;flex:1 1 160px;max-width:240px}
+.gt-grp{display:inline-flex;align-items:center;gap:3px;background:var(--card);border:1px solid var(--border);
+ border-radius:8px;padding:3px 3px 3px 9px;color:var(--muted-2);font-weight:700}
+.gt-g,.gt-tog{font:inherit;font-size:11.5px;font-weight:700;color:var(--muted-2);background:none;border:0;
+ border-radius:6px;padding:3px 8px;cursor:pointer}
+.gt-g.on{background:var(--ink);color:var(--page)}
+.gt-tog{background:var(--card);border:1px solid var(--border);padding:5px 10px;border-radius:8px}
+.gt-tog.on{background:var(--chip);border-color:var(--accent);color:var(--chip-ink)}
+.gt-wrap{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow-x:auto}
+.gt{border-collapse:collapse;width:100%;font-size:12.5px}
+.gt th{background:var(--nav-track);color:var(--muted-2);font-size:11px;font-weight:700;text-align:left;
+ padding:8px 9px;white-space:nowrap}
+.gt-th{cursor:pointer;user-select:none}.gt-th.sorted{color:var(--ink)}.gt-th i{font-style:normal}
+.gt td{padding:7px 9px;border-top:1px solid var(--border);vertical-align:middle}
+.gt-row{cursor:pointer}.gt-row:hover td{background:var(--chip)}
+.gt td.n{color:var(--faint);font-weight:700;width:26px;text-align:center;font-variant-numeric:tabular-nums}
+.gt td.st,.gt th.st{width:28px;padding-right:0;text-align:center}
+.gt-star{font:inherit;font-size:17px;line-height:1;border:0;background:none;cursor:pointer;color:var(--border-strong,#cbd5e1);padding:2px}
+.gt-star:hover,.gt-star.on{color:#f5a524}
+.gt-tk{display:flex;align-items:center;gap:8px;min-width:0}
+.gt-sym{font-size:10.5px;font-weight:800;letter-spacing:.02em;background:var(--nav-track);
+ border-radius:6px;padding:3px 5px;min-width:44px;text-align:center;flex-shrink:0;color:var(--ink)}
+.gt-nm{display:flex;flex-direction:column;font-weight:700;color:var(--ink);min-width:0}
+.gt-nm small{font-weight:500;color:var(--faint);font-size:10.5px}
+.gt-tk-in{display:none}
+.gt .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;color:var(--ink)}
+.gt .num.up{color:#e5484d}.gt .num.dn{color:#3b82f6}
+.gt-sub{display:block;font-size:9.5px;color:var(--faint);font-weight:600}
+.gt-sub.warn{color:#b45309}
+.gt-sc{font-size:15px}.gt-sc.g{color:#16a37f}.gt-sc.y{color:#e0930a}.gt-sc.r{color:#e5484d}
+.gt-na{color:var(--faint)}
+.gt .c-chips{white-space:nowrap}
+.gt-chip{display:inline-block;font-size:10px;font-weight:800;border-radius:5px;padding:1px 6px;margin-right:4px}
+.gt-chip.m{background:rgba(229,72,77,.13);color:#b42318}
+.gt-chip.d{background:rgba(124,58,237,.13);color:#6d28d9}
+.gt-chip.q{background:var(--nav-track);color:var(--muted)}
+:root[data-theme="dark"] .gt-chip.m{color:#ff9ca0}
+:root[data-theme="dark"] .gt-chip.d{color:#c4b5fd}
+.gt-more{display:block;margin:10px auto 0;font:inherit;font-size:12px;font-weight:700;color:var(--chip-ink);
+ background:var(--chip);border:1px solid var(--border);border-radius:8px;padding:7px 14px;cursor:pointer}
+.gt-foot{font-size:11px;color:var(--faint);margin-top:8px;line-height:1.5}
+.gr-toast{position:sticky;top:56px;z-index:5;display:flex;align-items:center;gap:10px;width:max-content;max-width:100%;
+ margin:0 0 10px auto;background:var(--header);color:#fff;font-size:12px;font-weight:700;border-radius:10px;
+ padding:9px 14px;box-shadow:0 8px 24px var(--shadow)}
+.gr-toast[hidden]{display:none}
+.gr-undo{font:inherit;font-size:12px;font-weight:800;color:#f5c451;background:none;border:0;cursor:pointer;text-decoration:underline}
+@media (max-width:600px){
+  .gt .c-rev,.gt .c-opm,.gt .c-th,.gt .c-chips,.gt td.n,.gt th.n,.gt-sym{display:none}
+  .gt-tk-in{display:inline;font-weight:700;color:var(--muted-2)}
+  .gt td,.gt th{padding:7px 5px}
+  .gt-nm{font-size:12px}
+  .gt-filters input{max-width:none}
+}
 /* 선택한 서브탭 컬럼만 표시 */
 .sched-2col[data-sub="cal"] .res-col{display:none;}
 .sched-2col[data-sub="res"] .cal-col{display:none;}
