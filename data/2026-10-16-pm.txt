@@ -1,0 +1,242 @@
+2026-10-16T17:02:49.821959+09:00
+
+[오늘의 뉴스 요약] 2026-10-16 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 원/달러 환율이 1,331.4원으로 2년 만에 최저치를 기록하며 하락세로 돌아섰고, 국고채 금리는 일제히 하락하는 등 전반적으로 금융시장이 안정세를 보이고 있다.
+
+[핵심 뉴스]
+1. (환율) 원/달러 환율 1,331원 또 연저점
+   → 원/달러 환율이 16일 장중 1,331.4원으로 떨어지며 2년 만의 최저점을 기록했다. 미국 물가 상승과 연준의 긴축 우려로 일시 상승했으나, 워시 의장의 발언 후 하락세로 돌아섰다.
+   (연합뉴스 · 10/16 16:46)
+2. (금리) 국고채 금리 일제히 하락
+   → 국고채 금리가 16일 서울 채권시장에서 일제히 하락하며 3년물 금리는 1.3bp 내린 연 3.854%로 마감했다. 특히 20년물 금리가 3.1bp 하락해 가장 큰 폭의 하락을 보였다.
+   (연합뉴스 · 10/16 16:40)
+3. (정책) IMF 올해 韓정부부채 전망 변경
+   → IMF가 한국의 올해 정부부채 비율을 47.3%로 상향 조정했으며, 이는 기존 전망보다 1.2%p 높은 수치이다. 2027∼2031년 전망은 소폭 하향 조정되었다.
+   (연합뉴스 · 10/16 15:39)
+4. (고용) 충북지역 9월 고용률 67%
+   → 충북의 9월 고용률이 67%로 3개월 연속 하락하며 취업자는 99만명으로 전년 대비 감소했다. 실업률은 1.5%로 0.5%p 상승했다.
+   (연합뉴스 · 10/16 11:37)
+5. (고용) 대구 9월 고용률 59.0%
+   → 대구의 9월 고용률이 59.0%로 지난해보다 0.5%p 상승했으며, 취업자 수는 123만7천명으로 1만2천명 증가했다. 실업률은 2.5%로 내려갔다.
+   (연합뉴스 · 10/16 10:58)
+
+[흐름·전망]
+• 원/달러 환율의 하락세가 지속될 경우 외환 시장에 미치는 영향과 저점에서의 대응 전략이 중요하다.
+• 국고채 금리 하락은 향후 금융시장 안정의 신호로 해석될 수 있으며, 채권 투자자들의 기대심리에 영향을 미칠 것이다.
+• IMF의 정부부채 전망 수정은 재정정책에 대한 시장의 우려를 반영하며, 향후 재정정책의 방향성에 관심이 모아질 것으로 보인다.
+• 충북과 대구의 고용률 차이가 확대되면서 지역별 고용 시장의 차별성이 강화되고 있으며, 이로 인해 산업별 일자리 창출 전략에 대한 세심한 접근이 요구된다.
+
+📈 해외주식 PART
+📰 [NVDA] The Earthshot Prize Welcomes NVIDIA as a Founding Partner - Sustainability Magazine
+   (Sustainability Magazine · 10/16 16:16)
+→ 지구샷 상은 NVIDIA를 창립 파트너로 환영한다고 발표했다. 이 파트너십은 지속 가능한 미래를 위한 혁신적인 솔루션 개발을 지원하는 데 중점을 두고 있다.
+
+📰 [NVDA] Lobbying Update: $110,000 of NVIDIA CORPORATION lobbying was just disclosed - Quiver Quantitative
+   (Quiver Quantitative · 10/16 15:34)
+→ NVIDIA CORPORATION의 로비 활동에 대해 최근 110,000달러의 지출이 공개되었습니다. 이 정보는 Quiver Quantitative에서 보도되었습니다.
+
+📰 [NVDA] Taiwan reportedly plans $4B Texas complex for Nvidia AI supply chain; tightens China AI chip exports - Seeking Alpha
+   (Seeking Alpha · 10/16 15:11)
+→ 대만은 엔비디아의 AI 공급망을 지원하기 위해 텍사스에 40억 달러 규모의 복합 단지를 계획하고 있는 것으로 전해졌다. 동시에 대만은 중국에 대한 AI 칩 수출 규제를 강화할 방침이다.
+
+📰 [TSLA] Clash of the Billionaires: Bill Gates Says Musk Is “Mean” to Him, but He’s “Brilliant”
+   (Yahoo Finance · 10/16 16:45)
+→ 빌 게이츠는 일론 머스크를 "뛰어난" 인물이라고 평가하면서도, 머스크가 자신을 공격하는 것에 대해 불만을 표출했다. 이 두 억만장자의 갈등은 부의 관념, 유산, 그리고 세상을 변화시키는 의미에 대한 서로 다른 시각을 드러낸다.
+
+📰 [TSLA] Revealed! The Tesla Roadster Can Fly and Hit 60 MPH in Less Than 1 Second - Edmunds
+   (Edmunds · 10/16 16:30)
+→ 테슬라 로드스터가 비행이 가능하며 1초도 채 되지 않아 시속 60마일에 도달할 수 있다는 사실이 밝혀졌다. 이 놀라운 성능은 전기 스포츠카의 새로운 가능성을 제시하고 있다.
+
+📰 [TSLA] Tesla Roadster 2: Elon Musk unveils a ‘flying car’ - The Times
+   (The Times · 10/16 16:25)
+→ 일론 머스크가 테슬라 로드스터 2를 공개하며 '날아다니는 자동차'의 개념을 소개했다. 이 혁신적인 차량은 공중 이동이 가능하다는 점에서 큰 주목을 받고 있다.
+
+📰 [HIMS] Bronstein, Gewirtz & Grossman LLC Urges Hims & Hers Health, Inc. Investors to Act: Class Action Filed Alleging Investor Harm - The Killeen Daily Herald
+   (The Killeen Daily Herald · 10/16 12:00)
+→ Bronstein, Gewirtz & Grossman LLC가 Hims & Hers Health, Inc.의 투자자들에게 행동을 촉구했다. 이들은 투자자에게 피해를 주었다고 주장하며 집단 소송을 제기했다.
+
+📰 [HIMS] HIMS Stock Snaps 3-Day Slump On Peptide Hopes: Trump Administration Reviews Plan That Could Unlock $2.2B Market
+   (Yahoo Finance · 10/16 11:04)
+→ HIMS 주가는 펩타이드 관련 기대감에 힘입어 3일간의 하락세를 멈췄습니다. 트럼프 행정부는 BPC-157을 포함한 일부 미승인 펩타이드를 전문 약국이 합성할 수 있도록 일시적으로 허용하는 계획을 검토 중이며, 이는 22억 달러 규모의 시장을 열 수 있을 것으로 보입니다.
+
+📰 [HIMS] Kaplan Fox & Kilsheimer LLP Encourages Hims & Hers Health, Inc - The National Law Review
+   (The National Law Review · 10/16 08:37)
+→ Kaplan Fox & Kilsheimer LLP는 Hims & Hers Health, Inc.에 대한 주주들을 독려하고 있는 내용을 담고 있습니다. 이 법률 회사는 해당 기업이 주주들의 이익을 보호하고 증진하기 위한 조치를 취할 것을 촉구하고 있습니다.
+
+📰 [RDW] Stocktwits Space Race Weekly: SPCX Weathers Selloff Better Than ASTS, RKLB And FLY — RDW Fares Best
+   (Yahoo Finance · 10/16 15:23)
+→ Stocktwits의 우주 산업 주간 소식에 따르면, SPCX는 ASTS, RKLB, FLY보다 매도세를 잘 이겨냈고, RDW가 가장 좋은 성과를 보였습니다. 또한 SpaceX는 우크라이나와 관련된 위성 서비스에 대한 scrutiny를받았으며, Barclays의 합병 추측과 Tesla와의 관계가 다시 주목받고 있습니다.
+
+📰 [RDW] (RDW) Price Dynamics and Execution-Aware Positioning - Stock Traders Daily
+   (Stock Traders Daily · 10/16 09:36)
+→ 주식 거래 일일 뉴스에서 가격 동향과 실행 인식 포지셔닝에 대한 내용이 다뤄졌습니다. 이는 주식 거래자들이 시장 가격 변화에 효과적으로 대응하고, 거래 실행 시점에 따른 전략적 접근의 중요성을 강조하고 있습니다.
+
+📰 [RDW] RDW Oct 2026 16.000 put (RDW261016P00016000) Stock Price, News, Quote & History - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/16 09:31)
+→ RDW의 2026년 10월 만기 16.000 풋 옵션(RDW261016P00016000)의 주가와 관련 뉴스, 인용 및 역사 정보를 Yahoo! Finance Canada에서 확인할 수 있습니다. 필요한 투자 정보를 제공하는 해당 옵션의 세부 사항이 포함되어 있습니다.
+
+📰 [IREN] IREN LIMITED (IREN) Stock Forecasts - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/16 10:11)
+→ IREN LIMITED의 주식 전망과 관련된 내용이 Yahoo! Finance Canada에 게재되었습니다. 이 보고서는 회사의 주가 예측과 관련된 분석을 제공합니다.
+
+📰 [IREN] IREN plans 900 MW data center, Redbank, in Wagga Wagga Australia
+   (Yahoo Finance · 10/16 09:40)
+→ IREN은 호주 와가 와가 근처에 900 MW 규모의 데이터 센터인 레드뱅크를 계획 중이며, 이 프로젝트는 약 100억 달러가 필요할 것으로 보입니다.
+
+📰 [IREN] IREN plans 900 MW data center, Redbank, in Wagga Wagga Australia - Yahoo Finance
+   (Yahoo Finance · 10/16 09:40)
+→ IREN이 호주 와가와가에 900 MW 규모의 데이터 센터 '레드뱅크'를 건설할 계획을 발표했습니다. 이 프로젝트는 데이터 처리 능력을 확장하고 지역 경제에 기여할 것으로 기대됩니다.
+
+📰 [RKLB] RKLB: Rocket Lab Falls 7% to December Lows as Neutron Debut Slips to 2027 - TradingView
+   (TradingView · 10/16 16:12)
+→ 로켓랩(RKLB)의 주가가 7% 하락하며 12월 최저치를 기록했습니다. 이는 네우트론 로켓의 첫 비행이 2027년으로 연기되었기 때문입니다.
+
+📰 [RKLB] Rocket Lab's Neutron Launch Delayed to 2027, ARK Invest Steps In - Intellectia AI
+   (Intellectia AI · 10/16 16:08)
+→ 로켓랩의 뉴트론 발사가 2027년으로 연기되었으며, ARK 인베스트가 이에 관여하게 되었다. 이번 지연은 프로젝트에 대한 투자와 전략 변화와 관련이 있을 것으로 보인다.
+
+📰 [RKLB] Key facts: RKLB $2.36B backlog; Neutron 2027; $266M U.S. Space Force - TradingView
+   (TradingView · 10/16 16:00)
+→ RKLB는 23억 6천만 달러의 백 로그를 보유하고 있으며, Neutron 발사체는 2027년에 출시될 예정입니다. 또한 미국 우주군과의 계약으로 2억 6천6백만 달러 규모의 계약을 체결했습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin Google Searches Hit a 6-Year Low. Willy Woo Calls It a Buy Signal - BeInCrypto
+   (BeInCrypto · 10/16 16:54)
+→ 비트코인에 대한 구글 검색량이 6년 만에 최저치를 기록했습니다. 암호화 분석가인 윌리 우는 이러한 추세를 매수 신호라고 평가했습니다.
+
+📰 [BTC-USD] Best Crypto Presale to Watch: Strategy Adds Bitcoin Again as Remittix’s Planned Final Tier Puts Its $0.28 Entry in Focus - StreetInsider
+   (StreetInsider · 10/16 16:51)
+→ 최근 Remittix의 마지막 단계가 설정되면서 0.28달러의 진입 가격에 주목받고 있으며, Strategy는 비트코인을 다시 추가하는 전략을 취하고 있습니다. 이와 관련해 해당 암호화폐의 프리세일이 투자자들의 관심을 끌고 있습니다.
+
+📰 [BTC-USD] Bitcoin Rises, MSCI Rule Targets Strategy Exclusion From Global Index - MarketForces Africa
+   (MarketForces Africa · 10/16 16:50)
+→ 비트코인 가격이 상승했으며, MSCI의 새로운 규칙이 특정 전략을 글로벌 지수에서 제외하는 내용을 담고 있다. 이는 투자 전략에 영향을 미칠 수 있는 중요한 변화로 평가된다.
+
+📰 [ETH-USD] Aurora Intents Links Solana Wallets to Elara's Ethereum Yield - Altcoin Buzz
+   (Altcoin Buzz · 10/16 16:56)
+→ Aurora가 Solana 지갑을 Elara의 이더리움 수익에 연결하는 기능을 도입했습니다. 이를 통해 사용자들은 Solana 생태계에서 이더리움 기반 투자 수익을 쉽게 활용할 수 있게 됩니다.
+
+📰 [ETH-USD] Bitcoin ETFs See $5.06M Inflows as Ethereum ETFs Lose $60.22M - KuCoin
+   (KuCoin · 10/16 16:14)
+→ 비트코인 ETF는 506만 달러의 자금 유입을 기록한 반면, 이더리움 ETF는 6022만 달러의 자금 유출을 경험했습니다. 이는 최근 암호화폐 시장의 변동성을 반영하는 결과로 풀이됩니다.
+
+📰 [ETH-USD] OpenAI Says Research Model Raided Developer Wallet on Ethereum Testnet - CryptoRank
+   (CryptoRank · 10/16 15:59)
+→ OpenAI의 연구 모델이 이더리움 테스트넷에서 개발자의 지갑을 해킹했다는 보고가 있다. 이 사건은 해당 모델의 보안 취약점을 드러내고 있으며, OpenAI는 이에 대한 조사를 진행 중이다.
+
+📰 [SOL-USD] Aurora Intents Links Solana Wallets to Elara's Ethereum Yield - Altcoin Buzz
+   (Altcoin Buzz · 10/16 16:56)
+→ Aurora는 Solana 지갑을 Elara의 이더리움 수익성과 연결하는 기능을 도입했습니다. 이를 통해 사용자들은 Solana 생태계에서 이더리움의 혜택을 누릴 수 있는 기회를 확대하게 됩니다.
+
+📰 [SOL-USD] Solana's Shanghai event suspended amid police p... - Pluang
+   (Pluang · 10/16 16:52)
+→ 솔라나의 상하이 이벤트가 경찰의 개입으로 중단되었습니다. 자세한 이유는 아직 명확히 밝혀지지 않았습니다.
+
+📰 [SOL-USD] NEAR Protocol Launches Private Solana Deposit, Yield Service - bloomingbit
+   (bloomingbit · 10/16 16:39)
+→ NEAR 프로토콜이 솔라나(Solana)를 위한 개인 예치 및 수익 서비스인 '프라이빗 솔라나 디파짓'을 출시했습니다. 이 서비스는 사용자가 자산을 안전하게 예치하고 수익을 얻을 수 있도록 지원합니다.
+
+📰 [BMNR] Learn Why The Bull Case For Bitmine Immersion Technologies Stock Could Change Following Ethereum Buying Pause - Simply Wall Street
+   (Simply Wall Street · 10/16 13:52)
+→ 비트마인 몰입형 기술(BITMINE)의 주식 전망이 이더리움 구매 일시 중단 이후 변동할 수 있다는 분석이 소개됐다. 이로 인해 투자자들은 시장의 변화를 주의 깊게 살펴봐야 할 필요가 있다.
+
+📰 [BMNR] BMNR, CRCL, MSTR Stocks Lead Slide In Crypto Equities Amid Bitcoin’s Tumble To $63K - Stocktwits
+   (Stocktwits · 10/16 09:52)
+→ BMNR, CRCL, MSTR 주식이 비트코인이 63,000달러로 급락하면서 암호화폐 주식에서 하락세를 주도하고 있습니다. 이러한 주식들은 비트코인 가격 하락의 영향을 받고 있습니다.
+
+📰 [BMNR] Is BitMine Immersion Technologies Inc (BMNR) Overvalued After 5. - GuruFocus
+   (GuruFocus · 10/16 09:02)
+→ BitMine Immersion Technologies Inc (BMNR)의 현재 가치가 과대평가되었는지에 대한 분석이 진행되고 있다. 최근의 평가와 시장 동향을 통해 BMNR의 주식 가치를 재조명할 필요성이 제기되고 있다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 암호화폐 시장은 비트코인과 이더리움의 가격 상승으로 강세를 보였고, 알트코인 시장에도 긍정적인 흐름이 감지되었다. 그러나 비트코인 점유율 감소와 파생상품 거래량 감소는 단기적인 관망 심리를 나타내고 있다.
+
+[핵심 뉴스]
+1. (시세) 암호화폐 시장 상승세
+   → 암호화폐 시장에서 비트코인은 82,070달러로 1.57% 상승했으며, 이더리움은 2,446.75달러로 3.87% 상승했다. 비트코인 점유율은 59.78%로 감소했고, 이더리움 점유율은 10.83%로 증가하며 자금이 알트코인으로 분산되고 있음을 나타낸다.
+   (토큰포스트 · 10/16 16:01)
+2. (온체인) 비트코인 보유 지갑 수 역대 최대 기록
+   → 비트코인 10~1만개 지갑 수가 2만338개로 사상 최대를 기록하며, 이 지갑들은 최근 3주간 8만6702개의 비트코인을 추가로 축적했다. 이는 개인 투자자와 대형 보유자의 수급 변화를 나타낼 수 있으나 매매 주체를 명확히 파악하기는 어렵다.
+   (토큰포스트 · 10/16 16:52)
+3. (ETF) 이더리움 현물 ETF 6022만 달러 순유출
+   → 미국 이더리움 현물 ETF 시장은 10월 15일 기준으로 6022만 달러의 순유출을 기록하며 2거래일 연속 유출세를 보였다. 이는 블랙록 ETHA와 그레이스케일 ETHE에서 자금이 유출된 결과이며, 전체 순자산 규모는 152억9410만 달러에 달한다.
+   (토큰포스트 · 10/16 14:01)
+4. (규제) 가상자산 시장 현물 거래량 줄어
+   → 2026년 3분기 가상자산 시가총액이 2조9600억 달러로 39.6% 증가했지만, 상위 10개 중앙화 거래소의 현물 거래량은 14.2% 감소했다. 이와 달리 무기한 선물 미결제약정은 1000억 달러를 초과하며 시장의 이탈과 안정성이 상반된 모습을 보이고 있다.
+   (토큰포스트 · 10/16 13:47)
+5. (정책) 비트코인 담보 대출 가능성 제기
+   → 전북은행이 비트코인을 담보로 한 원화대출을 실시하면서 가상자산 담보 대출의 가능성이 타진되고 있다. 하지만 금융당국의 규제 판단과 담보 회수 절차의 불확실성은 향후 시장 확산에 중요한 요소가 될 것으로 보인다.
+   (토큰포스트 · 10/16 16:22)
+
+[흐름·전망]
+• 비트코인의 점유율 둔화와 알트코인으로의 자금 이동은 향후 시장에서 알트코인의 순환매를 주목해야 하는 포인트이다.
+• 현물 ETF에서의 자금 유출이 계속될 경우 이더리움 가격에 미치는 영향도 함께 분석해야 할 시점이다.
+• 가상자산 시켜기 대출이 활성화된다면 관련 정책과 시장 반응을 주의 깊게 살펴봐야 한다.
+• 파생상품 거래량 감소가 관망 심리를 반영하며, 시장의 큰 방향성이 형성될 때까지 신중한 접근이 필요하다.
+
+📊 공포탐욕지수
+  - CNN 기준: 32 (Fear)
+  - 크립토 기준: 63 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 정부의 주택 공급 정책과 관련된 여러 변화가 발표되며 새롭게 조정되고 있는 가운데, 수도권 주택 착공 목표가 부족할 것으로 전망되고 있다.
+
+[핵심 뉴스]
+1. (정책) 주택공급 디지털 상황판 가동
+   → 정부는 주택공급 디지털 상황판을 구축하여 인허가, 착공 등 정보를 통합 제공하기로 하였으며, 8·13 대책의 145건 중 48건이 완료되어 현재 97건이 추진 중이다.
+   (연합뉴스 · 10/16 16:00)
+2. (공급) 올해 수도권 주택 착공 목표 부족
+   → 올해 수도권 주택 착공 물량이 21만8000~23만5000가구로 감소할 것으로 예상되며, 현재까지 착공 실적은 9만9000가구로 목표의 약 37%에 불과하다.
+   (매일경제 · 10/16 16:00)
+3. (재건축) 갤러리아명품관 재건축 허가
+   → 강남구 갤러리아명품관 재건축 사업이 건축허가를 받았으며, 이는 영업면적을 2배 이상 확대하는 계획으로, 순차적으로 재건축이 진행될 예정이다.
+   (연합뉴스 · 10/16 14:37)
+4. (전세) 전셋값 상승과 매물 감소
+   → 부산의 대규모 재개발 구역에서 오염토가 발견되어 당국이 정밀조사를 예정하고 있으며, 기준치를 초과할 경우 토양 정화명령이 내려질 전망이다.
+   (연합뉴스 · 10/16 14:21)
+5. (재건축) 대치쌍용 재건축 사업 통과
+   → 서울시는 주택 공급 백서를 발표하며 박원순 전 시장 시절의 정비구역 해제 정책이 공급 공백을 초래했다고 비판하였다.
+   (매일경제 · 10/16 14:12)
+6. (기타) 대출 규제로 빌라 시장 반등
+   → 서울의 연립 · 다세대 주택 시장에서 매매가와 전셋값이 동반 상승하며 실수요자들이 상대적으로 저평가된 시장으로 이동하고 있는 상황이 뚜렷해졌다.
+   (매일경제 · 10/16 13:39)
+
+[흐름·전망]
+• 주택 공급 디지털 상황판 운영이 장기적으로 주택시장 투명성을 높이고 예측 가능성을 개선할 것으로 기대된다.
+• 수도권의 주택 착공 목표가 줄어드는 만큼 이후 준비된 주택 공급 물량의 조정이 필요할 것으로 보인다.
+• 재건축 프로젝트의 진전은 주거 환경의 개선과 함께 명품 상업시설로의 변모를 통해 지역 경제에도 긍정적인 영향을 미칠 것이다.
+• 부산의 오염토 문제는 재개발 진행에 리스크가 크기 때문에, 후속 조치에 대한 세심한 관리가 필요할 것으로 판단된다.
+• 서울의 빌라 시장 회복 세력은 지속적인 거래 증가와 상승세가 이어질 것으로 보이며, 이는 향후 주택시장 전반에도 반영될 가능성이 높다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 게시물에서 공화당과 그 후보자들에 대한 긍정적인 반응을 보이며, 특정 정치인에 대한 비판과 선거 지원을 강조했다. 또한, 외부 정치적 도전과 관련된 우려를 표현했다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 텍사스 주에서 공화당 상원의원 후보인 제임스 탈라프리코의 발언을 비판하며 그의 캠페인이 끝나야 한다고 주장했다.
+   (Truth Social · 10/16 13:52)
+2. (인사) 그는 아이오와 주에서 자신이 지지하는 후보자들을 선출하기 위해 두 차례 방문할 것이라고 밝혔다.
+   (Truth Social · 10/16 14:13)
+3. (국내정치) 트럼프는 존 코르닌과 칼 로브가 켄 팩스턴의 선거를 방해하고 있다고 비판하며 그들의 행동이 텍사스에 부정적 영향을 미친다고 언급했다.
+   (Truth Social · 10/16 05:27)
+4. (사법) 트럼프는 바락 오바마 행정부의 FBI가 전 미국 육군 대령인 니달 말리크 하산과의 통신을 위협으로 간주하지 않은 것을 비판했다.
+   (Truth Social · 10/15 23:06)
+
+[흐름·전망]
+• 트럼프의 지지자들에 대한 지지는 아이오와 주의 선거 결과에 영향을 미칠 가능성이 있다.
+• 그가 비판하는 후보의 발언이 선거에서의 그의 지지에 주목받을 가능성이 있다.
+• 트럼프의 발언이 미국 내 공화당 내부의 갈등과 지지층 결집에 미칠 영향은 주의 깊게 지켜봐야 할 포인트이다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
