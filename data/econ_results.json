@@ -808,5 +808,23 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"6e9307f7-a0a1-4975-84e9-137c9da08852": {
+"name": "Tokyo Consumer Price Index (YoY)",
+"dt": "2026-11-30T23:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"07b2112c-6c7b-4d3d-9969-621688dbd587": {
+"name": "Tokyo CPI ex Food, Energy (YoY)",
+"dt": "2026-11-30T23:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
