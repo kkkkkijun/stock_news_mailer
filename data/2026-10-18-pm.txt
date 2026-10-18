@@ -1,0 +1,245 @@
+2026-10-18T17:02:57.762911+09:00
+
+[오늘의 뉴스 요약] 2026-10-18 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제는 원달러 환율이 2년 1개월 만에 최저로 떨어지며 안정세를 보이고 있으나, 금융시장에서는 은행 주담대의 변동금리가 상승하는 등 혼조세를 보이고 있다. IMF는 한국의 재정 여력을 긍정적으로 평가하며 성장 잠재력을 높이기 위한 투자의 필요성을 강조하고 있다.
+
+[핵심 뉴스]
+1. (환율) 원달러환율 2년 1개월 만에 최저
+   → 한국은행 자료에 따르면 10월 원달러 평균 환율이 1,342.6원으로 2024년 9월 이후 2년 1개월 만에 최저치를 기록하였으며, 원엔 환율도 849.0원으로 18년 10개월 만의 최저치를 나타냈다.
+   (매일경제 · 10/18 16:30)
+2. (정책) 한국만 재정 여력 늘어나, 성장 투자 필요
+   → IMF 최지영 이사는 한국이 현재 성장 잠재력을 키우기 위한 투자가 필요하며, 한국만 재정 여력이 증가하고 있다고 언급했다. 특히 AI 사이클의 변동성에 따른 기업 영향이 클 수 있다고 경고했다.
+   (매일경제 · 10/18 12:52)
+3. (성장) 국내 잠재성장률 40년 만에 반등 전망
+   → IMF는 한국의 잠재성장률이 약 40년 만에 두 해 연속 상승할 것으로 예상하고 있으며, 이러한 경제 신호가 혼재된 상황에서 다음 주 금통위와 기업 실적 발표에 주목해야 한다고 언급했다.
+   (매일경제 · 10/18 16:06)
+4. (정책) IMF, 한국 통화 정책 긍정 평가
+   → IMF 총재는 한국의 통화 및 재정정책 조합이 적절하며, 정부가 추진하는 미래대응기금이 경기 변동에 대한 완충장치 역할을 할 것이라고 평가했다. 또한, 세수에 미치는 AI 호황의 영향을 경계할 필요가 있다고 강조했다.
+   (매일경제 · 10/18 12:51)
+5. (성장) 4분기 제조업 경기 부진 전망
+   → 4분기에도 제조업의 경기 부진이 지속될 것으로 예상되며, 원자재 부담과 내수 부진이 주요 요인으로 작용할 것으로 보인다.
+   (재경일보 · 10/18 15:43)
+
+[흐름·전망]
+• 원달러 환율의 지속적인 안정 여부와 환율 변동이 경제에 미치는 영향에 주목해야 할 것이다.
+• AI 투자 사이클의 변화가 한국 경제에 미치는 잠재적 충격 및 영향을 관찰해야 한다.
+• 다음 주 금통위의 금리 결정과 기업 실적 발표가 시장 sentiment에 중요한 영향을 미칠 전망이다.
+• 재정지출이 물가에 미치는 영향과 관련한 IMF의 조언에 기반하여 정부의 정책 변화 가능성에 주의해야 한다.
+
+📈 해외주식 PART
+📰 [NVDA] Nvidia's $500B AI Financing Bet Explained [2026] - tech-insider.org
+   (tech-insider.org · 10/18 15:37)
+→ Nvidia는 2026년까지 인공지능(AI) 분야에 5000억 달러를 투자할 계획을 발표했다. 이 전략은 AI 기술의 발전과 시장에서의 경쟁력을 강화하기 위한 것으로, 기업의 성장 잠재력을 높이는 데 초점을 맞추고 있다.
+
+📰 [NVDA] Why Is Advanced Micro Devices (AMD) Gaining Ground In AI Infrastructure?
+   (Yahoo Finance · 10/18 14:15)
+→ AMD는 Sterling과의 새로운 파트너십을 통해 BitRipple의 LT3 GPU 전송 기술을 AMD 및 NVIDIA GPU에 활용하여 대규모 AI GPU 클러스터의 효율성을 개선하는 데 집중하고 있습니다. 이 협력은 신형 하드웨어 구매 없이 기존 AMD GPU 플랫폼에서 BitRipple의 LT3 소프트웨어를 배포할 계획입니다.
+
+📰 [NVDA] Nvidia (NVDA) Stock Trades Below Fair Value On Cash Flow - Simply Wall Street
+   (Simply Wall Street · 10/18 10:40)
+→ Nvidia(NVDA) 주식이 현금 흐름 기준으로 적정 가치 이하에서 거래되고 있다는 분석이 나왔다. 이는 회사의 성장 잠재력과 투자자들의 관심에 따른 평가와 관련이 있다.
+
+📰 [TSLA] Elon Musk Says Optimus Is Tesla's Most Important Product. These 3 Suppliers Get Paid Before Tesla Does.
+   (Yahoo Finance · 10/18 16:25)
+→ 엘론 머스크는 옵티머스가 테슬라의 가장 중요한 제품이라고 밝혔으며, 일부 기술 파트너들이 옵티머스 생산의 이익을 먼저 누릴 것이라고 전했습니다. 이로 인해 테슬라는 이들 공급업체에게 먼저 비용을 지불하게 됩니다.
+
+📰 [TSLA] Does the Tesla Roadster qualify as an aircraft? - LiveNOW from FOX
+   (LiveNOW from FOX · 10/18 14:28)
+→ 테슬라 로드스터가 항공기로 분류될 수 있는지에 대한 논의가 진행되고 있다. 이 주제는 로드스터의 독특한 디자인과 성능 특성을 고려한 것이며, 자동차와 항공기 사이의 경계가 흐려지고 있다는 점을 강조하고 있다.
+
+📰 [TSLA] Dow Jones Futures Loom After S&P 500, Nasdaq Break Support; Will Meta Earnings Save AI?
+   (Yahoo Finance · 10/18 11:57)
+→ S&P 500과 나스닥이 주요 지지선을 뚫고 하락하자, 투자자들은 메타, 테슬라, 스페이스X의 실적 발표가 AI 분야를 회복시킬 수 있을지 주목하고 있다. 다우존스 선물이 그 동향에 영향을 미칠 것으로 보인다.
+
+📰 [HIMS] Hims & Hers Health - Backpack Securities Price, HIMS Price, Live Charts, and Marketcap - Coinbase
+   (Coinbase · 10/18 13:44)
+→ Hims & Hers Health의 주가는 현재 Backpack Securities와 함께 거래되고 있으며, Coinbase에서 실시간 차트와 시장 가치를 확인할 수 있습니다.
+
+📰 [HIMS] HIMS Deadline: HIMS Investors Have Opportunity to Lead Hims & Hers Health, Inc. Securities Fraud Lawsuit - PR Newswire
+   (PR Newswire · 10/18 06:43)
+→ Hims & Hers Health, Inc.의 투자자들은 증권 사기 소송에서 주도할 기회를 가지게 되었다. 이 관련 소식이 PR Newswire를 통해 발표되었다.
+
+📰 [HIMS] Hims & Hers Health (HIMS) Dropped, So What Is Driving Attention Now?
+   (Yahoo Finance · 10/17 16:12)
+→ Hims & Hers Health (HIMS)의 주가가 최근 하락세를 보이고 있지만, 새로운 제품 뉴스로 관심을 받고 있다. 여성용 탈모 관리 서비스를 제공하는 'Hers Hair'가 영국에 출시되었으며, 주가는 하루 동안 4.46%, 지난 주 동안 9.22% 하락했지만, 한 달간은 비슷한 수준을 유지하고 있다. 1년 동안의 총 주주 수익률은 43.61% 감소했다.
+
+📰 [RDW] RDW Oct 2026 12.000 call (RDW261016C00012000) Stock Price, News, Quote & History - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/18 03:07)
+→ RDW의 2026년 10월 만기 12.000 콜 옵션(RDW261016C00012000)에 대한 주식 가격, 뉴스, 견적 및 역사 정보가 Yahoo! Finance Canada에 게시되었습니다. 해당 콜 옵션에 대한 자세한 내용이 포함되어 있습니다.
+
+📰 [RDW] RDW Oct 2026 6.500 call (RDW261016C00006500) interactive stock chart - Yahoo Finance UK
+   (Yahoo Finance UK · 10/17 23:55)
+→ RDW의 2026년 10월 만기 6.500 콜 옵션(RDW261016C00006500)의 주식 차트가 Yahoo Finance UK에서 제공되고 있습니다. 이 차트는 해당 옵션의 성과를 실시간으로 확인할 수 있게 해줍니다.
+
+📰 [RDW] RDW Oct 2026 13.500 put (RDW261016P00013500) Interactive Stock Chart - Yahoo! Finance Canada
+   (Yahoo! Finance Canada · 10/17 22:16)
+→ RDW의 2026년 10월 만기 13.500 풋 옵션에 대한 정보가 제공되고 있으며, Yahoo! Finance Canada에서 차트를 통해 확인할 수 있습니다.
+
+📰 [IREN] IREN's 11% Slide Is a Sector Story — the Company-Specific Questions Are Still Open - ad-hoc-news.de
+   (ad-hoc-news.de · 10/18 14:40)
+→ IREN의 주가가 11% 하락한 것은 특정 기업의 문제보다는 산업 전반의 이슈와 관련이 있습니다. 그러나 회사 고유의 질문들은 여전히 미해결 상태입니다.
+
+📰 [IREN] IREN's 11% Slide Exposes a Wider Question: Who Can Afford the AI Buildout? - ad-hoc-news.de
+   (ad-hoc-news.de · 10/18 11:02)
+→ IREN의 주가가 11% 하락하면서 인공지능(AI) 구축에 필요한 비용을 감당할 수 있는 기업이 누구인지에 대한 더 넓은 질문이 제기되고 있다. 이는 AI 개발에 따른 경제적 부담에 대한 우려를 불러일으키고 있으며, 기업들의 투자 능력이 도마 위에 오르고 있다.
+
+📰 [IREN] IREN (IREN) Dropped, What Is Behind The Move? - Simply Wall Street
+   (Simply Wall Street · 10/18 07:46)
+→ IREN(IREN)의 주가가 하락한 이유에 대한 소식이 전해졌다. 이 하락의 배경에는 시장의 변동성과 여러 외부 요인이 영향을 미쳤다는 분석이 있다. 추가적인 정보는 시장의 전반적인 상황과 기업의 개별적인 성과에 따라 달라질 수 있다.
+
+📰 [RKLB] Rocket Lab Corporation (NASDAQ:RKLB) Stock Rated "Moderate Buy" by Wall Street Analysts - MarketBeat
+   (MarketBeat · 10/18 15:32)
+→ 로켓랩 코퍼레이션(Rocket Lab Corporation, NASDAQ: RKLB)의 주식이 월스트리트 애널리스트들에 의해 '적당한 매수(Moderate Buy)'로 평가받았습니다. 시장 전망이 긍정적이라는 분석이 나오고 있습니다.
+
+📰 [RKLB] Rocket Lab Stock Erases $57 Billion in Value as Headwinds Mount - Benzinga
+   (Benzinga · 10/18 05:30)
+→ 로켓랩의 주식 가치가 570억 달러 하락하며 어려움이 가중되고 있다. 회사의 여러 도전에 직면하면서 투자자들은 우려를 나타내고 있다.
+
+📰 [RKLB] Rocket Lab's Neutron Delay Leaves Wall Street Bullish But Raises the Stakes for 2027 - MarketBeat
+   (MarketBeat · 10/18 01:08)
+→ 로켓랩의 뉴트론 발사 지연이 월가에서 긍정적인 전망을 유지하게 했지만, 2027년에는 더 큰 부담을 안겨주고 있습니다. 전문가들은 이러한 상황이 회사의 향후 성과에 미치는 영향을 주목하고 있습니다.
+
+
+🪙 코인 PART
+📰 [BTC-USD] Bitcoin struggles above $80K as whale transfers signal mixed outlook
+   (Yahoo Finance · 10/18 16:00)
+→ 비트코인은 81,500달러 이상에서 거래되며 회복세를 유지하기 어려운 상황이다. 대규모 고래 거래와 상충되는 자산 유입으로 암호화폐의 단기 전망이 불투명해진 가운데, 블록체인 기술에 대한 기관의 관심은 계속해서 증가하고 있다.
+
+📰 [BTC-USD] Bitcoin struggles above $80K as whale transfers signal mixed outlook - Investing.com
+   (Investing.com · 10/18 15:40)
+→ 비트코인이 8만 달러 이상에서 고전하고 있으며, 고래 지갑 간의 대규모 거래가 혼재된 전망을 암시하고 있습니다. 이러한 움직임은 시장에 대한 불확실성을 나타내고 있습니다.
+
+📰 [BTC-USD] Bitcoin floor debated: $10K if stocks crash 20%, or $30K due to institutional support. - Pluang
+   (Pluang · 10/18 15:34)
+→ 비트코인의 바닥 가격에 대한 논의가 진행되고 있으며, 주식이 20% 하락하면 비트코인 가격이 1만 달러에 이를 수 있지만, 기관 투자자의 지원으로 인해 3만 달러에 머무를 가능성도 제기되고 있습니다.
+
+📰 [ETH-USD] Ethereum Price Prediction: Bitmine Adds 12,532 ETH as Remittix’s $0.28 Entry Faces a November Launch Countdown - StreetInsider
+   (StreetInsider · 10/18 15:11)
+→ Bitmine이 12,532 ETH를 추가하면서 이더리움 가격 예측에 관심이 모아지고 있으며, Remittix는 0.28달러에 진입할 예정이다. Remittix의 출시가 11월로 예정되어 있어 시장의 기대감이 높아지고 있다.
+
+📰 [ETH-USD] Ethereum Price Prediction: Deutsche Bank Plans ETH Custody Launch as Pepeto Targets 100x - TechBullion
+   (TechBullion · 10/18 15:05)
+→ 도이체 뱅크가 이더리움(Ethereum) 자산 관리 서비스를 출시할 계획을 발표했습니다. 또한 암호화폐 프로젝트인 펩토(Pepeto)는 이더리움의 가치가 100배 상승할 것으로 예상하고 있습니다.
+
+📰 [ETH-USD] Ethereum Price Prediction: A $2,700 October Ceiling? AlphaPepe Makes Its Case for a Much Bigger Breakout - StreetInsider
+   (StreetInsider · 10/18 13:26)
+→ Ethereum의 가격 예측에서 10월에 2,700달러의 저항이 예상되고 있습니다. AlphaPepe는 더 큰 상승 가능성을 주장하며, 이를 통해 Ethereum의 가격이 더 크게 오를 수 있음을 시사하고 있습니다.
+
+📰 [SOL-USD] Top 3 Cryptos to Buy Now: Remittix, Solana and XRP as Alpenglow Nears and RLUSD Enters Core Banking - StreetInsider
+   (StreetInsider · 10/18 15:11)
+→ 현재 추천하는 암호화폐로 Remittix, Solana, XRP가 있으며, 이는 Alpenglow의 접근과 RLUSD의 핵심 은행 시스템 진입과 관련이 있다. 이러한 암호화폐들은 향후 투자 가치가 높을 것으로 예상된다.
+
+📰 [SOL-USD] Solana Network Transfers Surge 33% in September, Leads Stablecoin Volume - Altcoin Buzz
+   (Altcoin Buzz · 10/18 15:08)
+→ 솔라나 네트워크의 거래량이 9월에 33% 증가하며 스테이블코인 거래에서 선두를 차지했습니다. 이는 솔라나의 플랫폼에 대한 높은 수요와 활발한 활동을 반영합니다.
+
+📰 [SOL-USD] Yuga Labs Launches Mudwater TCG on Solana, Featuring BAYC Art - Cryptonews.net
+   (Cryptonews.net · 10/18 14:10)
+→ Yuga Labs가 Solana 블록체인에서 BAYC 아트를 활용한 카드 게임 'Mudwater TCG'를 출시했습니다. 이 게임은 NFT와 결합된 독특한 카드 플레이 경험을 제공하며, BAYC 팬들과 게이머들 사이에서 관심을 받고 있습니다.
+
+📰 [BMNR] (BMNR) as a Liquidity Pulse for Institutional Tactics - Stock Traders Daily
+   (Stock Traders Daily · 10/18 12:46)
+→ BMNR이 기관 투자자들의 전략적 접근을 위한 유동성 지표로 주목받고 있다. 이 주식은 시장에서의 유동성을 나타내는 중요한 역할을 하고 있으며, 트레이더들에게 유용한 정보를 제공하고 있다.
+
+📰 [BMNR] The BMNR Accumulation Era Is Over. Here Is What Matters Now - KuCoin
+   (KuCoin · 10/18 04:47)
+→ BMNR의 축적 시대가 끝났다는 소식이 전해졌습니다. 이제는 새로운 시장 상황에 맞춰 투자 전략을 조정하는 것이 중요하다고 강조되고 있습니다. 이를 통해 투자자들이 향후 기회를 잡을 수 있도록 해야 한다는 메시지가 포함되어 있습니다.
+
+📰 [BMNR] Form PRE 14A Bitmine Immersion Technologies Inc For: 16 October By Investing.com - Investing.com Canada
+   (Investing.com Canada · 10/17 12:19)
+→ 비트마인 임머전 테크놀로지스(BITMINE Immersion Technologies Inc.)가 10월 16일자 제출 서류인 FORM PRE 14A를 발표했습니다. 이 서류는 주주들에게 기업의 주요 사항 및 경영 전략에 대한 정보를 제공하기 위한 것입니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장은 XRP와 STX의 거래 비중이 두드러지며, 비트코인과 이더리움의 가격은 각각 81,611달러, 2,408달러로 보고됐다. 전반적으로 하락세가 지속되고 있는 가운데 주요 거래소의 거래량도 증가하고 있다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 81,611달러, 이더리움 2,408달러
+   → XRP는 국내 코인 거래 관심의 15.93%를 차지하며 92.2점을 기록, 최근 7일간 하락세가 지속되고 있다. STX는 국내 비중이 글로벌 대비 43.6배 높은 것으로 나타났다.
+   (토큰포스트 · 10/18 17:00)
+2. (온체인) 비트코인 8237개, 최근 7일 CEX 순유입
+   → 비트코인의 MVRV 백분위가 30 아래로 하락해 현재 평가 수준이 과거 25%에 해당한다. 이는 비트코인이 저항 수준을 하향 조정한 후 나타난 결과로, 전반적인 과도기 구간에 진입하고 있다는 분석이 있다.
+   (토큰포스트 · 10/18 16:57)
+3. (규제) 자체 보관 지갑 규정안, 6년 만에 철회돼
+   → 미국 주식시장 휴장 중 반도체 연계 무기한 선물에서 5160만달러의 포지션 청산이 발생하였다. 이는 실제 주가가 갱신되지 않았음에도 불구하고 거래가 지속된 결과이다.
+   (토큰포스트 · 10/18 16:16)
+4. (기타) 비트코인 해시레이트 5개월 만에 최고치
+   → 최근 5개월 간 비트코인 해시레이트가 최고치에 도달하며 긍정적인 신호를 보이고 있다. 그러나 일부 트레이더는 지캐시에서 8만5000달러의 평가손실을 기록하는 등 혼조세가 이어지고 있다.
+   (토큰포스트 · 10/18 16:12)
+5. (기타) 24시간 동안 레버리지 포지션 1억8060만달러 청산
+   → 미 금융범죄단속네트워크(FinCEN)가 자체 보관 지갑 관련 규정안을 6년 만에 철회하였다. 이는 자산의 프라이버시와 규제 완화를 위한 결정으로 해석된다.
+   (토큰포스트 · 10/18 16:06)
+
+[흐름·전망]
+• XRP와 STX의 거래로 인해 국내 시장이 특화되는 모습이 나타나고 있으므로 향후 가격 및 관심 지수 변화를 주목할 필요가 있다.
+• 비트코인의 MVRV 하락을 통해 시장의 저조한 심리가 반영되고 있으니, 투자자들은 이에 따른 변동성을 분석하는 것이 중요하다.
+• 무기한 선물 청산과 관련된 고비용 거래 사례는 당일 주가에 영향을 줄 가능성이 있으므로 시장의 반응을 지속적으로 모니터링할 필요가 있다.
+• FinCEN의 규정 철회가 미국 및 글로벌 가상자산 시장에 미치는 영향을 고려해 향후 정책 변화에 대한 관전을 강화해야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 18 (Extreme Fear)
+  - 크립토 기준: 53 (Neutral)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장에서는 다주택자들의 세금 관련 변화로 인한 고민이 증가하고 있으며, 경기도 아파트 분양가가 역대 최고치를 기록하는 등 전반적인 상승세가 지속되고 있다.
+
+[핵심 뉴스]
+1. (정책) 다주택자, 종부세 기준 변화로 고민 증가
+   → 정부가 종합부동산세 기준을 '집 수'에서 '집값'으로 변경하고, 다주택자의 양도소득세 중과를 한시적으로 완화함에 따라, 다주택자들은 매도, 증여, 보유 중 선택을 고민하고 있다. 서울 아파트 매물은 7만5000건을 넘어섰으며, 양도세 완화 기간에 매도 시 세금 차익이 발생할 수 있다.
+   (매일경제 · 10/18 15:46)
+2. (공급) 경기도 아파트 분양가, 역대 최고치 기록
+   → 경기도 아파트 평균 분양가가 3.3㎡당 2256만원으로 역대 최고치를 기록하며, 특히 구리시는 3991만원에 달해 경기 지역에서 분양가 상승이 두드러진다. 올해 1~9월 경기도 아파트 평균 매매가격도 전년 동기 대비 6.64% 상승했다.
+   (매일경제 · 10/18 13:45)
+3. (공급) 서울 올해 일반분양 물량 1만887가구 전망
+   → 올해 서울 아파트 일반분양 물량이 지난해의 약 2.7배인 1만887가구로 예상되며, 주요 재건축 단지의 분양이 흥행을 이루고 있다. 그러나 여전히 서울의 일반 분양 비율은 부족하다는 지적이 제기되고 있다.
+   (매일경제 · 10/18 12:55)
+4. (매매) 토지거래허가구역 규제 1년, 가격 상승 지속
+   → 토지거래허가구역 지정 1년이 지난 현재, 수도권 아파트 가격은 88주 연속 상승세를 기록하고 있다. 그러나 강남 3구는 하락세를 나타내고 있으며, 규제 연장 여부에 대한 논의가 활발하게 이뤄지고 있다.
+   (매일경제 · 10/18 11:03)
+5. (전세) 임대난에 오피스텔 월세 상승
+   → 전국적으로 월세가 0.86% 상승했으며, 서울 오피스텔 월세가격은 평균 100만원에 육박하고 있다. 전·월세 매물 부족과 직주근접 수요 상승이 주요 원인으로 꼽힌다.
+   (매일경제 · 10/18 08:23)
+6. (매매) 국토부, 서울 집값 하향 안정 신호
+   → 국토부는 서울 집값 하락이 지속되고 있으며, 매물 쌓임 문제로 하향 안정 신호가 나타나고 있다고 언급했다.
+   (Chosunbiz · 10/18 16:10)
+
+[흐름·전망]
+• 부동산 시장의 세금 변화에 따라 다주택자들의 행동과 매물 출회가 어떻게 변할지 주목해야 한다.
+• 경기도 아파트 분양가 상승세가 지속되고 있어, 공급 과잉 우려가 커질 가능성도 염두에 두어야 한다.
+• 서울의 일반 분양 물량 증가가 향후 분양가에 미치는 영향을 관찰할 필요가 있다.
+• 토지거래허가구역 관련 정책 변화가 시장에 미치는 영향을 분석하는 것이 필요하다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 텍사스와 미시간의 상원 후보들에 대한 지지를 표명하며 그들이 믿음을 저버리지 않을 것이라고 강조했다. 또한 아이오와와 사우스캐롤라이나의 하원 의원 후보들에게도 지지를 보냈다.
+
+[주요 발언]
+1. (인사) 트럼프는 켄 팩슨을 텍사스의 상원 후보로 지지하며 그가 결코 실망시키지 않을 것이라고 주장했다.
+   (Truth Social · 10/18 02:08)
+2. (인사) 트럼프는 아이오와 제3선거구 하원 의원 차기 선거에서 잭 넌을 지지한다고 밝혔다.
+   (Truth Social · 10/18 02:08)
+3. (인사) 트럼프는 미시간의 상원 후보 마이크 로저스에 대한 지지를 표명하며 그가 훌륭한 애국자라고 주장했다.
+   (Truth Social · 10/18 02:07)
+4. (인사) 트럼프는 사우스캐롤라이나의 다를린 그레이엄 상원 의원에 대한 재선 지지를 선언했다.
+   (Truth Social · 10/18 01:58)
+5. (인사) 트럼프는 사우스캐롤라이나 제7선거구 하원 의원 러셀 프라이에 대한 재선 지지를 밝혔다.
+   (Truth Social · 10/18 01:58)
+6. (기타) 트럼프는 켄터키에 도착할 예정임을 알리며 큰 관중을 기대하고 있다고 언급했다.
+   (Truth Social · 10/18 01:31)
+
+[흐름·전망]
+• 트럼프의 지지 표명은 선거전에서 그가 중요하게 여기는 인물들에게 긍정적인 영향을 미칠 가능성이 있다.
+• 특정 후보에 대한 강한 지지는 트럼프의 정치적 영향력을 지속적으로 부각시킬 수 있다.
+• 앞으로의 선거 캠페인에서 트럼프의 지원 여부에 따라 후보들의 지지율 변동을 주목할 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
