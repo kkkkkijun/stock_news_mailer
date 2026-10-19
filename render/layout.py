@@ -111,18 +111,16 @@ a:hover{opacity:.72;}
  color:var(--muted-2);background:transparent;border:0;border-radius:7px;
  padding:8px 4px;cursor:pointer;}
 .sub-tab.on{background:#3a6fd8;color:#fff;}   /* 서브탭 활성=블루(상위 다크와 구분) */
-/* A안: 언더라인 서브탭(주식 탭) — 상단 뉴스탭과 통일감 */
-.sub-tabs.sub-underline{gap:22px;background:none;border-radius:0;padding:0 2px;
- border-bottom:1px solid var(--border);}
-.sub-underline .sub-tab{flex:none;font-size:14px;font-weight:800;color:var(--faint);
- background:none;border-radius:0;padding:8px 2px 11px;position:relative;
- display:flex;align-items:center;gap:6px;}
-.sub-underline .sub-tab.on{background:none;color:var(--ink);}
-.sub-underline .sub-tab.on::after{content:"";position:absolute;left:0;right:0;
- bottom:-1px;height:2.5px;background:var(--ink);border-radius:2px;}
-.sub-underline .subcnt{font-size:11px;font-weight:700;color:var(--faint);
- background:var(--nav-track);border-radius:999px;padding:1px 7px;}
-.sub-underline .sub-tab.on .subcnt{color:#fff;background:var(--ink);}
+/* 주식 탭 서브탭: 알약형 토글(미국증시 · 코인) */
+.sub-tabs.sub-pill{display:inline-flex;gap:2px;padding:4px;border-radius:999px;margin-bottom:14px}
+.sub-pill .sub-tab{flex:none;display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:700;
+ color:var(--muted-2);border-radius:999px;padding:6px 15px 6px 7px;transition:background .15s,color .15s}
+.sub-pill .sub-tab:hover{color:var(--ink)}
+.sub-pill .sub-tab.on{background:var(--card);color:var(--ink);font-weight:800;
+ box-shadow:0 1px 3px rgba(15,27,45,.14),0 0 0 1px rgba(15,27,45,.04)}
+:root[data-theme="dark"] .sub-pill .sub-tab.on{background:#262e3b;box-shadow:0 0 0 1px var(--border),0 1px 3px rgba(0,0,0,.4)}
+.pill-ico{width:20px;height:20px;flex-shrink:0;display:block}
+.sub-pill .sub-tab:not(.on) .pill-ico{opacity:.85}
 .sub-pane .part-head{display:none;}   /* 서브탭이 제목 역할 → 파트 헤더 중복 제거 */
 .tk-groups{display:flex;flex-direction:column;gap:10px;}
 .tk-group{background:var(--card);border:1px solid var(--border);border-radius:14px;
@@ -794,8 +792,8 @@ document.querySelectorAll('.sub-tab').forEach(function(b){
     host.querySelectorAll('.sub-pane').forEach(function(p){
       p.style.display = (p.getAttribute('data-pane')===sub) ? '' : 'none';
     });
-    b.parentNode.querySelectorAll('.sub-tab').forEach(function(x){x.classList.remove('on');});
-    b.classList.add('on');
+    b.parentNode.querySelectorAll('.sub-tab').forEach(function(x){x.classList.remove('on'); x.setAttribute('aria-selected','false');});
+    b.classList.add('on'); b.setAttribute('aria-selected','true');
   });
 });
 document.querySelectorAll('.tk-more').forEach(function(b){
@@ -883,10 +881,26 @@ def _render_parts(sections: list[tuple[str, list[str]]], qmap: dict[str, Any],
     return rendered
 
 
+# 주식 탭 서브탭(알약형): 아이콘은 인라인 SVG — 국기 이모지는 Windows에서 "US" 글자로 보여서.
+_ICO_US = ('<svg class="pill-ico" viewBox="0 0 20 20" aria-hidden="true"><defs><clipPath id="icoUs">'
+           '<circle cx="10" cy="10" r="10"/></clipPath></defs><g clip-path="url(#icoUs)">'
+           '<rect width="20" height="20" fill="#fff"/>'
+           + "".join(f'<rect y="{y}" width="20" height="1.55" fill="#d62b3a"/>' for y in (0, 3.1, 6.2, 9.3, 12.4, 15.5, 18.6))
+           + '<rect width="10" height="10.85" fill="#2b3a8c"/>'
+           + "".join(f'<circle cx="{x}" cy="{y}" r=".7" fill="#fff"/>'
+                     for x, y in ((2.5, 2.6), (5, 2.6), (7.5, 2.6), (3.75, 5.2), (6.25, 5.2), (2.5, 7.8), (5, 7.8), (7.5, 7.8)))
+           + '</g><circle cx="10" cy="10" r="9.6" fill="none" stroke="rgba(0,0,0,.12)" stroke-width=".8"/></svg>')
+_ICO_BTC = ('<svg class="pill-ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#f7931a"/>'
+            '<path d="M7.2 5.4h4.1c1.6 0 2.6.8 2.6 2.1 0 .9-.5 1.5-1.2 1.8 1 .3 1.6 1 1.6 2.1 0 1.5-1.1 2.4-2.9 2.4H7.2z'
+            'M9 7v2.5h2c.8 0 1.2-.4 1.2-1.25S11.8 7 11 7zm0 4v2.9h2.3c.9 0 1.4-.5 1.4-1.45S14.2 11 13.3 11z" fill="#fff"/>'
+            '<path d="M8.9 4v1.6M10.9 4v1.6M8.9 13.6v1.6M10.9 13.6v1.6" stroke="#fff" stroke-width="1.1" stroke-linecap="round"/></svg>')
+_PILL = {"os": (_ICO_US, "미국증시"), "coin": (_ICO_BTC, "코인")}
+
+
 def _render_tab_panels(rendered: dict[str, str]) -> tuple[list[str], list[str]]:
     """TABS 구성에 따라 (nav 버튼 목록, panel HTML 목록)을 만든다.
 
-    주식(os)·코인(coin)이 함께 있으면 서브탭(밑줄 스타일)으로 감싼다."""
+    주식(os)·코인(coin)이 함께 있으면 알약형 서브탭(미국증시 · 코인)으로 감싼다."""
     _PART_META = {pid: (icon, nm) for pid, icon, nm, _k in PARTS}
     navs, panels, first = [], [], True
     for i, (tab, pids) in enumerate(TABS):
@@ -897,15 +911,14 @@ def _render_tab_panels(rendered: dict[str, str]) -> tuple[list[str], list[str]]:
             btns, panes = [], []
             for j, p in enumerate(have):
                 _pico, pnm = _PART_META.get(p, ("", p))
+                ico, lab = _PILL.get(p, ("", pnm))
                 ons = " on" if j == 0 else ""
                 sty = "" if j == 0 else ' style="display:none"'
-                cnt = rendered[p].count('class="tk-ghead"')   # 종목 수
-                cntchip = f' <span class="subcnt">{cnt}</span>' if cnt else ""
-                btns.append(f'<button class="sub-tab{ons}" data-sub="{p}">'
-                            f'{_e(pnm)}{cntchip}</button>')
+                btns.append(f'<button class="sub-tab{ons}" data-sub="{p}" role="tab" '
+                            f'aria-selected="{"true" if j == 0 else "false"}">{ico}{_e(lab)}</button>')
                 panes.append(f'<div class="sub-pane" data-pane="{p}"{sty}>'
                              f'{rendered[p]}</div>')
-            inner = ('<div class="stock-wrap"><div class="sub-tabs sub-underline">'
+            inner = ('<div class="stock-wrap"><div class="sub-tabs sub-pill" role="tablist">'
                      + "".join(btns) + '</div>' + "".join(panes) + '</div>')
         else:
             inner = "".join(rendered[p] for p in have)
