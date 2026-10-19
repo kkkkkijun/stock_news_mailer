@@ -19,13 +19,24 @@ document.querySelectorAll('.sub-tab').forEach(function(b){
     b.classList.add('on'); b.setAttribute('aria-selected','true');
   });
 });
-document.querySelectorAll('.tk-more').forEach(function(b){
-  b.addEventListener('click', function(){
-    var g=b.closest('.tk-group'); if(!g) return;
-    var open=g.classList.toggle('open');
-    b.innerHTML = open ? '접기 <span class="tk-caret">▴</span>'
-                       : '뉴스 '+b.getAttribute('data-n')+'건 더 보기 <span class="tk-caret">▾</span>';
-  });
+/* 주식 탭 뉴스: 기사 펼침 · 호재/악재 필터 · 정렬 */
+document.addEventListener('click', function(ev){
+  var rh=ev.target.closest('.nb-rh');
+  if(rh){ var r=rh.parentNode, o=r.classList.toggle('open'); rh.setAttribute('aria-expanded', o?'true':'false'); return; }
+  var f=ev.target.closest('.nb-f'); if(!f) return;
+  var part=f.closest('.part'), k=f.getAttribute('data-f');
+  part.querySelectorAll('.nb-f').forEach(function(x){ x.classList.toggle('on', x===f); });
+  part.querySelectorAll('.nb-card').forEach(function(c){ var n=0;
+    c.querySelectorAll('.nb-row').forEach(function(r){ var ok=!k||r.getAttribute('data-s')===k; r.style.display=ok?'':'none'; if(ok) n++; });
+    c.style.display=n?'':'none'; });
+});
+document.addEventListener('change', function(ev){
+  var sel=ev.target.closest('.nb-sort'); if(!sel) return;
+  var list=sel.closest('.part').querySelector('.nb-list'), k=sel.value;
+  [].slice.call(list.querySelectorAll('.nb-card')).sort(function(a,b){
+    var d=k?(+b.getAttribute('data-'+k))-(+a.getAttribute('data-'+k)):0;
+    return d||(+a.getAttribute('data-i'))-(+b.getAttribute('data-i')); })
+  .forEach(function(c){ list.appendChild(c); });
 });
 /* 신선도: 빌드 시각 대비 '지금'까지의 경과시간을 뷰 시점에 계산.
    → 빌드가 실패해 페이지가 갱신 안 돼도 지연이 눈에 보임. */
