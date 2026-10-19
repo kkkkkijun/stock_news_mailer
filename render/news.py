@@ -70,11 +70,10 @@ def _nb_row(it, i, prev_sets):
             f'<div class="nb-body">{why}{desc}{orig}{link}</div></div>')
 
 
-def _render_ticker_groups(items, prev_sets, quotes=None):
-    """주식 탭 뉴스(B안): 종목 카드마다 [배지·이름·현재가·등락·추이] + 한 줄 총평·호재/악재 비율 + 기사 한 줄 목록.
+def _render_ticker_groups(items, prev_sets):
+    """주식 탭 뉴스(B안): 종목 카드마다 [배지·이름] + 한 줄 총평·호재/악재 비율 + 기사 한 줄 목록.
 
     판정(🏷)이 없는 예전 회차는 총평·비율·필터 없이 같은 카드 모양으로 원문 제목을 보여준다."""
-    qmap = {q.get("ticker"): q for q in (quotes or []) if q}
     groups = []
     for it in items:
         lbl = it["label"] if it["kind"] == "ticker" else None
@@ -103,18 +102,10 @@ def _render_ticker_groups(items, prev_sets, quotes=None):
             key = lbl.split("-")[0]
             bg = _ticker_color(lbl)
             ko = _TICKER_KO.get(key.upper(), "")
-            q = qmap.get(lbl) or {}
-            chg, px = q.get("chg"), q.get("price")
-            if isinstance(chg, (int, float)):
-                up = chg >= 0
-                pq = (f'<span class="nb-px">{f"${px:,.2f}" if isinstance(px, (int, float)) else ""}'
-                      f' <em class="{"up" if up else "dn"}">{"▲" if up else "▼"} {abs(chg):.2f}%</em></span>')
-                sp = _spark_svg(q.get("spark"), "#e5484d" if up else "#3b82f6", w=72, h=24)
-            else:
-                pq = sp = ""
+            # 가격·등락·추이는 바로 위 시세 카드 줄에 이미 있으므로 여기선 배지·이름만
             out.append('<div class="nb-head">'
                        f'<span class="tk-badge" style="background:{bg};color:{_text_on(bg)}">{_e(key)}</span>'
-                       f'<span class="nb-nm"><b>{_e(ko or key)}</b>{pq}</span>{sp}</div>')
+                       + (f'<b class="nb-nm">{_e(ko)}</b>' if ko else "") + '</div>')
         brief = next((it.get("brief") for it in gitems if it.get("brief")), "")
         if brief or any(cnt.values()):
             mood = "".join(f'<i class="{k}" style="flex:{cnt[k]}"></i>' for k in "gnb" if cnt[k])
@@ -152,7 +143,7 @@ def _render_part(pid, icon, name, lines, hero=False, quotes=None, prev_sets=None
              and not (re.fullmatch(r"\(.*?\)", it["title"].strip())
                       and not (it.get("desc") or "").strip())]
     if items and group_by_ticker:
-        h.append(_render_ticker_groups(items, prev_sets, quotes))
+        h.append(_render_ticker_groups(items, prev_sets))
     elif items:
         h.append('<div class="news-list">')
         for i, it in enumerate(items):

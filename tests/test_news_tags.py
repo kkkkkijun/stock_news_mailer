@@ -71,10 +71,10 @@ def test_body_format_roundtrip(monkeypatch):
     assert items[0]["brief"] == "자금 조달 우려로 약세" and "brief" not in items[1]
     assert items[1]["ko"] == "헤드라인 1" and items[1]["why"] == "근거 1" and items[1]["dups"] == 1
     assert items[2]["link"] == "https://ex.com/2" and items[0]["desc"] == "요약 0"
-    html = _render_ticker_groups(items, None, [{"ticker": "IREN", "price": 26.99, "chg": -11.19, "spark": [3, 2, 1]}])
+    html = _render_ticker_groups(items, None)
     assert 'class="nb-bar"' in html and "호재 1 · 악재 1 · 중립 0" in html
     assert "기사 아닌 페이지 1건 숨김" in html and "같은 내용 1곳 더" in html
-    assert "$26.99" in html and "▼ 11.19%" in html and 'href="https://ex.com/0"' in html
+    assert 'href="https://ex.com/0"' in html and "nb-px" not in html     # 가격은 위 시세 카드 줄에만
     assert html.count('class="nb-row open"') == 1                 # 첫 기사만 펼침
     _s, items2, _b, _n = _parse_part(
         ["📰 [X] a", "🏷 중립 | 중립기사 | r | 0", "→ s", "📰 [X] b", "🏷 악재 | 악재기사 | r | 0", "→ s"])
