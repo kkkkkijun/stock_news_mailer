@@ -16,6 +16,8 @@ _SECTION_RE = re.compile(r"^(📈|🪙|📊|💹|🌐|🏘️|💬)\s*(.+)$")
 _LABEL_RE = re.compile(r"^\[(.+)\]$")
 _ITEM_RE = re.compile(r"^(\d+)\.\s*(?:\((.+?)\)\s*)?(.+)$")
 _TICKER_RE = re.compile(r"^📰\s*\[(.+?)\]\s*(.+)$")
+_BRIEF_RE = re.compile(r"^🧭\s*\[(.+?)\]\s*(.+)$")          # 종목 한 줄 총평(main.fetch_and_summarize_news)
+_SENTS = {"호재": "g", "악재": "b", "중립": "n", "제외": "x"}
 _FG_RE = re.compile(r"^-\s*(.+?)\s*:\s*(\d+)\s*\((.+?)\)")
 
 
@@ -44,11 +46,14 @@ def _parse_part(lines):
 
     - [오늘 한눈에] → 요약 문단
     - 숫자 항목(1. …) / 티커(📰 …) → 뉴스/발언 카드
+      티커 기사 뒤 '🏷 판정 | 한글 헤드라인 | 근거 | 중복 수' → sent(g/b/n/x)·ko·why·dups,
+      '🔗 URL' → link, 앞의 '🧭 [티커] 총평' → 그 종목 첫 기사의 brief (없으면 예전 형식 그대로)
     - '• …' 불릿 → 전망 리스트(라벨은 직전 [ ] 이름 유지)
     - '※ …' → 하단 노트
     """
     summary, items, blocks, note = "", [], [], ""
     curblock, cur, cur_label = None, None, ""
+    briefs: dict[str, str] = {}
     mode = "items"
     for s in lines:
         m = _LABEL_RE.match(s)
@@ -73,11 +78,32 @@ def _parse_part(lines):
             cur = None
             continue
 
+        mb = _BRIEF_RE.match(s)
+        if mb:
+            briefs[mb.group(1)] = mb.group(2).strip()
+            cur = None
+            continue
         mt = _TICKER_RE.match(s)
         if mt:
             cur = {"kind": "ticker", "label": mt.group(1),
                    "title": mt.group(2), "desc": "", "src": ""}
+            if mt.group(1) in briefs:               # 총평은 그 종목 첫 기사에 붙인다
+                cur["brief"] = briefs.pop(mt.group(1))
             items.append(cur)
+            continue
+        if cur is not None and s.startswith("🏷"):
+            # 🏷 판정 | 한글 헤드라인 | 근거 | 같은 내용 다른 출처 수
+            f = [x.strip() for x in s[1:].lstrip("️").split("|")]
+            if f and f[0] in _SENTS:
+                cur["sent"] = _SENTS[f[0]]
+                cur["ko"] = f[1] if len(f) > 1 else ""
+                cur["why"] = f[2] if len(f) > 2 else ""
+                cur["dups"] = int(f[3]) if len(f) > 3 and f[3].isdigit() else 0
+            continue
+        if cur is not None and s.startswith("🔗"):
+            url = s[1:].strip()
+            if url.startswith(("http://", "https://")):
+                cur["link"] = url
             continue
         mi = _ITEM_RE.match(s)
         if mi:

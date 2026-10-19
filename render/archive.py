@@ -140,7 +140,8 @@ def _search_index():
             _s, its, _b, _n = _parse_part(lines)
             for it in its:
                 if it["title"]:
-                    items.append({"t": it["title"], "s": name})
+                    t = f'{it["ko"]} · {it["title"]}' if it.get("ko") else it["title"]   # 한글 헤드라인도 검색되게
+                    items.append({"t": t, "s": name})
         if items:
             idx.append({"d": f"{y}-{mo}-{d}", "ap": ap,
                         "link": fn[:-4] + ".html", "items": items})

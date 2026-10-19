@@ -51,6 +51,35 @@ def _clean(text):
     return html.unescape(text).strip()
 
 
+# 시세·차트·옵션 가격 페이지(기사 아님). 예: "RDW Oct 2026 17.000 call (RDW261030C00017000) stock price, news, quote …",
+# "Hims & Hers Health - … Price, HIMS Price, Live Charts, and Marketcap - Coinbase"
+_QUOTE_PAGE_RE = re.compile(
+    r"\b[A-Z]{1,6}\d{6}[CP]\d{8}\b"                      # 옵션 계약 코드
+    r"|stock price, news, quote"
+    r"|historical prices and data"
+    r"|live charts?,? and market ?cap"
+    r"|price chart|stock quote\b",
+    re.I)
+
+
+def _is_quote_page(title: str) -> bool:
+    return bool(_QUOTE_PAGE_RE.search(title or ""))
+
+
+def _strip_publisher(title: str, publisher: str) -> str:
+    """'제목 - 매체명' 끝의 매체명 제거(Google News 형식)."""
+    t = (title or "").strip()
+    for suf in {publisher or "", re.sub(r"^https?://", "", publisher or "").rstrip("/")}:
+        if suf and t.endswith(" - " + suf):
+            return t[: -len(" - " + suf)].rstrip()
+    m = re.match(r"^(.*\S)\s+-\s+[^-]{2,40}$", t)      # 매체명이 publisher와 다르게 붙은 경우
+    return m.group(1) if (m and publisher and publisher != "Yahoo Finance") else t
+
+
+def _title_key(title: str, publisher: str) -> str:
+    return re.sub(r"\W+", "", _strip_publisher(title, publisher).lower())[:80]
+
+
 def fetch_news_articles(ticker: str) -> list[dict]:
     """티커별 뉴스 기사 목록(dict)을 구조화해서 반환."""
     articles = []
@@ -92,14 +121,25 @@ def fetch_news_articles(ticker: str) -> list[dict]:
                 }
             )
 
+    # --- 기사 아닌 페이지 제외(시세·차트·옵션 가격표) ---
+    articles = [a for a in articles if not _is_quote_page(a["title"])]
+
     # --- 중복 제거 (정규화한 제목 기준) ---
-    seen = set()
+    # Google News 제목은 끝에 " - 매체명"이 붙어 같은 기사가 매체만 달리 여러 번 나온다 → 떼고 비교.
+    # 남는 기사에 같은 내용을 낸 다른 출처 수(dups)를 기록한다.
+    seen: dict[str, dict] = {}
     unique = []
     for a in articles:
-        key = re.sub(r"\W+", "", a["title"].lower())[:80]
-        if key and key not in seen:
-            seen.add(key)
-            unique.append(a)
+        key = _title_key(a["title"], a["publisher"])
+        if not key:
+            continue
+        if key in seen:
+            seen[key]["dups"] += 1
+            continue
+        a["title"] = _strip_publisher(a["title"], a["publisher"])
+        a["dups"] = 0
+        seen[key] = a
+        unique.append(a)
 
     # --- 정렬: (관련성 우선) → (최신순) ---
     def relevance(a):

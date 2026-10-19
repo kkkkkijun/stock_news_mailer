@@ -15,10 +15,10 @@ from datetime import datetime
 from typing import Any
 
 import netutil
-from settings import KST, stock_tickers, crypto_tickers
+from settings import KST, TICKER_NAMES, stock_tickers, crypto_tickers
 
 # ---- 호환 re-export: DAG/fundamentals가 main.X 로 접근 ----
-from llm import get_openai_client, chatgpt_summarize
+from llm import get_openai_client, chatgpt_summarize, analyze_news, ticker_brief
 from newsfeed import fetch_news_articles
 from quotes import fetch_quote, fetch_all_quotes, build_prices
 from earnings import build_earnings, build_reports, EARNINGS_TICKERS, _EARN_KO
@@ -35,25 +35,43 @@ log = logging.getLogger(__name__)
 
 
 def fetch_and_summarize_news(ticker: str, client: Any = None) -> list[str]:
-    """티커별 뉴스를 수집·요약해 메일용 문자열 리스트로 반환."""
+    """티커별 뉴스(NEWS_PER_TICKER건)를 수집·요약해 본문용 문자열 리스트로 반환.
+
+    기사마다 AI 한 번 호출로 요약 + 한글 헤드라인 + 호재/악재/중립 판정을 받고(llm.analyze_news),
+    종목 맨 앞에 한 줄 총평(llm.ticker_brief)을 둔다. 본문 형식(render/parse.py가 읽음):
+      🧭 [T] 한 줄 총평                         (판정이 하나도 없으면 생략)
+      📰 [T] 원문 제목
+         (매체 · 시각)
+      🏷 판정 | 한글 헤드라인 | 근거 | 같은 내용 다른 출처 수   (판정 실패 시 생략 → 예전 형식과 같음)
+      🔗 원문 URL
+      → 요약"""
     articles = fetch_news_articles(ticker)
     if not articles:
         return [f"📰 [{ticker}] 수집된 뉴스가 없습니다.\n"]
-
-    summaries = []
+    name = TICKER_NAMES.get(ticker, "")
+    analyzed = []
     for a in articles:
-        summary = chatgpt_summarize(a["title"] + "\n" + a["summary"], client=client)
+        r = analyze_news(a["title"], a["summary"], ticker, name, client=client)
+        analyzed.append({**a, **r})
+    out = []
+    brief = ticker_brief(ticker, name, analyzed, client=client)
+    if brief:
+        out.append(f"🧭 [{ticker}] {brief}\n")
+    for a in analyzed:
         when = (
             datetime.fromtimestamp(a["published_at"], KST).strftime("%m/%d %H:%M")
             if a["published_at"]
             else "시간미상"
         )
-        summaries.append(
-            f"📰 [{ticker}] {a['title']}\n"
-            f"   ({a['publisher']} · {when})\n"
-            f"→ {summary}\n"
-        )
-    return summaries
+        lines = [f"📰 [{ticker}] {a['title']}", f"   ({a['publisher']} · {when})"]
+        if a.get("sentiment"):
+            tag = a["sentiment"] if a.get("is_news", True) else "제외"
+            lines.append(f"🏷 {tag} | {a.get('headline_ko', '')} | {a.get('reason', '')} | {a.get('dups', 0)}")
+        if a.get("link"):
+            lines.append(f"🔗 {a['link']}")
+        lines.append(f"→ {a['summary']}")
+        out.append("\n".join(lines) + "\n")
+    return out
 
 
 # =========================================================
