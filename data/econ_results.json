@@ -453,19 +453,19 @@
 "name": "S&P Global Manufacturing PMI",
 "dt": "2026-10-23T13:45:00Z",
 "act": null,
-"cons": null,
+"cons": "55.6",
 "prev": "55.9",
 "act_n": null,
-"cons_n": null
+"cons_n": 55.6
 },
 "54e677df-4e09-443c-84c6-6aaee1aff3bb": {
 "name": "S&P Global Services PMI",
 "dt": "2026-10-23T13:45:00Z",
 "act": null,
-"cons": null,
+"cons": "57.9",
 "prev": "58.8",
 "act_n": null,
-"cons_n": null
+"cons_n": 57.9
 },
 "0fa5c63c-f61c-4436-8763-66222addfe7a": {
 "name": "Fed Interest Rate Decision",
@@ -577,7 +577,7 @@
 },
 "f2f9d593-a194-49f6-8eea-fec094f159bc": {
 "name": "ISM Manufacturing PMI",
-"dt": "2026-11-02T14:00:00Z",
+"dt": "2026-11-02T15:00:00Z",
 "act": null,
 "cons": null,
 "prev": "54.5",
@@ -595,7 +595,7 @@
 },
 "e2138b09-c406-415c-999d-36e58d770ae5": {
 "name": "ADP Employment Change",
-"dt": "2026-11-04T12:15:00Z",
+"dt": "2026-11-04T13:15:00Z",
 "act": null,
 "cons": null,
 "prev": "90K",
@@ -604,7 +604,7 @@
 },
 "3c1033c6-6706-445b-bcaf-55e38dfbbe6f": {
 "name": "ISM Services PMI",
-"dt": "2026-11-04T14:00:00Z",
+"dt": "2026-11-04T15:00:00Z",
 "act": null,
 "cons": null,
 "prev": "54.9",
@@ -613,7 +613,7 @@
 },
 "7300f597-d4d2-4360-832a-33657038e139": {
 "name": "Average Hourly Earnings (MoM)",
-"dt": "2026-11-06T12:30:00Z",
+"dt": "2026-11-06T13:30:00Z",
 "act": null,
 "cons": null,
 "prev": "0.1%",
@@ -622,7 +622,7 @@
 },
 "85a16cc6-8da3-4cf5-87d4-3e18b491a0ef": {
 "name": "Average Hourly Earnings (YoY)",
-"dt": "2026-11-06T12:30:00Z",
+"dt": "2026-11-06T13:30:00Z",
 "act": null,
 "cons": null,
 "prev": "3%",
@@ -631,7 +631,7 @@
 },
 "63edec8e-cde5-4efa-8469-1a9c17ff2eee": {
 "name": "Nonfarm Payrolls",
-"dt": "2026-11-06T12:30:00Z",
+"dt": "2026-11-06T13:30:00Z",
 "act": null,
 "cons": null,
 "prev": "29K",
@@ -640,7 +640,7 @@
 },
 "1357b476-3290-4e06-a80f-44d32779cd4d": {
 "name": "Michigan Consumer Sentiment Index",
-"dt": "2026-11-06T14:00:00Z",
+"dt": "2026-11-06T15:00:00Z",
 "act": null,
 "cons": null,
 "prev": null,
