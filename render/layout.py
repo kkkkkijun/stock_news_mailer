@@ -112,7 +112,8 @@ a:hover{opacity:.72;}
  padding:8px 4px;cursor:pointer;}
 .sub-tab.on{background:#3a6fd8;color:#fff;}   /* 서브탭 활성=블루(상위 다크와 구분) */
 /* 주식 탭 서브탭: 알약형 토글(미국증시 · 코인) */
-.sub-tabs.sub-pill{display:inline-flex;gap:2px;padding:4px;border-radius:999px;margin-bottom:14px}
+.sub-tabs.sub-pill{display:inline-flex;gap:2px;padding:4px;border-radius:999px;margin:14px 0 0 40px}   /* 왼쪽 = .part 좌우 여백(본문·상단 탭과 같은 선) */
+@media (max-width:600px){.sub-tabs.sub-pill{margin-left:calc(18px + env(safe-area-inset-left,0px))}}
 .sub-pill .sub-tab{flex:none;display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:700;
  color:var(--muted-2);border-radius:999px;padding:6px 15px 6px 7px;transition:background .15s,color .15s}
 .sub-pill .sub-tab:hover{color:var(--ink)}
