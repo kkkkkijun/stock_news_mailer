@@ -4,7 +4,7 @@ from types import SimpleNamespace
 import llm
 import main
 import newsfeed as N
-from render.news import _render_ticker_groups
+from render.news import _render_ticker_tabs
 from render.parse import _parse_part
 
 
@@ -71,20 +71,29 @@ def test_body_format_roundtrip(monkeypatch):
     assert items[0]["brief"] == "자금 조달 우려로 약세" and "brief" not in items[1]
     assert items[1]["ko"] == "헤드라인 1" and items[1]["why"] == "근거 1" and items[1]["dups"] == 1
     assert items[2]["link"] == "https://ex.com/2" and items[0]["desc"] == "요약 0"
-    html = _render_ticker_groups(items, None)
-    assert 'class="nb-bar"' in html and "호재 1 · 악재 1 · 중립 0" in html
-    assert "기사 아닌 페이지 1건 숨김" in html and "같은 내용 1곳 더" in html
-    assert 'href="https://ex.com/0"' in html and "nb-px" not in html     # 가격은 위 시세 카드 줄에만
-    assert html.count('class="nb-row open"') == 1                 # 첫 기사만 펼침
+    q = [{"ticker": "NVDA", "price": 214.13, "chg": -1.43}, {"ticker": "IREN", "price": 26.99, "chg": -11.19}]
+    html = _render_ticker_tabs("os", q, items)
+    # 시세 카드가 종목 탭: 악재가 가장 많은 IREN이 처음 선택, 뉴스 없는 NVDA 패널은 숨김
+    assert 'class="qcard qtab sel" role="tab" data-t="IREN"' in html and 'data-t="NVDA"' in html
+    assert '<div class="nb-pane" id="os-nb-NVDA" role="tabpanel" data-t="NVDA" hidden>' in html
+    assert '<span class="qflag b">악재 1</span><span class="qflag g">호재 1</span>' in html
+    assert '<span class="qflag n">뉴스 없음</span>' in html
+    assert "<span>자금 조달 우려로 약세</span>" in html and "헤드라인 2" not in html     # 기사 아님은 숨김
+    assert "같은 내용 1곳 더 보도" in html and 'href="https://ex.com/0"' in html
+    assert html.count('class="nb-row open"') == 1 and '<time data-at=' not in html     # 시각 미상이면 time 없음
+    assert html.index("헤드라인 0") < html.index("헤드라인 1")
     _s, items2, _b, _n = _parse_part(
-        ["📰 [X] a", "🏷 중립 | 중립기사 | r | 0", "→ s", "📰 [X] b", "🏷 악재 | 악재기사 | r | 0", "→ s"])
-    h2 = _render_ticker_groups(items2, None)
+        ["📰 [X] a", "(Pub · 10/19 01:45)", "🏷 중립 | 중립기사 | r | 0", "→ s",
+         "📰 [X] b", "🏷 악재 | 악재기사 | r | 0", "→ s"])
+    h2 = _render_ticker_tabs("os", [], items2)
     assert h2.index("악재기사") < h2.index("중립기사")             # 호재·악재가 위로
+    assert '<time data-at="10/19 01:45">10/19 01:45</time>' in h2 and ">X</span>" in h2   # 시세 없는 종목도 카드
 
 
 def test_old_format_still_renders():
     lines = ["📰 [NVDA] Old English Title", "(Yahoo Finance · 10/01 05:20)", "→ 예전 요약"]
     _s, items, _b, _n = _parse_part(lines)
     assert "sent" not in items[0]
-    html = _render_ticker_groups(items, None)
-    assert "nb-bar" not in html and "nb-sum" not in html and "Old English Title" in html and "예전 요약" in html
+    html = _render_ticker_tabs("os", [{"ticker": "NVDA", "price": 1.0, "chg": 0.5}], items)
+    assert '<span class="qflag n">뉴스 1</span>' in html and "nb-dot" not in html and "nb-foot" not in html
+    assert "Old English Title" in html and "예전 요약" in html

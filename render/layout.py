@@ -123,52 +123,49 @@ a:hover{opacity:.72;}
 .pill-ico{width:20px;height:20px;flex-shrink:0;display:block}
 .sub-pill .sub-tab:not(.on) .pill-ico{opacity:.85}
 .sub-pane .part-head{display:none;}   /* 서브탭이 제목 역할 → 파트 헤더 중복 제거 */
-/* 주식 탭 뉴스(B안): 종목 카드 = 머리(가격·추이) + 한 줄 총평·호재/악재 비율 + 기사 한 줄 목록 */
-.tk-badge{font-size:12px;font-weight:800;border-radius:7px;padding:3px 9px;
- font-family:ui-monospace,monospace;flex:none;}
-.nb-bar{display:flex;gap:6px;align-items:center;margin:4px 0 10px;flex-wrap:wrap}
-.nb-f{font:inherit;font-size:12px;font-weight:700;color:var(--muted-2);background:var(--card);
- border:1px solid var(--border);border-radius:999px;padding:5px 12px;cursor:pointer}
-.nb-f.on{background:var(--ink);color:var(--page);border-color:var(--ink)}
-.nb-sort{margin-left:auto;font:inherit;font-size:12px;font-weight:700;color:var(--muted-2);background:transparent;
- border:0;padding:4px 2px;cursor:pointer}
-.nb-list{display:flex;flex-direction:column;gap:10px}
-.nb-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;
- box-shadow:0 1px 3px var(--shadow)}
-.nb-head{display:flex;align-items:center;gap:9px;padding:12px 13px 8px}
-.nb-nm{font-size:14px;color:var(--ink)}
-.nb-sum{margin:0 13px 8px;background:var(--nav-track);border-radius:10px;padding:8px 10px;display:flex;
- flex-direction:column;gap:6px}
-.nb-brief{font-size:12.5px;font-weight:700;color:var(--ink);line-height:1.45}
-.nb-ai{font-size:10px;font-weight:800;color:#fff;background:var(--accent);border-radius:5px;padding:2px 5px;
- margin-right:6px;vertical-align:1px}
-.nb-cnt{display:flex;align-items:center;gap:8px}
-.nb-cnt small{font-size:11px;font-weight:600;color:var(--muted-2);white-space:nowrap}
-.nb-mood{display:flex;gap:2px;height:6px;flex:1;border-radius:99px;overflow:hidden;background:var(--border)}
-.nb-mood i.g{background:#e5484d}.nb-mood i.b{background:#3b82f6}.nb-mood i.n{background:#b6c0cd}
+/* 주식·코인 뉴스(1안): 시세 카드 = 종목 선택 탭, 아래엔 고른 종목 뉴스만. 색은 판정 점 하나 */
+.qtab{font:inherit;color:inherit;text-align:left;cursor:pointer;display:block;width:100%}
+.qtab:hover{border-color:var(--border-strong,#cbd5e1)}
+.qtab.sel{border:2px solid var(--ink);padding:10px 12px}
+.qtab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.qflags{display:flex;gap:4px;flex-wrap:wrap;margin-top:7px}
+.qflag{font-size:10.5px;font-weight:800;border-radius:5px;padding:2px 6px}
+.qflag.b{background:#e8f0fe;color:#2563eb}.qflag.g{background:#fdecec;color:#d9363e}
+.qflag.n{color:var(--faint);padding-left:0;font-weight:700}
+:root[data-theme="dark"] .qflag.b{background:#17263f;color:#7fb0ff}
+:root[data-theme="dark"] .qflag.g{background:#3a1d22;color:#ff8b8f}
+.nb-pane{margin-top:4px}
+.nb-ph{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;padding:4px 0 6px}
+.nb-ph b{font-size:17px;color:var(--ink)}
+.nb-ph span{font-size:13px;color:var(--muted-2)}
 .nb-row{border-top:1px solid var(--border)}
-.nb-rh{display:flex;gap:8px;align-items:flex-start;width:100%;text-align:left;font:inherit;color:inherit;
- background:none;border:0;padding:10px 13px;cursor:pointer}
-.nb-rh:hover{background:var(--chip)}
-.nb-tag{font-size:10.5px;font-weight:800;border-radius:5px;padding:2px 6px;flex-shrink:0;line-height:1.35;margin-top:1px}
-.nb-tag.g{background:#fdecec;color:#d9363e}.nb-tag.b{background:#e8f0fe;color:#2563eb}
-.nb-tag.n{background:var(--nav-track);color:var(--muted-2)}
-:root[data-theme="dark"] .nb-tag.g{background:#3a1d22;color:#ff8b8f}
-:root[data-theme="dark"] .nb-tag.b{background:#17263f;color:#7fb0ff}
-.nb-tx{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
-.nb-tx b{font-size:13.5px;line-height:1.42;color:var(--ink);font-weight:700}
-.nb-m{font-size:11px;color:var(--faint);display:flex;align-items:center;gap:5px;flex-wrap:wrap}
-.nb-car{font-style:normal;color:var(--faint);font-size:18px;line-height:1;transition:transform .15s}
-.nb-row.open .nb-car{transform:rotate(90deg)}
-.nb-body{display:none;padding:0 13px 12px 13px}
-.nb-row.open .nb-body{display:block}
-.nb-why{display:inline-block;font-size:11.5px;font-weight:700;color:var(--muted-2);background:var(--nav-track);
- border-radius:6px;padding:2px 7px;margin-bottom:6px}
+.nb-rh{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;font:inherit;color:inherit;
+ background:none;border:0;padding:12px 0;cursor:pointer}
+.nb-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:8px}
+.nb-dot.g{background:#e5484d}.nb-dot.b{background:#3b82f6}.nb-dot.n{background:#c3cbd6}
+.nb-tx{flex:1;display:flex;flex-direction:column;gap:3px;min-width:0}
+.nb-tx b{font-size:14.5px;font-weight:600;line-height:1.45;color:var(--ink)}
+.nb-rh:hover .nb-tx b{color:var(--accent)}
+.nb-m{font-size:12px;color:var(--faint)}
+.nb-m em{font-style:normal;font-weight:700}.nb-m em.g{color:#d9363e}.nb-m em.b{color:#2563eb}.nb-m em.n{color:var(--faint)}
+:root[data-theme="dark"] .nb-m em.g{color:#ff8b8f}
+:root[data-theme="dark"] .nb-m em.b{color:#7fb0ff}
+.nb-body{display:none;padding:0 0 14px 17px}
+.nb-row.open .nb-body{display:flex;flex-direction:column;gap:6px}
+.nb-row.nd .nb-body{padding-left:0}   /* 판정 점이 없는 예전 회차 */
 .nb-body p{margin:0;font-size:13px;color:var(--muted);line-height:1.6}
-.nb-orig{font-size:11px;color:var(--faint);margin-top:6px}
-.nb-link{display:inline-block;margin-top:6px;font-size:12px;font-weight:700;color:var(--accent)}
-.nb-hid{font-size:11px;color:var(--faint);border-top:1px dashed var(--border);padding:7px 13px}
-.nb-foot{font-size:11px;color:var(--faint);margin-top:8px}
+.nb-why,.nb-orig{font-size:11.5px;color:var(--faint);line-height:1.5}
+.nb-link{font-size:12px;font-weight:700;color:var(--accent);align-self:flex-start}
+.nb-empty{font-size:13px;color:var(--faint);padding:16px 0;border-top:1px solid var(--border)}
+.nb-foot{font-size:11px;color:var(--faint);margin-top:10px}
+@media (max-width:600px){
+  .quotes.qtabs{display:flex;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x proximity;
+   margin-left:calc(-18px - env(safe-area-inset-left,0px));margin-right:calc(-18px - env(safe-area-inset-right,0px));
+   padding:2px calc(18px + env(safe-area-inset-right,0px)) 4px calc(18px + env(safe-area-inset-left,0px));
+   scroll-padding:0 18px}
+  .quotes.qtabs::-webkit-scrollbar{display:none}
+  .quotes.qtabs .qtab{flex:0 0 118px;scroll-snap-align:start}
+}
 /* 성장주: 가격 온도계·실적 D-day·점수 변화·정렬, 상세 가격/실적 카드 */
 .gr-sort{display:inline-flex;gap:3px;background:var(--nav-track);border-radius:8px;padding:3px;margin-left:auto}
 .gr-sort button{font:inherit;font-size:11px;font-weight:700;color:var(--muted-2);background:none;border:0;
@@ -635,14 +632,14 @@ a:hover{opacity:.72;}
  padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
 .badge-new{font-size:10px;font-weight:800;color:#fff;background:#15803d;
  padding:3px 8px;border-radius:5px;letter-spacing:.03em;}
-.quotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+.quotes{position:relative;display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
  gap:8px;margin-bottom:14px;}
 .qcard{background:var(--card);border:1px solid var(--border);border-radius:12px;
  padding:11px 13px;}
 .qtop{display:flex;align-items:center;gap:6px;margin-bottom:8px;}
 .qtop .spark{margin-left:auto;display:block;}
-.qprice{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:-.01em;}
-.qchg{font-size:12.5px;font-weight:700;margin-top:2px;}
+.qprice{display:block;font-size:16px;font-weight:700;color:var(--ink);letter-spacing:-.01em;}
+.qchg{display:block;font-size:12.5px;font-weight:700;margin-top:2px;}
 .quotes-asof{font-size:11px;color:var(--faint);margin:-8px 0 14px 2px;}
 .outlook{margin-top:14px;}
 .outlook-label{font-size:12px;font-weight:700;color:var(--muted-2);margin-bottom:8px;}
@@ -826,25 +823,33 @@ document.querySelectorAll('.sub-tab').forEach(function(b){
     b.classList.add('on'); b.setAttribute('aria-selected','true');
   });
 });
-/* 주식 탭 뉴스: 기사 펼침 · 호재/악재 필터 · 정렬 */
+/* 주식·코인 뉴스: 시세 카드(종목 탭) 선택 · 기사 펼침 · 상대 시각 */
+function nbCenter(){ document.querySelectorAll('.quotes.qtabs').forEach(function(c){
+  var s=c.querySelector('.qtab.sel'); if(s && c.scrollWidth>c.clientWidth && c.offsetParent)
+    c.scrollLeft=s.offsetLeft-(c.clientWidth-s.offsetWidth)/2; }); }
 document.addEventListener('click', function(ev){
+  var q=ev.target.closest('.qtab');
+  if(q){ var part=q.closest('.part'), t=q.getAttribute('data-t');
+    part.querySelectorAll('.qtab').forEach(function(x){ var on=x===q; x.classList.toggle('sel',on); x.setAttribute('aria-selected',on?'true':'false'); });
+    part.querySelectorAll('.nb-pane').forEach(function(p){ p.hidden=p.getAttribute('data-t')!==t; });
+    nbCenter(); return; }
   var rh=ev.target.closest('.nb-rh');
   if(rh){ var r=rh.parentNode, o=r.classList.toggle('open'); rh.setAttribute('aria-expanded', o?'true':'false'); return; }
-  var f=ev.target.closest('.nb-f'); if(!f) return;
-  var part=f.closest('.part'), k=f.getAttribute('data-f');
-  part.querySelectorAll('.nb-f').forEach(function(x){ x.classList.toggle('on', x===f); });
-  part.querySelectorAll('.nb-card').forEach(function(c){ var n=0;
-    c.querySelectorAll('.nb-row').forEach(function(r){ var ok=!k||r.getAttribute('data-s')===k; r.style.display=ok?'':'none'; if(ok) n++; });
-    c.style.display=n?'':'none'; });
+  if(ev.target.closest('.nav-t,.sub-tab')) setTimeout(nbCenter,0);
 });
-document.addEventListener('change', function(ev){
-  var sel=ev.target.closest('.nb-sort'); if(!sel) return;
-  var list=sel.closest('.part').querySelector('.nb-list'), k=sel.value;
-  [].slice.call(list.querySelectorAll('.nb-card')).sort(function(a,b){
-    var d=k?(+b.getAttribute('data-'+k))-(+a.getAttribute('data-'+k)):0;
-    return d||(+a.getAttribute('data-i'))-(+b.getAttribute('data-i')); })
-  .forEach(function(c){ list.appendChild(c); });
-});
+(function(){ var now=new Date();
+  document.querySelectorAll('time[data-at]').forEach(function(el){
+    var a=el.getAttribute('data-at')||'';       /* 'MM/DD HH:MM' (KST) */
+    var m=[0, +a.slice(0,2), +a.slice(3,5), +a.slice(6,8), +a.slice(9,11)];
+    if(a.length!==11 || m.slice(1).some(isNaN)) return;
+    var d=new Date(now.getFullYear(), m[1]-1, m[2], m[3], m[4]);
+    if(d-now>864e5) d.setFullYear(d.getFullYear()-1);
+    var h=(now-d)/36e5, days=Math.floor((new Date(now.toDateString())-new Date(d.toDateString()))/864e5);
+    el.title=el.getAttribute('data-at');
+    el.textContent = h<1 ? '방금' : (days===0 ? Math.floor(h)+'시간 전' : days===1 ? '어제' : days<7 ? days+'일 전' : el.title);
+  });
+  nbCenter();
+})();
 /* 신선도: 빌드 시각 대비 '지금'까지의 경과시간을 뷰 시점에 계산.
    → 빌드가 실패해 페이지가 갱신 안 돼도 지연이 눈에 보임. */
 (function(){
