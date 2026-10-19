@@ -15,8 +15,8 @@ document.querySelectorAll('.sub-tab').forEach(function(b){
     host.querySelectorAll('.sub-pane').forEach(function(p){
       p.style.display = (p.getAttribute('data-pane')===sub) ? '' : 'none';
     });
-    b.parentNode.querySelectorAll('.sub-tab').forEach(function(x){x.classList.remove('on');});
-    b.classList.add('on');
+    b.parentNode.querySelectorAll('.sub-tab').forEach(function(x){x.classList.remove('on'); x.setAttribute('aria-selected','false');});
+    b.classList.add('on'); b.setAttribute('aria-selected','true');
   });
 });
 document.querySelectorAll('.tk-more').forEach(function(b){
