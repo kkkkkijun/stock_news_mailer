@@ -19,25 +19,33 @@ document.querySelectorAll('.sub-tab').forEach(function(b){
     b.classList.add('on'); b.setAttribute('aria-selected','true');
   });
 });
-/* 주식 탭 뉴스: 기사 펼침 · 호재/악재 필터 · 정렬 */
+/* 주식·코인 뉴스: 시세 카드(종목 탭) 선택 · 기사 펼침 · 상대 시각 */
+function nbCenter(){ document.querySelectorAll('.quotes.qtabs').forEach(function(c){
+  var s=c.querySelector('.qtab.sel'); if(s && c.scrollWidth>c.clientWidth && c.offsetParent)
+    c.scrollLeft=s.offsetLeft-(c.clientWidth-s.offsetWidth)/2; }); }
 document.addEventListener('click', function(ev){
+  var q=ev.target.closest('.qtab');
+  if(q){ var part=q.closest('.part'), t=q.getAttribute('data-t');
+    part.querySelectorAll('.qtab').forEach(function(x){ var on=x===q; x.classList.toggle('sel',on); x.setAttribute('aria-selected',on?'true':'false'); });
+    part.querySelectorAll('.nb-pane').forEach(function(p){ p.hidden=p.getAttribute('data-t')!==t; });
+    nbCenter(); return; }
   var rh=ev.target.closest('.nb-rh');
   if(rh){ var r=rh.parentNode, o=r.classList.toggle('open'); rh.setAttribute('aria-expanded', o?'true':'false'); return; }
-  var f=ev.target.closest('.nb-f'); if(!f) return;
-  var part=f.closest('.part'), k=f.getAttribute('data-f');
-  part.querySelectorAll('.nb-f').forEach(function(x){ x.classList.toggle('on', x===f); });
-  part.querySelectorAll('.nb-card').forEach(function(c){ var n=0;
-    c.querySelectorAll('.nb-row').forEach(function(r){ var ok=!k||r.getAttribute('data-s')===k; r.style.display=ok?'':'none'; if(ok) n++; });
-    c.style.display=n?'':'none'; });
+  if(ev.target.closest('.nav-t,.sub-tab')) setTimeout(nbCenter,0);
 });
-document.addEventListener('change', function(ev){
-  var sel=ev.target.closest('.nb-sort'); if(!sel) return;
-  var list=sel.closest('.part').querySelector('.nb-list'), k=sel.value;
-  [].slice.call(list.querySelectorAll('.nb-card')).sort(function(a,b){
-    var d=k?(+b.getAttribute('data-'+k))-(+a.getAttribute('data-'+k)):0;
-    return d||(+a.getAttribute('data-i'))-(+b.getAttribute('data-i')); })
-  .forEach(function(c){ list.appendChild(c); });
-});
+(function(){ var now=new Date();
+  document.querySelectorAll('time[data-at]').forEach(function(el){
+    var a=el.getAttribute('data-at')||'';       /* 'MM/DD HH:MM' (KST) */
+    var m=[0, +a.slice(0,2), +a.slice(3,5), +a.slice(6,8), +a.slice(9,11)];
+    if(a.length!==11 || m.slice(1).some(isNaN)) return;
+    var d=new Date(now.getFullYear(), m[1]-1, m[2], m[3], m[4]);
+    if(d-now>864e5) d.setFullYear(d.getFullYear()-1);
+    var h=(now-d)/36e5, days=Math.floor((new Date(now.toDateString())-new Date(d.toDateString()))/864e5);
+    el.title=el.getAttribute('data-at');
+    el.textContent = h<1 ? '방금' : (days===0 ? Math.floor(h)+'시간 전' : days===1 ? '어제' : days<7 ? days+'일 전' : el.title);
+  });
+  nbCenter();
+})();
 /* 신선도: 빌드 시각 대비 '지금'까지의 경과시간을 뷰 시점에 계산.
    → 빌드가 실패해 페이지가 갱신 안 돼도 지연이 눈에 보임. */
 (function(){
