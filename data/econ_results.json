@@ -561,19 +561,19 @@
 "name": "Core Personal Consumption Expenditures - Price Index (MoM)",
 "dt": "2026-10-29T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "0.3%",
 "prev": "0.2%",
 "act_n": null,
-"cons_n": null
+"cons_n": 0.3
 },
 "401e58cb-1252-4e02-9c2a-144d3ea169e1": {
 "name": "Core Personal Consumption Expenditures - Price Index (YoY)",
 "dt": "2026-10-29T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "3.1%",
 "prev": "3%",
 "act_n": null,
-"cons_n": null
+"cons_n": 3.1
 },
 "f2f9d593-a194-49f6-8eea-fec094f159bc": {
 "name": "ISM Manufacturing PMI",

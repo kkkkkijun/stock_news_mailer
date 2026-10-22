@@ -1,0 +1,324 @@
+2026-10-23T06:33:06.999516+09:00
+
+[오늘의 뉴스 요약] 2026-10-23 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 미국 10년물 국채 금리가 5% 아래로 하락하며 안전자산 수요가 증가했고, 한국은행은 기준금리를 동결했다. 환율은 5거래일 연속 연저점을 경신하며 지속적인 하락세를 보였다.
+
+[핵심 뉴스]
+1. (금리) 美 10년물 국채 금리 5% 아래로 하락
+   → 미국 10년물 국채 금리가 22일 약 한 달 만에 5% 아래로 하락하여 4.952%를 기록했고, 금리는 하루 낙폭으로는 3년 7개월 만에 가장 큰 폭으로 떨어졌다.
+   (연합뉴스 · 10/23 06:14)
+2. (금리) 한국은행 기준금리 동결
+   → 한국은행은 22일 기준금리를 연 3%로 동결했으며, 지난 7월과 8월 연속 인상 이후 처음으로 기존 금리를 유지한 결정이 7명 금통위원 전원의 찬성으로 이루어졌다.
+   (매일경제 · 10/22 17:45)
+3. (환율) 원/달러 환율 연저점 경신
+   → 원/달러 환율이 22일 기준 1,324.2원으로 하락하며 5거래일 연속 연저점을 갱신했으며, 이는 금통위의 금리 동결 결정 이후 긴축에 대한 기대가 반영된 결과로 해석된다.
+   (연합뉴스 · 10/22 16:10)
+4. (정책) 신 총재, 매파적 정책 유지
+   → 신현송 한국은행 총재는 기준금리 동결을 두 차례의 금리 인상이 경제에 미치는 영향을 점검하기 위한 것이라고 설명하며, 경제 성장률과 물가 상승 압력 등을 고려한 결정임을 밝혔다.
+   (매일경제 · 10/23 05:00)
+5. (금리) NH농협은행, 대출금리 인하
+   → NH농협은행은 27일부터 주택담보대출 금리를 비수도권에서 0.2%p, 수도권에서 0.1%p 인하하며 대출 실수요자의 부담을 줄이기 위한 조치를 취했다.
+   (연합뉴스 · 10/22 16:10)
+
+[흐름·전망]
+• 미국의 10년물 국채 금리 하락은 안전자산 선호가 여전하다는 신호로, 향후 물가 상승 압력과 함께 금리에 미치는 영향을 관찰해야 한다.
+• 한국은행의 기준금리 동결 결정은 긴축 기조의 유지를 위해 불확실한 외부 환경을 고려한 결과로, 이후 통화정책 방향에도 주목해야 한다.
+• 원/달러 환율의 하락은 국내 경제의 약세 신호로 해석될 수 있으며, 이는 글로벌 투자자와의 신뢰 구축에 영향을 줄 수 있다.
+• NH농협은행의 대출금리 인하는 실수요자에게 긍정적인 신호로 작용할 수 있으며, 향후 다른 은행들의 금리 정책에도 영향을 미칠 가능성이 높다.
+
+📈 해외주식 PART
+🧭 [NVDA] 새로운 재료는 없지만 파트너십은 긍정적임
+
+📰 [NVDA] CoreWeave Sinks 10% as Bernstein Slashes Target to $51: “The Fundamentals Are Probably Stuck”
+   (Yahoo Finance · 10/23 05:28)
+🏷 중립 | CoreWeave 목표가 하향, NVDA 영향 | NVDA에 긍정도 부정도 아님 | 0
+🔗 https://www.tikr.com/blog/coreweave-sinks-10-as-bernstein-slashes-target-to-51-the-fundamentals-are-probably-stuck?ref=yahoofinance&.tsrc=rss
+→ CoreWeave의 주가가 10% 하락하며 목표가가 51달러로 낮춰졌습니다. Bernstein 애널리스트는 NVDA가 CoreWeave를 도울 것이라고 보지만 기본적 상황은 정체 상태라고 언급했습니다.
+
+📰 [NVDA] Is Nvidia a Top Quantum Computing Stock?
+   (Yahoo Finance · 10/23 05:14)
+🏷 중립 | Nvidia, 양자 컴퓨팅 지원 | 기술 지원에 그치고 있어 | 2
+🔗 https://www.fool.com/investing/2026/10/22/is-nvidia-a-top-quantum-computing-stock/?.tsrc=rss
+→ Nvidia가 양자 컴퓨팅에 직접 진입하기보다는 이를 지원하는 방향으로 나아가고 있습니다. 이는 향후 기술 발전에 긍정적 영향을 미칠 수 있습니다.
+
+📰 [NVDA] NetBox Labs Announces Partnerships With Nvidia and Grafana Labs
+   (Built In · 10/23 04:39)
+🏷 호재 | NetBox Labs, NVDA와 파트너십 체결 | 파트너십 체결로 기술 활용 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMiigFBVV95cUxOdUJzVXZTZU1qc3RhYnhab05KQmhKQm1Xak44Uk9SYTZUUW0xTTN1Nlh0VkdPc00tczQteGs2ZHJYeTVObjRoTDFOVi1OUGVpc093RHl3NnU3ckJkRk1HSXR6UXphWk5YakhSTGthNk1uemFUMWYzWXhaUWhJQ0FBMU5hZEJtSHVjdnc?oc=5
+→ NetBox Labs가 Nvidia와 Grafana Labs와의 파트너십을 발표했습니다. 이 파트너십은 NVDA의 기술 활용을 통해 혁신적인 솔루션 개발에 기여할 것으로 기대됩니다.
+
+🧭 [TSLA] 합병 가능성 언급 있지만 직접적 영향 없음
+
+📰 [TSLA] Musk wants to merge SpaceX and Tesla: Here's what to know
+   (Yahoo Finance · 10/23 06:10)
+🏷 중립 | 머스크, 스페이스X-테슬라 합병 추진 | 합병 확정되지 않아 영향 없음 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/musks-wants-merge-spacex-tesla-205406983.html?.tsrc=rss
+→ 일론 머스크가 스페이스X와 테슬라의 합병 가능성을 검토하고 있다고 발표했다. 그러나 현재 합병이 확정된 것은 아니라고 경고했다.
+
+📰 [TSLA] SpaceX says potential Tesla merger would need Musk's approval
+   (Reuters · 10/23 05:59)
+🏷 중립 | 스페이스X, 테슬라 합병 필요 승인 | 합병 가능성 언급, 직접적 영향 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMiqgFBVV95cUxPekJwbzJpb0hnTHRJeE8yRWNyNzM3QjF2MkQxbzVSak1vNUJmQ3ctRWd2Q2stNTlzcnppeTc4MXRra3pXZHlfVUYtZEptbFN0RWxCa0Jrcl9SRHNaWWJkUkxaUXU3aVRvcGFTRUNwbWdiS2l6RmdpLTdERGdrdzJCMlA4c1hxNHV3a1NYMzRfdUxVRldYc2hkMmxsRXJCY2JCaURRNlZBZTh0UQ?oc=5
+→ 스페이스X가 테슬라와의 합병 가능성에 대해 일론 머스크의 승인이 필요하다고 밝혔습니다. 이는 두 회사 간의 관계와 향후 전략에 영향을 미칠 수 있습니다.
+
+📰 [TSLA] Tesla cuts 2026 capex to $20B amid tech transformation plans
+   (CFO Dive · 10/23 05:59)
+🏷 호재 | 테슬라, 2026년 CAPEX 200억 달러로 축소 | 자본 지출 감소는 효율성 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMikgFBVV95cUxPYkVJYVpsMU9oakY4N1pBOHhzLVlqcmp2ZVBoazVma1R2d09sOXJUTkh2V01YMHIwaTVwSjBKa2ZoSzgtc1JJMGRLbG41R3lhSkxLaFNjMU9CemhOdVplcHg4LXlQdERmQVZpdFVSREZ0MDBqQm5ydWczY3l6M2Q2Z1ZFLVg2UTBGZE9VcE9yYUV5QQ?oc=5
+→ 테슬라는 2026년 자본 지출을 200억 달러로 줄이며 기술 혁신을 계획하고 있다고 발표했다. 이는 자금 효율성을 높이고, 향후 기술 개발에 집중할 수 있는 기반이 될 수 있다.
+
+🧭 [HIMS] HIMS, FTC 소송 리스크 엇갈려 부정적 영향 우려
+
+📰 [HIMS] Hims & Hers Asks Judge to Toss FTC Lawsuit over Subscription Payments and User Data
+   (TipRanks · 10/23 05:27)
+🏷 호재 | HIMS, FTC 소송 기각 요청 | 소송 기각 요청은 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMisAFBVV95cUxNX2wxNzcwTHFsdU9XaVNYMGlrOElRV0RJaUxRTi0tQWYwQVJZSG1oS1RfZkN6ZjlLWXNfRFFHQjViTll3Y2tsVEwyNjItaDJjUVFQLTlpaWNmMWFpb2VLMGR5QXFWT0E3Z1BsTXdfLW1RZG5iUWh4TmVPZTNfdlU0V25yal9KbGpESmlORmFkaWg2YkNJMTd1NzFOalQyYm5Cb1QtMjNlOUpYdUVSUTRWWg?oc=5
+→ HIMS가 구독 결제 및 사용자 데이터와 관련된 FTC 소송을 기각해 달라고 요청했습니다. 이는 회사에 대한 규제 압박을 줄일 수 있는 긍정적인 행동으로 보입니다.
+
+📰 [HIMS] Hims seeks dismissal of FTC lawsuit over user data, subscriptions
+   (Modern Healthcare · 10/23 05:07)
+🏷 악재 | HIMS, FTC 소송 기각 청구 | 소송으로 인한 법적 리스크 존재 | 0
+🔗 https://news.google.com/rss/articles/CBMihwFBVV95cUxPVnBhMUxRVG5nT2FmWFFNZVlsNGlDM2pXV2tISS0ybmpOMURyX3JjLW5INDFRcXJUdUVMcFZLN3NkUEFmUm1iLUc3b3dWakpFeFBvdWJ1RE9GYUd1RzZNeWxIVUlRbDV6Y2NHeFdWMXJtMld3MEtXUUlaY19tdVhCRXNRSy1IRHc?oc=5
+→ HIMS가 사용자 데이터와 구독과 관련하여 FTC 소송의 기각을 요청하고 있습니다. 이 소송이 진행되는 동안 회사의 법적 지위가 불확실해질 수 있습니다.
+
+📰 [HIMS] Hims & Hers ($HIMS) Seeks Dismissal of FTC Lawsuit Over Subscriptions and Privacy
+   (Quiver Quantitative · 10/23 04:37)
+🏷 악재 | HIMS, FTC 소송 기각 요청 | 소송으로 인한 경영 리스크 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMivwFBVV95cUxNeXBqZDRpeGt3c3NPRzd1M0xHSWZuV2xWR214bWdGWkdXd0ExNURqeE16ME4yN0hkOVY4bGlyblhUSjRMM0NXT1QtcEZ3WmgycWREMi00S2JqcUpoWWNJak9HQzRlVVBLRUFfWmZnaGVLdmdYQ0xPU2ZISnptS2JPc0JuMjNwNmdyX2otWXdZNnBvUk1LamFTMHNjc284TGJWVm14VGVIQXUtdkc2VmpGUWxjM2hrUjZrejhQUWc3Zw?oc=5
+→ Hims & Hers가 구독 및 개인정보 문제와 관련된 FTC 소송 기각을 요청했습니다. 이 소송은 회사의 운영에 중요한 영향을 미칠 수 있습니다.
+
+🧭 [RDW] RDW, 유럽 우주 인프라 MOU 체결로 기회 증가
+
+📰 [RDW] Redwire and EnduroSat Sign MOU to Strengthen European Space Infrastructure
+   (Yahoo Finance · 10/21 20:00)
+🏷 호재 | RDW, 유럽 우주 인프라 강화 MOU | MOU 체결로 사업 기회 증가 | 0
+🔗 https://finance.yahoo.com/technology/articles/redwire-endurosat-sign-mou-strengthen-110000780.html?.tsrc=rss
+→ RDW와 EnduroSat이 유럽 우주 인프라 강화를 위한 MOU를 체결했습니다. 이는 새로운 기회를 열어 줄 것으로 기대되며, RDW의 경쟁력을 높일 수 있습니다.
+
+📰 [RDW] Redwire • Robinhood Token (RDW) Price Prediction for 2026 to 2031
+   (Bybit · 10/20 19:03)
+🏷 제외 | RDW 가격 전망 2026~2031 | 가격 전망 기사로 직접 영향 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMiggFBVV95cUxQZEFrclJieVZJU2taTGZPelRYclVyVjYyMmxsVkczZzAxMlQtU3RQZFNubTl6a1pHaFEzLTlVSzZfbXBvWUdESDZhLTZELUhuNTlFVUx0MjF2WklVN3l5SUNaVWU0RFJyRVF5bHJybEJzb0hXNkFQeGtzNjZCTWRqYU53?oc=5
+→ RDW의 향후 가격 전망에 대한 분석이 담겨 있다. 그러나 이는 특정 사실이나 정보가 아닌 전망에 기반하므로 RDW 보유자에게 직접적인 영향을 주지 않는다.
+
+📰 [RDW] Redwire Corp (Derivatives) Price (RDW/USD) Today | Live Price, Market Cap & Chart
+   (Binance · 10/20 15:47)
+🏷 제외 | RDW 가격 정보 및 차트 | 정보 제공일 뿐 실질적 변화 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMiaEFVX3lxTE1pWkYyejJaZV9Qdmd3ZnJTUEU3WkkwZWNzT2psYXFNRllYMHg1XzZIWk0yVlN0SVM3QzZUQ09xOU01anhnWG9Gb21OYnhjZG1aRjBCYTFFdFk4dktpTkRwdDZTci1lWkt6?oc=5
+→ 이번 기사는 Redwire Corp의 최신 가격 및 시장 정보를 다루고 있습니다. 그러나 RDW 보유자에게 실질적인 정보나 변화는 없습니다.
+
+🧭 [IREN] 새로운 재료 없이 부정적 흐름 지속
+
+📰 [IREN] Why are CoreWeave and IREN stock down today: New 2026 lows
+   (Opening Bell Daily · 10/23 05:56)
+🏷 악재 | IREN 주가 하락 원인 분석 | 주가 하락으로 부정적 | 0
+🔗 https://news.google.com/rss/articles/CBMikwFBVV95cUxNaktlanJGbTBaVk84bEU5MDJWZlZCTG1qLWV4WDFOWDZHNC1EbXpURF9KNkVnaW1NLU9pMlRYZmZybGswYlM3UFJQR2dGSWZHd19WWm5zc1ZMcU1WbXhzQW9FbjFsZmNhZjlCenhOa1B5cnVBX0FIa3ZmU0RZSTMwdmtkdU8tR0RheWNnbkN4WnN5SFU?oc=5
+→ IREN과 CoreWeave의 주가가 2026년 최저치를 기록하며 하락세를 보이고 있습니다. 이번 하락은 시장의 전반적인 부정적인 영향을 반영하고 있습니다.
+
+📰 [IREN] CoreWeave Sinks 10% as Bernstein Slashes Target to $51: “The Fundamentals Are Probably Stuck”
+   (Yahoo Finance · 10/23 05:28)
+🏷 악재 | CoreWeave 목표가 하향 소식 | 목표가 하향과 관련 주식 하락 | 0
+🔗 https://www.tikr.com/blog/coreweave-sinks-10-as-bernstein-slashes-target-to-51-the-fundamentals-are-probably-stuck?ref=yahoofinance&.tsrc=rss
+→ CoreWeave의 목표가가 74에서 51로 하향 조정되었으며, IREN과 다른 관련 주식들도 AI 지출 우려로 하락했습니다. 이로 인해 IREN 보유자들에게는 부정적인 영향을 미칠 수 있습니다.
+
+📰 [IREN] IREN to Release Q1 FY27 Results on November 5, 2026
+   (www.marketscreener.com · 10/23 05:01)
+🏷 중립 | IREN, 2026년 1분기 결과 발표 | 단순 실적 발표 예고 | 1
+🔗 https://news.google.com/rss/articles/CBMipgFBVV95cUxNbjlZT01SYjY0UGRVeGh6MWdHcUxxcDhSUUVnYjZ0R1Q1RVFhbFAxWmNWbnQ4TGpwOWw3cVRmQ1F1N0YzeFZfWDI3a1d6dkRzcHR4ckVMTVlpa3FCS184RjNBbkxwNDA0ck9yWnMxNjFXRThQanF4a05zbHVhVHBUOU1JVm92U0d0QVdybTlwSTRMdWxfbF83QVV4bXRvbTViaFFlZ0Jn?oc=5
+→ IREN이 2026년 11월 5일에 2027 회계연도 1분기 실적을 발표할 예정입니다. 실적 발표는 투자자들에게 중요한 정보가 될 것이며, 향후 주가에 영향을 미칠 수 있습니다.
+
+🧭 [RKLB] RKLB 경쟁력 상승, 스페이스X 호재 영향 중
+
+📰 [RKLB] Long Rocket Lab, Short AST SpaceMobile: One Owns Its Path, The Other Rents It From SpaceX
+   (Seeking Alpha · 10/23 03:55)
+🏷 호재 | RKLB, AST SpaceMobile 비교 | RKLB 경쟁력 부각 | 0
+🔗 https://news.google.com/rss/articles/CBMixgFBVV95cUxNQS1VWE42b1JvR3R6X214OEtRclNvY3Y1dXZzal9WN19qb283SWlSa3RTbjdqY2xad1M5eVFHWE5nZFh3MHdJaTh2d2dvd1hiY1FSRzF0eGszdDF2NEtNbmp2aW9OWHdwSl9hMmd5S3A1UFllS1RfamtsSkh4Vld0bFprUmZxSHY4UXZ3VEwydXlsOTV1NjAzVmhVcVhpRkhJaDZOdk5GaFhNRG9KZXVZM2xmazBVTEtLQkwycjJCNHhJUXBqNEE?oc=5
+→ RKLB는 독자적인 경로를 보유하고 있으며, AST SpaceMobile은 SpaceX의 서비스를 임대한다는 분석이 제기됐다. RKLB의 경쟁력 강화와 시장 내 위치가 강조된 기사다.
+
+📰 [RKLB] If I Could Only Buy 1 Space Stock After the Rocket Lab Crash, It Would Be This One
+   (Yahoo Finance · 10/23 02:50)
+🏷 중립 | 로켓랩 보유자에게 중립적 기사 | 비교 및 다른 회사 이야기 | 2
+🔗 https://www.fool.com/investing/2026/10/22/if-i-could-only-buy-1-space-stock-after-the-rocket/?.tsrc=rss
+→ 로켓랩 대신 인튜이티브 머신즈가 더 성장세가 빠르고 저평가되어 있다는 내용입니다. 이 기사는 RKLB 보유자에게 직접적인 영향이 적습니다.
+
+📰 [RKLB] Did SpaceX Results Lift Rocket Lab (NASDAQ:RKLB) by About 6% on Wednesday?
+   (kalkine.ca · 10/23 02:00)
+🏷 호재 | 스페이스X 결과, RKLB 상승 기여 | 스페이스X 실적이 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcUxBY1JJdEI4SHB2RUhQcWU4eXM1dDdCMjM1UlpkOVNWcGVFMXBxNHFwMjk4R25vd1ZvUTJVeHBCOExfOXkxZ2gtV1JJd3ZJSEhKeVBaQmFLVWNDeHJsNjgxVFo1YzREQUhOZjZoSXItLUNNYWdLal8xclNuLW80d3VidkJ1SXBhVm9Cek5MWHRqcXpQN2FDZ0NUOFJfQUVRaUl5Z3dCVGhhUQ?oc=5
+→ 스페이스X의 성과가 RKLB 주가에 긍정적인 영향을 미쳤다는 내용입니다. 이는 Rocket Lab의 시장에서의 경쟁력 강화를 시사합니다.
+
+
+🪙 코인 PART
+🧭 [BTC-USD] 부정적 흐름 지속, 리스크와 전망 하향
+
+📰 [BTC-USD] Bitcoin-Backed Loans Add Debt to Leveraged Crypto Trading
+   (PYMNTS.com · 10/23 06:21)
+🏷 악재 | 비트코인 담보 대출 증가 | 부채 증가로 인한 리스크 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMinwFBVV95cUxPekVZYk5pRVpKSXhtdmY4QnplUHd6a25LM0Zqb1hraGp1QWlUa0dUUUhNTHlfckJrbkcyeXpXSUViR19Ic2Zsd19LUHVwMlB2TmF0U202TXhfR3BVN0REeTZwT2phR1RTOENCYzJUeVFYMVVYVUNUSDJNOUVwT21nZWZmQnlJUnNaT28xT0lIN3cxNjVFdkZ0Z3pZN1ZhN3M?oc=5
+→ 비트코인을 담보로 한 대출이 늘어나면서 레버리지 거래에 대한 부채가 증가하고 있습니다. 이는 BTC 보유자에게는 리스크 요소로 작용할 수 있습니다.
+
+📰 [BTC-USD] Bitcoin Price Won't Break $100K By End of 2026, Analysts Say—Here's Why
+   (Cryptonews.net · 10/23 06:19)
+🏷 악재 | BTC 2026년 10만 달러 안될 것 | 가격 상승 전망 하향 조정 | 0
+🔗 https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UYmctZ184ZFh2MzlJYnVOMTVtT2Vvb3JGR3Q3NzluVWt1NFV2cHYweVVvRXRtcm8yYmZWRV9Gemd5bFBXN3piamNuNkRHcy11dDVVVmF3dTc?oc=5
+→ 전문가들은 비트코인 가격이 2026년 말까지 10만 달러를 넘지 않을 것으로 예상하고 있습니다. 이 전망은 BTC-USD 보유자에게 부정적인 영향을 미칠 수 있습니다.
+
+📰 [BTC-USD] Former Central Texas teacher used Bitcoin to buy child porn, sentenced to federal prison, prosecutors say
+   (CBS News · 10/23 06:12)
+🏷 악재 | 비트코인 불법 사용 사건 | 부정적 이미지 영향 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMiswFBVV95cUxOQklBVld1eXZkekxRdkJDWk1FaU1ueGpfZlJFNkF6cXFJWHo1U2t1OXBRSm1hZEpRRy1IdERTQWQ4VGtvSFg0N1M2RjJZTnVXRkZybkU1V0hPSW1JeVNHQk14NWhDVDIxQjNmTldCZElXUk1Iakc5aUZnVmt1UFVUUno0blF1Umg1NExGZHRINGgzUmZvYzhaVVlnZGhNQTB0Szd3TEtnaFBuTGlUczRaYmFQRQ?oc=5
+→ 전 중등 교사가 비트코인을 사용해 아동 음란물을 구매한 혐의로 처벌받았습니다. 이러한 사건은 BTC의 부정적인 이미지를 초래할 수 있습니다.
+
+🧭 [ETH-USD] 이더리움 가격 하락과 독립 우려 속 거래 효율성 개선
+
+📰 [ETH-USD] Ethereum Price Forecast: ETH dips below $2,400 as exchange reserves fall
+   (FXStreet · 10/23 06:12)
+🏷 중립 | ETH 2,400달러 이하 하락 | 가격 하락 원인 불명확 | 0
+🔗 https://news.google.com/rss/articles/CBMiygFBVV95cUxNZVZfMXp4STNDeW13bEp0NDBjdXNuMkZBd3dBVExNQlZ0R1hpemxDTVZjNzVQZGN3NHEza2pta0JNUzlpdVlLdWFDTWFJTVgwQXdsTUxFS1d5Q1k4LVl0QklGVFlETTlrZDNrVFZCdEpsSm1qQkdsdDhIVWxtR00xVTA3NlV2d25mQ0RUOXMxUDVac3lMeWRaY3YyeDdnYVlRdEV0OGsyVThCdnVfQk03VUY1dHE3WG5hQ3VqQkhZMkFwc1A4eGtjUjl3?oc=5
+→ ETH 가격이 2,400달러 아래로 하락하며 투자자들은 우려를 표하고 있습니다. 특히 거래소의 보유량 감소가 이 가격 하락에 영향을 미쳤습니다.
+
+📰 [ETH-USD] Starknet Moves Toward Leaving Ethereum as STRK Slides 41%
+   (Cryptonews.net · 10/23 05:54)
+🏷 악재 | Starknet, 이더리움 떠나나? | Starknet의 독립은 ETH에 악영향 | 0
+🔗 https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MTEVlUEhRMUdHX0ltbHVoLTVrdzdXNVp1X3Q0amx5MU5MYzRMdGVXTUctRi02WVJ2X1M3bTJnZ0hfMFVNMmtuVV9BcEw4YXRPWW0zQmhGX3pxZDA?oc=5
+→ Starknet의 STRK 토큰이 41% 하락하며 이더리움에서의 독립 가능성을 높이고 있습니다. 이는 이더리움 생태계에 부정적인 영향을 미칠 수 있습니다.
+
+📰 [ETH-USD] Ethereum’s finality reduction draft targets a fourfold cut in settlement waits
+   (Cryptonews.net · 10/23 05:44)
+🏷 호재 | 이더리움, 결제 대기 시간 4배 단축 | 효율성 향상으로 거래 활성화 | 0
+🔗 https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Lb2lDbm9nSVRyc0J0bXBoUGJKMUJBalBGdDZkM29DeHNhb19GZlJnMnlabWUtNnB3Q2JOQjNXYkloYzdVVGV0S2t0LTZSWHdTQTFSaDhGSC1HQQ?oc=5
+→ 이더리움의 새로운 초안이 결제 대기 시간을 4배 줄일 수 있는 내용을 담고 있습니다. 이는 Ethereum 네트워크의 효율성을 높일 것으로 기대됩니다.
+
+🧭 [SOL-USD] 솔라나, 자금 유출에도 기관 투자 유입 기대
+
+📰 [SOL-USD] Solana price prediction: 2.57 long accounts per short as $12.9 million leaves the futures market
+   (CryptoTicker · 10/23 06:13)
+🏷 악재 | 솔라나, 선물시장 자금 유출 | 자금 유출로 인한 영향 | 0
+🔗 https://news.google.com/rss/articles/CBMimAFBVV95cUxQNHU5dHFyTTN2X3FSLVdGbTJlcXowREw5ZTJmakd1Nm1jRUFITWxWelJ4T2JBSnl1NXRkWGszNGVwVlpyczI3M2M4MGNadEhuX0hmTEF6T1o0LWdFX1pNV09EeEFwT0pzNk1uNUJNNGtMa25SZFFadFRyWDZVbHN4VVNuRGF6UHJycHB4WDZGcUtwOG9Gbk5EeQ?oc=5
+→ 솔라나의 가격 예측에 따르면, 12.9백만 달러가 선물시장에서 유출되었습니다. 이는 단기적으로 보유자들에게 부정적 영향을 미칠 수 있습니다.
+
+📰 [SOL-USD] J.P. Morgan Launches Tokenized Money Market Funds on Solana
+   (Cryptonews.net · 10/23 05:45)
+🏷 호재 | JP모건, 솔라나에 토큰화된 머니마켓 펀드 출시 | JP모건의 진입으로 인한 기관 투자 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWbU9TdGpwOFV2Y2dXbXBZN3gzdHJPc3BOblpHdjdBbmdBdXJqcllNU0VSSmlJZnIxWlVBVnYxNEFzcW1Oa1FqNWowNGxkazd2UUFjVWdYaEVlMlZr?oc=5
+→ JP모건이 솔라나에서 토큰화된 머니마켓 펀드를 출시했습니다. 이는 솔라나 블록체인의 활용도를 높이고, 기관 투자자들의 관심을 받을 것으로 기대됩니다.
+
+📰 [SOL-USD] LI.FI Proposes 1:1 Stablecoin Payment Flows on Solana
+   (Cryptonews.net · 10/23 05:45)
+🏷 호재 | Solana의 1:1 스테이블코인 제안 | 스테이블코인 도입으로 유동성 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTE9PSWZXN04tVmFGUC1YakNDTTJvRUVOdjZrU1RXWkxhQWUwNXdOUGJRQnBBSDlSUDJQNXU1dm5lS2xwYmcyb1cwMWo5S19HeE4yQmVhVF9ud3FXbjRy?oc=5
+→ LI.FI가 Solana에서 1:1 스테이블코인 결제 흐름을 제안했습니다. 이는 Solana 생태계의 유동성과 사용성을 향상시킬 것으로 기대됩니다.
+
+🧭 [BMNR] BMNR 과대평가 우려 속 비트코인 상승으로 주가 상승
+
+📰 [BMNR] Is BitMine Immersion Technologies Inc (BMNR) Overvalued After 5.
+   (GuruFocus · 10/22 07:24)
+🏷 악재 | BMNR, 과대평가 논란 | 과대평가 경고로 인한 우려 | 1
+🔗 https://news.google.com/rss/articles/CBMizAFBVV95cUxNRklUSWw2V0lSZ3JKWjR1Q21kXzhMdWFxVHJPOVZKZDhMcFIzQlBhUkdkNnNsejZibVlxbFRrakx1QWttTzhoOE1kLTdraW0yeWN2VFdVTXBkMzlaSUIxckp6UmRybUFZemh6UXFrOW9xdEo1UzBBYXZGZVZHQnUyQ016dFQ5elhWWUhnYjU4dXhzWTg0OFlhZm5BWUROemVWWjFFYmlUYU03b1hwSjR3QXZ2YkF4LTZnWlMzcWlfYk9nQkhmcEZTbVB5OTU?oc=5
+→ BMNR이 현재 과대평가되었다는 분석이 나왔습니다. 이는 보유자에게 우려를 불러일으킬 수 있는 내용입니다.
+
+📰 [BMNR] BitMine Stock Jumps as Bitcoin Rises, Prediction Markets Launch
+   (Yahoo Finance · 10/22 03:29)
+🏷 호재 | 비트코인 상승으로 BMNR 급등 | 비트코인 상승으로 주가 상승 | 1
+🔗 https://www.benzinga.com/trading-ideas/movers/26/10/62507566/bitmine-stock-jumps-as-bitcoin-rises-prediction-markets-launch?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss
+→ 비트마인 임머션 주가는 비트코인의 상승과 함께 급등하고 있으며, 암호화폐 관련 주식들이 긍정적인 움직임을 보이고 있습니다. 이로 인해 BMNR의 주식에도 긍정적인 모멘텀이 생기고 있습니다.
+
+📰 [BMNR] BitMine Immersion Technologies, Inc. Price Today | xBMNR Live Price, Chart & Market Cap
+   (OKX · 10/21 18:00)
+🏷 제외 | BMNR 실시간 가격 정보 | 실질적인 뉴스가 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMif0FVX3lxTE1ic21nbmhVMlEwMjF2TlBPM2ZrcnBvMUZXYldaVUZDLUo0UngtZEhYT2FmU251OGxpX2dlWGJ1QTJxbXl1UFhJck1pdEc4RnlubEtab3g2dzFvOGpjLVhjT1c4NDhKbGsxUzduOFBtU1hWc2I2Rm9XdVo1ZE5lQm8?oc=5
+→ BMNR의 현재 가격 및 시장 규모에 대한 정보가 제공됩니다. 하지만 특정한 사업이나 재무적 요소에 대한 내용은 없습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장은 리플의 SEC에 대한 규정안 최종 확정 촉구, 비트코인 결제의 상인 중심 확산 전망, 지니어스법 최종 규칙 발표, SWIFT의 24시간 토큰화 예금 결제 시험 등 여러 주요 이슈로 가득 차 있다.
+
+[핵심 뉴스]
+1. (규제) 리플, SEC에 가상자산 규정안 최종 확정 촉구
+   → 리플은 미국 SEC에 가상자산 규정안 'Regulation Crypto Assets'의 최종 확정을 촉구하며, XRP 등의 규제 불확실성을 해소하고자 하는 요청을 공식적으로 했다.
+   (토큰포스트 · 10/23 06:15)
+2. (기타) 비트코인 결제 확산은 상인부터
+   → 파커 루이스는 비트코인의 결제가 상인의 비용 절감 유인으로 확산될 것이며, 이는 비트코인의 가치 저장 기능과 결제 기능이 결합되어 이루어질 것이라고 전망했다.
+   (토큰포스트 · 10/23 06:17)
+3. (정책) 지니어스법 최종 규칙 내년 1월 18일 시행
+   → 미국 통화감독청이 지니어스법의 최종 시행 규칙을 내년 1월 18일부터 시행한다고 발표했으며, 자금세탁방지 규정은 제외되었다.
+   (토큰포스트 · 10/23 06:13)
+4. (기타) SWIFT, 토큰화 예금 24시간 결제 시험
+   → SWIFT는 주요 은행과 함께 토큰화 예금을 이용한 24시간 국경 간 결제 시험을 진행하며, 전통 결제망과 디지털 자산의 통합을 시도하고 있다.
+   (토큰포스트 · 10/23 06:15)
+5. (정책) 4600만달러 쓴 가상자산 단체, 오하이오 상원 2024년 지출 넘어서
+   → 오하이오주에서 가상자산 단체인 디펜드 아메리칸 잡스가 상원 선거에 4600만달러를 지출하여, 2024년 선거에서 주요 후보 지원을 확대하고 있다.
+   (토큰포스트 · 10/23 06:06)
+
+[흐름·전망]
+• 리플의 SEC 규제안 확정 여부는 XRP의 시장 흐름에 중요한 영향을 미칠 것으로 보인다.
+• 비트코인의 결제 수단으로서의 확대는 앞으로의 소비 패턴 변화에 큰 시사점을 제공할 수 있다.
+• 지니어스법 시행으로 인해 디지털 자산 규제 환경이 변화할 것이며, 이는 스테이블코인 시장에 영향을 미칠 것이다.
+• SWIFT의 토큰화 예금 결제 시험 결과는 전통 금융과 디지털 자산 간의 상호운용성 향상에 대한 기대감을 높일 수 있다.
+• 오하이오주에서의 정치적 활동과 자금 조달은 가상자산 업계의 정치적 입지와 영향력을 보여주는 사례로 주목할 만하다.
+
+📊 공포탐욕지수
+  - CNN 기준: 20 (Extreme Fear)
+  - 크립토 기준: 68 (Greed)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 미성년자 주택 매수 증가, 도심 주택 공급 사업 에 대한 정부의 의지, 그리고 서울 아파트 가격 상승세 둔화 등의 변화를 보였다.
+
+[핵심 뉴스]
+1. (매매) 집주인 된 미성년자 작년의 1.8배
+   → 올해 미성년자 주택 매수는 66건으로 지난해의 1.8배에 달하며, 총매수 금액은 약 231억원으로 자기 자금 비율은 56.7%에 이른다.
+   (연합뉴스 · 10/23 06:01)
+2. (정책) 韓총리, 도심 주택 공급 사업 속도내야
+   → 한성숙 국무총리는 서울 강서구 공항고 부지에 청년·신혼부부를 위한 공공주택 270호의 공급을 확인하며 주택 공급에 대한 적극적인 의지를 밝혔다.
+   (연합뉴스 · 10/22 18:32)
+3. (매매) 서울 아파트 매매가격 상승세 3주만에 둔화
+   → 서울 아파트 매매가격이 이번 주 0.13% 상승했으나 상승폭이 3주 만에 둔화하며, 강남권은 약세를 보였다.
+   (연합뉴스 · 10/22 14:00)
+4. (공급) 내년까지 공적주택 10만호 수도권 입주
+   → 이형일 부총리는 내년까지 수도권에 약 10만호의 공적 주택이 입주할 계획이며, 이는 시장 안정에 기여할 것으로 전망했다.
+   (연합뉴스 · 10/22 15:56)
+5. (금리) NH농협은행, 주담대 금리 인하
+   → NH농협은행은 주담대 금리를 수도권에서 0.1%p, 비수도권에서 0.2%p 인하하며 대출 부담을 줄이기로 결정했다.
+   (연합뉴스 · 10/22 16:10)
+6. (전세) 전세도 뛰고 집값 상승 지속
+   → 서울 아파트 매매가격이 89주 연속 상승하는 가운데, 일부 전세보증금 상승액이 매매가격 상승액을 초과하는 현상이 나타나고 있다.
+   (매일경제 · 10/22 14:00)
+
+[흐름·전망]
+• 미성년자의 주택 매수가 증가하는 가운데, 정부의 엄정한 규제가 필요할 것으로 보인다.
+• 도심 주택 공급의 가속화가 임대주택에 대한 인식을 변화시킬 가능성이 있다.
+• 서울 아파트 가격의 상승세 둔화가 지속될 경우 투자 심리에 영향 미칠 수 있다.
+• 공적 주택 공급이 증가하면서 시장 안정화에 기여할 가능성이 있으며, 이는 전체적인 주택 수급에 긍정적인 신호가 될 것이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 최근 발언에서 여러 주제를 다루며 정치적 비판과 안보 이슈를 강조했다. 특히, 이란의 석유 가격 조작과 레브론 제임스의 국가에 대한 무례함을 언급하며 미국과 국민을 보호해야 한다고 주장했다.
+
+[주요 발언]
+1. (사법) 트럼프는 조지아주 주지사 후보인 에이미 액튼의 어머니가 그녀를 비난한 광고에 대해 언급하며, 정치적 공격의 부당함을 주장했다.
+   (Truth Social · 10/23 03:38)
+2. (기타) 뉴욕시의 마차 산업 종료에 대해 안타까움을 표하며, 정치적 이유로 전통이 사라지는 상황에 대해 씁쓸함을 드러냈다.
+   (Truth Social · 10/23 03:04)
+3. (외교) 트럼프는 이란이 미국 중간선거 전에 석유 가격을 올리기 위해 조작하고 있다고 주장하며, 이란 정권의 악랄함을 강조했다.
+   (Truth Social · 10/23 03:03)
+4. (외교) 그는 이란의 인권 탄압과 7개월 동안 75,000명의 시위자가 사망한 상황에 대해 미국과 국제 사회가 무관심하다고 언급했다.
+   (Truth Social · 10/23 01:22)
+5. (기타) 트럼프는 레브론 제임스가 국가를 존중하지 않았다며 그가 사과해야 한다고 주장했다.
+   (Truth Social · 10/23 00:41)
+
+[흐름·전망]
+• 트럼프의 발언은 중간선거 전 이란과의 관계가 커다란 정치적 이슈가 될 가능성을 시사한다.
+• 레브론 제임스와 같은 유명 인사의 발언에 대한 반응은 향후 사회적 논란으로 이어질 가능성이 있다.
+• 전통산업의 종료는 정치적 논의의 초점이 될 수 있으며, 이에 대한 여론이 어떻게 형성될지 주목할 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
