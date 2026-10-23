@@ -498,10 +498,10 @@
 "name": "Gross Domestic Product Annualized",
 "dt": "2026-10-29T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "3%",
 "prev": "2.2%",
 "act_n": null,
-"cons_n": null
+"cons_n": 3.0
 },
 "f1a492c1-7a0d-446b-a2ae-a0afee0703f1": {
 "name": "Gross Domestic Product Price Index",
@@ -893,6 +893,15 @@
 "37382c85-1bad-4245-85f5-5a26a196507e": {
 "name": "Michigan Consumer Sentiment Index",
 "dt": "2026-12-04T15:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"1541d767-5d09-46fa-a80f-b6f33a7cd1a4": {
+"name": "Gross Domestic Product (QoQ)",
+"dt": "2026-12-06T23:50:00Z",
 "act": null,
 "cons": null,
 "prev": null,
