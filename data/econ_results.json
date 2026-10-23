@@ -452,19 +452,19 @@
 "7ac62fc5-13ab-4771-ace3-3d50ed33effe": {
 "name": "S&P Global Manufacturing PMI",
 "dt": "2026-10-23T13:45:00Z",
-"act": null,
+"act": "56",
 "cons": "55.6",
 "prev": "55.9",
-"act_n": null,
+"act_n": 56.0,
 "cons_n": 55.6
 },
 "54e677df-4e09-443c-84c6-6aaee1aff3bb": {
 "name": "S&P Global Services PMI",
 "dt": "2026-10-23T13:45:00Z",
-"act": null,
+"act": "57.9",
 "cons": "57.9",
 "prev": "58.8",
-"act_n": null,
+"act_n": 57.9,
 "cons_n": 57.9
 },
 "0fa5c63c-f61c-4436-8763-66222addfe7a": {
@@ -534,10 +534,10 @@
 "name": "BoJ Interest Rate Decision",
 "dt": "2026-10-30T03:00:00Z",
 "act": null,
-"cons": null,
+"cons": "1.25%",
 "prev": "1.25%",
 "act_n": null,
-"cons_n": null
+"cons_n": 1.25
 },
 "240a5d56-e79c-4889-a204-2ceb275ee9bd": {
 "name": "BoJ Monetary Policy Statement",
@@ -643,7 +643,7 @@
 "dt": "2026-11-06T15:00:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "48",
 "act_n": null,
 "cons_n": null
 },
@@ -902,6 +902,15 @@
 "1541d767-5d09-46fa-a80f-b6f33a7cd1a4": {
 "name": "Gross Domestic Product (QoQ)",
 "dt": "2026-12-06T23:50:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"4086b1ac-46a9-4115-8e77-e3e8310f65b4": {
+"name": "BoJ Governor Ueda speech",
+"dt": "2026-11-06T16:00:00Z",
 "act": null,
 "cons": null,
 "prev": null,
