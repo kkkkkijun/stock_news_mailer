@@ -498,10 +498,10 @@
 "name": "Gross Domestic Product Annualized",
 "dt": "2026-10-29T12:30:00Z",
 "act": null,
-"cons": "3%",
+"cons": "3.2%",
 "prev": "2.2%",
 "act_n": null,
-"cons_n": 3.0
+"cons_n": 3.2
 },
 "f1a492c1-7a0d-446b-a2ae-a0afee0703f1": {
 "name": "Gross Domestic Product Price Index",
