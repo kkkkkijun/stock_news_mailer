@@ -1,0 +1,324 @@
+2026-10-26T06:32:46.714098+09:00
+
+[오늘의 뉴스 요약] 2026-10-26 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 경상수지 흑자가 반도체 수출 호황 덕분에 급증하며 독일과 일본의 흑자를 합친 것보다 많아진 것으로 나타났다. 원/달러 환율이 하락하면서 원화의 명목실효환율이 2년 만에 최고 수준을 기록했다.
+
+[핵심 뉴스]
+1. (성장) 韓 경상흑자, 독일·일본 합보다 많아졌다
+   → 올해 2분기 한국의 경상수지 흑자는 1166억3000만달러로, 이는 작년 동기 대비 4.1배 증가하며 독일과 일본의 합산 흑자를 넘어섰다.
+   (매일경제 · 10/26 06:08)
+2. (환율) 원/달러 환율 1,310원대 근접
+   → 원/달러 환율이 1,320원대 초반으로 하락하며 원화의 명목실효환율은 94.83로 2년 만에 최고치를 기록했다.
+   (연합뉴스 · 10/26 05:55)
+3. (정책) 경제현안간담회, 생산세액공제 논의
+   → 이형일 부총리는 경제현안간담회에서 국내생산세액공제와 3대 사회정책을 논의하였으며, 특히 전기차 업계를 포함한 공제 확대 요구가 커지고 있다.
+   (연합뉴스 · 10/25 19:52)
+4. (금리) 카드론 금리, 13%대로 하락
+   → 카드론 평균금리가 9월 13.55%로 하락하며 중저신용자 대상 중금리대출 취급이 증가한 것으로 나타났다.
+   (연합뉴스 · 10/26 05:57)
+5. (성장) 경상흑자 세계 2위로
+   → 경상수지 흑자가 두 번째로 높아진 한국은 반도체 등 제조업 강국으로서의 입지를 더욱 명확히 하고 있다.
+   (매일경제 · 10/25 17:34)
+
+[흐름·전망]
+• 한국 경상수지의 향후 지속 가능성은 반도체 가격과 글로벌 AI 투자 동향에 크게 의존할 것으로 보인다.
+• 원화 강세가 계속될 경우 수출 경쟁력에 미치는 영향에 대한 분석이 필요할 것이다.
+• 정부의 국내 생산세액공제 확대 논의가 실제 정책으로 이어지게 된다면 특정 산업의 성장에 긍정적인 영향을 줄 수 있다.
+• 카드론 금리 하락은 중저신용자에게 약간의 금융적 여유를 제공할 수 있으며, 이는 소비 회복에 기여할 가능성이 있다.
+
+📈 해외주식 PART
+🧭 [NVDA] 엔비디아의 투자와 AI 소프트웨어 가격 공개는 긍정적이나 중국 시장 상실은 악재
+
+📰 [NVDA] Jensen Huang puts a $2,000-per-GPU yearly price on NVIDIA's AI Agent software
+   (TweakTown · 10/26 04:50)
+🏷 호재 | 엔비디아, AI 소프트웨어 가격 공개 | AI 소프트웨어 가격 책정 호재 | 0
+🔗 https://news.google.com/rss/articles/CBMiygFBVV95cUxPaWN3TFkwUmc5ZXRCTl9SMV93V3Q2ZzVVZHJtOXZyb3ZDTWEwbUxhS2g5WkN2aU9BX2VrcV80eklRblQ5cFAtSnBqTGZtVDEzQnZzcmt5UTBqdzFTcU9mQjFxcElPYlhVeVNlNGFmWmVBcWhIQ0g3b09OWVE5d0dMbnk1X053azdQeFVSUEx3VUFROE5jQkY0UEExQ09SRGxPVnM3dF9VWlpkVXcybXdEUlBxMjVVQmFDcDd2X0ZfY0NOQ1gxRHBnaElB?oc=5
+→ Jensen Huang이 엔비디아 AI 에이전트 소프트웨어의 연간 가격을 GPU당 2,000달러로 설정했다고 발표했습니다. 이 새로운 가격은 AI 솔루션의 수익성을 강화할 것으로 기대됩니다.
+
+📰 [NVDA] Amkor Technology: Nvidia's $3 Billion Vote Of Confidence Lands On A De-Rated Stock (AMKR)
+   (Seeking Alpha · 10/26 04:24)
+🏷 호재 | Nvidia, Amkor에 30억 달러 투자 | Nvidia의 대규모 투자 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVlFkOFVPOUpxTmpqYjkxaTh3ZHZNOUg2aFVPekk0TkVxVjBhRHVpVGdhaEJlbXZOODBVeHJ1TE80UjhFU2tFdFF0dnhtdElIa3FDSnVUOV9JdUZIRmQ5c1pxU256eFdqNlRaZ0NlUXBPSU1mckE3UVZHdFJzNFFlSER4NmNPTTlNZXQ4LVoyRXpHM3NLMTBRMnhaSUFUQk9kVzBWaG8xQjFDeGQxZVBPcDlUNEdkYTd4WGhJ?oc=5
+→ Nvidia가 Amkor Technology에 30억 달러를 투자하며 신뢰를 표명했습니다. 이는 Amkor의 주가 상승에 긍정적인 영향을 미칠 것으로 예상됩니다.
+
+📰 [NVDA] Nvidia (NVDA) Has Lost Its China AI Accelerator Market
+   (Yahoo Finance · 10/26 04:06)
+🏷 악재 | Nvidia, 중국 AI 시장 상실 | 중국 시장 점유율 상실 | 1
+🔗 https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-lost-china-ai-190626796.html?.tsrc=rss
+→ 미국의 수출 통제로 Nvidia가 중국 AI 가속기 시장에서 사실상 손실을 입었습니다. 그러나 엔터프라이즈 고객들은 여전히 고급 GPU를 활용한 대규모 AI 프로젝트를 진행하고 있어, 장기적인 수요는 유지될 가능성이 있습니다.
+
+🧭 [TSLA] 테슬라 로보택시 서비스 확대 기대감 상승
+
+📰 [TSLA] Tesla Cybercabs Ferry F1 Fans in Austin as Sightings Hit New Record
+   (Electric Vehicles · 10/26 06:09)
+🏷 호재 | 테슬라 사이버택시, F1 팬 수송 | 브랜드 인지도 강화 | 0
+🔗 https://news.google.com/rss/articles/CBMipgFBVV95cUxPZWEwUGVyaGpxREZGQ2tQTXd3cGFHT3hiUDAtMjlrRENfSTdwWlA3VUxOT2Z0SnRROXJmWTY5MjBuUV96dnMyU0h3UnpGYjBlcFRXMkZxbXNTNzRSZldYb3N1UnRYS0hqMmF0M0tBa19fOGtiWTk2b09wUHB0YWpvNDRUeF9fajNQNGJtY3pacHZveEZab3V6MUtOcnhnR1ZPdTlIdFNn?oc=5
+→ 테슬라의 사이버택시가 오스틴에서 F1 팬들을 수송하며 기록적인 관찰 사례를 기록했습니다. 이는 테슬라의 네트워크와 브랜드 인지도를 강화하는 긍정적인 요소로 작용할 수 있습니다.
+
+📰 [TSLA] Grok on Tesla Robotaxis: Everything Passengers Need to Know
+   (BASENOR - Tesla Accessories · 10/26 06:04)
+🏷 호재 | 테슬라 로보택시 안내 | 로보택시 서비스 확대 기대 | 0
+🔗 https://news.google.com/rss/articles/CBMimAFBVV95cUxQYnJLSG50TFZmV2JiTHhEZjVqOFRXN0plbVBTRjEyUXRlUVpYUDBjNi10OUxvd3g0WU05Q3BLRUI2b1ZNMWdCaUhGOHFWYktEOVBsbXktUlhRMnRZQ25FX25YSXdLekRxVUlXZkJ1VlZGaUU4a1FETnJpRzU2cG5ibUx6cWcyMDhHanphd2pKV0NsdU9MM29CLQ?oc=5
+→ 테슬라의 로보택시 서비스에 대한 정보가 공개되었습니다. 이는 향후 수익원으로 작용할 가능성이 높습니다.
+
+📰 [TSLA] Toyota takes on Tesla and China in humanoid robot race
+   (Financial Times · 10/26 06:00)
+🏷 중립 | 토요타, 테슬라와 로봇 경쟁 시작 | 경쟁 심화에 따른 영향 불확실 | 0
+🔗 https://news.google.com/rss/articles/CBMihAFBVV95cUxOay04eC1KWXJvNXZNTTlwaWtmU3F6UmlUU0VZck0zTkhIdmdiQWNhdTBWNDFtelRnemhNTUR6bU1ObE5rMHdJNHEwSzh0WlZaQ1dBM0ZiTUc1MV9iMzE4NXFpQmtUYnJqSlpCMGJiUzk2dXZnSWhzSlJQLUtqRl9KaE5LeHU?oc=5
+→ 토요타가 테슬라와 중국과 함께 휴머노이드 로봇 개발에 나섰다는 소식이다. 이로 인해 전기차 시장 및 로봇 시장에서의 경쟁이 심화될 전망이다.
+
+🧭 [HIMS] HIMS 관련 새 재료는 없음
+
+📰 [HIMS] HIMS Deadline: Rosen Law Firm Urges Hims & Hers Health, Inc. (NYSE: HIMS) Stockholders to Contact the Firm for Information About Their Rights
+   (Business Wire · 10/26 00:05)
+🏷 중립 | HIMS 주주, 권리 정보 요청 | 법적 상황에 대한 일반적 정보 공유 | 0
+🔗 https://news.google.com/rss/articles/CBMimwJBVV95cUxPX2djbkQ3eE9DS0VEVEhwaTZlLXBIMEkyZndnckFrb3BhSVh5Rm83LUs3MnBoa3VhZmw0UWw1OFI5aEhyX1pJZGc1THNQdXVmRGRwUS1kNjBGd1R3NHRmVlVIdTQzVzQ4bDlPWjVJSGd5ZFpKVk1fa1l5b0U0dEp1d1d1Y3FQYWxmckZ2MjR5V2xseGs2Q1lTU09UU1pvU0RlUFhxRTcwVE5FTzQ5T293aEZBS0hfeEtyWEk0RTVsazRBdDdaRGdTRmN4QlMtMUNmTUZFNHo0azFxMGt4d1U4bUdyRHlTbk1vVmxoMFV5WXI0LUtNejByQkQ1azRuWXhjdEszOEdyZVM3cTkzQkItOHVVbzZwWU5GcDRV?oc=5
+→ 로젠 로펌은 HIMS 주주들에게 자신의 권리에 대한 정보를 요청하라고 urging했다. 이는 주주권과 관련된 사안으로, 기업의 법적 상황이 주주들에게 영향을 미칠 수 있다.
+
+📰 [HIMS] HIMS EQUITY ACTION REMINDER Faruqi & Faruqi, LLP Reminds Hims (HI
+   (The National Law Review · 10/25 20:07)
+🏷 제외 | HIMS 주식 행동 촉구 | 기본 정보 전달, 영향 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMiswFBVV95cUxQNnZaYzljX0phM1hSalFTUngybHBuMUQ1b2hqajJseXpGODAzVjBQd2JWMzNpWllvY0V4Rm5nSzFZR1BIZHpQQ2E0ZUpaT0VlM3BMdnd5aVNNbC04SjUtclphQm92c0diaDEwcWJJVm5NYV9UdkRGeGlaei1ibC03QzFwblV6OHZWSUI4bVY4MDB0UnhaOTQxSVI3cEk0Y2JPbkJtNW1UQ3ZOSkZFTVJxODkzaw?oc=5
+→ HIMS 주주 대상 공지로, 주식 행동에 대한 알림이 전달되고 있습니다. 하지만 구체적인 내용이나 긍정적인 소식은 포함되어 있지 않습니다.
+
+📰 [HIMS] Form 144 Hims & Hers Health For: 25 October By Investing.com
+   (Investing.com Canada · 10/25 16:48)
+🏷 중립 | HIMS 10월 25일 Form 144 제출 | 주요 내용이 없어 중립적 | 0
+🔗 https://news.google.com/rss/articles/CBMipAFBVV95cUxPOHEyQ2QxSDlHbUUtbkdzNXpYSzZxdlhHaXdZc004ZGl0LUtna01ubzcwWEtMR0tsZno3OFVsb0p6bGJnWkJ4TEkxa2lMYnliQVdQU0Jnc3ZNTng5MHVGSTd5YURrWGJSdHFvYlpYTjd6STRtTHJ6Tnpydkh6Ri1kaVFMcFFJNUVtd0hDaVhJRXA0Y2hNTDh1OVJ0OGFoTEgyVUFGSA?oc=5
+→ Hims & Hers Health가 10월 25일 Form 144를 제출했습니다. 이는 회사의 주식 거래와 관련된 문서로, 향후 주가에 대한 영향이 있을 수 있습니다.
+
+🧭 [RDW] RDW, 드론 계약 체결로 성장 기대 속 주가 우려 감지
+
+📰 [RDW] RDW Stock Rises On $21.5M Air Force Drone Contract
+   (Stocktwits · 10/25 08:51)
+🏷 호재 | RDW, 공군 드론 계약 체결 | 드론 계약으로 매출 증가 기대 | 0
+🔗 https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeXdQdFNxQkR3bWpkeEdMcXV2NmJ1NnNCNVNMNkp5SjFYTkQ2ODJRcWF1QTVnX3FMY3lzWWZLNmg5bEljWjFaU3M4a01IMzJ2Nl9XRTBzVWZYX0hheFhFMFR3ZWZ6b21wcjBuZ292N01jSW9vT1NtSURhakVwR0Zxc1JBaGU2UTNtSzZLeXNsbWlVZzVzem4zZDByM21JQXFtMkFSbGNnbjlnWjBRS0xOWGZxWXlfRmdn?oc=5
+→ RDW가 2150만 달러 규모의 공군 드론 계약을 체결했습니다. 이 계약은 RDW의 매출 증가에 긍정적인 영향을 미칠 것으로 기대됩니다.
+
+📰 [RDW] ASTS, RKLB, LUNR, RDW Stocks Slide Overnight: Analyst Questions Whether Rivals Can Compete If SpaceX Controls Access To Orbit
+   (Stocktwits · 10/25 06:38)
+🏷 악재 | RDW 주가 하락 우려 기사 | 경쟁력 우려로 주가 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMilAJBVV95cUxOTGozLTJRVmdETmlld0RxSXliT3RoeWlOWTJOX3IwVTk2Vmpub2JHaVNDajdJWEhYeXdFUldiTy02MzA1WmhtS3N0SnRlT0p5TTgySENhTG9aNmF0MmVVWDZfYUplNWo4aERKN2pkSXVQY18xbW5TNzdlZk5qS0VJM25fV3l3Y3c0YjB1OVhTeXluMHozdEh3ZXIzRnJCSmJNV3U1cTRpeEpQLU1NT0pOQmJzZG5mVWRIRFV6enFvSDVnWVhuSXhnUEFKS19WV2IwbzQzeUFMM3A3N29YamNOdER1Uk1uclFLUU1UQk10UUVjbW1tOFltRGx5Wi1QSm5xcXVZaDhWWGtEMnhiRGh6VGxuSjQ?oc=5
+→ 분석가가 SpaceX가 궤도 접근을 통제할 경우 RDW를 포함한 경쟁사들이 경쟁할 수 있는지에 대한 질문을 제기하며, 관련 주가가 하락했다는 소식이다. 이러한 우려는 RDW 보유자에게 부정적인 영향을 미칠 수 있다.
+
+📰 [RDW] Is Redwire (RDW) A Bargain As New Space And UAS Orders Land?
+   (Simply Wall Street · 10/24 05:54)
+🏷 호재 | RDW, 새로운 우주 및 UAS 주문 | 신규 주문 확보로 성장 가능성 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMnNMZW4xR2NtWWU1aG9lZTdMcG8yUnF6eTFadHUxM2FnM1piNF9taDROczhuRFZGU0Q0bHktdHh5QV9Jc2IxeXc4UzFIeW1ZaTRGUEhmdzZwWW9HVkh1aHRyRndRNUZmY1Y0bTFqX3Nqb2M3R0dzVW1ZTkRXeXNiM0RxS1FRV3pGTmxBUEVEaFRmbU1MUXBnemtuUUxjT1lwQjRpRkM5QVA0dXVEUWpuX3FmdXMxckNTaHRFOXBwMEh3dk3SAcgBQVVfeXFMTklzY0s0c1VJeWNPYlk1b001N1FKeWFPNmtsTXk2SmtHNnExMW5Ta0UyRzZyYTVSMUpDeEJHU3c1dnJfTkdaRmhIcmVSM3FkS3VndXhEdEY1ZW5lNkFhMmJQbnNIeTFnQ1pHaklJa003NDBiczFUbEQ1WVVNdzFoX1JDblB1SVBaTTFXY0Jka1gxWTYtOWwtQ0lfbTBnS2loMktINzJKbmh6OVdwQnNNejhLVk5jZjN1T1ZwSm5EOV8tYVZjSTZxX1U?oc=5
+→ RDW는 최근 새로운 우주 및 무인 항공 시스템(UAS) 주문을 확보하며 가치를 평가받고 있습니다. 이러한 계약들은 RDW의 성장을 견인할 수 있는 긍정적인 요소로 작용할 것입니다.
+
+🧭 [IREN] Iren 주가는 신용위험과 하락 소식에 영향받음
+
+📰 [IREN] RIOT, MARA, IREN, and CORZ Stocks Slide as Bitcoin Miners Turn Neoclouds Face Credit Risks - Riot Platfor
+   (Benzinga · 10/25 05:15)
+🏷 악재 | 비트코인 채굴자 신용위험보도 | 신용 위험으로 주가 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMi3AFBVV95cUxPYnpwWkx1d3laV3RIT01ibllIR2k4VlJBWVZRZnFRQlh6eGtsbmlSOUpfeTVDbkFkR0g0ZU40eDQ2bEZSMGN2TU96b0o3akZPR0FUdGRmcVRpMjI4UGFJVGVVOXRoNWE5ZmFxUUszV2FIcFN5LU5WSTFBZHo2UUhGdk9LLUJERnRIckx1RGdoMUM2ZWdZZkx4anZ1UUlhd0pPb1pyeWhBTVY4NV9iOXdtX3ROZWZFWW5fTFVVZTBMQlJ5TUdGaXZ3eW81Ym9vb1N2aVA4SGlwQ2tZSXZ1?oc=5
+→ 비트코인 채굴 업체들의 신용 위험이 증가하면서 RIOT, MARA, IREN 및 CORZ 주가가 하락했습니다. 시장의 불안감이 IREN 보유자에게 부정적인 영향을 미칠 수 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Price Down 2.4% - Should You Sell?
+   (MarketBeat · 10/24 06:29)
+🏷 중립 | IREN 주가 2.4% 하락 소식 | 단순 주가 하락 소식 | 0
+🔗 https://news.google.com/rss/articles/CBMisgFBVV95cUxNeDZ0U3oyblVCRXBzTDNMcnRCZWFlTTM4M21TWHhKR25lUVlucm9kT0U3THlwdTR5RDFPVWl1MjllSS1kYzNpckgyeW5CanBMMmdQOW16UzllSFd5ZUhOVGZXZV9vY1B0ejdlbEhpbWl4YUtLT25VdlY0RzMwMmpaaE0yNTBoeTJaVUFOMnVidzhvUUJCMnlmVUR1aThVZVY1ZVEzUm90QmFPTy1yX0JCNTBR?oc=5
+→ IREN의 주가가 2.4% 하락했다는 소식이 전해졌다. 이번 하락이 투자자들에게 어떤 영향을 미칠지에 대한 우려가 커지고 있다.
+
+📰 [IREN] IREN (IREN) Stock Looks About Right Despite Fresh Data Center Expansion News
+   (Simply Wall Street · 10/24 05:21)
+🏷 호재 | IREN 데이터센터 확장 소식 | 데이터센터 확장은 성장 기회 | 0
+🔗 https://news.google.com/rss/articles/CBMivwFBVV95cUxPM3Y0MGItMmJnNnBXb2dYelJTZmtGdEV3alpvS2JXU19KQnhNeHNRbXpRNGFPUFVSWXZJY0JLZ0psQm5ZTDFuQWlXakNIYjVwdEhNUENyeW4tTGpxX2sta2tQVE9VcVQ5cVNnV01ySG40aC1IUEdPTEZaODVabzFkNzdJbXItYkNBMnZTSXZHRko1N2NOMFRHZ2cwVU1iWS0tc0lsdTg0RndCM2ZzM3hLbjdCazdoc0FPZkFhUnEtb9IBxAFBVV95cUxNc1ZHNkd0aGJUUVdrMlUtTFJJMUMtV0RzZFRhN3ZrVjRBb2FlVlJhT0dya1NQcDlPY1V3Mk5sWUpkeUhBb0NmQksxWElqbkVtUmJQM3Q5aVRhYm9GWDYxWlV5LW1wWXNlZWk1RmFaZ2N2LWtjbjc4UFhFbnY0Zk91UDRaTXZlTzEwMGQzN3BaallXWXpWMEdfQU5vaWVoclo4cDN2SWwzc09JRkg3LWkyRU1zQjZkbmZOYnp3X1k1VVV2V0pm?oc=5
+→ IREN의 데이터센터 확장 계획이 발표되었다. 이 확장은 차별화된 서비스 제공을 목표로 하며, 향후 성장 가능성을 높일 수 있다.
+
+🧭 [RKLB] 로켓랩, 수주 증가에도 발사 연기로 불확실성 커져
+
+📰 [RKLB] Rocket Lab Is Playing a Much Bigger Game Than Rocket Launches
+   (Yahoo Finance · 10/26 01:00)
+🏷 호재 | 로켓랩, 큰 게임으로 나아가다 | 수주 잔고 증가와 전망 긍정 | 1
+🔗 https://247wallst.com/investing/2026/10/25/rocket-lab-is-playing-a-much-bigger-game-than-rocket-launches/?.tsrc=rss
+→ 로켓랩의 주가는 한 달 동안 30% 하락했으나, 수주 잔고는 1년 대비 137% 증가했습니다. 전문가들은 여전히 100% 이상의 상승 여지를 보고 있습니다.
+
+📰 [RKLB] How to Play RKLB Stock as Rocket Lab Pushes Its Neutron Launch to Next Year
+   (Barchart.com · 10/26 00:30)
+🏷 악재 | RKLB, 뉴트론 발사 연기 | 발사 일정 연기로 불확실성 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMiuwFBVV95cUxPXzVfZ0s3V3dfOFBTWG9tV2pMNVpUbUJ2dnNlX2ZKblRuTUVpWmphWWhFbTJkbWR6TVJWNG1YM1N3NmN2alduRWhMUjhERERwbGYtNjI1QXI1b19uZnhCWnF2aGFYbE1rT1ZVaThFYUVoTnIzYnFIWklJY1lHdzgyd2xIUzlYM1J4NHRrV2JrY1U2UlBRaXZmamVWOUhkWWxaVDRZQ0ZkdHBMZmFZUlZUX1dxVzFnaTVuY0xz?oc=5
+→ 로켓랩이 뉴트론 발사를 내년으로 연기했다는 소식이다. 이는 투자자들에게 불확실성을 더할 수 있는 요소로 작용할 가능성이 있다.
+
+📰 [RKLB] Rocket Lab (RKLB) Stock Looks Above Fair Value On Its Three Year Run
+   (Simply Wall Street · 10/25 20:14)
+🏷 중립 | RKLB 주가, 공정 가치 초과 | 주가가 공정 가치를 초과함 | 0
+🔗 https://news.google.com/rss/articles/CBMizwFBVV95cUxQNm9rYUpCYkpmV3FsbFdWcVdVR1l0QnlSTTNFLUM0UVp1U2tWZlpGSkZpNE1TZ3JLNy00N2tySm9qRGdmbVc1a213T2pIakZTQ0d3cWpjemU0eGhsV25GUXI2ZkVsdWJEVW1icDFDOVJDNkFKR1AyakRvMHFtNldGWVRvY1ZueUNvd0ljdjh3dmNsME1DcWpWaDRiRjZJaUpabG1XZFVFRjYtQUJKSlJ0RXFqejhCeXZUN2JULVJXRW9JNXZkZWpNR002cHBFMW_SAdQBQVVfeXFMT0d0MThVMUl6UUFDOVVRU1NMMzNjT3J1d2xhWlo2VzZaTG5LcjFtby1udThmZllObDVRc1Q0b1J6Vlo5VXpxNUY4SXowTTZGV1ZuanhTdWRvTTRLVzVrS083NWlmaUJJeXVfdkVzZE85THJiNVFPUVFwcGtHQ3ZRbzF4SS1DMmZPZXBRYkZPczFDS0hGbXlsQXZXbV9RYkVLM3d5QnlINWhIOERSS3BQcjB3UVlCMWY1Q3l4TlBNamxCY1paQVBXU0gwdUt0WWlOMXpRWnE?oc=5
+→ Rocket Lab의 주가가 지난 3년 동안 급등하며 공정 가치를 초과했음을 지적하고 있습니다. 이는 RKLB 보유자에게 향후 주가 조정 가능성이 내포되어 있음을 시사합니다.
+
+
+🪙 코인 PART
+🧭 [BTC-USD] 비트코인 긍정과 부정 혼재된 흐름 지속
+
+📰 [BTC-USD] Bitcoin and Gold Become Worst-Performing Assets of 2026 in Historic First
+   (Cryptonews.net · 10/26 06:01)
+🏷 악재 | 비트코인, 2026년 최악의 자산 | 성장 가능성 저하 | 0
+🔗 https://news.google.com/rss/articles/CBMiWEFVX3lxTE15UDVoU3YyYmtjYU95dTREVVQ0RG9fSk1ESVBYV0lIaFVBOFFmWEZ4ZnlTTU5kTUJJc0YyblVXV2dHcGxjV1YyTTZOaUpxTjRFRW5UTXBybFM?oc=5
+→ 비트코인과 금이 2026년 최악의 성과를 기록하며 새로운 기록을 세웠습니다. 이는 BTC-USD 보유자에게 부정적인 신호로 해석될 수 있습니다.
+
+📰 [BTC-USD] Jamie Dimon Hated Bitcoin: JPMorgan Now Expects BTC to Beat Stocks and Gold
+   (CryptoRank · 10/26 05:51)
+🏷 호재 | JP모건, 비트코인 기대 상승 | JP모건의 긍정적 전망 | 1
+🔗 https://news.google.com/rss/articles/CBMisgFBVV95cUxPakdfYjVPU0R2TTh4VWJuSU9VVDYxS2N3UGFOeG5VZGRnU0FpNEN5QUZXZnNOY29FdHBiZDRSSEgxMHk3YVktQ1dGbnRnSmVJTnJGRnhjcXgxQmFfczhBYmJNM3dtQWNtbXhfX2EwWk55YVJVbk1TaTNldkxxSGhnaGdXb1ZXMU5MaFUxQk5sUWRKTmswVU5iLVByNkJRS2dMRURySFg4Z3F6bmlZdU5ycHpR?oc=5
+→ JP모건이 비트코인이 주식과 금을 이길 것으로 예상하고 있다고 전했다. 이는 비트코인 보유자에게 긍정적인 신호로 작용할 수 있다.
+
+📰 [BTC-USD] Crypto News: Remittix Prepares Weekly Earn Payouts as Bitwise Models a Bitcoin Price Prediction of $197,000 on Global Liquidity Growth
+   (lincolnjournal.com · 10/26 05:00)
+🏷 호재 | 비트코인 가격 예측 긍정적 | 가격 예측 상승 및 유동성 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMiswJBVV95cUxONHRBalFPbGEwSGRWTlZwWHc0V0N4S3FacHNFUVRROTlEV3YzRGtTX0ZBaDFKUzRUQVFDa09DSVpIWmhhcnVKY000bHZ4ZVk0aTA1Ui1ZTmRqV3lXeVdpYUtZT2RobHlTSUF1SUZWSEs5NGk5RWhNYjJvNmRaczJhSmotLTRLRGJpcURMMUNpR3FJdU14VXBwS3k5V0JUMnl1bkRxVFBHa3gwRnByRkpfYkx2c01TSkdqLXJSaEhjc2pOeHBld3FLbnpEc1pCWjVPZUNHOUJCZzFlV3NoYTNiWE0tUm9iMGROeVNMajljOW9JSGJxYTFZNVJuRDd4RzdNNnNQUzBxTHU1ekg5TzFudmVDQzJsTUx2NGJyN1B3X2phekJOR2FGcVdpcGpuMEM3TmpZ?oc=5
+→ Remittix가 주간 수익 지급을 준비하고 있으며, Bitwise는 비트코인의 가격이 197,000달러에 이를 것으로 예상하고 있습니다. 글로벌 유동성 증가가 긍정적으로 작용할 것으로 보입니다.
+
+🧭 [ETH-USD] 이더리움, 긍정적 소식에도 하락 지속
+
+📰 [ETH-USD] Lido Puts Liquidity Buffers At The Center Of Ethereum ETP Yield Debate
+   (TradingView · 10/26 06:00)
+🏷 호재 | 리도, 이더리움 ETP 수익 논의 | 유동성 버퍼 효율성 증가 가능성 | 0
+🔗 https://news.google.com/rss/articles/CBMixwFBVV95cUxPQjdIeUdMYWZtWU1Lc293LVlzYTVHbnViSlFBb1VwV2NIVGVEYmRWTjZVQWd0c3lTYW1rTXZFeXdzdzRjdlN6LXh3YzFHR3NndGIyMFZGVWRXX3p5ekxHbUFVR001SUhNem5jOS1GaUtXT1pMY082MVI4VGZEeXItLVFWZllucHk2aFFRUHU1SUsycFhwdWh6US1oTUZyLTQyb204YlNETUdzT3gtWmY2d2NnVTRsT3UwcTRGMWRPdFktSXhZYU9n?oc=5
+→ 리도가 이더리움 ETP의 수익성 논의에 유동성 버퍼를 중심에 두고 있다. 이는 ETH-USD 보유자에게 이더리움 기반 투자 상품의 수익성을 높일 수 있는 가능성을 제공한다.
+
+📰 [ETH-USD] Why Is Ethereum Worth About 38 Times More Than Cardano?
+   (Yahoo Finance · 10/26 04:40)
+🏷 중립 | 이더리움, 카르다노와 비교 우위 | 시장 비교 분석이 주 내용 | 2
+🔗 https://247wallst.com/investing/cryptocurrency/2026/10/25/why-is-ethereum-worth-about-38-times-more-than-cardano/?.tsrc=rss
+→ 카르다노는 이더리움에 도전했지만 시장 변동 시 더 빠르게 하락하고 있습니다. 이 두 블록체인의 차이를 이해하는 것은 중요한 시사점을 제공합니다.
+
+📰 [ETH-USD] Bitcoin Is Down 3% in October and Ethereum 12%. Which Should a First-Time Buyer Pick?
+   (Yahoo Finance · 10/26 04:00)
+🏷 악재 | 10월 이더리움 12% 하락 | ETH-USD 하락폭이 크기 때문 | 1
+🔗 https://247wallst.com/investing/cryptocurrency/2026/10/25/bitcoin-is-down-3-in-october-and-ethereum-12-which-should-a-first-time-buyer-pick/?.tsrc=rss
+→ 비트코인과 이더리움 모두 하락 중이나, 이더리움의 하락폭이 더 크다. 첫 구매자를 위한 선택 기준이 달라질 수 있다.
+
+🧭 [SOL-USD] JPMorgan의 투자 확장 소식에 긍정적 반응
+
+📰 [SOL-USD] Solana Price Prediction: Can SOL Hit $200 in 2027? Top Analysts Pick AlphaPepe for 300x
+   (StreetInsider · 10/26 05:46)
+🏷 중립 | 솔라나, 2027년 200달러 도전 가능성 | 미래 전망 논의, 직접적 영향 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMi5AFBVV95cUxOd1d5RXRjeVI3c3loU25UcEwyTWJuR1F5SVVmMXlCdU1DeUMxYWpkY0JaZHZRVWJsQU9FZC1QdWZfdWhTb3FsTjY2QlduWVVMak41QllvSnFhUmRCNmZEakVWTnFVLWx5Uk1ra184Szg1aE5OdGkxdGhXVG1UbFNhOVhlQnpIRzhKRDB5bUdVeHppTE1NNTFXeGZ0STVjdmp1Sy1HNUxrS2c2Xzh4bWdWbWJHWEpjRjZQdzYzai1kQkJYZjVTWk9MZEZjLU42UjFDdTRSeWRxVUxzaXFhRXF1MV9rRzY?oc=5
+→ 분석가들이 2027년까지 솔라나(SOL) 가격이 200달러에 도달할 수 있다고 전망하고 있습니다. 또한, AlphaPepe를 주목하며 잠재적인 300배 수익을 기대하고 있습니다.
+
+📰 [SOL-USD] Will Solana Ever Hit $1,000? What It Would Take From $100
+   (Yahoo Finance · 10/26 05:30)
+🏷 중립 | 솔라나, $1,000 도달 가능성? | SOL-USD에 직접 영향 없음 | 2
+🔗 https://247wallst.com/investing/cryptocurrency/2026/10/25/will-solana-ever-hit-1000-what-it-would-take-from-100/?.tsrc=rss
+→ 솔라나는 2020년 이후 14,700% 급등했으나, 현재 최고점보다 65% 아래에 있다. ETF 자금 유출과 공급 확대가 장애 요소로 작용하고 있다.
+
+📰 [SOL-USD] Crypto News: Remittix Announces 300 Million RTX Burn at Launch as JPMorgan Brings Two Tokenized Funds to Solana, Building the Case for a $300 SOL Price Prediction
+   (markets.businessinsider.com · 10/26 05:23)
+🏷 호재 | JPMorgan, 솔라나에 투자 확장 | JPMorgan 투자와 RTX 소각 소식 | 0
+🔗 https://news.google.com/rss/articles/CBMivwJBVV95cUxQT0VVT0ZUNFJZR3BtLWlwMjlsMTRjbEphQndMeEJBTWhFQncyLUtJd1NGSklKX0U4SDJ3REZTVXZTRlFFdXJfd0Z1emc4am95LXNIRnZPQW8tOU9XSHdyUVhMUnRIanBSYjBIejU1dC1WV1NwOFFkSVM3QU14ejhlZW1ITGxLa3A5RkhzTHdvTzVPZGJrWTdLbUdHVjRTWjl0NnNMc3lJN1Nubng4RFRPZDhUaEZQQkZsdFRFNXF3cTJ0cWtuRlZkQzZ5c01FU3dtMC1oWXViX096UF9WQ3hmUWE0SWN2M00xMlRuWUVOdWVVYWVzZXFJRlcwZEtIZklLT2hKeWdCV0NzWVk5eWZMNE5YX3RpTVhHS3lWampFdjI2UGJNMVFRSUJ3ejhTUlFkZzZDdDJ5a2NNWk5JZzRN?oc=5
+→ JPMorgan이 솔라나에 두 개의 토큰화된 펀드를 출시하며 긍정적인 소식을 전했습니다. 또한 Remittix가 3억 RTX를 소각한다고 발표하여 SOL-USD에 영향을 줄 것으로 보입니다.
+
+🧭 [BMNR] BMNR의 이더리움 관련 호재로 성장 기대감 상승
+
+📰 [BMNR] Micron (NASDAQ: MU), Lam Research (NASDAQ: LRCX), And Bitmine (NASDAQ: BMNR) Offer Up To 103% Earnings Growth Potential
+   (Foreign Policy Journal · 10/26 01:25)
+🏷 호재 | BMNR, 103% 성장 잠재력 보도 | 실적 성장 잠재력 관련 보도 | 0
+🔗 https://news.google.com/rss/articles/CBMi7AFBVV95cUxNSE9kdFp3V0lHbHVOM1dpOEtaNG5OcXdXT1I2Q2sycGt0WTRZYWE2LVpYSml4VnFqZ2JzZTdnNHNBd3lFUzVudExxc2wydTdnVHZWZzJNbXBvbGhCMVRmOWVkZ0F1Q3BxX2VjemxWN0diOE9ZLXBHT3dTaUMzOU1oM09ENG1RMXB0eDNhdVN0OUdlSFc0RzRwcW01dWMwZ0Q3X1laeFRDa1dZNDN3QkNlWUc1dXRyV2VwcU43cEF3SVhDRUVselY2UEg3UjFOLXJvVGtoSXdpZ2FZd2x6Tm9rMEpfVDA1UzlUMHRPNg?oc=5
+→ Micron, Lam Research와 함께 BMNR의 최대 103%의 실적 성장 잠재력이 강조되었습니다. 이는 BMNR 보유자에게 긍정적인 신호로 해석될 수 있습니다.
+
+📰 [BMNR] BMNR Stock Rides Ethereum Powerhouse Staking And Analyst Upgrade
+   (StocksToTrade · 10/22 05:50)
+🏷 호재 | BMNR, 이더리움 스테이킹 호재 | 이더리움 스테이킹과 분석가 업그레이드 | 0
+🔗 https://news.google.com/rss/articles/CBMikwFBVV95cUxNVXNFOG5MUS1kbFpyWFRZWHQ4dENDSzNkXzNRcXZGeHNmWk1jUUxSWHBsVXdESHZxVVVmVm9JVHFUNkpkeTE0b2lVWkVzSHpGVUd2NG5HNU9xLVp0el85dUw1WlI3eHB0YWdxNG1tSjA1VHNobEVHUnQ3RWxRcGpEb185VXhtMXVNc1gwTmQxOTkyQTA?oc=5
+→ BMNR 주가는 이더리움 스테이킹의 성장과 분석가의 업그레이드에 힘입어 상승하고 있습니다. 이는 BMNR 보유자에게 긍정적인 소식으로 해석될 수 있습니다.
+
+📰 [BMNR] BMNR Stock Tracks Massive Ethereum Treasury And Staking Boom
+   (StocksToTrade · 10/22 04:03)
+🏷 호재 | BMNR, 이더리움 자산 증가 소식 | 이더리움 자산 증가로 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMikAFBVV95cUxONjdtM1VOa1pTTnBzQjhDX2RwU0x3elVORTdiRHQtWlV1bHRBaGNwbUkyZGxOLUF6ZU5fdXg1MDdRQkF5dHE0aDE0dHd4VmNJQ2RhQjhBWUZLQkVURllXVEI3czZ6M3VXYVZHMnlBZmpXSkNWS0c1ZDlaREtsNER4aFlHMUZQNlMycHVFNk0ybnI?oc=5
+→ BMNR이 이더리움의 큰 자산 증가와 스테이킹 증가에 따라 긍정적인 흐름을 보이고 있습니다. 이는 BMNR의 가치 향상에 기여할 수 있는 요소로 작용할 것으로 보입니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 비트코인이 7.3% 하락하며 연초 성과 부진이 지속되고 있다. 암호화폐 시장에서는 혼조세가 나타나고 있으며, 많은 투자자들이 관망 중이다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 7.3% 하락…연초 성과 부진
+   → 비트코인은 29~30일에 예정된 미국 연준의 금리 결정과 9월 PCE 물가지수 발표를 앞두고 26일 오전 5시 30분 기준 8만472달러에 거래되었으며, 이달 초 최저가에 도달했다.
+   (토큰포스트 · 10/26 05:56)
+2. (시세) 암호화폐 시장 혼조세… 비트코인 80,548달러
+   → 10월 26일 자정 기준 비트코인은 80,548달러로 전일 대비 0.56% 상승하며 점유율이 60.18%로 증가했지만, 전반적으로 파생상품 거래량이 감소하며 단기 관망 심리가 확산되었다.
+   (토큰포스트 · 10/26 00:03)
+3. (기타) 암호화폐 시장, 24시간 동안 레버리지 포지션 청산
+   → 암호화폐 시장에서 지난 24시간 동안 5663만1716달러 규모의 레버리지 포지션이 청산되었으며, 이 가운데 숏 포지션이 전체의 64.28%를 차지했다.
+   (토큰포스트 · 10/26 04:56)
+4. (규제) 가상자산 과세 법안 발의
+   → 박민규 의원 등 14명이 국제 거래정보 교환에 따른 가상자산 과세 법안을 발의하였으며, 법안이 통과될 경우 2029년부터 과세가 시작된다.
+   (토큰포스트 · 10/26 00:02)
+5. (기타) 미 보유 금 시가 1조달러
+   → 미국 정부의 보유 금 시가는 약 1조달러에 달하며, 금 재평가를 통한 비트코인 비축 방안이 상원 위원회에 회부된 상태이다.
+   (토큰포스트 · 10/26 04:11)
+
+[흐름·전망]
+• 단기적으로 비트코인과 이더리움 등 대형 자산의 시세가 주요 경제 지표 발표에 따라 큰 변동성을 보일 가능성이 있다.
+• 파생상품 거래량의 감소는 시장의 활력을 저하시킬 수 있으며, 가격 방향성이 정해질 때까지 주의가 필요하다.
+• 가상자산 과세 법안이 진전을 보일 경우 국내 시장에 미치는 영향이 클 수 있으며, 이에 따른 투자 심리 변화도 주목해야 한다.
+• 금 재평가 관련 법안의 진행 상황은 비트코인 정책에 직접적인 영향을 미칠 수 있으므로, 향후 법안의 결과를 지켜보아야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 21 (Extreme Fear)
+  - 크립토 기준: 54 (Neutral)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 자산 상하위 간 격차가 심화되고 있으며, 서울 재건축과 재개발 공사비 증가로 인해 착공 지연 우려가 커지고 있다.
+
+[핵심 뉴스]
+1. (기타) 상하위 20% 집값 격차 290배로 상승
+   → 자산 상위 20%의 거주 주택 평균 가격이 6억9천341만원으로 전년 대비 7.7% 상승한 반면, 하위 20%는 239만원으로 역대 최저치를 기록해 격차가 290배에 달하고 있다.
+   (연합뉴스 · 10/26 05:51)
+2. (재건축) 공사비 40%씩 오른 서울 재건축
+   → 서울의 재건축 사업에서 공사비가 평균 39% 상승했으며, 일부 사업장은 50% 이상 증액을 요구하는 등 갈등이 지속되고 있어 주택 공급에 차질이 우려된다.
+   (매일경제 · 10/25 17:43)
+3. (공급) 이번 주 전국 5555가구 분양
+   → 이번 주에는 전국에서 총 5555가구가 분양될 예정이며, 특히 동탄 1신도시와 인천 계양신도시에서의 분양이 주목받고 있다.
+   (매일경제 · 10/25 17:06)
+4. (매매) 10월 서울 아파트값 0.61% 올라
+   → 서울 아파트값이 10월에 0.61% 상승하며, 이 상승률은 연내 최저치를 기록했다.
+   (연합뉴스TV · 10/26 05:47)
+5. (전세) 서울 오피스텔, 월세가 80% 차지
+   → 2023년 서울 오피스텔 전월세 거래에서 월세 계약 비중이 78.8%로 증가하고 전세 계약 건수는 감소해, 평균 월세는 96만원에 달하고 있다.
+   (매일경제 · 10/25 17:06)
+6. (정책) 그린벨트 등급 재평가…주택공급 길 넓힌다
+   → 정부가 진행 중인 그린벨트 환경평가등급 재산정은 수도권 신규택지 확보에 영향을 미칠 것으로 예상된다.
+   (매일경제 · 10/25 17:39)
+
+[흐름·전망]
+• 고소득층과 저소득층 간 부동산 자산 격차가 더욱 커지는 추세로, 이는 사회적 불균형을 심화시킬 수 있는 요인으로 작용할 것이다.
+• 재건축 및 재개발 사업에서의 공사비 상승은 주택 공급 속도를 늦출 것으로 보이며, 이에 따른 부족 현상이나 가격 상승 가능성도 염두에 두어야 한다.
+• 분양 시스템의 변화와 신혼희망타운 등 정책적 배려가 앞으로의 주택 공급에 긍정적인 영향을 미칠 수 있으므로 중요하게 지켜볼 필요가 있다.
+• 오피스텔 시장에서 월세 비중이 증가하고 있다는 점은 임대 시장의 변화와 함께 장기적인 임대 수익 구조 변화의 중요한 신호가 될 것이다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 자신의 정치적 반대자와 민주당을 강하게 비판하며, 미국 자동차 산업의 발전과 고용 창출을 주장했다. 또한 언론의 편향성을 지적하면서 자신과 공화당 후보자들에 대한 지원을 강조했다.
+
+[주요 발언]
+1. (경제) 트럼프는 미국 자동차 산업이 그의 노력 덕분에 역대 최고의 상황에 있다고 주장하고, 특히 미시간주에서 공장과 시설이 건설되고 있다고 강조했다.
+   (Truth Social · 10/26 02:29)
+2. (사법) 그는 민주당과 반대파를 비난하며, 민주당이 부정한 선거 방식을 통해 이익을 보려고 한다고 언급하였다.
+   (Truth Social · 10/26 01:49)
+3. (기타) 트럼프는 오바마가 이란에게 핵무기를 개발할 수 있는 길을 열어준 무능한 대통령이라고 비난하며, 그의 정치적 지지자들도 결국 패배할 것이라고 주장했다.
+   (Truth Social · 10/25 13:42)
+4. (국내정치) 알래스카 상원의원 리사 머크owski에 대해 비판하며, 그녀가 부정한 방식으로 선거에서 승리했다고 주장했다.
+   (Truth Social · 10/25 12:13)
+5. (인사) 오하이오주 상원 후보로 떠오른 존 휴스텐이 여론조사에서 선두를 달리고 있다고 전하며, 오하이오 주민들이 그를 지지할 것이라고 강조했다.
+   (Truth Social · 10/25 12:08)
+
+[흐름·전망]
+• 트럼프의 발언은 미국 자동차 산업의 회복이 계속될 가능성을 시사한다.
+• 미디어의 편향성과 관련하여, 향후 선거에서 공화당 후보들에 대한 지원이 어떻게 영향을 미칠지 주목할 필요가 있다.
+• 트럼프가 언급한 오바마와 민주당에 대한 비판이 향후 정치적 긴장의 원인이 될 가능성에 주목해야 한다.
+• 알래스카의 투표 방식에 대한 논의가 더 확대될 가능성이 있으며, 이는 향후 선거에서 중요한 이슈가 될 수 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
