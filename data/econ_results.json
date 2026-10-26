@@ -507,10 +507,10 @@
 "name": "Gross Domestic Product Price Index",
 "dt": "2026-10-29T12:30:00Z",
 "act": null,
-"cons": null,
+"cons": "3.5%",
 "prev": "6.1%",
 "act_n": null,
-"cons_n": null
+"cons_n": 3.5
 },
 "056a440f-010d-4dce-a2e1-5c229b56f350": {
 "name": "Tokyo Consumer Price Index (YoY)",
@@ -911,6 +911,87 @@
 "4086b1ac-46a9-4115-8e77-e3e8310f65b4": {
 "name": "BoJ Governor Ueda speech",
 "dt": "2026-11-06T16:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"0f5a2e3a-6db9-4a82-9624-600da78dde70": {
+"name": "Fed Interest Rate Decision",
+"dt": "2026-12-09T19:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"aaa8dbe3-191c-4112-bc06-658211f04879": {
+"name": "Fed Monetary Policy Statement",
+"dt": "2026-12-09T19:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"ac41acfc-a738-4066-bd15-2dd1cee91dd8": {
+"name": "FOMC Economic Projections",
+"dt": "2026-12-09T19:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"e471c5ef-8293-4620-b51b-9fe162df8f24": {
+"name": "Interest Rate Projections - 1st year",
+"dt": "2026-12-09T19:00:00Z",
+"act": null,
+"cons": null,
+"prev": "4.1%",
+"act_n": null,
+"cons_n": null
+},
+"3f5cb5b3-0104-4f40-9451-d4661b345909": {
+"name": "Interest Rate Projections - 2nd year",
+"dt": "2026-12-09T19:00:00Z",
+"act": null,
+"cons": null,
+"prev": "3.9%",
+"act_n": null,
+"cons_n": null
+},
+"ad96a1c8-4113-44a8-8d36-8af7892237c7": {
+"name": "Interest Rate Projections - 3rd year",
+"dt": "2026-12-09T19:00:00Z",
+"act": null,
+"cons": null,
+"prev": "3.6%",
+"act_n": null,
+"cons_n": null
+},
+"891d5b3c-32cd-4cab-a2f8-b9401a40f048": {
+"name": "Interest Rate Projections - Current",
+"dt": "2026-12-09T19:00:00Z",
+"act": null,
+"cons": null,
+"prev": "4.1%",
+"act_n": null,
+"cons_n": null
+},
+"c8a61f38-7d2a-40f7-b80e-bdfb9989d953": {
+"name": "Interest Rate Projections - Longer",
+"dt": "2026-12-09T19:00:00Z",
+"act": null,
+"cons": null,
+"prev": "3.2%",
+"act_n": null,
+"cons_n": null
+},
+"e65f5992-b1d8-42a2-8660-e6d84ae40eec": {
+"name": "FOMC Press Conference",
+"dt": "2026-12-09T19:30:00Z",
 "act": null,
 "cons": null,
 "prev": null,
