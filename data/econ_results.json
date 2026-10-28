@@ -470,10 +470,10 @@
 "0fa5c63c-f61c-4436-8763-66222addfe7a": {
 "name": "Fed Interest Rate Decision",
 "dt": "2026-10-28T18:00:00Z",
-"act": null,
+"act": "4%",
 "cons": "4%",
 "prev": "4%",
-"act_n": null,
+"act_n": 4.0,
 "cons_n": 4.0
 },
 "3c0c7b61-7aaa-4ca6-bff2-15593a479a36": {
@@ -922,7 +922,7 @@
 "dt": "2026-12-09T19:00:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "4%",
 "act_n": null,
 "cons_n": null
 },
