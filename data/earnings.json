@@ -109,10 +109,10 @@
     }
    ],
    "target": {
-    "price": "$215.38",
+    "price": "$213.69",
     "mean": "$328.95",
     "range": "$180~$515",
-    "upside": "+53%",
+    "upside": "+54%",
     "upside_pos": true
    },
    "rec": {
@@ -127,9 +127,9 @@
  {
   "ticker": "MSFT",
   "name": "마이크로소프트",
-  "date": "2026-10-29",
-  "ts": 1793217600,
-  "est": false,
+  "date": "2027-01-28",
+  "ts": 1801080000,
+  "est": true,
   "detail": {
    "prev": {
     "period": "26.09",
@@ -223,7 +223,7 @@
      "reported": false,
      "eps_est": "$4.82",
      "rev": "$95.65B",
-     "date": "2026-10-29"
+     "date": "2027-01-28"
     },
     {
      "cq": "2027-1",
@@ -234,10 +234,10 @@
     }
    ],
    "target": {
-    "price": "$531.01",
+    "price": "$534.69",
     "mean": "$605.12",
     "range": "$440~$870",
-    "upside": "+14%",
+    "upside": "+13%",
     "upside_pos": true
    },
    "rec": {
@@ -359,10 +359,10 @@
     }
    ],
    "target": {
-    "price": "$343.83",
+    "price": "$349.08",
     "mean": "$332.39",
     "range": "$245~$405",
-    "upside": "-3%",
+    "upside": "-5%",
     "upside_pos": false
    },
    "rec": {
@@ -484,10 +484,10 @@
     }
    ],
    "target": {
-    "price": "$324.89",
+    "price": "$282.80",
     "mean": "$429.68",
     "range": "$340~$500",
-    "upside": "+32%",
+    "upside": "+52%",
     "upside_pos": true
    },
    "rec": {
@@ -609,10 +609,10 @@
     }
    ],
    "target": {
-    "price": "$254.60",
+    "price": "$245.52",
     "mean": "$332.41",
     "range": "$230~$405",
-    "upside": "+31%",
+    "upside": "+35%",
     "upside_pos": true
    },
    "rec": {
@@ -734,10 +734,10 @@
     }
    ],
    "target": {
-    "price": "$612.49",
+    "price": "$619.19",
     "mean": "$848.38",
     "range": "$629~$1,050",
-    "upside": "+39%",
+    "upside": "+37%",
     "upside_pos": true
    },
    "rec": {
@@ -859,10 +859,10 @@
     }
    ],
    "target": {
-    "price": "$404.22",
+    "price": "$405.87",
     "mean": "$410.68",
     "range": "$128~$600",
-    "upside": "+2%",
+    "upside": "+1%",
     "upside_pos": true
    },
    "rec": {
@@ -979,10 +979,10 @@
     }
    ],
    "target": {
-    "price": "$29.32",
+    "price": "$28.90",
     "mean": "$31.15",
     "range": "$23~$42",
-    "upside": "+6%",
+    "upside": "+8%",
     "upside_pos": true
    },
    "rec": {
@@ -1107,7 +1107,7 @@
     "price": "$9.01",
     "mean": "$14.28",
     "range": "$8~$20",
-    "upside": "+58%",
+    "upside": "+59%",
     "upside_pos": true
    },
    "rec": {
@@ -1229,10 +1229,10 @@
     }
    ],
    "target": {
-    "price": "$28.84",
+    "price": "$27.20",
     "mean": "$76.92",
     "range": "$37~$139",
-    "upside": "+167%",
+    "upside": "+183%",
     "upside_pos": true
    },
    "rec": {
@@ -1354,10 +1354,10 @@
     }
    ],
    "target": {
-    "price": "$196.81",
+    "price": "$194.35",
     "mean": "$208.97",
     "range": "$80~$265",
-    "upside": "+6%",
+    "upside": "+8%",
     "upside_pos": true
    },
    "rec": {
@@ -1479,10 +1479,10 @@
     }
    ],
    "target": {
-    "price": "$58.60",
+    "price": "$58.44",
     "mean": "$102.15",
     "range": "$64~$150",
-    "upside": "+74%",
+    "upside": "+75%",
     "upside_pos": true
    },
    "rec": {

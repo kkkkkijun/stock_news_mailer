@@ -497,19 +497,19 @@
 "eee5daa2-7168-46ec-bf09-83c8fbe8ce20": {
 "name": "Gross Domestic Product Annualized",
 "dt": "2026-10-29T12:30:00Z",
-"act": null,
+"act": "3.4%",
 "cons": "3.2%",
 "prev": "2.2%",
-"act_n": null,
+"act_n": 3.4,
 "cons_n": 3.2
 },
 "f1a492c1-7a0d-446b-a2ae-a0afee0703f1": {
 "name": "Gross Domestic Product Price Index",
 "dt": "2026-10-29T12:30:00Z",
-"act": null,
+"act": "2.2%",
 "cons": "3.5%",
 "prev": "6.1%",
-"act_n": null,
+"act_n": 2.2,
 "cons_n": 3.5
 },
 "056a440f-010d-4dce-a2e1-5c229b56f350": {
@@ -560,19 +560,19 @@
 "2241a1cd-eb29-4740-a28d-fc2b8cc813ef": {
 "name": "Core Personal Consumption Expenditures - Price Index (MoM)",
 "dt": "2026-10-29T12:30:00Z",
-"act": null,
+"act": "0.3%",
 "cons": "0.3%",
-"prev": "0.2%",
-"act_n": null,
+"prev": "0.3%",
+"act_n": 0.3,
 "cons_n": 0.3
 },
 "401e58cb-1252-4e02-9c2a-144d3ea169e1": {
 "name": "Core Personal Consumption Expenditures - Price Index (YoY)",
 "dt": "2026-10-29T12:30:00Z",
-"act": null,
+"act": "3.1%",
 "cons": "3.1%",
 "prev": "3%",
-"act_n": null,
+"act_n": 3.1,
 "cons_n": 3.1
 },
 "f2f9d593-a194-49f6-8eea-fec094f159bc": {
@@ -778,7 +778,7 @@
 "dt": "2026-11-27T13:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "0.3%",
 "act_n": null,
 "cons_n": null
 },
@@ -787,7 +787,7 @@
 "dt": "2026-11-27T13:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "3.1%",
 "act_n": null,
 "cons_n": null
 },
