@@ -15,7 +15,7 @@ from datetime import datetime
 from typing import Any
 
 import netutil
-from settings import KST, TICKER_NAMES, stock_tickers, crypto_tickers
+from settings import KST, TICKER_NAMES, briefing_slot, stock_tickers, crypto_tickers
 
 # ---- 호환 re-export: DAG/fundamentals가 main.X 로 접근 ----
 from llm import get_openai_client, chatgpt_summarize, analyze_news, ticker_brief
@@ -307,7 +307,7 @@ if __name__ == "__main__":
         site = os.getenv(
             "SITE_URL", "https://kkkkkijun.github.io/stock_news_mailer/")
         now = datetime.now(KST)
-        tag = "오전" if now.hour < 12 else "오후"
+        tag = briefing_slot(now)[1]
         notice = (
             f"{now.month}월 {now.day}일 {tag} 뉴스 브리핑이 준비됐습니다.\n\n"
             f"{site}\n\n"

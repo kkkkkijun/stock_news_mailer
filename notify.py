@@ -34,11 +34,12 @@ recipients = [r.strip() for r in recipients if r.strip()]
 def send_email(body: str, subject: str | None = None) -> None:
     # 발송 시각 표기는 항상 KST(timezone-aware)로 고정
     now = datetime.now(KST)
-    hour = now.hour
 
     if subject is None:
-        # 실제 스케줄(07:37 / 17:13) 기준으로 오전/오후 판정
-        time_tag = "1차 (오전)" if hour < 12 else "2차 (오후)"
+        # 회차: 오전(06:30) · 오후(17:00) · 밤(22:30) — settings.briefing_slot
+        from settings import BRIEFING_SLOTS, briefing_slot
+        slot = briefing_slot(now)
+        time_tag = f"{BRIEFING_SLOTS.index(slot) + 1}차 ({slot[1]})"
         # %-m/%-d 는 리눅스 전용이라 OS 무관하게 직접 조합
         subject = f"[{now.month}/{now.day} 뉴스 요약 - {time_tag}]"
 
@@ -60,7 +61,8 @@ def send_email(body: str, subject: str | None = None) -> None:
 
 def notify_briefing(now: datetime, site_url: str, notice_text: str) -> None:
     """새 브리핑 알림: 앱 푸시(항상 시도) + 이메일(SEND_EMAIL=1일 때만)."""
-    tag = "오전" if now.hour < 12 else "오후"
+    from settings import briefing_slot
+    tag = briefing_slot(now)[1]
 
     # 앱 푸시 — 이메일 대체. 구독자·VAPID 키 없으면 조용히 건너뜀.
     try:

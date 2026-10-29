@@ -47,7 +47,8 @@ _CAL_JS = """<script>
     var h='<div class="t">'+p[0].slice(2)+'년 '+(+p[1])+'월 '+(+p[2])+'일</div>';
     if(v.am) h+='<a href="'+v.am+'">오전 브리핑</a>';
     if(v.pm) h+='<a href="'+v.pm+'">오후 브리핑</a>';
-    if(!v.am&&!v.pm) h+='<span class="none">브리핑이 없습니다.</span>';
+    if(v.pm2) h+='<a href="'+v.pm2+'">밤 브리핑</a>';
+    if(!v.am&&!v.pm&&!v.pm2) h+='<span class="none">브리핑이 없습니다.</span>';
     det.innerHTML=h;
   }
   function render(y,m){
@@ -100,7 +101,7 @@ _SEARCH_JS = """<script>
       for(var j=0;j<b.items.length;j++){
         var it=b.items[j];
         if(it.t.toLowerCase().indexOf(term)>=0){
-          var dd=b.d.slice(2).replace(/-/g,'.'), ap=(b.ap==='am'?'오전':'오후');
+          var dd=b.d.slice(2).replace(/-/g,'.'), ap=({am:'오전',pm:'오후',pm2:'밤'})[b.ap]||'';
           out.push('<a class="ritem" href="'+b.link+'">'
             +'<div class="rt">['+esc(it.s)+'] '+esc(it.t)+'</div>'
             +'<div class="rm">'+dd+' '+ap+' 브리핑</div></a>');
@@ -125,7 +126,7 @@ def _search_index():
     except OSError:
         return idx
     for fn in files:
-        m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})-(am|pm)", fn[:-4])
+        m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})-(am|pm|pm2)", fn[:-4])
         if not m:
             continue
         y, mo, d, ap = m.groups()
@@ -158,7 +159,7 @@ def render_archive_index() -> str:
     for fn in names:
         if not fn.endswith(".html") or fn == "index.html":
             continue
-        m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})-(am|pm)", fn[:-5])
+        m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})-(am|pm|pm2)", fn[:-5])
         if not m:
             continue
         y, mo, d, ap = m.groups()

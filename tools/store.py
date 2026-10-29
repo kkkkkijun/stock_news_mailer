@@ -41,7 +41,7 @@ from publish_site import (
 )
 
 DB_PATH = os.path.join(DATA_DIR, "briefings.db")
-_SLUG_RE = re.compile(r"(\d{4})-(\d{2})-(\d{2})-(am|pm)")
+_SLUG_RE = re.compile(r"(\d{4})-(\d{2})-(\d{2})-(am|pm|pm2)")
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS briefings(

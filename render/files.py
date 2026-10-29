@@ -12,6 +12,7 @@ import pytz
 
 from render import config
 from render.config import KST
+from settings import briefing_slot
 
 log = logging.getLogger(__name__)
 
@@ -20,7 +21,7 @@ log = logging.getLogger(__name__)
 # 발행 / 재렌더링 (저장·로드)
 # =========================================================
 def _slug(now):
-    return now.strftime("%Y-%m-%d") + ("-am" if now.hour < 12 else "-pm")
+    return now.strftime("%Y-%m-%d") + "-" + briefing_slot(now)[0]
 
 
 def _write(path, text):

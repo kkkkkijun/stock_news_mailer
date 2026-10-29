@@ -25,6 +25,16 @@ except Exception:
 # =========================================================
 KST = pytz.timezone("Asia/Seoul")
 
+# 브리핑 회차: 오전(06:30) · 오후(17:00) · 밤(22:30, cron-job.org가 repository_dispatch로 실행).
+# 파일 접미사(data/·archive/ 이름)는 문자열 정렬이 곧 시간 순서가 되도록 am < pm < pm2.
+# ('night'은 'pm'보다 앞에 정렬돼 rebuild_all이 오후 회차를 최신으로 잘못 고른다.)
+BRIEFING_SLOTS = (("am", "오전"), ("pm", "오후"), ("pm2", "밤"))
+
+
+def briefing_slot(now) -> tuple[str, str]:
+    """KST 시각 → (파일 접미사, 표시 이름). 12시 전 오전, 20시 전 오후, 그 뒤 밤."""
+    return BRIEFING_SLOTS[0 if now.hour < 12 else 1 if now.hour < 20 else 2]
+
 # 요약 모델: 코드에 하드코딩하지 않고 env로 변경 가능.
 # 기본값 gpt-4o-mini = 저비용/충분한 한국어 요약 품질.
 # 품질 우선이면 gpt-4.1-mini 등으로 교체 가능.

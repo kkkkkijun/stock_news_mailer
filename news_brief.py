@@ -126,8 +126,8 @@ def is_blocked_publisher(pub: str | None) -> bool:
 
 
 def news_window() -> str:
-    """구글 뉴스 검색 기간. 오전 회차(07:37)는 when:1d 로는 전일 오전이 잘리므로
-    2일 창으로 넓혀 '전일 전체'를 포괄한다. 오후 회차는 당일 위주로 1일."""
+    """구글 뉴스 검색 기간. 오전 회차(06:30)는 when:1d 로는 전일 오전이 잘리므로
+    2일 창으로 넓혀 '전일 전체'를 포괄한다. 오후(17:00)·밤(22:30) 회차는 당일 위주로 1일."""
     return "2d" if datetime.now(KST).hour < 12 else "1d"
 
 

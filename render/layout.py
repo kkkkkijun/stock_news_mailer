@@ -8,7 +8,7 @@ from typing import Any
 from render import assets, clock
 from render.common import _dday_progress, _dday_text, _e, _event_ddays
 from render.config import DDAY_TARGET, HERO_PARTS, PARTS, SITE_TITLE, SLOGAN, TABS, _DOW
-from settings import EARNINGS_TICKERS
+from settings import EARNINGS_TICKERS, briefing_slot
 from render.calview import _render_calendar
 from render.earnings import _render_earn_results
 from render.files import (_load_earnings, _load_econ_events, _load_fundamentals, _load_prices,
@@ -1038,7 +1038,7 @@ def render_html(body: str, now: datetime | None = None, links: str = "",
     # 직전 회차 대비 '새 뉴스' 표시용 토큰셋(요청 시에만).
     prev_sets = _prev_item_tokensets(_slug(now)) if mark_new else None
     sections = _split_sections(body)
-    ampm = "오전" if now.hour < 12 else "오후"
+    ampm = briefing_slot(now)[1]
 
     hd = _render_header(now, ampm, links)
     gauges_html = _render_gauges(sections)
