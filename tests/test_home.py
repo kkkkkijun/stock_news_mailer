@@ -60,7 +60,8 @@ def test_render_home_sections_and_links():
     now = KST.localize(datetime(2026, 10, 30, 9, 0))
     h = render_home(sections, {"os": [{"ticker": "IREN", "chg": -8.98}]}, now, [], [],
                     {"os": "tp1", "eco": "tp0"})
-    assert h.index('data-t="IREN"') < h.index('data-t="NVDA"')          # 악재 많은 종목 먼저
+    assert h.index('data-t="NVDA"') < h.index('data-t="IREN"')          # 호재 많은 종목 먼저
+    assert "호재 많은 순" in h
     assert "자금 우려로 약세" in h and "▼8.98%" in h and 'data-go="tp1"' in h
     assert "금리가 동결됐다." in h and "둘째 문장" not in h and 'data-go="tp0"' in h
     assert 'id="hmTm"' in h and 'id="hmIx"' in h and "다가오는 일정" not in h   # 일정 없으면 카드 생략

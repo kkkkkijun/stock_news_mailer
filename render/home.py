@@ -88,7 +88,7 @@ def render_home(sections: list[tuple[str, list[str]]], qmap: dict[str, Any], now
     def lines_of(key):
         return next((ls for t, ls in sections if key in t), None)
 
-    # ③ 내 종목: 악재 많은 순(같으면 호재), 4개 + 모두 보기
+    # ③ 내 종목: 호재 많은 순(같으면 악재 적은 순), 4개 + 모두 보기
     os_lines = lines_of("해외주식 PART")
     my = ""
     if os_lines:
@@ -96,7 +96,7 @@ def render_home(sections: list[tuple[str, list[str]]], qmap: dict[str, Any], now
         st = _ticker_stats(items)
         qs = {q.get("ticker"): q for q in (qmap.get("os") or []) if q}
         pos = {t: i for i, t in enumerate(st)}
-        order = sorted(st, key=lambda t: (-st[t]["b"], -st[t]["g"], pos[t]))
+        order = sorted(st, key=lambda t: (-st[t]["g"], st[t]["b"], pos[t]))
         rows = []
         for t in order[:4]:
             bg = _ticker_color(t)
@@ -110,7 +110,7 @@ def render_home(sections: list[tuple[str, list[str]]], qmap: dict[str, Any], now
                         f'<span class="hm-my-t"><b>{_e(_TICKER_KO.get(t, t))}</b><span>{_e(st[t]["brief"])}</span></span>'
                         f'<span class="hm-my-r">{ch}<span class="hm-dots" aria-label="호재 {st[t]["g"]} 악재 {st[t]["b"]}">{dots}</span></span></button>')
         if rows:
-            my = ('<section class="hm-card"><div class="hm-h"><b>내 종목</b><span>악재 많은 순 · 누르면 뉴스</span></div>'
+            my = ('<section class="hm-card"><div class="hm-h"><b>내 종목</b><span>호재 많은 순 · 누르면 뉴스</span></div>'
                   + "".join(rows)
                   + f'<button type="button" class="hm-more" data-go="{tab_of.get("os", "")}">{len(order)}종목 모두 보기 ›</button></section>')
 
