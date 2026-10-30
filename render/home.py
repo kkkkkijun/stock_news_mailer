@@ -202,8 +202,11 @@ _HOME_JS = """<script>
  }
  fetch('/stock_news_mailer/treemap.json?t='+Date.now()).then(function(r){ if(!r.ok) throw 0; return r.json(); })
   .then(function(d){ DATA=d; chips();
-    var s=d.asof||'', a=document.getElementById('hmAsof');
-    if(a&&s) a.textContent=(+s.slice(5,7))+'/'+(+s.slice(8,10))+' '+s.slice(11,16)+' 기준 · 매시 갱신';
+    // 'HH:MM 갱신 · 시세 HH:MM 기준' — 장이 닫혀 있으면 시세 시각은 마지막 거래 시각에 머문다
+    var s=d.asof||'', b=d.built||'', a=document.getElementById('hmAsof');
+    function md(x){ return (+x.slice(5,7))+'/'+(+x.slice(8,10)); }
+    if(a&&b) a.textContent=md(b)+' '+b.slice(11,16)+' 갱신 · 시세 '+(s.slice(0,10)===b.slice(0,10)?'':md(s)+' ')+s.slice(11,16)+' 기준';
+    else if(a&&s) a.textContent=md(s)+' '+s.slice(11,16)+' 기준 · 매시 갱신';
     d3ready(function(){ draw(true); }); })
   .catch(function(){ var a=document.getElementById('hmAsof'); if(a) a.textContent='히트맵 데이터를 불러오지 못했습니다.'; });
  var tm; window.addEventListener('resize',function(){ clearTimeout(tm); tm=setTimeout(function(){ draw(false); },150); });

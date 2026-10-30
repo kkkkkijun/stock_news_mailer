@@ -3,7 +3,8 @@
 
 입력: data/universe.json(나스닥 100 목록·이름·섹터·시총·기준가), data/screen.json(같은 회사 중복 제거용),
       Yahoo Finance spark(한 번에 20종목, 무인증) — 현재가·전일 종가
-출력: docs/treemap.json {asof, idx:[{s,lab,px,chg,pre,suf}], rows:[{t,n,s,m,c}]}
+출력: docs/treemap.json {asof, built, idx:[{s,lab,px,chg,pre,suf}], rows:[{t,n,s,m,c}]}
+      asof = 미국 주식 마지막 거래 시각(장 마감 중엔 그대로), built = 갱신 시각(매시)
       m = 시가총액(십억 달러, 아침 나스닥 시총 × 현재가/기준가), c = 전일 종가 대비 등락률(%)
 실행: map-refresh 워크플로가 매시(cron-job.org → repository_dispatch) `python treemap.py`
 관련: universe.py, render/home.py(홈 화면), .github/workflows/map-refresh.yml
@@ -103,7 +104,9 @@ def build_treemap(path: str = "docs/treemap.json", universe_path: str = "data/un
     idx = [{"s": s, "lab": lab, "px": round(q[s]["px"], 4), "chg": round(q[s]["chg"], 2), "pre": pre, "suf": suf}
            for s, lab, pre, suf in INDICES if s in q]
     ts = max((q[r["t"]]["ts"] for r in rows), default=0)
-    out = {"asof": datetime.fromtimestamp(ts, KST).isoformat() if ts else datetime.now(KST).isoformat(),
+    built = datetime.now(KST).isoformat(timespec="seconds")
+    out = {"asof": datetime.fromtimestamp(ts, KST).isoformat() if ts else built,   # 미국 주식 마지막 거래 시각
+           "built": built,                                                          # 이 파일을 만든 시각(매시)
            "idx": idx, "rows": rows}
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
