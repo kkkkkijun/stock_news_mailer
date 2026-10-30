@@ -579,10 +579,10 @@
 "name": "ISM Manufacturing PMI",
 "dt": "2026-11-02T15:00:00Z",
 "act": null,
-"cons": null,
+"cons": "54.7",
 "prev": "54.5",
 "act_n": null,
-"cons_n": null
+"cons_n": 54.7
 },
 "b3dc9f7b-c6f5-419d-aa17-f827b79f264c": {
 "name": "US Midterm Elections",
@@ -597,28 +597,28 @@
 "name": "ADP Employment Change",
 "dt": "2026-11-04T13:15:00Z",
 "act": null,
-"cons": null,
+"cons": "65K",
 "prev": "90K",
 "act_n": null,
-"cons_n": null
+"cons_n": 65.0
 },
 "3c1033c6-6706-445b-bcaf-55e38dfbbe6f": {
 "name": "ISM Services PMI",
 "dt": "2026-11-04T15:00:00Z",
 "act": null,
-"cons": null,
+"cons": "54.8",
 "prev": "54.9",
 "act_n": null,
-"cons_n": null
+"cons_n": 54.8
 },
 "7300f597-d4d2-4360-832a-33657038e139": {
 "name": "Average Hourly Earnings (MoM)",
 "dt": "2026-11-06T13:30:00Z",
 "act": null,
-"cons": null,
+"cons": "0.3%",
 "prev": "0.1%",
 "act_n": null,
-"cons_n": null
+"cons_n": 0.3
 },
 "85a16cc6-8da3-4cf5-87d4-3e18b491a0ef": {
 "name": "Average Hourly Earnings (YoY)",
@@ -633,19 +633,19 @@
 "name": "Nonfarm Payrolls",
 "dt": "2026-11-06T13:30:00Z",
 "act": null,
-"cons": null,
+"cons": "65K",
 "prev": "29K",
 "act_n": null,
-"cons_n": null
+"cons_n": 65.0
 },
 "1357b476-3290-4e06-a80f-44d32779cd4d": {
 "name": "Michigan Consumer Sentiment Index",
 "dt": "2026-11-06T15:00:00Z",
 "act": null,
-"cons": null,
+"cons": "47.3",
 "prev": "48",
 "act_n": null,
-"cons_n": null
+"cons_n": 47.3
 },
 "75a2fedb-a0e4-446b-94fb-726f952c0f8e": {
 "name": "Consumer Price Index (MoM)",
