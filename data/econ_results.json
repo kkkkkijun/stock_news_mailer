@@ -515,28 +515,28 @@
 "056a440f-010d-4dce-a2e1-5c229b56f350": {
 "name": "Tokyo Consumer Price Index (YoY)",
 "dt": "2026-10-29T23:30:00Z",
-"act": null,
+"act": "2.8%",
 "cons": null,
 "prev": "2.7%",
-"act_n": null,
+"act_n": 2.8,
 "cons_n": null
 },
 "fdf64815-c973-4e1d-bf62-35dc8f7deca6": {
 "name": "Tokyo CPI ex Food, Energy (YoY)",
 "dt": "2026-10-29T23:30:00Z",
-"act": null,
+"act": "2.4%",
 "cons": null,
-"prev": "3%",
-"act_n": null,
+"prev": "2.7%",
+"act_n": 2.4,
 "cons_n": null
 },
 "c802a3fb-fac4-49e4-8082-f9e8445120f3": {
 "name": "BoJ Interest Rate Decision",
-"dt": "2026-10-30T03:00:00Z",
-"act": null,
+"dt": "2026-10-30T03:03:14.81Z",
+"act": "1.25%",
 "cons": "1.25%",
 "prev": "1.25%",
-"act_n": null,
+"act_n": 1.25,
 "cons_n": 1.25
 },
 "240a5d56-e79c-4889-a204-2ceb275ee9bd": {
@@ -814,7 +814,7 @@
 "dt": "2026-11-30T23:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "2.8%",
 "act_n": null,
 "cons_n": null
 },
@@ -823,7 +823,7 @@
 "dt": "2026-11-30T23:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "2.4%",
 "act_n": null,
 "cons_n": null
 },
@@ -1049,6 +1049,15 @@
 "act": null,
 "cons": null,
 "prev": null,
+"act_n": null,
+"cons_n": null
+},
+"5907dc02-8cc2-4974-bddd-a24269092fbb": {
+"name": "Tankan Large Manufacturing Index",
+"dt": "2026-12-13T23:50:00Z",
+"act": null,
+"cons": null,
+"prev": "24",
 "act_n": null,
 "cons_n": null
 }
