@@ -14,6 +14,7 @@ from render.earnings import _render_earn_results
 from render.files import (_load_earnings, _load_econ_events, _load_fundamentals, _load_prices,
                           _load_backtest, _load_reports, _load_score_history, _load_screen, _load_universe,
                           _load_us_holidays, _slug)
+from render.home import render_home
 from render.growth import _render_growth, write_growth_fragments
 from render.news import _render_part
 from render.parse import _fear_greed, _mood_color, _prev_item_tokensets, _split_sections
@@ -123,6 +124,60 @@ a:hover{opacity:.72;}
 .pill-ico{width:20px;height:20px;flex-shrink:0;display:block}
 .sub-pill .sub-tab:not(.on) .pill-ico{opacity:.85}
 .sub-pane .part-head{display:none;}   /* 서브탭이 제목 역할 → 파트 헤더 중복 제거 */
+/* 메인 홈: 지표 띠 · 나스닥 100 히트맵 · 내 종목 · 다가오는 일정 · 오늘 한눈에 */
+.hm{display:flex;flex-direction:column;gap:14px}
+.hm-ix{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:6px;min-height:58px}
+.hm-i{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:7px 8px;display:flex;flex-direction:column;gap:1px;min-width:0}
+.hm-i span{font-size:10.5px;font-weight:600;color:var(--muted-2);white-space:nowrap}
+.hm-i b{font-size:13px;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.hm em{font-style:normal;font-weight:800;font-size:11.5px}.hm em.up{color:#e5484d}.hm em.dn{color:#3b82f6}
+.hm-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:13px 14px;min-width:0}
+.hm-h{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:9px}
+.hm-h b{font-size:15px;color:var(--ink)}.hm-h span{font-size:11.5px;color:var(--faint)}
+.hm-tm{min-height:200px}.hm-tm svg{display:block}
+.hm-secbg{fill:#334155}
+:root[data-theme="dark"] .hm-secbg{fill:#0b1220}
+.hm-sec{font-size:10.5px;font-weight:800;fill:#fff;letter-spacing:.01em}
+.hm-tt{font-weight:800;text-anchor:middle;dominant-baseline:middle}
+.hm-tc{font-weight:700;text-anchor:middle;dominant-baseline:middle}
+.hm-lg{display:flex;align-items:center;gap:2px;justify-content:flex-end;flex-wrap:wrap;margin-top:8px;font-size:10.5px;color:var(--faint)}
+.hm-lg i{width:20px;height:8px;display:inline-block}.hm-lg i.z{background:#e9edf2}
+:root[data-theme="dark"] .hm-lg i.z{background:#2b3443}
+.hm-lg span{margin:0 5px}.hm-lg .hm-lg-x{margin-left:10px}
+.hm-two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hm .tk-badge{font-size:10px;font-weight:800;border-radius:5px;padding:3px 5px;font-family:ui-monospace,monospace;
+ flex-shrink:0;min-width:44px;text-align:center}
+.hm-my,.hm-sm,.hm-more{font:inherit;color:inherit;background:none;border:0;text-align:left;cursor:pointer;width:100%}
+.hm-my{display:flex;align-items:center;gap:9px;padding:9px 0;border-top:1px solid var(--border)}
+.hm-h + .hm-my{border-top:0}
+.hm-my-t{flex:1;display:flex;flex-direction:column;min-width:0}
+.hm-my-t b{font-size:13px;color:var(--ink)}
+.hm-my-t span{font-size:11.5px;color:var(--muted-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hm-my-r{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0}
+.hm-dots{display:flex;gap:3px}.hm-dots i{width:6px;height:6px;border-radius:50%}
+.hm-dots i.g{background:#e5484d}.hm-dots i.b{background:#3b82f6}.hm-dots i.n{background:#c3cbd6}
+.hm-my:hover .hm-my-t b,.hm-sm:hover .hm-sm-p{color:var(--accent)}
+.hm-more{font-size:12px;font-weight:700;color:var(--accent);padding:8px 0 0}
+.hm-ev{display:grid;grid-template-columns:98px 1fr;column-gap:8px;padding:8px 0;border-top:1px solid var(--border);align-items:baseline}
+.hm-h + .hm-ev{border-top:0}
+.hm-ev-d{font-size:11.5px;font-weight:700;color:var(--muted-2);grid-row:span 2}
+.hm-ev b{font-size:13px;color:var(--ink)}.hm-ev-x{font-size:11px;color:var(--faint)}
+.hm-ev.big b{color:#d9363e}
+.hm-ev.earn b::before{content:"실적";font-size:10px;font-weight:800;color:var(--chip-ink);background:var(--chip);
+ border-radius:4px;padding:1px 4px;margin-right:5px;vertical-align:1px}
+.hm-sm{display:grid;grid-template-columns:72px 1fr;gap:8px;padding:9px 0;border-top:1px solid var(--border)}
+.hm-h + .hm-sm{border-top:0}
+.hm-sm-k{font-size:12px;font-weight:800;color:var(--muted)}
+.hm-sm-p{font-size:13px;line-height:1.55;color:var(--muted)}
+@media (max-width:600px){
+  .hm-two{grid-template-columns:1fr}
+  .hm-ix{display:flex;overflow-x:auto;scrollbar-width:none;
+   margin-left:calc(-18px - env(safe-area-inset-left,0px));margin-right:calc(-18px - env(safe-area-inset-right,0px));
+   padding:0 calc(18px + env(safe-area-inset-right,0px)) 0 calc(18px + env(safe-area-inset-left,0px))}
+  .hm-ix::-webkit-scrollbar{display:none}
+  .hm-i{flex:0 0 92px}
+  .hm-lg .hm-lg-x{width:100%;text-align:right;margin:4px 0 0}
+}
 /* 주식·코인 뉴스(1안): 시세 카드 = 종목 선택 탭, 아래엔 고른 종목 뉴스만. 색은 판정 점 하나 */
 .qtab{font:inherit;color:inherit;text-align:left;cursor:pointer;display:block;width:100%}
 .qtab:hover{border-color:var(--border-strong,#cbd5e1)}
@@ -943,12 +998,12 @@ _ICO_BTC = ('<svg class="pill-ico" viewBox="0 0 20 20" aria-hidden="true"><circl
 _PILL = {"os": (_ICO_US, "미국증시"), "coin": (_ICO_BTC, "코인")}
 
 
-def _render_tab_panels(rendered: dict[str, str]) -> tuple[list[str], list[str]]:
+def _render_tab_panels(rendered: dict[str, str], first_on: bool = True) -> tuple[list[str], list[str]]:
     """TABS 구성에 따라 (nav 버튼 목록, panel HTML 목록)을 만든다.
 
     주식(os)·코인(coin)이 함께 있으면 알약형 서브탭(미국증시 · 코인)으로 감싼다."""
     _PART_META = {pid: (icon, nm) for pid, icon, nm, _k in PARTS}
-    navs, panels, first = [], [], True
+    navs, panels, first = [], [], first_on
     for i, (tab, pids) in enumerate(TABS):
         have = [p for p in pids if p in rendered]
         if not have:
@@ -1044,8 +1099,19 @@ def render_html(body: str, now: datetime | None = None, links: str = "",
     gauges_html = _render_gauges(sections)
 
     rendered = _render_parts(sections, qmap, prev_sets)
-    navs, panels = _render_tab_panels(rendered)
+    # 최신 페이지(schedule=True)는 메인 홈이 첫 화면. 지난 회차 페이지는 홈 없이 뉴스가 첫 화면.
+    navs, panels = _render_tab_panels(rendered, first_on=not schedule)
     sched_html, funds = _render_extra_panels(now, schedule, navs, panels)
+    home = ""
+    if schedule:
+        tab_of = {p: f"tp{i}" for i, (_t, pids) in enumerate(TABS) for p in pids if p in rendered}
+        if sched_html:
+            tab_of["sched"] = "tpS"
+        _now_live = clock.now()
+        home = render_home(sections, qmap, _now_live, _load_econ_events(_now_live),
+                           _load_earnings(_now_live), tab_of)
+        navs.insert(0, '<button class="nav-t on" data-p="tpHome">홈</button>')
+        panels.insert(0, f'<div class="panel on" id="tpHome">{home}</div>')
 
     nav_html = (f'<div class="navwrap"><nav class="nav">{"".join(navs)}</nav></div>'
                 if navs else "")
@@ -1054,6 +1120,7 @@ def render_html(body: str, now: datetime | None = None, links: str = "",
                + (assets.tag("sched.js", asset_prefix) if sched_html else "")
                + (assets.tag("growth.js", asset_prefix) if funds else "")
                + assets.tag("rwa.js", asset_prefix)
+               + (assets.tag("home.js", asset_prefix) if home else "")
                + _GOAL_LOADER_JS)
     return _shell(SITE_TITLE, hd + gauges_html + nav_html + "".join(panels),
                   script=scripts, asset_prefix=asset_prefix)

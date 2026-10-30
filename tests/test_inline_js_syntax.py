@@ -12,11 +12,11 @@ import subprocess
 
 import pytest
 
-from render import growth, layout, rwamap, schedule
+from render import growth, home, layout, rwamap, schedule
 
 SCRIPTS = {
     "rwa": rwamap._RWA_JS, "sched": schedule._SCHED_JS, "growth": growth._GROWTH_JS,
-    "tab": layout._TAB_JS, "goal_loader": layout._GOAL_LOADER_JS,
+    "tab": layout._TAB_JS, "goal_loader": layout._GOAL_LOADER_JS, "home": home._HOME_JS,
     "top": layout._TOP_JS, "theme": layout._THEME_JS, "pwa": layout._PWA_JS,
 }
 

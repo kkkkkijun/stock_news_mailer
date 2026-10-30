@@ -52,6 +52,9 @@ def _asset(name):
     elif name == "rwa.js":
         from render.rwamap import _RWA_JS
         content, _tail = _split_script(_RWA_JS)
+    elif name == "home.js":
+        from render.home import _HOME_JS
+        content, _tail = _split_script(_HOME_JS)
     else:
         raise KeyError(name)
     return content, _hash10(content.encode("utf-8"))
@@ -64,7 +67,7 @@ def _pwa_tail():
     return tail
 
 
-_STATIC_NAMES = ("site.css", "site.js", "tab.js", "sched.js", "growth.js", "rwa.js")
+_STATIC_NAMES = ("site.css", "site.js", "tab.js", "sched.js", "growth.js", "rwa.js", "home.js")
 
 
 def write_assets(config: ModuleType) -> dict[str, str]:
