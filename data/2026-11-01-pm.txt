@@ -1,0 +1,316 @@
+2026-11-01T17:02:33.679016+09:00
+
+[오늘의 뉴스 요약] 2026-11-01 17:00 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+한국 경제는 반도체 호황에도 불구하고 중산층 소득이 줄어드는 분위기이다. 이로 인해 소득 분배 양극화 우려가 커지고 있다.
+
+[핵심 뉴스]
+1. (성장) 중산층 소득 줄어드는 상황
+   → 2024년 한국 중산층의 근로·사업소득 감소 비율이 38.9%로, 코로나19 이후 가장 높은 수치를 기록했다. 소득 증가한 중산층 비율은 57.3%로 전년보다 하락하여, 경제 성장이 고소득층에 집중될 우려가 커지고 있다.
+   (매일경제 · 11/01 16:35)
+2. (물가) 일본 디플레이션의 종식 선언
+   → 일본이 13년 만에 물가 상승률 2% 목표에 도달했으나, 정부는 신중하게 탈디플레이션 선언을 고려하고 있다. 일본은행 총재는 물가 안정을 위한 금리 인상을 예고하며 논의가 활발히 진행되고 있다.
+   (매일경제 · 11/01 15:39)
+3. (기타) 수출 9천억 달러 돌파의 의미
+   → 올해 한국의 누적 수출액이 1∼10월 기준으로 9천300억 달러에 이르며 사상 최초로 9천억 달러를 돌파했다. 이 추세라면 연간 수출 1조 달러도 가능할 것으로 보인다.
+   (연합뉴스 · 11/01 11:33)
+4. (고용) 강원지역 전통시장 경기 악화
+   → 연말을 맞아 강원지역의 전통시장에서 체감 경기가 나빠지고 있는 상황이다.
+   (강원일보 · 11/01 14:55)
+
+[흐름·전망]
+• 중산층 소득 감소가 소비 회복에 부정적인 영향을 미칠 가능성이 커 보인다.
+• 일본의 물가 안정 조치와 금리 인상이 향후 경제에 미칠 영향에 주목해야 한다.
+• 한국의 수출 증가가 이어질 경우, 고용 창출 및 투자에 긍정적인 효과를 미칠 것으로 전망된다.
+• 앞으로의 경제 정책과 외부 환경 변화가 각각의 국가에서 소득 불균형 해소에 어떤 역할을 할지가 중요한 관전 포인트다.
+
+📈 해외주식 PART
+🧭 [NVDA] 악재가 잇따라 NVDA 주가 하락 우려 증가
+
+📰 [NVDA] Trump says US looking 'closely' at report Nvidia CEO target of China spy plot
+   (Bangkok Post · 11/01 12:45)
+🏷 악재 | 트럼프, NVDA CEO 중국 스파이 의혹 언급 | 경영진 이탈 관련 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNFFMaDhscmpJQlJVYmJOaG0xR09yT3Ryd0w4RUxwNVdoQVNDb2s3OHE2YXdOMWEwTG1NSUhEeWo0QU4zdmdyZzZNQ1VwdDJaUDJEcV9DZ3dXZjR5M2tlck90WG5qV25XcG9yMkpQNFZ4aHVlUHo2UUYzUUQxdUJHcDBzT0FodXBrYm1PcUJTSWxBMG1udHIyQmRzcFNxOFNvQUpvT1hnMTdhMHdTenVPY2ZZVllGS28t?oc=5
+→ 트럼프 전 대통령이 NVDA CEO가 중국의 스파이 음모의 표적이 되고 있다는 보고서를 주의 깊게 살펴보고 있다고 언급했습니다. 이로 인해 NVDA의 경영진에 대한 불안감이 커질 수 있습니다.
+
+📰 [NVDA] Apple reclaims world's most valuable company title as Nvidia slips amid AI investment concerns
+   (The Times of India · 11/01 12:31)
+🏷 악재 | 애플, NVDA 주식 하락 동반 | AI 투자 우려로 NVDA 주가 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMilgJBVV95cUxPai02aDk3MjYwcDZ5d0p6QXhISWV3aGhnUE5jV1RSMjNrSE1QNjBNR1VzNFVNa05pM29aU2N6aFV1SzBwWFJ2SGlRekZtaDFBV1U0Z2RSdGNWemozTGVBTUlDUm9tTklxbjJjQTNvMDA1UnA2MnI3YmJsTjVwa3d4TXBNVGdTa2xCb0FOTDZaWlNzR2hoakZMaW9mSHhSZVFCcWlJUUxYTVBISF91S1J3eFJ2MDBQZFVhS0dZWlBRZ3NxVzhPZ1BNNkRzYzUtdThjWENTc0JHamJvakpySWdVYzA1Z0NKMXBkRmZvbWNNTXlfUzc3emdzV1NjUE9pcWYyM3RUb05BWUFWVlpSWGxfc09DNk9YQdIBmwJBVV95cUxNaUFTRW5sMU1Pa2VGOHZTTWVPUFY0Q0piMm94c2s3NUtuR0t5cDRWeDQtZlVhUVJyR0p6S2ZYVjloTDRfS0Z3bmd6ejNJTW9MY01DRkNoMjhCNkM1TlFKLWUxVEl0ektzWXljRk5NRFRDeUJLX1FrYnpoOXJadDgxbU9DYW1FVEVlTUFaS3dGT0pMV2VlMl9kcGFKUnlqYVlmb1VQLXd5UTAzQlRCUmE5ajlRelQwSm9Bd044UENxTV91akVxZWRCd3R5OHRwcmIxV3o5VDdqU1BkT01CV0pHdXJscS1ZUS1BYlZrZmM0Tm5WVnFGRldxZl9iMGZuRzZXdnhtaS1UYVBpTUd5OE91YzR3VHczOC1mQzVZ?oc=5
+→ 애플이 세계에서 가장 가치 있는 기업 타이틀을 되찾으면서 NVDA의 주가는 AI 투자 우려로 하락했습니다. NVDA 보유자에게는 부정적인 소식으로 평가됩니다.
+
+📰 [NVDA] Nvidia Cuts Vera Rubin HBM4 Bandwidth 13% [2026]
+   (shattered.io · 11/01 12:16)
+🏷 악재 | Nvidia, Vera Rubin 대역폭 축소 | 대역폭 축소로 성능 저하 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMihgFBVV95cUxQeVZsUmtIcW13R3VxOVJOT2s1Qm9fRUgzcF9VNGFIUjdpc3JYbXZjRmVWUmtPcXJCVTZ2TDVTS3RKbGlyWjNhYktOOHprazZ0TXBiZ2I0Z3ZCeHpCRGVfMG9CSFc3WWxyN1RfZC1oMll3QjVaeXpCc2VCdlA1TTlNNTItSFJ3UQ?oc=5
+→ Nvidia가 Vera Rubin 프로젝트의 HBM4 대역폭을 13% 줄이기로 결정했다. 이 변화는 향후 성능 및 제품 출시 일정에 영향을 미칠 수 있다.
+
+🧭 [TSLA] 테슬라 슈퍼차저 개소 긍정적이나 직접적 영향 미미
+
+📰 [TSLA] World's Largest Tesla Supercharger: 164 Stalls [2026]
+   (https://tech-insider.org/ · 11/01 16:50)
+🏷 호재 | 세계 최대 테슬라 슈퍼차저 개소 | 충전 인프라 확대는 긍정적 요소 | 0
+🔗 https://news.google.com/rss/articles/CBMikAFBVV95cUxQbGJNX1djREg2OUd1QVVpdVlXNTItc3NPbzhMZ3pVYVZ3WlZheDZ6WDloaHRvMmlHa0R5YmlzNXRYSG1wdWcycHRXdTJHQnFYX1p5cjZrQ0U3am5OY2NHdFdOVEkwWGsxM2pUSVNqY21vblhiZGQ2eHA2c1BvNHhmMmxmUmp6blhJcUFXa29LT08?oc=5
+→ 세계 최대 규모의 테슬라 슈퍼차저가 164개의 충전소로 2026년에 개소할 예정입니다. 이로 인해 전기차 충전 인프라가 확대되며, 테슬라의 성장 가능성이 더욱 부각될 것으로 기대됩니다.
+
+📰 [TSLA] California man explores the world's largest Tesla Supercharger and reveals all the surprising amenities
+   (supercarblondie.com · 11/01 16:35)
+🏷 중립 | 세계 최대 테슬라 슈퍼차저 탐방 | TSLA에 직접적 영향 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMilwFBVV95cUxNVG1qMG1LM0paME5UMVh5dUw5cUFLMDBVUlU2ZkdtaVVBMDRMLXNfTUpUYTVzZTdNWGFxWUxzMTNlNWp3enZCa253S2ZYanJZcDJ1MUtscFJUTVpRc25ja0R6TllrZUZFWWRPVzd0TmpvWk1GY1loQzhVenEwaVhPRmVaM2JyMHByZVVrOE5UWkUzVUVnd3Zv?oc=5
+→ 캘리포니아의 한 남성이 세계 최대 테슬라 슈퍼차저를 탐방하며 놀라운 편의시설을 공개했습니다. 이는 테슬라의 인프라 확장과 고객 편의성을 강조하는 내용입니다.
+
+📰 [TSLA] Tesla And 2 More Founder Led Stocks To Watch
+   (Simply Wall St · 11/01 16:32)
+🏷 중립 | 테슬라注목할 주식 3종 소개 | 기존 정보에 대한 재확인 | 0
+🔗 https://news.google.com/rss/articles/CBMisAFBVV95cUxONHFTUGRQemJaMzVqakVlRmt6WEZfVXNIRlRsQnozQ04wQVdGN0VIVXhSZWpnak9Pdi1ic1RnaTdRcnBQN3FOWFNZNkhoWllTaHBSSHRlQVR4MUFxSVlYbkpQLUExcHRzZXBYRThqcFh4dG16aDZfYk14VTh4SlBteHA4RXlhRG5WN1B0T2Q1VTd3THF1cHZDNWd6QjBfUEdVdHdNazZpaGhLRS03QTFMUNIBtgFBVV95cUxNblVsbWY4Yjhkd3pLUzNBQzg0MHhzWGh3bG0tNkdCMEtNUFR2am94Y25pYlVYQjlRdV9mMkJHY014YWZzTUtYdHVfdldQdjlTQWJKUUFOOUJQcFRKeW1lVVNROGhpV2VaT0NjVk5jV3dydHM4ek1Uc1VmREd1TzMtVXpmbU9FMHNPcmVETUdUTmxUdUE2ZjdJOFZXTnpWbVRKSmEza2hSYXliX3oxVkFYWDVwMzBwZw?oc=5
+→ 기사에서는 테슬라와 두 개의 창립자 주도 기업에 대한 주목할 점을 다루고 있습니다. 이를 통해 TSLA의 관심을 재확인할 수 있습니다.
+
+🧭 [HIMS] HIMS, 인도 병원과 협력 증가 반가운 소식
+
+📰 [HIMS] MGM Hospitals In Indore Launch Digital OPD Services Under ₹300 Crore HIMS Project, MY Hospital Registers
+   (Free Press Journal · 11/01 13:14)
+🏷 호재 | 인도 MGM 병원 디지털 OPD 서비스 런칭 | 사업 확장 및 협력 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMi-gFBVV95cUxOUU5MWlFfa1p5bHBDN3VhdHVpOW5lVEFTYmlmWE93WUtnbE1XTHV4NlloRkI2ZGdOSFpxTDBzVkpVUkhjV1p1eXdBcHNJdmRFVk9hNU9IS3l3SGlWY3FTbG9hOVN1RkVfYkxVTmVJUFg5WnUxbHJVamkxR3hkMGoxMS1rOWZod29fUGRySzFBZzdSeFhhVFo2cXIxdEdnMW14aTF0MG5fMkphdTRzVkFWeWFjNUoxWmJ6MVBUVXRhX3NkeXpyUldmbE1YVllZWDV0WnNmSGxqRWNuS3lrRjJ1dlpJTzJuWDBrWjVPbmtjeTdSRWotbm5ha0d30gH_AUFVX3lxTFBuMG9zZVdhVzNlZW01SmFsQ1ExMGJhdlJKdkQ2M2hWSENGZTFwQ3ZJaEFIN3FKT2o2S2tscmdaQ05fYldVNVEybTNfZEZ4Mlk2X0F0M2wxMjd6MHpCOUF1X1pTMGZXXzZLOXU1d0Y1N0hrbWJNaDFtM2swZzd5LXhkM0pPV0hDVGFyUE5iam40RHp0NGZWcV9jZ1BLLTRnVDZsbHkzN0kxN2N5MmVwdmNIb2VzVHVrdHViRXZ5M0pWOEM5cVF5X2NQeUJqSnhLTTJWbnRkV1ZteHFZYXdXTV9NLWhPT3hEUjdsa1JhLVBiZ3pVeWpfUVNoeER4LWpUZw?oc=5
+→ 인도의 MGM 병원이 ₹300억 규모의 HIMS 프로젝트 아래 디지털 OPD 서비스를 시작했습니다. 이는 HIMS와의 협력 및 사업 확장을 의미합니다.
+
+📰 [HIMS] DEFENSE CASHES IN! Josh Mims is HIMS taking it back for six on the final play of the first half 👀😤
+   (News4JAX · 11/01 08:23)
+🏷 제외 | HIMS, 마지막 플레이에서 터치다운 | 경쟁 스포츠 이벤트 기사 | 0
+🔗 https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUDB0VER1a2dtdnBKaVpjd0hmd0RQc3hpVDFXNVRGVXVVRGNpc294REZJSXc4ZHFrQTFMUVRhMDBaeXNSMlJOa0EzcnYzZ2lydTJWalBGNklscXNfMnJWV0g0a3hMQXRxcUJ4TE9xZzdEVmdJR25ab0FGR1BiZDJmOHdVRmpfX1pOUThPU3V6MVNiODFPdXhEcEFOaDdJWEY2S1dwUE8wTWVKV1d3b0xNVzhyejdLQkRSdjVSWnZnblhvR2FqZ0pXUGFuSVVQek55dm80WGl6VHUzRjYx?oc=5
+→ HIMS가 첫 번째 하프의 마지막 플레이에서 터치다운을 기록했습니다. 이 과정에서 팀의 방어가 결실을 맺으며 긍정적인 결과를 가져왔습니다.
+
+📰 [HIMS] HIMS DEADLINE MONDAY: Bragar Eagel & Squire, P.C. Urges Hims & Hers Health, Inc. Investors to Contact the Firm Before November 2nd
+   (Carroll County Mirror-Democrat · 10/31 22:02)
+🏷 중립 | HIMS 투자자, 정보 요청 필요 | 법률 안내로 HIMS에 영향 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMitwFBVV95cUxPakp4a0RuWE9hU2ctb3hzOEJ2anJhbFZLLWZMc1BTYVBhNHRYYnVRWmRnSTNZZ0JVUHRqTlNEbFdWWktrS214U05WbGhkRkp5WTVyS3VHbFM3OHpEV0xqVXVqV2taUVZ2aXdaMFFqTWZxc0p2dTBReUpfT25fMUdkWllINkxtcFlzWUxaS2ZTaWR1SGJFY0p5QS1Lc2pkVjFTb3M4Z3VyRWZES2FUX3hCU2s2RnZiOTg?oc=5
+→ HIMS 투자자들에 대한 법률 사무소의 안내가 발표되었습니다. 11월 2일 이전에 연락하라는 내용이 포함되어 있습니다.
+
+🧭 [RDW] RDW, EnduroSat 계약으로 수익 증가 기대
+
+📰 [RDW] Redwire (RDW) Could Be 35% Undervalued As EnduroSat Deal Lifts Contract Visibility
+   (Simply Wall St · 11/01 02:28)
+🏷 호재 | RDW, EnduroSat 계약 호재 | 계약 체결로 수익 가능성 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMixgFBVV95cUxQeUxJcEh4TTFsWVNFcTU4MlJZS3pjaWladUpUR0FQLXgydElOZWhSb3BDZkQ4eDNKX1VnYlk5TnpSRXBma3c5ZHBBeGdTLUZhVHNYN0sxQ0VDN20tNTZNVHpsT3E0dnNwZ3ZyS09tZEc3QWJYcndxbXlfYXFXekJfcmVJenVXeXEyWWNvSktmekxVUkcwMTNMNXdEWmxmUFIwcTU3VnRUTHYzMG9Lcnh6SU1lcFNVNDdTUjZJdk5PcWk4bXp5OVHSAcsBQVVfeXFMT0RGNWl4cVpRdHpiaHRJekJKUHVrdWNPcGs0eXJ3YnpBZjFWVDhMWThpbW9XRlpEeVg1VXp2c29aR0RqQkN0WE5SN1l0OHpycHVPWWJjbGhUb0VoSXU4YmhaLV8teE1BWDFkRUNBLVI1MnZzVW9NN3JfVEFHWFlfbFo1Z2R5RGhMMy0yLXZrY01nQVZUNG1TQ2JHRVZlUk0yQXNHMVFVaEVtb2g2dE85akgwYXBjcVBVaHVEUkNaajBBci1XU3kxekh4Umc?oc=5
+→ Redwire가 EnduroSat과의 계약으로 가시성이 높아지며 35% 저평가 가능성이 언급되고 있습니다. 이는 RDW 보유자에게 긍정적인 신호로 작용할 수 있습니다.
+
+📰 [RDW] Partnership Deal Could Change The Case For Redwire Stock
+   (Yahoo Finance · 10/31 13:22)
+🏷 호재 | RDW, EnduroSat와 파트너십 체결 | 유럽 시장 진출에 따른 수요 증가 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/partnership-deal-could-change-case-042241149.html?.tsrc=rss
+→ 레드와이어는 EnduroSat과의 협약으로 유럽 방산 및 상업 임무에 진출할 계획입니다. 이는 RDW의 수요 증가로 이어질 가능성이 높습니다.
+
+📰 [RDW] Redwire (RDW) Signs EnduroSat Pact, Is It Still 28% Undervalued?
+   (Yahoo Finance · 10/31 05:12)
+🏷 호재 | RDW, EnduroSat 계약 체결 | 계약 체결로 사업 확장 기대 | 1
+🔗 https://finance.yahoo.com/markets/stocks/articles/redwire-rdw-signs-endurosat-pact-201259148.html?.tsrc=rss
+→ Redwire가 EnduroSat와 계약을 체결해 유럽 우주선 생산을 통합할 계획입니다. 이는 정부, 방위 및 상업적 우주 인프라 프로젝트에 기여할 것으로 기대됩니다.
+
+🧭 [IREN] 새로운 재료는 없고 경고만 이어짐
+
+📰 [IREN] Neocloud Balance Sheets 2026: Cash vs Debt at CoreWeave, Nebius, IREN and Peers
+   (FourWeekMBA · 11/01 16:41)
+🏷 중립 | IREN 재무 상태 분석 기사 | 다른 회사 이야기라 영향 적음 | 0
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTFBQU0VwclVtdDdJNnZQcTg0RjRvMmtqeXcyN0ZmTU9NcUhuSkxHWWNTUkpkQ0NhLXRhVWJ3cmF0b1VaU3VyTHpsVkhCVXo0S0NjaUNfRzZuU0VsUW1Z?oc=5
+→ IREN의 2026년 재무 상태가 동종 업종과 비교하여 분석되었습니다. 그러나 기사는 IREN 보유자에게 특별한 경제적 영향을 주지 않는 내용입니다.
+
+📰 [IREN] Is IREN (IREN) Undervalued On Europe Expansion Despite Funding Risks?
+   (Simply Wall St · 11/01 11:30)
+🏷 중립 | IREN의 유럽 확장, 저평가 여부 논의 | 확장과 자금 위험 함께 언급 | 0
+🔗 https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYW5qRzNnN19sbVMxNlBmX24wdkR3M29NbGJYZXVXM0lrVkxYSHJEY2N6UGJ2NVpCZ2NPOFhNc1VpQlZFOHV3REQwOUY4VE1QQUx4ekJUWUhHZEFVWXJQb3F2MUFtZmxkSFpMWGYzRmpKWXFpZG1vOXB0cFlUa1ZHdHI1eV9FMVROY2IzbEpOVGtLak1XVTZxdDhKX09lcjkwdURteDF5RHFaTmUxRHB6S2NxU2xnTW5SckU5UUZVdW_SAcYBQVVfeXFMUE8zaG5mWDVMQnotSTRpUFBJMVRJb0RVcWdpcG5rd045MDlnRFNxRFBNcGk1NUR3Z19RbTlKSXV2RlBQMDdoMHN3WXhjSWhnMGZ2clNxU3huRTd4UXJJWm02WWE5cC1sZmVOOTlIcWFnS2pIMHhtR3NMeDliN09QMlREX2hmRm1FVkJmbjhacjI5VkYxSzVNNllwVll6cFRwcUZyc040TE5MMjQwcGtFNXp3b3dudE1SMUNOaWFMQ3lCV0ZrSGRn?oc=5
+→ IREN의 유럽 시장 확장 가능성이 저평가되고 있다는 분석이 나왔습니다. 하지만 자금 조달 위험도 함께 지적되어 주의가 필요합니다.
+
+📰 [IREN] Musk Warns of Neocloud Industry Shakeout: What Risks Do CoreWeave, Nebius, and IREN Face?
+   (TradingKey · 11/01 07:04)
+🏷 악재 | 이렌, 네오클라우드 위험 경고 | 산업 불확실성 경고 | 0
+🔗 https://news.google.com/rss/articles/CBMiygFBVV95cUxNR25XN2Z3c2dOb25UUkNNWlFDT2toS0lOclByX24yWUczR0dHTDdvNGpQdHBUTXVzTVBPTFVTVUJMbDNJNTZqYVZ4cjZNdXhMMVh6aEp6cUZVdTJjQWFtVEV3d09wcVU3Y0Y5WHJuWnNPREJHU1BkLTk0UGhYNUJmcUwtWlF4XzdmQlZOZ3hEM1FYeG1aNkduZUxWWV9UOVNSdjVXM2hhOHpNTFZvOFZFeFZUdFhxX1BncG1BNkh0YWM1ZWZOSFhpWmRR?oc=5
+→ 머스크가 네오클라우드 산업의 불확실성을 경고하며, 이렌을 포함한 기업들이 직면할 수 있는 위험을 언급했습니다. 이는 IREN 보유자에게 직간접적인 우려를 줄 수 있습니다.
+
+🧭 [RKLB] RKLB, 수주 증가에도 불구 악재 영향 크다
+
+📰 [RKLB] RKLB Stock Slips Overnight: Rocket Lab Protests Blue Origin’s $700M NASA Mars Deal, Calls Review ‘Punitive’
+   (Stocktwits · 11/01 06:25)
+🏷 악재 | RKLB, 블루 오리진 계약 항의 | 경쟁사의 큰 계약으로 인한 항의 | 0
+🔗 https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbjMtSG1aVEJCTUR6dTdVUUVsY0lpNVhLNTNaTngyUFJhdVZobmQ5YkFfbDR4dEx1U1d2akhKaFFnNUx0cTFtN3JhMGFkNFlNUmptNXNHcnpHZnVpRDdvUGg1c0xRTTd1S3MzeUtYeWFUWGJ3Y2pvcjkwMlNFckhTUTNYSEEtRVlzU3NaN2Y5WjRqVk1TbHNBekt6Q1dvUDFmX3d2RTg3T0dFNXljWDlWVTdmZ1ZacEQ4djNabGpBWWZvUVBlQmdGN1g1V3lUVERfT3VR?oc=5
+→ Rocket Lab이 블루 오리진의 7억 달러 NASA 화성 계약에 항의하며 검토가 '징벌적'이라고 주장했습니다. 이로 인해 RKLB 주가는 하락했습니다.
+
+📰 [RKLB] Rocket Lab's Backlog Is $2.36 Billion -- More Than Double Its 2026 Revenue -- and the Stock Still Fell 38% This Month. Here's the Disconnect.
+   (Yahoo Finance · 10/31 23:20)
+🏷 호재 | RKLB 수주 잔고 23억 달러 초과 | 수주 잔고 증가가 긍정적 | 2
+🔗 https://www.fool.com/investing/2026/10/31/rocket-lab-backlog-is-236-billion-more-than-double/?.tsrc=rss
+→ Rocket Lab의 수주 잔고가 23억 달러에 달하며 2026년 예상 매출의 두 배를 넘는 긍정적인 소식이다. 그러나 이번 달 주가는 38% 하락해 투자자들은 우려를 표하고 있다.
+
+📰 [RKLB] Rocket Lab Reports Nov. 9. Here's What I'd Need to See Before Buying the Stock.
+   (Yahoo Finance · 10/31 20:54)
+🏷 중립 | 로켓랩, 구매 전 검토 사항 | 주가 하락을 언급하며 분석 | 1
+🔗 https://www.fool.com/investing/2026/10/31/rocket-lab-reports-nov-9-here-s-what-i-d-need-to-see-before-buying-the-stock/?.tsrc=rss
+→ 로켓랩의 11월 9일 실적 발표에 앞서 투자자들이 주목해야 할 두 가지 숫자가 언급되었습니다. 이 기사에서는 주가 drop의 원인을 분석하며 향후 기회로 삼을 수 있는 가능성을 탐색합니다.
+
+
+🪙 코인 PART
+🧭 [BTC-USD] 바이낸스 출금 재개로 시장 신뢰 회복 기대
+
+📰 [BTC-USD] Bitcoin Selloff Deepens on Delayed Binance Hack Shock, Daily Realized Losses Hit $1.115 Billion
+   (bloomingbit · 11/01 16:03)
+🏷 악재 | 바이낸스 해킹 지연에 따른 BTC 매도 | 해킹 지연으로 인한 매도 압력 | 0
+🔗 https://news.google.com/rss/articles/CBMiVEFVX3lxTFB6TURTSjkydHJGT3pyYU56ZC1QOGN2eFVDREd4T2FzMVBNWlkwaHMyTkR2d01Hb01lTnFlWEs2elJBWFY5cUY0bG5kY2lNQURaSExpcQ?oc=5
+→ 바이낸스 해킹 사건의 지연으로 인해 비트코인 매도가 심화되고 있으며, 일일 실현 손실이 11억 1천5백만 달러에 달하고 있습니다. 이로 인해 BTC-USD 보유자에게 우려스러운 상황이 지속되고 있습니다.
+
+📰 [BTC-USD] Binance says resuming withdrawals after major hack
+   (Yahoo Finance · 11/01 15:58)
+🏷 호재 | 바이낸스, 출금 재개 발표 | 출금 재개는 신뢰 회복에 기여 | 0
+🔗 https://finance.yahoo.com/markets/crypto/articles/binance-says-resuming-withdrawals-major-065851156.html?.tsrc=rss
+→ 바이낸스가 60억 달러 규모 해킹 피해 이후 출금을 재개했다고 발표했습니다. 첫 번째 출금 네트워크로 비트코인이 포함되어 있어 BTC 보유자에게 긍정적인 소식입니다.
+
+📰 [BTC-USD] Binance resumes bitcoin withdrawals after covering bulk of stolen US$6.3 billion
+   (The Standard (HK) · 11/01 15:55)
+🏷 호재 | 바이낸스, 비트코인 출금 재개 | 출금 재개로 거래 안정성 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMi0AFBVV95cUxPa3pFUkZ3ajZ6V3ZUa0R4SEt1WFF2UF9Ta2tSd0FrMUpSTG8xb1FMNVhzQWZEU2NMVzd1WnlEZ1M5VXpzaFpuZWs0ZDNBVWxhYlBfY3BoZGlPSXNOOU9lRThHMU9KRVhJLVB4a04zOGVjOTY4MXB4NVNiRDhSejFNYkR2SGM5YXZ2RGxLanByUW9weV9EQzJIc29PNDZvM2cyeXFfd0RXME1Mc1BIYjhncXVJS1YwQS1IUW5fM1BhTnpGUl9rTmwzTWxtNjRlcEk4?oc=5
+→ 바이낸스가 63억 달러 규모의 stolen funds를 처리한 후 비트코인 출금을 재개했습니다. 이는 플랫폼의 신뢰 회복에 기여할 것으로 보입니다.
+
+🧭 [ETH-USD] 이더리움 스테이킹 수요 증가와 거래 활성화 기대
+
+📰 [ETH-USD] Ethereum staking queue holds over 1.17 million ETH with a 21-day wait for validator activation
+   (Pluang · 11/01 16:44)
+🏷 호재 | 이더리움 스테이킹 대기 21일 | 스테이킹 수요 증가 및 활성화 | 0
+🔗 https://news.google.com/rss/articles/CBMimAFBVV95cUxQZ1dvakFCV2VocmJmUEVQMFcxLVNpUDNraWtxaGZXVm03dmNVMkpJTHRvWDhrWHNWUi1VT1I1WTJDRDM5S0Zvck5jMktDNkY4MXZoXzJyLW9CQU45RDdIT09Ib2VXUENXU1JqeVRGd1oyZmhkdWgycUFXcFJybWdWeElFODFYTFdXR2VFQk1OZWxfZ25hWXFUZw?oc=5
+→ 이더리움 스테이킹 대기열에 117만 ETH가 있으며, 검증자 활성화에 21일이 걸린다고 보도됐다. 이는 스테이킹에 대한 수요가 여전히 높음을 나타낸다.
+
+📰 [ETH-USD] Ethereum staking shows bullish signs as entry q...
+   (Pluang · 11/01 16:44)
+🏷 호재 | 이더리움 스테이킹, 긍정 신호 | 스테이킹 증가로 수요 상승 | 0
+🔗 https://news.google.com/rss/articles/CBMirAFBVV95cUxOYXIyblVMRzVIVXFYOVFSTEN2eVJQdFA1UWNJNmktVDZZU1dKVG54YjVZNmdFUzJMdTdyN1R5ZlotVkZjU1ZkdTJBdk9kX0REU2kzQmJGVEx2dGxHb2dXWGRkQUVNUktFWWNpNnBWNW5nNEVJMVVrdEpHTG5MbC03RS1wSlcyLVpIR1Y3ZEJRUTJhdjBZX0ltMkkyeUFmdkFnLTZpOTF2d0p0endy?oc=5
+→ 이더리움 스테이킹이 긍정적인 신호를 보이며, 투자자들이 진입하는 모습이 나타나고 있습니다. 이는 ETH-USD 보유자들에게 희소식으로 작용할 수 있습니다.
+
+📰 [ETH-USD] Moscow Exchange to start Bitcoin, Ethereum, and USDT trading on Dec 1, 2026, under new Russian crypto rules.
+   (Pluang · 11/01 16:44)
+🏷 호재 | 러시아 모스크바 거래소, 이더 거래 시작 | 이더리움 거래 활성화 기대 | 0
+🔗 https://news.google.com/rss/articles/CBMipAFBVV95cUxNbWlCNFlmSUxuNG5CZnJZY0llQW1nTC1kRzVTU2lLMVBMTGpBUHJNQkoxVTdFQjBMM0hwVktxSk5qVGhuTjRGbXdNa3E4WVJEQkRrUW5YT0ItcEdUNFc0ZHlTQ2JqSjFiZ2g1dklVX05UeXdQVjNsdUNReW1RclVGV2x4TkpSQzBQak90SHhwQlpLLUd6NDdHUXJXT19vQWZmb3Fpag?oc=5
+→ 러시아 모스크바 거래소가 2026년 12월 1일부터 비트코인, 이더리움, USDT 거래를 시작한다고 발표했습니다. 새로운 규제 아래에서의 거래 시작은 ETH-USD 보유자에게 긍정적인 소식일 수 있습니다.
+
+🧭 [SOL-USD] 솔라나 생태계 확장으로 가치 상승 기대
+
+📰 [SOL-USD] Ondo Brings Seven Tokenized Investment Portfolios to Solana
+   (TradingView · 11/01 16:00)
+🏷 호재 | 온도, 솔라나에 포트폴리오 출시 | 투자 기회 확대로 가치 상승 가능 | 0
+🔗 https://news.google.com/rss/articles/CBMiuAFBVV95cUxNX19mUnIxQndnRnUyc3dtU2pzN3ctbHo2czZ2a1hoNjlXTW1PVmdVQ3NwMWZja1RIdXJhX3RHU2tHLXB1UTlpN2VxQXNIaHRoNXcyU1hnMDRCeDFZa2gzamNpUXdpSGNrZExVRnJuV0RlZlFMU0pOLXduM0xMQ0RjeVNkMXliUGJlTnpfN0ZfUkk4NVIxbXI5ZUtLZVE2NnRDNTloUkY5aTFNamlxYmtSNk5KNVhBSW1P?oc=5
+→ 온도가 솔라나 플랫폼에 7개의 토큰화된 투자 포트폴리오를 출시했습니다. 이는 SOL-USD 보유자에게 다양한 투자 기회를 제공할 것으로 기대됩니다.
+
+📰 [SOL-USD] Hong Kong Dollar Stablecoin HKDAP Pushes Solana Expansion to Broaden Global Payments
+   (bloomingbit · 11/01 15:22)
+🏷 호재 | 홍콩 달러 스테이블코인, 솔라나 확장 | 솔라나 생태계 확장 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hdHBoX1F0R2FiVTZRdGlUYjhMS3EwRy14X2VRNW1SaTZQRk5VZ08xQWRtVTJIb1NkV2NYelpVYkk4RWVSTkI5MmFZZmpwQl94Ul9PYw?oc=5
+→ 홍콩 달러 스테이블코인 HKDAP가 솔라나의 글로벌 결제를 확대하는 데 기여하고 있습니다. 이는 솔라나 생태계의 신뢰성과 사용성을 높이는 긍정적인 요소로 작용할 것입니다.
+
+📰 [SOL-USD] Anchorpoint Taps Solana to Launch HKDAP Regulated Stablecoin
+   (Cryptonews.net · 11/01 15:06)
+🏷 호재 | 솔라나, HKDAP 스테이블코인 출시 | 스테이블코인 출시로 인한 수요 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jbUFtVE8zQzNrRndncVBJTzZhWjVnMktoWlNJekNHTVJMaXZpTXU2N0VIWElyaUQ0T19kcjJGdTNpUi01OGNCek1aRGxKSk1Kek9ISFdwcDI5UQ?oc=5
+→ Anchorpoint가 솔라나를 활용해 HKDAP 규제 스테이블코인을 출시했습니다. 이는 솔라나의 안정성과 활용도를 높일 것으로 기대됩니다.
+
+🧭 [BMNR] BMNR, 지속적인 주가 하락 우려 커져
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Sells Off As Growth Hopes Clash With A Pricey Valuation
+   (Simply Wall St · 10/31 18:46)
+🏷 악재 | BMNR, 성장 기대감과 고평가 충돌 | 주가 하락 및 고평가 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMi4AFBVV95cUxQb3NZQk1pSXJQX0l1UWZORGhZRHp5ZUpXQXlqRE82OF9QSEpzTkpUYVpoaThUWl9PQzlXNEItWElDLUlPVDB2YktGQnZ4b2x5SnMxMTBEUUthdTQ0cmlteVh6a2tYdnBfRmRwVHBFWVhOTmZUYkZMWl9iamFhUl9ud25PUl82UnFtTW5LVmZwcndnam5sX1NUeVlMdU5ta2FxTmVsTUdHNHY4RXRpRHNXbjRCcWhraDRKaExaaktFQW9LLUEyYmhrdW5OeWhWVFRyeEVZVERPMlpHWEJMd0ZHVtIB5gFBVV95cUxPdG5DQnBjSWd3Qmp0cXRxTXNiOVB0UE1XVUhFNWhIOWxQejZVUTc4MGZSSmdZQUpwSTJQa0NVZV93ell0TlgyaFhVb0JQUmZEVTZvQW5kN3FKUWQ5OU13UVRHaXN3VmNkc1ZqOWVVZWFyZzNSTW9sOExiX01MZjItdExucmhlNC1tM3RqNExDa3dwWjYwMXJvLVJuTzJIZFBfWWUySEJJRTV6b2Fsd2loV0FaUl9xT3VzSHNFUW9MNHZDeWVNejRxUENQeF9oS3ZLWl9DT3lNbm5NSXB6R3hycWNITjYydw?oc=5
+→ BMNR 주가 하락이 보도되었으며, 이는 성장 기대감과 고평가 간의 충돌로 해석되고 있습니다. 이로 인해 투자자들은 향후 BMNR의 전망에 대해 우려하고 있습니다.
+
+📰 [BMNR] BMNR Stock Slides As Momentum Traders Eye Key Support
+   (Timothy Sykes · 10/31 06:47)
+🏷 악재 | BMNR 주가 하락, 지지선 주목 | 주가 하락 및 지지선 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMijwFBVV95cUxQN2xSZ3VucnQzSWxWMTU0TGc3eUl4VnN4S0ZTMlAxOW1oUjZJYVc2blBmZ1MxWEFrNFpYT29WdE5WVDVaNm9rY1NRWVRtWFJIMEE5ZTY3SmtianJUN3JHcmFRQlN6cGFUMFVReGVNV19sd0ZwdXpYZnd6YXM0emJFOE8tdjR4bXY0V3ZwUWZDaw?oc=5
+→ BMNR 주가가 하락세를 보이며 모멘텀 트레이더들이 주요 지지선을 주목하고 있습니다. 이 상황은 BMNR 보유자에게 부정적인 영향이 있을 수 있습니다.
+
+📰 [BMNR] BMNR Stock Pulls Back As Traders Gauge Risk
+   (StocksToTrade · 10/31 06:47)
+🏷 악재 | BMNR 주가 하락, 위험 평가 중 | 주가 하락으로 인한 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMikAFBVV95cUxNeGVKelhHM21sTk0yV1o4LXdvV3NfTTNacGJrRlM5NlpZZUpxRUtURElveHdDaHdyNzB0MVRTYm11WVlWUEFRSnBKQnJHOG52dENVX2NPNzR3QndaTDAtRlotQlV5cmRZcURvV1lBUVU4VzAtSlppWHBReE5pSzR6LTZObWdWTDNrTjlVRXpZS3c?oc=5
+→ BMNR 주가가 최근 하락세를 보이고 있으며, 투자자들이 리스크를 평가 중인 것으로 나타났습니다. 이 상황은 보유자들에게 우려를 낳고 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 바이낸스의 운영 중단 발표와 해킹 피해액 보전 소식이 주목받고 있으며, 전반적으로 파생상품 시장에서의 청산이 활발하게 이루어지고 있다. 이더리움의 진입 대기량이 감소하는 등 스테이킹 시장에도 변화가 감지된다.
+
+[핵심 뉴스]
+1. (규제) 창펑 자오, 바이낸스 운영 중단 발표
+   → 창펑 자오가 바이낸스의 운영을 중단하고 주주로 남겠다고 발표했으며, 바이낸스는 보안 사고 후 출금을 단계적으로 재개하고 기존 피해 자산의 약 95%를 보전했다고 밝혔다.
+   (토큰포스트 · 11/01 17:01)
+2. (규제) 바이낸스 해킹 피해액 95% 보전
+   → 바이낸스는 해킹 피해액의 95%에 해당하는 약 60억달러를 보전하며, 비트코인과 이더리움 출금 서비스를 1일 오후 3시부터 단계적으로 재개한다고 밝혔다.
+   (토큰포스트 · 11/01 16:01)
+3. (온체인) RLUSD가 XRP 제치고 국내 1위
+   → RLUSD가 국내 거래 관심지수 1위를 기록하며, XRP를 제치고 국내 거래 비중 2%를 차지하는 한편, 스택스는 국내 비중이 글로벌보다 69.6배 높았다.
+   (토큰포스트 · 11/01 17:00)
+4. (온체인) 이더리움 진입 대기량 감소
+   → 이더리움의 진입 대기량이 11월 1일 기준 116만3852 ETH로 10월 1일 대비 26.3% 감소했으며, 최근 예치보다 원금 인출이 많았다.
+   (토큰포스트 · 11/01 16:15)
+5. (거래소) 레버리지 포지션 청산 규모 2762만 달러
+   → 지난 24시간 동안 암호화폐 시장에서 2762만 달러 규모의 레버리지 포지션이 청산되었으며, 숏 포지션의 청산이 더 많았다.
+   (토큰포스트 · 11/01 15:56)
+
+[흐름·전망]
+• 바이낸스의 운영 변화와 보안 리스크 회복 상황을 면밀히 관찰해야 하는 시점이다.
+• 이더리움 스테이킹의 대기량 감소는 투자 심리에 영향을 미칠 수 있으니 주의 깊은 관전이 필요하다.
+• 국내에서 RLUSD와 스택스의 거래 비중이 높은 점을 고려할 때, 이들 코인의 시장 흐름에 주목할 필요가 있다.
+• 레버리지 포지션 청산이 잦은 상황에서, 변동성이 큰 시장에서 투자 전략을 조정할 필요가 있다.
+
+📊 공포탐욕지수
+  - CNN 기준: 26 (Fear)
+  - 크립토 기준: 34 (Fear)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+최근 서울 부동산 시장에서 현대건설이 용산구 한강로 재개발사업을 약 5990억원에 수주하며 도시정비사업 누적 수주액이 13조원을 넘어섰다. 또 신축 전세 시장에서는 대출 규제로 인해 현금 보유자만 계약이 가능한 상황이 이어지고 있다.
+
+[핵심 뉴스]
+1. (재건축) 서울 용산 한강로 재개발…현대건설, 6천억에 수주
+   → 현대건설이 서울 용산구 한강로구역 재개발사업 시공사로 선정되며, 올해 도시정비사업 누적 수주액이 13조원에 달했다.
+   (매일경제 · 11/01 16:52)
+2. (전세) 신축 전세도 현금부자만… 대출규제 역설
+   → 은평구 힐스테이트 메디알레의 전세 매물 중 대출이 가능한 물건은 손에 꼽히며, 대출 여부에 따라 최대 2억원까지 보증금 차이가 발생하고 있다.
+   (매일경제 · 11/01 16:52)
+3. (매매) 노원 월세 상승률 서울 1위
+   → 서울 노원구 아파트의 월세통합가격지수 상승률이 12.88%에 달하며, 전세 매물 감소와 대출 규제로 인해 월세 선호가 증가하고 있다.
+   (매일경제 · 11/01 14:41)
+4. (정책) 그린벨트 해제, 주거안정과 환경파괴 논란
+   → 정부는 수도권 그린벨트를 해제하고 신규 공공택지 후보지를 발표하며 2030년까지 주택 공급 계획을 세우고 있으나, 환경 논란이 일고 있다.
+   (매일경제 · 11/01 09:15)
+5. (분양청약) 계양신도시 첫 민간 공급…이번주 전국 4928가구 청약
+   → 이번 주에 전국 5곳에서 총 4928가구의 청약이 접수되며, 서울 강동구에서는 토지임대부 분양이 예정되어 있다.
+   (매일경제 · 11/01 16:52)
+6. (전세) 서울 아파트 평균 월셋값 1년 새 15%↑
+   → 서울 아파트의 평균 월셋값이 지난해 대비 15% 상승하며, 특정 지역인 '노도강'에서 상승폭이 더욱 두드러진다.
+   (YTN · 11/01 16:12)
+
+[흐름·전망]
+• 재개발 및 새 공공택지 추진이 서울 주택 공급에 긍정적 영향을 미칠 것으로 보임.
+• 대출 규제가 심화됨에 따라 전세에서 월세로의 전환이 가속화될 가능성이 높고, 미래 세입자 부담이 증가할 것으로 예상됨.
+• 주거 안정과 환경 파괴 논란을 감안할 때, 정부의 그린벨트 해제 결정은 향후 시장에도 많은 영향을 미칠 것.
+• 공급 시점이 늦어질 경우 현재의 주거 불안 해소에는 한계가 있을 것이며, 기반시설 확충도 중요한 관전 포인트가 될 것.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프 대통령은 미시간과 플로리다의 유권자들에게 투표를 독려하며 공화당 후보에 대한 지지를 강조했다. 그는 자신이 지지하는 후보들의 명단을 발표하고, 민주당을 비판하는 내용을 다수 담았다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 미시간의 여러 공화당 후보들을 지지한다고 언급하며, 유권자들에게 투표에 나서 줄 것을 촉구했다.
+   (Truth Social · 11/01 12:31)
+2. (국내정치) 플로리다 유권자들에게 조기에 투표를 독려하며, 공화당 후보들에 대한 지지를 요청했다.
+   (Truth Social · 11/01 07:47)
+3. (국내정치) 트럼프는 민주당 후보들이 세금 인상을 지지한다고 비판하며, 자신이 지지하는 후보들의 연설을 통해 공약을 강조했다.
+   (Truth Social · 11/01 07:47)
+
+[흐름·전망]
+• 트럼프의 발언은 미시간과 플로리다에서의 공화당의 지지 기반 강화에 주목하게 한다.
+• 앞으로의 선거에 대한 높은 투표율이 기대되며, 이는 공화당의 성과에 영향을 미칠 수 있다.
+• 유권자들의 반응과 후보들의 공약이 실제 투표 행동에 어떤 영향을 미칠지 지켜볼 필요가 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
