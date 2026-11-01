@@ -3,7 +3,7 @@
   "ticker": "NVDA",
   "name": "엔비디아",
   "date": "2026-11-18",
-  "ts": 1794945600,
+  "ts": 1794949200,
   "est": false,
   "detail": {
    "prev": {
@@ -128,7 +128,7 @@
   "ticker": "MSFT",
   "name": "마이크로소프트",
   "date": "2027-01-28",
-  "ts": 1801080000,
+  "ts": 1801083600,
   "est": true,
   "detail": {
    "prev": {
@@ -253,7 +253,7 @@
   "ticker": "AAPL",
   "name": "애플",
   "date": "2026-11-03",
-  "ts": 1793649600,
+  "ts": 1793653200,
   "est": false,
   "detail": {
    "prev": {
@@ -627,9 +627,9 @@
  {
   "ticker": "META",
   "name": "메타",
-  "date": "2026-10-22",
-  "ts": 1792612800,
-  "est": false,
+  "date": "2027-01-28",
+  "ts": 1801083600,
+  "est": true,
   "detail": {
    "prev": {
     "period": "26.09",
@@ -723,7 +723,7 @@
      "reported": false,
      "eps_est": "$8.33",
      "rev": "$75.16B",
-     "date": "2026-10-22"
+     "date": "2027-01-28"
     },
     {
      "cq": "2027-1",
@@ -752,9 +752,9 @@
  {
   "ticker": "TSLA",
   "name": "테슬라",
-  "date": "2026-10-22",
-  "ts": 1792612800,
-  "est": false,
+  "date": "2027-01-28",
+  "ts": 1801083600,
+  "est": true,
   "detail": {
    "prev": {
     "period": "26.09",
@@ -848,7 +848,7 @@
      "reported": false,
      "eps_est": "$0.50",
      "rev": "$29.32B",
-     "date": "2026-10-22"
+     "date": "2027-01-28"
     },
     {
      "cq": "2027-1",
@@ -878,7 +878,7 @@
   "ticker": "HIMS",
   "name": "힘스앤허스",
   "date": "2026-11-10",
-  "ts": 1794254400,
+  "ts": 1794258000,
   "est": false,
   "detail": {
    "prev": {
@@ -998,7 +998,7 @@
   "ticker": "RDW",
   "name": "레드와이어",
   "date": "2026-11-05",
-  "ts": 1793822400,
+  "ts": 1793826000,
   "est": false,
   "detail": {
    "prev": {
@@ -1123,7 +1123,7 @@
   "ticker": "IREN",
   "name": "아이렌",
   "date": "2026-11-06",
-  "ts": 1793908800,
+  "ts": 1793912400,
   "est": false,
   "detail": {
    "prev": {
@@ -1248,7 +1248,7 @@
   "ticker": "PLTR",
   "name": "팔란티어",
   "date": "2026-11-03",
-  "ts": 1793649600,
+  "ts": 1793653200,
   "est": false,
   "detail": {
    "prev": {
@@ -1373,7 +1373,7 @@
   "ticker": "RKLB",
   "name": "로켓랩",
   "date": "2026-11-10",
-  "ts": 1794254400,
+  "ts": 1794258000,
   "est": false,
   "detail": {
    "prev": {
