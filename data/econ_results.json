@@ -578,10 +578,10 @@
 "f2f9d593-a194-49f6-8eea-fec094f159bc": {
 "name": "ISM Manufacturing PMI",
 "dt": "2026-11-02T15:00:00Z",
-"act": null,
+"act": "55.5",
 "cons": "54.6",
 "prev": "54.5",
-"act_n": null,
+"act_n": 55.5,
 "cons_n": 54.6
 },
 "b3dc9f7b-c6f5-419d-aa17-f827b79f264c": {
@@ -742,7 +742,7 @@
 "dt": "2026-11-23T14:45:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "54.9",
 "act_n": null,
 "cons_n": null
 },
@@ -832,7 +832,7 @@
 "dt": "2026-12-01T15:00:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "55.5",
 "act_n": null,
 "cons_n": null
 },
