@@ -597,10 +597,10 @@
 "name": "ADP Employment Change",
 "dt": "2026-11-04T13:15:00Z",
 "act": null,
-"cons": "65K",
+"cons": "69K",
 "prev": "90K",
 "act_n": null,
-"cons_n": 65.0
+"cons_n": 69.0
 },
 "3c1033c6-6706-445b-bcaf-55e38dfbbe6f": {
 "name": "ISM Services PMI",
@@ -642,10 +642,10 @@
 "name": "Michigan Consumer Sentiment Index",
 "dt": "2026-11-06T15:00:00Z",
 "act": null,
-"cons": "48.2",
+"cons": "48",
 "prev": "48",
 "act_n": null,
-"cons_n": 48.2
+"cons_n": 48.0
 },
 "75a2fedb-a0e4-446b-94fb-726f952c0f8e": {
 "name": "Consumer Price Index (MoM)",
