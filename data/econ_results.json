@@ -605,10 +605,10 @@
 "3c1033c6-6706-445b-bcaf-55e38dfbbe6f": {
 "name": "ISM Services PMI",
 "dt": "2026-11-04T15:00:00Z",
-"act": null,
+"act": "54.5",
 "cons": "54.8",
 "prev": "54.9",
-"act_n": null,
+"act_n": 54.5,
 "cons_n": 54.8
 },
 "7300f597-d4d2-4360-832a-33657038e139": {
@@ -751,7 +751,7 @@
 "dt": "2026-11-23T14:45:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "56.1",
 "act_n": null,
 "cons_n": null
 },
@@ -859,7 +859,7 @@
 "dt": "2026-12-03T15:00:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "54.5",
 "act_n": null,
 "cons_n": null
 },
