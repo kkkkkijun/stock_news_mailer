@@ -1069,5 +1069,68 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"9f598e39-5cb7-4e2b-80eb-7161c3e7d67a": {
+"name": "BoJ Interest Rate Decision",
+"dt": "2026-12-18T03:00:00Z",
+"act": null,
+"cons": null,
+"prev": "1.25%",
+"act_n": null,
+"cons_n": null
+},
+"8d71c3a6-6d92-4675-a5fc-0661122f9c54": {
+"name": "BoJ Monetary Policy Statement",
+"dt": "2026-12-18T03:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"39c1b2a8-8eca-442c-80f4-c18ec32ac5aa": {
+"name": "BoJ Press Conference",
+"dt": "2026-12-18T06:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"bd94bae2-28e0-4140-8fc9-19bee4ac9692": {
+"name": "Core Personal Consumption Expenditures - Price Index (MoM)",
+"dt": "2026-12-18T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"8333849d-bc3a-4ad4-ba4f-53ce6a3ba79c": {
+"name": "Core Personal Consumption Expenditures - Price Index (YoY)",
+"dt": "2026-12-18T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"1d161402-f50b-4191-82f6-311755a0f8a1": {
+"name": "S&P Global Manufacturing PMI",
+"dt": "2026-12-18T14:45:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"25f3a260-7abe-480f-ba7e-709f2f19c9cc": {
+"name": "S&P Global Services PMI",
+"dt": "2026-12-18T14:45:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
