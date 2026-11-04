@@ -596,10 +596,10 @@
 "e2138b09-c406-415c-999d-36e58d770ae5": {
 "name": "ADP Employment Change",
 "dt": "2026-11-04T13:15:00Z",
-"act": null,
+"act": "86K",
 "cons": "69K",
-"prev": "90K",
-"act_n": null,
+"prev": "86K",
+"act_n": 86.0,
 "cons_n": 69.0
 },
 "3c1033c6-6706-445b-bcaf-55e38dfbbe6f": {
@@ -850,7 +850,7 @@
 "dt": "2026-12-02T13:15:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "86K",
 "act_n": null,
 "cons_n": null
 },
