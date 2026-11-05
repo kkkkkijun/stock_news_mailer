@@ -10,62 +10,71 @@
   "acc": "0001878848-26-000065",
   "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000065/irenreportsq1-fy27result.htm",
   "accept": "2026-11-05T21:03:11.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
-  "headline": "AI 클라우드 매출 증가, 순손실 확대",
-  "metrics": [
-   {
-    "k": "매출",
-    "v": "$228.0M",
-    "dir": "up"
-   },
-   {
-    "k": "순손실",
-    "v": "$263.0M",
-    "dir": "down"
-   },
-   {
-    "k": "AI 클라우드 매출",
-    "v": "$200.0M",
-    "dir": "up"
-   }
-  ],
-  "guidance": "",
-  "bullets": [
-   "AI 클라우드 매출이 전년 대비 182% 증가",
-   "비트코인 채굴 매출이 전분기 대비 감소",
-   "매출 백로그 22% 증가"
-  ],
+  "attempts": 1,
   "verdict": "beat",
   "cons": {
    "rev": {
     "act": 228.0,
     "est": 221.71,
     "pct": 2.8
-   },
-   "eps": {
-    "act": -0.67,
-    "est": -0.67,
-    "diff": 0.0
    }
   },
-  "cons_text": "매출 $228.0M vs 예상 $221.7M (+2.8%) · EPS $-0.67 vs 예상 $-0.67 (부합)",
+  "cons_text": "매출 $228.0M vs 예상 $221.7M (+2.8%)",
   "move": {
-   "pct": 11.54,
+   "pct": 3.77,
    "base": 18.030000686645508,
-   "last": 20.11,
+   "last": 18.71,
    "label": "발표 직후 시간외",
    "final": false,
-   "text": "발표 직후 시간외 +11.5% ($18.03 → $20.11, 진행 중)"
+   "text": "발표 직후 시간외 +3.8% ($18.03 → $18.71, 진행 중)"
   },
   "check": {
    "ok": false,
-   "issues": [
-    "보고서의 '순손실 확대' 표현이 틀렸고, 원문은 '순손실 개선'이라고 밝혔음.",
-    "'AI 클라우드 매출이 전년 대비 182% 증가'는 기준이 전년 대비가 아닌 '전분기 대비'로 표현되어야 맞음.",
-    "'비트코인 채굴 매출이 전분기 대비 감소'라는 표현은 원문에 명시된 적이 없으며, 주가와 인과관계가 없는 주장임."
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 6개, 원문 불일치 6개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "6개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 5개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": false,
+     "note": "지적 2건"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 3개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": false,
+     "note": "지적 2건"
+    }
    ],
-   "by": "auto"
+   "issues": [
+    "[최종 점검·작성] 이번 분기의 순손실은 $-263M이었다. — 원문에 따르면 전년 동기와 비교할 때 손실이 감소하였으며, 원문과 정반대의 주장을 하고 있습니다. (원문: Net income (loss) (263) (684))",
+    "[최종 점검·작성] 이번 분기의 희석 주당순이익 (GAAP)은 $-263M이다. — 보고서에서 언급한 수치는 원문에 나타난 EPS와 일치하지 않습니다. (원문: Adjusted EBITDA 66 19)"
+   ]
   }
  },
  {
@@ -149,37 +158,13 @@
   "acc": "0000320193-26-000024",
   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/a8-kex991q4202609262026.htm",
   "accept": "2026-11-02T21:30:23.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$2.10",
   "eps_est": "$1.99",
   "surprise": "+5.75%",
   "surprise_pos": true,
-  "headline": "애플, 사상 최고 매출 기록 달성에도 주가 하락",
-  "metrics": [
-   {
-    "k": "매출",
-    "v": "$114.5B",
-    "dir": "up"
-   },
-   {
-    "k": "EPS",
-    "v": "$2.10",
-    "dir": "up"
-   },
-   {
-    "k": "주가",
-    "v": "$331.90",
-    "dir": "down"
-   }
-  ],
-  "guidance": "",
-  "bullets": [
-   "총 매출 $114.5B, 전년 대비 12% 증가",
-   "서비스 매출 사상 최고 기록 달성",
-   "매출 증가에도 불구, 발표 다음 거래일 주가 -1.9% 하락",
-   "희석 EPS $2.10, 전년 대비 14% 증가"
-  ],
   "verdict": "beat",
   "cons": {
    "eps": {
@@ -199,11 +184,48 @@
   },
   "check": {
    "ok": false,
-   "issues": [
-    "주가는 발표 후 감소했으나 보고서에서 '매출 증가에도 불구'라는 표현은 약간의 혼란을 줄 수 있다. 원문은 주가 하락에 대한 구체적 설명이 없다.",
-    "보고서의 '매출 증가에도 불구'는 원문에서 주가 하락의 직접적 원인으로 언급되지 않았기 때문에 근거 없는 인과이다."
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 4개, 원문 불일치 4개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "4개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 5개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": false,
+     "note": "지적 3건"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 4개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": false,
+     "note": "지적 1건(원문 근거 없는 지적 2건 제외)"
+    }
    ],
-   "by": "auto"
+   "issues": [
+    "[최종 점검·작성] 일회성 항목에는 주당 $0.27의 현금 배당금이 포함되었다. — 일회성 항목으로서 제시된 현금 배당금의 수치가 원문과 일치하지 않음으로 인해, 정보의 정확성을 해칠 우려가 있음. (원문: Apple’s board of directors has declared a cash dividend of $0.27 per share of th)"
+   ]
   }
  },
  {
@@ -217,30 +239,30 @@
   "acc": "0001321655-26-000045",
   "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm",
   "accept": "2026-11-02T21:06:48.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$0.44",
   "eps_est": "$0.41",
   "surprise": "+8.41%",
   "surprise_pos": true,
-  "headline": "사상 최고 매출 기록, 예상 상회",
+  "headline": "Palantir, 3분기 매출 96% 증가",
   "metrics": [
    {
     "k": "매출",
-    "v": "$2.313B",
+    "v": "",
     "dir": "up"
    },
    {
     "k": "EPS",
     "v": "$0.44",
-    "dir": "up"
+    "dir": ""
    }
   ],
-  "guidance": "올해 매출 가이던스 상향",
+  "guidance": "2026 회계연도 매출을 $8.530 - $8.534B로 상향 조정했습니다.",
   "bullets": [
-   "U.S. 상업 매출이 처음으로 정부 매출을 초과",
-   "U.S. 총 매출이 전년 대비 119% 증가",
-   "3분기 동안 $1.5B 이상의 계약 체결"
+   "3분기 매출은 전년 대비 96% 성장했습니다.",
+   "미국 상업 매출은 전년 대비 148% 증가했습니다."
   ],
   "verdict": "beat",
   "cons": {
@@ -260,13 +282,35 @@
    "text": "발표 다음 거래일(11/3) 종가 -1.6% ($178.34 → $175.40)"
   },
   "check": {
-   "ok": false,
-   "issues": [
-    "보고서의 '사상 최고 매출 기록, 예상 상회'라는 표현은 주가가 하락했음에도 불구하고 '예상 상회'로 서술했는데, 발표 후 주가는 -1.6% 하락한 결과이다.",
-    "보고서가 'U.S. 총 매출이 전년 대비 119% 증가'라고 했으나 이는 '3분기 동안' 성과를 강조한 원문과 다르게 설명하고 있다.",
-    "보고서가 '올해 매출 가이던스 상향'이라고 언급했으나, 이는 원문에서 FY 2026 매출 가이던스를 상향한다고 했고, 전년 대비(상반기 대비가 아님)에 대한 언급이 부족하다."
+   "ok": true,
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 7개, 원문 불일치 2개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "7개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 6개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": true,
+     "note": "지적 0건"
+    }
    ],
-   "by": "auto"
+   "issues": []
   }
  },
  {
@@ -280,42 +324,13 @@
   "acc": "0001018724-26-000038",
   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
   "accept": "2026-10-29T20:05:27.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$1.89",
   "eps_est": "$1.96",
   "surprise": "-3.47%",
   "surprise_pos": false,
-  "headline": "사상 최고 마진, EPS 예상 하회",
-  "metrics": [
-   {
-    "k": "순매출",
-    "v": "$201.9B",
-    "dir": "up"
-   },
-   {
-    "k": "영업 소득",
-    "v": "$28.1B",
-    "dir": "up"
-   },
-   {
-    "k": "순이익",
-    "v": "$20.7B",
-    "dir": "down"
-   },
-   {
-    "k": "EPS",
-    "v": "$1.89",
-    "dir": "down"
-   }
-  ],
-  "guidance": "",
-  "bullets": [
-   "영업 마진 13.9%로 사상 최고 기록",
-   "AWS 매출 39.3% 증가",
-   "EPS $1.96 예상 하회",
-   "자산 투자로 자유현금흐름 $42.4B 유출"
-  ],
   "verdict": "miss",
   "cons": {
    "eps": {
@@ -335,11 +350,24 @@
   },
   "check": {
    "ok": false,
-   "issues": [
-    "보고서에서는 'EPS $1.96 예상 하회'라고 하지만, 발표문에서는 EPS가 실제 $1.89로 예상 $1.96보다 낮다고 언급하고 있어 비교 기준 오류가 있다.",
-    "보고서에서 '자유현금흐름 $42.4B 유출'이라고 하지만 이는 순손실이 아니라 자유 현금 흐름 감소를 의미하며, 원문에서는 '유출'이 아닌 '자유현금흐름 감소'라고 명시되어 있어 표현이 잘못되었다."
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 8개, 원문 불일치 3개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": false,
+     "note": "8개 번역"
+    }
    ],
-   "by": "auto"
+   "issues": [
+    "[번역] F10: 영문에 없는 수치 12"
+   ]
   }
  },
  {
@@ -353,42 +381,13 @@
   "acc": "0001193125-26-436122",
   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm",
   "accept": "2026-10-28T20:04:44.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$4.89",
   "eps_est": "$4.72",
   "surprise": "+3.59%",
   "surprise_pos": true,
-  "headline": "1분기 실적, 매출 19% 증가 정보공개",
-  "metrics": [
-   {
-    "k": "매출",
-    "v": "$92.3B",
-    "dir": "up"
-   },
-   {
-    "k": "영업이익",
-    "v": "$45.9B",
-    "dir": "up"
-   },
-   {
-    "k": "순이익",
-    "v": "$36.6B",
-    "dir": "up"
-   },
-   {
-    "k": "희석 EPS",
-    "v": "$4.89",
-    "dir": "up"
-   }
-  ],
-  "guidance": "",
-  "bullets": [
-   "순이익 전년 대비 32% 증가",
-   "EPS 전년 대비 32% 증가",
-   "클라우드 매출 30% 증가",
-   "주가는 발표 다음 거래일 소폭 하락"
-  ],
   "verdict": "beat",
   "cons": {
    "eps": {
@@ -407,9 +406,31 @@
    "text": "발표 다음 거래일(10/29) 종가 -0.2% ($531.01 → $530.14)"
   },
   "check": {
-   "ok": true,
-   "issues": [],
-   "by": "auto"
+   "ok": false,
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 7개, 원문 불일치 1개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "7개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": false,
+     "note": "항목 7개"
+    }
+   ],
+   "issues": [
+    "[작성] 핵심 사실 F6 누락: Microsoft provided forward-looking guidance in connection wi"
+   ]
   }
  },
  {
@@ -423,13 +444,14 @@
   "acc": "0001652044-26-000080",
   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
   "accept": "2026-10-28T20:01:33.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$2.12",
   "eps_est": "$3.01",
   "surprise": "-29.52%",
   "surprise_pos": false,
-  "headline": "AI 투자로 매출 증가했지만 EPS 예상 하회",
+  "headline": "Alphabet 3분기 매출 25% 증가, EPS 하락",
   "metrics": [
    {
     "k": "매출",
@@ -444,10 +466,9 @@
   ],
   "guidance": "",
   "bullets": [
-   "매출 25% 증가, 13분기 연속 10% 이상 성장",
-   "Google Cloud 매출 103% 증가",
-   "순이익 $26.2B, EPS $2.12로 시장 예상 하회 ($3.01)",
-   "발표 다음 거래일 주가 -12.6%"
+   "통합된 Alphabet 매출이 25% 증가한 $127.6B에 달했습니다.",
+   "공동 주주에게 배당 가능한 순이익은 $26.2B입니다.",
+   "$8.7B의 주식 관련 손실로 인해 일반 주식당 희석 순이익이 감소했습니다."
   ],
   "verdict": "miss",
   "cons": {
@@ -467,11 +488,47 @@
    "text": "발표 다음 거래일(10/29) 종가 -12.6% ($324.89 → $283.82)"
   },
   "check": {
-   "ok": false,
-   "issues": [
-    "보고서의 'EPS 예상 하회' 표현은 실제 EPS가 $2.12로 확정되었으나 전년 대비 감소된 것을 반영하지 않아 틀렸고 원문에서는 'Net income available to common stockholders was $26.2 billion and EPS was $2.12'라고 명시되어 있다."
+   "ok": true,
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 5개, 원문 불일치 2개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "5개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 7개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": false,
+     "note": "지적 1건"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 6개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": true,
+     "note": "지적 0건"
+    }
    ],
-   "by": "auto"
+   "issues": []
   }
  },
  {
@@ -485,32 +542,13 @@
   "acc": "0001628280-26-066700",
   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
   "accept": "2026-10-21T20:03:35.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$3.83",
   "eps_est": "$5.42",
   "surprise": "-29.33%",
   "surprise_pos": false,
-  "headline": "3분기 실적, 매출 증가와 EPS 개선",
-  "metrics": [
-   {
-    "k": "매출",
-    "v": "$64.60B",
-    "dir": "up"
-   },
-   {
-    "k": "EPS",
-    "v": "$3.83",
-    "dir": "up"
-   }
-  ],
-  "guidance": "하향 조정되지 않았음",
-  "bullets": [
-   "비용은 $51.61B로 68% 증가",
-   "핵심 비즈니스 강세",
-   "Reality Labs 손실은 2025년에 비해 감소할 것 예상",
-   "발표 다음 거래일 주가는 -7.0% 하락"
-  ],
   "verdict": "miss",
   "cons": {
    "eps": {
@@ -530,12 +568,49 @@
   },
   "check": {
    "ok": false,
-   "issues": [
-    "보고서의 'EPS 개선' 표현이 틀렸고 원문은 'EPS $3.83'이다.",
-    "보고서의 '하향 조정되지 않았음'이 틀렸고 원문에서 비용 outlook은 '업데이트 되었다'고 명시되어 있다.",
-    "보고서의 '핵심 비즈니스 강세' 표현이 근거가 부족하고 원문에서는 강세를 언급했지만 전체 맥락에서 손실 증가와 관련된 유의미한 정보가 있다."
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 7개, 원문 불일치 3개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "7개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 4개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": false,
+     "note": "지적 1건"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 6개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": false,
+     "note": "지적 2건"
+    }
    ],
-   "by": "auto"
+   "issues": [
+    "[최종 점검·작성] 2026년 3분기 비용 및 경비에는 일회성 비용 $9.89B가 포함되었다 — 비용 및 경비에 포함된 일회성 항목에 대한 언급이 원문과 다름 (원문: Third quarter 2026 costs and expenses includes a $9.89 billion charge related to)",
+    "[최종 점검·작성] 2026년 3분기 운영 마진은 20%로, 전년 동기 40%에서 감소하였다 — 운영 마진 감소의 언급이 원문과 반대 방향으로 기술됨 (원문: Operating margin 20 % 40 %)"
+   ]
   }
  },
  {
@@ -549,31 +624,35 @@
   "acc": "0001628280-26-066738",
   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm",
   "accept": "2026-10-21T20:41:42.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$0.48",
   "eps_est": "$0.45",
   "surprise": "+6.40%",
   "surprise_pos": true,
-  "headline": "테슬라, 매출 감소와 손익 개선 동시에 발생",
+  "headline": "3분기 두 번째 TTM 매출 $100B 초과 달성",
   "metrics": [
    {
-    "k": "순이익",
-    "v": "$0.48",
+    "k": "매출",
+    "v": "$100B",
     "dir": "up"
    },
    {
-    "k": "전년 대비 총 매출",
-    "v": "$28,046M",
-    "dir": "down"
+    "k": "영업 현금 흐름",
+    "v": "$6.3B",
+    "dir": ""
+   },
+   {
+    "k": "자유 현금 흐름",
+    "v": "$1.5B",
+    "dir": ""
    }
   ],
   "guidance": "",
   "bullets": [
-   "테슬라는 100억 달러 이상의 매출을 연속으로 기록함.",
-   "배터리 가용성이 자동차 생산 증가를 제한하는 요소로 작용.",
-   "신차 사이버택시를 오스틴에서 출시함.",
-   "에너지 저장 사업의 강한 수요를 지속적으로 기록함."
+   "우리는 사업을 관리하여 강력한 대차대조표를 보장하겠습니다.",
+   "제품 로드맵 및 장기 용량 확장 계획을 지원할 수 있는 충분한 유동성을 유지하겠습니다."
   ],
   "verdict": "beat",
   "cons": {
@@ -593,11 +672,35 @@
    "text": "발표 다음 거래일(10/22) 종가 -3.1% ($386.47 → $374.58)"
   },
   "check": {
-   "ok": false,
-   "issues": [
-    "보고서의 '매출 감소' 표현은 원문과 상반되며 원문에서는 '지난 2분기 연속 100억 달러 이상의 매출을 기록함'이라고 언급되어 있다."
+   "ok": true,
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 10개, 원문 불일치 1개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "10개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 6개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": true,
+     "note": "지적 0건"
+    }
    ],
-   "by": "auto"
+   "issues": []
   }
  },
  {
@@ -611,31 +714,13 @@
   "acc": "0001045810-26-000073",
   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm",
   "accept": "2026-08-26T20:21:19.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$2.22",
   "eps_est": "$2.09",
   "surprise": "+6.16%",
   "surprise_pos": true,
-  "headline": "AI 인프라 확대, 매출 전년 대비 106% 증가",
-  "metrics": [
-   {
-    "k": "매출",
-    "v": "$96,221M",
-    "dir": "up"
-   },
-   {
-    "k": "희석 EPS",
-    "v": "$2.22",
-    "dir": "up"
-   }
-  ],
-  "guidance": "3분기 매출 $108.0B 예상",
-  "bullets": [
-   "매출 전년 대비 106% 증가",
-   "AI 인프라 구축 가속화",
-   "주주에게 $26.0B 환원"
-  ],
   "verdict": "beat",
   "cons": {
    "eps": {
@@ -655,10 +740,50 @@
   },
   "check": {
    "ok": false,
-   "issues": [
-    "보고서의 '주주에게 $26.0B 환원'은 원문에서 강조된 핵심 성과가 아니며, 원문은 'AI has reached its inflection point.'과 같은 더 나은 표현이기 때문에 보고서의 표현은 불충분하다."
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 5개, 원문 불일치 2개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "5개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 6개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": false,
+     "note": "지적 3건"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 4개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": false,
+     "note": "지적 3건"
+    }
    ],
-   "by": "auto"
+   "issues": [
+    "[최종 점검·작성] 매출 $96.2B으로 증가했다. — 원문에서 제시된 매출 증가폭이 106%로 다른 수치 제공 (원문: • Revenue of $96.2 billion, up 106% from a year ago)",
+    "[최종 점검·작성] 매출 $108.0B ±2% 유지 — 가이던스에 대한 제시가 유지가 아닌 상향 조정 (원문: • Revenue is expected to be $108.0 billion, plus or minus 2%.)",
+    "[최종 점검·작성] 데이터 센터 매출은 $89.0B으로 증가했다. — 원문에서 데이터 센터 매출 증가폭이 117%로 다름 (원문: • Data Center revenue of $89.0 billion, up 117% from a year ago)"
+   ]
   }
  },
  {
@@ -672,41 +797,16 @@
   "acc": "0001773751-26-000161",
   "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000161/hims-20260630x8xkearningsr.htm",
   "accept": "2026-08-10T20:08:59.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$-0.37",
   "eps_est": "$-0.05",
   "surprise": "-640.00%",
   "surprise_pos": false,
-  "headline": "2Q 매출 38% 증가, 순손실 확대",
-  "metrics": [
-   {
-    "k": "매출",
-    "v": "$753.2M",
-    "dir": "up"
-   },
-   {
-    "k": "순손실",
-    "v": "$86.3M",
-    "dir": "악화"
-   }
-  ],
-  "guidance": "2026년 매출 전망 상향",
-  "bullets": [
-   "구독자 수 2.9백만명으로 19% 증가",
-   "조정 EBITDA $60.3M",
-   "국내 매출 성장률 16%",
-   "국제 사업 17배 성장"
-  ],
-  "verdict": "miss",
-  "cons": {
-   "eps": {
-    "act": -0.37,
-    "est": -0.05,
-    "diff": -0.32
-   }
-  },
-  "cons_text": "EPS $-0.37 vs 예상 $-0.05 (하회)",
+  "verdict": "",
+  "cons": {},
+  "cons_text": "",
   "move": {
    "pct": -3.97,
    "base": 31.770000457763672,
@@ -717,10 +817,19 @@
   },
   "check": {
    "ok": false,
-   "issues": [
-    "보고서에서 '순손실 확대'라고 했지만 원문은 '순손실'이 $86.3M이라는 점 외에 증가 방향에 대한 언급이 없으므로 명확한 판단이 필요하다."
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": false,
+     "note": "사실 1개, 원문 불일치 6개 제외"
+    }
    ],
-   "by": "auto"
+   "issues": [
+    "[요약] 원문과 일치하는 사실이 1개뿐 — quote를 원문에서 그대로 복사할 것",
+    "[요약] 핵심(key) 사실이 없음 — 매출·EPS·가이던스·제목 강조 항목을 key로 표시할 것"
+   ]
   }
  },
  {
@@ -734,13 +843,14 @@
   "acc": "0001819994-26-000061",
   "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000061/rklb-08102026ex991.htm",
   "accept": "2026-08-10T20:08:45.000Z",
-  "gen": 3,
+  "gen": 4,
   "model": "gpt-4o-mini",
+  "attempts": 1,
   "eps_act": "$-0.08",
   "eps_est": "$-0.08",
   "surprise": "-4.34%",
   "surprise_pos": false,
-  "headline": "사상 최고 매출, EPS 예상과 동일",
+  "headline": "로켓랩, 2분기 매출 62% 증가 및 EPS ($0.08) 기록",
   "metrics": [
    {
     "k": "매출",
@@ -748,17 +858,14 @@
     "dir": "up"
    },
    {
-    "k": "백로그",
-    "v": "$2.36B",
-    "dir": "up"
+    "k": "EPS",
+    "v": "$-0.08",
+    "dir": ""
    }
   ],
-  "guidance": "Q3 2026 예상 매출 $250M~$265M",
+  "guidance": "2026년 3분기 매출 $250.0M에서 $265.0M 예상",
   "bullets": [
-   "Q2 매출 62% 전년 대비 증가",
-   "백로그 137% 전년 대비 증가",
-   "$437M 신규 계약 체결",
-   "$397M 계약으로 위성 4대 발사 예정"
+   "2026년 2분기 수주 잔고가 $2.36B으로 증가했습니다."
   ],
   "verdict": "inline",
   "cons": {
@@ -778,11 +885,47 @@
    "text": "발표 다음 거래일(8/11) 종가 -0.0% ($80.04 → $80.01)"
   },
   "check": {
-   "ok": false,
-   "issues": [
-    "보고서에서 '매출, 백로그 증가'라고 표현했지만, 원문에서는 'Q2 2026 saw our backlog grow to $2.36 billion – another record – which, combined with new deals in the period since, equates to more than $1 billion 1 in new contracts across launch and space systems already entered into in Q3.'라고 하며 특히 매출 증가에 대해서는 'driven by surging demand across all areas of our business.'라고 기술하고 있어 주가 하락을 포함한 언급이 없으므로 '이 때문에 주가 하락' 등의 주장은 근거가 없으며 잘못된 해석이다."
+   "ok": true,
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 7개, 원문 불일치 1개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "7개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 7개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": false,
+     "note": "지적 2건"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 5개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": true,
+     "note": "지적 0건"
+    }
    ],
-   "by": "auto"
+   "issues": []
   }
  }
 ]
