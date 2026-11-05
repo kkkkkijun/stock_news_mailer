@@ -96,6 +96,10 @@ def gate_summary(out: dict[str, Any], source: str) -> tuple[list[dict[str, Any]]
         retry.append(f"원문과 일치하는 사실이 {len(kept)}개뿐 — quote를 원문에서 그대로 복사할 것")
     if not any(f["key"] for f in kept):
         retry.append("핵심(key) 사실이 없음 — 매출·EPS·가이던스·제목 강조 항목을 key로 표시할 것")
+    topics = {f["topic"] for f in kept}
+    for tp, label in (("revenue", "이번 분기 매출"), ("eps", "이번 분기 희석 EPS")):
+        if tp not in topics and re.search(r"revenue" if tp == "revenue" else r"per share|EPS", source, re.I):
+            retry.append(f"{label} 사실(topic={tp})이 없음 — 원문(표 포함)에서 이번 분기 값을 인용해 넣을 것")
     return kept, dropped, retry
 
 
@@ -179,15 +183,40 @@ def _items(out: dict[str, Any]) -> list[tuple[str, str, list[str], dict[str, Any
     return items
 
 
-def gate_report(out, facts, ko, cons_text) -> list[str]:
+def _metric_mismatch(met: dict[str, Any], actual: dict[str, Any]) -> str:
+    """매출·EPS 지표 값이 요약 단계가 뽑은 이번 분기 실제치와 다른지(TTM·연간 값을 분기 매출로 쓰는 실수 방지)."""
+    from report_check import eps_num, money_m
+    k, v = str(met.get("k") or ""), str(met.get("v") or "")
+    if re.fullmatch(r"\s*(총\s*)?매출(액)?\s*", k) and actual.get("revenue_musd") is not None:
+        got, want = money_m(v), float(actual["revenue_musd"])
+        if got is None or abs(abs(got) - abs(want)) > max(0.6, 0.006 * abs(want)):
+            return f"매출 지표 {v}가 이번 분기 매출 ${want:,.1f}M과 다름(누적·연간 값이면 지표 이름에 밝힐 것)"
+    if re.search(r"EPS|주당순이익", k) and actual.get("eps") is not None and "조정" not in k:
+        got = eps_num(v)
+        if got is None or abs(got - float(actual["eps"])) > 0.0051:
+            return f"EPS 지표 {v}가 이번 분기 희석 EPS {actual['eps']}와 다름"
+    return ""
+
+
+def gate_report(out, facts, ko, cons_text, actual=None) -> list[str]:
     by_id = {f["id"]: f for f in facts}
     issues, cited = [], set()
+    if len([b for b in out.get("bullets") or [] if (b.get("text") if isinstance(b, dict) else b)]) < 3:
+        issues.append("bullets가 3개 미만 — 핵심 사실로 3~4개 작성할 것")
     for where, text, src, met in _items(out):
         if not text.strip():
             issues.append(f"{where}: 비어 있음")
             continue
         if re.search(r"주가", text):
             issues.append(f"{where} '{text[:30]}': 주가는 쓰지 말 것")
+        if re.search(r"우리|당사", text):
+            issues.append(f"{where} '{text[:30]}': 회사 입장 문장(우리·당사)을 옮기지 말고 사실만 쓸 것")
+        if met is not None:
+            if not re.search(r"\d", str(met.get("v") or "")):
+                issues.append(f"{where}: 값(v)이 비어 있거나 숫자가 없음")
+            mm = _metric_mismatch(met, actual or {})
+            if mm:
+                issues.append(f"{where}: {mm}")
         refs = [s for s in src if s in by_id or (s == "C1" and cons_text)]
         if not refs:
             issues.append(f"{where} '{text[:30]}': 근거 사실 id(src)가 없거나 목록에 없음")
@@ -265,6 +294,7 @@ def run_pipeline(client, model: str, name: str, sym: str, qlabel: str, source: s
     cmp: dict[str, Any] = {}
     cons_text = ""
     report: dict[str, Any] = {}
+    actual: dict[str, Any] = {}
     issues: list[str] = []
     rnd = 0
     for rnd in range(1, MAX_ROUNDS + 1):
@@ -280,7 +310,8 @@ def run_pipeline(client, model: str, name: str, sym: str, qlabel: str, source: s
                 if retry:
                     issues = [f"[요약] {x}" for x in retry]
                     break
-                cmp, cons_text = cons_fn(s.get("actual") or {})
+                actual = s.get("actual") or {}
+                cmp, cons_text = cons_fn(actual)
             if start in ("요약", "번역"):
                 t = translate(client, model, facts, notes.get("번역"))
                 ko, tiss = gate_translation(facts, t)
@@ -292,10 +323,10 @@ def run_pipeline(client, model: str, name: str, sym: str, qlabel: str, source: s
                     issues = [f"[번역] {x}" for x in tiss]
                     break
             w = write(client, model, name, sym, qlabel, facts, ko, cons_text, notes.get("작성"))
-            wiss = gate_report(w, facts, ko, cons_text)
+            wiss = gate_report(w, facts, ko, cons_text, actual)
             if wiss:
                 w = write(client, model, name, sym, qlabel, facts, ko, cons_text, wiss)
-                wiss = gate_report(w, facts, ko, cons_text)
+                wiss = gate_report(w, facts, ko, cons_text, actual)
             stages.append({"stage": "작성", "round": rnd, "ok": not wiss, "note": f"항목 {len(_items(w))}개"})
             if wiss:
                 issues = [f"[작성] {x}" for x in wiss]

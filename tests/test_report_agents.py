@@ -25,18 +25,22 @@ FACTS = {"facts": [
      "quote": "Net Loss improved by $18.0 million year-over-year to $(23.2) million"},
     {"id": "F4", "topic": "guidance", "key": True, "text": "Full year 2026 revenue guidance of $450 million to $500 million reaffirmed.",
      "quote": "reaffirms full year 2026 revenues of $450 million to $500 million"},
+    {"id": "F6", "topic": "eps", "key": True, "text": "Diluted EPS improved by $0.20 year-over-year to $(0.09).",
+     "quote": "Diluted EPS improved by $0.20 per share year-over-year to $(0.09) per share"},
     {"id": "F5", "topic": "other", "key": False, "text": "Backlog grew to $700.0 million.",       # 원문에 없는 인용
      "quote": "Backlog grew to a record $700.0 million"}],
     "actual": {"revenue_musd": 109.0, "eps": -0.09}}
 KO_OK = {"facts": [{"id": "F1", "ko": "매출은 전년 대비 5.4% 증가한 $109.0M."},
                    {"id": "F2", "ko": "매출총이익률 사상 최고 32.3%(전년 16.3%)."},
                    {"id": "F3", "ko": "순손실은 전년 대비 $18.0M 축소된 $-23.2M."},
-                   {"id": "F4", "ko": "2026년 연간 매출 가이던스 $450M~$500M 유지(재확인)."}]}
+                   {"id": "F4", "ko": "2026년 연간 매출 가이던스 $450M~$500M 유지(재확인)."},
+                   {"id": "F6", "ko": "희석 EPS는 전년 대비 $0.20 개선된 $-0.09."}]}
 KO_BAD = {"facts": [dict(x) for x in KO_OK["facts"]]}
 KO_BAD["facts"][2]["ko"] = "순손실은 $-23.2M로 $18.0M 증가."
 REPORT = {"headline": {"text": "레드와이어, 사상 최고 마진·적자 축소·가이던스 유지", "src": ["F2", "F3", "F4"]},
           "metrics": [{"k": "매출", "v": "$109.0M", "dir": "up", "src": ["F1"]},
-                      {"k": "순손실", "v": "$-23.2M", "dir": "up", "src": ["F3"]}],
+                      {"k": "순손실", "v": "$-23.2M", "dir": "up", "src": ["F3"]},
+                      {"k": "EPS", "v": "$-0.09", "dir": "up", "src": ["F6"]}],
           "guidance": {"text": "2026년 매출 $450M~$500M 유지", "src": ["F4"]},
           "bullets": [{"text": "매출 $109.0M, 전년 대비 5.4% 증가.", "src": ["F1"]},
                       {"text": "매출총이익률 사상 최고 32.3%.", "src": ["F2"]},
@@ -93,12 +97,12 @@ def test_write_gate_requires_sources_and_key_facts():
     no_guid = json.loads(json.dumps(REPORT))
     no_guid["guidance"] = {"text": "", "src": []}
     no_guid["headline"]["src"] = ["F2", "F3"]
-    issues = A.gate_report(no_guid, [dict(f) for f in FACTS["facts"][:4]], {x["id"]: x["ko"] for x in KO_OK["facts"]}, "")
+    issues = A.gate_report(no_guid, [dict(f) for f in FACTS["facts"][:5]], {x["id"]: x["ko"] for x in KO_OK["facts"]}, "")
     assert any("핵심 사실 F4 누락" in i for i in issues)
     assert any("근거 사실 id" in i for i in issues)                     # C1 인용인데 예상 대비 문구 없음
     fake = json.loads(json.dumps(REPORT))
     fake["bullets"][0]["text"] = "매출 $119.0M, 전년 대비 5.4% 증가."
-    assert any("119.0" in i for i in A.gate_report(fake, [dict(f) for f in FACTS["facts"][:4]],
+    assert any("119.0" in i for i in A.gate_report(fake, [dict(f) for f in FACTS["facts"][:5]],
                                                      {x["id"]: x["ko"] for x in KO_OK["facts"]}, "x 13.9%"))
 
 
@@ -110,6 +114,17 @@ def test_final_check_with_real_evidence_sends_back_then_holds():
     assert r["ok"] is False and r["rounds"] == A.MAX_ROUNDS
     assert [x["stage"] for x in r["stages"]] == ["요약", "번역", "작성", "최종 점검", "작성", "최종 점검"]
     assert "EPS 개선 누락" in [p for p in c.prompts if "3단계" in p][1]   # 두 번째 작성에 지적이 전달됨
+
+
+def test_write_gate_rejects_ttm_revenue_empty_metric_and_company_voice():
+    bad = json.loads(json.dumps(REPORT))
+    bad["metrics"][0]["v"] = "$100B"                                    # TTM 매출을 분기 매출처럼
+    bad["metrics"].append({"k": "영업이익", "v": "", "dir": "", "src": ["F1"]})
+    bad["bullets"][1]["text"] = "우리는 강력한 대차대조표를 유지하겠습니다."
+    iss = A.gate_report(bad, [dict(f) for f in FACTS["facts"][:5]], {x["id"]: x["ko"] for x in KO_OK["facts"]},
+                        "x 13.9%", {"revenue_musd": 109.0, "eps": -0.09})
+    assert any("이번 분기 매출 $109.0M과 다름" in i for i in iss)
+    assert any("값(v)이 비어" in i for i in iss) and any("우리·당사" in i for i in iss)
 
 
 def _er():
