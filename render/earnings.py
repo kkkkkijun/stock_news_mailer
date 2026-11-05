@@ -34,15 +34,30 @@ def _report_card_html(r, open_=False):
     bullets = "".join(f'<div class="rep-b"><span>•</span><span>{_hl(b)}</span></div>'
                       for b in (r.get("bullets") or []))
     title = f'<div class="rep-hd">{_e(r.get("title",""))}</div>'
+    # 예상 대비(코드 계산) · 발표 후 주가(접수 시각 기준) · 원문 대조 결과 — 생성 규칙 2(gen) 이후 보고서만
+    cons = (f'<div class="rep-x"><b>예상 대비</b>{_e(r["cons_text"])}</div>' if r.get("cons_text") else "")
+    mv = r.get("move") or {}
+    move = (f'<div class="rep-x"><b>주가</b><span class="{"up" if mv.get("pct", 0) >= 0 else "dn"}">'
+            f'{_e(mv.get("text", ""))}</span></div>' if mv.get("text") else "")
+    chk = r.get("check") or {}
+    if chk.get("ok") is True:
+        badge_chk = "원문 대조 통과" + (" (수동 검수)" if chk.get("by") == "manual" else "")
+        issues = ""
+    elif chk.get("ok") is False:
+        badge_chk = f'⚠ 원문 대조 확인 필요 {len(chk.get("issues") or [])}건'
+        issues = ('<div class="rep-issues"><b>원문과 다를 수 있는 부분</b>'
+                  + "".join(f'<div>· {_e(i)}</div>' for i in chk.get("issues") or []) + '</div>')
+    else:
+        badge_chk, issues = "원문 대조 전(예전 규칙)", ""
     foot = ('<div class="rep-foot">'
             f'<a href="{_e(r.get("url",""))}" target="_blank" rel="noopener">🔗 SEC 8-K 원문</a>'
-            '<span>AI 요약 · 참고용</span></div>')
+            f'<span class="{"" if chk.get("ok") is not False else "rep-warn"}">AI 요약 · {badge_chk}</span></div>')
     newb = '<span class="ev-new">NEW</span>' if open_ else ''
     header = (f'<div class="rep-head">{badge}'
               f'<span class="rep-name">{_e(r.get("name",""))} · {_e(r.get("quarter",""))}{newb}</span>'
               f'{verdict}<span class="rep-arrow">▾</span></div>')
-    body = (f'<div class="rep-body">{title}{ms}{guide}'
-            f'<div class="rep-bs">{bullets}</div>{foot}</div>')
+    body = (f'<div class="rep-body">{title}{cons}{move}{ms}{guide}'
+            f'<div class="rep-bs">{bullets}</div>{issues}{foot}</div>')
     return f'<div class="rep-item{" open" if open_ else ""}">{header}{body}</div>'
 
 

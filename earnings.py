@@ -2,7 +2,7 @@
 """Yahoo 실적 일정·컨센서스 수집(data/earnings.json)과 SEC 8-K 기반 실적 리포트 생성(data/reports.json).
 
 입력: Yahoo quoteSummary(calendarEvents/earnings/earningsTrend/earningsHistory/financialData/recommendationTrend),
-      sec._sec_8k_press(8-K 보도자료), quotes.fetch_quote(주가 반응), newsfeed.fetch_news_articles(관련 뉴스)
+      sec._sec_8k_press(8-K 보도자료·접수 시각), Yahoo chart(발표 전후 주가), newsfeed.fetch_news_articles(관련 뉴스)
 출력: data/earnings.json(실적 일정·컨센서스), data/reports.json(8-K 기반 AI 한글 요약)
 실행: 별도 실행 없음 — main.py가 import해서 사용
 관련: settings.py, sec.py, quotes.py, llm.py, newsfeed.py, netutil.py, main.py
@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import logging
 import os
+import re
 import time
 from datetime import datetime
 from typing import Any
@@ -18,7 +19,7 @@ from typing import Any
 import netutil
 from settings import EARNINGS_TICKERS, _EARN_KO, KST, SUMMARY_MODEL
 from sec import _sec_8k_press, _report_kdate
-from quotes import _QUOTE_UA, fetch_quote
+from quotes import _QUOTE_UA
 from llm import get_openai_client
 from newsfeed import fetch_news_articles
 
@@ -283,48 +284,86 @@ def _period_qend(per):
         return "9999-99-99"
 
 
+REPORT_GEN = 2          # 보고서 생성 규칙 버전. 올리면 최근 보고서를 새 규칙으로 다시 만든다.
+
+
 def _gen_report(client, name, sym, qlabel, numbers, press_text,
-                price_move="", news_text=""):
+                price_move="", news_text="", fix_notes=None):
+    """8-K 발표문 → 보고서 JSON(LLM). fix_notes가 있으면 직전 결과의 오류를 고쳐 다시 쓰게 한다."""
     import json as _json
     if client is None:
         return {"headline": f"{name} {qlabel} 실적", "verdict": "",
                 "metrics": [], "guidance": "", "bullets": ["(요약 생성 불가: API 키 없음)"]}
-    pm = f"\n[발표 후 주가]\n{price_move}\n" if price_move else ""
-    nx = f"\n[관련 뉴스(시장 반응)]\n{news_text}\n" if news_text else ""
+    pm = f"\n[발표 후 주가 — 시점 포함]\n{price_move}\n" if price_move else ""
+    nx = f"\n[관련 뉴스 제목(참고, 사실 근거로 쓰지 말 것)]\n{news_text}\n" if news_text else ""
+    fx = ("\n[직전 결과에서 발견된 오류 — 반드시 고칠 것]\n- " + "\n- ".join(fix_notes) + "\n") if fix_notes else ""
     prompt = (
         f"{name}({sym})의 {qlabel} 실적 발표 자료다.\n"
-        f"[확정 숫자]\n{numbers}\n{pm}{nx}"
-        f"\n[발표문 원문 발췌]\n{press_text}\n\n"
+        f"[확정 숫자(시장 예상 포함)]\n{numbers}\n{pm}{nx}"
+        f"\n[발표문 원문]\n{press_text}\n{fx}\n"
         "위 정보로 '실적 보고서 요약'을 한국어로 작성해 JSON만 출력하라.\n"
         "규칙:\n"
-        "- 확정 숫자·발표문에 있는 값만 사용. 없는 수치·주장 지어내지 말 것. 투자 조언 금지.\n"
-        "- 회사 발표문은 호재(매출·백로그 등) 위주로 쓰였을 수 있다. 주가가 하락/약세면 "
-        "그 배경이 되는 악재(순손실 규모·EPS 하회·마진·가이던스/일정 지연 등)를 반드시 찾아 "
-        "호재와 균형 있게 담고, 왜 주가가 그렇게 움직였는지 드러나게 하라.\n"
-        "- 주가 등락 '방향'과 서술을 일치시켜라: 상승이면 상승/긍정 반응으로, 하락이면 하락/부정 반응으로. "
-        "상승했는데 '부진·약세', 하락했는데 '호조'처럼 방향과 어긋나게 쓰지 말 것.\n"
-        "- bullets 3~4개: 호재+악재 함께. 주가 하락 시 최소 1~2개는 하락·유의 요인.\n"
-        "- metrics.dir: 긍정 방향(증가·개선·상회·흑자·기록)=\"up\", 부정 방향(감소·손실·하회·부진·지연)=\"down\", 중립=\"\".\n"
-        "- metrics 금액은 '$234M','$2.36B'처럼 축약. 백로그는 metrics에 넣지 말 것(필요하면 bullets에).\n"
-        '형식: {"headline":"한 줄 핵심(<=42자, 호재·악재 균형)","verdict":"beat|miss|inline",'
+        "1) 수치는 발표문·확정 숫자·발표 후 주가에 있는 것만 쓴다. 없는 수치·주장·인과관계를 지어내지 말 것. 투자 조언 금지.\n"
+        "2) 증가·감소·개선·악화 방향은 발표문의 비교 문장(year-over-year, improved, increased, decreased 등)을 그대로 따른다.\n"
+        "   손실(순손실·영업손실·조정 EBITDA 적자)은 금액이 줄면 '개선/축소', 늘면 '악화/확대'다. '손실'이라는 단어만 보고 악화로 쓰지 말 것.\n"
+        "3) 비교 기준을 정확히: 발표문이 전년 동기 대비면 '전년 대비', 전분기 대비면 '전분기 대비'. '올해 대비' 같은 말을 만들지 말 것.\n"
+        "4) 시장 예상 대비 결과는 확정 숫자의 예상치와 발표문 실제치를 비교해 숫자로 쓴다(예: 매출 $109.0M, 예상 $126.6M 하회).\n"
+        "5) 발표문 제목·첫 문단이 강조한 핵심 성과(예: 사상 최고 마진, 수주 기록)는 반드시 넣고, "
+        "악재(예상 하회, 비용 증가, 적자 등)도 함께 넣어 균형을 맞춘다.\n"
+        "6) 주가는 [발표 후 주가]의 시점 표현 그대로 쓴다. 시점이 없거나 '진행 중'이면 주가를 확정적 결과처럼 쓰지 말 것.\n"
+        "7) 가이던스는 상향·하향·유지(재확인) 여부를 발표문 표현대로 쓴다.\n"
+        "8) metrics.dir은 회사에 좋은 방향이면 \"up\"(매출 증가, 손실 축소, 마진 개선), 나쁜 방향이면 \"down\", 애매하면 \"\". "
+        "금액은 '$109.0M','$2.36B'처럼 축약. 백로그는 metrics에 넣지 말 것(필요하면 bullets).\n"
+        "9) actual에는 발표문에 적힌 이번 분기 실제 매출(백만 달러 숫자)과 희석 EPS(숫자)를 넣고, 없으면 null.\n"
+        '형식: {"headline":"한 줄 핵심(<=42자, 호재·악재 균형)",'
         '"metrics":[{"k":"지표","v":"값","dir":"up|down|"}],'
         '"guidance":"가이던스 요지(없으면 빈문자열)",'
-        '"bullets":["3~4개"]}'
+        '"bullets":["3~4개"],"actual":{"revenue_musd":숫자|null,"eps":숫자|null}}'
     )
     try:
         resp = client.chat.completions.create(
             model=SUMMARY_MODEL,
             messages=[{"role": "user", "content": prompt}],
-            response_format={"type": "json_object"}, max_tokens=850)
+            response_format={"type": "json_object"}, max_tokens=900)
         data = _json.loads(resp.choices[0].message.content or "{}")
-        return {"headline": data.get("headline", ""), "verdict": data.get("verdict", ""),
+        return {"headline": data.get("headline", ""),
                 "metrics": (data.get("metrics") or [])[:5],
                 "guidance": data.get("guidance", ""),
-                "bullets": (data.get("bullets") or [])[:4]}
+                "bullets": (data.get("bullets") or [])[:4],
+                "actual": data.get("actual") or {}}
     except Exception as e:
         log.exception(f"[reports] {sym} 요약 실패: {e}")
         return {"headline": f"{name} {qlabel} 실적", "verdict": "",
                 "metrics": [], "guidance": "", "bullets": []}
+
+
+def _fact_check(client, rep: dict[str, Any], numbers: str, press_text: str, price_move: str) -> list[str]:
+    """보고서를 발표문과 대조(LLM 검수자). 문제 문장 목록, 문제가 없거나 검수 실패면 []."""
+    import json as _json
+    if client is None:
+        return []
+    body = _json.dumps({k: rep.get(k) for k in ("headline", "metrics", "guidance", "bullets")}, ensure_ascii=False)
+    prompt = (
+        "너는 실적 보고서 검수자다. [발표문 원문]·[확정 숫자]·[발표 후 주가]만 근거로 [보고서]를 한 문장씩 점검하고 "
+        'JSON {"issues":["..."]}만 출력하라. 문제로 볼 것:\n'
+        "① 증가·감소·개선·악화 방향이 원문과 반대(예: 원문은 순손실 improved인데 보고서는 '손실 증가')\n"
+        "② 비교 기준 오류(전년 대비를 '올해 대비'·'전분기 대비'로 쓰는 등)\n"
+        "③ 원문·확정 숫자·주가에 없는 수치나 주장, 근거 없는 인과(예: '이 때문에 주가 하락')\n"
+        "④ 시장 예상 대비 상회·하회 판단 오류\n"
+        "⑤ 발표문 제목·첫 문단이 강조한 핵심 성과의 누락\n"
+        "⑥ 주가 움직임의 시점 오류(발표 전 움직임을 발표 반응처럼 서술)\n"
+        "각 issue는 '보고서의 어느 표현이 왜 틀렸고 원문은 무엇인지' 한 문장. 문제가 없으면 빈 배열.\n\n"
+        f"[확정 숫자]\n{numbers}\n[발표 후 주가]\n{price_move or '(없음)'}\n[발표문 원문]\n{press_text}\n\n[보고서]\n{body}"
+    )
+    try:
+        resp = client.chat.completions.create(
+            model=SUMMARY_MODEL, messages=[{"role": "user", "content": prompt}],
+            response_format={"type": "json_object"}, max_tokens=600)
+        issues = _json.loads(resp.choices[0].message.content or "{}").get("issues") or []
+        return [str(i).strip() for i in issues if str(i).strip()][:6]
+    except Exception as e:
+        log.warning(f"[reports] 검수 실패(건너뜀): {e}")
+        return []
 
 
 def _recent_press(t: str, now: datetime, existing: dict[str, Any]) -> tuple[dict[str, Any], str, str] | None:
@@ -341,7 +380,8 @@ def _recent_press(t: str, now: datetime, existing: dict[str, Any]) -> tuple[dict
         days = 999
     if days > 130:                      # 최근 한 분기(약 130일) 내 발표만 카드화
         return None
-    if existing.get(t, {}).get("acc") == press["acc"]:   # 캐시
+    ex = existing.get(t, {})
+    if ex.get("acc") == press["acc"] and ex.get("gen") == REPORT_GEN:   # 캐시(같은 발표·같은 생성 규칙)
         return None
     return press, kshort, kiso
 
@@ -368,25 +408,75 @@ def _report_numbers_text(cur: dict[str, Any], prev: dict[str, Any], yahoo_lag: b
             f"(서프라이즈 {prev.get('surprise', '-')})")
 
 
-def _report_market_context(t: str) -> tuple[str, str]:
-    """주가 반응 + 관련 뉴스(왜 올랐/내렸는지 근거 확보) → (price_move, news_text)."""
-    q = fetch_quote(t)
-    pm = ""
-    if q and q.get("chg") is not None:
-        c = q["chg"]
-        pm = f"전일대비 {c:+.2f}% ({'상승' if c >= 0 else '하락'})"
+def _price_series(t: str) -> tuple[list, list]:
+    """(일봉 [(ET 날짜, 정규장 종가)], 5분봉 [(ET 시각, 가격)] 시간외 포함) — Yahoo chart. 실패 시 빈 목록."""
+    import pytz
+    ny = pytz.timezone("America/New_York")
+    base = f"https://query1.finance.yahoo.com/v8/finance/chart/{t}"
+    daily, intra = [], []
+    try:
+        r = netutil.get_json(base, params={"range": "3mo", "interval": "1d"}, headers=_QUOTE_UA, timeout=15)
+        res = r["chart"]["result"][0]
+        daily = [(datetime.fromtimestamp(ts, ny).date(), c)
+                 for ts, c in zip(res.get("timestamp") or [], res["indicators"]["quote"][0]["close"]) if c]
+        r = netutil.get_json(base, params={"range": "5d", "interval": "5m", "includePrePost": "true"},
+                             headers=_QUOTE_UA, timeout=15)
+        res = r["chart"]["result"][0]
+        intra = [(datetime.fromtimestamp(ts, ny), c)
+                 for ts, c in zip(res.get("timestamp") or [], res["indicators"]["quote"][0]["close"]) if c]
+    except Exception as e:
+        log.warning(f"[reports] {t} 주가 시계열 실패: {e}")
+    return daily, intra
+
+
+def _release_move(t: str, accept: str | None) -> dict[str, Any] | None:
+    """8-K 접수 시각(SEC acceptanceDateTime, UTC) 기준 발표 후 주가 반응(report_check.release_reaction)."""
+    import pytz
+    from report_check import release_reaction
+    if not accept:
+        return None
+    try:
+        rel = datetime.fromisoformat(re.sub(r"\.\d+", "", accept).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    ny = pytz.timezone("America/New_York")
+    daily, intra = _price_series(t)
+    return release_reaction(daily, intra, rel.astimezone(ny), datetime.now(ny))
+
+
+def _report_market_context(t: str, accept: str | None = None) -> tuple[str, str, dict[str, Any] | None]:
+    """발표 후 주가 반응(시점 포함) + 관련 뉴스 제목 → (price_move 문구, news_text, move dict)."""
+    move = _release_move(t, accept)
+    pm = move["text"] if move else ""
     news_text = ""
     try:
         arts = fetch_news_articles(t)[:4]
         news_text = " / ".join(a.get("title") or "" for a in arts if a.get("title"))
     except Exception as e:
         log.warning(f"[reports] {t} 관련 뉴스 조회 실패: {e}")
-    return pm, news_text
+    return pm, news_text, move
+
+
+def _check_report(rep: dict[str, Any], numbers: str, press_text: str, pm: str, cmp: dict[str, Any],
+                  client: Any) -> list[str]:
+    """방향 모순·수치 대조(코드 규칙) + 원문 대조(LLM 검수) → 문제 목록."""
+    from report_check import direction_conflicts, unsupported_numbers
+    extra = []
+    for k in ("rev", "eps"):
+        for v in (cmp.get(k) or {}).values():
+            extra.append(abs(float(v)))
+    issues = direction_conflicts(rep, press_text)
+    issues += [f"원문에 없는 수치: {n}" for n in unsupported_numbers(rep, f"{numbers}\n{pm}\n{press_text}", extra)]
+    return issues + _fact_check(client, rep, numbers, press_text, pm)
 
 
 def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, Any],
                        client: Any, now: datetime) -> dict[str, Any] | None:
-    """티커 하나의 실적 보고서 레코드를 만든다(발표 없음/캐시 히트 시 existing 재사용, 실패 시 None)."""
+    """티커 하나의 실적 보고서 레코드를 만든다(발표 없음/캐시 히트 시 existing 재사용, 실패 시 None).
+
+    생성 → 예상 대비 계산·판정(코드) → 수치·원문 대조 → 문제가 있으면 그 내용을 주고 한 번 다시 생성 → 재대조.
+    대조 결과는 check {ok, issues}로 남겨 화면에 표시한다."""
+    from report_check import compare_text, consensus_compare, verdict
     if not er:
         return None
     det = er.get("detail") or {}
@@ -396,7 +486,12 @@ def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, An
         return None
     press_info = _recent_press(t, now, existing)
     if press_info is None:
-        return existing.get(t)
+        rec = existing.get(t)
+        if rec and rec.get("accept") and not (rec.get("move") or {}).get("final"):
+            mv = _release_move(t, rec["accept"])          # 반응 거래일이 끝나면 확정치로 갱신(LLM 없이)
+            if mv:
+                rec = {**rec, "move": mv}
+        return rec
     press, kshort, kiso = press_info
     resolved = _resolve_report_quarter(cur, rq, kiso)
     if resolved is None:
@@ -410,18 +505,35 @@ def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, An
         qnum = 0
     name = _EARN_KO.get(t, t)
     numbers = _report_numbers_text(cur, prev, yahoo_lag)
-    pm, news_text = _report_market_context(t)
+    est_rev, est_eps = (cur.get("rev"), cur.get("eps")) if yahoo_lag else (None, prev.get("eps_est"))
+    pm, news_text, move = _report_market_context(t, press.get("accept"))
     log.info(f"[reports] {t} 8-K 요약 생성… ({qlabel}, 주가 {pm or '-'})")
-    summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"],
-                       price_move=pm, news_text=news_text)
+    summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"], price_move=pm, news_text=news_text)
+
+    def finish(s):
+        act = dict(s.get("actual") or {})
+        if not yahoo_lag and prev.get("eps_act"):
+            act.setdefault("eps", prev.get("eps_act"))
+        cmp = consensus_compare(act, est_rev, est_eps)
+        return cmp, _check_report(s, numbers, press["text"], pm, cmp, client)
+
+    cmp, issues = finish(summ)
+    if issues and client is not None:
+        log.info(f"[reports] {t} 대조 문제 {len(issues)}건 → 다시 생성")
+        summ = _gen_report(client, name, t, f"{qnum}분기", numbers, press["text"],
+                           price_move=pm, news_text=news_text, fix_notes=issues)
+        cmp, issues = finish(summ)
     rec = {"ticker": t, "name": name,
            "title": f"{kshort}_{name}_{qnum}분기_실적보고서",
            "date": kiso, "qnum": qnum, "quarter": qlabel, "cq": cq,
-           "acc": press["acc"], "url": press["url"]}
+           "acc": press["acc"], "url": press["url"], "accept": press.get("accept"), "gen": REPORT_GEN}
     if not yahoo_lag:    # Yahoo 실제치 있을 때만 EPS/서프라이즈 첨부
         rec.update({"eps_act": prev.get("eps_act"), "eps_est": prev.get("eps_est"),
                     "surprise": prev.get("surprise"), "surprise_pos": prev.get("surprise_pos")})
+    summ.pop("actual", None)
     rec.update(summ)
+    rec.update({"verdict": verdict(cmp), "cons": cmp, "cons_text": compare_text(cmp), "move": move,
+                "check": {"ok": not issues, "issues": issues, "by": "auto"}})
     return rec
 
 
