@@ -115,3 +115,31 @@ def test_cached_report_refreshes_unfinished_move(monkeypatch):
     er = {"detail": {"cur": {"period": "26.09"}, "prev": {}, "quarters": []}}
     rec = E._report_for_ticker("RDW", er, {"RDW": old}, None, datetime(2026, 11, 6, tzinfo=pytz.utc))
     assert rec["move"]["final"] is True and "종가" in rec["move"]["text"]
+
+
+def test_segment_metric_not_compared_with_total():
+    press = "Revenue was $92.3 billion and increased 19%. XBOX content and services revenue decreased 2%."
+    rep = {"headline": "", "metrics": [], "bullets": ["XBOX 콘텐츠 및 서비스 매출은 2% 감소", "총 매출 $92.3B로 19% 감소"]}
+    c = R.direction_conflicts(rep, press)
+    assert len(c) == 1 and "총 매출" in c[0]
+
+
+def test_consensus_uses_reported_quarter_when_yahoo_already_updated():
+    # 회계연도 어긋난 종목(AAPL): cur는 다음 분기 예상인데 period가 같게 찍힘 → prev에 이번 실제치가 있으면 lag 아님
+    cur = {"period": "26.09", "eps": "$2.90", "rev": "$155.57B"}
+    prev = {"period": "26.09", "eps_act": "$2.10", "eps_est": "$1.99"}
+    rq = [{"cq": "2026-3", "label": "2026 3Q", "reported": True}]
+    assert E._resolve_report_quarter(cur, rq, "2026-11-03", prev) == ("2026-3", "2026 3Q", False)
+    # 발표 직후 Yahoo 미반영(RDW 11/5 전): prev가 직전 분기(6월말, 128일 전) → lag, cur 예상치 사용
+    cur2, prev2 = {"period": "26.09", "eps": "$-0.09", "rev": "$126.56M"}, {"period": "26.06", "eps_act": "$-0.11"}
+    assert E._resolve_report_quarter(cur2, rq, "2026-11-05", prev2)[2] is True
+
+
+def test_manual_report_is_not_regenerated(monkeypatch):
+    monkeypatch.setattr(E, "_sec_8k_press", lambda t: {"acc": "A1", "accept": "2026-11-04T21:21:19.000Z", "text": "x", "url": "u"})
+    monkeypatch.setattr(E.time, "sleep", lambda s: None)
+    now = datetime(2026, 11, 6, tzinfo=pytz.utc)
+    manual = {"RDW": {"acc": "A1", "gen": 2, "check": {"by": "manual"}}}
+    assert E._recent_press("RDW", now, manual) is None
+    stale = {"RDW": {"acc": "A1", "gen": 2, "check": {"by": "auto"}}}
+    assert E._recent_press("RDW", now, stale) is not None

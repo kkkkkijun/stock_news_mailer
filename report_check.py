@@ -200,6 +200,9 @@ def _report_dir(kpat, is_loss, text):
     m = re.search(rf"(?:{kpat})((?:[^·,;.]|\.(?=\d)){{0,26}}?)({_KO_UP}|{_KO_DOWN})", text or "")
     if not m or re.search(r"주가|예상|컨센서스|하회|상회", m.group(1)):
         return None                     # '매출 하회로 주가 하락'처럼 다른 주어·예상 대비는 판단 안 함
+    lead = re.split(r"[·,;:—\-(]", text[:m.start()])[-1].split()
+    if lead and not re.fullmatch(r"총|전체|연결|이번|분기|\d분기|회사|사상|최고|최대", lead[-1]):
+        return None                     # 'XBOX 콘텐츠 및 서비스 매출 감소'처럼 부문 지표는 회사 전체와 비교 안 함
     w = m.group(2)
     if w in ("개선",):
         return "better"

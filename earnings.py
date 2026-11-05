@@ -284,7 +284,9 @@ def _period_qend(per):
         return "9999-99-99"
 
 
-REPORT_GEN = 2          # 보고서 생성 규칙 버전. 올리면 최근 보고서를 새 규칙으로 다시 만든다.
+REPORT_GEN = 3          # 보고서 생성 규칙 버전. 올리면 최근 보고서를 새 규칙으로 다시 만든다.
+# 실적 보고서 생성·검수 모델(뉴스 요약과 분리). 바꾸면 캐시가 무효화돼 다시 만든다.
+REPORT_MODEL = os.getenv("OPENAI_REPORT_MODEL") or SUMMARY_MODEL
 
 
 def _gen_report(client, name, sym, qlabel, numbers, press_text,
@@ -322,7 +324,7 @@ def _gen_report(client, name, sym, qlabel, numbers, press_text,
     )
     try:
         resp = client.chat.completions.create(
-            model=SUMMARY_MODEL,
+            model=REPORT_MODEL,
             messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"}, max_tokens=900)
         data = _json.loads(resp.choices[0].message.content or "{}")
@@ -357,7 +359,7 @@ def _fact_check(client, rep: dict[str, Any], numbers: str, press_text: str, pric
     )
     try:
         resp = client.chat.completions.create(
-            model=SUMMARY_MODEL, messages=[{"role": "user", "content": prompt}],
+            model=REPORT_MODEL, messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"}, max_tokens=600)
         issues = _json.loads(resp.choices[0].message.content or "{}").get("issues") or []
         return [str(i).strip() for i in issues if str(i).strip()][:6]
@@ -381,17 +383,34 @@ def _recent_press(t: str, now: datetime, existing: dict[str, Any]) -> tuple[dict
     if days > 130:                      # 최근 한 분기(약 130일) 내 발표만 카드화
         return None
     ex = existing.get(t, {})
-    if ex.get("acc") == press["acc"] and ex.get("gen") == REPORT_GEN:   # 캐시(같은 발표·같은 생성 규칙)
-        return None
+    if ex.get("acc") == press["acc"]:
+        if (ex.get("check") or {}).get("by") == "manual":    # 사람이 원문 대조로 고친 보고서는 덮어쓰지 않음
+            return None
+        if ex.get("gen") == REPORT_GEN and ex.get("model", SUMMARY_MODEL) == REPORT_MODEL:   # 같은 규칙·모델
+            return None
     return press, kshort, kiso
 
 
+def _prev_is_reported(prev: dict[str, Any] | None, kiso: str) -> bool:
+    """Yahoo prev(최근 실제 분기)가 이번 발표분인가 — 실제 EPS가 있고 그 분기말이 발표일 전 95일 이내."""
+    from datetime import datetime as _dt
+    if not (prev and prev.get("eps_act") and prev.get("period") and kiso):
+        return False
+    try:
+        gap = (_dt.strptime(kiso, "%Y-%m-%d") - _dt.strptime(_period_qend(prev["period"]), "%Y-%m-%d")).days
+    except ValueError:
+        return False
+    return 0 <= gap <= 95       # 직전 분기분이면 간격이 한 분기(90일)+보고 지연이라 95일을 넘는다
+
+
 def _resolve_report_quarter(cur: dict[str, Any], rq: list[dict[str, Any]],
-                            kiso: str) -> tuple[str, str, bool] | None:
-    """발표 분기 판정(8-K 접수일 기준): 접수일이 cur(0q) 분기말 이후면 Yahoo 실제치 미반영
-    상태 → cur(0q)가 방금 발표분. 아니면 최신 실제분기(rq 마지막). 판정 불가면 None."""
+                            kiso: str, prev: dict[str, Any] | None = None) -> tuple[str, str, bool] | None:
+    """발표 분기 판정(8-K 접수일 기준): 접수일이 cur(0q) 분기말 이후이고 Yahoo prev에 이번 분기 실제치가
+    아직 없으면 Yahoo 미반영 상태 → cur(0q)가 방금 발표분. 아니면 최신 실제분기(rq 마지막). 판정 불가면 None.
+    (회계연도가 어긋난 종목은 cur가 이미 다음 분기 예상인데 period가 같게 찍혀, prev로 반영 여부를 확인한다.)"""
     cur_cq, cur_label = (_period_cq(cur["period"]) if cur.get("period") else (None, None))
-    yahoo_lag = bool(cur_cq and kiso and kiso > _period_qend(cur["period"]))
+    yahoo_lag = (bool(cur_cq and kiso and kiso > _period_qend(cur["period"]))
+                 and not _prev_is_reported(prev, kiso))
     if yahoo_lag:
         return cur_cq, cur_label, yahoo_lag
     if rq:
@@ -493,7 +512,7 @@ def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, An
                 rec = {**rec, "move": mv}
         return rec
     press, kshort, kiso = press_info
-    resolved = _resolve_report_quarter(cur, rq, kiso)
+    resolved = _resolve_report_quarter(cur, rq, kiso, prev)
     if resolved is None:
         return existing.get(t)
     cq, qlabel, yahoo_lag = resolved
@@ -513,7 +532,7 @@ def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, An
     def finish(s):
         act = dict(s.get("actual") or {})
         if not yahoo_lag and prev.get("eps_act"):
-            act.setdefault("eps", prev.get("eps_act"))
+            act["eps"] = prev.get("eps_act")     # 예상치와 같은 기준(Yahoo 실제치)으로 비교
         cmp = consensus_compare(act, est_rev, est_eps)
         return cmp, _check_report(s, numbers, press["text"], pm, cmp, client)
 
@@ -526,7 +545,8 @@ def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, An
     rec = {"ticker": t, "name": name,
            "title": f"{kshort}_{name}_{qnum}분기_실적보고서",
            "date": kiso, "qnum": qnum, "quarter": qlabel, "cq": cq,
-           "acc": press["acc"], "url": press["url"], "accept": press.get("accept"), "gen": REPORT_GEN}
+           "acc": press["acc"], "url": press["url"], "accept": press.get("accept"), "gen": REPORT_GEN,
+           "model": REPORT_MODEL}
     if not yahoo_lag:    # Yahoo 실제치 있을 때만 EPS/서프라이즈 첨부
         rec.update({"eps_act": prev.get("eps_act"), "eps_est": prev.get("eps_est"),
                     "surprise": prev.get("surprise"), "surprise_pos": prev.get("surprise_pos")})
