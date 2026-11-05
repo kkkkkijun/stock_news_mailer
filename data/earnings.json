@@ -425,7 +425,7 @@
     "growth_pos": true
    },
    "rev": {
-    "up": 13,
+    "up": 14,
     "down": 6
    },
    "next": {
@@ -800,8 +800,8 @@
     "growth_pos": true
    },
    "rev": {
-    "up": 3,
-    "down": 6
+    "up": 10,
+    "down": 10
    },
    "next": {
     "period": "27.03",
