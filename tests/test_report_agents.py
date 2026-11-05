@@ -167,3 +167,14 @@ def test_held_report_retried_until_limit(monkeypatch):
     assert E._recent_press("RDW", now, {"RDW": {**base, "check": {"ok": False}, "attempts": 1}}) is not None
     assert E._recent_press("RDW", now, {"RDW": {**base, "check": {"ok": False}, "attempts": E.MAX_ATTEMPTS}}) is None
     assert E._recent_press("RDW", now, {"RDW": {**base, "check": {"ok": True}}}) is None
+
+
+def test_period_pairs_and_wrong_year_caught():
+    en = "Net sales for the fourth quarter of 2026 are expected between $240.0 billion and $247.0 billion, up 12% to 16% compared with fourth quarter 2025."
+    assert A.period_pairs(en) == [(2026, 4), (2025, 4)]
+    assert A.period_pairs("Q3 2026 매출, 2026년 2분기 대비") == [(2026, 3), (2026, 2)]
+    assert "기간 오류" in A.period_conflict("2025년 4분기 매출 $240.0B~$247.0B 예상", [en])
+    assert A.period_conflict("2026년 4분기 매출 $240.0B~$247.0B 예상(2025년 4분기 대비 12~16% 증가)", [en]) == ""
+    facts = [{"id": "G1", "topic": "guidance", "key": True, "text": en, "quote": "x"}]
+    ko, iss = A.gate_translation(facts, {"facts": [{"id": "G1", "ko": "2025년 4분기 순매출 $240.0B~$247.0B 예상, 전년 대비 12%~16% 증가."}]})
+    assert any("기간 오류" in i for i in iss)

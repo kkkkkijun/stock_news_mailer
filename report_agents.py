@@ -52,6 +52,36 @@ def _notes(notes: list[str] | None) -> str:
     return ("\n[직전 시도에서 발견된 문제 — 반드시 고칠 것]\n- " + "\n- ".join(notes) + "\n") if notes else ""
 
 
+_ORD = {"first": 1, "second": 2, "third": 3, "fourth": 4, "1st": 1, "2nd": 2, "3rd": 3, "4th": 4}
+
+
+def period_pairs(text: str) -> list[tuple[int, int]]:
+    """문장 속 (연도, 분기) — 나온 순서대로. '2026년 3분기'·'Q3 2026'·'third quarter of 2026'·'2026 third quarter'."""
+    found = []
+    pats = [(r"(\d{4})\s*년\s*(?:제\s*)?([1-4])\s*분기", lambda m: (m.group(1), m.group(2))),
+            (r"\bQ([1-4])[\s'\-]*(?:FY\s*)?(\d{4})\b", lambda m: (m.group(2), m.group(1))),
+            (r"\b(\d{4})\s*Q([1-4])\b", lambda m: (m.group(1), m.group(2))),
+            (r"\b(first|second|third|fourth|1st|2nd|3rd|4th)\s+quarter\s+(?:of\s+)?(?:fiscal\s+(?:year\s+)?)?(\d{4})\b",
+             lambda m: (m.group(2), _ORD[m.group(1).lower()])),
+            (r"\b(\d{4})\s+(first|second|third|fourth)\s+quarter\b", lambda m: (m.group(1), _ORD[m.group(2).lower()]))]
+    for pat, get in pats:
+        for m in re.finditer(pat, text or "", re.I):
+            y, q = get(m)
+            found.append((m.start(), (int(y), int(q))))
+    return [p for _, p in sorted(found)]
+
+
+def period_conflict(ko: str, en_texts: list[str]) -> str:
+    """한국어 문장의 첫 기간(주어 기간)이 근거 영문 문장들의 첫 기간 중 하나와 같은지. 다르면 설명 문자열."""
+    kp = period_pairs(ko)
+    firsts = [pp[0] for pp in (period_pairs(e) for e in en_texts) if pp]
+    if not kp or not firsts or kp[0] in firsts:
+        return ""
+    y, q = kp[0]
+    want = ", ".join(f"{a}년 {b}분기" for a, b in firsts)
+    return f"기간 오류: '{y}년 {q}분기' ↔ 근거는 {want}"
+
+
 # ---------------------------------------------------------------- ① 요약
 def summarize(client, model, name, sym, qlabel, source, notes=None) -> dict[str, Any]:
     prompt = (
@@ -89,8 +119,9 @@ def gate_summary(out: dict[str, Any], source: str) -> tuple[list[dict[str, Any]]
         if bad:
             dropped.append(f"{fid}: text의 수치 {', '.join(bad)}가 quote에 없음")
             continue
-        kept.append({"id": fid, "topic": f.get("topic") or "other", "text": text, "quote": quote,
-                     "key": bool(f.get("key"))})
+        topic = f.get("topic") or "other"
+        kept.append({"id": fid, "topic": topic, "text": text, "quote": quote,     # 가이던스·일회성 항목은 항상 핵심
+                     "key": bool(f.get("key")) or topic in ("guidance", "one_time")})
     retry = []
     if len(kept) < 3:
         retry.append(f"원문과 일치하는 사실이 {len(kept)}개뿐 — quote를 원문에서 그대로 복사할 것")
@@ -139,6 +170,9 @@ def gate_translation(facts, out) -> tuple[dict[str, str], list[str]]:
             issues.append(f"{f['id']}: 영문 수치 {', '.join(missing)}가 번역에서 빠짐")
         for c in direction_conflicts({"bullets": [k]}, f["text"]):
             issues.append(f"{f['id']}: {c}")
+        pc = period_conflict(k, [f["text"]])
+        if pc:
+            issues.append(f"{f['id']}: {pc}")
     return ko, issues
 
 
@@ -229,6 +263,9 @@ def gate_report(out, facts, ko, cons_text, actual=None) -> list[str]:
         if bad:
             issues.append(f"{where} '{text[:30]}': 근거 사실에 없는 수치 {', '.join(bad)}")
         en = " ".join(by_id[s]["text"] for s in refs if s in by_id)
+        pc = period_conflict(text, [by_id[s]["text"] for s in refs if s in by_id])
+        if pc:
+            issues.append(f"{where} '{text[:30]}': {pc}")
         rep = {"bullets": [text]} if met is None else {"metrics": [met]}
         for c in direction_conflicts(rep, en):
             issues.append(f"{where}: {c}")

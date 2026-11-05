@@ -283,7 +283,7 @@ def _period_qend(per):
         return "9999-99-99"
 
 
-REPORT_GEN = 5          # 보고서 생성 규칙 버전. 올리면 최근 보고서를 새 규칙으로 다시 만든다.
+REPORT_GEN = 6          # 보고서 생성 규칙 버전. 올리면 최근 보고서를 새 규칙으로 다시 만든다.
 # 실적 보고서 생성·검수 모델(뉴스 요약과 분리). 바꾸면 캐시가 무효화돼 다시 만든다.
 REPORT_MODEL = os.getenv("OPENAI_REPORT_MODEL") or SUMMARY_MODEL
 MAX_ATTEMPTS = 3        # 최종 점검을 통과 못 한(보류) 보고서를 다음 실행에서 다시 시도하는 총 횟수
@@ -442,7 +442,8 @@ def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, An
     if res["ok"]:
         rec.update(res["report"])
     rec.update({"verdict": verdict(res["cmp"]), "cons": res["cmp"], "cons_text": res["cons_text"], "move": move,
-                "check": {"ok": res["ok"], "by": "agents", "stages": res["stages"], "issues": res["issues"]}})
+                "check": {"ok": res["ok"], "by": "agents", "stages": res["stages"], "issues": res["issues"],
+                          "facts": [{k: f[k] for k in ("id", "topic", "key", "text", "quote")} for f in res["facts"]]}})
     return rec
 
 
