@@ -90,7 +90,7 @@ def _sec_8k_press(sym: str) -> dict | None:
         url = base + "/" + pr
         raw = netutil.get(url, headers=_SEC_UA, timeout=15).text
         text = _html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw))).strip()
-        return {"text": text[:7000], "url": url, "acc": acc, "accept": accept}
+        return {"text": text[:7000], "full": text[:40000], "url": url, "acc": acc, "accept": accept}
     except Exception as e:
         log.warning("[sec] %s 8-K 보도자료 조회 실패: %s", sym, e)
         return None

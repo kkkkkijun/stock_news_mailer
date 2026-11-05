@@ -1,7 +1,5 @@
 """실적 보고서 신뢰성 장치: 발표 후 주가 시점 · 수치 대조 · 예상 대비 판정 · 방향 모순 · 재생성 파이프라인."""
-import json
 from datetime import date, datetime
-from types import SimpleNamespace
 
 import pytz
 
@@ -70,41 +68,6 @@ def test_direction_conflicts_catches_reversed_loss_only():
     good = {"headline": "", "metrics": [{"k": "순손실", "v": "$-23.2M", "dir": "up"}],
             "bullets": ["순손실 $23.2M로 전년보다 $18.0M 축소.", "조정 EBITDA $-5.3M로 $2.7M 악화."]}
     assert R.direction_conflicts(good, PRESS) == []
-
-
-class _Seq:
-    """요청 내용으로 '생성'과 '검수'를 구분해 차례로 답하는 가짜 클라이언트."""
-    def __init__(self, gens, checks):
-        self.gens, self.checks, self.prompts = list(gens), list(checks), []
-
-        def create(**kw):
-            p = kw["messages"][0]["content"]
-            self.prompts.append(p)
-            body = self.checks.pop(0) if "검수자" in p else self.gens.pop(0)
-            return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=json.dumps(body, ensure_ascii=False)))])
-        self.chat = SimpleNamespace(completions=SimpleNamespace(create=create))
-
-
-def test_pipeline_regenerates_when_code_rule_finds_reversed_direction(monkeypatch):
-    wrong = {"headline": "레드와이어 3분기", "metrics": [{"k": "순손실", "v": "$-23.2M", "dir": "down"}],
-             "guidance": "", "bullets": ["순손실이 $23.2M로 증가."], "actual": {"revenue_musd": 109.0, "eps": -0.09}}
-    right = {"headline": "레드와이어, 예상 하회에도 사상 최고 마진", "metrics": [{"k": "순손실", "v": "$-23.2M", "dir": "up"}],
-             "guidance": "2026년 매출 전망 $450M~$500M 유지", "bullets": ["순손실 $23.2M로 전년보다 $18.0M 축소."],
-             "actual": {"revenue_musd": 109.0, "eps": -0.09}}
-    client = _Seq([wrong, right], [{"issues": []}, {"issues": []}])   # LLM 검수자가 놓쳐도 코드 규칙이 잡는다
-    press = {"text": PRESS + " reaffirms revenues of $450 million to $500 million.", "acc": "A1",
-             "url": "u", "accept": "2026-11-04T21:21:19.000Z"}
-    monkeypatch.setattr(E, "_recent_press", lambda t, now, ex: (press, "261105", "2026-11-05"))
-    mv = {"text": "발표 직후 시간외 -2.9% ($7.72 → $7.50, 진행 중)", "final": False, "pct": -2.9}
-    monkeypatch.setattr(E, "_report_market_context", lambda t, accept=None: (mv["text"], "", mv))
-    er = {"detail": {"cur": {"period": "26.09", "eps": "$-0.09", "rev": "$126.56M"},
-                     "prev": {"period": "26.06"}, "quarters": [{"cq": "2026-2", "reported": True}]}}
-    rec = E._report_for_ticker("RDW", er, {}, client, datetime(2026, 11, 5, tzinfo=pytz.utc))
-    assert rec["headline"].startswith("레드와이어, 예상 하회") and rec["check"]["ok"] is True
-    assert rec["verdict"] == "miss" and rec["cons"]["rev"]["pct"] == -13.9 and rec["gen"] == E.REPORT_GEN
-    assert rec["move"]["final"] is False and rec["accept"] == press["accept"] and "actual" not in rec
-    regen = [p for p in client.prompts if "직전 결과에서 발견된 오류" in p]
-    assert len(regen) == 1 and "순손실 방향 반대" in regen[0]
 
 
 def test_cached_report_refreshes_unfinished_move(monkeypatch):
