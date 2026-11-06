@@ -430,7 +430,8 @@ def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, An
              + " → ".join(f"{x['stage']}({'✓' if x['ok'] else '✗'})" for x in res["stages"])
              + ("" if res["ok"] else f" | {res['issues'][:3]}"))
     ex = existing.get(t) or {}
-    attempts = ex.get("attempts", 0) + 1 if ex.get("acc") == press["acc"] and ex.get("gen") == REPORT_GEN else 1
+    same = (ex.get("acc"), ex.get("gen"), ex.get("model")) == (press["acc"], REPORT_GEN, REPORT_MODEL)
+    attempts = ex.get("attempts", 0) + 1 if same else 1       # 규칙·모델이 바뀌면 재시도 횟수 초기화
     rec = {"ticker": t, "name": name,
            "title": f"{kshort}_{name}_{qnum}분기_실적보고서",
            "date": kiso, "qnum": qnum, "quarter": qlabel, "cq": cq,
