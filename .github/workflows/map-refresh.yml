@@ -1,8 +1,8 @@
 name: Map Refresh (Ostium + Hyperliquid + 홈 히트맵)
 
+# 매시 정각 cron-job.org → repository_dispatch로 실행. (GitHub 자체 schedule은 수십 분씩 늦게 돌아
+#  정각 실행과 겹치며 Pages 배포 충돌을 일으켜 제거)
 on:
-  schedule:
-    - cron: '20 * * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [map-refresh]
@@ -36,5 +36,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/rwamap.json docs/whales.json data/whale_list.json docs/treemap.json
           git diff --staged --quiet || git commit -m "map: 지도 스냅샷 [skip ci]"
-          git pull --rebase --autostash origin main || true
-          git push
+          # GitHub 쪽 일시 오류(500 Internal Server Error)나 동시 푸시 충돌 대비: 최대 3번 재시도
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main || true
+            git push && exit 0
+            echo "push 실패($i/3) — $((i*15))초 후 재시도"; sleep $((i*15))
+          done
+          exit 1
