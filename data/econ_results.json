@@ -641,10 +641,10 @@
 "1357b476-3290-4e06-a80f-44d32779cd4d": {
 "name": "Michigan Consumer Sentiment Index",
 "dt": "2026-11-06T15:00:00Z",
-"act": null,
+"act": "51",
 "cons": "48",
 "prev": "48",
-"act_n": null,
+"act_n": 51.0,
 "cons_n": 48.0
 },
 "75a2fedb-a0e4-446b-94fb-726f952c0f8e": {
