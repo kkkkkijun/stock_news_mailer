@@ -299,8 +299,8 @@
     "growth_pos": true
    },
    "rev": {
-    "up": 1,
-    "down": 2
+    "up": 2,
+    "down": 3
    },
    "next": {
     "period": "27.03",
@@ -675,8 +675,8 @@
     "growth_pos": false
    },
    "rev": {
-    "up": 23,
-    "down": 13
+    "up": 24,
+    "down": 15
    },
    "next": {
     "period": "27.03",
