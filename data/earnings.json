@@ -425,8 +425,8 @@
     "growth_pos": true
    },
    "rev": {
-    "up": 16,
-    "down": 5
+    "up": 10,
+    "down": 22
    },
    "next": {
     "period": "27.03",
@@ -555,9 +555,9 @@
    },
    "next": {
     "period": "27.03",
-    "eps": "$2.29",
+    "eps": "$2.30",
     "eps_range": "$1.98~$2.52",
-    "rev": "$209.41B",
+    "rev": "$210.25B",
     "growth": "+47.90%",
     "growth_pos": true
    },
@@ -610,8 +610,8 @@
      "cq": "2027-1",
      "label": "2027 1Q",
      "reported": false,
-     "eps_est": "$2.29",
-     "rev": "$209.41B"
+     "eps_est": "$2.30",
+     "rev": "$210.25B"
     }
    ],
    "target": {
