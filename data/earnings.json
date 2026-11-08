@@ -164,7 +164,7 @@
     "period": "26.12",
     "eps": "$4.86",
     "eps_range": "$4.82~$4.97",
-    "rev": "$96.7B",
+    "rev": "$96.69B",
     "growth": "+17.29%",
     "growth_pos": true
    },
@@ -176,7 +176,7 @@
     "period": "27.03",
     "eps": "$4.94",
     "eps_range": "$4.82~$5.19",
-    "rev": "$99.28B",
+    "rev": "$99.27B",
     "growth": "+15.61%",
     "growth_pos": true
    },
@@ -222,7 +222,7 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$4.86",
-     "rev": "$96.7B",
+     "rev": "$96.69B",
      "date": "2027-01-28"
     },
     {
@@ -230,12 +230,12 @@
      "label": "2027 1Q",
      "reported": false,
      "eps_est": "$4.94",
-     "rev": "$99.28B"
+     "rev": "$99.27B"
     }
    ],
    "target": {
     "price": "$530.61",
-    "mean": "$634.14",
+    "mean": "$636.12",
     "range": "$440~$870",
     "upside": "+20%",
     "upside_pos": true

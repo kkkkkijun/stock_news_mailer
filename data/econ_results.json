@@ -660,10 +660,10 @@
 "name": "Consumer Price Index (YoY)",
 "dt": "2026-11-10T13:30:00Z",
 "act": null,
-"cons": null,
+"cons": "3.9%",
 "prev": "3.7%",
 "act_n": null,
-"cons_n": null
+"cons_n": 3.9
 },
 "c116284f-54cf-4db0-a413-9f9a6be6908d": {
 "name": "Consumer Price Index ex Food & Energy (MoM)",
@@ -678,19 +678,19 @@
 "name": "Consumer Price Index ex Food & Energy (YoY)",
 "dt": "2026-11-10T13:30:00Z",
 "act": null,
-"cons": null,
+"cons": "2.8%",
 "prev": "2.6%",
 "act_n": null,
-"cons_n": null
+"cons_n": 2.8
 },
 "4b4a258c-07b2-4107-b8e4-335180759526": {
 "name": "Producer Price Index ex Food & Energy (YoY)",
 "dt": "2026-11-13T13:30:00Z",
 "act": null,
-"cons": null,
+"cons": "5%",
 "prev": "5%",
 "act_n": null,
-"cons_n": null
+"cons_n": 5.0
 },
 "14be18ad-4b90-4333-ab99-e5a653d86ef7": {
 "name": "Gross Domestic Product (QoQ)",
