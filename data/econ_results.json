@@ -696,10 +696,10 @@
 "name": "Gross Domestic Product (QoQ)",
 "dt": "2026-11-15T23:50:00Z",
 "act": null,
-"cons": null,
+"cons": "0.1%",
 "prev": "0.4%",
 "act_n": null,
-"cons_n": null
+"cons_n": 0.1
 },
 "94a81821-a5f9-49b8-aa91-78fa3992fb3c": {
 "name": "Retail Sales (MoM)",
