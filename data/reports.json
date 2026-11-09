@@ -12,7 +12,7 @@
   "accept": "2026-11-09T21:11:11.000Z",
   "gen": 6,
   "model": "gpt-4.1",
-  "attempts": 1,
+  "attempts": 2,
   "verdict": "miss",
   "cons": {
    "rev": {
@@ -28,12 +28,12 @@
   },
   "cons_text": "매출 $890.4M vs 예상 $892.8M (-0.3%) · EPS $-0.14 vs 예상 $0.06 (하회)",
   "move": {
-   "pct": -0.7,
+   "pct": -2.76,
    "base": 22.940000534057617,
-   "last": 22.7783,
+   "last": 22.3078,
    "label": "발표 직후 시간외",
    "final": false,
-   "text": "발표 직후 시간외 -0.7% ($22.94 → $22.78, 진행 중)"
+   "text": "발표 직후 시간외 -2.8% ($22.94 → $22.31, 진행 중)"
   },
   "check": {
    "ok": false,
@@ -67,20 +67,18 @@
      "stage": "작성",
      "round": 2,
      "ok": true,
-     "note": "항목 8개"
+     "note": "항목 9개"
     },
     {
      "stage": "최종 점검",
      "round": 2,
      "ok": false,
-     "note": "지적 4건"
+     "note": "지적 2건"
     }
    ],
    "issues": [
-    "[최종 점검·작성] 4분기 매출은 $875M~$895M으로 제시했다. — 4분기 가이던스는 맞으나, 전체 가이던스 중 조정(상향/하향 등)된 부분을 밝히지 않았다. 실제로 조정된 내용이 있음: 'reduces Adjusted EBITDA guidance to a range of $257 million to $277 million'. (원문: Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 bi)",
-    "[최종 점검·작성] 2026년 3분기 매출은 전년 동기 대비 49% 증가했다. — 수치는 맞으나, 주요 핵심 성과 지표인 총구독자(2.8M, 13% 증가), 국제 매출 300% 증가 등 원문 첫 단락(헤드라인) 및 Key Business Metrics에 명시된 주요 내용이 헤드라인·첫 단락 요약 등 상위 요약에서 누락됨. (원문: Revenue of approximately $890 million, up 49% year-over-year in Q3 2026\nSubscrib)",
-    "[최종 점검·번역] United States 체중 감량 사업의 전략적 전환과 관련해 2~3분 — 구조조정 비용 언급은 맞으나, 원문은 'second and third quarters of 2026'임에도 불구하고 '2~3분기'라 번역, 비재무 독자에게 분기로 혼동될 수 있는 표현(2~3개월분처럼 오독 가능). 원문 취지(2Q, 3Q 해당) 강조 불명확. (원문: Additional restructuring and other related charges were incurred in the second a)",
-    "[최종 점검·작성]  — 주요 재무 지표(조정 EBITDA 등) 가이던스 하향 사실이 본문 어디에도 포함되지 않고, 헤드라인 등 상위 요약에도 언급되지 않았음. (원문: and reduces Adjusted EBITDA guidance to a range of $257 million to $277 million)"
+    "[최종 점검·작성] \"2026년 전체 매출 가이던스를 $3.13B~$3.15B로 상향 및 구 — 가이던스가 상향이 아니라 '타이튼'(범위 축소/명확화)된 것임. 원문에는 상향 언급이 없음. (원문: Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 bi)",
+    "[최종 점검·작성] \"2026년 전체 Adjusted EBITDA는 $257M~$277M,  — Adjusted EBITDA 가이던스는 상향이 아니라 '감소/하향'(reduces)임. 가이던스 유지/상향 취지로 쓰면 오류. (원문: reduces Adjusted EBITDA guidance to a range of $257 million to $277 million)"
    ],
    "facts": [
     {
@@ -92,34 +90,34 @@
     },
     {
      "id": "F2",
-     "topic": "revenue",
-     "key": false,
-     "text": "United States Revenue was $657,089 thousand for the third quarter of 2026, up 21% year-over-year from $543,523 thousand.",
-     "quote": "United States Revenue $ 657,089  $ 543,523  21  %"
+     "topic": "revenue|guidance",
+     "key": true,
+     "text": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion.",
+     "quote": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion"
     },
     {
      "id": "F3",
-     "topic": "revenue",
-     "key": false,
-     "text": "Rest of the World Revenue was $233,284 thousand for the third quarter of 2026, up 321% year-over-year from $55,453 thousand.",
-     "quote": "Rest of the World Revenue 233,284  55,453  321  %"
+     "topic": "guidance",
+     "key": true,
+     "text": "For the fourth quarter 2026, we expect revenue of $875 million to $895 million.",
+     "quote": "For the fourth quarter 2026, we expect: • Revenue of $875 million to $895 million."
     },
     {
      "id": "F4",
-     "topic": "revenue",
-     "key": false,
-     "text": "Monthly Revenue per Average Subscriber was $105 for the third quarter of 2026 compared to $81 for the third quarter of 2025, an increase of 30%.",
-     "quote": "Monthly Revenue per Average Subscriber $ 105  $ 81  30  %"
-    },
-    {
-     "id": "F6",
-     "topic": "net_income",
+     "topic": "eps|net_income",
      "key": true,
      "text": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025.",
      "quote": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025."
     },
     {
-     "id": "F7",
+     "id": "F5",
+     "topic": "eps",
+     "key": true,
+     "text": "Net (loss) income per share attributable to common stockholders, diluted, was $(0.14) for the third quarter of 2026 and $0.06 for the third quarter of 2025.",
+     "quote": "Net (loss) income per share attributable to common stockholders: Basic $ (0.14) $ 0.07  $ (0.91) $ 0.48  Diluted $ (0.14) $ 0.06  $ (0.91) $ 0.43"
+    },
+    {
+     "id": "F6",
      "topic": "margin",
      "key": false,
      "text": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025.",
@@ -127,38 +125,38 @@
     },
     {
      "id": "F8",
-     "topic": "eps",
-     "key": true,
-     "text": "Diluted net loss per share attributable to common stockholders was $ (0.14) for the third quarter of 2026 compared to $ 0.06 for the third quarter of 2025.",
-     "quote": "Diluted $ (0.14) $ 0.06"
-    },
-    {
-     "id": "F9",
-     "topic": "guidance",
-     "key": true,
-     "text": "Hims & Hers tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion.",
-     "quote": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion"
-    },
-    {
-     "id": "F10",
-     "topic": "guidance",
-     "key": true,
-     "text": "For the fourth quarter 2026, Hims & Hers expects revenue of $875 million to $895 million.",
-     "quote": "For the fourth quarter 2026, we expect:\n• Revenue of $875 million to $895 million."
-    },
-    {
-     "id": "F13",
-     "topic": "one_time",
-     "key": true,
-     "text": "In connection with the strategic shift for the United States weight loss offering, additional restructuring and other related charges were incurred in the second and third quarters of 2026.",
-     "quote": "Additional restructuring and other related charges were incurred in the second and third quarters of 2026, and to the extent that we incur further restructuring and other related charges in connection with the 2026 US WL Announcement in future periods, these costs will be presented consistently with our current presentation."
-    },
-    {
-     "id": "F14",
      "topic": "cash",
      "key": false,
      "text": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025.",
      "quote": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025."
+    },
+    {
+     "id": "F9",
+     "topic": "cash",
+     "key": false,
+     "text": "Free Cash Flow was $26.0 million for the third quarter of 2026 compared to $79.4 million for the third quarter of 2025.",
+     "quote": "Free Cash Flow was $26.0 million for the third quarter of 2026 compared to $79.4 million for the third quarter of 2025."
+    },
+    {
+     "id": "F10",
+     "topic": "margin|guidance",
+     "key": true,
+     "text": "For the fourth quarter 2026, we expect Adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%.",
+     "quote": "For the fourth quarter 2026, we expect: • Revenue of $875 million to $895 million. • Adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%."
+    },
+    {
+     "id": "F11",
+     "topic": "guidance|margin",
+     "key": true,
+     "text": "For the full year 2026, we expect Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%.",
+     "quote": "For the full year 2026, we expect: • Revenue of $3.13 billion to $3.15 billion. • Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%."
+    },
+    {
+     "id": "F14",
+     "topic": "segment|users",
+     "key": true,
+     "text": "Subscribers grew to nearly 2.8 million, up 13% year-over-year in Q3 2026.",
+     "quote": "Subscribers grew to nearly 2.8 million, up 13% year-over-year in Q3 2026"
     }
    ]
   }
@@ -176,7 +174,26 @@
   "accept": "2026-11-09T21:06:21.000Z",
   "gen": 6,
   "model": "gpt-4.1",
-  "attempts": 1,
+  "attempts": 2,
+  "headline": "매출 73% 급증·백로그 52% 확대, 적자 지속",
+  "metrics": [
+   {
+    "k": "매출",
+    "v": "$268M",
+    "dir": "up"
+   },
+   {
+    "k": "주당순손실(GAAP EPS)",
+    "v": "$-0.12",
+    "dir": ""
+   }
+  ],
+  "guidance": "4분기 매출 $270M~$290M, GAAP 총마진 34~36%, Non-GAAP 총마진 39~41% 전망",
+  "bullets": [
+   "전년 동기 대비 매출이 73% 증가하며 분기 최대치를 기록했다.",
+   "3분기 말 백로그가 약 $3.6B로, 전분기 대비 52% 늘었다.",
+   "3분기 GAAP 기준 주당순손실은 $(0.12)였다."
+  ],
   "verdict": "inline",
   "cons": {
    "rev": {
@@ -192,99 +209,99 @@
   },
   "cons_text": "매출 $267.8M vs 예상 $257.2M (+4.1%) · EPS $-0.12 vs 예상 $-0.07 (하회)",
   "move": {
-   "pct": -8.08,
+   "pct": -5.22,
    "base": 58.86000061035156,
-   "last": 54.1035,
+   "last": 55.79,
    "label": "발표 직후 시간외",
    "final": false,
-   "text": "발표 직후 시간외 -8.1% ($58.86 → $54.10, 진행 중)"
+   "text": "발표 직후 시간외 -5.2% ($58.86 → $55.79, 진행 중)"
   },
   "check": {
-   "ok": false,
+   "ok": true,
    "by": "agents",
    "stages": [
     {
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 6개, 원문 불일치 8개 제외"
+     "note": "사실 8개, 원문 불일치 5개 제외"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "6개 번역"
+     "note": "8개 번역"
     },
     {
      "stage": "작성",
      "round": 1,
-     "ok": true,
-     "note": "항목 8개"
-    },
-    {
-     "stage": "최종 점검",
-     "round": 1,
-     "ok": false,
-     "note": "지적 3건"
-    },
-    {
-     "stage": "작성",
-     "round": 2,
      "ok": true,
      "note": "항목 7개"
     },
     {
      "stage": "최종 점검",
-     "round": 2,
-     "ok": false,
-     "note": "지적 1건"
+     "round": 1,
+     "ok": true,
+     "note": "지적 0건"
     }
    ],
-   "issues": [
-    "[최종 점검·작성] \"GAAP 희석 EPS\", \"v\": \"$-0.12\", \"dir\": \"do — EPS 수치 방향(down)이 틀림. 전년도 -$0.03 → 이번 분기 -$0.12로 적자폭 확대라서 'down'(개선) 아님, 'up'(악화)이어야 함. (원문: Net loss per share attributable to Rocket Lab Corporation: Basic and diluted $ ()"
-   ],
+   "issues": [],
    "facts": [
     {
      "id": "F1",
      "topic": "revenue",
      "key": true,
-     "text": "Rocket Lab reported record quarterly revenue of $268 million, a 73% increase year-on-year.",
-     "quote": "Record quarterly revenue of $268 million, a 73% increase year-on-year."
+     "text": "Rocket Lab delivered a record $268 million in revenue for the third quarter of 2026.",
+     "quote": "We delivered a record $268 million in revenue ($34 million higher than Q2 2026) alongside a record backlog which has grown to $3.57 billion."
+    },
+    {
+     "id": "F2",
+     "topic": "revenue",
+     "key": true,
+     "text": "Record quarterly revenue of $268 million represented a 73% increase year-on-year.",
+     "quote": "• Record quarterly revenue of $268 million, a 73% increase year-on-year."
     },
     {
      "id": "F3",
+     "topic": "backlog",
+     "key": true,
+     "text": "Rocket Lab ended Q3 2026 with a record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026.",
+     "quote": "• Record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026."
+    },
+    {
+     "id": "F4",
+     "topic": "cash",
+     "key": false,
+     "text": "Rocket Lab reported positive GAAP operating cash flow of $7.2 million in Q3 2026.",
+     "quote": "• Positive GAAP operating cash flow of $7.2M."
+    },
+    {
+     "id": "F7",
      "topic": "eps",
      "key": true,
-     "text": "GAAP net loss per share attributable to Rocket Lab Corporation for the third quarter was $(0.12), compared to $(0.03) in the prior year period.",
+     "text": "GAAP net loss per share for Q3 2026 was $ (0.12) basic and diluted.",
      "quote": "Net loss per share attributable to Rocket Lab Corporation: Basic and diluted $ (0.12) $ (0.03)"
+    },
+    {
+     "id": "F8",
+     "topic": "guidance",
+     "key": true,
+     "text": "For the fourth quarter of 2026, Rocket Lab expects revenue between $270 million and $290 million.",
+     "quote": "For the fourth quarter of 2026, Rocket Lab expects: • Revenue between $270 million and $290 million."
     },
     {
      "id": "F9",
      "topic": "guidance",
      "key": true,
-     "text": "For the fourth quarter of 2026, Rocket Lab expects revenue between $270 million and $290 million.",
-     "quote": "Revenue between $270 million and $290 million."
-    },
-    {
-     "id": "F10",
-     "topic": "guidance",
-     "key": true,
-     "text": "For the fourth quarter of 2026, Rocket Lab expects GAAP Gross Margins between 34% and 36%.",
-     "quote": "GAAP Gross Margins between 34% and 36%."
+     "text": "For Q4 2026, Rocket Lab expects GAAP Gross Margins between 34% and 36%, and Non-GAAP Gross Margins between 39% and 41%.",
+     "quote": "• GAAP Gross Margins between 34% and 36%. • Non-GAAP Gross Margins between 39% and 41%."
     },
     {
      "id": "F12",
-     "topic": "other",
-     "key": true,
-     "text": "Rocket Lab posted record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026.",
-     "quote": "Record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026."
-    },
-    {
-     "id": "F13",
-     "topic": "cash",
-     "key": true,
-     "text": "Rocket Lab reported positive GAAP operating cash flow of $7.2 million for the third quarter of 2026.",
-     "quote": "Positive GAAP operating cash flow of $7.2M."
+     "topic": "segment",
+     "key": false,
+     "text": "Nearly $1 billion of the backlog comes from new launch contracts signed in Q3 2026, as well as $470 million for Space Systems.",
+     "quote": "Nearly $1 billion of that backlog comes from new launch contracts, signed in Q3 2026 alone, as well as $470 million signed for Space Systems."
     }
    ]
   }
