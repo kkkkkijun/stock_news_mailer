@@ -1,5 +1,295 @@
 [
  {
+  "ticker": "HIMS",
+  "name": "힘스앤허스",
+  "title": "261110_힘스앤허스_3분기_실적보고서",
+  "date": "2026-11-10",
+  "qnum": 3,
+  "quarter": "2026 3Q",
+  "cq": "2026-3",
+  "acc": "0001773751-26-000242",
+  "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000242/hims-20260930x8xkearningsr.htm",
+  "accept": "2026-11-09T21:11:11.000Z",
+  "gen": 6,
+  "model": "gpt-4.1",
+  "attempts": 1,
+  "verdict": "miss",
+  "cons": {
+   "rev": {
+    "act": 890.4,
+    "est": 892.77,
+    "pct": -0.3
+   },
+   "eps": {
+    "act": -0.14,
+    "est": 0.06,
+    "diff": -0.2
+   }
+  },
+  "cons_text": "매출 $890.4M vs 예상 $892.8M (-0.3%) · EPS $-0.14 vs 예상 $0.06 (하회)",
+  "move": {
+   "pct": -0.7,
+   "base": 22.940000534057617,
+   "last": 22.7783,
+   "label": "발표 직후 시간외",
+   "final": false,
+   "text": "발표 직후 시간외 -0.7% ($22.94 → $22.78, 진행 중)"
+  },
+  "check": {
+   "ok": false,
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 11개, 원문 불일치 3개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "11개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 8개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": false,
+     "note": "지적 2건"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 8개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": false,
+     "note": "지적 4건"
+    }
+   ],
+   "issues": [
+    "[최종 점검·작성] 4분기 매출은 $875M~$895M으로 제시했다. — 4분기 가이던스는 맞으나, 전체 가이던스 중 조정(상향/하향 등)된 부분을 밝히지 않았다. 실제로 조정된 내용이 있음: 'reduces Adjusted EBITDA guidance to a range of $257 million to $277 million'. (원문: Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 bi)",
+    "[최종 점검·작성] 2026년 3분기 매출은 전년 동기 대비 49% 증가했다. — 수치는 맞으나, 주요 핵심 성과 지표인 총구독자(2.8M, 13% 증가), 국제 매출 300% 증가 등 원문 첫 단락(헤드라인) 및 Key Business Metrics에 명시된 주요 내용이 헤드라인·첫 단락 요약 등 상위 요약에서 누락됨. (원문: Revenue of approximately $890 million, up 49% year-over-year in Q3 2026\nSubscrib)",
+    "[최종 점검·번역] United States 체중 감량 사업의 전략적 전환과 관련해 2~3분 — 구조조정 비용 언급은 맞으나, 원문은 'second and third quarters of 2026'임에도 불구하고 '2~3분기'라 번역, 비재무 독자에게 분기로 혼동될 수 있는 표현(2~3개월분처럼 오독 가능). 원문 취지(2Q, 3Q 해당) 강조 불명확. (원문: Additional restructuring and other related charges were incurred in the second a)",
+    "[최종 점검·작성]  — 주요 재무 지표(조정 EBITDA 등) 가이던스 하향 사실이 본문 어디에도 포함되지 않고, 헤드라인 등 상위 요약에도 언급되지 않았음. (원문: and reduces Adjusted EBITDA guidance to a range of $257 million to $277 million)"
+   ],
+   "facts": [
+    {
+     "id": "F1",
+     "topic": "revenue",
+     "key": true,
+     "text": "Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year.",
+     "quote": "Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year."
+    },
+    {
+     "id": "F2",
+     "topic": "revenue",
+     "key": false,
+     "text": "United States Revenue was $657,089 thousand for the third quarter of 2026, up 21% year-over-year from $543,523 thousand.",
+     "quote": "United States Revenue $ 657,089  $ 543,523  21  %"
+    },
+    {
+     "id": "F3",
+     "topic": "revenue",
+     "key": false,
+     "text": "Rest of the World Revenue was $233,284 thousand for the third quarter of 2026, up 321% year-over-year from $55,453 thousand.",
+     "quote": "Rest of the World Revenue 233,284  55,453  321  %"
+    },
+    {
+     "id": "F4",
+     "topic": "revenue",
+     "key": false,
+     "text": "Monthly Revenue per Average Subscriber was $105 for the third quarter of 2026 compared to $81 for the third quarter of 2025, an increase of 30%.",
+     "quote": "Monthly Revenue per Average Subscriber $ 105  $ 81  30  %"
+    },
+    {
+     "id": "F6",
+     "topic": "net_income",
+     "key": true,
+     "text": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025.",
+     "quote": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025."
+    },
+    {
+     "id": "F7",
+     "topic": "margin",
+     "key": false,
+     "text": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025.",
+     "quote": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025."
+    },
+    {
+     "id": "F8",
+     "topic": "eps",
+     "key": true,
+     "text": "Diluted net loss per share attributable to common stockholders was $ (0.14) for the third quarter of 2026 compared to $ 0.06 for the third quarter of 2025.",
+     "quote": "Diluted $ (0.14) $ 0.06"
+    },
+    {
+     "id": "F9",
+     "topic": "guidance",
+     "key": true,
+     "text": "Hims & Hers tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion.",
+     "quote": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion"
+    },
+    {
+     "id": "F10",
+     "topic": "guidance",
+     "key": true,
+     "text": "For the fourth quarter 2026, Hims & Hers expects revenue of $875 million to $895 million.",
+     "quote": "For the fourth quarter 2026, we expect:\n• Revenue of $875 million to $895 million."
+    },
+    {
+     "id": "F13",
+     "topic": "one_time",
+     "key": true,
+     "text": "In connection with the strategic shift for the United States weight loss offering, additional restructuring and other related charges were incurred in the second and third quarters of 2026.",
+     "quote": "Additional restructuring and other related charges were incurred in the second and third quarters of 2026, and to the extent that we incur further restructuring and other related charges in connection with the 2026 US WL Announcement in future periods, these costs will be presented consistently with our current presentation."
+    },
+    {
+     "id": "F14",
+     "topic": "cash",
+     "key": false,
+     "text": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025.",
+     "quote": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025."
+    }
+   ]
+  }
+ },
+ {
+  "ticker": "RKLB",
+  "name": "로켓랩",
+  "title": "261110_로켓랩_3분기_실적보고서",
+  "date": "2026-11-10",
+  "qnum": 3,
+  "quarter": "2026 3Q",
+  "cq": "2026-3",
+  "acc": "0001819994-26-000073",
+  "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000073/rklb-11092026ex991.htm",
+  "accept": "2026-11-09T21:06:21.000Z",
+  "gen": 6,
+  "model": "gpt-4.1",
+  "attempts": 1,
+  "verdict": "inline",
+  "cons": {
+   "rev": {
+    "act": 267.83,
+    "est": 257.18,
+    "pct": 4.1
+   },
+   "eps": {
+    "act": -0.12,
+    "est": -0.07,
+    "diff": -0.05
+   }
+  },
+  "cons_text": "매출 $267.8M vs 예상 $257.2M (+4.1%) · EPS $-0.12 vs 예상 $-0.07 (하회)",
+  "move": {
+   "pct": -8.08,
+   "base": 58.86000061035156,
+   "last": 54.1035,
+   "label": "발표 직후 시간외",
+   "final": false,
+   "text": "발표 직후 시간외 -8.1% ($58.86 → $54.10, 진행 중)"
+  },
+  "check": {
+   "ok": false,
+   "by": "agents",
+   "stages": [
+    {
+     "stage": "요약",
+     "round": 1,
+     "ok": true,
+     "note": "사실 6개, 원문 불일치 8개 제외"
+    },
+    {
+     "stage": "번역",
+     "round": 1,
+     "ok": true,
+     "note": "6개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 8개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
+     "ok": false,
+     "note": "지적 3건"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 7개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": false,
+     "note": "지적 1건"
+    }
+   ],
+   "issues": [
+    "[최종 점검·작성] \"GAAP 희석 EPS\", \"v\": \"$-0.12\", \"dir\": \"do — EPS 수치 방향(down)이 틀림. 전년도 -$0.03 → 이번 분기 -$0.12로 적자폭 확대라서 'down'(개선) 아님, 'up'(악화)이어야 함. (원문: Net loss per share attributable to Rocket Lab Corporation: Basic and diluted $ ()"
+   ],
+   "facts": [
+    {
+     "id": "F1",
+     "topic": "revenue",
+     "key": true,
+     "text": "Rocket Lab reported record quarterly revenue of $268 million, a 73% increase year-on-year.",
+     "quote": "Record quarterly revenue of $268 million, a 73% increase year-on-year."
+    },
+    {
+     "id": "F3",
+     "topic": "eps",
+     "key": true,
+     "text": "GAAP net loss per share attributable to Rocket Lab Corporation for the third quarter was $(0.12), compared to $(0.03) in the prior year period.",
+     "quote": "Net loss per share attributable to Rocket Lab Corporation: Basic and diluted $ (0.12) $ (0.03)"
+    },
+    {
+     "id": "F9",
+     "topic": "guidance",
+     "key": true,
+     "text": "For the fourth quarter of 2026, Rocket Lab expects revenue between $270 million and $290 million.",
+     "quote": "Revenue between $270 million and $290 million."
+    },
+    {
+     "id": "F10",
+     "topic": "guidance",
+     "key": true,
+     "text": "For the fourth quarter of 2026, Rocket Lab expects GAAP Gross Margins between 34% and 36%.",
+     "quote": "GAAP Gross Margins between 34% and 36%."
+    },
+    {
+     "id": "F12",
+     "topic": "other",
+     "key": true,
+     "text": "Rocket Lab posted record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026.",
+     "quote": "Record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026."
+    },
+    {
+     "id": "F13",
+     "topic": "cash",
+     "key": true,
+     "text": "Rocket Lab reported positive GAAP operating cash flow of $7.2 million for the third quarter of 2026.",
+     "quote": "Positive GAAP operating cash flow of $7.2M."
+    }
+   ]
+  }
+ },
+ {
   "ticker": "IREN",
   "name": "아이렌",
   "title": "261106_아이렌_3분기_실적보고서",
@@ -1621,305 +1911,6 @@
      "key": false,
      "text": "As of the end of the second quarter, the company had approximately $99.0 billion remaining under its share repurchase authorization.",
      "quote": "As of the end of the second quarter, the company had approximately $99.0 billion remaining under its share repurchase authorization."
-    }
-   ]
-  }
- },
- {
-  "ticker": "HIMS",
-  "name": "힘스앤허스",
-  "title": "260811_힘스앤허스_2분기_실적보고서",
-  "date": "2026-08-11",
-  "qnum": 2,
-  "quarter": "2026 2Q",
-  "cq": "2026-2",
-  "acc": "0001773751-26-000161",
-  "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000161/hims-20260630x8xkearningsr.htm",
-  "accept": "2026-08-10T20:08:59.000Z",
-  "gen": 6,
-  "model": "gpt-4.1",
-  "attempts": 3,
-  "eps_act": "$-0.37",
-  "eps_est": "$-0.05",
-  "surprise": "-640.00%",
-  "surprise_pos": false,
-  "verdict": "miss",
-  "cons": {
-   "eps": {
-    "act": -0.37,
-    "est": -0.05,
-    "diff": -0.32
-   }
-  },
-  "cons_text": "EPS $-0.37 vs 예상 $-0.05 (하회)",
-  "move": {
-   "pct": -3.97,
-   "base": 31.770000457763672,
-   "last": 30.510000228881836,
-   "label": "발표 다음 거래일(8/11) 종가",
-   "final": true,
-   "text": "발표 다음 거래일(8/11) 종가 -4.0% ($31.77 → $30.51)"
-  },
-  "check": {
-   "ok": false,
-   "by": "agents",
-   "stages": [
-    {
-     "stage": "요약",
-     "round": 1,
-     "ok": true,
-     "note": "사실 12개, 원문 불일치 1개 제외"
-    },
-    {
-     "stage": "번역",
-     "round": 1,
-     "ok": true,
-     "note": "12개 번역"
-    },
-    {
-     "stage": "작성",
-     "round": 1,
-     "ok": false,
-     "note": "항목 9개"
-    }
-   ],
-   "issues": [
-    "[작성] 핵심 사실 F5 누락: Raises full year 2026 revenue guidance to a range of $3.1 bi",
-    "[작성] 핵심 사실 F6 누락: For the third quarter 2026, we expect: • Revenue of $880 mil"
-   ],
-   "facts": [
-    {
-     "id": "F1",
-     "topic": "revenue",
-     "key": true,
-     "text": "Revenue was $753.2 million for the second quarter of 2026 compared to $544.8 million for the second quarter of 2025, an increase of 38% year-over-year.",
-     "quote": "• Revenue was $753.2 million for the second quarter of 2026 compared to $544.8 million for the second quarter of 2025, an increase of 38% year-over-year."
-    },
-    {
-     "id": "F2",
-     "topic": "net_income",
-     "key": true,
-     "text": "Net loss was $86.3 million for the second quarter of 2026 compared to net income of $42.5 million for the second quarter of 2025.",
-     "quote": "• Net loss was $86.3 million for the second quarter of 2026 compared to net income of $42.5 million for the second quarter of 2025."
-    },
-    {
-     "id": "F3",
-     "topic": "eps",
-     "key": true,
-     "text": "Diluted net loss per share attributable to common stockholders was $ (0.37) for the second quarter of 2026 and $ 0.17 for the second quarter of 2025.",
-     "quote": "Net (loss) income per share attributable to common stockholders: Basic $ (0.37) $ 0.19  $ (0.78) $ 0.41  Diluted $ (0.37) $ 0.17  $ (0.78) $ 0.37 "
-    },
-    {
-     "id": "F4",
-     "topic": "margin",
-     "key": false,
-     "text": "Gross margin was 64% for the second quarter of 2026 compared to 76% for the second quarter of 2025.",
-     "quote": "• Gross margin was 64% for the second quarter of 2026 compared to 76% for the second quarter of 2025."
-    },
-    {
-     "id": "F5",
-     "topic": "guidance",
-     "key": true,
-     "text": "Raises full year 2026 revenue guidance to a range of $3.1 billion to $3.3 billion and updates Adjusted EBITDA guidance to a range of $275 million to $325 million.",
-     "quote": "Raises full year 2026 revenue guidance to a range of $3.1 billion to $3.3 billion and updates Adjusted EBITDA guidance to a range of $275 million to $325 million"
-    },
-    {
-     "id": "F6",
-     "topic": "guidance",
-     "key": true,
-     "text": "For the third quarter 2026, we expect: • Revenue of $880 million to $900 million. • Adjusted EBITDA of $75 million to $95 million, reflecting an Adjusted EBITDA margin of 9% to 11%.",
-     "quote": "For the third quarter 2026, we expect: • Revenue of $880 million to $900 million. • Adjusted EBITDA of $75 million to $95 million, reflecting an Adjusted EBITDA margin of 9% to 11%."
-    },
-    {
-     "id": "F7",
-     "topic": "guidance",
-     "key": true,
-     "text": "For the full year 2026, we expect: • Revenue of $3.1 billion to $3.3 billion. • Adjusted EBITDA of $275 million to $325 million, reflecting an Adjusted EBITDA margin of 9% to 10%.",
-     "quote": "For the full year 2026, we expect: • Revenue of $3.1 billion to $3.3 billion. • Adjusted EBITDA of $275 million to $325 million, reflecting an Adjusted EBITDA margin of 9% to 10%."
-    },
-    {
-     "id": "F8",
-     "topic": "segment",
-     "key": false,
-     "text": "United States Revenue was $621,830 thousand for the second quarter of 2026 and $537,286 thousand for the second quarter of 2025.",
-     "quote": "United States Revenue $ 621,830  $ 537,286  16  %"
-    },
-    {
-     "id": "F9",
-     "topic": "segment",
-     "key": false,
-     "text": "Rest of the World Revenue was $131,384 thousand for the second quarter of 2026 and $7,547 thousand for the second quarter of 2025.",
-     "quote": "Rest of the World Revenue 131,384  7,547  1,641  %"
-    },
-    {
-     "id": "F10",
-     "topic": "one_time",
-     "key": true,
-     "text": "Legal contingencies of $47,500 thousand were included as an adjustment in the second quarter of 2026 Adjusted EBITDA.",
-     "quote": "Legal contingencies 47,500  —  62,500  — "
-    },
-    {
-     "id": "F11",
-     "topic": "one_time",
-     "key": true,
-     "text": "Restructuring and other related charges of $4,626 thousand were included as an adjustment in the second quarter of 2026 Adjusted EBITDA.",
-     "quote": "Restructuring and other related charges 4,626  —  38,114  — "
-    },
-    {
-     "id": "F12",
-     "topic": "other",
-     "key": true,
-     "text": "Subscribers grew to nearly 2.9 million, up 19% year-over-year in Q2 2026.",
-     "quote": "Subscribers grew to nearly 2.9 million, up 19% year-over-year in Q2 2026"
-    }
-   ]
-  }
- },
- {
-  "ticker": "RKLB",
-  "name": "로켓랩",
-  "title": "260811_로켓랩_2분기_실적보고서",
-  "date": "2026-08-11",
-  "qnum": 2,
-  "quarter": "2026 2Q",
-  "cq": "2026-2",
-  "acc": "0001819994-26-000061",
-  "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000061/rklb-08102026ex991.htm",
-  "accept": "2026-08-10T20:08:45.000Z",
-  "gen": 6,
-  "model": "gpt-4.1",
-  "attempts": 3,
-  "eps_act": "$-0.08",
-  "eps_est": "$-0.08",
-  "surprise": "-4.34%",
-  "surprise_pos": false,
-  "verdict": "inline",
-  "cons": {
-   "eps": {
-    "act": -0.08,
-    "est": -0.08,
-    "diff": 0.0
-   }
-  },
-  "cons_text": "EPS $-0.08 vs 예상 $-0.08 (부합)",
-  "move": {
-   "pct": -0.04,
-   "base": 80.04000091552734,
-   "last": 80.01000213623047,
-   "label": "발표 다음 거래일(8/11) 종가",
-   "final": true,
-   "text": "발표 다음 거래일(8/11) 종가 -0.0% ($80.04 → $80.01)"
-  },
-  "check": {
-   "ok": false,
-   "by": "agents",
-   "stages": [
-    {
-     "stage": "요약",
-     "round": 1,
-     "ok": true,
-     "note": "사실 9개, 원문 불일치 5개 제외"
-    },
-    {
-     "stage": "번역",
-     "round": 1,
-     "ok": true,
-     "note": "9개 번역"
-    },
-    {
-     "stage": "작성",
-     "round": 1,
-     "ok": true,
-     "note": "항목 8개"
-    },
-    {
-     "stage": "최종 점검",
-     "round": 1,
-     "ok": false,
-     "note": "지적 3건(원문 근거 없는 지적 2건 제외)"
-    },
-    {
-     "stage": "번역",
-     "round": 2,
-     "ok": true,
-     "note": "9개 번역"
-    },
-    {
-     "stage": "작성",
-     "round": 2,
-     "ok": false,
-     "note": "항목 8개"
-    }
-   ],
-   "issues": [
-    "[작성] 핵심 사실 F6 누락: GAAP Gross margin guidance for Q3 2026 is between 29% and 31",
-    "[작성] 핵심 사실 F8 누락: Rocket Lab expects revenue between $250 million and $265 mil",
-    "[작성] 핵심 사실 F9 누락: GAAP operating expenses guidance for Q3 2026 is between $143",
-    "[작성] 핵심 사실 F10 누락: Rocket Lab guides to adjusted EBITDA loss of between $17 mil"
-   ],
-   "facts": [
-    {
-     "id": "F1",
-     "topic": "revenue",
-     "key": true,
-     "text": "Rocket Lab reported record quarterly revenue of $234 million in Q2 2026, a 62% increase year-over-year.",
-     "quote": "We achieved a record $234 million in Q2 revenue - up 62% year-over-year and $34 million higher than last quarter’s record - driven by surging demand across all areas of our business."
-    },
-    {
-     "id": "F3",
-     "topic": "eps",
-     "key": true,
-     "text": "GAAP diluted net loss per share for the second quarter of 2026 was $(0.08).",
-     "quote": "Net loss per share attributable to Rocket Lab Corporation: Basic and diluted $ (0.08) $ (0.13)"
-    },
-    {
-     "id": "F6",
-     "topic": "margin",
-     "key": true,
-     "text": "GAAP Gross margin guidance for Q3 2026 is between 29% and 31%.",
-     "quote": "GAAP Gross Margins between 29% and 31%."
-    },
-    {
-     "id": "F7",
-     "topic": "margin",
-     "key": true,
-     "text": "Non-GAAP Gross margin guidance for Q3 2026 is between 35% and 37%.",
-     "quote": "Non-GAAP Gross Margins between 35% and 37%."
-    },
-    {
-     "id": "F8",
-     "topic": "guidance",
-     "key": true,
-     "text": "Rocket Lab expects revenue between $250 million and $265 million for the third quarter of 2026.",
-     "quote": "For the third quarter of 2026, Rocket Lab expects: • Revenue between $250 million and $265 million."
-    },
-    {
-     "id": "F9",
-     "topic": "guidance",
-     "key": true,
-     "text": "GAAP operating expenses guidance for Q3 2026 is between $143 million and $149 million.",
-     "quote": "GAAP Operating Expenses between $143 million and $149 million."
-    },
-    {
-     "id": "F10",
-     "topic": "guidance",
-     "key": true,
-     "text": "Rocket Lab guides to adjusted EBITDA loss of between $17 million and $23 million for Q3 2026.",
-     "quote": "Adjusted EBITDA loss of between $17 million and $23 million."
-    },
-    {
-     "id": "F12",
-     "topic": "segment",
-     "key": true,
-     "text": "Rocket Lab's backlog grew to $2.36 billion in Q2 2026, a 137% increase year-over-year.",
-     "quote": "Record backlog of $2.36 billion a 137% increase YoY."
-    },
-    {
-     "id": "F14",
-     "topic": "other",
-     "key": true,
-     "text": "Rocket Lab announced a landmark agreement to acquire Iridium to create a fully vertically-integrated space powerhouse.",
-     "quote": "Announced a landmark agreement to acquire Iridium to create a fully vertically-integrated space powerhouse that designs, builds, launches, and operates its own constellations, delivering critical communications capability to millions of users worldwide."
     }
    ]
   }
