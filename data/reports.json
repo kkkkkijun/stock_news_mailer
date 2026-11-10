@@ -12,7 +12,7 @@
   "accept": "2026-11-09T21:11:11.000Z",
   "gen": 6,
   "model": "gpt-4.1",
-  "attempts": 2,
+  "attempts": 3,
   "verdict": "miss",
   "cons": {
    "rev": {
@@ -28,12 +28,12 @@
   },
   "cons_text": "매출 $890.4M vs 예상 $892.8M (-0.3%) · EPS $-0.14 vs 예상 $0.06 (하회)",
   "move": {
-   "pct": -2.76,
+   "pct": -3.4,
    "base": 22.940000534057617,
-   "last": 22.3078,
+   "last": 22.16,
    "label": "발표 직후 시간외",
    "final": false,
-   "text": "발표 직후 시간외 -2.8% ($22.94 → $22.31, 진행 중)"
+   "text": "발표 직후 시간외 -3.4% ($22.94 → $22.16, 진행 중)"
   },
   "check": {
    "ok": false,
@@ -43,13 +43,13 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 11개, 원문 불일치 3개 제외"
+     "note": "사실 13개, 원문 불일치 1개 제외"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "11개 번역"
+     "note": "13개 번역"
     },
     {
      "stage": "작성",
@@ -61,24 +61,17 @@
      "stage": "최종 점검",
      "round": 1,
      "ok": false,
-     "note": "지적 2건"
+     "note": "지적 2건(원문 근거 없는 지적 2건 제외)"
     },
     {
      "stage": "작성",
      "round": 2,
      "ok": true,
-     "note": "항목 9개"
-    },
-    {
-     "stage": "최종 점검",
-     "round": 2,
-     "ok": false,
-     "note": "지적 2건"
+     "note": "항목 7개"
     }
    ],
    "issues": [
-    "[최종 점검·작성] \"2026년 전체 매출 가이던스를 $3.13B~$3.15B로 상향 및 구 — 가이던스가 상향이 아니라 '타이튼'(범위 축소/명확화)된 것임. 원문에는 상향 언급이 없음. (원문: Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 bi)",
-    "[최종 점검·작성] \"2026년 전체 Adjusted EBITDA는 $257M~$277M,  — Adjusted EBITDA 가이던스는 상향이 아니라 '감소/하향'(reduces)임. 가이던스 유지/상향 취지로 쓰면 오류. (원문: reduces Adjusted EBITDA guidance to a range of $257 million to $277 million)"
+    "[오류] Unterminated string starting at: line 36 column 19 (char 3063)"
    ],
    "facts": [
     {
@@ -86,77 +79,91 @@
      "topic": "revenue",
      "key": true,
      "text": "Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year.",
-     "quote": "Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year."
+     "quote": "• Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year."
     },
     {
      "id": "F2",
-     "topic": "revenue|guidance",
-     "key": true,
-     "text": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion.",
-     "quote": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion"
+     "topic": "revenue",
+     "key": false,
+     "text": "United States Revenue was $657,089 thousand for the third quarter of 2026 and $543,523 thousand for the third quarter of 2025.",
+     "quote": "United States Revenue $ 657,089  $ 543,523  21  %"
     },
     {
      "id": "F3",
-     "topic": "guidance",
-     "key": true,
-     "text": "For the fourth quarter 2026, we expect revenue of $875 million to $895 million.",
-     "quote": "For the fourth quarter 2026, we expect: • Revenue of $875 million to $895 million."
+     "topic": "revenue",
+     "key": false,
+     "text": "Rest of the World Revenue was $233,284 thousand for the third quarter of 2026 and $55,453 thousand for the third quarter of 2025.",
+     "quote": "Rest of the World Revenue 233,284  55,453  321  %"
     },
     {
      "id": "F4",
-     "topic": "eps|net_income",
-     "key": true,
-     "text": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025.",
-     "quote": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025."
-    },
-    {
-     "id": "F5",
-     "topic": "eps",
-     "key": true,
-     "text": "Net (loss) income per share attributable to common stockholders, diluted, was $(0.14) for the third quarter of 2026 and $0.06 for the third quarter of 2025.",
-     "quote": "Net (loss) income per share attributable to common stockholders: Basic $ (0.14) $ 0.07  $ (0.91) $ 0.48  Diluted $ (0.14) $ 0.06  $ (0.91) $ 0.43"
-    },
-    {
-     "id": "F6",
      "topic": "margin",
      "key": false,
      "text": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025.",
-     "quote": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025."
+     "quote": "• Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025."
+    },
+    {
+     "id": "F5",
+     "topic": "net_income",
+     "key": false,
+     "text": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025.",
+     "quote": "• Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025."
+    },
+    {
+     "id": "F6",
+     "topic": "eps",
+     "key": true,
+     "text": "Diluted net loss per share was $(0.14) for the third quarter of 2026 and diluted net income per share was $0.06 for the third quarter of 2025.",
+     "quote": "Diluted $ (0.14) $ 0.06 "
+    },
+    {
+     "id": "F7",
+     "topic": "segment",
+     "key": false,
+     "text": "Subscribers (end of period) were 2,788 thousand as of the third quarter of 2026 and 2,471 thousand as of the third quarter of 2025, a 13% increase.",
+     "quote": "Subscribers (end of period) 2,788  2,471  13  %"
     },
     {
      "id": "F8",
-     "topic": "cash",
+     "topic": "segment",
      "key": false,
-     "text": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025.",
-     "quote": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025."
+     "text": "Monthly Revenue per Average Subscriber was $105 for the third quarter of 2026 and $81 for the third quarter of 2025, a 30% increase.",
+     "quote": "Monthly Revenue per Average Subscriber $ 105  $ 81  30  %"
     },
     {
      "id": "F9",
-     "topic": "cash",
-     "key": false,
-     "text": "Free Cash Flow was $26.0 million for the third quarter of 2026 compared to $79.4 million for the third quarter of 2025.",
-     "quote": "Free Cash Flow was $26.0 million for the third quarter of 2026 compared to $79.4 million for the third quarter of 2025."
+     "topic": "guidance",
+     "key": true,
+     "text": "For the fourth quarter 2026, Hims & Hers expects revenue of $875 million to $895 million.",
+     "quote": "For the fourth quarter 2026, we expect: • Revenue of $875 million to $895 million."
     },
     {
      "id": "F10",
-     "topic": "margin|guidance",
+     "topic": "guidance",
      "key": true,
-     "text": "For the fourth quarter 2026, we expect Adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%.",
-     "quote": "For the fourth quarter 2026, we expect: • Revenue of $875 million to $895 million. • Adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%."
+     "text": "For the full year 2026, Hims & Hers expects revenue of $3.13 billion to $3.15 billion.",
+     "quote": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion"
     },
     {
      "id": "F11",
-     "topic": "guidance|margin",
+     "topic": "guidance",
      "key": true,
-     "text": "For the full year 2026, we expect Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%.",
-     "quote": "For the full year 2026, we expect: • Revenue of $3.13 billion to $3.15 billion. • Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%."
+     "text": "For the fourth quarter 2026, Hims & Hers expects adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%.",
+     "quote": "• Adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%."
+    },
+    {
+     "id": "F12",
+     "topic": "guidance",
+     "key": true,
+     "text": "For the full year 2026, Hims & Hers expects Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%.",
+     "quote": "• Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%."
     },
     {
      "id": "F14",
-     "topic": "segment|users",
-     "key": true,
-     "text": "Subscribers grew to nearly 2.8 million, up 13% year-over-year in Q3 2026.",
-     "quote": "Subscribers grew to nearly 2.8 million, up 13% year-over-year in Q3 2026"
+     "topic": "cash",
+     "key": false,
+     "text": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025.",
+     "quote": "• Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025."
     }
    ]
   }
@@ -209,12 +216,12 @@
   },
   "cons_text": "매출 $267.8M vs 예상 $257.2M (+4.1%) · EPS $-0.12 vs 예상 $-0.07 (하회)",
   "move": {
-   "pct": -5.22,
+   "pct": -6.66,
    "base": 58.86000061035156,
-   "last": 55.79,
+   "last": 54.94,
    "label": "발표 직후 시간외",
    "final": false,
-   "text": "발표 직후 시간외 -5.2% ($58.86 → $55.79, 진행 중)"
+   "text": "발표 직후 시간외 -6.7% ($58.86 → $54.94, 진행 중)"
   },
   "check": {
    "ok": true,
