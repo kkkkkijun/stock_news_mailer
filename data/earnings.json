@@ -913,10 +913,10 @@
    ],
    "cur": {
     "period": "26.12",
-    "eps": "$0.10",
-    "eps_range": "$-0.02~$0.31",
-    "rev": "$891.86M",
-    "growth": "-10.31%",
+    "eps": "$-0.03",
+    "eps_range": "$-0.12~$0.04",
+    "rev": "$891.76M",
+    "growth": "-18.03%",
     "growth_pos": false
    },
    "rev": {
@@ -925,11 +925,11 @@
    },
    "next": {
     "period": "27.03",
-    "eps": "$0.05",
-    "eps_range": "$-0.10~$0.31",
-    "rev": "$888.54M",
-    "growth": "+330.49%",
-    "growth_pos": true
+    "eps": "$-0.06",
+    "eps_range": "$-0.20~$0.01",
+    "rev": "$904.06M",
+    "growth": null,
+    "growth_pos": null
    },
    "quarters": [
     {
@@ -972,23 +972,23 @@
      "cq": "2026-4",
      "label": "2026 4Q",
      "reported": false,
-     "eps_est": "$0.10",
-     "rev": "$891.86M",
+     "eps_est": "$-0.03",
+     "rev": "$891.76M",
      "date": "2026-11-10"
     },
     {
      "cq": "2027-1",
      "label": "2027 1Q",
      "reported": false,
-     "eps_est": "$0.05",
-     "rev": "$888.54M"
+     "eps_est": "$-0.06",
+     "rev": "$904.06M"
     }
    ],
    "target": {
     "price": "$19.13",
-    "mean": "$30.69",
+    "mean": "$28.85",
     "range": "$23~$42",
-    "upside": "+60%",
+    "upside": "+51%",
     "upside_pos": true
    },
    "rec": {
