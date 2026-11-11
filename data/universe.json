@@ -1,811 +1,811 @@
 {
- "asof": "Nov 10, 2026",
+ "asof": "Nov 11, 2026 2:45 PM",
  "rows": [
   {
    "t": "AAPL",
    "name": "Apple",
-   "px": 347.0465,
-   "mcap_nq": 5064610.74882,
+   "px": 354.8001,
+   "mcap_nq": 5156019.626818,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "AMAT",
    "name": "Applied Materials",
-   "px": 394.3607,
-   "mcap_nq": 295638.855441,
+   "px": 397.1,
+   "mcap_nq": 315137.544615,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "AMGN",
    "name": "Amgen",
-   "px": 461.45,
-   "mcap_nq": 251648.252493,
+   "px": 466.33,
+   "mcap_nq": 252243.255132,
    "sector": "헬스케어",
    "sector_src": "GICS"
   },
   {
    "t": "CMCSA",
    "name": "Comcast Corporation",
-   "px": 24.5055,
-   "mcap_nq": 87887.406791,
+   "px": 24.8,
+   "mcap_nq": 88082.71214,
    "sector": "커뮤니케이션",
    "sector_src": "GICS"
   },
   {
    "t": "INTC",
    "name": "Intel Corporation",
-   "px": 61.8432,
-   "mcap_nq": 308960.95,
+   "px": 62.725,
+   "mcap_nq": 333601.29,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "KLAC",
    "name": "KLA Corporation",
-   "px": 162.17,
-   "mcap_nq": 199340.222931,
+   "px": 162.04,
+   "mcap_nq": 211692.306814,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "PCAR",
    "name": "PACCAR",
-   "px": 103.61,
-   "mcap_nq": 55583.167583,
+   "px": 107.62,
+   "mcap_nq": 56662.503507,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "CTAS",
    "name": "Cintas Corporation",
-   "px": 223.445,
-   "mcap_nq": 89453.076951,
+   "px": 226.255,
+   "mcap_nq": 89840.225167,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "PAYX",
    "name": "Paychex",
-   "px": 116.99,
-   "mcap_nq": 41364.930963,
+   "px": 115.13,
+   "mcap_nq": 40987.591661,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "LRCX",
    "name": "Lam Research Corporation",
-   "px": 236.0,
-   "mcap_nq": 277803.13869,
+   "px": 237.83,
+   "mcap_nq": 297090.33893,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "ADSK",
    "name": "Autodesk",
-   "px": 260.909,
-   "mcap_nq": 54362.99,
+   "px": 258.88,
+   "mcap_nq": 53967.98,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "ROST",
    "name": "Ross Stores",
-   "px": 236.41,
-   "mcap_nq": 76333.320635,
+   "px": 240.4,
+   "mcap_nq": 76796.527644,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
   {
    "t": "MNST",
    "name": "Monster Beverage Corporation",
-   "px": 44.92,
-   "mcap_nq": 88753.590543,
+   "px": 45.165,
+   "mcap_nq": 88430.601076,
    "sector": "필수소비재",
    "sector_src": "GICS"
   },
   {
    "t": "MSFT",
    "name": "Microsoft Corporation",
-   "px": 535.0,
-   "mcap_nq": 3959349.887344,
+   "px": 520.65,
+   "mcap_nq": 3867487.860736,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "ADBE",
    "name": "Adobe",
-   "px": 235.4988,
-   "mcap_nq": 92123.64,
+   "px": 238.762,
+   "mcap_nq": 92929.284,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "FAST",
    "name": "Fastenal Company",
-   "px": 54.5,
-   "mcap_nq": 62918.013602,
+   "px": 55.47,
+   "mcap_nq": 63652.286554,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "CSCO",
    "name": "Cisco Systems",
-   "px": 99.74,
-   "mcap_nq": 386964.901585,
+   "px": 101.66,
+   "mcap_nq": 400823.094444,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "REGN",
    "name": "Regeneron Pharmaceuticals",
-   "px": 891.25,
-   "mcap_nq": 94764.445716,
+   "px": 950.085,
+   "mcap_nq": 97974.95002,
    "sector": "헬스케어",
    "sector_src": "GICS"
   },
   {
    "t": "IDXX",
    "name": "IDEXX Laboratories",
-   "px": 694.11,
-   "mcap_nq": 54885.66365,
+   "px": 702.6,
+   "mcap_nq": 55355.229789,
    "sector": "헬스케어",
    "sector_src": "GICS"
   },
   {
    "t": "VRTX",
    "name": "Vertex Pharmaceuticals Incorporated",
-   "px": 555.5652,
-   "mcap_nq": 138910.756208,
+   "px": 546.43,
+   "mcap_nq": 138477.206785,
    "sector": "헬스케어",
    "sector_src": "GICS"
   },
   {
    "t": "ODFL",
    "name": "Old Dominion Freight Line",
-   "px": 170.89,
-   "mcap_nq": 34618.821646,
+   "px": 169.985,
+   "mcap_nq": 35023.690022,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "QCOM",
    "name": "QUALCOMM Incorporated",
-   "px": 180.65,
-   "mcap_nq": 185677.1,
+   "px": 180.35,
+   "mcap_nq": 193049.4,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "GILD",
    "name": "Gilead Sciences",
-   "px": 169.0,
-   "mcap_nq": 211936.658974,
+   "px": 169.87,
+   "mcap_nq": 210696.32036,
    "sector": "헬스케어",
    "sector_src": "GICS"
   },
   {
    "t": "SNPS",
    "name": "Synopsys",
-   "px": 460.0,
-   "mcap_nq": 88143.275328,
+   "px": 463.42,
+   "mcap_nq": 88950.065607,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "SBUX",
    "name": "Starbucks Corporation",
-   "px": 109.41,
-   "mcap_nq": 125343.0,
+   "px": 109.48,
+   "mcap_nq": 124807.2,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
   {
    "t": "INTU",
    "name": "Intuit",
-   "px": 338.71,
-   "mcap_nq": 90977.82384,
+   "px": 344.15,
+   "mcap_nq": 92002.00581,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "MCHP",
    "name": "Microchip Technology Incorporated",
-   "px": 63.3161,
-   "mcap_nq": 32833.011417,
+   "px": 62.485,
+   "mcap_nq": 34005.813333,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "ORLY",
    "name": "O'Reilly Automotive",
-   "px": 88.2037,
-   "mcap_nq": 71695.136243,
+   "px": 90.03,
+   "mcap_nq": 72208.447432,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
   {
    "t": "COST",
    "name": "Costco Wholesale Corporation",
-   "px": 1082.97,
-   "mcap_nq": 472437.924143,
+   "px": 1081.72,
+   "mcap_nq": 479297.566465,
    "sector": "필수소비재",
    "sector_src": "GICS"
   },
   {
    "t": "CPRT",
    "name": "Copart (DE)",
-   "px": 32.1,
-   "mcap_nq": 29922.009917,
+   "px": 32.055,
+   "mcap_nq": 29628.255448,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "ASML",
    "name": "ASML Holding N.V. New York Registry Shares",
-   "px": 1559.21,
-   "mcap_nq": 581152.02617,
+   "px": 1544.25,
+   "mcap_nq": 595381.646362,
    "sector": "산업재",
    "sector_src": "SIC 3559 Special Industry Machinery, NEC"
   },
   {
    "t": "TTWO",
    "name": "Take-Two Interactive Software",
-   "px": 227.943,
-   "mcap_nq": 42003.286716,
+   "px": 230.945,
+   "mcap_nq": 43236.955054,
    "sector": "커뮤니케이션",
    "sector_src": "GICS"
   },
   {
    "t": "AMZN",
    "name": "Amazon.com",
-   "px": 271.6977,
-   "mcap_nq": 2928954.772946,
+   "px": 266.56,
+   "mcap_nq": 2883134.099375,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
   {
    "t": "MSTR",
    "name": "Strategy Inc",
-   "px": 122.3,
-   "mcap_nq": 51134.472269,
+   "px": 122.0,
+   "mcap_nq": 51535.709146,
    "sector": "금융",
    "sector_src": "SIC 6199 Finance Services"
   },
   {
    "t": "NVDA",
    "name": "NVIDIA Corporation",
-   "px": 175.17,
-   "mcap_nq": 4067973.96,
+   "px": 175.625,
+   "mcap_nq": 4233165.0,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "BKNG",
    "name": "Booking Holdings",
-   "px": 159.15,
-   "mcap_nq": 118441.86219,
+   "px": 160.905,
+   "mcap_nq": 119170.689422,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
   {
    "t": "ISRG",
    "name": "Intuitive Surgical",
-   "px": 448.54,
-   "mcap_nq": 156003.538849,
+   "px": 448.53,
+   "mcap_nq": 155445.442463,
    "sector": "헬스케어",
    "sector_src": "GICS"
   },
   {
    "t": "MRVL",
    "name": "Marvell Technology",
-   "px": 168.35,
-   "mcap_nq": 135384.591,
+   "px": 169.83,
+   "mcap_nq": 148923.927,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "ADI",
    "name": "Analog Devices",
-   "px": 406.9,
-   "mcap_nq": 190579.597385,
+   "px": 407.86,
+   "mcap_nq": 197634.870555,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "AEP",
    "name": "American Electric Power Company",
-   "px": 127.45,
-   "mcap_nq": 69612.246027,
+   "px": 128.97,
+   "mcap_nq": 70178.55341,
    "sector": "유틸리티",
    "sector_src": "GICS"
   },
   {
    "t": "AMD",
    "name": "Advanced Micro Devices",
-   "px": 544.48,
-   "mcap_nq": 844989.352588,
+   "px": 560.0,
+   "mcap_nq": 919203.300695,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "ADP",
    "name": "Automatic Data Processing",
-   "px": 301.9659,
-   "mcap_nq": 120575.32091,
+   "px": 305.73,
+   "mcap_nq": 120689.801145,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "CDNS",
    "name": "Cadence Design Systems",
-   "px": 335.0,
-   "mcap_nq": 90995.05156,
+   "px": 331.54,
+   "mcap_nq": 90923.71302,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "CSX",
    "name": "CSX Corporation",
-   "px": 51.38,
-   "mcap_nq": 94160.780567,
+   "px": 51.72,
+   "mcap_nq": 95340.555421,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "HON",
    "name": "Honeywell International",
-   "px": 228.26,
-   "mcap_nq": 72427.560978,
+   "px": 227.66,
+   "mcap_nq": 72249.840208,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "MAR",
    "name": "Marriott International",
-   "px": 426.0,
-   "mcap_nq": 110278.833059,
+   "px": 429.34,
+   "mcap_nq": 110556.937808,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
   {
    "t": "MU",
    "name": "Micron Technology",
-   "px": 779.77,
-   "mcap_nq": 820406.285253,
+   "px": 816.96,
+   "mcap_nq": 924553.791918,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "XEL",
    "name": "Xcel Energy",
-   "px": 80.17,
-   "mcap_nq": 51426.980774,
+   "px": 80.51,
+   "mcap_nq": 51677.311808,
    "sector": "유틸리티",
    "sector_src": "GICS"
   },
   {
    "t": "EXC",
    "name": "Exelon Corporation",
-   "px": 45.49,
-   "mcap_nq": 47118.846114,
+   "px": 45.645,
+   "mcap_nq": 47175.765431,
    "sector": "유틸리티",
    "sector_src": "GICS"
   },
   {
    "t": "PEP",
    "name": "PepsiCo",
-   "px": 142.0,
-   "mcap_nq": 195703.248222,
+   "px": 142.7101,
+   "mcap_nq": 194476.917513,
    "sector": "필수소비재",
    "sector_src": "GICS"
   },
   {
    "t": "ROP",
    "name": "Roper Technologies",
-   "px": 488.725,
-   "mcap_nq": 46989.814468,
+   "px": 476.36,
+   "mcap_nq": 47176.993318,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "TER",
    "name": "Teradyne",
-   "px": 263.8,
-   "mcap_nq": 38313.013895,
+   "px": 265.84,
+   "mcap_nq": 41485.468836,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "TXN",
    "name": "Texas Instruments Incorporated",
-   "px": 310.63,
-   "mcap_nq": 274606.255364,
+   "px": 310.09,
+   "mcap_nq": 283351.037288,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "WDC",
    "name": "Western Digital Corporation",
-   "px": 314.24,
-   "mcap_nq": 108254.289395,
+   "px": 314.41,
+   "mcap_nq": 117762.100427,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "WMT",
    "name": "Walmart",
-   "px": 124.45,
-   "mcap_nq": 996081.840558,
+   "px": 125.205,
+   "mcap_nq": 993344.698104,
    "sector": "필수소비재",
    "sector_src": "GICS"
   },
   {
    "t": "AXON",
    "name": "Axon Enterprise",
-   "px": 307.0,
-   "mcap_nq": 24636.652688,
+   "px": 314.78,
+   "mcap_nq": 25662.70486,
    "sector": "산업재",
    "sector_src": "GICS"
   },
   {
    "t": "MDLZ",
    "name": "Mondelez International",
-   "px": 65.959,
-   "mcap_nq": 84228.885739,
+   "px": 66.415,
+   "mcap_nq": 84070.655941,
    "sector": "필수소비재",
    "sector_src": "GICS"
   },
   {
    "t": "NFLX",
    "name": "Netflix",
-   "px": 63.05,
-   "mcap_nq": 259766.176624,
+   "px": 64.235,
+   "mcap_nq": 263790.376009,
    "sector": "커뮤니케이션",
    "sector_src": "GICS"
   },
   {
    "t": "STX",
    "name": "Seagate Technology Holdings PLC",
-   "px": 549.1605,
-   "mcap_nq": 115152.443497,
+   "px": 555.1228,
+   "mcap_nq": 127432.929803,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "ALNY",
    "name": "Alnylam Pharmaceuticals",
-   "px": 151.64,
-   "mcap_nq": 20310.294025,
+   "px": 157.96,
+   "mcap_nq": 21276.653635,
    "sector": "헬스케어",
    "sector_src": "SIC 2834 Pharmaceutical Preparations"
   },
   {
    "t": "GOOGL",
    "name": "Alphabet",
-   "px": 290.6,
-   "mcap_nq": 3533049.72,
+   "px": 294.145,
+   "mcap_nq": 3617509.5,
    "sector": "커뮤니케이션",
    "sector_src": "GICS"
   },
   {
    "t": "MPWR",
    "name": "Monolithic Power Systems",
-   "px": 1428.9995,
-   "mcap_nq": 66207.4368,
+   "px": 1483.03,
+   "mcap_nq": 72324.40704,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "DXCM",
    "name": "DexCom",
-   "px": 79.96,
-   "mcap_nq": 29806.237686,
+   "px": 80.285,
+   "mcap_nq": 29953.5533,
    "sector": "헬스케어",
    "sector_src": "GICS"
   },
   {
    "t": "TMUS",
    "name": "T-Mobile US",
-   "px": 167.93,
-   "mcap_nq": 176898.519357,
+   "px": 169.73,
+   "mcap_nq": 179790.333476,
    "sector": "커뮤니케이션",
    "sector_src": "GICS"
   },
   {
    "t": "MELI",
    "name": "MercadoLibre",
-   "px": 1516.535,
-   "mcap_nq": 75550.402212,
+   "px": 1505.94,
+   "mcap_nq": 76293.110362,
    "sector": "경기소비재",
    "sector_src": "수동 보정"
   },
   {
    "t": "KDP",
    "name": "Keurig Dr Pepper",
-   "px": 37.5,
-   "mcap_nq": 51153.450768,
+   "px": 38.245,
+   "mcap_nq": 52049.469646,
    "sector": "필수소비재",
    "sector_src": "GICS"
   },
   {
    "t": "NBIS",
    "name": "Nebius Group N.V.",
-   "px": 151.97,
-   "mcap_nq": 36428.599212,
+   "px": 156.27,
+   "mcap_nq": 42556.215826,
    "sector": "정보기술",
    "sector_src": "SIC 7370 Services-Computer Programming, Data Processing, Etc."
   },
   {
    "t": "AVGO",
    "name": "Broadcom",
-   "px": 346.55,
-   "mcap_nq": 1584749.642583,
+   "px": 348.3,
+   "mcap_nq": 1663777.562361,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "FTNT",
    "name": "Fortinet",
-   "px": 125.7012,
-   "mcap_nq": 90788.082695,
+   "px": 127.84,
+   "mcap_nq": 94340.404293,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "TSLA",
    "name": "Tesla",
-   "px": 385.8,
-   "mcap_nq": 1501178.412732,
+   "px": 392.045,
+   "mcap_nq": 1550153.083683,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
   {
    "t": "NXPI",
    "name": "NXP Semiconductors N.V.",
-   "px": 270.32,
-   "mcap_nq": 65926.979541,
+   "px": 270.92,
+   "mcap_nq": 68286.195509,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "FANG",
    "name": "Diamondback Energy",
-   "px": 176.3002,
-   "mcap_nq": 49714.209125,
+   "px": 179.97,
+   "mcap_nq": 50163.669349,
    "sector": "에너지",
    "sector_src": "GICS"
   },
   {
    "t": "META",
    "name": "Meta Platforms",
-   "px": 648.97,
-   "mcap_nq": 1639547.577262,
+   "px": 635.77,
+   "mcap_nq": 1625002.564532,
    "sector": "커뮤니케이션",
    "sector_src": "GICS"
   },
   {
    "t": "PANW",
    "name": "Palo Alto Networks",
-   "px": 333.61,
-   "mcap_nq": 267107.094032,
+   "px": 335.2075,
+   "mcap_nq": 274481.266471,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "WDAY",
    "name": "Workday",
-   "px": 187.11,
-   "mcap_nq": 45522.49,
+   "px": 190.435,
+   "mcap_nq": 45910.5,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "GOOG",
    "name": "Alphabet Class C Capital Stock",
-   "px": 287.9,
-   "mcap_nq": 3502806.48,
+   "px": 291.41,
+   "mcap_nq": 3583209.24,
    "sector": "커뮤니케이션",
    "sector_src": "GICS"
   },
   {
    "t": "PYPL",
    "name": "PayPal Holdings",
-   "px": 58.56,
-   "mcap_nq": 48826.094756,
+   "px": 59.205,
+   "mcap_nq": 49179.124533,
    "sector": "금융",
    "sector_src": "GICS"
   },
   {
    "t": "SHOP",
    "name": "Shopify Class A Subordinate Voting Shares",
-   "px": 148.73,
-   "mcap_nq": 188616.992326,
+   "px": 149.51,
+   "mcap_nq": 192315.743113,
    "sector": "정보기술",
    "sector_src": "SIC 7372 Services-Prepackaged Software"
   },
   {
    "t": "LITE",
    "name": "Lumentum Holdings",
-   "px": 643.05,
-   "mcap_nq": 53111.199,
+   "px": 657.935,
+   "mcap_nq": 59702.12311,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "CCEP",
    "name": "Coca-Cola Europacific Partners plc",
-   "px": 116.36,
-   "mcap_nq": 53365.634999,
+   "px": 117.695,
+   "mcap_nq": 53340.665965,
    "sector": "필수소비재",
    "sector_src": "SIC 2086 Bottled & Canned Soft Drinks & Carbonated Waters"
   },
   {
    "t": "BKR",
    "name": "Baker Hughes Company",
-   "px": 49.4888,
-   "mcap_nq": 47439.358655,
+   "px": 49.35,
+   "mcap_nq": 49157.384414,
    "sector": "에너지",
    "sector_src": "GICS"
   },
   {
    "t": "PDD",
    "name": "PDD Holdings",
-   "px": 79.0012,
-   "mcap_nq": 113017.679083,
+   "px": 78.95,
+   "mcap_nq": 112377.150675,
    "sector": "기타",
    "sector_src": "SIC 7389 Services-Business Services, NEC"
   },
   {
    "t": "MRNA",
    "name": "Moderna",
-   "px": 254.04,
-   "mcap_nq": 101491.079159,
+   "px": 247.45,
+   "mcap_nq": 100172.014781,
    "sector": "헬스케어",
    "sector_src": "GICS"
   },
   {
    "t": "CRWD",
    "name": "CrowdStrike Holdings",
-   "px": 232.5,
-   "mcap_nq": 231163.52993,
+   "px": 230.47,
+   "mcap_nq": 235986.263036,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "DDOG",
    "name": "Datadog",
-   "px": 184.03,
-   "mcap_nq": 64409.990028,
+   "px": 185.7025,
+   "mcap_nq": 67046.503213,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "RKLB",
    "name": "Rocket Lab Corporation",
-   "px": 62.92,
-   "mcap_nq": 39366.813233,
+   "px": 66.05,
+   "mcap_nq": 41777.214502,
    "sector": "산업재",
    "sector_src": "SIC 3760 Guided Missiles & Space Vehicles & Parts"
   },
   {
    "t": "PLTR",
    "name": "Palantir Technologies",
-   "px": 172.8276,
-   "mcap_nq": 406771.363561,
+   "px": 172.83,
+   "mcap_nq": 417216.53511,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "ABNB",
    "name": "Airbnb",
-   "px": 184.0,
-   "mcap_nq": 109811.636619,
+   "px": 182.045,
+   "mcap_nq": 106959.119253,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
   {
    "t": "DASH",
    "name": "DoorDash",
-   "px": 178.45,
-   "mcap_nq": 77712.781001,
+   "px": 178.41,
+   "mcap_nq": 77721.500527,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
   {
    "t": "APP",
    "name": "Applovin Corporation",
-   "px": 390.5564,
-   "mcap_nq": 131041.16422,
+   "px": 407.635,
+   "mcap_nq": 135058.44347,
    "sector": "커뮤니케이션",
    "sector_src": "GICS"
   },
   {
    "t": "CEG",
    "name": "Constellation Energy Corporation",
-   "px": 272.6887,
-   "mcap_nq": 94869.343801,
+   "px": 275.32,
+   "mcap_nq": 96808.369406,
    "sector": "유틸리티",
    "sector_src": "GICS"
   },
   {
    "t": "GEHC",
    "name": "GE HealthCare Technologies",
-   "px": 82.51,
-   "mcap_nq": 37821.329563,
+   "px": 82.625,
+   "mcap_nq": 37357.888286,
    "sector": "헬스케어",
    "sector_src": "GICS"
   },
   {
    "t": "LIN",
    "name": "Linde plc",
-   "px": 520.0,
-   "mcap_nq": 239540.734207,
+   "px": 525.49,
+   "mcap_nq": 241243.935027,
    "sector": "소재",
    "sector_src": "GICS"
   },
   {
    "t": "ARM",
    "name": "Arm Holdings plc",
-   "px": 193.56,
-   "mcap_nq": 193115.387685,
+   "px": 204.45,
+   "mcap_nq": 217466.292128,
    "sector": "정보기술",
    "sector_src": "SIC 3674 Semiconductors & Related Devices"
   },
   {
    "t": "TRI",
    "name": "Thomson Reuters Corporation Common Shares",
-   "px": 108.5,
-   "mcap_nq": 46991.275555,
+   "px": 108.56,
+   "mcap_nq": 47056.294384,
    "sector": "커뮤니케이션",
    "sector_src": "SIC 2741 Miscellaneous Publishing"
   },
   {
    "t": "FER",
    "name": "Ferrovial N.V.",
-   "px": 60.17,
-   "mcap_nq": 43879.728294,
+   "px": 60.93,
+   "mcap_nq": 43847.352696,
    "sector": "기타",
    "sector_src": "SIC 1600 Heavy Construction Other Than Bldg Const - Contractors"
   },
   {
    "t": "ALAB",
    "name": "Astera Labs",
-   "px": 231.7,
-   "mcap_nq": 37784.388974,
+   "px": 232.845,
+   "mcap_nq": 40691.014881,
    "sector": "정보기술",
    "sector_src": "SIC 3674 Semiconductors & Related Devices"
   },
   {
    "t": "SNDK",
    "name": "Sandisk Corporation",
-   "px": 937.0,
-   "mcap_nq": 122367.431006,
+   "px": 993.025,
+   "mcap_nq": 141309.702722,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
   {
    "t": "CRWV",
    "name": "CoreWeave",
-   "px": 56.36,
-   "mcap_nq": 26876.378615,
+   "px": 60.0773,
+   "mcap_nq": 33169.411244,
    "sector": "정보기술",
    "sector_src": "SIC 7372 Services-Prepackaged Software"
   },
   {
    "t": "SPCX",
    "name": "Space Exploration Technologies Corp.",
-   "px": 144.84,
-   "mcap_nq": 1943314.406121,
+   "px": 141.34,
+   "mcap_nq": 1921448.893549,
    "sector": "산업재",
    "sector_src": "수동 보정"
   },
   {
    "t": "HONA",
    "name": "Honeywell Aerospace",
-   "px": 167.87,
-   "mcap_nq": 52776.289739,
+   "px": 167.96,
+   "mcap_nq": 53247.082015,
    "sector": "산업재",
    "sector_src": "GICS"
   }
