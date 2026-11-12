@@ -1,0 +1,325 @@
+2026-11-13T06:33:53.903057+09:00
+
+[오늘의 뉴스 요약] 2026-11-13 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘은 환율과 유가가 하락하면서 수입물가가 감소한 가운데, 한국 정부가 양극화 해소를 위한 TF를 출범시키며 관련 정책 추진을 강화하는 분위기이다.
+
+[핵심 뉴스]
+1. (물가) 환율·유가 동반 하락에 10월 수입물가 1.8%↓
+   → 10월 수입물가지수는 1.8% 하락하여 156.86을 기록했으며, 이는 원/달러 환율과 국제유가 하락에 기인하고 있다. 반면, 수출물가는 0.7% 상승하여 184.15에 도달하며 3개월 만에 반등하였다.
+   (연합뉴스 · 11/13 06:00)
+2. (환율) 환율, 수출업체 달러매도 등에 보름 만에 1,320원대로 하락
+   → 원/달러 환율은 12일 오후 1,330.7원으로 하락하였으며, 이는 수출업체의 달러 매도와 외국인의 주식 순매수로 인해 달성되었다. 이 날 환율이 1,320원대로 하락한 것은 지난달 28일 이후 처음이다.
+   (연합뉴스 · 11/12 16:13)
+3. (정책) 임금·자산 격차 해소 시동, 정부 5대 양극화 해소 추진
+   → 정부는 '양극화 대응 TF'를 출범시켰으며, 양극화의 주요 원인인 노동시장 이중구조, 지역 간 및 세대 간 격차에 대한 대책을 논의하고 있다.
+   (연합뉴스 · 11/13 05:00)
+4. (정책) 정부, ‘양극화 완화 TF’ 시동…극복 프로젝트 추진
+   → 양극화 해소를 위한 TF는 5개 분야로 나뉘어 구체적인 대책을 논의하며, 연내 합의된 내용은 12월 발표될 '2027년 경제성장전략'에 포함될 예정이다.
+   (매일경제 · 11/12 15:59)
+5. (금리) 美연준, 내년 '금리 결정' FOMC는 7번만 개최
+   → 미국 연방준비제도는 내년에 금리 결정 회의를 7번만 개최하기로 하고, 현재는 통화정책 전략 논의에 집중하고 있다.
+   (연합뉴스 · 11/13 05:37)
+
+[흐름·전망]
+• 수입물가 하락이 내수 물가에 미칠 영향에 주목할 필요가 있다.
+• 환율 하락으로 수출업체의 경쟁력이 향상될 수 있으며, 이에 따른 외환시장 변동성을 지켜봐야 한다.
+• 양극화 해소 TF의 계획이 실제로 얼마나 효과적으로 실행될지, 국민들의 체감도와 연관지어 관찰해야 한다.
+• 정부의 정책이 장기적인 경제 성장에 긍정적 기여를 할 수 있을지, 특히 구조적 문제 해결에 얼마나 기여할 수 있을지가 중요한 관전 포인트이다.
+
+📈 해외주식 PART
+🧭 [NVDA] 경영진 이탈 우려로 불확실성 증대
+
+📰 [NVDA] Jensen Huang built the company that powers AI. Now Nvidia must find a way forward without him
+   (AP News · 11/13 06:23)
+🏷 악재 | 젠슨 황 없이 나아갈 길? | 경영진 이탈로 인한 불확실성 | 0
+🔗 https://news.google.com/rss/articles/CBMinwFBVV95cUxQSktocy1OY2dwRlRpZnRkZ3V0d2hRdmgxRzM2bzlRVW1wdVd6a05PTGRUeTZDY3lwVkN4RFBDQUFrcmVBWmdnOVpkSVNlaVluTndndG1aeE1RQnBHY2NDcWVyeWg0VHhNQlBqejBSeXp0T0RBaTlUQS1rZ19kWEp4THhJa1cxWXhkSUl2Nm1YRG1xbmNMeV95S0NJMzl6M3c?oc=5
+→ Nvidia의 CEO 젠슨 황의 부재로 향후 방향성에 대한 우려가 제기되고 있습니다. 이는 NVDA 보유자에게 불확실성을 의미할 수 있습니다.
+
+📰 [NVDA] How major US stock indexes fared Thursday 11/12/2026
+   (Yahoo Finance · 11/13 06:17)
+🏷 중립 | 미국 주식 시장 변동성 | 변동성이 있었으나 큰 변화 없음 | 0
+🔗 https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-211731317.html?.tsrc=rss
+→ 주식 시장에서 Nvidia와 유가의 큰 변동에도 불구하고, S&P 500 지수는 비교적 큰 손실 없이 거래를 마감했습니다. NVDA의 주가는 초기 하락 후 다시 회복했습니다.
+
+📰 [NVDA] Nvidia Should Call Tim Cook, the One Leader Big Enough to Step Into Jensen Huang’s Empty Chair
+   (Yahoo Finance · 11/13 06:15)
+🏷 중립 | 팀 쿡, NVDA 새 CEO 후보로 거론 | CEO 교체에 대한 의견 제시 | 0
+🔗 https://247wallst.com/videos/nvidia-should-call-tim-cook-the-one-leader-big-enough-to-step-into-jensen-huangs-empty-chair/?.tsrc=rss
+→ 팀 쿡이 NVDA의 새로운 CEO로 적합하다는 의견이 제기되었습니다. 이는 회사의 향후 방향성에 중요한 영향을 미칠 수 있습니다.
+
+🧭 [TSLA] 테슬라와 스페이스X 합병 시너지 기대감 상승
+
+📰 [TSLA] SpaceX, Telsa merger talks begin to take shape
+   (Yahoo Finance · 11/13 06:20)
+🏷 호재 | 테슬라, 스페이스X 인수 논의 시작 | 합병 긍정적 전망과 시너지 | 0
+🔗 https://finance.yahoo.com/video/spacex-telsa-merger-talks-begin-to-take-shape-212004858.html?.tsrc=rss
+→ 테슬라와 스페이스X가 잠재적 합병 논의에 들어갔다는 소식이 전해졌습니다. 이 합병이 실현될 경우 TSLA 보유자에게 긍정적인 영향을 미칠 가능성이 있습니다.
+
+📰 [TSLA] SpaceX and Tesla Could Announce Merger as Soon as December
+   (The Information · 11/13 06:20)
+🏷 호재 | 스페이스X·테슬라 합병 가능성 | 합병 발표로 인한 시너지 기대 | 0
+🔗 https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVGZXSi1LT2FaS0JXMFJuOVJfOTVFdy1LSzUzLUFsNXRtdDROTndoTDFZWFRaRWhXTUNLTXFLWVNZa29LZGhQbHcyWk5SQjdZWTRUcm1kV1pDY294OHMyamVNdG5pcVNtSE9rQnJ1c25zaUFzVkY0MXdDN2hYcGxYanl1ZUVPb09CQndZ?oc=5
+→ 스페이스X와 테슬라의 합병이 오는 12월 발표될 가능성이 제기되었습니다. 이는 두 회사 간의 시너지를 기대할 수 있는 긍정적인 소식입니다.
+
+📰 [TSLA] SpaceX and Tesla on track for merger as soon as December
+   (AFR · 11/13 06:17)
+🏷 호재 | 스페이스X와 테슬라 합병 가능성 | 합병으로 시너지 효과 기대 | 0
+🔗 https://news.google.com/rss/articles/CBMisgFBVV95cUxOYlVVY2lxeTh3dGlDWGZzeXpRV0pIQUhhY1FhV1RyZ3RpVHZIRmREZVp6UXBKbU9nNVNsSUdpcUV1WFkxbzlRZVJHdDBaSndnT0pEOHAxWXNxdTd5LXE3bG1vR2RIcmZjb0d4S2dla0l0czZhSm8wNnhTOVRaVXdPVV9TVFhFejdlMVk5aHVVVHU2dTV0YkFJT3cxczZsUl9aQmNoYUwwelZoRGNoR3B2UnlB?oc=5
+→ 스페이스X와 테슬라가 12월에 합병될 가능성이 보도되고 있습니다. 이는 두 회사 간의 시너지 효과로 이어질 수 있어 TSLA 보유자에게 긍정적인 신호입니다.
+
+🧭 [HIMS] HIMS, 소송 리스크 증가와 긍정적 합법화 소식 혼재
+
+📰 [HIMS] AG Hilgers Joins FTC Lawsuit Against Hims and Hers for Deceptive and Unlawful Privacy Practices
+   (Rural Radio Network · 11/13 03:52)
+🏷 악재 | HIMS, FTC 소송으로 악재 | FTC 소송으로 인한 리스크 증가 | 1
+🔗 https://news.google.com/rss/articles/CBMizAFBVV95cUxQQ0E1RTZkWno1eDd1YXlQX1RKYUFKaHc0X3pMMURNcVpRWnp4dzAzUmNLNFV3Ykxpd0xkQTZEZ0NCcUxYOTBMNWF2UUhkTFA1c1lKWG5PaWdUV3ZPM01nMWI0NDNqcW5YdGpQMW1HZS1LckFXRWVKRTkyNDR4Y2ZIYXR6UWw1MHZaMXhGbk55MkhaWERrSEhOR01PVHJmVGJZLWptUHB4NEhYX1Bqb0tsUHRIOEJaZ3VPN0pjaUExVUl1Z2tldWxwXzlPQkw?oc=5
+→ AG Hilgers가 HIMS에 대한 FTC 소송에 참여했습니다. 이는 사기 및 불법적인 개인정보 관행과 관련된 내용으로 HIMS에 부정적인 영향을 미칠 수 있습니다.
+
+📰 [HIMS] The RFK Jr. Effect: Why GLP-1s Won't Be The Last 'Explosive' Story In Peptides. What Comes Next.
+   (Yahoo Finance · 11/13 03:44)
+🏷 호재 | HIMS, 펩타이드 합법화 긍정적 | 펩타이드 합법화 추진 소식 | 1
+🔗 https://finance.yahoo.com/m/c014f1b3-7469-3330-942d-9297ecc3897d/the-rfk-jr.-effect%3A-why.html?.tsrc=rss
+→ HIMS 주식이 건강부의 펩타이드 6종 합법화 추진 소식에 크게 상승했습니다. 이는 건강 분야의 큰 변화의 시작이 될 수 있습니다.
+
+📰 [HIMS] Nebraska joins FTC lawsuit against Hims and Hers over alleged privacy practices
+   (KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE · 11/13 02:50)
+🏷 악재 | 네브래스카, HIMS 소송 합류 | 소송 진행으로 인한 위험 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMisAFBVV95cUxOcFl5eWpOdERiRE91a1kwYW1HWjFEcmxWVVpiVzg1TWRLNGJ6d1VucnEyX2w2d3hQcGloRlFfWldlanp0MkZpaUlLd29LbDQ1QkxJZk9xOHhTczNETzloQ0x1UGtmb0VDQkhld29MMUZuVURlV1FXYXpOOHJkS0ZMcm1YQzJSRXVwdWM0RWVpRTB1U2NjTnlIUWtfLVBHV0NvUkR5TnVta0YwNG13Y3kzT9IBxAFBVV95cUxNLXRweUo3NC01VW9jX21oZVBGN3FKMU91Y3l0QzhQNFlEUE5IOHYxcWNLZ2d1d1ppa3lRV3hFRzFTSGoxbVNIMXlxZmx2aFZrVk9HYUVJRGdVNlhwbGRXOUNRTjh0RkpETWVqRHBzdzZRRVlkTi1jVWIybjJXdzc3cWRsYlhyR2ZyN3g1dFBTV2g5VndBdm00VTNrclZIenlYZkZGRVNLMjRmbU1DRXpQNFVCVlZnekF0eHBuZEcwUkFLaWZs?oc=5
+→ 네브래스카 주가 Hims와 Hers에 대한 FTC 소송에 합류했습니다. 이 소송은 개인정보 보호 관행과 관련된 allegations에 관한 것입니다.
+
+🧭 [RDW] 긍정적 계약 체결에도 매출 부진으로 주가 하락
+
+📰 [RDW] Redwire (RDW) Lands $40 Million Moon Base Contract
+   (Simply Wall St · 11/13 04:27)
+🏷 호재 | RDW, 4000만 달러 계약 체결 | 수주 계약 체결로 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMitgFBVV95cUxNT1RHMkljcHVYNE8zMk93VE9pNjA5aWJrTFUtZGt2c0dKQUlEUFp4Wm9iX1VTZjR2VHhoT2dzRkZHT2FYY2p2ZnotVXRtbmF6bGdJczF3ZU5IX3NRZjk2T09HWEplYVNBRGE5akdNR0RHUUlBbDQzNFcwbUtTZXhfeFJKVHhFRzc3ZGUtZDlGZ1pyU2djM1FOMWRDOGlVb0hrY2o3TjhRelVDaXN4Z0VWbGtIS0pGUdIBuwFBVV95cUxNTUNBQVVjWTR1ZE5Ub2djV1FmRkJacExmT1dtQjBOSmpINE1zSi13VHExZ0xaQml3Tksta1docFJ1ekdQa09SSUNiU1lrV25hak5YVHg1SkJRR3ZXV1lEc25CVGtQVVp6WS1ZRlE5M3NfNGNmalZBV0Z6aDR3c3oxbVoyMFJVQkFqMDNhRWhMWW9vUnMtSDRfSngtbUJWcUN0Qnd0SXlOLUNJLWpNM1ljZmJjRFVhRHZUNGxr?oc=5
+→ RDW가 4000만 달러의 달 기지 계약을 체결했습니다. 이 계약은 RDW의 성장에 긍정적인 영향을 미칠 것으로 기대됩니다.
+
+📰 [RDW] Redwire Corp tokenized stock (xStock) price today, RDWx to USD live price, marketcap and chart
+   (CoinMarketCap · 11/12 22:29)
+🏷 제외 | RDW 토큰화 주식 가격 정보 | 직접적 영향 정보 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMifkFVX3lxTE1YRlZ2emNsWXZRS2VmSFU0TEtxcGFYbDNpSFJ0dHgtcmN2Tlh6QlZWeGdMV2hkRVlDRDJZU0Rjd1JyM1ZsLTJTT0xvN0RBWldvNFpLMHd6eVphV0loZWNaM0d2b1B0Y0dEOHkwMVMtOEJlNXk3N2h2VDIweWdOUQ?oc=5
+→ Redwire Corp의 토큰화 주식(xStock) 가격과 시세 정보가 제공되었습니다. 다만, 기사의 내용이 RDW 보유자에게 직접적인 영향을 미치는 정보는 아닙니다.
+
+📰 [RDW] Redwire Stock Fell 14% in a Week After Revenue Miss. Can Its $620 Million Backlog Drive a Recovery?
+   (Yahoo Finance · 11/12 21:35)
+🏷 중립 | RDW, 매출 부진에 14% 하락 | 주가 하락 및 수주 잔고 존재 | 0
+🔗 https://www.tikr.com/blog/redwire-stock-fell-14-in-a-week-after-revenue-miss-can-its-620-million-backlog-drive-a-recovery?ref=yahoofinance&tlnk=yf-261112-gfvjvp52&.tsrc=rss
+→ RDW의 주가가 14% 떨어진 이유는 매출 목표 미달 때문입니다. 그러나 6억 2천만 달러의 수주 잔고가 회복을 이끌 수 있을지 주목받고 있습니다.
+
+🧭 [IREN] IREN 유동성 위기와 주가 하락 우려 커짐
+
+📰 [IREN] IREN: A Liquidity Crisis Is Brewing (NASDAQ:IREN)
+   (Seeking Alpha · 11/13 06:22)
+🏷 악재 | IREN 유동성 위기 우려 | 유동성 위기로 경영 위협 | 0
+🔗 https://news.google.com/rss/articles/CBMigAFBVV95cUxNQW5pQVdCWlFvZmtYeWdhUURPdzNUQU1qMEZNTEg2WlpSWHk4aVBkNDNPUzRPbzRGYldmQ3BOcWJZVXA5VlVEZGM5Ti1KYTZCekF2RVBHSEhiNFBNdGVCNTl0cWxBanQyazRTaHd1OUVILUZpNFo5ck9IeWFuTVFLXw?oc=5
+→ IREN이 유동성 위기를 겪고 있다는 보도가 나왔다. 이는 회사의 재무 건전성에 부정적인 영향을 미칠 수 있어 투자자들에게 우려를 불러일으키고 있다.
+
+📰 [IREN] Jensen Huang resigns as Nvidia CEO amid scandal
+   (Yahoo Finance · 11/13 05:43)
+🏷 악재 | 젠슨 황, 엔비디아 CEO 사퇴 | CEO 사퇴로 주가 하락 | 0
+🔗 http://videos.coindesk.com/previews/T3qsPd0W?.tsrc=rss
+→ 엔비디아 공동 창립자인 젠슨 황이 스캔들로 인해 즉시 CEO 자리에서 사퇴했습니다. 이로 인해 IREN을 포함한 비트코인 채굴업체들이 급락했습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Shares Gap Down - Should You Sell?
+   (MarketBeat · 11/13 02:02)
+🏷 악재 | IREN 주식 하락, 매도 고민 | 주식 하락으로 매도 고민 증대 | 0
+🔗 https://news.google.com/rss/articles/CBMirAFBVV95cUxPcjhjamdwajRDNEtON3drclkxaEpQSUdIUTRxX05qWmp1VEtneEhpNTN4dVFnaU8xMHpwTmdvQnJSb1VzMERUV1ZBMTJpaWFLR2JkVVNhbnk3MFFDNTRfZ1lfRXViMjVUa0xiM1htZ0JUN3lRNWp6NW9mcFZJd0NDS3JXcXNPdlBHUnROMGhxTFRkblpWcWV3a1licmRha3VNVm5wSTljLTFCeDZa?oc=5
+→ IREN 주식이 하락세를 보이며 투자자들 사이에 매도 여부에 대한 고민이 커지고 있다. 이는 IREN 보유자들에게 불안 요소로 작용할 수 있다.
+
+🧭 [RKLB] 로켓랩 주가 상승, 긍정적 전망 이어져
+
+📰 [RKLB] Rocket Lab’s Neutron Slips To 2027. Its Stock Still Ripped Anyway.
+   (Yahoo Finance · 11/13 03:31)
+🏷 호재 | 로켓랩, 뉴트론 발사 연기 소식 | 주가 상승, 경영상 긍정적 반응 | 0
+🔗 https://app.moby.co/home/news/news-rocket-labs-neutron-slips-to-2027-its-stock-still-ripped-anyway?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss
+→ 로켓랩이 뉴트론 발사를 2027년으로 연기했으나, 주가는 여전히 상승세를 보이고 있다. 월스트리트가 로켓랩의 연료 탱크 문제를 용서한 것으로 해석된다.
+
+📰 [RKLB] Rocket Lab's (NASDAQ: RKLB) $3.57 Billion Backlog And Neutron Surge Keep Analysts Firmly In Buy Territory
+   (Foreign Policy Journal · 11/13 03:28)
+🏷 호재 | RKLB 35억 달러 확보하며 매수 추천 | 수주 증가와 신제품 출시 | 0
+🔗 https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZWRfY1JBTEpGcXcwMGtZS0sweXlJSGwzb1U5ME00U0hjWllCeWU2Y3MwS0RObFlrOFlsMU0wUmZ3Uko5c0NrQ1VZV2ZITGVkSXdxdVdZTUFFVFVEdnhHeFZmM2JtYnZNS1BLWEZqak1yMDJ0ems2YnRrMGk2VHhoRDM5clZoSGdNWThFelhKdGRib19qcXNUbXBELTJFcFdsY2VSUUtmdDdDblFUOU1Cek9wbXVNbGpkck9tNDl5TGVSYkpGRDdXeEJDcFA1ell0Zk1GN082aWM5dE9YbThtRndsQQ?oc=5
+→ 로켓랩은 현재 35억 달러의 수주 잔고를 기록하며 분석가들로부터 매수 의견을 유지받고 있다. 네우트론 발사체의 성장은 앞으로의 성장 가능성을 시사한다.
+
+📰 [RKLB] Rocket Lab Stock Surges 50% Despite Wall Street Cuts - Rocket Lab (NASDAQ:RKLB)
+   (Benzinga · 11/13 02:55)
+🏷 호재 | RKLB, 월가 전망 하락에도 50% 상승 | 주가 상승이 투자자의 신뢰 반영 | 0
+🔗 https://news.google.com/rss/articles/CBMinwFBVV95cUxQaG5pZ0JjNWx2OFVzN1N0QTZvd1h1UHctdzRETmlHVGZJX093WTBfbW1GMHQ3eFpnMjgwcGhKOEwwSVoxMGhYSjE1eXJNZFdiWEVjU1RWbHZ2ajFDVXFfeUJWdXBUT0s3NkJFeHRWLWotX0EzYWdKb0JtblduVlZ2UzJ5YmpOSjNMTmlDNXJlbzRNbHpadlBuQ3lWQXNCRlU?oc=5
+→ Rocket Lab 주가가 월가의 전망이 하향 조정된 상황에서도 50% 급등했습니다. 이는 투자자들의 긍정적인 반응과 기술력에 대한 신뢰를 반영하는 것으로 보입니다.
+
+
+🪙 코인 PART
+🧭 [BTC-USD] 비트코인, 긍정적 전망 속 전략적 접근 필요
+
+📰 [BTC-USD] Buy $Bitcoin (BTC.CC)$ 500 days before the halving. Sell $Bitcoin (BTC.CC)$ 500 days after the halving. Repeat.
+   (Moomoo · 11/13 06:15)
+🏷 중립 | 반감기 전후 매수 매도 전략 | 전략 제안에 불과함 | 0
+🔗 https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSzBTZzdtdnBLdXFRR2NfSjhraVNzMXY1UDR0a1pEWnZFWEtHZWp1SU85ZGtfUHRNVDhvaUNYUEpYRjU3Z2t1bngzaFBhMDZCdXBDWUgxQUpUNV9ISEJmdklFMWgtUHBUTFhhc290UGljQ3dZcFNycXI5WWdsSURwSkt2dV9Mc1ZuUnpWejVyUVZxVHphTTZteXR6YmdWcVNsY1RLeng0Zzk?oc=5
+→ 반감기를 기준으로 비트코인 매매 전략이 제시되었습니다. 500일 전 매수, 500일 후 매도가 반복된다는 내용입니다.
+
+📰 [BTC-USD] Bitcoin Transactions Are Public and Monero’s Are Hidden. Will Monero (XMR) Be Banned?
+   (24/7 Wall St. · 11/13 06:06)
+🏷 호재 | 모네로 금지 가능성에 대한 우려 | 비공식 거래의 위험 감소 | 0
+🔗 https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdHZHeElZOUdQTUgwa0lyZWM3UlVnRUdIVVJ1UmUyeTBQTmg1VnZvRndndndaRWNHMjZZdTBRYUQxMS1HbmFvelNBd0xWcWtwTTZPTFlEWGNuR1I0T0JXWHR3RUNUNC1FZ1RqZ1ZZQlpTdnN5MmttVmdnTzZhV3E3bllVZzQ0SW9oNlNjV19VUGdjX3lKMzZydWRGNGo0bk9tUGo1RFZHV1lPTkZ3a09vaGRtVkFISDBZU1p5LVpoVlVSTEZQa24xakZnQm5DVkpWTzVia2VR?oc=5
+→ 모네로(XMR)의 거래 비공개 특성 때문에 금지될 가능성이 논의되고 있습니다. 이에 따라 비트코인(BTC)과 같은 공개 거래가 선호될 수 있습니다.
+
+📰 [BTC-USD] Analyst puts his life savings behind one Bitcoin prediction
+   (Yahoo Finance · 11/13 06:04)
+🏷 호재 | 한 애널리스트 비트코인 예측 | 비트코인에 대한 긍정적 전망 | 0
+🔗 https://www.thestreet.com/crypto/markets/analyst-puts-his-life-savings-behind-one-bitcoin-prediction?.tsrc=rss
+→ 한 애널리스트가 비트코인에 대한 강한 예측을 하며, 자신의 모든 자산을 걸었다고 밝혔습니다. 이는 비트코인에 대한 시장의 관심이 높아지고 있음을 나타냅니다.
+
+🧭 [ETH-USD] 이스라엘 은행의 ETH 거래 개시로 긍정적 흐름 예상
+
+📰 [ETH-USD] Israel Discount Bank to Offer Bitcoin, Ethereum Trading From Nov. 26
+   (CoinMarketCap · 11/13 05:02)
+🏷 호재 | 이스라엘 은행, ETH 거래 개시 | 거래 접근성 증가로 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMikAFBVV95cUxNbExHUWVSbmRLYlYwOWh6LVNvd2Z3RExzWm1VUnBzeGFKZFUzd3ZERjRxOVZuS0l1cktJNmJKNmdqbGtiZFlTMTlDb3N3dzZhSV9MNmxkODBiUUFXRGViZXVRSlVWRTIyY01ULUVWcl85QmxwTEFIREZZUEZXNmpXeE1vam1FWjJsMHBGSmZGZHc?oc=5
+→ 이스라엘 디스카운트 은행이 11월 26일부터 비트코인과 이더리움 거래를 제공한다고 발표했다. 이는 ETH-USD 보유자들에게 거래 접근성을 증가시키는 긍정적인 소식이다.
+
+📰 [ETH-USD] Is Ethereum a Buy Below $2,000? We Asked 3 AI Models
+   (24/7 Wall St. · 11/13 04:51)
+🏷 호재 | 에테리움, 2,000달러 이하 매수 권장? | 매수 의견 제시로 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMirAFBVV95cUxOUFBibUFCbTJZanFoR3V3cW10U0tCN21vRFB4UUV4T2FQQnpKS29WSUJXVGFkUC1tdnpodmRYcDBzNVlnZ1JnRlp4RUFmSExzc2t1OWJFRTV4R0UtRFBUM2lIbldxdm9oMzVQS2pJUWhFSWRQTU5xZm9JZ1J5aFVZTEJjdEo3Ujg0ZHR0NW5LMXhHcjBOMWtQSFFLQmUwZDl3T0kzM3gtMVhOUUgt?oc=5
+→ 전문가들이 에테리움(ETH)에 대한 매수 의견을 제시하고 있으며, 가격이 2,000달러 이하에서는 매력이 증가한다고 분석하고 있습니다. 이는 ETH 보유자들에게 긍정적인 신호로 볼 수 있습니다.
+
+📰 [ETH-USD] Ethereum price prediction: ETH falls below $2,000
+   (CryptoTicker.io · 11/13 04:25)
+🏷 악재 | ETH 가격 2,000달러 이하 하락 | 가격 하락 예측으로 불안감 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMijgFBVV95cUxPRUhEYVlvMVVJQWhrUEw0aHRWYTZjVTNrblFsMS1GQUozNU1mREpVY2JhaXdWakV4Y1k1UzlTdzZ6d3FSOHZMZzlmREhuM1VBTG05c0ZkTkFQRk42V1dkT1N6dUE3VVV3dlp1czAzTDRKWTZyX09YNUFEOWlKZ2FrM3RlRlFHRThmbFgzMG53?oc=5
+→ ETH 가격이 2,000달러 아래로 떨어졌다는 예측이 나왔습니다. 이는 ETH-USD 보유자에게 부정적인 신호일 수 있습니다.
+
+🧭 [SOL-USD] 솔라나 생태계 확장과 신뢰도 상승 기대감
+
+📰 [SOL-USD] Solana Breakpoint 2026: Mastercard, Barclays, DTCC and Boris Johnson Headline London's Token Supercycle Summit
+   (https://genfinity.io/ · 11/13 06:19)
+🏷 호재 | 솔라나 브레이크포인트 2026 | 대형 기업 참여로 신뢰도 상승 | 0
+🔗 https://news.google.com/rss/articles/CBMipwFBVV95cUxOTHdOa1ZkWW5aMi05NWx1WWd2SmlZbmN5ZVhXMEx6WU5EbGpoWGZyTHo1eUVmVjVTejM2eVE2V0xTYm4wUnNYUmpIR3NNVy04QXhia1BJcmNMNFdac2c4bFB0RDFjbC1vWlBEWTNzdV9xdExQQnZhZkhxT29ZMzQ0cXhWSHFkZVVka1ZQcWpkTURlSi1kZklYSGZxMkRqYnhYeTdLdlpfZw?oc=5
+→ 패스트트랙되는 대형 기업의 참여로 솔라나가 주목받고 있습니다. Mastercard와 Barclays 등 글로벌 기업들이 솔라나와 함께한다는 소식은 투자자들에게 긍정적인 신호로 작용할 수 있습니다.
+
+📰 [SOL-USD] Forward Industries plans $30M allocation in GromaCoin ahead of Solana launch
+   (StreetInsider · 11/13 06:14)
+🏷 호재 | 포워드 인더스트리즈, 솔라나 출시 앞두고 3천만 달러 투자 | 투자는 솔라나 생태계 확장에 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQ18xOEp0WWtZZEQ0WjJwc3dhWDZmOHNtck1rRkRQSXpvZ0NzLThudjFhdDdYZ3VVRGZqaVRsbVFlU0lUV2lzam9INzVDcVRwdElqVlFWZ1Q4SkxfZFlaRVM2Y3F4Y2NwRXRrUTVQNWltUFlBUndIUXpaejVVMmlKRDlzdktvbUZheGFwSFA2UktUTEJjV0NXNWFHYktvWW1hSUhMbDFUazk4Rk5sREEzZFdFN1NtMUM2VFAyUHR6TGpuZnh4ZkoxQVY1aVk1ZGVBOUxJ?oc=5
+→ 포워드 인더스트리즈가 솔라나 출시를 앞두고 GromaCoin에 3천만 달러를 투자할 계획이라고 발표했습니다. 이는 솔라나 생태계의 확장을 의미하며, 보유자에게 긍정적인 신호로 작용할 수 있습니다.
+
+📰 [SOL-USD] Form 8-K Invesco Galaxy Solana For: Nov 05
+   (StreetInsider · 11/13 06:14)
+🏷 호재 | 인베스코 갤럭시 솔라나 소식 | 인베스코의 긍정적 업데이트 | 0
+🔗 https://news.google.com/rss/articles/CBMiogFBVV95cUxPMTVadklpekhNQTRlb2hUajBqUGtXSmJlWUYxV3ptVGREVFpUcFVqUmFweWJ5NmstdUxDc2V5aFc0V2V5TklxYUQ5aHNVSGszcjZScXZEZ0ZSY1R3N0hyUTR1VC1MSUl0Vy1qZTJzcWprMTBKcjNqb1JDcmxIRTlCckxFTHUwc0ZXejl6QzgyWUo0WmJ4SGE2d3Nnb01HT1U3MVE?oc=5
+→ 인베스코가 솔라나 관련 업데이트를 발표했습니다. 이러한 소식은 SOL-USD 보유자에게 긍정적인 신호로 해석될 수 있습니다.
+
+🧭 [BMNR] BMNR, 코인베이스 선물로 긍정적 신호
+
+📰 [BMNR] BitMine Immersion Technologies (NYSE:BMNR) Shares Gap Down - What's Next?
+   (MarketBeat · 11/13 02:48)
+🏷 중립 | BMNR 주가 하락 원인은? | 주가 하락 원인 불확실 | 0
+🔗 https://news.google.com/rss/articles/CBMixgFBVV95cUxQOGg1OWxkcFZfc2tWOGZPbVlIZDlDOGZTeHpJenVobkltaVNDMGE1TERhQ1ZRTTBEOExUdWpjc0RHU0NVOElDNlYtNWd3dmRqMVFlZk5zWEJSXzg5MnA3YjdXemdkY3NVVFgwY2poRnkyLXZyaFpNOFJlb3pOTUpzNGpmcS0yNzVZUkFFeC1aaUl3c1dIU002Z1JsdzBVZFZiXy1iTkRqNFQySy02djIxTkxObnFpQk04NzZ0UWRjZ1Y3YnVOMkE?oc=5
+→ BitMine Immersion Technologies의 주가가 하락하며 투자자들 사이에서 우려가 커지고 있습니다. 이번 하락 이유와 향후 전망에 대한 논의가 필요합니다.
+
+📰 [BMNR] Coinbase launches perpetual futures for BMNR, WDC, RKLB and AAOI
+   (Crypto Briefing · 11/13 01:13)
+🏷 호재 | BMNR, 코인베이스 선물 출시 | 거래 채널 확대는 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMifkFVX3lxTE9iTW9CLXlfQWpBaTdreUYwMmViVTJTcUNwcllPTGVuYWhVSkFJdHlubWtkaHBmY0trT0JvalFwalJZOTNRU2xPUlVpYmFxN1k2bjNZYTNWczdwc1BEWlRQWE1JdjhzT1ZOc2g5dm1SdDNIeFhHT2tVYzltWG5VUQ?oc=5
+→ 코인베이스가 BMNR을 포함한 여러 암호화폐에 대해 영구 선물 거래를 시작했습니다. 이는 BMNR에 대한 시장 접근성을 강화할 수 있는 기회를 제공합니다.
+
+📰 [BMNR] BitMine Immersion Technologies (NYSE:BMNR) Stock Rating Upgraded by Zacks Research
+   (MarketBeat · 11/12 20:09)
+🏷 호재 | BMNR 주식 등급 상향 조정 | 주식 등급 상향은 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMi2gFBVV95cUxQY1Excm04ZTZqbmVuWVFQY0N1bFpmLTk0Q1J3cWZmYWhpc3lzREZrdmgwZHZYZlVIQzBJbklNWDBCOFZKei11anZSSEpURkZ6ai13ZnhIUnYtVWtGam5qeEY4NW1udWFTQVd0UGVkWVlXZHN4YzhvSElDNmhPcXJUWTJzTU54dHRWd2tKT19qTFNwbUQ1ZHV0cHg5TkR1NTlYSkk1a2hGT1g0aHZDVTNJSUI5ZlV6Vjd4Z0pMUzFRV19QR21CZ1otMlZTcU5Za1VpUVZhamF2NEhDQQ?oc=5
+→ Zacks Research가 BitMine Immersion Technologies의 주식 등급을 상향 조정했습니다. 이는 BMNR 보유자에게 긍정적인 신호로 해석될 수 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+현재 암호화폐 시장은 비트코인과 이더리움 모두 하락세를 보이며, 비트코인이 최근 12주 최저가를 기록했다. 새로운 정치적 변화가 가상자산 정책에 장기적인 영향을 미칠 수 있다는 전망이 제기되고 있다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 12주 최저 7만1200달러 기록
+   → 비트코인이 12주 만에 최저인 71,200달러까지 하락했다. 비트와이즈는 새로 선출된 상원의원들이 젊은 세대인 점을 들어 가상자산 정책에 대한 장기적 변화를 언급했다.
+   (토큰포스트 · 11/13 06:08)
+2. (시세) 암호화폐 시장 하락세, 비트코인과 이더리움 모두 감소
+   → 현재 비트코인은 71,566달러로 24시간 기준 3.72% 하락했으며, 이더리움 역시 2,014달러로 2.99% 감소했다. 비트코인의 시장 점유율은 60.20%로 줄어들고, 이더리움은 소폭 증가한 10.30%를 기록했다.
+   (토큰포스트 · 11/13 05:02)
+3. (기타) 24시간 동안 레버리지 포지션 5억5689만달러 청산
+   → 지난 24시간 동안 5억5689만 달러 규모의 레버리지 포지션이 청산되었으며, 이 중 91.69%가 롱 포지션이었다. 비트코인과 이더리움 모두 각각 3.61%와 2.88% 하락하며 청산이 이뤄졌다.
+   (토큰포스트 · 11/13 04:56)
+4. (시세) 비트코인 71,567달러, 이더리움 2,014달러로 하락
+   → 비트코인이 71,200달러까지 하락하며 12주 만에 최저치를 기록했다. 새로운 정치적 변화와 함께 세금 관련 소송이 진행되며 시장에 영향을 미칠 수 있다.
+   (토큰포스트 · 11/13 05:04)
+5. (온체인) 리플 USD 시가총액 30일간 11.30% 증가
+   → 리플 USD의 시가총액이 최근 30일 동안 11.30% 증가한 27억100만 달러로 집계되었고, 이는 전체 스테이블코인 시장이 4.83% 감소한 것과 대비된다.
+   (토큰포스트 · 11/13 05:26)
+
+[흐름·전망]
+• 비트코인과 이더리움의 하락세가 지속될지, 다른 알트코인으로 자금이 이동할지를 지켜봐야 한다.
+• 새로운 정치적 세대의 등장으로 가상자산 정책에 미치는 영향을 모니터링할 필요가 있다.
+• 레버리지 포지션의 급증은 단기적인 변동성을 더욱 확대할 가능성이 있으므로 거래 시 신중함이 요구된다.
+• 리플 USD의 시가총액 변화는 스테이블코인 시장 내에서의 리플의 위치를 나타내며, 앞으로의 투자 전략에 참고해야 할 요소이다.
+
+📊 공포탐욕지수
+  - CNN 기준: 40 (Fear)
+  - 크립토 기준: 28 (Fear)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+서울 아파트 거래 신청이 두달 연속 증가했지만 전반적인 매매 거래 회복 흐름은 뚜렷하지 않다. 강남권 집값 하락幅이 확대되고 있으며, 한강벨트와 서울 외곽 지역은 상승세를 유지하고 있다.
+
+[핵심 뉴스]
+1. (매매) 서울 아파트 거래신청 두달째 증가
+   → 서울 아파트 토지거래허가 신청이 3천947건으로 전월 대비 8.2% 증가하였으나, 전체 신청 건수는 올해 최대인 4월과 비교 시 44.4% 수준에 그쳤다.
+   (연합뉴스 · 11/13 06:00)
+2. (매매) 강남3구 아파트값 하락폭 커져
+   → 서울 강남3구 아파트값이 하락폭이 커지고 있으며, 25억원대 매물 증가율이 72.6%에 달하는 등 급매가 이동하고 있다.
+   (매일경제 · 11/12 17:38)
+3. (매매) 내년 수도권 집값 상승폭 둔화 전망
+   → 한국건설산업연구원은 내년 수도권 주택 매매가격이 3% 상승할 것으로 전망하며, 전세는 4.5% 증가할 것으로 예측하고 있다.
+   (매일경제 · 11/12 17:38)
+4. (매매) 3분기 서울 아파트 거래절벽
+   → 3분기 서울 아파트 매매거래량이 43.9% 감소하여 1만2895건으로 나타났고, 거래금액도 49.0% 줄어들며 사실상 반토막 났다.
+   (매일경제 · 11/12 15:06)
+5. (매매) 서울 집값 92주째 상승 중단
+   → 서울 집값이 92주 연속 상승을 중단했지만, 자치구별로 하락세가 뚜렷하게 나타나고 있으며, 강북과 성북 등 외곽 지역은 상승폭이 확대되고 있다.
+   (매일경제 · 11/12 14:29)
+6. (정책) 재건축 부담금 법적 분쟁 조짐
+   → 대형 로펌들이 재건축부담금 부과에 대응하기 위해 전담 TF를 구성하고, 강남권 재건축 조합들도 공동 대응을 준비하고 있다.
+   (연합뉴스 · 11/13 06:00)
+
+[흐름·전망]
+• 단기적으로 서울 강남권의 하락세가 지속될 가능성이 높아, 매수자들은 매물 소화 여부와 급매에 대한 주의를 기울일 필요가 있다.
+• 한강벨트 및 외곽 지역의 상승 속도에 따라 향후 거래 시장의 불균형 확대 여부를 주목해야 한다.
+• 내년에도 수도권 매매가격 상승폭이 둔화할 것으로 예상되며, 매수자들의 부담이 크게 작용할 것으로 보인다.
+• 재건축부담금 관련 법적 분쟁의 확대가 향후 부동산 시장에 미치는 영향을 지속적으로 모니터링해야 한다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 미국 내 민주당 주에서의 부패 문제를 강조하며, 해당 문제 해결 시 예산 균형을 맞출 수 있다고 주장했다. 또한 군사력 강화를 위한 예산 집행을 촉구하며, 민주당의 저지를 비판했다.
+
+[주요 발언]
+1. (국내정치) 트럼프는 민주당 소속의 주들이 부패로 고통받고 있으며, 이를 조사해야 한다고 주장했다. 그는 조치가 이루어진다면 미국의 예산 균형을 맞출 수 있을 것이라고 덧붙였다.
+   (Truth Social · 11/13 03:41)
+2. (국내정치) 트럼프는 다음 의회에서 민주당 다수파가 국가 안보에 대한 역사적 투자를 방해하고 있다고 비난하며, 군사력 강화를 위한 예산 조속히 통과시킬 것을 촉구했다.
+   (Truth Social · 11/13 02:24)
+3. (국내정치) 트럼프는 민주당이 부패를 뿌리 뽑으려면 민주당 운영 주의 조사를 시작해야 한다고 주장하며, 이들 지역에서 엄청난 돈이 도난당하고 있다고 강조했다.
+   (Truth Social · 11/12 22:23)
+4. (국내정치) 그는 부통령에게 민주당이 운영하는 도시와 주에서 발생하는 대규모 부패와 범죄 문제에 집중하라고 요청했다.
+   (Truth Social · 11/12 22:07)
+5. (국내정치) 트럼프는 미중 국경의 불법 이민 문제를 지적하며 멕시코가 카라반의 이동을 막지 않을 경우 관세를 즉시 두 배로 늘리겠다고 경고했다.
+   (Truth Social · 11/12 21:04)
+6. (사법) 트럼프는 민주당이 자신을 부패로 몰아가며 부패한 블루 주들의 대규모 도난 사실을 은폐하려 한다고 주장했다.
+   (Truth Social · 11/12 19:50)
+
+[흐름·전망]
+• 트럼프가 강조한 민주당 주의 부패 문제는 향후 정치적 논란으로 이어질 가능성이 높다.
+• 군사력 증강을 위한 예산 통과 여부가 다음 의회의 주요 초점이 될 수 있다.
+• 민주당의 블루 주 부패와의 비교는 그들의 정책에 대한 비판적 시각을 강화할 수 있다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.

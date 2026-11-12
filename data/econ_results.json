@@ -705,10 +705,10 @@
 "name": "Retail Sales (MoM)",
 "dt": "2026-11-17T13:30:00Z",
 "act": null,
-"cons": null,
+"cons": "0%",
 "prev": "0.8%",
 "act_n": null,
-"cons_n": null
+"cons_n": 0.0
 },
 "9e7b2e58-e6d0-417d-b9d7-56ea5eedecec": {
 "name": "Retail Sales Control Group",
