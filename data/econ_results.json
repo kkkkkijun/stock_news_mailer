@@ -689,7 +689,7 @@
 "act": "5%",
 "cons": "5%",
 "prev": "5%",
-"act_n": 5,
+"act_n": 5.0,
 "cons_n": 5.0
 },
 "14be18ad-4b90-4333-ab99-e5a653d86ef7": {
@@ -1066,7 +1066,7 @@
 "dt": "2026-12-15T13:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "5%",
 "act_n": null,
 "cons_n": null
 },
