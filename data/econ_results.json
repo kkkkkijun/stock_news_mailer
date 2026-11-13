@@ -686,10 +686,10 @@
 "4b4a258c-07b2-4107-b8e4-335180759526": {
 "name": "Producer Price Index ex Food & Energy (YoY)",
 "dt": "2026-11-13T13:30:00Z",
-"act": null,
+"act": "5%",
 "cons": "5%",
 "prev": "5%",
-"act_n": null,
+"act_n": 5,
 "cons_n": 5.0
 },
 "14be18ad-4b90-4333-ab99-e5a653d86ef7": {
@@ -1127,6 +1127,24 @@
 "25f3a260-7abe-480f-ba7e-709f2f19c9cc": {
 "name": "S&P Global Services PMI",
 "dt": "2026-12-18T14:45:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"21c13dbb-a1bd-4d13-ac26-943f4895c984": {
+"name": "Fed's Chair Warsh speech",
+"dt": "2026-11-16T17:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"47bd7710-68d7-4b6c-ac7d-531b3be86ff0": {
+"name": "BoJ Governor Ueda speech",
+"dt": "2026-11-30T01:05:00Z",
 "act": null,
 "cons": null,
 "prev": null,
