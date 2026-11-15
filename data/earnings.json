@@ -165,7 +165,7 @@
     "eps": "$4.86",
     "eps_range": "$4.82~$4.97",
     "rev": "$96.69B",
-    "growth": "+17.33%",
+    "growth": "+17.29%",
     "growth_pos": true
    },
    "rev": {
@@ -177,7 +177,7 @@
     "eps": "$4.94",
     "eps_range": "$4.82~$5.19",
     "rev": "$99.27B",
-    "growth": "+15.81%",
+    "growth": "+15.61%",
     "growth_pos": true
    },
    "quarters": [
@@ -360,14 +360,14 @@
    ],
    "target": {
     "price": "$356.27",
-    "mean": "$346.37",
+    "mean": "$345.63",
     "range": "$250~$425",
     "upside": "-3%",
     "upside_pos": false
    },
    "rec": {
     "label": "매수",
-    "count": 40,
+    "count": 39,
     "buy": 26,
     "hold": 13,
     "sell": 6
@@ -735,9 +735,9 @@
    ],
    "target": {
     "price": "$641.69",
-    "mean": "$850.10",
-    "range": "$629~$1,050",
-    "upside": "+32%",
+    "mean": "$851.12",
+    "range": "$650~$1,050",
+    "upside": "+33%",
     "upside_pos": true
    },
    "rec": {
