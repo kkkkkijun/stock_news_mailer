@@ -110,9 +110,9 @@
    ],
    "target": {
     "price": "$162.85",
-    "mean": "$278.31",
+    "mean": "$276.56",
     "range": "$170~$515",
-    "upside": "+71%",
+    "upside": "+70%",
     "upside_pos": true
    },
    "rec": {
@@ -789,9 +789,9 @@
     "period": "26.12",
     "eps": "$0.50",
     "eps_range": "$0.34~$0.88",
-    "rev": "$29.31B",
-    "growth": "+0.02%",
-    "growth_pos": true
+    "rev": "$29.29B",
+    "growth": "-0.21%",
+    "growth_pos": false
    },
    "rev": {
     "up": 11,
@@ -847,7 +847,7 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "$0.50",
-     "rev": "$29.31B",
+     "rev": "$29.29B",
      "date": "2027-01-28"
     },
     {
