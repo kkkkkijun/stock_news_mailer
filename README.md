@@ -121,7 +121,7 @@ python tests/golden_render.py <out_dir>   # 골든 렌더(회귀 확인용, 아�
 | `DRY_RUN` | 발송/발행 없이 본문만 콘솔 출력(테스트용) | 없음(꺼짐) |
 | `OPENAI_SUMMARY_MODEL` | 요약에 쓰는 OpenAI 모델 | `gpt-4o-mini` |
 | `OPENAI_SUMMARY_MAX_TOKENS` | 요약 응답의 최대 토큰 수 | `500` |
-| `STOCK_TICKERS` | 추적할 주식 티커(콤마 구분) | `NVDA,TSLA,HIMS,RDW,IREN,RKLB` |
+| `STOCK_TICKERS` | 추적할 주식 티커(콤마 구분) | `TSLA,RDW,IREN,RKLB,COHR,AAOI` |
 | `CRYPTO_TICKERS` | 추적할 코인 티커(콤마 구분) | `BTC-USD,ETH-USD,SOL-USD,BMNR` |
 | `NEWS_PER_TICKER` | 티커별 최대 뉴스 개수 | `3` |
 | `USE_ARTICLE_BODIES` | 기사 원문 본문을 2단계 요약에 붙일지(1=사용) | `1` |

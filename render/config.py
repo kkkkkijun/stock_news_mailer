@@ -65,6 +65,7 @@ TICKER_COLORS = {
 _TICKER_KO = {
     "NVDA": "엔비디아", "TSLA": "테슬라", "HIMS": "힘스앤허스",
     "RDW": "레드와이어", "IREN": "아이렌", "RKLB": "로켓랩",
+    "COHR": "코히런트", "AAOI": "어플라이드옵토",
     "BTC": "비트코인", "ETH": "이더리움", "SOL": "솔라나", "BMNR": "비트마인",
 }
 

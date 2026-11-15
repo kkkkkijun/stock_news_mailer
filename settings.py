@@ -42,7 +42,7 @@ SUMMARY_MODEL = os.getenv("OPENAI_SUMMARY_MODEL", "gpt-4o-mini")
 SUMMARY_MAX_TOKENS = int(os.getenv("OPENAI_SUMMARY_MAX_TOKENS", "500"))
 
 # 종목 리스트 (env로 override 가능, 콤마 구분)
-stock_tickers = os.getenv("STOCK_TICKERS", "NVDA,TSLA,HIMS,RDW,IREN,RKLB").split(",")
+stock_tickers = os.getenv("STOCK_TICKERS", "TSLA,RDW,IREN,RKLB,COHR,AAOI").split(",")
 crypto_tickers = os.getenv("CRYPTO_TICKERS", "BTC-USD,ETH-USD,SOL-USD,BMNR").split(",")
 stock_tickers = [t.strip() for t in stock_tickers if t.strip()]
 crypto_tickers = [t.strip() for t in crypto_tickers if t.strip()]
@@ -63,6 +63,8 @@ TICKER_NAMES = {
     "SOL-USD": "Solana",
     "RKLB": "Rocket Lab",
     "BMNR": "BitMine Immersion",
+    "COHR": "Coherent",
+    "AAOI": "Applied Optoelectronics",
 }
 
 # 기업 실적 일정 대상 (M7 + 관심종목) — earnings.py가 사용
