@@ -1389,22 +1389,22 @@
    ],
    "cur": {
     "period": "26.12",
-    "eps": "-",
-    "eps_range": "",
-    "rev": "$280.58M",
-    "growth": "+70.61%",
+    "eps": "$-0.07",
+    "eps_range": "$-0.08~$-0.05",
+    "rev": "$257.18M",
+    "growth": "+131.18%",
     "growth_pos": true
    },
    "rev": {
-    "up": null,
-    "down": null
+    "up": 0,
+    "down": 2
    },
    "next": {
     "period": "26.12",
     "eps": "$-0.04",
-    "eps_range": "$-0.07~$0.03",
+    "eps_range": "$-0.07~$-0.01",
     "rev": "$286.08M",
-    "growth": "+131.18%",
+    "growth": "+116.38%",
     "growth_pos": true
    },
    "quarters": [
@@ -1439,14 +1439,14 @@
      "cq": "2026-4",
      "label": "2026 4Q",
      "reported": false,
-     "eps_est": "-",
-     "rev": "$280.58M",
+     "eps_est": "$-0.07",
+     "rev": "$257.18M",
      "date": "2026-11-10"
     }
    ],
    "target": {
     "price": "$61.53",
-    "mean": "$93.10",
+    "mean": "$93.15",
     "range": "$58~$127",
     "upside": "+51%",
     "upside_pos": true
