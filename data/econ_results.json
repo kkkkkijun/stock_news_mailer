@@ -695,10 +695,10 @@
 "14be18ad-4b90-4333-ab99-e5a653d86ef7": {
 "name": "Gross Domestic Product (QoQ)",
 "dt": "2026-11-15T23:50:00Z",
-"act": null,
+"act": "0%",
 "cons": "0.1%",
 "prev": "0.4%",
-"act_n": null,
+"act_n": 0.0,
 "cons_n": 0.1
 },
 "94a81821-a5f9-49b8-aa91-78fa3992fb3c": {
@@ -904,7 +904,7 @@
 "dt": "2026-12-06T23:50:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "0%",
 "act_n": null,
 "cons_n": null
 },
