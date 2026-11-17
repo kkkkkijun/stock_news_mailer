@@ -1,0 +1,315 @@
+2026-11-18T06:33:37.889304+09:00
+
+[오늘의 뉴스 요약] 2026-11-18 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제는 혼조세를 보이며 외환과 주식 시장에서 주의가 요구되는 상황이다. 금융지주들의 세금 부담 증가와 원/달러 환율 상승이 부각되었으며, IMF의 성장률 전망 상향에도 물가 압박이 심화되고 있다.
+
+[핵심 뉴스]
+1. (정책) 세금 부담 증가 우려
+   → 4대 금융지주의 올해 3분기 누적 세금·공과금은 1조2421억원으로 전년 동기보다 4873억원 증가하여 증가폭이 최근 5년간 연평균의 11배에 달하고 있다.
+   (매일경제 · 11/18 06:01)
+2. (성장) IMF, 한국 성장률 전망 상향 조정
+   → IMF는 한국의 실질 GDP 성장률이 올해 3.9%, 내년 3.3%로 상향 조정되었다고 발표하며, 이는 AI와 반도체 산업 호황에 기인한 것이다.
+   (매일경제 · 11/17 17:55)
+3. (기타) AI 폭망 시나리오 경고
+   → 케빈 워시 연준 의장은 AI 버블에 대해 경고하며 생산성 향상 시나리오의 불확실성을 강조, 1조 달러의 AI 관련 익스포저를 가진 미국 대형 은행들이 금융 시스템의 위험 요소가 될 수 있음을 지적했다.
+   (매일경제 · 11/18 06:00)
+4. (환율) 원/달러 환율 상승
+   → 17일 원/달러 환율은 1,338.2원으로 상승했으며, 코스피는 2.59% 하락하고 외국인 투자자는 1조4천460억원을 순매도했다.
+   (연합뉴스 · 11/17 15:50)
+5. (물가) 물가 상승 우려 속 긴축 강조
+   → IMF는 한국 올해와 내년 물가 상승률을 각각 2.7%, 2.3%로 전망하며 물가 안정성을 위해 긴축적인 통화 및 재정 정책을 강조했다.
+   (매일경제 · 11/17 17:44)
+
+[흐름·전망]
+• 세금 부담 증가로 인해 금융지주들이 소비자에게 비용을 전가할 가능성이 있어 소비자 물가에 미치는 영향을 주의 깊게 살펴야 할 것이다.
+• IMF의 성장률 전망이 긍정적이나 물가 압박과 긴축 조치가 병행되어야 하기 때문에 지속적인 경기 회복 여부에 대한 신중한 대처가 필요하다.
+• AI 투자에 대한 기대와 불안이 교차하는 가운데, 전체 경제에 미치는 영향을 평가하며 기업과 가계의 대응 전략을 마련해야 할 것이다.
+• 원/달러 환율의 변동성이 커지고 있어 수출업체들이 환 리스크 관리에 더욱 집중해야 할 시점이다.
+
+📈 해외주식 PART
+🧭 [TSLA] 테슬라, 사이버트럭과 로보택시 호재로 긍정적 흐름 지속
+
+📰 [TSLA] Tesla's $350 Cybertruck toy sold out. Now sellers want $850
+   (USA Today · 11/18 06:20)
+🏷 호재 | 테슬라 사이버트럭 장난감 판매 급증 | 제품 인기로 수익성 증가 예상 | 0
+🔗 https://news.google.com/rss/articles/CBMiqwFBVV95cUxPajFCMG5zNXJ4WXNWVlFRTlU5RnFObG5SbU92SzNSUGtWZjU4eDdIV2tOTF9NX1RTUVVvaDJrVy1tOWJfNklSN25lWDdCYmkya2RhS0phdWV6UTBkaVhHMk5GZDNNcHhTOTRueTVER2FjNkVqZFVDZFA4WjJFRFkwSGM5cDg5R1k5YUhOTXE0UFNYZzhLdjgxNm1IalRmVElUV0NKb0RSMG5RamM?oc=5
+→ 테슬라의 $350 사이버트럭 장난감이 매진되었습니다. 이제 판매자들은 이 장난감을 $850에 재판매하려고 합니다.
+
+📰 [TSLA] Tesla (TSLA) Is Spending €3 Billion To Expand Berlin Cybercab Production
+   (Yahoo Finance · 11/18 05:11)
+🏷 호재 | 테슬라, 베를린 공장 확장 | 자율주행 생산 확대와 일자리 창출 | 1
+🔗 https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-spending-3-billion-201132630.html?.tsrc=rss
+→ 테슬라가 베를린 기가팩토리에 30억 유로를 투자해 자율주행 사이버택시 생산을 확대합니다. 이로 인해 연간 100만 대의 무인 차량 생산이 가능해질 것으로 보이며, 수천 개의 일자리가 창출될 전망입니다.
+
+📰 [TSLA] Tesla just doubled its Miami Robotaxi geofence
+   (Teslarati · 11/18 04:55)
+🏷 호재 | 테슬라, 마이애미 로보택시 확대 | 로보택시 사업 확장은 긍정적 | 0
+🔗 https://news.google.com/rss/articles/CBMickFVX3lxTE1VQWxTcmc2dmVweG03c3RadUwyTmdXWHVNdUZya1FZSldHbGpqLWZHbWpNWmRucDFDSVNoY3dQMDhzV3BhRWJ0cndaMWxNcjFUbWZOWU1ET1piVW5fd2hyU2Y1X2N1cmN6bm5vSDVuY0tpQQ?oc=5
+→ 테슬라가 마이애미 지역의 로보택시 경계를 두 배로 확장했습니다. 이는 자율주행 사업의 성장 가능성을 보여주며, 향후 수익 증가에 긍정적인 영향을 미칠 수 있습니다.
+
+🧭 [RDW] RDW 긍정적 소식 이어져 기회 확장中
+
+📰 [RDW] SpaceX IPO Fallout Opens A Door For Rocket Lab (NASDAQ: RKLB), AST SpaceMobile (NASDAQ: ASTS), And Redwire (NYSE: RDW)
+   (Foreign Policy Journal · 11/15 21:44)
+🏷 호재 | 스페이스X IPO 여파로 기회 | IPO 여파로 기회 증가 | 0
+🔗 https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdldfU3NRZVB0ekRYN3I5VlpISDdjVTg1YjlYSG9uZmF1cVFBMkZfQTI5OU1qTFVQcU1ETlhfWGRqWDhhV05PUk9UaF9WTDZCWUExVUFvZmxuS3J2QklYZ2pvWFRha1NidFNGQ3Joc2ZpbDFUZl9iVzZabll6X2JpX0JEWm1BZXRhTXZNSDlwbHQtdFBzcmI3Y1l3Z0JTbGpFRndEQUlYZGJWOFRlZTh1RFUxU3Q2anF6Q3V3dFN1YnFhSloxT01hQS1hTGxyWkdNTHFZRjZfdUt2ZDJINE40T0pzR3QzOVZNY3V0NQ?oc=5
+→ 스페이스X의 IPO 여파가 로켓랩, AST 스페이스모바일, 레드와이어에 새로운 기회를 제공하고 있습니다. 이는 RDW 보유자에게 긍정적인 신호로 해석될 수 있습니다.
+
+📰 [RDW] What Does Redwire (RDW) Need To Prove After Its CTO Hire And Army Order?
+   (Yahoo Finance · 11/15 04:08)
+🏷 호재 | RDW, CTO 임명 및 군 발주 확보 | CTO 임명 및 군 발주는 긍정적 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/does-redwire-rdw-prove-cto-190843745.html?.tsrc=rss
+→ RDW가 수석 기술 책임자인 윌리엄 메호니를 임명하며, 미국 육군의 Stalker 무인 항공기 시스템에 대한 후속 주문을 확보했습니다. 이는 RDW의 자율 시스템 기술 포트폴리오 강화를 위한 중요한 발걸음입니다.
+
+📰 [RDW] Did Revenue Miss Just Shift Redwire (RDW) Investment Narrative?
+   (Yahoo Finance · 11/14 14:12)
+🏷 호재 | RDW, NASA·DARPA 계약 소식 | 신규 계약 체결로 긍정적 요소 존재 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/did-revenue-miss-just-shift-051221523.html?.tsrc=rss
+→ Redwire Corp가 분기 매출 1억 9백만 달러를 보고했으며, 연간 가이던스를 유지했습니다. NASA와 DARPA와의 신규 계약을 체결했지만, 매출 감소에 대한 우려도 존재합니다.
+
+🧭 [IREN] IREN 주가 26% 하락, 펀드 대량 매도로 신뢰 감소
+
+📰 [IREN] IREN stock falls 26% amid AI selloff despite ne...
+   (Pluang · 11/18 04:17)
+🏷 중립 | IREN 주가 26% 하락 소식 | AI 매도세로 인한 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMiowFBVV95cUxPRjRVUl94YWhZc0RfYjdhZkJMbFYyQi1iajhVaFRRS3ZhWGJtU0lrZmRsR1BfallvY2haenl0VWwzaHBFWGpmaGM5UEVHRWhQRy1mWXdRT241OC1zT3dPNm1RWkdha0ItMFFPREItWEt4OXhQQTRDLXRLcWV2QVE2aTUyMTFsY3o4OXpGUGV2WGVYZFgzUFRHNE5GVTVnUzFVUFJr?oc=5
+→ IREN 주식이 AI 관련 매도세로 26% 하락했습니다. 이는 IREN의 직접적인 실적이나 뉴스와 관련이 없으므로 보유자에게는 큰 영향을 미치지 않을 것으로 보입니다.
+
+📰 [IREN] IREN Is Down 26% in a Week Even as Soros and Intel Disclose New Stakes. What Will It Take to Get IREN Stock Back to $20?
+   (24/7 Wall St. · 11/18 04:02)
+🏷 중립 | IREN 주가 26% 하락, 투자 소식 | 주가 하락과 투자 소식 존재 | 0
+🔗 https://news.google.com/rss/articles/CBMi8gFBVV95cUxPUXJYYnNUcjh6RE1jWEJVamxtSUs2VkpoNHFza1hydkwxUkJXeUtGbmhyREphaWFsOU52dE1vdlhSbmVyMnQ2bUJ2WE8zSHRSZ1RjU3FSd0s4UkJ1Vm9Va0pHOVQzcVo2QkQ3dzFVNUkyVk1FWjJaMmpZc2s3LWdPVl9WQjF1bnN6eks2MlhFeWR3eC1jMUJtbVVnWkJJdUdaR1dwWWNrTjlnbEhvRWl0YW93ZUJWak1DbjBRNDF0ZmI2X08wRmE3X3I2WVlPWnFiSDAtVDMtOTQzRW1xYUxQRjYwc0JKS0tJdlQ2d0FxZnM3Zw?oc=5
+→ IREN의 주가가 최근 26% 하락했으며, 조지 소로스와 인텔이 새로운 지분을 공개했습니다. 하지만 이러한 소식이 주가 회복에 긍정적인 영향을 미칠지는 불확실합니다.
+
+📰 [IREN] Aschenbrenner's Fund Dumps Bitcoin Miners, Cuts IREN 94%
+   (Bitcoin Magazine · 11/18 03:17)
+🏷 악재 | Aschenbrenner 펀드 IREN 94% 매도 | 대량 매도가 투자 신뢰 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMifEFVX3lxTE5ld3FWNzVnMnJQOHdybS1jQkdWR0ExWXI4Z0ZPdnUwN2Z2ZGlGYTc3cDhPR2VMMGphV1Uxbk1kRjRndF9WTzRWLTM1b0hfWGgza0FLRTU4UndSLVdhbWdpblBHR2JOZ19laDVxVmJmV191TVI0RTJaR3R3Uk8?oc=5
+→ Aschenbrenner 펀드가 비트코인 채굴기업을 매각하고 IREN을 94% 줄였습니다. 이는 IREN 투자자들에게 부정적인 신호를 보낼 수 있습니다.
+
+🧭 [RKLB] RKLB, 백로그 증가에도 불구하고 주가 하락
+
+📰 [RKLB] Rocket Lab: Record $3.6B Backlog Can't Outrun Widening Losses (NASDAQ:RKLB)
+   (Seeking Alpha · 11/18 06:13)
+🏷 중립 | RKLB, 36억 달러 백로그 기록 | 백로그 증가와 손실 확대 | 0
+🔗 https://news.google.com/rss/articles/CBMioAFBVV95cUxPV2N6RVh5WlRoN2tIdnYtclZnUlBoNTRfa2M1NVd4UGw1MkxIdEgzaExTZHl4clM5UjcxUDBkS0V3QkhSbTRENXhEWkttNkw0dWtWYkZxLUlfWmVJWUcyV1F3R1FIWVMzRjRmSTRGTXFWWUpmX2tGMzZuMFc4OWhkUVVzaWNCQlFscEFWeDNsbHU5MVJqajBMRUlDbUN3LTRs?oc=5
+→ Rocket Lab이 36억 달러의 기록적인 백로그를 보유하고 있으나, 손실이 증가하고 있다는 우려가 제기되고 있습니다. 이는 보유자들에게 긍정적인 점과 부정적인 점을 모두 포함하고 있습니다.
+
+📰 [RKLB] ULA Vulcan Failure Puts SpaceX In The Driver's Seat As Analyst Pushes For Guaranteed Falcon 9 Access For AST SpaceMobile (NASDAQ: ASTS) and Rocket Lab (NASDAQ: RKLB)
+   (Foreign Policy Journal · 11/18 04:20)
+🏷 중립 | ULA 벌컨 실패, 스페이스X 유리 | 스페이스X와 경쟁 강조됨 | 0
+🔗 https://news.google.com/rss/articles/CBMisAJBVV95cUxOTi1YLWNvcWRDUUJjZUtLSUE1Z0pYeFBoMjNhWEQyOGpOQ1RlZEcyeW9iWTN5ZjZOT2lmeEdpaEx1bUF5UWVDQXRpVDVRVlVaLTJMbUdmNzVkU25jNTFrMUZXVmxvQldZV1l6LUZ6RHFTQ3puQnJrZnRNY3RZZVdRSVNTR0JOV3RQWE9sN0R0YUJCWGQtUThzYUdnM2cxcUhDamtxMFlwamxxMUotUlBFelY4bW5HSFg2Ul9nT0tid045Y0NuWUJOb2lyLUJkUDdZcVZxR1Q4ZzEycWwtMkdsRWNPZFpCZmViM0tRa2hfNFZ4SWxuNWVXTkpvRkFsTVMxbWFxaVQ0a1BIeGFuMmZLd2RLM0hsUXRmRXV1X2FYRE5RV01kUzhXdmZWeC01Rmls?oc=5
+→ ULA의 벌컨 발사 실패로 인해 스페이스X가 경쟁에서 유리한 위치를 점하고 있습니다. 한 분석가는 AST SpaceMobile과 Rocket Lab을 위한 팰콘 9 발사 보장이 필요하다고 주장하고 있습니다.
+
+📰 [RKLB] SpaceX Rises 3% on Report of $4 Billion Bond Sale to Fund NVIDIA Chips; Rocket Lab Falls 3%, AST SpaceMobile Slides 2%
+   (24/7 Wall St. · 11/18 03:57)
+🏷 악재 | RKLB 주가 3% 하락 소식 | 주가 하락 원인으로 작용 | 0
+🔗 https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZ0JNRGl1Z3pOeDBpck02eXo0U3BLY05SUVNjWG9FclRlNkh6Zk9FMFF5XzkxRktTbHljU1VnYjFFNk9Tdl9TN3E2bksxM1FMLUVmVC1XeG0wRWcwaVBaTl9KZGlrX21nejZnbzNON0JxM2kwNy1Sb2hBSlhxZWtSLXh5RTNiRjNyYmRYR201NUJQUjlRZlRuNVcyNy1MX195dklTWnMxVkZBaEJvTFJZb2ROU2JxTFBYRmRSbkgzWFRCTXpOZl9kRllNbW44M2hRbWdJNGowSmViQ1B3SldJRURZQ1JvZHd6MkFjVQ?oc=5
+→ SpaceX가 NVIDIA 칩 자금 조달을 위해 40억 달러 채권을 발행한다는 보도로 이 시장의 반응이 있었습니다. 그로 인해 Rocket Lab의 주가는 3% 하락했습니다.
+
+🧭 [COHR] COHR 매도 신뢰도 하락, 강력 매수 전망
+
+📰 [COHR] A $4.2 Billion Fund Dumps These 3 Stocks
+   (Yahoo Finance · 11/18 04:11)
+🏷 악재 | 4.2억 달러 펀드 COHR 매도 | 투자 신뢰도 하락 | 0
+🔗 https://www.tikr.com/blog/a-4-2-billion-fund-dumps-these-3-stocks?ref=yahoofinance&tlnk=yf-261117-26mfhqm3&.tsrc=rss
+→ Electron Capital Partners가 Coherent 주식을 매도했다는 13F 보고서가 공개됐다. 이는 COHR 보유자에게 부정적인 신호로 해석될 수 있다.
+
+📰 [COHR] All You Need to Know About Coherent (COHR) Rating Upgrade to Strong Buy
+   (Yahoo Finance · 11/18 01:00)
+🏷 호재 | COHR, 매수 등급 상향 소식 | 강력 매수 등급으로 실적 긍정 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/know-coherent-cohr-rating-upgrade-160003607.html?.tsrc=rss
+→ Coherent가 Zacks에서 강력 매수 등급을 받아 긍정적인 실적 전망이 제기되었습니다. 이는 주가에 긍정적인 영향을 미칠 것으로 보입니다.
+
+📰 [COHR] Coherent Rises 3% as Trump Presses Ahead With Chinese Optics Ban Despite Big Tech Lobbying
+   (Yahoo Finance · 11/17 23:52)
+🏷 호재 | 코히어런트 주가 3% 상승 | 중국산 수입 금지로 수혜 | 0
+🔗 https://www.tikr.com/blog/coherent-rises-3-as-trump-presses-ahead-with-chinese-optics-ban-despite-big-tech-lobbying?ref=yahoofinance&tlnk=yf-261117-jmvfcr2f&.tsrc=rss
+→ 트럼프 정부가 중국 광학 수입 금지를 추진하면서 Coherent 주가가 3% 상승했습니다. 새로운 공급업체 대체에는 수년이 걸릴 것으로 보이며, Coherent는 그 수요에 경쟁할 수 있습니다.
+
+🧭 [AAOI] AAOI, 주식 희석 우려 속 하락 지속
+
+📰 [AAOI] Applied Optoelectronics launches $550M at-the-market stock offering
+   (StreetInsider · 11/18 06:10)
+🏷 악재 | AAOI, 5억 5천만 달러 주식 공모 | 주식 희석 가능성 때문 | 0
+🔗 https://news.google.com/rss/articles/CBMixwFBVV95cUxPbXh5WHFPejJ5YlNZWjlmVUo0LWRjby04V2ZxaEFlVEFHYkJySzROekM4NDU4X3l6YWVrZWJvOHc4Sm5iZlFGYWFCUXgtWWtXR3RjNTRqRWNkQXRNZzhHbU0ySGFMVDhtd0duWjd3cUJSX3dQa1NwcldjbzloakpoSmZySm4xOEE0TG5EYmpVanl1b3ZkWC15TS1OTk9oLWg1alVrVS1zTGN1VlFPN3V5SkkwNXJQNW9xWTc4SWFwVWVzZERTb2l3?oc=5
+→ Applied Optoelectronics가 5억 5천만 달러 규모의 주식 공모를 발표했습니다. 이는 자금 조달로 이어질 수 있어 AAOI 보유자에게 우려를 불러일으킬 가능성이 있습니다.
+
+📰 [AAOI] Applied Optoelectronics (AAOI) Stock Price Prediction: Bounce attempt meets a still-bearish trend structure
+   (blockchain.news · 11/18 06:02)
+🏷 중립 | AAOI 주가 예측, 하락세 지속 | 주가 예측이 주 내용 | 0
+🔗 https://news.google.com/rss/articles/CBMinAFBVV95cUxOSWdxUERGUzViNU5CeGxDNzlRTUcxWHpXTW56cjFtS1JtNWwzNmxlVGwxaXQ5TWNpZWZVNjdiTFo5aUJqRlhVTEJBd1lUUHYxLUE1WnhyT3lCTFM5NTB4dDJqRktFVEs4djlJWWtnemdNR3RNQ2JYRG14cElfODVFZVZIaUszTUtZckphdFZIcF9Ec2h5U2hCb1lHdVg?oc=5
+→ Applied Optoelectronics의 주가 예측에 따르면 현재 반등 시도가 있지만 여전히 약세 추세를 유지하고 있습니다. 이러한 시장 상황은 AAOI 보유자에게 우려를 나타낼 수 있습니다.
+
+📰 [AAOI] Wrapped Applied Optoelectronics Tokenized Stock (xStock): Funding, Investors, Team and Key Events
+   (CryptoRank · 11/18 03:23)
+🏷 호재 | 토큰화된 AAOI 주식 관련 소식 | 토큰화 주식으로 자금 조달 기대 | 0
+🔗 https://news.google.com/rss/articles/CBMiigFBVV95cUxNaFo4bXZvREpjU1RoSHdYV2t5anM5VS1VVEJXT3VhWEwxemRfWnpfSDBMZjlOOU9xYU8tNTVWN0h6VmFNcUU1M2lOTG9IZFpiVkNSb1JqWENZUWd3NUNRT25nZXU1bVE3N01oa09yUG9SelRTb2xDX1lBOFdtM0tyTWZOLVI3MHZtQkE?oc=5
+→ Wrapped Applied Optoelectronics의 토큰화된 주식(xStock)에 대한 정보가 공개되었습니다. 이는 투자자와 자금 조달에 긍정적인 영향을 미칠 것으로 예상됩니다.
+
+
+🪙 코인 PART
+🧭 [BTC-USD] 비트코인 가치 상승과 신뢰성 강화 기대
+
+📰 [BTC-USD] Could Bitcoin’s Market Value Reach $3 Trillion by 2030?
+   (24/7 Wall St. · 11/18 06:28)
+🏷 호재 | 비트코인 시장 가치 3조 달러 가능성 | 시장 가치 상승 전망 | 0
+🔗 https://news.google.com/rss/articles/CBMisAFBVV95cUxPZXJfY3pzSkd6SUNNSGpITGZWWWZ1QVQyQWMzRU52eWlYelRxYUJnSEJ3Q1VaaHROMXRsOG1uV2NfSjVYeUR4eGR5clpuS1F0QUQ4T21waU1UQ284VDlZZVZ0UVdrdzREanQ0ektuRlhqWDhaOEFGdjJnWnRzYzdxeHRpOER6TE9QWDlJZlh2Z01TWUlVTXlXNm5TcEhla3pLR2Y5MXMyWXVJVnQteFN4Sg?oc=5
+→ 전문가들은 비트코인의 시장 가치가 2030년까지 3조 달러에 이를 수 있다고 전망하고 있습니다. 이는 BTC 보유자에게 긍정적인 신호로 해석됩니다.
+
+📰 [BTC-USD] How one Bitcoin ATM operator in Ann Arbor says it’s preventing cryptocurrency fraud
+   (MLive.com · 11/18 06:17)
+🏷 호재 | 비트코인 ATM, 사기 예방 방안 | 사기 예방으로 신뢰성 향상 | 0
+🔗 https://news.google.com/rss/articles/CBMizAFBVV95cUxOeXpKZ3JlM2p2am9Oc1lXa2U0OFZycV9BTG5LaVVDS2RrLVpPa01ZaWIwYlVEZFl4MnpiZ2dPWFBET0pzMWFLNjltV243anRxbm1QRHhnYnpuNHpEZTZlN29ZTFROUU9GTEl2UDAyWnl0NkN5ZDFGQUdDdWhuSFFwR3JuLWFyX0ZuUTh6VFNsRENKcTE2ZEgtTzVCUEpoNnVnZnB3VC1tN2U3aDdRNHVyNWV6SXlWWFF3ZTRoS3lMWEhqSU1YSTNzdTZoVE8?oc=5
+→ 앤아버의 비트코인 ATM 운영자가 암호화폐 사기를 예방하는 방법을 소개합니다. 이는 비트코인 사용자의 신뢰성을 높이는 데 기여할 수 있습니다.
+
+📰 [BTC-USD] Why Bitcoin-backed lending needs higher standards now
+   (Yahoo Finance · 11/18 06:11)
+🏷 호재 | 비트코인 대출 서비스 기준 강화 필요 | 안전한 대출 환경 기대 | 0
+🔗 https://www.thestreet.com/crypto/innovation/why-bitcoin-backed-lending-needs-higher-standards-now?.tsrc=rss
+→ Ledn은 비트코인 대출 서비스를 위해 새로운 기준을 마련하고 있습니다. 이는 비트코인 보유자에게 더 안전한 대출 환경을 제공할 것으로 기대됩니다.
+
+🧭 [ETH-USD] 이더리움 신뢰 회복 속 해킹 우려 지속
+
+📰 [ETH-USD] Brothers who baited ethereum MEV bots for $25 million acquitted of wire fraud
+   (Yahoo Finance · 11/18 06:00)
+🏷 호재 | 이더리움 MEV 사기 혐의 무죄 | 사기 혐의 무죄로 신뢰 회복 | 1
+🔗 https://finance.yahoo.com/video/brothers-baited-ethereum-mev-bots-210000650.html?.tsrc=rss
+→ 2명의 형제가 2,500만 달러 규모의 이더리움 MEV 봇 사기 혐의로 무죄 판결을 받았다. 이번 사건은 이더리움 거래에 대한 신뢰를 높이는 긍정적인 영향을 미칠 수 있다.
+
+📰 [ETH-USD] 2,000 XRP or 1 Ethereum: Which Could Be Worth More in 5 Years?
+   (24/7 Wall St. · 11/18 05:53)
+🏷 중립 | 이더리움, XRP 대비 가치 논의 | 비교 분석에 그치기 때문 | 0
+🔗 https://news.google.com/rss/articles/CBMiugFBVV95cUxOTVUzMEpha3h4aEZlc2VLNVpMMDFJVXVYYUtJWXlvUEVHaUVBTVBBRHQ4bDl5MnFIV2xwcnB0U1g0VkNqd2doZ3k2X05pT2VMV3RQcE5WTHVVSEdLMGVDdzJobTFYV3VWMmI1M0tyQS1FY3VmYmVJUS11ZmZubXVrS1Ytbzc5eG5iSndZY1dUU1NWaC1QajNNdTRiQ3pRV3h0bWxKUWh0elJ3UWYtanlZWFFaaEhFRVdCUUE?oc=5
+→ 이더리움과 XRP의 미래 가치를 비교하는 기사로, 두 암호화폐에 대한 시장 전망을 다루고 있습니다. ETH 보유자에게 직접적인 영향을 미치는 정보는 포함되어 있지 않습니다.
+
+📰 [ETH-USD] Ethereum Holds Near $1,800 as Hack-Linked Wallets Shift $137M in ETH
+   (BigGo Finance · 11/18 04:55)
+🏷 악재 | 해킹 지갑 ETH 137M 이동 | 해킹 연관으로 시장 불안 전개 | 0
+🔗 https://news.google.com/rss/articles/CBMidkFVX3lxTE9NYUV3VkN6Zkg5c1VKb3JxTFNUNG80eEFyS09hRkkwbnRfZkR6RjVpQ0FKYXN1VXlpbGxlZERuRTFscmNPUEZNdHp0MTdvUXR4UXlpWmtKX2V0ZkVCYVNwbC1kMU9fSkJiN3hNMTU4WFY4VGhVcFE?oc=5
+→ 해킹과 관련된 지갑에서 1억 3700만 달러의 ETH가 이동했습니다. 이로 인해 시장에 불안감이 커질 수 있습니다.
+
+🧭 [SOL-USD] 솔라나 긍정적 소식 지속, 생태계 성장 기대
+
+📰 [SOL-USD] Veteran investor calls Solana a pioneer as tokenized stocks hit $2 billion
+   (Yahoo Finance · 11/18 06:00)
+🏷 호재 | 솔라나, 토큰화 주식 성장 200배 | 토큰화 주식 성장 기대감 | 0
+🔗 https://www.thestreet.com/crypto/markets/veteran-investor-calls-solana-a-pioneer-as-tokenized-stocks-hit-2-billion?.tsrc=rss
+→ 전문 투자자가 솔라나를 혁신적인 플랫폼으로 칭하며, 최근 15개월 동안 토큰화 주식이 200배 성장했다고 언급했습니다. 향후 더 많은 성장 가능성을 기대하고 있습니다.
+
+📰 [SOL-USD] Solana Foundation Invests in CoinGecko, Data Gateways and Trading Frontends Converge
+   (深潮TechFlow · 11/18 05:56)
+🏷 호재 | 솔라나 재단, 코인게코 투자 | 생태계 성장에 기여할 투자 | 0
+🔗 https://news.google.com/rss/articles/CBMiXEFVX3lxTE85RXd0TGx4N21YbTlWTk1wd09pZG5TczZ5Y3o1bzlPdGpfTjEzb2lmT0lQSTZLcEhqQWt5LVlreTdScnE2a2Nsdmc1U3ZEdUhpUktwQk9rSC04WW1r?oc=5
+→ 솔라나 재단이 코인게코에 투자하면서 블록체인 데이터 및 거래 플랫폼이 강화될 전망입니다. 이는 솔라나 생태계의 성장에 긍정적인 영향을 미칠 것으로 기대됩니다.
+
+📰 [SOL-USD] Solana Policy Institute’s Kristin Smith says everyday use will win over Congress
+   (Crypto Briefing · 11/18 04:35)
+🏷 호재 | 솔라나 일상 사용, 의회 설득 가능 | 일상 사용 증가로 인한 긍정적 전망 | 0
+🔗 https://news.google.com/rss/articles/CBMid0FVX3lxTE94dGdJSmQyM3FVS3ZDRk01ZFRsdWlTa3RYREJPUk5ONGd0WC1WcGlCTmV0S05hYjFTZTNheXlVR2JtZ2llSnR2MGx0MklYV0dzdXBZNkV4RXdBbjBnYUNFLTJqX3dHR1BLOG0zNEJpNHUyYW16WGUw?oc=5
+→ 솔라나 정책 연구소의 Kristin Smith가 일상적인 사용이 의회를 제압할 것이라고 밝혔습니다. 이는 솔라나의 활용도가 증대될 가능성을 시사하는 내용입니다.
+
+🧭 [BMNR] BMNR 주가 하락 지속, 주가 저평가 상태
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock Still Looks Cheap On Its $6.3B Loss
+   (Yahoo Finance · 11/18 02:10)
+🏷 중립 | BMNR, 주가 하락 지속 중 | 주가 하락 원인 설명 | 1
+🔗 https://finance.yahoo.com/markets/stocks/articles/bitmine-immersion-technologies-bmnr-stock-171023174.html?.tsrc=rss
+→ BMNR은 최근 몇 년 동안 주가가 급락했으며, 현재 주가는 16.26달러입니다. 소속된 이더리움 포지션에도 불구하고, 투자자들은 기업의 실제 가치와 주가 간의 관계에 의구심을 가지고 있습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Looks Fairly Valued As Earnings Sharpen Ethereum Risk
+   (Yahoo Finance · 11/18 00:12)
+🏷 악재 | BMNR, 실적 발표로 주가 하락 | 순손실 발생과 주가 하락 | 1
+🔗 https://finance.yahoo.com/markets/crypto/articles/bitmine-immersion-technologies-bmnr-looks-151238457.html?.tsrc=rss
+→ BMNR은 연간 실적을 발표하며 매출 1억2425만 달러를 기록했으나, 63억1000만 달러의 순손실을 보고했습니다. 이로 인해 주가는 1개월 기준 24.93% 하락했습니다.
+
+📰 [BMNR] Bitmine Immersion Technologies (BMNR) Stock Trades At A Discount To Book Value
+   (Simply Wall St · 11/17 15:11)
+🏷 중립 | BMNR, 장부가 대비 할인 거래 | 장부가 대비 할인 거래 사실 | 0
+🔗 https://news.google.com/rss/articles/CBMi4AFBVV95cUxNd1N1LTB2dTBZeTBvUDE1eWF6RFhUSXF4M0lNYkVCOUNsS3p3cmZfZ1JkUTYwcktCelZTLXJTU1VxYWJtSFVWaThRMlhoZGVWeUxnb211S3ViQmFsQjdUaXppd2N3SVBJR0RjWWpIeThkVnlSbzRrSXJ1Q1pFRkNtNmlGeHRyX2lJMHp1WEpNMll4XzBRcXNIeXJZR3Y1b0JaRzV5cS0wMGJZdnlTZ0REQjFORjBMcllCSnBYSVlDbnI0RG8xZldzODEtc0gxRlpYTlcxbWdYLU5pZ0tqeUN6d9IB5gFBVV95cUxPdHc2TmM2M2dmSkU4a0l0bG8ybThNVFVUSnB3cTBPVk5RT29CdW1hM1FObzFBVWh4U3AxektFQ3gtcTBXcUk1MmhrVnNpZVRqckNSdENmYUtVNl9sdVFROG9ocFpmN2FQbEpaMzdOeDdQZmxMUE80NzUtRzNjT0Fvcmgzak5rU2NEQWVrb0t3Y3R6Yk81UWNQUTJWWkhPOEU0bFVBMUxlZkQ5MGpRdmQxVkY5RTVaRGEySEtqTFN2bUliTTlYeFlDQjF1M0wySEt2d1kzWlZFdWwwQUQzWmRHQnFJSFU3Zw?oc=5
+→ BMNR 주식이 장부가 대비 할인된 가격에 거래되고 있다는 소식이 전해졌습니다. 이는 현재 주가가 회사의 자산 가치를 반영하지 못하고 있음을 시사할 수 있습니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장은 코인베이스의 디파이 서비스 경쟁력 강화, 비트코인 시세 하락, CFTC 지명자에 대한 농업 우선 요구 등의 이슈로 복잡한 모습을 보이고 있다. 전반적으로 시장의 불확실성과 변동성이 커지고 있는 상황이다.
+
+[핵심 뉴스]
+1. (기타) 코인베이스의 디파이 경쟁력 심화
+   → 코인베이스는 USDC 예치에 대해 3.75%, 일부 대출 상품에서 최대 7%의 수익률을 제공하며 디파이 서비스 확대에 나섰다.
+   (토큰포스트 · 11/18 06:21)
+2. (시세) 비트코인, 14% 하락 후 재무기업 시총 감소
+   → 미국 3대 증시의 하락과 함께 비트코인이 11.23% 하락하며 6만4000달러선 아래로 떨어졌다.
+   (토큰포스트 · 11/18 06:06)
+3. (규제) CFTC 지명자에 농업 우선 요구
+   → CFTC 지명자들은 농업 우선 요구를 받고 있으며, 매튜 롤랜드는 개인 투자자 보호 관련 규정 갱신의 필요성을 강조했다.
+   (토큰포스트 · 11/18 05:54)
+4. (기타) AI 에이전트 전용 USDC 지갑 출시
+   → 비트코인 믹서 크루의 최대 이용자는 북한 해킹 조직으로 지목되었고, 블록체인 분석가 잭XBT는 크루 운영자의 고의성을 비판했다.
+   (토큰포스트 · 11/18 05:47)
+
+[흐름·전망]
+• 디파이 서비스의 경쟁력 상승은 전통 금융기관에 대한 위협 요소로 작용할 수 있으며, 투자자들은 변화하는 금융 생태계에 주목해야 할 것이다.
+• 비트코인의 급락이 시장 전반에 미치는 영향과 그에 따른 투자 심리 변화가 관전 포인트가 될 것으로 보인다.
+• CFTC의 규제 변화가 가상자산 시장에 어떤 영향을 미칠지, 특히 농업과의 관계가 중요할 수 있다.
+• 해킹과 자금세탁 문제가 부각되면서 블록체인 기술에 대한 신뢰도가 영향을 받을 수 있음을 유념해야 한다.
+
+📊 공포탐욕지수
+  - CNN 기준: 25 (Fear)
+  - 크립토 기준: 12 (Extreme Fear)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+현재 한국 부동산 시장은 전세시장과 매매시장 간의 양극화가 뚜렷해지고 있으며, 서울의 전세 가격이 처음으로 평균 5억원을 초과하는 등 전세세입자들의 부담이 크게 증가하고 있다.
+
+[핵심 뉴스]
+1. (공급) 모듈러 주택 공급 확대
+   → 서울에서 전세값이 상승하며 신규 분양 물량이 부족해진 가운데, 정부는 2030년까지 2만호 규모의 모듈러 주택을 공급할 계획이다.
+   (매일경제 · 11/18 05:00)
+2. (전세) 세입자 임대료 부담 증가
+   → 국토교통부의 조사 결과, 세입자들의 소득 대비 임대료 부담이 17%로 늘어나며 전월세 거주자들이 큰 재정적 압박을 느끼고 있다.
+   (매일경제 · 11/17 17:42)
+3. (매매) 강남 하락세 확산
+   → 서울 아파트 시장이 전반적으로 상승세를 이어가는 가운데 강남3구의 하락세가 지속되고 있으며, 성북과 강북 등의 외곽 지역은 상대적으로 상승폭이 커지고 있다.
+   (매일경제 · 11/17 19:55)
+4. (공급) 기획 소송에 휘말린 오피스텔
+   → 정부가 모듈러 주택을 통해 수도권의 주택 공급 문제를 해결하고자 하는 가운데, 초기 비용 및 인식 문제에 대한 대안 마련이 필수적이다.
+   (매일경제 · 11/17 16:34)
+5. (매매) 부동산 시장 심리 엇갈림
+   → 전국 전세 수요가 공급을 초과하는 가운데, 투자 심리는 하락세를 보이며 비수도권 지역에서 보합세를 유지하고 있다.
+   (매일경제 · 11/17 15:40)
+6. (전세) 서울 전셋값 5억원 돌파
+   → 서울의 전셋값이 처음으로 평균 5억원을 넘어섰으며, 전세매물 부족으로 인해 내년 가격 변동성이 확대될 전망이다.
+   (매일경제 · 11/17 14:09)
+
+[흐름·전망]
+• 전세시장 전반에 걸쳐 수요 증가가 예상되며, 공급 부족으로 인해 전세가 추가 상승 가능성이 커지고 있다.
+• 서울 강남3구의 하락세가 향후 시장에 미칠 변화에 주목할 필요가 있으며, 작은 변동에도 과도한 반응을 보일 수 있다.
+• 모듈러 주택이 실질적으로 공급 확대에 기여하기 위해서는 효율적인 공정과 낮은 초기 비용이 관건으로, 관련 정책 동향을 지속적으로 주시해야 한다.
+• 전세시장과 매매시장 간의 괴리가 지속되는 상황에서 주택 정책이 세입자 부담 완화를 겨냥할 가능성이 높아, 이에 따른 정책 변화를 면밀히 살펴봐야 한다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 미국의 에너지 정책과 경제 상황에 대한 자신감을 나타냈습니다. 그는 민주당의 에너지 정책이 가계에 부담을 주고 있다고 비판하며, 자신의 리더십 아래 경제가 호황이라고 주장했습니다.
+
+[주요 발언]
+1. (경제) 트럼프는 미국의 새로운 사업 수가 사상 최고치에 도달했으며, 자신이 소기업 주인들에게 역대 최대의 세금 감면을 제공했다고 언급했습니다.
+   (Truth Social · 11/17 11:31)
+2. (기타) 트럼프는 민주당이 파이프라인과 화석 연료를 금지하려 하고, 이는 에너지 비용 상승으로 이어지고 있다고 주장했습니다.
+   (Truth Social · 11/17 11:31)
+3. (경제) 그는 블루 스테이트에서 시민들이 높은 비용의 에너지를 지불하는 이유가 민주당의 반에너지 정책 때문이라고 비판했습니다.
+   (Truth Social · 11/17 11:31)
+
+[흐름·전망]
+• 앞으로 트럼프의 에너지 정책 공약이 실제로 시행될 경우 에너지 가격에 미치는 영향에 주목할 필요가 있습니다.
+• 트럼프의 경제 호황 주장이 지속될 경우, 정치적 지지기반과의 관계에 어떠한 변화가 있는지 관심을 가질 필요가 있습니다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
