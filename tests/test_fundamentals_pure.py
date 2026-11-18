@@ -106,3 +106,24 @@ def test_rev_quarters_tie_goes_to_total_revenues():
     from fundamentals import _rev_quarters
     g = {REV[0]: _usd([("2026-04-01", "2026-06-30", 120)]), REV[1]: _usd([("2026-04-01", "2026-06-30", 100)])}
     assert _rev_quarters(g)["2026-06-30"] == 120
+
+
+def test_cq_uses_middle_month_like_earnings_reports():
+    from earnings import cal_quarter
+    from fundamentals import _cq
+    assert _cq("2026-09-30") == "2026-3"
+    assert _cq("2026-07-26") == "2026-2"     # NVDA 5~7월 → 2Q (예전엔 3Q)
+    assert _cq("2026-10-02") == "2026-3"     # WDC 52/53주 결산 → 3Q (예전엔 4Q)
+    assert _cq("2026-01-31") == "2025-4"     # 11~1월 → 전년 4Q
+    assert _cq("2026-08-31") == "2026-3"
+    for m in range(1, 13):
+        y, q = cal_quarter(2026, m)
+        assert _cq(f"2026-{m:02d}-15") == f"{y}-{q}"
+
+
+def test_recq_relabels_cached_result_including_series():
+    from fundamentals import _recq
+    d = {"asof": "2026-07-26", "cq": "2026-3",
+         "series": {"rev": [{"end": "2026-04-26", "cq": "2026-2", "v": 1}]}}
+    _recq(d)
+    assert d["cq"] == "2026-2" and d["series"]["rev"][0]["cq"] == "2026-1"

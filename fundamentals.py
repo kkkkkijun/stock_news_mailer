@@ -20,6 +20,7 @@ import netutil
 from settings import EARNINGS_TICKERS, SUMMARY_MODEL
 from sec import _sec_cik, _SEC_UA
 from llm import get_openai_client
+from earnings import cal_quarter
 
 log = logging.getLogger(__name__)
 
@@ -58,8 +59,24 @@ SECTORS = {"RKLB": "우주·발사체", "IREN": "데이터센터·비트코인",
 
 
 def _cq(end):
-    y, m = int(end[:4]), int(end[5:7])
-    return f"{y}-{(m - 1) // 3 + 1}"
+    """회계분기 종료일 → 캘린더 분기 'YYYY-Q'. 실적 보고서(earnings.cal_quarter)와 같은 규칙(석 달 중 가운데 달).
+
+    예전엔 종료월 기준이라 1·4·7·10월 결산(NVDA 7/26, WDC 10/2 등)이 한 분기 늦게 찍혔다(2026-11)."""
+    y, q = cal_quarter(int(end[:4]), int(end[5:7]))
+    return f"{y}-{q}"
+
+
+def _recq(d):
+    """캐시에서 꺼낸 결과의 분기 라벨을 현재 규칙으로 다시 매긴다(규칙 변경 전 캐시 대비)."""
+    if isinstance(d, dict):
+        if "cq" in d and (d.get("asof") or d.get("end")):
+            d["cq"] = _cq(d.get("asof") or d["end"])
+        for v in d.values():
+            _recq(v)
+    elif isinstance(d, list):
+        for v in d:
+            _recq(v)
+    return d
 
 
 def _pick(gaap, tags, dur=True):
@@ -523,7 +540,7 @@ def build_fundamentals(path: str = "data/fundamentals.json",
         fresh = (t not in watch and c.get("d") and c.get("accn") == screen.get(t, {}).get("accn")
                  and (today - date.fromisoformat(c.get("built", "1970-01-01"))).days < max_age_days)
         if fresh:
-            d = c["d"]
+            d = _recq(c["d"])
             reused += 1
         else:
             d = _build_one(t)
