@@ -21,7 +21,7 @@ import logging
 import re
 from typing import Any, Callable
 
-from report_check import direction_conflicts, unsupported_numbers
+from report_check import direction_conflicts, unsupported_directions, unsupported_numbers
 
 log = logging.getLogger(__name__)
 
@@ -347,6 +347,10 @@ def gate_report(out, facts, ko, cons_text, actual=None) -> list[str]:
         rep = {"bullets": [text]} if met is None else {"metrics": [met]}
         for c in direction_conflicts(rep, en):
             issues.append(f"{where}: {c}")
+        if met is None:
+            kb = " ".join(ko.get(s, "") for s in refs if s in by_id)
+            for c in unsupported_directions(text, en, kb):
+                issues.append(f"{where} '{text[:30]}': {c}")
     for f in facts:
         if f["key"] and f["id"] not in cited:
             issues.append(f"핵심 사실 {f['id']} 누락: {f['text'][:60]}")

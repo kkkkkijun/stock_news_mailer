@@ -263,3 +263,18 @@ def direction_conflicts(report: dict[str, Any], press: str) -> list[str]:
                 if re.search(kpat, k) and d in ("up", "down") and (d == "up") != (pd == "better"):
                     out.append(f"{name} 지표 화살표({d})가 발표문({'개선' if pd == 'better' else '악화'})과 반대")
     return out
+
+
+def unsupported_directions(text: str, en_basis: str, ko_basis: str = "") -> list[str]:
+    """보고서 문장이 회사 전체 지표의 증감을 말하는데 근거 사실(영문·번역)에 그 지표의 증감이 없는 곳.
+
+    (TSLA 2026-10: 근거는 '매출 $28,046M'뿐, 원문은 'roughly flat'인데 헤드라인이 '매출 성장' → 최종 점검도 놓침)"""
+    out = []
+    for name, pat, kpat, is_loss in _METRICS:
+        rd = _report_dir(kpat, is_loss, text)
+        if not rd:
+            continue
+        if _press_dir(name, pat, is_loss, en_basis) or _report_dir(kpat, is_loss, ko_basis):
+            continue
+        out.append(f"{name} 증감('{'개선' if rd == 'better' else '악화'}')의 근거가 인용한 사실에 없음")
+    return out

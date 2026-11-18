@@ -140,3 +140,28 @@ def test_fill_does_not_hide_other_write_errors():
     bad["bullets"][0]["text"] = "매출 $119.0M."                    # 근거에 없는 수치 → 보충으로 덮지 않음
     c = _Client(s=[FACTS] * 3, t=[KO_OK] * 3, w=[bad] * 6, f=[{"issues": []}])
     assert _run(c)["ok"] is False
+
+
+def test_direction_without_basis_is_rejected():
+    import report_check as R
+    en = "Total revenues for Q3 2026 were $28,046 million."
+    assert R.unsupported_directions("매출 성장·신규 서비스", en, "3분기 총매출 $28,046M.")
+    assert R.unsupported_directions("매출 $28,046M 기록", en, "") == []
+    assert R.unsupported_directions("매출 5.4% 증가", "Revenues increased 5.4% year-over-year", "") == []
+    assert R.unsupported_directions("매출 5.4% 증가", "x", "매출은 전년 대비 5.4% 증가한 $109.0M.") == []
+    rep = json.loads(json.dumps(REPORT))
+    rep["headline"] = {"text": "매출 성장, 가이던스 유지", "src": ["F2", "F3", "F4"]}       # 매출 근거 없이 '성장'
+    iss = A.gate_report(rep, [dict(f) for f in FACTS["facts"][:5]], {x["id"]: x["ko"] for x in KO_OK["facts"]}, "x 13.9%")
+    assert any("매출 증감" in i for i in iss)
+
+
+def test_named_retry_forces_published_report():
+    ex = {"TSLA": {"check": {"ok": True, "by": "agents"}, "attempts": 1},
+          "RDW": {"check": {"ok": True, "by": "manual"}},
+          "MSFT": {"check": {"ok": True, "by": "agents"}, "attempts": 1},
+          "HIMS": {"check": {"ok": False}, "attempts": 3}}
+    out = E.apply_retry(ex, {"TSLA", "RDW"})
+    assert out["TSLA"]["check"]["ok"] is False and out["TSLA"]["attempts"] == 0      # 지정 → 게시본도 강제
+    assert out["RDW"] is ex["RDW"] and out["MSFT"] is ex["MSFT"] and out["HIMS"] is ex["HIMS"]
+    out = E.apply_retry(ex, {"ALL"})
+    assert out["HIMS"]["attempts"] == 0 and out["MSFT"] is ex["MSFT"]               # all → 보류만

@@ -480,6 +480,20 @@ def retry_tickers() -> set[str]:
     return {x.strip().upper() for x in os.getenv("REPORT_RETRY", "").split(",") if x.strip()}
 
 
+def apply_retry(existing: dict[str, Any], retry: set[str]) -> dict[str, Any]:
+    """수동 재시도: all=보류된 보고서만, 티커 지정=게시본도 강제 재생성. 사람이 고친(manual) 보고서는 제외.
+    check.ok를 내려 캐시를 건너뛰고, 실패해도 기존 게시본으로 되돌리지 않는다(틀린 게시본 교체가 목적)."""
+    out = dict(existing)
+    for t, r in existing.items():
+        chk = r.get("check") or {}
+        if chk.get("by") == "manual":
+            continue
+        if t in retry or ("ALL" in retry and not chk.get("ok")):
+            log.info(f"[reports] {t} 수동 재시도 → 시도 횟수 초기화" + (" (게시본 강제 재생성)" if chk.get("ok") else ""))
+            out[t] = {**r, "attempts": 0, "check": {**chk, "ok": False}}
+    return out
+
+
 def build_reports(path: str | None = None, client: Any = None) -> None:
     import json as _json
     edir = os.path.dirname(os.path.abspath(__file__))
@@ -494,11 +508,7 @@ def build_reports(path: str | None = None, client: Any = None) -> None:
         existing = {r["ticker"]: r for r in _json.load(open(path, encoding="utf-8"))}
     except (OSError, ValueError):
         existing = {}
-    retry = retry_tickers()
-    for t, r in existing.items():       # 수동 재시도: 보류된 보고서의 재시도 횟수를 초기화
-        if (t in retry or "ALL" in retry) and not (r.get("check") or {}).get("ok"):
-            log.info(f"[reports] {t} 수동 재시도 요청 → 시도 횟수 초기화")
-            existing[t] = {**r, "attempts": 0}
+    existing = apply_retry(existing, retry_tickers())
     if client is None:
         client = get_openai_client()
     now = datetime.now(KST)
