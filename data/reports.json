@@ -1863,7 +1863,7 @@
   "eps_est": "$0.45",
   "surprise": "+6.40%",
   "surprise_pos": true,
-  "headline": "매출 성장·신규 서비스, 순이익 공개",
+  "headline": "매출 $280억, 순이익 7.9억…1,000만대 돌파",
   "metrics": [
    {
     "k": "매출",
@@ -1871,7 +1871,7 @@
     "dir": ""
    },
    {
-    "k": "EPS(GAAP)",
+    "k": "GAAP EPS",
     "v": "$0.22",
     "dir": ""
    },
@@ -1883,9 +1883,10 @@
   ],
   "guidance": "",
   "bullets": [
-   "테슬라는 사업 운영을 위해 충분한 유동성 및 강력한 재무상태를 유지하고 있다.",
-   "캐나다, 호주, 일본, 대만 등 여러 시장에서 분기별 최대 인도 실적을 달성했다.",
-   "오스틴에서 Cybercabs를 이용한 Robotaxi 탑승 서비스를 9월 3일 시작했다."
+   "2026년 3분기 총매출이 $28,046M을 기록했다.",
+   "2026년 3분기 보통주주 귀속 GAAP 순이익은 $787M, 기본·희석 주당순이익(EPS)은 $0.22였다.",
+   "TTM 기준 매출이 2분기 연속 $100B를 초과했다.",
+   "분기 중 1,000만 번째 차량을 생산 및 인도했다."
   ],
   "verdict": "beat",
   "cons": {
@@ -1924,13 +1925,13 @@
      "stage": "작성",
      "round": 1,
      "ok": true,
-     "note": "항목 7개"
+     "note": "항목 8개"
     },
     {
      "stage": "최종 점검",
      "round": 1,
      "ok": true,
-     "note": "지적 0건(원문 근거 없는 지적 1건 제외)"
+     "note": "지적 0건(경미한 지적 2건 제외)"
     }
    ],
    "issues": [],
@@ -1939,99 +1940,99 @@
      "id": "F1",
      "topic": "revenue",
      "key": true,
-     "text": "Total revenues for Q3 2026 were $28,046 million.",
+     "text": "Total revenues for Q3-2026 were $28,046 million.",
      "quote": "Total revenues 28,095 24,901 22,387 28,236 28,046"
     },
     {
      "id": "F2",
      "topic": "eps",
      "key": true,
-     "text": "Diluted EPS attributable to common stockholders (GAAP) for Q3 2026 was $0.22.",
+     "text": "GAAP diluted EPS attributable to common stockholders for Q3-2026 was $0.22.",
      "quote": "EPS attributable to common stockholders, diluted (GAAP) 0.39 0.24 0.13 0.32 0.22"
     },
     {
      "id": "F3",
-     "topic": "net_income",
-     "key": true,
-     "text": "Net income attributable to common stockholders (GAAP) for Q3 2026 was $787 million.",
-     "quote": "Net income attributable to common stockholders (GAAP) 1,373 840 477 1,114 787 -"
+     "topic": "eps",
+     "key": false,
+     "text": "Non-GAAP diluted EPS attributable to common stockholders for Q3-2026 was $0.48.",
+     "quote": "EPS attributable to common stockholders, diluted (non-GAAP) 0.50 0.50 0.41 0.33 0.48"
     },
     {
      "id": "F4",
      "topic": "net_income",
-     "key": false,
-     "text": "Net income attributable to common stockholders (non-GAAP) for Q3 2026 was $1,697 million.",
-     "quote": "Net income attributable to common stockholders (non-GAAP) 1,770 1,761 1,453 1,153 1,697 -"
+     "key": true,
+     "text": "Net income attributable to common stockholders (GAAP) for Q3-2026 was $787 million.",
+     "quote": "Net income attributable to common stockholders (GAAP) 1,373 840 477 1,114 787"
     },
     {
      "id": "F5",
-     "topic": "margin",
+     "topic": "net_income",
      "key": false,
-     "text": "Total GAAP gross margin decreased by 160 basis points year-over-year.",
-     "quote": "Total GAAP gross margin 160 bp"
+     "text": "Net income attributable to common stockholders (non-GAAP) for Q3-2026 was $1,697 million.",
+     "quote": "Net income attributable to common stockholders (non-GAAP) 1,770 1,761 1,453 1,153 1,697"
     },
     {
      "id": "F6",
      "topic": "margin",
      "key": false,
-     "text": "Operating margin decreased by 322 basis points year-over-year.",
-     "quote": "Operating margin -322 bp"
+     "text": "Total GAAP gross margin for Q3-2026 improved by 160 basis points sequentially.",
+     "quote": "Total GAAP gross margin 160 bp"
     },
     {
      "id": "F7",
-     "topic": "revenue",
+     "topic": "margin",
      "key": false,
-     "text": "Automotive revenues for Q3 2026 were $20,560 million.",
-     "quote": "Total automotive revenues 21,205 17,693 16,234 20,516 20,560"
+     "text": "Operating margin for Q3-2026 decreased by 322 basis points sequentially.",
+     "quote": "Operating margin -322 bp"
     },
     {
      "id": "F8",
-     "topic": "revenue",
+     "topic": "segment",
      "key": false,
-     "text": "Energy generation and storage revenue for Q3 2026 was $2,881 million.",
-     "quote": "Energy generation and storage revenue 3,415 3,837 2,408 3,139 2,881 -"
+     "text": "Total automotive revenues for Q3-2026 were $20,560 million.",
+     "quote": "Total automotive revenues 21,205 17,693 16,234 20,516 20,560"
     },
     {
      "id": "F9",
-     "topic": "revenue",
+     "topic": "segment",
      "key": false,
-     "text": "Services and other revenue for Q3 2026 was $4,605 million.",
-     "quote": "Services and other revenue 3,475 3,371 3,745 4,581 4,605"
+     "text": "Energy generation and storage revenue for Q3-2026 was $2,881 million.",
+     "quote": "Energy generation and storage revenue 3,415 3,837 2,408 3,139 2,881"
     },
     {
      "id": "F10",
-     "topic": "segment",
+     "topic": "cash",
      "key": false,
-     "text": "Total vehicle deliveries for Q3 2026 were 486,532 units, down 2% year-over-year.",
-     "quote": "Total deliveries(1) 497,099 418,227 358,023 480,126 486,532 -2%"
+     "text": "Quarter-end cash, cash equivalents and short-term investments was $45.4 billion.",
+     "quote": "Quarter-end cash, cash equivalents and short-term investments was $45.4B."
     },
     {
      "id": "F11",
      "topic": "cash",
      "key": false,
-     "text": "Quarter-end cash, cash equivalents and short-term investments was $45.4B. The sequential increase of $1.9B was primarily a result of positive free cash flow of $1.5B.",
-     "quote": "Quarter-end cash, cash equivalents and short-term investments was $45.4B. The sequential increase of $1.9B was primarily a result of positive free cash flow of $1.5B."
+     "text": "Operating cash flow for Q3-2026 was $6,263 million.",
+     "quote": "Net cash provided by operating activities 6,238 3,813 3,937 4,697 6,263"
     },
     {
      "id": "F12",
-     "topic": "guidance",
-     "key": true,
-     "text": "We will manage the business such that we ensure a strong balance sheet, maintaining sufficient liquidity to fund our product roadmap, long-term capacity expansion plans – including further vertical integration – and other expenses.",
-     "quote": "We will manage the business such that we ensure a strong balance sheet, maintaining sufficient liquidity to fund our product roadmap, long-term capacity expansion plans – including further vertical integration – and other expenses."
+     "topic": "cash",
+     "key": false,
+     "text": "Free cash flow for Q3-2026 was $1,531 million.",
+     "quote": "Free cash flow 3,990 1,420 1,444 (1,092) 1,531"
     },
     {
      "id": "F13",
-     "topic": "segment",
+     "topic": "other",
      "key": true,
-     "text": "We achieved record quarterly deliveries in several markets, including Canada, Australia, Japan and Taiwan.",
-     "quote": "We achieved record quarterly deliveries in several markets, including Canada, Australia, Japan and Taiwan."
+     "text": "We achieved our second consecutive quarter of TTM revenue in excess of $100B.",
+     "quote": "we achieved our second consecutive quarter of TTM revenue in excess of $100B."
     },
     {
      "id": "F14",
-     "topic": "one_time",
+     "topic": "segment",
      "key": true,
-     "text": "We started providing Robotaxi rides using Cybercabs on September 3 in Austin.",
-     "quote": "We started providing Robotaxi rides using Cybercabs on September 3 in Austin."
+     "text": "Produced and delivered our 10 millionth vehicle in the quarter.",
+     "quote": "Produced and delivered our 10 millionth vehicle"
     }
    ]
   }
