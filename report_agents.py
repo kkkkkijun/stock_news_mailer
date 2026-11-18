@@ -26,6 +26,7 @@ from report_check import direction_conflicts, unsupported_numbers
 log = logging.getLogger(__name__)
 
 STAGES = ("요약", "번역", "작성", "최종 점검")
+MAX_BULLETS = 10        # 작성 최대 6개 + 누락 핵심 사실 보충분
 SOFT = "[권고] "        # 재시도 때 알려 주지만, 끝내 못 고쳐도 보류 사유로 삼지 않는 지적
 MAX_ROUNDS = 3          # 최종 점검 실패 시 책임 단계부터 다시 도는 횟수(첫 회 포함)
 
@@ -113,7 +114,9 @@ def summarize(client, model, name, sym, qlabel, source, notes=None) -> dict[str,
         "(improved, increased, decreased …). 표에만 있는 수치는 표의 두 기간 값을 그대로 적고 방향은 값으로 판단한다.\n"
         "3) 반드시 포함: 매출, 희석 EPS(GAAP, 조정 EPS가 있으면 따로), 순이익/순손실, 마진, 원문 제목·첫 문단이 강조한 성과(기록·최초 등), "
         "가이던스(상향/하향/유지/신규와 정확한 범위), 일회성 비용·이익, 주요 부문 실적. 6~14개.\n"
-        "4) key=true: 제목·첫 문단 강조 항목, 가이던스, 실적을 크게 바꾼 일회성 항목, 매출·EPS.\n"
+        "4) key=true: 제목·첫 문단 강조 항목, 가이던스, 실적을 크게 바꾼 일회성 항목, 매출·EPS — 가장 중요한 것만 최대 6개.\n"
+        "   가이던스는 변경 단어를 원문 그대로(raises·reduces·lowers·tightens·narrows·reaffirms) 적고, "
+        "흑자↔적자 전환이면 두 기간 값을 함께 적는다.\n"
         "5) actual: 이번 분기 실제 매출(백만 달러 숫자)과 희석 EPS(GAAP, 숫자). 없으면 null.\n"
         'JSON: {"facts":[{"id":"F1","topic":"revenue|eps|net_income|margin|guidance|segment|one_time|cash|other",'
         '"text":"...","quote":"...","key":true}],"actual":{"revenue_musd":숫자|null,"eps":숫자|null}}\n'
@@ -200,7 +203,8 @@ def translate(client, model, facts, notes=None) -> dict[str, Any]:
         "3) 비교 기준: year-over-year → 전년 대비, sequential/quarter-over-quarter → 전분기 대비, fiscal year → 회계연도. "
         "다른 표현을 만들지 말 것.\n"
         "4) 방향: increased → 증가, decreased → 감소, improved → 개선. 손실이 improved/decreased면 '순손실 축소(개선)', "
-        "손실이 increased면 '순손실 확대'. raised guidance → 가이던스 상향, reaffirmed → 유지(재확인).\n"
+        "손실이 increased면 '순손실 확대'. raised guidance → 가이던스 상향, reaffirmed → 유지(재확인), "
+        "reduces/lowers → 하향, tightens/narrows → 범위 축소(좁힘). 전년 흑자→이번 적자면 '적자 전환', 반대면 '흑자 전환'.\n"
         "5) 회사·제품·부문 이름은 원어 그대로 둬도 된다.\n"
         'JSON: {"facts":[{"id":"F1","ko":"..."}]}\n'
         f"{_notes(notes)}\n[사실 목록]\n{src}"
@@ -245,7 +249,9 @@ def write(client, model, name, sym, qlabel, facts, ko, cons_text, notes=None) ->
         "4) metrics 2~4개: 매출·EPS·순이익(손실)·마진 등. v는 '$109.0M','$-0.09','32.3%'처럼. "
         "dir은 회사에 좋은 변화면 up(매출 증가, 손실 축소, 마진 개선), 나쁜 변화면 down, 비교 근거가 없으면 빈문자열.\n"
         "5) guidance: 가이던스 사실이 있으면 그 내용(상향·하향·유지와 범위), 없으면 빈문자열과 src [].\n"
-        "6) bullets 3~4개, 각 1문장. 주가는 쓰지 말 것(화면에 따로 표시됨).\n"
+        "6) bullets 3~6개, 각 1문장. 관련된 key 사실 여러 개를 한 문장에 묶고 src에 모두 적어도 된다. "
+        "주가는 쓰지 말 것(화면에 따로 표시됨).\n"
+        "7) 흑자↔적자 전환, 가이던스 상향·하향·범위 축소는 근거 사실의 표현대로 반드시 밝힐 것.\n"
         'JSON: {"headline":{"text":"...","src":["F1"]},"metrics":[{"k":"매출","v":"$109.0M","dir":"up","src":["F1"]}],'
         '"guidance":{"text":"...","src":["F7"]},"bullets":[{"text":"...","src":["F2","F3"]}]}\n'
         f"{_notes(notes)}\n[사실 목록]\n{json.dumps(rows, ensure_ascii=False)}"
@@ -288,6 +294,20 @@ def _metric_mismatch(met: dict[str, Any], actual: dict[str, Any]) -> str:
         if got is None or abs(got - float(actual["eps"])) > 0.0051:
             return f"EPS 지표 {v}가 이번 분기 희석 EPS {actual['eps']}와 다름"
     return ""
+
+
+_MISSING = "핵심 사실 "
+
+
+def fill_missing_keys(out: dict[str, Any], facts, ko: dict[str, str]) -> dict[str, Any]:
+    """작성이 빠뜨린 key 사실을, 번역 관문을 통과한 한국어 문장 그대로 bullet로 보충한다.
+    (key 사실이 8~10개인 실적에서 bullet 3~4개로는 다 못 담아 AMZN·TSLA·HIMS가 보류된 사례, 2026-11)"""
+    cited = {s for _, _, src, _ in _items(out) for s in src}
+    extra = [{"text": ko[f["id"]], "src": [f["id"]]} for f in facts
+             if f["key"] and f["id"] not in cited and ko.get(f["id"], "").strip()]
+    if not extra:
+        return out
+    return {**out, "bullets": list(out.get("bullets") or []) + extra}
 
 
 def gate_report(out, facts, ko, cons_text, actual=None) -> list[str]:
@@ -342,6 +362,8 @@ def final_check(client, model, name, sym, report: dict[str, Any], source: str) -
         "문제로 볼 것: ① 증가·감소·개선·악화 방향이 원문과 반대 ② 비교 기준 오류(전년/전분기/회계연도) "
         "③ 수치 오류나 지표 이름 오류(예: EPS를 순손실로) ④ 원문에 없는 주장·인과 "
         "⑤ 원문 제목·첫 문단의 핵심 성과, 가이던스, 실적을 크게 바꾼 일회성 항목의 누락 ⑥ 가이던스 상향/하향/유지 오류.\n"
+        "보고서는 요약이라 모든 수치를 담지 않는다. metrics의 dir은 '회사에 좋은 변화=up, 나쁜 변화=down'이다"
+        "(순손실 확대·적자 전환은 down이 맞다). "
         "문체·표현 취향, '더 명확히 쓰면 좋겠다'는 수준의 보완, 맞는 내용의 확인은 문제가 아니다 — 쓰지 말 것. "
         "severity: 독자가 사실을 잘못 알게 되는 오류(①~⑥)는 error, 사실은 맞지만 아쉬운 점은 minor. "
         "각 문제는 where(보고서의 해당 문장 그대로), problem(무엇이 틀렸는지), "
@@ -383,7 +405,7 @@ def _flatten(out: dict[str, Any]) -> dict[str, Any]:
     mets = [{"k": m.get("k", ""), "v": m.get("v", ""), "dir": m.get("dir", "") if m.get("dir") in ("up", "down") else ""}
             for m in (out.get("metrics") or [])[:4]]
     return {"headline": txt(out.get("headline")), "metrics": mets, "guidance": txt(out.get("guidance")),
-            "bullets": [txt(b) for b in (out.get("bullets") or [])[:4] if txt(b).strip()]}
+            "bullets": [txt(b) for b in (out.get("bullets") or [])[:MAX_BULLETS] if txt(b).strip()]}
 
 
 def run_pipeline(client, model: str, name: str, sym: str, qlabel: str, source: str,
@@ -432,6 +454,9 @@ def run_pipeline(client, model: str, name: str, sym: str, qlabel: str, source: s
             wiss = gate_report(w, facts, ko, cons_text, actual)
             if wiss:
                 w = write(client, model, name, sym, qlabel, facts, ko, cons_text, wiss)
+                wiss = gate_report(w, facts, ko, cons_text, actual)
+            if wiss and all(x.startswith(_MISSING) for x in wiss):     # 누락만 남았으면 검증된 번역으로 보충
+                w = fill_missing_keys(w, facts, ko)
                 wiss = gate_report(w, facts, ko, cons_text, actual)
             stages.append({"stage": "작성", "round": rnd, "ok": not wiss, "note": f"항목 {len(_items(w))}개"})
             if wiss:

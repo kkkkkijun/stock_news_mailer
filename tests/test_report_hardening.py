@@ -121,3 +121,22 @@ def test_english_number_words_match_digits():
     en = "Operating cash flow increased 29% to $168.3 billion for the trailing twelve months."
     assert R.unsupported_numbers({"bullets": ["최근 12개월 영업현금흐름은 29% 증가한 $168.3B."]}, en) == []
     assert R.unsupported_numbers({"bullets": ["최근 13개월 영업현금흐름 $168.3B."]}, en) == ["13"]
+
+
+def test_missing_key_fact_is_filled_from_verified_translation():
+    no_guid = json.loads(json.dumps(REPORT))
+    no_guid["guidance"] = {"text": "", "src": []}
+    no_guid["headline"]["src"] = ["F2", "F3"]                     # F4(가이던스, key) 인용 없음
+    c = _Client(s=[FACTS], t=[KO_OK], w=[no_guid, no_guid], f=[{"issues": []}])
+    r = _run(c)
+    assert r["ok"] is True
+    assert "2026년 연간 매출 가이던스 $450M~$500M 유지(재확인)." in r["report"]["bullets"]
+    assert len([p for p in c.prompts if "3단계" in p]) == 2         # LLM 재작성은 1번만, 나머지는 코드 보충
+
+
+def test_fill_does_not_hide_other_write_errors():
+    bad = json.loads(json.dumps(REPORT))
+    bad["guidance"] = {"text": "", "src": []}
+    bad["bullets"][0]["text"] = "매출 $119.0M."                    # 근거에 없는 수치 → 보충으로 덮지 않음
+    c = _Client(s=[FACTS] * 3, t=[KO_OK] * 3, w=[bad] * 6, f=[{"issues": []}])
+    assert _run(c)["ok"] is False
