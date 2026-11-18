@@ -87,9 +87,26 @@ def _trivial(v: float, raw: str) -> bool:
     return v.is_integer() and v < 10 and not re.search(r"[$%]|million|billion|[BMK]\b", raw)
 
 
+_MONTHS = ("january", "february", "march", "april", "may", "june", "july", "august", "september",
+           "october", "november", "december")
+_MONTH_ALT = {"sept": 9}
+for _i, _m in enumerate(_MONTHS):
+    _MONTH_ALT[_m] = _MONTH_ALT[_m[:3]] = _i + 1
+# 날짜 앞에 오는 월 이름만(October 25 · Dec. 31) — decreased·margins 같은 단어는 안 걸리게 숫자가 뒤따라야 함
+_MONTH_RE = re.compile(r"\b(" + "|".join(sorted(_MONTH_ALT, key=len, reverse=True)) + r")\b\.?\s*\d", re.I)
+
+
+def months_in(text: str) -> set[int]:
+    """영문 날짜의 월 이름 → 월 숫자(October 25 → 10). 한국어 'N월'과 대조용."""
+    return {_MONTH_ALT[m.group(1).lower()] for m in _MONTH_RE.finditer(text or "")}
+
+
 def unsupported_numbers(report: dict[str, Any], source: str, extra: list[float] | None = None) -> list[str]:
-    """보고서(headline·metrics·guidance·bullets)의 수치 중 원문(+extra 계산값)에 없는 것."""
+    """보고서(headline·metrics·guidance·bullets)의 수치 중 원문(+extra 계산값)에 없는 것.
+
+    한국어 'N월'은 원문의 월 이름과 대조한다(October 25 ↔ 10월 25일). 예전엔 10~12월이 '없는 수치'로 걸렸다."""
     src = numbers_in(source) + list(extra or [])
+    src_months = months_in(source)
     texts = [report.get("headline", ""), report.get("guidance", "")] + list(report.get("bullets") or []) \
         + [str(m.get("v", "")) for m in report.get("metrics") or []]
     bad = []
@@ -101,6 +118,9 @@ def unsupported_numbers(report: dict[str, Any], source: str, extra: list[float] 
             except ValueError:
                 continue
             if _trivial(v, raw):
+                continue
+            if v.is_integer() and 1 <= v <= 12 and t[m.end():].lstrip().startswith("월") \
+                    and int(v) in src_months:
                 continue
             cands = numbers_in(raw)
             ok = any(abs(c - s) <= max(0.051, 0.006 * abs(s)) for c in cands for s in src)

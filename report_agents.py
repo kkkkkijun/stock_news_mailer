@@ -26,6 +26,7 @@ from report_check import direction_conflicts, unsupported_numbers
 log = logging.getLogger(__name__)
 
 STAGES = ("요약", "번역", "작성", "최종 점검")
+SOFT = "[권고] "        # 재시도 때 알려 주지만, 끝내 못 고쳐도 보류 사유로 삼지 않는 지적
 MAX_ROUNDS = 2          # 최종 점검 실패 시 책임 단계부터 다시 도는 횟수(첫 회 포함)
 
 
@@ -41,11 +42,29 @@ def quote_in_source(quote: str, source_norm: str) -> bool:
     return len(q) >= 8 and q in source_norm
 
 
+MAX_TOKENS_CAP = 8000
+
+
 def _ask(client, model: str, prompt: str, max_tokens: int) -> dict[str, Any]:
-    resp = client.chat.completions.create(
-        model=model, messages=[{"role": "user", "content": prompt}],
-        response_format={"type": "json_object"}, max_tokens=max_tokens)
-    return json.loads(resp.choices[0].message.content or "{}")
+    """JSON 응답을 받는다. 길이 한도로 잘리거나(finish_reason=length) JSON이 깨지면 한도를 두 배로 늘려 한 번 더.
+    (HIMS 2026-11: 최종 점검 응답이 1200토큰에서 잘려 'Unterminated string'으로 보류된 사례)"""
+    err: Exception | None = None
+    for mt in (max_tokens, min(max_tokens * 2, MAX_TOKENS_CAP)):
+        resp = client.chat.completions.create(
+            model=model, messages=[{"role": "user", "content": prompt}],
+            response_format={"type": "json_object"}, max_tokens=mt)
+        ch = resp.choices[0]
+        try:
+            out = json.loads(ch.message.content or "{}")
+        except ValueError as e:
+            err = e
+            log.warning(f"[reports] JSON 파싱 실패(max_tokens={mt}, finish={getattr(ch, 'finish_reason', None)}) → 재시도")
+            continue
+        if getattr(ch, "finish_reason", None) == "length" and mt < MAX_TOKENS_CAP:
+            err = ValueError("응답이 길이 한도에서 잘림")
+            continue
+        return out
+    raise err or ValueError("빈 응답")
 
 
 def _notes(notes: list[str] | None) -> str:
@@ -100,7 +119,7 @@ def summarize(client, model, name, sym, qlabel, source, notes=None) -> dict[str,
         '"text":"...","quote":"...","key":true}],"actual":{"revenue_musd":숫자|null,"eps":숫자|null}}\n'
         f"{_notes(notes)}\n[원문]\n{source}"
     )
-    return _ask(client, model, prompt, 2200)
+    return _ask(client, model, prompt, 4000)
 
 
 def gate_summary(out: dict[str, Any], source: str) -> tuple[list[dict[str, Any]], list[str], list[str]]:
@@ -131,7 +150,42 @@ def gate_summary(out: dict[str, Any], source: str) -> tuple[list[dict[str, Any]]
     for tp, label in (("revenue", "이번 분기 매출"), ("eps", "이번 분기 희석 EPS")):
         if tp not in topics and re.search(r"revenue" if tp == "revenue" else r"per share|EPS", source, re.I):
             retry.append(f"{label} 사실(topic={tp})이 없음 — 원문(표 포함)에서 이번 분기 값을 인용해 넣을 것")
+    # 실제 매출이 '$2B 돌파' 같은 어림값 사실로만 남으면 작성 단계가 지표를 틀리게 쓴다(PLTR 2026-11 보류 사례).
+    act = out.get("actual") or {}
+    rev = verified_actual(act, source).get("revenue_musd")
+    if rev and "revenue" in topics and not any(
+            _has_value(f["text"], rev) for f in kept if f["topic"] == "revenue"):
+        retry.append(f"{SOFT}이번 분기 매출 ${rev:,.1f}M을 정확히 적은 매출 사실(topic=revenue)이 없음 — "
+                     "'$2B 돌파' 같은 어림값 말고 원문(표 포함)의 정확한 값을 인용할 것")
     return kept, dropped, retry
+
+
+def hard(retry: list[str]) -> list[str]:
+    """다시 해도 안 되면 보류할 문제만(권고는 재시도 때 알려 주되 보류 사유로 삼지 않음)."""
+    return [x for x in retry if not x.startswith(SOFT)]
+
+
+def _num(v: Any) -> float | None:
+    try:
+        return float(v) if v is not None and str(v).strip() != "" else None
+    except (TypeError, ValueError):
+        return None
+
+
+def _has_value(text: str, v: float) -> bool:
+    """text에 v(백만 단위·EPS 등)와 같은 수치가 있는가(10억 ↔ 백만 환산·반올림 허용)."""
+    from report_check import numbers_in
+    return any(abs(c - v) <= max(0.051, 0.006 * abs(v)) for c in numbers_in(text))
+
+
+def verified_actual(actual: dict[str, Any], source: str) -> dict[str, Any]:
+    """요약이 뽑은 실제치 중 원문에 실제로 있는 값만 남긴다(지어낸 실제치로 지표를 탈락시키지 않게)."""
+    out = {}
+    for k in ("revenue_musd", "eps"):
+        v = _num((actual or {}).get(k))
+        if v is not None and _has_value(source, abs(v)):
+            out[k] = v
+    return out
 
 
 # ---------------------------------------------------------------- ② 번역
@@ -151,7 +205,7 @@ def translate(client, model, facts, notes=None) -> dict[str, Any]:
         'JSON: {"facts":[{"id":"F1","ko":"..."}]}\n'
         f"{_notes(notes)}\n[사실 목록]\n{src}"
     )
-    return _ask(client, model, prompt, 2000)
+    return _ask(client, model, prompt, 3500)
 
 
 def gate_translation(facts, out) -> tuple[dict[str, str], list[str]]:
@@ -196,7 +250,7 @@ def write(client, model, name, sym, qlabel, facts, ko, cons_text, notes=None) ->
         '"guidance":{"text":"...","src":["F7"]},"bullets":[{"text":"...","src":["F2","F3"]}]}\n'
         f"{_notes(notes)}\n[사실 목록]\n{json.dumps(rows, ensure_ascii=False)}"
     )
-    return _ask(client, model, prompt, 1500)
+    return _ask(client, model, prompt, 2500)
 
 
 def _items(out: dict[str, Any]) -> list[tuple[str, str, list[str], dict[str, Any] | None]]:
@@ -217,6 +271,10 @@ def _items(out: dict[str, Any]) -> list[tuple[str, str, list[str], dict[str, Any
     return items
 
 
+# 조정·Non-GAAP EPS는 GAAP 희석 EPS와 원래 다르다(TSLA 2026-10: Non-GAAP $0.48 vs GAAP $0.22를 오탐)
+_ADJ = re.compile(r"조정|non[\s-]*gaap|adjusted|비\s*GAAP|core|코어", re.I)
+
+
 def _metric_mismatch(met: dict[str, Any], actual: dict[str, Any]) -> str:
     """매출·EPS 지표 값이 요약 단계가 뽑은 이번 분기 실제치와 다른지(TTM·연간 값을 분기 매출로 쓰는 실수 방지)."""
     from report_check import eps_num, money_m
@@ -225,7 +283,7 @@ def _metric_mismatch(met: dict[str, Any], actual: dict[str, Any]) -> str:
         got, want = money_m(v), float(actual["revenue_musd"])
         if got is None or abs(abs(got) - abs(want)) > max(0.6, 0.006 * abs(want)):
             return f"매출 지표 {v}가 이번 분기 매출 ${want:,.1f}M과 다름(누적·연간 값이면 지표 이름에 밝힐 것)"
-    if re.search(r"EPS|주당순이익", k) and actual.get("eps") is not None and "조정" not in k:
+    if re.search(r"EPS|주당순이익", k) and actual.get("eps") is not None and not _ADJ.search(k):
         got = eps_num(v)
         if got is None or abs(got - float(actual["eps"])) > 0.0051:
             return f"EPS 지표 {v}가 이번 분기 희석 EPS {actual['eps']}와 다름"
@@ -284,27 +342,37 @@ def final_check(client, model, name, sym, report: dict[str, Any], source: str) -
         "문제로 볼 것: ① 증가·감소·개선·악화 방향이 원문과 반대 ② 비교 기준 오류(전년/전분기/회계연도) "
         "③ 수치 오류나 지표 이름 오류(예: EPS를 순손실로) ④ 원문에 없는 주장·인과 "
         "⑤ 원문 제목·첫 문단의 핵심 성과, 가이던스, 실적을 크게 바꾼 일회성 항목의 누락 ⑥ 가이던스 상향/하향/유지 오류.\n"
-        "문체·표현 취향은 문제가 아니다. 각 문제는 where(보고서의 해당 문장 그대로), problem(무엇이 틀렸는지), "
+        "문체·표현 취향, '더 명확히 쓰면 좋겠다'는 수준의 보완, 맞는 내용의 확인은 문제가 아니다 — 쓰지 말 것. "
+        "severity: 독자가 사실을 잘못 알게 되는 오류(①~⑥)는 error, 사실은 맞지만 아쉬운 점은 minor. "
+        "각 문제는 where(보고서의 해당 문장 그대로), problem(무엇이 틀렸는지), "
         "evidence(그 판단의 근거가 되는 원문 구간을 한 글자도 바꾸지 않고 복사), stage(원인 단계: 요약|번역|작성)를 가진다. "
         "evidence를 원문에서 그대로 복사할 수 없다면 그 지적은 쓰지 말 것. 문제가 없으면 빈 배열.\n"
-        'JSON: {"issues":[{"where":"...","problem":"...","evidence":"...","stage":"작성"}]}\n'
+        'JSON: {"issues":[{"where":"...","problem":"...","evidence":"...","stage":"작성","severity":"error"}]}\n'
         f"[보고서]\n{body}\n\n[원문]\n{source}"
     )
-    return _ask(client, model, prompt, 1200)
+    return _ask(client, model, prompt, 3000)
 
 
-def gate_final(out: dict[str, Any], source: str) -> tuple[list[dict[str, str]], int]:
-    """원문 인용(evidence)이 원문에 실제로 있는 지적만 남긴다 → (지적, 버린 수)."""
+# 지적 문장이 스스로 '맞다/심각하지 않다'고 말하면 보류 사유가 아니다(GOOGL·AMZN 2026-10 과잉 보류 사례)
+_NOT_ERROR = re.compile(r"원문과\s*일치|모두\s*정확|정확(함|하다)|(수치|금액|방향)[^.。]{0,12}(자체는|모두)\s*맞|"
+                        r"(심각한|중대한)\s*오류는\s*아니|오류는\s*아니|문제(는|가)\s*없")
+
+
+def gate_final(out: dict[str, Any], source: str) -> tuple[list[dict[str, str]], int, int]:
+    """원문 인용(evidence)이 원문에 실제로 있는 '오류' 지적만 남긴다 → (지적, 근거 없어 버린 수, 경미해 버린 수)."""
     sn = _norm(source)
-    kept, dropped = [], 0
+    kept, dropped, minor = [], 0, 0
     for x in out.get("issues") or []:
         if not isinstance(x, dict) or not quote_in_source(str(x.get("evidence") or ""), sn):
             dropped += 1
             continue
+        if str(x.get("severity") or "error").lower() != "error" or _NOT_ERROR.search(str(x.get("problem") or "")):
+            minor += 1
+            continue
         stage = x.get("stage") if x.get("stage") in STAGES[:3] else "작성"
         kept.append({"where": str(x.get("where") or ""), "problem": str(x.get("problem") or ""),
                      "evidence": str(x.get("evidence") or ""), "stage": stage})
-    return kept, dropped
+    return kept, dropped, minor
 
 
 # ---------------------------------------------------------------- 지휘(오케스트레이터)
@@ -342,12 +410,13 @@ def run_pipeline(client, model: str, name: str, sym: str, qlabel: str, source: s
                 if retry:
                     s = summarize(client, model, name, sym, qlabel, source, retry + dropped)
                     facts, dropped, retry = gate_summary(s, source)
-                stages.append({"stage": "요약", "round": rnd, "ok": not retry,
+                blocking = hard(retry)
+                stages.append({"stage": "요약", "round": rnd, "ok": not blocking,
                                "note": f"사실 {len(facts)}개" + (f", 원문 불일치 {len(dropped)}개 제외" if dropped else "")})
-                if retry:
-                    issues = [f"[요약] {x}" for x in retry]
+                if blocking:
+                    issues = [f"[요약] {x}" for x in blocking]
                     break
-                actual = s.get("actual") or {}
+                actual = verified_actual(s.get("actual") or {}, source)   # 원문에 없는 실제치는 버림
                 cmp, cons_text = cons_fn(actual)
             if start in ("요약", "번역"):
                 t = translate(client, model, facts, notes.get("번역"))
@@ -367,12 +436,19 @@ def run_pipeline(client, model: str, name: str, sym: str, qlabel: str, source: s
             stages.append({"stage": "작성", "round": rnd, "ok": not wiss, "note": f"항목 {len(_items(w))}개"})
             if wiss:
                 issues = [f"[작성] {x}" for x in wiss]
-                break
+                if rnd >= MAX_ROUNDS:
+                    break
+                # 지표가 실제치와 다르면 근거 사실 자체가 부족한 것 → 요약부터, 아니면 작성만 다시(PLTR 2026-11 사례)
+                start = "요약" if any("이번 분기" in x for x in wiss) else "작성"
+                notes.setdefault(start, []).extend(wiss)
+                continue
             report = _flatten(w)
             f = final_check(client, model, name, sym, report, source)
-            found, noise = gate_final(f, source)
+            found, noise, minor = gate_final(f, source)
+            excl = [x for x in (f"원문 근거 없는 지적 {noise}건" if noise else "",
+                                f"경미한 지적 {minor}건" if minor else "") if x]
             stages.append({"stage": "최종 점검", "round": rnd, "ok": not found,
-                           "note": f"지적 {len(found)}건" + (f"(원문 근거 없는 지적 {noise}건 제외)" if noise else "")})
+                           "note": f"지적 {len(found)}건" + (f"({', '.join(excl)} 제외)" if excl else "")})
             if not found:
                 return {"ok": True, "report": report, "cmp": cmp, "cons_text": cons_text, "facts": facts,
                         "stages": stages, "issues": [], "rounds": rnd}

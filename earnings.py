@@ -130,10 +130,21 @@ def _earn_trend_blocks(res):
     return out
 
 
+def cal_quarter(y: int, mo: int) -> tuple[int, int]:
+    """회계분기 종료 (연, 월) → 캘린더 (연, 분기). 석 달 중 가운데 달(종료월-1)이 속한 분기로 본다.
+
+    3·6·9·12월 결산은 그대로(9월말 → 3Q). 한 달 어긋난 결산(NVDA 10월말 = 8~10월)은 3Q로,
+    1월말(11~1월)은 전년 4Q로 맞춘다. 예전엔 종료월 기준이라 NVDA 3분기가 '4분기'로 찍혔다(2026-11)."""
+    mid = mo - 1
+    if mid == 0:
+        y, mid = y - 1, 12
+    return y, (mid - 1) // 3 + 1
+
+
 def _earn_cq(per):
     """'26.06' → ('2026-2','2026 2Q'): 회계분기를 캘린더 분기(1Q~4Q) 키로."""
     try:
-        y = 2000 + int(per[:2]); mo = int(per[3:5]); q = (mo - 1) // 3 + 1
+        y, q = cal_quarter(2000 + int(per[:2]), int(per[3:5]))
         return f"{y}-{q}", f"{y} {q}Q"
     except (ValueError, TypeError):
         return None, None
@@ -264,8 +275,7 @@ def build_earnings(path: str | None = None) -> None:
 def _period_cq(per):
     """'26.06' → ('2026-2', '2026 2Q')."""
     try:
-        y = 2000 + int(per[:2])
-        q = (int(per[3:5]) - 1) // 3 + 1
+        y, q = cal_quarter(2000 + int(per[:2]), int(per[3:5]))
         return f"{y}-{q}", f"{y} {q}Q"
     except (ValueError, TypeError, IndexError):
         return None, None
@@ -283,7 +293,7 @@ def _period_qend(per):
         return "9999-99-99"
 
 
-REPORT_GEN = 6          # 보고서 생성 규칙 버전. 올리면 최근 보고서를 새 규칙으로 다시 만든다.
+REPORT_GEN = 7          # 보고서 생성 규칙 버전. 올리면 최근 보고서를 새 규칙으로 다시 만든다.
 # 실적 보고서 생성·검수 모델(뉴스 요약과 분리). 바꾸면 캐시가 무효화돼 다시 만든다.
 REPORT_MODEL = os.getenv("OPENAI_REPORT_MODEL") or SUMMARY_MODEL
 MAX_ATTEMPTS = 3        # 최종 점검을 통과 못 한(보류) 보고서를 다음 실행에서 다시 시도하는 총 횟수
@@ -430,6 +440,10 @@ def _report_for_ticker(t: str, er: dict[str, Any] | None, existing: dict[str, An
              + " → ".join(f"{x['stage']}({'✓' if x['ok'] else '✗'})" for x in res["stages"])
              + ("" if res["ok"] else f" | {res['issues'][:3]}"))
     ex = existing.get(t) or {}
+    if not res["ok"] and ex.get("acc") == press["acc"] and (ex.get("check") or {}).get("ok"):
+        # 규칙·모델이 바뀌어 다시 만들다 실패하면, 이미 검수 통과한 기존 보고서를 내리지 않는다
+        log.warning(f"[reports] {t} 재생성 보류 → 기존 게시본 유지 | {res['issues'][:2]}")
+        return {**ex, "gen": REPORT_GEN, "model": REPORT_MODEL, "move": move or ex.get("move")}
     same = (ex.get("acc"), ex.get("gen"), ex.get("model")) == (press["acc"], REPORT_GEN, REPORT_MODEL)
     attempts = ex.get("attempts", 0) + 1 if same else 1       # 규칙·모델이 바뀌면 재시도 횟수 초기화
     rec = {"ticker": t, "name": name,
@@ -461,6 +475,11 @@ def _save_reports(path: str, reports: list[dict[str, Any]], prev: dict[str, Any]
     log.info(f"[reports] 저장: {len(reports)}개")
 
 
+def retry_tickers() -> set[str]:
+    """REPORT_RETRY 환경변수(콤마 구분 티커, 또는 all) → 다시 시도할 보류 보고서. GitHub Actions 수동 실행 입력."""
+    return {x.strip().upper() for x in os.getenv("REPORT_RETRY", "").split(",") if x.strip()}
+
+
 def build_reports(path: str | None = None, client: Any = None) -> None:
     import json as _json
     edir = os.path.dirname(os.path.abspath(__file__))
@@ -475,6 +494,11 @@ def build_reports(path: str | None = None, client: Any = None) -> None:
         existing = {r["ticker"]: r for r in _json.load(open(path, encoding="utf-8"))}
     except (OSError, ValueError):
         existing = {}
+    retry = retry_tickers()
+    for t, r in existing.items():       # 수동 재시도: 보류된 보고서의 재시도 횟수를 초기화
+        if (t in retry or "ALL" in retry) and not (r.get("check") or {}).get("ok"):
+            log.info(f"[reports] {t} 수동 재시도 요청 → 시도 횟수 초기화")
+            existing[t] = {**r, "attempts": 0}
     if client is None:
         client = get_openai_client()
     now = datetime.now(KST)

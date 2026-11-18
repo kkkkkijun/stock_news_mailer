@@ -106,3 +106,15 @@ def test_manual_report_is_not_regenerated(monkeypatch):
     assert E._recent_press("RDW", now, manual) is None
     stale = {"RDW": {"acc": "A1", "gen": 2, "check": {"by": "auto"}}}
     assert E._recent_press("RDW", now, stale) is not None
+
+
+def test_korean_month_matches_english_month_name():
+    """'October 25' → '10월 25일'은 통과, 원문에 없는 달(11월)은 계속 잡는다(NVDA 2026-11 보류 사례)."""
+    en = ("NVIDIA reported revenue for the third quarter ended October 25, 2026, of $115.8 billion, "
+          "up 20% from the previous quarter and up 103% from a year ago.")
+    ok = "NVIDIA는 2026년 10월 25일로 끝난 3분기 매출이 $115.8B로, 전분기 대비 20%, 전년 대비 103% 증가했다."
+    assert R.unsupported_numbers({"bullets": [ok]}, en) == []
+    assert R.unsupported_numbers({"bullets": [ok.replace("10월", "11월")]}, en) == ["11"]
+    assert R.unsupported_numbers({"bullets": ["매출 $10B"]}, en) == ["10B"]   # 월이 아닌 10은 그대로 대조
+    assert R.months_in("Dec. 31, 2026 and Sept 30") == {12, 9}
+    assert R.months_in("revenue decreased 5%, margins 30%") == set()   # 단어 일부는 월이 아님

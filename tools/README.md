@@ -18,3 +18,16 @@ python tools/store.py stats            # 색인 현황(회차/항목/시세 수)
 ```
 
 DB 파일은 저장소 루트의 `data/briefings.db`에 생성된다.
+
+## report_status.py — 실적 보고서 게시 현황
+
+`data/reports.json`의 게시/보류 현황을 마크다운 표로 출력한다. `Earnings Refresh` 워크플로가
+실행 요약(Summary)에 붙이고, 최근 14일 안의 보류 보고서는 경고(annotation)로 띄운다.
+
+```bash
+python tools/report_status.py          # 표 출력
+```
+
+보류된 보고서 다시 만들기: GitHub → Actions → **Earnings Refresh** → Run workflow →
+`retry`에 티커(예: `NVDA,HIMS`) 또는 `all` 입력. 보고서 로직(`earnings.py`·`report_agents.py`·
+`report_check.py`)을 main에 푸시해도 이 워크플로가 자동으로 돌아 새 규칙으로 다시 만든다.
