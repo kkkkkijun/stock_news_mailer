@@ -2,21 +2,50 @@
  {
   "ticker": "NVDA",
   "name": "엔비디아",
-  "title": "261118_엔비디아_4분기_실적보고서",
+  "title": "261118_엔비디아_3분기_실적보고서",
   "date": "2026-11-18",
-  "qnum": 4,
-  "quarter": "2026 4Q",
-  "cq": "2026-4",
+  "qnum": 3,
+  "quarter": "2026 3Q",
+  "cq": "2026-3",
   "acc": "0001045810-26-000088",
   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
   "accept": "2026-11-17T21:20:51.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 3,
+  "attempts": 1,
   "eps_act": "$2.68",
   "eps_est": "$2.47",
   "surprise": "+8.36%",
   "surprise_pos": true,
+  "headline": "3분기 매출·데이터센터 호조, 4Q도 성장 전망",
+  "metrics": [
+   {
+    "k": "매출",
+    "v": "$115.8B",
+    "dir": "up"
+   },
+   {
+    "k": "GAAP 순이익",
+    "v": "$65.3B",
+    "dir": ""
+   },
+   {
+    "k": "GAAP 희석 주당순이익",
+    "v": "$2.70",
+    "dir": ""
+   },
+   {
+    "k": "GAAP 총이익률",
+    "v": "74.8%",
+    "dir": ""
+   }
+  ],
+  "guidance": "2027 회계연도 4분기 매출을 $130.0B, 오차범위 ±3%로 전망함. GAAP 및 비-GAAP 총이익률은 71.0~72.0%로 예상됨.",
+  "bullets": [
+   "3분기 Data Center 매출은 $107.6B로 전분기 대비 21% 증가했다.",
+   "2026년 9월, 이사회는 자사주 매입 승인 한도를 $150B 늘렸다.",
+   "3분기 매출은 전년 대비 103% 증가했다."
+  ],
   "verdict": "beat",
   "cons": {
    "eps": {
@@ -35,25 +64,47 @@
    "text": "발표 직후 시간외 +4.8% ($155.46 → $162.94, 진행 중)"
   },
   "check": {
-   "ok": false,
+   "ok": true,
    "by": "agents",
    "stages": [
     {
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 14개"
+     "note": "사실 13개"
     },
     {
      "stage": "번역",
      "round": 1,
+     "ok": true,
+     "note": "13개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 9개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
      "ok": false,
-     "note": "14개 번역"
+     "note": "지적 1건(원문 근거 없는 지적 1건 제외)"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 9개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": true,
+     "note": "지적 0건(원문 근거 없는 지적 1건, 경미한 지적 6건 제외)"
     }
    ],
-   "issues": [
-    "[번역] F1: 영문에 없는 수치 10"
-   ],
+   "issues": [],
    "facts": [
     {
      "id": "F1",
@@ -64,94 +115,87 @@
     },
     {
      "id": "F2",
-     "topic": "guidance",
+     "topic": "eps",
      "key": true,
-     "text": "Revenue is expected to be $130.0 billion, plus or minus 3%.",
-     "quote": "Revenue is expected to be $130.0 billion, plus or minus 3%."
+     "text": "GAAP earnings per diluted share for the third quarter were $2.70.",
+     "quote": "GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively."
     },
     {
      "id": "F3",
-     "topic": "guidance",
-     "key": true,
-     "text": "GAAP and non-GAAP gross margins are expected to be between 71.0% and 72.0%.",
-     "quote": "GAAP and non-GAAP gross margins are expected to be between 71.0% and 72.0%."
+     "topic": "eps",
+     "key": false,
+     "text": "Non-GAAP earnings per diluted share for the third quarter were $2.68.",
+     "quote": "GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively."
     },
     {
      "id": "F4",
-     "topic": "guidance",
+     "topic": "net_income",
      "key": true,
-     "text": "GAAP and non-GAAP operating expenses are expected to be approximately $11.0 billion and $10.7 billion, respectively.",
-     "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $11.0 billion and $10.7 billion, respectively."
+     "text": "GAAP net income for the third quarter was $65.3 billion.",
+     "quote": "Net income $65.3 $59.7 $31.9 9 % 105 %"
     },
     {
      "id": "F5",
-     "topic": "guidance",
-     "key": true,
-     "text": "For the full year fiscal 2027, NVIDIA expects GAAP and non-GAAP tax rates to be between 16.0% and 18.0%, excluding any discrete items and material changes to NVIDIA’s tax environment.",
-     "quote": "For the full year fiscal 2027, NVIDIA expects GAAP and non-GAAP tax rates to be between 16.0% and 18.0%, excluding any discrete items and material changes to NVIDIA’s tax environment."
-    },
-    {
-     "id": "F6",
-     "topic": "eps",
-     "key": true,
-     "text": "GAAP diluted earnings per share were $2.70.",
-     "quote": "GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively."
-    },
-    {
-     "id": "F7",
-     "topic": "eps",
-     "key": true,
-     "text": "Non-GAAP diluted earnings per share were $2.68.",
-     "quote": "GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively."
-    },
-    {
-     "id": "F8",
-     "topic": "net_income",
-     "key": true,
-     "text": "Net income for the third quarter was $65,287 million.",
-     "quote": "Net income $ 65,287   $ 31,910   $ 183,297   $ 77,107   "
-    },
-    {
-     "id": "F9",
      "topic": "margin",
      "key": true,
      "text": "GAAP gross margin for the third quarter was 74.8%.",
      "quote": "For the quarter, GAAP and non-GAAP gross margins were 74.8% and 74.9%, respectively."
     },
     {
-     "id": "F10",
+     "id": "F6",
      "topic": "margin",
      "key": false,
      "text": "Non-GAAP gross margin for the third quarter was 74.9%.",
      "quote": "For the quarter, GAAP and non-GAAP gross margins were 74.8% and 74.9%, respectively."
     },
     {
-     "id": "F11",
-     "topic": "segment",
+     "id": "F7",
+     "topic": "guidance",
      "key": true,
-     "text": "Data Center revenue for the third quarter was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago.",
-     "quote": "Third-quarter revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago."
+     "text": "NVIDIA's outlook for the fourth quarter of fiscal 2027 expects revenue to be $130.0 billion, plus or minus 3%.",
+     "quote": "NVIDIA’s outlook for the fourth quarter of fiscal 2027, which includes an additional week, is as follows: • Revenue is expected to be $130.0 billion, plus or minus 3%."
     },
     {
-     "id": "F12",
+     "id": "F8",
+     "topic": "guidance",
+     "key": true,
+     "text": "GAAP and non-GAAP gross margins for the fourth quarter of fiscal 2027 are expected to be between 71.0% and 72.0%.",
+     "quote": "• GAAP and non-GAAP gross margins are expected to be between 71.0% and 72.0%."
+    },
+    {
+     "id": "F9",
+     "topic": "segment",
+     "key": true,
+     "text": "Third-quarter Data Center revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago.",
+     "quote": "• Third-quarter revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago."
+    },
+    {
+     "id": "F10",
      "topic": "segment",
      "key": false,
      "text": "Third-quarter Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago.",
-     "quote": "Third-quarter Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago."
+     "quote": "• Third-quarter Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago."
     },
     {
-     "id": "F13",
+     "id": "F11",
      "topic": "one_time",
      "key": true,
      "text": "In September 2026, NVIDIA’s Board of Directors approved an increase of $150 billion to the company’s share repurchase authorization, without expiration.",
      "quote": "In September 2026, NVIDIA’s Board of Directors approved an increase of $150 billion to the company’s share repurchase authorization, without expiration."
     },
     {
-     "id": "F14",
-     "topic": "one_time",
-     "key": true,
+     "id": "F12",
+     "topic": "other",
+     "key": false,
      "text": "During the third quarter of fiscal 2027, NVIDIA returned $28.1 billion to shareholders in the form of shares repurchased and cash dividends.",
      "quote": "During the third quarter of fiscal 2027, NVIDIA returned $28.1 billion to shareholders in the form of shares repurchased and cash dividends."
+    },
+    {
+     "id": "F13",
+     "topic": "other",
+     "key": false,
+     "text": "As of the end of the third quarter, the company had approximately $227.3 billion remaining under its share repurchase authorization.",
+     "quote": "As of the end of the third quarter, the company had approximately $227.3 billion remaining under its share repurchase authorization."
     }
    ]
   }
@@ -167,23 +211,22 @@
   "acc": "0001773751-26-000242",
   "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000242/hims-20260930x8xkearningsr.htm",
   "accept": "2026-11-09T21:11:11.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 3,
+  "attempts": 1,
+  "eps_act": "$-0.14",
+  "eps_est": "$0.06",
+  "surprise": "-348.58%",
+  "surprise_pos": false,
   "verdict": "miss",
   "cons": {
-   "rev": {
-    "act": 890.4,
-    "est": 892.77,
-    "pct": -0.3
-   },
    "eps": {
     "act": -0.14,
     "est": 0.06,
     "diff": -0.2
    }
   },
-  "cons_text": "매출 $890.4M vs 예상 $892.8M (-0.3%) · EPS $-0.14 vs 예상 $0.06 (하회)",
+  "cons_text": "EPS $-0.14 vs 예상 $0.06 (하회)",
   "move": {
    "pct": -16.61,
    "base": 22.940000534057617,
@@ -212,23 +255,30 @@
      "stage": "작성",
      "round": 1,
      "ok": true,
-     "note": "항목 8개"
+     "note": "항목 10개"
     },
     {
      "stage": "최종 점검",
      "round": 1,
      "ok": false,
-     "note": "지적 2건(원문 근거 없는 지적 2건 제외)"
+     "note": "지적 1건"
     },
     {
      "stage": "작성",
      "round": 2,
      "ok": true,
-     "note": "항목 7개"
+     "note": "항목 10개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": false,
+     "note": "지적 2건"
     }
    ],
    "issues": [
-    "[오류] Unterminated string starting at: line 36 column 19 (char 3063)"
+    "[최종 점검·작성] 2026년 전체 매출 가이던스는 $3.13B~$3.15B로 조정, 전체  — 매출 가이던스의 상향/하향/유지 여부를 언급하지 않았다. 원문에서는 Adjusted EBITDA 가이던스만 하향(‘reduces’), 매출은 tighter(좁힘/조정)이지만 방향은 명시적으로 하향이 아님. (원문: Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 bi)",
+    "[최종 점검·작성] 매출 49% 증가, 수익성 지표 악화 동반 — 수익성 지표 악화에 Adjusted EBITDA 지표 변화가 빠짐. 원문에서는 Adjusted EBITDA(비교 전년동기 $78.4M→$82.4M, 즉 개선)가 제시되는데, 보고서는 이 부분을 누락함. (원문: Adjusted EBITDA was $82.4 million for the third quarter of 2026 compared to $78.)"
    ],
    "facts": [
     {
@@ -236,7 +286,7 @@
      "topic": "revenue",
      "key": true,
      "text": "Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year.",
-     "quote": "• Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year."
+     "quote": "Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year."
     },
     {
      "id": "F2",
@@ -254,73 +304,73 @@
     },
     {
      "id": "F4",
-     "topic": "margin",
-     "key": false,
-     "text": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025.",
-     "quote": "• Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025."
+     "topic": "eps",
+     "key": true,
+     "text": "Diluted net loss per share was $(0.14) for the third quarter of 2026 and $0.06 for the third quarter of 2025.",
+     "quote": "Diluted $ (0.14) $ 0.06"
     },
     {
      "id": "F5",
      "topic": "net_income",
-     "key": false,
+     "key": true,
      "text": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025.",
-     "quote": "• Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025."
+     "quote": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025."
     },
     {
      "id": "F6",
-     "topic": "eps",
+     "topic": "margin",
      "key": true,
-     "text": "Diluted net loss per share was $(0.14) for the third quarter of 2026 and diluted net income per share was $0.06 for the third quarter of 2025.",
-     "quote": "Diluted $ (0.14) $ 0.06 "
+     "text": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025.",
+     "quote": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025."
     },
     {
      "id": "F7",
-     "topic": "segment",
-     "key": false,
-     "text": "Subscribers (end of period) were 2,788 thousand as of the third quarter of 2026 and 2,471 thousand as of the third quarter of 2025, a 13% increase.",
-     "quote": "Subscribers (end of period) 2,788  2,471  13  %"
+     "topic": "guidance",
+     "key": true,
+     "text": "For the fourth quarter 2026, we expect revenue of $875 million to $895 million.",
+     "quote": "For the fourth quarter 2026, we expect: • Revenue of $875 million to $895 million."
     },
     {
      "id": "F8",
-     "topic": "segment",
-     "key": false,
-     "text": "Monthly Revenue per Average Subscriber was $105 for the third quarter of 2026 and $81 for the third quarter of 2025, a 30% increase.",
-     "quote": "Monthly Revenue per Average Subscriber $ 105  $ 81  30  %"
+     "topic": "guidance",
+     "key": true,
+     "text": "For the full year 2026, we expect revenue of $3.13 billion to $3.15 billion.",
+     "quote": "For the full year 2026, we expect: • Revenue of $3.13 billion to $3.15 billion."
     },
     {
      "id": "F9",
      "topic": "guidance",
      "key": true,
-     "text": "For the fourth quarter 2026, Hims & Hers expects revenue of $875 million to $895 million.",
-     "quote": "For the fourth quarter 2026, we expect: • Revenue of $875 million to $895 million."
+     "text": "Guidance for full year 2026 revenue was tightened to a range of $3.13 billion to $3.15 billion.",
+     "quote": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion"
     },
     {
      "id": "F10",
      "topic": "guidance",
      "key": true,
-     "text": "For the full year 2026, Hims & Hers expects revenue of $3.13 billion to $3.15 billion.",
-     "quote": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion"
+     "text": "Adjusted EBITDA guidance for the full year 2026 was reduced to a range of $257 million to $277 million.",
+     "quote": "reduces Adjusted EBITDA guidance to a range of $257 million to $277 million"
     },
     {
      "id": "F11",
-     "topic": "guidance",
+     "topic": "segment",
      "key": true,
-     "text": "For the fourth quarter 2026, Hims & Hers expects adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%.",
-     "quote": "• Adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%."
+     "text": "Subscribers grew to nearly 2.8 million, up 13% year-over-year in Q3 2026.",
+     "quote": "Subscribers grew to nearly 2.8 million, up 13% year-over-year in Q3 2026"
     },
     {
      "id": "F12",
-     "topic": "guidance",
-     "key": true,
-     "text": "For the full year 2026, Hims & Hers expects Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%.",
-     "quote": "• Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%."
+     "topic": "segment",
+     "key": false,
+     "text": "Monthly Revenue per Average Subscriber was $105 for the third quarter of 2026 and $81 for the third quarter of 2025.",
+     "quote": "Monthly Revenue per Average Subscriber $ 105  $ 81  30  %"
     },
     {
      "id": "F14",
      "topic": "cash",
      "key": false,
      "text": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025.",
-     "quote": "• Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025."
+     "quote": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025."
     }
    ]
   }
@@ -336,10 +386,14 @@
   "acc": "0001819994-26-000073",
   "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000073/rklb-11092026ex991.htm",
   "accept": "2026-11-09T21:06:21.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 2,
-  "headline": "매출 73% 급증·백로그 52% 확대, 적자 지속",
+  "attempts": 1,
+  "eps_act": "$-0.12",
+  "eps_est": "$-0.07",
+  "surprise": "-80.59%",
+  "surprise_pos": false,
+  "headline": "3분기 매출 73%↑, 백로그 52% 상승",
   "metrics": [
    {
     "k": "매출",
@@ -347,31 +401,31 @@
     "dir": "up"
    },
    {
-    "k": "주당순손실(GAAP EPS)",
+    "k": "희석 주당순손실(GAAP EPS)",
     "v": "$-0.12",
+    "dir": ""
+   },
+   {
+    "k": "영업현금흐름",
+    "v": "$7.2M",
     "dir": ""
    }
   ],
-  "guidance": "4분기 매출 $270M~$290M, GAAP 총마진 34~36%, Non-GAAP 총마진 39~41% 전망",
+  "guidance": "2026년 4분기 매출 $270M~$290M, GAAP 총이익률 34%~36%를 전망했다.",
   "bullets": [
-   "전년 동기 대비 매출이 73% 증가하며 분기 최대치를 기록했다.",
-   "3분기 말 백로그가 약 $3.6B로, 전분기 대비 52% 늘었다.",
-   "3분기 GAAP 기준 주당순손실은 $(0.12)였다."
+   "분기별 매출은 전년 대비 73% 증가한 $268M으로 집계됐다.",
+   "기록적 백로그는 2분기 말 대비 52% 늘어난 약 $3.6B에 달했다.",
+   "3분기 기준 GAAP 영업현금흐름은 $7.2M이었다."
   ],
-  "verdict": "inline",
+  "verdict": "miss",
   "cons": {
-   "rev": {
-    "act": 267.83,
-    "est": 257.18,
-    "pct": 4.1
-   },
    "eps": {
     "act": -0.12,
     "est": -0.07,
     "diff": -0.05
    }
   },
-  "cons_text": "매출 $267.8M vs 예상 $257.2M (+4.1%) · EPS $-0.12 vs 예상 $-0.07 (하회)",
+  "cons_text": "EPS $-0.12 vs 예상 $-0.07 (하회)",
   "move": {
    "pct": 6.54,
    "base": 58.86000061035156,
@@ -388,25 +442,25 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 8개, 원문 불일치 5개 제외"
+     "note": "사실 9개, 원문 불일치 5개 제외"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "8개 번역"
+     "note": "9개 번역"
     },
     {
      "stage": "작성",
      "round": 1,
      "ok": true,
-     "note": "항목 7개"
+     "note": "항목 8개"
     },
     {
      "stage": "최종 점검",
      "round": 1,
      "ok": true,
-     "note": "지적 0건"
+     "note": "지적 0건(원문 근거 없는 지적 2건 제외)"
     }
    ],
    "issues": [],
@@ -415,57 +469,64 @@
      "id": "F1",
      "topic": "revenue",
      "key": true,
-     "text": "Rocket Lab delivered a record $268 million in revenue for the third quarter of 2026.",
+     "text": "Rocket Lab delivered a record $268 million in revenue in Q3 2026.",
      "quote": "We delivered a record $268 million in revenue ($34 million higher than Q2 2026) alongside a record backlog which has grown to $3.57 billion."
     },
     {
      "id": "F2",
      "topic": "revenue",
      "key": true,
-     "text": "Record quarterly revenue of $268 million represented a 73% increase year-on-year.",
+     "text": "Record quarterly revenue of $268 million, a 73% increase year-on-year.",
      "quote": "• Record quarterly revenue of $268 million, a 73% increase year-on-year."
     },
     {
-     "id": "F3",
-     "topic": "backlog",
-     "key": true,
-     "text": "Rocket Lab ended Q3 2026 with a record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026.",
-     "quote": "• Record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026."
-    },
-    {
      "id": "F4",
-     "topic": "cash",
-     "key": false,
-     "text": "Rocket Lab reported positive GAAP operating cash flow of $7.2 million in Q3 2026.",
-     "quote": "• Positive GAAP operating cash flow of $7.2M."
+     "topic": "eps",
+     "key": true,
+     "text": "GAAP diluted net loss per share was $(0.12) for Q3 2026.",
+     "quote": "Net loss per share attributable to Rocket Lab Corporation: Basic and diluted $ (0.12) $ (0.03) $ (0.28) $ (0.28)"
     },
     {
      "id": "F7",
-     "topic": "eps",
-     "key": true,
-     "text": "GAAP net loss per share for Q3 2026 was $ (0.12) basic and diluted.",
-     "quote": "Net loss per share attributable to Rocket Lab Corporation: Basic and diluted $ (0.12) $ (0.03)"
+     "topic": "margin",
+     "key": false,
+     "text": "Non-GAAP Gross margin for Q3 2026 was 38.4%.",
+     "quote": "Non-GAAP Gross margin 38.4   % 41.9   % 40.7   % 37.7   %"
     },
     {
      "id": "F8",
      "topic": "guidance",
      "key": true,
-     "text": "For the fourth quarter of 2026, Rocket Lab expects revenue between $270 million and $290 million.",
-     "quote": "For the fourth quarter of 2026, Rocket Lab expects: • Revenue between $270 million and $290 million."
+     "text": "For Q4 2026, Rocket Lab expects revenue between $270 million and $290 million.",
+     "quote": "• Revenue between $270 million and $290 million."
     },
     {
      "id": "F9",
      "topic": "guidance",
      "key": true,
-     "text": "For Q4 2026, Rocket Lab expects GAAP Gross Margins between 34% and 36%, and Non-GAAP Gross Margins between 39% and 41%.",
-     "quote": "• GAAP Gross Margins between 34% and 36%. • Non-GAAP Gross Margins between 39% and 41%."
+     "text": "For Q4 2026, Rocket Lab expects GAAP Gross Margins between 34% and 36%.",
+     "quote": "• GAAP Gross Margins between 34% and 36%."
+    },
+    {
+     "id": "F11",
+     "topic": "segment",
+     "key": false,
+     "text": "Secured over $515M in Neutron launch contracts from constellation operators in Q3, growing the rocket’s backlog to 16 missions ahead of its debut and lifting the base launch price to $70 million for several of these missions.",
+     "quote": "• Secured over $515M in Neutron launch contracts from constellation operators in Q3, growing the rocket’s backlog to 16 missions ahead of its debut and lifting the base launch price to $70 million for several of these missions as industry launch capacity tightens."
     },
     {
      "id": "F12",
-     "topic": "segment",
-     "key": false,
-     "text": "Nearly $1 billion of the backlog comes from new launch contracts signed in Q3 2026, as well as $470 million for Space Systems.",
-     "quote": "Nearly $1 billion of that backlog comes from new launch contracts, signed in Q3 2026 alone, as well as $470 million signed for Space Systems."
+     "topic": "other",
+     "key": true,
+     "text": "Record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026.",
+     "quote": "• Record backlog of approximately $3.6 billion, a 52% increase since end of Q2 2026."
+    },
+    {
+     "id": "F14",
+     "topic": "cash",
+     "key": true,
+     "text": "GAAP operating cash flow for Q3 2026 was $7.2M.",
+     "quote": "• Positive GAAP operating cash flow of $7.2M."
     }
    ]
   }
@@ -481,10 +542,14 @@
   "acc": "0001878848-26-000065",
   "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000065/irenreportsq1-fy27result.htm",
   "accept": "2026-11-05T21:03:11.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
   "attempts": 1,
-  "headline": "매출 급증, 순손실 지속·ARR 달성 시점 연기",
+  "eps_act": "-",
+  "eps_est": "$-0.67",
+  "surprise": null,
+  "surprise_pos": null,
+  "headline": "총매출 66% 증가, ARR 목표 달성 일정 연기",
   "metrics": [
    {
     "k": "매출",
@@ -497,27 +562,20 @@
     "dir": "up"
    },
    {
-    "k": "순손실",
-    "v": "$263M",
+    "k": "AI Cloud 총이익률",
+    "v": "86%",
     "dir": ""
    }
   ],
-  "guidance": "$4B이 넘는 ARR 목표 달성 시점이 2027년 1월로 연기되었고, 2027년 2월까지 연장될 수 있습니다.",
+  "guidance": "$4B 이상의 ARR 목표 시점이 연말에서 1월로, 최대 2월 말까지 연장될 수 있다.",
   "bullets": [
-   "전분기 대비 총매출이 66% 증가했습니다.",
-   "AI Cloud 분기 매출이 182% 늘었고, 마진은 86%로 유지됐습니다.",
-   "$4B이 넘는 ARR 목표는 전액 계약 및 자금 조달이 완료된 상태입니다.",
-   "분기 자산 손상차손이 $2M으로, 전분기 $450M과 비교됩니다."
+   "AI Cloud 분기 매출은 전분기 대비 182% 증가하여 $200M을 기록했다.",
+   "AI Cloud 부문 총이익률은 86%로 전분기와 동일하다.",
+   "$4B 이상의 ARR 목표는 모두 계약 체결 및 자금 조달이 완료되었다."
   ],
-  "verdict": "beat",
-  "cons": {
-   "rev": {
-    "act": 228.0,
-    "est": 221.71,
-    "pct": 2.8
-   }
-  },
-  "cons_text": "매출 $228.0M vs 예상 $221.7M (+2.8%)",
+  "verdict": "",
+  "cons": {},
+  "cons_text": "",
   "move": {
    "pct": 20.02,
    "base": 18.030000686645508,
@@ -534,25 +592,25 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 12개"
+     "note": "사실 7개, 원문 불일치 6개 제외"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "12개 번역"
+     "note": "7개 번역"
     },
     {
      "stage": "작성",
      "round": 1,
      "ok": true,
-     "note": "항목 9개"
+     "note": "항목 8개"
     },
     {
      "stage": "최종 점검",
      "round": 1,
      "ok": true,
-     "note": "지적 0건"
+     "note": "지적 0건(원문 근거 없는 지적 5건 제외)"
     }
    ],
    "issues": [],
@@ -572,74 +630,39 @@
      "quote": "AI Cloud quarterly revenue increased 182% sequentially to $200 million1"
     },
     {
-     "id": "F3",
-     "topic": "segment",
+     "id": "F4",
+     "topic": "margin",
      "key": true,
      "text": "AI Cloud segment gross margin of 86%, in line with prior quarter.",
      "quote": "AI Cloud segment gross margin of 86%, in line with prior quarter2"
     },
     {
-     "id": "F4",
+     "id": "F9",
      "topic": "segment",
      "key": false,
-     "text": "Bitcoin Mining revenue was $28 million, compared to $67 million in the previous quarter.",
-     "quote": "Bitcoin Mining Revenue 28 67"
-    },
-    {
-     "id": "F5",
-     "topic": "net_income",
-     "key": true,
-     "text": "Net loss for the quarter was $263 million.",
-     "quote": "Net income (loss) (263) (684)"
-    },
-    {
-     "id": "F6",
-     "topic": "margin",
-     "key": false,
-     "text": "Net Income Margin was (116)%.",
-     "quote": "Net income (loss) Margin1 (116)% (498)%"
-    },
-    {
-     "id": "F7",
-     "topic": "margin",
-     "key": false,
-     "text": "Adjusted EBITDA margin was 29%.",
-     "quote": "Adjusted EBITDA Margin3 29% 14%"
-    },
-    {
-     "id": "F8",
-     "topic": "other",
-     "key": false,
-     "text": "Adjusted EBITDA was $66 million.",
-     "quote": "Adjusted EBITDA2 66 19"
-    },
-    {
-     "id": "F9",
-     "topic": "guidance",
-     "key": true,
-     "text": "The more than $4 billion ARR target, previously year-end 2026, is now targeted for January 2027 following a customer-requested change and supplier timing, and may extend to February 2027.",
-     "quote": "The more than $4 billion ARR4 target, previously year-end 2026, is now targeted for January 2027 following a customer-requested change and supplier timing, and may extend to February 2027"
+     "text": "Total AI Cloud Revenue comprises AI Cloud Services Revenue of $135m and AI Cloud Lease Revenue of $65m.",
+     "quote": "Total AI Cloud Revenue comprises AI Cloud Services Revenue of $135m and AI Cloud Lease Revenue of $65m"
     },
     {
      "id": "F10",
+     "topic": "guidance",
+     "key": true,
+     "text": "The more than $4 billion ARR target is fully contracted and fully funded; it is now targeted for January, after a customer-requested design change and supplier timing moved it from year-end; it may extend to the end of February.",
+     "quote": "The more than $4 billion of contracted ARR is funded and now targeted for January, after a customer-requested design change and supplier timing moved it from year-end; it may extend to the end of February."
+    },
+    {
+     "id": "F11",
      "topic": "guidance",
      "key": true,
      "text": "More than $4 billion ARR target is fully contracted and fully funded.",
      "quote": "More than $4 billion ARR4 target is fully contracted and fully funded5"
     },
     {
-     "id": "F11",
-     "topic": "segment",
-     "key": false,
-     "text": "Contracted pricing continues to rise: +11% on 3-year deals and +12% on 5-year deals.",
-     "quote": "Contracted pricing continues to rise: +11% on 3-year deals and +12% on 5-year deals6"
-    },
-    {
      "id": "F12",
-     "topic": "one_time",
-     "key": true,
-     "text": "Impairment of assets was $2 million for the quarter, compared to $450 million in the previous quarter.",
-     "quote": "Impairment of assets (2) (450)"
+     "topic": "other",
+     "key": false,
+     "text": "Revenue backlog increased 22% sequentially to $20.3 billion; approximately two-thirds with investment-grade counterparties.",
+     "quote": "Revenue backlog increased 22% sequentially to $20.3 billion; approximately two-thirds with investment-grade counterparties3"
     }
    ]
   }
@@ -725,7 +748,7 @@
   "acc": "0000320193-26-000024",
   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/a8-kex991q4202609262026.htm",
   "accept": "2026-11-02T21:30:23.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
   "attempts": 1,
   "eps_act": "$2.10",
@@ -922,9 +945,9 @@
   "acc": "0001321655-26-000045",
   "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm",
   "accept": "2026-11-02T21:06:48.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 3,
+  "attempts": 1,
   "eps_act": "$0.44",
   "eps_est": "$0.41",
   "surprise": "+8.41%",
@@ -954,136 +977,128 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 16개, 원문 불일치 2개 제외"
+     "note": "사실 13개, 원문 불일치 1개 제외"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "16개 번역"
+     "note": "13개 번역"
     },
     {
      "stage": "작성",
      "round": 1,
      "ok": false,
-     "note": "항목 10개"
+     "note": "항목 6개"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 8개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": false,
+     "note": "지적 2건"
     }
    ],
    "issues": [
-    "[작성] metric 매출: 매출 지표 $2.0B가 이번 분기 매출 $2,313.4M과 다름(누적·연간 값이면 지표 이름에 밝힐 것)"
+    "[최종 점검·작성] \"분기 매출이 최초로 $2B를 돌파했다.\" — 실제 분기 매출은 $2.313B로 $2B를 돌파한 것이 맞으나, 원문에서 언급되는 주요 성과(Headline, Highlights)에 따르면 분기 총 매출(revenue)이 $2.313B임에도 보고서 측은 '$2B 돌파'라는 하한선만 제시하여 구체 수치가 누락됨. 그러나 본 문제 기준상, 핵심 수치($2.313B)가 빠진 점은 원문 제목/첫 문단의 핵심 성과(⑤)의 일부 누락에 해당. (원문: Revenue grew 96% year-over-year and 20% quarter-over-quarter to $2.313 billion  )",
+    "[최종 점검·작성] \"2026년 전체 매출 가이던스를 $8.530~$8.534B, 미국 상업 — 보고서의 가이던스 요약에 'adjusted income from operations'와 'adjusted free cash flow'의 가이던스 상향(원문: We are raising…)가 빠졌음. 원문에서 이 두 지표 역시 상향 조정했다고 명백히 기술하며, 이는 '중요한 핵심 실적 가이던스의 누락'(⑤)에 해당. (원문: For full year 2026:\n• We are raising our revenue guidance to between $8.530 - $8)"
    ],
    "facts": [
     {
      "id": "F2",
-     "topic": "segment",
-     "key": true,
-     "text": "U.S. commercial revenue in Q3 2026 grew 148% year-over-year and 29% sequentially to $984 million.",
-     "quote": "U.S. commercial revenue grew 148% year-over-year and 29% quarter-over-quarter to $984 million"
-    },
-    {
-     "id": "F3",
-     "topic": "segment",
-     "key": false,
-     "text": "U.S. government revenue in Q3 2026 grew 96% year-over-year and 18% quarter-over-quarter to $953 million.",
-     "quote": "U.S. government revenue grew 96% year-over-year and 18% quarter-over-quarter to $953 million"
-    },
-    {
-     "id": "F5",
-     "topic": "segment",
-     "key": true,
-     "text": "U.S. commercial revenue surpassed U.S. government revenue for the first time in Palantir's history in Q3 2026.",
-     "quote": "Our U.S. commercial revenue has surpassed our U.S. government revenue for the first time in our company’s history."
-    },
-    {
-     "id": "F6",
      "topic": "revenue",
      "key": true,
      "text": "Quarterly revenue surpassed $2 billion for the first time ever.",
      "quote": "Quarterly revenue surpassed $2 billion for the first time ever"
     },
     {
-     "id": "F7",
-     "topic": "segment",
+     "id": "F3",
+     "topic": "revenue|segment",
      "key": false,
-     "text": "Palantir closed 212 deals of at least $1 million, 107 deals of at least $5 million, and 64 deals of at least $10 million in Q3 2026.",
-     "quote": "Closed 212 deals of at least $1 million, 107 deals of at least $5 million, and 64 deals of at least $10 million"
+     "text": "U.S. commercial revenue grew 148% year-over-year and 29% quarter-over-quarter to $984 million.",
+     "quote": "U.S. commercial revenue grew 148% year-over-year and 29% quarter-over-quarter to $984 million"
+    },
+    {
+     "id": "F4",
+     "topic": "revenue|segment",
+     "key": false,
+     "text": "U.S. government revenue grew 96% year-over-year and 18% quarter-over-quarter to $953 million.",
+     "quote": "U.S. government revenue grew 96% year-over-year and 18% quarter-over-quarter to $953 million"
+    },
+    {
+     "id": "F5",
+     "topic": "revenue|segment",
+     "key": false,
+     "text": "U.S. revenue grew 119% year-over-year and 23% quarter-over-quarter to $1.937 billion.",
+     "quote": "U.S. revenue grew 119% year-over-year and 23% quarter-over-quarter to $1.937 billion"
+    },
+    {
+     "id": "F6",
+     "topic": "segment|other",
+     "key": true,
+     "text": "U.S. commercial revenue surpassed U.S. government revenue for the first time ever.",
+     "quote": "U.S. commercial revenue surpassed U.S. government revenue for the first time ever"
+    },
+    {
+     "id": "F7",
+     "topic": "eps",
+     "key": true,
+     "text": "GAAP earnings per share (EPS), diluted, was $0.44.",
+     "quote": "GAAP EPS, Diluted $ 0.44"
     },
     {
      "id": "F8",
-     "topic": "segment",
+     "topic": "eps",
      "key": false,
-     "text": "Closed total contract value (TCV) of $2.918 billion in Q3 2026, up 6% year-over-year.",
-     "quote": "Closed total contract value (“TCV”) of $2.918 billion, up 6% year-over-year"
+     "text": "Adjusted EPS, diluted, was $0.44.",
+     "quote": "Adjusted EPS, Diluted $ 0.44"
     },
     {
      "id": "F9",
-     "topic": "margin",
-     "key": false,
-     "text": "GAAP income from operations was $1.085 billion, representing a 47% margin.",
-     "quote": "GAAP income from operations of $1.085 billion, representing a 47% margin"
-    },
-    {
-     "id": "F10",
-     "topic": "margin",
-     "key": false,
-     "text": "Adjusted income from operations was $1.427 billion, representing a 62% margin.",
-     "quote": "Adjusted income from operations of $1.427 billion, representing a 62% margin"
-    },
-    {
-     "id": "F11",
      "topic": "net_income",
-     "key": true,
-     "text": "GAAP net income was $1.128 billion, representing a 49% margin.",
+     "key": false,
+     "text": "GAAP net income of $1.128 billion, representing a 49% margin.",
      "quote": "GAAP net income of $1.128 billion, representing a 49% margin"
     },
     {
+     "id": "F10",
+     "topic": "income|margin",
+     "key": false,
+     "text": "GAAP income from operations of $1.085 billion, representing a 47% margin.",
+     "quote": "GAAP income from operations of $1.085 billion, representing a 47% margin"
+    },
+    {
+     "id": "F11",
+     "topic": "income|margin",
+     "key": false,
+     "text": "Adjusted income from operations of $1.427 billion, representing a 62% margin.",
+     "quote": "Adjusted income from operations of $1.427 billion, representing a 62% margin"
+    },
+    {
      "id": "F12",
-     "topic": "eps",
-     "key": true,
-     "text": "GAAP earnings per share (diluted) in Q3 2026 was $0.44.",
-     "quote": "GAAP earnings per share (“EPS”) of $0.44"
-    },
-    {
-     "id": "F13",
-     "topic": "eps",
-     "key": false,
-     "text": "Adjusted EPS of $0.44 for Q3 2026.",
-     "quote": "Adjusted EPS of $0.44"
-    },
-    {
-     "id": "F14",
-     "topic": "cash",
-     "key": false,
-     "text": "Cash, cash equivalents, and U.S. Treasury securities were $10.4 billion at the end of Q3 2026.",
-     "quote": "Cash, cash equivalents, and U.S. Treasury securities of $10.4 billion"
-    },
-    {
-     "id": "F15",
      "topic": "guidance",
      "key": true,
-     "text": "For Q4 2026, Palantir expects revenue of between $2.649 and $2.653 billion.",
-     "quote": "For Q4 2026, we expect: • Revenue of between $2.649 - $2.653 billion."
-    },
-    {
-     "id": "F16",
-     "topic": "guidance",
-     "key": true,
-     "text": "For full year 2026, Palantir is raising its revenue guidance to between $8.530 and $8.534 billion.",
+     "text": "We are raising our revenue guidance to between $8.530 - $8.534 billion for full year 2026.",
      "quote": "We are raising our revenue guidance to between $8.530 - $8.534 billion."
     },
     {
-     "id": "F17",
+     "id": "F13",
      "topic": "guidance",
      "key": true,
-     "text": "For full year 2026, Palantir is raising its U.S. commercial revenue guidance to in excess of $3.559 billion, representing a growth rate of at least 143%.",
+     "text": "We are raising our U.S. commercial revenue guidance to in excess of $3.559 billion, representing a growth rate of at least 143%.",
      "quote": "We are raising our U.S. commercial revenue guidance to in excess of $3.559 billion, representing a growth rate of at least 143%."
     },
     {
-     "id": "F18",
+     "id": "F14",
      "topic": "guidance",
      "key": true,
-     "text": "Palantir continues to expect GAAP operating income and net income in each quarter of this year.",
-     "quote": "And we continue to expect GAAP operating income and net income in each quarter of this year."
+     "text": "For Q4 2026, we expect revenue of between $2.649 - $2.653 billion.",
+     "quote": "For Q4 2026, we expect: • Revenue of between $2.649 - $2.653 billion."
     }
    ]
   }
@@ -1099,9 +1114,9 @@
   "acc": "0001018724-26-000038",
   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
   "accept": "2026-10-29T20:05:27.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 3,
+  "attempts": 1,
   "eps_act": "$1.89",
   "eps_est": "$1.96",
   "surprise": "-3.47%",
@@ -1131,13 +1146,13 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 12개, 원문 불일치 1개 제외"
+     "note": "사실 13개, 원문 불일치 1개 제외"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "12개 번역"
+     "note": "13개 번역"
     },
     {
      "stage": "작성",
@@ -1149,25 +1164,23 @@
      "stage": "최종 점검",
      "round": 1,
      "ok": false,
-     "note": "지적 3건(원문 근거 없는 지적 1건 제외)"
+     "note": "지적 1건(경미한 지적 1건 제외)"
     },
     {
      "stage": "작성",
      "round": 2,
      "ok": true,
-     "note": "항목 8개"
+     "note": "항목 10개"
     },
     {
      "stage": "최종 점검",
      "round": 2,
      "ok": false,
-     "note": "지적 3건(원문 근거 없는 지적 1건 제외)"
+     "note": "지적 1건(경미한 지적 3건 제외)"
     }
    ],
    "issues": [
-    "[최종 점검·작성] \"3분기 순이익 감소는 2025년 3분기 Anthropic 투자 관련 세 — 세전 이익 $9.5B는 2025년 3분기에 있었던 일로, 2026년 3분기의 순이익 감소에 영향을 준 '과거 일회성' 항목임을 정확히 언급하지 않아, 현재 분기에 발생한 것처럼 오해를 줄 수 있다. 또한 '순이익 감소'의 주요 원인이 명확히 보이지 않는다. (원문: This decrease is driven primarily by pre-tax gains of $9.5 billion in third quar)",
-    "[최종 점검·작성] \"AWS 부문은 연환산 매출 $184B를 기록하며 39.3% 성장, 약  — AWS 매출 성장률과 연환산 매출 수치는 맞으나, 원문은 정확히 'its fastest growth in nearly five years'라며 '약 5년 만에 가장 빠름'이라고 언급, 문맥상 성장률이 39.3%임을 강조한다. 그러나 보고서의 숫자 '39.3%'는 연환산이 아닌 분기별 yoy임을 더 명확히 해야 혼동이 없다. (원문: AWS net sales increased 39.3%—its fastest growth in nearly five years—to a $184 )",
-    "[최종 점검·작성] \"영업이익률은 13.9%로 Amazon 사상 최고치였다.\" — 영업이익률 13.9%가 사상 최고치는 맞는데, 3분기치임을 구체적으로 명시하지 않아 회계연도 단위와 혼동될 수 있다. (원문: operating margin was 13.9%—Amazon’s highest operating margin ever)"
+    "[최종 점검·작성] \"metrics\": [ ... {\"k\": \"영업이익률\", ... } .. — 핵심 실적에서 영업이익(Operating Income)이 누락됨: 원문 1문단, 표 등에서 $28.1B, 61% 증가(전년 $17.4B→$28.1B)임. 보고서엔 영업이익률 제시·상승만 언급되어 있고 절대 영업이익이 빠짐. 원문에서는 사상 최대 영업이익률과 함께 영업이익을 함께 강조. (원문: Operating income was $28.1 billion and operating margin was 13.9%—Amazon’s highe)"
    ],
    "facts": [
     {
@@ -1195,60 +1208,67 @@
      "id": "F5",
      "topic": "margin",
      "key": true,
-     "text": "Operating margin was 13.9%—Amazon’s highest operating margin ever.",
-     "quote": "Operating margin was 13.9%—Amazon’s highest operating margin ever"
+     "text": "Operating income was $28.1 billion and operating margin was 13.9%—Amazon’s highest operating margin ever.",
+     "quote": "Operating income was $28.1 billion and operating margin was 13.9%—Amazon’s highest operating margin ever"
     },
     {
      "id": "F6",
-     "topic": "margin",
+     "topic": "segment",
      "key": true,
-     "text": "Operating income was $28.1 billion and operating margin was 13.9%.",
-     "quote": "Operating income was $28.1 billion and operating margin was 13.9%"
+     "text": "North America segment sales increased 6% year-over-year to $112.9 billion.",
+     "quote": "North America segment sales increased 6% year-over-year to $112.9 billion."
     },
     {
      "id": "F7",
      "topic": "segment",
      "key": true,
-     "text": "AWS net sales increased 39.3%—its fastest growth in nearly five years—to a $184 billion annualized revenue run rate.",
-     "quote": "AWS net sales increased 39.3%—its fastest growth in nearly five years—to a $184 billion annualized revenue run rate"
+     "text": "International segment sales increased 5% year-over-year to $43.1 billion, or increased 8% excluding changes in foreign exchange rates.",
+     "quote": "International segment sales increased 5% year-over-year to $43.1 billion, or increased 8% excluding changes in foreign exchange rates."
     },
     {
      "id": "F8",
      "topic": "segment",
-     "key": false,
-     "text": "North America segment sales increased 6% year-over-year to $112.9 billion.",
-     "quote": "North America segment sales increased 6% year-over-year to $112.9 billion."
+     "key": true,
+     "text": "AWS segment sales increased 39% year-over-year to $46.0 billion.",
+     "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion."
     },
     {
      "id": "F9",
      "topic": "segment",
      "key": false,
-     "text": "International segment sales increased 5% year-over-year to $43.1 billion.",
-     "quote": "International segment sales increased 5% year-over-year to $43.1 billion"
+     "text": "North America segment operating income was $8.7 billion, compared with $4.8 billion in third quarter 2025.",
+     "quote": "North America segment operating income was $8.7 billion, compared with $4.8 billion in third quarter 2025."
     },
     {
      "id": "F10",
      "topic": "segment",
      "key": false,
-     "text": "AWS segment sales increased 39% year-over-year to $46.0 billion.",
-     "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion."
+     "text": "International segment operating income was $1.6 billion, compared with $1.2 billion in third quarter 2025.",
+     "quote": "International segment operating income was $1.6 billion, compared with $1.2 billion in third quarter 2025."
     },
     {
      "id": "F11",
+     "topic": "segment",
+     "key": false,
+     "text": "AWS segment operating income was $17.8 billion, compared with $11.4 billion in third quarter 2025.",
+     "quote": "AWS segment operating income was $17.8 billion, compared with $11.4 billion in third quarter 2025."
+    },
+    {
+     "id": "F12",
      "topic": "guidance",
      "key": true,
      "text": "Net sales are expected to be between $240.0 billion and $247.0 billion, or to grow between 12% and 16% compared with fourth quarter 2025.",
      "quote": "Net sales are expected to be between $240.0 billion and $247.0 billion, or to grow between 12% and 16% compared with fourth quarter 2025."
     },
     {
-     "id": "F12",
+     "id": "F13",
      "topic": "guidance",
      "key": true,
      "text": "Operating income is expected to be between $28.5 billion and $33.5 billion, compared with $25.0 billion in fourth quarter 2025.",
      "quote": "Operating income is expected to be between $28.5 billion and $33.5 billion, compared with $25.0 billion in fourth quarter 2025."
     },
     {
-     "id": "F13",
+     "id": "F14",
      "topic": "one_time",
      "key": true,
      "text": "This decrease is driven primarily by pre-tax gains of $9.5 billion in third quarter 2025 included in non-operating income (expense) from our investments in Anthropic.",
@@ -1268,14 +1288,14 @@
   "acc": "0001193125-26-436122",
   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm",
   "accept": "2026-10-28T20:04:44.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
   "attempts": 1,
   "eps_act": "$4.89",
   "eps_est": "$4.72",
   "surprise": "+3.59%",
   "surprise_pos": true,
-  "headline": "매출·클라우드 강한 성장, OpenAI로 이익 증가",
+  "headline": "매출 19%↑·순이익 32%↑, 일부 부문 매출 감소",
   "metrics": [
    {
     "k": "매출",
@@ -1293,11 +1313,12 @@
     "dir": "up"
    }
   ],
-  "guidance": "실적 컨퍼런스콜 및 웹캐스트에서 미래 전망 가이던스를 제공할 예정이다.",
+  "guidance": "실적 컨퍼런스콜 및 웹캐스트에서 미래 전망 가이던스 제공",
   "bullets": [
-   "Microsoft Cloud 매출은 전년 대비 30% 증가해 $63.9B를 기록했다.",
-   "Agents and Infra 매출은 $76.8B로 25% 증가했다.",
-   "OpenAI 투자로 순이익은 $207M, 희석 주당순이익은 $0.03 증가했다."
+   "순이익과 희석 주당순이익은 OpenAI 투자에서 발생한 순이익의 영향을 받아 각각 $207M과 $0.03 증가했습니다.",
+   "Agents and Infra 부문 매출은 $76.8B로 25% 증가했습니다.",
+   "Devices and Consumer 부문 매출은 $15.5B로 3% 감소했습니다.",
+   "비GAAP 실적은 OpenAI 투자 영향을 제외합니다."
   ],
   "verdict": "beat",
   "cons": {
@@ -1324,25 +1345,25 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 12개, 원문 불일치 2개 제외"
+     "note": "사실 11개, 원문 불일치 2개 제외"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "12개 번역"
+     "note": "11개 번역"
     },
     {
      "stage": "작성",
      "round": 1,
      "ok": true,
-     "note": "항목 8개"
+     "note": "항목 9개"
     },
     {
      "stage": "최종 점검",
      "round": 1,
      "ok": true,
-     "note": "지적 0건"
+     "note": "지적 0건(경미한 지적 2건 제외)"
     }
    ],
    "issues": [],
@@ -1362,7 +1383,7 @@
      "quote": "Diluted earnings per share was $4.92 and increased 32% on a GAAP basis"
     },
     {
-     "id": "F4",
+     "id": "F3",
      "topic": "net_income",
      "key": true,
      "text": "Net income was $36.6 billion and increased 32% on a GAAP basis.",
@@ -1372,8 +1393,8 @@
      "id": "F6",
      "topic": "one_time",
      "key": true,
-     "text": "In the first quarter of fiscal year 2027, net income and diluted earnings per share were impacted by net gains from investments in OpenAI, which resulted in an increase in net income and diluted earnings per share of $207 million and $0.03, respectively.",
-     "quote": "In the first quarter of fiscal year 2027, net income and diluted earnings per share were impacted by net gains from investments in OpenAI, which resulted in an increase in net income and diluted earnings per share of $207 million and $0.03, respectively."
+     "text": "Net income and diluted earnings per share were impacted by net gains from investments in OpenAI, which resulted in an increase in net income and diluted earnings per share of $207 million and $0.03, respectively.",
+     "quote": "net income and diluted earnings per share were impacted by net gains from investments in OpenAI, which resulted in an increase in net income and diluted earnings per share of $207 million and $0.03, respectively."
     },
     {
      "id": "F7",
@@ -1385,30 +1406,30 @@
     {
      "id": "F8",
      "topic": "segment",
-     "key": false,
+     "key": true,
      "text": "Revenue in Devices and Consumer was $15.5 billion and decreased 3%.",
      "quote": "Revenue in Devices and Consumer was $15.5 billion and decreased 3%"
     },
     {
      "id": "F9",
-     "topic": "segment",
-     "key": true,
-     "text": "Microsoft Cloud revenue was $63.9 billion and increased 30% year-over-year.",
-     "quote": "Microsoft Cloud revenue of $63.9 billion, with growth accelerating to 30% (up 31% in constant currency) year-over-year"
+     "topic": "cloud",
+     "key": false,
+     "text": "Microsoft Cloud revenue was $63.9 billion and increased 30% (up 31% in constant currency).",
+     "quote": "Microsoft Cloud revenue was $63.9 billion and increased 30% (up 31% in constant currency)"
     },
     {
      "id": "F10",
      "topic": "segment",
      "key": false,
-     "text": "Azure revenue increased 48% year-over-year.",
+     "text": "Azure revenue increased 48%.",
      "quote": "Azure revenue increased 48%"
     },
     {
      "id": "F11",
-     "topic": "cash",
-     "key": false,
-     "text": "Microsoft returned $10.2 billion to shareholders in the form of dividends and share repurchases in the first quarter of fiscal year 2027.",
-     "quote": "Microsoft returned $10.2 billion to shareholders in the form of dividends and share repurchases in the first quarter of fiscal year 2027."
+     "topic": "one_time",
+     "key": true,
+     "text": "Non-GAAP results exclude the impact from investments in OpenAI, explained in the Non-GAAP Definition section below.",
+     "quote": "Non-GAAP results exclude the impact from investments in OpenAI, explained in the Non-GAAP Definition section below"
     },
     {
      "id": "F12",
@@ -1421,15 +1442,8 @@
      "id": "F13",
      "topic": "other",
      "key": false,
-     "text": "Commercial remaining performance obligation increased 73% to $677 billion year-over-year.",
-     "quote": "Commercial remaining performance obligation increased 73% to $677 billion"
-    },
-    {
-     "id": "F14",
-     "topic": "eps",
-     "key": false,
-     "text": "Non-GAAP results exclude the impact from investments in OpenAI.",
-     "quote": "Non-GAAP results exclude the impact from investments in OpenAI, explained in the Non-GAAP Definition section below"
+     "text": "Microsoft returned $10.2 billion to shareholders in the form of dividends and share repurchases in the first quarter of fiscal year 2027.",
+     "quote": "Microsoft returned $10.2 billion to shareholders in the form of dividends and share repurchases in the first quarter of fiscal year 2027."
     }
    ]
   }
@@ -1445,12 +1459,12 @@
   "acc": "0001652044-26-000080",
   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
   "accept": "2026-10-28T20:01:33.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 3,
+  "attempts": 1,
   "eps_act": "$2.12",
   "eps_est": "$3.01",
-  "surprise": "-29.52%",
+  "surprise": "-29.54%",
   "surprise_pos": false,
   "verdict": "miss",
   "cons": {
@@ -1477,47 +1491,41 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 13개, 원문 불일치 1개 제외"
+     "note": "사실 11개, 원문 불일치 2개 제외"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "13개 번역"
+     "note": "11개 번역"
     },
     {
      "stage": "작성",
      "round": 1,
      "ok": true,
-     "note": "항목 9개"
+     "note": "항목 8개"
     },
     {
      "stage": "최종 점검",
      "round": 1,
      "ok": false,
-     "note": "지적 2건(원문 근거 없는 지적 2건 제외)"
+     "note": "지적 1건"
     },
     {
      "stage": "작성",
      "round": 2,
      "ok": true,
-     "note": "항목 7개"
+     "note": "항목 8개"
     },
     {
      "stage": "최종 점검",
      "round": 2,
      "ok": false,
-     "note": "지적 7건"
+     "note": "지적 1건(원문 근거 없는 지적 1건, 경미한 지적 1건 제외)"
     }
    ],
    "issues": [
-    "[최종 점검·작성] 매출·클라우드 급증, 지분증권 손실 악재 — 보고서 헤드라인에서 '매출·클라우드 급증'이라고 표현했으나, 실제로 매출의 증가폭(25%)에 비해 Google Cloud의 증가폭(103%)만이 '급증'에 해당하며, 전체 매출이 '급증'이라고 해석하기에는 다소 과장된 표현임. 다만 심각한 오류는 아니지만 원문에서 headline을 선정적으로 주장하지 않음. (원문: Consolidated Alphabet revenues increased 25% to $127.6 billion, reflecting stron)",
-    "[최종 점검·작성] 매출 $127.6B, up — 매출 증감 방향 'up'은 맞으나, 전년 대비 25% 증가임을 명확히 하지 않음. 이로 인해 비교 기준이 모호해질 수 있음. (원문: Consolidated Alphabet revenues increased 25% to $127.6 billion, reflecting stron)",
-    "[최종 점검·작성] EPS $2.12, dir: '' — EPS(희석 기준)가 $2.12로 기재되어 있으나, 방향성이 누락됨(전년 동기 $2.87 → $2.12로 'down'이어야 함). (원문: Diluted net income per common share $ 2.87  $ 2.12)",
-    "[최종 점검·작성] 지분증권의 $8.7B 손실로 순이익 및 EPS가 각각 $6.7B, $0. — 원문에는 'net effect of the loss on equity securities of $8.7 billion decreased the provision for income tax, net income, and diluted net income per common share by $1.9 billion, $6.7 billion, and $0.55, respectively'로 되어 있는데, '지분증권의 $8.7B 손실로'라고 할 경우 $8.7B 손실이 곧바로 다른 세 항목을 감소시킨다는 단정적 해석이 되나, 실제로는 세전 손실→법인세 감소→순이익 감소/주당순이익 감소의 구조임. 다만 금액 자체는 맞으므로 중대한 오류는 아니지만, 인과 구조의 단순화 해석이 있음. (원문: For Q3 2026, the net effect of the loss on equity securities of $8.7 billion dec)",
-    "[최종 점검·작성] Google Cloud 매출은 103% 증가하여 $30.7B에 달했다. — 전년 대비(GAAP) Google Cloud 매출이 103% 증가(15,157→30,709)한 것은 맞으나, '매출 증가'임을 명확히 하지 않고 성장률만 강조하여 비교 기준이 분명치 않음. 하지만 수치와 방향 자체는 맞음. (원문: Google Cloud delivered record growth as revenues increased 103% to $30.7 billion)",
-    "[최종 점검·작성] ATM Program 하에서 향후 발행 가능 금액은 $27.6B다. — 원문과 일치. (원문: As of September 30, 2026, $27.6 billion remained available for future issuance u)",
-    "[최종 점검·작성] Google Services 매출은 11% 증가하여 $96.3B를 기록했 — 전년 대비 11% 증가 및 $96.3B 실적 모두 정확함. (원문: Google Services revenues increased 11% to $96.3 billion)"
+    "[최종 점검·작성] Google Cloud 매출은 103% 늘어 $30.7B로, 사상 최대  — 원문에 Google Cloud의 '사상 최대 성장률'이라는 표현이나 사상 최고 성장은 언급되지 않음. 원문에는 단지 'record growth'로 표현했으나, 이는 '매출'의 기록적 규모일 수 있고, 성장률이 사상 최대라는 의미는 아님. (원문: Google Cloud delivered record growth as revenues increased 103% to $30.7 billion)"
    ],
    "facts": [
     {
@@ -1525,90 +1533,76 @@
      "topic": "revenue",
      "key": true,
      "text": "Consolidated Alphabet revenues increased 25% to $127.6 billion.",
-     "quote": "Consolidated Alphabet revenues increased 25% to $127.6 billion, reflecting strong performance across the business and our 13th consecutive quarter of double-digit revenue growth."
+     "quote": "• Consolidated Alphabet revenues increased 25% to $127.6 billion, reflecting strong performance across the business and our 13th consecutive quarter of double-digit revenue growth."
     },
     {
      "id": "F2",
      "topic": "segment",
      "key": true,
      "text": "Google Services revenues increased 11% to $96.3 billion.",
-     "quote": "Google Services revenues increased 11% to $96.3 billion, led by 12% growth in Google Search & other with the year-over-year Search query growth rate the highest it has been in the last five years."
+     "quote": "• Google Services revenues increased 11% to $96.3 billion, led by 12% growth in Google Search & other with the year-over-year Search query growth rate the highest it has been in the last five years."
     },
     {
      "id": "F3",
      "topic": "segment",
      "key": true,
-     "text": "Google Cloud revenues increased 103% to $30.7 billion.",
-     "quote": "Google Cloud delivered record growth as revenues increased 103% to $30.7 billion, led by strong growth in Google Cloud Platform (GCP) across enterprise AI infrastructure and enterprise AI solutions, as well as core GCP services. TPU systems sales were also a meaningful contributor to revenue growth."
+     "text": "Google Cloud delivered record growth as revenues increased 103% to $30.7 billion.",
+     "quote": "• Google Cloud delivered record growth as revenues increased 103% to $30.7 billion, led by strong growth in Google Cloud Platform (GCP) across enterprise AI infrastructure and enterprise AI solutions, as well as core GCP services. TPU systems sales were also a meaningful contributor to revenue growth."
     },
     {
      "id": "F4",
-     "topic": "margin",
-     "key": false,
-     "text": "Consolidated Alphabet operating margin was 31.8%.",
-     "quote": "Consolidated Alphabet operating income increased 30% and operating margin was 31.8%."
+     "topic": "revenue",
+     "key": true,
+     "text": "Total revenues for the quarter ended September 30, 2026 were $127,577 million.",
+     "quote": "Quarter Ended September 30, 2025 2026 Revenues $ 102,346  $ 127,577 "
     },
     {
      "id": "F5",
      "topic": "eps",
      "key": true,
-     "text": "EPS was $2.12.",
-     "quote": "Net income available to common stockholders was $26.2 billion and EPS was $2.12."
+     "text": "Diluted net income per common share for Q3 2026 was $2.12.",
+     "quote": "Diluted net income per common share $ 2.87  $ 2.12 "
     },
     {
      "id": "F6",
      "topic": "net_income",
-     "key": false,
-     "text": "Net income available to common stockholders was $26.2 billion.",
-     "quote": "Net income available to common stockholders was $26.2 billion and EPS was $2.12."
-    },
-    {
-     "id": "F7",
-     "topic": "revenue",
-     "key": false,
-     "text": "Total revenues were $127,577 million for the quarter ended September 30, 2026, up from $102,346 million for the prior year period.",
-     "quote": "Quarter Ended September 30, 2025 2026 Revenues $ 102,346  $ 127,577 "
+     "key": true,
+     "text": "Net income available to common stockholders was $26,170 million for Q3 2026.",
+     "quote": "Net income available to common stockholders $ 34,979  $ 26,170 "
     },
     {
      "id": "F8",
      "topic": "segment",
      "key": false,
-     "text": "Google Search & other revenues were $63,350 million, up from $56,567 million in the prior year period.",
-     "quote": "Google Search & other $ 56,567  $ 63,350 "
+     "text": "Google Search & other revenues were $63,350 million, YouTube ads were $11,207 million, Google Network was $7,455 million for Q3 2026.",
+     "quote": "Google Search & other $ 56,567  $ 63,350  YouTube ads 10,261  11,207  Google Network 7,354  7,455 "
     },
     {
      "id": "F9",
      "topic": "segment",
      "key": false,
-     "text": "YouTube ads revenues were $11,207 million, up from $10,261 million in the prior year period.",
-     "quote": "YouTube ads 10,261  11,207 "
+     "text": "Google advertising revenues were $82,012 million and Google subscriptions, platforms, and devices were $14,290 million for Q3 2026.",
+     "quote": "Google advertising 74,182  82,012  Google subscriptions, platforms, and devices 12,870  14,290 "
     },
     {
      "id": "F10",
      "topic": "segment",
      "key": false,
-     "text": "Google Network revenues were $7,455 million, up from $7,354 million in the prior year period.",
-     "quote": "Google Network 7,354  7,455 "
-    },
-    {
-     "id": "F11",
-     "topic": "segment",
-     "key": false,
-     "text": "Google Cloud operating income was $11,121 million, up from $3,594 million in the prior year period.",
-     "quote": "Google Cloud 3,594  11,121 "
+     "text": "Other Bets revenues were $372 million for Q3 2026.",
+     "quote": "Other Bets 344  372 "
     },
     {
      "id": "F12",
      "topic": "one_time",
      "key": true,
-     "text": "The net effect of the loss on equity securities of $8.7 billion decreased the provision for income tax, net income, and diluted net income per common share by $1.9 billion, $6.7 billion, and $0.55, respectively.",
+     "text": "The net effect of the loss on equity securities of $8.7 billion decreased the provision for income tax, net income, and diluted net income per common share by $1.9 billion, $6.7 billion, and $0.55, respectively.",
      "quote": "For Q3 2026, the net effect of the loss on equity securities of $8.7 billion decreased the provision for income tax, net income, and diluted net income per common share by $1.9 billion, $6.7 billion, and $0.55, respectively."
     },
     {
-     "id": "F14",
+     "id": "F13",
      "topic": "guidance",
      "key": true,
-     "text": "As of September 30, 2026, $27.6 billion remained available for future issuance under the ATM Program.",
+     "text": "As of September 30, 2026, $27.6 billion remained available for future issuance under the ATM Program.",
      "quote": "As of September 30, 2026, $27.6 billion remained available for future issuance under the ATM Program."
     }
    ]
@@ -1625,9 +1619,9 @@
   "acc": "0001628280-26-066700",
   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
   "accept": "2026-10-21T20:03:35.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 3,
+  "attempts": 1,
   "eps_act": "$3.83",
   "eps_est": "$5.42",
   "surprise": "-29.33%",
@@ -1657,31 +1651,25 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 11개, 원문 불일치 3개 제외"
+     "note": "사실 16개, 원문 불일치 2개 제외"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "11개 번역"
+     "note": "16개 번역"
     },
     {
      "stage": "작성",
      "round": 1,
-     "ok": true,
-     "note": "항목 10개"
-    },
-    {
-     "stage": "최종 점검",
-     "round": 1,
      "ok": false,
-     "note": "지적 4건(원문 근거 없는 지적 2건 제외)"
+     "note": "항목 8개"
     },
     {
      "stage": "작성",
      "round": 2,
      "ok": true,
-     "note": "항목 10개"
+     "note": "항목 9개"
     },
     {
      "stage": "최종 점검",
@@ -1691,38 +1679,45 @@
     }
    ],
    "issues": [
-    "[최종 점검·작성] guidance: \"2026년 전체 총비용 전망을 $175-179B로 상 — \"총비용 전망을 상향(\"raise\")했다\"고 되어 있으나 원문 guidance에서 상향의 근거는 소송 관련 $9.9B 비용 반영 때문이다. 단순 '전망 상향'이 아니라, 3분기 소송 충당금 인식에 의한 상향임이 원문에 명시되어 있는데 보고서에는 반영되지 않음. (원문: We are raising our expense outlook to incorporate the $9.9 billion charge relate)",
-    "[최종 점검·작성] guidance: \"자본적 지출 전망 범위를 $135-145B로 좁혔다. — 자본적 지출 전망의 경우 원문에는 이전 전망($130-145B)에서 범위를 '좁혔다'(narrowed from our prior outlook of $130-145 billion)고 명확히 기술되어 있으나,  보고서에는 이전 전망이 무엇이었는지 언급되어 있지 않아 정보가 누락됨. (원문: We anticipate 2026 capital expenditures, including principal payments on finance)",
-    "[최종 점검·작성] headline: \"매출·순이익 급증, 총비용·자본지출 전망 변경\" — 3분기 실적에 있어 총비용(=Costs and expenses)이 전년 동기 대비 68% 급증이라는 전체 실적을 크게 바꾼 일회성 항목($9.89B 소송 비용)이 누락됨. 이는 원문 첫 부분 및 하이라이트에서 반복 강조됨. (원문: Third quarter 2026 costs and expenses includes a $9.89 billion charge related to)"
+    "[최종 점검·작성] 2026년 4분기 총매출을 $73B~76B, Reality Labs의 손 — Reality Labs의 2026년 손실 가이던스가 잘못 기재됨. 원문은 2026년 손실이 '2025년 대비 감소해 $18B~19B'로 하락할 것으로 가이던스함(=감소), 보고서는 '손실을 $18B~19B로 예상한다'는 것만 명시해 손실이 줄어든다는 중요 정보를 누락함. (원문: At a segment level, we now expect Reality Labs losses to decline compared to 202)",
+    "[최종 점검·작성] 2026년 자본적지출 가이던스를 $135B~145B로 상향 조정했다. — 자본적지출(설비투자, CapEx) 가이던스가 '상향 조정'으로 표현되었으나, 실제로는 기존 가이던스 '130B~145B'를 '135B~145B'로 하단만 소폭 올린 것이고, 단계적으로 보면 'narrowed'라고 명확히 강조됨. 단순 상향이 아니라 '하단 상향·범위 축소(narrowed)'임. (원문: We anticipate 2026 capital expenditures, including principal payments on finance)",
+    "[최종 점검·작성] Reality Labs의 손실을 $18B~19B로 예상하며 — Reality Labs의 hand-off guidance 비교 기준이 명확하지 않아 오해 소지가 있음(전년 대비 감소임을 원문처럼 반드시 밝혀야 함). (원문: At a segment level, we now expect Reality Labs losses to decline compared to 202)"
    ],
    "facts": [
     {
      "id": "F1",
      "topic": "revenue",
      "key": true,
-     "text": "Meta's revenue for the third quarter of 2026 was $64,601 million, up 26% year-over-year.",
+     "text": "Revenue was $64,601 million for the third quarter of 2026, an increase of 26% year-over-year.",
      "quote": "Revenue $ 64,601  $ 51,242  26  %"
     },
     {
      "id": "F2",
      "topic": "eps",
      "key": true,
-     "text": "Diluted earnings per share (EPS) for the third quarter of 2026 was $3.83, an increase of 265% year-over-year.",
+     "text": "Diluted earnings per share (EPS) for the third quarter of 2026 was $3.83, up 265% year-over-year.",
      "quote": "Diluted earnings per share (EPS) $ 3.83  $ 1.05  265  %"
     },
     {
      "id": "F3",
      "topic": "net_income",
      "key": true,
-     "text": "Net income for the third quarter of 2026 was $9,860 million, up 264% year-over-year.",
+     "text": "Net income for the third quarter of 2026 was $9,860 million, representing a 264% increase year-over-year.",
      "quote": "Net income $ 9,860  $ 2,709  264  %"
     },
     {
      "id": "F4",
      "topic": "margin",
      "key": true,
-     "text": "Operating margin for the third quarter of 2026 was 20%, compared to 40% in the same quarter last year.",
+     "text": "Operating margin was 20% in the third quarter of 2026, compared to 40% in the third quarter of 2025.",
      "quote": "Operating margin 20  % 40  %"
+    },
+    {
+     "id": "F5",
+     "topic": "one_time",
+     "key": true,
+     "text": "Third quarter 2026 costs and expenses include a $9.89 billion charge related to an agreement with U.S. State Attorneys General to resolve litigation related to teen mental health and social media.",
+     "quote": "Third quarter 2026 costs and expenses includes a $9.89 billion charge related to this agreement."
     },
     {
      "id": "F6",
@@ -1732,45 +1727,73 @@
      "quote": "We expect fourth quarter 2026 total revenue to be in the range of $73-76 billion."
     },
     {
-     "id": "F7",
-     "topic": "guidance",
-     "key": true,
-     "text": "Meta is raising its expense outlook, now expecting full year 2026 total expenses to be in the range of $175-179 billion.",
-     "quote": "We now expect full year 2026 total expenses to be in the range of $175-179 billion."
-    },
-    {
      "id": "F8",
      "topic": "guidance",
      "key": true,
-     "text": "At a segment level, Meta now expects Reality Labs losses to decline compared to 2025 to a range of $18-19 billion.",
+     "text": "At a segment level, Reality Labs losses are now expected to decline compared to 2025 to a range of $18-19 billion.",
      "quote": "At a segment level, we now expect Reality Labs losses to decline compared to 2025 to a range of $18-19 billion."
     },
     {
-     "id": "F11",
-     "topic": "cash",
-     "key": false,
-     "text": "Cash, cash equivalents, and marketable securities were $82,445 million as of September 30, 2026.",
-     "quote": "Cash, cash equivalents, and marketable securities – Cash, cash equivalents, and marketable securities were $82.45 billion as of September 30, 2026."
-    },
-    {
-     "id": "F12",
+     "id": "F9",
      "topic": "guidance",
      "key": true,
-     "text": "Meta anticipates 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion, narrowed from the prior outlook of $130-145 billion.",
+     "text": "Meta anticipates 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion, narrowed from its prior outlook of $130-145 billion.",
      "quote": "We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion, narrowed from our prior outlook of $130-145 billion."
     },
     {
+     "id": "F11",
+     "topic": "segment",
+     "key": false,
+     "text": "Family of Apps had $17,117 million income from operations in the third quarter of 2026; Reality Labs had a loss from operations of $4,129 million.",
+     "quote": "Family of Apps $ 17,117  $ 24,967  $ 67,410  $ 71,702  Reality Labs (4,129) (4,432) (12,775) (13,171) Total income from operations $ 12,988  $ 20,535"
+    },
+    {
+     "id": "F12",
+     "topic": "revenue",
+     "key": false,
+     "text": "Advertising revenue was $63,061 million in the third quarter of 2026, compared to $50,082 million in the third quarter of 2025.",
+     "quote": "Advertising $ 63,061  $ 50,082"
+    },
+    {
      "id": "F13",
+     "topic": "other",
+     "key": false,
+     "text": "Family daily active people (DAP) was 3.64 billion on average for September 2026, an increase of 3% year-over-year.",
+     "quote": "Family daily active people (DAP) – DAP was 3.64 billion on average for September 2026, an increase of 3% year-over-year."
+    },
+    {
+     "id": "F14",
+     "topic": "other",
+     "key": false,
+     "text": "Ad impressions delivered across Meta's Family of Apps increased by 10% year-over-year.",
+     "quote": "Ad impressions – Ad impressions delivered across our Family of Apps increased by 10% year-over-year."
+    },
+    {
+     "id": "F15",
+     "topic": "other",
+     "key": false,
+     "text": "Average price per ad increased by 14% year-over-year.",
+     "quote": "Average price per ad – Average price per ad increased by 14% year-over-year."
+    },
+    {
+     "id": "F16",
+     "topic": "cash",
+     "key": false,
+     "text": "Cash, cash equivalents, and marketable securities were $82,450 million as of September 30, 2026.",
+     "quote": "Cash, cash equivalents, and marketable securities – Cash, cash equivalents, and marketable securities were $82.45 billion as of September 30, 2026."
+    },
+    {
+     "id": "F17",
      "topic": "one_time",
      "key": true,
      "text": "Meta's Board of Directors has approved the establishment of a new class of publicly listed, non-voting Class C common stock, with an effective date in January 2027.",
      "quote": "The Board of Directors has approved the establishment of a new class of publicly listed, non-voting Class C common stock, with an effective date in January 2027."
     },
     {
-     "id": "F14",
-     "topic": "other",
+     "id": "F18",
+     "topic": "one_time",
      "key": true,
-     "text": "Meta declared a one-time stock dividend of one share of Class C common stock for each outstanding share of Class A and Class B common stock, contingent upon the effectiveness of the amended certificate of incorporation.",
+     "text": "The Board has declared a one-time stock dividend of one share of Class C common stock for each outstanding share of Class A common stock and Class B common stock, contingent upon, and to be paid after, the effectiveness of the amended and restated certificate of incorporation.",
      "quote": "The Board has also declared a one-time stock dividend of one share of Class C common stock for each outstanding share of Class A common stock and Class B common stock, contingent upon, and to be paid after, the effectiveness of the amended and restated certificate of incorporation."
     }
    ]
@@ -1787,9 +1810,9 @@
   "acc": "0001628280-26-066738",
   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm",
   "accept": "2026-10-21T20:41:42.000Z",
-  "gen": 6,
+  "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 3,
+  "attempts": 1,
   "eps_act": "$0.48",
   "eps_est": "$0.45",
   "surprise": "+6.40%",
@@ -1819,129 +1842,117 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 15개"
+     "note": "사실 14개"
     },
     {
      "stage": "번역",
      "round": 1,
-     "ok": true,
-     "note": "15개 번역"
-    },
-    {
-     "stage": "작성",
-     "round": 1,
      "ok": false,
-     "note": "항목 10개"
+     "note": "14개 번역"
     }
    ],
    "issues": [
-    "[작성] metric Non-GAAP EPS: EPS 지표 $0.48가 이번 분기 희석 EPS 0.22와 다름"
+    "[번역] F10: 영문에 없는 수치 1,000",
+    "[번역] F10: 영문 수치 10 million가 번역에서 빠짐"
    ],
    "facts": [
     {
      "id": "F1",
      "topic": "revenue",
      "key": true,
-     "text": "Total revenues for Q3-2026 were $28,046 million.",
+     "text": "Total revenues in Q3 2026 were $28,046 million.",
      "quote": "Total revenues 28,095 24,901 22,387 28,236 28,046"
     },
     {
      "id": "F2",
      "topic": "eps",
      "key": true,
-     "text": "GAAP diluted EPS attributable to common stockholders for Q3-2026 was $0.22.",
+     "text": "GAAP diluted EPS attributable to common stockholders in Q3 2026 was $0.22.",
      "quote": "EPS attributable to common stockholders, diluted (GAAP) 0.39 0.24 0.13 0.32 0.22"
     },
     {
      "id": "F3",
-     "topic": "eps",
+     "topic": "net_income",
      "key": true,
-     "text": "Non-GAAP diluted EPS attributable to common stockholders for Q3-2026 was $0.48.",
-     "quote": "EPS attributable to common stockholders, diluted (non-GAAP) 0.50 0.50 0.41 0.33 0.48"
+     "text": "Net income attributable to common stockholders (GAAP) for Q3 2026 was $787 million.",
+     "quote": "Net income attributable to common stockholders (GAAP) 1,373 840 477 1,114 787"
     },
     {
      "id": "F4",
      "topic": "net_income",
-     "key": true,
-     "text": "GAAP net income attributable to common stockholders for Q3-2026 was $787 million.",
-     "quote": "Net income attributable to common stockholders (GAAP) 1,373 840 477 1,114 787"
-    },
-    {
-     "id": "F5",
-     "topic": "net_income",
-     "key": true,
-     "text": "Non-GAAP net income attributable to common stockholders for Q3-2026 was $1,697 million.",
+     "key": false,
+     "text": "Net income attributable to common stockholders (non-GAAP) for Q3 2026 was $1,697 million.",
      "quote": "Net income attributable to common stockholders (non-GAAP) 1,770 1,761 1,453 1,153 1,697"
     },
     {
-     "id": "F6",
-     "topic": "margin",
+     "id": "F5",
+     "topic": "revenue",
      "key": false,
-     "text": "GAAP gross profit for Q3-2026 was $5,494 million.",
-     "quote": "Total gross profit 5,054 5,009 4,720 4,751 5,494"
+     "text": "Total automotive revenues in Q3 2026 were $20,560 million.",
+     "quote": "Total automotive revenues 21,205 17,693 16,234 20,516 20,560"
+    },
+    {
+     "id": "F6",
+     "topic": "revenue",
+     "key": false,
+     "text": "Energy generation and storage revenue in Q3 2026 was $2,881 million.",
+     "quote": "Energy generation and storage revenue 3,415 3,837 2,408 3,139 2,881"
     },
     {
      "id": "F7",
      "topic": "margin",
      "key": false,
-     "text": "Total GAAP gross margin for Q3-2026 decreased by 160 basis points year-over-year.",
-     "quote": "Total GAAP gross margin 160 bp"
+     "text": "Automotive gross margin (GAAP) in Q3 2026 was 18.5%.",
+     "quote": "Automotive gross margin (GAAP) 17.0% 20.4% 21.1% 16.9% 18.5%"
     },
     {
      "id": "F8",
-     "topic": "revenue",
-     "key": true,
-     "text": "Total quarterly revenue was roughly flat YoY at $28.0B.",
-     "quote": "Revenue Total quarterly revenue was roughly flat YoY at $28.0B."
-    },
-    {
-     "id": "F9",
      "topic": "cash",
      "key": false,
      "text": "Quarter-end cash, cash equivalents and short-term investments was $45.4B.",
      "quote": "Quarter-end cash, cash equivalents and short-term investments was $45.4B."
     },
     {
-     "id": "F10",
+     "id": "F9",
      "topic": "cash",
      "key": false,
-     "text": "Operating cash flow for Q3-2026 was $6.3B and free cash flow was $1.5B.",
+     "text": "Operating cash flow for Q3 2026 was $6.3B and free cash flow was $1.5B.",
      "quote": "Operating cash flow of $6.3B Free cash flow2 of $1.5B"
+    },
+    {
+     "id": "F10",
+     "topic": "segment",
+     "key": true,
+     "text": "Produced and delivered our 10 millionth vehicle.",
+     "quote": "Produced and delivered our 10 millionth vehicle"
     },
     {
      "id": "F11",
      "topic": "segment",
      "key": true,
-     "text": "Total automotive revenues for Q3-2026 were $20,560 million.",
-     "quote": "Total automotive revenues 21,205 17,693 16,234 20,516 20,560"
+     "text": "Record production at Gigafactory Berlin.",
+     "quote": "Record production at Gigafactory Berlin"
     },
     {
      "id": "F12",
      "topic": "segment",
-     "key": false,
-     "text": "Energy generation and storage revenue for Q3-2026 was $2,881 million.",
-     "quote": "Energy generation and storage revenue 3,415 3,837 2,408 3,139 2,881"
+     "key": true,
+     "text": "Energy Storage business demand remained strong in the quarter, with our highest-ever order rate and backlog.",
+     "quote": "Demand for our Energy Storage business remained strong in the quarter, with our highest-ever order rate and backlog."
     },
     {
      "id": "F13",
      "topic": "segment",
-     "key": false,
-     "text": "Services and other revenue for Q3-2026 was $4,605 million.",
-     "quote": "Services and other revenue 3,475 3,371 3,745 4,581 4,605"
+     "key": true,
+     "text": "Launched Cybercab into the Robotaxi fleet in Austin.",
+     "quote": "Launched Cybercab into the Robotaxi fleet in Austin"
     },
     {
      "id": "F14",
-     "topic": "segment",
-     "key": true,
-     "text": "Tesla achieved record quarterly deliveries in several markets, including Canada, Australia, Japan and Taiwan.",
-     "quote": "We achieved record quarterly deliveries in several markets, including Canada, Australia, Japan and Taiwan."
-    },
-    {
-     "id": "F15",
-     "topic": "segment",
-     "key": true,
-     "text": "Record production was achieved at Gigafactory Berlin in Q3-2026.",
-     "quote": "attained record production at Gigafactory Berlin."
+     "topic": "margin",
+     "key": false,
+     "text": "Total gross profit in Q3 2026 was $5,494 million.",
+     "quote": "Total gross profit 5,054 5,009 4,720 4,751 5,494"
     }
    ]
   }

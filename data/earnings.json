@@ -57,8 +57,8 @@
    },
    "quarters": [
     {
-     "cq": "2026-1",
-     "label": "2026 1Q",
+     "cq": "2025-4",
+     "label": "2025 4Q",
      "reported": true,
      "eps_act": "$1.62",
      "eps_est": "$1.54",
@@ -66,8 +66,8 @@
      "surprise_pos": true
     },
     {
-     "cq": "2026-2",
-     "label": "2026 2Q",
+     "cq": "2026-1",
+     "label": "2026 1Q",
      "reported": true,
      "eps_act": "$1.87",
      "eps_est": "$1.77",
@@ -75,8 +75,8 @@
      "surprise_pos": true
     },
     {
-     "cq": "2026-3",
-     "label": "2026 3Q",
+     "cq": "2026-2",
+     "label": "2026 2Q",
      "reported": true,
      "eps_act": "$2.22",
      "eps_est": "$2.09",
@@ -84,8 +84,8 @@
      "surprise_pos": true
     },
     {
-     "cq": "2026-4",
-     "label": "2026 4Q",
+     "cq": "2026-3",
+     "label": "2026 3Q",
      "reported": true,
      "eps_act": "$2.68",
      "eps_est": "$2.47",
@@ -93,16 +93,16 @@
      "surprise_pos": true
     },
     {
-     "cq": "2027-1",
-     "label": "2027 1Q",
+     "cq": "2026-4",
+     "label": "2026 4Q",
      "reported": false,
      "eps_est": "$2.76",
      "rev": "$124.89B",
      "date": "2026-11-18"
     },
     {
-     "cq": "2027-2",
-     "label": "2027 2Q",
+     "cq": "2027-1",
+     "label": "2027 1Q",
      "reported": false,
      "eps_est": "$3.21",
      "rev": "$142.86B"
