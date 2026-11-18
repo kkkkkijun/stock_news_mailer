@@ -1150,5 +1150,41 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"fe018b8e-5f10-41ac-9883-7edb3ce51a0c": {
+"name": "BoJ Governor Ueda speech",
+"dt": "2026-11-18T01:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"0652c2ec-abdd-4bf3-8a4e-09ee31fb3ccf": {
+"name": "Average Hourly Earnings (MoM)",
+"dt": "2027-01-01T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"983aad37-8ae4-43cf-a1d3-08640fd76477": {
+"name": "Average Hourly Earnings (YoY)",
+"dt": "2027-01-01T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"14cabcee-65bb-4584-89f0-c77bf5452f78": {
+"name": "Nonfarm Payrolls",
+"dt": "2027-01-01T13:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
