@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # 대기열에서 기다린 실행도 '시작 시점의 최신 main'에서 출발(옛 커밋 기준이면 데이터 커밋이 충돌)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
