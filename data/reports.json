@@ -213,7 +213,7 @@
   "accept": "2026-11-09T21:11:11.000Z",
   "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 2,
+  "attempts": 3,
   "eps_act": "$-0.14",
   "eps_est": "$0.06",
   "surprise": "-348.58%",
@@ -243,19 +243,19 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 14개"
+     "note": "사실 15개"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "14개 번역"
+     "note": "15개 번역"
     },
     {
      "stage": "작성",
      "round": 1,
      "ok": true,
-     "note": "항목 8개"
+     "note": "항목 9개"
     },
     {
      "stage": "최종 점검",
@@ -273,26 +273,26 @@
      "stage": "최종 점검",
      "round": 2,
      "ok": false,
-     "note": "지적 1건(경미한 지적 1건 제외)"
+     "note": "지적 1건(경미한 지적 2건 제외)"
     },
     {
      "stage": "작성",
      "round": 3,
      "ok": true,
-     "note": "항목 8개"
+     "note": "항목 9개"
     },
     {
      "stage": "최종 점검",
      "round": 3,
      "ok": false,
-     "note": "지적 4건(원문 근거 없는 지적 3건 제외)"
+     "note": "지적 4건"
     }
    ],
    "issues": [
-    "[최종 점검·작성] guidance: '2026년 전체 매출 가이던스는 $3.13B~$3.1 — '조정됐다'라고 표현돼 있으나 실제로는 기존 컨센서스나 과거 가이던스와 비교해 상향/하향 여부가 명시되어 있지 않다. 원문에서는 'tightens'라고 표현해 이전보다 범위를 좁혔음을 나타내며, 조정 EBITDA 가이던스는 'reduces'(감소시켰음)라고 분명히 명시. 보고서에서 이 변화(특히 조정 EBITDA 전망 하향)가 드러나지 않아 오해 소지 있음(주요 가이던스 변화의 누락). (원문: Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 bi)",
-    "[최종 점검·작성] headline: ... — 2026년 3분기 순이익이 2025년 동기 흑자(순이익 $15.8M)에서 2026년 적자(순손실 $33.0M)로 전환된 점이 명확한 핵심 실적으로 언급되지 않았음. 이는 원문 1, 2문단의 핵심 성과임. (원문: Net loss was $33.0 million for the third quarter of 2026 compared to net income )",
-    "[최종 점검·작성] headline 및 주요 지표에 순이익/순손실 수치 누락 — 원문 첫 부분과 하이라이트에서 3분기 순손실 $33M 발생, 전년 동기 순이익 $15.8M에서 적자전환이 주요 내용임에도, 보고서 주요 지표·헤드라인에 순이익/순손실 금액이 포함돼 있지 않음. (원문: Net loss was $33.0 million for the third quarter of 2026 compared to net income )",
-    "[최종 점검·작성] guidance: '조정 EBITDA는 $70M~$90M, 조정 EBIT — 분기(2026년 4분기) 조정 EBITDA 전망 수치는 맞으나, 보고서에서는 2026년 전체 조정 EBITDA 가이던스의 변경 사항(감소 조정)이 드러나지 않아 주요 가이던스 변동(하향조정) 누락 의심. (상기 문제와 유사, 그러나 전체 해석 지점에서도 한번 더 누락되어 명시.) (원문: reduces Adjusted EBITDA guidance to a range of $257 million to $277 million)"
+    "[최종 점검·요약] 가이던스: 2026년 전체 연간 매출 가이던스를 $3.13B~$3.15B — 조정 EBITDA에 대해 원문은 가이던스가 '감소(reduces)'했다고 명확히 밝히고 있으나, 요약에서는 단순히 '제시했다'고만 하여 변경(하향) 사실이 누락됨. (원문: Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 bi)",
+    "[최종 점검·요약] 헤드라인: 매출 49% 증가, 순손실 전환·가이던스 범위 조정 — 주요성과 서술에서 전년동기(2025년 3분기) 흑자(순이익)에서 올 3분기(2026년) 순손실로 전환(흑자→적자)한 점을 단순히 '순손실 전환'으로만 기술하였음. 헤드라인인데, 원문 첫 문단 'Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025.'처럼 전년과의 비교(흑자→적자 전환임)를 명확히 언급해야 함. (원문: Net loss was $33.0 million for the third quarter of 2026 compared to net income )",
+    "[최종 점검·작성] metrics: 순손실, v: $33.0M, dir: down — 순손실이 커진 것을 'down'으로 표기했으나(보통 이익/손실에선 'down'은 순이익 감소, 즉 실적악화를 의미), 순손실은 마이너스 수치이므로 금액이 전년 $15.8M 흑자→올해 $33.0M 손실로 실제로는 큰 폭의 악화(순이익이 'down', 순손실은 'up')임. 따라서 순손실의 방향성 표기 기준이 일관되지 않음. (원문: Net loss was $33.0 million for the third quarter of 2026 compared to net income )",
+    "[최종 점검·작성] metrics: 주당순손실(EPS), v: $-0.14, dir: dow — EPS가 전년 $0.07(흑자)→올해 $-0.14(손실)로 변했으나, 'down'으로만 작성. EPS의 'down'이 실제로는 실적악화(이익 감소, 손실 증가)를 의미하는데, 손실 전환임을 별도 표기하지 않았음. (전년동기 대비하여 EPS가 흑자→적자로 변화한 핵심도, metrics 내 또는 headline에서 반영하지 못함) (원문: Net (loss) income per share attributable to common stockholders: Basic $ (0.14) )"
    ],
    "facts": [
     {
@@ -300,98 +300,105 @@
      "topic": "revenue",
      "key": true,
      "text": "Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year.",
-     "quote": "• Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year."
+     "quote": "Revenue was $890.4 million for the third quarter of 2026 compared to $599.0 million for the third quarter of 2025, an increase of 49% year-over-year."
     },
     {
      "id": "F2",
-     "topic": "revenue",
-     "key": false,
-     "text": "United States Revenue was $657,089 thousand in Q3 2026 and $543,523 thousand in Q3 2025.",
-     "quote": "United States Revenue $ 657,089  $ 543,523  21  %"
+     "topic": "net_income",
+     "key": true,
+     "text": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025.",
+     "quote": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025."
     },
     {
      "id": "F3",
-     "topic": "revenue",
+     "topic": "margin",
      "key": false,
-     "text": "Rest of the World Revenue was $233,284 thousand in Q3 2026 and $55,453 thousand in Q3 2025.",
-     "quote": "Rest of the World Revenue 233,284  55,453  321  %"
+     "text": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025.",
+     "quote": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025."
     },
     {
      "id": "F4",
      "topic": "eps",
      "key": true,
-     "text": "Diluted net loss per share was $(0.14) for the third quarter of 2026 and $0.06 for the third quarter of 2025.",
+     "text": "Diluted net (loss) income per share attributable to common stockholders was $(0.14) for the third quarter of 2026 and $0.06 for the third quarter of 2025.",
      "quote": "Diluted $ (0.14) $ 0.06"
     },
     {
      "id": "F5",
-     "topic": "net_income",
+     "topic": "cash",
      "key": false,
-     "text": "Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025.",
-     "quote": "• Net loss was $33.0 million for the third quarter of 2026 compared to net income of $15.8 million for the third quarter of 2025."
+     "text": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025.",
+     "quote": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025."
     },
     {
      "id": "F6",
      "topic": "margin",
      "key": false,
-     "text": "Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025.",
-     "quote": "• Gross margin was 57% for the third quarter of 2026 compared to 74% for the third quarter of 2025."
+     "text": "Adjusted EBITDA margin was 9% in the third quarter of 2026 versus 13% in the third quarter of 2025.",
+     "quote": "Adjusted EBITDA margin 9 % 13  %"
     },
     {
      "id": "F7",
      "topic": "guidance",
      "key": true,
-     "text": "Hims & Hers tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion.",
-     "quote": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion"
+     "text": "Hims & Hers tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion and reduces Adjusted EBITDA guidance to a range of $257 million to $277 million.",
+     "quote": "Tightens full year 2026 revenue guidance to a range of $3.13 billion to $3.15 billion and reduces Adjusted EBITDA guidance to a range of $257 million to $277 million"
     },
     {
      "id": "F8",
      "topic": "guidance",
      "key": true,
-     "text": "For the fourth quarter 2026, revenue is expected to be $875 million to $895 million and Adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%.",
-     "quote": "For the fourth quarter 2026, we expect: • Revenue of $875 million to $895 million. • Adjusted EBITDA of $70 million to $90 million, reflecting an Adjusted EBITDA margin of 8% to 10%."
+     "text": "For the fourth quarter 2026, we expect revenue of $875 million to $895 million.",
+     "quote": "For the fourth quarter 2026, we expect:\n• Revenue of $875 million to $895 million."
     },
     {
      "id": "F9",
      "topic": "guidance",
      "key": true,
-     "text": "For the full year 2026, revenue is expected to be $3.13 billion to $3.15 billion and Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%.",
-     "quote": "For the full year 2026, we expect: • Revenue of $3.13 billion to $3.15 billion. • Adjusted EBITDA of $257 million to $277 million, reflecting an Adjusted EBITDA margin of 8% to 9%."
+     "text": "For the full year 2026, we expect revenue of $3.13 billion to $3.15 billion.",
+     "quote": "For the full year 2026, we expect:\n• Revenue of $3.13 billion to $3.15 billion."
     },
     {
      "id": "F10",
      "topic": "segment",
-     "key": true,
-     "text": "Subscribers grew to nearly 2.8 million, up 13% year-over-year in Q3 2026.",
-     "quote": "Subscribers grew to nearly 2.8 million, up 13% year-over-year in Q3 2026"
+     "key": false,
+     "text": "United States revenue was $657,089 thousand for the third quarter of 2026 and $543,523 thousand for the third quarter of 2025.",
+     "quote": "United States Revenue $ 657,089  $ 543,523"
     },
     {
      "id": "F11",
      "topic": "segment",
      "key": false,
-     "text": "Monthly Revenue per Average Subscriber was $105 in Q3 2026 and $81 in Q3 2025.",
-     "quote": "Monthly Revenue per Average Subscriber $ 105  $ 81  30  %"
+     "text": "Rest of the World revenue was $233,284 thousand for the third quarter of 2026 and $55,453 thousand for the third quarter of 2025.",
+     "quote": "Rest of the World Revenue 233,284  55,453"
     },
     {
      "id": "F12",
-     "topic": "cash",
+     "topic": "other",
      "key": false,
-     "text": "Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025.",
-     "quote": "• Net cash provided by operating activities was $65.4 million for the third quarter of 2026 compared to $148.7 million for the third quarter of 2025."
+     "text": "Subscribers (end of period) were 2,788 thousand for the third quarter of 2026 and 2,471 thousand for the third quarter of 2025.",
+     "quote": "Subscribers (end of period) 2,788  2,471"
     },
     {
      "id": "F13",
-     "topic": "one_time",
-     "key": true,
-     "text": "Stock-based compensation expense was $64,477 thousand for the third quarter of 2026 and $40,172 thousand for the third quarter of 2025.",
-     "quote": "Total stock-based compensation expense $ 64,477  $ 40,172 "
+     "topic": "margin",
+     "key": false,
+     "text": "Monthly Revenue per Average Subscriber was $105 for the third quarter of 2026 and $81 for the third quarter of 2025.",
+     "quote": "Monthly Revenue per Average Subscriber $ 105  $ 81"
     },
     {
      "id": "F14",
      "topic": "one_time",
      "key": true,
-     "text": "Restructuring and other related charges included within operating expenses were $3,825 thousand in Q3 2026 and $0 in Q3 2025.",
-     "quote": "Restructuring and other related charges included within operating expenses (3,825) —"
+     "text": "Change in fair value of equity securities was $21,112 thousand in the third quarter of 2026.",
+     "quote": "Change in fair value of equity securities 21,112  —"
+    },
+    {
+     "id": "F15",
+     "topic": "one_time",
+     "key": true,
+     "text": "Restructuring and other related charges were $3,825 thousand in the third quarter of 2026.",
+     "quote": "Restructuring and other related charges 3,825  —"
     }
    ]
   }
@@ -1171,7 +1178,7 @@
   "accept": "2026-10-29T20:05:27.000Z",
   "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 2,
+  "attempts": 3,
   "eps_act": "$1.89",
   "eps_est": "$1.96",
   "surprise": "-3.47%",
@@ -1201,18 +1208,48 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 13개"
+     "note": "사실 14개"
     },
     {
      "stage": "번역",
      "round": 1,
+     "ok": true,
+     "note": "14개 번역"
+    },
+    {
+     "stage": "작성",
+     "round": 1,
+     "ok": true,
+     "note": "항목 9개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 1,
      "ok": false,
-     "note": "13개 번역"
+     "note": "지적 3건"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": true,
+     "note": "항목 9개"
+    },
+    {
+     "stage": "최종 점검",
+     "round": 2,
+     "ok": false,
+     "note": "지적 1건(경미한 지적 1건 제외)"
+    },
+    {
+     "stage": "작성",
+     "round": 3,
+     "ok": false,
+     "note": "항목 9개"
     }
    ],
    "issues": [
-    "[번역] F12: 영문에 없는 수치 12",
-    "[번역] F13: 영문에 없는 수치 12"
+    "[작성] 핵심 사실 F6 누락: This decrease is driven primarily by pre-tax gains of $9.5 b",
+    "[작성] 핵심 사실 F7 누락: North America segment sales increased 6% year-over-year to $"
    ],
    "facts": [
     {
@@ -1224,87 +1261,94 @@
     },
     {
      "id": "F2",
-     "topic": "eps",
-     "key": true,
-     "text": "Diluted earnings per share was $1.89 in the third quarter 2026.",
-     "quote": "Diluted earnings per share $ 1.95  $ 1.89  $ 5.22  $ 10.42 "
+     "topic": "revenue",
+     "key": false,
+     "text": "Excluding the $0.9 billion unfavorable impact from year-over-year changes in foreign exchange rates throughout the quarter, net sales increased 13% compared with third quarter 2025.",
+     "quote": "Excluding the $0.9 billion unfavorable impact from year-over-year changes in foreign exchange rates throughout the quarter, net sales increased 13% compared with third quarter 2025."
     },
     {
      "id": "F3",
-     "topic": "net_income",
+     "topic": "eps",
      "key": true,
      "text": "Net income decreased to $20.7 billion in the third quarter, or $1.89 per diluted share, compared with $21.2 billion, or $1.95 per diluted share, in third quarter 2025.",
      "quote": "Net income decreased to $20.7 billion in the third quarter, or $1.89 per diluted share, compared with $21.2 billion, or $1.95 per diluted share, in third quarter 2025."
     },
     {
      "id": "F4",
-     "topic": "margin",
-     "key": true,
-     "text": "Operating margin was 13.9%—Amazon’s highest operating margin ever.",
-     "quote": "Operating income was $28.1 billion and operating margin was 13.9%—Amazon’s highest operating margin ever"
+     "topic": "net_income",
+     "key": false,
+     "text": "Net income decreased to $20.7 billion in the third quarter, compared with $21.2 billion in third quarter 2025.",
+     "quote": "Net income decreased to $20.7 billion in the third quarter, or $1.89 per diluted share, compared with $21.2 billion, or $1.95 per diluted share, in third quarter 2025."
     },
     {
      "id": "F5",
-     "topic": "guidance",
+     "topic": "margin",
      "key": true,
-     "text": "Net sales are expected to be between $240.0 billion and $247.0 billion, or to grow between 12% and 16% compared with fourth quarter 2025.",
-     "quote": "Net sales are expected to be between $240.0 billion and $247.0 billion, or to grow between 12% and 16% compared with fourth quarter 2025."
+     "text": "Operating margin was 13.9%—Amazon’s highest operating margin ever",
+     "quote": "Operating margin was 13.9%—Amazon’s highest operating margin ever"
     },
     {
      "id": "F6",
-     "topic": "guidance",
-     "key": true,
-     "text": "Operating income is expected to be between $28.5 billion and $33.5 billion, compared with $25.0 billion in fourth quarter 2025.",
-     "quote": "Operating income is expected to be between $28.5 billion and $33.5 billion, compared with $25.0 billion in fourth quarter 2025."
-    },
-    {
-     "id": "F7",
-     "topic": "segment",
-     "key": true,
-     "text": "AWS net sales increased 39.3%—its fastest growth in nearly five years—to a $184 billion annualized revenue run rate.",
-     "quote": "AWS net sales increased 39.3%—its fastest growth in nearly five years—to a $184 billion annualized revenue run rate"
-    },
-    {
-     "id": "F8",
-     "topic": "segment",
-     "key": false,
-     "text": "North America segment sales increased 6% year-over-year to $112.9 billion.",
-     "quote": "North America segment sales increased 6% year-over-year to $112.9 billion."
-    },
-    {
-     "id": "F9",
-     "topic": "segment",
-     "key": false,
-     "text": "International segment sales increased 5% year-over-year to $43.1 billion, or increased 8% excluding changes in foreign exchange rates.",
-     "quote": "International segment sales increased 5% year-over-year to $43.1 billion, or increased 8% excluding changes in foreign exchange rates."
-    },
-    {
-     "id": "F10",
-     "topic": "segment",
-     "key": false,
-     "text": "AWS segment sales increased 39% year-over-year to $46.0 billion.",
-     "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion."
-    },
-    {
-     "id": "F11",
      "topic": "one_time",
      "key": true,
      "text": "This decrease is driven primarily by pre-tax gains of $9.5 billion in third quarter 2025 included in non-operating income (expense) from our investments in Anthropic.",
      "quote": "This decrease is driven primarily by pre-tax gains of $9.5 billion in third quarter 2025 included in non-operating income (expense) from our investments in Anthropic."
     },
     {
-     "id": "F12",
-     "topic": "cash",
+     "id": "F7",
+     "topic": "segment",
+     "key": true,
+     "text": "North America segment sales increased 6% year-over-year to $112.9 billion.",
+     "quote": "North America segment sales increased 6% year-over-year to $112.9 billion."
+    },
+    {
+     "id": "F8",
+     "topic": "segment",
      "key": false,
-     "text": "Operating cash flow increased 29% to $168.3 billion for the trailing twelve months, compared with $130.7 billion for the trailing twelve months ended September 30, 2025.",
-     "quote": "Operating cash flow increased 29% to $168.3 billion for the trailing twelve months, compared with $130.7 billion for the trailing twelve months ended September 30, 2025."
+     "text": "International segment sales increased 5% year-over-year to $43.1 billion, or increased 8% excluding changes in foreign exchange rates.",
+     "quote": "International segment sales increased 5% year-over-year to $43.1 billion, or increased 8% excluding changes in foreign exchange rates."
+    },
+    {
+     "id": "F9",
+     "topic": "segment",
+     "key": true,
+     "text": "AWS segment sales increased 39% year-over-year to $46.0 billion.",
+     "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion."
+    },
+    {
+     "id": "F10",
+     "topic": "segment",
+     "key": false,
+     "text": "North America segment operating income was $8.7 billion, compared with $4.8 billion in third quarter 2025.",
+     "quote": "North America segment operating income was $8.7 billion, compared with $4.8 billion in third quarter 2025."
+    },
+    {
+     "id": "F11",
+     "topic": "segment",
+     "key": false,
+     "text": "International segment operating income was $1.6 billion, compared with $1.2 billion in third quarter 2025.",
+     "quote": "International segment operating income was $1.6 billion, compared with $1.2 billion in third quarter 2025."
+    },
+    {
+     "id": "F12",
+     "topic": "segment",
+     "key": false,
+     "text": "AWS segment operating income was $17.8 billion, compared with $11.4 billion in third quarter 2025.",
+     "quote": "AWS segment operating income was $17.8 billion, compared with $11.4 billion in third quarter 2025."
     },
     {
      "id": "F13",
-     "topic": "cash",
-     "key": false,
-     "text": "Free cash flow decreased to an outflow of $42.4 billion for the trailing twelve months, driven primarily by a year-over-year increase of $94.8 billion in purchases of property and equipment, net of proceeds from sales and incentives.",
-     "quote": "Free cash flow decreased to an outflow of $42.4 billion for the trailing twelve months, driven primarily by a year-over-year increase of $94.8 billion in purchases of property and equipment, net of proceeds from sales and incentives."
+     "topic": "guidance",
+     "key": true,
+     "text": "Net sales are expected to be between $240.0 billion and $247.0 billion, or to grow between 12% and 16% compared with fourth quarter 2025.",
+     "quote": "Net sales are expected to be between $240.0 billion and $247.0 billion, or to grow between 12% and 16% compared with fourth quarter 2025."
+    },
+    {
+     "id": "F14",
+     "topic": "guidance",
+     "key": true,
+     "text": "Operating income is expected to be between $28.5 billion and $33.5 billion, compared with $25.0 billion in fourth quarter 2025.",
+     "quote": "Operating income is expected to be between $28.5 billion and $33.5 billion, compared with $25.0 billion in fourth quarter 2025."
     }
    ]
   }
@@ -1868,7 +1912,7 @@
   "accept": "2026-10-21T20:41:42.000Z",
   "gen": 7,
   "model": "gpt-4.1",
-  "attempts": 2,
+  "attempts": 3,
   "eps_act": "$0.48",
   "eps_est": "$0.45",
   "surprise": "+6.40%",
@@ -1898,47 +1942,41 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 12개, 원문 불일치 1개 제외"
+     "note": "사실 15개"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": true,
-     "note": "12개 번역"
+     "note": "15개 번역"
     },
     {
      "stage": "작성",
      "round": 1,
-     "ok": true,
-     "note": "항목 8개"
-    },
-    {
-     "stage": "최종 점검",
-     "round": 1,
-     "ok": false,
-     "note": "지적 3건"
-    },
-    {
-     "stage": "작성",
-     "round": 2,
-     "ok": false,
-     "note": "항목 8개"
-    },
-    {
-     "stage": "작성",
-     "round": 3,
      "ok": true,
      "note": "항목 9개"
     },
     {
      "stage": "최종 점검",
+     "round": 1,
+     "ok": false,
+     "note": "지적 1건(원문 근거 없는 지적 2건 제외)"
+    },
+    {
+     "stage": "작성",
+     "round": 2,
+     "ok": false,
+     "note": "항목 9개"
+    },
+    {
+     "stage": "작성",
      "round": 3,
      "ok": false,
-     "note": "지적 1건(경미한 지적 4건 제외)"
+     "note": "항목 9개"
     }
    ],
    "issues": [
-    "[최종 점검·작성] \"매출 증가, 1,000만 대 누적 생산 달성\" — 매출 증가는 원문에서 분명하지 않음. 원문 Year-over-Year로 매출이 거의 flat(YoY at $28.0B)라고 언급. 실제로 Q3-2025 Total revenues $28,095M, Q3-2026 $28,046M으로 오히려 감소. 제목에서 핵심 지표 방향성을 반대로 서술함. (원문: Total quarterly revenue was roughly flat YoY at $28.0B.)"
+    "[작성] 핵심 사실 F6 누락: Total quarterly revenue was roughly flat year-over-year at $"
    ],
    "facts": [
     {
@@ -1950,80 +1988,101 @@
     },
     {
      "id": "F2",
+     "topic": "eps",
+     "key": true,
+     "text": "Diluted EPS attributable to common stockholders (GAAP) for Q3-2026 was $0.22.",
+     "quote": "EPS attributable to common stockholders, diluted (GAAP) 0.39 0.24 0.13 0.32 0.22"
+    },
+    {
+     "id": "F3",
      "topic": "net_income",
      "key": true,
      "text": "Net income attributable to common stockholders (GAAP) for Q3-2026 was $787 million.",
      "quote": "Net income attributable to common stockholders (GAAP) 1,373 840 477 1,114 787"
     },
     {
-     "id": "F3",
-     "topic": "eps",
-     "key": true,
-     "text": "EPS attributable to common stockholders, diluted (GAAP) for Q3-2026 was $0.22.",
-     "quote": "EPS attributable to common stockholders, diluted (GAAP) 0.39 0.24 0.13 0.32 0.22"
-    },
-    {
      "id": "F4",
-     "topic": "eps",
-     "key": false,
-     "text": "EPS attributable to common stockholders, diluted (non-GAAP) for Q3-2026 was $0.48.",
-     "quote": "EPS attributable to common stockholders, diluted (non-GAAP) 0.50 0.50 0.41 0.33 0.48"
+     "topic": "margin",
+     "key": true,
+     "text": "Automotive gross margin (GAAP) for Q3-2026 was 18.5%.",
+     "quote": "Automotive gross margin (GAAP) 17.0% 20.4% 21.1% 16.9% 18.5%"
     },
     {
      "id": "F5",
      "topic": "margin",
-     "key": true,
-     "text": "Total GAAP gross margin decreased 160 basis points year-over-year.",
+     "key": false,
+     "text": "Total GAAP gross margin decreased by 160 basis points year-over-year.",
      "quote": "Total GAAP gross margin 160 bp"
     },
     {
      "id": "F6",
-     "topic": "guidance",
+     "topic": "revenue",
      "key": true,
-     "text": "We will manage the business such that we ensure a strong balance sheet, maintaining sufficient liquidity to fund our product roadmap, long-term capacity expansion plans – including further vertical integration – and other expenses.",
-     "quote": "We will manage the business such that we ensure a strong balance sheet, maintaining sufficient liquidity to fund our product roadmap, long-term capacity expansion plans – including further vertical integration – and other expenses."
+     "text": "Total quarterly revenue was roughly flat year-over-year at $28.0B.",
+     "quote": "Total quarterly revenue was roughly flat YoY at $28.0B."
     },
     {
      "id": "F7",
+     "topic": "segment",
+     "key": true,
+     "text": "Total automotive revenues for Q3-2026 were $20,560 million.",
+     "quote": "Total automotive revenues 21,205 17,693 16,234 20,516 20,560"
+    },
+    {
+     "id": "F8",
+     "topic": "segment",
+     "key": true,
+     "text": "Energy generation and storage revenue for Q3-2026 was $2,881 million.",
+     "quote": "Energy generation and storage revenue 3,415 3,837 2,408 3,139 2,881"
+    },
+    {
+     "id": "F9",
+     "topic": "cash",
+     "key": false,
+     "text": "Operating cash flow for Q3-2026 was $6.3B.",
+     "quote": "Operating cash flow of $6.3B"
+    },
+    {
+     "id": "F10",
+     "topic": "cash",
+     "key": false,
+     "text": "Free cash flow for Q3-2026 was $1.5B.",
+     "quote": "Free cash flow2 of $1.5B"
+    },
+    {
+     "id": "F11",
      "topic": "cash",
      "key": false,
      "text": "Quarter-end cash, cash equivalents and short-term investments was $45.4B.",
      "quote": "Quarter-end cash, cash equivalents and short-term investments was $45.4B."
     },
     {
-     "id": "F9",
-     "topic": "segment",
-     "key": false,
-     "text": "Total automotive revenues for Q3-2026 were $20,560 million.",
-     "quote": "Total automotive revenues 21,205 17,693 16,234 20,516 20,560"
-    },
-    {
-     "id": "F10",
-     "topic": "segment",
-     "key": false,
-     "text": "Energy generation and storage revenue for Q3-2026 was $2,881 million.",
-     "quote": "Energy generation and storage revenue 3,415 3,837 2,408 3,139 2,881"
-    },
-    {
-     "id": "F11",
-     "topic": "segment",
-     "key": false,
-     "text": "Services and other revenue for Q3-2026 was $4,605 million.",
-     "quote": "Services and other revenue 3,475 3,371 3,745 4,581 4,605"
-    },
-    {
      "id": "F12",
      "topic": "segment",
      "key": true,
-     "text": "Produced and delivered our 10 millionth vehicle in Q3-2026.",
-     "quote": "Produced and delivered our 10 millionth vehicle"
+     "text": "Total vehicle deliveries for Q3-2026 were 486,532, a 2% decrease year-over-year.",
+     "quote": "Total deliveries(1) 497,099 418,227 358,023 480,126 486,532 -2%"
     },
     {
      "id": "F13",
+     "topic": "other",
+     "key": true,
+     "text": "Tesla achieved its second consecutive quarter of TTM revenue in excess of $100B.",
+     "quote": "we achieved our second consecutive quarter of TTM revenue in excess of $100B."
+    },
+    {
+     "id": "F14",
      "topic": "segment",
      "key": true,
-     "text": "Energy storage business had highest-ever order rate and backlog in Q3-2026.",
-     "quote": "Demand for our Energy Storage business remained strong in the quarter, with our highest- ever order rate and backlog."
+     "text": "Produced and delivered our 10 millionth vehicle.",
+     "quote": "Produced and delivered our 10 millionth vehicle"
+    },
+    {
+     "id": "F15",
+     "topic": "segment",
+     "key": false,
+     "text": "Record production at Gigafactory Berlin.",
+     "quote": "Record production at Gigafactory Berlin"
     }
    ]
   }
