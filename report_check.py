@@ -60,7 +60,9 @@ def _in_progress(daily, intraday, rel_et, after_close, base=None):
 
 
 # ---------------------------------------------------------------- ② 수치 대조
-_NUM = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s*(billion|million|thousand|[BMK](?![a-z])|%)?", re.I)
+_NUM = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s*(billion|million|thousand|[BMK](?![a-z])|%|만|억|조)?", re.I)
+# 실제 크기(절댓값) — 'ten million' 단위 ↔ 한국어 '1,000만' 대조용(TSLA 2026-10: 10 millionth → 1,000만 번째 오탐)
+_SCALE = {"thousand": 1e3, "k": 1e3, "million": 1e6, "m": 1e6, "billion": 1e9, "b": 1e9, "만": 1e4, "억": 1e8, "조": 1e12}
 
 
 def numbers_in(text: str) -> list[float]:
@@ -77,12 +79,16 @@ def numbers_in(text: str) -> list[float]:
             out.append(v * 1000)
         elif u in ("thousand", "k"):
             out.append(v / 1000)
+        elif u in ("만", "억", "조"):
+            out.append(v * _SCALE[u] / 1e6)        # 백만 단위로도
+        if u in _SCALE:
+            out.append(v * _SCALE[u])
     return out
 
 
 def _trivial(v: float, raw: str) -> bool:
     """대조에서 뺄 수: 연도·분기·작은 정수(개수·순서)."""
-    if v.is_integer() and 1990 <= v <= 2100:
+    if v.is_integer() and 1990 <= v <= 2100 and re.fullmatch(r"\d{4}\s*", raw):   # '2,000만'·'$2000M'은 연도 아님
         return True
     return v.is_integer() and v < 10 and not re.search(r"[$%]|million|billion|[BMK]\b", raw)
 

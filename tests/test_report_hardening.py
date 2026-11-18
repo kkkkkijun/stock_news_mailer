@@ -104,3 +104,13 @@ def test_report_status_table_and_warnings():
     md, warns = status_markdown(reps, date(2026, 11, 18))
     assert "게시 1 / 전체 3" in md and "| NVDA | 2026-11-18 | 2026 3Q | ✅ 게시 |" in md and "a/b" in md
     assert len(warns) == 1 and warns[0].startswith("HIMS")
+
+
+def test_korean_large_units_match_english_scale():
+    import report_check as R
+    en = "Produced and delivered our 10 millionth vehicle."
+    ko = "누적 1,000만 번째 차량을 생산·인도했다."
+    assert R.unsupported_numbers({"bullets": [ko]}, en) == []
+    assert R.unsupported_numbers({"bullets": [en]}, ko) == []
+    assert R.unsupported_numbers({"bullets": ["누적 2,000만 번째 차량"]}, en) == ["2,000만"]
+    assert R.unsupported_numbers({"bullets": ["매출 $1,158억"]}, "revenue of $115.8 billion") == []
