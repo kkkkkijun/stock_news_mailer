@@ -114,3 +114,10 @@ def test_korean_large_units_match_english_scale():
     assert R.unsupported_numbers({"bullets": [en]}, ko) == []
     assert R.unsupported_numbers({"bullets": ["누적 2,000만 번째 차량"]}, en) == ["2,000만"]
     assert R.unsupported_numbers({"bullets": ["매출 $1,158억"]}, "revenue of $115.8 billion") == []
+
+
+def test_english_number_words_match_digits():
+    import report_check as R
+    en = "Operating cash flow increased 29% to $168.3 billion for the trailing twelve months."
+    assert R.unsupported_numbers({"bullets": ["최근 12개월 영업현금흐름은 29% 증가한 $168.3B."]}, en) == []
+    assert R.unsupported_numbers({"bullets": ["최근 13개월 영업현금흐름 $168.3B."]}, en) == ["13"]

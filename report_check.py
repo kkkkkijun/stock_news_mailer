@@ -65,9 +65,16 @@ _NUM = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s*(billion|million|thousand|[BMK](?![a-
 _SCALE = {"thousand": 1e3, "k": 1e3, "million": 1e6, "m": 1e6, "billion": 1e9, "b": 1e9, "만": 1e4, "억": 1e8, "조": 1e12}
 
 
+# 영어로 쓴 수(trailing twelve months ↔ 12개월: AMZN 2026-10 오탐). 9 이하는 어차피 대조에서 빠진다.
+_WORDNUM = {"ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16,
+            "seventeen": 17, "eighteen": 18, "nineteen": 19, "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50,
+            "sixty": 60, "seventy": 70, "eighty": 80, "ninety": 90, "hundred": 100}
+_WORD_RE = re.compile(r"\b(" + "|".join(_WORDNUM) + r")\b", re.I)
+
+
 def numbers_in(text: str) -> list[float]:
     """문장 속 수치(절댓값). 10억 단위는 백만 단위로도 함께 넣는다($2.36B ↔ 2,360 million)."""
-    out: list[float] = []
+    out: list[float] = [float(_WORDNUM[m.group(1).lower()]) for m in _WORD_RE.finditer(text or "")]
     for m in _NUM.finditer(text or ""):
         try:
             v = float(m.group(1).replace(",", ""))
