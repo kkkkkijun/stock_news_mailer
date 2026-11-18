@@ -12,7 +12,7 @@
   "accept": "2026-11-17T21:20:51.000Z",
   "gen": 6,
   "model": "gpt-4.1",
-  "attempts": 2,
+  "attempts": 3,
   "eps_act": "$2.68",
   "eps_est": "$2.47",
   "surprise": "+8.36%",
@@ -42,18 +42,17 @@
      "stage": "요약",
      "round": 1,
      "ok": true,
-     "note": "사실 15개"
+     "note": "사실 14개"
     },
     {
      "stage": "번역",
      "round": 1,
      "ok": false,
-     "note": "15개 번역"
+     "note": "14개 번역"
     }
    ],
    "issues": [
-    "[번역] F1: 영문에 없는 수치 10",
-    "[번역] F12: 영문에 없는 수치 12"
+    "[번역] F1: 영문에 없는 수치 10"
    ],
    "facts": [
     {
@@ -65,101 +64,94 @@
     },
     {
      "id": "F2",
-     "topic": "segment",
+     "topic": "guidance",
      "key": true,
-     "text": "Data Center revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago.",
-     "quote": "Third-quarter revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago."
+     "text": "Revenue is expected to be $130.0 billion, plus or minus 3%.",
+     "quote": "Revenue is expected to be $130.0 billion, plus or minus 3%."
     },
     {
      "id": "F3",
-     "topic": "segment",
-     "key": false,
-     "text": "Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago.",
-     "quote": "Third-quarter Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago."
-    },
-    {
-     "id": "F4",
-     "topic": "margin",
-     "key": true,
-     "text": "GAAP gross margin was 74.8% and non-GAAP gross margin was 74.9% for the third quarter.",
-     "quote": "For the quarter, GAAP and non-GAAP gross margins were 74.8% and 74.9%, respectively."
-    },
-    {
-     "id": "F5",
-     "topic": "eps",
-     "key": true,
-     "text": "GAAP diluted earnings per share were $2.70 and non-GAAP diluted earnings per share were $2.68 for the third quarter.",
-     "quote": "GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively."
-    },
-    {
-     "id": "F6",
-     "topic": "net_income",
-     "key": true,
-     "text": "Net income for the third quarter was $65.3 billion.",
-     "quote": "Net income $65.3 $59.7 $31.9 9  % 105  %"
-    },
-    {
-     "id": "F7",
      "topic": "guidance",
      "key": true,
-     "text": "NVIDIA’s outlook for the fourth quarter of fiscal 2027 is revenue expected to be $130.0 billion, plus or minus 3%.",
-     "quote": "Revenue is expected to be $130.0 billion, plus or minus 3%. NVIDIA is not assuming any Data Center compute revenue from China in its outlook."
-    },
-    {
-     "id": "F8",
-     "topic": "guidance",
-     "key": true,
-     "text": "GAAP and non-GAAP gross margins for the fourth quarter are expected to be between 71.0% and 72.0%.",
+     "text": "GAAP and non-GAAP gross margins are expected to be between 71.0% and 72.0%.",
      "quote": "GAAP and non-GAAP gross margins are expected to be between 71.0% and 72.0%."
     },
     {
+     "id": "F4",
+     "topic": "guidance",
+     "key": true,
+     "text": "GAAP and non-GAAP operating expenses are expected to be approximately $11.0 billion and $10.7 billion, respectively.",
+     "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $11.0 billion and $10.7 billion, respectively."
+    },
+    {
+     "id": "F5",
+     "topic": "guidance",
+     "key": true,
+     "text": "For the full year fiscal 2027, NVIDIA expects GAAP and non-GAAP tax rates to be between 16.0% and 18.0%, excluding any discrete items and material changes to NVIDIA’s tax environment.",
+     "quote": "For the full year fiscal 2027, NVIDIA expects GAAP and non-GAAP tax rates to be between 16.0% and 18.0%, excluding any discrete items and material changes to NVIDIA’s tax environment."
+    },
+    {
+     "id": "F6",
+     "topic": "eps",
+     "key": true,
+     "text": "GAAP diluted earnings per share were $2.70.",
+     "quote": "GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively."
+    },
+    {
+     "id": "F7",
+     "topic": "eps",
+     "key": true,
+     "text": "Non-GAAP diluted earnings per share were $2.68.",
+     "quote": "GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively."
+    },
+    {
+     "id": "F8",
+     "topic": "net_income",
+     "key": true,
+     "text": "Net income for the third quarter was $65,287 million.",
+     "quote": "Net income $ 65,287   $ 31,910   $ 183,297   $ 77,107   "
+    },
+    {
      "id": "F9",
+     "topic": "margin",
+     "key": true,
+     "text": "GAAP gross margin for the third quarter was 74.8%.",
+     "quote": "For the quarter, GAAP and non-GAAP gross margins were 74.8% and 74.9%, respectively."
+    },
+    {
+     "id": "F10",
+     "topic": "margin",
+     "key": false,
+     "text": "Non-GAAP gross margin for the third quarter was 74.9%.",
+     "quote": "For the quarter, GAAP and non-GAAP gross margins were 74.8% and 74.9%, respectively."
+    },
+    {
+     "id": "F11",
+     "topic": "segment",
+     "key": true,
+     "text": "Data Center revenue for the third quarter was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago.",
+     "quote": "Third-quarter revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago."
+    },
+    {
+     "id": "F12",
+     "topic": "segment",
+     "key": false,
+     "text": "Third-quarter Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago.",
+     "quote": "Third-quarter Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago."
+    },
+    {
+     "id": "F13",
      "topic": "one_time",
      "key": true,
      "text": "In September 2026, NVIDIA’s Board of Directors approved an increase of $150 billion to the company’s share repurchase authorization, without expiration.",
      "quote": "In September 2026, NVIDIA’s Board of Directors approved an increase of $150 billion to the company’s share repurchase authorization, without expiration."
     },
     {
-     "id": "F10",
+     "id": "F14",
      "topic": "one_time",
      "key": true,
      "text": "During the third quarter of fiscal 2027, NVIDIA returned $28.1 billion to shareholders in the form of shares repurchased and cash dividends.",
      "quote": "During the third quarter of fiscal 2027, NVIDIA returned $28.1 billion to shareholders in the form of shares repurchased and cash dividends."
-    },
-    {
-     "id": "F11",
-     "topic": "other",
-     "key": false,
-     "text": "As of the end of the third quarter, NVIDIA had approximately $227.3 billion remaining under its share repurchase authorization.",
-     "quote": "As of the end of the third quarter, the company had approximately $227.3 billion remaining under its share repurchase authorization."
-    },
-    {
-     "id": "F12",
-     "topic": "other",
-     "key": false,
-     "text": "NVIDIA will pay its next quarterly cash dividend of $0.25 per share on December 23, 2026, to all shareholders of record on December 2, 2026.",
-     "quote": "NVIDIA will pay its next quarterly cash dividend of $0.25 per share on December 23, 2026, to all shareholders of record on December 2, 2026."
-    },
-    {
-     "id": "F13",
-     "topic": "guidance",
-     "key": true,
-     "text": "GAAP and non-GAAP operating expenses for the fourth quarter are expected to be approximately $11.0 billion and $10.7 billion, respectively.",
-     "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $11.0 billion and $10.7 billion, respectively."
-    },
-    {
-     "id": "F14",
-     "topic": "other",
-     "key": false,
-     "text": "For the full year fiscal 2027, NVIDIA expects GAAP and non-GAAP tax rates to be between 16.0% and 18.0%, excluding any discrete items and material changes to NVIDIA’s tax environment.",
-     "quote": "For the full year fiscal 2027, NVIDIA expects GAAP and non-GAAP tax rates to be between 16.0% and 18.0%, excluding any discrete items and material changes to NVIDIA’s tax environment."
-    },
-    {
-     "id": "F15",
-     "topic": "other",
-     "key": true,
-     "text": "Vera Rubin NVL72, the most versatile and advanced computing platform ever built, has shipped.",
-     "quote": "Vera Rubin NVL72, the most versatile and advanced computing platform ever built, has shipped"
     }
    ]
   }
