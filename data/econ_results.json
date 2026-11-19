@@ -1186,5 +1186,14 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"129d2c8d-fb91-431f-9ef6-1e99bd4d723f": {
+"name": "BoJ Governor Ueda speech",
+"dt": "2026-11-19T01:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
