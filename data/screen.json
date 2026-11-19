@@ -922,6 +922,20 @@
    "shares_basis": "희석"
   },
   {
+   "t": "PANW",
+   "cik": 1327567,
+   "per": "2026Q3",
+   "tag": "고객계약",
+   "rev": 3445.0,
+   "yoy": 39.2,
+   "gap": null,
+   "accn": "0001327567-26-000033",
+   "opm": 2.8,
+   "gw": 394.0,
+   "shares_dil": 838.0,
+   "shares_basis": "희석"
+  },
+  {
    "t": "WDAY",
    "cik": 1327811,
    "per": "2026Q2",
@@ -1239,7 +1253,6 @@
   "XEL",
   "EXC",
   "NBIS",
-  "PANW",
   "CCEP",
   "PDD",
   "TRI",
