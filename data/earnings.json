@@ -109,10 +109,10 @@
     }
    ],
    "target": {
-    "price": "$150.96",
+    "price": "$147.09",
     "mean": "$246.67",
     "range": "$130~$425",
-    "upside": "+63%",
+    "upside": "+68%",
     "upside_pos": true
    },
    "rec": {
@@ -234,10 +234,10 @@
     }
    ],
    "target": {
-    "price": "$508.29",
+    "price": "$499.63",
     "mean": "$636.12",
     "range": "$440~$870",
-    "upside": "+25%",
+    "upside": "+27%",
     "upside_pos": true
    },
    "rec": {
@@ -359,10 +359,10 @@
     }
    ],
    "target": {
-    "price": "$352.45",
+    "price": "$348.69",
     "mean": "$345.63",
     "range": "$250~$425",
-    "upside": "-2%",
+    "upside": "-1%",
     "upside_pos": false
    },
    "rec": {
@@ -484,10 +484,10 @@
     }
    ],
    "target": {
-    "price": "$282.44",
+    "price": "$273.42",
     "mean": "$400.15",
     "range": "$300~$500",
-    "upside": "+42%",
+    "upside": "+46%",
     "upside_pos": true
    },
    "rec": {
@@ -609,10 +609,10 @@
     }
    ],
    "target": {
-    "price": "$267.74",
+    "price": "$258.00",
     "mean": "$326.09",
     "range": "$230~$405",
-    "upside": "+22%",
+    "upside": "+26%",
     "upside_pos": true
    },
    "rec": {
@@ -734,10 +734,10 @@
     }
    ],
    "target": {
-    "price": "$616.38",
+    "price": "$597.41",
     "mean": "$848.23",
     "range": "$650~$1,050",
-    "upside": "+38%",
+    "upside": "+42%",
     "upside_pos": true
    },
    "rec": {
@@ -859,10 +859,10 @@
     }
    ],
    "target": {
-    "price": "$383.72",
+    "price": "$376.04",
     "mean": "$412.48",
     "range": "$128~$600",
-    "upside": "+7%",
+    "upside": "+10%",
     "upside_pos": true
    },
    "rec": {
@@ -971,10 +971,10 @@
     }
    ],
    "target": {
-    "price": "$17.05",
+    "price": "$16.18",
     "mean": "$28.31",
     "range": "$23~$40",
-    "upside": "+66%",
+    "upside": "+75%",
     "upside_pos": true
    },
    "rec": {
@@ -1096,10 +1096,10 @@
     }
    ],
    "target": {
-    "price": "$6.82",
+    "price": "$6.55",
     "mean": "$12.33",
     "range": "$8~$15",
-    "upside": "+81%",
+    "upside": "+88%",
     "upside_pos": true
    },
    "rec": {
@@ -1216,10 +1216,10 @@
     }
    ],
    "target": {
-    "price": "$15.24",
+    "price": "$14.39",
     "mean": "$56.69",
     "range": "$23~$139",
-    "upside": "+272%",
+    "upside": "+294%",
     "upside_pos": true
    },
    "rec": {
@@ -1341,10 +1341,10 @@
     }
    ],
    "target": {
-    "price": "$156.67",
+    "price": "$153.91",
     "mean": "$222.90",
     "range": "$80~$273",
-    "upside": "+42%",
+    "upside": "+45%",
     "upside_pos": true
    },
    "rec": {
@@ -1445,10 +1445,10 @@
     }
    ],
    "target": {
-    "price": "$53.07",
+    "price": "$51.04",
     "mean": "$93.15",
     "range": "$58~$127",
-    "upside": "+76%",
+    "upside": "+83%",
     "upside_pos": true
    },
    "rec": {
