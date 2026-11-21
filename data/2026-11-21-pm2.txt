@@ -1,0 +1,302 @@
+2026-11-21T22:32:48.520118+09:00
+
+[오늘의 뉴스 요약] 2026-11-21 22:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국의 수출이 1조 달러를 기록하며 세계 교역시장에서 일본을 빠르게 추월하는 흐름이 보이고 있다. 그러나 반도체 호황에도 불구하고 국내 경제 전반의 취업 효과는 제한적이라는 지적이 나오고 있다.
+
+[핵심 뉴스]
+1. (기타) 잘나가는 한국 보며 일본 씁쓸한 이유
+   → 한국이 올해 1조 달러의 수출을 기록하며 세계 10대 교역시장에서 일본을 넘어섰고, 특히 대미 수출이 작년보다 약 478억 달러 증가했다.
+   (매일경제 · 11/21 19:02)
+2. (금리) 기준금리 동결 전망 속 한은 성장률 발표
+   → 한국은행은 26일 통화정책회의에서 기준금리 동결 가능성이 제기되고 있으며, 성장률 전망치를 상향 조정할 것으로 예상된다.
+   (연합뉴스 · 11/21 08:36)
+3. (고용) 반도체 호황에도 취업 유발 효과 미미
+   → 반도체 산업 호황에도 취업 유발 효과는 10억원당 2.4명으로, 전 산업 평균인 8.2명에 비해 낮아 경제 전반으로의 파급 효과는 제한적인 것으로 나타났다.
+   (연합뉴스 · 11/21 09:00)
+4. (기타) 대중 무역 흑자 전환, 반도체 제외 시 적자 확대
+   → 올해 한국의 대중 무역수지가 4년 만에 흑자로 전환되었으나, 반도체를 제외하면 적자 폭이 확대된 것으로 확인됐다.
+   (연합뉴스 · 11/21 07:00)
+5. (환율) 환율 6.2원 상승, 위험회피 심리 작용
+   → 원/달러 환율이 6.2원 상승하여 1,336.2원으로 마감했으며, 이는 달러 강세와 증시 급락에 따른 위험회피 심리가 반영된 것으로 분석된다.
+   (연합뉴스 · 11/20 15:53)
+
+[흐름·전망]
+• 한국의 반도체 수출 호조세가 지속될 경우, 다른 업종에 미치는 전반적인 영향이 어느 정도로 확대될지 주목할 필요가 있다.
+• 한은의 기준금리 결정과 수정 경제 전망 발표는 한국 경제의 향후 방향성을 가늠하는 중요한 이정표가 될 것이다.
+• 대중 무역에서 반도체 의존도를 줄이고 중소 제조업의 경쟁력을 강화하기 위한 새로운 수출 전략이 요구된다.
+• 환율과 금융시장이 불안정한 상황에서 외환자산의 리스크 관리가 중요한 투자 포인트로 떠오를 것으로 예상된다.
+
+📈 해외주식 PART
+🧭 [TSLA] 테슬라 합병 가능성 언급, 이미지 악화와 전력망 기여 확대
+
+📰 [TSLA] Musk hints at potential Tesla-SpaceX merger, no deal yet
+   (Crypto Briefing · 11/21 22:09)
+🏷 중립 | 테슬라-스페이스X 합병 가능성 언급 | 합병 가능성 언급, 실질적 변화 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWU0wcHFDZ3pTekVBbmxiV25qVFhBdG8wRGpfemd0YzdsREZENGNPcHJhWEJNQkppMURFVHN6UUFRTzViSVJ4SlFxYzVoRzZEU2gwTTBWNXpTUTJOeHh5LWh0Nm00aTBiMU1rMGoySl9qOWNwc0lNZkw2aHFXTXhwZjg4X1FmSEg0QXMw?oc=5
+→ 일론 머스크가 테슬라와 스페이스X의 합병 가능성을 언급했습니다. 그러나 현재 공식적인 합의는 이루어지지 않았습니다.
+
+📰 [TSLA] Tesla wants to raise a pollution limit nearly 60-fold near a Fremont elementary school. Parents are fighting back
+   (The Mercury News · 11/21 22:00)
+🏷 악재 | 테슬라, 오염 한도 상향 시도 | 지역 사회 반발로 이미지 악화 | 0
+🔗 https://news.google.com/rss/articles/CBMihAFBVV95cUxNYWNFRlcxYlU5UWJLczRzUHVHUzdRMEQxazBqMmtsUTFDblVzY2Z3a0JwbGRrMEJrMmd6dktjY2twX1VodUVOalREOEFLTDhOZW54VXJyOEpKT1Zac3J2b2tsMmVsd2ZWMjlBR1UtZ0NTNzZOcDBXWjBueDJFUVZWY0pURkM?oc=5
+→ 테슬라가 프리몬트 초등학교 근처의 오염 한도를 60배 가까이 높이려 하고 있어 학부모들이 반발하고 있습니다. 이로 인해 테슬라의 지역 사회와의 관계가 악화될 가능성이 있습니다.
+
+📰 [TSLA] What if your house helped run the grid? Tesla Powerwall owners send stored power back when the grid needs a hand, through 100+ Tesla virtual power plant programs worldwide. Power plants used to need smokestacks. Now they need a garage. @teslaener
+   (X · 11/21 21:00)
+🏷 호재 | 파워월, 전력망에 기여 확대 | 전력망 프로그램 확대 효과 | 0
+🔗 https://news.google.com/rss/articles/CBMibEFVX3lxTFBlTDVoR0s0WVV1akkwMHpDREluak9DMVF0a1BmTUUwbjk2UUlMRnQ5TmQzcU5EdjQ3d2E0d0dvaUNTcFhFanJpSnEtOXZ2MHg5eVdlWVlYaUhvUGZBRGl6T29laUdoeXcxb1lTMg?oc=5
+→ 테슬라 파워월 소유자들이 저장된 전력을 그리드에 공급하는 프로그램이 100개 이상 운영되고 있습니다. 이는 테슬라의 전력망 통합에 긍정적인 신호로 평가됩니다.
+
+🧭 [RDW] RDW에 대한 부정적 전망이 주를 이루고 있음
+
+📰 [RDW] Traders Buy High Volume of Redwire Put Options (NYSE:RDW)
+   (MarketBeat · 11/21 03:23)
+🏷 악재 | RDW 매도 옵션 거래 급증 | 매도 옵션 증가로 인한 불안 | 0
+🔗 https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZTNpQ01zVkNTOGVSU08zVGMzSmFsS2h4ZVJrMDQ4c3EyaEpNc1lPSU00U0tiSTVmT3NaamhpOUdGazhOaGc2T1puQTZfeHZyYTczb0NaQXVza0JaOUcwQ2NvZFNRZjNvc3ViS1JJeUNFdjMtX2RnbmhKNDJYOXlkZHY1MURyUDFrakdMNnA3SlVFbFFkdkk3bERYemxjcFRmWWcyZzRnVGlsdV81VW96UVE4NDR0WDE4?oc=5
+→ RDW의 매도 옵션 거래량이 급증하고 있어 투자자들의 우려가 커지고 있습니다. 이는 시장에서 RDW 주가 하락에 대한 기대감을 나타냅니다.
+
+📰 [RDW] SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW
+   (Yahoo Finance · 11/20 15:58)
+🏷 중립 | RDW, 우주주 투자 전망 혼조 | 혼합된 결과와 전망 때문 | 1
+🔗 https://stocktwits.com/news-articles/markets/equity/spacex-holds-orbit-space-stocks-fall-back-earth-rough-week-fly-asts-rklb-rdw/cNbS4SbR9KQ?.tsrc=rss
+→ Rocket Lab이 100번째 일렉트론 로켓 발사를 완료하며 긍정적인 성과를 올렸습니다. 그러나 다른 우주 관련 주식들이 하락세를 보이면서 RDW의 향후 전망에 대한 우려도 커지고 있습니다.
+
+📰 [RDW] RDW Approves Tesla Driver Assistance Update, Hands Required on the Wheel Above 130 km/h
+   (Pintu · 11/20 13:02)
+🏷 중립 | RDW, 테슬라 보조기능 승인 | RDW의 규정 변경으로 직접 영향 없음 | 0
+🔗 https://news.google.com/rss/articles/CBMijwFBVV95cUxNQnQ0S0VNSGRRZGM3TlVaX0pjdDlEclhPdjJKSXo5VXFHa1doeTJ1LWJ4Q2RleTRDSFRuWUFiWDJLd0RZM2pkVG1HczRaLWs0czU4VGh1S2xwNnNwdmNlWXJ5bmhUQjdCSVBQUXdGeFdzd3J1dGxfSW1aenVFNnl2MzdIS3pDZUlwT2pleVpSNA?oc=5
+→ RDW가 테슬라의 운전 보조 기능 업데이트를 승인했습니다. 그러나 시속 130km/h 이상에서는 운전자가 손을 핸들에 둘 필요가 있는 규정이 추가되었습니다.
+
+🧭 [IREN] IREN 주가 급락 지속, 우려 커짐
+
+📰 [IREN] Riot Platforms Just Gained 18% in a Month on a $28 Billion AI Lease. Take Profits, or Buy More?
+   (Yahoo Finance · 11/21 19:16)
+🏷 중립 | Riot 플랫폼, 18% 상승 소식 | 경쟁사 소식으로 직접 영향 적음 | 0
+🔗 https://www.tikr.com/blog/riot-platforms-just-gained-18-in-a-month-on-a-28-billion-ai-lease-take-profits-or-buy-more?ref=yahoofinance&tlnk=yf-261121-gmf67xmg&.tsrc=rss
+→ Riot Platforms가 Anthropic과의 280억 달러 계약으로 한 달 동안 18% 상승했습니다. 이는 IREN과 관련이 적은 경쟁사의 소식으로, IREN 보유자에게 직접적인 영향을 미치지 않습니다.
+
+📰 [IREN] $IREN is now down ~70% YTD and flirting with single digits a
+   (KuCoin · 11/21 14:30)
+🏷 악재 | IREN 주가 급락, 70% 하락 | 주가 하락으로 인한 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMic0FVX3lxTE9Rbk81QnNFc1NRaXB2eG1qemhFY21GMWlRNU50Wkloa2thRzcyTGk3SmJ3UkwxeWlKV1ZTRENwYVpRcVV4TXhNQ3phdFMweUhGTW9QOTREOG50MnB2Sm1zQ29XamNuZXpabFpjMGlYUlFKT2c?oc=5
+→ IREN 주가가 올해 들어 70% 하락하여 단일 자릿수 가격에 접근하고 있습니다. 이는 투자자들에게 부정적인 신호로 작용할 수 있습니다.
+
+📰 [IREN] IREN (NASDAQ:IREN) Stock Falls 18.1% - Should You Sell?
+   (MarketBeat · 11/21 07:24)
+🏷 악재 | IREN 주가 18.1% 하락 | 주가 하락으로 인해 우려 발생 | 0
+🔗 https://news.google.com/rss/articles/CBMirAFBVV95cUxPWXRyeHlnZTNGc3hvSlBKY2lsc0dyeE5ya1gxTGE2Y0hrSHhVc2RjaF9MZkk2Y0NqaVM1N3Jva2k1aWJWcTlaSVlPaDl4RTFJRmlib0ZxbzdWV3VjOUFpcTB1Y3NGR05mQnl1dUIxYlUteDhVdDhMeUY4YlBCQ3puVk5OVmdaWmRod2htSXFxOEhncDBNRG15Y3c1Rm9McUJwaHJvSnpXaXlScjBK?oc=5
+→ IREN의 주가가 18.1% 하락했으며, 이로 인해 투자자들에게 매도 검토를 해야 할지를 묻고 있습니다. 이 기사는 주가 하락에 대한 우려를 나타내고 있습니다.
+
+🧭 [RKLB] 주가 하락 우려 속 화성 미션 성과 중요
+
+📰 [RKLB] Rocket Lab Stock: 7 Straight Red Days, Down 31%
+   (Trefis · 11/21 17:57)
+🏷 악재 | RKLB, 7일 연속 하락 31% 감소 | 주가 하락으로 인한 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU3M4Vi0yYXFza1RDT1Fnd3V5cWFpSHVvZWpUQkVHeXEtOWFNZEVXVXp6ekxMdnFMVk54Zk5TRW9PdEJfWEtiNlpRS3JzY1g5NGtxWkJvbk9kbks4Z3NoTEhvcGFQcm5wc0RxeG9xdXhDR29KdlQwakdtSFZtMGZ6WTVaRWRXTmdKOE9wMjA3cGwtR0N0UUp2OHBLd1FlVzUyQ1dBVDZWUlU?oc=5
+→ Rocket Lab의 주가는 7일 연속 하락하며 31% 감소했습니다. 이는 투자자들에게 부정적인 신호로 받아들여질 수 있습니다.
+
+📰 [RKLB] Rocket Lab stock falls 10.8% to $45.44 as its Neutron delay meets a tech rout
+   (Startup Fortune · 11/21 16:05)
+🏷 악재 | RKLB 주가 10.8% 하락 | Neutron 발사 지연과 기술주 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMiowFBVV95cUxQTXd1ZHkwWFQxcV9SRDJ0d0dNbnd0TjlNRVRPX3dPWUVMYW8zN3NvbW5CVTdRbGVpSnZXYnhpMWV2QTEzTC1vLURLWDR2ZDdUOGhiUnlNMkptWTk3alZ4aE1JS21LSXBueGx3ZE5Wbk5ELVJXeUdkY20zY2RLNFlYOF93dEtLWTh6RUltbFJHLV9xTHc2S2ZVdGFWcFNJd2FEb29J?oc=5
+→ Rocket Lab의 Neutron 발사 지연으로 인해 주가가 10.8% 하락했습니다. 이는 기술주 전반의 하락과 맞물려 발생한 상황입니다.
+
+📰 [RKLB] What Does Rocket Lab (RKLB) Achieving A Mars Burn Milestone Mean Now?
+   (Yahoo Finance · 11/21 10:13)
+🏷 호재 | RKLB, 화성 미션 성과 달성 | 정부 고객을 위한 임무 성공 | 0
+🔗 https://finance.yahoo.com/technology/articles/does-rocket-lab-rklb-achieving-011345764.html?.tsrc=rss
+→ RKLB가 NASA의 ESCAPADE 우주선의 화성 주입을 성공적으로 완료했다. 이는 풀고객을 위한 복잡한 우주 임무 작전으로의 확장을 의미하며, RKLB의 기술력과 신뢰성을 높여준다.
+
+🧭 [COHR] 코히런 자사주 매입으로 긍정적이나 주가는 하락
+
+📰 [COHR] Coherent Buyback Puts Fabrinet Stock Back In The AI Infrastructure Spotlight
+   (Simply Wall St · 11/21 22:09)
+🏷 호재 | 코히런 자사주 매입 소식 | 자사주 매입으로 긍정적 영향 | 0
+🔗 https://news.google.com/rss/articles/CBMiuwFBVV95cUxObmIzYzJDRmFDazA0NzFwbXkxXzVEWUVPOWM1UGFHUlZQQWI5Sm9TSkdZdWxfbm5BQmtFRDVvbHotU2k1SWxkNTBqeERGOHA3eXNxc2tSVVVaaHNBWEZNelBvbHdHTWxpbTZoN1lxT1p5NTJmdmhWX25jZHlqeGRLWi11NE5oRkJCcTVQWUY2QTN0ZTZwa0xsajFoSXRlazd5WEplM25SUGNnbUdfOUFLWHV0cUF4SXNnZXpJ0gHAAUFVX3lxTE85WGxQLWd1LUNOSzlJU3MyQy1teDBnV1BySXFmcjBiZG1XWTNaU3JwMkdLTmhLakNua3c1ZmM3dHlNbDRHUWdYbEU2ZjJkaGJ3TTNZdlZfTm1yVGtxX201VzBJV2NTSHNHWWlmM245cnJkVEZ5SlVWcDlNVnhmY2xyLTlwZDV4ZnE2R1laakVnN1BsZjdTZ3FoejN4d2RraWROQjQzWnBKaHFnQ1V5UklQREQ4cWF6Q3pNaXBmaVptOQ?oc=5
+→ 코히런이 자사주 매입을 발표하며 시장의 주목을 받고 있습니다. 이로 인해 파브리넷 주가도 영향을 받을 것으로 보입니다.
+
+📰 [COHR] Fabrinet Stock Gets An AI Infrastructure Boost
+   (Yahoo Finance · 11/21 17:11)
+🏷 호재 | COHERENT 자사주 매입 발표 | 자사주 매입 발표로 긍정적 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/fabrinet-stock-gets-ai-infrastructure-081144543.html?.tsrc=rss
+→ COHERENT가 20억 달러 자사주 매입 계획을 발표하며 AI 인프라 관련 주목을 받고 있습니다. 이는 회사의 가치를 높일 긍정적인 신호로 해석됩니다.
+
+📰 [COHR] Coherent Drops 12.4% as Optical-Component Stocks Sell Off
+   (24/7 Wall St. · 11/21 13:30)
+🏷 중립 | 코히어런트 주가 12.4% 하락 | 광학 부품 전반적 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMikgFBVV95cUxNRkY1UGsyUk5DQzViN2Eyc213UXBfZnBNOUUtZXZoNFFoQ2JLODJYb2VJQ1I5UXpzb2dneFhmbUdidDIwMlV2NHhpbFFhY1QzV1JsZW9yTjRleUw3R085cHVPU0hLLWlwbUk0N3hQcWliVmwyUEN3dUpFRXlmUnVZdlVDSzgzNXNIYkR3bk1Md1JZUQ?oc=5
+→ 코히어런트의 주가가 12.4% 하락했습니다. 이는 광학 부품 주식이 전반적으로 하락하며 나타난 현상입니다.
+
+🧭 [AAOI] AAOI, 주가 하락과 주식 매각 우려로 악재 발생
+
+📰 [AAOI] Onto Innovation, Micron, Semtech, AMD, and Applied Optoelectronics stocks trade down, what you need to know
+   (The Globe and Mail · 11/21 17:10)
+🏷 중립 | AAOI 주가 하락 소식 | 주가 하락 원인 불명확 | 0
+🔗 https://news.google.com/rss/articles/CBMilgJBVV95cUxORGJrS1J0VExzVFBnSE1GdzhEVmQ3ODhuUXRPc093NDFCN25ramMzSmNuWXJnX1pfemFmWWRoQ2VZc1lYTGw5VDl1XzRKXzVSVmpmblJiTVcybjYwY01NbzJHWHNtcUZCdFJwNElQUTFTMVNEQ1R2Y1FtTUlXZ0pUdEpSdTBXc3EyTVQtdktCNU04OC10Y3JGc0NNamJZbXZJbVp6YVd4VndDUFFHVHhESnpScjBkRUlPb3luYUFmcHdhTnlfRUhhenZheklDYjBESjFYSDhGMWs3anE0VDdpX3RFa0JHT2M4ZGNaYVR0RVhVNGZFTjdYOHZldFhvQ1NiWUdybzRfUDFIUHFHOS1Ha0x3TlNNQQ?oc=5
+→ AAOI를 포함한 여러 기술주의 주가가 하락했습니다. 이는 해당 주식에 대한 투자자들의 우려를 반영하고 있습니다.
+
+📰 [AAOI] Applied Optoelectronics (AAOI) Stock May Trade At A Discount Despite $550 Million Stock Sale
+   (Simply Wall St · 11/21 05:08)
+🏷 악재 | AAOI, 5억 5천만 달러 주식 매각 | 주식 희석 가능성 언급 | 0
+🔗 https://news.google.com/rss/articles/CBMi1AFBVV95cUxQREg0TjVzVlpQcEJWcThJN0h0VTlMQU5JWUdFYnJKN3JKRlV4dFotb0dNM0c0aThZNU9zRkcyS3pHa3FLeDNjcm5vS3FnT080UVNQMkdOd29jUUUtc2RJVkEzc3Fpb0dGbG5mRnYzS1Y3U1diUzA2WTB4MFREV0lkTkM1dTFqTXROVjdHc3paQXB4U1RIYjBJUGk5LVlUc3VUQncxWXd3elBxZjV1Z0NndEM0NEUwXzdQN2FwczF3VjEzSVhJNHVFNnVrTEJsczQtM0RqZ9IB2gFBVV95cUxQNzJEbFp6MWxQN2JQMktaU0RNV3pCR0l4clRNV1RuZnRCeWZaVjhlcUxzdGltUEhYSnpNWlpORkx0OHd3SGVmUHZSRFRieVNRS2VlQWF2UnYzZ3kxS1Y0UGs4aUFSNzZoRnEzSUJFNXVfZWgzRHNuQkwzd1dTaTk0ZUZzOGFXRFlmbWI0dXpUN3hlVDhzdXRQWHN3UVFhWkZiY3k2QndURzBkcjZod3dGYkVjMS1yMFhjWVZjTnRzMmYtdk41T2FmQ3pHaGZ3WUd3OEdDMUNqQVZ2QQ?oc=5
+→ Applied Optoelectronics가 5억 5천만 달러 규모의 주식 매각을 진행하였으며, 이로 인해 주가가 할인 거래될 가능성이 제기되고 있다. 하지만 이는 자금 조달의 일환으로 해석될 수 있다.
+
+📰 [AAOI] Applied Optoelectronics (AAOI) Shares Plunge Over 16% Amid Tech Selloff on November 20, 2026
+   (GuruFocus · 11/21 05:04)
+🏷 악재 | AAOI 주가 16% 급락 | 기술주 하락세로 인한 급락 | 0
+🔗 https://news.google.com/rss/articles/CBMixgFBVV95cUxQd3pzWHFDR2lpQUFqay1maWdmcWxrUDc0S01TYmdfSEY2R3JYRkxBekRmR0pEczBoSmNNclN3emcyN0t1bG1Oa0RiNWtnNjBIZFJrMl9zMHhQLVVEZkM1NVRZbkNPQ0wwMTh1ek5aU0w0VWNfTkhSVnBqSXh5UUU1UXZmUFNIdl9nQjJBcmJ1YjVzOWlOc0VQLWY1OHJqa21JdHpHaUdSQ2dPZGFVajZMdm03SVBfTFQ2RnFLM2dDOEdpelQ2UkE?oc=5
+→ 2026년 11월 20일, AAOI의 주가가 기술주 전반의 하락세 속에서 16% 이상 급락했습니다. 이러한 매도 압력이 AAOI 보유자에게 우려를 불러일으킬 수 있습니다.
+
+
+🪙 코인 PART
+🧭 [BTC-USD] 비트코인 불안과 긍정 정보가 혼재 중
+
+📰 [BTC-USD] Bitcoin slips below its 200-week average for the first time since October 2023
+   (Crypto Briefing · 11/21 22:23)
+🏷 악재 | 비트코인, 200주 평균 하회 | 200주 평균 하회로 불안 증대 | 0
+🔗 https://news.google.com/rss/articles/CBMic0FVX3lxTE8ybnVKZFFVMlFrZ09IYmxwd0p6dDVPYnFyZ2Y1cFl5MHpOVHROQXQ5RTJzZGo3UUFkNkc0TTdCdFR0QTNfWmZKaUFTWVhVVHBNMG9jaVZ1S0o2akE4X3R1M3JFcl9iXzFiaDlwMzZvd3RUNk0?oc=5
+→ 비트코인이 2023년 10월 이후 처음으로 200주 평균 아래로 떨어졌습니다. 이는 비트코인 보유자에게 부정적인 시그널로 작용할 수 있습니다.
+
+📰 [BTC-USD] Bitcoin News | Bitcoin Falls Below $57,000 to a Two-Year Low as $2.4 Billion in Liquidations Hit Bullish Traders
+   (Binance · 11/21 22:22)
+🏷 악재 | 비트코인, 2년 최저치 기록 | 비트코인 가격 하락 및 청산 발생 | 0
+🔗 https://news.google.com/rss/articles/CBMiZEFVX3lxTE10ekZBZHk3RmNiZ2tEY0J2eUtMLTN6N2gxZXdkTUNfSEdyN2tpVnJiWEJzN3Z1NVZIVHpDb2M0MEMxakw4a3gxdlV2bE1VSExYX0c4SVU0VGgxTlFnMjJPd2JHdng?oc=5
+→ 비트코인이 2년 만에 57,000달러 아래로 떨어지며 큰 손실을 보였습니다. 24억 달러 규모의 청산이 발생해 매수세에 부정적 영향을 미쳤습니다.
+
+📰 [BTC-USD] Bitcoin Has Traded Below Its 200-Week Average Only 8.4% of the Time. History Says This Is When Patient Investors Get Paid.
+   (The Motley Fool · 11/21 22:19)
+🏷 호재 | 비트코인 200주 평균 하회 8.4% | 과거 데이터에 따른 긍정적 신호 | 0
+🔗 https://news.google.com/rss/articles/CBMizgFBVV95cUxPbFpRY3NjcUpJV1FkcDJuZENXVDNaVTQ3al9CUEU5NWVlNTVmVzljaEM1ZjZtT2VURERGc09mdkFMWEpmSXBEZmttRFBFa0lEc19NLThieHJUQUFxUWFYNjhPXzJpWDR0enpMcnZzbjltWGFOSDMyY293dlVFQUFNMzdzNldJM1dYeGdjdjBFRUJZaTBCQTVIenI5QzlrWXFXQWtBUEZ3RElfYmg3NWI0bTNnMGMya1VzWGJxc1NPd3hLenIyZWJoRlRjWU9wdw?oc=5
+→ 비트코인은 200주 평균 이하에서 8.4%의 시간만 거래되었습니다. 역사적으로 이 시점에 인내하는 투자자들이 보상받는 경우가 많았습니다.
+
+🧭 [ETH-USD] 이더리움 하락 우려 속 신뢰 저하 나타나
+
+📰 [ETH-USD] How Low Could Ethereum Price Go as Exchange Reserves Jump by 210K ETH in Four Days?
+   (CoinGape · 11/21 22:24)
+🏷 악재 | 이더리움 거래소 예치금 급증 | 거래소 예치금 증가로 하락 우려 | 0
+🔗 https://news.google.com/rss/articles/CBMisgFBVV95cUxNdzJVd3laMnBfdGk0dGo3YnRaUkhxNDRyYnVJTm1zMjJtWVpyWHlwUGdackhlbnB1OWozRWNxVlhUSmNqZk5BYktvcTFBQW5fcXZud1lFUUdkSGhHYm90eml4Nm85RmtQeEtLdEY2Rm5ZZjlNajdBMlFBWnZNempPMkxfT1p2NXhDbXVqQkhGU2RLRUJJUVZHdVNmNUxoR0xJQllMTEFXai1mTFgzR3doVi1B?oc=5
+→ 지난 4일 동안 이더리움의 거래소 예치금이 21만 ETH 증가했습니다. 이는 ETH의 시세에 부정적인 영향을 미칠 수 있는 요소로 판단됩니다.
+
+📰 [ETH-USD] Tom Lee Says Ethereum’s 28% Drop in Two Weeks Doesn’t Match Its Fundamentals
+   (24/7 Wall St. · 11/21 21:38)
+🏷 호재 | ETH 28% 하락, 기본면은 양호 | 기본면 양호, 하락 과도 지적 | 0
+🔗 https://news.google.com/rss/articles/CBMizAFBVV95cUxPVjB2ZjZvZm1SWDlJMGNjRTVRdVFscnVPMmhLNmVEQzVzYWhPNTFLbmpzbE1PV0JoNmxpUDhlUmx2VVpjYXBJdUJJcXVmaGRkdmNUcDJVclkzNG9wcVB6SDYzSDhkTWNveDdZV1EtOFFLdW9uOWRBc0Jsd0lpSnh0aXVBZExtTkVDYVZ5VWpfUE0tV05wOFNjdTFnUkFKVFA0T1gzRzJ5S0thWUtRY3RxVWVPVmpTRzJfR2hMMFlIWndiSWgwUzlaa0tvWmc?oc=5
+→ 톰 리는 이더리움의 최근 28% 하락이 기본적 가치에 부합하지 않다고 주장했습니다. 이는 ETH 보유자에게 긍정적인 신호로 해석될 수 있습니다.
+
+📰 [ETH-USD] Ethereum’s Glamsterdam delay reveals a troubling pattern behind its biggest network upgrades
+   (CryptoSlate · 11/21 21:00)
+🏷 악재 | 이더리움 글램스탠담 연기 소식 | 업그레이드 지연으로 신뢰 저하 | 0
+🔗 https://news.google.com/rss/articles/CBMitwFBVV95cUxPS25uOTYzQzN3cUpNLWhnWDk5WlBRbjBYZHBrYXBRX0JVUUVBclZGWmJGREFjejV1dzMtbGtBMDZRWWp6b0dwVUhXZnRRN1Y0RENCS2VCYlRwa2E5SWlYT1BGNUk3Vk9Pd2xOLXpHdGRMT1AxOW90Q285QlNTZGhfWXY3M1lyNDhnTE9qWEZVc2h4LTZXN2hQeS0wbmhaa0UyTC13MU9BUjN2OW9va21ka09UOTN0amM?oc=5
+→ 이더리움의 글램스탠담 업그레이드 지연이 밝혀졌습니다. 이는 주요 네트워크 업그레이드와 관련된 우려를 불러일으키고 있습니다.
+
+🧭 [SOL-USD] 솔라나, ETF 유출 악재와 로드맵 발표 혼재
+
+📰 [SOL-USD] Solana Slumps 75% Below Record High as Spot ETF Outflows Accelerate
+   (BigGo Finance · 11/21 21:35)
+🏷 악재 | 솔라나, ETF 유출로 하락 | 스팟 ETF 유출 증가로 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMidkFVX3lxTE5DYXAzdzZQOTlHZVBBYndYT1dObWtwUDI1TFFmYmEtaEk3Nlk3MHR2U1FwUFZ1ZVhsNkl5bkRDVUZOVWdYZGhGbG8waG9KZUFZcWlBVVJieHhDYmcyejJnTi01c3RRSXJ2Q3FOVFVoc25rYUxiaWc?oc=5
+→ 솔라나가 사상 최고치에서 75% 하락했습니다. 이는 최근 스팟 ETF 유출 증가로 인한 영향입니다.
+
+📰 [SOL-USD] Solana Outlines 2027 Roadmap for Faster, More Scalable Network
+   (KuCoin · 11/21 21:13)
+🏷 호재 | 솔라나 2027년 로드맵 발표 | 네트워크 확장 계획 발표 | 0
+🔗 https://news.google.com/rss/articles/CBMimwFBVV95cUxNRTVqLUJYWUdQUjdkdmNvZ3EzcE5fNFJSSFo4SzhsTTZBYlZESkUtUF9rdEdReDVoUTN2TWRiREFWTmJMSmY0LXpxYXVRN2EwXy1OMS1ESHgwY2d3N090LWJqaFhaMldSdXIwcU1VZklIZkZGNGh2SVVISWlrbVpRTlktNGxtV3Vnbmt1WnlLUWVNNHVmOEhKOG5LVQ?oc=5
+→ 솔라나가 2027년까지 더욱 빠르고 확장 가능한 네트워크를 위한 로드맵을 발표했습니다. 이 계획은 SOL-USD 보유자에게 긍정적인 신호로 해석될 수 있습니다.
+
+📰 [SOL-USD] Solana Price Prediction: SOL Crashes 75% From Peak as ETF Investors Withdraw $5.9M
+   (Coinpaper · 11/21 21:02)
+🏷 악재 | 솔라나, ETF 투자자 철수 악재 | ETFs 투자자 철수로 인한 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMirAFBVV95cUxObjdQMXc4VHdkWHMxVy16YndLUFJCLXZ2Q05CR2U4LVRELU05NXJQRnFkVDIyQi1zellsLUduWW8xWmdpall3Y3oxTmMxcW8zWU9QOV9SbnhrSncyYTl6R3RVWTFzdk85dzZLcjFybWdlVVFTTlZqZlc2MFN5cVRoaHowWjlCSEp0UFR2MmxNRW9CWVQwRDk4QTBPcWxWU3drNVRabk1FSmphTExL?oc=5
+→ 솔라나(SOL)가 ETF 투자자들에 의해 590만 달러가 철수되면서 가격이 최고점에서 75% 하락했습니다. 이러한 자금 유출은 SOL 보유자들에게 부정적인 영향을 미칠 수 있습니다.
+
+🧭 [BMNR] BMNR, BTC와 ETH 하락으로 손실 확대
+
+📰 [BMNR] Bitcoin Drops Below $59K, Wiping Out $1.5B In Crypto Bets: MSTR, BMNR, ASST Stocks Extend Losses
+   (Yahoo Finance · 11/21 03:34)
+🏷 악재 | BMNR 포함 비트코인 하락 | 비트코인 하락으로 손실 확대 | 1
+🔗 https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-drops-below-59-k-wiping-out-1-5-b-in-crypto-bets-mstr-bmnr-asst-stocks-extend-losses/cNbSo2WR917?.tsrc=rss
+→ 비트코인이 59,000달러 아래로 떨어지며 BMNR을 비롯한 암호화폐 관련 주식들이 손실을 보이고 있습니다. 특히 비트코인 채굴업체들이 AI 컴퓨팅에 투자한 부분에서 손실이 확대되고 있습니다.
+
+📰 [BMNR] Bitmine (BMNR) Drops 8.6% to $13.7 as ETH Slides to $1.6K
+   (FXLeaders · 11/21 03:24)
+🏷 악재 | BMNR 8.6% 하락, ETH도 하락 | ETH 하락으로 BMNR도 하락 | 0
+🔗 https://news.google.com/rss/articles/CBMimwFBVV95cUxOM2F6WlpxdkNfVEdfZ1pjXzhWcG53X0lpazBvZGo1cjVDZC1ZQk90R3pKc2ZsUWRCN054WnlkUTBTN2dnVGJ0YnNqM1BYbWJ0clJLVUVkeWhSQzU4WWdoVFBVSEY4d3RELVlsTGNYenVXclk3OUpaM1VmYmE0WXA2OVV6RnBFOGw0MFFsWXBtZXE4UWNaTG53bmxmMA?oc=5
+→ BMNR이 8.6% 하락하여 13.7달러로 떨어졌고, ETH 가격도 1,600달러로 하락했습니다. 이러한 하락세는 BMNR 보유자에게 부정적인 영향을 미칠 수 있습니다.
+
+📰 [BMNR] Why Is Bitmine Immersion Stock Falling on Friday?
+   (Benzinga · 11/21 03:05)
+🏷 중립 | BMNR 주가 하락 이유 분석 | 주가 하락 원인 설명 | 0
+🔗 https://news.google.com/rss/articles/CBMirgFBVV95cUxPYmtKQ09GTnJKcnVhZkVuZnNjSExmTVk5UHF4NVhZSXhBUlJwd3hLb2lkZnQ1ellzT1JIZDJxaFAzXzBYTFN1WEtsTzR0TzU3Rlh4Y3Z3ek5NaWhDeHFrOEszNmtLT2VZZmZHWndXTDB1N3JxU0U4ME1jeXlEdWxoeko5dF9jMXozWWptY19oYnpjR2RSTTB5UHNRN0VEd1ZNRTVuYUU1cFJ2Ul9sakE?oc=5
+→ BMNR(BitMine Immersion) 주가가 지난 금요일 하락했습니다. 이 기사에서는 주가 하락의 원인과 시장의 반응에 대해 설명합니다.
+
+
+🌐 코인시장 PART
+
+[오늘 한눈에]
+오늘 가상자산 시장은 비트코인 가격이 5만 6,000달러 아래로 하락하며 유동성 압박과 매도세가 심화되는 분위기입니다. 대규모 청산과 '극단적 공포구간'에 진입한 투자자들이 나타났습니다.
+
+[핵심 뉴스]
+1. (시세) 비트코인 장중 5만 5,500달러까지 폭락
+   → 비트코인 가격이 장중 5만 5,500달러로 하락하며 투자자들이 큰 매도 압력을 느끼고 있습니다.
+   (코인리더스 · 11/21 19:48)
+2. (시세) 비트코인 '극단적 공포구간' 진입
+   → 비트코인이 '극단적 공포구간'에 진입하면서 21만 명의 강제 청산과 퇴출이 발생했습니다.
+   (르몽드디플로마티크 · 11/21 19:34)
+3. (시세) 비트코인 5만6,000달러 아래로
+   → 유동성 압박으로 인해 비트코인 가격이 5만 6,000달러 아래로 하락하며 매도세가 심화되고 있습니다.
+   (Investing.com 한국어 · 11/21 14:46)
+4. (시세) 가상자산 시총 2조 달러 붕괴
+   → 비트코인 가격의 폭락으로 인해 가상자산 총 시가총액이 2조 달러를 하회하고 있습니다.
+   (코인리더스 · 11/21 19:56)
+5. (시세) 비트코인, 2년 최저치로 하락
+   → 비트코인이 미국 시장의 혼란 속에서 2년 최저치로 떨어졌습니다.
+   (تسنیم · 11/21 17:32)
+
+[흐름·전망]
+• 비트코인 가격의 추가 하락 여부와 장기적인 지지선 유지가 주목됩니다.
+• 비트코인 등 주요 가상자산의 가격 변동성이 커지는 가운데, 투자자 심리 회복이 필요할 것입니다.
+• 단기적으로는 매도 압력이 지속될 것으로 보이며, 알트코인 시장의 동향에도 관심을 가져야 합니다.
+• 시장 유동성과 청산 압력 동향이 향후 가격 회복에 중요한 영향을 미칠 것입니다.
+
+📊 공포탐욕지수
+  - CNN 기준: 10 (Extreme Fear)
+  - 크립토 기준: 12 (Extreme Fear)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 부동산 시장은 재건축초과이익환수제(재초환) 부담금 부과 기한 연장이 없다는 정부 발표로 서울 정비사업 시장이 혼란에 빠진 가운데, 신축 아파트와 재개발 지역으로 수요가 쏠리는 상황을 보이고 있습니다.
+
+[핵심 뉴스]
+1. (재건축) 재건축 대신 얼죽신? 매수세 어디로 튈까
+   → 국토교통부가 재건축초과이익환수제의 부담금 부과 기한을 연장하지 않겠다고 발표하면서 서울 정비사업 시장에 긴장감이 고조되고 있으며, 이에 따라 수요가 신축 단지 및 재개발 지역으로 이동하는 풍선효과가 관찰되고 있습니다.
+   (매일경제 · 11/21 15:15)
+2. (분양청약) 전국 ‘국평’ 평균 분양가 7억 시대
+   → 11월에 예정된 전국 아파트 분양 물량은 4만4000여 가구로, 지난해 11월 대비 58% 증가하였으며, 특히 경기도에서 1만1275가구가 공급될 예정입니다.
+   (매일경제 · 11/21 10:49)
+3. (기타) 서울 무주택자, 결국 경기도로 밀려난다
+   → 부동산 전문가가 서울 무주택자들의 경기도 이주가 심화될 것이라는 경고를 했다.
+   (문화일보 · 11/21 21:20)
+4. (매매) 강남 급매물 쌓이고 집값 꺾이나
+   → 강남 지역에서 급매물이 쌓이고 있는 상황이며, 집값이 꺾일 것이라는 전망도 나오고 있다.
+   (머니투데이 · 11/21 20:28)
+5. (기타) 부동산 전문가의 경고: 무주택자 경기도로 쫓겨날 것
+   → 다시 한번 서울 무주택자들의 경기도 이주에 대한 우려가 커지고 있다.
+   (뉴시스 · 11/21 21:00)
+6. (기타) 부동산에 돌아서는 청년 민심
+   → 대통령 지지율이 하락하면서 청년층의 부동산 민심이 변화하고 있다는 분석이 나온다.
+   (쿠키뉴스 · 11/21 20:00)
+
+[흐름·전망]
+• 서울의 정비사업 시장 내 혼란이 가격 및 수급에 미치는 영향은 장기적으로 주목할 필요가 있습니다.
+• 재건축 수요자가 감소하면서 신축 아파트에 대한 관심이 더욱 높아질 것으로 예상됩니다.
+• 11월의 대규모 아파트 분양이 청약시장에서 어떤 반응을 일으킬지 지켜봐야 하며, 신규 공급이 시장에 미치는 영향이 예상됩니다.
+• 수도권 내 대단지 공급이 활성화됨에 따라 교통 인프라와 주변 생활 편의 시설도 확인할 필요가 있습니다.
+
+💬 트럼프 PART
+최근 24시간 내 새 발언이 없습니다.
