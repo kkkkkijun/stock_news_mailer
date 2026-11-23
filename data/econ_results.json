@@ -741,19 +741,19 @@
 "name": "S&P Global Manufacturing PMI",
 "dt": "2026-11-23T14:45:00Z",
 "act": null,
-"cons": null,
+"cons": "54.6",
 "prev": "54.9",
 "act_n": null,
-"cons_n": null
+"cons_n": 54.6
 },
 "5a045d8e-2e1e-4b3c-85fb-78586fa73d89": {
 "name": "S&P Global Services PMI",
 "dt": "2026-11-23T14:45:00Z",
 "act": null,
-"cons": null,
+"cons": "55.8",
 "prev": "56.1",
 "act_n": null,
-"cons_n": null
+"cons_n": 55.8
 },
 "9b95ac95-5f53-4e75-a166-92c31e08beb0": {
 "name": "Fed's Chair Warsh speech",
@@ -822,10 +822,10 @@
 "name": "Tokyo CPI ex Food, Energy (YoY)",
 "dt": "2026-11-26T23:30:00Z",
 "act": null,
-"cons": null,
+"cons": "3%",
 "prev": "2.4%",
 "act_n": null,
-"cons_n": null
+"cons_n": 3.0
 },
 "53681dc8-a28d-4e2e-a81d-c62769e53606": {
 "name": "ISM Manufacturing PMI",
@@ -1199,6 +1199,33 @@
 "11142892-63d4-4722-993a-052125f49c2a": {
 "name": "ISM Manufacturing PMI",
 "dt": "2027-01-04T15:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"124d9773-9579-4afa-8bc1-0ebf0e48c525": {
+"name": "ADP Employment Change",
+"dt": "2027-01-06T13:15:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"da06b4b7-a3cc-40c2-b641-3961b670cba0": {
+"name": "ISM Services PMI",
+"dt": "2027-01-06T15:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"db5befcf-52ee-478b-9e1d-c77775a9eb34": {
+"name": "FOMC Minutes",
+"dt": "2027-01-06T19:00:00Z",
 "act": null,
 "cons": null,
 "prev": null,
