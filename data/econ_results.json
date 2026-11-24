@@ -1231,5 +1231,23 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"f841777e-c6d7-4363-82fe-fe47222c5773": {
+"name": "Tokyo Consumer Price Index (YoY)",
+"dt": "2027-01-07T23:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
+},
+"bcc0c66a-9096-4ce6-af63-09339aa3b722": {
+"name": "Tokyo CPI ex Food, Energy (YoY)",
+"dt": "2027-01-07T23:30:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
