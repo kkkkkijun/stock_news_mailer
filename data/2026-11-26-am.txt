@@ -1,0 +1,296 @@
+2026-11-26T06:34:56.751262+09:00
+
+[오늘의 뉴스 요약] 2026-11-26 06:30 KST
+
+💹 경제 PART
+
+[오늘 한눈에]
+오늘 한국 경제는 부실채권비율 상승과 기준금리 인상이 유력하다는 우려 속에서 불안한 모습을 보이고 있다. 고금리와 대출금리 상승이 가계 및 기업의 금융 리스크를 가중시키고 있다.
+
+[핵심 뉴스]
+1. (고용) 부실채권비율 12년 만에 최고
+   → 2026년 9월 말 기준 국내은행의 개인사업자 대출과 가계 신용대출 부실채권비율이 각각 0.72%와 0.70%로 12년 만에 최고치를 기록했다.
+   (연합뉴스 · 11/26 06:00)
+2. (금리) 금통위, 기준금리 인상 예상
+   → 한국은행 금통위가 26일 기준금리를 현재 3.00%에서 0.25%p 인상할 것으로 예상되며, 올해 성장률을 3.3%에서 3%대 후반으로 상향 조정할 전망이다.
+   (연합뉴스 · 11/26 05:45)
+3. (금리) 대출금리 5% 시대 돌입
+   → 2026년 10월 신규 가계대출 금리가 5.02%로 3년 만에 연 5%를 초과하였고, 주택담보대출 금리도 14년 7개월 만에 최고치를 기록했다.
+   (매일경제 · 11/25 17:27)
+4. (환율) 환율 소폭 상승, 1,343.2원
+   → 원/달러 환율이 0.8원 상승하여 1,343.2원으로 마감했으며, 외국인 투자자들이 국내 주식을 1조9천억 원어치 순매도하며 시장에 압박을 가했다.
+   (연합뉴스 · 11/25 15:55)
+5. (기타) 국고채 금리 하락, 채권시장 반응
+   → 25일 서울 채권시장에서 국고채 금리가 일제히 하락하며, 3년 만기 금리가 3.583%로, 지난 5월 8일 이후 가장 낮은 수준에 도달했다.
+   (매일경제 · 11/25 17:51)
+
+[흐름·전망]
+• 부실채권 비율 상승은 금융권의 건전성에 부정적인 영향을 미칠 우려가 있어, 향후 정책적인 대응이 필요하다.
+• 기준금리 인상이 가계와 기업의 대출 부담을 가중시킬 가능성이 커서, 소비와 투자가 위축될 수 있는 점에 주목해야 한다.
+• 대출금리의 상승세가 계속될 경우, 고금리 대출 비중 증가와 가계의 재정적 압박이 심화될 가능성도 엿보인다.
+• 환율과 국제유가 상승은 수출업체에 대한 부담을 증가시켜, 외환 영향에도 눈여겨봐야 할 시점이다.
+
+📈 해외주식 PART
+🧭 [TSLA] 테슬라에 대한 긍정적 신뢰 증가세 확인
+
+📰 [TSLA] Apple (AAPL) Pushes Back As 24 7 Tokenized Shares Trading Opens
+   (Yahoo Finance · 11/26 06:11)
+🏷 중립 | 애플, 24/7 토큰화 주식에 반발 | 주요 정보가 TSLA에 직접 영향 없음 | 0
+🔗 https://finance.yahoo.com/markets/crypto/articles/apple-aapl-pushes-back-24-211147818.html?.tsrc=rss
+→ 애플이 토큰화된 주식 거래에 대한 우려를 표명했습니다. 이는 테슬라와 같은 다른 주식의 디지털 표현 및 주주 권리에 영향을 줄 수 있는 사안입니다.
+
+📰 [TSLA] SpaceX stock price crashes on concerns over compute demand
+   (Yahoo Finance · 11/26 05:32)
+🏷 중립 | 테슬라 합병 추측으로 주가 하락 | TSLA에 직접적인 영향 없음 | 0
+🔗 https://blockspace.media/short/spacex-stock-price-crashes-on-concerns-over-compute-demand/?.tsrc=rss
+→ SpaceX의 주가가 테슬라와의 합병 추측으로 하락 압박을 받고 있습니다. 그러나 TSLA 보유자에게 직접적인 영향은 크지 않아 보입니다.
+
+📰 [TSLA] Billionaire Brad Gerstner’s Altimeter Opened a $680 Million Tesla Stake and Exited Qualcomm and Applied Materials
+   (Yahoo Finance · 11/26 05:22)
+🏷 호재 | 억만장자, 테슬라 대규모 투자 | 기관 대량 매수로 신뢰 상승 | 0
+🔗 https://247wallst.com/investing/2026/11/25/billionaire-brad-gerstners-altimeter-opened-a-680-million-tesla-stake-and-exited-qualcomm-and-applied-materials/?.tsrc=rss
+→ 억만장자 브래드 거스터가 테슬라에 6억 8천만 달러 규모의 지분을 보유하게 됐습니다. 그는 퀄컴과 어플라이드 머티어리얼즈의 지분은 매각하며 테슬라에 대한 신뢰를 드러냈습니다.
+
+🧭 [RDW] RDW 신규 계약 체결로 긍정적 흐름 지속
+
+📰 [RDW] Does Redwire (RDW) Change Its Growth Outlook With New Contract And CTO?
+   (Yahoo Finance · 11/25 20:13)
+🏷 호재 | RDW, 신규 계약 및 CTO 임명 | 계약 체결 및 CTO 임명 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/does-redwire-rdw-change-growth-111344439.html?.tsrc=rss
+→ RDW는 AscendArc와 차세대 솔라 윙에 대한 주요 계약을 체결했습니다. 또한, 방산 기술 부문의 CTO로 William Mahoney를 임명하여 기술 개발을 강화할 계획입니다.
+
+📰 [RDW] Can Redwire's ELSA Contract Expand Its Satellite Power Business?
+   (Yahoo Finance · 11/24 22:52)
+🏷 호재 | RDW, ELSA 계약으로 사업 확장 | 계약 체결로 사업 확장 가능 | 0
+🔗 https://finance.yahoo.com/technology/articles/redwires-elsa-contract-expand-satellite-135200140.html?.tsrc=rss
+→ RDW의 ELSA 계약이 위성 전력 사업 확장을 도울 것으로 보입니다. 모듈러 태양광 배열 기술이 확장 가능한 제조를 지원하는 점에서 기대감을 높이고 있습니다.
+
+📰 [RDW] RDW Stock Rises Overnight: Redwire CEO Keeps Buying Shares, But Mizuho Sees 22% Downside
+   (Yahoo Finance · 11/24 11:08)
+🏷 중립 | RDW CEO, 추가 주식 매입 | CEO 주식 매입과 하락 전망 혼재 | 0
+🔗 https://stocktwits.com/news-articles/markets/equity/rdw-stock-rises-overnight-redwire-ceo-buys-shares-mizuho-downside-underperform/cNbrsg2R9js?.tsrc=rss
+→ RDW CEO가 5만 달러 상당의 주식을 추가로 매입했습니다. 그러나 Mizuho는 RDW의 주가가 22% 하락할 것이라고 전망하고 있습니다.
+
+🧭 [IREN] IREN 주가 하락 요인과 긍정적 진전 혼재
+
+📰 [IREN] IREN stock price is down 80% over six months. Here’s why
+   (Yahoo Finance · 11/26 05:18)
+🏷 악재 | IREN 주가 80% 하락 이유 분석 | 자금 조달 불확실성과 하락 원인 | 0
+🔗 https://blockspace.media/short/iren-stock-price-is-down-80-over-six-months-heres-why/?.tsrc=rss
+→ IREN의 주가가 6개월 동안 80% 하락했습니다. 자금 조달 불확실성, 실행 리스크, GPU 렌탈 가격 하락이 투자 신뢰를 떨어뜨리고 있습니다.
+
+📰 [IREN] SpaceX Slashes GPU Pricing? Plus, IREN’s Selloff and CoreWeave’s Distressed Bonds
+   (Yahoo Finance · 11/26 04:57)
+🏷 악재 | 스페이스X GPU 가격 인하 소식 | IREN 주가 하락 지표 확인 | 0
+🔗 https://blockspace.media/podcast/spacex-slashes-gpu-pricing-plus-irens-selloff-and-coreweaves-distressed-bonds/?.tsrc=rss
+→ 스페이스X가 GPU 렌탈 가격을 인하한다는 미확인 보고서가 나왔습니다. IREN의 주가는 하락세를 보이고 있으며, CoreWeave의 채권도 위기를 겪고 있습니다.
+
+📰 [IREN] Will Funding Gap Change IREN Stock Narrative
+   (Yahoo Finance · 11/26 03:10)
+🏷 호재 | IREN, 데이터센터 프로젝트 진전 | 대규모 계약 확보로 긍정적 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/funding-gap-change-iren-stock-181042884.html?.tsrc=rss
+→ IREN은 텍사스와 호주에서 대규모 AI 데이터센터 프로젝트를 진행하고 있으나, 약 60억 달러의 자금 부족과 규제 심사가 우려된다. 그러나 마이크로소프트와 엔비디아와의 계약은 강력한 지원 요소가 된다.
+
+🧭 [RKLB] RKLB에 대한 부정적 전망이 이어지고 있어 주의 필요
+
+📰 [RKLB] AST SpaceMobile Surges 9%, Erasing Early Losses as Space Stocks Diverge; SpaceX Eases, Rocket Lab Holds Steady
+   (Yahoo Finance · 11/26 04:02)
+🏷 중립 | 우주 주식, AST SpaceMobile 급등 | RKLB에 직접 영향 없음 | 0
+🔗 https://247wallst.com/investing/2026/11/25/ast-spacemobile-surges-9-erasing-early-losses-as-space-stocks-diverge-spacex-eases-rocket-lab-holds-steady/?.tsrc=rss
+→ AST SpaceMobile이 급등하며 시장에서 반등세를 보였습니다. Rocket Lab은 안정적인 모습을 유지하고 있지만, SpaceX는 소폭 하락했습니다.
+
+📰 [RKLB] Mizuho Calls Rocket Lab’s Business Model “Among Our Favorites.” It Still Sees 6% Downside
+   (Yahoo Finance · 11/26 02:05)
+🏷 악재 | Mizuho, RKLB 'Underperform' 전망 | 투자의견 하향, 목표가 하향 | 0
+🔗 https://www.tikr.com/blog/mizuho-calls-rocket-labs-business-model-among-our-favorites-it-still-sees-6-downside?ref=yahoofinance&tlnk=yf-261125-4ffhq3f5&.tsrc=rss
+→ Mizuho는 Rocket Lab의 비즈니스 모델을 긍정적으로 평가하지만, 주가가 이미 성장성을 반영하고 있다고 지적했습니다. 이에 따라, $40의 목표가를 제시하며 6% 하락 여지를 경고했습니다.
+
+📰 [RKLB] SpaceX Slides 5% as Gary Black Warns a Tesla Bid Could Push It Below $100; Rocket Lab and AST SpaceMobile Drop 4%
+   (Yahoo Finance · 11/25 23:17)
+🏷 악재 | 스페이스X, 테슬라 합병 우려 | 주가 하락과 경고로 인한 영향 | 0
+🔗 https://247wallst.com/investing/2026/11/25/spacex-slides-5-as-gary-black-warns-a-tesla-bid-could-push-it-below-100-rocket-lab-and-ast-spacemobile-drop-4/?.tsrc=rss
+→ 테슬라의 스페이스X 인수가 RKLB에 악영향을 미칠 수 있다는 경고가 나왔다. 전문가가 주주들에게 투자를 유보하라고 권고하며 시장에서 RKLB와 AST가 하락했다.
+
+🧭 [COHR] COHR의 자사주 매입에 기대와 우려 혼재
+
+📰 [COHR] Coherent (COHR) Authorizes A $2.0b Buyback, Is The 47% Undervaluation Case Intact?
+   (Yahoo Finance · 11/26 05:14)
+🏷 호재 | COHR, 20억 달러 자사주 매입 승인 | 자사주 매입으로 주주 가치 증가 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/coherent-cohr-authorizes-2-0b-201459636.html?.tsrc=rss
+→ Coherent가 20억 달러 규모의 자사주 매입 프로그램을 승인했습니다. 이는 투자자에게 긍정적인 자본 환원 조치로 평가됩니다.
+
+📰 [COHR] Coherent Sinks 10% Despite $15 Million Director Buy, Applied Optoelectronics Plunges 12% as AI Selloff Deepens; Lumentum Tumbles 10%
+   (Yahoo Finance · 11/26 00:53)
+🏷 악재 | COHR, 이사 대규모 매수에도 하락 | 주가 하락과 우려가 커짐 | 0
+🔗 https://247wallst.com/investing/2026/11/25/coherent-sinks-10-despite-15-million-director-buy-applied-optoelectronics-plunges-12-as-ai-selloff-deepens-lumentum-tumbles-10/?.tsrc=rss
+→ COHR의 이사가 1,500만 달러를 투자하였으나, 주가는 그보다 낮게 떨어졌다. AI 하드웨어 관련 우려가 시장에 부정적인 영향을 미치고 있다.
+
+📰 [COHR] Coherent’s Director Bought $15 Million of Stock as It Plunged 13%
+   (Yahoo Finance · 11/26 00:28)
+🏷 호재 | COHR 이사, 1,500만 달러 매입 | 대량 매입으로 신뢰를 표명 | 0
+🔗 https://247wallst.com/investing/2026/11/25/coherents-director-bought-15-million-of-stock-as-it-plunged-13/?.tsrc=rss
+→ COHR의 이사가 주가 하락에도 불구하고 1,500만 달러를 매입했습니다. 이는 보유자의 신뢰를 상징하나, 서류에 한 가지 중요한 세부정보가 공란으로 남아 있어 주의가 필요합니다.
+
+🧭 [AAOI] AAOI, 계약체결로 성장 기대하나 주가 불안 여전
+
+📰 [AAOI] Applied Optoelectronics to Present at the Raymond James TMT & Consumer Conference
+   (Yahoo Finance · 11/26 06:10)
+🏷 호재 | AAOI, 투자자 컨퍼런스 발표 | 투자자 관심 증가 가능성 | 0
+🔗 https://finance.yahoo.com/technology/articles/applied-optoelectronics-present-raymond-james-211000385.html?.tsrc=rss
+→ Applied Optoelectronics가 Raymond James TMT 및 소비자 컨퍼런스에서 발표를 진행할 예정입니다. 이는 회사의 제품과 비전을 투자자들에게 알릴 기회로, 투자자들의 관심을 불러일으킬 수 있습니다.
+
+📰 [AAOI] Coherent Sinks 10% Despite $15 Million Director Buy, Applied Optoelectronics Plunges 12% as AI Selloff Deepens; Lumentum Tumbles 10%
+   (Yahoo Finance · 11/26 00:53)
+🏷 악재 | AAOI, AI 매도 심화로 하락 | 주가 하락 및 시장 불안 감지 | 0
+🔗 https://247wallst.com/investing/2026/11/25/coherent-sinks-10-despite-15-million-director-buy-applied-optoelectronics-plunges-12-as-ai-selloff-deepens-lumentum-tumbles-10/?.tsrc=rss
+→ 광학 네트워크 업계가 AI 매도 압박으로 어려움을 겪고 있으며, AAOI 주가가 12% 하락했습니다. 이와 같은 하락은 전체 시장의 불안감과 관련이 있어 AAOI 보유자에게는 부정적인 소식으로 해석될 수 있습니다.
+
+📰 [AAOI] Supply Deal Might Change The Case For Investing In Applied Optoelectronics (AAOI)
+   (Yahoo Finance · 11/25 20:07)
+🏷 호재 | AAOI, 대형 고객 공급 계약 체결 | 대형 계약 체결로 성장 기대 | 0
+🔗 https://finance.yahoo.com/markets/stocks/articles/supply-deal-might-change-case-110727461.html?.tsrc=rss
+→ Applied Optoelectronics가 Tier 1 데이터센터 고객과 4년 공급 계약을 체결했습니다. 이 계약으로 2027년에는 약 15억 달러의 최소 구매 의무가 있어 향후 수요에 대한 가시성을 확보했습니다.
+
+
+🪙 코인 PART
+🧭 [BTC-USD] 비트코인 하락과 뉴스로 불확실성 커짐
+
+📰 [BTC-USD] With bitcoin crashing, is Strategy (MSTR) in trouble?
+   (Yahoo Finance · 11/26 05:28)
+🏷 악재 | 비트코인 하락, MSTR 문제 발생 | 비트코인 하락으로 자금 조달 어려움 | 0
+🔗 https://blockspace.media/short/with-bitcoin-crashing-is-strategy-mstr-in-trouble/?.tsrc=rss
+→ 비트코인 가격 하락이 MSTR의 자본 조달 여력을 위협하고 있습니다. 이는 MSTR의 전략적 자금 조달 모델에 부정적인 영향을 미칠 수 있습니다.
+
+📰 [BTC-USD] IREN stock price is down 80% over six months. Here’s why
+   (Yahoo Finance · 11/26 05:18)
+🏷 악재 | IREN 주가 80% 급락 이유 | 금융 불확실성이 BTC에 악영향 | 0
+🔗 https://blockspace.media/short/iren-stock-price-is-down-80-over-six-months-heres-why/?.tsrc=rss
+→ IREN의 주가는 금융 불확실성과 실행 위험, GPU 대여 가격 하락으로 6개월 동안 80% 하락했습니다. 이는 비트코인 채굴업체로서의 신뢰에 부정적인 영향을 미치고 있습니다.
+
+📰 [BTC-USD] Kraken’s new credit cards offer up to 4% bitcoin rewards
+   (Yahoo Finance · 11/26 04:21)
+🏷 호재 | 크라켄, 비트코인 리워드 카드 출시 | 비트코인 리워드 제공으로 수요 증가 | 0
+🔗 https://finance.yahoo.com/video/kraken-credit-cards-offer-4-192100513.html?.tsrc=rss
+→ 크라켄은 소비자들이 일상 구매 시 비트코인 리워드를 제공하는 신용카드를 2027년 초 출시할 예정이다. 이 카드는 계좌 잔고에 따라 1%에서 4%까지 리워드를 제공한다.
+
+🧭 [ETH-USD] ETH에 대한 악재가 지속적으로 발생 중
+
+📰 [ETH-USD] Can XRP Reach Standard Chartered’s $12.60 Target by 2028?
+   (Yahoo Finance · 11/26 02:59)
+🏷 악재 | XRP, 2028년 12.60달러 가능성 | XRP 전망으로 ETH에 악영향 | 0
+🔗 https://247wallst.com/investing/cryptocurrency/2026/11/25/can-xrp-reach-standard-chartereds-12-60-target-by-2028/?.tsrc=rss
+→ Standard Chartered는 XRP가 2028년까지 12.60달러에 도달할 수 있다고 전망했습니다. 하지만 공급이 증가하는 상황에서 이 예상은 이더리움에도 영향을 미칠 수 있습니다.
+
+📰 [ETH-USD] Bit Digital Sells Ethereum To Lower Debt By 50%
+   (Yahoo Finance · 11/25 23:43)
+🏷 악재 | 비트디지털, 이더리움 매각 발표 | 대량 매각으로 이더리움 수요 감소 | 0
+🔗 https://www.cryptoprowl.com/releases/bit-digital-sells-ethereum-to-lower-debt-by-50-8060?.tsrc=rss
+→ 비트디지털이 50% 부채를 줄이기 위해 대량의 이더리움을 매각했습니다. 이는 시장에서 이더리움 수요에 부정적 영향을 미칠 수 있습니다.
+
+📰 [ETH-USD] Bit Digital halves Galaxy borrowings with $50 million repayment
+   (Yahoo Finance · 11/25 23:30)
+🏷 악재 | 비트디지털, 5천만 달러 상환 | ETH 매각으로 공급 증가 | 0
+🔗 https://www.proactiveinvestors.com/companies/news/1102445/bit-digital-halves-galaxy-borrowings-with-50-million-repayment-1102445.html?.tsrc=rss
+→ 비트디지털이 갤럭시 디지털에 5천만 달러를 상환하며, 전체 차입금의 절반을 줄였다. 이 상환 자금은 29,825 ETH를 평균 1,676달러에 판매하여 마련되었다.
+
+🧭 [SOL-USD] 일본 금융기관의 솔라나 채택으로 긍정적 흐름 형성
+
+📰 [SOL-USD] Japan's largest financial institutions tap Solana for stablecoin payments and tokenization
+   (Yahoo Finance · 11/26 03:30)
+🏷 호재 | 일본 대형 금융기관, 솔라나 활용 | 스테이블코인 결제로 인한 수요 증가 | 0
+🔗 https://finance.yahoo.com/video/japans-largest-financial-institutions-tap-183000707.html?.tsrc=rss
+→ 일본의 최대 금융기관이 솔라나와 협력하여 스테이블코인 결제 및 토큰화를 추진합니다. 이는 SOL-USD 보유자에게 긍정적인 소식입니다.
+
+📰 [SOL-USD] Japan's biggest banks pick Solana as Fidelity adds DeFi tokens
+   (Yahoo Finance · 11/26 02:00)
+🏷 호재 | 일본 대형 은행, 솔라나 선택 | 일본 대형 은행의 선택은 긍정적 | 0
+🔗 https://finance.yahoo.com/video/japans-biggest-banks-pick-solana-170000036.html?.tsrc=rss
+→ 일본의 주요 은행들이 솔라나를 선택했다는 소식이 전해졌습니다. 이는 Solana의 생태계 확장을 의미하며, 잠재적으로 투자자에게 긍정적인 영향을 줄 수 있습니다.
+
+📰 [SOL-USD] Solana’s Tokenized Stock Market Surpasses $600M as Equities Gain Traction as DeFi Collateral
+   (Yahoo Finance · 11/25 18:02)
+🏷 호재 | 솔라나 토큰화 주식 시장 급증 | 토큰화 주식 시장 성장 호재 | 0
+🔗 https://www.ccn.com/news/crypto/solana-tokenized-stocks-defi-collateral-growth/?.tsrc=rss
+→ 솔라나의 토큰화 주식 시장이 6억 달러를 초과한 후 11월에는 12억 달러에 가까워졌다. 이는 DeFi 담보로서의 관심이 커지고 있음을 나타낸다.
+
+🧭 [BMNR] BMNR, 이더리움 보유 확대 소식에 긍정적
+
+📰 [BMNR] What Bitmine’s Ethereum Buying Cap Could Mean For BMNR Stock
+   (Yahoo Finance · 11/24 21:16)
+🏷 호재 | BMNR, 이더리움 보유 확대 소식 | 자사주 매입 가능성 상승 | 0
+🔗 https://finance.yahoo.com/markets/crypto/articles/bitmine-ethereum-buying-cap-could-121616580.html?.tsrc=rss
+→ BMNR이 이더리움 5% 보유 확대를 목표로 하고 있습니다. 이로 인해 자사주 매입과 같은 자본 활용이 가능해질 전망입니다.
+
+📰 [BMNR] Bitmine Stock: Tom Lee Calls ETH ‘Hard Money’ – But BMNR Share Count Jumps 164%
+   (Yahoo Finance · 11/24 18:44)
+🏷 호재 | BMNR 주식 수 증가 소식 | 주식 수 증가와 ETH 매입 | 0
+🔗 https://www.coinspeaker.com/bitmine-stock-tom-lee-hard-money-shares/?.tsrc=rss
+→ Bitmine Immersion이 7,819 ETH를 추가로 매입했습니다. 이로 인해 BMNR의 주식 수가 164% 증가했으며, 이는 보유자들에게 긍정적인 신호로 작용할 수 있습니다.
+
+📰 [BMNR] Bitmine On Verge Of Owning 5% Of Ethereum After Latest Purchase
+   (Yahoo Finance · 11/23 23:38)
+🏷 호재 | BMNR, 이더리움 5% 목표 임박 | 이더리움 지분 확대에 긍정적 | 0
+🔗 https://www.cryptoprowl.com/releases/bitmine-on-verge-of-owning-5-of-ethereum-after-latest-purchase-8026?.tsrc=rss
+→ BitMine Immersion Technologies가 이더리움의 5% 지분을 확보하는 목표에 가까워졌습니다. 이는 BMNR 보유자에게 긍정적인 소식으로, 상승 가능성을 지닌 것으로 평가됩니다.
+
+
+🌐 코인시장 PART
+오늘 수집된 뉴스가 없습니다.
+
+📊 공포탐욕지수
+  - CNN 기준: 15 (Extreme Fear)
+  - 크립토 기준: 13 (Extreme Fear)
+
+
+🏘️ 부동산 PART
+
+[오늘의 부동산 한눈에]
+오늘 한국 부동산 시장은 수도권의 공적주택 공급 확대와 재건축 규제 논의가 주요한 이슈로 떠올랐습니다. LH는 2030년까지 50만호를 착공하고 공사 발주 규모를 182조원으로 확대할 계획을 밝혔습니다.
+
+[핵심 뉴스]
+1. (공급) 2030년까지 수도권에 아파트 발주 182조원
+   → LH는 2030년까지 수도권에서 아파트 50만호 착공을 계획하며, 아파트 공사 발주 규모는 182조원으로 확대될 예정입니다.
+   (연합뉴스 · 11/25 21:33)
+2. (공급) LH, 5년간 공적주택 50만호 착공 계획
+   → 이재명 대통령은 5년간 수도권 공적주택 50만호 착공을 강조하며, 정부는 2030년까지 공적주택 119만호 공급 계획을 발표했습니다.
+   (연합뉴스 · 11/25 19:11)
+3. (정책) 서울시·국토부, 정비사업 규제 완화 공방
+   → 오세훈 서울시장은 주택 공급을 위한 정비사업 규제 완화를 요구했으나, 국토부는 투기 억제를 이유로 신중한 입장을 보이고 있습니다.
+   (연합뉴스 · 11/25 21:02)
+4. (정책) 국세청장 후보자 인사청문회에서 주택 관련 공방 예상
+   → 국회에서는 안덕수 국세청장 후보자 인사청문회가 열려 주택과 관련된 여러 쟁점이 공방거리가 될 것으로 예상됩니다.
+   (연합뉴스 · 11/26 05:00)
+5. (재건축) 1기 신도시 재초환 공포 확산
+   → 분당의 재건축 초과 이익 환수제와 관련하여 주민들의 반발이 커지고 있으며, 경기 지역에서도 총 8965억원의 부담금이 예고되고 있습니다.
+   (매일경제 · 11/25 17:28)
+6. (매매) 압구정 재건축 아파트, 조망 없는 집보다 20% 비싸게 거래
+   → 서울 강남의 압구정동 아파트에서는 한강 조망이 좋은 매물이 ㎡당 약 20% 비싸게 거래되고 있으며, 시장에서 조망권의 중요성이 부각되고 있습니다.
+   (매일경제 · 11/25 17:32)
+
+[흐름·전망]
+• LH의 대규모 공적주택 공급이 전세 및 매매 시장에 미치는 영향에 주목해야 합니다.
+• 정비사업 규제 완화 논의가 진행됨에 따라 관련 법안의 변화 여부도 중요한 관전 포인트입니다.
+• 재건축 초과 이익 환수제의 부담금 부과가 시장에 미치는 악영향과 주민 반발이 어떻게 전개될지 주의 깊게 살펴봐야 합니다.
+• 강남 아파트시장에서 조망권이 거래 가격에 미치는 영향력 증가로 인해, 향후 아파트 선택 기준에 변화를 가져올 가능성이 높습니다.
+
+💬 트럼프 PART
+
+[오늘 한눈에]
+트럼프는 아이오와에서의 사건 처리에 대한 언론의 반응이 부정적이었다고 비판하며, U.S. 군의 조치가 매우 성공적이었다고 강조했다. 그는 주식 시장과 정치적 결과에 대한 자신의 의견도 언급하며, 자신의 영향을 주장했다.
+
+[주요 발언]
+1. (기타) 트럼프는 아이오와의 사건 처리가 군 덕분에 아주 훌륭히 이루어졌다고 평가하며, 일부 정치인들의 비난을 비판했다.
+   (Truth Social · 11/26 05:27)
+2. (기타) 그는 아이오와에서의 군의 작업이 기대 이상으로 잘 되었다고 보고했다.
+   (Truth Social · 11/26 05:03)
+3. (경제) 트럼프는 11월 3일 선거 결과 때문에 증시가 크게 하락했다고 주장하며, 자신이 출마했다면 결과가 달라졌을 것이라고 언급했다.
+   (Truth Social · 11/26 02:14)
+4. (사법) 그는 일한 오마의 법적 문제에 대한 우려와 관련된 내용을 언급하며, 법적 책임이 다가오고 있다고 말했다.
+   (Truth Social · 11/26 00:20)
+
+[흐름·전망]
+• 트럼프의 발언은 향후 경제 정책에 대한 논의에 영향을 미칠 가능성이 있다.
+• 주식 시장의 향후 변화가 트럼프의 정치적 입지에 어떤 영향을 미칠지 주목할 필요가 있다.
+• 아이오와 사건과 관련된 군의 조치가 정치적 논란으로 이어질 가능성에 주목해야 한다.
+
+※ 트럼프 본인의 소셜미디어 발언으로, 사실 여부는 별도 확인이 필요합니다.
