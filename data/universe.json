@@ -268,16 +268,16 @@
   {
    "t": "MSTR",
    "name": "Strategy Inc",
-   "px": 77.4143,
-   "mcap_nq": 32696.286253,
+   "px": 77.42,
+   "mcap_nq": 32698.693674,
    "sector": "금융",
    "sector_src": "SIC 6199 Finance Services"
   },
   {
    "t": "NVDA",
    "name": "NVIDIA Corporation",
-   "px": 151.95,
-   "mcap_nq": 3661995.0,
+   "px": 151.9531,
+   "mcap_nq": 3662069.71,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
@@ -300,8 +300,8 @@
   {
    "t": "MRVL",
    "name": "Marvell Technology",
-   "px": 130.0252,
-   "mcap_nq": 114019.09788,
+   "px": 130.25,
+   "mcap_nq": 114216.225,
    "sector": "정보기술",
    "sector_src": "GICS"
   },
@@ -532,8 +532,8 @@
   {
    "t": "NBIS",
    "name": "Nebius Group N.V.",
-   "px": 85.9986,
-   "mcap_nq": 25189.196767,
+   "px": 85.9,
+   "mcap_nq": 25160.31659,
    "sector": "정보기술",
    "sector_src": "SIC 7370 Services-Computer Programming, Data Processing, Etc."
   },
@@ -556,8 +556,8 @@
   {
    "t": "TSLA",
    "name": "Tesla",
-   "px": 383.5975,
-   "mcap_nq": 1516268.066191,
+   "px": 383.5155,
+   "mcap_nq": 1515943.940039,
    "sector": "경기소비재",
    "sector_src": "GICS"
   },
@@ -796,8 +796,8 @@
   {
    "t": "SPCX",
    "name": "Space Exploration Technologies Corp.",
-   "px": 125.0723,
-   "mcap_nq": 1698614.874531,
+   "px": 125.0796,
+   "mcap_nq": 1698714.016296,
    "sector": "산업재",
    "sector_src": "수동 보정"
   },
