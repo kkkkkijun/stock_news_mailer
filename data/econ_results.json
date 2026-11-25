@@ -1249,5 +1249,14 @@
 "prev": null,
 "act_n": null,
 "cons_n": null
+},
+"744ee24d-ad3c-4701-86ec-4965b324a3f2": {
+"name": "Michigan Consumer Sentiment Index",
+"dt": "2027-01-08T15:00:00Z",
+"act": null,
+"cons": null,
+"prev": null,
+"act_n": null,
+"cons_n": null
 }
 }
