@@ -831,10 +831,10 @@
 "name": "ISM Manufacturing PMI",
 "dt": "2026-12-01T15:00:00Z",
 "act": null,
-"cons": null,
+"cons": "55.2",
 "prev": "55.5",
 "act_n": null,
-"cons_n": null
+"cons_n": 55.2
 },
 "2239a2f4-c63f-4f9b-88f3-8d7e9a53a0d1": {
 "name": "BoJ Governor Ueda speech",
@@ -858,10 +858,10 @@
 "name": "ISM Services PMI",
 "dt": "2026-12-03T15:00:00Z",
 "act": null,
-"cons": null,
+"cons": "54.5",
 "prev": "54.5",
 "act_n": null,
-"cons_n": null
+"cons_n": 54.5
 },
 "b49ee1fa-42a0-4273-995b-2eb1f7d68f3e": {
 "name": "Average Hourly Earnings (MoM)",
