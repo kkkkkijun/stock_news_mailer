@@ -1,7 +1,7 @@
 {
  "NVDA": {
   "accn": "0001045810-26-000075",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "NVDA",
    "name": "엔비디아",
@@ -142,7 +142,7 @@
  },
  "MSFT": {
   "accn": "0001193125-26-436133",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "MSFT",
    "name": "마이크로소프트",
@@ -280,7 +280,7 @@
  },
  "AAPL": {
   "accn": "0000320193-26-000020",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "AAPL",
    "name": "애플",
@@ -418,7 +418,7 @@
  },
  "GOOGL": {
   "accn": "0001652044-26-000084",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "GOOGL",
    "name": "알파벳",
@@ -559,7 +559,7 @@
  },
  "AMZN": {
   "accn": "0001018724-26-000040",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "AMZN",
    "name": "아마존",
@@ -700,7 +700,7 @@
  },
  "META": {
   "accn": "0001628280-26-066773",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "META",
    "name": "메타",
@@ -841,7 +841,7 @@
  },
  "TSLA": {
   "accn": "0001628280-26-066775",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "TSLA",
    "name": "테슬라",
@@ -982,7 +982,7 @@
  },
  "HIMS": {
   "accn": null,
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "HIMS",
    "name": "힘스",
@@ -1120,7 +1120,7 @@
  },
  "RDW": {
   "accn": null,
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "RDW",
    "name": "레드와이어",
@@ -1258,7 +1258,7 @@
  },
  "PLTR": {
   "accn": "0001321655-26-000048",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "PLTR",
    "name": "팔란티어",
@@ -1396,7 +1396,7 @@
  },
  "RKLB": {
   "accn": "0001819994-26-000074",
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "RKLB",
    "name": "로켓랩",
@@ -1675,7 +1675,7 @@
  },
  "AMGN": {
   "accn": "0000318154-26-000155",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "AMGN",
    "name": "Amgen",
@@ -1813,7 +1813,7 @@
  },
  "CMCSA": {
   "accn": "0001628280-26-066863",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "CMCSA",
    "name": "Comcast Corporation",
@@ -1951,7 +1951,7 @@
  },
  "INTC": {
   "accn": "0000050863-26-000191",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "INTC",
    "name": "Intel Corporation",
@@ -2092,7 +2092,7 @@
  },
  "KLAC": {
   "accn": "0000319201-26-000034",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "KLAC",
    "name": "KLA Corporation",
@@ -2230,7 +2230,7 @@
  },
  "PCAR": {
   "accn": "0001193125-26-436124",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "PCAR",
    "name": "PACCAR",
@@ -2368,7 +2368,7 @@
  },
  "CTAS": {
   "accn": "0000723254-26-000047",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "CTAS",
    "name": "Cintas Corporation",
@@ -2509,7 +2509,7 @@
  },
  "PAYX": {
   "accn": "0000723531-26-000006",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "PAYX",
    "name": "Paychex",
@@ -2647,7 +2647,7 @@
  },
  "LRCX": {
   "accn": "0000707549-26-000054",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "LRCX",
    "name": "Lam Research Corporation",
@@ -3067,7 +3067,7 @@
  },
  "MNST": {
   "accn": "0001104659-26-123503",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "MNST",
    "name": "Monster Beverage Corporation",
@@ -3208,7 +3208,7 @@
  },
  "ADBE": {
   "accn": "0000796343-26-000156",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ADBE",
    "name": "Adobe",
@@ -3349,7 +3349,7 @@
  },
  "FAST": {
   "accn": "0000815556-26-000049",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "FAST",
    "name": "Fastenal Company",
@@ -3487,7 +3487,7 @@
  },
  "CSCO": {
   "accn": "0000858877-26-000185",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "CSCO",
    "name": "Cisco Systems",
@@ -3625,7 +3625,7 @@
  },
  "REGN": {
   "accn": "0000872589-26-000034",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "REGN",
    "name": "Regeneron Pharmaceuticals",
@@ -3766,7 +3766,7 @@
  },
  "IDXX": {
   "accn": "0000874716-26-000135",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "IDXX",
    "name": "IDEXX Laboratories",
@@ -3904,7 +3904,7 @@
  },
  "VRTX": {
   "accn": "0000875320-26-000291",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "VRTX",
    "name": "Vertex Pharmaceuticals Incorporated",
@@ -4045,7 +4045,7 @@
  },
  "ODFL": {
   "accn": "0000878927-26-000033",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ODFL",
    "name": "Old Dominion Freight Line",
@@ -4321,7 +4321,7 @@
  },
  "GILD": {
   "accn": "0000882095-26-000039",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "GILD",
    "name": "Gilead Sciences",
@@ -4879,7 +4879,7 @@
  },
  "MCHP": {
   "accn": "0000827054-26-000062",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "MCHP",
    "name": "Microchip Technology Incorporated",
@@ -5020,7 +5020,7 @@
  },
  "ORLY": {
   "accn": "0000898173-26-000053",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ORLY",
    "name": "O'Reilly Automotive",
@@ -5443,7 +5443,7 @@
  },
  "TTWO": {
   "accn": "0001628280-26-072254",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "TTWO",
    "name": "Take-Two Interactive Software",
@@ -5581,7 +5581,7 @@
  },
  "MSTR": {
   "accn": "0001050446-26-000060",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "MSTR",
    "name": "Strategy Inc",
@@ -5719,7 +5719,7 @@
  },
  "BKNG": {
   "accn": "0001075531-26-000045",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "BKNG",
    "name": "Booking Holdings",
@@ -5860,7 +5860,7 @@
  },
  "ISRG": {
   "accn": "0001035267-26-000071",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ISRG",
    "name": "Intuitive Surgical",
@@ -6418,7 +6418,7 @@
  },
  "AMD": {
   "accn": "0000002488-26-000191",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "AMD",
    "name": "Advanced Micro Devices",
@@ -6559,7 +6559,7 @@
  },
  "ADP": {
   "accn": "0000008670-26-000044",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ADP",
    "name": "Automatic Data Processing",
@@ -6697,7 +6697,7 @@
  },
  "CDNS": {
   "accn": "0000813672-26-000121",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "CDNS",
    "name": "Cadence Design Systems",
@@ -6838,7 +6838,7 @@
  },
  "CSX": {
   "accn": "0000277948-26-000040",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "CSX",
    "name": "CSX Corporation",
@@ -6979,7 +6979,7 @@
  },
  "HON": {
   "accn": "0000773840-26-000143",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "HON",
    "name": "Honeywell International",
@@ -7117,7 +7117,7 @@
  },
  "MAR": {
   "accn": "0001048286-26-000043",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "MAR",
    "name": "Marriott International",
@@ -7537,7 +7537,7 @@
  },
  "PEP": {
   "accn": "0000077476-26-000048",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "PEP",
    "name": "PepsiCo",
@@ -7678,7 +7678,7 @@
  },
  "ROP": {
   "accn": "0000882835-26-000047",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ROP",
    "name": "Roper Technologies",
@@ -7819,7 +7819,7 @@
  },
  "TER": {
   "accn": "0001193125-26-441091",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "TER",
    "name": "Teradyne",
@@ -7960,7 +7960,7 @@
  },
  "TXN": {
   "accn": "0000097476-26-000169",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "TXN",
    "name": "Texas Instruments Incorporated",
@@ -8098,7 +8098,7 @@
  },
  "WDC": {
   "accn": "0001628280-26-066933",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "WDC",
    "name": "Western Digital Corporation",
@@ -8377,7 +8377,7 @@
  },
  "AXON": {
   "accn": "0001628280-26-071242",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "AXON",
    "name": "Axon Enterprise",
@@ -8518,7 +8518,7 @@
  },
  "MDLZ": {
   "accn": "0001628280-26-068256",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "MDLZ",
    "name": "Mondelez International",
@@ -8659,7 +8659,7 @@
  },
  "NFLX": {
   "accn": "0001065280-26-000291",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "NFLX",
    "name": "Netflix",
@@ -8797,7 +8797,7 @@
  },
  "STX": {
   "accn": "0001137789-26-000309",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "STX",
    "name": "Seagate Technology Holdings PLC",
@@ -8935,7 +8935,7 @@
  },
  "ALNY": {
   "accn": "0001178670-26-000076",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ALNY",
    "name": "Alnylam Pharmaceuticals",
@@ -9076,7 +9076,7 @@
  },
  "MPWR": {
   "accn": "0001628280-26-069440",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "MPWR",
    "name": "Monolithic Power Systems",
@@ -9214,7 +9214,7 @@
  },
  "DXCM": {
   "accn": "0001093557-26-000195",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "DXCM",
    "name": "DexCom",
@@ -9355,7 +9355,7 @@
  },
  "TMUS": {
   "accn": "0001283699-26-000129",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "TMUS",
    "name": "T-Mobile US",
@@ -9496,7 +9496,7 @@
  },
  "MELI": {
   "accn": "0001099590-26-000029",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "MELI",
    "name": "MercadoLibre",
@@ -9637,7 +9637,7 @@
  },
  "KDP": {
   "accn": "0001418135-26-000066",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "KDP",
    "name": "Keurig Dr Pepper",
@@ -9919,7 +9919,7 @@
  },
  "FTNT": {
   "accn": "0001262039-26-000027",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "FTNT",
    "name": "Fortinet",
@@ -10057,7 +10057,7 @@
  },
  "NXPI": {
   "accn": "0001413447-26-000059",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "NXPI",
    "name": "NXP Semiconductors N.V.",
@@ -10198,7 +10198,7 @@
  },
  "FANG": {
   "accn": "0001539838-26-000183",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "FANG",
    "name": "Diamondback Energy",
@@ -10336,7 +10336,7 @@
  },
  "PANW": {
   "accn": "0001327567-26-000033",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "PANW",
    "name": "Palo Alto Networks",
@@ -10618,7 +10618,7 @@
  },
  "PYPL": {
   "accn": "0001633917-26-000088",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "PYPL",
    "name": "PayPal Holdings",
@@ -10759,7 +10759,7 @@
  },
  "SHOP": {
   "accn": "0001594805-26-000068",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "SHOP",
    "name": "Shopify Class A Subordinate Voting Shares",
@@ -10897,7 +10897,7 @@
  },
  "LITE": {
   "accn": "0001628280-26-069615",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "LITE",
    "name": "Lumentum Holdings",
@@ -11035,7 +11035,7 @@
  },
  "BKR": {
   "accn": "0001701605-26-000035",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "BKR",
    "name": "Baker Hughes Company",
@@ -11176,7 +11176,7 @@
  },
  "MRNA": {
   "accn": "0001682852-26-000197",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "MRNA",
    "name": "Moderna",
@@ -11458,7 +11458,7 @@
  },
  "DDOG": {
   "accn": "0001628280-26-070292",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "DDOG",
    "name": "Datadog",
@@ -11596,7 +11596,7 @@
  },
  "ABNB": {
   "accn": "0001559720-26-000032",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ABNB",
    "name": "Airbnb",
@@ -11737,7 +11737,7 @@
  },
  "DASH": {
   "accn": "0001792789-26-000070",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "DASH",
    "name": "DoorDash",
@@ -11875,7 +11875,7 @@
  },
  "APP": {
   "accn": "0001751008-26-000069",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "APP",
    "name": "Applovin Corporation",
@@ -12157,7 +12157,7 @@
  },
  "GEHC": {
   "accn": "0001932393-26-000059",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "GEHC",
    "name": "GE HealthCare Technologies",
@@ -12295,7 +12295,7 @@
  },
  "LIN": {
   "accn": "0001628280-26-068079",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "LIN",
    "name": "Linde plc",
@@ -12436,7 +12436,7 @@
  },
  "ARM": {
   "accn": "0001973239-26-000142",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ARM",
    "name": "Arm Holdings plc",
@@ -12574,7 +12574,7 @@
  },
  "ALAB": {
   "accn": "0001736297-26-000045",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "ALAB",
    "name": "Astera Labs",
@@ -12712,7 +12712,7 @@
  },
  "SNDK": {
   "accn": "0001628280-26-068601",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "SNDK",
    "name": "Sandisk Corporation",
@@ -12850,7 +12850,7 @@
  },
  "CRWV": {
   "accn": "0001769628-26-000465",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "CRWV",
    "name": "CoreWeave",
@@ -12991,7 +12991,7 @@
  },
  "SPCX": {
   "accn": "0001628280-26-066880",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "SPCX",
    "name": "Space Exploration Technologies Corp.",
@@ -13089,7 +13089,7 @@
  },
  "HONA": {
   "accn": "0002089271-26-000032",
-  "built": "2026-11-19",
+  "built": "2026-11-26",
   "d": {
    "ticker": "HONA",
    "name": "Honeywell Aerospace",
@@ -13187,7 +13187,7 @@
  },
  "IREN": {
   "accn": null,
-  "built": "2026-11-25",
+  "built": "2026-11-26",
   "d": {
    "ticker": "IREN",
    "name": "아이렌",
