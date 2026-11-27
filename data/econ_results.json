@@ -849,10 +849,10 @@
 "name": "ADP Employment Change",
 "dt": "2026-12-02T13:15:00Z",
 "act": null,
-"cons": null,
+"cons": "80K",
 "prev": "86K",
 "act_n": null,
-"cons_n": null
+"cons_n": 80.0
 },
 "5181b7e1-326c-4e28-9636-3fbaf38279d1": {
 "name": "ISM Services PMI",
@@ -867,10 +867,10 @@
 "name": "Average Hourly Earnings (MoM)",
 "dt": "2026-12-04T13:30:00Z",
 "act": null,
-"cons": null,
+"cons": "0.3%",
 "prev": "0.4%",
 "act_n": null,
-"cons_n": null
+"cons_n": 0.3
 },
 "09a8ce2f-ea31-434b-9c97-68e820b28eac": {
 "name": "Average Hourly Earnings (YoY)",
@@ -885,10 +885,10 @@
 "name": "Nonfarm Payrolls",
 "dt": "2026-12-04T13:30:00Z",
 "act": null,
-"cons": null,
+"cons": "90K",
 "prev": "165K",
 "act_n": null,
-"cons_n": null
+"cons_n": 90.0
 },
 "37382c85-1bad-4245-85f5-5a26a196507e": {
 "name": "Michigan Consumer Sentiment Index",
