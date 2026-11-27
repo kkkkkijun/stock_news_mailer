@@ -812,19 +812,19 @@
 "6e9307f7-a0a1-4975-84e9-137c9da08852": {
 "name": "Tokyo Consumer Price Index (YoY)",
 "dt": "2026-11-26T23:30:00Z",
-"act": null,
+"act": "2.8%",
 "cons": null,
-"prev": "2.8%",
-"act_n": null,
+"prev": "2.7%",
+"act_n": 2.8,
 "cons_n": null
 },
 "07b2112c-6c7b-4d3d-9969-621688dbd587": {
 "name": "Tokyo CPI ex Food, Energy (YoY)",
 "dt": "2026-11-26T23:30:00Z",
-"act": null,
+"act": "2.3%",
 "cons": "3%",
 "prev": "2.4%",
-"act_n": null,
+"act_n": 2.3,
 "cons_n": 3.0
 },
 "53681dc8-a28d-4e2e-a81d-c62769e53606": {
@@ -1237,7 +1237,7 @@
 "dt": "2027-01-07T23:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "2.8%",
 "act_n": null,
 "cons_n": null
 },
@@ -1246,7 +1246,7 @@
 "dt": "2027-01-07T23:30:00Z",
 "act": null,
 "cons": null,
-"prev": null,
+"prev": "2.3%",
 "act_n": null,
 "cons_n": null
 },
