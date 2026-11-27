@@ -831,10 +831,10 @@
 "name": "ISM Manufacturing PMI",
 "dt": "2026-12-01T15:00:00Z",
 "act": null,
-"cons": "55.2",
+"cons": "55",
 "prev": "55.5",
 "act_n": null,
-"cons_n": 55.2
+"cons_n": 55.0
 },
 "2239a2f4-c63f-4f9b-88f3-8d7e9a53a0d1": {
 "name": "BoJ Governor Ueda speech",
@@ -894,10 +894,10 @@
 "name": "Michigan Consumer Sentiment Index",
 "dt": "2026-12-04T15:00:00Z",
 "act": null,
-"cons": null,
+"cons": "52.6",
 "prev": "51.5",
 "act_n": null,
-"cons_n": null
+"cons_n": 52.6
 },
 "1541d767-5d09-46fa-a80f-b6f33a7cd1a4": {
 "name": "Gross Domestic Product (QoQ)",

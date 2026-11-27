@@ -504,7 +504,7 @@
   "name": "아마존",
   "date": "2027-02-05",
   "ts": 1801774800,
-  "est": false,
+  "est": true,
   "detail": {
    "prev": {
     "period": "26.09",
