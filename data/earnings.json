@@ -504,7 +504,7 @@
   "name": "아마존",
   "date": "2027-02-05",
   "ts": 1801774800,
-  "est": true,
+  "est": false,
   "detail": {
    "prev": {
     "period": "26.09",
@@ -909,7 +909,7 @@
     "period": "26.09",
     "eps": "$0.06",
     "eps_range": "$-0.05~$0.20",
-    "rev": "$890.2M",
+    "rev": "$887.7M",
     "growth": "-45.37%",
     "growth_pos": false
    },
@@ -919,9 +919,9 @@
    },
    "next": {
     "period": "26.12",
-    "eps": "$-0.03",
-    "eps_range": "$-0.13~$0.13",
-    "rev": "$906.12M",
+    "eps": "$-0.05",
+    "eps_range": "$-0.15~$0.13",
+    "rev": "$899.97M",
     "growth": "-30.54%",
     "growth_pos": false
    },
@@ -966,15 +966,15 @@
      "cq": "2026-4",
      "label": "2026 4Q",
      "reported": false,
-     "eps_est": "$-0.03",
-     "rev": "$906.12M"
+     "eps_est": "$-0.05",
+     "rev": "$899.97M"
     }
    ],
    "target": {
     "price": "$15.00",
-    "mean": "$27.23",
-    "range": "$21~$40",
-    "upside": "+82%",
+    "mean": "$26.15",
+    "range": "$18~$40",
+    "upside": "+74%",
     "upside_pos": true
    },
    "rec": {
@@ -1347,7 +1347,7 @@
    ],
    "target": {
     "price": "$172.17",
-    "mean": "$222.90",
+    "mean": "$221.93",
     "range": "$80~$273",
     "upside": "+29%",
     "upside_pos": true
@@ -1396,7 +1396,7 @@
     "period": "26.12",
     "eps": "-",
     "eps_range": "",
-    "rev": "$282M",
+    "rev": "$282.67M",
     "growth": "+70.61%",
     "growth_pos": true
    },
@@ -1445,20 +1445,20 @@
      "label": "2026 4Q",
      "reported": false,
      "eps_est": "-",
-     "rev": "$282M",
+     "rev": "$282.67M",
      "date": "2026-11-10"
     }
    ],
    "target": {
     "price": "$50.88",
-    "mean": "$90.62",
+    "mean": "$90.32",
     "range": "$40~$127",
     "upside": "+78%",
     "upside_pos": true
    },
    "rec": {
     "label": "매수",
-    "count": 21,
+    "count": 22,
     "buy": 17,
     "hold": 4,
     "sell": 1
